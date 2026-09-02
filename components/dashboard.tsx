@@ -31,7 +31,13 @@ const tierLabel: Record<PriorityTier, string> = {
   low: '低阅读优先级',
 };
 
-export function Dashboard({ initialData }: { initialData: DashboardData }) {
+export function Dashboard({
+  initialData,
+  requestedDate,
+}: {
+  initialData: DashboardData;
+  requestedDate?: string;
+}) {
   const [data, setData] = useState(initialData);
   const [range, setRange] = useState<'6m' | '2y'>('6m');
   const [aiStatus, setAiStatus] = useState<AiStatus>(
@@ -41,11 +47,13 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
   const [priority, setPriority] = useState<PriorityTier | 'all'>('all');
   const [query, setQuery] = useState('');
   useEffect(() => {
-    if (initialData.dataMode !== 'unavailable') return;
+    if (initialData.dataMode !== 'loading') return;
     let cancelled = false;
-    const date = encodeURIComponent(initialData.latestDate);
+    const reportUrl = requestedDate
+      ? `/api/reports?date=${encodeURIComponent(requestedDate)}`
+      : '/api/reports';
     Promise.all([
-      fetch(`/api/reports?date=${date}`),
+      fetch(reportUrl),
       fetch('/api/volume?range=2y'),
     ])
       .then(async ([reportsResponse, volumeResponse]) => {
@@ -73,13 +81,16 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
         }
       })
       .catch(() => {
-        // Keep the explicit unavailable state; production must never substitute
-        // preview papers for a failed database read.
+        // Failed production reads become explicit; preview papers are never
+        // substituted for a database error.
+        if (!cancelled) {
+          setData((current) => ({ ...current, dataMode: 'unavailable' }));
+        }
       });
     return () => {
       cancelled = true;
     };
-  }, [initialData]);
+  }, [initialData, requestedDate]);
   const topicGroups = useMemo(
     () =>
       groupVisibleReports(data.reports, {
@@ -95,7 +106,9 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
   ).length;
   const conventionalCount = data.reports.length - aiCount;
   const statusLabel =
-    data.dataMode === 'unavailable'
+    data.dataMode === 'loading'
+      ? '正在读取最新日报'
+      : data.dataMode === 'unavailable'
       ? '数据暂不可用'
       : data.dataMode === 'preview'
         ? '本地预览'
@@ -125,7 +138,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           </div>
           <div className="flex shrink-0 items-center gap-2 text-[11px] text-muted-foreground sm:text-xs">
             <span
-              className={`inline-block size-2 rounded-full ${data.dataMode === 'unavailable' ? 'bg-red-600' : 'bg-emerald-600'}`}
+              className={`inline-block size-2 rounded-full ${data.dataMode === 'loading' ? 'bg-amber-500' : data.dataMode === 'unavailable' ? 'bg-red-600' : 'bg-emerald-600'}`}
             />
             {statusLabel}
           </div>
@@ -159,19 +172,24 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
             </p>
           </div>
 
-          {data.dataMode === 'unavailable' ? (
+          {data.dataMode === 'loading' || data.dataMode === 'unavailable' ? (
             <div className="mt-8 border-y border-border py-8">
-              <p className="font-serif text-lg font-semibold">数据暂不可用</p>
+              <p className="font-serif text-lg font-semibold">
+                {data.dataMode === 'loading' ? '正在读取最新日报' : '数据暂不可用'}
+              </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                站点未能读取最新日报，请稍后刷新；当前不会用示例论文替代真实数据。
+                {data.dataMode === 'loading'
+                  ? '正在从站点数据库载入完整论文清单与趋势。'
+                  : '站点未能读取最新日报，请稍后刷新；当前不会用示例论文替代真实数据。'}
               </p>
             </div>
           ) : null}
 
-          {data.dataMode !== 'unavailable' ? (
+          {data.dataMode === 'database' || data.dataMode === 'preview' ? (
           <><div className="mt-7 grid gap-2 sm:grid-cols-2 lg:grid-cols-[150px_minmax(220px,1fr)_190px_150px]">
             <form method="GET">
               <Input
+                key={data.latestDate}
                 type="date"
                 name="date"
                 defaultValue={data.latestDate}
@@ -358,7 +376,8 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           ) : null}
         </section>
 
-        {data.dataMode !== 'unavailable' && data.volumes.length ? (
+        {(data.dataMode === 'database' || data.dataMode === 'preview') &&
+        data.volumes.length ? (
         <section
           aria-labelledby="trend-title"
           className="mt-20 border-t border-border pt-11 sm:mt-24 sm:pt-14"

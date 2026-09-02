@@ -63,7 +63,7 @@ export interface DashboardData {
   lastUpdated: string;
   volumes: VolumePoint[];
   reports: PaperReport[];
-  dataMode: 'database' | 'preview' | 'unavailable';
+  dataMode: 'database' | 'preview' | 'loading' | 'unavailable';
   coverage: {
     expectedCount: number;
     publishedCount: number;
