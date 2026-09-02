@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { paperReportSchema, reportBatchV1Schema, volumeHistoryV1Schema } from '../lib/validation.ts';
+import { paperReportSchema, reportBatchV1Schema, volumeHistoryV1Schema } from '../lib/validation';
 
 const report = {
   announcementDate: '2026-09-02', arxivId: '2609.01565', version: 1, entryKind: 'new' as const,
