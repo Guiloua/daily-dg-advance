@@ -20,6 +20,16 @@ export interface VolumePoint {
   crosslistOverlap: number;
 }
 
+export interface WeeklyVolumePoint {
+  weekStart: string;
+  weekEnding: string;
+  mathDg: number;
+  mathMg: number;
+  mathGt: number;
+  totalUnique: number;
+  crosslistOverlap: number;
+}
+
 export interface PaperReport {
   id: string;
   announcementDate: string;

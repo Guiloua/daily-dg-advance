@@ -19,4 +19,4 @@ npm run dev
 4. `scripts/publish_payload.py` 原子发布整批报告；失败不会推进服务端成功游标。
 5. `scripts/backfill_volume.py` 只处理 v1 元数据，按官方公告时刻与节假日生成滚动 24 个月趋势。
 
-公开接口为 `/api/volume?range=3m|2y` 与 `/api/reports`；受保护写入接口为 `/api/ingest/v1`、`/api/ingest/volume-history`。
+公开接口为 `/api/volume?range=6m|2y` 与 `/api/reports`。趋势接口把公告日数据按自然周汇总，只返回截至周五的完整周；默认范围为最近 26 周。受保护写入接口为 `/api/ingest/v1`、`/api/ingest/volume-history`。
