@@ -49,13 +49,23 @@ export default async function PaperPage({
   return (
     <main className="min-h-screen bg-background">
       <div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12">
-        <Link
-          href="/"
-          className="mb-8 inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground"
-        >
-          <ArrowLeft className="size-3.5" />
-          返回日报
-        </Link>
+        <div className="mb-8 flex items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground"
+          >
+            <ArrowLeft className="size-3.5" />
+            返回日报
+          </Link>
+          <a
+            href="https://guiloua.github.io/daily-dg-advance/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground"
+          >
+            静态镜像 <ArrowUpRight className="size-3.5" />
+          </a>
+        </div>
         <article className="paper-panel p-6 sm:p-10">
           <div className="flex flex-wrap gap-2">
             {paper.categories.map((category) => (

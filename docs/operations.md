@@ -31,6 +31,15 @@
 
 命令只输出日期和数量摘要，不输出论文正文、鉴权头或完整写入载荷。任何失败都让自动任务失败并触发通知；成功保持静默。
 
+## GitHub Pages 静态镜像
+
+- Sites + D1 是实时数据与写入接口的唯一权威来源；Pages 是不依赖数据库和运行中 Mac 的静态只读副本。
+- 日报 V2 写入并核对成功后，`scripts/publish_static_mirror.sh` 在临时 worktree 中更新 `daily-content`。脚本使用本地锁、完整性检查和敏感信息扫描；只有全部通过才提交并快进推送。
+- `daily-content` 与 `main` 无关历史，只允许 Markdown、JSON 和说明文件。该分支禁止强推和删除，不要求 PR。
+- `Geometry Pages` 工作流始终从受保护 `main` 读取可信生成器，并确认请求 SHA 属于 `daily-content` 历史后才检出内容。静态资源不使用外部 CDN，也不调用 Sites API。
+- Pages 失败不影响在线 Sites 或上一版 Pages。下一次日报会从 Sites 公开接口补齐遗漏日期。需要恢复旧镜像时，在 Actions 手动运行 `Geometry Pages`，输入目标 `daily-content` 的 40 位完整提交 SHA。
+- Pages 验收地址是 <https://guiloua.github.io/daily-dg-advance/>；应检查首页、归档、论文详情、查询参数筛选、26／104 周切换，以及返回实时站点的入口。
+
 ## 回滚
 
 1. 列出 Sites 版本，选择当前生产版本之前最近一次已验证版本。
