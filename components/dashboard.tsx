@@ -53,6 +53,14 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
     (paper) => paper.aiStatus === 'explicit',
   ).length;
   const conventionalCount = initialData.reports.length - aiCount;
+  const statusLabel =
+    initialData.dataMode === 'unavailable'
+      ? '数据暂不可用'
+      : initialData.dataMode === 'preview'
+        ? '本地预览'
+        : initialData.coverage.complete
+          ? `已收录 ${initialData.coverage.publishedCount} / ${initialData.coverage.expectedCount}`
+          : `已收录 ${initialData.coverage.publishedCount} · 待核验`;
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -75,10 +83,10 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-2 text-[11px] text-muted-foreground sm:text-xs">
-            <span className="status-dot" />
-            {initialData.dataMode === 'preview'
-              ? '预览数据'
-              : `更新于 ${new Date(initialData.lastUpdated).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })}`}
+            <span
+              className={`inline-block size-2 rounded-full ${initialData.dataMode === 'unavailable' ? 'bg-red-600' : 'bg-emerald-600'}`}
+            />
+            {statusLabel}
           </div>
         </div>
       </header>
@@ -110,12 +118,23 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
             </p>
           </div>
 
-          <div className="mt-7 grid gap-2 sm:grid-cols-2 lg:grid-cols-[150px_minmax(220px,1fr)_190px_150px]">
+          {initialData.dataMode === 'unavailable' ? (
+            <div className="mt-8 border-y border-border py-8">
+              <p className="font-serif text-lg font-semibold">数据暂不可用</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                站点未能读取最新日报，请稍后刷新；当前不会用示例论文替代真实数据。
+              </p>
+            </div>
+          ) : null}
+
+          {initialData.dataMode !== 'unavailable' ? (
+          <><div className="mt-7 grid gap-2 sm:grid-cols-2 lg:grid-cols-[150px_minmax(220px,1fr)_190px_150px]">
             <form method="GET">
               <Input
                 type="date"
                 name="date"
                 defaultValue={initialData.latestDate}
+                onChange={(event) => event.currentTarget.form?.requestSubmit()}
                 aria-label="选择历史公告日"
                 className="h-10 w-full rounded-[4px] text-xs"
               />
@@ -294,9 +313,11 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
                 尝试切换 AI 状态、主题或优先级。
               </p>
             </div>
-          )}
+          )}</>
+          ) : null}
         </section>
 
+        {initialData.dataMode !== 'unavailable' && initialData.volumes.length ? (
         <section
           aria-labelledby="trend-title"
           className="mt-20 border-t border-border pt-11 sm:mt-24 sm:pt-14"
@@ -312,7 +333,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
               </h2>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
                 按周一至周五的 arXiv
-                实际公告日汇总，每周五更新。板块分别计数，去重总量不会重复计算跨列表论文。
+                实际公告日汇总，每周五更新。每条线分别统计该板块的新投稿与跨列表论文。
               </p>
             </div>
             <Button
@@ -331,6 +352,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           </div>
           <TrendChart volumes={initialData.volumes} range={range} />
         </section>
+        ) : null}
       </div>
     </main>
   );

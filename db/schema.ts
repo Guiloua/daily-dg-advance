@@ -19,7 +19,7 @@ export const reportEntries = sqliteTable('report_entries', {
   announcementDate: text('announcement_date').notNull(),
   arxivId: text('arxiv_id').notNull(),
   version: integer('version').notNull(),
-  entryKind: text('entry_kind', { enum: ['new', 'revision'] }).notNull(),
+  entryKind: text('entry_kind', { enum: ['new', 'cross_list', 'revision'] }).notNull(),
   topic: text('topic').notNull(),
   progressType: text('progress_type').notNull(),
   workSummary: text('work_summary').notNull(),
@@ -65,8 +65,16 @@ export const automationRuns = sqliteTable('automation_runs', {
   startedAt: text('started_at').notNull(),
   completedAt: text('completed_at'),
   status: text('status', { enum: ['running', 'succeeded', 'failed'] }).notNull(),
+  announcementDate: text('announcement_date'),
   sourceCursor: text('source_cursor'),
+  expectedCount: integer('expected_count').notNull().default(0),
   fetchedCount: integer('fetched_count').notNull().default(0),
   publishedCount: integer('published_count').notNull().default(0),
   errorSummary: text('error_summary'),
-});
+}, (table) => [
+  index('idx_automation_runs_announcement_status').on(
+    table.announcementDate,
+    table.status,
+    table.completedAt,
+  ),
+]);

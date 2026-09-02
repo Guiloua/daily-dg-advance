@@ -1,7 +1,18 @@
 import { NextResponse } from 'next/server';
-import { listReports } from '@/lib/repository';
+import { loadDashboard } from '@/lib/repository';
 
 export async function GET(request: Request) {
   const date = new URL(request.url).searchParams.get('date') ?? undefined;
-  return NextResponse.json({ date, reports: await listReports(date) });
+  const dashboard = await loadDashboard(date);
+  if (dashboard.dataMode === 'unavailable') {
+    return NextResponse.json(
+      { date: dashboard.latestDate, error: 'data_unavailable', reports: [] },
+      { status: 503 },
+    );
+  }
+  return NextResponse.json({
+    date: dashboard.latestDate,
+    coverage: dashboard.coverage,
+    reports: dashboard.reports,
+  });
 }

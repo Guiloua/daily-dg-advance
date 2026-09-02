@@ -11,14 +11,12 @@ import { aggregateWeeklyVolumes } from '@/lib/volume';
 import type { VolumePoint, WeeklyVolumePoint } from '@/lib/types';
 
 const chartConfig = {
-  totalUnique: { label: '去重总量', color: 'var(--ink)' },
   mathDg: { label: 'math.DG', color: 'var(--burgundy)' },
   mathMg: { label: 'math.MG', color: 'var(--teal)' },
   mathGt: { label: 'math.GT', color: 'var(--ochre)' },
 } satisfies ChartConfig;
 
 const series = [
-  { key: 'totalUnique', label: '去重总量', color: 'var(--ink)', width: 2.8 },
   { key: 'mathDg', label: 'math.DG', color: 'var(--burgundy)', width: 1.7 },
   { key: 'mathMg', label: 'math.MG', color: 'var(--teal)', width: 1.7 },
   { key: 'mathGt', label: 'math.GT', color: 'var(--ochre)', width: 1.7 },
@@ -48,10 +46,6 @@ function TooltipBody({
             </span>
           </div>
         ))}
-        <div className="flex justify-between gap-5 border-t border-border pt-1.5 text-muted-foreground">
-          <span>跨板块重复</span>
-          <span className="font-mono">{point.crosslistOverlap}</span>
-        </div>
       </div>
     </div>
   );
@@ -65,7 +59,6 @@ export function TrendChart({
   range: '6m' | '2y';
 }) {
   const [visible, setVisible] = useState<Record<string, boolean>>({
-    totalUnique: true,
     mathDg: true,
     mathMg: true,
     mathGt: true,
@@ -82,7 +75,7 @@ export function TrendChart({
         最新完整周：
         {latest ? `${latest.weekStart} 至 ${latest.weekEnding}` : '暂无'}
       </div>
-      <div className="mb-6 grid grid-cols-2 gap-x-5 border-y border-border sm:grid-cols-4 sm:gap-x-6">
+      <div className="mb-6 grid grid-cols-3 gap-x-5 border-y border-border sm:gap-x-6">
         {series.map((item) => (
           <button
             key={item.key}

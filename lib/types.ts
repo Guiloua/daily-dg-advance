@@ -16,8 +16,6 @@ export interface VolumePoint {
   mathDg: number;
   mathMg: number;
   mathGt: number;
-  totalUnique: number;
-  crosslistOverlap: number;
 }
 
 export interface WeeklyVolumePoint {
@@ -26,8 +24,6 @@ export interface WeeklyVolumePoint {
   mathDg: number;
   mathMg: number;
   mathGt: number;
-  totalUnique: number;
-  crosslistOverlap: number;
 }
 
 export interface PaperReport {
@@ -35,7 +31,7 @@ export interface PaperReport {
   announcementDate: string;
   arxivId: string;
   version: number;
-  entryKind: 'new' | 'revision';
+  entryKind: 'new' | 'cross_list' | 'revision';
   title: string;
   authors: string[];
   abstract: string;
@@ -67,5 +63,10 @@ export interface DashboardData {
   lastUpdated: string;
   volumes: VolumePoint[];
   reports: PaperReport[];
-  dataMode: 'database' | 'preview';
+  dataMode: 'database' | 'preview' | 'unavailable';
+  coverage: {
+    expectedCount: number;
+    publishedCount: number;
+    complete: boolean;
+  };
 }

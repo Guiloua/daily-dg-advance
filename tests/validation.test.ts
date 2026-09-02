@@ -1,5 +1,10 @@
 import assert from 'node:assert/strict';
-import { paperReportSchema, reportBatchV1Schema, volumeHistoryV1Schema } from '../lib/validation';
+import {
+  paperReportSchema,
+  reportBatchV1Schema,
+  reportBatchV2Schema,
+  volumeHistoryV1Schema,
+} from '../lib/validation';
 
 const report = {
   announcementDate: '2026-09-02', arxivId: '2609.01565', version: 1, entryKind: 'new' as const,
@@ -23,4 +28,63 @@ const batch = {
 assert.equal(reportBatchV1Schema.safeParse(batch).success, true, 'cross-listed paper counts in both sections but once in total');
 assert.equal(reportBatchV1Schema.safeParse({ ...batch, dailyVolume: { ...batch.dailyVolume, totalUnique: 2 } }).success, false, 'inconsistent deduped total must fail');
 assert.equal(volumeHistoryV1Schema.safeParse({ schemaVersion: 1, generatedAt: '2026-09-02T06:00:00Z', source: 'official', points: [batch.dailyVolume] }).success, true);
+
+const crossListReport = {
+  ...report,
+  arxivId: '2608.99999',
+  entryKind: 'cross_list' as const,
+  arxivUrl: 'https://arxiv.org/abs/2608.99999',
+  pdfUrl: 'https://arxiv.org/pdf/2608.99999',
+};
+const batchV2 = {
+  schemaVersion: 2 as const,
+  run: {
+    ...batch.run,
+    runId: 'run-v2-20260902',
+    expectedCount: 2,
+  },
+  announcementDay: batch.announcementDay,
+  sourceManifest: {
+    mathDg: {
+      newIds: ['2609.01565'],
+      crossListIds: ['2608.99999'],
+    },
+    mathMg: { newIds: [], crossListIds: ['2609.01565'] },
+    mathGt: { newIds: [], crossListIds: [] },
+  },
+  dailyVolume: {
+    announcementDate: '2026-09-02',
+    mathDg: 2,
+    mathMg: 1,
+    mathGt: 0,
+  },
+  reports: [report, crossListReport],
+};
+
+assert.equal(
+  reportBatchV2Schema.safeParse(batchV2).success,
+  true,
+  'a complete new plus cross-list manifest must be accepted',
+);
+assert.equal(
+  reportBatchV2Schema.safeParse({ ...batchV2, reports: [report] }).success,
+  false,
+  'a curated subset must not pass as a complete report batch',
+);
+assert.equal(
+  reportBatchV2Schema.safeParse({
+    ...batchV2,
+    dailyVolume: { ...batchV2.dailyVolume, mathDg: 1 },
+  }).success,
+  false,
+  'category volume must equal new plus cross-list events',
+);
+assert.equal(
+  reportBatchV2Schema.safeParse({
+    ...batchV2,
+    run: { ...batchV2.run, expectedCount: 1 },
+  }).success,
+  false,
+  'expectedCount must equal the unique manifest size',
+);
 console.log('TypeScript validation tests passed');

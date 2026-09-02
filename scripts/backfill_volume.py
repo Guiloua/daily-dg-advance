@@ -12,6 +12,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from arxiv_fetch import CATEGORIES, fetch
+from arxiv_listing import build_manifest
 
 EASTERN = ZoneInfo("America/New_York")
 SHANGHAI = ZoneInfo("Asia/Shanghai")
@@ -47,13 +48,78 @@ def announcement_date(submitted: str) -> date:
     return eastern_announcement.astimezone(SHANGHAI).date()
 
 
+def point_from_manifest(manifest: dict) -> dict:
+    """Convert an exact official New/Cross-list manifest to legacy storage fields."""
+    category_ids = []
+    for key in ("mathDg", "mathMg", "mathGt"):
+        category = manifest["sourceManifest"][key]
+        category_ids.append(set(category["newIds"] + category["crossListIds"]))
+    union = set().union(*category_ids)
+    counts = [len(ids) for ids in category_ids]
+    return {
+        "announcementDate": manifest["announcementDate"],
+        "mathDg": counts[0],
+        "mathMg": counts[1],
+        "mathGt": counts[2],
+        # Retained only because the existing D1 columns are non-null. The UI and
+        # public weekly trend no longer read these two compatibility values.
+        "totalUnique": len(union),
+        "crosslistOverlap": sum(counts) - len(union),
+    }
+
+
+def exact_recent_points(start: date, end: date) -> list[dict]:
+    points = []
+    day = start
+    while day <= end:
+        if day.weekday() < 5:
+            try:
+                manifest = build_manifest(day.isoformat())
+            except RuntimeError as error:
+                print(f"Skipping {day}: {error}")
+            else:
+                points.append(point_from_manifest(manifest))
+                print(
+                    f"Exact {day}: DG={points[-1]['mathDg']} "
+                    f"MG={points[-1]['mathMg']} GT={points[-1]['mathGt']}"
+                )
+        day += timedelta(days=1)
+    return points
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", required=True)
     parser.add_argument("--end", help="Latest Shanghai announcement date, YYYY-MM-DD")
+    parser.add_argument(
+        "--exact-days",
+        type=int,
+        default=90,
+        help="Replace this many recent calendar days with official catchup counts",
+    )
+    parser.add_argument(
+        "--recent-only",
+        action="store_true",
+        help="Only emit the exact recent catchup window; keep older D1 rows untouched",
+    )
     args = parser.parse_args()
     end = date.fromisoformat(args.end) if args.end else datetime.now(SHANGHAI).date()
     start = end - timedelta(days=731)
+    exact_start = max(start, end - timedelta(days=max(1, args.exact_days) - 1))
+
+    if args.recent_only:
+        points = exact_recent_points(exact_start, end)
+        payload = {
+            "schemaVersion": 1,
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "source": "arXiv official category catchup pages: New submissions + Cross-lists; Replacements excluded",
+            "points": points,
+        }
+        Path(args.out).write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"Built {len(points)} exact recent announcement-day points")
+        return
     # The combined category query returns each paper once, including its complete
     # category list. The initial published timestamp represents the v1 event even
     # when the current record has later revisions.
@@ -96,7 +162,21 @@ def main() -> None:
             points.append({"announcementDate": day.isoformat(), "mathDg": counts[0], "mathMg": counts[1], "mathGt": counts[2], "totalUnique": len(union), "crosslistOverlap": sum(counts) - len(union)})
         day += timedelta(days=1)
 
-    payload = {"schemaVersion": 1, "generatedAt": datetime.now(timezone.utc).isoformat(), "source": "arXiv API v1 metadata + official announcement/deferred-mailing schedule", "points": points}
+    exact_points = exact_recent_points(exact_start, end)
+    exact_by_date = {point["announcementDate"]: point for point in exact_points}
+    points = [
+        exact_by_date.get(point["announcementDate"], point)
+        for point in points
+        if point["announcementDate"] < exact_start.isoformat()
+        or point["announcementDate"] in exact_by_date
+    ]
+    existing_dates = {point["announcementDate"] for point in points}
+    points.extend(
+        point for point in exact_points if point["announcementDate"] not in existing_dates
+    )
+    points.sort(key=lambda point: point["announcementDate"])
+
+    payload = {"schemaVersion": 1, "generatedAt": datetime.now(timezone.utc).isoformat(), "source": "arXiv API v1 reconstruction (older history) + official category catchup pages for the recent exact window", "points": points}
     Path(args.out).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Built {len(points)} announcement-day points from {len(papers_by_id)} unique v1 papers")
 

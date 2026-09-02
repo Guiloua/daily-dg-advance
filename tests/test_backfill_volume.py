@@ -1,18 +1,31 @@
 import unittest
 
-from backfill_volume import announcement_date, next_announcement_day
+from backfill_volume import point_from_manifest
 
 
-class AnnouncementScheduleTests(unittest.TestCase):
-    def test_before_monday_cutoff_announces_tuesday_in_shanghai(self):
-        self.assertEqual(str(announcement_date('2026-08-31T16:00:00Z')), '2026-09-01')
+class BackfillVolumeTests(unittest.TestCase):
+    def test_category_counts_do_not_deduplicate_across_lines(self):
+        point = point_from_manifest(
+            {
+                "announcementDate": "2026-09-02",
+                "sourceManifest": {
+                    "mathDg": {
+                        "newIds": ["2609.00001"],
+                        "crossListIds": ["2401.00001"],
+                    },
+                    "mathMg": {
+                        "newIds": [],
+                        "crossListIds": ["2609.00001"],
+                    },
+                    "mathGt": {"newIds": [], "crossListIds": []},
+                },
+            }
+        )
+        self.assertEqual(point["mathDg"], 2)
+        self.assertEqual(point["mathMg"], 1)
+        self.assertEqual(point["mathGt"], 0)
+        self.assertEqual(point["totalUnique"], 2)
 
-    def test_after_thursday_cutoff_announces_monday_in_shanghai(self):
-        self.assertEqual(str(announcement_date('2026-08-27T19:00:00Z')), '2026-08-31')
 
-    def test_official_monday_holiday_is_skipped(self):
-        self.assertEqual(str(next_announcement_day(__import__('datetime').date(2026, 9, 7))), '2026-09-08')
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

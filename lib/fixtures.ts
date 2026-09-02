@@ -13,8 +13,7 @@ export const previewVolumes: VolumePoint[] = (() => {
       const mathDg = Math.max(0, 8 + ((index * 7) % 11) + Math.round(Math.sin(index / 11) * 3));
       const mathMg = Math.max(0, 3 + ((index * 5) % 7) + Math.round(Math.cos(index / 13) * 2));
       const mathGt = Math.max(0, 6 + ((index * 3) % 10) + Math.round(Math.sin(index / 17) * 2));
-      const crosslistOverlap = 1 + (index % 4);
-      points.push({ announcementDate: isoDate(cursor), mathDg, mathMg, mathGt, crosslistOverlap, totalUnique: mathDg + mathMg + mathGt - crosslistOverlap });
+      points.push({ announcementDate: isoDate(cursor), mathDg, mathMg, mathGt });
       index += 1;
     }
     cursor.setUTCDate(cursor.getUTCDate() + 1);
@@ -38,4 +37,15 @@ export const previewReports: PaperReport[] = [
   },
 ];
 
-export const previewDashboard: DashboardData = { latestDate: '2026-09-02', lastUpdated: '2026-09-02T14:06:00+08:00', volumes: previewVolumes, reports: previewReports, dataMode: 'preview' };
+export const previewDashboard: DashboardData = {
+  latestDate: '2026-09-02',
+  lastUpdated: '2026-09-02T14:06:00+08:00',
+  volumes: previewVolumes,
+  reports: previewReports,
+  dataMode: 'preview',
+  coverage: {
+    expectedCount: previewReports.length,
+    publishedCount: previewReports.length,
+    complete: true,
+  },
+};

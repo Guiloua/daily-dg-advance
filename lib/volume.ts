@@ -29,14 +29,10 @@ export function aggregateWeeklyVolumes(
       mathDg: 0,
       mathMg: 0,
       mathGt: 0,
-      totalUnique: 0,
-      crosslistOverlap: 0,
     };
     current.mathDg += point.mathDg;
     current.mathMg += point.mathMg;
     current.mathGt += point.mathGt;
-    current.totalUnique += point.totalUnique;
-    current.crosslistOverlap += point.crosslistOverlap;
     weeks.set(weekEnding, current);
   }
   return [...weeks.values()].sort((a, b) =>
