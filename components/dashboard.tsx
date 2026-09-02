@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowUpRight,
   Bot,
@@ -32,6 +32,7 @@ const tierLabel: Record<PriorityTier, string> = {
 };
 
 export function Dashboard({ initialData }: { initialData: DashboardData }) {
+  const [data, setData] = useState(initialData);
   const [range, setRange] = useState<'6m' | '2y'>('6m');
   const [aiStatus, setAiStatus] = useState<AiStatus>(
     'no_disclosure_observed',
@@ -39,28 +40,68 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
   const [topic, setTopic] = useState<Topic | 'all'>('all');
   const [priority, setPriority] = useState<PriorityTier | 'all'>('all');
   const [query, setQuery] = useState('');
+  useEffect(() => {
+    if (initialData.dataMode !== 'unavailable') return;
+    let cancelled = false;
+    const date = encodeURIComponent(initialData.latestDate);
+    Promise.all([
+      fetch(`/api/reports?date=${date}`),
+      fetch('/api/volume?range=2y'),
+    ])
+      .then(async ([reportsResponse, volumeResponse]) => {
+        if (!reportsResponse.ok || !volumeResponse.ok) {
+          throw new Error('Dashboard API unavailable');
+        }
+        const reportsPayload = (await reportsResponse.json()) as {
+          date: string;
+          lastUpdated: string;
+          coverage: DashboardData['coverage'];
+          reports: DashboardData['reports'];
+        };
+        const volumePayload = (await volumeResponse.json()) as {
+          points: DashboardData['volumes'];
+        };
+        if (!cancelled) {
+          setData({
+            latestDate: reportsPayload.date,
+            lastUpdated: reportsPayload.lastUpdated,
+            coverage: reportsPayload.coverage,
+            reports: reportsPayload.reports,
+            volumes: volumePayload.points,
+            dataMode: 'database',
+          });
+        }
+      })
+      .catch(() => {
+        // Keep the explicit unavailable state; production must never substitute
+        // preview papers for a failed database read.
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [initialData]);
   const topicGroups = useMemo(
     () =>
-      groupVisibleReports(initialData.reports, {
+      groupVisibleReports(data.reports, {
         aiStatus,
         topic,
         priority,
         query,
       }),
-    [aiStatus, topic, priority, query, initialData.reports],
+    [aiStatus, topic, priority, query, data.reports],
   );
-  const aiCount = initialData.reports.filter(
+  const aiCount = data.reports.filter(
     (paper) => paper.aiStatus === 'explicit',
   ).length;
-  const conventionalCount = initialData.reports.length - aiCount;
+  const conventionalCount = data.reports.length - aiCount;
   const statusLabel =
-    initialData.dataMode === 'unavailable'
+    data.dataMode === 'unavailable'
       ? '数据暂不可用'
-      : initialData.dataMode === 'preview'
+      : data.dataMode === 'preview'
         ? '本地预览'
-        : initialData.coverage.complete
-          ? `已收录 ${initialData.coverage.publishedCount} / ${initialData.coverage.expectedCount}`
-          : `已收录 ${initialData.coverage.publishedCount} · 待核验`;
+        : data.coverage.complete
+          ? `已收录 ${data.coverage.publishedCount} / ${data.coverage.expectedCount}`
+          : `已收录 ${data.coverage.publishedCount} · 待核验`;
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -84,7 +125,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           </div>
           <div className="flex shrink-0 items-center gap-2 text-[11px] text-muted-foreground sm:text-xs">
             <span
-              className={`inline-block size-2 rounded-full ${initialData.dataMode === 'unavailable' ? 'bg-red-600' : 'bg-emerald-600'}`}
+              className={`inline-block size-2 rounded-full ${data.dataMode === 'unavailable' ? 'bg-red-600' : 'bg-emerald-600'}`}
             />
             {statusLabel}
           </div>
@@ -99,7 +140,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           <div>
             <p className="eyebrow">
               {new Date(
-                `${initialData.latestDate}T12:00:00`,
+                `${data.latestDate}T12:00:00`,
               ).toLocaleDateString('zh-CN', {
                 weekday: 'long',
                 year: 'numeric',
@@ -118,7 +159,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
             </p>
           </div>
 
-          {initialData.dataMode === 'unavailable' ? (
+          {data.dataMode === 'unavailable' ? (
             <div className="mt-8 border-y border-border py-8">
               <p className="font-serif text-lg font-semibold">数据暂不可用</p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -127,13 +168,13 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
             </div>
           ) : null}
 
-          {initialData.dataMode !== 'unavailable' ? (
+          {data.dataMode !== 'unavailable' ? (
           <><div className="mt-7 grid gap-2 sm:grid-cols-2 lg:grid-cols-[150px_minmax(220px,1fr)_190px_150px]">
             <form method="GET">
               <Input
                 type="date"
                 name="date"
-                defaultValue={initialData.latestDate}
+                defaultValue={data.latestDate}
                 onChange={(event) => event.currentTarget.form?.requestSubmit()}
                 aria-label="选择历史公告日"
                 className="h-10 w-full rounded-[4px] text-xs"
@@ -317,7 +358,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
           ) : null}
         </section>
 
-        {initialData.dataMode !== 'unavailable' && initialData.volumes.length ? (
+        {data.dataMode !== 'unavailable' && data.volumes.length ? (
         <section
           aria-labelledby="trend-title"
           className="mt-20 border-t border-border pt-11 sm:mt-24 sm:pt-14"
@@ -350,7 +391,7 @@ export function Dashboard({ initialData }: { initialData: DashboardData }) {
               {range === '6m' ? <ChevronDown /> : <ChevronUp />}
             </Button>
           </div>
-          <TrendChart volumes={initialData.volumes} range={range} />
+          <TrendChart volumes={data.volumes} range={range} />
         </section>
         ) : null}
       </div>

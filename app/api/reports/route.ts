@@ -12,6 +12,7 @@ export async function GET(request: Request) {
   }
   return NextResponse.json({
     date: dashboard.latestDate,
+    lastUpdated: dashboard.lastUpdated,
     coverage: dashboard.coverage,
     reports: dashboard.reports,
   });

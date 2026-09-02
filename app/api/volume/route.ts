@@ -5,9 +5,18 @@ import { aggregateWeeklyVolumes } from '@/lib/volume';
 export async function GET(request: Request) {
   const range =
     new URL(request.url).searchParams.get('range') === '2y' ? '2y' : '6m';
-  const weeks = aggregateWeeklyVolumes(await listVolumes('2y'));
+  const points = await listVolumes('2y');
+  const weeks = aggregateWeeklyVolumes(points);
+  const selectedWeeks = range === '6m' ? weeks.slice(-26) : weeks;
+  const firstWeekStart = selectedWeeks[0]?.weekStart;
   return NextResponse.json({
     range,
-    weeks: range === '6m' ? weeks.slice(-26) : weeks,
+    points:
+      range === '6m' && firstWeekStart
+        ? points.filter(
+            (point) => point.announcementDate >= firstWeekStart,
+          )
+        : points,
+    weeks: selectedWeeks,
   });
 }
