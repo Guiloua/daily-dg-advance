@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { groupVisibleReports } from '../lib/dashboard';
+import { buildDailyOverview, groupVisibleReports } from '../lib/dashboard';
 import type { PaperReport } from '../lib/types';
 
 function report(
@@ -47,6 +47,7 @@ const reports = [
     aiStatus: 'explicit',
     aiEvidence: '正文明确披露使用 AI。',
     aiEvidenceSource: 'Acknowledgements',
+    breakthrough: '建立了新的低维拓扑构造。',
   }),
 ];
 
@@ -92,6 +93,34 @@ assert.deepEqual(
   }).map((group) => group.topic),
   ['几何拓扑、低维流形与结'],
   'AI status must participate in topic visibility',
+);
+
+const overview = buildDailyOverview(reports);
+assert.equal(overview.paperCount, 4, 'overview must cover the complete day');
+assert.match(
+  overview.mainProgress[0],
+  /曲率与比较几何（2 篇）/,
+  'the leading research direction and count must be surfaced',
+);
+assert.match(
+  overview.mainProgress[1],
+  /比较方法（4 篇）/,
+  'frequently reused techniques must be summarized',
+);
+assert.deepEqual(
+  overview.breakthroughPoints.map((item) => item.arxivId),
+  ['2609.00003', '2609.00004'],
+  'possible breakthroughs must favor high-priority papers in score order',
+);
+assert.match(
+  overview.cautions[0],
+  /4 篇仅完成摘要级分析/,
+  'summary-level evidence must be called out as a caution',
+);
+assert.equal(
+  buildDailyOverview([]).paperCount,
+  0,
+  'an empty report day must produce an empty overview',
 );
 
 console.log('Dashboard grouping tests passed');

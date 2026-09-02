@@ -16,7 +16,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { groupVisibleReports } from '@/lib/dashboard';
+import { buildDailyOverview, groupVisibleReports } from '@/lib/dashboard';
 import {
   TOPICS,
   type AiStatus,
@@ -101,6 +101,10 @@ export function Dashboard({
       }),
     [aiStatus, topic, priority, query, data.reports],
   );
+  const dailyOverview = useMemo(
+    () => buildDailyOverview(data.reports),
+    [data.reports],
+  );
   const aiCount = data.reports.filter(
     (paper) => paper.aiStatus === 'explicit',
   ).length;
@@ -171,6 +175,76 @@ export function Dashboard({
               自动生成的阅读指南，关键结论请回查原论文。
             </p>
           </div>
+
+          {(data.dataMode === 'database' || data.dataMode === 'preview') &&
+          dailyOverview.paperCount ? (
+            <section
+              aria-labelledby="daily-overview-title"
+              className="mt-8 border-y border-border"
+            >
+              <div className="flex flex-wrap items-end justify-between gap-3 py-5">
+                <div>
+                  <p className="eyebrow">Daily synthesis</p>
+                  <h2
+                    id="daily-overview-title"
+                    className="font-serif text-xl font-semibold tracking-[-0.015em] sm:text-2xl"
+                  >
+                    今日总览
+                  </h2>
+                </div>
+                <p className="text-[11px] text-muted-foreground">
+                  基于当日全部 {dailyOverview.paperCount} 篇
+                </p>
+              </div>
+
+              <div className="divide-y divide-border">
+                <div className="grid gap-2 py-5 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-7">
+                  <h3 className="text-xs font-semibold text-primary">
+                    主要方向与技术进展
+                  </h3>
+                  <div className="space-y-2 text-sm leading-6">
+                    {dailyOverview.mainProgress.map((item) => (
+                      <p key={item}>{item}</p>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid gap-2 py-5 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-7">
+                  <h3 className="text-xs font-semibold text-[var(--teal)]">
+                    可能的突破点
+                  </h3>
+                  <ul className="space-y-3 text-sm leading-6">
+                    {dailyOverview.breakthroughPoints.map((item) => (
+                      <li key={item.arxivId}>
+                        <a
+                          href={`/paper/${item.arxivId}`}
+                          className="font-medium text-foreground underline decoration-border underline-offset-4 hover:text-primary"
+                        >
+                          {item.title}
+                        </a>
+                        <span className="text-muted-foreground">
+                          {' '}— {item.summary}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="grid gap-2 py-5 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-7">
+                  <h3 className="text-xs font-semibold text-[var(--ochre)]">
+                    需谨慎处
+                  </h3>
+                  <ul className="space-y-2 text-sm leading-6 text-muted-foreground">
+                    {dailyOverview.cautions.map((item) => (
+                      <li key={item} className="border-l-2 border-border pl-3">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+          ) : null}
 
           {data.dataMode === 'loading' || data.dataMode === 'unavailable' ? (
             <div className="mt-8 border-y border-border py-8">
