@@ -1,0 +1,103 @@
+name: Geometry Pages
+
+on:
+  repository_dispatch:
+    types: [static-content-updated]
+  workflow_dispatch:
+    inputs:
+      content_sha:
+        description: Full commit SHA from daily-content to publish or restore
+        required: true
+        type: string
+
+concurrency:
+  group: geometry-pages-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      content_sha: ${{ steps.resolve.outputs.content_sha }}
+    steps:
+      - name: Check out trusted generator from main
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: main
+          path: source
+          fetch-depth: 1
+      - name: Resolve and authorize content commit
+        id: resolve
+        working-directory: source
+        env:
+          REQUESTED_SHA: ${{ github.event.client_payload.content_sha || inputs.content_sha }}
+        run: |
+          test -n "$REQUESTED_SHA"
+          case "$REQUESTED_SHA" in
+            *[!0-9a-f]*|'') exit 1 ;;
+          esac
+          test "${#REQUESTED_SHA}" -eq 40
+          git fetch --no-tags origin daily-content
+          resolved="$(git rev-parse "${REQUESTED_SHA}^{commit}")"
+          test "$resolved" = "$REQUESTED_SHA"
+          git merge-base --is-ancestor "$resolved" origin/daily-content
+          echo "content_sha=$resolved" >> "$GITHUB_OUTPUT"
+      - name: Check out exact content snapshot
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ steps.resolve.outputs.content_sha }}
+          path: content
+          fetch-depth: 1
+      - name: Verify content snapshot
+        env:
+          EXPECTED_SHA: ${{ steps.resolve.outputs.content_sha }}
+        run: |
+          test "$(git -C content rev-parse HEAD)" = "$EXPECTED_SHA"
+          test -z "$(find content -type l -print -quit)"
+          test -f content/data/manifest.json
+          test -f content/data/volume.json
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
+        with:
+          node-version: 22.13.0
+          cache: npm
+          cache-dependency-path: source/package-lock.json
+      - name: Install trusted build dependencies
+        working-directory: source
+        run: npm ci
+      - name: Validate and build static mirror
+        working-directory: source
+        run: npm run static:build -- --content "$GITHUB_WORKSPACE/content" --out "$GITHUB_WORKSPACE/_site" --base-path /daily-dg-advance
+      - name: Check links, secrets, and runtime independence
+        working-directory: source
+        run: |
+          node scripts/check_secrets.mjs "$GITHUB_WORKSPACE/content" "$GITHUB_WORKSPACE/_site"
+          test -f "$GITHUB_WORKSPACE/_site/index.html"
+          test -f "$GITHUB_WORKSPACE/_site/archive/index.html"
+          ! grep -R -E 'fetch\(|/api/(reports|volume|ingest)' "$GITHUB_WORKSPACE/_site/assets"
+          grep -q '/daily-dg-advance/' "$GITHUB_WORKSPACE/_site/index.html"
+      - name: Upload immutable Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+      - name: Deploy verified static snapshot
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+      - name: Record deployed content commit
+        env:
+          CONTENT_SHA: ${{ needs.build.outputs.content_sha }}
+        run: echo "Published daily-content $CONTENT_SHA"

@@ -6,6 +6,8 @@
 
 生产站点：<https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site>
 
+静态只读镜像：<https://guiloua.github.io/daily-dg-advance/>
+
 ## 本地运行
 
 ```bash
@@ -23,9 +25,12 @@ npm run dev
 4. 自动化分析清单内全部论文并生成 `ReportBatchV2`。服务端要求分析报告与清单并集完全一致，同时校验三个分类计数、低优先级理由与明确 AI 协作证据。
 5. `scripts/publish_payload.py --endpoint report-v2` 原子发布完整批次；缺少任何论文时整批拒绝，成功游标不会推进。
 6. `scripts/backfill_volume.py` 按官方公告事件重建滚动 24 个月趋势；网页只展示 DG、MG、GT 三条分类线。
+7. 完整批次核对成功后，`scripts/publish_static_mirror.sh` 生成最近十个完整公告日的 Markdown/JSON 与两年趋势，快进推送到无关历史的 `daily-content` 分支，并以精确内容 SHA 触发 GitHub Pages。镜像失败不回滚已成功写入的 D1，但会让日报任务失败并通知。
 
 公开只读接口为 `/api/volume?range=6m|2y`、`/api/reports` 与 `/api/health`。趋势接口把公告日数据按自然周汇总，只返回截至周五的完整周；默认范围为最近 26 周。受保护写入接口为 `/api/ingest/v2` 与 `/api/ingest/volume-history`；`/api/ingest/v1` 仅为兼容旧发布工具而保留。
 
 ## 发布与运维
 
 `main` 只接收通过 `CI / gate` 的合并。生产发布必须使用 GitHub `origin/main` 的精确提交，Sites 版本、Git 标签与 GitHub production Deployment 共同记录版本来源。详细发布、健康检查和回滚流程见 [`docs/operations.md`](docs/operations.md)。
+
+`daily-content` 只保存公开的 Markdown 与静态 JSON，不保存构建 HTML、令牌或抓取缓存。受保护 `main` 中的 `Geometry Pages` 工作流用可信 Node 生成器构建页面；构建任务只读源码，部署任务单独取得 Pages 权限。可在 Actions 中输入任一仍属于 `daily-content` 历史的完整 SHA 重新发布或恢复旧镜像。

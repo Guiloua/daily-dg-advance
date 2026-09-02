@@ -25,4 +25,14 @@
 4. 成功后核对 `/api/reports` 的非修订条目数、expected、published、数据库 coverage，以及 `/api/volume` 的 DG/MG/GT 日统计。
 5. 对最近十个公告日中尚未完整核验的日期，按同一 V2 流程每次至少补齐一天；近 90 天趋势优先使用官方 catchup 精确回溯。
 
+## 静态镜像
+
+V2 写入和上述核对全部成功后，运行 `scripts/publish_static_mirror.sh <Sites地址> <公告日> <本次ReportBatchV2文件>`；当前公告日优先直接使用刚通过校验的批次：
+
+- 从 Sites 公开接口补齐最近十个完整公告日，并把两年趋势写入 Markdown/JSON 镜像。
+- 仅向 `daily-content` 快进推送；无内容变化时不提交，也不重复触发 Pages。
+- 推送后用精确内容提交 SHA 触发 `Geometry Pages` 工作流。镜像生成、推送或触发失败时，本次任务必须失败并通知，但不得回滚已成功的 D1 写入或成功游标。
+- 不得把写入令牌、Authorization、抓取缓存或完整写入载荷复制到内容分支。
+- 若本机网络对公开 Sites 请求返回访问门禁错误，可仅在当前进程内使用 Sites 提供的只读绕过令牌重试；不得打印、提交或长期复制该令牌。
+
 只输出运行 ID、公告日、三个分类数量、expected/published 和脱敏错误摘要，不输出论文正文。

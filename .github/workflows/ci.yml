@@ -97,10 +97,27 @@ jobs:
       - name: Scan the production bundle
         run: /tmp/gitleaks dir dist --config .gitleaks.toml --redact --no-banner
 
+  static-pages:
+    name: static-pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: Type-check mirror schemas and generators
+        run: npm run typecheck
+      - name: Build and verify the hostile-content fixture
+        run: npx tsx tests/static-mirror.test.ts
+      - name: Check trusted mirror source for secrets
+        run: node scripts/check_secrets.mjs lib/static-mirror.ts scripts/sync_static_mirror.ts scripts/build_static_pages.ts static-mirror
+
   gate:
     name: gate
     if: ${{ always() }}
-    needs: [quality, tests, migrations, secrets, build]
+    needs: [quality, tests, migrations, secrets, build, static-pages]
     runs-on: ubuntu-latest
     steps:
       - name: Require every CI job to pass
@@ -110,9 +127,11 @@ jobs:
           MIGRATIONS: ${{ needs.migrations.result }}
           SECRETS: ${{ needs.secrets.result }}
           BUILD: ${{ needs.build.result }}
+          STATIC_PAGES: ${{ needs.static-pages.result }}
         run: |
           test "$QUALITY" = success
           test "$TESTS" = success
           test "$MIGRATIONS" = success
           test "$SECRETS" = success
           test "$BUILD" = success
+          test "$STATIC_PAGES" = success
