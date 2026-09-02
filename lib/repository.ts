@@ -144,6 +144,63 @@ export async function listReports(date?: string): Promise<PaperReport[]> {
   }
 }
 
+export async function loadReportFeed(date?: string) {
+  const db = database();
+  if (!db) {
+    if (previewAllowed) {
+      return {
+        date: previewDashboard.latestDate,
+        lastUpdated: previewDashboard.lastUpdated,
+        coverage: previewDashboard.coverage,
+        reports: previewReports,
+      };
+    }
+    throw new Error('Database binding unavailable');
+  }
+  const reports = await listReports(date);
+  const selectedDate =
+    date ??
+    reports[0]?.announcementDate ??
+    (
+      await db
+        .prepare('SELECT MAX(announcement_date) AS date FROM report_entries')
+        .first<{ date: string | null }>()
+    )?.date;
+  if (!selectedDate) {
+    return {
+      date: new Date().toISOString().slice(0, 10),
+      lastUpdated: '',
+      coverage: { expectedCount: 0, publishedCount: 0, complete: false },
+      reports: [],
+    };
+  }
+  const run = await db
+    .prepare(
+      `SELECT completed_at, expected_count, published_count
+       FROM automation_runs
+       WHERE status = ? AND announcement_date = ?
+       ORDER BY completed_at DESC LIMIT 1`,
+    )
+    .bind('succeeded', selectedDate)
+    .first<{
+      completed_at: string;
+      expected_count: number;
+      published_count: number;
+    }>();
+  const expectedCount = run?.expected_count || reports.length;
+  const publishedCount = run?.published_count ?? reports.length;
+  return {
+    date: selectedDate,
+    lastUpdated: run?.completed_at ?? `${selectedDate}T14:00:00+08:00`,
+    coverage: {
+      expectedCount,
+      publishedCount,
+      complete: Boolean(run?.expected_count) && expectedCount === publishedCount,
+    },
+    reports,
+  };
+}
+
 function unavailableDashboard(date?: string): DashboardData {
   return {
     latestDate: date ?? new Date().toISOString().slice(0, 10),
