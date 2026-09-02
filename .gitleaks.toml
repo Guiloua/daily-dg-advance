@@ -1,0 +1,11 @@
+title = "Geometry arXiv Daily secret scanning"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Vinext-generated server manifests contain an internal prerender nonce"
+condition = "AND"
+regexTarget = "match"
+regexes = ['''prerenderSecret''']
+paths = ['''dist/server/(?:ssr/)?vinext-server\.json''']
