@@ -27,14 +27,23 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local environment
-.env*
+.env
+.env.*
+!.env.example
 
 # deployment and generated files
 .vercel
 next-env.d.ts
+*.tsbuildinfo
 /dist/
 /.wrangler/
 /outputs/
 /work/
 /.automation/
 /data/*.json
+*.sqlite
+*.sqlite3
+*.db
+*.log
+/artifacts/
+/tmp/

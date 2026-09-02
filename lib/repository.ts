@@ -1,6 +1,13 @@
 import { env } from 'cloudflare:workers';
 import { previewDashboard, previewReports, previewVolumes } from './fixtures';
-import type { DashboardData, PaperReport, VolumePoint } from './types';
+import { buildHealthSnapshot } from './health';
+import { aggregateWeeklyVolumes } from './volume';
+import type {
+  DashboardData,
+  HealthSnapshot,
+  PaperReport,
+  VolumePoint,
+} from './types';
 import type {
   ReportBatchV1,
   ReportBatchV2,
@@ -195,7 +202,7 @@ export async function loadReportFeed(date?: string) {
     coverage: {
       expectedCount,
       publishedCount,
-      complete: Boolean(run?.expected_count) && expectedCount === publishedCount,
+      complete: Boolean(run) && expectedCount === publishedCount,
     },
     reports,
   };
@@ -254,9 +261,7 @@ export async function loadDashboard(date?: string): Promise<DashboardData> {
       coverage: {
         expectedCount: run?.expected_count || reports.length,
         publishedCount: run?.published_count ?? reports.length,
-        complete:
-          Boolean(run?.expected_count) &&
-          run?.expected_count === run?.published_count,
+        complete: Boolean(run) && run?.expected_count === run?.published_count,
       },
     };
   } catch (error) {
@@ -304,6 +309,71 @@ export async function getIngestState() {
     sourceCursor: run?.source_cursor ?? null,
     latestAnnouncementDate: day?.date ?? null,
   };
+}
+
+export async function getHealthSnapshot(): Promise<HealthSnapshot> {
+  const db = database();
+  if (!db) throw new Error('Database binding unavailable');
+  const checkedAt = new Date().toISOString();
+  const latest = await db
+    .prepare('SELECT MAX(date) AS date FROM announcement_days WHERE status = ?')
+    .bind('announced')
+    .first<{ date: string | null }>();
+  const latestAnnouncementDate = latest?.date ?? null;
+  if (!latestAnnouncementDate) {
+    return buildHealthSnapshot({
+      checkedAt,
+      latestAnnouncementDate: null,
+      latestSuccessfulRunAt: null,
+      expectedCount: 0,
+      publishedCount: 0,
+      databasePublicationCount: 0,
+      hasDailyVolume: false,
+      latestCompleteWeek: null,
+    });
+  }
+
+  const [run, publicationCount, dailyVolume, volumes] = await Promise.all([
+    db
+      .prepare(
+        `SELECT completed_at, expected_count, published_count
+         FROM automation_runs
+         WHERE status = ? AND announcement_date = ?
+         ORDER BY completed_at DESC LIMIT 1`,
+      )
+      .bind('succeeded', latestAnnouncementDate)
+      .first<{
+        completed_at: string;
+        expected_count: number;
+        published_count: number;
+      }>(),
+    db
+      .prepare(
+        `SELECT COUNT(*) AS count FROM report_entries
+         WHERE announcement_date = ? AND entry_kind IN ('new', 'cross_list')`,
+      )
+      .bind(latestAnnouncementDate)
+      .first<{ count: number }>(),
+    db
+      .prepare(
+        'SELECT announcement_date FROM daily_volume WHERE announcement_date = ? LIMIT 1',
+      )
+      .bind(latestAnnouncementDate)
+      .first<{ announcement_date: string }>(),
+    listVolumes('2y'),
+  ]);
+  const latestCompleteWeek = aggregateWeeklyVolumes(volumes).at(-1) ?? null;
+
+  return buildHealthSnapshot({
+    checkedAt,
+    latestAnnouncementDate,
+    latestSuccessfulRunAt: run?.completed_at ?? null,
+    expectedCount: Number(run?.expected_count ?? 0),
+    publishedCount: Number(run?.published_count ?? 0),
+    databasePublicationCount: Number(publicationCount?.count ?? 0),
+    hasDailyVolume: Boolean(dailyVolume),
+    latestCompleteWeek,
+  });
 }
 
 export async function ingestBatch(batch: ReportBatchV1) {

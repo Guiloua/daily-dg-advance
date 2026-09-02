@@ -26,6 +26,25 @@ export interface WeeklyVolumePoint {
   mathGt: number;
 }
 
+export interface HealthSnapshot {
+  status: 'ok' | 'degraded';
+  checkedAt: string;
+  latestAnnouncementDate: string | null;
+  latestSuccessfulRunAt: string | null;
+  coverage: {
+    expectedCount: number;
+    publishedCount: number;
+    databasePublicationCount: number;
+    complete: boolean;
+  };
+  latestCompleteWeek: WeeklyVolumePoint | null;
+  checks: {
+    database: boolean;
+    coverage: boolean;
+    weeklyVolume: boolean;
+  };
+}
+
 export interface PaperReport {
   id: string;
   announcementDate: string;
