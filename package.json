@@ -12,7 +12,7 @@
     "lint": "oxlint",
     "format": "oxfmt",
     "db:generate": "drizzle-kit generate",
-    "test": "tsx tests/validation.test.ts && tsx tests/volume.test.ts && PYTHONPATH=scripts python3 -m unittest discover -s tests -p 'test_*.py'"
+    "test": "tsx tests/validation.test.ts && tsx tests/volume.test.ts && tsx tests/dashboard.test.ts && PYTHONPATH=scripts python3 -m unittest discover -s tests -p 'test_*.py'"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

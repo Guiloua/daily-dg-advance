@@ -34,9 +34,9 @@ function TooltipBody({
   if (!active || !payload?.length) return null;
   const point = payload[0].payload;
   return (
-    <div className="min-w-48 rounded-lg border border-border bg-card p-3 text-xs shadow-xl">
+    <div className="min-w-48 rounded-[4px] border border-border bg-card p-3 text-xs shadow-lg">
       <p className="mb-0.5 font-semibold">
-        {point.weekStart} — {point.weekEnding}
+        {point.weekStart} 至 {point.weekEnding}
       </p>
       <p className="mb-2 text-[10px] text-muted-foreground">截至周五的完整周</p>
       <div className="space-y-1.5">
@@ -78,11 +78,11 @@ export function TrendChart({
   const latest = data.at(-1);
   return (
     <div>
-      <div className="mb-1 flex justify-end text-[10px] text-muted-foreground">
+      <div className="mb-2 flex justify-end text-[10px] text-muted-foreground">
         最新完整周：
-        {latest ? `${latest.weekStart} — ${latest.weekEnding}` : '暂无'}
+        {latest ? `${latest.weekStart} 至 ${latest.weekEnding}` : '暂无'}
       </div>
-      <div className="mb-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="mb-6 grid grid-cols-2 gap-x-5 border-y border-border sm:grid-cols-4 sm:gap-x-6">
         {series.map((item) => (
           <button
             key={item.key}
@@ -94,7 +94,7 @@ export function TrendChart({
                 [item.key]: !current[item.key],
               }))
             }
-            className={`rounded-lg border px-3 py-2.5 text-left transition ${visible[item.key] ? 'border-border bg-background/70' : 'border-transparent bg-muted/50 opacity-55'}`}
+            className={`py-3.5 text-left transition-opacity ${visible[item.key] ? '' : 'opacity-40'}`}
           >
             <div className="flex items-center gap-2 text-[11px] text-muted-foreground">
               <span
@@ -103,7 +103,7 @@ export function TrendChart({
               />
               {item.label}／周
             </div>
-            <p className="mt-1 font-serif text-2xl font-semibold">
+            <p className="mt-1 font-serif text-2xl font-semibold tracking-tight">
               {latest?.[item.key] ?? 0}
             </p>
           </button>
@@ -113,8 +113,8 @@ export function TrendChart({
         config={chartConfig}
         className={
           range === '2y'
-            ? 'h-[430px] w-full aspect-auto'
-            : 'h-[320px] w-full aspect-auto'
+            ? 'h-[410px] w-full aspect-auto'
+            : 'h-[300px] w-full aspect-auto sm:h-[320px]'
         }
       >
         <LineChart

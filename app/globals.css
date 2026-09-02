@@ -48,7 +48,12 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-body { font-family: var(--font-sans-cn), Arial, sans-serif; }
+body {
+  font-family: var(--font-sans-cn), Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.68;
+  text-rendering: optimizeLegibility;
+}
 
 :root {
   --background: oklch(0.976 0.012 85);
@@ -74,7 +79,7 @@ body { font-family: var(--font-sans-cn), Arial, sans-serif; }
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.45rem;
+  --radius: 0.3rem;
   --ink: #292521;
   --burgundy: #7a2e32;
   --teal: #2f6d68;
@@ -143,7 +148,6 @@ body { font-family: var(--font-sans-cn), Arial, sans-serif; }
     background: color-mix(in oklab, var(--card) 94%, transparent);
     box-shadow: 0 16px 44px rgb(74 56 35 / 7%);
   }
-  .paper-card { box-shadow: 0 8px 26px rgb(67 49 31 / 5%); }
   .eyebrow { @apply mb-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary; }
   .status-dot { @apply inline-block size-2 rounded-full bg-emerald-600; box-shadow: 0 0 0 4px rgb(5 150 105 / 10%); }
   .field-label { @apply mb-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-primary; }
