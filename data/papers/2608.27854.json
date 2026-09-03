@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "arxivId": "2608.27854",
+  "slug": "2608.27854",
+  "latest": {
+    "id": "2026-08-31:2608.27854:v1",
+    "announcementDate": "2026-08-31",
+    "arxivId": "2608.27854",
+    "version": 1,
+    "entryKind": "cross_list",
+    "title": "Improved $\\ell_0$-Isoperimetry for Convex Bodies via Mass Transport",
+    "authors": [
+      "Manuel Fernandez"
+    ],
+    "abstract": "We study $\\ell_0$ isoperimetry for a convex body $K\\subset \\mathbb{R}^n$, $n\\ge2$. For a Borel set $S\\subset K$, let $\\partial_0^K S$ be the set of points in $K \\setminus S$ that can be reached from $S$ by changing at most one coordinate (i.e. the $\\ell_0$ boundary of $S$). Suppose that, for some unconditional convex body $Q \\subset \\mathbb{R}^n$, numbers $r,R>0$, and possibly different centers $x_0,y_0$, \\[ x_0+rQ \\subset K\\subset y_0+RQ. \\] Writing $s=\\text{vol}(S)/\\text{vol}(K)$, we prove that whenever $0<s \\le 1/2$, \\[ \\frac{\\text{vol}(\\partial_0^K S)}{\\text{vol}(S)} \\ge \\frac{cr}{nR} \\min\\left\\{1,\\frac{\\log(e/s)}{n}\\right\\}, \\] where $c > 0$ is an absolute constant. Consequently, the associated $\\ell_0$-isoperimetric coefficient is at least $cr/(n^2R)$. Previous direct lower bounds were only known for $\\ell_2$ and $\\ell_\\infty$ regularity whereas our lower bound holds directly for any $Q$-regularity, where $Q$ is an unconditional convex body. Compared to $\\ell_2$ and $\\ell_\\infty$ regularity, our lower bound result improves upon the previously best known lower bounds, for any $s$, by a factor of $n$. As an application of our result, we give improved mixing time bounds for the Coordinate Hit and Run walk (CHAR). Our proof of the lower bound is based on a modification of the method of canonical paths applied to a continuous Hamming graph over our convex body. Our construction of canonical paths can be viewed as a suitable coordinate discretization of certain mass transport maps from $S$ to $S^c$. We also give complementary upper-bounds for any $Q$-regularity, with an overall factor of $n$ gap between the two.",
+    "categories": [
+      "math.FA",
+      "cs.CG",
+      "math.MG",
+      "math.ST"
+    ],
+    "primaryCategory": "math.FA",
+    "arxivUrl": "https://arxiv.org/abs/2608.27854",
+    "pdfUrl": "https://arxiv.org/pdf/2608.27854",
+    "submittedAt": "2026-08-28T02:58:16Z",
+    "updatedAt": "2026-08-28T02:58:16Z",
+    "topic": "度量测度几何、极限与奇异空间",
+    "progressType": "等周下界改进与采样应用",
+    "workSummary": "对夹在两个可能不同中心的无条件凸体 Q 拷贝之间的凸体 K，证明坐标改变意义下的 ℓ0 边界扩张下界，并包含小集合的对数增益；由此改进 Coordinate Hit and Run 的混合时间控制。",
+    "techniques": [
+      "质量运输的坐标离散化",
+      "连续 Hamming 图",
+      "规范路径与多商品流",
+      "小集合扩张及导通率"
+    ],
+    "breakthrough": "直接覆盖任意无条件 Q 的正则性，相比对应 Euclidean/立方体基准下界改进一个 n 因子；把运输结构转化成坐标局部移动的边界控制。",
+    "limitations": "上下界仍有 n 因子缺口，作者也将进一步改进列为猜想。ℓ0 边界依赖坐标方向，任意仿射变换不保持该量；采样结论需区分初始化和正则性假设。",
+    "analysisDepth": "full_text_sections",
+    "aiStatus": "no_disclosure_observed",
+    "aiEvidence": null,
+    "aiEvidenceSource": null,
+    "priorityScore": 79,
+    "priorityTier": "high",
+    "priorityReason": "质量运输与凸几何方法可复用，并产生定量算法收益；但尚未达最优阶，且坐标依赖限制几何不变性，排在完整结构性解决之后。",
+    "lowPriorityReason": null,
+    "revisionSummary": null
+  },
+  "history": [
+    {
+      "announcementDate": "2026-08-31",
+      "report": {
+        "id": "2026-08-31:2608.27854:v1",
+        "announcementDate": "2026-08-31",
+        "arxivId": "2608.27854",
+        "version": 1,
+        "entryKind": "cross_list",
+        "title": "Improved $\\ell_0$-Isoperimetry for Convex Bodies via Mass Transport",
+        "authors": [
+          "Manuel Fernandez"
+        ],
+        "abstract": "We study $\\ell_0$ isoperimetry for a convex body $K\\subset \\mathbb{R}^n$, $n\\ge2$. For a Borel set $S\\subset K$, let $\\partial_0^K S$ be the set of points in $K \\setminus S$ that can be reached from $S$ by changing at most one coordinate (i.e. the $\\ell_0$ boundary of $S$). Suppose that, for some unconditional convex body $Q \\subset \\mathbb{R}^n$, numbers $r,R>0$, and possibly different centers $x_0,y_0$, \\[ x_0+rQ \\subset K\\subset y_0+RQ. \\] Writing $s=\\text{vol}(S)/\\text{vol}(K)$, we prove that whenever $0<s \\le 1/2$, \\[ \\frac{\\text{vol}(\\partial_0^K S)}{\\text{vol}(S)} \\ge \\frac{cr}{nR} \\min\\left\\{1,\\frac{\\log(e/s)}{n}\\right\\}, \\] where $c > 0$ is an absolute constant. Consequently, the associated $\\ell_0$-isoperimetric coefficient is at least $cr/(n^2R)$. Previous direct lower bounds were only known for $\\ell_2$ and $\\ell_\\infty$ regularity whereas our lower bound holds directly for any $Q$-regularity, where $Q$ is an unconditional convex body. Compared to $\\ell_2$ and $\\ell_\\infty$ regularity, our lower bound result improves upon the previously best known lower bounds, for any $s$, by a factor of $n$. As an application of our result, we give improved mixing time bounds for the Coordinate Hit and Run walk (CHAR). Our proof of the lower bound is based on a modification of the method of canonical paths applied to a continuous Hamming graph over our convex body. Our construction of canonical paths can be viewed as a suitable coordinate discretization of certain mass transport maps from $S$ to $S^c$. We also give complementary upper-bounds for any $Q$-regularity, with an overall factor of $n$ gap between the two.",
+        "categories": [
+          "math.FA",
+          "cs.CG",
+          "math.MG",
+          "math.ST"
+        ],
+        "primaryCategory": "math.FA",
+        "arxivUrl": "https://arxiv.org/abs/2608.27854",
+        "pdfUrl": "https://arxiv.org/pdf/2608.27854",
+        "submittedAt": "2026-08-28T02:58:16Z",
+        "updatedAt": "2026-08-28T02:58:16Z",
+        "topic": "度量测度几何、极限与奇异空间",
+        "progressType": "等周下界改进与采样应用",
+        "workSummary": "对夹在两个可能不同中心的无条件凸体 Q 拷贝之间的凸体 K，证明坐标改变意义下的 ℓ0 边界扩张下界，并包含小集合的对数增益；由此改进 Coordinate Hit and Run 的混合时间控制。",
+        "techniques": [
+          "质量运输的坐标离散化",
+          "连续 Hamming 图",
+          "规范路径与多商品流",
+          "小集合扩张及导通率"
+        ],
+        "breakthrough": "直接覆盖任意无条件 Q 的正则性，相比对应 Euclidean/立方体基准下界改进一个 n 因子；把运输结构转化成坐标局部移动的边界控制。",
+        "limitations": "上下界仍有 n 因子缺口，作者也将进一步改进列为猜想。ℓ0 边界依赖坐标方向，任意仿射变换不保持该量；采样结论需区分初始化和正则性假设。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "priorityScore": 79,
+        "priorityTier": "high",
+        "priorityReason": "质量运输与凸几何方法可复用，并产生定量算法收益；但尚未达最优阶，且坐标依赖限制几何不变性，排在完整结构性解决之后。",
+        "lowPriorityReason": null,
+        "revisionSummary": null
+      }
+    }
+  ]
+}

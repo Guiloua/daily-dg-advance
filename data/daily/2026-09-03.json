@@ -1,0 +1,1248 @@
+{
+  "schemaVersion": 1,
+  "announcementDate": "2026-09-03",
+  "lastUpdated": "2026-09-03T06:41:58.394523+00:00",
+  "coverage": {
+    "expectedCount": 30,
+    "publishedCount": 30,
+    "complete": true
+  },
+  "aiDisclosureCount": 6,
+  "overview": {
+    "paperCount": 30,
+    "mainProgress": [
+      "本期共收录 30 篇，研究重心集中在度量测度几何、极限与奇异空间（6 篇）、几何分析、几何 PDE 与几何流（6 篇）、几何拓扑、低维流形与结（6 篇）。",
+      "技术路径以杯积与二阶障碍、闭合非平面曲线、边界凸性估计、变分与 Obata 型刚性为主；进展形态主要是变形理论/障碍消除（1 篇）、部分解决/猜想证据（1 篇）。"
+    ],
+    "breakthroughPoints": [
+      {
+        "arxivId": "2609.02581",
+        "title": "Interior Curvature Estimates for the Graphical Scalar Curvature Equation in All Dimensions",
+        "summary": "用几何距离替代同底点竖直差，克服切空间与法向不匹配，使高维无额外半凸性假设的定量 C2 估计成为可能。"
+      },
+      {
+        "arxivId": "2609.02878",
+        "title": "Finite-Time Singularities of the Kähler--Ricci Flow on Fano Bundles",
+        "summary": "把部分标量/局部控制推进到相对复维一的全曲率与圆柱切向流分类，支持解析极小模型纲领的塌缩图景。"
+      },
+      {
+        "arxivId": "2609.02788",
+        "title": "Quantized Einstein Metrics on $S^7$ with $SU(3)$-Symmetry",
+        "summary": "利用小尺度振荡使闭合误差反复换号，得到连续尺度比趋向 exp(-2π/√15) 的序列，并控制两端泡和曲率增长。"
+      }
+    ],
+    "cautions": [
+      "其中 18 篇仅完成摘要级分析；技术细节、定理假设和适用范围需回查正文。",
+      "《Interior Curvature Estimates for the Graphical Scalar Curvature Equation in All Dimensions》：本轮核对的是光滑图形、常右端方程与 C1 先验控制；非恒定右端或一般弱解推广不应自动推断。关键两点估计仍待独立审查。",
+      "《Finite-Time Singularities of the Kähler--Ricci Flow on Fano Bundles》：需极限类由基底 Kähler 类拉回且保留局部平凡性；高相对维的 Type-I 与一般变化 Fano 纤维仍属猜想，圆柱唯一性忽略热测度标记。"
+    ]
+  },
+  "reports": [
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02581",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "Interior Curvature Estimates for the Graphical Scalar Curvature Equation in All Dimensions",
+      "authors": [
+        "Guohuan Qiu",
+        "Jin Yan"
+      ],
+      "abstract": "We resolve the long-standing problem of establishing interior \\(C^2\\) estimates for admissible solutions of the graphical scalar curvature equation in every dimension \\(n\\ge 3\\). More precisely, we prove interior curvature estimates for admissible solutions to the constant graphical scalar curvature equation. The proof combines Jacobi inequalities with a two-surface maximum principle and a two-surface Pogorelov estimate.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "arxivUrl": "https://arxiv.org/abs/2609.02581",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02581",
+      "submittedAt": "2026-09-02T13:25:01Z",
+      "updatedAt": "2026-09-02T13:25:01Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "正则性突破",
+      "workSummary": "对任意 n≥3、完整 Γ2 可容许分支上的常图形标量曲率方程，建立仅依赖维数及高度/斜率界的内部曲率估计。",
+      "techniques": [
+        "两曲面距离比较",
+        "Jacobi 型不等式",
+        "两点 Pogorelov 估计"
+      ],
+      "breakthrough": "用几何距离替代同底点竖直差，克服切空间与法向不匹配，使高维无额外半凸性假设的定量 C2 估计成为可能。",
+      "limitations": "本轮核对的是光滑图形、常右端方程与 C1 先验控制；非恒定右端或一般弱解推广不应自动推断。关键两点估计仍待独立审查。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露在统一分离和两曲面 Pogorelov 论证发展中使用 ChatGPT 测试比较/截断函数、试算并寻找候选不等式反例；最终论证经作者检查与重写。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02581v1 — Declaration on the use of artificial intelligence",
+      "priorityScore": 92,
+      "priorityTier": "high",
+      "priorityReason": "针对长期核心估计问题给出跨维数结果，方法可能影响更多全非线性几何 PDE；已核对主定理、障碍分析与证明终结。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02581:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02878",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Finite-Time Singularities of the Kähler--Ricci Flow on Fano Bundles",
+      "authors": [
+        "Wangjian Jian",
+        "Jian Song"
+      ],
+      "abstract": "We study collapsing finite-time singularities of the unnormalized Kähler--Ricci flow on Fano bundles arising in the analytic minimal model program. For a Fano bundle $X^n\\rightarrow Y^m$, we prove a maximal splitting theorem by the Kähler-Ricci flow that every tangent space at a fixed limiting point splits globally as \\((\\C^m,g_{\\rm E},J_0)\\times(Z',d',J')\\). If the fibre has complex dimension one, we prove a global Type-I bound for the full curvature tensor and show that the ambient and intrinsic diameters of every fibre are uniformly comparable to \\(\\sqrt{T-t}\\). Furthermore, every tangent flow at any fixed limiting point is the round shrinking cylinder \\(\\C^m\\times\\PP^1\\).",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02878",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02878",
+      "submittedAt": "2026-09-02T17:56:22Z",
+      "updatedAt": "2026-09-02T17:56:22Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "奇点结构/Type-I 定理",
+      "workSummary": "对射影流形间的 Fano 丛证明固定极限点处切向流模型全局分裂出全部复基底方向；P1 丛情形进一步获得整体 Type-I 全曲率界和精确纤维直径收缩率。",
+      "techniques": [
+        "加权漂移谱隙与全纯分裂",
+        "重标度基底坐标",
+        "固定纤维捕获与双尺度反证"
+      ],
+      "breakthrough": "把部分标量/局部控制推进到相对复维一的全曲率与圆柱切向流分类，支持解析极小模型纲领的塌缩图景。",
+      "limitations": "需极限类由基底 Kähler 类拉回且保留局部平凡性；高相对维的 Type-I 与一般变化 Fano 纤维仍属猜想，圆柱唯一性忽略热测度标记。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在致谢中明确说明 GPT-5.6-sol 协助第 3 节的发展与表述，并提示了 He–Ou 的工作；本文证明不依赖该被提示结果。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02878v1 — Acknowledgements",
+      "priorityScore": 91,
+      "priorityTier": "high",
+      "priorityReason": "Kähler–Ricci 流有限时塌缩的核心进展，基底维数不受二复维限制；已核对主定理、技术路线、结论边界与披露。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02878:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02788",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Quantized Einstein Metrics on $S^7$ with $SU(3)$-Symmetry",
+      "authors": [
+        "Anna Siffert"
+      ],
+      "abstract": "We prove that the standard cohomogeneity-one action of \\(SU(3)\\) on \\(S^7\\), with principal orbit the Wallach flag manifold \\(SU(3)/T^2\\), admits infinitely many invariant Einstein metrics. The proof uses a detection approach to the Einstein boundary-value problem. Starting from one singular orbit, we follow the Einstein solutions only to a canonical hypersurface and measure there how far they are from closing smoothly. When the singular-orbit scale becomes small, this closing problem is governed by a Ricci-flat limiting solution. The linearisattion about its limiting cone has an oscillatory mode. As the scale shrinks, this oscillation repeatedly changes the sign of the closing error, producing infinitely many parameter values for which the metric closes. The closing scales satisfy an asymptotic logarithmic quantization law, with successive ratio tending to \\(e^{-2π/\\sqrt{15}}\\). We also determine the geometry of the resulting sequence. Away from the two singular orbits the metrics converge to the singular sine cone over the non-normal Einstein metric on \\(SU(3)/T^2\\), while after rescaling by the square of the singular-orbit scale at either end they converge to the same complete Ricci-flat threshold metric. Their curvature is of order \\(b_n^{-2}\\), so the logarithmic phase law induces a corresponding quantization of the focal curvature scale.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02788",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02788",
+      "submittedAt": "2026-09-02T16:21:43Z",
+      "updatedAt": "2026-09-02T16:21:43Z",
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "新构造/渐近量化",
+      "workSummary": "在 S7 的标准余齐性一 SU(3) 作用内构造无穷多个两两不等距 Einstein 度量，并刻画奇轨道尺度的对数量化与泡极限。",
+      "techniques": [
+        "奇异 Einstein 常微分方程",
+        "二维闭合检测器",
+        "Ricci-flat 锥的振荡线性模"
+      ],
+      "breakthrough": "利用小尺度振荡使闭合误差反复换号，得到连续尺度比趋向 exp(-2π/√15) 的序列，并控制两端泡和曲率增长。",
+      "limitations": "限定在固定对称作用与特定边值分支，不是 S7 上所有 Einstein 度量分类；相位传输与非零振幅估计需独立复核。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露使用 OpenAI ChatGPT 协助表述、组织、制图、校对及论证呈现与检查建议，并称独立核验了这些贡献。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02788v1 — Acknowledgements",
+      "priorityScore": 87,
+      "priorityTier": "high",
+      "priorityReason": "同一对称类中的无穷多重性连同精细退化几何都具突出价值；已核对主定理、检测机制与尺度结论。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02788:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02384",
+      "version": 1,
+      "entryKind": "new",
+      "title": "The truncated octahedron minimizes surface area among parallelohedra of equal volume",
+      "authors": [
+        "Annalisa Cesaroni",
+        "Matteo Novaga"
+      ],
+      "abstract": "We prove that the regular truncated octahedron uniquely minimizes surface area among all parallelohedra of fixed volume. Equivalently, every three-dimensional parallelohedron $P$ satisfies \\[ \\frac{\\mathcal H^2(\\partial P)}{|P|^{2/3}} \\ge \\frac{3(1+2\\sqrt3)}{4^{2/3}}, \\] with equality if and only if $P$ is similar to the regular truncated octahedron. Among the non-truncated Fedorov types we prove a stronger sharp bound, attained uniquely by the regular rhombic dodecahedron.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02384",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02384",
+      "submittedAt": "2026-09-02T09:58:50Z",
+      "updatedAt": "2026-09-02T09:58:50Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "解决猜想",
+      "workSummary": "证明固定体积的所有三维 parallelohedra 中，正截角八面体唯一最小化表面积；其余 Fedorov 类型中正菱形十二面体给出更强尖锐界。",
+      "techniques": [
+        "Selling 参数与 K4 zonotope",
+        "行列式概率与杠杆分数",
+        "Ball–Barthe 型熵不等式"
+      ],
+      "breakthrough": "将 BCC 局部极小推进为全局结论，并通过仿射度量自由度的行列式控制覆盖非 Voronoi 的一般 parallelohedra。",
+      "limitations": "不覆盖任意周期等体积分割，因而不是 Kelvin 问题的解；需独立核查尖锐代数不等式及等号链。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确说明使用 ChatGPT (GPT-5.6 Sol) 检查代数恒等式，并协助探索和验证证明论证。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02384v1 — Introduction, AI disclosure",
+      "priorityScore": 86,
+      "priorityTier": "high",
+      "priorityReason": "解决清楚的经典几何优化问题，技术衔接凸几何、图行列式与熵，且已核对定理与证明架构。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02384:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02267",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Locally Conformally Flat Manifolds with Positive Scalar Curvature: Kleinian Groups, Moduli Spaces, and Euclidean Rigidity",
+      "authors": [
+        "Jialong Deng"
+      ],
+      "abstract": "We study locally conformally flat (LCF) Riemannian manifolds with nonnegative or positive scalar curvature (PSC), using the conformal boundary of the developing image. For closed oriented LCF $n$-manifolds with PSC and infinite fundamental group, $n\\ge5$, we bound the macroscopic dimension of their Riemannian universal covers by $\\lfloor(n-1)/2\\rfloor$, establish the existence of a nontrivial homotopy group above the middle dimension, and, under mild additional hypotheses, bound the Hausdorff dimension of the limit sets of their Kleinian groups in the interval $(1,(n-2)/2)$. In particular, no closed aspherical manifold admits an LCF metric with PSC. If the scalar curvature is at least $n(n-1)$ and the manifold is not isometric to the round sphere, then every smooth nonzero-degree map to the sphere expands somewhere when its Kleinian group is elementary, while the developing map expands somewhere whenever the fundamental group is infinite. We prove that the space of LCF metrics with PSC and its moduli space are contractible in dimension three for finite fundamental group and for $S^2\\times S^1$, and that the moduli space is empty or contractible for smooth manifolds homeomorphic to spherical space forms but not diffeomorphic to $S^n$ in dimensions $n\\ge4$. For complete open simply connected LCF manifolds of nonnegative scalar curvature, we obtain Euclidean rigidity under additional topological hypotheses at infinity (and, in dimension three, from vanishing second homology alone). We also show that, in dimensions $n\\ge4$, the Euclidean conclusion can fail when neither of the two additional topological hypotheses is assumed: we construct complete contractible examples of PSC that are not homeomorphic to $\\mathbb{R}^n$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02267",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02267",
+      "submittedAt": "2026-09-02T08:15:37Z",
+      "updatedAt": "2026-09-02T08:15:37Z",
+      "topic": "曲率与比较几何",
+      "progressType": "新框架/刚性与反例",
+      "workSummary": "用展开像的共形边界研究局部共形平坦正标量曲率流形，获得宏观维数、Kleinian 极限集、部分模空间可缩性和非紧欧氏拓扑刚性。",
+      "techniques": [
+        "展开映射与 Kleinian 群",
+        "形状理论",
+        "Bessel 容量与共形势"
+      ],
+      "breakthrough": "在 LCF 类中推进宏观维数问题，并构造高维完备可缩、正标量曲率但非欧氏拓扑的流形，揭示无穷远假设的必要性。",
+      "limitations": "各结论有不同维数、基本群和无穷远条件；欧氏结论主要为同胚刚性而非度量平直。长篇构造尚需领域独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露：定理 F 的证明结构由作者提出，ChatGPT-5.6 Sol 协助展开细节并进行表达、校对与排版；作者承担全部数学责任。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02267v1 — Disclosure on AI assistance",
+      "priorityScore": 84,
+      "priorityTier": "high",
+      "priorityReason": "把标量曲率、粗几何与无穷远拓扑连接起来，问题覆盖广且含反例；已读主定理、证明路线及披露。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02267:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02430",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Mixed Radial Volume Comparison under Spectral Ricci Bounds",
+      "authors": [
+        "Han Hong",
+        "Gaoming Wang"
+      ],
+      "abstract": "Let $(M^n,g)$ be complete, let $u>0$, and assume $\\operatorname{Ric}_g-α\\frac{Δ_g u}{u}g\\ge (n-1)κg$. We introduce mixed radial balls associated with the conformal metric $u^{2α}g$. For these mixed radial balls, we obtain a space-form-sharp model comparison and polynomial weighted volume growth without pointwise bounds on $u$. As applications, we give a radial derivation of the spectral Bonnet--Myers and sharp volume theorem of Antonelli--Xu, and a short volume growth derivation of the stable Bernstein theorem in $\\mathbb{R}^4$.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02430",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02430",
+      "submittedAt": "2026-09-02T10:50:01Z",
+      "updatedAt": "2026-09-02T10:50:01Z",
+      "topic": "曲率与比较几何",
+      "progressType": "新比较框架",
+      "workSummary": "在含正函数谱项的 Ricci 下界下引入混合径向球，建立空间形式尖锐比较和参数范围内的加权多项式体积增长。",
+      "techniques": [
+        "共形加权测地线",
+        "径向 Jacobian 的 Riccati 公式",
+        "耦合对数导数单调性"
+      ],
+      "breakthrough": "用统一径向机制重获谱 Bonnet–Myers/体积定理，并给出 R4 中稳定 Bernstein 定理的体积增长证明。",
+      "limitations": "混合径向域通常不是原度量球；比较与增长分别受 α、p、σ 范围约束，不能泛化为任意谱参数。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 5.5 与 5.6 协助部分计算；研究方向、加权测地线与混合径向球框架由作者提出，计算已由作者独立核查。",
+      "aiEvidenceSource": "https://arxiv.org/html/2609.02430v1 — Use of AI",
+      "priorityScore": 82,
+      "priorityTier": "high",
+      "priorityReason": "加权径向技术可复用于谱曲率与极小超曲面问题；正文明确区分新局部工具和既有定理的新证明。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02430:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.01819",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Asymptotic dimension of 3-dimensional CAT(0) manifolds",
+      "authors": [
+        "Panos Papasoglu",
+        "Eric Swenson"
+      ],
+      "abstract": "We prove that every $3$-manifold equipped with a proper metric admitting a convex geodesic bicombing has Assouad--Nagata dimension at most $3$. In particular, every proper CAT$(0)$ $3$-manifold has Assouad--Nagata dimension at most $3$. As a corollary one obtains that the isoperimetric gap theorem of Lang-Stadler-Urech (\\cite{LSU}) and Peteranderl\\cite{Pet}, generalizes from 3-dimensional Hadamard manifolds to 3-dimensional CAT(0) manifolds.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "arxivUrl": "https://arxiv.org/abs/2609.01819",
+      "pdfUrl": "https://arxiv.org/pdf/2609.01819",
+      "submittedAt": "2026-09-01T19:48:07Z",
+      "updatedAt": "2026-09-01T19:48:07Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "推广/加强",
+      "workSummary": "证明带 proper 度量且存在凸测地双梳的三维流形，其 Assouad–Nagata 维数至多为三；特别覆盖 proper CAT(0) 三流形。",
+      "techniques": [
+        "凸测地双梳",
+        "度量球面与环带覆盖",
+        "Hurewicz 型覆盖论证"
+      ],
+      "breakthrough": "去掉光滑 Hadamard 假设；与既有填充定理结合，为渐近秩至多二的 CAT(0) 三流形得到线性高维填充不等式。",
+      "limitations": "核心使用三维流形和球面的分离性质，不是所有三维 CAT(0) 复形或任意维数的结论；线性填充还需要渐近秩条件。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 80,
+      "priorityTier": "high",
+      "priorityReason": "非光滑粗几何的重要扩展，证明的球面—环带覆盖机制具有复用价值；已核对主定理与证明纲要。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.01819:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02699",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Gauge theory and symplectic structures",
+      "authors": [
+        "Partha Ghosh"
+      ],
+      "abstract": "Motivated by the problem of finding obstructions to the existence of symplectic structures in dimensions higher than four, we introduce an elliptic system of equations on almost Hermitian manifolds that reduces to the Seiberg--Witten equations with Taubes' perturbation in dimension four. To define the equations, one needs to choose a spin$^{\\mathbb C}$ structure on the manifold. We prove that the system has index zero for the canonical spin$^{\\mathbb C}$ structure. Moreover, on almost Kähler (symplectic) manifolds, we construct a canonical solution and prove its transversality with large values of the perturbation parameter, while in dimension six we obtain uniqueness of the canonical solution under a certain assumption. We also show that on Kähler manifolds the equations reduce, under a natural ansatz, to the vortex equations. These results provide evidence toward a possible higher dimensional gauge theory capable of producing invariants of almost complex structures and ultimately, obstructions to compatible symplectic forms.",
+      "categories": [
+        "math.DG",
+        "math.SG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02699",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02699",
+      "submittedAt": "2026-09-02T15:05:07Z",
+      "updatedAt": "2026-09-02T15:05:07Z",
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "新方程/研究框架",
+      "workSummary": "提出高偶数维几乎 Hermitian 流形上的规范椭圆系统，在四维还原带 Taubes 扰动的 Seiberg–Witten 方程；典范 spinC 结构下指标为零。",
+      "techniques": [
+        "Dirac–曲率耦合系统",
+        "Weitzenböck 公式",
+        "大扰动横截性"
+      ],
+      "breakthrough": "构造几乎 Kähler 情形的典范解并证明大参数横截性，为高维辛结构障碍计划提供可操作的方程基础。",
+      "limitations": "尚未建立所需整体紧性或计数不变量；六维唯一性还要求额外三形式 β=0，不能称已得到高维辛障碍。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 79,
+      "priorityTier": "high",
+      "priorityReason": "提供新的高维规范论入口，潜在影响大但计划尚未闭合；已核对指标、横截性、条件唯一性及作者列出的障碍。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02699:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02065",
+      "version": 1,
+      "entryKind": "new",
+      "title": "From Bowditch question to Goldman conjecture for type-preserving representations",
+      "authors": [
+        "Viraj Joshi",
+        "Inyoung Ryu"
+      ],
+      "abstract": "For punctured surfaces $Σ_{g,p}$ of genus $g\\geqslant 2$, we explore the dynamics of the mapping class group action on the relative $\\mathrm{PSL}(2,\\mathbb{R})$-character varieties of type-preserving representations. For such relative character varieties, Goldman's conjecture predicts that the mapping class group acts ergodically on their non-Teichmüller components. A related question of Bowditch asks whether every non-elementary type-preserving representation that is non-Fuchsian sends some non-peripheral simple closed curve to a non-hyperbolic element. We show that, on the components of the relative character variety indexed by fixed signs of images of peripheral elements and relative Euler classes non-extremal in the generalized Milnor-Wood inequality, an affirmative answer to Bowditch's question implies Goldman's conjecture.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.02065",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02065",
+      "submittedAt": "2026-09-02T03:44:56Z",
+      "updatedAt": "2026-09-02T03:44:56Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "条件性归约",
+      "workSummary": "在带穿孔且属至少二的曲面上，证明某些保型 PSL(2,R) 相对特征簇分量中，Bowditch 问题的肯定回答推出 Goldman 遍历性猜想。",
+      "techniques": [
+        "相对特征簇",
+        "映射类群动力系统",
+        "非极端相对 Euler 类"
+      ],
+      "breakthrough": "在固定周边符号与广义 Milnor–Wood 非极端区间内建立两个核心问题之间的逻辑桥梁。",
+      "limitations": "这是条件蕴含，并未无条件证明 Bowditch 问题或全部 Goldman 猜想；分量与属数限制不可省略。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 73,
+      "priorityTier": "medium",
+      "priorityReason": "围绕核心猜想给出有用归约，可能指导下一步证明；因仍依赖未解决前提，排在本期无条件突破之后。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02065:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02710",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Asymptotic mean value Laplacian on equiregular sub-Riemannian manifolds",
+      "authors": [
+        "Fabrice Baudoin",
+        "Jonathan Junné",
+        "David Tewodrose"
+      ],
+      "abstract": "Let $(M,\\mathcal{D},g)$ be a smooth equiregular sub-Riemannian manifold equipped with a smooth positive measure $μ$. We study the small-scale limit of the metric-ball mean-value operator \\[ A_hf(x)=\\frac{1}{h^{2}μ(B(x,h)) }\\int_{B(x,h)}(f(q)-f(x))\\, dμ(q). \\] Exact homogeneity yields the pointwise limit on Carnot groups. On a general equiregular manifold, convergence for every smooth test function is equivalent to convergence of the rescaled horizontal first moments of metric balls in first-kind privileged coordinates. This criterion is independent of $μ$; when it holds, the principal symbol is determined by the normalized second-moment tensor of the tangent unit ball, and the drift satisfies an explicit change-of-measure formula. In step at most two, we verify the criterion by combining a real-analytic finite-jet reduction with tame integration, which rules out oscillation of the normalized moments. We also compute the limit on Lie groups and prove unconditional distributional convergence of the volume-weighted operators on every equiregular manifold.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02710",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02710",
+      "submittedAt": "2026-09-02T15:14:02Z",
+      "updatedAt": "2026-09-02T15:14:02Z",
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "算子极限/判据",
+      "workSummary": "刻画等正则亚黎曼流形度量球均值算子的点态小尺度极限：一般情形等价于重标度水平一阶矩收敛，步数至多二时验证该条件。",
+      "techniques": [
+        "切向 Carnot 球矩",
+        "实解析有限 jet 化简",
+        "tame 积分与分布收敛"
+      ],
+      "breakthrough": "把极限存在与几何球矩明确对应，并给出主符号、换测度漂移公式以及任意等正则情形的加权分布收敛。",
+      "limitations": "高步数流形的无条件点态收敛仍未由摘要保证；分布收敛与点态结论不能混同。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 73,
+      "priorityTier": "medium",
+      "priorityReason": "亚黎曼分析的可复用结构判据，同时明确高步数障碍；技术价值高，读者应先区分两类收敛。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02710:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02848",
+      "version": 1,
+      "entryKind": "new",
+      "title": "The universal moduli space of non-degenerate $\\mathbb{Z}/2\\mathbb{Z}$ harmonic spinors",
+      "authors": [
+        "Siqi He",
+        "Gregory J. Parker",
+        "Thomas Walpuski"
+      ],
+      "abstract": "This article equips the universal moduli spaces of non-degenerate $\\mathbb{Z}/2\\mathbb{Z}$ harmonic spinors with the structure of a tame Fréchet manifold and proves that the projection map to the parameter space is uniformly Fredholm. This recovers earlier work of Donaldson, Parker, and Takahashi in a unified framework.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02848",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02848",
+      "submittedAt": "2026-09-02T17:33:35Z",
+      "updatedAt": "2026-09-02T17:33:35Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "统一分析框架",
+      "workSummary": "在三维、秩四 Dirac 丛的基本情形，为非退化 Z/2 调和旋子的射影通用模空间构造 tame Fréchet 结构，证明参数投影一致 Fredholm 且指标为 −1，并发展相关变体。",
+      "techniques": [
+        "分歧 Dirac 算子的椭圆留数条件",
+        "Nash–Moser 次浸定理",
+        "一致 Fredholm 与横截基变换"
+      ],
+      "breakthrough": "在统一接口下恢复 Donaldson、Parker 与 Takahashi 的相关结果，为参数依赖与模空间研究提供基础。",
+      "limitations": "非退化要求光滑分歧子流形和旋子恰按距离的 1/2 次消失；三维秩四的余维一结论不能无条件推广到退化层或任意秩。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 73,
+      "priorityTier": "medium",
+      "priorityReason": "为规范几何奇异模空间提供可复用的参数变形接口；已核对基本维数/秩假设与 Nash–Moser 路线，仍不等同于完整紧化理论。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02848:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.01830",
+      "version": 1,
+      "entryKind": "new",
+      "title": "The bounded area class of negatively curved surfaces",
+      "authors": [
+        "Roberto Frigerio",
+        "Ervin Hadziosmanovic"
+      ],
+      "abstract": "Let $S$ be an oriented surface, possibly of infinite type, endowed with a complete Riemannian metric with pinched negative curvature. We prove that the area form defines a non-trivial class in the second bounded cohomology group of $S$, unless $S$ is diffeomorphic to the disc or the cylinder. This is in sharp contrast with the $n$-dimensional case, $n>2$, where the non-triviality of the volume form in bounded cohomology is related to the Cheeger constant of the manifold. We also discuss how the bounded area class depends on the metric: we prove that, for compact surfaces, it recognizes constant curvature metrics among pinched negatively curved ones, while, even in the case of surfaces of infinite type, it does not distinguish non-isometric hyperbolic structures. More precisely, when $S$ is compact we show that, among the negatively curved structures of fixed area, the ones with constant curvature provide the unique minimizers for the norm of the bounded area class.",
+      "categories": [
+        "math.GT",
+        "math.AG",
+        "math.DG"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.01830",
+      "pdfUrl": "https://arxiv.org/pdf/2609.01830",
+      "submittedAt": "2026-09-01T20:04:46Z",
+      "updatedAt": "2026-09-01T20:04:46Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "新刻画",
+      "workSummary": "证明除圆盘与圆柱外，完备夹挤负曲率曲面的面积形式给出非零二阶有界上同调类；并研究该类随度量的变化。",
+      "techniques": [
+        "有界上同调",
+        "负曲率曲面的面积类",
+        "固定面积下的范数极小化"
+      ],
+      "breakthrough": "紧曲面中常曲率度量恰为该范数的唯一极小者，而无限型曲面的不同双曲结构也可能无法被此类区分。",
+      "limitations": "非零性要求完备及夹挤负曲率；识别常曲率的极小化结论限定在紧致、固定面积情形。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 72,
+      "priorityTier": "medium",
+      "priorityReason": "连接曲率与拓扑不变量，且同时给出刚性和识别能力的边界；对曲面与有界上同调方向直接相关。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.01830:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02284",
+      "version": 1,
+      "entryKind": "new",
+      "title": "The trapezoid comparison inequality in metric spaces with curvature bounded above",
+      "authors": [
+        "Christof Schötz"
+      ],
+      "abstract": "Among four points of a CAT(0) space, the planar symmetric trapezoids are configurations on which Ptolemy's and Reshetnyak's inequalities are both equalities. We show that the symmetric trapezoids remain extremal for the entire family of inequalities interpolating between the two, indexed by the nondecreasing convex functions with concave derivative, and that this function class is characterized by this property. The result is qualitatively stronger than the known quadruple inequalities for this class of functions, and recovers them with their optimal constants, which were previously known only for power functions. Moreover, we extend the analysis to CAT($κ$) spaces with $κ>0$. We derive variants of Reshetnyak's quadrilateral comparison and of Ptolemy's inequality under positive upper curvature bounds, each with the optimal constant. These two inequalities yield the trapezoid comparison inequality in CAT($κ$) spaces, where the product of the bases carries an additional constant factor compared to the $κ=0$ case. Again the constant is optimal.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02284",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02284",
+      "submittedAt": "2026-09-02T08:33:13Z",
+      "updatedAt": "2026-09-02T08:33:13Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "尖锐比较不等式",
+      "workSummary": "证明 CAT(0) 空间中对称梯形对连接 Ptolemy 与 Reshetnyak 的一族四点不等式保持极值性，并由此刻画相应函数类。",
+      "techniques": [
+        "CAT(κ) 四点比较",
+        "凸函数与凹导数",
+        "最优常数"
+      ],
+      "breakthrough": "恢复此前只对幂函数掌握的最优常数，并把比较扩展到正上曲率 CAT(κ) 情形。",
+      "limitations": "函数类、正曲率下的距离范围与附加因子必须保留；摘要不足以直接套用到任意四点或函数。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 72,
+      "priorityTier": "medium",
+      "priorityReason": "非光滑比较几何中可复用的尖锐工具，适用于四点型估计；普遍性强于单个例子，但需核对适用区间。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02284:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02808",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Minimizers of Laplace eigenvalues under a lower curvature bound",
+      "authors": [
+        "Aditya Tiwari"
+      ],
+      "abstract": "We prove a sharp comparison, with Obata-type rigidity, for all Neumann eigenvalues of one-dimensional $\\mathrm{CD}(1,2)$ spaces against the Legendre model, under a convexity condition on the density. It follows that minimizers of the $k$-th Laplace eigenvalue among closed surfaces of Gaussian curvature at least $1$ cannot collapse in the measured Gromov-Hausdorff completion, for every $k\\ge2$. We also give a variational proof that smooth minimizers are round.",
+      "categories": [
+        "math.DG",
+        "math.SP"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02808",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02808",
+      "submittedAt": "2026-09-02T16:49:50Z",
+      "updatedAt": "2026-09-02T16:49:50Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "谱极值/非塌缩",
+      "workSummary": "在密度满足凸性条件的一维 CD(1,2) 空间中，与 Legendre 模型比较所有 Neumann 特征值，并推出曲率至少一的闭曲面第 k≥2 个特征值极小者不塌缩。",
+      "techniques": [
+        "CD(1,2) 谱比较",
+        "measured Gromov–Hausdorff 完备化",
+        "变分与 Obata 型刚性"
+      ],
+      "breakthrough": "将一维尖锐模型转化为曲面谱极小问题的紧性信息，并以变分证明光滑极小者为圆球。",
+      "limitations": "一维比较有密度凸性假设；非塌缩与光滑极小者分类并不自动给出所有奇异极小者的正则性。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 72,
+      "priorityTier": "medium",
+      "priorityReason": "连接合成曲率、塌缩与谱优化，应用清晰；保留密度与正则性范围后适合重点方向延伸阅读。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02808:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02104",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Conformal Ricci Curvature and Spectral Estimates",
+      "authors": [
+        "Xiaoshang Jin"
+      ],
+      "abstract": "We derive optimized upper bounds for the first Dirichlet eigenvalue of a bounded domain under lower bounds for the conformal Ricci tensor of Shen and Ye. The method also yields sharp estimates for the bottom spectrum on complete noncompact manifolds, a four-dimensional application involving $Q$-curvature, and local and global spectral-Ricci extensions of Cheng's estimate. As a consequence, we obtain a sharp comparison between the spectra of the Laplacian and the conformal Laplacian in terms of the smallest Schouten eigenvalue.",
+      "categories": [
+        "math.DG",
+        "math.SP"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02104",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02104",
+      "submittedAt": "2026-09-02T04:45:36Z",
+      "updatedAt": "2026-09-02T04:45:36Z",
+      "topic": "曲率与比较几何",
+      "progressType": "谱比较/定量加强",
+      "workSummary": "在 Shen–Ye 共形 Ricci 张量的下界下，推导有界域首个 Dirichlet 特征值的优化上界，并得到非紧底谱和四维 Q 曲率应用。",
+      "techniques": [
+        "共形 Ricci 张量",
+        "Dirichlet 特征值与底谱",
+        "Schouten 特征值比较"
+      ],
+      "breakthrough": "把 Cheng 型估计推广到局部及整体的谱 Ricci 情形，并建立 Laplacian 与共形 Laplacian 的尖锐谱比较。",
+      "limitations": "主域估计需光滑有界连通域、正光滑函数及 0≤σ<4/(n−1)；底谱与 Q 曲率推论另有整体/标量曲率条件，参数端点不可延伸。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 71,
+      "priorityTier": "medium",
+      "priorityReason": "比较几何与谱估计的直接工具，应用横跨紧与非紧情形；相较本期新的框架性结果，主要是定量强化。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02104:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02274",
+      "version": 1,
+      "entryKind": "new",
+      "title": "A topological version of Huber's theorem",
+      "authors": [
+        "Ara Basmajian",
+        "Hugo Parlier"
+      ],
+      "abstract": "Let $X$ be a closed hyperbolic surface. We prove that the number of topological types of primitive closed geodesics of length at most $L$ is asymptotic to \\[ \\frac{1}{|\\Isom(X)|}\\frac{e^L}{2L}. \\] as $L$ grows. Thus Huber's asymptotic remains unchanged after quotienting by topological type, up to the finite symmetry factor coming from the isometry group of $X$.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.02274",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02274",
+      "submittedAt": "2026-09-02T08:21:39Z",
+      "updatedAt": "2026-09-02T08:21:39Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "渐近计数",
+      "workSummary": "对闭双曲曲面证明，长度不超过 L 的本原闭测地线拓扑类型数具有与 Huber 计数相同的指数主阶，仅差有限等距群因子。",
+      "techniques": [
+        "测地流与 Liouville current 集中",
+        "映射类群在 filling currents 上的适当性",
+        "有限等距群固定曲线计数"
+      ],
+      "breakthrough": "说明按拓扑类型去重后仍保留几乎全部指数增长信息。",
+      "limitations": "主结果针对闭可定向双曲曲面的无定向本原闭测地线；按全映射类群定义拓扑型，不能忽略对称群因子或直接推广到非紧曲面。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 71,
+      "priorityTier": "medium",
+      "priorityReason": "曲面动力系统与拓扑计数间的简明新联系，主项明确；技术细节与有效误差仍需专门阅读。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02274:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.01791",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Minimum $b_2$ of symplectic fillings of lens spaces",
+      "authors": [
+        "Antony T. H. Fung"
+      ],
+      "abstract": "We classify lens spaces for which the canonical negative-definite plumbing has minimal $b_2$ among all symplectic fillings of the standard contact structure. The classification is given by 4 infinite families of \"forbidden subgraphs\" in a manner similar to Aceto-McCoy-Park's work on smooth negative-definite fillings of lens spaces. In particular, no classification of this form can be given using a finite list of forbidden configurations, highlighting a difference between symplectic fillings and smooth negative-definite fillings of lens spaces.",
+      "categories": [
+        "math.GT",
+        "math.SG"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.01791",
+      "pdfUrl": "https://arxiv.org/pdf/2609.01791",
+      "submittedAt": "2026-09-01T19:03:04Z",
+      "updatedAt": "2026-09-01T19:03:04Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "分类/障碍",
+      "workSummary": "分类标准接触透镜空间中典范负定 plumbing 在所有辛填充里具有最小第二 Betti 数的情形，用四个无穷禁子图族刻画。",
+      "techniques": [
+        "辛填充",
+        "负定 plumbing",
+        "禁子图分类"
+      ],
+      "breakthrough": "表明辛填充的该分类不能压缩为有限禁配置，明确其与光滑负定填充的差别。",
+      "limitations": "限于透镜空间及标准接触结构，并非任意接触三流形的填充分类；本轮按摘要核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 70,
+      "priorityTier": "medium",
+      "priorityReason": "低维辛拓扑中的明确分类与反有限性结论，面向填充问题读者优先于一般工具，但适用对象较专门。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.01791:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02706",
+      "version": 1,
+      "entryKind": "new",
+      "title": "On the length conjecture for twist knots",
+      "authors": [
+        "Samuel Panitch",
+        "Mauricio Romo"
+      ],
+      "abstract": "Using the newly developed $3$d quantum trace map, we compile more evidence for the length conjecture, a refinement of the all-order volume conjecture that incorporates insertions of additional links in the skein module of the knot complement. In particular, we prove that the length conjecture holds up to first order for an infinite family of twist knots. Along the way, we form a conjecture that the $3$d quantum trace map behaves naturally with respect to Dehn filling.",
+      "categories": [
+        "math.GT",
+        "math.QA"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.02706",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02706",
+      "submittedAt": "2026-09-02T15:07:33Z",
+      "updatedAt": "2026-09-02T15:07:33Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "部分解决/猜想证据",
+      "workSummary": "用三维量子迹映射证明无穷族 twist knots 的长度猜想成立至一阶，并提出其与 Dehn filling 相容性的自然性猜想。",
+      "techniques": [
+        "三维量子迹",
+        "skein 模中的链环插入",
+        "Dehn filling"
+      ],
+      "breakthrough": "为精化全阶体积猜想的长度版本提供一个无穷结族上的严格低阶验证。",
+      "limitations": "仅到一阶，并非全阶长度/体积猜想；Dehn filling 自然性在本文仍是猜想。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 69,
+      "priorityTier": "medium",
+      "priorityReason": "量子拓扑核心猜想的实质进展，结族广但阶数受限，适合该方向优先阅读。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02706:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02686",
+      "version": 1,
+      "entryKind": "new",
+      "title": "The Bonnet-Myers theorem on Finsler manifolds with integral weighted Ricci curvature bounds",
+      "authors": [
+        "Xinyue Cheng",
+        "Liulin Liu"
+      ],
+      "abstract": "In this paper, we derive some new relative volume comparison theorems and Bishop-Gromov volume comparisons on Finsler metric measure manifolds, all of which are controlled by the integral weighted Ricci curvature. In particular, we establish a Bishop-Gromov volume comparison theorem for nonconcentric balls. Based on these, we prove a theorem of Bonnet-Myers type on Finsler metric measure manifolds with integral weighted Ricci curvature bounds.",
+      "categories": [
+        "math.DG",
+        "math.GT"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02686",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02686",
+      "submittedAt": "2026-09-02T14:54:04Z",
+      "updatedAt": "2026-09-02T14:54:04Z",
+      "topic": "曲率与比较几何",
+      "progressType": "推广/比较",
+      "workSummary": "在 Finsler 度量测度流形上，以积分加权 Ricci 曲率控制相对体积及 Bishop–Gromov 比较，包括非同心球，并推出 Bonnet–Myers 型结论。",
+      "techniques": [
+        "积分加权 Ricci 曲率",
+        "Finsler 体积比较",
+        "非同心球比较"
+      ],
+      "breakthrough": "将点态曲率工具向积分控制延伸，非同心球版本可扩展局部几何估计的应用范围。",
+      "limitations": "摘要未给出积分指数、小量阈值、可逆性等精确依赖；不能直接视为无条件有限直径。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 68,
+      "priorityTier": "medium",
+      "priorityReason": "Finsler 与积分曲率方向的实用推广，适合比较几何读者；精确假设需进一步逐条核对。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02686:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02732",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "Conservation of mass for solutions of Leibenson's equation on Riemannian Manifolds",
+      "authors": [
+        "Philipp Sürig"
+      ],
+      "abstract": "We consider on a Riemannian manifold $M$ the Leibenson equation \\begin{equation*}\\label{eqabs}\\partial _{t}u=Δ_{p}u^{q},\\end{equation*} where $p>1$ and $q>0$. When $q(p-1)\\geq 1$, we prove conservation of mass for solutions of Leibenson's equation assuming only the volume bound $V(x_0, r)\\leq \\exp\\left(C r^{\\frac{p}{p-1}}\\right)$ for some $x_{0}\\in M$ and all large enough $r>0$. When $q(p-1)< 1$, we prove this property assuming $V(x_0, r)\\leq Cr^{N}$ and $p>N[1-q(p-1)]$, which matches the threshold in $\\mathbb{R}^{n}$ with $N=n$. We also show that solutions on the hyperbolic space $\\mathbb{H}^{n}$ have a finite extinction time in the case $q(p-1)< 1$, which implies that the conservation of mass property does not hold. Using the conservation of mass result in the case $q(p-1)=1$, we also prove a $L^{p-1}$- Liouville property, which partially answers a conjecture stated by I. Holopainen \\cite{holopainen2000sharp}.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "arxivUrl": "https://arxiv.org/abs/2609.02732",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02732",
+      "submittedAt": "2026-09-02T15:40:46Z",
+      "updatedAt": "2026-09-02T15:40:46Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "守恒判据/反例",
+      "workSummary": "为流形上的 Leibenson 方程建立质量守恒的体积增长条件，分别处理退化与快扩散范围，并在双曲空间给出快扩散有限消失。",
+      "techniques": [
+        "非线性扩散与 p-Laplacian",
+        "体积增长判据",
+        "质量守恒与 Liouville 性质"
+      ],
+      "breakthrough": "快扩散的多项式增长阈值吻合欧氏情形，并从临界守恒结果得到部分 Liouville 猜想进展。",
+      "limitations": "依赖参数 q(p−1) 所在范围和增长条件；双曲反例表明不能忽略远处体积增长。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 68,
+      "priorityTier": "medium",
+      "priorityReason": "把大尺度几何直接连接到非线性守恒律，判据可供相关 PDE 课题复用，但问题模型较具体。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02732:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.01920",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Isospectral and not strongly isospectral spherical space forms with non-cyclic fundamental group",
+      "authors": [
+        "Mauro Colantonio"
+      ],
+      "abstract": "We construct the first examples of isospectral but not strongly isospectral spherical space forms with non-cyclic fundamental groups. We obtain infinitely many such pairs with isomorphic fundamental groups of Type I.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.01920",
+      "pdfUrl": "https://arxiv.org/pdf/2609.01920",
+      "submittedAt": "2026-09-01T22:38:01Z",
+      "updatedAt": "2026-09-01T22:38:01Z",
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "新例子/构造",
+      "workSummary": "构造基本群非循环的球面空间形式，使其等谱但不强等谱，并获得基本群同构且属 Type I 的无穷多对例子。",
+      "techniques": [
+        "关联透镜空间的谱生成函数",
+        "Molien 公式",
+        "Type I 群的强等谱判据"
+      ],
+      "breakthrough": "把以非循环基本群实现两种谱等价差异的例子推进到无穷族。",
+      "limitations": "构造依赖特定可约无不动点表示与 Type I 群；不能据此推断任意非循环基本群都存在这样的等谱对。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 67,
+      "priorityTier": "medium",
+      "priorityReason": "谱几何中的清楚存在性增量，但构造对象较专门，排在具有更广应用的比较与正则性结果之后。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.01920:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02073",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "Existence of closed non-planar $p$-elasticae",
+      "authors": [
+        "Florian Gruen"
+      ],
+      "abstract": "We prove existence of closed non-planar $p$-elasticae for general exponents $p\\in (1,\\infty)$. In particular, we show that for any $p \\in (1,\\infty)$, there exists a countable family of non-planar $p$-elasticae, which are realized as torus knots. This generalizes well-known results of Langer--Singer for the quadratic case $p=2$ to general exponents $p\\in (1,\\infty)$.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "arxivUrl": "https://arxiv.org/abs/2609.02073",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02073",
+      "submittedAt": "2026-09-02T03:58:02Z",
+      "updatedAt": "2026-09-02T03:58:02Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "推广/构造",
+      "workSummary": "对每个 p∈(1,∞) 构造可数族闭合非平面 p-弹性曲线，并将其实现为环面结，推广经典 p=2 的结果。",
+      "techniques": [
+        "p-弹性能量",
+        "闭合非平面曲线",
+        "环面结构造"
+      ],
+      "breakthrough": "把二次弹性能量下的存在性现象延伸到完整非线性指数范围。",
+      "limitations": "给出存在族而非所有临界点分类，也未由摘要确认其全局极小性或动力稳定性。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 66,
+      "priorityTier": "medium",
+      "priorityReason": "变分曲线与结型结合明确，适合几何变分方向；影响主要集中在这一能量模型。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02073:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02439",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Dual Geometry of Spherical Designs: Polarity, Self-Polar Rigidity, and Quadrature Structure",
+      "authors": [
+        "Congpei An"
+      ],
+      "abstract": "Let $X=\\{x_1,\\ldots,x_N\\}\\subset\\Sph^{d-1}$ be a spherical $t$-design, $t\\ge2$, and let $P_X\\subset\\R^d$ be its Minkowski polytope. If $h_i=h_{P_X}(x_i)$, then \\[ P_X^\\circ=\\conv\\{x_i/h_i:1\\le i\\le N\\}, \\] so the design is the radial projection of the polar vertex set. This yields exact degree-dependent moment identities and quantitative control of the unweighted polar moments from the Hausdorff sphericity of $P_X$. Our main results concern self-polarity. If \\[ P_X^\\circ=cUP_X,\\qquad U\\in O(d), \\] we obtain the structured slack factorization \\[ A=c\\,hh^T-X^TU^TX,\\qquad \\rank A=d+1, \\] whose zero pattern records the facet--vertex incidences. For node-transitive designs, the common incidence level equals the inradius-to-circumradius ratio $r/R$. Combining this with the one-dimensional moment problem underlying the Fazekas--Levenshtein covering bound, we prove \\[ \\frac rR\\geη_{t,d}, \\] with equality forcing the twisted inner-product rows to realize the corresponding Gaussian or Gauss--Radau quadrature rule; in particular, the quantities $Nλ_k$ become integer incidence multiplicities. We further prove a quantitative near-equality theorem: if \\[ δ=\\frac rR-η_{t,d} \\] is small, then each row is $O_{d,t}(\\sqrtδ)$-close in $W_1$ to the extremal quadrature measure, yielding near-incidence rigidity and an arithmetic stability gap. As applications, we obtain three-dimensional rigidity and identify the regular simplex and the $24$-cell as the regular self-polar examples.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02439",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02439",
+      "submittedAt": "2026-09-02T11:02:24Z",
+      "updatedAt": "2026-09-02T11:02:24Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "新刻画/稳定性",
+      "workSummary": "从球面设计的 Minkowski 多面体及其极体建立矩恒等式，以自极对偶的 slack 分解研究关联结构、内外接半径比与近等号刚性。",
+      "techniques": [
+        "极对偶与 slack 矩阵",
+        "Gaussian/Gauss–Radau 求积",
+        "Wasserstein 近等号估计"
+      ],
+      "breakthrough": "把几何自极性与求积节点的整数关联重数连接，并给出算术稳定间隙和正单纯形、24-cell 等实例。",
+      "limitations": "主自极结论和半径下界附带对称性/节点传递等条件；不能视为所有球面设计的完整分类。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 65,
+      "priorityTier": "medium",
+      "priorityReason": "凸几何、设计理论与求积的交叉工具丰富，适合相邻课题；假设专门，排在广域比较结果之后。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02439:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02516",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "Power convexity of the torsion function on horo-convex domains in hyperbolic space",
+      "authors": [
+        "Wei Zhang",
+        "Qi Zhou"
+      ],
+      "abstract": "In this paper, we study the torsion problem on bounded, smooth, strictly horo-convex domains in hyperbolic space. We prove that if the diameter of the domain is sufficiently small, then $-\\sqrt{u}$ is strictly convex, where $u$ denotes the torsion function. The main ingredients of our proof are the constant rank theorem, a boundary convexity estimate, and a deformation argument for the domain. We also show that the exponent $1/2$ is optimal, even among strictly horo-convex domains of arbitrarily small diameter.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "arxivUrl": "https://arxiv.org/abs/2609.02516",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02516",
+      "submittedAt": "2026-09-02T12:22:03Z",
+      "updatedAt": "2026-09-02T12:22:03Z",
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "尖锐正则性质",
+      "workSummary": "对双曲空间中光滑严格 horo-convex 且直径足够小的域，证明扭转函数 u 的 -√u 严格凸，并证明指数 1/2 最优。",
+      "techniques": [
+        "常秩定理",
+        "边界凸性估计",
+        "区域变形"
+      ],
+      "breakthrough": "把欧氏幂凹性问题推进到双曲背景，并在任意小直径域中确认指数不可提升。",
+      "limitations": "要求严格 horo-convex、小直径和光滑边界；并未覆盖一般双曲凸域。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 65,
+      "priorityTier": "medium",
+      "priorityReason": "几何 PDE 的精确局部推广与最优性结果，方法清楚；区域限制决定其阅读优先级为中等。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02516:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02192",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Asymptotics of holomorphic torsion on orbifolds and an equivariant arithmetic Hilbert-Samuel theorem",
+      "authors": [
+        "Kai Köhler"
+      ],
+      "abstract": "We compute the $\\log p$-part of the asymptotic expansion of the holomorphic torsion of the $p$-th power of a positive line bundle in terms of characteristic classes. This is done for orbifold and equivariant torsions. In the equivariant case the exponents in the expansion are less than or equal to the dimension of the fixed point set. We deduce a corresponding equivariant arithmetic Hilbert-Samuel theorem in Arakelov geometry.",
+      "categories": [
+        "math.DG",
+        "math.AG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02192",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02192",
+      "submittedAt": "2026-09-02T06:57:14Z",
+      "updatedAt": "2026-09-02T06:57:14Z",
+      "topic": "交叉方向与基础工具",
+      "progressType": "渐近公式/应用",
+      "workSummary": "计算正线丛高次幂的全纯挠率渐近展开中 log p 部分，覆盖 orbifold 与等变情形，并推出等变算术 Hilbert–Samuel 定理。",
+      "techniques": [
+        "解析挠率",
+        "特征类",
+        "等变 Arakelov 几何"
+      ],
+      "breakthrough": "将固定点集维数控制的等变渐近项转化为算术几何结论。",
+      "limitations": "只明确计算对数部分；依赖正线丛与相应等变/orbifold 设置，不等同于任意线丛完整渐近展开。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 64,
+      "priorityTier": "medium",
+      "priorityReason": "对解析挠率和 Arakelov 交叉方向有高针对性，课题组一般几何阅读顺位次于曲率与流的主线。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02192:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02278",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Frobenius Alexander quandles, knot colorings, and isogeny classes of abelian varieties over finite fields",
+      "authors": [
+        "WonTae Hwang"
+      ],
+      "abstract": "We introduce the notion of Frobenius Alexander quandles associated with abelian varieties over finite fields, and study them from both knot-theoretic and arithmetic viewpoints. We determine exactly for which rational primes a knot admits a nonconstant coloring by these quandles, in terms of the resultant of its Alexander polynomial and the Frobenius characteristic polynomial of the abelian variety. This leads to the notion of persistent colorability and its characterization, as well as applications to fibered knots and knots of small genus. We also prove a rigidity result showing that the isomorphism class of a Frobenius Alexander quandle determines the similarity class of the Frobenius endomorphism on the corresponding torsion subgroup. As a consequence, one sufficiently large Frobenius Alexander quandle determines the characteristic polynomial of the Frobenius endomorphism, and hence, determines the isogeny class of the abelian variety over the given finite base field.",
+      "categories": [
+        "math.GT",
+        "math.AG"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.02278",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02278",
+      "submittedAt": "2026-09-02T08:24:52Z",
+      "updatedAt": "2026-09-02T08:24:52Z",
+      "topic": "交叉方向与基础工具",
+      "progressType": "新工具/算术刚性",
+      "workSummary": "构造有限域上阿贝尔簇的 Frobenius Alexander quandles，以 Alexander 多项式和 Frobenius 特征多项式的结式判定结的非平凡染色素数。",
+      "techniques": [
+        "Alexander quandle",
+        "多项式结式",
+        "Frobenius 与同源类"
+      ],
+      "breakthrough": "建立持久可染色性刻画，并证明足够大的单个 quandle 可恢复 Frobenius 特征多项式及阿贝尔簇同源类。",
+      "limitations": "恢复结论需要足够大的扭子层；并不是小型染色数据总能唯一确定算术对象。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 63,
+      "priorityTier": "medium",
+      "priorityReason": "结论跨越结理论与算术结构，工具新颖；离核心曲率/几何分析任务较远，面向相关交叉课题阅读。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02278:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.01763",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "BiLipschitz and bounded displacement equivalence of Delone sets",
+      "authors": [
+        "Smilansky Yotam",
+        "Yaar Solomon"
+      ],
+      "abstract": "We survey biLipschitz (BL) and bounded displacement (BD) equivalence of Delone sets, with an emphasis on examples arising in aperiodic order. After recalling the classical results of Burago-Kleiner, McMullen, and Laczkovich, we discuss criteria for rectifiability, uniform spreadness, and BD equivalence, and how these relate to discrepancy and point-counting estimates. We then focus on Delone sets associated with substitution tilings, where these questions can often be studied through the combinatorial and spectral properties of the underlying substitution rules. We also consider selected classes of cut-and-project sets and briefly discuss extensions beyond BL and BD equivalence.",
+      "categories": [
+        "math.DS",
+        "math.CO",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DS",
+      "arxivUrl": "https://arxiv.org/abs/2609.01763",
+      "pdfUrl": "https://arxiv.org/pdf/2609.01763",
+      "submittedAt": "2026-09-01T18:30:01Z",
+      "updatedAt": "2026-09-01T18:30:01Z",
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "综述/工具",
+      "workSummary": "梳理 Delone 集的双 Lipschitz 与有界位移等价，重点比较非周期序中替换铺砌和 cut-and-project 集的可整直性、均匀分布与点计数判据。",
+      "techniques": [
+        "Delone 集等价",
+        "差异度与点计数",
+        "替换规则的组合与谱"
+      ],
+      "breakthrough": "把经典判据与可计算例子组织成进入非周期度量几何的阅读路线。",
+      "limitations": "属于综述，不应当作新的统一分类定理；不同构造仍须分别检查等价条件。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 60,
+      "priorityTier": "medium",
+      "priorityReason": "适合需要非周期序背景与可复用判据的读者；本期原创几何定理优先，综述随后。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.01763:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02701",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Circuit Decomposition for Triangulations of Surfaces",
+      "authors": [
+        "Jens Harlander",
+        "Maizie Quatrone"
+      ],
+      "abstract": "An Euler circuit of a graph is a closed path that visits every edge of the graph exactly once. Euler circuit and circuit decomposition problems can also be formulated for higher dimensional simplicial complexes. An Euler k-circuit in K is a cyclic sequence of vertices v_1...v_n such that every k+1 adjacent terms { v_i,v_{i+1},...,v_{i+k} } (indexed modulo n) form a k-simplex, and every k-simplex of K appears exactly once in the sequence v_1v_2...v_n(v_1v_2...v_k). We investigate the 2-circuit decomposition problem for triangulated closed compact surfaces. For an orientable triangulated surface we use interior angles of paths to define an obstruction that lives in the first cohomology of the surface. It vanishes if and only if the surface has a 2-circuit decomposition. We also show that a non-orientable triangulated surface has a 2-circuit decomposition if and only if its orientable 2-fold cover does.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "arxivUrl": "https://arxiv.org/abs/2609.02701",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02701",
+      "submittedAt": "2026-09-02T15:06:37Z",
+      "updatedAt": "2026-09-02T15:06:37Z",
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "组合拓扑刻画",
+      "workSummary": "研究闭紧曲面三角剖分的二维回路分解，以路径内角构造第一上同调障碍，并证明其消失等价于可分解性。",
+      "techniques": [
+        "二维 Euler 回路",
+        "第一上同调障碍",
+        "可定向二重覆盖"
+      ],
+      "breakthrough": "将回路分解的组合可行性转化为拓扑障碍；非可定向情形归约到可定向二重覆盖。",
+      "limitations": "对象为曲面三角剖分，不涵盖一般高维单纯复形；摘要未提供算法复杂度保证。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 58,
+      "priorityTier": "medium",
+      "priorityReason": "清楚的组合—拓扑接口，适合相关离散课题；与曲率和几何分析主线距离较远。",
+      "lowPriorityReason": null,
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02701:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02362",
+      "version": 1,
+      "entryKind": "cross_list",
+      "title": "Farthest-cell triplet entropy: high-dimensional shell limits and hyperbolic curvature amplification",
+      "authors": [
+        "Chongkun Deng"
+      ],
+      "abstract": "We introduce farthest-cell triplet entropy, the conditional Shannon entropy of the farthest-prototype label given three random prototypes. For independent queries and prototypes, its estimator records only the farthest label, not coordinates or numerical distances. The statistic is bounded by $\\log 3$, is invariant under common strictly increasing transformations of the dissimilarities, and has an exact mutual-information interpretation. In high-dimensional isotropic radial models $X_d=R_dU_d$, the Euclidean ordering reduces to scores $λ_dξ_{i,d}-Z_i$, where $λ_d=\\sqrt d\\,\\operatorname{sd}(R_d)/\\mathbb{E} R_d$ and the $Z_i$ are independent standard Gaussian variables. This gives angular-dominated, intermediate, and radial-dominated entropy limits $\\log 3$, $H_{\\infty}(λ;F)$, and $0$. In hyperbolic space of curvature $-κ_d^2$, the same master curve appears at $λ_{d,\\mathbb H}=\\sqrt d\\,τ_d A(s_d)$, where $τ_d=\\operatorname{sd}(R_d)/\\mathbb{E} R_d$, $s_d=κ_d\\mathbb{E} R_d$, and $A(s)=s\\coth s$. With a calibrated radial law and $τ_d$, and a monotone operating interval, entropy inversion identifies the scale-invariant target $s_d^2$; absolute curvature requires an external length unit. CPU simulations give Euclidean and hyperbolic master-curve RMSEs of $0.0164$ and $0.0209$. Inversion from observed synthetic latent coordinates has a median relative error in $κ$ of $6.6\\%$, while angular anisotropy increases this error to $68.9\\%$. Thus the entropy statistic is comparison-based, whereas curvature recovery remains model-calibrated, is not graph-only, and is not robust to anisotropy.",
+      "categories": [
+        "math.PR",
+        "math.MG"
+      ],
+      "primaryCategory": "math.PR",
+      "arxivUrl": "https://arxiv.org/abs/2609.02362",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02362",
+      "submittedAt": "2026-09-02T09:31:45Z",
+      "updatedAt": "2026-09-02T09:31:45Z",
+      "topic": "交叉方向与基础工具",
+      "progressType": "统计量/模型分析",
+      "workSummary": "引入只记录最远原型标签的三元熵，推导高维径向模型的欧氏与双曲极限，并讨论经模型校准的曲率反演。",
+      "techniques": [
+        "条件 Shannon 熵",
+        "高维径向极限",
+        "模型校准与模拟"
+      ],
+      "breakthrough": "在特定随机模型中用比较标签压缩几何信息，并明确双曲曲率对有效径向尺度的放大关系。",
+      "limitations": "曲率恢复不是纯图推断，需径向分布和尺度校准；摘要中的合成实验显示对角向各向异性明显不稳健。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 47,
+      "priorityTier": "low",
+      "priorityReason": "适合几何统计的探索性阅读；对一般度量曲率理论的直接适用性有限。",
+      "lowPriorityReason": "主要结果依赖各向同性径向模型及外部尺度，尚不能直接用于一般曲率判定；因此在本期基础几何结果之后，不代表论文质量判断。",
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02362:v1"
+    },
+    {
+      "announcementDate": "2026-09-03",
+      "arxivId": "2609.02426",
+      "version": 1,
+      "entryKind": "new",
+      "title": "Deformations of the $\\mathfrak{osp}(n|2)$-action on the superspace of symbols of differential operators on $\\R^{1|n}$",
+      "authors": [
+        "Imed Basdouri",
+        "Mabrouk Ben Ammar"
+      ],
+      "abstract": "We study formal deformations of the natural $\\osp(n|2)$-action, $n\\geq 3$, on the superspace $\\Sc^n_d=\\bigoplus_{k\\geq 0}\\Fc^n_{d-\\frac{k}{2}}$ of symbols of linear differential operators on weighted densities over $\\R^{1|n}$. Starting from the first cohomology space computed in \\cite{10}, we compute the cup-product $\\Hd^1\\vee \\Hd^1\\to \\Hd^2$ which carries the quadratic obstructions. The answer is governed by the $\\osp(n|2)$-invariant operators $A_k=η_1\\cdotsη_n\\partial_x^{k-1}$: the two cocycles $h_k$ and $\\widetilde{h}_k$ spanning the off-diagonal part of $\\Hd^1$ are exactly the two derivatives of the coboundary of $A_k$ with respect to the two weights. Consequently, all the products of two off-diagonal classes and all the products of two diagonal classes vanish, and the whole obstruction is carried, for each $k$, by a single non-trivial 2-cocycle $Ω_k$. If $2d\\notin\\N$ the space $\\Hd^1\\vee\\Hd^1$ is identically zero, so every infinitesimal deformation is integrable. If $2d=m\\in\\N$ we obtain exactly $m$ quadratic integrability conditions, $τ_{2-n-k}(t_k-\\widetilde{t}_k)+τ_k\\widetilde{t}_k=0$, $1\\leq k\\leq m$, and we prove that they are also sufficient: no condition of order $\\geq 3$ occurs and the versal deformation is of degree one in the parameters. In particular every integrable formal deformation is equivalent to its infinitesimal part.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "arxivUrl": "https://arxiv.org/abs/2609.02426",
+      "pdfUrl": "https://arxiv.org/pdf/2609.02426",
+      "submittedAt": "2026-09-02T10:44:29Z",
+      "updatedAt": "2026-09-02T10:44:29Z",
+      "topic": "交叉方向与基础工具",
+      "progressType": "变形理论/障碍消除",
+      "workSummary": "计算 osp(n|2) 在超直线上微分算子符号空间作用的二次变形障碍；非共振时所有无穷小变形可积，共振时由有限组二次条件完全刻画。",
+      "techniques": [
+        "Lie 超代数上同调",
+        "杯积与二阶障碍",
+        "versal 形式变形"
+      ],
+      "breakthrough": "证明没有更高阶新增可积性条件，且可积形式变形等价于其无穷小部分。",
+      "limitations": "适用 n≥3 的特定超符号模与权重，不是一般 Lie 超代数作用的变形定理。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 45,
+      "priorityTier": "low",
+      "priorityReason": "与超几何和表示论的专门问题紧密相关，但对本期核心几何主线的即时复用较少。",
+      "lowPriorityReason": "对象限于特定超代数符号模及权重共振，需较专门背景；一般几何读者可后置，并非对结果质量的否定。",
+      "revisionSummary": null,
+      "id": "2026-09-03:2609.02426:v1"
+    }
+  ]
+}
