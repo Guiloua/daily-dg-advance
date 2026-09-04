@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "arxivId": "2609.03197",
+  "slug": "2609.03197",
+  "latest": {
+    "announcementDate": "2026-09-04",
+    "arxivId": "2609.03197",
+    "version": 1,
+    "entryKind": "cross_list",
+    "title": "Computational Algorithms for Invariant Reduction of Variational Forms",
+    "authors": [
+      "Kostya Druzhkov",
+      "Alexey Shevyakov"
+    ],
+    "abstract": "Symmetry reductions of partial differential equations (PDEs) inherit more geometric structures than other types of reductions: invariant conservation laws, variational structures, and, under suitable conditions, Hamiltonian-type structures of the original model descend to the reduced model through the mechanism of invariant reduction. This paper develops computational algorithms that carry out such reductions explicitly. We use the interpretation of variational $p$-forms as conservation laws of an enlarged system --- the (degree-shifted) tangent system --- consisting of the original equations together with their linearizations, in which the perturbation variables are treated as anticommuting. This allows us to formulate the algorithms using well-known concepts from the theory of conservation laws, naturally adapted to the graded-commutative setting. The reduction of conservation laws, variational $1$-forms, and presymplectic structures thereby becomes a single algorithmic procedure. We present (i) a homotopy-based reduction algorithm for systems of evolution equations, implemented in Maple; (ii) a descent reduction algorithm applicable to general $\\ell$-normal systems for $p>0$; and (iii) a simple reduction algorithm available for point symmetries under suitable conditions, including the description of reductions in terms of systems involving fewer independent variables. Examples include nonlinear evolution equations in one and two spatial dimensions, the Laplace equation, the incompressible Euler equations, and the cotangent system of Pavlov's equation.",
+    "categories": [
+      "math-ph",
+      "math.DG",
+      "nlin.SI"
+    ],
+    "primaryCategory": "math-ph",
+    "arxivUrl": "https://arxiv.org/abs/2609.03197",
+    "pdfUrl": "https://arxiv.org/pdf/2609.03197",
+    "submittedAt": "2026-09-02T22:26:45Z",
+    "updatedAt": "2026-09-02T22:26:45Z",
+    "topic": "交叉方向与基础工具",
+    "progressType": "新方法/构造",
+    "workSummary": "给出把 PDE 对称约化中的守恒律、变分 1-形式和预辛结构统一处理的计算算法，并提供 Maple 实现与多类方程示例。",
+    "techniques": [
+      "切系统与反交换扰动变量",
+      "守恒律同调",
+      "同伦约化",
+      "下降算法与 Maple 符号计算"
+    ],
+    "breakthrough": "将不同次数的变分形式约化统一为增广切系统上的守恒律计算，使几何结构的对称降维可算法化。",
+    "limitations": "一般下降算法依赖 ℓ-normal 等技术假设；复杂 PDE 的计算规模和实现鲁棒性仍需实例检验。",
+    "analysisDepth": "abstract",
+    "aiStatus": "explicit",
+    "aiEvidence": "ChatGPT Sol 5.6 用于终稿校对和检查公式一致性；作者明确说明未用于发展数学结果、算法或例子。",
+    "aiEvidenceSource": "正文 “AI disclosure”",
+    "priorityScore": 65,
+    "priorityTier": "medium",
+    "priorityReason": "工具复用性较强，适合几何 PDE 与可积系统，但当日主结果更偏计算框架而非新的几何定理。",
+    "lowPriorityReason": null,
+    "revisionSummary": null,
+    "id": "2026-09-04:2609.03197:v1"
+  },
+  "history": [
+    {
+      "announcementDate": "2026-09-04",
+      "report": {
+        "announcementDate": "2026-09-04",
+        "arxivId": "2609.03197",
+        "version": 1,
+        "entryKind": "cross_list",
+        "title": "Computational Algorithms for Invariant Reduction of Variational Forms",
+        "authors": [
+          "Kostya Druzhkov",
+          "Alexey Shevyakov"
+        ],
+        "abstract": "Symmetry reductions of partial differential equations (PDEs) inherit more geometric structures than other types of reductions: invariant conservation laws, variational structures, and, under suitable conditions, Hamiltonian-type structures of the original model descend to the reduced model through the mechanism of invariant reduction. This paper develops computational algorithms that carry out such reductions explicitly. We use the interpretation of variational $p$-forms as conservation laws of an enlarged system --- the (degree-shifted) tangent system --- consisting of the original equations together with their linearizations, in which the perturbation variables are treated as anticommuting. This allows us to formulate the algorithms using well-known concepts from the theory of conservation laws, naturally adapted to the graded-commutative setting. The reduction of conservation laws, variational $1$-forms, and presymplectic structures thereby becomes a single algorithmic procedure. We present (i) a homotopy-based reduction algorithm for systems of evolution equations, implemented in Maple; (ii) a descent reduction algorithm applicable to general $\\ell$-normal systems for $p>0$; and (iii) a simple reduction algorithm available for point symmetries under suitable conditions, including the description of reductions in terms of systems involving fewer independent variables. Examples include nonlinear evolution equations in one and two spatial dimensions, the Laplace equation, the incompressible Euler equations, and the cotangent system of Pavlov's equation.",
+        "categories": [
+          "math-ph",
+          "math.DG",
+          "nlin.SI"
+        ],
+        "primaryCategory": "math-ph",
+        "arxivUrl": "https://arxiv.org/abs/2609.03197",
+        "pdfUrl": "https://arxiv.org/pdf/2609.03197",
+        "submittedAt": "2026-09-02T22:26:45Z",
+        "updatedAt": "2026-09-02T22:26:45Z",
+        "topic": "交叉方向与基础工具",
+        "progressType": "新方法/构造",
+        "workSummary": "给出把 PDE 对称约化中的守恒律、变分 1-形式和预辛结构统一处理的计算算法，并提供 Maple 实现与多类方程示例。",
+        "techniques": [
+          "切系统与反交换扰动变量",
+          "守恒律同调",
+          "同伦约化",
+          "下降算法与 Maple 符号计算"
+        ],
+        "breakthrough": "将不同次数的变分形式约化统一为增广切系统上的守恒律计算，使几何结构的对称降维可算法化。",
+        "limitations": "一般下降算法依赖 ℓ-normal 等技术假设；复杂 PDE 的计算规模和实现鲁棒性仍需实例检验。",
+        "analysisDepth": "abstract",
+        "aiStatus": "explicit",
+        "aiEvidence": "ChatGPT Sol 5.6 用于终稿校对和检查公式一致性；作者明确说明未用于发展数学结果、算法或例子。",
+        "aiEvidenceSource": "正文 “AI disclosure”",
+        "priorityScore": 65,
+        "priorityTier": "medium",
+        "priorityReason": "工具复用性较强，适合几何 PDE 与可积系统，但当日主结果更偏计算框架而非新的几何定理。",
+        "lowPriorityReason": null,
+        "revisionSummary": null,
+        "id": "2026-09-04:2609.03197:v1"
+      }
+    }
+  ]
+}
