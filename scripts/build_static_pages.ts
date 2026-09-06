@@ -373,11 +373,11 @@ export async function buildStaticPages(args: Args): Promise<{
     recursive: true,
   });
   await writeFile(join(args.out, '.nojekyll'), '', 'utf8');
-  await cp(join(args.content, 'daily'), join(args.out, 'daily'), {
-    recursive: true,
-  });
+  await mkdir(join(args.out, 'daily'), { recursive: true });
 
   for (const day of days) {
+    const markdownPath = `daily/${day.announcementDate}.md`;
+    await cp(join(args.content, markdownPath), join(args.out, markdownPath));
     const html = renderDayPage(day, manifest, assets, args.basePath);
     await writePage(
       join(args.out, `daily/${day.announcementDate}/index.html`),
