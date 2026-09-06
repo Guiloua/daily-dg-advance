@@ -16,7 +16,7 @@
     "db:check": "drizzle-kit check --config drizzle.config.ts && node scripts/check_migrations.mjs",
     "security:check": "node scripts/check_secrets.mjs",
     "security:check:dist": "node scripts/check_secrets.mjs dist",
-    "test": "tsx tests/validation.test.ts && tsx tests/volume.test.ts && tsx tests/dashboard.test.ts && tsx tests/health.test.ts && tsx tests/static-mirror.test.ts && PYTHONPATH=scripts python3 -m unittest discover -s tests -p 'test_*.py'",
+    "test": "tsx tests/read-request.test.ts && tsx tests/validation.test.ts && tsx tests/volume.test.ts && tsx tests/dashboard.test.ts && tsx tests/health.test.ts && tsx tests/static-mirror.test.ts && PYTHONPATH=scripts python3 -m unittest discover -s tests -p 'test_*.py'",
     "static:sync": "tsx scripts/sync_static_mirror.ts",
     "static:build": "tsx scripts/build_static_pages.ts",
     "ci": "npm run lint && npm run typecheck && npm test && npm run db:check && npm run security:check && npm run build && npm run security:check:dist"

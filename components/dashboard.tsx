@@ -11,7 +11,8 @@ import {
   Search,
   Sparkles,
 } from 'lucide-react';
-import { TrendChart } from './trend-chart';
+import { LazyTrend } from './lazy-trend';
+import { readJson } from '@/lib/read-request';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -44,48 +45,88 @@ export function Dashboard({
   const [topic, setTopic] = useState<Topic | 'all'>('all');
   const [priority, setPriority] = useState<PriorityTier | 'all'>('all');
   const [query, setQuery] = useState('');
+  const [date, setDate] = useState(requestedDate ?? '');
+  const [ready, setReady] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [retry, setRetry] = useState(0);
   useEffect(() => {
-    if (initialData.dataMode !== 'loading') return;
-    let cancelled = false;
-    const reportUrl = requestedDate
-      ? `/api/reports?date=${encodeURIComponent(requestedDate)}`
-      : '/api/reports';
-    Promise.all([fetch(reportUrl), fetch('/api/volume?range=2y')])
-      .then(async ([reportsResponse, volumeResponse]) => {
-        if (!reportsResponse.ok || !volumeResponse.ok) {
-          throw new Error('Dashboard API unavailable');
-        }
-        const reportsPayload = (await reportsResponse.json()) as {
-          date: string;
-          lastUpdated: string;
-          coverage: DashboardData['coverage'];
-          reports: DashboardData['reports'];
-        };
-        const volumePayload = (await volumeResponse.json()) as {
-          points: DashboardData['volumes'];
-        };
-        if (!cancelled) {
+    const restore = () => {
+      const params = new URLSearchParams(location.search);
+      setDate(params.get('date') ?? '');
+      setQuery(params.get('q') ?? '');
+      setTopic(
+        TOPICS.includes(params.get('topic') as Topic)
+          ? (params.get('topic') as Topic)
+          : 'all',
+      );
+      setPriority(
+        ['high', 'medium', 'low'].includes(params.get('priority') ?? '')
+          ? (params.get('priority') as PriorityTier)
+          : 'all',
+      );
+      setAiStatus(
+        params.get('ai') === 'explicit' ? 'explicit' : 'no_disclosure_observed',
+      );
+      setReady(true);
+    };
+    restore();
+    window.addEventListener('popstate', restore);
+    return () => window.removeEventListener('popstate', restore);
+  }, []);
+  useEffect(() => {
+    if (!ready) return;
+    const params = new URLSearchParams(location.search);
+    for (const [key, value] of Object.entries({
+      date,
+      q: query,
+      topic,
+      priority,
+      ai: aiStatus,
+    })) {
+      if (value && value !== 'all') params.set(key, value);
+      else params.delete(key);
+    }
+    history.replaceState(null, '', `${location.pathname}?${params}`);
+  }, [ready, date, query, topic, priority, aiStatus]);
+  useEffect(() => {
+    if (!ready) return;
+    const controller = new AbortController();
+    setLoading(true);
+    setError(false);
+    readJson<{
+      date: string;
+      lastUpdated: string;
+      coverage: DashboardData['coverage'];
+      reports: DashboardData['reports'];
+    }>(
+      date ? `/api/reports?date=${encodeURIComponent(date)}` : '/api/reports',
+      controller.signal,
+    )
+      .then((feed) => {
+        if (!controller.signal.aborted)
           setData({
-            latestDate: reportsPayload.date,
-            lastUpdated: reportsPayload.lastUpdated,
-            coverage: reportsPayload.coverage,
-            reports: reportsPayload.reports,
-            volumes: volumePayload.points,
+            ...feed,
+            latestDate: feed.date,
+            volumes: [],
             dataMode: 'database',
           });
-        }
       })
       .catch(() => {
-        // Failed production reads become explicit; preview papers are never
-        // substituted for a database error.
-        if (!cancelled) {
-          setData((current) => ({ ...current, dataMode: 'unavailable' }));
+        if (!controller.signal.aborted) {
+          setError(true);
+          setData((current) =>
+            current.dataMode === 'loading'
+              ? { ...current, dataMode: 'unavailable' }
+              : current,
+          );
         }
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) setLoading(false);
       });
-    return () => {
-      cancelled = true;
-    };
-  }, [initialData, requestedDate]);
+    return () => controller.abort();
+  }, [ready, date, retry]);
   const topicGroups = useMemo(
     () =>
       groupVisibleReports(data.reports, {
@@ -182,6 +223,31 @@ export function Dashboard({
             </p>
           </div>
 
+          <p className="mt-3 text-xs text-muted-foreground" aria-live="polite">
+            {data.lastUpdated
+              ? `实际加载：${data.latestDate} · 更新时间：${data.lastUpdated}`
+              : ''}
+            {loading ? ` · 正在读取 ${date || '最新公告日'}…` : ''}
+          </p>
+          {error ? (
+            <div role="alert" className="my-4 border-y py-4 text-sm">
+              无法读取 {date || '最新公告日'}。
+              {data.dataMode === 'database'
+                ? `仍显示 ${data.latestDate}，切换尚未完成。`
+                : data.dataMode === 'preview'
+                  ? `当前仅为本地预览（${data.latestDate}）。`
+                  : '数据暂不可用。'}
+              <Button
+                variant="outline"
+                onClick={() => setRetry((value) => value + 1)}
+              >
+                重试日报
+              </Button>{' '}
+              <a href="https://guiloua.github.io/daily-dg-advance/">
+                打开静态镜像
+              </a>
+            </div>
+          ) : null}
           {(data.dataMode === 'database' || data.dataMode === 'preview') &&
           dailyOverview.paperCount ? (
             <section
@@ -271,19 +337,23 @@ export function Dashboard({
           {data.dataMode === 'database' || data.dataMode === 'preview' ? (
             <>
               <div className="mt-7 grid gap-2 sm:grid-cols-2 lg:grid-cols-[150px_minmax(220px,1fr)_190px_150px]">
-                <form method="GET">
-                  <Input
-                    key={data.latestDate}
+                <div>
+                  <input
                     type="date"
                     name="date"
-                    defaultValue={data.latestDate}
-                    onChange={(event) =>
-                      event.currentTarget.form?.requestSubmit()
-                    }
+                    value={date || data.latestDate}
+                    onInput={(event) => {
+                      const next = event.currentTarget.value;
+                      if (!next) return;
+                      const url = new URL(location.href);
+                      url.searchParams.set('date', next);
+                      history.pushState(null, '', url);
+                      setDate(next);
+                    }}
                     aria-label="选择历史公告日"
-                    className="h-10 w-full rounded-[4px] text-xs"
+                    className="h-10 w-full rounded-[4px] border border-input bg-white px-3 text-xs"
                   />
-                </form>
+                </div>
                 <div className="relative">
                   <Search className="absolute left-3 top-3 size-4 text-muted-foreground" />
                   <Input
@@ -466,8 +536,7 @@ export function Dashboard({
           ) : null}
         </section>
 
-        {(data.dataMode === 'database' || data.dataMode === 'preview') &&
-        data.volumes.length ? (
+        {
           <section
             aria-labelledby="trend-title"
             className="mt-20 border-t border-border pt-11 sm:mt-24 sm:pt-14"
@@ -500,9 +569,9 @@ export function Dashboard({
                 {range === '6m' ? <ChevronDown /> : <ChevronUp />}
               </Button>
             </div>
-            <TrendChart volumes={data.volumes} range={range} />
+            <LazyTrend range={range} />
           </section>
-        ) : null}
+        }
       </div>
     </main>
   );

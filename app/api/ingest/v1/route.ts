@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { privateResponse as NextResponse } from '@/lib/private-response';
 import { isAuthorized } from '@/lib/auth';
 import { ingestBatch } from '@/lib/repository';
 import { reportBatchV1Schema } from '@/lib/validation';
