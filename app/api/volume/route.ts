@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { listVolumes } from '@/lib/repository';
-import { aggregateWeeklyVolumes } from '@/lib/volume';
+import { aggregateWeeklyVolumes, selectWeeklyRange } from '@/lib/volume';
 
 export async function GET(request: Request) {
   try {
@@ -8,7 +8,7 @@ export async function GET(request: Request) {
       new URL(request.url).searchParams.get('range') === '2y' ? '2y' : '6m';
     const points = await listVolumes('2y');
     const weeks = aggregateWeeklyVolumes(points);
-    const selectedWeeks = range === '6m' ? weeks.slice(-26) : weeks;
+    const selectedWeeks = selectWeeklyRange(weeks, range);
     const firstWeekStart = selectedWeeks[0]?.weekStart;
     return NextResponse.json(
       {

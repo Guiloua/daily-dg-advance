@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { aggregateWeeklyVolumes } from '../lib/volume';
+import { aggregateWeeklyVolumes, selectWeeklyRange } from '../lib/volume';
 
 const days = [
   {
@@ -41,4 +41,11 @@ assert.deepEqual(weeks[0], {
   mathMg: 2,
   mathGt: 3,
 });
+const history = Array.from({ length: 105 }, (_, index) => ({ ...weeks[0], mathDg: index }));
+assert.equal(selectWeeklyRange(history, '6m').length, 26);
+assert.equal(selectWeeklyRange(history, '2y').length, 104);
+assert.equal(selectWeeklyRange(history, '2y')[0].mathDg, 1);
+assert.deepEqual(selectWeeklyRange(history, '6m').at(-1), history.at(-1));
+assert.equal(history.length, 105, 'raw history remains unchanged');
+assert.deepEqual(selectWeeklyRange([], '2y'), []);
 console.log('Weekly volume aggregation tests passed');
