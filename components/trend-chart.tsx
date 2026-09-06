@@ -7,7 +7,7 @@ import {
   ChartTooltip,
   type ChartConfig,
 } from '@/components/ui/chart';
-import { aggregateWeeklyVolumes } from '@/lib/volume';
+import { aggregateWeeklyVolumes, selectWeeklyRange } from '@/lib/volume';
 import type { VolumePoint, WeeklyVolumePoint } from '@/lib/types';
 
 const chartConfig = {
@@ -65,7 +65,7 @@ export function TrendChart({
   });
   const weekly = useMemo(() => aggregateWeeklyVolumes(volumes), [volumes]);
   const data = useMemo(
-    () => (range === '6m' ? weekly.slice(-26) : weekly),
+    () => selectWeeklyRange(weekly, range),
     [weekly, range],
   );
   const latest = data.at(-1);

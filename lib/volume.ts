@@ -1,5 +1,9 @@
 import type { VolumePoint, WeeklyVolumePoint } from './types';
 
+export function selectWeeklyRange(weeks: WeeklyVolumePoint[], range: '6m' | '2y'): WeeklyVolumePoint[] {
+  return weeks.slice(range === '6m' ? -26 : -104);
+}
+
 function isoDate(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
