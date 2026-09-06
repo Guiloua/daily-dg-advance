@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { privateResponse as NextResponse } from '@/lib/private-response';
 import { isAuthorized } from '@/lib/auth';
 import { ingestVolumeHistory } from '@/lib/repository';
 import { volumeHistoryV1Schema } from '@/lib/validation';

@@ -75,7 +75,7 @@ jobs:
           node scripts/check_secrets.mjs "$GITHUB_WORKSPACE/content" "$GITHUB_WORKSPACE/_site"
           test -f "$GITHUB_WORKSPACE/_site/index.html"
           test -f "$GITHUB_WORKSPACE/_site/archive/index.html"
-          ! grep -R -E 'fetch\(|/api/(reports|volume|ingest)' "$GITHUB_WORKSPACE/_site/assets"
+          node scripts/check_static_runtime.mjs "$GITHUB_WORKSPACE/_site"
           grep -q '/daily-dg-advance/' "$GITHUB_WORKSPACE/_site/index.html"
       - name: Upload immutable Pages artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b

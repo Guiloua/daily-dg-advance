@@ -8,6 +8,7 @@ import {
   writeFile,
 } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
+import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
@@ -62,13 +63,6 @@ function escapeHtml(value: string): string {
     .replaceAll("'", '&#39;');
 }
 
-function scriptJson(value: unknown): string {
-  return JSON.stringify(value)
-    .replaceAll('<', '\\u003c')
-    .replaceAll('\u2028', '\\u2028')
-    .replaceAll('\u2029', '\\u2029');
-}
-
 function markdownToHtml(markdown: string): string {
   return renderToStaticMarkup(
     createElement(
@@ -98,15 +92,7 @@ function priorityLabel(report: PaperReport): string {
 }
 
 function renderPaperCard(report: PaperReport, basePath: string): string {
-  const search = [
-    report.title,
-    ...report.authors,
-    report.abstract,
-    report.workSummary,
-  ]
-    .join(' ')
-    .toLocaleLowerCase('zh-CN');
-  return `<article class="paper" data-paper data-ai="${report.aiStatus}" data-topic="${escapeHtml(report.topic)}" data-priority="${report.priorityTier}" data-search="${escapeHtml(search)}">
+  return `<article class="paper" data-paper data-ai="${report.aiStatus}" data-topic="${escapeHtml(report.topic)}" data-priority="${report.priorityTier}">
   <div class="paper-meta"><span>${escapeHtml(report.categories.join(' · '))}</span><span>${report.priorityScore} · ${priorityLabel(report)}</span></div>
   <p class="progress">${escapeHtml(report.progressType)}</p>
   <h4><a href="${paperUrl(basePath, report.arxivId)}">${escapeHtml(report.title)}</a></h4>
@@ -118,6 +104,7 @@ function renderPaperCard(report: PaperReport, basePath: string): string {
     <div><dt>需谨慎处</dt><dd>${escapeHtml(report.limitations)}</dd></div>
     <div><dt>排序理由</dt><dd>${escapeHtml(report.lowPriorityReason ?? report.priorityReason)}</dd></div>
   </dl>
+  <details><summary>英文摘要与分析依据</summary><p class="abstract">${escapeHtml(report.abstract)}</p><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p><p>${escapeHtml(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${escapeHtml(report.revisionSummary)}</p>` : ''}</details>
   <a class="detail-link" href="${paperUrl(basePath, report.arxivId)}">完整分析 →</a>
 </article>`;
 }
@@ -191,36 +178,35 @@ function layout(options: {
   description: string;
   body: string;
   basePath: string;
-  data?: unknown;
+  assets: { css: string; js: string };
 }): string {
-  const { title, description, body, basePath, data } = options;
+  const { title, description, body, basePath, assets } = options;
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
-<link rel="stylesheet" href="${pathUrl(basePath, 'assets/site.css')}"><link rel="stylesheet" href="${pathUrl(basePath, 'assets/katex/katex.min.css')}"></head>
+<link rel="stylesheet" href="${pathUrl(basePath, assets.css)}"><link rel="stylesheet" href="${pathUrl(basePath, 'assets/katex/katex.min.css')}"></head>
 <body data-base-path="${escapeHtml(basePath)}"><header class="site-header"><div><a class="brand" href="${pathUrl(basePath)}"><i>G.</i><span>几何前沿日报</span></a><nav><a href="${pathUrl(basePath, 'archive/')}">日期归档</a><a href="https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site/">实时站点</a></nav></div></header>
 <main>${body}</main><footer>静态只读镜像 · 自动生成的阅读指南，关键结论请回查原论文。</footer>
-${data === undefined ? '' : `<script id="mirror-data" type="application/json">${scriptJson(data)}</script>`}<script src="${pathUrl(basePath, 'assets/site.js')}" defer></script></body></html>`;
+<script src="${pathUrl(basePath, assets.js)}" defer></script></body></html>`;
 }
 
 function renderDayPage(
   day: StaticDayV1,
   manifest: StaticMirrorManifestV1,
-  volume: StaticVolumeV1,
-  markdownHtml: string,
+  assets: { css: string; js: string },
   basePath: string,
 ): string {
   const body = `<div class="page-head"><p class="eyebrow">${day.announcementDate}</p><h1>今日值得读什么</h1><p>完整收录 ${day.coverage.publishedCount} / ${day.coverage.expectedCount} · 明确披露 AI 协作 ${day.aiDisclosureCount} 篇</p></div>
   ${renderOverview(day)}
   <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${renderControls(day, manifest)}<div data-report-list>${renderInteractiveReports(day, basePath)}</div></section>
   <section class="trend"><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>
-  <details class="markdown-copy"><summary>查看 Markdown 版全文</summary><div class="markdown-body">${markdownHtml}</div></details>`;
+  <p><a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}">查看原始 Markdown</a> · <a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}" download>下载 Markdown</a></p>`;
   return layout({
     title: `${day.announcementDate} · 几何前沿日报`,
     description: `${day.announcementDate} 的 DG、MG、GT 完整日报`,
     body,
     basePath,
-    data: { day, manifest, volume },
+    assets,
   });
 }
 
@@ -367,11 +353,13 @@ export async function buildStaticPages(args: Args): Promise<{
 
   await rm(args.out, { recursive: true, force: true });
   await mkdir(join(args.out, 'assets/katex'), { recursive: true });
-  await cp(
-    resolve('static-mirror/site.css'),
-    join(args.out, 'assets/site.css'),
-  );
-  await cp(resolve('static-mirror/site.js'), join(args.out, 'assets/site.js'));
+  const assets = { css: '', js: '' };
+  for (const extension of ['css', 'js'] as const) {
+    const bytes = await readFile(resolve(`static-mirror/site.${extension}`));
+    assets[extension] =
+      `assets/site.${createHash('sha256').update(bytes).digest('hex').slice(0, 16)}.${extension}`;
+    await writeFile(join(args.out, assets[extension]), bytes);
+  }
   await cp(
     resolve('node_modules/katex/dist/katex.min.css'),
     join(args.out, 'assets/katex/katex.min.css'),
@@ -385,19 +373,12 @@ export async function buildStaticPages(args: Args): Promise<{
     recursive: true,
   });
   await writeFile(join(args.out, '.nojekyll'), '', 'utf8');
+  await cp(join(args.content, 'daily'), join(args.out, 'daily'), {
+    recursive: true,
+  });
 
   for (const day of days) {
-    const markdown = await readFile(
-      join(args.content, `daily/${day.announcementDate}.md`),
-      'utf8',
-    );
-    const html = renderDayPage(
-      day,
-      manifest,
-      volume,
-      markdownToHtml(markdown),
-      args.basePath,
-    );
+    const html = renderDayPage(day, manifest, assets, args.basePath);
     await writePage(
       join(args.out, `daily/${day.announcementDate}/index.html`),
       html,
@@ -420,6 +401,7 @@ export async function buildStaticPages(args: Args): Promise<{
         description: paper.latest.workSummary,
         body,
         basePath: args.basePath,
+        assets,
       }),
     );
   }
@@ -439,6 +421,7 @@ export async function buildStaticPages(args: Args): Promise<{
       description: '几何前沿日报静态归档',
       body: `<article class="markdown-body archive-page">${archiveHtml}</article>`,
       basePath: args.basePath,
+      assets,
     }),
   );
   await validateBuiltLinks(args.out, args.basePath);

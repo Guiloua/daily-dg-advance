@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -128,7 +129,14 @@ assert.doesNotMatch(html, /href=["']javascript:/);
 assert.match(html, /data-filters/);
 assert.match(html, /data-chart/);
 assert.match(html, /实时站点/);
-assert.match(await readFile(join(out, 'assets/site.js'), 'utf8'), /weeks104/);
+execFileSync(process.execPath, ['scripts/check_static_runtime.mjs', out]);
+const scriptPath = html.match(/src="\/daily-dg-advance\/(assets\/site\.[a-f0-9]{16}\.js)"/)?.[1];
+assert.ok(scriptPath);
+assert.match(await readFile(join(out, scriptPath), 'utf8'), /weeks104/);
+assert.doesNotMatch(html, /mirror-data|markdown-copy/);
+assert.match(html, /download>下载 Markdown/);
+assert.match(html, /assets\/site\.[a-f0-9]{16}\.css/);
+assert.match(await readFile(join(out, `daily/${day.announcementDate}.md`), 'utf8'), /./);
 assert.match(
   await readFile(join(out, 'archive/index.html'), 'utf8'),
   /\/daily-dg-advance\/daily\/2026-09-02\//,
