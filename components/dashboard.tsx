@@ -569,7 +569,9 @@ export function Dashboard({
                 {range === '6m' ? <ChevronDown /> : <ChevronUp />}
               </Button>
             </div>
-            <LazyTrend range={range} />
+            {data.dataMode === 'database' || data.dataMode === 'preview' ? (
+              <LazyTrend range={range} />
+            ) : <p className="min-h-[320px] text-sm text-muted-foreground">日报载入后按需加载趋势。</p>}
           </section>
         }
       </div>
