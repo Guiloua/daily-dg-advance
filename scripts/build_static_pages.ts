@@ -15,9 +15,12 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import ReactMarkdown from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
+import { renderMathText } from '../lib/math-text';
 import {
   STATIC_MIRROR_SCHEMA_VERSION,
   arxivSlug,
+  renderPaperMarkdown,
+  renderDailyMarkdown,
   type StaticDayV1,
   type StaticMirrorManifestV1,
   type StaticPaperV1,
@@ -69,7 +72,9 @@ function markdownToHtml(markdown: string): string {
       ReactMarkdown,
       {
         remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
+        rehypePlugins: [
+          [rehypeKatex, { trust: false, maxExpand: 1000, maxSize: 20 }],
+        ],
       },
       markdown,
     ),
@@ -95,16 +100,16 @@ function renderPaperCard(report: PaperReport, basePath: string): string {
   return `<article class="paper" data-paper data-ai="${report.aiStatus}" data-topic="${escapeHtml(report.topic)}" data-priority="${report.priorityTier}">
   <div class="paper-meta"><span>${escapeHtml(report.categories.join(' · '))}</span><span>${report.priorityScore} · ${priorityLabel(report)}</span></div>
   <p class="progress">${escapeHtml(report.progressType)}</p>
-  <h4><a href="${paperUrl(basePath, report.arxivId)}">${escapeHtml(report.title)}</a></h4>
+  <h4><a href="${paperUrl(basePath, report.arxivId)}">${renderMathText(report.title)}</a></h4>
   <p class="authors">${escapeHtml(report.authors.join(' · '))}</p>
   <dl>
-    <div><dt>完成的工作</dt><dd>${escapeHtml(report.workSummary)}</dd></div>
-    <div><dt>技术</dt><dd>${escapeHtml(report.techniques.join(' · '))}</dd></div>
-    <div><dt>可能的突破</dt><dd>${escapeHtml(report.breakthrough)}</dd></div>
-    <div><dt>需谨慎处</dt><dd>${escapeHtml(report.limitations)}</dd></div>
-    <div><dt>排序理由</dt><dd>${escapeHtml(report.lowPriorityReason ?? report.priorityReason)}</dd></div>
+    <div><dt>完成的工作</dt><dd>${renderMathText(report.workSummary)}</dd></div>
+    <div><dt>技术</dt><dd>${renderMathText(report.techniques.join(' · '))}</dd></div>
+    <div><dt>可能的突破</dt><dd>${renderMathText(report.breakthrough)}</dd></div>
+    <div><dt>需谨慎处</dt><dd>${renderMathText(report.limitations)}</dd></div>
+    <div><dt>排序理由</dt><dd>${renderMathText(report.lowPriorityReason ?? report.priorityReason)}</dd></div>
   </dl>
-  <details><summary>英文摘要与分析依据</summary><p class="abstract">${escapeHtml(report.abstract)}</p><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p><p>${escapeHtml(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${escapeHtml(report.revisionSummary)}</p>` : ''}</details>
+  <details><summary>英文摘要与分析依据</summary><div class="abstract">${renderMathText(report.abstract)}</div><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p><p>${renderMathText(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${renderMathText(report.revisionSummary)}</p>` : ''}</details>
   <a class="detail-link" href="${paperUrl(basePath, report.arxivId)}">完整分析 →</a>
 </article>`;
 }
@@ -156,18 +161,18 @@ function renderOverview(day: StaticDayV1): string {
     ? day.overview.breakthroughPoints
         .map(
           (item) =>
-            `<li><strong>${escapeHtml(item.title)}</strong>：${escapeHtml(item.summary)}</li>`,
+            `<li><strong>${renderMathText(item.title)}</strong>：${renderMathText(item.summary)}</li>`,
         )
         .join('')
     : '<li>本期没有足够证据支持单独标注突破点。</li>';
   const cautions = day.overview.cautions.length
     ? day.overview.cautions
-        .map((item) => `<li>${escapeHtml(item)}</li>`)
+        .map((item) => `<li>${renderMathText(item)}</li>`)
         .join('')
     : '<li>仍建议回查原论文的精确定理、假设和证明细节。</li>';
   return `<section class="overview">
     <div><p class="eyebrow">Daily synthesis</p><h2>当日总览</h2></div>
-    <div class="overview-row"><h3>主要方向与技术进展</h3><div>${day.overview.mainProgress.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}</div></div>
+    <div class="overview-row"><h3>主要方向与技术进展</h3><div>${day.overview.mainProgress.map((item) => `<p>${renderMathText(item)}</p>`).join('')}</div></div>
     <div class="overview-row"><h3>可能的突破点</h3><ul>${breakthroughs}</ul></div>
     <div class="overview-row"><h3>需谨慎处</h3><ul>${cautions}</ul></div>
   </section>`;
@@ -377,7 +382,7 @@ export async function buildStaticPages(args: Args): Promise<{
 
   for (const day of days) {
     const markdownPath = `daily/${day.announcementDate}.md`;
-    await cp(join(args.content, markdownPath), join(args.out, markdownPath));
+    await writeFile(join(args.out, markdownPath), renderDailyMarkdown(day));
     const html = renderDayPage(day, manifest, assets, args.basePath);
     await writePage(
       join(args.out, `daily/${day.announcementDate}/index.html`),
@@ -389,10 +394,8 @@ export async function buildStaticPages(args: Args): Promise<{
   for (const paper of papers) {
     if (paper.slug !== arxivSlug(paper.arxivId))
       throw new Error(`Invalid paper slug for ${paper.arxivId}`);
-    const markdown = await readFile(
-      join(args.content, `papers/${paper.slug}.md`),
-      'utf8',
-    );
+    // Recreate from the lossless snapshot: older Markdown escaped TeX commands.
+    const markdown = renderPaperMarkdown(paper);
     const body = `<article class="markdown-body paper-page">${markdownToHtml(markdown)}</article>`;
     await writePage(
       join(args.out, `papers/${paper.slug}/index.html`),

@@ -391,6 +391,23 @@ h4 {
   padding-top: 4px;
 }
 
+.paper,
+.overview,
+.markdown-body {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+.math-fallback {
+  font-family: monospace;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 760px) {
   main {
     padding-top: 36px;
