@@ -260,6 +260,35 @@ h4 {
   margin: 0;
   font-size: 14px;
 }
+.paper details {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.paper details > summary {
+  padding: 4px 0;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.65;
+  cursor: pointer;
+}
+.paper details > summary:hover {
+  color: var(--wine);
+}
+.paper details > summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+.paper details > .abstract {
+  margin-top: 12px;
+}
+.paper details > p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
 .detail-link {
   display: inline-block;
   margin-top: 18px;
