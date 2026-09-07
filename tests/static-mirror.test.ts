@@ -17,13 +17,44 @@ import {
 import { previewReports } from '../lib/fixtures';
 import type { PaperReport } from '../lib/types';
 import { buildStaticPages } from '../scripts/build_static_pages';
+import { renderMathText, splitMath } from '../lib/math-text';
+
+for (const source of [
+  String.raw`$R_{ij}$`,
+  String.raw`\(\frac{1}{2}\)`,
+  String.raw`$$\sum_{i=1}^n i$$`,
+  String.raw`\[\begin{pmatrix}a&b\\c&d\end{pmatrix}\]`,
+]) {
+  assert.match(renderMathText(source), /class="katex/);
+  assert.doesNotMatch(renderMathText(source), /math-fallback/);
+}
+assert.match(renderMathText(String.raw`\[x^2\]`), /katex-display/);
+assert.doesNotMatch(
+  renderMathText(String.raw`\$5 and \$10; \(unfinished`),
+  /class="katex/,
+);
+assert.equal(
+  splitMath('`$x$` and $y$').filter((part) => part.tex !== undefined).length,
+  1,
+);
+assert.match(renderMathText('$\\unknownCommand{x}$'), /math-fallback/);
+assert.doesNotMatch(
+  renderMathText(
+    String.raw`$\href{javascript:alert(1)}{x}$ <script>x</script>`,
+  ),
+  /href="javascript:|<script>/,
+);
+assert.doesNotMatch(
+  renderMathText(String.raw`$\includegraphics{https://example.com/x}$`),
+  /<img/,
+);
 
 const malicious: PaperReport = {
   ...previewReports[0],
   arxivId: 'math/0301001',
   id: '2026-09-02:math/0301001:v1',
   title: '<script>alert(1)</script> {{ site.secret }} Geometry',
-  abstract: '[bad](javascript:alert(1)) and $R_{ij}$',
+  abstract: String.raw`[bad](javascript:alert(1)) and $R_{ij}$ and \(\frac{1}{2}\). \[\sum_{i=1}^n i\]`,
   arxivUrl: 'https://arxiv.org/abs/math/0301001',
   pdfUrl: 'https://arxiv.org/pdf/math/0301001',
 };
@@ -52,6 +83,9 @@ assert.doesNotMatch(markdown, /<script>/);
 assert.doesNotMatch(markdown, /\{\{ site\.secret \}\}/);
 assert.match(markdown, /未见 AI 协作声明/);
 assert.match(markdown, /原始英文摘要/);
+assert.ok(markdown.includes(String.raw`$R_{ij}$`));
+assert.ok(markdown.includes(String.raw`$\frac{1}{2}$`));
+assert.ok(markdown.includes('$$\n' + String.raw`\sum_{i=1}^n i` + '\n$$'));
 
 const paper = mergeStaticPaper(undefined, malicious);
 const updatedPaper = mergeStaticPaper(paper, {
@@ -129,14 +163,33 @@ assert.doesNotMatch(html, /href=["']javascript:/);
 assert.match(html, /data-filters/);
 assert.match(html, /data-chart/);
 assert.match(html, /实时站点/);
+assert.match(html, /class="katex/);
+assert.match(html, /katex-display/);
+assert.doesNotMatch(html, /math-fallback/);
+const detailHtml = await readFile(
+  join(out, 'papers/math--0301001/index.html'),
+  'utf8',
+);
+assert.match(detailHtml, /class="katex/);
+assert.match(detailHtml, /katex-display/);
+assert.doesNotMatch(detailHtml, /katex-error|href="javascript:/);
+assert.ok(
+  (await readFile(join(out, 'assets/katex/fonts/KaTeX_Main-Regular.woff2')))
+    .length > 0,
+);
 execFileSync(process.execPath, ['scripts/check_static_runtime.mjs', out]);
-const scriptPath = html.match(/src="\/daily-dg-advance\/(assets\/site\.[a-f0-9]{16}\.js)"/)?.[1];
+const scriptPath = html.match(
+  /src="\/daily-dg-advance\/(assets\/site\.[a-f0-9]{16}\.js)"/,
+)?.[1];
 assert.ok(scriptPath);
 assert.match(await readFile(join(out, scriptPath), 'utf8'), /weeks104/);
 assert.doesNotMatch(html, /mirror-data|markdown-copy/);
 assert.match(html, /download>下载 Markdown/);
 assert.match(html, /assets\/site\.[a-f0-9]{16}\.css/);
-assert.match(await readFile(join(out, `daily/${day.announcementDate}.md`), 'utf8'), /./);
+assert.match(
+  await readFile(join(out, `daily/${day.announcementDate}.md`), 'utf8'),
+  /./,
+);
 assert.match(
   await readFile(join(out, 'archive/index.html'), 'utf8'),
   /\/daily-dg-advance\/daily\/2026-09-02\//,

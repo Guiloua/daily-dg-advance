@@ -1,4 +1,5 @@
 import { buildDailyOverview } from './dashboard';
+import { mathMarkdown } from './math-text';
 import { aggregateWeeklyVolumes } from './volume';
 import {
   TOPICS,
@@ -177,13 +178,15 @@ export function mergeStaticPaper(
 }
 
 function escapeMarkdown(value: string): string {
-  return value
-    .replaceAll('\\', '\\\\')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replace(/([`*_{}[\]()#+.!|])/g, '\\$1')
-    .replaceAll('{{', '&#123;&#123;')
-    .replaceAll('{%', '&#123;%');
+  return mathMarkdown(value, (text) =>
+    text
+      .replaceAll('\\', '\\\\')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replace(/([`*_{}[\]()#+.!|])/g, '\\$1')
+      .replaceAll('{{', '&#123;&#123;')
+      .replaceAll('{%', '&#123;%'),
+  );
 }
 
 function safeExternalUrl(value: string): string {
