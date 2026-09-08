@@ -1,6 +1,14 @@
 # Geometry arXiv Daily
 
-这是工作日上海时间 14:00 的日报数据任务。成功时静默；抓取、分析、校验、写入或核对任一步失败时让任务失败以触发通知。读取令牌时不得打印文件内容、Authorization 或完整报告载荷。
+这是工作日上海时间 10:30 的日报数据任务。成功时静默；抓取、分析、校验、写入或核对任一步失败时让任务失败以触发通知。读取令牌时不得打印文件内容、Authorization 或完整报告载荷。
+
+## 当次运行结果与权限
+
+- 在 `.automation/daily-outcomes/YYYY-MM-DD.json`（上海计划日期）记录当次结果，包含 `schemaVersion: 1`、唯一 `runId`、`scheduledDate`、`status`。开始时为 `running`；失败为 `failed`，权限拒绝为 `blocked`。同时保留以运行 ID 命名的历史记录，不得抹除失败历史。
+- 先检查官方三分类最新公告日与两个公开站点。如果确实无新公告、两站日期与完整收录数一致且没有待同步内容，可结束为 `no_new`，无需读取写入令牌。这表示“核验后无需更新”，不是“已发布新日报”，也不证明写入权限可用。
+- `success` 只用于实际 V2 发布及核对完成；`no_new` 与 `success` 均须记录 `announcementDate`、整数 `expectedCount` / `publishedCount`，以及实际核验后才置为 true 的 `officialVerified`、`sitesVerified`、`pagesVerified`。实际发布还须 `ingestVerified: true`。
+- 如有新公告，沿用下述鉴权流程。用户授权不替代应用的权限审批；审批拒绝后立即记录 `blocked`，不得改用其他凭据、命令包装、代理或运行方式规避拒绝。需要用户在应用中批准受限的既有站点访问；不得自动扩大为全面访问。
+- 异常终止导致结果缺失或停留 `running` 时，健康任务必须判为未完成，不能代写成功。
 
 ## 抓取
 

@@ -9,6 +9,9 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from arxiv_listing import CATEGORIES, _download, listing_date, parse_listing
 
@@ -135,11 +138,42 @@ def verify_payloads(
     return errors
 
 
+def verify_daily_outcome(receipt: dict, scheduled_date: str, announcement_date: str, count: int) -> list[str]:
+    """Task completion and healthy historical data are not evidence of a successful run."""
+    if not isinstance(receipt, dict):
+        return ["daily outcome is not an object"]
+    errors = []
+    if receipt.get("schemaVersion") != 1 or not receipt.get("runId"):
+        errors.append("daily outcome identity is missing")
+    if receipt.get("scheduledDate") != scheduled_date:
+        errors.append("daily outcome is missing or stale for this scheduled day")
+    if receipt.get("status") not in ("success", "no_new"):
+        errors.append("daily run is not successful or verified no-new")
+    if receipt.get("status") == "success" and receipt.get("ingestVerified") is not True:
+        errors.append("daily publication has no ingest confirmation")
+    if any(receipt.get(key) is not True for key in ("officialVerified", "sitesVerified", "pagesVerified")):
+        errors.append("daily outcome verification is incomplete")
+    if receipt.get("announcementDate") != announcement_date:
+        errors.append("daily outcome and official announcement dates disagree")
+    if any(type(receipt.get(key)) is not int or receipt[key] != count for key in ("expectedCount", "publishedCount")):
+        errors.append("daily outcome and production counts disagree")
+    return errors
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", required=True)
     parser.add_argument("--check-arxiv", action="store_true")
+    parser.add_argument("--daily-outcome", type=Path, help="Required by scheduled health checks; no secrets in this receipt")
     args = parser.parse_args()
+    receipt = None
+    if args.daily_outcome:
+        if not args.check_arxiv:
+            parser.error("--daily-outcome requires --check-arxiv")
+        try:
+            receipt = json.loads(args.daily_outcome.read_text())
+        except (OSError, ValueError):
+            raise RuntimeError("Daily outcome is missing or unreadable") from None
     site = args.site.rstrip("/")
 
     with _request(f"{site}/") as homepage:
@@ -170,11 +204,14 @@ def main() -> None:
 
     expected = official_announcement() if args.check_arxiv else None
     errors = verify_payloads(health, reports, volume, expected)
+    if args.daily_outcome:
+        errors.extend(verify_daily_outcome(receipt, datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat(), expected.date, health.get("coverage", {}).get("publishedCount")))
     if errors:
         raise RuntimeError("; ".join(errors))
 
     summary = {
         "status": "ok",
+        "dailyRunStatus": receipt["status"] if args.daily_outcome else "not_checked",
         "latestAnnouncementDate": health["latestAnnouncementDate"],
         "publishedCount": health["coverage"]["publishedCount"],
         "latestCompleteWeek": health["latestCompleteWeek"],
