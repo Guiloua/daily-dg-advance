@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "arxivId": "2504.10063",
+  "slug": "2504.10063",
+  "latest": {
+    "announcementDate": "2026-09-10",
+    "arxivId": "2504.10063",
+    "version": 5,
+    "entryKind": "cross_list",
+    "title": "Hallucination Detection in LLMs with Topological Divergence on Attention Graphs",
+    "authors": [
+      "Alexandra Bazarova",
+      "Andrei Volodichev",
+      "Aleksandr Yugay",
+      "Andrey Shulga",
+      "Alina Ermilova",
+      "Konstantin Polev",
+      "Julia Belikova",
+      "Rauf Parchiev",
+      "Dmitry Simakov",
+      "Maxim Savchenko",
+      "Andrey Savchenko",
+      "Serguei Barannikov",
+      "Alexey Zaytsev"
+    ],
+    "abstract": "Hallucination, i.e., generating factually incorrect content, remains a critical challenge for large language models (LLMs). We introduce TOHA, a TOpology-based HAllucination detector in the RAG setting, which leverages a topological divergence metric to quantify the structural properties of graphs induced by attention matrices. Examining the topological divergence between prompt and response subgraphs reveals consistent patterns: higher divergence values in specific attention heads correlate with hallucinated outputs, independent of the dataset. Extensive experiments - including evaluation on question answering and summarization tasks - show that our approach achieves state-of-the-art or competitive results on several benchmarks while requiring minimal annotated data and computational resources. Our findings suggest that analyzing the topological structure of attention matrices can serve as an efficient and robust indicator of factual reliability in LLMs.",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "math.AT",
+      "math.MG"
+    ],
+    "primaryCategory": "cs.CL",
+    "arxivUrl": "https://arxiv.org/abs/2504.10063",
+    "pdfUrl": "https://arxiv.org/pdf/2504.10063",
+    "submittedAt": "2025-04-14T10:06:27Z",
+    "updatedAt": "2026-05-12T11:19:32Z",
+    "topic": "交叉方向与基础工具",
+    "progressType": "应用/联系",
+    "workSummary": "提出 TOHA，用提示与回答的注意力子图之间的拓扑差异检测检索增强语言模型的幻觉。",
+    "techniques": [
+      "注意力图",
+      "拓扑差异",
+      "少标注评测"
+    ],
+    "breakthrough": "在多个问答与摘要基准上得到竞争性检测表现。",
+    "limitations": "注意力差异与事实错误是经验关联，不构成事实正确性的数学保证。 当前为摘要级分析，技术细节与结论须回查原文。",
+    "analysisDepth": "abstract",
+    "aiStatus": "explicit",
+    "aiEvidence": "用 GPT-4o 为实验回答作幻觉标注，并与人工标签比较。",
+    "aiEvidenceSource": "https://arxiv.org/html/2504.10063v5 — Appendix D.1 Data Generation & Annotation",
+    "priorityScore": 49,
+    "priorityTier": "low",
+    "priorityReason": "主要贡献是语言模型评测应用，与课题组几何理论主线较远。",
+    "lowPriorityReason": "主要贡献是语言模型评测应用，与课题组几何理论主线较远。 此为本课题组阅读顺序判断，不是论文质量结论。",
+    "revisionSummary": null,
+    "id": "2026-09-10:2504.10063:v5"
+  },
+  "history": [
+    {
+      "announcementDate": "2026-09-10",
+      "report": {
+        "announcementDate": "2026-09-10",
+        "arxivId": "2504.10063",
+        "version": 5,
+        "entryKind": "cross_list",
+        "title": "Hallucination Detection in LLMs with Topological Divergence on Attention Graphs",
+        "authors": [
+          "Alexandra Bazarova",
+          "Andrei Volodichev",
+          "Aleksandr Yugay",
+          "Andrey Shulga",
+          "Alina Ermilova",
+          "Konstantin Polev",
+          "Julia Belikova",
+          "Rauf Parchiev",
+          "Dmitry Simakov",
+          "Maxim Savchenko",
+          "Andrey Savchenko",
+          "Serguei Barannikov",
+          "Alexey Zaytsev"
+        ],
+        "abstract": "Hallucination, i.e., generating factually incorrect content, remains a critical challenge for large language models (LLMs). We introduce TOHA, a TOpology-based HAllucination detector in the RAG setting, which leverages a topological divergence metric to quantify the structural properties of graphs induced by attention matrices. Examining the topological divergence between prompt and response subgraphs reveals consistent patterns: higher divergence values in specific attention heads correlate with hallucinated outputs, independent of the dataset. Extensive experiments - including evaluation on question answering and summarization tasks - show that our approach achieves state-of-the-art or competitive results on several benchmarks while requiring minimal annotated data and computational resources. Our findings suggest that analyzing the topological structure of attention matrices can serve as an efficient and robust indicator of factual reliability in LLMs.",
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "math.AT",
+          "math.MG"
+        ],
+        "primaryCategory": "cs.CL",
+        "arxivUrl": "https://arxiv.org/abs/2504.10063",
+        "pdfUrl": "https://arxiv.org/pdf/2504.10063",
+        "submittedAt": "2025-04-14T10:06:27Z",
+        "updatedAt": "2026-05-12T11:19:32Z",
+        "topic": "交叉方向与基础工具",
+        "progressType": "应用/联系",
+        "workSummary": "提出 TOHA，用提示与回答的注意力子图之间的拓扑差异检测检索增强语言模型的幻觉。",
+        "techniques": [
+          "注意力图",
+          "拓扑差异",
+          "少标注评测"
+        ],
+        "breakthrough": "在多个问答与摘要基准上得到竞争性检测表现。",
+        "limitations": "注意力差异与事实错误是经验关联，不构成事实正确性的数学保证。 当前为摘要级分析，技术细节与结论须回查原文。",
+        "analysisDepth": "abstract",
+        "aiStatus": "explicit",
+        "aiEvidence": "用 GPT-4o 为实验回答作幻觉标注，并与人工标签比较。",
+        "aiEvidenceSource": "https://arxiv.org/html/2504.10063v5 — Appendix D.1 Data Generation & Annotation",
+        "priorityScore": 49,
+        "priorityTier": "low",
+        "priorityReason": "主要贡献是语言模型评测应用，与课题组几何理论主线较远。",
+        "lowPriorityReason": "主要贡献是语言模型评测应用，与课题组几何理论主线较远。 此为本课题组阅读顺序判断，不是论文质量结论。",
+        "revisionSummary": null,
+        "id": "2026-09-10:2504.10063:v5"
+      }
+    }
+  ]
+}

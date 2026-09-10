@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "arxivId": "2407.08364",
+  "slug": "2407.08364",
+  "latest": {
+    "announcementDate": "2026-09-10",
+    "arxivId": "2407.08364",
+    "version": 3,
+    "entryKind": "cross_list",
+    "title": "Scalar Function Topology Divergence: Comparing Topology of 3D Objects",
+    "authors": [
+      "Ilya Trofimov",
+      "Daria Voronkova",
+      "Eduard Tulchinskii",
+      "Evgeny Burnaev",
+      "Serguei Barannikov"
+    ],
+    "abstract": "We propose a new topological tool for computer vision - Scalar Function Topology Divergence (SFTD), which measures the dissimilarity of multi-scale topology between sublevel sets of two functions having a common domain. Functions can be defined on an undirected graph or Euclidean space of any dimensionality. Most of the existing methods for comparing topology are based on Wasserstein distance between persistence barcodes and they don't take into account the localization of topological features. The minimization of SFTD ensures that the corresponding topological features of scalar functions are located in the same places. The proposed tool provides useful visualizations depicting areas where functions have topological dissimilarities. We provide applications of the proposed method to 3D computer vision. In particular, experiments demonstrate that SFTD as an additional loss improves the reconstruction of cellular 3D shapes from 2D fluorescence microscopy images, and helps to identify topological errors in 3D segmentation. Additionally, we show that SFTD outperforms Betti matching loss in 2D segmentation problems.",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "math.AT",
+      "math.CO",
+      "math.MG"
+    ],
+    "primaryCategory": "cs.CV",
+    "arxivUrl": "https://arxiv.org/abs/2407.08364",
+    "pdfUrl": "https://arxiv.org/pdf/2407.08364",
+    "submittedAt": "2024-07-11T10:18:54Z",
+    "updatedAt": "2024-11-12T10:56:38Z",
+    "topic": "交叉方向与基础工具",
+    "progressType": "新方法/构造",
+    "workSummary": "提出标量函数拓扑差异 SFTD，同时比较同域子水平集的多尺度拓扑及特征位置，并用于三维重建与分割。",
+    "techniques": [
+      "子水平集拓扑",
+      "位置敏感拓扑损失",
+      "三维视觉实验"
+    ],
+    "breakthrough": "补充只比较持久条形码而忽略特征位置的不足。",
+    "limitations": "实验改进限于文中任务，不能据此断言普遍优于所有拓扑损失。 当前为摘要级分析，技术细节与结论须回查原文。",
+    "analysisDepth": "abstract",
+    "aiStatus": "no_disclosure_observed",
+    "aiEvidence": null,
+    "aiEvidenceSource": null,
+    "priorityScore": 52,
+    "priorityTier": "medium",
+    "priorityReason": "拓扑工具可复用，但与曲率和比较几何的直接联系较弱。",
+    "lowPriorityReason": null,
+    "revisionSummary": null,
+    "id": "2026-09-10:2407.08364:v3"
+  },
+  "history": [
+    {
+      "announcementDate": "2026-09-10",
+      "report": {
+        "announcementDate": "2026-09-10",
+        "arxivId": "2407.08364",
+        "version": 3,
+        "entryKind": "cross_list",
+        "title": "Scalar Function Topology Divergence: Comparing Topology of 3D Objects",
+        "authors": [
+          "Ilya Trofimov",
+          "Daria Voronkova",
+          "Eduard Tulchinskii",
+          "Evgeny Burnaev",
+          "Serguei Barannikov"
+        ],
+        "abstract": "We propose a new topological tool for computer vision - Scalar Function Topology Divergence (SFTD), which measures the dissimilarity of multi-scale topology between sublevel sets of two functions having a common domain. Functions can be defined on an undirected graph or Euclidean space of any dimensionality. Most of the existing methods for comparing topology are based on Wasserstein distance between persistence barcodes and they don't take into account the localization of topological features. The minimization of SFTD ensures that the corresponding topological features of scalar functions are located in the same places. The proposed tool provides useful visualizations depicting areas where functions have topological dissimilarities. We provide applications of the proposed method to 3D computer vision. In particular, experiments demonstrate that SFTD as an additional loss improves the reconstruction of cellular 3D shapes from 2D fluorescence microscopy images, and helps to identify topological errors in 3D segmentation. Additionally, we show that SFTD outperforms Betti matching loss in 2D segmentation problems.",
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "math.AT",
+          "math.CO",
+          "math.MG"
+        ],
+        "primaryCategory": "cs.CV",
+        "arxivUrl": "https://arxiv.org/abs/2407.08364",
+        "pdfUrl": "https://arxiv.org/pdf/2407.08364",
+        "submittedAt": "2024-07-11T10:18:54Z",
+        "updatedAt": "2024-11-12T10:56:38Z",
+        "topic": "交叉方向与基础工具",
+        "progressType": "新方法/构造",
+        "workSummary": "提出标量函数拓扑差异 SFTD，同时比较同域子水平集的多尺度拓扑及特征位置，并用于三维重建与分割。",
+        "techniques": [
+          "子水平集拓扑",
+          "位置敏感拓扑损失",
+          "三维视觉实验"
+        ],
+        "breakthrough": "补充只比较持久条形码而忽略特征位置的不足。",
+        "limitations": "实验改进限于文中任务，不能据此断言普遍优于所有拓扑损失。 当前为摘要级分析，技术细节与结论须回查原文。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "priorityScore": 52,
+        "priorityTier": "medium",
+        "priorityReason": "拓扑工具可复用，但与曲率和比较几何的直接联系较弱。",
+        "lowPriorityReason": null,
+        "revisionSummary": null,
+        "id": "2026-09-10:2407.08364:v3"
+      }
+    }
+  ]
+}
