@@ -15,6 +15,7 @@ import {
 } from '../lib/static-mirror';
 import type { VolumePoint } from '../lib/types';
 import { reportBatchV2Schema, type ReportBatchV2 } from '../lib/validation';
+import { readJson as readPublicJson } from '../lib/read-request';
 
 interface Args {
   site: string;
@@ -54,29 +55,12 @@ function parseArgs(argv: string[]): Args {
 }
 
 async function fetchJson<T>(url: string): Promise<T> {
-  let lastError: unknown;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
-    try {
-      const response = await fetch(url, {
-        headers: {
-          accept: 'application/json',
-          ...(process.env.OAI_SITES_AUTHORIZATION
-            ? {
-                'OAI-Sites-Authorization': `Bearer ${process.env.OAI_SITES_AUTHORIZATION}`,
-              }
-            : {}),
-        },
-      });
-      if (!response.ok)
-        throw new Error(`${response.status} ${response.statusText}`);
-      return (await response.json()) as T;
-    } catch (error) {
-      lastError = error;
-      if (attempt < 3)
-        await new Promise((done) => setTimeout(done, attempt * 800));
-    }
-  }
-  throw new Error(`Unable to read ${url}: ${String(lastError)}`);
+  return readPublicJson<T>(url, undefined, 15_000, {
+    accept: 'application/json',
+    ...(process.env.OAI_SITES_AUTHORIZATION
+      ? { 'OAI-Sites-Authorization': `Bearer ${process.env.OAI_SITES_AUTHORIZATION}` }
+      : {}),
+  });
 }
 
 async function readJson<T>(path: string): Promise<T | undefined> {

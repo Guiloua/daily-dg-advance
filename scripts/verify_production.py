@@ -9,6 +9,9 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from arxiv_listing import CATEGORIES, _download, listing_date, parse_listing
 
@@ -65,6 +68,19 @@ def official_announcement() -> ExpectedAnnouncement:
         math_mg=values["mathMg"][1],
         math_gt=values["mathGt"][1],
     )
+
+
+def expected_from_manifest(manifest: dict, scheduled_for: str) -> ExpectedAnnouncement:
+    if manifest.get('scheduledFor') != scheduled_for or not manifest.get('runId') or not manifest.get('verifiedAt'):
+        raise RuntimeError('Official manifest is not verified for this exact scheduled slot')
+    groups = manifest['sourceManifest']
+    ids = {item for group in groups.values() for field in ('newIds', 'crossListIds') for item in group[field]}
+    if ids != set(manifest['expectedIds']) or len(ids) != manifest['expectedCount']:
+        raise RuntimeError('Official manifest coverage is inconsistent')
+    counts = {key: len(set(groups[key]['newIds'])) + len(set(groups[key]['crossListIds'])) for key in CATEGORIES}
+    if any(counts[key] != manifest['dailyVolume'][key] for key in CATEGORIES):
+        raise RuntimeError('Official manifest category totals are inconsistent')
+    return ExpectedAnnouncement(manifest['announcementDate'], counts['mathDg'], counts['mathMg'], counts['mathGt'])
 
 
 def verify_payloads(
@@ -135,11 +151,44 @@ def verify_payloads(
     return errors
 
 
+def verify_daily_outcome(receipt: dict, scheduled_date: str, announcement_date: str, count: int) -> list[str]:
+    """Task completion and healthy historical data are not evidence of a successful run."""
+    if not isinstance(receipt, dict):
+        return ["daily outcome is not an object"]
+    errors = []
+    if receipt.get("schemaVersion") != 1 or not receipt.get("runId"):
+        errors.append("daily outcome identity is missing")
+    if receipt.get("scheduledDate") != scheduled_date:
+        errors.append("daily outcome is missing or stale for this scheduled day")
+    if receipt.get("status") not in ("success", "no_new"):
+        errors.append("daily run is not successful or verified no-new")
+    if receipt.get("status") == "success" and receipt.get("ingestVerified") is not True:
+        errors.append("daily publication has no ingest confirmation")
+    if any(receipt.get(key) is not True for key in ("officialVerified", "sitesVerified", "pagesVerified")):
+        errors.append("daily outcome verification is incomplete")
+    if receipt.get("announcementDate") != announcement_date:
+        errors.append("daily outcome and official announcement dates disagree")
+    if any(type(receipt.get(key)) is not int or receipt[key] != count for key in ("expectedCount", "publishedCount")):
+        errors.append("daily outcome and production counts disagree")
+    return errors
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", required=True)
     parser.add_argument("--check-arxiv", action="store_true")
+    parser.add_argument("--daily-outcome", type=Path, help="Required by scheduled health checks; no secrets in this receipt")
+    parser.add_argument('--manifest', type=Path, help='Reuse the daily run’s verified official snapshot; no arXiv requests')
+    parser.add_argument('--scheduled-for', help='Exact ISO scheduled slot, required with --manifest')
     args = parser.parse_args()
+    receipt = None
+    if args.daily_outcome:
+        if not args.manifest or not args.scheduled_for:
+            parser.error('--daily-outcome requires --manifest and --scheduled-for')
+        try:
+            receipt = json.loads(args.daily_outcome.read_text())
+        except (OSError, ValueError):
+            raise RuntimeError("Daily outcome is missing or unreadable") from None
     site = args.site.rstrip("/")
 
     with _request(f"{site}/") as homepage:
@@ -168,13 +217,22 @@ def main() -> None:
     if unauthorized_write_status != 401:
         raise RuntimeError("Protected ingest endpoint accepted an anonymous request")
 
-    expected = official_announcement() if args.check_arxiv else None
+    manifest = json.loads(args.manifest.read_text()) if args.manifest else None
+    expected = expected_from_manifest(manifest, args.scheduled_for) if manifest else official_announcement() if args.check_arxiv else None
     errors = verify_payloads(health, reports, volume, expected)
+    if args.daily_outcome:
+        if receipt.get('scheduledFor') != args.scheduled_for or receipt.get('runId') != manifest['runId']:
+            errors.append('Daily outcome is not from the manifest’s exact scheduled run')
+        publication_ids = {item['arxivId'] for item in reports.get('reports', []) if item.get('entryKind') != 'revision'}
+        if publication_ids != set(manifest['expectedIds']):
+            errors.append('Published IDs do not cover the official manifest')
+        errors.extend(verify_daily_outcome(receipt, datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat(), expected.date, health.get("coverage", {}).get("publishedCount")))
     if errors:
         raise RuntimeError("; ".join(errors))
 
     summary = {
         "status": "ok",
+        "dailyRunStatus": receipt["status"] if args.daily_outcome else "not_checked",
         "latestAnnouncementDate": health["latestAnnouncementDate"],
         "publishedCount": health["coverage"]["publishedCount"],
         "latestCompleteWeek": health["latestCompleteWeek"],

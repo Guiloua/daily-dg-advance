@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 
 from arxiv_fetch import CATEGORIES, fetch
 from arxiv_listing import build_manifest
+from arxiv_client import Deferred
 
 EASTERN = ZoneInfo("America/New_York")
 SHANGHAI = ZoneInfo("Asia/Shanghai")
@@ -75,6 +76,8 @@ def exact_recent_points(start: date, end: date) -> list[dict]:
         if day.weekday() < 5:
             try:
                 manifest = build_manifest(day.isoformat())
+            except Deferred:
+                raise
             except RuntimeError as error:
                 print(f"Skipping {day}: {error}")
             else:

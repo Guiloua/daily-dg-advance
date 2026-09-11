@@ -198,7 +198,7 @@ export async function loadReportFeed(date?: string) {
   const publishedCount = run?.published_count ?? reports.length;
   return {
     date: selectedDate,
-    lastUpdated: run?.completed_at ?? `${selectedDate}T14:00:00+08:00`,
+    lastUpdated: run?.completed_at ?? '',
     coverage: {
       expectedCount,
       publishedCount,
@@ -254,7 +254,7 @@ export async function loadDashboard(date?: string): Promise<DashboardData> {
     ]);
     return {
       latestDate: latest,
-      lastUpdated: run?.completed_at ?? `${latest}T14:00:00+08:00`,
+      lastUpdated: run?.completed_at ?? '',
       volumes,
       reports,
       dataMode: 'database',

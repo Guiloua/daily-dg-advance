@@ -8,6 +8,7 @@ import json
 import time
 import urllib.parse
 import urllib.request
+from arxiv_client import request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -16,20 +17,6 @@ API = "https://export.arxiv.org/api/query"
 ATOM = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
 CATEGORIES = ("math.DG", "math.MG", "math.GT")
 USER_AGENT = "GeometryArxivDaily/1.0 (research briefing; contact via deployed site)"
-
-
-def request(url: str) -> bytes:
-    error: Exception | None = None
-    for attempt in range(3):
-        if attempt:
-            time.sleep(3 * attempt)
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=60) as response:
-                return response.read()
-        except Exception as exc:
-            error = exc
-    raise RuntimeError(f"arXiv request failed after three attempts: {error}")
 
 
 def clean(value: str | None) -> str:
@@ -47,7 +34,7 @@ def fetch(since: datetime, until: datetime, page_size: int = 200) -> list[dict]:
         root = ET.fromstring(request(f"{API}?{params}"))
         entries = root.findall("a:entry", ATOM)
         for entry in entries:
-            raw_id = clean(entry.findtext("a:id", namespaces=ATOM)).rsplit("/", 1)[-1]
+            raw_id = clean(entry.findtext("a:id", namespaces=ATOM)).split('/abs/', 1)[-1]
             base, version_text = raw_id.rsplit("v", 1)
             version = int(version_text)
             categories = [node.attrib["term"] for node in entry.findall("a:category", ATOM)]
@@ -83,7 +70,7 @@ def fetch_ids(arxiv_ids: list[str], page_size: int = 100) -> list[dict]:
         )
         root = ET.fromstring(request(f"{API}?{params}"))
         for entry in root.findall("a:entry", ATOM):
-            raw_id = clean(entry.findtext("a:id", namespaces=ATOM)).rsplit("/", 1)[-1]
+            raw_id = clean(entry.findtext("a:id", namespaces=ATOM)).split('/abs/', 1)[-1]
             base, version_text = raw_id.rsplit("v", 1)
             categories = [node.attrib["term"] for node in entry.findall("a:category", ATOM)]
             output[base] = {
