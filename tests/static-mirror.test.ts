@@ -16,8 +16,13 @@ import {
 } from '../lib/static-mirror';
 import { previewReports } from '../lib/fixtures';
 import type { PaperReport } from '../lib/types';
-import { buildStaticPages } from '../scripts/build_static_pages';
+import { buildStaticPages, formatUpdateTime } from '../scripts/build_static_pages';
 import { renderMathText, splitMath } from '../lib/math-text';
+
+assert.equal(formatUpdateTime('2026-09-11T05:34:59.558520+00:00'), '2026-09-11 13:34');
+assert.equal(formatUpdateTime('2026-09-11T16:00:59Z'), '2026-09-12 00:00');
+assert.equal(formatUpdateTime(''), '尚未确认');
+assert.equal(formatUpdateTime('invalid'), '尚未确认');
 
 for (const source of [
   String.raw`$R_{ij}$`,
@@ -157,6 +162,9 @@ await buildStaticPages({
   basePath: '/daily-dg-advance',
 });
 const html = await readFile(join(out, 'index.html'), 'utf8');
+assert.ok(html.includes('<p>更新时间：2026-09-02 14:05</p>'));
+assert.ok(!html.includes('镜像快照时间'));
+assert.ok(!html.includes('不显示实时抓取状态'));
 assert.match(html, /\/daily-dg-advance\/papers\/math--0301001\//);
 assert.doesNotMatch(html, /<script>alert\(1\)<\/script>/);
 assert.doesNotMatch(html, /href=["']javascript:/);
