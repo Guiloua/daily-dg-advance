@@ -70,6 +70,19 @@ def official_announcement() -> ExpectedAnnouncement:
     )
 
 
+def expected_from_manifest(manifest: dict, scheduled_for: str) -> ExpectedAnnouncement:
+    if manifest.get('scheduledFor') != scheduled_for or not manifest.get('runId') or not manifest.get('verifiedAt'):
+        raise RuntimeError('Official manifest is not verified for this exact scheduled slot')
+    groups = manifest['sourceManifest']
+    ids = {item for group in groups.values() for field in ('newIds', 'crossListIds') for item in group[field]}
+    if ids != set(manifest['expectedIds']) or len(ids) != manifest['expectedCount']:
+        raise RuntimeError('Official manifest coverage is inconsistent')
+    counts = {key: len(set(groups[key]['newIds'])) + len(set(groups[key]['crossListIds'])) for key in CATEGORIES}
+    if any(counts[key] != manifest['dailyVolume'][key] for key in CATEGORIES):
+        raise RuntimeError('Official manifest category totals are inconsistent')
+    return ExpectedAnnouncement(manifest['announcementDate'], counts['mathDg'], counts['mathMg'], counts['mathGt'])
+
+
 def verify_payloads(
     health: dict,
     reports: dict,
@@ -165,11 +178,13 @@ def main() -> None:
     parser.add_argument("--site", required=True)
     parser.add_argument("--check-arxiv", action="store_true")
     parser.add_argument("--daily-outcome", type=Path, help="Required by scheduled health checks; no secrets in this receipt")
+    parser.add_argument('--manifest', type=Path, help='Reuse the daily run’s verified official snapshot; no arXiv requests')
+    parser.add_argument('--scheduled-for', help='Exact ISO scheduled slot, required with --manifest')
     args = parser.parse_args()
     receipt = None
     if args.daily_outcome:
-        if not args.check_arxiv:
-            parser.error("--daily-outcome requires --check-arxiv")
+        if not args.manifest or not args.scheduled_for:
+            parser.error('--daily-outcome requires --manifest and --scheduled-for')
         try:
             receipt = json.loads(args.daily_outcome.read_text())
         except (OSError, ValueError):
@@ -202,9 +217,15 @@ def main() -> None:
     if unauthorized_write_status != 401:
         raise RuntimeError("Protected ingest endpoint accepted an anonymous request")
 
-    expected = official_announcement() if args.check_arxiv else None
+    manifest = json.loads(args.manifest.read_text()) if args.manifest else None
+    expected = expected_from_manifest(manifest, args.scheduled_for) if manifest else official_announcement() if args.check_arxiv else None
     errors = verify_payloads(health, reports, volume, expected)
     if args.daily_outcome:
+        if receipt.get('scheduledFor') != args.scheduled_for or receipt.get('runId') != manifest['runId']:
+            errors.append('Daily outcome is not from the manifest’s exact scheduled run')
+        publication_ids = {item['arxivId'] for item in reports.get('reports', []) if item.get('entryKind') != 'revision'}
+        if publication_ids != set(manifest['expectedIds']):
+            errors.append('Published IDs do not cover the official manifest')
         errors.extend(verify_daily_outcome(receipt, datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat(), expected.date, health.get("coverage", {}).get("publishedCount")))
     if errors:
         raise RuntimeError("; ".join(errors))

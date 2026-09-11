@@ -1,6 +1,10 @@
 import unittest
 
 from arxiv_listing import parse_listing
+from arxiv_listing import fetch_listing
+from unittest.mock import patch
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 
 LISTING_HTML = """
@@ -17,6 +21,26 @@ LISTING_HTML = """
 
 
 class ListingParserTests(unittest.TestCase):
+    def test_new_is_authoritative_today_and_never_compares_catchup(self):
+        today = datetime.now(ZoneInfo('Asia/Shanghai')).date()
+        document = 'Showing new listings for ' + today.strftime('%A, %d %B %Y') + '\n' + LISTING_HTML
+        with patch('arxiv_listing._download', return_value=document) as read:
+            events, source = fetch_listing('math.MG', today.isoformat())
+        self.assertEqual(events.publication_count, 3)
+        self.assertTrue(source.endswith('/new'))
+        self.assertEqual(read.call_count, 1)
+
+    def test_zero_is_not_parser_failure(self):
+        with patch('arxiv_listing._download', return_value='<h3>New submissions (showing 0 of 0 entries)</h3>'):
+            self.assertEqual(fetch_listing('math.DG', '2020-01-01')[0].publication_count, 0)
+        for document in ('<h1>Service unavailable</h1>', '<h3>New submissions</h3>'):
+            with patch('arxiv_listing._download', return_value=document):
+                with self.assertRaises(RuntimeError): fetch_listing('math.DG', '2020-01-01')
+
+    def test_truncated_page_rejected(self):
+        with self.assertRaises(RuntimeError):
+            parse_listing('<h3>New submissions (showing 1 of 20 entries)</h3><a href="/abs/2609.00001">paper</a>')
+
     def test_new_and_cross_list_events_are_separate_from_replacements(self):
         result = parse_listing(LISTING_HTML)
         self.assertEqual(result.new_ids, ("2609.00001", "2609.00002"))

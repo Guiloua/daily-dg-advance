@@ -1,9 +1,18 @@
 import assert from 'node:assert/strict';
-import { readJson } from '../lib/read-request';
+import { readJson, retryDelay } from '../lib/read-request';
 
 const original = globalThis.fetch;
 let calls = 0;
 try {
+  assert.equal(retryDelay('120'), 120_000);
+  assert.equal(retryDelay('Thu, 01 Jan 1970 00:02:00 GMT', 0), 120_000);
+  globalThis.fetch = async () => {
+    calls++;
+    return new Response('', { status: 429, headers: { 'Retry-After': '120' } });
+  };
+  await assert.rejects(readJson('/read'), /稍后/);
+  assert.equal(calls, 1);
+  calls = 0;
   globalThis.fetch = async () => {
     calls++;
     return calls === 1

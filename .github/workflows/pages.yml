@@ -1,4 +1,5 @@
 name: Geometry Pages
+run-name: Geometry Pages ${{ github.event.client_payload.content_sha || inputs.content_sha }}
 
 on:
   repository_dispatch:

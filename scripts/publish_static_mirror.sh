@@ -5,17 +5,13 @@ repo_root="$(git rev-parse --show-toplevel)"
 site_url="${1:-$(tr -d '\r\n' < "$repo_root/.automation/site-url")}" 
 required_date="${2:-}"
 batch_path="${3:-}"
-lock_dir="$repo_root/.automation/static-mirror.lock"
-
-if ! mkdir "$lock_dir" 2>/dev/null; then
-  echo "Static mirror sync is already running." >&2
-  exit 1
+if [[ "${GEOMETRY_MIRROR_LOCKED:-}" != "1" ]]; then
+  exec python3 "$repo_root/scripts/with_lock.py" "$repo_root/.automation/static-mirror.flock" env GEOMETRY_MIRROR_LOCKED=1 bash "$0" "$@"
 fi
 
 worktree="$(mktemp -d "${TMPDIR:-/tmp}/geometry-static-content.XXXXXX")"
 cleanup() {
   git -C "$repo_root" worktree remove --force "$worktree" >/dev/null 2>&1 || true
-  rmdir "$lock_dir" >/dev/null 2>&1 || true
 }
 trap cleanup EXIT
 
@@ -40,7 +36,8 @@ fi
 node "$repo_root/scripts/check_secrets.mjs" "$worktree"
 git -C "$worktree" add README.md index.md archive.md daily papers data
 if git -C "$worktree" diff --cached --quiet; then
-  echo '{"status":"unchanged"}'
+  content_sha="$(git -C "$worktree" rev-parse HEAD)"
+  python3 "$repo_root/scripts/ensure_pages.py" --sha "$content_sha"
   exit 0
 fi
 
@@ -49,7 +46,5 @@ git -C "$worktree" commit -m "content: mirror ${latest_date}"
 git -C "$worktree" push origin HEAD:daily-content
 content_sha="$(git -C "$worktree" rev-parse HEAD)"
 
-gh api --method POST "repos/Guiloua/daily-dg-advance/dispatches" \
-  -f event_type=static-content-updated \
-  -F "client_payload[content_sha]=${content_sha}"
+python3 "$repo_root/scripts/ensure_pages.py" --sha "$content_sha"
 echo "{\"status\":\"pushed\",\"latestDate\":\"${latest_date}\",\"contentSha\":\"${content_sha}\"}"

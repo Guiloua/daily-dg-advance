@@ -223,9 +223,9 @@ export function Dashboard({
             </p>
           </div>
 
-          <p className="mt-3 text-xs text-muted-foreground" aria-live="polite">
+          <p className="mt-3 text-sm text-muted-foreground" aria-live="polite">
             {data.lastUpdated
-              ? `实际加载：${data.latestDate} · 更新时间：${data.lastUpdated}`
+              ? `当前公告日：${data.latestDate} · 最后成功更新：${data.lastUpdated}`
               : ''}
             {loading ? ` · 正在读取 ${date || '最新公告日'}…` : ''}
           </p>

@@ -5,8 +5,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
+from run_progress import checkpoint, fingerprint, save_analysis
 
 
 def main() -> None:
@@ -21,6 +23,12 @@ def main() -> None:
     analyses = json.loads(Path(args.analyses).read_text(encoding="utf-8"))
     papers = {paper["arxivId"]: paper for paper in source["papers"]}
     expected_ids = set(papers)
+    manifest_ids = {identifier for category in source['sourceManifest'].values()
+                    for field in ('newIds', 'crossListIds') for identifier in category[field]}
+    if expected_ids != manifest_ids or len(expected_ids) != source['expectedCount']:
+        raise ValueError('Metadata does not completely cover the official manifest')
+    if any(not p.get('title') or not p.get('authors') or not p.get('abstract') for p in papers.values()):
+        raise ValueError('Required paper metadata is incomplete')
     missing = sorted(expected_ids - analyses.keys())
     extra = sorted(analyses.keys() - expected_ids)
     if missing or extra:
@@ -74,14 +82,15 @@ def main() -> None:
         if tier == "low" and not report["lowPriorityReason"]:
             raise ValueError(f"Low-priority report {arxiv_id} needs lowPriorityReason")
         reports.append(report)
+        save_analysis(paper, analysis)
 
     reports.sort(key=lambda item: item["priorityScore"], reverse=True)
     now = datetime.now(timezone.utc).isoformat()
     payload = {
         "schemaVersion": 2,
         "run": {
-            "runId": f"complete-{source['announcementDate']}-{now.replace(':', '')}",
-            "scheduledFor": now,
+            "runId": os.environ.get('ARXIV_RUN_ID', f"complete-{source['announcementDate']}-{now.replace(':', '')}"),
+            "scheduledFor": os.environ.get('ARXIV_SCHEDULED_FOR', now),
             "startedAt": now,
             "completedAt": now,
             "sourceCursor": args.source_cursor,
@@ -96,10 +105,17 @@ def main() -> None:
         "dailyVolume": source["dailyVolume"],
         "reports": reports,
     }
+    output = Path(args.out)
+    if output.exists():
+        previous = json.loads(output.read_text(encoding='utf-8'))
+        if all(previous.get(key) == value for key, value in payload.items() if key != 'run') and previous.get('run', {}).get('sourceCursor') == args.source_cursor:
+            print(f"Reusing immutable complete batch with {len(reports)} reports")
+            return
     Path(args.out).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+    checkpoint('analysis_complete', fingerprint(source), {'batchPath': str(Path(args.out).resolve()), 'count': len(reports)})
     print(f"Built complete V2 batch with {len(reports)} reports")
 
 

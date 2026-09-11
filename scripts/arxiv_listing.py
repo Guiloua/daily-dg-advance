@@ -13,6 +13,8 @@ import urllib.request
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
+from arxiv_client import request
 
 
 CATEGORIES = {
@@ -65,7 +67,11 @@ def parse_listing(document: str) -> ListingEvents:
             key = "replacement"
         else:
             continue
-        groups[key].extend(_base_id(value) for value in ID_RE.findall(match.group("body")))
+        ids = _unique([_base_id(value) for value in ID_RE.findall(match.group('body'))])
+        counts = re.search(r'showing\s+(\d+)\s+of\s+(\d+)\s+entries', normalized)
+        if counts and (int(counts[1]) != int(counts[2]) or len(ids) != int(counts[2])):
+            raise RuntimeError('Incomplete arXiv listing; refusing truncated page')
+        groups[key].extend(ids)
     return ListingEvents(
         new_ids=_unique(groups["new"]),
         cross_list_ids=_unique(groups["cross"]),
@@ -89,41 +95,35 @@ def listing_date(document: str) -> str | None:
 
 
 def _download(url: str) -> str:
-    last_error: Exception | None = None
-    for attempt in range(3):
-        if attempt:
-            time.sleep(3 * attempt)
-        try:
-            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(request, timeout=90) as response:
-                return response.read().decode("utf-8", errors="replace")
-        except (urllib.error.URLError, TimeoutError) as error:
-            last_error = error
-    raise RuntimeError(f"arXiv listing request failed after three attempts: {last_error}")
+    return request(url).decode('utf-8', errors='strict')
 
 
-def fetch_listing(category: str, announcement_date: str) -> tuple[ListingEvents, str]:
-    catchup_url = f"https://arxiv.org/catchup/{category}/{announcement_date}"
-    document = _download(catchup_url)
+def fetch_listing(category: str, announcement_date: str, *, current: bool | None = None) -> tuple[ListingEvents, str]:
+    today = datetime.now(ZoneInfo('Asia/Shanghai')).date().isoformat()
+    current = announcement_date == today if current is None else current
+    url = (f'https://arxiv.org/list/{category}/new' if current
+           else f'https://arxiv.org/catchup/{category}/{announcement_date}')
+    document = _download(url)
+    parsed_date = listing_date(document)
+    if (current and parsed_date != announcement_date) or (parsed_date and parsed_date != announcement_date):
+        raise RuntimeError(f'Unconfirmed announcement date for {category}; keep prior report')
+    if not re.search(r'(New submissions|Cross submissions|Cross-lists|Replacement submissions|Replacements|No new submissions|No updates)', document, re.I):
+        raise RuntimeError(f'Unrecognized listing for {category}; not a zero-publication day')
     events = parse_listing(document)
-    if events.publication_count:
-        return events, catchup_url
-
-    new_url = f"https://arxiv.org/list/{category}/new"
-    current_document = _download(new_url)
-    events = parse_listing(current_document)
-    if listing_date(current_document) == announcement_date and events.publication_count:
-        return events, new_url
-    raise RuntimeError(f"No New/Cross-list sections found for {category} on {announcement_date}")
+    if not events.publication_count and not events.replacement_ids and not re.search(r'(showing\s+0\s+of\s+0|No new submissions|No updates)', document, re.I):
+        raise RuntimeError(f'Empty or truncated listing for {category}; zero not confirmed')
+    return events, url
 
 
-def build_manifest(announcement_date: str) -> dict:
+def build_manifest(announcement_date: str, *, current: bool | None = None) -> dict:
     source_manifest: dict[str, dict[str, list[str]]] = {}
     sources: list[str] = []
+    replacements: set[str] = set()
     daily_volume = {"announcementDate": announcement_date}
     category_items = list(CATEGORIES.items())
     for position, (key, category) in enumerate(category_items):
-        events, source = fetch_listing(category, announcement_date)
+        events, source = fetch_listing(category, announcement_date, current=current)
+        replacements.update(events.replacement_ids)
         source_manifest[key] = {
             "newIds": list(events.new_ids),
             "crossListIds": list(events.cross_list_ids),
@@ -145,6 +145,8 @@ def build_manifest(announcement_date: str) -> dict:
         "dailyVolume": daily_volume,
         "expectedIds": sorted(expected_ids),
         "expectedCount": len(expected_ids),
+        "replacementIds": sorted(replacements),
+        "verifiedAt": datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),
     }
 
 
