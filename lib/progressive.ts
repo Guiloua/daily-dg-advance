@@ -450,3 +450,23 @@ export function formatPublicationTime(value: string): string {
       }).format(new Date(value))
     : '待发布';
 }
+
+export function progressiveOverview(feed: ProgressiveFeed) {
+  const analyzed = feed.entries.filter((entry) => entry.analysis);
+  const topics = TOPICS.map((topic) => ({
+    topic,
+    count: analyzed.filter((entry) => entry.analysis?.topic === topic).length,
+  }))
+    .filter((item) => item.count)
+    .sort((a, b) => b.count - a.count);
+  const highlights = analyzed
+    .slice()
+    .sort((a, b) => b.analysis!.priorityScore - a.analysis!.priorityScore)
+    .slice(0, 3)
+    .map((entry) => ({
+      arxivId: entry.arxivId,
+      title: entry.metadata.title ?? entry.arxivId,
+      summary: entry.analysis!.breakthrough,
+    }));
+  return { count: analyzed.length, topics, highlights };
+}

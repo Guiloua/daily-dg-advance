@@ -4,7 +4,11 @@ import { useEffect, useMemo, useState } from 'react';
 import { readJson } from '@/lib/read-request';
 import type { ProgressiveFeed } from '@/lib/progressive';
 import { TOPICS } from '@/lib/types';
-import { EntryView, PublicationHeader } from './publication-view';
+import {
+  EntryView,
+  PublicationHeader,
+  PublicationOverview,
+} from './publication-view';
 import { LazyTrend } from './lazy-trend';
 export function ProgressiveDashboard({
   requestedDate,
@@ -118,6 +122,7 @@ export function ProgressiveDashboard({
       ) : (
         <>
           <PublicationHeader feed={feed} />
+          <PublicationOverview feed={feed} />
           <section className="mb-8">
             <div className="flex justify-between">
               <h2>近完整周分类趋势</h2>

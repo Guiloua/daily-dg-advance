@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
 import { join, dirname, resolve } from 'node:path';
 import {
   coverageLabel,
+  progressiveOverview,
   formatPublicationTime,
   fromLegacy,
   recalculate,
@@ -350,7 +351,16 @@ export async function buildProgressivePages(args: {
   const papers = new Map<string, ProgressiveEntry>();
   for (const feed of days) {
     const controls = `<form data-filters class="filters"><label>公告日<select name="date" data-date>${days.map((d) => `<option value="${d.date}"${d.date === feed.date ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label><label>搜索<input name="q" type="search"></label><label>主题<select name="topic"><option value="all">全部主题</option>${[...new Set(feed.entries.map((e) => e.analysis?.topic).filter(Boolean))].map((t) => `<option>${esc(t!)}</option>`).join('')}<option value="pending">待解读</option></select></label><label>AI 状态<select name="ai"><option value="all">全部</option><option value="explicit">明确披露</option><option value="no_disclosure_observed">已检查来源未见披露</option><option value="unknown">待核查</option></select></label><label>优先级<select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label></form>`;
-    const body = `<h1>几何前沿日报 · ${feed.date}</h1><p>${coverageLabel(feed)}</p><p>更新：${esc(formatPublicationTime(feed.lastUpdated))}（上海时间）</p><p>本期解读仅基于已分析的 ${feed.coverage.analyzedCount} 篇。</p>${controls}<section data-trend><h2>完整周分类趋势</h2><button data-trend-toggle>展开至 2 年</button><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div data-chart></div></section>${feed.entries
+    const overview = progressiveOverview(feed);
+    const summary = overview.count
+      ? `<section><h2>本期研究概览</h2><p>仅基于已解读的 ${overview.count} 篇。主要方向：${overview.topics
+          .slice(0, 3)
+          .map((t) => esc(t.topic) + '（' + t.count + ' 篇）')
+          .join(
+            '、',
+          )}。</p><ul>${overview.highlights.map((h) => '<li>' + renderMathText(h.summary) + '</li>').join('')}</ul></section>`
+      : '';
+    const body = `<h1>几何前沿日报 · ${feed.date}</h1><p>${coverageLabel(feed)}</p><p>更新：${esc(formatPublicationTime(feed.lastUpdated))}（上海时间）</p><p>本期解读仅基于已分析的 ${feed.coverage.analyzedCount} 篇。</p>${summary}${controls}<section data-trend><h2>完整周分类趋势</h2><button data-trend-toggle>展开至 2 年</button><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div data-chart></div></section>${feed.entries
       .slice()
       .sort(
         (a, b) =>

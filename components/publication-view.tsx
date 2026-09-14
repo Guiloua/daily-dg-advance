@@ -1,6 +1,7 @@
 import { MathText } from './math-text';
 import {
   coverageLabel,
+  progressiveOverview,
   formatPublicationTime,
   type ProgressiveEntry,
   type ProgressiveFeed,
@@ -133,6 +134,31 @@ export function PublicationHeader({ feed }: { feed: ProgressiveFeed }) {
           ? '本期基础资料与摘要解读已补齐。'
           : '已确认的信息持续发布，缺失资料和解读随后补齐。'}
       </p>
+    </section>
+  );
+}
+
+export function PublicationOverview({ feed }: { feed: ProgressiveFeed }) {
+  const overview = progressiveOverview(feed);
+  if (!overview.count) return null;
+  return (
+    <section className="mb-8 rounded-lg bg-muted p-5">
+      <h2 className="mb-3 font-serif text-xl">本期研究概览</h2>
+      <p className="mb-3 text-sm">
+        仅基于已解读的 {overview.count} 篇。主要方向：
+        {overview.topics
+          .slice(0, 3)
+          .map((t) => `${t.topic}（${t.count} 篇）`)
+          .join('、')}
+        。
+      </p>
+      <ul className="space-y-3 text-sm">
+        {overview.highlights.map((h) => (
+          <li key={h.arxivId}>
+            <MathText>{h.summary}</MathText>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
