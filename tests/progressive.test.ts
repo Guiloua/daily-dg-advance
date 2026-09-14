@@ -1,8 +1,10 @@
+import { previewReports } from '../lib/fixtures';
 import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
+  legacyEntry,
   digest,
   emptyFeed,
   mergePublication,
@@ -277,3 +279,11 @@ try {
 console.log(
   'Progressive merge, validation, and static partial publication tests passed.',
 );
+
+const revision = {
+  ...previewReports[0],
+  entryKind: 'revision' as const,
+  version: 9,
+};
+assert.equal(legacyEntry(revision).metadata.version, 9);
+assert.equal(legacyEntry(revision).arxivId, revision.arxivId);

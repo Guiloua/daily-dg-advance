@@ -379,6 +379,25 @@ export function mergePublication(
     ),
   });
 }
+export function legacyEntry(r: PaperReport): ProgressiveEntry {
+  return {
+    arxivId: r.arxivId,
+    metadata: {
+      title: r.title,
+      authors: r.authors,
+      abstract: r.abstract,
+      categories: r.categories,
+      primaryCategory: r.primaryCategory,
+      version: r.version,
+      submittedAt: r.submittedAt,
+      updatedAt: r.updatedAt,
+    },
+    sources: [],
+    analysis: analysisSchema.parse(r),
+    analysisBasis: { abstract: r.abstract, version: r.version },
+  };
+}
+
 export function fromLegacy(
   date: string,
   lastUpdated: string,
@@ -389,22 +408,7 @@ export function fromLegacy(
   feed.lastUpdated = lastUpdated;
   feed.entries = reports
     .filter((r) => r.entryKind !== 'revision')
-    .map((r) => ({
-      arxivId: r.arxivId,
-      metadata: {
-        title: r.title,
-        authors: r.authors,
-        abstract: r.abstract,
-        categories: r.categories,
-        primaryCategory: r.primaryCategory,
-        version: r.version,
-        submittedAt: r.submittedAt,
-        updatedAt: r.updatedAt,
-      },
-      sources: [],
-      analysis: analysisSchema.parse(r),
-      analysisBasis: { abstract: r.abstract, version: r.version },
-    }));
+    .map(legacyEntry);
   const keys = { mathDg: 'math.DG', mathMg: 'math.MG', mathGt: 'math.GT' };
   feed.categories = categoryKeys.map((category) => ({
     category,

@@ -7,6 +7,7 @@ import {
   canonical,
   emptyFeed,
   fromLegacy,
+  legacyEntry,
   mergePublication,
   publicationContent,
   type ProgressiveFeed,
@@ -67,8 +68,7 @@ export async function readProgressivePaper(arxivId: string) {
   const old = await getPaper(arxivId);
   if (!old) return null;
   return {
-    entry: fromLegacy(old.announcementDate, old.updatedAt, [old], false)
-      .entries[0],
+    entry: legacyEntry(old),
     date: old.announcementDate,
   };
 }
