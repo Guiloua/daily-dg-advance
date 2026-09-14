@@ -9,6 +9,7 @@ import os
 import time
 import urllib.error
 import urllib.request
+import urllib.parse
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -33,7 +34,7 @@ def _request(url: str, *, method: str = "GET", body: bytes | None = None):
         url,
         data=body,
         method=method,
-        headers={"User-Agent": USER_AGENT, "Content-Type": "application/json", **({"OAI-Sites-Authorization": "Bearer " + os.environ["OAI_SITES_AUTHORIZATION"]} if os.environ.get("OAI_SITES_AUTHORIZATION") else {})},
+        headers={"User-Agent": USER_AGENT, "Content-Type": "application/json", **({"OAI-Sites-Authorization": "Bearer " + os.environ["OAI_SITES_AUTHORIZATION"]} if os.environ.get("OAI_SITES_AUTHORIZATION") and urllib.parse.urlsplit(url).scheme == "https" and urllib.parse.urlsplit(url).netloc == "geometry-arxiv-daily-jch.zychern672259.chatgpt.site" else {})},
     )
     return urllib.request.urlopen(request, timeout=90)
 

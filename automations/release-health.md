@@ -6,7 +6,7 @@
 
 与日报同时启动时，用任务等待机制等待当次日报结束。任务状态 `completed` 只表示结束，绝不代表执行成功；必须读取实际结果和 `.automation/daily-outcomes/YYYY-MM-DD.json`（上海计划日期）。结果缺失、过期、`running`、`blocked`、`failed` 均不得报告总任务成功。即使旧日报仍与官方一致，也只能报告“站点健康，但日报任务受阻/未完成”。不得代替日报写成功记录。`no_new` 明确写作“无新公告，已核验”，不得写成“日报发布成功”。
 
-读取日报本时段 `manifest.json`，其 runId 必须与结果一致，scheduledFor 必须是当前计划时刻（上午/下午不互换，手动运行不替代定时运行）。限流但两站实际核验发布成功时接受 schemaVersion 2 的 published_partial，单独报告待补齐；按日报回执 notify 决定通知，相同缺口不重复提醒。服务故障与镜像失败仍为失败。健康任务不重抓 arXiv。
+旧格式读取日报本时段 `manifest.json`；新格式读取运行目录的 `progress.json` 与逐日发布快照。其 runId 必须与结果一致，scheduledFor 必须是当前计划时刻（上午/下午不互换，手动运行不替代定时运行）。限流但两站实际核验发布成功时接受 schemaVersion 2 的 published_partial，单独报告待补齐；按日报回执 notify 决定通知，相同缺口不重复提醒。服务故障与镜像失败仍为失败。健康任务不重抓 arXiv。
 
 ## 1. 确定候选版本
 
@@ -27,7 +27,7 @@
 
 ## 3. 生产检查
 
-1. 从 `.automation/site-url` 读取站点地址，运行 `python3 scripts/verify_production.py --site <地址> --manifest <本时段manifest.json> --scheduled-for <本次计划时间> --daily-outcome .automation/daily-outcomes/YYYY-MM-DD.json`。缺失证据时失败关闭，不能退回独立抓取。单独排查站点时可不传结果，但输出 `dailyRunStatus: not_checked` 不得解释为日报成功。
+1. 从 `.automation/site-url` 读取站点地址，运行 `python3 scripts/verify_production.py --site <地址> --manifest <本时段manifest.json> --scheduled-for <本次计划时间> --daily-outcome .automation/daily-outcomes/YYYY-MM-DD.json`。schemaVersion 2 回执省略 `--manifest`，由对应发布快照与镜像记录核验。缺失证据时失败关闭，不能退回独立抓取。单独排查站点时可不传结果，但输出 `dailyRunStatus: not_checked` 不得解释为日报成功。
 2. 新格式回执使用 `/api/reports/v2` 核对首页的已确认、已发布、已解读数量和待补齐状态，并核对 Pages 的同日内容哈希。expectedCount 为 null 时不得要求 X/X。旧格式仍使用原完整批次校验。
 3. 若新代码造成首页或核心接口不可用，重新部署本次发布前保存的 Sites 版本，记录 GitHub rollback Deployment，并让任务失败。
 4. 若只是公告日、收录量或 arXiv 来源异常，不回滚代码；保留日报游标并让任务失败。
