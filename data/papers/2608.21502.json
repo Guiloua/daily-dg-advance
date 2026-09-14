@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2608.21502",
+  "slug": "2608.21502",
+  "latest": {
+    "arxivId": "2608.21502",
+    "metadata": {
+      "title": "A Lean Formalization of Hamilton's Three-Manifold Theorem",
+      "authors": [
+        "Bennett Chow",
+        "Yuan Liao",
+        "Ziyang Qin"
+      ],
+      "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+      "categories": [
+        "math.DG",
+        "math.AP",
+        "math.GT"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-08-21T16:30:54Z",
+      "updatedAt": "2026-08-21T16:30:54Z"
+    },
+    "sources": [],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "形式化验证",
+      "workSummary": "在 Lean 中形式化 Hamilton 的正 Ricci 曲率闭三流形定理，并建设 Ricci 流短时存在、最大值原理、pinching 与紧性基础设施。",
+      "techniques": [
+        "Lean 形式化",
+        "Ricci 流吹起",
+        "Cheeger--Gromov--Hamilton 紧性"
+      ],
+      "breakthrough": "正文采用另一条吹起路线，逐项记录源码状态与来源，使几何分析长证明获得机器可检查接口。",
+      "limitations": "若干伴随基础设施的完整阐述推迟到后续论文；本轮正文核对确认主接口与结论，但未重新执行全部 Lean 工程。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 90,
+      "priorityReason": "100 分制：相关性 29/30、新颖性与强度 23/25、技术复用性 18/20、潜在影响 12/15、证据清晰度 8/10，总分 90/100。",
+      "lowPriorityReason": null
+    },
+    "analysisBasis": {
+      "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-08-24",
+      "entry": {
+        "arxivId": "2608.21502",
+        "metadata": {
+          "title": "A Lean Formalization of Hamilton's Three-Manifold Theorem",
+          "authors": [
+            "Bennett Chow",
+            "Yuan Liao",
+            "Ziyang Qin"
+          ],
+          "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+          "categories": [
+            "math.DG",
+            "math.AP",
+            "math.GT"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-08-21T16:30:54Z",
+          "updatedAt": "2026-08-21T16:30:54Z"
+        },
+        "sources": [],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "形式化验证",
+          "workSummary": "在 Lean 中形式化 Hamilton 的正 Ricci 曲率闭三流形定理，并建设 Ricci 流短时存在、最大值原理、pinching 与紧性基础设施。",
+          "techniques": [
+            "Lean 形式化",
+            "Ricci 流吹起",
+            "Cheeger--Gromov--Hamilton 紧性"
+          ],
+          "breakthrough": "正文采用另一条吹起路线，逐项记录源码状态与来源，使几何分析长证明获得机器可检查接口。",
+          "limitations": "若干伴随基础设施的完整阐述推迟到后续论文；本轮正文核对确认主接口与结论，但未重新执行全部 Lean 工程。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 90,
+          "priorityReason": "100 分制：相关性 29/30、新颖性与强度 23/25、技术复用性 18/20、潜在影响 12/15、证据清晰度 8/10，总分 90/100。",
+          "lowPriorityReason": null
+        },
+        "analysisBasis": {
+          "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

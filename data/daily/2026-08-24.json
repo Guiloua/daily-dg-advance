@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-08-24",
+  "revision": 0,
+  "contentHash": "",
+  "lastUpdated": "",
+  "categories": [
+    {
+      "category": "mathDg",
+      "date": "2026-08-24",
+      "complete": false,
+      "newIds": [
+        "2608.21502",
+        "2608.20888",
+        "2608.20522",
+        "2608.21340",
+        "2608.20854"
+      ],
+      "crossListIds": [],
+      "replacementIds": [],
+      "source": {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-08-24T00:00:00Z",
+        "contentHash": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "category": "mathMg",
+      "date": "2026-08-24",
+      "complete": false,
+      "newIds": [
+        "2608.20522",
+        "2608.20854"
+      ],
+      "crossListIds": [],
+      "replacementIds": [],
+      "source": {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-08-24T00:00:00Z",
+        "contentHash": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "category": "mathGt",
+      "date": "2026-08-24",
+      "complete": false,
+      "newIds": [
+        "2608.21502"
+      ],
+      "crossListIds": [],
+      "replacementIds": [],
+      "source": {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-08-24T00:00:00Z",
+        "contentHash": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "arxivId": "2608.21502",
+      "metadata": {
+        "title": "A Lean Formalization of Hamilton's Three-Manifold Theorem",
+        "authors": [
+          "Bennett Chow",
+          "Yuan Liao",
+          "Ziyang Qin"
+        ],
+        "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+        "categories": [
+          "math.DG",
+          "math.AP",
+          "math.GT"
+        ],
+        "primaryCategory": "math.DG",
+        "version": 1,
+        "submittedAt": "2026-08-21T16:30:54Z",
+        "updatedAt": "2026-08-21T16:30:54Z"
+      },
+      "sources": [],
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "形式化验证",
+        "workSummary": "在 Lean 中形式化 Hamilton 的正 Ricci 曲率闭三流形定理，并建设 Ricci 流短时存在、最大值原理、pinching 与紧性基础设施。",
+        "techniques": [
+          "Lean 形式化",
+          "Ricci 流吹起",
+          "Cheeger--Gromov--Hamilton 紧性"
+        ],
+        "breakthrough": "正文采用另一条吹起路线，逐项记录源码状态与来源，使几何分析长证明获得机器可检查接口。",
+        "limitations": "若干伴随基础设施的完整阐述推迟到后续论文；本轮正文核对确认主接口与结论，但未重新执行全部 Lean 工程。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "priorityScore": 90,
+        "priorityReason": "100 分制：相关性 29/30、新颖性与强度 23/25、技术复用性 18/20、潜在影响 12/15、证据清晰度 8/10，总分 90/100。",
+        "lowPriorityReason": null
+      },
+      "analysisBasis": {
+        "abstract": "We describe a Lean formalization of Hamilton's 1982 theorem on closed, connected three-manifolds with positive Ricci curvature. The development contains a short-time existence theorem for Ricci flow and substantial geometric-analysis infrastructure: Riemannian tensor calculus, the Levi--Civita connection, Ricci-flow evolution equations, scalar and tensor maximum principles, three-dimensional curvature algebra, preservation of Ricci pinching, and Hamilton's improved pinching estimate. The formalization follows an alternative blow-up route, rather than Hamilton's original normalized-flow proof. Its time-uniform short-time existence, maximal continuation, no-local-collapsing, and Cheeger--Gromov--Hamilton compactness pipelines have been formalized and are included in the artifact, while we give only a brief account of these companion developments and record the interfaces and consequences used by the Hamilton argument; a detailed exposition of their full constructions is deferred to the second author's forthcoming thesis. We interweave representative Lean declarations with their mathematical meaning and record the status and provenance of every major component. All source-level status claims are tied to the source release identified below.",
+        "version": 1
+      }
+    },
+    {
+      "arxivId": "2608.20888",
+      "metadata": {
+        "title": "Almost Positive Sectional Curvature with Bounded Geometry on $S^2\\times S^2$",
+        "authors": [
+          "Yuhang Liu"
+        ],
+        "abstract": "Let $M=S^2\\times S^2$. We prove that there is a fixed smooth open ball $U\\subset M$ such that, for every $\\varepsilon>0$, one can find a smooth metric $g_\\varepsilon$ and a closed set $S_\\varepsilon$ with the following properties: $\\sec_{g_\\varepsilon}>0$ on $M\\setminus S_\\varepsilon$; the relative volume of $S_\\varepsilon$ is less than $\\varepsilon$; every sectional curvature on $U$ is greater than $1$; $-\\varepsilon<\\sec_{g_\\varepsilon}\\leqΛ$ for one constant $Λ$ independent of $\\varepsilon$; the volume and diameter have uniform positive lower and upper bounds; and the injectivity radius has a uniform positive lower bound. In fact, $U\\cap S_\\varepsilon=\\varnothing$. The construction starts from the product of the unit round metrics. A small conformal factor, obtained by smoothing the absolute value of the height function on each sphere, has negative definite Hessian away from two thin equatorial bands. It makes every formerly flat mixed plane strictly positive outside a set of arbitrarily small relative volume, while the negative curvature created in the bands is only $O(\\varepsilon)$. A second conformal deformation supported in a very small region produces a core on which all sectional curvatures are greater than $1$; its transition has Hessian bounded above by $O(\\varepsilon)$. Finally, a diffeomorphism compresses the fixed topological ball $U$ into that core. Pullback preserves all intrinsic bounded-geometry estimates. The main content of this paper is generated by ChatGPT 5.6 and verified by the author.",
+        "categories": [
+          "math.DG"
+        ],
+        "primaryCategory": "math.DG",
+        "version": 1,
+        "submittedAt": "2026-08-21T09:05:28Z",
+        "updatedAt": "2026-08-21T09:05:28Z"
+      },
+      "sources": [],
+      "analysis": {
+        "topic": "曲率与比较几何",
+        "progressType": "新方法/构造",
+        "workSummary": "在 $S^2\\times S^2$ 上构造有统一有界几何、且除任意小体积闭集外正截面曲率的度量族。",
+        "techniques": [
+          "共形变形",
+          "混合截面曲率",
+          "局部压缩微分同胚"
+        ],
+        "breakthrough": "同时保持曲率、体积、直径和单射半径的统一控制，并在固定开球上获得严格曲率下界。",
+        "limitations": "并非处处正曲率；主内容由 ChatGPT 生成并由作者验证，关键 Hessian 与过渡区估计仍应人工复核。",
+        "analysisDepth": "abstract",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者评论与摘要明确说明论文主要内容由 ChatGPT 5.6 生成并由作者验证。",
+        "aiEvidenceSource": "arXiv 元数据 Comments 字段与摘要",
+        "priorityScore": 74,
+        "priorityReason": "100 分制：相关性 24/30、新颖性与强度 18/25、技术复用性 14/20、潜在影响 10/15、证据清晰度 8/10，总分 74/100。",
+        "lowPriorityReason": null
+      },
+      "analysisBasis": {
+        "abstract": "Let $M=S^2\\times S^2$. We prove that there is a fixed smooth open ball $U\\subset M$ such that, for every $\\varepsilon>0$, one can find a smooth metric $g_\\varepsilon$ and a closed set $S_\\varepsilon$ with the following properties: $\\sec_{g_\\varepsilon}>0$ on $M\\setminus S_\\varepsilon$; the relative volume of $S_\\varepsilon$ is less than $\\varepsilon$; every sectional curvature on $U$ is greater than $1$; $-\\varepsilon<\\sec_{g_\\varepsilon}\\leqΛ$ for one constant $Λ$ independent of $\\varepsilon$; the volume and diameter have uniform positive lower and upper bounds; and the injectivity radius has a uniform positive lower bound. In fact, $U\\cap S_\\varepsilon=\\varnothing$. The construction starts from the product of the unit round metrics. A small conformal factor, obtained by smoothing the absolute value of the height function on each sphere, has negative definite Hessian away from two thin equatorial bands. It makes every formerly flat mixed plane strictly positive outside a set of arbitrarily small relative volume, while the negative curvature created in the bands is only $O(\\varepsilon)$. A second conformal deformation supported in a very small region produces a core on which all sectional curvatures are greater than $1$; its transition has Hessian bounded above by $O(\\varepsilon)$. Finally, a diffeomorphism compresses the fixed topological ball $U$ into that core. Pullback preserves all intrinsic bounded-geometry estimates. The main content of this paper is generated by ChatGPT 5.6 and verified by the author.",
+        "version": 1
+      }
+    },
+    {
+      "arxivId": "2608.20522",
+      "metadata": {
+        "title": "Macroscopic Scalar Curvature in High Dimensions",
+        "authors": [
+          "Brendan Isley"
+        ],
+        "abstract": "We describe a version of positive macroscopic scalar curvature motivated by the work of Alpert, Balitskiy, and Guth, and prove that this condition on a manifold implies a bound on its 1-width in terms of its first Betti number. A key tool in the proof is a decomposition of any closed manifold into a family of chains with convenient combinatorial structure, which was inspired by Nabutovsky, Rotman, and Sabourau's work on sweepouts. Finally, using techniques developed by Chodosh, Li, and Liokumovich, we show that for a sufficiently connected manifold, if the universal cover satisfies this curvature condition, then the manifold has a finite cover homotopy equivalent to $S^n$ or connected sums of $S^{n-1} \\times S^1$.",
+        "categories": [
+          "math.MG",
+          "math.DG"
+        ],
+        "primaryCategory": "math.MG",
+        "version": 1,
+        "submittedAt": "2026-08-20T19:34:51Z",
+        "updatedAt": "2026-08-20T19:34:51Z"
+      },
+      "sources": [],
+      "analysis": {
+        "topic": "曲率与比较几何",
+        "progressType": "新框架",
+        "workSummary": "提出受 Alpert--Balitskiy--Guth 启发的正宏观标量曲率，并用它控制流形的 1-width 与第一 Betti 数。",
+        "techniques": [
+          "sweepout 分解",
+          "链复形组合结构",
+          "宏观曲率"
+        ],
+        "breakthrough": "在高连通情形进一步约束有限覆盖的同伦型，把宏观曲率条件连接到高维拓扑分类。",
+        "limitations": "曲率概念是新定义，和经典点态标量曲率的精确关系仍需更多例子检验。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "priorityScore": 74,
+        "priorityReason": "100 分制：相关性 24/30、新颖性与强度 18/25、技术复用性 14/20、潜在影响 10/15、证据清晰度 8/10，总分 74/100。",
+        "lowPriorityReason": null
+      },
+      "analysisBasis": {
+        "abstract": "We describe a version of positive macroscopic scalar curvature motivated by the work of Alpert, Balitskiy, and Guth, and prove that this condition on a manifold implies a bound on its 1-width in terms of its first Betti number. A key tool in the proof is a decomposition of any closed manifold into a family of chains with convenient combinatorial structure, which was inspired by Nabutovsky, Rotman, and Sabourau's work on sweepouts. Finally, using techniques developed by Chodosh, Li, and Liokumovich, we show that for a sufficiently connected manifold, if the universal cover satisfies this curvature condition, then the manifold has a finite cover homotopy equivalent to $S^n$ or connected sums of $S^{n-1} \\times S^1$.",
+        "version": 1
+      }
+    },
+    {
+      "arxivId": "2608.21340",
+      "metadata": {
+        "title": "Stable $s$-minimal cones in $\\mathbb{R}^3$ are flat for $s$ close to zero",
+        "authors": [
+          "Raphael Tsiamis"
+        ],
+        "abstract": "We prove that stable nonlocal minimal cones in three dimensions are flat, for $s$ sufficiently close to zero. Our approach develops new structural properties of stable $s$-minimal surfaces in every dimension as $s \\downarrow 0$, notably a compactness theory and pinching theorems near a half-space.",
+        "categories": [
+          "math.DG",
+          "math.AP"
+        ],
+        "primaryCategory": "math.DG",
+        "version": 1,
+        "submittedAt": "2026-08-21T17:47:46Z",
+        "updatedAt": "2026-08-21T17:47:46Z"
+      },
+      "sources": [],
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "新定理/分类",
+        "workSummary": "证明三维稳定非局部 $s$-极小锥在 $s$ 足够接近零时必为平面。",
+        "techniques": [
+          "非局部极小曲面",
+          "$s\\downarrow0$ 紧性",
+          "半空间邻域 pinching"
+        ],
+        "breakthrough": "建立任意维度的结构紧性与 pinching 工具，并在三维得到平坦分类。",
+        "limitations": "$s$ 只覆盖接近零的区间，尚未解决全部非局部参数范围。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "priorityScore": 72,
+        "priorityReason": "100 分制：相关性 23/30、新颖性与强度 17/25、技术复用性 14/20、潜在影响 10/15、证据清晰度 8/10，总分 72/100。",
+        "lowPriorityReason": null
+      },
+      "analysisBasis": {
+        "abstract": "We prove that stable nonlocal minimal cones in three dimensions are flat, for $s$ sufficiently close to zero. Our approach develops new structural properties of stable $s$-minimal surfaces in every dimension as $s \\downarrow 0$, notably a compactness theory and pinching theorems near a half-space.",
+        "version": 1
+      }
+    },
+    {
+      "arxivId": "2608.20854",
+      "metadata": {
+        "title": "Heat Codimension and Scalar Curvature",
+        "authors": [
+          "Bang-Xian Han"
+        ],
+        "abstract": "Motivated by recent proofs of Gromov's codimension-two volume-growth conjecture, we propose a synthetic theory for scalar lower bound on metric measure Dirichlet spaces.",
+        "categories": [
+          "math.MG",
+          "math.DG",
+          "math.PR"
+        ],
+        "primaryCategory": "math.MG",
+        "version": 1,
+        "submittedAt": "2026-08-21T08:20:27Z",
+        "updatedAt": "2026-08-21T08:20:27Z"
+      },
+      "sources": [],
+      "analysis": {
+        "topic": "度量测度几何、极限与奇异空间",
+        "progressType": "新框架",
+        "workSummary": "以热核余维为核心，为度量测度 Dirichlet 空间提出综合的标量曲率下界理论。",
+        "techniques": [
+          "热核与 Dirichlet 形式",
+          "余维二体积增长",
+          "非光滑曲率"
+        ],
+        "breakthrough": "试图把近期光滑余维二体积增长结果组织成可用于非光滑空间的合成框架。",
+        "limitations": "摘要极短，尚不足以判断公理的稳定性和非平凡例子；作者只披露 ChatGPT 用于总结若干光滑结果。",
+        "analysisDepth": "abstract",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者评论明确说明使用 ChatGPT 5.6 总结若干近期光滑结果。",
+        "aiEvidenceSource": "arXiv 元数据 Comments 字段",
+        "priorityScore": 68,
+        "priorityReason": "100 分制：相关性 21/30、新颖性与强度 16/25、技术复用性 13/20、潜在影响 10/15、证据清晰度 8/10，总分 68/100。",
+        "lowPriorityReason": null
+      },
+      "analysisBasis": {
+        "abstract": "Motivated by recent proofs of Gromov's codimension-two volume-growth conjecture, we propose a synthetic theory for scalar lower bound on metric measure Dirichlet spaces.",
+        "version": 1
+      }
+    }
+  ],
+  "coverage": {
+    "expectedCount": null,
+    "confirmedCount": 5,
+    "publishedCount": 5,
+    "analyzedCount": 5,
+    "metadataCount": 5,
+    "listingsComplete": false,
+    "complete": false
+  }
+}
