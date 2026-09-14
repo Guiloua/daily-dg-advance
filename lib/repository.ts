@@ -110,12 +110,30 @@ export async function listVolumes(
       )
       .bind(days)
       .all<Record<string, string | number>>();
-    return result.results.map((row) => ({
+    const points = result.results.map((row) => ({
       announcementDate: String(row.announcement_date),
       mathDg: Number(row.math_dg),
       mathMg: Number(row.math_mg),
       mathGt: Number(row.math_gt),
     }));
+    const partial = await db
+      .prepare('SELECT date, snapshot_json FROM publication_days')
+      .all<{ date: string; snapshot_json: string }>();
+    const week = (value: string) => {
+      const day = new Date(value + 'T00:00:00Z');
+      day.setUTCDate(day.getUTCDate() - ((day.getUTCDay() || 7) - 1));
+      return day.toISOString().slice(0, 10);
+    };
+    const incomplete = new Set(
+      partial.results
+        .filter(
+          (row) => !JSON.parse(row.snapshot_json).coverage.listingsComplete,
+        )
+        .map((row) => week(row.date)),
+    );
+    return points.filter(
+      (point) => !incomplete.has(week(point.announcementDate)),
+    );
   } catch (error) {
     if (previewAllowed)
       return range === '6m' ? previewVolumes.slice(-132) : previewVolumes;
@@ -221,7 +239,8 @@ function unavailableDashboard(date?: string): DashboardData {
 
 export async function loadDashboard(date?: string): Promise<DashboardData> {
   const db = database();
-  if (!db) return previewAllowed ? previewDashboard : unavailableDashboard(date);
+  if (!db)
+    return previewAllowed ? previewDashboard : unavailableDashboard(date);
   try {
     const latest =
       date ??

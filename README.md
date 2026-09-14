@@ -17,7 +17,13 @@ npm run dev
 
 `npm run db:generate` 生成 D1 迁移，`npm run ci` 执行与 GitHub 相同的代码检查、类型检查、完整测试、迁移检查、敏感信息检查和生产构建。写入接口需要 Sites 环境变量 `INGEST_TOKEN`，本地自动化将站点地址与令牌分别保存在被忽略的 `.automation/site-url` 与 `.automation/ingest-token`。仓库只跟踪不含真实凭据的 `.env.example`。
 
-## 自动化流程
+## 渐进式发布
+
+日报先发布已确认的官方基础信息，再补充元数据和中文解读。即使部分分类或 Atom 接口限流也可以发布；未知字段保持缺失，界面标示待补齐。新接口为 `/api/reports/v2` 和受保护的 `/api/ingest/v3`；旧完整批次接口继续兼容历史工具。
+
+运行入口为 `scripts/progressive_daily.py`，参数见 `--help` 和 `automations/daily-ingest.md`。两站部分发布成功记为 `published_partial`，镜像通过持久队列恢复，不推进旧抓取游标。静态格式 V2 接受渐进日报，生成器同时兼容 V1。
+
+## 原完整批次流程
 
 1. 从 `/api/ingest/state` 读取上次成功游标，并从游标前 72 小时开始重叠抓取。
 2. `scripts/arxiv_listing.py` 读取三个分类官方 `new/catchup` 页，将 New submissions 与 Cross-lists 作为当日事件清单；Replacements 不进入发文量。

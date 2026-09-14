@@ -58,7 +58,9 @@ async function fetchJson<T>(url: string): Promise<T> {
   return readPublicJson<T>(url, undefined, 15_000, {
     accept: 'application/json',
     ...(process.env.OAI_SITES_AUTHORIZATION
-      ? { 'OAI-Sites-Authorization': `Bearer ${process.env.OAI_SITES_AUTHORIZATION}` }
+      ? {
+          'OAI-Sites-Authorization': `Bearer ${process.env.OAI_SITES_AUTHORIZATION}`,
+        }
       : {}),
   });
 }
@@ -85,6 +87,13 @@ async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
   if (!Number.isInteger(args.days) || args.days < 1 || args.days > 366) {
     throw new Error('--days must be an integer between 1 and 366');
+  }
+  if (process.env.GEOMETRY_PROGRESSIVE === '1') {
+    const result = await (
+      await import('./progressive_static')
+    ).syncProgressive(args);
+    console.log(JSON.stringify(result));
+    return;
   }
   const batch = args.batch
     ? reportBatchV2Schema.parse(

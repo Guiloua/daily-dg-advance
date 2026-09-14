@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import time
 import urllib.error
 import urllib.request
@@ -32,7 +33,7 @@ def _request(url: str, *, method: str = "GET", body: bytes | None = None):
         url,
         data=body,
         method=method,
-        headers={"User-Agent": USER_AGENT, "Content-Type": "application/json"},
+        headers={"User-Agent": USER_AGENT, "Content-Type": "application/json", **({"OAI-Sites-Authorization": "Bearer " + os.environ["OAI_SITES_AUTHORIZATION"]} if os.environ.get("OAI_SITES_AUTHORIZATION") else {})},
     )
     return urllib.request.urlopen(request, timeout=90)
 
@@ -173,6 +174,31 @@ def verify_daily_outcome(receipt: dict, scheduled_date: str, announcement_date: 
     return errors
 
 
+def verify_progressive_run(site, receipt, scheduled_for):
+    if receipt.get('scheduledFor') != scheduled_for or not receipt.get('runId'):
+        raise RuntimeError('Daily result is not from this scheduled run')
+    if receipt.get('status') not in ('success', 'published_partial') or not all(receipt.get(k) for k in ('sitesVerified', 'pagesVerified', 'ingestVerified')):
+        raise RuntimeError('Progressive publication is not verified')
+    with _request(site + '/') as response:
+        if response.status != 200: raise RuntimeError('Homepage unavailable')
+    health_status, health = _json(site + '/api/health')
+    feed_status, feed = _json(site + '/api/reports/v2?date=' + receipt['announcementDate'])
+    if health_status != 200 or feed_status != 200 or health.get('status') != 'ok':
+        raise RuntimeError('Progressive core services unavailable')
+    if feed.get('coverage') != receipt.get('coverage'):
+        raise RuntimeError('Coverage changed since the verified run')
+    _, mirror = _json('https://guiloua.github.io/daily-dg-advance/data/daily/' + receipt['announcementDate'] + '.json')
+    if mirror != feed: raise RuntimeError('Progressive mirror differs from Sites')
+    for path, method in [('/api/ingest/state','GET'),('/api/ingest/v3','POST')]:
+        try:
+            with _request(site + path, method=method, body=b'{}' if method == 'POST' else None) as response:
+                status = response.status
+        except urllib.error.HTTPError as error:
+            status = error.code
+        if status != 401: raise RuntimeError('Anonymous ingestion accepted')
+    print(json.dumps({'status':'ok','dailyRunStatus':receipt['status'],'announcementDate':feed['date'],'coverage':feed['coverage'],'notify':receipt.get('notify',False)}))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", required=True)
@@ -181,6 +207,11 @@ def main() -> None:
     parser.add_argument('--manifest', type=Path, help='Reuse the daily run’s verified official snapshot; no arXiv requests')
     parser.add_argument('--scheduled-for', help='Exact ISO scheduled slot, required with --manifest')
     args = parser.parse_args()
+    if args.daily_outcome:
+        progressive_receipt = json.loads(args.daily_outcome.read_text())
+        if progressive_receipt.get('schemaVersion') == 2:
+            verify_progressive_run(args.site.rstrip('/'), progressive_receipt, args.scheduled_for)
+            return
     receipt = None
     if args.daily_outcome:
         if not args.manifest or not args.scheduled_for:
