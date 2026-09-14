@@ -37,7 +37,22 @@ function countLabels(labels: string[]): Array<[string, number]> {
   );
 }
 
-export function buildDailyOverview(reports: PaperReport[]): DailyOverview {
+// Only evidence needed for the overview; partial metadata must not be invented.
+export type OverviewPaper = Pick<
+  PaperReport,
+  | 'arxivId'
+  | 'title'
+  | 'topic'
+  | 'techniques'
+  | 'progressType'
+  | 'breakthrough'
+  | 'limitations'
+  | 'analysisDepth'
+  | 'priorityScore'
+  | 'priorityTier'
+>;
+
+export function buildDailyOverview(reports: OverviewPaper[]): DailyOverview {
   if (!reports.length) {
     return {
       paperCount: 0,
@@ -71,7 +86,9 @@ export function buildDailyOverview(reports: PaperReport[]): DailyOverview {
       .join('、')}。`,
     techniqueCounts.length
       ? `技术路径以${techniqueCounts
-          .map(([label, count]) => `${label}${count > 1 ? `（${count} 篇）` : ''}`)
+          .map(
+            ([label, count]) => `${label}${count > 1 ? `（${count} 篇）` : ''}`,
+          )
           .join('、')}为主${
           progressCounts.length
             ? `；进展形态主要是${progressCounts
@@ -137,15 +154,15 @@ export function groupVisibleReports(
 ): TopicReportGroup[] {
   const normalizedQuery = filters.query.trim().toLocaleLowerCase('zh-CN');
   const visibleReports = reports.filter((paper) => {
-    const searchableText = `${paper.title} ${paper.authors.join(' ')} ${paper.workSummary}`.toLocaleLowerCase(
-      'zh-CN',
-    );
+    const searchableText =
+      `${paper.title} ${paper.authors.join(' ')} ${paper.workSummary}`.toLocaleLowerCase(
+        'zh-CN',
+      );
 
     return (
       paper.aiStatus === filters.aiStatus &&
       (filters.topic === 'all' || paper.topic === filters.topic) &&
-      (filters.priority === 'all' ||
-        paper.priorityTier === filters.priority) &&
+      (filters.priority === 'all' || paper.priorityTier === filters.priority) &&
       (!normalizedQuery || searchableText.includes(normalizedQuery))
     );
   });
