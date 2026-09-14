@@ -1,4 +1,12 @@
-import { integer, sqliteTable, text, uniqueIndex, index } from 'drizzle-orm/sqlite-core';
+import { sql } from 'drizzle-orm';
+import {
+  integer,
+  sqliteTable,
+  text,
+  uniqueIndex,
+  index,
+  check,
+} from 'drizzle-orm/sqlite-core';
 
 export const papers = sqliteTable('papers', {
   arxivId: text('arxiv_id').primaryKey(),
@@ -14,33 +22,53 @@ export const papers = sqliteTable('papers', {
   updatedAt: text('updated_at').notNull(),
 });
 
-export const reportEntries = sqliteTable('report_entries', {
-  id: text('id').primaryKey(),
-  announcementDate: text('announcement_date').notNull(),
-  arxivId: text('arxiv_id').notNull(),
-  version: integer('version').notNull(),
-  entryKind: text('entry_kind', { enum: ['new', 'cross_list', 'revision'] }).notNull(),
-  topic: text('topic').notNull(),
-  progressType: text('progress_type').notNull(),
-  workSummary: text('work_summary').notNull(),
-  techniquesJson: text('techniques_json').notNull(),
-  breakthrough: text('breakthrough').notNull(),
-  limitations: text('limitations').notNull(),
-  analysisDepth: text('analysis_depth', { enum: ['abstract', 'full_text_sections'] }).notNull(),
-  aiStatus: text('ai_status', { enum: ['explicit', 'no_disclosure_observed'] }).notNull(),
-  aiEvidence: text('ai_evidence'),
-  aiEvidenceSource: text('ai_evidence_source'),
-  priorityScore: integer('priority_score').notNull(),
-  priorityTier: text('priority_tier', { enum: ['high', 'medium', 'low'] }).notNull(),
-  priorityReason: text('priority_reason').notNull(),
-  lowPriorityReason: text('low_priority_reason'),
-  revisionSummary: text('revision_summary'),
-  createdAt: text('created_at').notNull(),
-}, (table) => [
-  uniqueIndex('uq_report_date_paper_version').on(table.announcementDate, table.arxivId, table.version),
-  index('idx_report_date_topic_priority').on(table.announcementDate, table.topic, table.priorityScore),
-  index('idx_report_arxiv_version').on(table.arxivId, table.version),
-]);
+export const reportEntries = sqliteTable(
+  'report_entries',
+  {
+    id: text('id').primaryKey(),
+    announcementDate: text('announcement_date').notNull(),
+    arxivId: text('arxiv_id').notNull(),
+    version: integer('version').notNull(),
+    entryKind: text('entry_kind', {
+      enum: ['new', 'cross_list', 'revision'],
+    }).notNull(),
+    topic: text('topic').notNull(),
+    progressType: text('progress_type').notNull(),
+    workSummary: text('work_summary').notNull(),
+    techniquesJson: text('techniques_json').notNull(),
+    breakthrough: text('breakthrough').notNull(),
+    limitations: text('limitations').notNull(),
+    analysisDepth: text('analysis_depth', {
+      enum: ['abstract', 'full_text_sections'],
+    }).notNull(),
+    aiStatus: text('ai_status', {
+      enum: ['explicit', 'no_disclosure_observed'],
+    }).notNull(),
+    aiEvidence: text('ai_evidence'),
+    aiEvidenceSource: text('ai_evidence_source'),
+    priorityScore: integer('priority_score').notNull(),
+    priorityTier: text('priority_tier', {
+      enum: ['high', 'medium', 'low'],
+    }).notNull(),
+    priorityReason: text('priority_reason').notNull(),
+    lowPriorityReason: text('low_priority_reason'),
+    revisionSummary: text('revision_summary'),
+    createdAt: text('created_at').notNull(),
+  },
+  (table) => [
+    uniqueIndex('uq_report_date_paper_version').on(
+      table.announcementDate,
+      table.arxivId,
+      table.version,
+    ),
+    index('idx_report_date_topic_priority').on(
+      table.announcementDate,
+      table.topic,
+      table.priorityScore,
+    ),
+    index('idx_report_arxiv_version').on(table.arxivId, table.version),
+  ],
+);
 
 export const dailyVolume = sqliteTable('daily_volume', {
   announcementDate: text('announcement_date').primaryKey(),
@@ -54,27 +82,61 @@ export const dailyVolume = sqliteTable('daily_volume', {
 
 export const announcementDays = sqliteTable('announcement_days', {
   date: text('date').primaryKey(),
-  status: text('status', { enum: ['announced', 'deferred', 'holiday'] }).notNull(),
+  status: text('status', {
+    enum: ['announced', 'deferred', 'holiday'],
+  }).notNull(),
   source: text('source').notNull(),
   checkedAt: text('checked_at').notNull(),
 });
 
-export const automationRuns = sqliteTable('automation_runs', {
-  runId: text('run_id').primaryKey(),
-  scheduledFor: text('scheduled_for').notNull(),
-  startedAt: text('started_at').notNull(),
-  completedAt: text('completed_at'),
-  status: text('status', { enum: ['running', 'succeeded', 'failed'] }).notNull(),
-  announcementDate: text('announcement_date'),
-  sourceCursor: text('source_cursor'),
-  expectedCount: integer('expected_count').notNull().default(0),
-  fetchedCount: integer('fetched_count').notNull().default(0),
-  publishedCount: integer('published_count').notNull().default(0),
-  errorSummary: text('error_summary'),
-}, (table) => [
-  index('idx_automation_runs_announcement_status').on(
-    table.announcementDate,
-    table.status,
-    table.completedAt,
-  ),
-]);
+export const automationRuns = sqliteTable(
+  'automation_runs',
+  {
+    runId: text('run_id').primaryKey(),
+    scheduledFor: text('scheduled_for').notNull(),
+    startedAt: text('started_at').notNull(),
+    completedAt: text('completed_at'),
+    status: text('status', {
+      enum: ['running', 'succeeded', 'failed'],
+    }).notNull(),
+    announcementDate: text('announcement_date'),
+    sourceCursor: text('source_cursor'),
+    expectedCount: integer('expected_count').notNull().default(0),
+    fetchedCount: integer('fetched_count').notNull().default(0),
+    publishedCount: integer('published_count').notNull().default(0),
+    errorSummary: text('error_summary'),
+  },
+  (table) => [
+    index('idx_automation_runs_announcement_status').on(
+      table.announcementDate,
+      table.status,
+      table.completedAt,
+    ),
+  ],
+);
+
+// Progressive snapshots are separate from the legacy, fully populated reports.
+export const publicationDays = sqliteTable('publication_days', {
+  date: text('date').primaryKey(),
+  revision: integer('revision').notNull(),
+  snapshotJson: text('snapshot_json').notNull(),
+});
+export const publicationHistory = sqliteTable('publication_history', {
+  id: text('id').primaryKey(),
+  date: text('date').notNull(),
+  arxivId: text('arxiv_id').notNull(),
+  revision: integer('revision').notNull(),
+  entryJson: text('entry_json').notNull(),
+});
+export const publicationReceipts = sqliteTable(
+  'publication_receipts',
+  {
+    publicationId: text('publication_id').primaryKey(),
+    contentHash: text('content_hash').notNull(),
+    date: text('date').notNull(),
+    revision: integer('revision').notNull(),
+    snapshotJson: text('snapshot_json').notNull(),
+    accepted: integer('accepted').notNull(),
+  },
+  (table) => [check('publication_revision_guard', sql`${table.accepted} = 1`)],
+);

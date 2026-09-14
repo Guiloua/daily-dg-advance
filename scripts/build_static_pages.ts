@@ -200,10 +200,15 @@ export function formatUpdateTime(value: string): string {
   if (!value || Number.isNaN(date.getTime())) return '尚未确认';
   const parts = new Intl.DateTimeFormat('en-GB', {
     timeZone: 'Asia/Shanghai',
-    year: 'numeric', month: '2-digit', day: '2-digit',
-    hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
   }).formatToParts(date);
-  const part = (type: string) => parts.find((entry) => entry.type === type)?.value;
+  const part = (type: string) =>
+    parts.find((entry) => entry.type === type)?.value;
   return `${part('year')}-${part('month')}-${part('day')} ${part('hour')}:${part('minute')}`;
 }
 
@@ -348,6 +353,8 @@ export async function buildStaticPages(args: Args): Promise<{
   const manifest = await readJson<StaticMirrorManifestV1>(
     join(args.content, 'data/manifest.json'),
   );
+  if ((manifest.schemaVersion as number) === 2)
+    return (await import('./progressive_static')).buildProgressivePages(args);
   const volume = await readJson<StaticVolumeV1>(
     join(args.content, 'data/volume.json'),
   );

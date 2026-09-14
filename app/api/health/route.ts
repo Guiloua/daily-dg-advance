@@ -1,20 +1,40 @@
 import { NextResponse } from 'next/server';
-import { unavailableHealthSnapshot } from '@/lib/health';
-import { getHealthSnapshot } from '@/lib/repository';
-
+import { getHealthSnapshot, listVolumes } from '@/lib/repository';
+import { readProgressive } from '@/lib/progressive-repository';
+import { aggregateWeeklyVolumes } from '@/lib/volume';
 export const dynamic = 'force-dynamic';
-
-function response(body: ReturnType<typeof unavailableHealthSnapshot>) {
-  return NextResponse.json(body, {
-    status: body.status === 'ok' ? 200 : 503,
-    headers: { 'Cache-Control': 'no-store' },
-  });
-}
-
 export async function GET() {
   try {
-    return response(await getHealthSnapshot());
+    const [old, feed, volumes] = await Promise.all([
+      getHealthSnapshot(),
+      readProgressive(),
+      listVolumes('2y'),
+    ]);
+    return NextResponse.json(
+      {
+        ...old,
+        status: 'ok',
+        latestAnnouncementDate: feed.date,
+        latestSuccessfulRunAt: feed.lastUpdated || old.latestSuccessfulRunAt,
+        coverage: {
+          ...feed.coverage,
+          databasePublicationCount: feed.entries.length,
+        },
+        latestCompleteWeek: aggregateWeeklyVolumes(volumes).at(-1) ?? null,
+        contentStatus: feed.coverage.complete ? 'complete' : 'pending',
+        publicationRevision: feed.revision,
+        checks: {
+          database: true,
+          coverage: feed.coverage.complete,
+          weeklyVolume: volumes.length > 0,
+        },
+      },
+      { headers: { 'Cache-Control': 'no-store' } },
+    );
   } catch {
-    return response(unavailableHealthSnapshot(new Date().toISOString()));
+    return NextResponse.json(
+      { status: 'degraded', error: 'database_unavailable' },
+      { status: 503, headers: { 'Cache-Control': 'no-store' } },
+    );
   }
 }
