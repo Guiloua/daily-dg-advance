@@ -110,9 +110,11 @@ jobs:
       - name: Type-check mirror schemas and generators
         run: npm run typecheck
       - name: Build and verify the hostile-content fixture
-        run: npx tsx tests/static-mirror.test.ts
+        run: |
+          npx tsx tests/static-mirror.test.ts
+          npx tsx tests/progressive-layout.test.ts
       - name: Check trusted mirror source for secrets
-        run: node scripts/check_secrets.mjs lib/static-mirror.ts scripts/sync_static_mirror.ts scripts/build_static_pages.ts static-mirror
+        run: node scripts/check_secrets.mjs lib/static-mirror.ts scripts/sync_static_mirror.ts scripts/build_static_pages.ts scripts/progressive_static.ts scripts/static-presentation.ts static-mirror
 
   gate:
     name: gate

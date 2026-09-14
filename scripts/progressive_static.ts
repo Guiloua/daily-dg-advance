@@ -2,8 +2,6 @@ import { mkdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
 import { join, dirname, resolve } from 'node:path';
 import {
   coverageLabel,
-  progressiveOverview,
-  formatPublicationTime,
   fromLegacy,
   recalculate,
   canonical,
@@ -17,7 +15,15 @@ import {
   type ReportFeed,
 } from '../lib/static-mirror';
 import { renderMathText } from '../lib/math-text';
-import type { VolumePoint } from '../lib/types';
+import { TOPICS, type VolumePoint, type PriorityTier } from '../lib/types';
+import { buildDailyOverview } from '../lib/dashboard';
+import {
+  layout,
+  renderOverview,
+  formatUpdateTime,
+  writeStaticAssets,
+  validateBuiltLinks,
+} from './static-presentation';
 import { readJson } from '../lib/read-request';
 
 interface Manifest {
@@ -290,24 +296,144 @@ export async function syncProgressive(args: {
   );
   return { latestDate: manifest.latestDate, days: days.length };
 }
-function card(entry: ProgressiveEntry, base: string) {
+
+function priority(entry: ProgressiveEntry): PriorityTier | 'pending' {
+  const score = entry.analysis?.priorityScore;
+  return score === undefined
+    ? 'pending'
+    : score >= 75
+      ? 'high'
+      : score >= 50
+        ? 'medium'
+        : 'low';
+}
+
+function card(entry: ProgressiveEntry, base: string, detail = false) {
   const m = entry.metadata,
     a = entry.analysis;
-  return `<article class="paper" data-paper data-ai="${a?.aiStatus ?? 'unknown'}" data-topic="${esc(a?.topic ?? 'pending')}" data-priority="${a ? (a.priorityScore >= 75 ? 'high' : a.priorityScore >= 50 ? 'medium' : 'low') : 'pending'}"><h2><a href="${base}/papers/${arxivSlug(entry.arxivId)}/">${renderMathText(m.title ?? entry.arxivId)}</a></h2><p>${esc(m.authors?.join(' · ') ?? '作者待补齐')}</p><p>${esc(m.categories?.join(' · ') ?? '论文分类待补齐')} · ${m.version ? 'v' + m.version : '版本待补齐'} · ${a ? `${a.priorityScore} / 100 · ${a.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文关键部分'}` : '待解读'}</p>${
-    a
-      ? `<dl>${[
-          ['完成的工作', a.workSummary],
-          ['主要突破', a.breakthrough],
-          ['技术', a.techniques.join('；')],
-          ['限制与不确定性', a.limitations],
-          ['排序理由', a.lowPriorityReason ?? a.priorityReason],
+  const url = `${base}/papers/${arxivSlug(entry.arxivId)}/`;
+  const labels = {
+    high: '高优先级',
+    medium: '中优先级',
+    low: '低阅读优先级',
+    pending: '待解读',
+  };
+  return `<article class="paper" data-paper data-ai="${a?.aiStatus ?? 'unknown'}" data-topic="${esc(a?.topic ?? 'pending')}" data-priority="${priority(entry)}">
+    <div class="paper-meta"><span>${esc(m.categories?.join(' · ') ?? '分类待补齐')}</span><span>${a ? a.priorityScore + ' · ' : ''}${labels[priority(entry)]}</span></div>
+    <p class="progress">${esc(a?.progressType ?? '待解读')}</p>
+    <h4><a href="${url}">${renderMathText(m.title ?? entry.arxivId)}</a></h4>
+    <p class="authors">${esc(m.authors?.join(' · ') ?? '作者待补齐')}</p>
+    ${
+      a
+        ? '<dl>' +
+          [
+            ['完成的工作', a.workSummary],
+            ['技术', a.techniques.join(' · ')],
+            ['可能的突破', a.breakthrough],
+            ['需谨慎处', a.limitations],
+            ['排序理由', a.lowPriorityReason ?? a.priorityReason],
+          ]
+            .map(
+              ([k, v]) =>
+                `<div><dt>${k}</dt><dd>${renderMathText(v)}</dd></div>`,
+            )
+            .join('') +
+          '</dl>'
+        : '<p>基础信息已发布，中文解读稍后补充。</p>'
+    }
+    <details${!a || detail ? ' open' : ''}><summary>英文摘要与分析依据</summary>
+      <div class="abstract">${renderMathText(m.abstract ?? '摘要待补齐')}</div>
+      <p>${a ? (a.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文') : '待解读'} · ${m.version ? 'v' + m.version : '版本待补齐'}</p>
+      <p>${renderMathText(a ? (a.aiStatus === 'explicit' ? '明确披露 AI 协作：' + a.aiEvidence : '未见已检查来源中的 AI 协作声明') : 'AI 协作披露待核查')}</p>
+      ${a?.aiEvidenceSource ? '<p>' + esc(a.aiEvidenceSource) + '</p>' : ''}
+      <p>提交时间：${m.submittedAt ? formatUpdateTime(m.submittedAt) : '待补齐'} · 修订时间：${m.updatedAt ? formatUpdateTime(m.updatedAt) : '待补齐'}（上海时间）</p>
+      <p><a href="https://arxiv.org/abs/${entry.arxivId}">arXiv ↗</a> · <a href="https://arxiv.org/pdf/${entry.arxivId}">PDF ↗</a></p>
+    </details>
+    ${detail ? '' : '<a class="detail-link" href="' + url + '">完整分析 →</a>'}
+  </article>`;
+}
+
+function groupedCards(feed: ProgressiveFeed, base: string) {
+  const labels = {
+    no_disclosure_observed: '未见 AI 协作声明',
+    explicit: '明确披露 AI 协作',
+    unknown: '待解读与披露核查',
+  };
+  return (
+    (['no_disclosure_observed', 'explicit', 'unknown'] as const)
+      .map((ai) => {
+        const entries = feed.entries.filter(
+          (e) => (e.analysis?.aiStatus ?? 'unknown') === ai,
+        );
+        if (!entries.length) return '';
+        const groups = [...TOPICS, 'pending']
+          .map((topic) => {
+            const papers = entries
+              .filter((e) => (e.analysis?.topic ?? 'pending') === topic)
+              .sort(
+                (a, b) =>
+                  (b.analysis?.priorityScore ?? -1) -
+                    (a.analysis?.priorityScore ?? -1) ||
+                  a.arxivId.localeCompare(b.arxivId),
+              );
+            if (!papers.length) return '';
+            return `<section class="topic-group" data-group data-ai="${ai}" data-topic="${esc(topic)}">
+        <div class="topic-heading"><h3>${topic === 'pending' ? '待解读' : esc(topic)}</h3><span data-group-count>${papers.length}</span></div>
+        ${papers.map((e) => card(e, base)).join('\n')}
+      </section>`;
+          })
+          .join('\n');
+        return `<section class="ai-group" data-ai-group="${ai}"><h2>${labels[ai]}</h2>${groups}</section>`;
+      })
+      .join('\n') +
+    '<p class="empty" data-empty hidden>当前筛选条件下没有论文。</p>'
+  );
+}
+
+function metadataStatus(feed: ProgressiveFeed) {
+  const fields = {
+    title: '题目',
+    authors: '作者',
+    abstract: '摘要',
+    categories: '分类',
+    primaryCategory: '主分类',
+    version: '版本',
+    submittedAt: '提交时间',
+    updatedAt: '修订时间',
+  } as const;
+  const missing = Object.entries(fields).flatMap(([key, label]) => {
+    const count = feed.entries.filter((e) => {
+      const value = e.metadata[key as keyof typeof fields];
+      return !value || (Array.isArray(value) && !value.length);
+    }).length;
+    return count ? [`${label}（${count} 篇）`] : [];
+  });
+  return missing.length
+    ? `<details class="publication-status"><summary>查看待补资料</summary><p>${missing.join('、')}。已收录和已解读数量按本次保存的快照展示，未确认的资料不会标记为完成。</p></details>`
+    : '';
+}
+
+function dailyOverview(feed: ProgressiveFeed) {
+  const evidence = feed.entries.flatMap((e) =>
+    e.analysis
+      ? [
+          {
+            ...e.analysis,
+            arxivId: e.arxivId,
+            title: e.metadata.title ?? e.arxivId,
+            priorityTier: priority(e) as PriorityTier,
+          },
         ]
-          .map(
-            ([k, v]) => `<div><dt>${k}</dt><dd>${renderMathText(v)}</dd></div>`,
-          )
-          .join('')}</dl>`
-      : '<p>基础信息已发布，中文解读稍后补充。</p>'
-  }<details${a ? '' : ' open'}><summary>英文摘要</summary>${renderMathText(m.abstract ?? '摘要待补齐')}</details><p>${esc(a ? (a.aiStatus === 'explicit' ? `明确披露 AI 协作：${a.aiEvidence}（${a.aiEvidenceSource}）` : '未见已检查来源中的 AI 协作声明') : 'AI 协作披露待核查')}</p><p>提交时间：${esc(m.submittedAt ?? '待补齐')} · 修订时间：${esc(m.updatedAt ?? '待补齐')}</p><a href="https://arxiv.org/abs/${entry.arxivId}">arXiv ↗</a> · <a href="https://arxiv.org/pdf/${entry.arxivId}">PDF ↗</a></article>`;
+      : [],
+  );
+  const overview = buildDailyOverview(evidence);
+  overview.mainProgress = overview.mainProgress.map((s) =>
+    s.replace('本期共收录', '本期已解读'),
+  );
+  overview.mainProgress.unshift(
+    `以下总览仅基于 ${evidence.length} 篇已解读论文；待解读论文不参与总结与排序判断。`,
+  );
+  return renderOverview(overview);
 }
 export async function buildProgressivePages(args: {
   content: string;
@@ -347,36 +473,36 @@ export async function buildProgressivePages(args: {
     join(args.out, 'assets/katex/fonts'),
     { recursive: true },
   );
-  await cp(
-    resolve('static-mirror/site.css'),
-    join(args.out, 'assets/site.css'),
-  );
-  await cp(resolve('static-mirror/site.js'), join(args.out, 'assets/site.js'));
+  const assets = await writeStaticAssets(args.out);
   await write(join(args.out, '.nojekyll'), '');
   const base = args.basePath;
-  const layout = (title: string, body: string) =>
-    `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><link rel="stylesheet" href="${base}/assets/site.css"><link rel="stylesheet" href="${base}/assets/katex/katex.min.css"></head><body data-base-path="${base}"><main><nav><a href="${base}/">最新日报</a> · <a href="${base}/archive/">日期归档</a> · <a href="https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site">实时站点 ↗</a></nav>${body}</main><script src="${base}/assets/site.js" defer></script></body></html>`;
+  const page = (title: string, body: string) =>
+    layout({
+      title,
+      body,
+      description: '几何前沿日报 · DG、MG、GT 研究阅读指南',
+      basePath: base,
+      assets,
+    });
   const papers = new Map<string, ProgressiveEntry>();
   for (const feed of days) {
-    const controls = `<form data-filters class="filters"><label>公告日<select name="date" data-date>${days.map((d) => `<option value="${d.date}"${d.date === feed.date ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label><label>搜索<input name="q" type="search"></label><label>主题<select name="topic"><option value="all">全部主题</option>${[...new Set(feed.entries.map((e) => e.analysis?.topic).filter(Boolean))].map((t) => `<option>${esc(t!)}</option>`).join('')}<option value="pending">待解读</option></select></label><label>AI 状态<select name="ai"><option value="all">全部</option><option value="explicit">明确披露</option><option value="no_disclosure_observed">已检查来源未见披露</option><option value="unknown">待核查</option></select></label><label>优先级<select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label></form>`;
-    const overview = progressiveOverview(feed);
-    const summary = overview.count
-      ? `<section><h2>本期研究概览</h2><p>仅基于已解读的 ${overview.count} 篇。主要方向：${overview.topics
-          .slice(0, 3)
-          .map((t) => esc(t.topic) + '（' + t.count + ' 篇）')
-          .join(
-            '、',
-          )}。</p><ul>${overview.highlights.map((h) => '<li>' + renderMathText(h.summary) + '</li>').join('')}</ul></section>`
-      : '';
-    const body = `<h1>几何前沿日报 · ${feed.date}</h1><p>${coverageLabel(feed)}</p><p>更新：${esc(formatPublicationTime(feed.lastUpdated))}（上海时间）</p><p>本期解读仅基于已分析的 ${feed.coverage.analyzedCount} 篇。</p>${summary}${controls}<section data-trend><h2>完整周分类趋势</h2><button data-trend-toggle>展开至 2 年</button><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div data-chart></div></section>${feed.entries
-      .slice()
-      .sort(
-        (a, b) =>
-          (b.analysis?.priorityScore ?? -1) - (a.analysis?.priorityScore ?? -1),
-      )
-      .map((e) => card(e, base))
-      .join('')}<p data-empty hidden>当前筛选条件下没有论文。</p>`;
-    const output = layout('几何前沿日报 · ' + feed.date, body);
+    const controls = `<form data-filters class="filters">
+      <label><span>公告日</span><select name="date" data-date>${days.map((d) => `<option value="${d.date}"${d.date === feed.date ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label>
+      <label class="search"><span>搜索</span><input name="q" type="search" placeholder="题目、作者或摘要" autocomplete="off"></label>
+      <label><span>主题</span><select name="topic"><option value="all">全部主题</option>${TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}<option value="pending">待解读</option></select></label>
+      <label><span>AI 状态</span><select name="ai"><option value="all">全部</option><option value="no_disclosure_observed">未见声明</option><option value="explicit">明确披露</option><option value="unknown">待核查</option></select></label>
+      <label><span>优先级</span><select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label>
+    </form>`;
+    const aiCount = feed.entries.filter(
+      (e) => e.analysis?.aiStatus === 'explicit',
+    ).length;
+    const body = `<div class="page-head"><p class="eyebrow">${feed.date}</p><h1>今日值得读什么</h1><p>${coverageLabel(feed)} · 明确披露 AI 协作 ${aiCount} 篇</p><p>更新时间：${formatUpdateTime(feed.lastUpdated)}</p></div>
+      ${metadataStatus(feed)}
+      ${dailyOverview(feed)}
+      <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${controls}<div data-report-list>${groupedCards(feed, base)}</div></section>
+      <p class="markdown-links"><a href="${base}/daily/${feed.date}.md">查看原始 Markdown</a> · <a href="${base}/daily/${feed.date}.md" download>下载 Markdown</a></p>
+      <section class="trend" data-trend><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。仅显示清单完整的周。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>`;
+    const output = page('几何前沿日报 · ' + feed.date, body);
     await write(join(args.out, `daily/${feed.date}/index.html`), output);
     await write(join(args.out, `daily/${feed.date}.md`), markdown(feed));
     if (feed.date === manifest.latestDate)
@@ -387,15 +513,16 @@ export async function buildProgressivePages(args: {
   for (const entry of papers.values())
     await write(
       join(args.out, `papers/${arxivSlug(entry.arxivId)}/index.html`),
-      layout(entry.metadata.title ?? entry.arxivId, card(entry, base)),
+      page(entry.metadata.title ?? entry.arxivId, card(entry, base, true)),
     );
   await write(
     join(args.out, 'archive/index.html'),
-    layout(
+    page(
       '日期归档',
-      `<h1>日期归档</h1><ul>${days.map((d) => `<li><a href="${base}/daily/${d.date}/">${d.date}</a> — ${coverageLabel(d)}</li>`).join('')}</ul>`,
+      `<article class="markdown-body archive-page"><h1>日期归档</h1><ul>${days.map((d) => `<li><a href="${base}/daily/${d.date}/">${d.date}</a> — ${coverageLabel(d)}</li>`).join('')}</ul></article>`,
     ),
   );
+  await validateBuiltLinks(args.out, base);
   return {
     latestDate: manifest.latestDate,
     days: days.length,
