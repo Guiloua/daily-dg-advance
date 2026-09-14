@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
   legacyEntry,
+  fromLegacy,
   digest,
   emptyFeed,
   mergePublication,
@@ -264,6 +265,17 @@ try {
   );
   assert.match(paper, /作者|Author/);
   assert.doesNotMatch(paper, /undefined|NaN/);
+  // Some historical complete reports have no recorded update timestamp.
+  await writeFile(
+    join(content, 'data/daily/2026-09-14.json'),
+    JSON.stringify(fromLegacy(partial.date, '', [previewReports[0]], true)),
+  );
+  const historical = await buildProgressivePages({
+    content,
+    out,
+    basePath: '/daily-dg-advance',
+  });
+  assert.equal(historical.papers, 1);
   partial.coverage.expectedCount = 999;
   await writeFile(
     join(content, 'data/daily/2026-09-14.json'),

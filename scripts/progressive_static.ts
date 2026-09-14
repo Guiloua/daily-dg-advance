@@ -68,11 +68,19 @@ function validate(feed: ProgressiveFeed) {
     throw new Error('Invalid progressive day');
   for (const entry of feed.entries) {
     arxivSlug(entry.arxivId); // Validate using the same bounded fields as ingestion.
-    const source = entry.sources[0] ?? {
-      url: 'https://arxiv.org/abs/' + entry.arxivId,
-      observedAt: feed.lastUpdated,
-      contentHash: '0'.repeat(64),
-    };
+    const source = entry.sources[0];
+    // Legacy reports have no source observation receipt or guaranteed update time.
+    // Validate their content without inventing provenance to satisfy ingestion.
+    if (!source) {
+      entryPatchSchema.shape.metadata.parse(entry.metadata);
+      entryPatchSchema.shape.analysis.parse(entry.analysis ?? undefined);
+      entryPatchSchema.shape.analysisBasis.parse(
+        entry.analysisBasis ?? undefined,
+      );
+      if (Boolean(entry.analysis) !== Boolean(entry.analysisBasis))
+        throw new Error('Analysis requires an explicit source basis');
+      continue;
+    }
     entryPatchSchema.parse({
       arxivId: entry.arxivId,
       metadata: entry.metadata,
