@@ -24,8 +24,26 @@
         "contentHash": "e663767b53616b54df9ee54cb31e2ff2101fce808a91506449759d2db93c08c8"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "新方法/构造",
+      "workSummary": "以旋转/反射签名模块统一计算所有二面体共轭 quandle 染色，并证明模块在 Reidemeister 变换下不变。",
+      "techniques": [
+        "半直积结构",
+        "Smith 标准形",
+        "Alexander 模块特化"
+      ],
+      "breakthrough": "混合签名提供超出全反射 Fox 染色的信息，并推广到广义二面体群。",
+      "limitations": "更强的不变量针对所述染色体系，不等于完备地区分所有链环。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 61,
+      "priorityReason": "代数计算工具可复用，适合结论与算法方向；与曲率课题联系间接。"
+    },
+    "analysisBasis": {
+      "abstract": "We use reflection and rotation signatures of dihedral groups to develop a Smith normal form method for computing the conjugation quandle colorings across all dihedral groups. Let $L = L_1 \\cup \\cdots \\cup L_\\ell$ be a link with link components $L_1, \\ldots, L_\\ell$, and let $\\operatorname{Conj}(D_n)$ be the conjugation quandle of the dihedral group $D_n$. We use the semidirect-product structure $D_n \\cong \\mathbb{Z}_n \\rtimes \\mathbb{Z}_2$ to separate the coloring into a component signature. This component signature tells us whether each link component is colored by rotations or reflections, and the exponents are assigned separately under modulus $n$. Once the component signature is determined, every crossing relation becomes an equation that determines an integer matrix $M_\\tau$. The abelian group $A_\\tau(L)$, which we call the signature module, is represented by an integer matrix $M_\\tau$. We prove that the free rank and nonunit Smith normal form entries, or equivalently the isomorphism class of $A_\\tau(L)$, are preserved under the Reidemeister moves. The complete family of signature modules also determines the entire family of counting invariants for all $D_n$. The all-reflection system is the same as the Fox-$n$ colorings, while the mixed rotation-reflection signatures contain information that gives a stronger invariant. We also show that each signature module is the $t_k = (-1)^{\\tau_k}$ specialization of the multivariable Alexander module, and extend the coloring interpretation of the module to generalized dihedral groups $\\operatorname{Dih}(B)$ for every abelian group $B$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,8 +70,26 @@
             "contentHash": "e663767b53616b54df9ee54cb31e2ff2101fce808a91506449759d2db93c08c8"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "新方法/构造",
+          "workSummary": "以旋转/反射签名模块统一计算所有二面体共轭 quandle 染色，并证明模块在 Reidemeister 变换下不变。",
+          "techniques": [
+            "半直积结构",
+            "Smith 标准形",
+            "Alexander 模块特化"
+          ],
+          "breakthrough": "混合签名提供超出全反射 Fox 染色的信息，并推广到广义二面体群。",
+          "limitations": "更强的不变量针对所述染色体系，不等于完备地区分所有链环。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 61,
+          "priorityReason": "代数计算工具可复用，适合结论与算法方向；与曲率课题联系间接。"
+        },
+        "analysisBasis": {
+          "abstract": "We use reflection and rotation signatures of dihedral groups to develop a Smith normal form method for computing the conjugation quandle colorings across all dihedral groups. Let $L = L_1 \\cup \\cdots \\cup L_\\ell$ be a link with link components $L_1, \\ldots, L_\\ell$, and let $\\operatorname{Conj}(D_n)$ be the conjugation quandle of the dihedral group $D_n$. We use the semidirect-product structure $D_n \\cong \\mathbb{Z}_n \\rtimes \\mathbb{Z}_2$ to separate the coloring into a component signature. This component signature tells us whether each link component is colored by rotations or reflections, and the exponents are assigned separately under modulus $n$. Once the component signature is determined, every crossing relation becomes an equation that determines an integer matrix $M_\\tau$. The abelian group $A_\\tau(L)$, which we call the signature module, is represented by an integer matrix $M_\\tau$. We prove that the free rank and nonunit Smith normal form entries, or equivalently the isomorphism class of $A_\\tau(L)$, are preserved under the Reidemeister moves. The complete family of signature modules also determines the entire family of counting invariants for all $D_n$. The all-reflection system is the same as the Fox-$n$ colorings, while the mixed rotation-reflection signatures contain information that gives a stronger invariant. We also show that each signature module is the $t_k = (-1)^{\\tau_k}$ specialization of the multivariable Alexander module, and extend the coloring interpretation of the module to generalized dihedral groups $\\operatorname{Dih}(B)$ for every abelian group $B$.",
+          "version": 1
+        }
       }
     }
   ]

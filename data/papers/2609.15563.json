@@ -25,8 +25,28 @@
         "contentHash": "27c198b75443df849c3bdf4a43d4fe6815b08f85535083bb2d5d029c542bb650"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "新定理/分类",
+      "workSummary": "作者证明固定面积的平面凸区域中，三角形使 Monge–Ampère 第一特征值最小。",
+      "techniques": [
+        "多边形顶点消去",
+        "平行弦变形",
+        "相邻变形中的特征值下降"
+      ],
+      "breakthrough": "若证明成立，将解决 Le 单纯形猜想的二维情形。",
+      "limitations": "结论限二维，顶点消去到一般凸体的过渡及特征值变分关键步骤需核查；作者明确披露 ChatGPT 协作，不能据此替代数学验证。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者评论明确称主要结果经与 ChatGPT 6 Astra 的多轮讨论获得，关键策略由 ChatGPT 提出，作者随后重新加工并重写全文。此记录只确认披露，不代表证明已经核验。",
+      "aiEvidenceSource": "https://arxiv.org/abs/2609.15563 — 作者 Comments；在当日官方分类清单中读取。",
+      "priorityScore": 89,
+      "priorityReason": "非线性谱与凸几何的核心猜想有明确进展，列高优先级并保留证明核验要求。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that triangles minimize the Monge-Ampère eigenvalue among bounded planar convex domains of a given area, thus resolving the two-dimensional case of Le's simplex conjecture for the Monge-Ampère eigenvalue (The eigenvalue problem for the Monge-Ampère operator on general bounded convex domains, Ann. Sc. Norm. Super. Pisa Cl. Sci. (5) 18 (2018)). The proof uses a neighbor-decreasing property of the Monge-Ampère eigenvalues of convex polygons along vertex elimination parallel chord movements.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "27c198b75443df849c3bdf4a43d4fe6815b08f85535083bb2d5d029c542bb650"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "新定理/分类",
+          "workSummary": "作者证明固定面积的平面凸区域中，三角形使 Monge–Ampère 第一特征值最小。",
+          "techniques": [
+            "多边形顶点消去",
+            "平行弦变形",
+            "相邻变形中的特征值下降"
+          ],
+          "breakthrough": "若证明成立，将解决 Le 单纯形猜想的二维情形。",
+          "limitations": "结论限二维，顶点消去到一般凸体的过渡及特征值变分关键步骤需核查；作者明确披露 ChatGPT 协作，不能据此替代数学验证。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者评论明确称主要结果经与 ChatGPT 6 Astra 的多轮讨论获得，关键策略由 ChatGPT 提出，作者随后重新加工并重写全文。此记录只确认披露，不代表证明已经核验。",
+          "aiEvidenceSource": "https://arxiv.org/abs/2609.15563 — 作者 Comments；在当日官方分类清单中读取。",
+          "priorityScore": 89,
+          "priorityReason": "非线性谱与凸几何的核心猜想有明确进展，列高优先级并保留证明核验要求。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that triangles minimize the Monge-Ampère eigenvalue among bounded planar convex domains of a given area, thus resolving the two-dimensional case of Le's simplex conjecture for the Monge-Ampère eigenvalue (The eigenvalue problem for the Monge-Ampère operator on general bounded convex domains, Ann. Sc. Norm. Super. Pisa Cl. Sci. (5) 18 (2018)). The proof uses a neighbor-decreasing property of the Monge-Ampère eigenvalues of convex polygons along vertex elimination parallel chord movements.",
+          "version": 1
+        }
       }
     }
   ]

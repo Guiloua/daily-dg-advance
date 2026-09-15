@@ -25,8 +25,27 @@
         "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "新方法/构造",
+      "workSummary": "为 Talagrand 高斯凸化给出有限多面体的构造性版本，并讨论椭球近似的优化常数。",
+      "techniques": [
+        "分离与多面体障碍",
+        "高斯可积性",
+        "有限网凸优化",
+        "半定规划"
+      ],
+      "breakthrough": "在指定测度和缩放范围内获得显式多面体包含及高斯测度界，并刻画椭球常数的量级。",
+      "limitations": "构造性不自动等于多项式时间高效；测度阈值、参数范围及平衡变体不能混用。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 85,
+      "priorityReason": "高维凸几何中的有限化及定量估计工具复用价值较高。"
+    },
+    "analysisBasis": {
+      "abstract": "Talagrand asked for an explicit construction of a large convex subset of a bounded Minkowski sum of a large Gaussian set. Let $A\\subset\\mathbb{R}^n$ be closed with $\\gamma_n(A)\\ge 7/8$. We prove that for every $\\lambda>4$ and every $4\\le t<\\lambda$, one can construct a finite polyhedron $C\\subset\\mathbb{R}^n$ such that \\[ C\\subset \\lambda(A+A+A) \\qquad\\text{and}\\qquad \\gamma_n(C)\\ge 1-\\frac1t. \\] The construction is finite-dimensional: a separation argument produces polyhedral convex barriers, Gaussian integrability yields a uniform slope bound, and a finite net reduces the global problem to a finite convex minimization problem. As an application, we give a finite semidefinite construction of an optimal-scale ellipsoid. There is a universal constant $c>0$ such that, for $n\\ge2$, one can construct an ellipsoid $E$ satisfying \\[ \\gamma_n(E)\\ge\\frac12 \\qquad\\text{and}\\qquad c\\sqrt{\\frac{\\log n}{n}}\\,E\\subset \\lambda(A+A+A). \\] The same finite-barrier method also yields a constructive bounded-step convexification result for balanced Gaussian sets.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +73,27 @@
             "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "新方法/构造",
+          "workSummary": "为 Talagrand 高斯凸化给出有限多面体的构造性版本，并讨论椭球近似的优化常数。",
+          "techniques": [
+            "分离与多面体障碍",
+            "高斯可积性",
+            "有限网凸优化",
+            "半定规划"
+          ],
+          "breakthrough": "在指定测度和缩放范围内获得显式多面体包含及高斯测度界，并刻画椭球常数的量级。",
+          "limitations": "构造性不自动等于多项式时间高效；测度阈值、参数范围及平衡变体不能混用。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 85,
+          "priorityReason": "高维凸几何中的有限化及定量估计工具复用价值较高。"
+        },
+        "analysisBasis": {
+          "abstract": "Talagrand asked for an explicit construction of a large convex subset of a bounded Minkowski sum of a large Gaussian set. Let $A\\subset\\mathbb{R}^n$ be closed with $\\gamma_n(A)\\ge 7/8$. We prove that for every $\\lambda>4$ and every $4\\le t<\\lambda$, one can construct a finite polyhedron $C\\subset\\mathbb{R}^n$ such that \\[ C\\subset \\lambda(A+A+A) \\qquad\\text{and}\\qquad \\gamma_n(C)\\ge 1-\\frac1t. \\] The construction is finite-dimensional: a separation argument produces polyhedral convex barriers, Gaussian integrability yields a uniform slope bound, and a finite net reduces the global problem to a finite convex minimization problem. As an application, we give a finite semidefinite construction of an optimal-scale ellipsoid. There is a universal constant $c>0$ such that, for $n\\ge2$, one can construct an ellipsoid $E$ satisfying \\[ \\gamma_n(E)\\ge\\frac12 \\qquad\\text{and}\\qquad c\\sqrt{\\frac{\\log n}{n}}\\,E\\subset \\lambda(A+A+A). \\] The same finite-barrier method also yields a constructive bounded-step convexification result for balanced Gaussian sets.",
+          "version": 1
+        }
       }
     }
   ]

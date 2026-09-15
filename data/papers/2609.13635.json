@@ -26,8 +26,27 @@
         "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "新定理/分类",
+      "workSummary": "研究高维随机格薄壳内点数、方向均衡及差向量统计，识别多个阈值和不同相变。",
+      "techniques": [
+        "球面统计",
+        "随机格概率估计",
+        "阈值分析",
+        "附带 Lean 形式化"
+      ],
+      "breakthrough": "区分单个随机格的多种几何统计何时同时或分别符合球面预测。",
+      "limitations": "结果是高维高概率结论；形式化以声明的经典公式和概率模型为前提，不能把使用 Lean 等同于 AI 协作披露。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 76,
+      "priorityReason": "提供高维离散度量结构的定量工具，需核查各相变尺度和假设。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the spherical statistics of all the points in a thin shell of a high-dimensional random lattice. The exact relations between lattice points make it unclear when predictions based only on spherical geometry should hold. We answer this question for several statistics, including the number of shell points, the balance of their directions, and the occurrence, repetition, and distribution of differences between them. We identify sharp thresholds as the shell radius grows and show that these statistics undergo several distinct phase transitions. A shell can already agree with one geometric prediction while still differing strongly from another. Our results hold for a single sampled lattice, with probability tending to one as the dimension grows. They include estimates that hold across a complete shell, bounds close to the transition thresholds, and extensions to randomly shifted lattices. A Lean formalization verifies the main results, assuming the classical formulas and probability model stated in the code.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,8 +75,27 @@
             "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "新定理/分类",
+          "workSummary": "研究高维随机格薄壳内点数、方向均衡及差向量统计，识别多个阈值和不同相变。",
+          "techniques": [
+            "球面统计",
+            "随机格概率估计",
+            "阈值分析",
+            "附带 Lean 形式化"
+          ],
+          "breakthrough": "区分单个随机格的多种几何统计何时同时或分别符合球面预测。",
+          "limitations": "结果是高维高概率结论；形式化以声明的经典公式和概率模型为前提，不能把使用 Lean 等同于 AI 协作披露。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 76,
+          "priorityReason": "提供高维离散度量结构的定量工具，需核查各相变尺度和假设。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the spherical statistics of all the points in a thin shell of a high-dimensional random lattice. The exact relations between lattice points make it unclear when predictions based only on spherical geometry should hold. We answer this question for several statistics, including the number of shell points, the balance of their directions, and the occurrence, repetition, and distribution of differences between them. We identify sharp thresholds as the shell radius grows and show that these statistics undergo several distinct phase transitions. A shell can already agree with one geometric prediction while still differing strongly from another. Our results hold for a single sampled lattice, with probability tending to one as the dimension grows. They include estimates that hold across a complete shell, bounds close to the transition thresholds, and extensions to randomly shifted lattices. A Lean formalization verifies the main results, assuming the classical formulas and probability model stated in the code.",
+          "version": 1
+        }
       }
     }
   ]

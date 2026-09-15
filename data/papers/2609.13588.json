@@ -27,8 +27,27 @@
         "contentHash": "27c198b75443df849c3bdf4a43d4fe6815b08f85535083bb2d5d029c542bb650"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "新定理/分类",
+      "workSummary": "区分旋翼控制分配的结构性秩损失与伪逆分配造成的转速导数奇性，并给出局部和全局修复构造。",
+      "techniques": [
+        "物理映射的微分正则性",
+        "零空间变形",
+        "固定正交象限截面"
+      ],
+      "breakthrough": "说明推力变量中的线性可解不保证物理转速的光滑可实现性。",
+      "limitations": "非冗余与冗余条件下的障碍不同，修复有持续内部驱动等代价。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 47,
+      "priorityReason": "技术针对特定机器人执行器模型，与基础曲率几何联系较弱，故后置。",
+      "lowPriorityReason": "技术针对特定机器人执行器模型，与基础曲率几何联系较弱，故后置。"
+    },
+    "analysisBasis": {
+      "abstract": "Control allocation for multirotors with bidirectional propellers is commonly formulated in signed-thrust variables, where the wrench map is linear. The signed-quadratic map from physical rotor speed to thrust, however, is not a local diffeomorphism at zero speed. This work derives two distinct consequences. Under nonredundant full actuation, a single-propeller reversal removes one instantaneous task direction; hence, no global continuously differentiable exact static allocator exists over the complete task space. Under redundant actuation, the physical task map may remain regular, yet a transverse pseudoinverse zero crossing requires an unbounded rotor-speed derivative. We define differential realizability as regularity of the physical lift of an actuator-output section, derive exact and first-order validity conditions, and distinguish structural rank loss from an allocator- induced rate singularity. A local nullspace deformation repairs isolated pseudoinverse reversals, while a global fixed-orthant construction establishes existence of regular sections at the cost of persistent task-preserving internal actuation.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +77,27 @@
             "contentHash": "27c198b75443df849c3bdf4a43d4fe6815b08f85535083bb2d5d029c542bb650"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "新定理/分类",
+          "workSummary": "区分旋翼控制分配的结构性秩损失与伪逆分配造成的转速导数奇性，并给出局部和全局修复构造。",
+          "techniques": [
+            "物理映射的微分正则性",
+            "零空间变形",
+            "固定正交象限截面"
+          ],
+          "breakthrough": "说明推力变量中的线性可解不保证物理转速的光滑可实现性。",
+          "limitations": "非冗余与冗余条件下的障碍不同，修复有持续内部驱动等代价。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 47,
+          "priorityReason": "技术针对特定机器人执行器模型，与基础曲率几何联系较弱，故后置。",
+          "lowPriorityReason": "技术针对特定机器人执行器模型，与基础曲率几何联系较弱，故后置。"
+        },
+        "analysisBasis": {
+          "abstract": "Control allocation for multirotors with bidirectional propellers is commonly formulated in signed-thrust variables, where the wrench map is linear. The signed-quadratic map from physical rotor speed to thrust, however, is not a local diffeomorphism at zero speed. This work derives two distinct consequences. Under nonredundant full actuation, a single-propeller reversal removes one instantaneous task direction; hence, no global continuously differentiable exact static allocator exists over the complete task space. Under redundant actuation, the physical task map may remain regular, yet a transverse pseudoinverse zero crossing requires an unbounded rotor-speed derivative. We define differential realizability as regularity of the physical lift of an actuator-output section, derive exact and first-order validity conditions, and distinguish structural rank loss from an allocator- induced rate singularity. A local nullspace deformation repairs isolated pseudoinverse reversals, while a global fixed-orthant construction establishes existence of regular sections at the cost of persistent task-preserving internal actuation.",
+          "version": 1
+        }
       }
     }
   ]

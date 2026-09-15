@@ -27,8 +27,26 @@
         "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "新方法/构造",
+      "workSummary": "在素数维数 n≥5 构造整格，给出约为 n^{3/4} exp(√n) 的接吻数下界。",
+      "techniques": [
+        "Reed–Solomon 码",
+        "Bennett–Peikert 构造的扩展",
+        "格的短向量计数"
+      ],
+      "breakthrough": "作者给出的增长率优于所比较的 Barnes–Wall 格族下界。",
+      "limitations": "素数维数与渐近范围需保留；不是最优接吻数的精确确定。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 78,
+      "priorityReason": "构造性下界和编码方法可复用，值得度量与离散几何组关注。"
+    },
+    "analysisBasis": {
+      "abstract": "For prime dimensions $n \\ge 5$, we define integer lattices $\\mathcal{L}_n$ with kissing constant \\begin{align} \\tau(\\mathcal{L}_n) \\ge \\left(\\frac{1}{\\sqrt{2 \\pi e}} + o(1)\\right) n^{3/4} e^{\\sqrt n}. \\notag \\end{align} This improves on the growth rate $e^{\\Theta((\\log n)^2)}$ of the Barnes-Wall lattices, which provided the previously best known asymptotic lower bound. The construction is an extension of a previous construction by Bennett-Peikert based on Reed-Solomon codes.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +76,26 @@
             "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "新方法/构造",
+          "workSummary": "在素数维数 n≥5 构造整格，给出约为 n^{3/4} exp(√n) 的接吻数下界。",
+          "techniques": [
+            "Reed–Solomon 码",
+            "Bennett–Peikert 构造的扩展",
+            "格的短向量计数"
+          ],
+          "breakthrough": "作者给出的增长率优于所比较的 Barnes–Wall 格族下界。",
+          "limitations": "素数维数与渐近范围需保留；不是最优接吻数的精确确定。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 78,
+          "priorityReason": "构造性下界和编码方法可复用，值得度量与离散几何组关注。"
+        },
+        "analysisBasis": {
+          "abstract": "For prime dimensions $n \\ge 5$, we define integer lattices $\\mathcal{L}_n$ with kissing constant \\begin{align} \\tau(\\mathcal{L}_n) \\ge \\left(\\frac{1}{\\sqrt{2 \\pi e}} + o(1)\\right) n^{3/4} e^{\\sqrt n}. \\notag \\end{align} This improves on the growth rate $e^{\\Theta((\\log n)^2)}$ of the Barnes-Wall lattices, which provided the previously best known asymptotic lower bound. The construction is an extension of a previous construction by Bennett-Peikert based on Reed-Solomon codes.",
+          "version": 1
+        }
       }
     }
   ]

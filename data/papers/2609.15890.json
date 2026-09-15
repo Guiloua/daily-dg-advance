@@ -24,8 +24,26 @@
         "contentHash": "e663767b53616b54df9ee54cb31e2ff2101fce808a91506449759d2db93c08c8"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "新定理/分类",
+      "workSummary": "证明对固定闭 PL 四维流形 Z，识别 Z 与至少两个 S2×S2 的连通和这一问题是 PSPACE-困难的。",
+      "techniques": [
+        "Thompson 群 F 的压缩字问题",
+        "多项式时间归约",
+        "四维 PL 流形编码"
+      ],
+      "breakthrough": "把计算复杂度障碍推进到指定稳定化后的识别问题。",
+      "limitations": "PSPACE-困难不等于不可判定，也未必意味着 PSPACE-完全；编码方式和固定流形条件需保留。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 70,
+      "priorityReason": "为四维拓扑算法给出强下界，应用侧与曲率研究较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $Z$ be any fixed closed connected PL $4$-manifold. We give a polynomial-time many-to-one reduction from the compressed word problem in Thompson's group $F$ to fixed-target recognition of $Z\\#_{2}(S^2\\times S^2)$. Once a finite triangulation of $Z$ has been fixed, the construction sends a straight-line program $A$ to a closed triangulated PL $4$-manifold $X_{A,Z}$ such that $\\operatorname{val}(A)=1$ in $F$ if and only if $X_{A,Z}$ is PL-homeomorphic to $Z\\#_2(S^2\\times S^2)$. Since the compressed word problem in $F$ is PSPACE-complete, every such recognition problem is PSPACE-hard. In particular, fixed-target recognition of $\\#_n(S^2\\times S^2)$ is PSPACE-hard for every fixed $n\\geq2$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,8 +70,26 @@
             "contentHash": "e663767b53616b54df9ee54cb31e2ff2101fce808a91506449759d2db93c08c8"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "新定理/分类",
+          "workSummary": "证明对固定闭 PL 四维流形 Z，识别 Z 与至少两个 S2×S2 的连通和这一问题是 PSPACE-困难的。",
+          "techniques": [
+            "Thompson 群 F 的压缩字问题",
+            "多项式时间归约",
+            "四维 PL 流形编码"
+          ],
+          "breakthrough": "把计算复杂度障碍推进到指定稳定化后的识别问题。",
+          "limitations": "PSPACE-困难不等于不可判定，也未必意味着 PSPACE-完全；编码方式和固定流形条件需保留。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 70,
+          "priorityReason": "为四维拓扑算法给出强下界，应用侧与曲率研究较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $Z$ be any fixed closed connected PL $4$-manifold. We give a polynomial-time many-to-one reduction from the compressed word problem in Thompson's group $F$ to fixed-target recognition of $Z\\#_{2}(S^2\\times S^2)$. Once a finite triangulation of $Z$ has been fixed, the construction sends a straight-line program $A$ to a closed triangulated PL $4$-manifold $X_{A,Z}$ such that $\\operatorname{val}(A)=1$ in $F$ if and only if $X_{A,Z}$ is PL-homeomorphic to $Z\\#_2(S^2\\times S^2)$. Since the compressed word problem in $F$ is PSPACE-complete, every such recognition problem is PSPACE-hard. In particular, fixed-target recognition of $\\#_n(S^2\\times S^2)$ is PSPACE-hard for every fixed $n\\geq2$.",
+          "version": 1
+        }
       }
     }
   ]

@@ -25,8 +25,26 @@
         "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "新定理/分类",
+      "workSummary": "证明半径为 1 至 n 的不重叠圆围绕中心圆时最小中心半径存在二次渐近常数，并以有限线性规划有效逼近。",
+      "techniques": [
+        "带边界代价的拼接",
+        "有限字线性规划",
+        "反射块恢复"
+      ],
+      "breakthrough": "给出显式误差界并纠正此前提出的 1/8 系数。",
+      "limitations": "常数的初等表达式、精确端点及高精度效率仍未解决。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 63,
+      "priorityReason": "有限优化逼近连续几何极值的思路有价值，具体圆环问题较专门。"
+    },
+    "analysisBasis": {
+      "abstract": "Let ${R^\\ast}(n)$ be the least radius of a central circle to which nonoverlapping circles of radii $1,\\ldots,n$ are externally tangent. We prove that ${R^\\ast}(n)={C_\\ast} n^2+o(n^2)$ and characterize ${C_\\ast}$ by finite linear programs with an explicit error tending to zero. The reduction preserves arbitrary orders and all pairwise constraints: the limiting problem places marked points on a line at pairwise separation at least the geometric mean of their marks. Concatenation with a bounded boundary cost proves existence, and balanced finite-word programs supply matching effective upper and lower bounds. Their certified gap is $(1/k+1/r)/\\pi$, before directed arithmetic error, for $k$ mark types and words of length $r$. A quantitative reflected-block recovery theorem supplies genuine permutations and full ring geometry, with a countable extension and a strict four-block improvement. The explicit interval is $C_{\\mathrm{term}}+\\eta_{\\mathrm{width}}\\le{C_\\ast}\\le U_4$; neither endpoint is asserted sharp. In particular, the coefficient $1/8$ proposed in the preceding finite study is false. An elementary expression for ${C_\\ast}$, efficient high-precision evaluation and global floating-circle structure remain open.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +72,26 @@
             "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "新定理/分类",
+          "workSummary": "证明半径为 1 至 n 的不重叠圆围绕中心圆时最小中心半径存在二次渐近常数，并以有限线性规划有效逼近。",
+          "techniques": [
+            "带边界代价的拼接",
+            "有限字线性规划",
+            "反射块恢复"
+          ],
+          "breakthrough": "给出显式误差界并纠正此前提出的 1/8 系数。",
+          "limitations": "常数的初等表达式、精确端点及高精度效率仍未解决。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 63,
+          "priorityReason": "有限优化逼近连续几何极值的思路有价值，具体圆环问题较专门。"
+        },
+        "analysisBasis": {
+          "abstract": "Let ${R^\\ast}(n)$ be the least radius of a central circle to which nonoverlapping circles of radii $1,\\ldots,n$ are externally tangent. We prove that ${R^\\ast}(n)={C_\\ast} n^2+o(n^2)$ and characterize ${C_\\ast}$ by finite linear programs with an explicit error tending to zero. The reduction preserves arbitrary orders and all pairwise constraints: the limiting problem places marked points on a line at pairwise separation at least the geometric mean of their marks. Concatenation with a bounded boundary cost proves existence, and balanced finite-word programs supply matching effective upper and lower bounds. Their certified gap is $(1/k+1/r)/\\pi$, before directed arithmetic error, for $k$ mark types and words of length $r$. A quantitative reflected-block recovery theorem supplies genuine permutations and full ring geometry, with a countable extension and a strict four-block improvement. The explicit interval is $C_{\\mathrm{term}}+\\eta_{\\mathrm{width}}\\le{C_\\ast}\\le U_4$; neither endpoint is asserted sharp. In particular, the coefficient $1/8$ proposed in the preceding finite study is false. An elementary expression for ${C_\\ast}$, efficient high-precision evaluation and global floating-circle structure remain open.",
+          "version": 1
+        }
       }
     }
   ]

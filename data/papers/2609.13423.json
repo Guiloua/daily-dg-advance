@@ -29,8 +29,27 @@
         "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "新方法/构造",
+      "workSummary": "将距离型编队控制的局部稳定性化为边空间动力学和谱条件，给出有向感知的条件与增益设计。",
+      "techniques": [
+        "刚性图",
+        "边算子的谱分析",
+        "无环定向的组合刻画",
+        "半定规划"
+      ],
+      "breakthrough": "揭示稳定性同时依赖图定向和目标几何，区分 persistence 与局部收敛。",
+      "limitations": "结论主要是局部指数稳定性，不能外推为全局控制收敛。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 58,
+      "priorityReason": "几何刚性与优化的工具有迁移潜力，但应用导向较强。"
+    },
+    "analysisBasis": {
+      "abstract": "We develop a geometric framework for distance-based formation control that separates the evolution of inter-agent distances from its realization by compatible node motions, reducing the stability problem to the edge space. We show that local exponential convergence of the edge dynamics implies local exponential convergence of the formation, and that stability is certified by spectral properties of a linear edge operator. We introduce a hierarchy of generic spectral properties --- weak admissibility, admissibility, and strong admissibility --- that provide necessary conditions for local exponential stability. Specializing to directed sensing, we obtain a necessary and sufficient spectral condition for local stability at an arbitrary target, together with a quadratic sufficient certificate. These conditions reveal that stability depends jointly on the graph orientation and target geometry, and show that persistence is neither necessary nor sufficient for local convergence. We show that every generically rigid graph admits an admissible orientation and, for acyclic orientations, we give an exact combinatorial characterization of admissibility. Finally, the quadratic certificate leads to a semidefinite program for synthesizing stabilizing edge gains.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -62,8 +81,27 @@
             "contentHash": "19d451ab8c46ed3597ecb17439def057418793c470f9304d68d5fac2b03b8575"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "新方法/构造",
+          "workSummary": "将距离型编队控制的局部稳定性化为边空间动力学和谱条件，给出有向感知的条件与增益设计。",
+          "techniques": [
+            "刚性图",
+            "边算子的谱分析",
+            "无环定向的组合刻画",
+            "半定规划"
+          ],
+          "breakthrough": "揭示稳定性同时依赖图定向和目标几何，区分 persistence 与局部收敛。",
+          "limitations": "结论主要是局部指数稳定性，不能外推为全局控制收敛。仅依据官方英文摘要及作者评论，尚未核查正文与完整证明；技术说明仅限摘要明确的信息，关键结论需回查原文。未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 58,
+          "priorityReason": "几何刚性与优化的工具有迁移潜力，但应用导向较强。"
+        },
+        "analysisBasis": {
+          "abstract": "We develop a geometric framework for distance-based formation control that separates the evolution of inter-agent distances from its realization by compatible node motions, reducing the stability problem to the edge space. We show that local exponential convergence of the edge dynamics implies local exponential convergence of the formation, and that stability is certified by spectral properties of a linear edge operator. We introduce a hierarchy of generic spectral properties --- weak admissibility, admissibility, and strong admissibility --- that provide necessary conditions for local exponential stability. Specializing to directed sensing, we obtain a necessary and sufficient spectral condition for local stability at an arbitrary target, together with a quadratic sufficient certificate. These conditions reveal that stability depends jointly on the graph orientation and target geometry, and show that persistence is neither necessary nor sufficient for local convergence. We show that every generically rigid graph admits an admissible orientation and, for acyclic orientations, we give an exact combinatorial characterization of admissibility. Finally, the quadratic certificate leads to a semidefinite program for synthesizing stabilizing edge gains.",
+          "version": 1
+        }
       }
     }
   ]
