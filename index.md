@@ -62,7 +62,7 @@ We develop a geometric framework for distance-based formation control that separ
 
 全文检索未见 AI 协作披露（不代表未使用 AI）
 
-核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。新增命中在 PDF 第 14–15 页参考文献中，指自主代理和机器人编队控制的研究主题，不是作者使用生成式 AI 的声明。
 
 来源：https://arxiv.org/pdf/2609.13423v1
 
@@ -786,7 +786,7 @@ This monograph develops an introduction to global analysis centered on the inter
 
 核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中 AI 是带下标的数学索引集合，不是 AI 使用声明；十个文本过短页面已查看渲染图，均为空白页或章节扉页。另逐页查看文本过短页面的渲染图，确认仅为空白页或章节扉页。
 
-来源：https://arxiv.org/pdf/2609.14580
+来源：https://arxiv.org/pdf/2609.14580v1
 
 [arXiv](https://arxiv.org/abs/2609.14580)
 
@@ -908,7 +908,7 @@ Fox's conjecture famously asserts that the absolute values of the coefficients o
 
 核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
-来源：https://arxiv.org/pdf/2609.14809
+来源：https://arxiv.org/pdf/2609.14809v1
 
 [arXiv](https://arxiv.org/abs/2609.14809)
 
