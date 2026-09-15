@@ -27,6 +27,8 @@
 
 ## 3. 生产检查
 
+使用 `automations/daily-ingest.md` 的两层授权流程：通过同一项目的 `sites_get_site` 获取现有派发授权，放入子进程临时 `OAI_SITES_AUTHORIZATION`，不落盘。2026-09-15 已验证该正式方式可恢复此前返回 403/1010 的状态读取与写入。不得将未携带平台授权的历史拒绝误当作当前不可恢复的封禁。健康检查无需应用写入令牌；无应用凭据的写接口仍必须返回 401。平台授权不得发往 GitHub Pages 或其他域名。
+
 1. 从 `.automation/site-url` 读取站点地址，运行 `python3 scripts/verify_production.py --site <地址> --manifest <本时段manifest.json> --scheduled-for <本次计划时间> --daily-outcome .automation/daily-outcomes/YYYY-MM-DD.json`。schemaVersion 2 回执省略 `--manifest`，由对应发布快照与镜像记录核验。缺失证据时失败关闭，不能退回独立抓取。单独排查站点时可不传结果，但输出 `dailyRunStatus: not_checked` 不得解释为日报成功。
 2. 新格式回执使用 `/api/reports/v2` 核对首页的已确认、已发布、已解读数量和待补齐状态，并核对 Pages 的同日内容哈希。expectedCount 为 null 时不得要求 X/X。旧格式仍使用原完整批次校验。
 3. 若新代码造成首页或核心接口不可用，重新部署本次发布前保存的 Sites 版本，记录 GitHub rollback Deployment，并让任务失败。
