@@ -15,13 +15,15 @@ from pathlib import Path
 
 from arxiv_client import ArxivClient, Deferred, atomic_json
 
-RULE_VERSION = 'ai-disclosure-search-v3'
+RULE_VERSION = 'ai-disclosure-search-v4'
 KEYWORDS = re.compile(
     r'(?i:chat\s*gpt|\bgpt[\s-]*[3456o]\b|open\s*ai|\bclaude\b|\bgemini\b|'
     r'\banthropic\b|\bgrok\b|\bmistral\b|\bqwen\b|\bllama\b|\bcodex\b|\bperplexity\b|'
     r'\bdeepseek\b|\bcopilot\b|\bLLMs?\b|large\s+language\s+model|'
     r'artificial\s+intelligence|generative\s+(?:AI|model)|\bai[-\s]+(?:assist|tool|usage|use|disclos)|'
-    r'language\s+model|机器生成|人工智能|大语言模型)|\bAI\b')
+    r'language\s+model|\bodin\b|\bastra\b|\bgrammarly\b|\bdeep\s*l\b|'
+    r'(?:automated|autonomous)\s+(?:research\s+)?agent|'
+    r'机器生成|人工智能|人工智慧|大语言模型|大型語言模型)|\bAI\b')
 
 
 def search_pages(pages):
@@ -54,33 +56,56 @@ def extract_pdf(path):
     return pages, complete, len(pages) == int(count[1])
 
 
-def audit_entry(entry, out, client):
+def metadata_hash(entry):
+    context = {key: entry['metadata'].get(key, '') for key in ('title', 'abstract', 'comment')}
+    return hashlib.sha256(json.dumps(context, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+
+
+class LocalSourceUnavailable(RuntimeError):
+    pass
+
+
+def audit_entry(entry, out, client, *, allow_network=True):
     identifier = entry['arxivId']
     version = entry['metadata'].get('version')
     suffix = f'v{version}' if version else ''
     slug = identifier.replace('/', '--') + suffix
     path = out / (slug + '.json')
-    if path.exists():
-        existing = json.loads(path.read_text())
-        if existing.get('ruleVersion') == RULE_VERSION and existing.get('status') in ('full_text_searched', 'needs_review'):
-            return existing
+    existing = json.loads(path.read_text()) if path.exists() else {}
     url = f'https://arxiv.org/pdf/{identifier}{suffix}'
     pdf = out / (slug + '.pdf')
-    # A rule upgrade reuses the exact downloaded document, never re-fetches it.
-    body = pdf.read_bytes() if pdf.exists() else client.request(url)
+    # Only explicitly versioned URLs are immutable across scheduled runs.
+    local = pdf.exists() and (version is not None or existing.get('runId') == client.run_id)
+    if not local and not allow_network:
+        raise LocalSourceUnavailable('Document is not cached for this version')
+    body = pdf.read_bytes() if local else client.request(url)
+    body_hash = hashlib.sha256(body).hexdigest()
+    context_hash = metadata_hash(entry)
+    if (existing.get('ruleVersion') == RULE_VERSION
+            and existing.get('metadataHash') == context_hash
+            and existing.get('contentHash') == body_hash
+            and existing.get('arxivId') == identifier
+            and existing.get('sourceUrl') == url
+            and existing.get('version') == version and version is not None
+            and existing.get('status') in ('full_text_searched', 'needs_review')):
+        return existing
     if not body.startswith(b'%PDF-'):
         raise ValueError('Official response is not a PDF')
     pdf.write_bytes(body)
     pages, complete, page_count_matches = extract_pdf(pdf)
     (out / (slug + '.txt')).write_text('\f'.join(pages))
     matches = search_pages(pages)
-    metadata_matches = search_pages([entry['metadata'].get('abstract', '') + '\n' + entry['metadata'].get('comment', '')])
+    metadata_matches = search_pages(['\n'.join(entry['metadata'].get(k, '') for k in ('title', 'abstract', 'comment'))])
+    stamp = re.search(r'arXiv:\s*([^\s]+?)v(\d+)\b', '\n'.join(pages[:2]))
+    if stamp and (stamp[1] != identifier or (version and int(stamp[2]) != version)):
+        raise ValueError('PDF stamp differs from requested paper/version')
     actual_version = version
     if actual_version is None:
         stamp = re.search(r'arXiv:\s*' + re.escape(identifier) + r'v(\d+)\b', '\n'.join(pages[:2]))
         if stamp:
             actual_version = int(stamp[1])
-    record = {'ruleVersion': RULE_VERSION, 'arxivId': identifier, 'version': actual_version,
+    record = {'ruleVersion': RULE_VERSION, 'metadataHash': context_hash, 'runId': client.run_id,
+              'arxivId': identifier, 'version': actual_version,
               'sourceUrl': url, 'contentHash': hashlib.sha256(body).hexdigest(),
               'checkedAt': datetime.now(timezone.utc).isoformat(), 'pages': len(pages),
               'extractionComplete': complete, 'matches': matches, 'metadataMatches': metadata_matches,
@@ -101,12 +126,20 @@ def build_candidate(feed, records, decisions, run_id, scheduled_for):
         record = indexed.get(entry['arxivId'])
         if not record or not record.get('contentHash'):
             continue  # Existing UI shows legacy/unchecked records as pending.
+        expected_url = 'https://arxiv.org/pdf/' + entry['arxivId']
+        if record.get('sourceUrl') not in (expected_url, expected_url + 'v' + str(record.get('version'))):
+            raise ValueError('AI review source belongs to another paper/version')
+        if record.get('metadataHash') and record['metadataHash'] != metadata_hash(entry):
+            raise ValueError('Metadata changed after disclosure search; recheck local sources')
         analysis = copy.deepcopy(entry['analysis'])
         decision = decisions.get(entry['arxivId'])
         complete = record.get('extractionComplete') and record.get('version') is not None
         if decision:
             if decision.get('contentHash') != record['contentHash'] or decision.get('version') != record['version']:
                 raise ValueError('Review does not match the exact PDF version/hash')
+            if record.get('metadataHash') and (decision.get('metadataHash') != record['metadataHash']
+                    or decision.get('ruleVersion') != record.get('ruleVersion')):
+                raise ValueError('Review must cover the current search rules and metadata')
             if not decision.get('reason') or decision.get('status') not in ('explicit', 'no_disclosure_observed'):
                 raise ValueError('Every manual decision requires a reason and valid status')
             if decision['status'] == 'explicit' and not decision.get('location'):
@@ -130,7 +163,8 @@ def build_candidate(feed, records, decisions, run_id, scheduled_for):
                 analysis.update(aiStatus='no_disclosure_observed', aiEvidence=None, aiEvidenceSource=None)
         analysis['aiReview'] = dict(status='full_text_searched' if reviewed else 'needs_review',
             checkedAt=record['checkedAt'], version=record['version'], sourceUrl=record['sourceUrl'],
-            contentHash=record['contentHash'], pages=record['pages'], note=note)
+            contentHash=record['contentHash'], pages=record['pages'], note=note,
+            **{k: record[k] for k in ('ruleVersion', 'metadataHash') if k in record})
         # Mathematical reading depth stays unchanged; distinguish its scope from AI review.
         analysis['limitations'] = analysis['limitations'].replace(
             '未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。',
@@ -157,6 +191,7 @@ def main():
     parser.add_argument('--decisions', help='Hash-bound human review decisions; apply without network access')
     parser.add_argument('--scheduled-for')
     parser.add_argument('--candidate')
+    parser.add_argument('--local-only', action='store_true', help='Recheck cached PDFs without making external requests')
     args = parser.parse_args()
     feed = json.loads(Path(args.feed).read_text())
     out = Path(args.out);out.mkdir(parents=True, exist_ok=True)
@@ -175,17 +210,18 @@ def main():
     deferred = None
     for entry in entries:
         try:
-            record = audit_entry(entry, out, client)
+            record = audit_entry(entry, out, client, allow_network=not args.local_only and deferred is None)
         except Deferred as error:
             deferred = str(error)
-            break  # Do not move to another request to evade a cooldown.
-        except (ValueError, RuntimeError, subprocess.SubprocessError) as error:
+            record = {'arxivId': entry['arxivId'], 'status': 'unavailable', 'reason': 'Deferred'}
+            # Subsequent entries use local files only; no more remote requests.
+        except (ValueError, RuntimeError, OSError, subprocess.SubprocessError) as error:
             # No response bodies or full documents in logs.
             record = {'arxivId': entry['arxivId'], 'status': 'unavailable', 'reason': type(error).__name__}
         results.append(record)
         atomic_json(out / 'progress.json', {'runId': args.run_id, 'date': feed['date'], 'results': results})
         print(json.dumps({'id': entry['arxivId'], 'status': record['status'], 'pages': record.get('pages'), 'candidatePassages': len(record.get('matches', []))}), flush=True)
-    missing = sorted(set(e['arxivId'] for e in entries) - set(r['arxivId'] for r in results))
+    missing = sorted(set(e['arxivId'] for e in entries) - set(r['arxivId'] for r in results if r['status'] != 'unavailable'))
     atomic_json(out / 'progress.json', {'runId': args.run_id, 'date': feed['date'], 'results': results, 'remaining': missing, 'deferred': deferred})
     if deferred:
         print(json.dumps({'status': 'deferred', 'reason': deferred, 'remaining': len(missing)}))

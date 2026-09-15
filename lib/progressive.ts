@@ -33,6 +33,11 @@ const aiReviewSchema = z
       .optional(),
     pages: z.number().int().positive().optional(),
     note: z.string().min(1).max(1500),
+    ruleVersion: z.string().min(1).max(100).optional(),
+    metadataHash: z
+      .string()
+      .regex(/^[a-f0-9]{64}$/)
+      .optional(),
   })
   .superRefine((review, context) => {
     if (
@@ -116,6 +121,23 @@ export const entryPatchSchema = z
         code: 'custom',
         message: 'Analysis requires an explicit source basis',
       });
+    const review = v.analysis?.aiReview;
+    if (review) {
+      const url = new URL(review.sourceUrl);
+      const paperPath = '/pdf/' + v.arxivId;
+      if (
+        url.hostname !== 'arxiv.org' ||
+        (url.pathname !== paperPath &&
+          url.pathname !== paperPath + 'v' + review.version) ||
+        (review.version &&
+          v.analysisBasis?.version &&
+          review.version !== v.analysisBasis.version)
+      )
+        c.addIssue({
+          code: 'custom',
+          message: 'AI review must identify the same paper and version',
+        });
+    }
   });
 export const publicationSchema = z
   .object({
@@ -353,6 +375,17 @@ export function mergePublication(
       delete old.metadata.version;
       delete old.metadata.updatedAt;
     }
+    if (
+      incoming.comment !== undefined &&
+      incoming.comment !== old.metadata.comment &&
+      old.analysis?.aiReview
+    ) {
+      old.analysis.aiReview = {
+        ...old.analysis.aiReview,
+        status: 'needs_review',
+        note: '官方评论已变化，AI 披露待重新核查。',
+      };
+    }
     old.metadata = { ...old.metadata, ...incoming };
     if (!old.sources.some((s) => canonical(s) === canonical(patch.source)))
       old.sources = [...old.sources, patch.source].slice(-20);
@@ -374,13 +407,21 @@ export function mergePublication(
         const analysis = { ...(downgrade ? old.analysis! : patch.analysis) };
         const priorReview = old.analysis?.aiReview;
         const nextReview = patch.analysis.aiReview;
+        const changedReviewScope = Boolean(
+          nextReview &&
+          ((nextReview.ruleVersion &&
+            nextReview.ruleVersion !== priorReview?.ruleVersion) ||
+            (nextReview.metadataHash &&
+              nextReview.metadataHash !== priorReview?.metadataHash)),
+        );
         analysis.aiReview =
           !nextReview ||
           (priorReview &&
             (Date.parse(priorReview.checkedAt) >
               Date.parse(nextReview.checkedAt) ||
               (priorReview.status === 'full_text_searched' &&
-                nextReview.status !== 'full_text_searched')))
+                nextReview.status !== 'full_text_searched' &&
+                !changedReviewScope)))
             ? priorReview
             : nextReview;
         if (patch.analysis.aiStatus === 'explicit') {
