@@ -10,6 +10,7 @@ import {
   PublicationOverview,
 } from './publication-view';
 import { LazyTrend } from './lazy-trend';
+import { disclosureStatus } from '@/lib/ai-disclosure';
 export function ProgressiveDashboard({
   requestedDate,
 }: {
@@ -87,7 +88,7 @@ export function ProgressiveDashboard({
                 .toLowerCase()
                 .includes(query.toLowerCase())) &&
             (topic === 'all' || (a?.topic ?? 'pending') === topic) &&
-            (ai === 'all' || (a?.aiStatus ?? 'unknown') === ai) &&
+            (ai === 'all' || disclosureStatus(e) === ai) &&
             (priority === 'all' ||
               (a
                 ? a.priorityScore >= 75
@@ -173,8 +174,8 @@ export function ProgressiveDashboard({
             >
               <option value="all">全部 AI 状态</option>
               <option value="explicit">明确披露</option>
-              <option value="no_disclosure_observed">已检查来源未见披露</option>
-              <option value="unknown">待核查</option>
+              <option value="no_disclosure_observed">全文检索未见披露</option>
+              <option value="unknown">待完成核查</option>
             </select>
             <select
               aria-label="优先级"
