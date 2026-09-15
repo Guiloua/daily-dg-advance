@@ -34,7 +34,7 @@ class DisclosureSearchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             out = Path(directory)
             (out / '2609.12345v1.pdf').write_bytes(b'%PDF-cached')
-            client = Mock()
+            client = Mock(run_id="test-ai-cache")
             with patch('ai_disclosure_audit.extract_pdf', return_value=(['We used ChatGPT for proofreading.'], True, True)):
                 first = audit_entry({'arxivId': '2609.12345', 'metadata': {'version': 1}}, out, client)
                 second = audit_entry({'arxivId': '2609.12345', 'metadata': {'version': 1}}, out, client)
@@ -88,3 +88,59 @@ class ReviewApplicationTests(unittest.TestCase):
         self.assertEqual(self.candidate(decision)['analysis']['aiReview']['status'], 'full_text_searched')
         self.record['pageCountMatches'] = False
         self.assertEqual(self.candidate(decision)['analysis']['aiReview']['status'], 'needs_review')
+
+class DisclosureResumeRegressionTests(unittest.TestCase):
+    def test_named_research_and_editing_tools_are_review_candidates(self):
+        for sentence in ['We used Odin to discover the metric and its proof.',
+                         'We used Grammarly to improve the manuscript language.',
+                         'DeepL was used to translate the introduction.',
+                         'An automated research agent suggested the construction.',
+                         '本文使用生成式人工智慧协助翻译。']:
+            with self.subTest(sentence=sentence):
+                self.assertTrue(search_pages([sentence]))
+
+    def test_cached_search_rechecks_changed_metadata_without_download(self):
+        with tempfile.TemporaryDirectory() as directory:
+            out = Path(directory)
+            (out / '2609.12345v1.pdf').write_bytes(b'%PDF-cached')
+            client = Mock(run_id="test-ai-cache")
+            entry = {'arxivId': '2609.12345', 'metadata': {'version': 1, 'abstract': 'A theorem'}}
+            with patch('ai_disclosure_audit.extract_pdf', return_value=(['A mathematical theorem with its proof.'], True, True)):
+                audit_entry(entry, out, client)
+                entry['metadata']['comment'] = 'We used ChatGPT for proofreading.'
+                updated = audit_entry(entry, out, client)
+            client.request.assert_not_called()
+            self.assertTrue(updated['metadataMatches'])
+            self.assertEqual(updated['status'], 'needs_review')
+
+    def test_decision_cannot_review_another_paper_with_same_hash(self):
+        feed = {'date': '2026-09-15', 'entries': [{'arxivId': '2609.12345',
+            'metadata': {'version': 1, 'abstract': 'Original'}, 'analysisBasis': {'version': 1, 'abstract': 'Original'},
+            'analysis': {'aiStatus': 'no_disclosure_observed', 'limitations': 'Not read'}}]}
+        record = {'arxivId': '2609.12345', 'version': 1, 'extractionComplete': True,
+            'contentHash': 'a'*64, 'checkedAt': '2026-09-15T09:00:00Z', 'pages': 1,
+            'sourceUrl': 'https://arxiv.org/pdf/2609.99999v1', 'matches': [], 'metadataMatches': []}
+        with self.assertRaises(ValueError):
+            build_candidate(feed, [record], {}, 'run-test', '2026-09-15T09:00:00Z')
+
+class AuditCooldownRegressionTests(unittest.TestCase):
+    def test_cooldown_still_processes_later_cached_papers(self):
+        import ai_disclosure_audit as audit
+        with tempfile.TemporaryDirectory() as directory:
+            out = Path(directory)
+            (out / '2609.22222v1.pdf').write_bytes(b'%PDF-cached')
+            client = Mock(run_id='same-scheduled-slot')
+            client.request.side_effect = audit.Deferred('Retry-After exceeds budget')
+            feed = {'date': '2026-09-15', 'entries': [
+                {'arxivId': '2609.11111', 'metadata': {'version': 1}},
+                {'arxivId': '2609.22222', 'metadata': {'version': 1}}]}
+            with patch.object(audit, 'extract_pdf', return_value=(['We used ChatGPT for proofreading.'], True, True)):
+                with patch('sys.argv', ['audit', '--feed', str(out/'feed.json'), '--out', str(out), '--run-id', client.run_id]):
+                    (out/'feed.json').write_text(__import__('json').dumps(feed))
+                    with patch.object(audit, 'ArxivClient', return_value=client):
+                        with self.assertRaises(SystemExit):
+                            audit.main()
+            result = __import__('json').loads((out/'progress.json').read_text())
+            self.assertEqual(result['remaining'], ['2609.11111'])
+            self.assertEqual(next(r for r in result['results'] if r['arxivId']=='2609.22222')['status'], 'needs_review')
+            self.assertEqual(client.request.call_count, 1)

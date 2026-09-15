@@ -102,3 +102,70 @@ assert.deepEqual(
   'Routine analysis updates must retain completed AI review',
 );
 console.log('AI disclosure evidence merge regression passed.');
+
+// New search rules can uncover unreviewed evidence in the same PDF version.
+const changedRules = mergePublication(next, {
+  ...batch,
+  baseRevision: next.revision,
+  entries: [
+    {
+      ...batch.entries[0],
+      source: {
+        ...batch.entries[0].source,
+        observedAt: '2026-09-15T10:00:00Z',
+      },
+      analysis: {
+        ...batch.entries[0].analysis!,
+        aiReview: {
+          ...review,
+          status: 'needs_review',
+          checkedAt: '2026-09-15T10:00:00Z',
+          ruleVersion: 'ai-disclosure-search-v4',
+        },
+      },
+    },
+  ],
+});
+assert.equal(
+  changedRules.entries[0].analysis?.aiReview?.status,
+  'needs_review',
+  'New evidence requiring review must invalidate a prior completed search',
+);
+
+assert.equal(
+  publicationSchema.safeParse({
+    ...batch,
+    entries: [
+      {
+        ...batch.entries[0],
+        analysis: {
+          ...batch.entries[0].analysis,
+          aiReview: {
+            ...review,
+            sourceUrl: 'https://arxiv.org/pdf/2609.99999v1',
+          },
+        },
+      },
+    ],
+  }).success,
+  false,
+  'The server must reject evidence from a different paper',
+);
+const changedComment = mergePublication(next, {
+  ...batch,
+  baseRevision: next.revision,
+  entries: [
+    {
+      arxivId: entry.arxivId,
+      metadata: { comment: 'New AI usage statement' },
+      source: {
+        ...batch.entries[0].source,
+        observedAt: '2026-09-15T11:00:00Z',
+      },
+    },
+  ],
+});
+assert.equal(
+  changedComment.entries[0].analysis?.aiReview?.status,
+  'needs_review',
+);

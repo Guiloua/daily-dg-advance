@@ -15,9 +15,9 @@
 
 ### AI 披露专项核查（独立于数学分析深度）
 
-每次基础分析发布后，对同一已确认 feed 执行 `python3 scripts/ai_disclosure_audit.py --feed <published.json> --out <被忽略的版本缓存目录> --run-id <本次共享ID>`。它通过统一客户端读取官方版本化 PDF，逐页检索披露、致谢及模型名称；重复运行复用 PDF，规则升级仅重新检索本地文件，不重复下载。所有论文都要检查，包括低优先级和仅做摘要级数学分析的论文。保留 PDF 哈希、版本、页数、检查时间及候选段落，全文与中间结果不得提交 Git 或写入日志。
+每次基础分析发布后，对同一已确认 feed 执行 `python3 scripts/ai_disclosure_audit.py --feed <published.json> --out <被忽略的版本缓存目录> --run-id <本次共享ID>`。它通过统一客户端读取官方版本化 PDF，逐页检索披露、致谢及模型名称；重复运行复用 PDF，规则升级仅重新检索本地文件，不重复下载。所有论文都要检查，包括低优先级和仅做摘要级数学分析的论文。保留 PDF 哈希、版本、页数、检查时间及候选段落，全文与中间结果不得提交 Git 或写入日志。缓存同时校验 PDF 哈希及标题、摘要、评论的指纹；规则或来源变化后重新检索。需要只处理本地文件时加 `--local-only`；一次外部限流后仍处理其他已缓存论文，把未完成 ID 保留在 remaining。
 
-必须阅读候选段落及必要上下文，再按 arXiv ID 保存人工核对 decisions JSON：`contentHash`、`version`、`status`（explicit/no_disclosure_observed）、`reason`、正面证据的 `location`。证据应简短转述用途并标注页码，不能仅凭关键词自动判定；特别区分否定声明、他人论文引用、作者姓名、研究 AI 本身、数学变量，以及仅使用 Lean/普通计算软件。语言润色、翻译、文献检索同样算已披露协作，但不能说成参与证明；“文字由人类撰写”不抵消其他明确的研究辅助声明。
+必须阅读候选段落及必要上下文，再按 arXiv ID 保存人工核对 decisions JSON：`contentHash`、`version`、`ruleVersion`、`metadataHash`、`status`（explicit/no_disclosure_observed）、`reason`、正面证据的 `location`。证据应简短转述用途并标注页码，不能仅凭关键词自动判定；特别区分否定声明、他人论文引用、作者姓名、研究 AI 本身、数学变量，以及仅使用 Lean/普通计算软件。语言润色、翻译、文献检索同样算已披露协作，但不能说成参与证明；“文字由人类撰写”不抵消其他明确的研究辅助声明。
 
 随后以同一命令追加 `--decisions <JSON> --scheduled-for <真实时段ISO> --candidate <输出>`，离线生成核查补丁；用 `scripts/progressive_publish.py <补丁> --out <回执目录>` 原子发布并核验，再同步镜像。补丁必须绑定 PDF 哈希和版本；数学分析深度、评分、主题和论文计数保持不变。新 AI 证据不得因已有正文级数学分析而丢失，常规重复分析也不得抹去已确认声明。
 
