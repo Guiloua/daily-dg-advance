@@ -16,6 +16,35 @@ const source = z.object({
   observedAt: timestamp,
   contentHash: z.string().regex(/^[a-f0-9]{64}$/),
 });
+const aiReviewSchema = z
+  .object({
+    status: z.enum([
+      'full_text_searched',
+      'metadata_only',
+      'unavailable',
+      'needs_review',
+    ]),
+    checkedAt: timestamp,
+    version: z.number().int().positive().nullable(),
+    sourceUrl: source.shape.url,
+    contentHash: z
+      .string()
+      .regex(/^[a-f0-9]{64}$/)
+      .optional(),
+    pages: z.number().int().positive().optional(),
+    note: z.string().min(1).max(1500),
+  })
+  .superRefine((review, context) => {
+    if (
+      review.status === 'full_text_searched' &&
+      (!review.contentHash || !review.pages || !review.version)
+    )
+      context.addIssue({
+        code: 'custom',
+        message:
+          'Full-text search requires a versioned document, hash and page count',
+      });
+  });
 export const analysisSchema = z
   .object({
     topic: z.enum(TOPICS),
@@ -28,6 +57,7 @@ export const analysisSchema = z
     aiStatus: z.enum(['explicit', 'no_disclosure_observed']),
     aiEvidence: z.string().max(3000).nullish(),
     aiEvidenceSource: z.string().max(500).nullish(),
+    aiReview: aiReviewSchema.optional(),
     priorityScore: z.number().int().min(0).max(100),
     priorityReason: z.string().min(1).max(3000),
     lowPriorityReason: z.string().max(3000).nullish(),
@@ -339,8 +369,25 @@ export function mergePublication(
       const downgrade =
         old.analysis?.analysisDepth === 'full_text_sections' &&
         patch.analysis.analysisDepth === 'abstract';
-      if (!downgrade) {
-        const analysis = { ...patch.analysis };
+      {
+        // AI evidence is independent from the depth of mathematical analysis.
+        const analysis = { ...(downgrade ? old.analysis! : patch.analysis) };
+        const priorReview = old.analysis?.aiReview;
+        const nextReview = patch.analysis.aiReview;
+        analysis.aiReview =
+          !nextReview ||
+          (priorReview &&
+            (Date.parse(priorReview.checkedAt) >
+              Date.parse(nextReview.checkedAt) ||
+              (priorReview.status === 'full_text_searched' &&
+                nextReview.status !== 'full_text_searched')))
+            ? priorReview
+            : nextReview;
+        if (patch.analysis.aiStatus === 'explicit') {
+          analysis.aiStatus = 'explicit';
+          analysis.aiEvidence = patch.analysis.aiEvidence;
+          analysis.aiEvidenceSource = patch.analysis.aiEvidenceSource;
+        }
         if (
           old.analysis?.aiStatus === 'explicit' &&
           analysis.aiStatus !== 'explicit'

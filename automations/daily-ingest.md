@@ -6,12 +6,22 @@
 
 1. 等待已有日报结束。建立唯一 runId、带时区 scheduledFor 和本次目录，所有子命令共享 ARXIV_RUN_ID、ARXIV_SCHEDULED_FOR，以及保存项目的绝对 ARXIV_CACHE_DIR。
 2. 先运行 `scripts/progressive_daily.py --run-id <ID> --scheduled-for <ISO> --out <目录>`，保存三分类清单，不把受保护状态读取作为公开抓取的前置条件。按下节取得现有 Sites 官方派发授权后，用相同 ID 和 `--from-run <ID> --publish` 发布已保存的有日期证据条目，无需再次抓取。三分类日期不同则分别发布；未知总数为 null，缺失资料不填造版本、时间或零计数。
-3. 读取本次 listing 文件中的标题、作者、摘要、评论，按原有研究标准生成按 ID 索引的中文分析。保存准确的分析依据：英文摘要和已明确的版本。优先补读高优先级主结果；正文不可用保留摘要级分析。AI explicit 必须有已读来源的明确证据；尚未检查的条目保持未知。
+3. 读取本次 listing 文件中的标题、作者、摘要、评论，按原有研究标准生成按 ID 索引的中文分析。保存准确的分析依据：英文摘要和已明确的版本。优先补读高优先级主结果；正文不可用保留摘要级分析。AI explicit 必须有已读来源的明确证据；尚未检查的条目保持未知。AI 披露专项核查必须覆盖全部论文，不受数学全文阅读优先级限制，按下节执行。
 4. 用 `--from-run <当前运行ID> --analyses <JSON> --analysis-source <来源JSON> --publish` 重用本次清单并增量发布分析；不重新请求清单。来源 JSON 可为带 papers 的元数据文件或按 ID 索引的 listing-reading.json。分析字段包括 topic、progressType、workSummary、techniques、breakthrough、limitations、analysisDepth、priorityScore、priorityReason；低于 50 分补 lowPriorityReason。
 5. 无冷却时，可在同一运行调用上述命令并加 `--enrich` 补齐 Atom 资料。元数据改变使旧解读失效的条目重新分析；同源全文分析不被摘要分析覆盖。
 6. 检查运行目录的 progress、pending 和 publications，以及 daily-outcomes 回执。状态 published_partial 表示两站已核验发布但仍待补齐；success 表示基础资料和摘要解读完整。镜像失败只重试 `scripts/progressive_mirror.py`，随后 `scripts/progressive_outcome.py --run <目录>` 核验。
 
 ## 缓存、限流与恢复
+
+### AI 披露专项核查（独立于数学分析深度）
+
+每次基础分析发布后，对同一已确认 feed 执行 `python3 scripts/ai_disclosure_audit.py --feed <published.json> --out <被忽略的版本缓存目录> --run-id <本次共享ID>`。它通过统一客户端读取官方版本化 PDF，逐页检索披露、致谢及模型名称；重复运行复用 PDF，规则升级仅重新检索本地文件，不重复下载。所有论文都要检查，包括低优先级和仅做摘要级数学分析的论文。保留 PDF 哈希、版本、页数、检查时间及候选段落，全文与中间结果不得提交 Git 或写入日志。
+
+必须阅读候选段落及必要上下文，再按 arXiv ID 保存人工核对 decisions JSON：`contentHash`、`version`、`status`（explicit/no_disclosure_observed）、`reason`、正面证据的 `location`。证据应简短转述用途并标注页码，不能仅凭关键词自动判定；特别区分否定声明、他人论文引用、作者姓名、研究 AI 本身、数学变量，以及仅使用 Lean/普通计算软件。语言润色、翻译、文献检索同样算已披露协作，但不能说成参与证明；“文字由人类撰写”不抵消其他明确的研究辅助声明。
+
+随后以同一命令追加 `--decisions <JSON> --scheduled-for <真实时段ISO> --candidate <输出>`，离线生成核查补丁；用 `scripts/progressive_publish.py <补丁> --out <回执目录>` 原子发布并核验，再同步镜像。补丁必须绑定 PDF 哈希和版本；数学分析深度、评分、主题和论文计数保持不变。新 AI 证据不得因已有正文级数学分析而丢失，常规重复分析也不得抹去已确认声明。
+
+文本提取不全、待核对命中段落、版本未知或下载受限时明确显示“待完成核查”，不得用“未见声明”冒充全文已查。无命中也只标为“全文检索未见披露”，不声称完全由人类完成。冷却时可先保留完整摘要级日报，记录 AI 核查缺口，下午优先续查；不可换运行编号突破等待预算。旧归档没有独立核查记录时同样显示待核查，不把历史缺失记录追认为已核验。
 
 ### 两层授权（已验证的恢复方式）
 

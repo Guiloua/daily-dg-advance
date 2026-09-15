@@ -1,5 +1,10 @@
 import { MathText } from './math-text';
 import {
+  disclosureLabel,
+  disclosureStatus,
+  disclosureSummary,
+} from '../lib/ai-disclosure';
+import {
   coverageLabel,
   progressiveOverview,
   formatPublicationTime,
@@ -22,7 +27,7 @@ export function EntryView({
       className="paper-panel mb-5 rounded-lg border border-border bg-card p-5 sm:p-7"
       data-paper
       data-title={`${m.title ?? ''} ${m.authors?.join(' ') ?? ''} ${m.abstract ?? ''} ${a?.workSummary ?? ''}`}
-      data-ai={a?.aiStatus ?? 'unknown'}
+      data-ai={disclosureStatus(entry)}
       data-topic={a?.topic ?? 'pending'}
       data-priority={
         a
@@ -91,10 +96,19 @@ export function EntryView({
       <p className="my-3 text-xs text-muted-foreground">
         {a?.aiStatus === 'explicit'
           ? `明确披露 AI 协作：${a.aiEvidence}（${a.aiEvidenceSource}）`
-          : a
-            ? '未见已检查来源中的 AI 协作声明'
-            : 'AI 协作披露待核查'}
+          : disclosureLabel(entry)}
       </p>
+      {a?.aiReview ? (
+        <p className="my-3 text-sm text-muted-foreground">
+          核查范围：{a.aiReview.note} ·{' '}
+          {a.aiReview.version ? `v${a.aiReview.version}` : '版本待核实'}
+          {a.aiReview.pages ? ` · ${a.aiReview.pages} 页` : ''} · 核查时间：
+          {formatPublicationTime(a.aiReview.checkedAt)}（上海时间）{' '}
+          <a href={a.aiReview.sourceUrl} target="_blank" rel="noreferrer">
+            核查来源 ↗
+          </a>
+        </p>
+      ) : null}
       <p className="my-3 text-xs text-muted-foreground">
         提交时间：{m.submittedAt ?? '待补齐'} · 修订时间：
         {m.updatedAt ?? '待补齐'}
@@ -128,6 +142,9 @@ export function PublicationHeader({ feed }: { feed: ProgressiveFeed }) {
       </p>
       <p className="mt-2 text-xs text-muted-foreground">
         更新：{formatPublicationTime(feed.lastUpdated)}（上海时间）
+      </p>
+      <p className="mt-2 text-sm text-muted-foreground">
+        {disclosureSummary(feed)}
       </p>
       <p className="mt-2 text-sm text-muted-foreground">
         {feed.coverage.complete

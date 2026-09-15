@@ -25,6 +25,11 @@ import {
   validateBuiltLinks,
 } from './static-presentation';
 import { readJson } from '../lib/read-request';
+import {
+  disclosureLabel,
+  disclosureStatus,
+  disclosureSummary,
+} from '../lib/ai-disclosure';
 
 interface Manifest {
   schemaVersion: 2;
@@ -105,7 +110,7 @@ function markdown(feed: ProgressiveFeed) {
     feed.entries
       .map(
         (e) =>
-          `## ${e.metadata.title ?? e.arxivId}\n\n${e.metadata.authors?.join('、') ?? '作者待补齐'}\n\n${e.analysis?.workSummary ?? '中文解读待补齐'}\n\n${e.metadata.abstract ?? '摘要待补齐'}\n\n[arXiv](https://arxiv.org/abs/${e.arxivId})\n`,
+          `## ${e.metadata.title ?? e.arxivId}\n\n${e.metadata.authors?.join('、') ?? '作者待补齐'}\n\n${e.analysis?.workSummary ?? '中文解读待补齐'}\n\n${e.metadata.abstract ?? '摘要待补齐'}\n\n${disclosureLabel(e)}${e.analysis?.aiStatus === 'explicit' ? '：' + e.analysis.aiEvidence + '\n\n来源：' + e.analysis.aiEvidenceSource : ''}\n\n${e.analysis?.aiReview ? '核查范围：' + e.analysis.aiReview.note + '\n\n来源：' + e.analysis.aiReview.sourceUrl : ''}\n\n[arXiv](https://arxiv.org/abs/${e.arxivId})\n`,
       )
       .join('\n')
   );
@@ -318,7 +323,7 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
     low: '低阅读优先级',
     pending: '待解读',
   };
-  return `<article class="paper" data-paper data-ai="${a?.aiStatus ?? 'unknown'}" data-topic="${esc(a?.topic ?? 'pending')}" data-priority="${priority(entry)}">
+  return `<article class="paper" data-paper data-ai="${disclosureStatus(entry)}" data-topic="${esc(a?.topic ?? 'pending')}" data-priority="${priority(entry)}">
     <div class="paper-meta"><span>${esc(m.categories?.join(' · ') ?? '分类待补齐')}</span><span>${a ? a.priorityScore + ' · ' : ''}${labels[priority(entry)]}</span></div>
     <p class="progress">${esc(a?.progressType ?? '待解读')}</p>
     <h4><a href="${url}">${renderMathText(m.title ?? entry.arxivId)}</a></h4>
@@ -344,8 +349,9 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
     <details${!a || detail ? ' open' : ''}><summary>英文摘要与分析依据</summary>
       <div class="abstract">${renderMathText(m.abstract ?? '摘要待补齐')}</div>
       <p>${a ? (a.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文') : '待解读'} · ${m.version ? 'v' + m.version : '版本待补齐'}</p>
-      <p>${renderMathText(a ? (a.aiStatus === 'explicit' ? '明确披露 AI 协作：' + a.aiEvidence : '未见已检查来源中的 AI 协作声明') : 'AI 协作披露待核查')}</p>
+      <p>${renderMathText(a?.aiStatus === 'explicit' ? '明确披露 AI 协作：' + a.aiEvidence : disclosureLabel(entry))}</p>
       ${a?.aiEvidenceSource ? '<p>' + esc(a.aiEvidenceSource) + '</p>' : ''}
+      ${a?.aiReview ? '<p>核查范围：' + esc(a.aiReview.note) + ' · ' + (a.aiReview.version ? 'v' + a.aiReview.version : '版本待核实') + (a.aiReview.pages ? ' · ' + a.aiReview.pages + ' 页' : '') + ' · 核查时间：' + formatUpdateTime(a.aiReview.checkedAt) + '（上海时间） · <a href="' + esc(a.aiReview.sourceUrl) + '">核查来源</a></p>' : ''}
       <p>提交时间：${m.submittedAt ? formatUpdateTime(m.submittedAt) : '待补齐'} · 修订时间：${m.updatedAt ? formatUpdateTime(m.updatedAt) : '待补齐'}（上海时间）</p>
       <p><a href="https://arxiv.org/abs/${entry.arxivId}">arXiv ↗</a> · <a href="https://arxiv.org/pdf/${entry.arxivId}">PDF ↗</a></p>
     </details>
@@ -355,16 +361,14 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
 
 function groupedCards(feed: ProgressiveFeed, base: string) {
   const labels = {
-    no_disclosure_observed: '未见 AI 协作声明',
+    no_disclosure_observed: '全文检索未见 AI 协作披露',
     explicit: '明确披露 AI 协作',
-    unknown: '待解读与披露核查',
+    unknown: 'AI 披露待完成核查',
   };
   return (
     (['no_disclosure_observed', 'explicit', 'unknown'] as const)
       .map((ai) => {
-        const entries = feed.entries.filter(
-          (e) => (e.analysis?.aiStatus ?? 'unknown') === ai,
-        );
+        const entries = feed.entries.filter((e) => disclosureStatus(e) === ai);
         if (!entries.length) return '';
         const groups = [...TOPICS, 'pending']
           .map((topic) => {
@@ -490,13 +494,10 @@ export async function buildProgressivePages(args: {
       <label><span>公告日</span><select name="date" data-date>${days.map((d) => `<option value="${d.date}"${d.date === feed.date ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label>
       <label class="search"><span>搜索</span><input name="q" type="search" placeholder="题目、作者或摘要" autocomplete="off"></label>
       <label><span>主题</span><select name="topic"><option value="all">全部主题</option>${TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}<option value="pending">待解读</option></select></label>
-      <label><span>AI 状态</span><select name="ai"><option value="all">全部</option><option value="no_disclosure_observed">未见声明</option><option value="explicit">明确披露</option><option value="unknown">待核查</option></select></label>
+      <label><span>AI 状态</span><select name="ai"><option value="all">全部</option><option value="no_disclosure_observed">全文检索未见披露</option><option value="explicit">明确披露</option><option value="unknown">待完成核查</option></select></label>
       <label><span>优先级</span><select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label>
     </form>`;
-    const aiCount = feed.entries.filter(
-      (e) => e.analysis?.aiStatus === 'explicit',
-    ).length;
-    const body = `<div class="page-head"><p class="eyebrow">${feed.date}</p><h1>今日值得读什么</h1><p>${coverageLabel(feed)} · 明确披露 AI 协作 ${aiCount} 篇</p><p>更新时间：${formatUpdateTime(feed.lastUpdated)}</p></div>
+    const body = `<div class="page-head"><p class="eyebrow">${feed.date}</p><h1>今日值得读什么</h1><p>${coverageLabel(feed)}</p><p>${disclosureSummary(feed)}</p><p>更新时间：${formatUpdateTime(feed.lastUpdated)}</p></div>
       ${metadataStatus(feed)}
       ${dailyOverview(feed)}
       <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${controls}<div data-report-list>${groupedCards(feed, base)}</div></section>

@@ -49,6 +49,16 @@ try {
   delete pending.metadata.version;
   pending.analysis = null;
   pending.analysisBasis = null;
+  const disclosed = feed.entries.find((e) => e.arxivId === '2609.00002')!;
+  disclosed.analysis!.aiReview = {
+    status: 'full_text_searched',
+    checkedAt: currentTime(),
+    version: disclosed.metadata.version!,
+    sourceUrl: 'https://arxiv.org/pdf/2609.00002v1',
+    contentHash: 'a'.repeat(64),
+    pages: 10,
+    note: '全部页面检索，核对第 10 页致谢；不代表数学证明已审读。',
+  };
   const current = recalculate(feed);
   await writeFile(
     join(content, 'data/manifest.json'),
@@ -88,6 +98,9 @@ try {
   assert.match(html, /摘要级分析/);
   assert.match(html, /data-ai-group="unknown"/);
   assert.match(html, /data-ai-group="explicit"/);
+  assert.match(html, /全文已检索 1\/6/);
+  assert.match(html, /待完成核查 5 篇/);
+  assert.match(html, /全部页面检索，核对第 10 页致谢/);
   assert.equal((html.match(/class="topic-group"/g) ?? []).length, 5);
   assert.equal((html.match(/class="paper" data-paper/g) ?? []).length, 6);
   assert.ok(
@@ -120,4 +133,8 @@ try {
   );
 } finally {
   await rm(root, { recursive: true, force: true });
+}
+
+function currentTime() {
+  return '2026-09-14T05:08:03.422Z';
 }
