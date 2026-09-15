@@ -35,7 +35,7 @@ class DisclosureSearchTests(unittest.TestCase):
             out = Path(directory)
             (out / '2609.12345v1.pdf').write_bytes(b'%PDF-cached')
             client = Mock()
-            with patch('ai_disclosure_audit.extract_pdf', return_value=(['We used ChatGPT for proofreading.'], True)):
+            with patch('ai_disclosure_audit.extract_pdf', return_value=(['We used ChatGPT for proofreading.'], True, True)):
                 first = audit_entry({'arxivId': '2609.12345', 'metadata': {'version': 1}}, out, client)
                 second = audit_entry({'arxivId': '2609.12345', 'metadata': {'version': 1}}, out, client)
             client.request.assert_not_called()
@@ -79,3 +79,12 @@ class ReviewApplicationTests(unittest.TestCase):
         self.record['matches'] = []
         self.assertEqual(self.candidate()['analysis']['aiReview']['status'], 'full_text_searched')
         self.assertEqual(self.candidate()['analysis']['aiStatus'], 'no_disclosure_observed')
+
+    def test_visual_clearance_requires_every_short_page_and_exact_hash(self):
+        self.record.update(extractionComplete=False, pageCountMatches=True, shortTextPages=[2, 4])
+        decision = {'contentHash': 'a'*64, 'version': 1, 'status': 'no_disclosure_observed', 'reason': 'Verified blank pages', 'visuallyCheckedPages': [2]}
+        self.assertEqual(self.candidate(decision)['analysis']['aiReview']['status'], 'needs_review')
+        decision['visuallyCheckedPages'] = [2, 4]
+        self.assertEqual(self.candidate(decision)['analysis']['aiReview']['status'], 'full_text_searched')
+        self.record['pageCountMatches'] = False
+        self.assertEqual(self.candidate(decision)['analysis']['aiReview']['status'], 'needs_review')

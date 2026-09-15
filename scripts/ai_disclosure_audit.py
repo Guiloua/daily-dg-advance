@@ -15,7 +15,7 @@ from pathlib import Path
 
 from arxiv_client import ArxivClient, Deferred, atomic_json
 
-RULE_VERSION = 'ai-disclosure-search-v2'
+RULE_VERSION = 'ai-disclosure-search-v3'
 KEYWORDS = re.compile(
     r'(?i:chat\s*gpt|\bgpt[\s-]*[3456o]\b|open\s*ai|\bclaude\b|\bgemini\b|'
     r'\banthropic\b|\bgrok\b|\bmistral\b|\bqwen\b|\bllama\b|\bcodex\b|\bperplexity\b|'
@@ -51,7 +51,7 @@ def extract_pdf(path):
     if not pages[-1].strip():
         pages.pop()
     complete = len(pages) == int(count[1]) and all(len(p.strip()) >= 20 for p in pages)
-    return pages, complete
+    return pages, complete, len(pages) == int(count[1])
 
 
 def audit_entry(entry, out, client):
@@ -71,7 +71,7 @@ def audit_entry(entry, out, client):
     if not body.startswith(b'%PDF-'):
         raise ValueError('Official response is not a PDF')
     pdf.write_bytes(body)
-    pages, complete = extract_pdf(pdf)
+    pages, complete, page_count_matches = extract_pdf(pdf)
     (out / (slug + '.txt')).write_text('\f'.join(pages))
     matches = search_pages(pages)
     metadata_matches = search_pages([entry['metadata'].get('abstract', '') + '\n' + entry['metadata'].get('comment', '')])
@@ -84,6 +84,8 @@ def audit_entry(entry, out, client):
               'sourceUrl': url, 'contentHash': hashlib.sha256(body).hexdigest(),
               'checkedAt': datetime.now(timezone.utc).isoformat(), 'pages': len(pages),
               'extractionComplete': complete, 'matches': matches, 'metadataMatches': metadata_matches,
+              'pageCountMatches': page_count_matches,
+              'shortTextPages': [i for i, page in enumerate(pages, 1) if len(page.strip()) < 20],
               'status': 'needs_review' if matches or metadata_matches or not complete or actual_version is None else 'full_text_searched'}
     atomic_json(path, record)
     return record
@@ -109,11 +111,18 @@ def build_candidate(feed, records, decisions, run_id, scheduled_for):
                 raise ValueError('Every manual decision requires a reason and valid status')
             if decision['status'] == 'explicit' and not decision.get('location'):
                 raise ValueError('Explicit evidence requires its source location')
+            # A scanned/image page cannot silently pass extraction. A reviewer may
+            # clear only the exact rendered short pages of this hash-bound PDF.
+            if (record.get('pageCountMatches') and record.get('shortTextPages')
+                    and sorted(decision.get('visuallyCheckedPages', [])) == record['shortTextPages']):
+                complete = record.get('version') is not None
         reviewed = complete and (decision is not None or not (record['matches'] or record['metadataMatches']))
         note = ('对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。'
                 if reviewed else '全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。')
         if decision:
             note += decision['reason']
+            if decision.get('visuallyCheckedPages'):
+                note += '另逐页查看文本过短页面的渲染图，确认仅为空白页或章节扉页。'
             if decision['status'] == 'explicit':
                 analysis.update(aiStatus='explicit', aiEvidence=decision['reason'],
                                 aiEvidenceSource=record['sourceUrl'] + ' · ' + decision['location'])
