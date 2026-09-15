@@ -96,6 +96,7 @@ def main():
     out = Path(args.out);out.mkdir(parents=True, exist_ok=True)
     run = {'runId': args.run_id, 'scheduledFor': args.scheduled_for}
     snapshots, entries, published = [], {}, []
+    publication_error = None
     from zoneinfo import ZoneInfo
     started = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
     initial = {'schemaVersion': 2, **run, 'scheduledDate': args.scheduled_for[:10], 'startedAt': started, 'status': 'running'}
@@ -103,11 +104,22 @@ def main():
         atomic_json(ROOT / '.automation/daily-outcomes' / (args.scheduled_for[:10] + '.json'), initial)
         atomic_json(ROOT / '.automation/daily-outcomes/history' / (args.run_id + '.json'), initial)
     def emit(day):
+        nonlocal publication_error
         data = candidate(run, snapshots, entries, day)
         path = out / ('candidate-' + day + '.json');atomic_json(path, data)
-        if args.publish:
-            subprocess.run([sys.executable, str(ROOT / 'scripts/progressive_publish.py'), str(path), '--out', str(out / ('publications-' + day))], check=True)
+        if args.publish and publication_error is None:
+            try:
+                subprocess.run([sys.executable, str(ROOT / 'scripts/progressive_publish.py'), str(path), '--out', str(out / ('publications-' + day))], check=True)
+            except (subprocess.CalledProcessError, OSError) as error:
+                # A denied/failed publication must not cause further writes, or
+                # discard independent public source work. Do not log payloads.
+                code = getattr(error, 'returncode', 'unavailable')
+                publication_error = f'Publication process failed (exit {code}); local collection retained'
+                atomic_json(out / 'pending.json', {**run, 'reason': publication_error, 'failureStage': 'publication', 'publishedDays': sorted(set(published)), 'cursorMayAdvance': False})
+                return False
             published.append(day)
+            return True
+        return False
     try:
         for key, cat in CATEGORIES.items():
             url = 'https://arxiv.org/list/' + cat + '/new'
@@ -127,8 +139,8 @@ def main():
             for entry in found:
                 entries[entry['arxivId']] = entry
             atomic_json(out / ('listing-' + key + '.json'), {'snapshot': snapshot, 'entries': found})
-            emit(snapshot['date'])
-            if args.publish and len(published) == 1:
+            did_publish = emit(snapshot['date'])
+            if did_publish and len(published) == 1:
                 subprocess.run([sys.executable, str(ROOT / 'scripts/progressive_mirror.py')], check=False)
         if args.analyses:
             if not args.analysis_source:
@@ -170,6 +182,14 @@ def main():
             raise
     finally:
         atomic_json(out / 'progress.json', {**run, 'publishedDays': sorted(set(published)), 'knownIds': sorted(entries), 'cursorMayAdvance': False, 'revisionsPending': sorted({i for s in snapshots for i in s['replacementIds']})})
+    if publication_error:
+        pending_path = out / 'pending.json'
+        pending = json.loads(pending_path.read_text()) if pending_path.exists() else {}
+        atomic_json(pending_path, {**pending, **run, 'reason': publication_error, 'failureStage': 'publication', 'publishedDays': sorted(set(published)), 'cursorMayAdvance': False})
+        failed = {**initial, 'status': 'failed', 'failureStage': 'publication', 'completedAt': datetime.now(timezone.utc).isoformat(), 'errorSummary': publication_error}
+        atomic_json(ROOT / '.automation/daily-outcomes' / (args.scheduled_for[:10] + '.json'), failed)
+        atomic_json(ROOT / '.automation/daily-outcomes/history' / (args.run_id + '.json'), failed)
+        raise RuntimeError(publication_error)
     if args.publish:
         mirror = subprocess.run([sys.executable, str(ROOT / 'scripts/progressive_mirror.py')], check=False)
         outcome = subprocess.run([sys.executable, str(ROOT / 'scripts/progressive_outcome.py'), '--run', str(out)], check=False)

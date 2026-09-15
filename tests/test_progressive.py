@@ -68,6 +68,57 @@ class ProgressiveTests(unittest.TestCase):
 if __name__=='__main__':unittest.main()
 
 class PublishRecoveryTests(unittest.TestCase):
+    def test_publish_failure_keeps_collecting_without_more_publish_attempts(self):
+        from unittest.mock import patch
+        import subprocess
+        import progressive_daily as module
+        for fail_at in (1, 2):
+            with self.subTest(fail_at=fail_at), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                out = root / 'run'
+                writes = []
+                def run(command, **kwargs):
+                    if command[1].endswith('progressive_publish.py'):
+                        writes.append(command)
+                        if len(writes) == fail_at:
+                            raise subprocess.CalledProcessError(1, command)
+                    return subprocess.CompletedProcess(command, 0)
+                argv = ['progressive_daily.py', '--run-id', 'test-publish-blocked',
+                        '--scheduled-for', '2026-09-15T10:30:00+08:00', '--out', str(out), '--publish']
+                with patch.object(module, 'ROOT', root), patch.object(module.sys, 'argv', argv), \
+                     patch.object(module, 'request', return_value=HTML.encode()) as fetch, \
+                     patch.object(module.subprocess, 'run', side_effect=run):
+                    with self.assertRaises((RuntimeError, subprocess.CalledProcessError)):
+                        module.main()
+                self.assertEqual(fetch.call_count, 3, 'write failure must not discard independent source collection')
+                self.assertEqual(len(writes), fail_at, 'do not retry denied publication in the same run')
+                batch = json.loads((out / 'candidate-2026-09-14.json').read_text())
+                self.assertEqual(len(batch['categories']), 3)
+                self.assertEqual(len(list(out.glob('listing-*.json'))), 3)
+                pending = json.loads((out / 'pending.json').read_text())
+                self.assertEqual(pending['failureStage'], 'publication')
+                self.assertFalse(pending['cursorMayAdvance'])
+                receipt = json.loads((root / '.automation/daily-outcomes/2026-09-15.json').read_text())
+                self.assertEqual(receipt['status'], 'failed')
+
+    def test_collect_only_does_not_touch_scheduled_outcome_or_publish(self):
+        from unittest.mock import patch
+        import progressive_daily as module
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            receipt = root / '.automation/daily-outcomes/2026-09-15.json'
+            receipt.parent.mkdir(parents=True)
+            receipt.write_text('{"status":"blocked","runId":"scheduled-morning"}')
+            original = receipt.read_bytes()
+            argv = ['progressive_daily.py', '--run-id', 'manual-collect',
+                    '--scheduled-for', '2026-09-15T16:05:00+08:00', '--out', str(root / 'run')]
+            with patch.object(module, 'ROOT', root), patch.object(module.sys, 'argv', argv), \
+                 patch.object(module, 'request', return_value=HTML.encode()), \
+                 patch.object(module.subprocess, 'run') as publish_command:
+                module.main()
+            publish_command.assert_not_called()
+            self.assertEqual(receipt.read_bytes(), original)
+
     def test_response_loss_uses_receipt_and_no_second_write(self):
         from unittest.mock import patch
         import progressive_publish as module
