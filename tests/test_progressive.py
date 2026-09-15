@@ -68,6 +68,49 @@ class ProgressiveTests(unittest.TestCase):
 if __name__=='__main__':unittest.main()
 
 class PublishRecoveryTests(unittest.TestCase):
+    def test_official_dispatch_and_ingest_authorization_are_both_required(self):
+        from unittest.mock import patch
+        import io
+        import os
+        import urllib.error
+        import progressive_publish as module
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / '.automation').mkdir()
+            # Deliberately synthetic values, not service credentials.
+            (root / '.automation/ingest-token').write_text('test-application-credential')
+            def platform(request, **kwargs):
+                self.assertEqual(request.full_url, module.SITE + '/api/ingest/state')
+                if request.get_header('Oai-sites-authorization') != 'Bearer ' + 'test-platform-credential':
+                    raise urllib.error.HTTPError(request.full_url, 403, 'platform access required', {}, None)
+                if request.get_header('Authorization') != 'Bearer ' + 'test-application-credential':
+                    raise urllib.error.HTTPError(request.full_url, 401, 'application access required', {}, None)
+                return io.BytesIO(b'{"status":"ok"}')
+            with patch.object(module, 'ROOT', root), patch.object(module.urllib.request, 'urlopen', side_effect=platform):
+                with patch.dict(os.environ, {}, clear=True):
+                    with self.assertRaises(urllib.error.HTTPError) as rejected:
+                        module.request_json('/api/ingest/state', private=True)
+                    self.assertEqual(rejected.exception.code, 403)
+                with patch.dict(os.environ, {'OAI_SITES_AUTHORIZATION': 'test-platform-credential'}, clear=True):
+                    with self.assertRaises(urllib.error.HTTPError) as rejected:
+                        module.request_json('/api/ingest/state')
+                    self.assertEqual(rejected.exception.code, 401)
+                    self.assertEqual(module.request_json('/api/ingest/state', private=True), {'status': 'ok'})
+
+    def test_health_does_not_send_platform_authorization_to_pages(self):
+        from unittest.mock import patch
+        import os
+        import verify_production as module
+        with patch.dict(os.environ, {'OAI_SITES_AUTHORIZATION': 'test-platform-credential'}, clear=True), \
+             patch.object(module.urllib.request, 'urlopen') as open_request:
+            module._request('https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site/api/reports/v2')
+            self.assertEqual(open_request.call_args.args[0].get_header('Oai-sites-authorization'), 'Bearer ' + 'test-platform-credential')
+            for url in ('https://guiloua.github.io/daily-dg-advance/',
+                        'http://geometry-arxiv-daily-jch.zychern672259.chatgpt.site/',
+                        'https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site.example/'):
+                module._request(url)
+                self.assertIsNone(open_request.call_args.args[0].get_header('Oai-sites-authorization'))
+
     def test_publish_failure_keeps_collecting_without_more_publish_attempts(self):
         from unittest.mock import patch
         import subprocess
