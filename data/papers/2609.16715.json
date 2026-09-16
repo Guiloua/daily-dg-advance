@@ -16,17 +16,54 @@
       ],
       "primaryCategory": "math.DS",
       "comment": "16 pages, 2 figures. Reproducibility files include a Wolfram Language notebook (.nb) and script (.wl)",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-15T06:38:49Z",
+      "updatedAt": "2026-09-15T06:38:49Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-16T07:39:51.677208+00:00",
         "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.16715v1",
+        "observedAt": "2026-09-16T07:43:13.628569+00:00",
+        "contentHash": "c4bf6b8ed2bfc9d705ba6d2518cd40524e0464e6fcd7a4790e791829afd4e4b2"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "新方法/构造",
+      "workSummary": "把二自由度 Hamilton 系统 Poincaré 截面上的缺失动量恢复解释为余各向同性约化后的分支覆盖，并拆分覆盖、双支与折叠条件。",
+      "techniques": [
+        "余各向同性约化",
+        "适当映射与覆盖",
+        "纤维单峰性",
+        "折叠奇点与判别集"
+      ],
+      "breakthrough": "澄清能量可行域边界的几何本质，并区分不同结论所需的最小假设。",
+      "limitations": "分支选择仍是独立规则；不能将判别边界直接叫作 Lagrangian 焦散，严格凸性只是充分条件组合。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-16T07:43:13.628569+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.16715v1",
+        "contentHash": "c4bf6b8ed2bfc9d705ba6d2518cd40524e0464e6fcd7a4790e791829afd4e4b2",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b6961c486b45825ef3e925fe8ab0a3b05e8b8ab158e6b6b8c2c3ce9adad4a03c"
+      },
+      "priorityScore": 55,
+      "priorityReason": "对辛动力系统问题有概念澄清作用，但与曲率比较主线联系间接。"
+    },
+    "analysisBasis": {
+      "abstract": "Determining the momentum missing on a Poincaré section of a two-degree-of-freedom Hamiltonian is usually posed as the root-finding problem $H(0,q_2,p_1,p_2)=E$, which degenerates at the boundary of the energetically allowed region. We argue that the degeneration is the visible symptom of a geometric object and reorganize the problem around it. The section is a coisotropic hypersurface, the missing momentum is its characteristic direction, and recovering it is a \\emph{reconstruction} through the associated coisotropic reduction. Its carrier is not the fibrewise least-energy function, which we show is informationally incomplete, but the correspondence $\\Sigma_E^{\\mathrm{sec}}=\\Sigma_E\\cap C$ together with the reducing projection $\\pi_E$, a branched reconstruction over the admissible region whose discriminant is identified with the Hill boundary under a base-side regularity condition. We prove, isolating for each conclusion its minimal hypothesis: that $\\pi_E$ is proper and a covering away from the discriminant (coercivity); that the fibres have exactly two points over the interior (unimodality); that along the discriminant $\\pi_E$ is a fold (fibrewise nondegeneracy and transversality); and that the discriminant coincides with the topological boundary of the admissible region precisely under a regularity of the least-energy function \\emph{on the base}, which no fibrewise hypothesis supplies. Strict convexity of $H$ in the momenta is shown to be a sufficient but non-fundamental bundle of these conditions. The boundary is a discriminant, not a Lagrangian caustic. Only afterwards does the squared fibrewise energy residual $F_b=(h_b-E)^2$ appear, as the analytic resolution of the fold; inside the admissible region it is a double well with two global minimizers, so branch selection is a separate rule.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +82,54 @@
           ],
           "primaryCategory": "math.DS",
           "comment": "16 pages, 2 figures. Reproducibility files include a Wolfram Language notebook (.nb) and script (.wl)",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-15T06:38:49Z",
+          "updatedAt": "2026-09-15T06:38:49Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-16T07:39:51.677208+00:00",
             "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.16715v1",
+            "observedAt": "2026-09-16T07:43:13.628569+00:00",
+            "contentHash": "c4bf6b8ed2bfc9d705ba6d2518cd40524e0464e6fcd7a4790e791829afd4e4b2"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "新方法/构造",
+          "workSummary": "把二自由度 Hamilton 系统 Poincaré 截面上的缺失动量恢复解释为余各向同性约化后的分支覆盖，并拆分覆盖、双支与折叠条件。",
+          "techniques": [
+            "余各向同性约化",
+            "适当映射与覆盖",
+            "纤维单峰性",
+            "折叠奇点与判别集"
+          ],
+          "breakthrough": "澄清能量可行域边界的几何本质，并区分不同结论所需的最小假设。",
+          "limitations": "分支选择仍是独立规则；不能将判别边界直接叫作 Lagrangian 焦散，严格凸性只是充分条件组合。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-16T07:43:13.628569+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.16715v1",
+            "contentHash": "c4bf6b8ed2bfc9d705ba6d2518cd40524e0464e6fcd7a4790e791829afd4e4b2",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b6961c486b45825ef3e925fe8ab0a3b05e8b8ab158e6b6b8c2c3ce9adad4a03c"
+          },
+          "priorityScore": 55,
+          "priorityReason": "对辛动力系统问题有概念澄清作用，但与曲率比较主线联系间接。"
+        },
+        "analysisBasis": {
+          "abstract": "Determining the momentum missing on a Poincaré section of a two-degree-of-freedom Hamiltonian is usually posed as the root-finding problem $H(0,q_2,p_1,p_2)=E$, which degenerates at the boundary of the energetically allowed region. We argue that the degeneration is the visible symptom of a geometric object and reorganize the problem around it. The section is a coisotropic hypersurface, the missing momentum is its characteristic direction, and recovering it is a \\emph{reconstruction} through the associated coisotropic reduction. Its carrier is not the fibrewise least-energy function, which we show is informationally incomplete, but the correspondence $\\Sigma_E^{\\mathrm{sec}}=\\Sigma_E\\cap C$ together with the reducing projection $\\pi_E$, a branched reconstruction over the admissible region whose discriminant is identified with the Hill boundary under a base-side regularity condition. We prove, isolating for each conclusion its minimal hypothesis: that $\\pi_E$ is proper and a covering away from the discriminant (coercivity); that the fibres have exactly two points over the interior (unimodality); that along the discriminant $\\pi_E$ is a fold (fibrewise nondegeneracy and transversality); and that the discriminant coincides with the topological boundary of the admissible region precisely under a regularity of the least-energy function \\emph{on the base}, which no fibrewise hypothesis supplies. Strict convexity of $H$ in the momenta is shown to be a sufficient but non-fundamental bundle of these conditions. The boundary is a discriminant, not a Lagrangian caustic. Only afterwards does the squared fibrewise energy residual $F_b=(h_b-E)^2$ appear, as the analytic resolution of the fold; inside the admissible region it is a double well with two global minimizers, so branch selection is a separate rule.",
+          "version": 1
+        }
       }
     }
   ]

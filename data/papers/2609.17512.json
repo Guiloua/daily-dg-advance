@@ -17,17 +17,56 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "Comments welcomed",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-15T17:49:35Z",
+      "updatedAt": "2026-09-15T17:49:35Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-16T07:39:51.677208+00:00",
         "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.17512v1",
+        "observedAt": "2026-09-16T07:45:45.229324+00:00",
+        "contentHash": "ec8af2384bd3fff71a00787ddb6d55c3a3bd7fbe797c59f3feaf45d563e1eb7f"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "新定理/分类",
+      "workSummary": "证明三维单位球中每个光滑、适当嵌入的自由边界极小圆环曲面均与临界悬链面全等，并分类球面环域上的过定边值问题；另研究球冠情形。",
+      "techniques": [
+        "径向图与边界凸性",
+        "全局流函数及圆柱坐标",
+        "修正能量形式的负指标",
+        "正 Dirichlet 零模与首个 Steklov 特征值"
+      ],
+      "breakthrough": "若证明成立，将解决所述临界悬链面唯一性猜想；关键是证明嵌入圆环的首个非零 Steklov 特征值为1，接上既有 Fraser–Schoen 分类。",
+      "limitations": "这里 annulus 指拓扑圆环而非 genus-one torus；光滑和适当嵌入是假设，不能推广到所有浸入曲面。 已补读正文第1–4页定理1.1、1.3、1.6及证明纲要。这里是拓扑圆环，不是 genus-one torus；文中说明另有同期独立的更广 genus-zero 谱结果，不能据此主张独占优先权。未逐行验证完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于探索时排除不可行路线，及后续检查常规论证和语法；明确说明本文数学路线和稿件文字不是 LLM 生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.17512v1 · PDF 第4页，AI Declaration Statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-16T07:45:45.229324+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.17512v1",
+        "contentHash": "ec8af2384bd3fff71a00787ddb6d55c3a3bd7fbe797c59f3feaf45d563e1eb7f",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索时排除不可行路线，及后续检查常规论证和语法；明确说明本文数学路线和稿件文字不是 LLM 生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a0a6b3daefcf93fd523aa29767ae57cd1f44a15c1a38c611c24c3cad115c039a"
+      },
+      "priorityScore": 97,
+      "priorityReason": "重要极小曲面唯一性问题与自由边界 PDE 的联系，结果强、方法潜力大，列为今日首批阅读。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that every smooth properly embedded free-boundary minimal annulus in the unit ball is congruent to the critical catenoid. We also classify positive solutions of $(\\Delta_{\\mathbb{S}^2}+2)u=0$ on smooth spherical annuli with $u=0$ and $|\\nabla u|=1$ on the boundary; their one-homogeneous extensions are the axially symmetric Alt-Caffarelli cones. Lastly, we also treat the case of free-boundary minimal annuli in spherical caps.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +86,56 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "Comments welcomed",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-15T17:49:35Z",
+          "updatedAt": "2026-09-15T17:49:35Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-16T07:39:51.677208+00:00",
             "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.17512v1",
+            "observedAt": "2026-09-16T07:45:45.229324+00:00",
+            "contentHash": "ec8af2384bd3fff71a00787ddb6d55c3a3bd7fbe797c59f3feaf45d563e1eb7f"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "新定理/分类",
+          "workSummary": "证明三维单位球中每个光滑、适当嵌入的自由边界极小圆环曲面均与临界悬链面全等，并分类球面环域上的过定边值问题；另研究球冠情形。",
+          "techniques": [
+            "径向图与边界凸性",
+            "全局流函数及圆柱坐标",
+            "修正能量形式的负指标",
+            "正 Dirichlet 零模与首个 Steklov 特征值"
+          ],
+          "breakthrough": "若证明成立，将解决所述临界悬链面唯一性猜想；关键是证明嵌入圆环的首个非零 Steklov 特征值为1，接上既有 Fraser–Schoen 分类。",
+          "limitations": "这里 annulus 指拓扑圆环而非 genus-one torus；光滑和适当嵌入是假设，不能推广到所有浸入曲面。 已补读正文第1–4页定理1.1、1.3、1.6及证明纲要。这里是拓扑圆环，不是 genus-one torus；文中说明另有同期独立的更广 genus-zero 谱结果，不能据此主张独占优先权。未逐行验证完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于探索时排除不可行路线，及后续检查常规论证和语法；明确说明本文数学路线和稿件文字不是 LLM 生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.17512v1 · PDF 第4页，AI Declaration Statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-16T07:45:45.229324+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.17512v1",
+            "contentHash": "ec8af2384bd3fff71a00787ddb6d55c3a3bd7fbe797c59f3feaf45d563e1eb7f",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索时排除不可行路线，及后续检查常规论证和语法；明确说明本文数学路线和稿件文字不是 LLM 生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a0a6b3daefcf93fd523aa29767ae57cd1f44a15c1a38c611c24c3cad115c039a"
+          },
+          "priorityScore": 97,
+          "priorityReason": "重要极小曲面唯一性问题与自由边界 PDE 的联系，结果强、方法潜力大，列为今日首批阅读。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that every smooth properly embedded free-boundary minimal annulus in the unit ball is congruent to the critical catenoid. We also classify positive solutions of $(\\Delta_{\\mathbb{S}^2}+2)u=0$ on smooth spherical annuli with $u=0$ and $|\\nabla u|=1$ on the boundary; their one-homogeneous extensions are the axially symmetric Alt-Caffarelli cones. Lastly, we also treat the case of free-boundary minimal annuli in spherical caps.",
+          "version": 1
+        }
       }
     }
   ]

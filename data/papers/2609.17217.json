@@ -14,17 +14,57 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-15T14:02:29Z",
+      "updatedAt": "2026-09-15T14:02:29Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-16T07:39:51.677208+00:00",
         "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.17217v1",
+        "observedAt": "2026-09-16T07:44:49.542823+00:00",
+        "contentHash": "3761f7e654f4e34bd1305698d36c453b9ce5d15e75eb1296a68193f4773850c2"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "新方法/构造",
+      "workSummary": "利用 Laplacian 代数的闭包恒等式构造极小超锥及次校准证书，判定面积极小、严格极小及严格稳定，并允许非孤立奇点。",
+      "techniques": [
+        "Laplacian 代数",
+        "次校准",
+        "散度估计",
+        "Jacobi 恒等式",
+        "精确符号计算"
+      ],
+      "breakthrough": "把几类超锥的变分判定转化为可验证代数不等式，并给出等参、Clifford 与复行列式零集的应用。",
+      "limitations": "分类仅限于文中所列多项式族；符号计算证书和奇点附近的适用条件需要核验。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 协助语言、记号和结构整理、文献检索、数学探索、方法应用及符号代数计算代码；作者独立运行并核验计算，提供代码和执行记录。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.17217v1 · PDF 第89页，AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-16T07:44:49.542823+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.17217v1",
+        "contentHash": "3761f7e654f4e34bd1305698d36c453b9ce5d15e75eb1296a68193f4773850c2",
+        "pages": 106,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 协助语言、记号和结构整理、文献检索、数学探索、方法应用及符号代数计算代码；作者独立运行并核验计算，提供代码和执行记录。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c74052dd955ba4bfc92f4c4771d44dc5fceffaca7c8e52ac04f8dd0ebf508d35"
+      },
+      "priorityScore": 87,
+      "priorityReason": "代数证书与奇异极小空间的结合有明显方法价值，适合几何分析方向优先阅读。"
+    },
+    "analysisBasis": {
+      "abstract": "We develop an algebraic mechanism based on Laplacian algebras for constructing minimal hypercones and determining their variational properties. The same closure identities identify minimal zero sets and reduce subcalibration construction and quantitative divergence estimates to algebraic inequalities. Combined with comparison theorems and Jacobi identities, the resulting certificates give criteria for area minimization, strict area minimization, and strict stability, allowing nonisolated singularities. Applications include polynomial subcalibrations for area-minimizing isoparametric hypercones, minimizing classifications within the FKM splitting quartic and Clifford cubic families, and strict area minimization for the zero sets of the real parts of complex determinants of every order at least two. We also establish odd-degree rigidity under gradient-square closure and a pullback criterion for subcalibrations. The algebraic identities and certificates are supported by reproducible exact symbolic computations.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -41,17 +81,57 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-15T14:02:29Z",
+          "updatedAt": "2026-09-15T14:02:29Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-16T07:39:51.677208+00:00",
             "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.17217v1",
+            "observedAt": "2026-09-16T07:44:49.542823+00:00",
+            "contentHash": "3761f7e654f4e34bd1305698d36c453b9ce5d15e75eb1296a68193f4773850c2"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "新方法/构造",
+          "workSummary": "利用 Laplacian 代数的闭包恒等式构造极小超锥及次校准证书，判定面积极小、严格极小及严格稳定，并允许非孤立奇点。",
+          "techniques": [
+            "Laplacian 代数",
+            "次校准",
+            "散度估计",
+            "Jacobi 恒等式",
+            "精确符号计算"
+          ],
+          "breakthrough": "把几类超锥的变分判定转化为可验证代数不等式，并给出等参、Clifford 与复行列式零集的应用。",
+          "limitations": "分类仅限于文中所列多项式族；符号计算证书和奇点附近的适用条件需要核验。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 协助语言、记号和结构整理、文献检索、数学探索、方法应用及符号代数计算代码；作者独立运行并核验计算，提供代码和执行记录。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.17217v1 · PDF 第89页，AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-16T07:44:49.542823+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.17217v1",
+            "contentHash": "3761f7e654f4e34bd1305698d36c453b9ce5d15e75eb1296a68193f4773850c2",
+            "pages": 106,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 协助语言、记号和结构整理、文献检索、数学探索、方法应用及符号代数计算代码；作者独立运行并核验计算，提供代码和执行记录。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c74052dd955ba4bfc92f4c4771d44dc5fceffaca7c8e52ac04f8dd0ebf508d35"
+          },
+          "priorityScore": 87,
+          "priorityReason": "代数证书与奇异极小空间的结合有明显方法价值，适合几何分析方向优先阅读。"
+        },
+        "analysisBasis": {
+          "abstract": "We develop an algebraic mechanism based on Laplacian algebras for constructing minimal hypercones and determining their variational properties. The same closure identities identify minimal zero sets and reduce subcalibration construction and quantitative divergence estimates to algebraic inequalities. Combined with comparison theorems and Jacobi identities, the resulting certificates give criteria for area minimization, strict area minimization, and strict stability, allowing nonisolated singularities. Applications include polynomial subcalibrations for area-minimizing isoparametric hypercones, minimizing classifications within the FKM splitting quartic and Clifford cubic families, and strict area minimization for the zero sets of the real parts of complex determinants of every order at least two. We also establish odd-degree rigidity under gradient-square closure and a pullback criterion for subcalibrations. The algebraic identities and certificates are supported by reproducible exact symbolic computations.",
+          "version": 1
+        }
       }
     }
   ]

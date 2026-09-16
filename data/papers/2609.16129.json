@@ -20,17 +20,57 @@
       ],
       "primaryCategory": "cs.AI",
       "comment": "21 pages, 4 figures, 4 tables",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-14T18:00:03Z",
+      "updatedAt": "2026-09-14T18:00:03Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-16T07:39:51.677208+00:00",
         "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.16129v1",
+        "observedAt": "2026-09-16T07:41:40.670879+00:00",
+        "contentHash": "d814d93f49b09375cf513d03d69c66437ebb28fd8d5f8c7ef915d2ad8d577371"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "应用/联系",
+      "workSummary": "以 Fisher 信息度量下到参数为零超曲面的测地距离建立神经网络剪枝准则，比较不同近似层次及实验表现。",
+      "techniques": [
+        "信息几何",
+        "测地距离近似",
+        "参数剪枝",
+        "MNIST/CIFAR-10 数值比较"
+      ],
+      "breakthrough": "给出剪枝策略的几何解释及计算成本与效果之间的近似层级。",
+      "limitations": "性能优势基于摘要列出的网络、数据集和五个随机种子，不能推广为所有模型的保证；研究 AI 模型本身不是 AI 协作披露。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-16T07:41:40.670879+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.16129v1",
+        "contentHash": "d814d93f49b09375cf513d03d69c66437ebb28fd8d5f8c7ef915d2ad8d577371",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中内容为神经网络剪枝研究对象、AI 架构与参考文献，不能作为本篇使用 AI 协作的证据；已核对这些命中及致谢。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6737424f4920f40da2a475ee1077d14b0154eb6cf0ec2c7d131e47f0518e1220"
+      },
+      "priorityScore": 45,
+      "priorityReason": "应用重心是机器学习剪枝，与本组几何主线关联较弱，故后置；不代表其应用质量较低。",
+      "lowPriorityReason": "应用重心是机器学习剪枝，与本组几何主线关联较弱，故后置；不代表其应用质量较低。"
+    },
+    "analysisBasis": {
+      "abstract": "A new scheme for parameter pruning is introduced, derived from the differential-geometric distance in model space. Pruning a parameter sets its value to zero, representing a displacement of the model to the hypersurface on which that parameter vanishes. The minimal distance from the unpruned model to this hypersurface is naturally computed via the geodesic distance in the model space as determined by the Fisher information metric. This distance determines the true change in the model, and its performance, under pruning. By analysing progressively more faithful approximations of this geodesic distance a natural hierarchy of optimality for pruning methods is determined. This starts with the traditional magnitude pruning, then develops into new more sophisticated and effective pruning schemes. The method is demonstrated for both fully-connected networks and vision transformers, on MNIST and CIFAR-10, over the complete $0$-$100\\%$ pruning range and across five random seeds. It outperforms pruning by parameter magnitude and by the local Fisher information alone in every architecture and dataset combination considered, on both accuracy and the Matthews correlation coefficient. Additionally, analysis of different levels of geodesic approximation produces intermediate pruning schemes that are computationally efficient and maintain near-optimal performance. This geometric picture supplies not only a state-of-the-art pruning methodology for AI models, but also a verified and mathematically-motivated justification for pruning schemes.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -53,17 +93,57 @@
           ],
           "primaryCategory": "cs.AI",
           "comment": "21 pages, 4 figures, 4 tables",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-14T18:00:03Z",
+          "updatedAt": "2026-09-14T18:00:03Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-16T07:39:51.677208+00:00",
             "contentHash": "309620299c0c06730fdcab641bb0a651b9096f1e86e814659dbcc550d380a4cf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.16129v1",
+            "observedAt": "2026-09-16T07:41:40.670879+00:00",
+            "contentHash": "d814d93f49b09375cf513d03d69c66437ebb28fd8d5f8c7ef915d2ad8d577371"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "应用/联系",
+          "workSummary": "以 Fisher 信息度量下到参数为零超曲面的测地距离建立神经网络剪枝准则，比较不同近似层次及实验表现。",
+          "techniques": [
+            "信息几何",
+            "测地距离近似",
+            "参数剪枝",
+            "MNIST/CIFAR-10 数值比较"
+          ],
+          "breakthrough": "给出剪枝策略的几何解释及计算成本与效果之间的近似层级。",
+          "limitations": "性能优势基于摘要列出的网络、数据集和五个随机种子，不能推广为所有模型的保证；研究 AI 模型本身不是 AI 协作披露。 数学解读仅依据官方摘要与作者评论，尚未审读完整证明。 AI 披露另见独立全文检索与命中核查记录；未检索到声明不代表没有使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-16T07:41:40.670879+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.16129v1",
+            "contentHash": "d814d93f49b09375cf513d03d69c66437ebb28fd8d5f8c7ef915d2ad8d577371",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中内容为神经网络剪枝研究对象、AI 架构与参考文献，不能作为本篇使用 AI 协作的证据；已核对这些命中及致谢。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6737424f4920f40da2a475ee1077d14b0154eb6cf0ec2c7d131e47f0518e1220"
+          },
+          "priorityScore": 45,
+          "priorityReason": "应用重心是机器学习剪枝，与本组几何主线关联较弱，故后置；不代表其应用质量较低。",
+          "lowPriorityReason": "应用重心是机器学习剪枝，与本组几何主线关联较弱，故后置；不代表其应用质量较低。"
+        },
+        "analysisBasis": {
+          "abstract": "A new scheme for parameter pruning is introduced, derived from the differential-geometric distance in model space. Pruning a parameter sets its value to zero, representing a displacement of the model to the hypersurface on which that parameter vanishes. The minimal distance from the unpruned model to this hypersurface is naturally computed via the geodesic distance in the model space as determined by the Fisher information metric. This distance determines the true change in the model, and its performance, under pruning. By analysing progressively more faithful approximations of this geodesic distance a natural hierarchy of optimality for pruning methods is determined. This starts with the traditional magnitude pruning, then develops into new more sophisticated and effective pruning schemes. The method is demonstrated for both fully-connected networks and vision transformers, on MNIST and CIFAR-10, over the complete $0$-$100\\%$ pruning range and across five random seeds. It outperforms pruning by parameter magnitude and by the local Fisher information alone in every architecture and dataset combination considered, on both accuracy and the Matthews correlation coefficient. Additionally, analysis of different levels of geodesic approximation produces intermediate pruning schemes that are computationally efficient and maintain near-optimal performance. This geometric picture supplies not only a state-of-the-art pruning methodology for AI models, but also a verified and mathematically-motivated justification for pruning schemes.",
+          "version": 1
+        }
       }
     }
   ]
