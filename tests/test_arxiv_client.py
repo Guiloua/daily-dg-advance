@@ -73,7 +73,7 @@ class ClientTests(unittest.TestCase):
         self.client(opener).request(URL)
         self.assertEqual(len(self.calls), 1)
         self.client(opener, 'slot-pm').request(URL)
-        self.assertEqual(self.calls, [1000, 1004])
+        self.assertEqual(self.calls, [1000, 1010])
 
     def test_three_attempts_and_non_transient_no_retry(self):
         for code, count in [(429, 3), (503, 3), (401, 1), (403, 1)]:
@@ -100,4 +100,4 @@ class ClientTests(unittest.TestCase):
         for process in processes:
             process.join(15)
             self.assertEqual(process.exitcode, 0)
-        self.assertGreaterEqual(moments[1] - moments[0], 4)
+        self.assertGreaterEqual(moments[1] - moments[0], 10)

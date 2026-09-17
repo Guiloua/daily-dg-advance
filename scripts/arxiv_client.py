@@ -21,6 +21,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 ROOT = Path(os.environ.get('ARXIV_CACHE_DIR', str(Path(__file__).resolve().parents[1] / '.automation' / 'arxiv-cache')))
+MIN_INTERVAL = 10
 
 
 class Deferred(RuntimeError):
@@ -116,11 +117,11 @@ class ArxivClient:
                     delay = retry_after(error.headers.get('Retry-After'), self.clock())
                     if delay is None:
                         delay = (60, 180, 600)[attempt] + self.jitter(0, 5)
-                    state['nextAllowedAt'] = self.clock() + max(4, delay)
+                    state['nextAllowedAt'] = self.clock() + max(MIN_INTERVAL, delay)
                 except (urllib.error.URLError, TimeoutError, OSError):
                     state['nextAllowedAt'] = self.clock() + (15, 60, 180)[attempt] + self.jitter(0, 5)
                 finally:
-                    state['nextAllowedAt'] = max(state.get('nextAllowedAt', 0), self.clock() + 4)
+                    state['nextAllowedAt'] = max(state.get('nextAllowedAt', 0), self.clock() + MIN_INTERVAL)
                     atomic_json(state_path, state)
                 if attempt == 2:
                     raise Deferred(f'arXiv unavailable after three attempts (HTTP {error_code or "network"}); progress retained')

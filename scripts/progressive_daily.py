@@ -13,6 +13,7 @@ from arxiv_client import atomic_json, Deferred, request
 from arxiv_listing import parse_listing, listing_date, CATEGORIES
 from arxiv_fetch import fetch_ids
 from progressive_publish import digest
+from metadata_resume import enrich_missing, reuse_entry
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -90,12 +91,21 @@ def main():
     parser.add_argument('--analysis-source', help='Source JSON with papers, or ID-keyed listing-reading.json')
     parser.add_argument('--publish', action='store_true')
     parser.add_argument('--enrich', action='store_true')
+    parser.add_argument('--resume-from', help='Saved candidate or acknowledged snapshot: metadata-only recovery, no listing/PDF reads')
     args = parser.parse_args()
     os.environ['ARXIV_RUN_ID'] = args.run_id
     os.environ['ARXIV_SCHEDULED_FOR'] = args.scheduled_for
     out = Path(args.out);out.mkdir(parents=True, exist_ok=True)
     run = {'runId': args.run_id, 'scheduledFor': args.scheduled_for}
     snapshots, entries, published = [], {}, []
+    previous = {}
+    outbox = ROOT / '.automation/progress/mirror-outbox.json'
+    if outbox.exists():
+        for _, item in sorted(json.loads(outbox.read_text()).get('days', {}).items()):
+            saved = Path(item['snapshotPath'])
+            if saved.exists():
+                for entry in json.loads(saved.read_text()).get('entries', []):
+                    previous[entry['arxivId']] = entry
     publication_error = None
     from zoneinfo import ZoneInfo
     started = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
@@ -121,7 +131,21 @@ def main():
             return True
         return False
     try:
-        for key, cat in CATEGORIES.items():
+        if args.resume_from:
+            if not args.enrich or args.from_run or args.analyses:
+                raise ValueError('--resume-from requires --enrich without listing/analysis options')
+            saved = json.loads(Path(args.resume_from).read_text())
+            if not saved.get('categories'):
+                raise ValueError('--resume-from needs a snapshot with the confirmed category manifests')
+            snapshots = saved['categories']
+            entries = {entry['arxivId']: entry for entry in saved['entries']}
+            # Snapshot entries have sources[], while candidate patches use source.
+            for entry in entries.values():
+                if 'source' not in entry:
+                    entry['source'] = entry.pop('sources')[-1]
+            for day in sorted({s['date'] for s in snapshots}):
+                emit(day)
+        for key, cat in (() if args.resume_from else CATEGORIES.items()):
             url = 'https://arxiv.org/list/' + cat + '/new'
             if args.from_run:
                 cache_key = __import__('hashlib').sha256((args.from_run + '\n' + url).encode()).hexdigest()
@@ -137,7 +161,7 @@ def main():
             for identifier in snapshot['newIds'] + snapshot['crossListIds']:
                 entries.setdefault(identifier, {'arxivId': identifier, 'metadata': {}, 'source': snapshot['source']})
             for entry in found:
-                entries[entry['arxivId']] = entry
+                entries[entry['arxivId']] = reuse_entry(entry, previous.get(entry['arxivId']))
             atomic_json(out / ('listing-' + key + '.json'), {'snapshot': snapshot, 'entries': found})
             did_publish = emit(snapshot['date'])
             if did_publish and len(published) == 1:
@@ -162,16 +186,10 @@ def main():
             for day in sorted({s['date'] for s in snapshots}):
                 emit(day)
         if args.enrich:
-            papers = fetch_ids(sorted(entries))
-            for paper in papers:
-                entry = entries[paper['arxivId']]
-                old = entry['metadata']
-                if old.get('abstract') != paper['abstract'] or (old.get('version') and old['version'] != paper['version']):
-                    entry.pop('analysis', None);entry.pop('analysisBasis', None)
-                entry['metadata'] = {k: v for k, v in paper.items() if k in ['title', 'authors', 'abstract', 'categories', 'primaryCategory', 'comment', 'version', 'submittedAt', 'updatedAt']}
-                entry['source'] = {'url': 'https://export.arxiv.org/api/query', 'observedAt': datetime.now(timezone.utc).isoformat(), 'contentHash': digest(paper)}
-            for day in sorted({s['date'] for s in snapshots}):
-                emit(day)
+            def save_enriched():
+                for day in sorted({s['date'] for s in snapshots}):
+                    emit(day)
+            enrich_missing(entries, ROOT / '.automation/arxiv-metadata', fetch_ids, save_enriched)
     except (Deferred, RuntimeError, ValueError, OSError, subprocess.CalledProcessError) as error:
         atomic_json(out / 'pending.json', {**run, 'reason': str(error), 'publishedDays': sorted(set(published)), 'cursorMayAdvance': False})
         if not published or isinstance(error, subprocess.CalledProcessError):
