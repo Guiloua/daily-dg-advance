@@ -6,12 +6,26 @@
 
 1. 等待已有日报结束。建立唯一 runId、带时区 scheduledFor 和本次目录，所有子命令共享 ARXIV_RUN_ID、ARXIV_SCHEDULED_FOR，以及保存项目的绝对 ARXIV_CACHE_DIR。
 2. 先运行 `scripts/progressive_daily.py --run-id <ID> --scheduled-for <ISO> --out <目录>`，保存三分类清单，不把受保护状态读取作为公开抓取的前置条件。按下节取得现有 Sites 官方派发授权后，用相同 ID 和 `--from-run <ID> --publish` 发布已保存的有日期证据条目，无需再次抓取。三分类日期不同则分别发布；未知总数为 null，缺失资料不填造版本、时间或零计数。
-3. 读取本次 listing 文件中的标题、作者、摘要、评论，按原有研究标准生成按 ID 索引的中文分析。保存准确的分析依据：英文摘要和已明确的版本。优先补读高优先级主结果；正文不可用保留摘要级分析。AI explicit 必须有已读来源的明确证据；尚未检查的条目保持未知。AI 披露专项核查必须覆盖全部论文，不受数学全文阅读优先级限制，按下节执行。
+3. 先复用同版本、同摘要与评论绑定的已有分析及 AI 核查，只对新增或来源发生变化的论文读取 listing 中的标题、作者、摘要、评论，按原有研究标准生成按 ID 索引的中文分析。保存准确的分析依据：英文摘要和已明确的版本。优先补读尚未完成的高优先级主结果；正文不可用保留摘要级分析。AI explicit 必须有已读来源的明确证据；尚未检查的条目保持未知。AI 披露专项核查必须覆盖全部论文（已有有效记录不重复检查），不受数学全文阅读优先级限制，按下节执行。
 4. 用 `--from-run <当前运行ID> --analyses <JSON> --analysis-source <来源JSON> --publish` 重用本次清单并增量发布分析；不重新请求清单。来源 JSON 可为带 papers 的元数据文件或按 ID 索引的 listing-reading.json。分析字段包括 topic、progressType、workSummary、techniques、breakthrough、limitations、analysisDepth、priorityScore、priorityReason；低于 50 分补 lowPriorityReason。
-5. 无冷却时，可在同一运行调用上述命令并加 `--enrich` 补齐 Atom 资料。元数据改变使旧解读失效的条目重新分析；同源全文分析不被摘要分析覆盖。
+5. 无冷却且本轮未耗尽尝试时，用 `--enrich` **仅补缺失元数据**。已有完整字段的论文不请求；每 20 个缺失 ID 一批，已知版本锁定 `idvN`。成功批次逐篇持久化在 `.automation/arxiv-metadata/`，失败后不从头抓取。Atom 不提供字段投影，因此响应仍含完整元数据，但本地仅填空缺，不覆盖已缓存摘要、评论、分析或 AI 披露。版本冲突保留原成果并待核查。
 6. 检查运行目录的 progress、pending 和 publications，以及 daily-outcomes 回执。状态 published_partial 表示两站已核验发布但仍待补齐；success 表示基础资料和摘要解读完整。镜像失败只重试 `scripts/progressive_mirror.py`，随后 `scripts/progressive_outcome.py --run <目录>` 核验。
 
 ## 缓存、限流与恢复
+
+### 只补缺失内容
+
+恢复已确认的日报时，使用含三分类清单的已发布 `published.json`（或完整 candidate），执行：
+
+```text
+python3 scripts/progressive_daily.py --run-id <本时段原ID> --scheduled-for <真实时段ISO> --out <恢复目录> --resume-from <已确认快照路径> --enrich --publish
+```
+
+该入口不访问 `new/catchup`、PDF 或重新分析；保留来源时间和摘要/版本绑定的分析与 AI 核查。可不带 `--publish` 先保存补齐结果。`--resume-from` 不等于重新核验当前清单，下午新时段仍须独立核对当时清单；同版本且标题、摘要、评论不变的条目自动从本地已发布快照复用全部成果，只分析新增或变化项。PDF 与 AI 核查继续复用已有哈希/规则绑定缓存。
+
+上午、下午、手动运行必须使用同一个保存项目的 `.automation/arxiv-cache/`（限速、冷却）及 `.automation/arxiv-metadata/`（成功元数据）；不得按日期或运行编号创建独立的限速目录。进程间串行锁覆盖请求和元数据恢复。完成一批就保存；下次只查询仍缺字段的 ID，缓存命中不消耗网络请求。
+
+遭遇 429、超过等待预算或请求次数耗尽时，保留 pending、候选和分析；同一时段不得通过更换 runId、改批次大小、给 ID 增加版本号或换域名重新试探。新的查询方式只在后续合法时段、共享冷却结束后启用。已完成的内容立即同步两站，页面保持“资料待补齐”，不因时间字段缺失扣住整份可读日报，也不冒充完整更新。
 
 ### AI 披露专项核查（独立于数学分析深度）
 
@@ -37,7 +51,7 @@
 
 恢复原接口访问权限后，使用原来源 `--from-run <来源ID>` 和保存的分析继续发布，不重新抓取该来源；新时段的清单核对必须使用新 runId。先处理当前公告，再检查已保存但未发布的旧日期，保留各自真实观察时间。镜像只使用 Sites 已确认的快照，不能把本地待发布 candidate 当成正式日报推送。
 
-全部 arXiv 读取使用 arxiv_client.py：跨进程共享锁、4 秒间隔、Retry-After、每请求最多三次及每时段 20 分钟等待预算。Deferred 后不换 runId、主机或代理继续请求。仍可用本地缓存执行发布、分析与镜像任务。
+全部 arXiv 读取使用 arxiv_client.py：跨进程共享锁、至少 10 秒间隔、Retry-After、每请求最多三次及每时段 20 分钟等待预算。Deferred 后不换 runId、主机或代理继续请求。仍可用本地缓存执行发布、分析与镜像任务。
 
 下个时段使用新 runId 核验当时清单；保留旧失败和发布记录。需要在核验前发布已知历史信息时，用 --from-run 指定其真实来源运行，保留旧观察时间，不冒充本时段核验。跨日信息按原公告日发布，首页仍选最新公告日。
 

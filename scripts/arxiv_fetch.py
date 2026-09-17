@@ -60,13 +60,15 @@ def fetch(since: datetime, until: datetime, page_size: int = 200) -> list[dict]:
     return list(output.values())
 
 
-def fetch_ids(arxiv_ids: list[str], page_size: int = 100) -> list[dict]:
+def fetch_ids(arxiv_ids: list[str], page_size: int = 100, *, expected_versions=None) -> list[dict]:
     """Fetch current metadata for an exact official-listing ID manifest."""
     output: dict[str, dict] = {}
     for offset in range(0, len(arxiv_ids), page_size):
         batch = arxiv_ids[offset : offset + page_size]
+        versions = expected_versions or {}
+        selectors = [identifier + ('v' + str(versions[identifier]) if identifier in versions else '') for identifier in batch]
         params = urllib.parse.urlencode(
-            {"id_list": ",".join(batch), "max_results": len(batch)}
+            {"id_list": ",".join(selectors), "max_results": len(batch)}
         )
         root = ET.fromstring(request(f"{API}?{params}"))
         for entry in root.findall("a:entry", ATOM):
