@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2609.19604",
+  "slug": "2609.19604",
+  "latest": {
+    "arxivId": "2609.19604",
+    "metadata": {
+      "title": "Spectral Geometry of Hurwitz Spaces with Arbitrary Ramification",
+      "authors": [
+        "Jia-Ming",
+        "Liou"
+      ],
+      "abstract": "We study the Friedrichs Laplacian associated with the pullback of the round metric on \\(\\mb P^1\\) by a nonconstant meromorphic function \\(\\varphi:X\\to\\mb P^1\\) on a compact Riemann surface. For arbitrary ramification profiles, including several ramification points over the same branch value, we prove the local formula \\[ \\operatorname{Det}_{\\zeta}(\\Delta_{[\\varphi],\\mc F}) =C\\,\\det\\operatorname{Im}B\\,|\\tau_B|^2 \\prod_{k=1}^N\\rho(z_k,\\overline{z_k})^{c_k}. \\] The zero eigenvalue is omitted. Here \\(B\\) is the period matrix, \\(\\tau_B\\) is the local Bergman tau-function, \\(z_k\\) are the branch-value coordinates, \\(\\rho(z,\\overline z)=4(1+|z|^2)^{-2}\\), and \\(c_k=\\frac1{12}\\sum_j(n_{kj}-n_{kj}^{-1})\\), where \\(n_{kj}\\) are the ramification indices over the \\(k\\)-th branch value. The constant \\(C>0\\) is independent of the Hurwitz coordinates, and \\(\\det\\operatorname{Im}B\\) is taken to be \\(1\\) in genus zero. The proof combines smooth trivializations and trace-norm variation of resolvent powers with matrix comparison to spherical conic models. The Davies--Gaffney estimate provides the required uniform high-energy control, while the zero-energy terms are identified through the Schiffer bidifferential and Rauch variational formulas.",
+      "categories": [
+        "math.DG",
+        "math.FA"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-09-18T03:05:06.827122+00:00",
+        "contentHash": "d93b359accd795c8c4ba852179337fccece4e2be91105ff33f3a2f28fab00789"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.19604v1",
+        "observedAt": "2026-09-18T03:08:22.954194+00:00",
+        "contentHash": "5d91a20069a8e1c45b91174d388b563193e6dfd2214296adf94d0cafd2ad9b08"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "推广/加强",
+      "workSummary": "对任意分歧型的 Hurwitz 空间给出球面拉回锥度量 Friedrichs 拉普拉斯 ζ 行列式的局部公式，允许同一分支值上多个分歧点。",
+      "techniques": [
+        "预解算子幂的迹范数变分",
+        "球面锥模型比较",
+        "Davies–Gaffney 估计",
+        "Schiffer 双微分与 Rauch 公式"
+      ],
+      "breakthrough": "将精确谱行列式公式推广到更一般分歧结构。",
+      "limitations": "去除零特征值、局部 tau 函数及坐标无关常数等规范须核对；局部公式不自动给出全局单值表达。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于修订中的语言、阐述和符号整理，属于编辑辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.19604v1 · PDF第80页，AI 声明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-18T03:08:22.954194+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.19604v1",
+        "contentHash": "5d91a20069a8e1c45b91174d388b563193e6dfd2214296adf94d0cafd2ad9b08",
+        "pages": 81,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于修订中的语言、阐述和符号整理，属于编辑辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "188e5454c7cbf67b794aa20dd0ebba0f1fdff2841d122cd30316fe7c7a6d71df"
+      },
+      "priorityScore": 77,
+      "priorityReason": "谱几何与奇异度量相连，分析手段较有迁移价值。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the Friedrichs Laplacian associated with the pullback of the round metric on \\(\\mb P^1\\) by a nonconstant meromorphic function \\(\\varphi:X\\to\\mb P^1\\) on a compact Riemann surface. For arbitrary ramification profiles, including several ramification points over the same branch value, we prove the local formula \\[ \\operatorname{Det}_{\\zeta}(\\Delta_{[\\varphi],\\mc F}) =C\\,\\det\\operatorname{Im}B\\,|\\tau_B|^2 \\prod_{k=1}^N\\rho(z_k,\\overline{z_k})^{c_k}. \\] The zero eigenvalue is omitted. Here \\(B\\) is the period matrix, \\(\\tau_B\\) is the local Bergman tau-function, \\(z_k\\) are the branch-value coordinates, \\(\\rho(z,\\overline z)=4(1+|z|^2)^{-2}\\), and \\(c_k=\\frac1{12}\\sum_j(n_{kj}-n_{kj}^{-1})\\), where \\(n_{kj}\\) are the ramification indices over the \\(k\\)-th branch value. The constant \\(C>0\\) is independent of the Hurwitz coordinates, and \\(\\det\\operatorname{Im}B\\) is taken to be \\(1\\) in genus zero. The proof combines smooth trivializations and trace-norm variation of resolvent powers with matrix comparison to spherical conic models. The Davies--Gaffney estimate provides the required uniform high-energy control, while the zero-energy terms are identified through the Schiffer bidifferential and Rauch variational formulas.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-09-18",
+      "entry": {
+        "arxivId": "2609.19604",
+        "metadata": {
+          "title": "Spectral Geometry of Hurwitz Spaces with Arbitrary Ramification",
+          "authors": [
+            "Jia-Ming",
+            "Liou"
+          ],
+          "abstract": "We study the Friedrichs Laplacian associated with the pullback of the round metric on \\(\\mb P^1\\) by a nonconstant meromorphic function \\(\\varphi:X\\to\\mb P^1\\) on a compact Riemann surface. For arbitrary ramification profiles, including several ramification points over the same branch value, we prove the local formula \\[ \\operatorname{Det}_{\\zeta}(\\Delta_{[\\varphi],\\mc F}) =C\\,\\det\\operatorname{Im}B\\,|\\tau_B|^2 \\prod_{k=1}^N\\rho(z_k,\\overline{z_k})^{c_k}. \\] The zero eigenvalue is omitted. Here \\(B\\) is the period matrix, \\(\\tau_B\\) is the local Bergman tau-function, \\(z_k\\) are the branch-value coordinates, \\(\\rho(z,\\overline z)=4(1+|z|^2)^{-2}\\), and \\(c_k=\\frac1{12}\\sum_j(n_{kj}-n_{kj}^{-1})\\), where \\(n_{kj}\\) are the ramification indices over the \\(k\\)-th branch value. The constant \\(C>0\\) is independent of the Hurwitz coordinates, and \\(\\det\\operatorname{Im}B\\) is taken to be \\(1\\) in genus zero. The proof combines smooth trivializations and trace-norm variation of resolvent powers with matrix comparison to spherical conic models. The Davies--Gaffney estimate provides the required uniform high-energy control, while the zero-energy terms are identified through the Schiffer bidifferential and Rauch variational formulas.",
+          "categories": [
+            "math.DG",
+            "math.FA"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-09-18T03:05:06.827122+00:00",
+            "contentHash": "d93b359accd795c8c4ba852179337fccece4e2be91105ff33f3a2f28fab00789"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.19604v1",
+            "observedAt": "2026-09-18T03:08:22.954194+00:00",
+            "contentHash": "5d91a20069a8e1c45b91174d388b563193e6dfd2214296adf94d0cafd2ad9b08"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "推广/加强",
+          "workSummary": "对任意分歧型的 Hurwitz 空间给出球面拉回锥度量 Friedrichs 拉普拉斯 ζ 行列式的局部公式，允许同一分支值上多个分歧点。",
+          "techniques": [
+            "预解算子幂的迹范数变分",
+            "球面锥模型比较",
+            "Davies–Gaffney 估计",
+            "Schiffer 双微分与 Rauch 公式"
+          ],
+          "breakthrough": "将精确谱行列式公式推广到更一般分歧结构。",
+          "limitations": "去除零特征值、局部 tau 函数及坐标无关常数等规范须核对；局部公式不自动给出全局单值表达。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于修订中的语言、阐述和符号整理，属于编辑辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.19604v1 · PDF第80页，AI 声明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-18T03:08:22.954194+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.19604v1",
+            "contentHash": "5d91a20069a8e1c45b91174d388b563193e6dfd2214296adf94d0cafd2ad9b08",
+            "pages": 81,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于修订中的语言、阐述和符号整理，属于编辑辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "188e5454c7cbf67b794aa20dd0ebba0f1fdff2841d122cd30316fe7c7a6d71df"
+          },
+          "priorityScore": 77,
+          "priorityReason": "谱几何与奇异度量相连，分析手段较有迁移价值。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the Friedrichs Laplacian associated with the pullback of the round metric on \\(\\mb P^1\\) by a nonconstant meromorphic function \\(\\varphi:X\\to\\mb P^1\\) on a compact Riemann surface. For arbitrary ramification profiles, including several ramification points over the same branch value, we prove the local formula \\[ \\operatorname{Det}_{\\zeta}(\\Delta_{[\\varphi],\\mc F}) =C\\,\\det\\operatorname{Im}B\\,|\\tau_B|^2 \\prod_{k=1}^N\\rho(z_k,\\overline{z_k})^{c_k}. \\] The zero eigenvalue is omitted. Here \\(B\\) is the period matrix, \\(\\tau_B\\) is the local Bergman tau-function, \\(z_k\\) are the branch-value coordinates, \\(\\rho(z,\\overline z)=4(1+|z|^2)^{-2}\\), and \\(c_k=\\frac1{12}\\sum_j(n_{kj}-n_{kj}^{-1})\\), where \\(n_{kj}\\) are the ramification indices over the \\(k\\)-th branch value. The constant \\(C>0\\) is independent of the Hurwitz coordinates, and \\(\\det\\operatorname{Im}B\\) is taken to be \\(1\\) in genus zero. The proof combines smooth trivializations and trace-norm variation of resolvent powers with matrix comparison to spherical conic models. The Davies--Gaffney estimate provides the required uniform high-energy control, while the zero-energy terms are identified through the Schiffer bidifferential and Rauch variational formulas.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

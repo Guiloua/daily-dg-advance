@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2609.20197",
+  "slug": "2609.20197",
+  "latest": {
+    "arxivId": "2609.20197",
+    "metadata": {
+      "title": "Biharmonic Conformal Surfaces and Dirac Factorization I: Exact Spinorial Encoding and Scalar--Chiral Rigidity",
+      "authors": [
+        "Dipesh Bhandari"
+      ],
+      "abstract": "For maps from surfaces, harmonicity is conformally invariant and a conformal immersion is harmonic precisely when its image is minimal. Biharmonicity is a fourth-order extension of this theory, but it is not conformally invariant. A nonminimal immersion may therefore become biharmonic after a suitable change of the domain metric. In a three-dimensional space form, Ou's formulation reduces this problem to two coupled equations for the weighted mean curvature $U=\\lambda^2H$: one scalar equation and one tangential equation. We ask whether these two equations can be organized as a single Dirac-type equation and what geometry is compatible with a first-order factorization. Restricting an ambient Killing spinor to the surface, we construct a natural Laplace-type operator $\\mathscr B_c$ and prove that $\\mathscr B_c(U\\psi)=0$ is exactly equivalent to Ou's system. We then classify every factorization of $\\mathscr B_c$ in the monic scalar--chiral class $(D+a+b\\omega)(D+p+q\\omega)$. In nonzero curvature, every such factorization is automatically mean-curvature-normalized and exists locally if and only if the surface has locally constant principal curvatures. The same rigidity holds for the normalized Euclidean branch; the remaining Euclidean factors form an exceptional holomorphic--antiholomorphic family characterized, away from planar points, by harmonicity of $\\log(|A|^2-H^2)$. The rigidity mechanism is governed by a Dirac discriminant $9c-4|A|^2$. Its hypothetical non-CMC real branch reduces to a spherical Gauss--Codazzi system whose exact Frobenius torsion is strictly negative. Model examples finally show that factorization of the geometric operator is distinct from the existence of a positive conformal mode. Thus the scalar--chiral channel is complete but too rigid to generate new non-CMC examples, providing a precise baseline for broader Clifford-valued constructions.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "26 pages; ancillary exact symbolic and rational Bernstein certificates",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-09-18T03:05:06.827122+00:00",
+        "contentHash": "d93b359accd795c8c4ba852179337fccece4e2be91105ff33f3a2f28fab00789"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.20197v1",
+        "observedAt": "2026-09-18T03:10:54.701102+00:00",
+        "contentHash": "e0203112c74f6c0782668c98e86f16eaa91041038c124cd19fcf62954943222e"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "新方法/分类",
+      "workSummary": "将双调和共形曲面的 Ou 方程组编码为作用于加权平均曲率旋量的算子方程，并分类标量–手征类的一阶因子分解。",
+      "techniques": [
+        "环境 Killing 旋量限制",
+        "Dirac 判别式",
+        "Gauss–Codazzi 相容性",
+        "精确符号证书"
+      ],
+      "breakthrough": "说明指定因子分解通道过于刚性，厘清哪些几何能进入该框架。",
+      "limitations": "分类只覆盖首一标量–手征因子，不是所有 Clifford 值分解；算子可分解不等于存在正共形解。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT GPT-5.6 辅助探索代数、代码草拟、文献整理、一致性检查和语言编辑，并声明独立核验定理、证明和计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.20197v1 · PDF第23页，Generative AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-18T03:10:54.701102+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.20197v1",
+        "contentHash": "e0203112c74f6c0782668c98e86f16eaa91041038c124cd19fcf62954943222e",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT GPT-5.6 辅助探索代数、代码草拟、文献整理、一致性检查和语言编辑，并声明独立核验定理、证明和计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2f46ffe030cfee6c9e575c91277d72608876f5628e250d4f2bad59dfa2d16a27"
+      },
+      "priorityScore": 68,
+      "priorityReason": "几何算子构造较专门，需关注适用类限制而非视为普适双调和分类。"
+    },
+    "analysisBasis": {
+      "abstract": "For maps from surfaces, harmonicity is conformally invariant and a conformal immersion is harmonic precisely when its image is minimal. Biharmonicity is a fourth-order extension of this theory, but it is not conformally invariant. A nonminimal immersion may therefore become biharmonic after a suitable change of the domain metric. In a three-dimensional space form, Ou's formulation reduces this problem to two coupled equations for the weighted mean curvature $U=\\lambda^2H$: one scalar equation and one tangential equation. We ask whether these two equations can be organized as a single Dirac-type equation and what geometry is compatible with a first-order factorization. Restricting an ambient Killing spinor to the surface, we construct a natural Laplace-type operator $\\mathscr B_c$ and prove that $\\mathscr B_c(U\\psi)=0$ is exactly equivalent to Ou's system. We then classify every factorization of $\\mathscr B_c$ in the monic scalar--chiral class $(D+a+b\\omega)(D+p+q\\omega)$. In nonzero curvature, every such factorization is automatically mean-curvature-normalized and exists locally if and only if the surface has locally constant principal curvatures. The same rigidity holds for the normalized Euclidean branch; the remaining Euclidean factors form an exceptional holomorphic--antiholomorphic family characterized, away from planar points, by harmonicity of $\\log(|A|^2-H^2)$. The rigidity mechanism is governed by a Dirac discriminant $9c-4|A|^2$. Its hypothetical non-CMC real branch reduces to a spherical Gauss--Codazzi system whose exact Frobenius torsion is strictly negative. Model examples finally show that factorization of the geometric operator is distinct from the existence of a positive conformal mode. Thus the scalar--chiral channel is complete but too rigid to generate new non-CMC examples, providing a precise baseline for broader Clifford-valued constructions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-09-18",
+      "entry": {
+        "arxivId": "2609.20197",
+        "metadata": {
+          "title": "Biharmonic Conformal Surfaces and Dirac Factorization I: Exact Spinorial Encoding and Scalar--Chiral Rigidity",
+          "authors": [
+            "Dipesh Bhandari"
+          ],
+          "abstract": "For maps from surfaces, harmonicity is conformally invariant and a conformal immersion is harmonic precisely when its image is minimal. Biharmonicity is a fourth-order extension of this theory, but it is not conformally invariant. A nonminimal immersion may therefore become biharmonic after a suitable change of the domain metric. In a three-dimensional space form, Ou's formulation reduces this problem to two coupled equations for the weighted mean curvature $U=\\lambda^2H$: one scalar equation and one tangential equation. We ask whether these two equations can be organized as a single Dirac-type equation and what geometry is compatible with a first-order factorization. Restricting an ambient Killing spinor to the surface, we construct a natural Laplace-type operator $\\mathscr B_c$ and prove that $\\mathscr B_c(U\\psi)=0$ is exactly equivalent to Ou's system. We then classify every factorization of $\\mathscr B_c$ in the monic scalar--chiral class $(D+a+b\\omega)(D+p+q\\omega)$. In nonzero curvature, every such factorization is automatically mean-curvature-normalized and exists locally if and only if the surface has locally constant principal curvatures. The same rigidity holds for the normalized Euclidean branch; the remaining Euclidean factors form an exceptional holomorphic--antiholomorphic family characterized, away from planar points, by harmonicity of $\\log(|A|^2-H^2)$. The rigidity mechanism is governed by a Dirac discriminant $9c-4|A|^2$. Its hypothetical non-CMC real branch reduces to a spherical Gauss--Codazzi system whose exact Frobenius torsion is strictly negative. Model examples finally show that factorization of the geometric operator is distinct from the existence of a positive conformal mode. Thus the scalar--chiral channel is complete but too rigid to generate new non-CMC examples, providing a precise baseline for broader Clifford-valued constructions.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "26 pages; ancillary exact symbolic and rational Bernstein certificates",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-09-18T03:05:06.827122+00:00",
+            "contentHash": "d93b359accd795c8c4ba852179337fccece4e2be91105ff33f3a2f28fab00789"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.20197v1",
+            "observedAt": "2026-09-18T03:10:54.701102+00:00",
+            "contentHash": "e0203112c74f6c0782668c98e86f16eaa91041038c124cd19fcf62954943222e"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "新方法/分类",
+          "workSummary": "将双调和共形曲面的 Ou 方程组编码为作用于加权平均曲率旋量的算子方程，并分类标量–手征类的一阶因子分解。",
+          "techniques": [
+            "环境 Killing 旋量限制",
+            "Dirac 判别式",
+            "Gauss–Codazzi 相容性",
+            "精确符号证书"
+          ],
+          "breakthrough": "说明指定因子分解通道过于刚性，厘清哪些几何能进入该框架。",
+          "limitations": "分类只覆盖首一标量–手征因子，不是所有 Clifford 值分解；算子可分解不等于存在正共形解。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT GPT-5.6 辅助探索代数、代码草拟、文献整理、一致性检查和语言编辑，并声明独立核验定理、证明和计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.20197v1 · PDF第23页，Generative AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-18T03:10:54.701102+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.20197v1",
+            "contentHash": "e0203112c74f6c0782668c98e86f16eaa91041038c124cd19fcf62954943222e",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT GPT-5.6 辅助探索代数、代码草拟、文献整理、一致性检查和语言编辑，并声明独立核验定理、证明和计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2f46ffe030cfee6c9e575c91277d72608876f5628e250d4f2bad59dfa2d16a27"
+          },
+          "priorityScore": 68,
+          "priorityReason": "几何算子构造较专门，需关注适用类限制而非视为普适双调和分类。"
+        },
+        "analysisBasis": {
+          "abstract": "For maps from surfaces, harmonicity is conformally invariant and a conformal immersion is harmonic precisely when its image is minimal. Biharmonicity is a fourth-order extension of this theory, but it is not conformally invariant. A nonminimal immersion may therefore become biharmonic after a suitable change of the domain metric. In a three-dimensional space form, Ou's formulation reduces this problem to two coupled equations for the weighted mean curvature $U=\\lambda^2H$: one scalar equation and one tangential equation. We ask whether these two equations can be organized as a single Dirac-type equation and what geometry is compatible with a first-order factorization. Restricting an ambient Killing spinor to the surface, we construct a natural Laplace-type operator $\\mathscr B_c$ and prove that $\\mathscr B_c(U\\psi)=0$ is exactly equivalent to Ou's system. We then classify every factorization of $\\mathscr B_c$ in the monic scalar--chiral class $(D+a+b\\omega)(D+p+q\\omega)$. In nonzero curvature, every such factorization is automatically mean-curvature-normalized and exists locally if and only if the surface has locally constant principal curvatures. The same rigidity holds for the normalized Euclidean branch; the remaining Euclidean factors form an exceptional holomorphic--antiholomorphic family characterized, away from planar points, by harmonicity of $\\log(|A|^2-H^2)$. The rigidity mechanism is governed by a Dirac discriminant $9c-4|A|^2$. Its hypothetical non-CMC real branch reduces to a spherical Gauss--Codazzi system whose exact Frobenius torsion is strictly negative. Model examples finally show that factorization of the geometric operator is distinct from the existence of a positive conformal mode. Thus the scalar--chiral channel is complete but too rigid to generate new non-CMC examples, providing a precise baseline for broader Clifford-valued constructions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

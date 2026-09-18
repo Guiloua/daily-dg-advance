@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2609.19214",
+  "slug": "2609.19214",
+  "latest": {
+    "arxivId": "2609.19214",
+    "metadata": {
+      "title": "A Strongly Aperiodic Monotile in Three Dimensions",
+      "authors": [
+        "Ioannis Tsiokos"
+      ],
+      "abstract": "Socolar and Taylor asked for a single, simply connected three-dimensional prototile that forces nonperiodicity by shape alone, admitting no weakly nonperiodic tiling; the Schmitt-Conway-Danzer biprism and the three-dimensional Socolar-Taylor tile admit screw motions or a periodic stacking direction. We exhibit a rational polyhedral $3$-ball $Q$, which we call Chair44 (R44): a seven-cube chair whose $24$ exposed unit panels carry tiny square-pyramid features, and prove, as a proof submission, that $Q$ admits tilings of $\\mathbb{R}^3$ by congruent copies, reflections allowed, and that every such tiling has no translational period and a symmetry group of order at most $24$; every tiling is homochiral and carries a unique infinite hierarchy of nested supertiles. The solid was designed to a reading of the aperiodic-monotile phenomenon reached with the Six Birds emergence calculus (Section 3.3), and the construction turns on a single finite test, checked by machine: the tile's own contact rule survives coarsening, so that the decoded parent tiling obeys the tile's rule and no other. The proof combines a written geometric argument, that the features force every tiling onto a registered lattice, with exhaustive finite enumerations; the companion census is replayed by two independent implementations, every finite gate is kernel-checked in Lean 4 (modulo a named compiler hook per native_decide theorem), and the written geometric lemmas and the logical assembly are Lean theorems as well, so that the theorem is kernel-checked modulo the named compiler hooks; the written proofs remain as exposition.",
+      "categories": [
+        "math.CO",
+        "cs.DM",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CO",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-09-18T03:05:17.991936+00:00",
+        "contentHash": "25d344d4ac3f1015d45d49ee95ff277752ac31e18b8edd8fec7e6a15aea69d3c"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.19214v1",
+        "observedAt": "2026-09-18T03:06:24.072691+00:00",
+        "contentHash": "1e94b72763da0160e9fda7d2823479320cfd05b7a969e5385fc424699181cc13"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "新方法/构造",
+      "workSummary": "提出名为 Chair44 的有理多面体三维球状单砖，声称其所有空间铺砌均无平移周期且具有唯一无限层级结构。",
+      "techniques": [
+        "几何配准",
+        "有限穷举及双实现核验",
+        "Lean 4 形式化"
+      ],
+      "breakthrough": "试图以单个单连通三维砖的形状强制强非周期性。",
+      "limitations": "文中明确作为 proof submission；形式核验依赖命名的 native_decide 编译器钩子，还需独立检查几何化到有限枚举的归约。Lean 本身不构成 AI 披露证据。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT Astra 参与发现构造，Codex 辅助编码和形式化证书，Grok 等模型辅助审查，Claude Fable 5.1 大量参与稿件写作；作者指导、阅读并修改。形式化覆盖范围仍须按文中声明界定。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.19214v1 · PDF第16、47–48页，发现过程与 Use of AI systems",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-18T03:06:24.072691+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.19214v1",
+        "contentHash": "1e94b72763da0160e9fda7d2823479320cfd05b7a969e5385fc424699181cc13",
+        "pages": 61,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra 参与发现构造，Codex 辅助编码和形式化证书，Grok 等模型辅助审查，Claude Fable 5.1 大量参与稿件写作；作者指导、阅读并修改。形式化覆盖范围仍须按文中声明界定。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7a11c3ada1eb2289fed729bbaa05d95287d754b620310e0251ec806f790e79be"
+      },
+      "priorityScore": 69,
+      "priorityReason": "构造与核验方式值得关注，但与曲率和测度几何主线间接相关，结论验证成本高。"
+    },
+    "analysisBasis": {
+      "abstract": "Socolar and Taylor asked for a single, simply connected three-dimensional prototile that forces nonperiodicity by shape alone, admitting no weakly nonperiodic tiling; the Schmitt-Conway-Danzer biprism and the three-dimensional Socolar-Taylor tile admit screw motions or a periodic stacking direction. We exhibit a rational polyhedral $3$-ball $Q$, which we call Chair44 (R44): a seven-cube chair whose $24$ exposed unit panels carry tiny square-pyramid features, and prove, as a proof submission, that $Q$ admits tilings of $\\mathbb{R}^3$ by congruent copies, reflections allowed, and that every such tiling has no translational period and a symmetry group of order at most $24$; every tiling is homochiral and carries a unique infinite hierarchy of nested supertiles. The solid was designed to a reading of the aperiodic-monotile phenomenon reached with the Six Birds emergence calculus (Section 3.3), and the construction turns on a single finite test, checked by machine: the tile's own contact rule survives coarsening, so that the decoded parent tiling obeys the tile's rule and no other. The proof combines a written geometric argument, that the features force every tiling onto a registered lattice, with exhaustive finite enumerations; the companion census is replayed by two independent implementations, every finite gate is kernel-checked in Lean 4 (modulo a named compiler hook per native_decide theorem), and the written geometric lemmas and the logical assembly are Lean theorems as well, so that the theorem is kernel-checked modulo the named compiler hooks; the written proofs remain as exposition.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-09-18",
+      "entry": {
+        "arxivId": "2609.19214",
+        "metadata": {
+          "title": "A Strongly Aperiodic Monotile in Three Dimensions",
+          "authors": [
+            "Ioannis Tsiokos"
+          ],
+          "abstract": "Socolar and Taylor asked for a single, simply connected three-dimensional prototile that forces nonperiodicity by shape alone, admitting no weakly nonperiodic tiling; the Schmitt-Conway-Danzer biprism and the three-dimensional Socolar-Taylor tile admit screw motions or a periodic stacking direction. We exhibit a rational polyhedral $3$-ball $Q$, which we call Chair44 (R44): a seven-cube chair whose $24$ exposed unit panels carry tiny square-pyramid features, and prove, as a proof submission, that $Q$ admits tilings of $\\mathbb{R}^3$ by congruent copies, reflections allowed, and that every such tiling has no translational period and a symmetry group of order at most $24$; every tiling is homochiral and carries a unique infinite hierarchy of nested supertiles. The solid was designed to a reading of the aperiodic-monotile phenomenon reached with the Six Birds emergence calculus (Section 3.3), and the construction turns on a single finite test, checked by machine: the tile's own contact rule survives coarsening, so that the decoded parent tiling obeys the tile's rule and no other. The proof combines a written geometric argument, that the features force every tiling onto a registered lattice, with exhaustive finite enumerations; the companion census is replayed by two independent implementations, every finite gate is kernel-checked in Lean 4 (modulo a named compiler hook per native_decide theorem), and the written geometric lemmas and the logical assembly are Lean theorems as well, so that the theorem is kernel-checked modulo the named compiler hooks; the written proofs remain as exposition.",
+          "categories": [
+            "math.CO",
+            "cs.DM",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CO",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-09-18T03:05:17.991936+00:00",
+            "contentHash": "25d344d4ac3f1015d45d49ee95ff277752ac31e18b8edd8fec7e6a15aea69d3c"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.19214v1",
+            "observedAt": "2026-09-18T03:06:24.072691+00:00",
+            "contentHash": "1e94b72763da0160e9fda7d2823479320cfd05b7a969e5385fc424699181cc13"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "新方法/构造",
+          "workSummary": "提出名为 Chair44 的有理多面体三维球状单砖，声称其所有空间铺砌均无平移周期且具有唯一无限层级结构。",
+          "techniques": [
+            "几何配准",
+            "有限穷举及双实现核验",
+            "Lean 4 形式化"
+          ],
+          "breakthrough": "试图以单个单连通三维砖的形状强制强非周期性。",
+          "limitations": "文中明确作为 proof submission；形式核验依赖命名的 native_decide 编译器钩子，还需独立检查几何化到有限枚举的归约。Lean 本身不构成 AI 披露证据。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT Astra 参与发现构造，Codex 辅助编码和形式化证书，Grok 等模型辅助审查，Claude Fable 5.1 大量参与稿件写作；作者指导、阅读并修改。形式化覆盖范围仍须按文中声明界定。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.19214v1 · PDF第16、47–48页，发现过程与 Use of AI systems",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-18T03:06:24.072691+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.19214v1",
+            "contentHash": "1e94b72763da0160e9fda7d2823479320cfd05b7a969e5385fc424699181cc13",
+            "pages": 61,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra 参与发现构造，Codex 辅助编码和形式化证书，Grok 等模型辅助审查，Claude Fable 5.1 大量参与稿件写作；作者指导、阅读并修改。形式化覆盖范围仍须按文中声明界定。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7a11c3ada1eb2289fed729bbaa05d95287d754b620310e0251ec806f790e79be"
+          },
+          "priorityScore": 69,
+          "priorityReason": "构造与核验方式值得关注，但与曲率和测度几何主线间接相关，结论验证成本高。"
+        },
+        "analysisBasis": {
+          "abstract": "Socolar and Taylor asked for a single, simply connected three-dimensional prototile that forces nonperiodicity by shape alone, admitting no weakly nonperiodic tiling; the Schmitt-Conway-Danzer biprism and the three-dimensional Socolar-Taylor tile admit screw motions or a periodic stacking direction. We exhibit a rational polyhedral $3$-ball $Q$, which we call Chair44 (R44): a seven-cube chair whose $24$ exposed unit panels carry tiny square-pyramid features, and prove, as a proof submission, that $Q$ admits tilings of $\\mathbb{R}^3$ by congruent copies, reflections allowed, and that every such tiling has no translational period and a symmetry group of order at most $24$; every tiling is homochiral and carries a unique infinite hierarchy of nested supertiles. The solid was designed to a reading of the aperiodic-monotile phenomenon reached with the Six Birds emergence calculus (Section 3.3), and the construction turns on a single finite test, checked by machine: the tile's own contact rule survives coarsening, so that the decoded parent tiling obeys the tile's rule and no other. The proof combines a written geometric argument, that the features force every tiling onto a registered lattice, with exhaustive finite enumerations; the companion census is replayed by two independent implementations, every finite gate is kernel-checked in Lean 4 (modulo a named compiler hook per native_decide theorem), and the written geometric lemmas and the logical assembly are Lean theorems as well, so that the theorem is kernel-checked modulo the named compiler hooks; the written proofs remain as exposition.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

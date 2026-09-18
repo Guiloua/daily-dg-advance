@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2609.20238",
+  "slug": "2609.20238",
+  "latest": {
+    "arxivId": "2609.20238",
+    "metadata": {
+      "title": "Optimal Sparsifiers for Minkowski Sums and Sums of Seminorms",
+      "authors": [
+        "Arpon Basu",
+        "Joshua Brakensiek",
+        "Yeyuan Chen",
+        "Aaron Putterman",
+        "Victor Reis",
+        "Zihan Zhang"
+      ],
+      "abstract": "We extend the recent work of Reis and Rothvoss on sparsifying sums of $\\ell_1$ norms to the more general task of sparsifying (Minkowski) sums of centrally symmetric, convex sets. As our main result, we prove that for any $\\varepsilon > 0$ and centrally symmetric, convex sets $C_1, \\ldots, C_m\\subseteq\\mathbb{R}^n$ there is a choice of weights $\\lambda_1, \\dots , \\lambda_m \\in \\mathbb{R}_{\\geq 0}$ such that at most $O(n / \\varepsilon^2)$ of the weights are non-zero, and \\[(1 - \\varepsilon)\\cdot C\\subseteq\\sum_{i = 1}^m\\lambda_i\\cdot C_i\\subseteq(1 + \\varepsilon)\\cdot C,\\] where $C:= C_1 + \\cdots + C_m$ refers to the Minkowski sums of the sets $C_1, \\ldots, C_m$, and $\\lambda\\cdot C$ refers to the dilation of the set $C$. As immediate applications of this result, we obtain sparsifiers of size $O(n / \\varepsilon^2)$ for sparsifying sums of seminorms in $n$-dimensional space, improving on the $O\\left ( \\frac{n \\log(n/\\varepsilon) \\cdot \\log^{2.5}(n)}{\\varepsilon^2} \\right )$ size sparsifiers from the work of Jambulapati, Lee, Liu, and Sidford (FOCS 2023). This further yields optimal size hypergraph cut sparsifiers with $O(n / \\varepsilon^2)$ hyperedges, improving on the $O(n \\log(n) / \\varepsilon^2)$ size sparsifiers from the work of Chen, Khanna, and Nagda (FOCS 2020). More generally, this also gives optimal size sparsifiers for sums of symmetric submodular functions.",
+      "categories": [
+        "cs.DS",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.DS",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-09-18T03:05:17.991936+00:00",
+        "contentHash": "25d344d4ac3f1015d45d49ee95ff277752ac31e18b8edd8fec7e6a15aea69d3c"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.20238v1",
+        "observedAt": "2026-09-18T03:11:06.592134+00:00",
+        "contentHash": "52405469101200407b0c10f57c6f53fd1393e0451bde7350f021985d1bca2e59"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "推广/加强",
+      "workSummary": "将中心对称凸集的 Minkowski 和用仅 O(n/ε²) 个非零权重项近似，并推出半范数和、超图割及对称次模函数的最优规模稀疏化。",
+      "techniques": [
+        "Minkowski 和近似",
+        "凸集加权稀疏化",
+        "半范数与次模结构"
+      ],
+      "breakthrough": "消除先前多个对数因子，将统一凸几何框架用于算法稀疏化。",
+      "limitations": "中心对称及乘性包含近似是必要设置；最优规模陈述不自动等同于同阶运行时间。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露与 ChatGPT 5.5-Pro、5.6-Sol 的讨论参与发现主结果，将超图割稀疏化推广到半范数及 Minkowski 和，并辅助去除对数因子；正文由作者写作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.20238v1 · PDF第10页，§1.4 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-18T03:11:06.592134+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.20238v1",
+        "contentHash": "52405469101200407b0c10f57c6f53fd1393e0451bde7350f021985d1bca2e59",
+        "pages": 30,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT 5.5-Pro、5.6-Sol 的讨论参与发现主结果，将超图割稀疏化推广到半范数及 Minkowski 和，并辅助去除对数因子；正文由作者写作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "095f7b6d1d5ee2e9c99287dc0b328936ab9189ba3a405391b9514715f55744b1"
+      },
+      "priorityScore": 83,
+      "priorityReason": "凸几何工具有较广泛复用价值，虽非曲率核心方向仍值得优先关注。"
+    },
+    "analysisBasis": {
+      "abstract": "We extend the recent work of Reis and Rothvoss on sparsifying sums of $\\ell_1$ norms to the more general task of sparsifying (Minkowski) sums of centrally symmetric, convex sets. As our main result, we prove that for any $\\varepsilon > 0$ and centrally symmetric, convex sets $C_1, \\ldots, C_m\\subseteq\\mathbb{R}^n$ there is a choice of weights $\\lambda_1, \\dots , \\lambda_m \\in \\mathbb{R}_{\\geq 0}$ such that at most $O(n / \\varepsilon^2)$ of the weights are non-zero, and \\[(1 - \\varepsilon)\\cdot C\\subseteq\\sum_{i = 1}^m\\lambda_i\\cdot C_i\\subseteq(1 + \\varepsilon)\\cdot C,\\] where $C:= C_1 + \\cdots + C_m$ refers to the Minkowski sums of the sets $C_1, \\ldots, C_m$, and $\\lambda\\cdot C$ refers to the dilation of the set $C$. As immediate applications of this result, we obtain sparsifiers of size $O(n / \\varepsilon^2)$ for sparsifying sums of seminorms in $n$-dimensional space, improving on the $O\\left ( \\frac{n \\log(n/\\varepsilon) \\cdot \\log^{2.5}(n)}{\\varepsilon^2} \\right )$ size sparsifiers from the work of Jambulapati, Lee, Liu, and Sidford (FOCS 2023). This further yields optimal size hypergraph cut sparsifiers with $O(n / \\varepsilon^2)$ hyperedges, improving on the $O(n \\log(n) / \\varepsilon^2)$ size sparsifiers from the work of Chen, Khanna, and Nagda (FOCS 2020). More generally, this also gives optimal size sparsifiers for sums of symmetric submodular functions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-09-18",
+      "entry": {
+        "arxivId": "2609.20238",
+        "metadata": {
+          "title": "Optimal Sparsifiers for Minkowski Sums and Sums of Seminorms",
+          "authors": [
+            "Arpon Basu",
+            "Joshua Brakensiek",
+            "Yeyuan Chen",
+            "Aaron Putterman",
+            "Victor Reis",
+            "Zihan Zhang"
+          ],
+          "abstract": "We extend the recent work of Reis and Rothvoss on sparsifying sums of $\\ell_1$ norms to the more general task of sparsifying (Minkowski) sums of centrally symmetric, convex sets. As our main result, we prove that for any $\\varepsilon > 0$ and centrally symmetric, convex sets $C_1, \\ldots, C_m\\subseteq\\mathbb{R}^n$ there is a choice of weights $\\lambda_1, \\dots , \\lambda_m \\in \\mathbb{R}_{\\geq 0}$ such that at most $O(n / \\varepsilon^2)$ of the weights are non-zero, and \\[(1 - \\varepsilon)\\cdot C\\subseteq\\sum_{i = 1}^m\\lambda_i\\cdot C_i\\subseteq(1 + \\varepsilon)\\cdot C,\\] where $C:= C_1 + \\cdots + C_m$ refers to the Minkowski sums of the sets $C_1, \\ldots, C_m$, and $\\lambda\\cdot C$ refers to the dilation of the set $C$. As immediate applications of this result, we obtain sparsifiers of size $O(n / \\varepsilon^2)$ for sparsifying sums of seminorms in $n$-dimensional space, improving on the $O\\left ( \\frac{n \\log(n/\\varepsilon) \\cdot \\log^{2.5}(n)}{\\varepsilon^2} \\right )$ size sparsifiers from the work of Jambulapati, Lee, Liu, and Sidford (FOCS 2023). This further yields optimal size hypergraph cut sparsifiers with $O(n / \\varepsilon^2)$ hyperedges, improving on the $O(n \\log(n) / \\varepsilon^2)$ size sparsifiers from the work of Chen, Khanna, and Nagda (FOCS 2020). More generally, this also gives optimal size sparsifiers for sums of symmetric submodular functions.",
+          "categories": [
+            "cs.DS",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.DS",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-09-18T03:05:17.991936+00:00",
+            "contentHash": "25d344d4ac3f1015d45d49ee95ff277752ac31e18b8edd8fec7e6a15aea69d3c"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.20238v1",
+            "observedAt": "2026-09-18T03:11:06.592134+00:00",
+            "contentHash": "52405469101200407b0c10f57c6f53fd1393e0451bde7350f021985d1bca2e59"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "推广/加强",
+          "workSummary": "将中心对称凸集的 Minkowski 和用仅 O(n/ε²) 个非零权重项近似，并推出半范数和、超图割及对称次模函数的最优规模稀疏化。",
+          "techniques": [
+            "Minkowski 和近似",
+            "凸集加权稀疏化",
+            "半范数与次模结构"
+          ],
+          "breakthrough": "消除先前多个对数因子，将统一凸几何框架用于算法稀疏化。",
+          "limitations": "中心对称及乘性包含近似是必要设置；最优规模陈述不自动等同于同阶运行时间。 数学分析仅依据摘要及评论，未审读完整证明。 AI 披露另见独立全文检索和命中核查记录；未见披露不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露与 ChatGPT 5.5-Pro、5.6-Sol 的讨论参与发现主结果，将超图割稀疏化推广到半范数及 Minkowski 和，并辅助去除对数因子；正文由作者写作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.20238v1 · PDF第10页，§1.4 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-18T03:11:06.592134+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.20238v1",
+            "contentHash": "52405469101200407b0c10f57c6f53fd1393e0451bde7350f021985d1bca2e59",
+            "pages": 30,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT 5.5-Pro、5.6-Sol 的讨论参与发现主结果，将超图割稀疏化推广到半范数及 Minkowski 和，并辅助去除对数因子；正文由作者写作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "095f7b6d1d5ee2e9c99287dc0b328936ab9189ba3a405391b9514715f55744b1"
+          },
+          "priorityScore": 83,
+          "priorityReason": "凸几何工具有较广泛复用价值，虽非曲率核心方向仍值得优先关注。"
+        },
+        "analysisBasis": {
+          "abstract": "We extend the recent work of Reis and Rothvoss on sparsifying sums of $\\ell_1$ norms to the more general task of sparsifying (Minkowski) sums of centrally symmetric, convex sets. As our main result, we prove that for any $\\varepsilon > 0$ and centrally symmetric, convex sets $C_1, \\ldots, C_m\\subseteq\\mathbb{R}^n$ there is a choice of weights $\\lambda_1, \\dots , \\lambda_m \\in \\mathbb{R}_{\\geq 0}$ such that at most $O(n / \\varepsilon^2)$ of the weights are non-zero, and \\[(1 - \\varepsilon)\\cdot C\\subseteq\\sum_{i = 1}^m\\lambda_i\\cdot C_i\\subseteq(1 + \\varepsilon)\\cdot C,\\] where $C:= C_1 + \\cdots + C_m$ refers to the Minkowski sums of the sets $C_1, \\ldots, C_m$, and $\\lambda\\cdot C$ refers to the dilation of the set $C$. As immediate applications of this result, we obtain sparsifiers of size $O(n / \\varepsilon^2)$ for sparsifying sums of seminorms in $n$-dimensional space, improving on the $O\\left ( \\frac{n \\log(n/\\varepsilon) \\cdot \\log^{2.5}(n)}{\\varepsilon^2} \\right )$ size sparsifiers from the work of Jambulapati, Lee, Liu, and Sidford (FOCS 2023). This further yields optimal size hypergraph cut sparsifiers with $O(n / \\varepsilon^2)$ hyperedges, improving on the $O(n \\log(n) / \\varepsilon^2)$ size sparsifiers from the work of Chen, Khanna, and Nagda (FOCS 2020). More generally, this also gives optimal size sparsifiers for sums of symmetric submodular functions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
