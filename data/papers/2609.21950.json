@@ -23,8 +23,27 @@
         "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "Kähler 浸入障碍",
+      "workSummary": "作者宣称证明所有正参数 Taub–NUT 度量的任意倍数都不能 Kähler 浸入有限或无限维复射影空间，从而完成此前参数范围之外的猜想。",
+      "techniques": [
+        "Lambert W 函数",
+        "Vivanti–Pringsheim 定理",
+        "Calabi 判据",
+        "Lean 4"
+      ],
+      "breakthrough": "利用轴上势函数的有限收敛半径与实解析延拓，阻断非负 Taylor 系数条件。",
+      "limitations": "机器检验覆盖摘要所称解析核心，不等于已独立检查全部几何推论；Lean 使用本身不代表 AI 披露。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 85,
+      "priorityReason": "以较初等解析障碍解决重要特殊度量的射影诱导问题。"
+    },
+    "analysisBasis": {
+      "abstract": "LeBrun's Kähler realization $g_m$ of the Taub--NUT metric on $\\mathbb{C}^2$ is complete, Ricci-flat and not flat. Loi, Zedda and Zuddas proved that no multiple $\\alpha g_m$ admits a Kähler immersion into a finite- or infinite-dimensional complex projective space when $m>\\alpha/2$, and conjectured that the same holds for every $m>0$. We prove the conjecture. The restriction of the Kähler potential to the axis $z_2=0$ is governed by the Lambert $W$ function, so $\\exp(\\alpha\\Phi_m)$ has a finite radius of convergence as a power series in $|z_1|^2$ although it is real analytic on the whole half-line; the Vivanti--Pringsheim theorem forbids nonnegative Taylor coefficients, and Calabi's criterion fails. We state the mechanism, which Arezzo, Loi, Placini and Zedda recently used for radial metrics, as a general obstruction to Kähler immersions. In statistical terms the axis restriction of $g_m$ would be a natural exponential family with mean domain $(0,\\infty)$ and variance function $\\mu/(1+2m\\mu)$; the argument gives an elementary proof of the known fact, due to Bar-Lev, Bshouty and Enis, that no such family exists with variance function $\\mu/(1+c\\mu)$ for any $c>0$. The result confirms onemore case of the conjecture of Loi, Salis and Zuddas that Ricci-flat projectively induced Kähler metrics are flat. The analytic core of the proof has been machine-checked in Lean~4.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -50,8 +69,27 @@
             "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "Kähler 浸入障碍",
+          "workSummary": "作者宣称证明所有正参数 Taub–NUT 度量的任意倍数都不能 Kähler 浸入有限或无限维复射影空间，从而完成此前参数范围之外的猜想。",
+          "techniques": [
+            "Lambert W 函数",
+            "Vivanti–Pringsheim 定理",
+            "Calabi 判据",
+            "Lean 4"
+          ],
+          "breakthrough": "利用轴上势函数的有限收敛半径与实解析延拓，阻断非负 Taylor 系数条件。",
+          "limitations": "机器检验覆盖摘要所称解析核心，不等于已独立检查全部几何推论；Lean 使用本身不代表 AI 披露。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 85,
+          "priorityReason": "以较初等解析障碍解决重要特殊度量的射影诱导问题。"
+        },
+        "analysisBasis": {
+          "abstract": "LeBrun's Kähler realization $g_m$ of the Taub--NUT metric on $\\mathbb{C}^2$ is complete, Ricci-flat and not flat. Loi, Zedda and Zuddas proved that no multiple $\\alpha g_m$ admits a Kähler immersion into a finite- or infinite-dimensional complex projective space when $m>\\alpha/2$, and conjectured that the same holds for every $m>0$. We prove the conjecture. The restriction of the Kähler potential to the axis $z_2=0$ is governed by the Lambert $W$ function, so $\\exp(\\alpha\\Phi_m)$ has a finite radius of convergence as a power series in $|z_1|^2$ although it is real analytic on the whole half-line; the Vivanti--Pringsheim theorem forbids nonnegative Taylor coefficients, and Calabi's criterion fails. We state the mechanism, which Arezzo, Loi, Placini and Zedda recently used for radial metrics, as a general obstruction to Kähler immersions. In statistical terms the axis restriction of $g_m$ would be a natural exponential family with mean domain $(0,\\infty)$ and variance function $\\mu/(1+2m\\mu)$; the argument gives an elementary proof of the known fact, due to Bar-Lev, Bshouty and Enis, that no such family exists with variance function $\\mu/(1+c\\mu)$ for any $c>0$. The result confirms onemore case of the conjecture of Loi, Salis and Zuddas that Ricci-flat projectively induced Kähler metrics are flat. The analytic core of the proof has been machine-checked in Lean~4.",
+          "version": 1
+        }
       }
     }
   ]

@@ -25,8 +25,26 @@
         "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "几何覆盖界改进",
+      "workSummary": "针对 Moser 蠕虫问题的凸通用覆盖，作者把最优面积的上下界缩小到 0.239 与约 0.24633，并声称较既有已审稿界将差距缩小逾 75%。",
+      "techniques": [
+        "有限细分证书",
+        "支撑不等式",
+        "Lean 4 形式化"
+      ],
+      "breakthrough": "以下界的四条折线和上界的四边形构造结合完整形式化证明。",
+      "limitations": "是凸覆盖类别的双边界，不是精确最优面积；Lean 核验范围及代码须进一步检查。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 84,
+      "priorityReason": "经典平面几何问题的显著定量推进，兼有可验证计算方法。"
+    },
+    "analysisBasis": {
+      "abstract": "Moser's worm problem asks for a planar region of least area containing a congruent copy of every unit arc. We show that the infimum area $\\alpha$ among convex universal covers satisfies $0.239\\le\\alpha\\le0.24633\\ldots$, reducing the gap between the previous refereed bounds by over $75\\%$. For the lower bound, we choose four unit polygonal arcs and prove by finite subdivision that, however they are placed, their convex hull has area at least $0.239$. For the upper bound, we construct a quadrilateral of area $0.24633\\ldots$ and prove cover universality by showing that its support inequalities force uncovered arcs to have length greater than one. The full proof is formalized in Lean 4 and verified by the Lean kernel. Code and certificates are available at this https URL .",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +72,26 @@
             "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "几何覆盖界改进",
+          "workSummary": "针对 Moser 蠕虫问题的凸通用覆盖，作者把最优面积的上下界缩小到 0.239 与约 0.24633，并声称较既有已审稿界将差距缩小逾 75%。",
+          "techniques": [
+            "有限细分证书",
+            "支撑不等式",
+            "Lean 4 形式化"
+          ],
+          "breakthrough": "以下界的四条折线和上界的四边形构造结合完整形式化证明。",
+          "limitations": "是凸覆盖类别的双边界，不是精确最优面积；Lean 核验范围及代码须进一步检查。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 84,
+          "priorityReason": "经典平面几何问题的显著定量推进，兼有可验证计算方法。"
+        },
+        "analysisBasis": {
+          "abstract": "Moser's worm problem asks for a planar region of least area containing a congruent copy of every unit arc. We show that the infimum area $\\alpha$ among convex universal covers satisfies $0.239\\le\\alpha\\le0.24633\\ldots$, reducing the gap between the previous refereed bounds by over $75\\%$. For the lower bound, we choose four unit polygonal arcs and prove by finite subdivision that, however they are placed, their convex hull has area at least $0.239$. For the upper bound, we construct a quadrilateral of area $0.24633\\ldots$ and prove cover universality by showing that its support inequalities force uncovered arcs to have length greater than one. The full proof is formalized in Lean 4 and verified by the Lean kernel. Code and certificates are available at this https URL .",
+          "version": 1
+        }
       }
     }
   ]

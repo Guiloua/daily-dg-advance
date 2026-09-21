@@ -24,8 +24,26 @@
         "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "曲率不变量与非平坦性",
+      "workSummary": "文章研究三节蛇形机器人的 (2,3,5) 非完整分布，计算显式二元四次曲率不变量，并证明所有参数均不能实现局部平坦模型。",
+      "techniques": [
+        "G₂ 抛物几何",
+        "有限维李代数",
+        "外微分归一化"
+      ],
+      "breakthrough": "利用分布基的李代数结构简化计算，排除整类参数中的平坦几何。",
+      "limitations": "结论针对该机器人模型，不能类推到全部 (2,3,5) 分布。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 67,
+      "priorityReason": "给出具体可计算的抛物几何例子和附带计算资料。"
+    },
+    "analysisBasis": {
+      "abstract": "The $3$-link snake robot is an example of a non-holonomic mechanical system with rank $2$ distribution in a $5$-dimensional configuration space. It is one of $(2,3,5)$-geometries, and as such, it admits a description by a parabolic geometry of type $(G_2,P)$. Another example of $(2,3,5)$-geometry was well-studied years ago, and it is known that for balls rolling one over the other without slipping or twisting, if the ratio of ball radii is $1:3$, then it is locally isomorphic to the flat model in sense of $(G_2,P)$ parabolic geometries. Answering a question by P. Nurowski, we are looking for parameters of the $3$-link snake robots yielding a locally flat $(2,3,5)$-geometry. We extend the observation of a previous paper that the distributions of the snake robots contain bases generating finite dimensional Lie algebras. We exploit this observation to simplify the exterior calculus of the robots' geometry. This allows us to implement an effective normalization procedure and we obtain an explicit binary quartic invariant of the robot. Finally, we show that it does not vanish for any of the parameters. Therefore, the locally flat model cannot be achieved for these types of snake robots.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,8 +70,26 @@
             "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "曲率不变量与非平坦性",
+          "workSummary": "文章研究三节蛇形机器人的 (2,3,5) 非完整分布，计算显式二元四次曲率不变量，并证明所有参数均不能实现局部平坦模型。",
+          "techniques": [
+            "G₂ 抛物几何",
+            "有限维李代数",
+            "外微分归一化"
+          ],
+          "breakthrough": "利用分布基的李代数结构简化计算，排除整类参数中的平坦几何。",
+          "limitations": "结论针对该机器人模型，不能类推到全部 (2,3,5) 分布。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 67,
+          "priorityReason": "给出具体可计算的抛物几何例子和附带计算资料。"
+        },
+        "analysisBasis": {
+          "abstract": "The $3$-link snake robot is an example of a non-holonomic mechanical system with rank $2$ distribution in a $5$-dimensional configuration space. It is one of $(2,3,5)$-geometries, and as such, it admits a description by a parabolic geometry of type $(G_2,P)$. Another example of $(2,3,5)$-geometry was well-studied years ago, and it is known that for balls rolling one over the other without slipping or twisting, if the ratio of ball radii is $1:3$, then it is locally isomorphic to the flat model in sense of $(G_2,P)$ parabolic geometries. Answering a question by P. Nurowski, we are looking for parameters of the $3$-link snake robots yielding a locally flat $(2,3,5)$-geometry. We extend the observation of a previous paper that the distributions of the snake robots contain bases generating finite dimensional Lie algebras. We exploit this observation to simplify the exterior calculus of the robots' geometry. This allows us to implement an effective normalization procedure and we obtain an explicit binary quartic invariant of the robot. Finally, we show that it does not vanish for any of the parameters. Therefore, the locally flat model cannot be achieved for these types of snake robots.",
+          "version": 1
+        }
       }
     }
   ]

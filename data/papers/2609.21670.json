@@ -25,8 +25,26 @@
         "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "多面体谱框架",
+      "workSummary": "作者为原点对称满维多胞形建立中心仿射谱理论，以面上的加权图 Laplacian 代替光滑算子，并对特定局部极小子给出首个非常数偶特征值下界。",
+      "techniques": [
+        "面图加权 Laplacian",
+        "中心仿射谱",
+        "固定法向变分"
+      ],
+      "breakthrough": "在 n≥3 时得到 λ₁,e≥n−1+1/(n−1)，允许法扇发生变化。",
+      "limitations": "该谱界目前针对同面法向类中的局部极小子，不能宣称适用于全部对称多胞形。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 84,
+      "priorityReason": "关联凸几何谱方法与变分极值问题。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we develop a polyhedral version of Milman's centro-affine spectral framework for full-dimensional origin-symmetric polytopes. A weighted graph Laplacian on the facets plays the role of the smooth centro-affine Laplacian. For $n\\geq 3$, we prove that its first nonconstant even eigenvalue satisfies \\[ \\lambda_{1,e}(P)\\geq n-1+\\frac{1}{n-1} \\] whenever $P$ is a local minimizer of $\\lambda_{1,e}$ among origin-symmetric polytopes with the same facet normals, but not necessarily the same normal fan.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +72,26 @@
             "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "多面体谱框架",
+          "workSummary": "作者为原点对称满维多胞形建立中心仿射谱理论，以面上的加权图 Laplacian 代替光滑算子，并对特定局部极小子给出首个非常数偶特征值下界。",
+          "techniques": [
+            "面图加权 Laplacian",
+            "中心仿射谱",
+            "固定法向变分"
+          ],
+          "breakthrough": "在 n≥3 时得到 λ₁,e≥n−1+1/(n−1)，允许法扇发生变化。",
+          "limitations": "该谱界目前针对同面法向类中的局部极小子，不能宣称适用于全部对称多胞形。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 84,
+          "priorityReason": "关联凸几何谱方法与变分极值问题。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we develop a polyhedral version of Milman's centro-affine spectral framework for full-dimensional origin-symmetric polytopes. A weighted graph Laplacian on the facets plays the role of the smooth centro-affine Laplacian. For $n\\geq 3$, we prove that its first nonconstant even eigenvalue satisfies \\[ \\lambda_{1,e}(P)\\geq n-1+\\frac{1}{n-1} \\] whenever $P$ is a local minimizer of $\\lambda_{1,e}$ among origin-symmetric polytopes with the same facet normals, but not necessarily the same normal fan.",
+          "version": 1
+        }
       }
     }
   ]

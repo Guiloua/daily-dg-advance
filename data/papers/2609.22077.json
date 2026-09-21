@@ -25,8 +25,27 @@
         "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "球面能量极小构型",
+      "workSummary": "作者研究球面八点问题，宣称对对数和 Coulomb 能量，唯一极小构型为适当高度的方形反棱柱，并扩展到 Riesz 能量及非普适性反例。",
+      "techniques": [
+        "计算机辅助证明",
+        "Lean 核验",
+        "驻点方程",
+        "Riesz 能量"
+      ],
+      "breakthrough": "对充分大的 s 给出非计算机辅助证明，并以计算机辅助方式扩展到摘要所述 s≥0 范围；同时否定某种完全单调势的普适性猜想。",
+      "limitations": "不同能量参数的定义及零参数约定需核查；形式化声明不能代替复核证书与理论接口。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 87,
+      "priorityReason": "有限点能量极值的具体分类及普适性边界值得关注。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the energy minimization problem for eight points on the unit sphere. For the logarithmic and Coulomb energies, we show that the unique global minimizer up to congruence is a square antiprism with height characterized by a unique stationarity equation. The proof is computer-assisted and fully verified in Lean. After this, we consider generalizations of the result to other important energies. For the Riesz $s$-energies, we provide a Lean-verified, non-computer-assisted proof that the square antiprism with height depending on $s$ is the unique global minimizer for all sufficiently large $s$, and a computer-assisted proof that this in fact holds for all $s\\geq 0$. We also give examples of energies arising from completely monotonic potentials for which the square antiprism is not a global minimizer, answering in the negative a universality question of Cohn and Woo.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +73,27 @@
             "contentHash": "d5a995ed0bf1d6b650f2a19678f916441161c3afb6b753bb485566fea5060ab7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "球面能量极小构型",
+          "workSummary": "作者研究球面八点问题，宣称对对数和 Coulomb 能量，唯一极小构型为适当高度的方形反棱柱，并扩展到 Riesz 能量及非普适性反例。",
+          "techniques": [
+            "计算机辅助证明",
+            "Lean 核验",
+            "驻点方程",
+            "Riesz 能量"
+          ],
+          "breakthrough": "对充分大的 s 给出非计算机辅助证明，并以计算机辅助方式扩展到摘要所述 s≥0 范围；同时否定某种完全单调势的普适性猜想。",
+          "limitations": "不同能量参数的定义及零参数约定需核查；形式化声明不能代替复核证书与理论接口。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 87,
+          "priorityReason": "有限点能量极值的具体分类及普适性边界值得关注。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the energy minimization problem for eight points on the unit sphere. For the logarithmic and Coulomb energies, we show that the unique global minimizer up to congruence is a square antiprism with height characterized by a unique stationarity equation. The proof is computer-assisted and fully verified in Lean. After this, we consider generalizations of the result to other important energies. For the Riesz $s$-energies, we provide a Lean-verified, non-computer-assisted proof that the square antiprism with height depending on $s$ is the unique global minimizer for all sufficiently large $s$, and a computer-assisted proof that this in fact holds for all $s\\geq 0$. We also give examples of energies arising from completely monotonic potentials for which the square antiprism is not a global minimizer, answering in the negative a universality question of Cohn and Woo.",
+          "version": 1
+        }
       }
     }
   ]
