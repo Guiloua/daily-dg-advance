@@ -20,19 +20,25 @@
         "math.DG"
       ],
       "primaryCategory": "math.AP",
-      "comment": "43 pages; any comment is welcome"
+      "comment": "43 pages; any comment is welcome",
+      "version": 1
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-21T05:00:15.307837+00:00",
         "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.21680",
+        "observedAt": "2026-09-21T05:09:39.158323+00:00",
+        "contentHash": "f549cfc8739abf7e0e031e82ec1033ba52afb7a160e3eb69ed73f80c572c7ebf"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "稳定解刚性",
-      "workSummary": "作者宣称 R³ 中任意有界稳定 Allen–Cahn 整解均为一维，进而推出 R⁴ 的完整 De Giorgi 猜想，并给出稳定解的局部曲率估计。",
+      "workSummary": "作者主张 R³ 中有界稳定 Allen–Cahn 整解仅为 ±1 或平面 tanh 过渡；结合方向极限的极小性与既有分类得到 R⁴ 单调解结论。证明路线以加权次线性积分隔离非平坦零点组，转移稳定性到零水平面的曲率不等式，再用内禀面积控制与对数截断构造矛盾。",
       "techniques": [
         "零水平面的弱稳定性",
         "Gauss–Bonnet",
@@ -40,15 +46,28 @@
         "对数截断"
       ],
       "breakthrough": "把方程稳定性转为零集曲面的弱稳定性，结合面积与曲率控制构造矛盾测试函数。",
-      "limitations": "重大猜想主张尚未独立核验；尤其需检查非平面零点隔离、拼接误差和奇异零集处理。清单未明确版本。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "已读 PDF 第 1 页及第 4–6 页主定理、推论与证明路线；尚未逐条核验层间相互作用和拼接误差估计。此处报道预印本主张，不能视为独立确认证明。 AI 披露以独立全文核查记录为准。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.21680 · PDF 第 41 页 致谢",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-21T05:09:39.158323+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.21680",
+        "contentHash": "f549cfc8739abf7e0e031e82ec1033ba52afb7a160e3eb69ed73f80c572c7ebf",
+        "pages": 43,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "db34a491e596a748893d2a30b67bebbf1664122fb61f72c8f54cbc1345aaaa17"
+      },
       "priorityScore": 97,
       "priorityReason": "本期优先阅读对象，直接涉及相变方程与极小曲面方法。"
     },
     "analysisBasis": {
       "abstract": "We prove that every bounded stable entire solution $v$ of the Allen--Cahn equation in $\\R^3$ is one-dimensional. As a consequence, the full De Giorgi conjecture in $\\mathbb{R}^4$ is true. We also obtain local curvature estimates for stable solutions. The proof strategy is inspired by the recent breakthrough work of Chan, Fernández-Real, Figalli and Serra [J. Amer. Math. Soc. 2026], by reducing the stabilty condition for the Allen-Cahn equation to a weak stability condition on a surface (the zero set) and then utilizing Gauss-Bonnet formula. For this purpose, we first use the stability condition to get a sublinear bound for a weighted integral that controls the zeros where the solution is far from planar. If such zeros exist, we isolate a bounded set of them and join $1-v^2$ near this set to derivatives of one-dimensional transitions farther away. By controlling the interaction between these transitions, we derive the weak stability condition on the zero set, which is then used to bound a weighted integral of the squared curvature on the regular part of the zero set by a cutoff gradient integral and a controlled error. We use this inequality to bound the intrinsic area and construct logarithmic cutoffs. The resulting compactly supported test function has a negative contribution near this set that exceeds all joining and cutoff errors, contradicting stability.",
-      "version": null
+      "version": 1
     }
   },
   "history": [
@@ -72,19 +91,25 @@
             "math.DG"
           ],
           "primaryCategory": "math.AP",
-          "comment": "43 pages; any comment is welcome"
+          "comment": "43 pages; any comment is welcome",
+          "version": 1
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-21T05:00:15.307837+00:00",
             "contentHash": "8ea86ea1a127e86ee5e09e9c8718933525edbfba3f40cdaef64778ddc2449328"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.21680",
+            "observedAt": "2026-09-21T05:09:39.158323+00:00",
+            "contentHash": "f549cfc8739abf7e0e031e82ec1033ba52afb7a160e3eb69ed73f80c572c7ebf"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "稳定解刚性",
-          "workSummary": "作者宣称 R³ 中任意有界稳定 Allen–Cahn 整解均为一维，进而推出 R⁴ 的完整 De Giorgi 猜想，并给出稳定解的局部曲率估计。",
+          "workSummary": "作者主张 R³ 中有界稳定 Allen–Cahn 整解仅为 ±1 或平面 tanh 过渡；结合方向极限的极小性与既有分类得到 R⁴ 单调解结论。证明路线以加权次线性积分隔离非平坦零点组，转移稳定性到零水平面的曲率不等式，再用内禀面积控制与对数截断构造矛盾。",
           "techniques": [
             "零水平面的弱稳定性",
             "Gauss–Bonnet",
@@ -92,15 +117,28 @@
             "对数截断"
           ],
           "breakthrough": "把方程稳定性转为零集曲面的弱稳定性，结合面积与曲率控制构造矛盾测试函数。",
-          "limitations": "重大猜想主张尚未独立核验；尤其需检查非平面零点隔离、拼接误差和奇异零集处理。清单未明确版本。 本条依据官方摘要与评论整理，尚未核验正文证明；AI 披露以独立核查记录为准。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "已读 PDF 第 1 页及第 4–6 页主定理、推论与证明路线；尚未逐条核验层间相互作用和拼接误差估计。此处报道预印本主张，不能视为独立确认证明。 AI 披露以独立全文核查记录为准。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.21680 · PDF 第 41 页 致谢",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-21T05:09:39.158323+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.21680",
+            "contentHash": "f549cfc8739abf7e0e031e82ec1033ba52afb7a160e3eb69ed73f80c572c7ebf",
+            "pages": 43,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "db34a491e596a748893d2a30b67bebbf1664122fb61f72c8f54cbc1345aaaa17"
+          },
           "priorityScore": 97,
           "priorityReason": "本期优先阅读对象，直接涉及相变方程与极小曲面方法。"
         },
         "analysisBasis": {
           "abstract": "We prove that every bounded stable entire solution $v$ of the Allen--Cahn equation in $\\R^3$ is one-dimensional. As a consequence, the full De Giorgi conjecture in $\\mathbb{R}^4$ is true. We also obtain local curvature estimates for stable solutions. The proof strategy is inspired by the recent breakthrough work of Chan, Fernández-Real, Figalli and Serra [J. Amer. Math. Soc. 2026], by reducing the stabilty condition for the Allen-Cahn equation to a weak stability condition on a surface (the zero set) and then utilizing Gauss-Bonnet formula. For this purpose, we first use the stability condition to get a sublinear bound for a weighted integral that controls the zeros where the solution is far from planar. If such zeros exist, we isolate a bounded set of them and join $1-v^2$ near this set to derivatives of one-dimensional transitions farther away. By controlling the interaction between these transitions, we derive the weak stability condition on the zero set, which is then used to bound a weighted integral of the squared curvature on the regular part of the zero set by a cutoff gradient integral and a controlled error. We use this inequality to bound the intrinsic area and construct logarithmic cutoffs. The resulting compactly supported test function has a negative contribution near this set that exceeds all joining and cutoff errors, contradicting stability.",
-          "version": null
+          "version": 1
         }
       }
     }
