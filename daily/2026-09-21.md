@@ -322,11 +322,11 @@ We prove that every bounded stable entire solution $v$ of the Allen--Cahn equati
 
 明确披露 AI 协作：作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。
 
-来源：https://arxiv.org/pdf/2609.21680 · PDF 第 41 页 致谢
+来源：https://arxiv.org/pdf/2609.21680v1 · PDF 第 41 页 致谢
 
 核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确致谢 AI 工具的使用，并承担证明有效性、准确性和完整性责任；未说明工具或用途。
 
-来源：https://arxiv.org/pdf/2609.21680
+来源：https://arxiv.org/pdf/2609.21680v1
 
 [arXiv](https://arxiv.org/abs/2609.21680)
 
