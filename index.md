@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-09-21
 
-已收录 31/31 · 解读 31/31 · 资料待补齐。
+已收录 31/31 · 解读 31/31。
 
 ## The Crossing Number and Arc Index of Satellite Knots
 
