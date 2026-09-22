@@ -1398,11 +1398,13 @@ Qiongling Li、Junming Zhang
 
 For every admissible non-maximal Toledo invariant $t$, we construct a locus of irreducible representations of a closed genus-$g$ surface group into $\mathrm{PU}_{2,n+1}$ with Toledo invariant $t$ whose orbit maps are quasi-isometric embeddings. These loci have real codimension $10(g-1)$ or $10(g-1)+2(n-1)$ in the character variety depending on the Toledo value. Our construction uses $4$-cyclic Higgs bundles and their correspondence with $\partial$-alternating surfaces in complex pseudo-hyperbolic spaces. The associated equivariant minimal maps into the symmetric space are bi-Lipschitz embeddings. We further construct cocompact domains of discontinuity in the Shilov boundary. Their quotients are smooth fiber bundles over the surface with fiber homeomorphic to $S^{2n-1}\times S^{2n-1}$.
 
-明确披露 AI 协作：官方评论注明全文含 AI 使用声明；具体用途待核对正文。
+明确披露 AI 协作：作者披露 Gemini 3.1 Pro 建议引理 3.2 的小尺度估计，ChatGPT 5.5 Pro 辅助补全命题 5.10 的证明并检查命题 4.3 的纤维微分同胚类型，ChatGPT 5.6 Sol 改善摘要与引言的语言和格式；作者独立核验数学陈述及引用并负责。
 
-来源：https://arxiv.org/list/math.GT/new · 官方摘要或评论
+来源：https://arxiv.org/pdf/2609.24672v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Gemini 3.1 Pro 建议引理 3.2 的小尺度估计，ChatGPT 5.5 Pro 辅助补全命题 5.10 的证明并检查命题 4.3 的纤维微分同胚类型，ChatGPT 5.6 Sol 改善摘要与引言的语言和格式；作者独立核验数学陈述及引用并负责。
 
+来源：https://arxiv.org/pdf/2609.24672v1
 
 [arXiv](https://arxiv.org/abs/2609.24672)
 
@@ -1414,9 +1416,13 @@ Xiayu Tan
 
 Watanabe constructed many nontrivial family diffeomorphisms in $\pi_*\text{Diff}_\partial(D^4)$, which were obtained by doing clasper surgeries on trivalent graphs. In this paper, we generalize the barbell diffeomorphism discovered by Budney and Gabai and construct a series of nontrivial elements in $\pi_{k-1}\text{Diff}_\partial(M_{k+1}')$ with $M_{k+1}'=\natural_{k+1} S^2\times D^2$ the $(k+1)$-cuff barbell, which we call higher barbell diffeomorphisms. We show that Watanabe's constructions can be realized as implanted higher barbell diffeomorphisms in $D^4$ if the trivalent graph is homologically nonzero in the graph complex. Combining this realization with Watanabe's detection theorem, we establish the nontriviality of these implanted higher barbell diffeomorphisms.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 找出了命题 3.7 的符号错误及初稿中少量文字笔误；修正由作者完成，声明除此之外未使用 AI。
 
+来源：https://arxiv.org/pdf/2609.24697v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 找出了命题 3.7 的符号错误及初稿中少量文字笔误；修正由作者完成，声明除此之外未使用 AI。
+
+来源：https://arxiv.org/pdf/2609.24697v1
 
 [arXiv](https://arxiv.org/abs/2609.24697)
 
@@ -1428,9 +1434,13 @@ Mario Santilli
 
 We prove the Brendle isoperimetric inequality for varifolds of finite mass and finite total first variation, allowing an arbitrary singular part. The distributional mean curvature is assumed only integrable. The result applies to integral varifolds and, more generally, to rectifiable varifolds with a positive lower density bound and weight measure concentrated on countably many $C^2$ submanifolds. The proof uses optimal transport and a locality theorem for the tangential Laplacian of an ambient convex function. The isoperimetric constant is sharp in codimensions one and two.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确披露在稿件准备过程中使用 OpenAI GPT-6，未细分具体用途。
 
+来源：https://arxiv.org/pdf/2609.24716v1 · PDF 第 17 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露在稿件准备过程中使用 OpenAI GPT-6，未细分具体用途。
+
+来源：https://arxiv.org/pdf/2609.24716v1
 
 [arXiv](https://arxiv.org/abs/2609.24716)
 
@@ -1442,9 +1452,13 @@ José M.Espinar
 
 We prove that every smooth immersed disk in Euclidean three-space with nonzero constant mean curvature, regular up to the boundary and mapping its boundary diffeomorphically onto a circle, is an embedded spherical cap.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Claude/Code Fable 5.1 与 ChatGPT/Codex Astra 6 参与数学发展、证明检查、语言和 LaTeX；LLM 对候选反例提出阻碍条件，作者识别为 Lawson 对应的 holonomy。Lean 仅覆盖分析边界引理，不含几何约化及最终分类。
 
+来源：https://arxiv.org/pdf/2609.24766v1 · PDF 第 8 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude/Code Fable 5.1 与 ChatGPT/Codex Astra 6 参与数学发展、证明检查、语言和 LaTeX；LLM 对候选反例提出阻碍条件，作者识别为 Lawson 对应的 holonomy。Lean 仅覆盖分析边界引理，不含几何约化及最终分类。
+
+来源：https://arxiv.org/pdf/2609.24766v1
 
 [arXiv](https://arxiv.org/abs/2609.24766)
 
@@ -1456,9 +1470,13 @@ Minh-Tâm Quang Trinh
 
 We construct free immersions of $P^3 \times S^1$ and $S^3 \times S^1$ into $14$-space. These are the first examples of free immersions in critical dimension of closed manifolds that are not spheres, projective spaces, tori, or surfaces. The idea is to mimic De Leo's construction for $m$-tori with $m \leq 5$. De Leo constructs a map that is symmetric with respect to a representation of the Lie group formed by the $(m - 1)$-torus; we replace this group with $\mathrm{SO}(3)$. In our examples, the osculating determinant is constant.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT 5.6 Sol 的符号代数计算帮助简化第 3 节的 Ansatz；同时声明正文没有由 AI 生成的部分。
 
+来源：https://arxiv.org/pdf/2609.24777v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT 5.6 Sol 的符号代数计算帮助简化第 3 节的 Ansatz；同时声明正文没有由 AI 生成的部分。
+
+来源：https://arxiv.org/pdf/2609.24777v1
 
 [arXiv](https://arxiv.org/abs/2609.24777)
 
@@ -1470,9 +1488,11 @@ Eugenia Boffo、Domenico Fiorenza
 
 A Ševera bicomplex is a bicomplex $(M,d_{0},d_{1})$ whose differentials $d_{i}$ are Grothendieck differential operators of order $\leq i$ with respect to a given $A$-module structure on $M$, where $A$ is a graded commutative algebra. One also requires that $(M,d_{0})$ admits a contracting homotopy $K$ that is a differential operator of the same order as $d_{0}$. Under suitable assumptions, the differential $d_{2}$ of the second page of the spectral sequence associated with $(M,d_{0},d_{1})$ is a Batalin-Vilkovisky operator on $E_{2}$, so that when $E_{2}$ is a free rank 1 $A$-module, the graded commutative algebra structure of $A$ is enhanced to a Gerstenhaber algebra structure, and the choice of a $d_{2}$-closed basis element for $E_{2}$ further enhances this to a Batalin-Vilkovisky algebra structure. The prototypical example of this construction is Ševera's description of the Batalin--Vilkovisky algebra structure on the algebra of smooth functions of an odd symplectic manifold. Throughout the whole article we look at Batalin-Vilkovisky algebras through the lenses of Cartan calculus. Indications of a generalization to derived Cartan calculus are briefly discussed in the concluding section.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.24781v1
 
 [arXiv](https://arxiv.org/abs/2609.24781)
 
@@ -1484,9 +1504,11 @@ Hengyu Chen
 
 We establish an optimal leafwise width estimate for compact, spin, foliated bands with positive leafwise scalar curvature and infinite vertical $\widehat{A}$-cowaist. This result addresses a special case of the foliated version of Gromov's band width conjecture and generalizes the scalar and mean curvature comparison theorem for spin bands due to Cecchini and Zeidler. Our approach, which also applies to spin foliations, relies on a local boundary value problem for deformed sub-Dirac operators on the Connes fibration. A key technical ingredient is a Lichnerowicz-type formula in the adiabatic limit for almost isometric foliations, which captures the sharp coefficient $\operatorname{rank} F/(\operatorname{rank} F - 1)$ associated with the integrable subbundle $F$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.24786v1
 
 [arXiv](https://arxiv.org/abs/2609.24786)
 
@@ -1498,9 +1520,13 @@ Zuyi Zhang
 
 In this paper, we find infinitely many examples of nonsmoothable embedded surfaces in a 4-manifold that become smoothable after taking the connected sum with S^2 x S^2. To the author's knowledge, no such examples have previously been discovered. In [CK25], Cha and Kim asked for the minimal number of stabilizations required to turn a nonsmoothable surface into a smoothable one. We provide sufficient conditions ensuring that this number is 1. In addition, we show that there is a nonsmoothable surface in a K3 surface such that, after a single stabilization, its topological isotopy class contains infinitely many smooth representatives that are pairwise not smoothly isotopic.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露使用 ChatGPT 进行探索和语法检查；声明论文完全由作者撰写，并由作者负责正确性。
 
+来源：https://arxiv.org/pdf/2609.24834v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT 进行探索和语法检查；声明论文完全由作者撰写，并由作者负责正确性。
+
+来源：https://arxiv.org/pdf/2609.24834v1
 
 [arXiv](https://arxiv.org/abs/2609.24834)
 
@@ -1512,9 +1538,13 @@ Joseph Geisz、Chris Peterson、Clayton Shonkwiler
 
 We determine the exact probability that the closed hexagonal polygon obtained by cyclically joining six independent points uniformly distributed on the unit sphere is knotted. The only possible nontrivial knot is a trefoil. Almost surely, the convex hull of the six points has one of two simplicial combinatorial types: a combinatorially regular octahedron and a combinatorially non-regular octahedron. We show that the straight-line complete graph on the six vertices of the hull of the combinatorially regular octahedral type admits exactly one unoriented trefoil Hamiltonian cycle. On the other hand, no cycle connecting vertices of the irregular octahedron can produce a trefoil. We then use stereographic projection to transform the probability of the regular hull type to a Sylvester-type problem for the planar beta-prime probability measure $d\mu(x,y)=\frac{dx dy}{\pi\ (1+x^2+y^2)^2}$. Applying Stokes' theorem and the Blaschke-Petkantschin formula, we compute the expected squared $\mu$-content of a random triangle. This yields a regular octahedral probability of $\frac{15}{4\pi^2}$ and a trefoil probability of $\frac{1}{16\pi^2}$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露使用多种 AI 模型作为搜索工具；明确声明未用于写作、编辑或生成论文结果。
 
+来源：https://arxiv.org/pdf/2609.24860v1 · PDF 第 9 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用多种 AI 模型作为搜索工具；明确声明未用于写作、编辑或生成论文结果。
+
+来源：https://arxiv.org/pdf/2609.24860v1
 
 [arXiv](https://arxiv.org/abs/2609.24860)
 
@@ -1526,9 +1556,11 @@ Yueh-Lin Chiang
 
 We study the asymptotic behavior of Bergman kernels for high tensor powers of semipositive line bundles over Hermitian manifolds. At points where the curvature degenerates, the classical asymptotic expansion may fail. In this paper, we establish a full local asymptotic expansion and rapid off-diagonal decay near degenerate points at which the metric admits a local decoupled model. More generally, we make the following two spectral hypotheses: a localized mild spectral gap for the Kodaira Laplacian and a spectral gap for the rescaled local model. Under these assumptions, we prove a localization property and the rapid off-diagonal decay for the Bergman kernel. Furthermore, if the metric has a local quasi-homogeneous structure, we obtain a full local asymptotic expansion in the $C^\infty$-topology. As an application, we study pull-backs of positive line bundles under branched coverings. Near a smooth ramification hypersurface, the resulting asymptotic expansion reflects the branching order. Finally, for certain non-quasi-homogeneous models, we still obtain localization and leading-order asymptotics.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.24869v1
 
 [arXiv](https://arxiv.org/abs/2609.24869)
 
@@ -1540,9 +1572,13 @@ Tristan C. Collins、Genggeng Huang、Freid Tong、Yulun Xu
 
 We prove that a smooth toric Fano fibration admits a complete gradient shrinking Kähler-Ricci soliton.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6-Sol 用于文献综述和挑错式审读，并采纳其对命题 4.4、引理 6.3 和命题 7.2 证明的简化建议。
 
+来源：https://arxiv.org/pdf/2609.24884v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6-Sol 用于文献综述和挑错式审读，并采纳其对命题 4.4、引理 6.3 和命题 7.2 证明的简化建议。
+
+来源：https://arxiv.org/pdf/2609.24884v1
 
 [arXiv](https://arxiv.org/abs/2609.24884)
 
@@ -1554,9 +1590,11 @@ Yongsheng Zhang
 
 We establish an exact composition principle for spherical immersions coupled through coefficient profiles and norm-preserving bilinear maps. Under an explicit mixed-orthogonality condition, the spherical mean-curvature vector splits into orthogonal input and profile contributions. The composition is minimal if and only if every input is minimal and the profile is $W$-minimal for an explicit monomial weight. Using Hsiang--Lawson reduction and Kapouleas--McGrath gluing, we construct closed embedded $W$-minimal profiles, including families with unbounded intermediate Betti numbers. For sufficiently large comparable input dimensions, a Gaussian transfer developed in this paper produces interior profiles from closed embedded Gaussian seeds that are nondegenerate modulo rotations.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.24886v1
 
 [arXiv](https://arxiv.org/abs/2609.24886)
 
@@ -1568,9 +1606,13 @@ Marco A. M. Guaraco、Davide Parise
 
 We prove that the cone $C(\Sigma)$ in $\mathbb R^4$ over a suitable minimal Möbius band $\Sigma\subset \mathbb S^3$ is locally mass-minimising with coefficients in $\mathbb Z_2$. This proves a conjecture by Brian White in the context of models of boundary singularities of Plateau's problem in ambient dimension $4$ or higher. The key insight is that the cylindrical slices $C(\Sigma)\cap \{(z,w)\in \mathbb R^2 \times \mathbb R^2 : |w|=r\}$ are minimal surfaces in a flat rank-one translation quotient of $\mathbb R^3$. In fact, they correspond to non-orientable minimising helicoids previously studied by Antonio Ros. We also show that, up to rigid motions, the minimising cones $C(\Sigma)\times \mathbb R^{n-4}\subset \mathbb R^n$ are the only non-planar minimal hypercones with boundary $\mathbb R^{n-2}$ which are smooth away from the boundary that satisfy the minimal cylindrical slice property.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 用于早期文献梳理、作者提出且独立核验的简单计算，以及后期表述和标准定义检查；声明主要思想与结果由作者提出。
 
+来源：https://arxiv.org/pdf/2609.24909v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于早期文献梳理、作者提出且独立核验的简单计算，以及后期表述和标准定义检查；声明主要思想与结果由作者提出。
+
+来源：https://arxiv.org/pdf/2609.24909v1
 
 [arXiv](https://arxiv.org/abs/2609.24909)
 
@@ -1582,9 +1624,13 @@ Saar Bader、Shaked Bader、Uri Bader、Roman Sauer
 
 We study fixed point theorems for actions of lattices of semisimple groups. They are deduced from vanishing results for the group cohomology of $L^p$-representations. We show that for lattices in simple groups of higher rank, the cohomology with $L^p$-coefficients vanishes below the rank whenever there are no invariant vectors. As a corollary of the vanishing for $L^1$-coefficients, we obtain that every action on an acyclic simplicial complex of dimension lower than the rank has a finite orbit. This in particular proves a conjecture by Farb. The $L^p$-vanishing below the rank proves a conjecture by Gromov regarding $L^p$-cohomology of symmetric spaces.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 与 Claude Opus 5 用于校对和寻找文献，并明确声明未用于发展思想、证明或起草正文。
 
+来源：https://arxiv.org/pdf/2609.24951v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 与 Claude Opus 5 用于校对和寻找文献，并明确声明未用于发展思想、证明或起草正文。
+
+来源：https://arxiv.org/pdf/2609.24951v1
 
 [arXiv](https://arxiv.org/abs/2609.24951)
 
@@ -1596,8 +1642,12 @@ Gongping Niu
 
 Let $\mathbf{C}=\partial E\subset\mathbb{R}^{n+1}$ be an area-minimizing hypercone. The cone may have nonisolated singularities. We prove that there is a constant $c_{\mathbf{C}}>0$ such that \[ \frac{\operatorname{Per}(F;B_R)-\operatorname{Per}(E;B_R)}{R^n} \geq c_{\mathbf{C}} \left(\frac{|F\triangle E|}{R^{n+1}}\right)^2 \] for every $R>0$ and every set $F$ of locally finite perimeter with $F\triangle E\Subset B_R$. This extends the unweighted quantitative inequality from regular area-minimizing hypercones to general area-minimizing hypercones. We follow the calibration argument in the author's earlier work on regular cones. The main change is the construction of the vector fields. The pointwise asymptotic estimates for positive Jacobi fields used in the regular case do not directly apply here. We use the minimal foliations constructed by Zhihan Wang on the two sides of the cone. On each leaf, we integrate projection kernels with a positive Jacobi field as the weight. The kernel construction gives the required divergence bound. Wang's weak Harnack inequality and growth estimates give the integral bounds needed to prove linear growth of the vector fields.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-5.6 与 GPT-6.0 参与证明探索、细节、论证检查及英文修改；在人类提出投影场思路后，后续 AI 讨论导向加权积分投影核构造。作者选择问题、文献与策略并负责。
 
+来源：https://arxiv.org/pdf/2609.24958v1 · PDF 第 9–10 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 与 GPT-6.0 参与证明探索、细节、论证检查及英文修改；在人类提出投影场思路后，后续 AI 讨论导向加权积分投影核构造。作者选择问题、文献与策略并负责。
+
+来源：https://arxiv.org/pdf/2609.24958v1
 
 [arXiv](https://arxiv.org/abs/2609.24958)
