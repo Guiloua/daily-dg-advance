@@ -27,8 +27,27 @@
         "contentHash": "d55ffe69f3aea030bf240662f6ab79ca0af56f54adcd2c30d856848f4c1a94ed"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "随机树拟等距分类",
+      "workSummary": "按有限支撑后代分布的支撑类型，分类条件于无限直径的 Galton–Watson 树的大尺度几何。",
+      "techniques": [
+        "随机标记匹配",
+        "收缩势",
+        "拟等距",
+        "Lean"
+      ],
+      "breakthrough": "证明几何类别只依赖支撑而非概率权重，并联系随机 Cantor 边界拟对称性。",
+      "limitations": "结论以几乎必然及生存条件表述；相互拟等距嵌入不等于拟等距同类。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 89,
+      "priorityReason": "证明几何类别只依赖支撑而非概率权重，并联系随机 Cantor 边界拟对称性。"
+    },
+    "analysisBasis": {
+      "abstract": "We classify, up to quasi-isometry, the large-scale geometry of Galton--Watson trees for every finitely supported offspring distribution. Apart from the trivial finite diameter regimes, we condition on infinite diameter. We find that the remaining classes are the \\emph{ray class}, the \\emph{full tree class} (which includes the binary tree), one \\emph{chain class} $(\\mathrm{C}_\\Lambda)$ for every possible branching semigroup $\\Lambda$, and the \\emph{bushy} class. Two independent trees almost surely admit a root-preserving quasi-isometry when their offspring distributions belong to the same class and are almost surely \\textit{not} quasi-isometric when they belong to different classes. Any two survival-conditioned supercritical realisations with finitely supported offspring laws nevertheless a.s.~admit quasi-isometric embeddings in both directions. We prove that the class of a realisation depends only on the support of the offspring distribution, not its specific distribution. For offspring distributions supported on $\\{1,2\\}$, we additionally obtain an explicit exponential tail bound for the probability of non-existence of a root-preserving $D$-quasi-isometry. The classification also implies that the corresponding random Cantor boundaries are almost surely quasisymmetrically equivalent. Conditioned on nonextinction, this applies to strongly separated fractal percolation, even when the underlying self-similar iterated function systems and retention parameters differ. We also classify two families of trees with continuous random branching times. Our proofs use new automorphism-matching theorems for random graph labellings of trees, based on contraction estimates for mismatch potentials. These matching results for Markov labellings on the binary tree may be of independent interest. The quasi-isometry classification, embeddability, and matching theorems are formally verified in Lean.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +77,27 @@
             "contentHash": "d55ffe69f3aea030bf240662f6ab79ca0af56f54adcd2c30d856848f4c1a94ed"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "随机树拟等距分类",
+          "workSummary": "按有限支撑后代分布的支撑类型，分类条件于无限直径的 Galton–Watson 树的大尺度几何。",
+          "techniques": [
+            "随机标记匹配",
+            "收缩势",
+            "拟等距",
+            "Lean"
+          ],
+          "breakthrough": "证明几何类别只依赖支撑而非概率权重，并联系随机 Cantor 边界拟对称性。",
+          "limitations": "结论以几乎必然及生存条件表述；相互拟等距嵌入不等于拟等距同类。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 89,
+          "priorityReason": "证明几何类别只依赖支撑而非概率权重，并联系随机 Cantor 边界拟对称性。"
+        },
+        "analysisBasis": {
+          "abstract": "We classify, up to quasi-isometry, the large-scale geometry of Galton--Watson trees for every finitely supported offspring distribution. Apart from the trivial finite diameter regimes, we condition on infinite diameter. We find that the remaining classes are the \\emph{ray class}, the \\emph{full tree class} (which includes the binary tree), one \\emph{chain class} $(\\mathrm{C}_\\Lambda)$ for every possible branching semigroup $\\Lambda$, and the \\emph{bushy} class. Two independent trees almost surely admit a root-preserving quasi-isometry when their offspring distributions belong to the same class and are almost surely \\textit{not} quasi-isometric when they belong to different classes. Any two survival-conditioned supercritical realisations with finitely supported offspring laws nevertheless a.s.~admit quasi-isometric embeddings in both directions. We prove that the class of a realisation depends only on the support of the offspring distribution, not its specific distribution. For offspring distributions supported on $\\{1,2\\}$, we additionally obtain an explicit exponential tail bound for the probability of non-existence of a root-preserving $D$-quasi-isometry. The classification also implies that the corresponding random Cantor boundaries are almost surely quasisymmetrically equivalent. Conditioned on nonextinction, this applies to strongly separated fractal percolation, even when the underlying self-similar iterated function systems and retention parameters differ. We also classify two families of trees with continuous random branching times. Our proofs use new automorphism-matching theorems for random graph labellings of trees, based on contraction estimates for mismatch potentials. These matching results for Markov labellings on the binary tree may be of independent interest. The quasi-isometry classification, embeddability, and matching theorems are formally verified in Lean.",
+          "version": 1
+        }
       }
     }
   ]

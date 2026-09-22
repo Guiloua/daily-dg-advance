@@ -25,8 +25,26 @@
         "contentHash": "d55ffe69f3aea030bf240662f6ab79ca0af56f54adcd2c30d856848f4c1a94ed"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "凸体覆盖指数界",
+      "workSummary": "作者证明任意 d 维凸体的分数照明数≤2^d，等号恰为平行多面体，并给出 2^d 乘 dlogd 量级的较小同位体覆盖数。",
+      "techniques": [
+        "重叠能量",
+        "覆盖测度",
+        "有限网贪心"
+      ],
+      "breakthrough": "实现 Hadwiger 覆盖猜想的最优指数增长率。",
+      "limitations": "分数照明数 2^d 不等于整数覆盖数已达 2^d；额外多项式因子仍存在。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 96,
+      "priorityReason": "实现 Hadwiger 覆盖猜想的最优指数增长率。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that the fractional illumination number of every convex body in $\\mathbb{R}^d$ is at most $2^d$, with equality exactly for parallelotopes. We also prove that every such body can be covered by at most $2^d(d\\log d+d\\log\\log d+O(d))$ smaller positive homothetic copies as $d\\to\\infty$, establishing the optimal exponential rate in Hadwiger's covering conjecture. The proofs use a covering measure obtained by minimizing an overlap energy and a greedy covering argument on a finite net.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +72,26 @@
             "contentHash": "d55ffe69f3aea030bf240662f6ab79ca0af56f54adcd2c30d856848f4c1a94ed"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "凸体覆盖指数界",
+          "workSummary": "作者证明任意 d 维凸体的分数照明数≤2^d，等号恰为平行多面体，并给出 2^d 乘 dlogd 量级的较小同位体覆盖数。",
+          "techniques": [
+            "重叠能量",
+            "覆盖测度",
+            "有限网贪心"
+          ],
+          "breakthrough": "实现 Hadwiger 覆盖猜想的最优指数增长率。",
+          "limitations": "分数照明数 2^d 不等于整数覆盖数已达 2^d；额外多项式因子仍存在。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 96,
+          "priorityReason": "实现 Hadwiger 覆盖猜想的最优指数增长率。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that the fractional illumination number of every convex body in $\\mathbb{R}^d$ is at most $2^d$, with equality exactly for parallelotopes. We also prove that every such body can be covered by at most $2^d(d\\log d+d\\log\\log d+O(d))$ smaller positive homothetic copies as $d\\to\\infty$, establishing the optimal exponential rate in Hadwiger's covering conjecture. The proofs use a covering measure obtained by minimizing an overlap energy and a greedy covering argument on a finite net.",
+          "version": 1
+        }
       }
     }
   ]

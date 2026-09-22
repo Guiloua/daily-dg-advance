@@ -26,8 +26,26 @@
         "contentHash": "0a374d47e8acad57d5b0a01208a817337ba6fb19501d14568767757e56b84215"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "随机结精确概率",
+      "workSummary": "计算六个独立均匀球面点按循环连接所得六边形成为三叶结的概率，结果为 1/(16π²)。",
+      "techniques": [
+        "凸包组合型",
+        "立体投影",
+        "Blaschke–Petkantschin"
+      ],
+      "breakthrough": "通过八面体凸包类型及随机三角形测度积分得到精确值。",
+      "limitations": "针对单位球面独立均匀六点模型，不适用于一般随机多边形。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 79,
+      "priorityReason": "通过八面体凸包类型及随机三角形测度积分得到精确值。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the exact probability that the closed hexagonal polygon obtained by cyclically joining six independent points uniformly distributed on the unit sphere is knotted. The only possible nontrivial knot is a trefoil. Almost surely, the convex hull of the six points has one of two simplicial combinatorial types: a combinatorially regular octahedron and a combinatorially non-regular octahedron. We show that the straight-line complete graph on the six vertices of the hull of the combinatorially regular octahedral type admits exactly one unoriented trefoil Hamiltonian cycle. On the other hand, no cycle connecting vertices of the irregular octahedron can produce a trefoil. We then use stereographic projection to transform the probability of the regular hull type to a Sylvester-type problem for the planar beta-prime probability measure $d\\mu(x,y)=\\frac{dx dy}{\\pi\\ (1+x^2+y^2)^2}$. Applying Stokes' theorem and the Blaschke-Petkantschin formula, we compute the expected squared $\\mu$-content of a random triangle. This yields a regular octahedral probability of $\\frac{15}{4\\pi^2}$ and a trefoil probability of $\\frac{1}{16\\pi^2}$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,8 +74,26 @@
             "contentHash": "0a374d47e8acad57d5b0a01208a817337ba6fb19501d14568767757e56b84215"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "随机结精确概率",
+          "workSummary": "计算六个独立均匀球面点按循环连接所得六边形成为三叶结的概率，结果为 1/(16π²)。",
+          "techniques": [
+            "凸包组合型",
+            "立体投影",
+            "Blaschke–Petkantschin"
+          ],
+          "breakthrough": "通过八面体凸包类型及随机三角形测度积分得到精确值。",
+          "limitations": "针对单位球面独立均匀六点模型，不适用于一般随机多边形。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 79,
+          "priorityReason": "通过八面体凸包类型及随机三角形测度积分得到精确值。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the exact probability that the closed hexagonal polygon obtained by cyclically joining six independent points uniformly distributed on the unit sphere is knotted. The only possible nontrivial knot is a trefoil. Almost surely, the convex hull of the six points has one of two simplicial combinatorial types: a combinatorially regular octahedron and a combinatorially non-regular octahedron. We show that the straight-line complete graph on the six vertices of the hull of the combinatorially regular octahedral type admits exactly one unoriented trefoil Hamiltonian cycle. On the other hand, no cycle connecting vertices of the irregular octahedron can produce a trefoil. We then use stereographic projection to transform the probability of the regular hull type to a Sylvester-type problem for the planar beta-prime probability measure $d\\mu(x,y)=\\frac{dx dy}{\\pi\\ (1+x^2+y^2)^2}$. Applying Stokes' theorem and the Blaschke-Petkantschin formula, we compute the expected squared $\\mu$-content of a random triangle. This yields a regular octahedral probability of $\\frac{15}{4\\pi^2}$ and a trefoil probability of $\\frac{1}{16\\pi^2}$.",
+          "version": 1
+        }
       }
     }
   ]

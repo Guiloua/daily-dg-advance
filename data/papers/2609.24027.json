@@ -25,8 +25,28 @@
         "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "伪 Euclidean 曲线流二分",
+      "workSummary": "对可一一凸投影到类空平面的闭类空曲线，证明最大有限时间时要么圆化缩点，要么切方向沿子序列趋向光锥。",
+      "techniques": [
+        "加权归一曲线缩短",
+        "面积双向量",
+        "类空条件"
+      ],
+      "breakthrough": "两种情形均有实例，澄清伪 Euclidean 曲线流可能出现的光状退化。",
+      "limitations": "不能概括为所有初值均圆化；评论明确区分 ChatGPT 发现的单调量与作者提出的例子思想。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "官方评论披露第 9.3 节面积双向量单调性由 ChatGPT 发现；第 9 节及附录 C 的例子思想来自作者，细节多由 ChatGPT 协助发展；其他部分用于检查、写作与排版。",
+      "aiEvidenceSource": "https://arxiv.org/list/math.DG/new · 官方摘要或评论",
+      "priorityScore": 86,
+      "priorityReason": "两种情形均有实例，澄清伪 Euclidean 曲线流可能出现的光状退化。"
+    },
+    "analysisBasis": {
+      "abstract": "The focus of this paper is the curve shortening flow for closed spacelike curves in pseudo-Euclidean spaces, which has very few results so far. Will they produce singularities where certain tangent line tends to light cone? If not, will such a curve shrink to a circular point? To answer these questions, we establish a dichotomy for planar weighted normalized curve shortening flow with uniformly positive and bounded weights. Applying to closed smooth spacelike curves in pseudo-Euclidean spaces that admit a one-to-one convex projection onto a spacelike plane, at their finite maximal time we will see: either the curve shrinks to a point and becomes asymptotically circular, or the tangent directions subsequentially approach the null cone. Both alternatives occur. In the first case, this proves our previous conjecture that a strong spacelike curve in $\\mathbb{R}^{2,q}$ with index 1 will converge to a circular point under the usual CSF. In the latter case, a monotone area-bivector defect is found in $\\mathbb R^{2,1}$, which gives a quantitative obstruction to point collapse. Explicit examples of spacelike curves with lightlike tangent limit are given.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "伪 Euclidean 曲线流二分",
+          "workSummary": "对可一一凸投影到类空平面的闭类空曲线，证明最大有限时间时要么圆化缩点，要么切方向沿子序列趋向光锥。",
+          "techniques": [
+            "加权归一曲线缩短",
+            "面积双向量",
+            "类空条件"
+          ],
+          "breakthrough": "两种情形均有实例，澄清伪 Euclidean 曲线流可能出现的光状退化。",
+          "limitations": "不能概括为所有初值均圆化；评论明确区分 ChatGPT 发现的单调量与作者提出的例子思想。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "官方评论披露第 9.3 节面积双向量单调性由 ChatGPT 发现；第 9 节及附录 C 的例子思想来自作者，细节多由 ChatGPT 协助发展；其他部分用于检查、写作与排版。",
+          "aiEvidenceSource": "https://arxiv.org/list/math.DG/new · 官方摘要或评论",
+          "priorityScore": 86,
+          "priorityReason": "两种情形均有实例，澄清伪 Euclidean 曲线流可能出现的光状退化。"
+        },
+        "analysisBasis": {
+          "abstract": "The focus of this paper is the curve shortening flow for closed spacelike curves in pseudo-Euclidean spaces, which has very few results so far. Will they produce singularities where certain tangent line tends to light cone? If not, will such a curve shrink to a circular point? To answer these questions, we establish a dichotomy for planar weighted normalized curve shortening flow with uniformly positive and bounded weights. Applying to closed smooth spacelike curves in pseudo-Euclidean spaces that admit a one-to-one convex projection onto a spacelike plane, at their finite maximal time we will see: either the curve shrinks to a point and becomes asymptotically circular, or the tangent directions subsequentially approach the null cone. Both alternatives occur. In the first case, this proves our previous conjecture that a strong spacelike curve in $\\mathbb{R}^{2,q}$ with index 1 will converge to a circular point under the usual CSF. In the latter case, a monotone area-bivector defect is found in $\\mathbb R^{2,1}$, which gives a quantitative obstruction to point collapse. Explicit examples of spacelike curves with lightlike tangent limit are given.",
+          "version": 1
+        }
       }
     }
   ]
