@@ -24,8 +24,26 @@
         "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "带边界梯度估计",
+      "workSummary": "对紧边界完备流形上的正 p-调和函数，在 Ricci 和边界平均曲率下界、Dirichlet 条件及外法导数符号条件下建立 Yau 型估计。",
+      "techniques": [
+        "径向屏障",
+        "内禀最大值原理",
+        "p-Laplace"
+      ],
+      "breakthrough": "绕过线性截断法在 p≠2 时无法控制方向 Hessian 的障碍。",
+      "limitations": "Liouville 推论仍依赖非负曲率及边界条件，不适用于任意正 p-调和函数。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 81,
+      "priorityReason": "绕过线性截断法在 p≠2 时无法控制方向 Hessian 的障碍。"
+    },
+    "analysisBasis": {
+      "abstract": "A Yau-type gradient estimate is proved for positive $p$-harmonic functions on complete Riemannian manifolds with compact boundary, under a Ricci lower bound on the Riemannian manifold and a mean curvature lower bound on the boundary, assuming the Dirichlet condition and a sign condition on the outward normal derivative. The result extends the estimate for harmonic functions by Kunikawa and Sakurai to the full range of $p$-Laplace operators and yields a Liouville theorem when the curvature hypotheses are nonnegative. The cutoff method of the linear theory does not extend when the exponent differs from two, since it requires a directional Hessian of the distance to the boundary that Laplacian comparison cannot control. That cutoff is replaced here by a radial barrier at the boundary and an intrinsic maximum principle in the interior.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,8 +70,26 @@
             "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "带边界梯度估计",
+          "workSummary": "对紧边界完备流形上的正 p-调和函数，在 Ricci 和边界平均曲率下界、Dirichlet 条件及外法导数符号条件下建立 Yau 型估计。",
+          "techniques": [
+            "径向屏障",
+            "内禀最大值原理",
+            "p-Laplace"
+          ],
+          "breakthrough": "绕过线性截断法在 p≠2 时无法控制方向 Hessian 的障碍。",
+          "limitations": "Liouville 推论仍依赖非负曲率及边界条件，不适用于任意正 p-调和函数。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 81,
+          "priorityReason": "绕过线性截断法在 p≠2 时无法控制方向 Hessian 的障碍。"
+        },
+        "analysisBasis": {
+          "abstract": "A Yau-type gradient estimate is proved for positive $p$-harmonic functions on complete Riemannian manifolds with compact boundary, under a Ricci lower bound on the Riemannian manifold and a mean curvature lower bound on the boundary, assuming the Dirichlet condition and a sign condition on the outward normal derivative. The result extends the estimate for harmonic functions by Kunikawa and Sakurai to the full range of $p$-Laplace operators and yields a Liouville theorem when the curvature hypotheses are nonnegative. The cutoff method of the linear theory does not extend when the exponent differs from two, since it requires a directional Hessian of the distance to the boundary that Laplacian comparison cannot control. That cutoff is replaced here by a radial barrier at the boundary and an intrinsic maximum principle in the interior.",
+          "version": 1
+        }
       }
     }
   ]

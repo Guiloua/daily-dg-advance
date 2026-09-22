@@ -25,8 +25,27 @@
         "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "应用几何模型",
+      "workSummary": "将仅做多头的投资组合置于概率单纯形上，以协方差与集中风险定义 Riemann 度量，用测地线描述再平衡路径。",
+      "techniques": [
+        "概率单纯形",
+        "风险度量",
+        "测地线数值实验"
+      ],
+      "breakthrough": "区分常度量直线路径与位置依赖风险下的弯曲最短路径。",
+      "limitations": "节约结论依赖所选风险模型和实验，不是实际收益或风险保障。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 44,
+      "priorityReason": "区分常度量直线路径与位置依赖风险下的弯曲最短路径。",
+      "lowPriorityReason": "与本刊核心几何问题的联系较间接，或结果限于特定模型。"
+    },
+    "analysisBasis": {
+      "abstract": "We develop a differential-geometric framework for risk-optimal portfolio reallocation. A long-only portfolio is represented as a point of the probability simplex, endowed with a positive-definite Riemannian metric combining market covariance risk with position-dependent concentration risk. The cumulative risk of a rebalancing trajectory is identified with its Riemannian length, so the least-risk transition between a current allocation and a Markowitz target is a geodesic. We compare this route with direct linear rebalancing and projected gradient ascent. When only market covariance risk is priced, the metric is constant and flat, and the geodesic is exactly the straight-line path. Once position-dependent risk is introduced, the geometry becomes curved and the geodesic weakly dominates competing paths with the same endpoints. A Fisher-Rao concentration term produces modest but systematic savings, while an endogenous crowding metric creates non-convex risk ridges that geodesics can bypass through temporary diversification. Numerical experiments, Monte Carlo transitions, and regression analysis show that the largest gains occur when the direct path crosses strongly crowded regions. The framework provides a general geometric formulation of transition management and can accommodate richer risk metrics and transaction-cost structures.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +73,27 @@
             "contentHash": "4f5da3f148b293e7bde05eefeeec12b26ccea8929a2f2e4e73529dc082e1f841"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "应用几何模型",
+          "workSummary": "将仅做多头的投资组合置于概率单纯形上，以协方差与集中风险定义 Riemann 度量，用测地线描述再平衡路径。",
+          "techniques": [
+            "概率单纯形",
+            "风险度量",
+            "测地线数值实验"
+          ],
+          "breakthrough": "区分常度量直线路径与位置依赖风险下的弯曲最短路径。",
+          "limitations": "节约结论依赖所选风险模型和实验，不是实际收益或风险保障。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 44,
+          "priorityReason": "区分常度量直线路径与位置依赖风险下的弯曲最短路径。",
+          "lowPriorityReason": "与本刊核心几何问题的联系较间接，或结果限于特定模型。"
+        },
+        "analysisBasis": {
+          "abstract": "We develop a differential-geometric framework for risk-optimal portfolio reallocation. A long-only portfolio is represented as a point of the probability simplex, endowed with a positive-definite Riemannian metric combining market covariance risk with position-dependent concentration risk. The cumulative risk of a rebalancing trajectory is identified with its Riemannian length, so the least-risk transition between a current allocation and a Markowitz target is a geodesic. We compare this route with direct linear rebalancing and projected gradient ascent. When only market covariance risk is priced, the metric is constant and flat, and the geodesic is exactly the straight-line path. Once position-dependent risk is introduced, the geometry becomes curved and the geodesic weakly dominates competing paths with the same endpoints. A Fisher-Rao concentration term produces modest but systematic savings, while an endogenous crowding metric creates non-convex risk ridges that geodesics can bypass through temporary diversification. Numerical experiments, Monte Carlo transitions, and regression analysis show that the largest gains occur when the direct path crosses strongly crowded regions. The framework provides a general geometric formulation of transition management and can accommodate richer risk metrics and transaction-cost structures.",
+          "version": 1
+        }
       }
     }
   ]
