@@ -104,6 +104,15 @@ try {
   assert.match(html, /全文已检索 1\/6/);
   assert.match(html, /待完成核查 5 篇/);
   assert.match(html, /辅助写作与排版：1 篇/);
+  const writingList =
+    html.match(/<details data-ai-usage="writing">([\s\S]*?)<\/details>/)?.[1] ??
+    '';
+  assert.match(writingList, /<summary>辅助写作与排版：1 篇<\/summary>/);
+  assert.match(writingList, /href="\/daily-dg-advance\/papers\/2609.00002\/"/);
+  assert.equal((writingList.match(/<li>/g) ?? []).length, 1);
+  assert.doesNotMatch(writingList, /papers\/2609.01565/);
+  assert.doesNotMatch(html, /<details data-ai-usage="[^"]+" open/);
+
   assert.match(html, /资料收集与文献检索：1 篇/);
   assert.match(html, /核心想法与研究路线：0 篇/);
   assert.match(html, /仅适用于严格正曲率/);

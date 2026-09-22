@@ -1,4 +1,5 @@
-import { aiUsageLines, aiUsageSummary } from '../lib/ai-usage';
+import { arxivSlug } from '../lib/static-mirror';
+import { aiUsageGroups, aiUsageSummary } from '../lib/ai-usage';
 // Shared by legacy and progressive snapshots: the data format must not change the reading layout.
 import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
@@ -23,6 +24,7 @@ export function pathUrl(basePath: string, value = ''): string {
 export function renderOverview(
   overview: DailyOverview,
   usage = aiUsageSummary([]),
+  basePath = '',
 ): string {
   const breakthroughs = overview.breakthroughPoints.length
     ? overview.breakthroughPoints
@@ -36,9 +38,14 @@ export function renderOverview(
     <div><p class="eyebrow">Daily synthesis</p><h2>当日总览</h2></div>
     <div class="overview-row"><h3>主要方向与技术进展</h3><div>${overview.mainProgress.map((item) => `<p>${renderMathText(item)}</p>`).join('')}</div></div>
     <div class="overview-row"><h3>可能的突破点</h3><ul>${breakthroughs}</ul></div>
-    <div class="overview-row"><h3>AI 技术声明</h3><ul>${aiUsageLines(usage)
-      .map((line) => `<li>${escapeHtml(line)}</li>`)
-      .join('')}</ul></div>
+    <div class="overview-row"><h3>AI 技术声明</h3><div class="ai-usage"><p>按稿件计数，一篇可计入多项。</p>${aiUsageGroups(
+      usage,
+    )
+      .map(
+        (group) =>
+          `<details data-ai-usage="${group.key}"><summary>${escapeHtml(group.label)}：${group.count} 篇</summary>${group.papers.length ? `<ul>${group.papers.map((paper) => `<li><a href="${pathUrl(basePath, `papers/${arxivSlug(paper.arxivId)}/`)}">${renderMathText(paper.title)}</a></li>`).join('')}</ul>` : '<p>暂无符合此项的论文。</p>'}</details>`,
+      )
+      .join('')}</div></div>
   </section>`;
 }
 

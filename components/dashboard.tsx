@@ -1,6 +1,7 @@
 'use client';
 
-import { aiUsageLines, aiUsageSummary } from '@/lib/ai-usage';
+import { aiUsageSummary } from '@/lib/ai-usage';
+import { AiUsageBreakdown } from './ai-usage-breakdown';
 import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowUpRight,
@@ -308,20 +309,15 @@ export function Dashboard({
                   <h3 className="text-xs font-semibold text-[var(--ochre)]">
                     AI 技术声明
                   </h3>
-                  <ul className="space-y-2 text-sm leading-6 text-muted-foreground">
-                    {aiUsageLines(
-                      aiUsageSummary(
-                        data.reports.map((report) => ({
-                          arxivId: report.arxivId,
-                          analysis: report,
-                        })),
-                      ),
-                    ).map((item) => (
-                      <li key={item} className="border-l-2 border-border pl-3">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  <AiUsageBreakdown
+                    summary={aiUsageSummary(
+                      data.reports.map((report) => ({
+                        arxivId: report.arxivId,
+                        title: report.title,
+                        analysis: report,
+                      })),
+                    )}
+                  />
                 </div>
               </div>
             </section>

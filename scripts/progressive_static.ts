@@ -420,7 +420,7 @@ function metadataStatus(feed: ProgressiveFeed) {
     : '';
 }
 
-function dailyOverview(feed: ProgressiveFeed) {
+function dailyOverview(feed: ProgressiveFeed, base: string) {
   const evidence = feed.entries.flatMap((e) =>
     e.analysis
       ? [
@@ -440,7 +440,7 @@ function dailyOverview(feed: ProgressiveFeed) {
   overview.mainProgress.unshift(
     `以下总览仅基于 ${evidence.length} 篇已解读论文；待解读论文不参与总结与排序判断。`,
   );
-  return renderOverview(overview, aiUsageSummary(feed.entries));
+  return renderOverview(overview, aiUsageSummary(feed.entries), base);
 }
 export async function buildProgressivePages(args: {
   content: string;
@@ -502,7 +502,7 @@ export async function buildProgressivePages(args: {
     </form>`;
     const body = `<div class="page-head"><p class="eyebrow">${feed.date}</p><h1>今日值得读什么</h1><p>${coverageLabel(feed)}</p><p>${disclosureSummary(feed)}</p><p>更新时间：${formatUpdateTime(feed.lastUpdated)}</p></div>
       ${metadataStatus(feed)}
-      ${dailyOverview(feed)}
+      ${dailyOverview(feed, base)}
       <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${controls}<div data-report-list>${groupedCards(feed, base)}</div></section>
       <p class="markdown-links"><a href="${base}/daily/${feed.date}.md">查看原始 Markdown</a> · <a href="${base}/daily/${feed.date}.md" download>下载 Markdown</a></p>
       <section class="trend" data-trend><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。仅显示清单完整的周。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>`;

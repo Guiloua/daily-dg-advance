@@ -1,4 +1,5 @@
-import { aiUsageLines, aiUsageSummary } from '@/lib/ai-usage';
+import { aiUsageSummary } from '@/lib/ai-usage';
+import { AiUsageBreakdown } from './ai-usage-breakdown';
 import { conciseLimitations } from '@/lib/reading-presentation';
 import { MathText } from './math-text';
 import {
@@ -182,11 +183,7 @@ export function PublicationOverview({ feed }: { feed: ProgressiveFeed }) {
       </ul>
       <div className="mt-5 border-t border-border pt-4">
         <h3 className="mb-2 text-sm font-semibold">AI 技术声明</h3>
-        <ul className="space-y-1 text-sm">
-          {aiUsageLines(aiUsageSummary(feed.entries)).map((line) => (
-            <li key={line}>{line}</li>
-          ))}
-        </ul>
+        <AiUsageBreakdown summary={aiUsageSummary(feed.entries)} />
       </div>
     </section>
   );

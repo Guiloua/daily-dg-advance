@@ -21,6 +21,8 @@ export const AI_USAGE_LABELS: Record<AiUsage, string> = {
 export function aiUsageSummary(
   entries: readonly {
     arxivId: string;
+    metadata?: { title?: string };
+    title?: string;
     analysis?: { aiStatus: string; aiUsage?: AiUsage[] } | null;
   }[],
 ) {
@@ -31,20 +33,45 @@ export function aiUsageSummary(
         .map((e) => [e.arxivId, e]),
     ).values(),
   ];
+  const paper = (e: (typeof disclosed)[number]) => ({
+    arxivId: e.arxivId,
+    title: e.metadata?.title ?? e.title ?? e.arxivId,
+  });
   const categories = AI_USAGE.map((key) => ({
     key,
     label: AI_USAGE_LABELS[key],
     count: disclosed.filter((e) => e.analysis?.aiUsage?.includes(key)).length,
+    papers: disclosed
+      .filter((e) => e.analysis?.aiUsage?.includes(key))
+      .map(paper),
   }));
   const unspecified = disclosed.filter(
     (e) => !e.analysis?.aiUsage?.length,
   ).length;
-  return { total: disclosed.length, categories, unspecified };
+  return {
+    total: disclosed.length,
+    categories,
+    unspecified,
+    papers: disclosed.map(paper),
+    unspecifiedPapers: disclosed
+      .filter((e) => !e.analysis?.aiUsage?.length)
+      .map(paper),
+  };
 }
-export function aiUsageLines(summary: ReturnType<typeof aiUsageSummary>) {
+export function aiUsageGroups(summary: ReturnType<typeof aiUsageSummary>) {
   return [
-    `明确披露 AI 使用 ${summary.total} 篇；按稿件计数，一篇可计入多项。`,
-    ...summary.categories.map((c) => `${c.label}：${c.count} 篇`),
-    `用途未细分或待归类：${summary.unspecified} 篇`,
+    {
+      key: 'all',
+      label: '明确披露 AI 使用',
+      count: summary.total,
+      papers: summary.papers,
+    },
+    ...summary.categories,
+    {
+      key: 'unspecified',
+      label: '用途未细分或待归类',
+      count: summary.unspecified,
+      papers: summary.unspecifiedPapers,
+    },
   ];
 }
