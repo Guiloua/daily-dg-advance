@@ -1,3 +1,4 @@
+import { AI_USAGE } from './ai-usage';
 import { z } from 'zod';
 import { TOPICS, type PaperReport } from './types';
 
@@ -63,11 +64,17 @@ export const analysisSchema = z
     aiEvidence: z.string().max(3000).nullish(),
     aiEvidenceSource: z.string().max(500).nullish(),
     aiReview: aiReviewSchema.optional(),
+    aiUsage: z.array(z.enum(AI_USAGE)).max(AI_USAGE.length).optional(),
     priorityScore: z.number().int().min(0).max(100),
     priorityReason: z.string().min(1).max(3000),
     lowPriorityReason: z.string().max(3000).nullish(),
   })
   .superRefine((v, c) => {
+    if (v.aiUsage?.length && v.aiStatus !== 'explicit')
+      c.addIssue({
+        code: 'custom',
+        message: 'AI usage requires explicit disclosure',
+      });
     if (v.priorityScore < 50 && !v.lowPriorityReason)
       c.addIssue({ code: 'custom', message: 'Low priority requires a reason' });
     if (v.aiStatus === 'explicit' && (!v.aiEvidence || !v.aiEvidenceSource))
@@ -437,6 +444,16 @@ export function mergePublication(
           analysis.aiEvidence = old.analysis.aiEvidence;
           analysis.aiEvidenceSource = old.analysis.aiEvidenceSource;
         }
+        // Retain classifications only when the same disclosure evidence is retained.
+        const retainedUsage =
+          analysis.aiEvidence === old.analysis?.aiEvidence &&
+          analysis.aiReview?.contentHash === old.analysis?.aiReview?.contentHash
+            ? old.analysis?.aiUsage
+            : undefined;
+        analysis.aiUsage =
+          patch.analysis.aiStatus === 'explicit'
+            ? (patch.analysis.aiUsage ?? retainedUsage)
+            : retainedUsage;
         old.analysis = analysis;
         old.analysisBasis = patch.analysisBasis;
       }

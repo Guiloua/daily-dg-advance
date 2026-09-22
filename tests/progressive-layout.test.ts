@@ -45,11 +45,14 @@ try {
     delete e.metadata.submittedAt;
     delete e.metadata.updatedAt;
   }
+  feed.entries[0].analysis!.limitations =
+    '已读 PDF 第 1–4 页，尚未核验正文证明；仅适用于严格正曲率。 AI 披露以独立核查记录为准。';
   const pending = feed.entries.at(-1)!;
   delete pending.metadata.version;
   pending.analysis = null;
   pending.analysisBasis = null;
   const disclosed = feed.entries.find((e) => e.arxivId === '2609.00002')!;
+  disclosed.analysis!.aiUsage = ['writing', 'literature'];
   disclosed.analysis!.aiReview = {
     status: 'full_text_searched',
     checkedAt: currentTime(),
@@ -92,7 +95,7 @@ try {
   assert.doesNotMatch(html, /完整收录/);
   assert.match(html, /提交时间（6 篇）/);
   assert.match(html, /版本（1 篇）/);
-  for (const heading of ['主要方向与技术进展', '可能的突破点', '需谨慎处'])
+  for (const heading of ['主要方向与技术进展', '可能的突破点', 'AI 技术声明'])
     assert.ok(html.includes(heading));
   assert.match(html, /5 篇已解读论文/);
   assert.match(html, /摘要级分析/);
@@ -100,6 +103,14 @@ try {
   assert.match(html, /data-ai-group="explicit"/);
   assert.match(html, /全文已检索 1\/6/);
   assert.match(html, /待完成核查 5 篇/);
+  assert.match(html, /辅助写作与排版：1 篇/);
+  assert.match(html, /资料收集与文献检索：1 篇/);
+  assert.match(html, /核心想法与研究路线：0 篇/);
+  assert.match(html, /仅适用于严格正曲率/);
+  assert.doesNotMatch(
+    html,
+    /已读 PDF 第 1–4 页|AI 披露以独立核查记录为准|<h3>需谨慎处/,
+  );
   assert.match(html, /全部页面检索，核对第 10 页致谢/);
   assert.equal((html.match(/class="topic-group"/g) ?? []).length, 5);
   assert.equal((html.match(/class="paper" data-paper/g) ?? []).length, 6);

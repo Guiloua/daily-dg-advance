@@ -1,3 +1,5 @@
+import { aiUsageSummary } from '../lib/ai-usage';
+import { conciseLimitations } from '../lib/reading-presentation';
 import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -93,7 +95,7 @@ function renderPaperCard(report: PaperReport, basePath: string): string {
     <div><dt>完成的工作</dt><dd>${renderMathText(report.workSummary)}</dd></div>
     <div><dt>技术</dt><dd>${renderMathText(report.techniques.join(' · '))}</dd></div>
     <div><dt>可能的突破</dt><dd>${renderMathText(report.breakthrough)}</dd></div>
-    <div><dt>需谨慎处</dt><dd>${renderMathText(report.limitations)}</dd></div>
+    <div><dt>需谨慎处</dt><dd>${renderMathText(conciseLimitations(report.limitations))}</dd></div>
     <div><dt>排序理由</dt><dd>${renderMathText(report.lowPriorityReason ?? report.priorityReason)}</dd></div>
   </dl>
   <details><summary>英文摘要与分析依据</summary><div class="abstract">${renderMathText(report.abstract)}</div><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p><p>${renderMathText(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${renderMathText(report.revisionSummary)}</p>` : ''}</details>
@@ -150,7 +152,7 @@ function renderDayPage(
   basePath: string,
 ): string {
   const body = `<div class="page-head"><p class="eyebrow">${day.announcementDate}</p><h1>今日值得读什么</h1><p>完整收录 ${day.coverage.publishedCount} / ${day.coverage.expectedCount} · 明确披露 AI 协作 ${day.aiDisclosureCount} 篇</p><p>更新时间：${formatUpdateTime(day.lastUpdated)}</p></div>
-  ${renderOverview(day.overview)}
+  ${renderOverview(day.overview, aiUsageSummary(day.reports.map((report) => ({ arxivId: report.arxivId, analysis: report }))))}
   <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${renderControls(day, manifest)}<div data-report-list>${renderInteractiveReports(day, basePath)}</div></section>
   <section class="trend"><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>
   <p><a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}">查看原始 Markdown</a> · <a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}" download>下载 Markdown</a></p>`;

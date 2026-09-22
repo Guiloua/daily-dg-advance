@@ -1,3 +1,5 @@
+import { aiUsageLines, aiUsageSummary } from '@/lib/ai-usage';
+import { conciseLimitations } from '@/lib/reading-presentation';
 import { MathText } from './math-text';
 import {
   disclosureLabel,
@@ -64,14 +66,16 @@ export function EntryView({
             ['完成的工作', a.workSummary],
             ['主要突破', a.breakthrough],
             ['使用技术', a.techniques.join('；')],
-            ['限制与不确定性', a.limitations],
+            ['需谨慎处', conciseLimitations(a.limitations)],
             ['排序理由', a.lowPriorityReason ?? a.priorityReason],
-          ].map(([label, text]) => (
-            <section key={label}>
-              <h3 className="field-label">{label}</h3>
-              <MathText>{text}</MathText>
-            </section>
-          ))}
+          ]
+            .filter(([, text]) => text)
+            .map(([label, text]) => (
+              <section key={label}>
+                <h3 className="field-label">{label}</h3>
+                <MathText>{text}</MathText>
+              </section>
+            ))}
         </div>
       ) : (
         <p className="my-4 text-sm text-muted-foreground">
@@ -176,6 +180,14 @@ export function PublicationOverview({ feed }: { feed: ProgressiveFeed }) {
           </li>
         ))}
       </ul>
+      <div className="mt-5 border-t border-border pt-4">
+        <h3 className="mb-2 text-sm font-semibold">AI 技术声明</h3>
+        <ul className="space-y-1 text-sm">
+          {aiUsageLines(aiUsageSummary(feed.entries)).map((line) => (
+            <li key={line}>{line}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
