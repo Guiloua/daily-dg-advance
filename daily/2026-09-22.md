@@ -458,9 +458,11 @@ Junbin Li、Tingting Li、Xi-Ping Zhu
 
 We study the instability of the naked singularities arising in the spherically symmetric self-similar collapsing of the Einstein--Euler system under gravitational perturbations. We show that small $C^{1,\alpha}$ perturbations (without any symmetries) of the initial conformal metric lead to trapped surface formation. One key point is that the speed of sound is strictly slower the the speed of light, so the gravitational radiation can become sufficiently concentrated to form a trapped surface before the fluid develops any singularity.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.23357v1
 
 [arXiv](https://arxiv.org/abs/2609.23357)
 
@@ -472,9 +474,13 @@ Jiayu Li、Linlin Sun
 
 Let $N$ be a compact Riemannian manifold whose universal covering supports a convex function. We prove that it admits no quasi-harmonic sphere. No global growth condition is imposed on the convex function.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露主要使用 ChatGPT 5.6 协助发展引理 3.1 证明的第二步，再由作者独立核验完成。
 
+来源：https://arxiv.org/pdf/2609.23359v1 · PDF 第 14 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要使用 ChatGPT 5.6 协助发展引理 3.1 证明的第二步，再由作者独立核验完成。
+
+来源：https://arxiv.org/pdf/2609.23359v1
 
 [arXiv](https://arxiv.org/abs/2609.23359)
 
@@ -486,9 +492,11 @@ Pietro Fré、Mario Trigiante、Antoine Van Proeyen
 
 In this paper we prove in full detail the isomorphism between the solvable group $\mathcal{S}_{2,2+p}$, metric equivalent to the Calabi Vesentini symmetric space $\mathrm{SO(2,2+p)/SO(2)\times SO(2+p)}$, and the solvable group $\mathcal{S}_{\mathrm{L}(-1,p)}$ supporting the Kähler metric of the homogeneous non symmetric special manifold L$(-1,p)$. From an Alekseevskyan point of view the two spaces simply correspond to two different quadratic forms on the same solvable Lie algebra that we present and compare in detail. Furthermore considering the full group of isometries $\mathrm{Iso}_{\mathrm{L}(-1,p)}$ of L$(-1,p)$ we show that $\mathrm{Iso_{L(-1,p)}}\subset \mathrm{SO}(2,2+p)$ is a non-semisimple subgroup of the simple isometry group of Calabi-Vesentini manifolds. Altogether the Special Kähler manifold L$(-1,p)$ can be seen as a coset manifold $\mathrm{Iso_{L(-1,p)}}/\mathrm{H}$ where $\mathrm{H}=\mathrm{U(1)}_L\times \mathrm{SO(p)}$, the generator of $\mathrm{U(1)}_L$ being in $\so(2,2+p)$, yet not in the canonical $\so(2)\oplus\so(2+p)$ subalgebra. The action of $\mathrm{Iso}_{\mathrm{L}(-1,p)}$ on the solvable coordinates of the CV manifold can be constructed directly. This identification provides a valuable tool for Cartan Neural Networks, introducing additional non linear transformations in every map from one layer to the next one of an $r=2$ Neural Network based on the CV Tits Satake universality class; in perspective, this new tool increases expressivity.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中讨论 Cartan 神经网络这一研究主题，未构成作者使用生成式 AI 辅助研究的声明；全篇可提取文本检索未见另行披露。
 
+来源：https://arxiv.org/pdf/2609.23395v1
 
 [arXiv](https://arxiv.org/abs/2609.23395)
 
@@ -500,9 +508,11 @@ Mohammadjavad Habibivostakolaei、Abbas M. Sherif、Yen-Kheng Lim
 
 We introduce a geometric structure -- a conformal Killing--Yano Ricci soliton (CKY--RS) -- that couples conformal Ricci soliton (CRS) geometry to conformal Killing--Yano (CKY) 2--forms. The soliton field of the CRS geometry is given by the divergence of the CKY 2--form. We introduce a conserved CKY--Cotton current and derive a compatibility identity relating the Cotton tensor, the CRS obstruction tensor, and the CKY 2--form. In 4--dimensional Lorentzian signature, we show that, under non-degeneracy and closedness assumptions on the CKY form, a CKY--RS structure forces the conformal representative to be locally Kerr--NUT--(A)dS. For a closed non-degenerate CKY on a Kerr--NUT--(A)dS background, the conformal deformation is necessarily trivial. For Einstein backgrounds of arbitrary dimension and signature, the conformal factor satisfies an eigenvalue equation and an Obata--type Hessian equation. If the background is also compact or a CKY orbit is periodic, the conformal factor is an invariant of the CKY--flow and we obtain simple spectral obstructions to non-trivial CKY--RS structures. From the Hessian equation, we obtain obstruction and classification results for the non-trivial conformal sector, including product/Brinkmann geometries and a Weyl--aligned branch. Finally, we give explicit constructions for static spherically symmetric geometries and BTZ backgrounds, including a CKY--RS realization with a time-dependent conformally flat representative. These results provide a geometric framework for studying CRS with hidden symmetry structure, with potential applications to exact geometries in general relativity.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.23424v1
 
 [arXiv](https://arxiv.org/abs/2609.23424)
 
@@ -514,9 +524,11 @@ Wei Liu、Sheng Rao
 
 Using N. Honda's construction of twistor spaces, bimeromorphic invarince of $\partial\bar\partial$-lemma for threefolds and embedded resolution, we find a smooth compact complex threefold satisfying the $\partial\bar\partial$-lemma that contains a smooth compact surface for which the lemma fails. This disproves heredity in the smallest possible ambient dimension and yields counterexamples to L. Alessandrini's modification question in every complex dimension at least four. We establish a derived blow-up formula for generalized Bott--Chern complexes with coefficients, compatible with the comparison maps to coefficient cohomology. We also obtain a Dolbeault blow-up formula with bounded derived coefficients. For compact complex manifolds, we introduce a relative $\partial\bar\partial$-property, characterize it using the Frölicher spectral sequence and Hodge filtrations, and prove a blow-up criterion. Finally, counterexamples show the limitations of the classical formulae for coherent coefficients and singular ambient spaces, and the failure of the naive Bott--Chern Künneth formula.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.23469v1
 
 [arXiv](https://arxiv.org/abs/2609.23469)
 
@@ -528,9 +540,13 @@ Zejun Hu、Linlin Sun、Jiabin Yin
 
 For connected closed Lagrangian submanifolds of the homogeneous nearly Kähler sphere $\mathbb S^6(1)$, we first establish a new integral inequality. Then, as applications we prove sharp pinching theorems for the scalar curvature $\tau$ and Ricci curvature Ric, respectively: $\tau \ge \tfrac{23}{8}$ implies either $\tau=6$ with it totally geodesic, or $\tau=\tfrac{23}{8}$ with it congruent to the embedded Berger sphere of Dillen--Verstraelen--Vrancken; whereas ${\rm Ric}\geq\frac18$ implies that the submanifold is either totally geodesic, or has constant sectional curvature $K=\tfrac{1}{16}$, or is congruent to the embedded Berger sphere of Dillen-Verstraelen-Vrancken.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 模型协助证明引理 3.3，声明主要思想和最终检查由作者负责。
 
+来源：https://arxiv.org/pdf/2609.23470v1 · PDF 第 18 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 模型协助证明引理 3.3，声明主要思想和最终检查由作者负责。
+
+来源：https://arxiv.org/pdf/2609.23470v1
 
 [arXiv](https://arxiv.org/abs/2609.23470)
 
@@ -542,9 +558,11 @@ Bingqi Liu
 
 A Yau-type gradient estimate is proved for positive $p$-harmonic functions on complete Riemannian manifolds with compact boundary, under a Ricci lower bound on the Riemannian manifold and a mean curvature lower bound on the boundary, assuming the Dirichlet condition and a sign condition on the outward normal derivative. The result extends the estimate for harmonic functions by Kunikawa and Sakurai to the full range of $p$-Laplace operators and yields a Liouville theorem when the curvature hypotheses are nonnegative. The cutoff method of the linear theory does not extend when the exponent differs from two, since it requires a directional Hessian of the distance to the boundary that Laplacian comparison cannot control. That cutoff is replaced here by a radial barrier at the boundary and an intrinsic maximum principle in the interior.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.23471v1
 
 [arXiv](https://arxiv.org/abs/2609.23471)
 
@@ -556,11 +574,13 @@ Jihao Liu、Xiang Ma
 
 We prove that for all real numbers $\kappa,\tau$ with $\kappa>8\tau^2$ and $\tau\neq 0$, the Berger sphere $\mathbb{E}^3(\kappa,\tau)$ contains smooth closed embedded rotational surfaces of genus one with constant mean curvature which are contained in an open hemisphere. This disproves a conjecture of Fernández and Mira. The main result of this paper is obtained by generative AI, particularly GPT-5.6-sol, Fable 5, and the Danus system, and then verified by the authors.
 
-明确披露 AI 协作：官方摘要披露主要结果由 GPT-5.6-sol、Fable 5 和 Danus 等生成式 AI 获得，再由作者核验。
+明确披露 AI 协作：作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。
 
-来源：https://arxiv.org/list/math.DG/new · 官方摘要
+来源：https://arxiv.org/pdf/2609.23484v1 · PDF 第 1、3–4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。
 
+来源：https://arxiv.org/pdf/2609.23484v1
 
 [arXiv](https://arxiv.org/abs/2609.23484)
 
@@ -572,9 +592,11 @@ Lai Junqi、Wei Guoxin
 
 We construct closed embedded ${\lambda}$-hypersurfaces in ${\mathbb{R}^{n+1}}$ of topological type ${S^1\times M}$ for any ${\lambda \ge 0}$, where ${M\subset\mathbb{S}^n}$ is an isoparametric hypersurface with equal principal curvature multiplicities. This extends previous results of Angenent, McGrath, and Riedler (for ${\lambda = 0}$) as well as Cheng-Wei and Ross (for ${\lambda > 0}$), and in particular completes the missing case of Riedler's construction.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.23499v1
 
 [arXiv](https://arxiv.org/abs/2609.23499)
 
@@ -588,7 +610,9 @@ Let $M$ be a complete, non-compact Riemannian manifold. We prove that its Riesz 
 
 AI 披露待完成核查（不能仅凭摘要判断）
 
+核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
 
+来源：https://arxiv.org/pdf/2609.23503v1
 
 [arXiv](https://arxiv.org/abs/2609.23503)
 

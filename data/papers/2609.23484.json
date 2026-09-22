@@ -30,6 +30,11 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-22T05:00:33.549471+00:00",
         "contentHash": "29d384a6e0ada5ff5a4db998f38a0f632d1013f64d74bc5115e7a9cd5904c77e"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.23484v1",
+        "observedAt": "2026-09-22T05:02:42.178621+00:00",
+        "contentHash": "897da31b42ef72e2a0c192423fed5f3a39fc9ea2fac9264c6f162e8c297de329"
       }
     ],
     "analysis": {
@@ -45,8 +50,19 @@
       "limitations": "官方摘要明确披露主要结果由生成式 AI 获得后经作者核验；数学结论仍需正文检查。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
       "analysisDepth": "abstract",
       "aiStatus": "explicit",
-      "aiEvidence": "官方摘要披露主要结果由 GPT-5.6-sol、Fable 5 和 Danus 等生成式 AI 获得，再由作者核验。",
-      "aiEvidenceSource": "https://arxiv.org/list/math.DG/new · 官方摘要",
+      "aiEvidence": "作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.23484v1 · PDF 第 1、3–4 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-22T05:02:42.178621+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.23484v1",
+        "contentHash": "897da31b42ef72e2a0c192423fed5f3a39fc9ea2fac9264c6f162e8c297de329",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "00af63c93c8a992a11302b8482c4dd419537086561b557745ec269b9fa229421"
+      },
       "priorityScore": 90,
       "priorityReason": "给出具有明确参数范围的半球内嵌入环面反例。"
     },
@@ -86,6 +102,11 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-22T05:00:33.549471+00:00",
             "contentHash": "29d384a6e0ada5ff5a4db998f38a0f632d1013f64d74bc5115e7a9cd5904c77e"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.23484v1",
+            "observedAt": "2026-09-22T05:02:42.178621+00:00",
+            "contentHash": "897da31b42ef72e2a0c192423fed5f3a39fc9ea2fac9264c6f162e8c297de329"
           }
         ],
         "analysis": {
@@ -101,8 +122,19 @@
           "limitations": "官方摘要明确披露主要结果由生成式 AI 获得后经作者核验；数学结论仍需正文检查。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。",
           "analysisDepth": "abstract",
           "aiStatus": "explicit",
-          "aiEvidence": "官方摘要披露主要结果由 GPT-5.6-sol、Fable 5 和 Danus 等生成式 AI 获得，再由作者核验。",
-          "aiEvidenceSource": "https://arxiv.org/list/math.DG/new · 官方摘要",
+          "aiEvidence": "作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.23484v1 · PDF 第 1、3–4 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-22T05:02:42.178621+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.23484v1",
+            "contentHash": "897da31b42ef72e2a0c192423fed5f3a39fc9ea2fac9264c6f162e8c297de329",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要结果由 GPT-5.6-sol、Fable 5 与 Danus 系统获得，随后由作者核验和润色；同时提醒可能遗漏相关文献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "00af63c93c8a992a11302b8482c4dd419537086561b557745ec269b9fa229421"
+          },
           "priorityScore": 90,
           "priorityReason": "给出具有明确参数范围的半球内嵌入环面反例。"
         },
