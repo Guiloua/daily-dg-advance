@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-09-22
 
-已收录 96/96 · 解读 96/96 · 资料待补齐。
+已收录 96/96 · 解读 96/96。
 
 ## A Note on Partially Anti-invariant Submanifolds of Kenmotsu Manifolds
 
@@ -62,7 +62,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Marco Golla、Juanita Pinzón-Caicedo
 
-作者给出 Conway 结在光滑结协边群中具有无限阶的独立证明，因而也推出它不是切片结。
+通过 Conway 结的四重分歧覆盖，将无限阶问题化为有理同调协边群中的无限阶；作者先给出二分支链环手术表示，再以 Heegaard Floer 修正项非消失完成检测。
 
 We prove that the Conway knot has infinite order in the concordance group, and in particular that it is not slice. Ours is an alternative, independent proof with respect to those of Piccirillo and of Donatone, Kegel, Lewark, and Truöl.
 
@@ -104,7 +104,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Raphael Tsiamis
 
-为涵盖任意维余维、局部一阶变分有界整 varifold 的一类对象证明 Michael–Simon 不等式。
+以最优输运证明整 varifold 的 Michael–Simon 及等周不等式，核心补充是半凸函数的分部积分控制；余维二常数锐，等号分析利用输运势完整次微分。
 
 We prove a Michael-Simon inequality for a class of varifolds in Euclidean space that includes all integral varifolds with locally bounded first variation of arbitrary dimension and codimension. In codimension $2$, this inequality is sharp and implies the sharp isoperimetric inequality for varifolds, which attains equality precisely for the round disk. Our proof uses the optimal transportation approach of Brendle-Eichmair.
 
@@ -412,7 +412,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Liang Cheng
 
-作者证明 Euler 示性数不超过三的完备可定向正截面曲率 Einstein 四维流形，只能为标准 S⁴ 或 Fubini–Study CP²，并应用于有非平凡 Killing 场的情形。
+作者在 Ric=3g 归一化下，将 Weyl 分量间隙与 Gauss–Bonnet–Chern、示性类公式相结合；关键是沿径向测地线的 Riccati 方程导出的改进体积下界，从而迫使半共形平坦并应用已知分类。
 
 It is conjectured that a complete, orientable Einstein four-manifold with strictly positive sectional curvature must be isometric to either the round four-sphere $S^4$ or the complex projective plane $\mathbb{CP}^2$ with the Fubini--Study metric. In this paper, we confirm this conjecture when the manifold is homeomorphic to $S^4$ or $\mathbb{CP}^2$. More precisely, we show that a complete, orientable Einstein four-manifold $M$ with strictly positive sectional curvature and Euler characteristic $\chi(M) \le 3$ (equivalently, by Freedman's classification theorem, homeomorphic to $S^4$ or $\mathbb{CP}^2$) is isometric to either the round $S^4$ or the Fubini--Study $\mathbb{CP}^2$. As an application, we obtain that a complete, orientable Einstein four-manifold with strictly positive sectional curvature admitting a nontrivial Killing field is isometric to either the round $S^4$ or the Fubini--Study $\mathbb{CP}^2$.
 
