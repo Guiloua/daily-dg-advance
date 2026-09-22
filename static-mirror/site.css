@@ -502,3 +502,26 @@ h4 {
     gap: 3px;
   }
 }
+
+.ai-usage details {
+  margin-top: 10px;
+}
+.ai-usage summary {
+  cursor: pointer;
+}
+.ai-usage summary:hover,
+.ai-usage a:hover {
+  color: var(--wine);
+}
+.ai-usage summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.ai-usage details ul {
+  margin: 12px 0 16px;
+}
+.ai-usage a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
