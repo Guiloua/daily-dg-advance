@@ -169,3 +169,52 @@ assert.equal(
   changedComment.entries[0].analysis?.aiReview?.status,
   'needs_review',
 );
+
+const { aiUsageSummary } = await import('../lib/ai-usage');
+const { conciseLimitations } = await import('../lib/reading-presentation');
+const classified = structuredClone(next);
+classified.entries[0].analysis!.aiUsage = ['writing', 'literature', 'writing'];
+const usage = aiUsageSummary([
+  ...classified.entries,
+  ...classified.entries,
+  { ...negative, arxivId: '2609.99999' },
+]);
+assert.equal(usage.total, 1);
+assert.equal(usage.categories.find((c) => c.key === 'writing')!.count, 1);
+assert.equal(usage.categories.find((c) => c.key === 'ideas')!.count, 0);
+assert.equal(aiUsageSummary(next.entries).unspecified, 1);
+const retained = mergePublication(classified, {
+  ...batch,
+  baseRevision: classified.revision,
+  entries: [
+    {
+      ...batch.entries[0],
+      analysis: {
+        ...batch.entries[0].analysis!,
+        aiEvidence: classified.entries[0].analysis!.aiEvidence,
+      },
+    },
+  ],
+});
+assert.deepEqual(retained.entries[0].analysis!.aiUsage, [
+  'writing',
+  'literature',
+  'writing',
+]);
+assert.equal(
+  analysisSchema.safeParse({ ...negative.analysis, aiUsage: ['ideas'] })
+    .success,
+  false,
+);
+assert.equal(
+  conciseLimitations(
+    '已读 PDF 第 1–4 页主结果，尚未复核关键体积估计；结论保留 χ≤3、可定向和严格正截面曲率假设。 AI 披露以独立核查记录为准。',
+  ),
+  '结论保留 χ≤3、可定向和严格正截面曲率假设',
+);
+assert.equal(
+  conciseLimitations(
+    '不能推广到任意退化接触。 本条依据官方摘要整理，尚未核验正文证明；AI 披露以独立全文核查为准。',
+  ),
+  '不能推广到任意退化接触',
+);

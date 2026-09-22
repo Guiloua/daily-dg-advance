@@ -1,5 +1,6 @@
 'use client';
 
+import { aiUsageLines, aiUsageSummary } from '@/lib/ai-usage';
 import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowUpRight,
@@ -305,10 +306,17 @@ export function Dashboard({
 
                 <div className="grid gap-2 py-5 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-7">
                   <h3 className="text-xs font-semibold text-[var(--ochre)]">
-                    需谨慎处
+                    AI 技术声明
                   </h3>
                   <ul className="space-y-2 text-sm leading-6 text-muted-foreground">
-                    {dailyOverview.cautions.map((item) => (
+                    {aiUsageLines(
+                      aiUsageSummary(
+                        data.reports.map((report) => ({
+                          arxivId: report.arxivId,
+                          analysis: report,
+                        })),
+                      ),
+                    ).map((item) => (
                       <li key={item} className="border-l-2 border-border pl-3">
                         {item}
                       </li>
@@ -571,7 +579,11 @@ export function Dashboard({
             </div>
             {data.dataMode === 'database' || data.dataMode === 'preview' ? (
               <LazyTrend range={range} />
-            ) : <p className="min-h-[320px] text-sm text-muted-foreground">日报载入后按需加载趋势。</p>}
+            ) : (
+              <p className="min-h-[320px] text-sm text-muted-foreground">
+                日报载入后按需加载趋势。
+              </p>
+            )}
           </section>
         }
       </div>

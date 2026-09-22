@@ -1,3 +1,5 @@
+import { aiUsageSummary } from '../lib/ai-usage';
+import { conciseLimitations } from '../lib/reading-presentation';
 import { mkdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
 import { join, dirname, resolve } from 'node:path';
 import {
@@ -335,9 +337,10 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
             ['完成的工作', a.workSummary],
             ['技术', a.techniques.join(' · ')],
             ['可能的突破', a.breakthrough],
-            ['需谨慎处', a.limitations],
+            ['需谨慎处', conciseLimitations(a.limitations)],
             ['排序理由', a.lowPriorityReason ?? a.priorityReason],
           ]
+            .filter(([, value]) => value)
             .map(
               ([k, v]) =>
                 `<div><dt>${k}</dt><dd>${renderMathText(v)}</dd></div>`,
@@ -437,7 +440,7 @@ function dailyOverview(feed: ProgressiveFeed) {
   overview.mainProgress.unshift(
     `以下总览仅基于 ${evidence.length} 篇已解读论文；待解读论文不参与总结与排序判断。`,
   );
-  return renderOverview(overview);
+  return renderOverview(overview, aiUsageSummary(feed.entries));
 }
 export async function buildProgressivePages(args: {
   content: string;

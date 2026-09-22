@@ -70,6 +70,13 @@ class ReviewApplicationTests(unittest.TestCase):
         self.assertEqual(entry['analysis']['priorityScore'], 88)
         self.assertEqual(entry['analysisBasis'], self.feed['entries'][0]['analysisBasis'])
 
+    def test_usage_comes_only_from_reviewed_decision(self):
+        decision = {'contentHash': 'a'*64, 'version': 1, 'status': 'explicit', 'reason': 'Search only; not writing or proofs', 'location': 'p12', 'usage': ['literature']}
+        self.assertEqual(self.candidate(decision)['analysis']['aiUsage'], ['literature'])
+        decision['usage'] = ['guessed']
+        with self.assertRaises(ValueError):
+            self.candidate(decision)
+
     def test_incomplete_extraction_cannot_be_cleared_as_full_search(self):
         self.record['extractionComplete'] = False
         entry = self.candidate({'contentHash': 'a'*64, 'version': 1, 'status': 'no_disclosure_observed', 'reason': 'Mathematical variable'})

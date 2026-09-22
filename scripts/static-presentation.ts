@@ -1,3 +1,4 @@
+import { aiUsageLines, aiUsageSummary } from '../lib/ai-usage';
 // Shared by legacy and progressive snapshots: the data format must not change the reading layout.
 import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
@@ -19,7 +20,10 @@ export function pathUrl(basePath: string, value = ''): string {
   return `${basePath}/${suffix}`.replace(/\/{2,}/g, '/');
 }
 
-export function renderOverview(overview: DailyOverview): string {
+export function renderOverview(
+  overview: DailyOverview,
+  usage = aiUsageSummary([]),
+): string {
   const breakthroughs = overview.breakthroughPoints.length
     ? overview.breakthroughPoints
         .map(
@@ -28,16 +32,13 @@ export function renderOverview(overview: DailyOverview): string {
         )
         .join('')
     : '<li>本期没有足够证据支持单独标注突破点。</li>';
-  const cautions = overview.cautions.length
-    ? overview.cautions
-        .map((item) => `<li>${renderMathText(item)}</li>`)
-        .join('')
-    : '<li>仍建议回查原论文的精确定理、假设和证明细节。</li>';
   return `<section class="overview">
     <div><p class="eyebrow">Daily synthesis</p><h2>当日总览</h2></div>
     <div class="overview-row"><h3>主要方向与技术进展</h3><div>${overview.mainProgress.map((item) => `<p>${renderMathText(item)}</p>`).join('')}</div></div>
     <div class="overview-row"><h3>可能的突破点</h3><ul>${breakthroughs}</ul></div>
-    <div class="overview-row"><h3>需谨慎处</h3><ul>${cautions}</ul></div>
+    <div class="overview-row"><h3>AI 技术声明</h3><ul>${aiUsageLines(usage)
+      .map((line) => `<li>${escapeHtml(line)}</li>`)
+      .join('')}</ul></div>
   </section>`;
 }
 

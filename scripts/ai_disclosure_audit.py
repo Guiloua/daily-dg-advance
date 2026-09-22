@@ -157,6 +157,14 @@ def build_candidate(feed, records, decisions, run_id, scheduled_for):
             if decision.get('visuallyCheckedPages'):
                 note += '另逐页查看文本过短页面的渲染图，确认仅为空白页或章节扉页。'
             if decision['status'] == 'explicit':
+                usage = decision.get('usage')
+                if usage is not None:
+                    allowed = {'writing', 'literature', 'ideas', 'proofs', 'verification', 'computation', 'exploration'}
+                    if not isinstance(usage, list) or any(u not in allowed for u in usage):
+                        raise ValueError('Unknown AI usage category')
+                    analysis['aiUsage'] = sorted(set(usage))
+                elif analysis.get('aiEvidence') != decision['reason']:
+                    analysis.pop('aiUsage', None)
                 analysis.update(aiStatus='explicit', aiEvidence=decision['reason'],
                                 aiEvidenceSource=record['sourceUrl'] + ' · ' + decision['location'])
             elif analysis['aiStatus'] != 'explicit':
