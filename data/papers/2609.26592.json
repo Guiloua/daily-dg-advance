@@ -29,21 +29,46 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-23T02:50:51.905071+00:00",
         "contentHash": "a973f1fea66d574d6a2eb080a494406d59cb4888594b31d5ce0095bd85dc5f27"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.26592v1",
+        "observedAt": "2026-09-23T03:03:48.125140+00:00",
+        "contentHash": "295a2aa0aa25eca70b52fe4f36eb360f2d80cc0782d136324e10dff0c245c7df"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "模二极小流的 L² 曲率控制",
-      "workSummary": "证明任意维数及余维的模二面积极小流具有第二基本形式的内部 L² 先验界，并得到面积受控极小曲面的有限微分同胚类型。",
+      "workSummary": "对 B₈ 中无内部边界、质量不超过 Λ 的 n≥2 维 mod(2) 面积极小流，给出 B₁ 内第二基本形式 L² 范数上界，常数仅依赖维数、余维和质量。二维推论控制奇点数，并在某个 r∈(1,2) 的球内得到有限种正则部分微分同胚类型。",
       "techniques": [
-        "模二积分流",
-        "面积极小性",
-        "内部曲率估计"
+        "环域分解",
+        "跨尺度曲率估计",
+        "Jacobi 场",
+        "Allard 正则性"
       ],
       "breakthrough": "以维数、余维和质量控制曲率，摘要称回答既有问题。",
-      "limitations": "为内部估计；有限拓扑结论针对曲面，不能直接推广到任意维极小流的全局拓扑。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "对象为欧氏空间中的 mod(2) 面积极小流；不是任意整系数流。拓扑有限性是选取半径后的局部正则部分结论，不能扩大为任意闭曲面的全局分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT Sol 5.6 建议关键二维 Jacobi 场论证，促成更高维证明；另用于讨论、校对和补充细节。正文由作者撰写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.26592v1 · PDF 第 24 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-23T03:03:48.125140+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.26592v1",
+        "contentHash": "295a2aa0aa25eca70b52fe4f36eb360f2d80cc0782d136324e10dff0c245c7df",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Sol 5.6 建议关键二维 Jacobi 场论证，促成更高维证明；另用于讨论、校对和补充细节。正文由作者撰写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b29aa3d54fa2476e27a8a05fcff2c56502a131effddd547aae3085f23be8a64a"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 96,
       "priorityReason": "以维数、余维和质量控制曲率，摘要称回答既有问题。"
     },
@@ -82,21 +107,46 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-23T02:50:51.905071+00:00",
             "contentHash": "a973f1fea66d574d6a2eb080a494406d59cb4888594b31d5ce0095bd85dc5f27"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.26592v1",
+            "observedAt": "2026-09-23T03:03:48.125140+00:00",
+            "contentHash": "295a2aa0aa25eca70b52fe4f36eb360f2d80cc0782d136324e10dff0c245c7df"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "模二极小流的 L² 曲率控制",
-          "workSummary": "证明任意维数及余维的模二面积极小流具有第二基本形式的内部 L² 先验界，并得到面积受控极小曲面的有限微分同胚类型。",
+          "workSummary": "对 B₈ 中无内部边界、质量不超过 Λ 的 n≥2 维 mod(2) 面积极小流，给出 B₁ 内第二基本形式 L² 范数上界，常数仅依赖维数、余维和质量。二维推论控制奇点数，并在某个 r∈(1,2) 的球内得到有限种正则部分微分同胚类型。",
           "techniques": [
-            "模二积分流",
-            "面积极小性",
-            "内部曲率估计"
+            "环域分解",
+            "跨尺度曲率估计",
+            "Jacobi 场",
+            "Allard 正则性"
           ],
           "breakthrough": "以维数、余维和质量控制曲率，摘要称回答既有问题。",
-          "limitations": "为内部估计；有限拓扑结论针对曲面，不能直接推广到任意维极小流的全局拓扑。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "对象为欧氏空间中的 mod(2) 面积极小流；不是任意整系数流。拓扑有限性是选取半径后的局部正则部分结论，不能扩大为任意闭曲面的全局分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT Sol 5.6 建议关键二维 Jacobi 场论证，促成更高维证明；另用于讨论、校对和补充细节。正文由作者撰写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.26592v1 · PDF 第 24 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-23T03:03:48.125140+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.26592v1",
+            "contentHash": "295a2aa0aa25eca70b52fe4f36eb360f2d80cc0782d136324e10dff0c245c7df",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Sol 5.6 建议关键二维 Jacobi 场论证，促成更高维证明；另用于讨论、校对和补充细节。正文由作者撰写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b29aa3d54fa2476e27a8a05fcff2c56502a131effddd547aae3085f23be8a64a"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 96,
           "priorityReason": "以维数、余维和质量控制曲率，摘要称回答既有问题。"
         },

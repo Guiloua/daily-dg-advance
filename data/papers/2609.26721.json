@@ -31,21 +31,47 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-23T02:51:03.065153+00:00",
         "contentHash": "67fc4c3de3f75af1b299df40d2a73865844d4755d0ca57a2f9e497ba95b16937"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.26721v1",
+        "observedAt": "2026-09-23T03:05:23.372040+00:00",
+        "contentHash": "7c81a9312805fb8f10048e6f2907dd0c28094877852dfb340ddd4293a2f813db"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "CP² 中 Willmore 型猜想的分界",
-      "workSummary": "证明亏格至少一的定向闭 Lagrangian 曲面 W⁻ 能量不低于 Clifford 环面，同时构造非 Lagrangian 变形使其能量下降。",
+      "workSummary": "在全纯截面曲率为 4 的 CP² 中，证明亏格 g≥1 的定向闭 Lagrangian 曲面满足 W⁻≥8π²/(3√3)，等号恰为 Clifford 环面。通过非 Killing Jacobi 场构造降低 W⁻ 的非 Lagrangian 变形，否定任意环面版本。",
       "techniques": [
-        "Lagrangian 曲面",
-        "Willmore 型能量",
-        "环面变形"
+        "Hopf 丛提升至 S⁵",
+        "Chern–Lashof 不等式",
+        "行列式积分不等式",
+        "非 Killing Jacobi 场"
       ],
       "breakthrough": "确认 Montiel–Urbano 猜想的 Lagrangian 版本，并否定一般版本。",
-      "limitations": "必须区分 Lagrangian 限制与任意环面；不能笼统称所有版本均被证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "必须区分 W⁻ 与通常的共形 Willmore 泛函 W；一般环面版本对 W⁻ 的反例不等于否定 W 的极小化猜想。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露广泛使用 ChatGPT：核验特殊环面族、探索 Lagrangian 情形的证明路线及非 Lagrangian 反例，并用于语言润色；作者主导选择和补缺，最终证明由作者大幅改写重释。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.26721v1 · PDF 第 22 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-23T03:05:23.372040+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.26721v1",
+        "contentHash": "7c81a9312805fb8f10048e6f2907dd0c28094877852dfb340ddd4293a2f813db",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露广泛使用 ChatGPT：核验特殊环面族、探索 Lagrangian 情形的证明路线及非 Lagrangian 反例，并用于语言润色；作者主导选择和补缺，最终证明由作者大幅改写重释。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a50ac7246a7e3f773f7b4018845391489ed37a27e950a4f2fa969dbadfd46c40"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 94,
       "priorityReason": "确认 Montiel–Urbano 猜想的 Lagrangian 版本，并否定一般版本。"
     },
@@ -86,21 +112,47 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-23T02:51:03.065153+00:00",
             "contentHash": "67fc4c3de3f75af1b299df40d2a73865844d4755d0ca57a2f9e497ba95b16937"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.26721v1",
+            "observedAt": "2026-09-23T03:05:23.372040+00:00",
+            "contentHash": "7c81a9312805fb8f10048e6f2907dd0c28094877852dfb340ddd4293a2f813db"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "CP² 中 Willmore 型猜想的分界",
-          "workSummary": "证明亏格至少一的定向闭 Lagrangian 曲面 W⁻ 能量不低于 Clifford 环面，同时构造非 Lagrangian 变形使其能量下降。",
+          "workSummary": "在全纯截面曲率为 4 的 CP² 中，证明亏格 g≥1 的定向闭 Lagrangian 曲面满足 W⁻≥8π²/(3√3)，等号恰为 Clifford 环面。通过非 Killing Jacobi 场构造降低 W⁻ 的非 Lagrangian 变形，否定任意环面版本。",
           "techniques": [
-            "Lagrangian 曲面",
-            "Willmore 型能量",
-            "环面变形"
+            "Hopf 丛提升至 S⁵",
+            "Chern–Lashof 不等式",
+            "行列式积分不等式",
+            "非 Killing Jacobi 场"
           ],
           "breakthrough": "确认 Montiel–Urbano 猜想的 Lagrangian 版本，并否定一般版本。",
-          "limitations": "必须区分 Lagrangian 限制与任意环面；不能笼统称所有版本均被证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "必须区分 W⁻ 与通常的共形 Willmore 泛函 W；一般环面版本对 W⁻ 的反例不等于否定 W 的极小化猜想。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露广泛使用 ChatGPT：核验特殊环面族、探索 Lagrangian 情形的证明路线及非 Lagrangian 反例，并用于语言润色；作者主导选择和补缺，最终证明由作者大幅改写重释。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.26721v1 · PDF 第 22 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-23T03:05:23.372040+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.26721v1",
+            "contentHash": "7c81a9312805fb8f10048e6f2907dd0c28094877852dfb340ddd4293a2f813db",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露广泛使用 ChatGPT：核验特殊环面族、探索 Lagrangian 情形的证明路线及非 Lagrangian 反例，并用于语言润色；作者主导选择和补缺，最终证明由作者大幅改写重释。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a50ac7246a7e3f773f7b4018845391489ed37a27e950a4f2fa969dbadfd46c40"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 94,
           "priorityReason": "确认 Montiel–Urbano 猜想的 Lagrangian 版本，并否定一般版本。"
         },
