@@ -15,17 +15,43 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "17 pages, LEAN 4 verified",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-08-06T21:16:57Z",
+      "updatedAt": "2026-08-06T21:16:57Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-23T02:49:16.941667+00:00",
         "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:40.720004+00:00",
+        "contentHash": "a1fd961ed5f4acdf8249b8921efdbe19080458bca8efbbf9e63aa536f2291b7f"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "凸体截面形状的极限实现",
+      "workSummary": "以平移缩放后的截面形状路径研究支撑点附近的极限尾集，证明任意形状连续统均可精确实现为尾集。",
+      "techniques": [
+        "凸截面",
+        "形状空间",
+        "局部可求长路径",
+        "Lean 形式化"
+      ],
+      "breakthrough": "区分路径实现中的二阶障碍与尾集实现的自由度，并构造近普适边界点。",
+      "limitations": "任意可求长路径并非都可精确实现；Lean 验证声明本身不等于 AI 使用披露。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 80,
+      "priorityReason": "区分路径实现中的二阶障碍与尾集实现的自由度，并构造近普适边界点。"
+    },
+    "analysisBasis": {
+      "abstract": "We study a family of questions in convexity in which \\emph{size does not matter}: one records a convex cross-section only up to translation and scaling, so that the data attached to a convex body $B$ and a direction $\\rho$ is a path in the compact metric space $\\A_{n-1}$ of \\emph{aligned shapes}. The object of interest is the asymptotic behaviour of this path as the cutting hyperplane approaches the last supporting hyperplane, encoded by an invariant $T(B,\\rho)$ that we call the \\emph{tail}. We show that tails are always continua, that polyhedral and smooth support points are ``boring'' (the tail is a point), and that non-boring behaviour forces degenerate contact. We show that cross-section paths are locally rectifiable, that every locally rectifiable path is realisable approximately and a dense class exactly, and that exact realisation fails in general: a second-order obstruction of bounded-turning type produces a rectifiable path that is not a cross-section path. For tails, by contrast, no such restriction survives: every continuum of shapes occurs as a tail, on the nose rather than up to approximation. We construct bodies possessing \\emph{nearly universal} points, at which the renormalised cross-sections approximate every planar (more generally $(n-1)$-dimensional) convex shape arbitrarily well; such points can be made dense in the boundary, with arbitrary prescribed tails at the grafting sites. Every result below has been formally verified in Lean~4. We close with several optimisation questions and a higher-codimension variant.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +69,43 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "17 pages, LEAN 4 verified",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-08-06T21:16:57Z",
+          "updatedAt": "2026-08-06T21:16:57Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-23T02:49:16.941667+00:00",
             "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:40.720004+00:00",
+            "contentHash": "a1fd961ed5f4acdf8249b8921efdbe19080458bca8efbbf9e63aa536f2291b7f"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "凸体截面形状的极限实现",
+          "workSummary": "以平移缩放后的截面形状路径研究支撑点附近的极限尾集，证明任意形状连续统均可精确实现为尾集。",
+          "techniques": [
+            "凸截面",
+            "形状空间",
+            "局部可求长路径",
+            "Lean 形式化"
+          ],
+          "breakthrough": "区分路径实现中的二阶障碍与尾集实现的自由度，并构造近普适边界点。",
+          "limitations": "任意可求长路径并非都可精确实现；Lean 验证声明本身不等于 AI 使用披露。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 80,
+          "priorityReason": "区分路径实现中的二阶障碍与尾集实现的自由度，并构造近普适边界点。"
+        },
+        "analysisBasis": {
+          "abstract": "We study a family of questions in convexity in which \\emph{size does not matter}: one records a convex cross-section only up to translation and scaling, so that the data attached to a convex body $B$ and a direction $\\rho$ is a path in the compact metric space $\\A_{n-1}$ of \\emph{aligned shapes}. The object of interest is the asymptotic behaviour of this path as the cutting hyperplane approaches the last supporting hyperplane, encoded by an invariant $T(B,\\rho)$ that we call the \\emph{tail}. We show that tails are always continua, that polyhedral and smooth support points are ``boring'' (the tail is a point), and that non-boring behaviour forces degenerate contact. We show that cross-section paths are locally rectifiable, that every locally rectifiable path is realisable approximately and a dense class exactly, and that exact realisation fails in general: a second-order obstruction of bounded-turning type produces a rectifiable path that is not a cross-section path. For tails, by contrast, no such restriction survives: every continuum of shapes occurs as a tail, on the nose rather than up to approximation. We construct bodies possessing \\emph{nearly universal} points, at which the renormalised cross-sections approximate every planar (more generally $(n-1)$-dimensional) convex shape arbitrarily well; such points can be made dense in the boundary, with arbitrary prescribed tails at the grafting sites. Every result below has been formally verified in Lean~4. We close with several optimisation questions and a higher-codimension variant.",
+          "version": 1
+        }
       }
     }
   ]

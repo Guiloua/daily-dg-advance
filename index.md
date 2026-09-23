@@ -1,12 +1,12 @@
 # 几何前沿日报 · 2026-09-23
 
-已收录 66/66 · 解读 0/66 · 资料待补齐。
+已收录 66/66 · 解读 66/66。
 
 ## KKT Stresses, Affine Moments, and Separator Flux in the Heilbronn Triangle Problem
 
 Dawid Trela
 
-中文解读待补齐
+为 Heilbronn 最小三角形面积极大化问题建立 KKT 应力理论，约束正应力分支、不可见变形与指定残余构型。
 
 For n points in the unit square, the Heilbronn triangle problem asks for the largest possible minimum triangle area. We develop a variational stress theory for this max-min problem. At every positive-area local optimum, normalized Karush-Kuhn-Tucker multipliers assemble into a skew matrix B satisfying Bz = 2ib, where b is the outward square reaction. This equilibrium has the isotropic affine moment sum_i p_i b_i^T = Delta I_2; the identity also holds for every tight subfamily carrying weights inherited from the same multiplier, with Delta scaled by its multiplier mass. It follows that every positive stress component meets all four sides and that there are at most two such components. To handle nonunique multipliers, we introduce the intersection of the stress kernels over the whole KKT face and a canonical hybrid operator incorporating all tight determinant and boundary derivatives. A strictly convex selector removes every decomposable invisible motion, leaving a rank-one-free residual with a sharp dimension bound; the literal maximal two-dimensional residual is excluded. Two-terminal substresses satisfy an exact interface-flux law, and a five-internal-vertex rank-four block has a Pfaffian cofactor carrier. Finally, an analytic reduction followed by exact symbolic enumeration excludes every one-external completion of a specified one-silent five-cycle residual, for all orientation words. These results isolate the remaining degeneracy but do not solve the problem for arbitrary n.
 
@@ -20,7 +20,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Xiaobin Li
 
-中文解读待补齐
+为有限 orientifold 商构造实形式和相位障碍，并在相位平凡的 Calabi–Yau 曲面情形实现分次上同调代数。
 
 In this paper, we study de Rham realizations for finite orientifold quotients. On the orientation preserving inertia of an almost complex global quotient we construct an anti-linear involution of the Chen-Hu algebra whose fixed subalgebra is a real form of the Chen-Ruan algebra. For genuine orientation reversing fixed sectors we prove that no coordinate invariant single sector fractional age exists. When a Calabi-Yau volume line is preserved, the relative phases define a canonical class $[\mu_{\mathbb R}]\in H^2(\widehat G;\mathbb Z_\epsilon)$. We identify this class with the Bockstein obstruction to a coherent real phase lift and prove that its vanishing is equivalent, after rephasing the volume form, to a phase trivial orientifold action. We then formulate a general Euler-Gysin realization theorem using relative Fredholm bundles and determinant-line sewing. For phase trivial Calabi-Yau surfaces we verify the admissibility conditions directly and obtain a canonically defined associative graded cohomology algebra containing the Chen-Hu even sector and the odd fixed surfaces. For an Eisenstein abelian surface with an order six dihedral action we compute the centralizer invariant algebra explicitly; it is a $16$ dimensional Frobenius algebra whose odd sector multiplication is noncommutative in the shifted grading. We also explain the relation with earlier unoriented orbifold cohomology constructions.
 
@@ -34,7 +34,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Anar Akhmedov、Azer Akhmedov
 
-中文解读待补齐
+利用可控外围同态的非交换环面外部替换，构造同伦四球及与 S²×S² 等同胚的四流形，并计算拼接后的基本群。
 
 We study torus-exterior replacement in four-manifolds, with the construction controlled by the peripheral homomorphism. Using torus exteriors arising from the work of Boyle and Kanenobu-Kazama, with explicitly controlled fundamental groups and peripheral systems, we construct smooth homotopy 4-spheres and manifolds homeomorphic to S^2 x S^2 and \#_3(S^2 x S^2). We also study direct gluings of two torus exteriors. A swap gluing of two one-null exteriors kills both meridians and gives a simply connected manifold with Euler characteristic \(4\) and signature \(0\), while a meridian-preserving gluing of doubly-null exteriors retains the complement groups as an amalgam over the meridian subgroup. Twisted peripheral gluings give cyclic and explicit finite nonabelian fundamental groups. We also consider the full Kanenobu-Kazama \(1\)-handle family and Litherland tori with full-rank peripheral subgroup; the latter have no null primitive boundary slope and lead naturally to amalgamated-product fundamental groups.
 
@@ -48,7 +48,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Geunho Lim
 
-中文解读待补齐
+在允许扩大目标群后，为带忠实表示的 PL 流形证明广泛适用的线性配边估计，并改善 L² ρ 不变量的维数常数。
 
 We prove a PL bordism version of Gromov's linearity conjecture over a broad class of asphericalization groups for manifolds endowed with faithful representations in all dimensions. Since every group embeds into an asphericalization group, this bordism version of the conjecture holds after allowing the target group to be enlarged. Our results apply in both the oriented and unoriented settings. In the PL category, no bounded local geometry is required. As an application, we obtain improved linear bounds for the Cheeger--Gromov $L^2$ $\rho$-invariants of PL $(4k-1)$-manifolds associated with their universal covers, replacing the previous superfactorial growth in dimension by factorial growth. The proofs are based on a quantitative asphericalization method that provides explicit control of the complexity of the resulting bordisms.
 
@@ -62,7 +62,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Sangrok Oh
 
-中文解读待补齐
+重建弱特殊平方复形的乘积子复形与交复形定义，证明其提升、甲板商和拟等距作用的相容性。
 
 We define product subcomplexes and intersection complexes for compact nonpositively curved square complexes and CAT(0) square complexes. Product subcomplexes are defined as equivalence classes of local isometries from products of graphs with embedded coordinate fibers. Using their factorizations, we give a common definition of the intersection complex, extending the constructions in S. Oh's paper "Quasi-isometry invariants of weakly special square complexes" (Topology and its Applications 307 (2022)). Cubical automorphisms induce actions on these complexes. We define morphisms by comparing compatible elevations of core-map labels and their factorizations along face chains. For a compact two-sided weakly special square complex, we prove that its intersection complex is canonically isomorphic to the deck quotient of the intersection complex of its universal cover. Under a simplicity hypothesis, this recovers the image-defined reduced intersection complex in that paper, and product-base groups are the full simplex stabilizers. We also prove that quasi-isometries between universal covers of compact two-sided weakly special square complexes induce isomorphisms of their intersection complexes in this sense, and give finite counterexamples explaining why images alone do not determine the quotient in general.
 
@@ -76,7 +76,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Zhiqi Chen、Shaoxiang Zhang、Yiyi Zhu
 
-中文解读待补齐
+研究指标三的伪黎曼测地轨道幂零流形；导出代数非退化时幂零阶只可能为 1、2 或 4，并构造达到四步的例子。
 
 The geodesic orbit property is useful and interesting in Riemannian geometry. It implies homogeneity and has important classes of Riemannian manifolds as special cases, such as weakly symmetric Riemannian manifolds and naturally reductive Riemannian manifolds. The corresponding results for indefinite metric manifolds are much more delicate than in Riemannian signature, but in the last few years important corresponding structural results were proved for geodesic orbit Lorentz and trans-Lorentz manifolds. %Here we carry out a major step in the structural analysis of geodesic orbit Lorentz nilmanifolds. Here we study pseudo-Riemannian geodesic orbit nilmanifolds of metric index three. Those are the geodesic orbit pseudo-Riemannian manifolds $M = G/H$ of signature $(n-3,3)$ such that a nilpotent analytic subgroup of $G$ is transitive on $M$. Suppose that there is a reductive decomposition $\g = \h \oplus \n$ (vector space direct sum) with $\n$ nilpotent. When the metric is nondegenerate on $[\n,\n]$ we show that $\n$ is abelian, $2$-step or $4$-step nilpotent. In contrast to the Riemannian, Lorentzian, and trans-Lorentz cases, the two-step conclusion therefore fails, but $3$-step nilpotency remains impossible. The $4$-step case is confined to a Lorentzian derived algebra with an orthogonal complement of index two, and its structure forces an invariant totally isotropic two-plane in that complement. An explicit nine-dimensional example of signature $(6,3)$ proves sharpness. When the metric is degenerate on $[\n,\n]$ we prove the existence of an invariant isotropic subspace that centralizes its orthogonal complement, yielding a double-extension reduction to a geodesic orbit metric nilpotent Lie algebra of strictly smaller index. An eight-dimensional example shows that this relative centrality need not imply centrality in the full Lie algebra.
 
@@ -90,7 +90,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Vyacheslav Krushkal
 
-中文解读待补齐
+引入群的 collision rank，证明有限该秩的群是四维拓扑中的好群，并给出超出次指数可和类的秩二例子。
 
 We introduce collision rank and show that groups of finite collision rank are good in the sense of topological $4$-manifold theory. Finitely generated groups of collision rank two are shown to exist outside the class of subexponentially amenable groups. Such examples are given by commutator subgroups of topological full groups of Sturmian systems, and include continuum many pairwise nonisomorphic infinite simple amenable groups.
 
@@ -104,7 +104,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Vestislav Apostolov、Abdellah Lahdili、Kuan-Hui Lee、Frédéric Rochon
 
-中文解读待补齐
+为与 Z-critical 度量及 Bismut Hermitian–Einstein 结构相关的六阶非线性方程建立粘合，得到消解与吹起定理。
 
 We present a gluing construction for a class of 6th order geometric non-linear PDE's on a Kähler manifold or orbifold, arising in the study of Bismut Hermitian Einstein complex $3$-folds, the supersymmetric ${\rm AdS}_3 \times Y_7$ and ${\rm AdS}_2 \times Y_9$ solutions of type IIB and $D=11$ supergravity models in physics, and in Dervan's Z-critical Kähler metrics. As applications, we obtain a desingularization theorem for orbifolds with crepant singularities admitting a solution of the PDE, as well as a blowing-up of points theorem for smooth complex $3$-folds admitting such solutions. These results yield new examples of regular Bismut Hermitian Einstein structures on the smooth manifolds $3(S^2\times S^4)\sharp 4(S^3\times S^3)$, $5(S^2\times S^4)\sharp 6(S^3\times S^3)$ and $S^1\times 9(S^2\times S^3)$, as well as infinite topological types of smooth compact $7$-dimensional manifolds $Y_7$, providing new solutions to the supersymmetric ${\rm AdS}_3 \times Y_7$ type IIB and ${\rm AdS}_2 \times T^2 \times Y^7$ type $D=11$ supergravity models.
 
@@ -118,7 +118,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Giacomo Perri
 
-中文解读待补齐
+证明 Futaki–Hattori–Ornea 不变量在每个带势的紧局部共形 Kähler 流形上恒为零。
 
 We prove that the Futaki invariant introduced by Futaki, Hattori, and Ornea vanishes identically on every compact locally conformally Kähler manifold with potential, thereby answering a question raised by Ornea and Verbitsky.
 
@@ -132,7 +132,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Gian Maria Dall'Ara、Adrian Dumitrescu
 
-中文解读待补齐
+将高维等半径球族中可抽取不交子族的保证体积分数下界从约 3⁻ᵈ 改进至 2.910⁻ᵈ，并给出多项式时间构造算法。
 
 Let $B^d$ denote the $d$-dimensional Euclidean ball of unit radius. What is the largest constant $f(B^d) \in [0,1]$ with the property that every finite collection $\mathcal{C}$ of unit balls in $\mathbb{R}^d$ admits a disjoint sub-collection $\mathcal{S}$ occupying at least a fraction $f(B^d)$ of the volume of $\mathcal{C}$? This problem was first raised by T. Radó in 1928, for axis-parallel squares in the plane; the author was motivated by a classical covering lemma in real analysis due to Vitali. The case of Euclidean balls was first considered by R. Rado in 1949. Until last year the best known estimates on $f(B^d)$ for unit balls where very far apart: \[ (1+\epsilon_d) 3^{-d} \leq f(B^d) \leq 2^{-d}, \] where $0<\epsilon_d=o_{d\rightarrow \infty}(1)$. Recently, the authors of this note observed that an exponential improvement on the upper bound follows from the Kabatiansky--Levenshtein spherical code bound, while the lower bound was improved by a linear factor by C.~Xie and G.~Ge (see arXiv:2608.09744 ). The current best estimates for large $d$ are \[ c \cdot d \cdot 3^{-d} \leq f(B^d) \leq 2.447^{-d}, \] where $c>0$ is an absolute constant. Here we offer the first exponential improvement of the lower bound in almost 80 years, which narrows the gap to: \[ 2.910^{-d} \leq f(B^d) \leq 2.447^{-d}. \] Our method is constructive and yields a polynomial time algorithm for finding a disjoint sub-collection realizing the estimate. Moreover the same technique gives similar exponentially improved lower bounds for all symmetric convex bodies satisfying a uniform convexity assumption, e.g., $\ell^p$-balls for all $p\in (1,\infty)$.
 
@@ -146,7 +146,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Elham Matinpour
 
-中文解读待补齐
+比较漂移 Laplacian 的特征值与特征函数增长过滤，证明离散谱、Agmon 估计，并在径向或不变扇区得到 Hermite/Laguerre 型刚性。
 
 Let $(M^n,g)$ be a complete, connected, noncompact Riemannian manifold, and let $f\ge0$ be a proper $C^2$ weight. We assume polynomial bounds on $f$, $|\nabla f|$, and $\Delta f$ (Assumptions H1-H3), with growth exponent $\alpha>0$. We study the drift Laplacian $L_f=\Delta-\langle\nabla f,\nabla\cdot\rangle$ on $L^2(M,e^{-f}dV)$. We assume that its eigenfunctions have finite polynomial growth orders $\gamma_k$, measured on the level sets of $f^{1/\alpha}$. We also assume that $\gamma_k\to\infty$ in spectral order (Assumption H4). We compare this growth filtration with the filtration by eigenvalue $\lambda_k$. For $\alpha>1$, we study the relation $\lambda_k\asymp\gamma_k^{(2\alpha-2)/\alpha}$, called compatibility. An explicit rotationally symmetric example shows that this relation can fail for the full spectrum, even when $\alpha=2$. We prove discreteness and weighted Agmon estimates for $\alpha>1$. A moment estimate bounds the concentration radius in terms of the growth order and a finite-scale prefactor. A lower localization condition gives one direction of the spectral comparison. For exact warped products with a one-dimensional base, we impose the radial growth condition and a regularity assumption on the radial drift. These give $\alpha=2$ and $\lambda_k\asymp\gamma_k$ in the radial sector. For general $(M,g)$, we assume a transitive isometric symmetry of the level sets instead of a warped-product structure. The invariant-sector growth condition and radial-drift regularity then give $\alpha=2$ and $\lambda_k\asymp\gamma_k\asymp k$. Finally, exact polynomiality of the invariant eigenfunctions implies $\alpha=2$ without the drift regularity assumptions. The reduced equation is then Hermite or generalized Laguerre after normalization. The arguments use neither curvature bounds nor soliton equations.
 
@@ -160,7 +160,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Eder M. Correa
 
-中文解读待补齐
+在有理齐性 Fano 底空间的典范线丛总空间上，将 dHYM 方程降为标量 ODE，给出全局解相位条件及退化为 HYM 的刚性。
 
 In this paper, we study the deformed Hermitian-Yang-Mills (dHYM) equation on the non-compact Calabi-Yau manifold $Z = {\rm{Tot}}({\bf{K}}_{X})$, where $X$ is a rational homogeneous variety. Since $X$ is a Fano variety, $Z$ is a resolution of the singularity at the vertex of the affine cone ${\rm{Aff}}(X)$, provided the cone is built using the anticanonical polarization ${\bf{L}} = {\bf{K}}_{X}^{-1}$. Using the cohomogeneity-one symmetry of the Ricci-flat Kähler metric obtained via the Calabi ansatz on $Z$, we reduce the fully nonlinear PDE underlying the dHYM equation to a scalar, asymptotically autonomous ordinary differential equation (ODE). From this, we determine the exact condition on the topological phase that guarantees global existence of solutions. As an application, we show that every holomorphic line bundle over $Z$ admits a smooth, globally defined Hermitian connection solving the dHYM equation, provided the total phase lies in an explicit open interval determined by the Lie-theoretic data. Also, we prove a rigidity result classifying the exact geometric conditions under which the dHYM solution collapses into a classical Hermitian-Yang-Mills (HYM) connection. The results established generalize previous constructions and provide a substantial new class of examples. Furthermore, the approach presented allows one to study the behavior of the dHYM solutions through ODE methods. Using this approach, we construct the first explicit non-trivial example of a Hermitian-Einstein connection on a line bundle over a non-toric Calabi-Yau manifold which is not dHYM.
 
@@ -174,11 +174,13 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Spencer Backman、Nathaniel Bottman、Daria Poliakova
 
-中文解读待补齐
+给出范畴 n-associahedra 的多胞体实现，其法扇是作者 velocity fan 的修正。
 
 We describe a polytopal realization of categorical $n$-associahedra. The normal fan of this polytopal realization is a modification of the authors' velocity fan and was found by OpenAI's Astra model.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：官方摘要明确披露该多胞体实现的法扇由 OpenAI Astra 模型发现。
+
+来源：https://arxiv.org/abs/2609.25316 · 官方摘要
 
 
 
@@ -188,7 +190,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Ursula Hamenstaedt
 
-中文解读待补齐
+对纤维化于圆周的闭双曲三流形，简证其 Gibbs 平衡态边界测度类与纤维曲面的 Cannon–Thurston 推前测度类互奇异。
 
 We give a short proof of the following version of a recent result of Gadre, Maher, Pfaff and Uyanki: Consider a closed hyperbolic 3-manifold M which fibers over the circle, with fiber a closed surface S. The measure class on the ideal boundary of hyperbolic 3-space defined by any Gibbs equilibrium state on the unit tangent bundle of M is singular with respect to the push-forward by a Cannon-Thurston map of a measure class on the circle defined by a Gibbs equilibrium state on the unit tangent bundle of S.
 
@@ -202,7 +204,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Carolyn Abbott、Phuong Pham
 
-中文解读待补齐
+构造无限型映射类的曲线轨道子序列极限层，并实现相对弧图边界吸引点的任意有限权重。
 
 For every infinite-type surface with an isolated puncture that admits a shift map and every natural number $n$, we study an intrinsically infinite-type mapping class $g_n$ and a simple closed curve whose orbit under $g_n$ splits into $n$ subsequences, each of which converges in the coarse Chabauty topology to a geodesic lamination on the surface. These laminations are cyclically permuted by $g_n$, and their union is a $g_n$--invariant geodesic lamination. We further show the attracting limit point of $g_n$ in the boundary of the relative arc graph has weight $n$. In particular, intrinsically infinite-type loxodromic isometries of the relative arc graph realize every finite weight.
 
@@ -216,7 +218,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Cristiana De Filippis、Giuseppe Mingione
 
-中文解读待补齐
+研究具有可能无界规定 Lorentz 平均曲率的变分解的类光奇点，对应 Born–Infeld 模型中的无界电荷。
 
 Following a program outlined by Bartnik, and also employing nonlinear potential techniques we developed in the last years, we study lightlike singularities of variational solutions to the prescribed Lorentzian mean curvature equation with possibly unbounded (rough) curvature. This corresponds to allowing for unbounded charges in the Born-Infeld model.
 
@@ -230,7 +232,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Manisha Garg
 
-中文解读待补齐
+研究对数重标定的双曲边界，与多项式 Floyd 度量建立双 Lipschitz 对应，并证明其拟等距不变性和维数性质。
 
 We study a logarithmic re-gauging of the visual boundary, arising from the logarithmic metric on the sublinear Morse boundary introduced by Garg-Jana-Qing. For every proper geodesic hyperbolic space $X$, we prove that $d_{\mathrm{log}}(\xi,\eta)\asymp (1+(\xi\mid\eta)_o)^{-\theta}$. As a consequence, under the natural identification of boundaries, $d_{\mathrm{log}}$ is bi-Lipschitz equivalent to the polynomial Floyd boundary metric associated with the radial density $g_\theta(t)=(1+t)^{-1-\theta}$. Every quasi-isometry between proper geodesic hyperbolic spaces induces a bi-Lipschitz map between their logarithmic boundaries with a fixed admissible exponent. For every non-elementary hyperbolic group, the logarithmic boundary is nondoubling and has infinite Hausdorff and Assouad dimensions. Nevertheless, the logarithmic re-gauging preserves Nagata (capacity) dimension and continues to recover the asymptotic dimension of the group. It also detects one-endedness through linear connectedness (bounded turning) and preserves uniform perfectness. Thus the logarithmic and visual metrics are not quasisymmetrically equivalent, although several coarse-geometric features remain visible in the logarithmic boundary.
 
@@ -244,7 +246,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Julian Salazar、Dimitri Kanevsky、Matt Harvey、Pascal Getreuer、Lucas Dixon
 
-中文解读待补齐
+借助 Berkovich 仿射直线把全不连通的 p-adic 参数空间扩展为度量树，构造梯度下降及动量、Adam 型优化。
 
 We present the first method for native, continuous gradient descent for machine learning models with $p$-adic parameters. Existing native optimizers are discrete, mostly combinatorial searches, as the $p$-adic numbers $\mathbb{Q}_p$ are totally disconnected, with standard losses that are flat away from their minima. To enable continuous optimization, we propose working with $\mathbb{Q}_p$ via its Berkovich affine line: a canonical, path-connected expansion of $\mathbb{Q}_p$ that preserves its isometries and uniquely extends its analytic maps. This hull is a metric tree with interpretable points and local derivatives, which we show enables effective optimizers and backpropagation. We formulate gradient descent and show that its approximations efficiently learn linear models with coefficients in $\mathbb{Q}_p$ to do modular arithmetic, an XOR-like task not expressible by linear models in $\mathbb{R}$. We also demonstrate momentum and Adam variants, linear regression, and classification on binary-encoded hierarchies (Quillian semantic networks), addressing open problems posed by Martins (2025). Library at this https URL
 
@@ -258,7 +260,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Paula Burkhardt-Guim
 
-中文解读待补齐
+对一致接近欧氏空间、渐近平坦的 C⁰ 度量，证明 Ricci 流意义下非负标量曲率蕴含 C⁰ 质量非负。
 
 We prove a Positive Mass Theorem for $C^0$-asymptotically flat Riemannian metrics with nonnegative scalar curvature in a weak sense that are sufficiently uniformly close to Euclidean space. More precisely, we show that a $C^0$-asymptotically flat Riemannian metric that is a $C^0$ perturbation of Euclidean space with nonnegative scalar curvature in the sense of Ricci flow has nonnegative mass, where the mass is given by a $C^0$ analog of the classical ADM mass previously introduced by the author.
 
@@ -272,7 +274,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jixiang Fu、Shing-Tung Yau、Dekai Zhang、Ziyi Zhang
 
-中文解读待补齐
+对紧 Kähler 流形上超临界 LYZ 方程，证明数值半稳定下的定量正性及除子有限性，再构造奇性次解和有界弱解。
 
 We study the supercritical LYZ equation on compact Kähler manifolds at the boundary of stability. Under numerical semistability, we prove a quantitative positivity estimate on the modified nef cone. It implies that the destabilizing prime divisors form a finite exceptional family. Assuming the existence of a smooth semisubsolution, we prove that the associated intersection form is negative definite on the span of classes of these divisors. Using this rigidity, we then construct a logarithmic singular subsolution along their union and obtain a bounded Bedford--Taylor solution which is smooth on its complement.
 
@@ -286,7 +288,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Ulises Morales-Fuentes、Cristina Villanueva-Segovia
 
-中文解读待补齐
+证明任何分离平面的连续统的任意平面嵌入都包含一个欧氏矩形的四个顶点。
 
 We prove the following: If $X$ is a plane separating continuum, then every embedding of $X$ into $\mathbb{R}^2$ contains the vertices of a Euclidean rectangle. We arrive to this result by extending a known result by H. Vaughan for Jordan curves to a wider class of topological objects via shape theory and Steenrod homology.
 
@@ -300,7 +302,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Sining Wei、Yong Wang
 
-中文解读待补齐
+计算随时间变化度量上的加权留数泛函，分离速度、lapse 和边界项，并处理非恒定标量权重的混合梯度项。
 
 Let $g_t$ be a smooth family of Riemannian metrics on an oriented manifold of even dimension $n\geq4$, and let $D_t=d+\delta_{g_t}+\Psi_t$ on the fixed exterior bundle, with $\Psi_t$ self-adjoint. We evaluate a scalar-weighted residue functional obtained from the operator expression in Hawkins' Hamiltonian action using the coefficient derivative $\partial_tD_t$. The velocity contribution depends only on $\partial_tg_t$. A direct symbol calculation reduces the lapse correction to a divergence and a Dirichlet term; for a nonconstant test function, integration by parts retains a mixed gradient term. For compact manifolds with a warped collar, we specify compatible factorizations of the weighted KKW term and of the commutator correction. Their boundary residues are computed explicitly. The collar-derivative and perturbation contributions cancel in the weighted KKW factorization, and the remaining boundary terms involve normal derivatives of the scalar weights. The closed formula is recovered when the boundary is empty.
 
@@ -314,7 +316,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Thiago de Paiva、Yi Liu
 
-中文解读待补齐
+从任一广义 T-link 表示出发，给出保持链环类型的整数参数变换，产生任意多独立参数的无限多个不同表示。
 
 Generalised $T$-links provide a simple description of all links in $S^3$ as closures of products of standard twisting blocks, parametrised by finite sequences of integers. We prove that every link admits infinitely many pairwise distinct generalised $T$-link presentations. Starting from any such presentation, we give explicit parameter transformations that preserve the represented link and generate families of pairwise distinct presentations depending on arbitrarily many independent integer parameters.
 
@@ -328,7 +330,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Xiangsen Qin、Yuanhong Tian
 
-中文解读待补齐
+在 Fujiki C 类紧 Hermitian 流形中证明常非正 Chern 全纯截面曲率强制 Kähler，并处理 balanced 三维的正常曲率情形。
 
 We prove two rigidity theorems for compact Hermitian manifolds with constant Chern holomorphic sectional curvature. On a manifold in Fujiki's class $\mathcal C$, every Hermitian metric of constant nonpositive Chern holomorphic sectional curvature is Kähler, without a balanced or pluriclosed assumption. In the negative case, the manifold is projective with ample canonical bundle, and the given metric is the normalized negative Kähler--Einstein metric, with complex hyperbolic universal cover. In the zero case, the metric is flat and the manifold admits a finite étale cover by a complex torus. We also prove that a compact balanced threefold of constant positive Chern holomorphic sectional curvature is holomorphically isometric to complex projective three-space with a scaled Fubini--Study metric. The nonpositive argument uses an integrated Chern--Lu identity on a Kähler background. For negative curvature, a lower bound for twisted Kähler--Einstein volumes yields canonical ampleness, and weighted Stokes identities and volume-ratio moment inequalities identify the given metric. At zero curvature, a tensor Bochner argument gives parallelness on a Ricci-flat background. For balanced threefolds, differential compatibility and the torsion energy identities yield a coercive estimate, proved by a rational matrix decomposition valid at every torsion rank.
 
@@ -342,7 +344,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Hideki Sumiya
 
-中文解读待补齐
+证明有限标记点集的第 k 与 k+1 近邻距离间隙控制扰动稳定半径，并在有效 Lipschitz 速度界下得到重连时间下界。
 
 Nearest-neighbor graphs are discrete objects whose membership may change under small perturbations of the underlying coordinates. We establish an explicit stability guarantee for finite labeled configurations in an arbitrary metric space. If the gap between the kth and (k+1)st distances is positive, simultaneous per-label perturbations smaller than one quarter of that gap preserve the directed k-nearest-neighbor membership. The factor four is sharp under the stated uniform displacement assumptions, and every fixed deterministic construction based solely on the labeled neighbor family is consequently invariant. Under an interval-valid Lipschitz bound for labeled information-space trajectories, the same result yields a certified lower bound on the first possible rewiring time, with a refinement for label-specific motion bounds. We apply the finite theorem to frozen standardized Taylor-Green future-information coordinates [d_B, log A_B] for 585 particles at three observed time strata. Outward-rounded interval arithmetic certified a sufficient perturbation radius of approximately 1.023 x 10^-6, and a separately implemented checker within the same research workflow verified the rank and distance-margin calculations. An outcome-blind audit then examined whether the construction supported a numerical continuous-time horizon. Because the complete information map involved discrete clustering and boundary reconstruction and lacked an analytic derivative bound, validated dense-time bound, or certified modulus of continuity, the application was correctly classified as DISCRETE_ONLY with STOP_NO_INTERVAL_VALID_BOUND. Thus finite local structural invariance is proved and numerically certified for the frozen configuration, while temporal specialization and predictive generalization remain separate questions requiring additional evidence.
 
@@ -356,7 +358,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Shiyu Cao
 
-中文解读待补齐
+用解析方法构造带标记的多稳定 SL_r(C)-Higgs 丛通用模空间，建立正规性、Hausdorff 性及约化解析底上的粗模性质。
 
 We construct the moduli space of marked polystable $\mathrm{SL}_r(\mathbb C)$-Higgs bundles via analytic methods. The resulting space is normal and Hausdorff, and its local models are products of a Teichmüller neighbourhood with a quotient of a quadratic cone. These models preserve the curve parameter and identify the stabilizers. We prove agreement with the complex and unitary gauge-quotient topologies and establish the coarse moduli property for semistable families over reduced analytic bases. The mapping class group and Higgs scaling act holomorphically. Besides, on the stable locus, the moduli spaces that we consider agree with the joint moduli constructed by Collier, Toulisse and Wentworth.
 
@@ -370,7 +372,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jiangtao Li
 
-中文解读待补齐
+证明紧 Vaisman 流形的统一化，并给出非负 Chern 双截曲率紧 lcK 流形的 Kähler/Vaisman/覆叠乘积三分结构。
 
 We study the structure of compact Vaisman and l.c.K. manifolds with nonnegative bisectional curvature in this paper. Our first main result (cf. Theorem 1.3) is a uniformization theorem for compact Vaisman manifolds, extending Mok's uniformization theorem in the Kähler setting (cf. [Mok88]). Our second result (cf. Theorem 1.6) gives a structural trichotomy for compact l.c.K. manifolds with nonnegative Chern bisectional curvature: the underlying complex manifold admits a Kähler metric, admits a Vaisman metric, or its universal cover is conformally equivalent to the product of an incomplete Kähler manifold and a positive-dimensional complex Euclidean space.
 
@@ -384,7 +386,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Zhe Zhang
 
-中文解读待补齐
+从当前映射能量重建共形因子，建立抛物—椭圆耦合流；充分大耦合排除有限时间冒泡，并研究无穷时泡树分解。
 
 We introduce a Green--potential heat flow for maps from a closed Riemannian surface. Inspired by Parker--Wolfson renormalization~\cite{ParkerWolfson1993,Parker1996}, the conformal factor is reconstructed at each time from an energy-based source determined by the current map. The resulting parabolic--elliptic system incorporates renormalization into the evolution while leaving the Dirichlet energy functional and its harmonic critical points unchanged. We establish local well-posedness for $H^3$ initial data and a continuation criterion in terms of energy concentration. For sufficiently large coupling, we exclude finite-time bubbling and obtain global solutions. At infinite time, the energy identity provides only weighted $L^2$ control of the tension field. Localizing to regular regions of concentration charts yields harmonic profiles along subsequences of prescribed times. We represent these profiles in the flow's packet charts, organize them into a finite bubble tree, and decompose the limiting energy into harmonic component energies and neck energies. A critically normalized radial example illustrates how the modified flow can prevent finite-time blow-up and produce harmonic bubbles with no-neck property.
 
@@ -398,7 +400,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Federica Gavazzi、Igor Haladjian、Luis Paris
 
-中文解读待补齐
+证明不可约球面型 Artin 群在所有球面型 Artin 群中 profinite 刚性，并计算最小非交换商。
 
 We prove that irreducible spherical type Artin groups are profinitely rigid within the class of all spherical type Artin groups. As part of the proof, building on ideas of Kolay for the $n$-strand braid group, we compute the smallest non-abelian quotient of every spherical type Artin group. In particular, given an irreducible spherical type Artin group, its smallest non-abelian quotient is always that of the corresponding Coxeter group, except for dihedral Artin groups of weight divisible by $4$, which all have $\mathfrak S_3$ as a non-abelian quotient. Parts of the proof also rely on the computation of the cohomological dimension of the profinite completion of certain Artin groups.
 
@@ -412,7 +414,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Alberto Ibort、Maria Jimenez-Vazquez、Juan M. Perez-Pardo
 
-中文解读待补齐
+以局部双截面、测度和表示丛描述有边界域的局部对称，证明等变积分核定理并构造平面域上的网络。
 
 Equivariant convolutional neural networks are usually built from a group acting globally on the space of signals. This hypothesis is inappropriate for many bounded or stratified domains: an ambient rigid motion may be admissible only on part of the domain, and the boundary introduces geometric types that are invisible to a transitive group action. We develop a theory of groupoid-equivariant neural networks in which the symmetry datum consists of a groupoid, a selected pseudogroup of local bisections, a measure, and input and output representation bundles. For integral channels on the object space, we prove a bisection-equivariant kernel theorem: equivariance is equivalent to a transport constraint on the two-point kernel, and its solutions are classified by one joint-stabilizer intertwiner on each orbit of pairs. As a case study we apply the theory to bounded planar domains. The resulting architecture is implemented through offline nullspace bases and sparse gather--transform--scatter operations. A Poisson--Dirichlet kernel study is used separately to assess boundary-aware inductive bias; the exact inverse is shown to preserve the global symmetries of the rectangle but not general proper local bisections. The numerical results show that the proposed architectures provide significant advantages when symmetries cannot be globally implemented by group actions and provide an accuracy improvement of at least one order of magnitude with respect to the models tested.
 
@@ -426,7 +428,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Sun Hyang Chun、Yunhee Euh
 
-中文解读待补齐
+描述弱 η-Einstein 三维几乎接触度量的 Ricci 算子，并分类单连通齐性接触度量中的弱 Einstein 情形。
 
 We study weakly Einstein and weakly $\eta$-Einstein structures on almost contact metric three-manifolds. We first obtain a pointwise structural description of the Ricci operator $Q$ on a weakly $\eta$-Einstein almost contact metric three-manifold. More precisely, at each point, either $Q$ has the $\eta$-Einstein form, $Q\xi=0$, or the metric is weakly Einstein. We then prove that if a contact metric three-manifold satisfies $Q\xi=0$, then either $Q=0$ or $\operatorname{rank}Q=1$. Hence, such a metric is either flat or weakly Einstein but not Einstein. We also construct examples showing that the contact metric assumption is essential: there exist almost contact metric three-manifolds satisfying $Q\xi=0$ whose Ricci operators have rank two. Finally, we classify simply connected homogeneous contact metric three-manifolds that are weakly Einstein.
 
@@ -440,7 +442,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Qingsong Wang、Fangyang Zheng
 
-中文解读待补齐
+证明所有维数的紧 balanced Bismut 挠率平行流形在常全纯截面曲率下为 Kähler 或 Chern 平坦。
 
 A long-lasting conjecture in non-Kähler geometry says that any compact Hermitian manifold with constant holomorphic sectional curvature must be either Kähler or Chern flat. The conjecture is known to be true in dimension 2 but remains open in dimensions 3 or higher, except in several special cases. In this article we consider compact Hermitian manifolds that are Bismut torsion-parallel (BTP for brevity), which means that the Bismut connection has parallel torsion. For BTP manifolds that are not balanced, the conjecture was proved by Chen and Zheng. They also confirmed the conjecture for balanced BTP manifolds in dimension 3, utilizing a classification result for such threefolds by Zhao and Zheng. In a recent work, we confirmed the conjecture for balanced BTP manifolds in dimension 4 through a detailed case-by-case analysis. In this article, we establish the conjecture for balanced BTP manifolds in all dimensions. We also disprove the full-rank $B$ conjecture by constructing a compact balanced BTP fivefold with full-rank $B$ that is neither Kähler nor Chern flat; its Chern holomorphic sectional curvature is nonconstant.
 
@@ -454,7 +456,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 David Victor Feldman
 
-中文解读待补齐
+以平移缩放后的截面形状路径研究支撑点附近的极限尾集，证明任意形状连续统均可精确实现为尾集。
 
 We study a family of questions in convexity in which \emph{size does not matter}: one records a convex cross-section only up to translation and scaling, so that the data attached to a convex body $B$ and a direction $\rho$ is a path in the compact metric space $\A_{n-1}$ of \emph{aligned shapes}. The object of interest is the asymptotic behaviour of this path as the cutting hyperplane approaches the last supporting hyperplane, encoded by an invariant $T(B,\rho)$ that we call the \emph{tail}. We show that tails are always continua, that polyhedral and smooth support points are ``boring'' (the tail is a point), and that non-boring behaviour forces degenerate contact. We show that cross-section paths are locally rectifiable, that every locally rectifiable path is realisable approximately and a dense class exactly, and that exact realisation fails in general: a second-order obstruction of bounded-turning type produces a rectifiable path that is not a cross-section path. For tails, by contrast, no such restriction survives: every continuum of shapes occurs as a tail, on the nose rather than up to approximation. We construct bodies possessing \emph{nearly universal} points, at which the renormalised cross-sections approximate every planar (more generally $(n-1)$-dimensional) convex shape arbitrarily well; such points can be made dense in the boundary, with arbitrary prescribed tails at the grafting sites. Every result below has been formally verified in Lean~4. We close with several optimisation questions and a higher-codimension variant.
 
@@ -468,7 +470,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Qingsong Gu、Lu Hao、Xueping Huang、Yuhua Sun
 
-中文解读待补齐
+通过有限域流分解和杀死 resolvent 的边界通量估计，给出加权图随机完备性的容量判据及已知体积积分判据的新证明。
 
 We give a new proof by flow decomposition of the known Grigor'yan type integral criterion for stochastic completeness of weighted graphs. The main ingredient is a finite-domain estimate relating the mass of a killed $1$-resolvent and the current reaching the boundary to relative capacities of intrinsic balls. This estimate yields logarithmic criteria in terms of capacity to infinity and relative capacity, and recovers the volume criterion by an intrinsic cutoff, without passing to a metric graph or refining the graph.
 
@@ -482,7 +484,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Shuwen Chen、Fangyang Zheng
 
-中文解读待补齐
+对含实余维二阿贝尔理想的幺模 Hermitian 李代数，证明常 Chern 全纯截面曲率强制 Chern 平坦。
 
 Let $(\mathfrak g,J,g)$ be a unimodular Hermitian Lie algebra containing an abelian ideal $\mathfrak a$ of real codimension two. We study the curvature behaviour of $g$ and show that, if $g$ has constant Chern holomorphic sectional curvature, then it must be Chern flat. We also show that, for every canonical metric connection $D_s^r$ of $g$ other than the Chern connection, if $D_s^r$ has constant holomorphic sectional curvature, then $g$ is Kähler flat, and in this case $\mathfrak g/\mathfrak a$ is abelian.
 
@@ -496,7 +498,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Omri Abas
 
-中文解读待补齐
+为三维多胞体的随机宽度和亮度建立球面余面积密度公式，并用极化矩重建方向系统及折叠高斯相关矩阵。
 
 Let U be uniformly distributed on the unit sphere. We develop a self-contained forward and inverse theory for the random width w_K(U) and brightness b_K(U) of three-dimensional convex bodies. For every full-dimensional polytope, a global spherical co-area formula expresses the width density as a finite sum of angular apertures determined by the normal fan of its difference body; in particular, the density is piecewise real analytic with a finite geometrically determined critical set. This theory yields exact densities for the width of the regular tetrahedron, resolving a question of Finch, and for the regular truncated octahedron, together with the tetrahedral brightness law and the equivalent rhombic-dodecahedral width law. On the inverse side, second- and third-order polarized cosine-transform moments reconstruct finite labelled direction systems whenever the observed triangles span the cycle space of the correlation graph; signed-graph switching describes the unavoidable ambiguity. In contrast, equal three-dimensional intrinsic volumes do not determine either the width law or the brightness law, even for centrally symmetric bodies. Removing the spatial rank constraint gives a dimension-free identifiability theorem for centered multivariate folded-normal vectors: pairwise absolute moments and an anchored family of triple absolute moments, comprising |m - 1|^2 labelled observations for a complete correlation graph, determine the correlation matrix up to diagonal sign conjugacy without fourth-order moments. A harmonic decomposition further identifies the degree-two variance contribution as a constant multiple of the squared Frobenius norm of the traceless part of the weighted frame operator and explains why this contribution vanishes under irreducible symmetry.
 
@@ -510,7 +512,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Shigeaki Yokota
 
-中文解读待补齐
+用固定有界坐标压缩特征逃向无穷，构造可分测地的可观测距离及 compact screens 的金字塔紧化。
 
 We introduce an observable distance that compares realvalued features through a fixed bounded coordinate. The coordinate retains the distinction between finite feature values while compressing their independent escape to infinity, the source of nonseparability for the classical observable distance on all geometric data sets. The new distance makes the full class separable and geodesic: every pair is joined by a constant-speed path, and on metric measure spaces the induced topology agrees with the concentration topology. From the same coordinate we construct compact screens, whose features take values in one fixed compact interval. The screened class is Polish and geodesic for the Box distance. Organizing its finite-feature quotients by the feature order yields a compact pyramid space. Pyramids generated by single compact screens form a dense subspace, so this pyramid space compactifies the original class after passage to compact screens. Convergence is detected through the Box-Hausdorff behavior of every finite measurement layer. Finally, taking sum-metric products with a common metric measure factor is nonexpansive for the new distance. More precisely, the comparison determined by a prescribed coupling of the original spaces and the diagonal coupling of the common factor is preserved, whereas optimization over all product couplings yields the nonexpansive inequality.
 
@@ -524,7 +526,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Alberto Verjovsky
 
-中文解读待补齐
+从可容许四元数配置构造实二次曲面交与 Sp(1) 商，研究其连通性、Pontryagin 类及四重辛结构。
 
 We study a quaternionic counterpart of the quotient construction underlying LVM manifolds. From an admissible configuration \[ \Lambda=(\lambda_1,\ldots,\lambda_n)\subset{\mathbb H}^m\simeq{\mathbb R}r^{4m}, \qquad n>4m, \] we obtain a smooth compact intersection of real quadrics $Z_{\mathbb H}(\Lambda)\subset{\mathbb H}^n$ whose $\text{Sp}(1)^n$ orbit space is a simple convex polytope. A canonical action by positive real coordinate dilations has $Z_{\mathbb H}(\Lambda)$ as a global normalized transversal and, after projectivization, gives the compact quotient \[ N_{\mathbb H}(\Lambda)=Z_{\mathbb H}(\Lambda)/\text{Sp}(1), \] which we call an LVMQ manifold. The total space is the quaternionic moment-angle polyhedral product $(D^4,{\mathbb S}^{3})^{K_{P_\Lambda}}$. Every LVMQ manifold is $2$-connected; in the absence of indispensable coordinates it is $3$-connected and \[ H^4(N_{\mathbb H}(\Lambda);\Zz)\cong\Zz, \qquad p_1(TN_{\mathbb H}(\Lambda))=2(n-2)e. \] Here $p_1$ denotes the first Pontryagin class and $e$ is the Euler class of the principal $\Sp(1)$-bundle $Z_{\mathbb H}(\Lambda)\to N_{\mathbb H}(\Lambda)$. For an explicit infinite sphere-product family, the ambient Kraines form restricts to a $4$-plectic form and the resulting LVMQ manifolds are quaternionic toric in the sense of Gentili--Gori--Sarfatti. We also study the complementary Poincaré domain and its trace foliations. For the quaternionic rank-one problem, Frobenius integrability of an invertible linear field forces the scalar Hopf model, while small nonlinear integrable perturbations give Hopf-like ${\mathbb S}^{3}$-fibrations over smooth manifolds homotopy equivalent to quaternionic projective space.
 
@@ -538,7 +540,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Xinan Dai、Wendao Deng、Yidong Shi、Tailin Wu、Yuchen Yang
 
-中文解读待补齐
+摘要宣称证明复 Banach 等距猜想：固定维数的子空间均线性等距时原空间为 Hilbert，并将有限维核心约化为 Hermitian 椭球刻画。
 
 Banach asked whether a normed space must be Hilbert if, for one fixed dimension greater than one, all subspaces of that dimension are linearly isometric. We prove the complex case. By the codimension-one reduction, the essential finite-dimensional problem is to characterize a balanced convex body in a complex $(n+1)$-space whose complex hyperplane sections are all complex-linearly equivalent. We show that such a body is a Hermitian ellipsoid. The proof adapts the recent bundle--degree method of Lu and Yang for the real problem, with two features specific to the complex setting. After covariance normalization, write $G=\operatorname{Aut}{\mathbb C}(S)$ for the complex-linear symmetry group of a model section $S$. The exact section maps form a principal $G$-bundle over $S^{2n+1}$; reduction to $G^{\circ}$ places its obstruction in $\pi{2n}(G^{\circ})$, which is finite. Pulling back by a suitable positive-degree self-map trivializes this bundle and yields a global Lipschitz family of exact complex-linear section maps. Brouwer degree and a signed degree formula then imply that $p_S^{2n+2}$ and $p_S^{2n+4}$ are real homogeneous polynomials, where $p_S$ is the norm of a model section. Unique factorization forces $p_S^2$ to be quadratic, and phase invariance makes the resulting quadratic form Hermitian. The parallelogram identity then yields the general complex Banach-space statement.
 
@@ -552,7 +554,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Huimin Liu、Ling Yang
 
-中文解读待补齐
+利用第二基本形式基础矩阵的特征值建立紧极小子流形刚性定理，刻画广义 Clifford 环面与 Veronese 流形。
 
 Based on an inequality on the upper bound of the sum of squared norms of Lie bracket of symmetric matrices, we establish a rigidity theorem for compact minimal submanifolds in the Euclidean spheres via eigenvalues of fundamental matrices, which are the critical values of the squared norms of the second fundamental form on all normal directions. This conclusion is optimal for all dimensions without the restriction of the codimension, giving a new characterization for generalized Clifford tori and Veronese manifolds.
 
@@ -566,7 +568,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Peizhi Liu
 
-中文解读待补齐
+以独立正标记控制覆盖直径和局部 packing 成本，在任意度量空间构造与经典 packing 测度双边可比的外测度。
 
 We introduce labelled packing measure by a covering construction in which each set has an independent positive label bounding its diameter and the radii in its local packing cost. Letting the labels tend to zero defines a metric outer measure $M^s$. For every $s>0$ and every metric space $(X,d)$, we prove \[ 2^{-s}{P}^s(F)\le{M}^s(F) \le C(s) P^s(F)\qquad(F\subset X), \] where $ P^s(F)$ is the classical packing measure and $C(s)$ depends only on $s$. Thus labelled packing measure and classical packing measure have the same null sets and critical exponent. Allowing arbitrary finite positive labels defines labelled packing content. At the common positive Hausdorff and packing dimension, this content and the labelled packing measure agree on cylinders associated with irreducible subshifts of finite type. In particular, equality holds for non-singleton self-similar attractors and components of finite strongly connected graph-directed systems, without separation assumptions.
 
@@ -580,7 +582,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Hao Fang、Biao Ma
 
-中文解读待补齐
+证明数值 J-null locus 恰为 Murakami 弱解在环境中的 C² 奇集，从而得到其外局部光滑性。
 
 For the semistable $J$-equation, we prove that the numerical $J$-null locus coincides with the ambient $C^2$-singular locus of Murakami's weak solution. Consequently, this singular locus is a proper analytic subset with finitely many irreducible components, and the weak solution is locally smooth outside the $J$-null locus. The proof relies on two analytic ingredients. First, we establish a regularization theorem for singular $J$-subsolutions, showing that Demailly's global regularization preserves quantitative strict cone conditions. Thus, singular strict subsolutions with prescribed analytic poles can be replaced by smooth strict subsolutions away from their pole sets. Second, we derive relative a priori estimates adapted to these subsolutions: a relative $L^\infty$-estimate from determinant control and a weighted second order estimate yielding uniform $C^2$-bounds on compact subsets of the regular locus.
 
@@ -594,7 +596,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Guoyi Xu
 
-中文解读待补齐
+对三至六维完备非紧非负截面曲率流形，给出尺度归一标量曲率积分与渐近体积比的上界；有极点时得到更小的常数。
 
 For any complete noncompact manifolds $(M^n, g)$ of nonnegative sectional curvature, with $3\le n\le6$, we obtain $\displaystyle \lim_{r\to\infty}r^{2-n}\int_{B_p(r)}\Sc_g\,dV_g\le8\pi\omega_{n-2}(1-\AVR(M^n,g))$ and the corresponding rigidity. The latter bound and its equality classification hold in $(M^n, g)$ with positive-dimensional souls. With a pole, $\displaystyle \lim_{r\to\infty}r^{2-n}\int_{B_p(r)}\Sc_g\,dV_g\le4\pi\omega_{n-2}(1-\AVR(M^n,g))$ follows from an independent distance-sphere proof. We also prove the sharp total scalar-integral bound for closed manifolds whose c
 
@@ -608,7 +610,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yuya Takeuchi
 
-中文解读待补齐
+证明可嵌入闭伪 Hermitian 流形上临界 CR GJMS 的 Heisenberg Sobolev 下界，并在三维去掉可嵌入性仍得到 Paneitz 下有界。
 
 We establish lower bounds for the critical CR GJMS operator on closed pseudo-Hermitian manifolds. In dimension $2n+1$, assuming embeddability, we obtain a lower bound involving the Heisenberg Sobolev norm of order $n+1$, modulo an $L^{2}$ term, on the orthogonal complement of the kernel. In dimension three, we prove that the CR Paneitz operator is bounded below without assuming embeddability. The proofs combine the Heisenberg calculus with a square-root construction based on the joint functional calculus of the sub-Laplacian and the Reeb vector field on the Heisenberg group. As an application, we show that the infinitely many negative eigenvalues of the CR Paneitz operator on the Rossi sphere have zero as their only accumulation point. Consequently, this operator does not have closed range.
 
@@ -622,7 +624,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Gil R. Cavalcanti
 
-中文解读待补齐
+在亏格三超椭圆曲面与四维环面的乘积上，利用非 Kähler Calabi–Yau 背景构造类型由 1 变为 3 的广义 Calabi–Yau 结构。
 
 We provide the first compact examples of type-changing generalized Calabi--Yau manifolds using Fei's construction of non-Kähler Calabi--Yau manifolds on branched covers of twistor spaces \cite{Fei16}. The structure, which is generically of type 1 and changes to type 3, is constructed on the product of a hyperelliptic surface of genus three and a four-torus, $\Sigma_3 \times \mathbb{T}^4$, with starting point a non-Kähler Calabi--Yau structure.
 
@@ -636,7 +638,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Quentin Faes、Gwenael Massuyeau、Masatoshi Sato
 
-中文解读待补齐
+研究同调柱分次 Lie 代数奇数度挠元的辛群模结构，构造到显式二挠 Jacobi 图模的满射。
 
 Let $\Sigma$ be a compact oriented surface. We investigate the graded Lie algebra of homology cylinders over $\Sigma$, as introduced by M. Goussarov and K. Habiro. To analyze its torsion, we refine a strategy initiated by Y. Nozaki, M. Suzuki, and the third author, which relies on the reduction modulo $1$ of the LMO functor and on clasper calculus. Specifically, we develop general tools for studying, under the standard action of the symplectic group, the Sp-module structure of the torsion in the odd-degree component of this Lie algebra. We show that this torsion part surjects onto an $2$-torsion Sp-module, which is explicitly described in terms of Jacobi diagrams. As an application, we provide an intrinsic description of the Sp-module given by the degree-three component of the Lie algebra of homology cylinders. A further motivation is to understand torsion phenomena in the associated graded of the lower central series of the Torelli group of $\Sigma$: in this direction, we exhibit an explicit Sp-module onto which the torsion of the Torelli Lie algebra surjects in degree three.
 
@@ -650,7 +652,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Nina Lebedeva、Anton Petrunin
 
-中文解读待补齐
+分类任意子集间等距都能延拓为全空间等距的测地空间，除经典例子外包含有限分支数的普适度量树。
 
 A metric space is said to be all-set-homogeneous if any isometry between its subsets can be extended to an isometry of the whole space. We classify all-set-homogeneous geodesic spaces; in addition to the classical examples they include the universal metric trees of finite valence.
 
@@ -664,7 +666,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Mustapha Bachaou、Ignacio Bajo、Mohamed Louzari
 
-中文解读待补齐
+建立沿一维、二维理想的 Kähler 约化与扩张框架，将指定不可分解拟幂零结构归纳为中心平面扩张。
 
 A Kähler structure on a real Lie algebra $\mathfrak{g}$ is a pair $(\omega, J)$ of a 2-cocycle and a complex structure on $\mathfrak{g}$ which are compatible in the sense that $J$ is skew-symmetric with respect to $\omega$. This paper investigates Kähler structures on Lie algebras, with a particular focus on the nilpotent case. We introduce an algebraic framework for the Kählerian reduction and oxidation of Lie algebras by one-dimensional and two-dimensional ideals. Our main structural result demonstrates that every indecomposable, quasi-nilpotent Kählerian nilpotent Lie algebra of dimension greater than four can be inductively reconstructed through a finite sequence of Kählerian central oxidations by planes. This reduction sequence originates from a base algebra that is either $\{0\}$, $\mathbb{R}^2$, or one admitting a strongly non-nilpotent complex structure. Moreover, if the complex structure is nilpotent, all intermediate reductions also have a nilpotent complex structure.
 
@@ -678,7 +680,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yifan Chen、Chunhui Wei
 
-中文解读待补齐
+在光滑有理曲面中自交零的反典范椭圆曲线补集上构造完备 ALH 超 Kähler 度量，并证明所有超 Kähler ALH 瞬子可如此紧化。
 
 We construct complete ALH hyperkähler metrics on complements of anticanonical elliptic curves with zero self-intersection in smooth rational surfaces. This answers the existence question of Filip--Tosatti, related to the picture proposed by Haskins--Hein--Nordström. Conversely, we prove that every hyperkähler ALH gravitational instanton admits, for each induced complex structure, a compactification by an anticanonical elliptic curve in a rational surface.
 
@@ -692,7 +694,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 R. İnanç Baykur、András I. Stipsicz、Zoltán Szabó
 
-中文解读待补齐
+构造无限多个两两非微分同胚的不可约 CP²#7反向CP² 型光滑四流形，每个具有保定向自由对合。
 
 We construct infinitely many pairwise non-diffeomorphic irreducible smooth four-manifolds homeomorphic to ${\mathbb {CP}}^2\# 7{\overline {\mathbb {C}} {\mathbb {P}} } ^2$, each admitting a free, orientation-preserving involution. Their quotients give infinitely many irreducible definite four-manifolds with fundamental group ${\mathbb {Z}}/2 {\mathbb {Z}}$ and $b_2=3$, filling the corresponding gap in the geography of such examples. The construction of infinitely many distinct examples relies on a novel equivariant torus surgery.
 
@@ -706,7 +708,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Suyoung Choi、Tao Gong
 
-中文解读待补齐
+对离散群在连通光滑流形上的适当有效光滑作用，证明商映射有连续截面则群由反射生成。
 
 Suppose that a discrete group $G$ acts smoothly, properly, and effectively on a connected smooth manifold $M$, and let $q:M\to M/G$ be the quotient map. We prove that if $q$ admits a continuous section, then $G$ is generated by reflections. We also establish converse results for dissecting reflections and give applications to Euclidean and lattice actions.
 
@@ -720,7 +722,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Kazuo Akutagawa、Mijia Lai、Chao Li、Harish Seshadri、Zhixin Wang
 
-中文解读待补齐
+为闭连通流形上的正 Yamabe 度量证明最优直径估计，摘要将其定位为 Myers 与 Cheng 定理的标量曲率版本。
 
 In this paper, we prove the optimal diameter estimate for positive Yamabe metrics on a connected, closed manifold. It is a scalar curvature version of both classical Myers' diameter estimate and Cheng's maximal diameter theorem on Ricci curvature.
 
@@ -734,7 +736,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Junior Tavares、Detang Zhou
 
-中文解读待补齐
+从适当函数与对称张量的微分不等式推导无曲率假设的体积估计，并应用到部分 Q_k 流自缩子与适当浸入极小超曲面。
 
 In this paper, we establish a general volume estimate for complete Riemannian manifolds under suitable differential inequalities involving a proper function and a symmetric tensor, without imposing curvature assumptions. As an application, we prove that a class of orientable hypersurfaces properly immersed in Euclidean space has at most polynomial volume growth and finite weighted volume. This class includes, in particular, certain self-shrinkers of the $Q_k$-flow and properly immersed minimal hypersurfaces for which the normal component of the position vector is bounded.
 
@@ -748,7 +750,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Sara Kališnik、Davorin Lešnik
 
-中文解读待补齐
+通过有限立方体并的权测度与立方体增厚，证明 magnitude 在 ℓ¹_N 的每个有限子集处连续。
 
 Magnitude is an isometric invariant of metric spaces introduced by Leinster in 2011. It is nowhere continuous on the Gromov--Hausdorff space of finite metric spaces, however, positive continuity results do exist if we restrict the ambient space. In this paper, we prove that magnitude is continuous at every finite subset $F$ of $\ell_1^N$. We do this by first deriving the weight measure for a finite union of cubes, i.e.\ cubical thickenings of the points in $F$, and then showing that these thickenings converge to the magnitude of the underlying finite set.
 
@@ -762,7 +764,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Zachary Lihn
 
-中文解读待补齐
+证明任意维数及余维的模二面积极小流具有第二基本形式的内部 L² 先验界，并得到面积受控极小曲面的有限微分同胚类型。
 
 We prove \emph{a priori} interior $L^2$ bounds for the second fundamental form of area-minimizing currents modulo $2$ in every dimension $n\geq 2$ and arbitrary codimension. The bounds depend only on the dimension, codimension, and an upper bound for the mass. As a corollary, we show that area-minimizing surfaces modulo $2$ with bounded area lie in finitely many diffeomorphism classes. This answers a question of \cite{Liu2020WeakCounterexamples}.
 
@@ -776,7 +778,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Meiqi Liu、Zhouyu Long、Wenming Zou
 
-中文解读待补齐
+对单连通 Lipschitz 曲面域证明第二正 Neumann 特征值的尖锐双圆盘上界，并加强为相邻特征值倒数之和不等式。
 
 Langford and Laugesen conjectured a sharp two-disk bound for the third Neumann eigenvalue under an upper Gaussian-curvature bound (Math. Ann. 386 (2023), 2255--2281, Conjecture 1.4). We prove the conjectured bound for bounded Lipschitz membranes with the weight regularity used by Langford and Laugesen, and strengthen it to a sharp reciprocal inequality. Let $\Omega\subset\mathbb{C}$ be a bounded simply connected Lipschitz domain, let $\omega\in C^2(\Omega)\cap C(\overline{\Omega})$ be positive on $\overline{\Omega}$, and equip $\Omega$ with $g=\omega|dz|^2$. Suppose $K_g\le K$, $A=\int_\Omega\omega\,dx>0$, and $KA<4\pi$ when $K>0$. Enumerate the Neumann eigenvalues, counting multiplicity, by $0=\lambda_0<\lambda_1\le\lambda_2\le\cdots$. If $D_K(A/2)$ is the constant-curvature geodesic disk of area $A/2$, then $\frac{1}{\lambda_2(\Omega,g)}+\frac{1}{\lambda_3(\Omega,g)}>\frac{2}{\lambda_1(D_K(A/2))}$ and $\lambda_2(\Omega,g)<\lambda_1(D_K(A/2))$. No simplicity of $\lambda_1$ or boundary differentiability of $\omega$ is required. The same conclusions hold for relatively compact disk-type Lipschitz domains in smooth Riemannian surfaces. Both bounds are sharp at fixed area and curvature upper bound: for each admissible $K,A$, a sequence of smooth connected domains of area $A$ in the constant-curvature model has fixed-index Neumann spectra converging to those of $D_K(A/2)\sqcup D_K(A/2)$. Neither extremal value is attained in either connected class. The proof uses two-pole Green coordinates, a positive-kernel comparison, simultaneous centering of two complex moments, and a shifted reciprocal variational estimate.
 
@@ -790,7 +792,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Zehao Sha、Jian Wang
 
-中文解读待补齐
+在每个复维至少三构造单有理光滑射影流形，使所有 Kähler 度量的总标量曲率均负，却存在正标量曲率黎曼度量。
 
 For every integer $n\ge3$, we construct a smooth projective manifold $X$ of complex dimension $n$ whose canonical bundle is not pseudoeffective, or equivalently, which is uniruled, but every Kähler metric has negative total scalar curvature. In particular, $X$ admits no Kähler metric of positive scalar curvature, while it admits a Riemannian metric of positive scalar curvature. Thus the equivalence between uniruledness and the existence of a Kähler metric with positive scalar curvature holds in complex dimensions one and two, but fails in higher dimensions.
 
@@ -804,7 +806,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Matthias Goerner、Robert C. Haraway III、Neil R. Hoffman、Maria Trnkova
 
-中文解读待补齐
+给出不依赖 Dirichlet 域的有限体积定向双曲三流形长度谱流算法，可用区间算术认证，并计算最优 Margulis 数。
 
 We present a new algorithm to compute a stream for the length spectrum of an oriented, finite-volume hyperbolic 3-manifold $M$. The advantage over the existing algorithm by Hodgson-Weeks is that our algorithm does not require finding a Dirichlet domain and thus can use interval arithmetic to verify the result. Our algorithm is also significantly faster in some cases. We also present a new algorithm to compute the optimal Margulis number of $M$. The authors have made these algorithms available in SnapPy.
 
@@ -818,7 +820,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jiangcheng You、Heng Zhang
 
-中文解读待补齐
+证明第一 Newton 变换正定的闭余定向欧氏超曲面浸入可按指定边界映射填充，再结合既有刚性推出常标量曲率浸入超曲面为圆球。
 
 We prove that every closed cooriented hypersurface immersion in $\R^{n+1}$, $n\ge 2$, with positive definite first Newton transformation bounds a compact immersed manifold with the prescribed boundary map and outward coorientation. Combined with the rigidity results of Ros and Pinkall, this filling theorem implies that every closed connected hypersurface immersed in $\R^{n+1}$ with constant scalar curvature is a round sphere.
 
@@ -832,7 +834,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jacob Bernstein、Daniel Ketover
 
-中文解读待补齐
+证明 S³ 的大圆可界出亏格无界且实现所有非零 Euler 数的嵌入非定向极小曲面。
 
 We show that a great circle in $\mathbb{S}^3$ bounds embedded non-orientable minimal surfaces of unbounded genera and all possible non-zero Euler numbers. This answers a question of R. Hardt and H. Rosenberg (1990). It also gives the first example of a real analytic Jordan curve bounding infinitely many embedded minimal surfaces of distinct topological types. Such surfaces may arise as the links of boundary singularities of non-orientable minimal hypersurfaces in $\mathbb{R}^4$.
 
@@ -846,7 +848,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yifan Chen、Simion Filip、Song Sun、Valentino Tosatti、Junsheng Zhang
 
-中文解读待补齐
+分类反典范线丛半正的紧 Kähler 曲面，并证明在光滑三次曲线上九点吹起的射影平面均有半正反典范丛。
 
 We classify compact Kähler surfaces with semipositive anticanonical bundle. In particular, we resolve a question of Demailly--Peternell--Schneider: any blowup of $\mathbb{P}^2$ at 9 points on a smooth cubic has semipositive anticanonical bundle.
 
@@ -860,7 +862,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Qixuan Hu
 
-中文解读待补齐
+用水平集法证明非负截面曲率开三流形单端情形的归一标量积分 limsup 上界，并对双端情形以分裂获得实际极限界。
 
 Let $(M^3,g)$ be complete, connected, noncompact, and without boundary, with nonnegative sectional curvature. We give a level-set argument for an asymptotic upper bound on the scalar-curvature integral. In the one-ended case the argument yields \[ \limsup_{r\to\infty}\frac1r\int_{B_p(r)}\operatorname{Scal}\,d V \le 8\pi\bigl(1-{V_M}\bigr). \] No pole, noncollapsing condition, or scalar-curvature bound is assumed. The proof uses an almost convex smooth exhaustion together with a separate smooth approximation to the distance function. The negative curvature errors of the level sets are integrable. In the two-ended case the splitting theorem gives an actual limit bounded by $16\pi$. The one-ended bound is attained for every prescribed asymptotic volume ratio in $[0,1]$; the two-ended constant is also attained. The one-ended conclusion is an upper-limit bound; existence of the corresponding limit is not asserted.
 
@@ -874,7 +876,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Peng Wang、Zhenxiao Xie、Chen Zhao
 
-中文解读待补齐
+证明亏格至少一的定向闭 Lagrangian 曲面 W⁻ 能量不低于 Clifford 环面，同时构造非 Lagrangian 变形使其能量下降。
 
 In 2002, Montiel and Urbano conjectured that the Clifford torus in $\mathbb{C}P^2$ minimizes the Willmore-type functional $ \mathcal{W}^-=\int_{T^2}(2+|H|^2)\,dA,$ either among all tori or among all Lagrangian tori. In this paper, we confirm this conjecture in the Lagrangian setting and disprove it in the general setting. We establish that every oriented closed Lagrangian surface of genus $g\geq 1$ in $\mathbb{C}P^2$ has $\mathcal{W}^-$-energy no less than that of the Clifford torus. Moreover, we construct non-Lagrangian deformations of the Clifford torus along which $\mathcal{W}^-$ strictly decreases.
 
@@ -888,7 +890,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Carlos Daniel Velázquez-Mendoza、María de los Ángeles Sandoval-Romero、Romulo Diaz Carlos
 
-中文解读待补齐
+用弱协变导数构造有限秩黎曼向量丛的高阶 Sobolev 迹算子，刻画齐次 Dirichlet 空间，并应用于广义 (p,q) 增长方程。
 
 Let \(\mathbf{E}\to M\) be a finite-rank Riemannian vector bundle over a compact Riemannian manifold with nonempty smooth boundary, equipped with a compatible connection. We develop an intrinsic trace theory for Sobolev sections defined through weak covariant derivatives. For every integer \(m\ge1\) and every \(1\le p<\infty\), we construct continuous trace operators for the covariant derivatives up to order \(m-1\) and characterize the Sobolev space with homogeneous Dirichlet boundary conditions as the kernel of the corresponding trace operator. As an application, we establish the existence of ground state solutions for a class of quasilinear elliptic equations on Riemannian vector bundles with generalized \((p,q)\)-growth. The proposed framework unifies several important geometric operators, including the Bochner \(p\)-Laplacian, the \((p,q)\)-Bochner Laplacian, and prescribed mean curvature-type operators.
 
@@ -902,7 +904,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jacob Bernstein、Daniel Ketover
 
-中文解读待补齐
+证明 S³ 中以大圆为边界的 Möbius 带，其最小 Willmore 能量由 Morse 指标二的嵌入极小 Möbius 带实现。
 
 We show that among Möbius bands in $\mathbb{S}^3$ bounded by a great circle, the minimal Willmore energy is realized by an embedded minimal Möbius band with Morse index two. To prove this, we introduce a $2$-parameter ``canonical family" associated to any non-orientable surface in $\mathbb{S}^3$ with boundary a great circle and apply a min-max argument. The canonical family detects the Euler number of the surface and is inspired by the $5$-parameter family discovered by F.C. Marques and A. Neves detecting the genus of an orientable surface in $\mathbb{S}^3$. For $\mathbb{Z}_2$-invariant Klein bottles, this reduces R. Kusner's 1989 conjecture that $\tau_{1,2}$ minimizes the Willmore energy for a Klein bottle immersed in $\mathbb{S}^3$ to any of several conjectural characterizations of the Lawson Möbius band.
 
@@ -916,7 +918,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Ángel David Ríos Ortiz
 
-中文解读待补齐
+证明复维至少四的 Bogomolov–Guan 流形在有理数上非形式，并计算其第三 Betti 数为三。
 
 Bogomolov--Guan manifolds form the only known series of compact simply connected non-Kähler holomorphic symplectic manifolds. We prove that all Bogomolov--Guan manifolds of complex dimension at least four are nonformal over $\mathbb{Q}$. The proof constructs a uniform degree-eight $a$-Massey product in a finite-dimensional invariant de Rham model of the symmetric quotient of the Bogomolov--Guan precursor. Its indeterminacy vanishes, and its nontriviality is detected by an explicit top-degree pairing arising from an $S_{n+1}$-invariant tensor contraction. A nonzero-degree map then transfers nonformality to the smooth Bogomolov--Guan manifold. We also compare the Bogomolov--Guan precursor with the nilmanifold appearing in Guan's original construction, showing that they are related by a natural $S_{n+1}$-equivariant finite cover of degree $(n+1)^2$ and have the same invariant de Rham model. Using Guan's resolution, which we prove to be projective and semismall, together with Saito's decomposition theorem, we further show that the third Betti number of every Bogomolov--Guan manifold of complex dimension at least four is equal to $3$.
 

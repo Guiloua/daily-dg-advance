@@ -17,17 +17,44 @@
         "math.DG"
       ],
       "primaryCategory": "cs.LG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-22T10:39:28Z",
+      "updatedAt": "2026-09-22T10:39:28Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-23T02:49:05.615088+00:00",
         "contentHash": "71fa32ae324184f993edf30fcad109458c38f6953ff283b7a2307868599f1e40"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:40.718871+00:00",
+        "contentHash": "68b121b7077d492b2c4649cfe3b90bb8ffac52adc4216880d90897a5654f35d5"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "群胚等变神经网络",
+      "workSummary": "以局部双截面、测度和表示丛描述有边界域的局部对称，证明等变积分核定理并构造平面域上的网络。",
+      "techniques": [
+        "群胚",
+        "局部双截面",
+        "稳定子交织算子",
+        "稀疏核实现"
+      ],
+      "breakthrough": "把仅能局部实现的对称纳入网络设计，而非强求全局群作用。",
+      "limitations": "Poisson–Dirichlet 精确逆不保持一般局部双截面；实验精度收益限于被测试模型。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 43,
+      "priorityReason": "把仅能局部实现的对称纳入网络设计，而非强求全局群作用。",
+      "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；Poisson–Dirichlet 精确逆不保持一般局部双截面；实验精度收益限于被测试模型。"
+    },
+    "analysisBasis": {
+      "abstract": "Equivariant convolutional neural networks are usually built from a group acting globally on the space of signals. This hypothesis is inappropriate for many bounded or stratified domains: an ambient rigid motion may be admissible only on part of the domain, and the boundary introduces geometric types that are invisible to a transitive group action. We develop a theory of groupoid-equivariant neural networks in which the symmetry datum consists of a groupoid, a selected pseudogroup of local bisections, a measure, and input and output representation bundles. For integral channels on the object space, we prove a bisection-equivariant kernel theorem: equivariance is equivalent to a transport constraint on the two-point kernel, and its solutions are classified by one joint-stabilizer intertwiner on each orbit of pairs. As a case study we apply the theory to bounded planar domains. The resulting architecture is implemented through offline nullspace bases and sparse gather--transform--scatter operations. A Poisson--Dirichlet kernel study is used separately to assess boundary-aware inductive bias; the exact inverse is shown to preserve the global symmetries of the rectangle but not general proper local bisections. The numerical results show that the proposed architectures provide significant advantages when symmetries cannot be globally implemented by group actions and provide an accuracy improvement of at least one order of magnitude with respect to the models tested.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +74,44 @@
             "math.DG"
           ],
           "primaryCategory": "cs.LG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-22T10:39:28Z",
+          "updatedAt": "2026-09-22T10:39:28Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-23T02:49:05.615088+00:00",
             "contentHash": "71fa32ae324184f993edf30fcad109458c38f6953ff283b7a2307868599f1e40"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:40.718871+00:00",
+            "contentHash": "68b121b7077d492b2c4649cfe3b90bb8ffac52adc4216880d90897a5654f35d5"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "群胚等变神经网络",
+          "workSummary": "以局部双截面、测度和表示丛描述有边界域的局部对称，证明等变积分核定理并构造平面域上的网络。",
+          "techniques": [
+            "群胚",
+            "局部双截面",
+            "稳定子交织算子",
+            "稀疏核实现"
+          ],
+          "breakthrough": "把仅能局部实现的对称纳入网络设计，而非强求全局群作用。",
+          "limitations": "Poisson–Dirichlet 精确逆不保持一般局部双截面；实验精度收益限于被测试模型。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 43,
+          "priorityReason": "把仅能局部实现的对称纳入网络设计，而非强求全局群作用。",
+          "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；Poisson–Dirichlet 精确逆不保持一般局部双截面；实验精度收益限于被测试模型。"
+        },
+        "analysisBasis": {
+          "abstract": "Equivariant convolutional neural networks are usually built from a group acting globally on the space of signals. This hypothesis is inappropriate for many bounded or stratified domains: an ambient rigid motion may be admissible only on part of the domain, and the boundary introduces geometric types that are invisible to a transitive group action. We develop a theory of groupoid-equivariant neural networks in which the symmetry datum consists of a groupoid, a selected pseudogroup of local bisections, a measure, and input and output representation bundles. For integral channels on the object space, we prove a bisection-equivariant kernel theorem: equivariance is equivalent to a transport constraint on the two-point kernel, and its solutions are classified by one joint-stabilizer intertwiner on each orbit of pairs. As a case study we apply the theory to bounded planar domains. The resulting architecture is implemented through offline nullspace bases and sparse gather--transform--scatter operations. A Poisson--Dirichlet kernel study is used separately to assess boundary-aware inductive bias; the exact inverse is shown to preserve the global symmetries of the rectangle but not general proper local bisections. The numerical results show that the proposed architectures provide significant advantages when symmetries cannot be globally implemented by group actions and provide an accuracy improvement of at least one order of magnitude with respect to the models tested.",
+          "version": 1
+        }
       }
     }
   ]

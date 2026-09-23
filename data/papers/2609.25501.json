@@ -22,17 +22,44 @@
         "stat.ML"
       ],
       "primaryCategory": "cs.LG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-21T23:58:38Z",
+      "updatedAt": "2026-09-21T23:58:38Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-23T02:49:16.941667+00:00",
         "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:29.450709+00:00",
+        "contentHash": "db1afcba0e2e989c81ab29e8dabb8075dfd7e5c821f353649ae63b716ef8295a"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "p-adic 连续优化",
+      "workSummary": "借助 Berkovich 仿射直线把全不连通的 p-adic 参数空间扩展为度量树，构造梯度下降及动量、Adam 型优化。",
+      "techniques": [
+        "Berkovich 直线",
+        "度量树",
+        "反向传播",
+        "p-adic 模型"
+      ],
+      "breakthrough": "为原生 p-adic 模型提供连续路径上的优化框架和示例。",
+      "limitations": "效果主要由给定线性任务与层级分类实验展示，不等于一般机器学习收敛保证。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 44,
+      "priorityReason": "为原生 p-adic 模型提供连续路径上的优化框架和示例。",
+      "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；效果主要由给定线性任务与层级分类实验展示，不等于一般机器学习收敛保证。"
+    },
+    "analysisBasis": {
+      "abstract": "We present the first method for native, continuous gradient descent for machine learning models with $p$-adic parameters. Existing native optimizers are discrete, mostly combinatorial searches, as the $p$-adic numbers $\\mathbb{Q}_p$ are totally disconnected, with standard losses that are flat away from their minima. To enable continuous optimization, we propose working with $\\mathbb{Q}_p$ via its Berkovich affine line: a canonical, path-connected expansion of $\\mathbb{Q}_p$ that preserves its isometries and uniquely extends its analytic maps. This hull is a metric tree with interpretable points and local derivatives, which we show enables effective optimizers and backpropagation. We formulate gradient descent and show that its approximations efficiently learn linear models with coefficients in $\\mathbb{Q}_p$ to do modular arithmetic, an XOR-like task not expressible by linear models in $\\mathbb{R}$. We also demonstrate momentum and Adam variants, linear regression, and classification on binary-encoded hierarchies (Quillian semantic networks), addressing open problems posed by Martins (2025). Library at this https URL",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -57,17 +84,44 @@
             "stat.ML"
           ],
           "primaryCategory": "cs.LG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-21T23:58:38Z",
+          "updatedAt": "2026-09-21T23:58:38Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-23T02:49:16.941667+00:00",
             "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:29.450709+00:00",
+            "contentHash": "db1afcba0e2e989c81ab29e8dabb8075dfd7e5c821f353649ae63b716ef8295a"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "p-adic 连续优化",
+          "workSummary": "借助 Berkovich 仿射直线把全不连通的 p-adic 参数空间扩展为度量树，构造梯度下降及动量、Adam 型优化。",
+          "techniques": [
+            "Berkovich 直线",
+            "度量树",
+            "反向传播",
+            "p-adic 模型"
+          ],
+          "breakthrough": "为原生 p-adic 模型提供连续路径上的优化框架和示例。",
+          "limitations": "效果主要由给定线性任务与层级分类实验展示，不等于一般机器学习收敛保证。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 44,
+          "priorityReason": "为原生 p-adic 模型提供连续路径上的优化框架和示例。",
+          "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；效果主要由给定线性任务与层级分类实验展示，不等于一般机器学习收敛保证。"
+        },
+        "analysisBasis": {
+          "abstract": "We present the first method for native, continuous gradient descent for machine learning models with $p$-adic parameters. Existing native optimizers are discrete, mostly combinatorial searches, as the $p$-adic numbers $\\mathbb{Q}_p$ are totally disconnected, with standard losses that are flat away from their minima. To enable continuous optimization, we propose working with $\\mathbb{Q}_p$ via its Berkovich affine line: a canonical, path-connected expansion of $\\mathbb{Q}_p$ that preserves its isometries and uniquely extends its analytic maps. This hull is a metric tree with interpretable points and local derivatives, which we show enables effective optimizers and backpropagation. We formulate gradient descent and show that its approximations efficiently learn linear models with coefficients in $\\mathbb{Q}_p$ to do modular arithmetic, an XOR-like task not expressible by linear models in $\\mathbb{R}$. We also demonstrate momentum and Adam variants, linear regression, and classification on binary-encoded hierarchies (Quillian semantic networks), addressing open problems posed by Martins (2025). Library at this https URL",
+          "version": 1
+        }
       }
     }
   ]

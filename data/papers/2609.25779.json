@@ -15,17 +15,43 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "16 pages. Includes a certified Taylor-Green application and an outcome-blind audit of continuous-time applicability",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-22T07:16:12Z",
+      "updatedAt": "2026-09-22T07:16:12Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-23T02:49:16.941667+00:00",
         "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:40.717134+00:00",
+        "contentHash": "e0cfb15f3a99585aaeb6b9c037255dbad0e04846a9e2810204f8d04e7b06ebba"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "近邻图稳定性估计",
+      "workSummary": "证明有限标记点集的第 k 与 k+1 近邻距离间隙控制扰动稳定半径，并在有效 Lipschitz 速度界下得到重连时间下界。",
+      "techniques": [
+        "度量扰动",
+        "近邻距离间隙",
+        "区间算术"
+      ],
+      "breakthrough": "给出尖锐的四分之一间隙阈值及逐标签运动的细化。",
+      "limitations": "数值应用仅认证冻结时刻配置，因缺少时间区间有效界，不能声称已得到连续时间预测。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 38,
+      "priorityReason": "给出尖锐的四分之一间隙阈值及逐标签运动的细化。",
+      "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；数值应用仅认证冻结时刻配置，因缺少时间区间有效界，不能声称已得到连续时间预测。"
+    },
+    "analysisBasis": {
+      "abstract": "Nearest-neighbor graphs are discrete objects whose membership may change under small perturbations of the underlying coordinates. We establish an explicit stability guarantee for finite labeled configurations in an arbitrary metric space. If the gap between the kth and (k+1)st distances is positive, simultaneous per-label perturbations smaller than one quarter of that gap preserve the directed k-nearest-neighbor membership. The factor four is sharp under the stated uniform displacement assumptions, and every fixed deterministic construction based solely on the labeled neighbor family is consequently invariant. Under an interval-valid Lipschitz bound for labeled information-space trajectories, the same result yields a certified lower bound on the first possible rewiring time, with a refinement for label-specific motion bounds. We apply the finite theorem to frozen standardized Taylor-Green future-information coordinates [d_B, log A_B] for 585 particles at three observed time strata. Outward-rounded interval arithmetic certified a sufficient perturbation radius of approximately 1.023 x 10^-6, and a separately implemented checker within the same research workflow verified the rank and distance-margin calculations. An outcome-blind audit then examined whether the construction supported a numerical continuous-time horizon. Because the complete information map involved discrete clustering and boundary reconstruction and lacked an analytic derivative bound, validated dense-time bound, or certified modulus of continuity, the application was correctly classified as DISCRETE_ONLY with STOP_NO_INTERVAL_VALID_BOUND. Thus finite local structural invariance is proved and numerically certified for the frozen configuration, while temporal specialization and predictive generalization remain separate questions requiring additional evidence.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +69,43 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "16 pages. Includes a certified Taylor-Green application and an outcome-blind audit of continuous-time applicability",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-22T07:16:12Z",
+          "updatedAt": "2026-09-22T07:16:12Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-23T02:49:16.941667+00:00",
             "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:40.717134+00:00",
+            "contentHash": "e0cfb15f3a99585aaeb6b9c037255dbad0e04846a9e2810204f8d04e7b06ebba"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "近邻图稳定性估计",
+          "workSummary": "证明有限标记点集的第 k 与 k+1 近邻距离间隙控制扰动稳定半径，并在有效 Lipschitz 速度界下得到重连时间下界。",
+          "techniques": [
+            "度量扰动",
+            "近邻距离间隙",
+            "区间算术"
+          ],
+          "breakthrough": "给出尖锐的四分之一间隙阈值及逐标签运动的细化。",
+          "limitations": "数值应用仅认证冻结时刻配置，因缺少时间区间有效界，不能声称已得到连续时间预测。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 38,
+          "priorityReason": "给出尖锐的四分之一间隙阈值及逐标签运动的细化。",
+          "lowPriorityReason": "对本期曲率、度量与几何分析主线的直接关联较弱；数值应用仅认证冻结时刻配置，因缺少时间区间有效界，不能声称已得到连续时间预测。"
+        },
+        "analysisBasis": {
+          "abstract": "Nearest-neighbor graphs are discrete objects whose membership may change under small perturbations of the underlying coordinates. We establish an explicit stability guarantee for finite labeled configurations in an arbitrary metric space. If the gap between the kth and (k+1)st distances is positive, simultaneous per-label perturbations smaller than one quarter of that gap preserve the directed k-nearest-neighbor membership. The factor four is sharp under the stated uniform displacement assumptions, and every fixed deterministic construction based solely on the labeled neighbor family is consequently invariant. Under an interval-valid Lipschitz bound for labeled information-space trajectories, the same result yields a certified lower bound on the first possible rewiring time, with a refinement for label-specific motion bounds. We apply the finite theorem to frozen standardized Taylor-Green future-information coordinates [d_B, log A_B] for 585 particles at three observed time strata. Outward-rounded interval arithmetic certified a sufficient perturbation radius of approximately 1.023 x 10^-6, and a separately implemented checker within the same research workflow verified the rank and distance-margin calculations. An outcome-blind audit then examined whether the construction supported a numerical continuous-time horizon. Because the complete information map involved discrete clustering and boundary reconstruction and lacked an analytic derivative bound, validated dense-time bound, or certified modulus of continuity, the application was correctly classified as DISCRETE_ONLY with STOP_NO_INTERVAL_VALID_BOUND. Thus finite local structural invariance is proved and numerically certified for the frozen configuration, while temporal specialization and predictive generalization remain separate questions requiring additional evidence.",
+          "version": 1
+        }
       }
     }
   ]

@@ -17,17 +17,43 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "37 pages. Includes exact symbolic verification of the finite residual cases and reproducibility material",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-08-24T11:26:15Z",
+      "updatedAt": "2026-08-24T11:26:15Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-23T02:49:16.941667+00:00",
         "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:29.448014+00:00",
+        "contentHash": "04017b50985f78b52927409ef14717872c644e092a7848194fcd52997d7a79fb"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "极值几何的应力结构",
+      "workSummary": "为 Heilbronn 最小三角形面积极大化问题建立 KKT 应力理论，约束正应力分支、不可见变形与指定残余构型。",
+      "techniques": [
+        "KKT 乘子",
+        "仿射矩恒等式",
+        "Pfaffian 余子式",
+        "精确符号枚举"
+      ],
+      "breakthrough": "把极值点的退化压缩为受维数与接口通量限制的残余结构。",
+      "limitations": "排除的是指定五圈残余的特定补全，不解决任意 n 的 Heilbronn 问题。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 65,
+      "priorityReason": "把极值点的退化压缩为受维数与接口通量限制的残余结构。"
+    },
+    "analysisBasis": {
+      "abstract": "For n points in the unit square, the Heilbronn triangle problem asks for the largest possible minimum triangle area. We develop a variational stress theory for this max-min problem. At every positive-area local optimum, normalized Karush-Kuhn-Tucker multipliers assemble into a skew matrix B satisfying Bz = 2ib, where b is the outward square reaction. This equilibrium has the isotropic affine moment sum_i p_i b_i^T = Delta I_2; the identity also holds for every tight subfamily carrying weights inherited from the same multiplier, with Delta scaled by its multiplier mass. It follows that every positive stress component meets all four sides and that there are at most two such components. To handle nonunique multipliers, we introduce the intersection of the stress kernels over the whole KKT face and a canonical hybrid operator incorporating all tight determinant and boundary derivatives. A strictly convex selector removes every decomposable invisible motion, leaving a rank-one-free residual with a sharp dimension bound; the literal maximal two-dimensional residual is excluded. Two-terminal substresses satisfy an exact interface-flux law, and a five-internal-vertex rank-four block has a Pfaffian cofactor carrier. Finally, an analytic reduction followed by exact symbolic enumeration excludes every one-external completion of a specified one-silent five-cycle residual, for all orientation words. These results isolate the remaining degeneracy but do not solve the problem for arbitrary n.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +73,43 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "37 pages. Includes exact symbolic verification of the finite residual cases and reproducibility material",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-08-24T11:26:15Z",
+          "updatedAt": "2026-08-24T11:26:15Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-23T02:49:16.941667+00:00",
             "contentHash": "5c09a163c9a531b3b036410df3862afb6e1e0d5f9589a272fd62d4211b3f10c1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:29.448014+00:00",
+            "contentHash": "04017b50985f78b52927409ef14717872c644e092a7848194fcd52997d7a79fb"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "极值几何的应力结构",
+          "workSummary": "为 Heilbronn 最小三角形面积极大化问题建立 KKT 应力理论，约束正应力分支、不可见变形与指定残余构型。",
+          "techniques": [
+            "KKT 乘子",
+            "仿射矩恒等式",
+            "Pfaffian 余子式",
+            "精确符号枚举"
+          ],
+          "breakthrough": "把极值点的退化压缩为受维数与接口通量限制的残余结构。",
+          "limitations": "排除的是指定五圈残余的特定补全，不解决任意 n 的 Heilbronn 问题。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 65,
+          "priorityReason": "把极值点的退化压缩为受维数与接口通量限制的残余结构。"
+        },
+        "analysisBasis": {
+          "abstract": "For n points in the unit square, the Heilbronn triangle problem asks for the largest possible minimum triangle area. We develop a variational stress theory for this max-min problem. At every positive-area local optimum, normalized Karush-Kuhn-Tucker multipliers assemble into a skew matrix B satisfying Bz = 2ib, where b is the outward square reaction. This equilibrium has the isotropic affine moment sum_i p_i b_i^T = Delta I_2; the identity also holds for every tight subfamily carrying weights inherited from the same multiplier, with Delta scaled by its multiplier mass. It follows that every positive stress component meets all four sides and that there are at most two such components. To handle nonunique multipliers, we introduce the intersection of the stress kernels over the whole KKT face and a canonical hybrid operator incorporating all tight determinant and boundary derivatives. A strictly convex selector removes every decomposable invisible motion, leaving a rank-one-free residual with a sharp dimension bound; the literal maximal two-dimensional residual is excluded. Two-terminal substresses satisfy an exact interface-flux law, and a five-internal-vertex rank-four block has a Pfaffian cofactor carrier. Finally, an analytic reduction followed by exact symbolic enumeration excludes every one-external completion of a specified one-silent five-cycle residual, for all orientation words. These results isolate the remaining degeneracy but do not solve the problem for arbitrary n.",
+          "version": 1
+        }
       }
     }
   ]

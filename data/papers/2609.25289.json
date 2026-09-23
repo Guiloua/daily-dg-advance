@@ -15,17 +15,43 @@
         "math.SP"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-21T18:33:01Z",
+      "updatedAt": "2026-09-21T18:33:01Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-23T02:49:05.615088+00:00",
         "contentHash": "71fa32ae324184f993edf30fcad109458c38f6953ff283b7a2307868599f1e40"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-23T02:50:29.449722+00:00",
+        "contentHash": "3a9ebbd89dee80028705e6dfc87184a05776265fa73d0040f487d2da8e4671e5"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "漂移谱与增长阶刚性",
+      "workSummary": "比较漂移 Laplacian 的特征值与特征函数增长过滤，证明离散谱、Agmon 估计，并在径向或不变扇区得到 Hermite/Laguerre 型刚性。",
+      "techniques": [
+        "加权 Agmon 估计",
+        "局部化矩估计",
+        "翘曲积",
+        "正交多项式"
+      ],
+      "breakthrough": "用增长与对称条件获得谱比较及逆多项式分类，不要求曲率界或孤立子方程。",
+      "limitations": "全谱兼容性有明确反例；强刚性限于指定扇区且依赖增长及正则性假设。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 76,
+      "priorityReason": "用增长与对称条件获得谱比较及逆多项式分类，不要求曲率界或孤立子方程。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(M^n,g)$ be a complete, connected, noncompact Riemannian manifold, and let $f\\ge0$ be a proper $C^2$ weight. We assume polynomial bounds on $f$, $|\\nabla f|$, and $\\Delta f$ (Assumptions H1-H3), with growth exponent $\\alpha>0$. We study the drift Laplacian $L_f=\\Delta-\\langle\\nabla f,\\nabla\\cdot\\rangle$ on $L^2(M,e^{-f}dV)$. We assume that its eigenfunctions have finite polynomial growth orders $\\gamma_k$, measured on the level sets of $f^{1/\\alpha}$. We also assume that $\\gamma_k\\to\\infty$ in spectral order (Assumption H4). We compare this growth filtration with the filtration by eigenvalue $\\lambda_k$. For $\\alpha>1$, we study the relation $\\lambda_k\\asymp\\gamma_k^{(2\\alpha-2)/\\alpha}$, called compatibility. An explicit rotationally symmetric example shows that this relation can fail for the full spectrum, even when $\\alpha=2$. We prove discreteness and weighted Agmon estimates for $\\alpha>1$. A moment estimate bounds the concentration radius in terms of the growth order and a finite-scale prefactor. A lower localization condition gives one direction of the spectral comparison. For exact warped products with a one-dimensional base, we impose the radial growth condition and a regularity assumption on the radial drift. These give $\\alpha=2$ and $\\lambda_k\\asymp\\gamma_k$ in the radial sector. For general $(M,g)$, we assume a transitive isometric symmetry of the level sets instead of a warped-product structure. The invariant-sector growth condition and radial-drift regularity then give $\\alpha=2$ and $\\lambda_k\\asymp\\gamma_k\\asymp k$. Finally, exact polynomiality of the invariant eigenfunctions implies $\\alpha=2$ without the drift regularity assumptions. The reduced equation is then Hermite or generalized Laguerre after normalization. The arguments use neither curvature bounds nor soliton equations.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +69,43 @@
             "math.SP"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-21T18:33:01Z",
+          "updatedAt": "2026-09-21T18:33:01Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-23T02:49:05.615088+00:00",
             "contentHash": "71fa32ae324184f993edf30fcad109458c38f6953ff283b7a2307868599f1e40"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-23T02:50:29.449722+00:00",
+            "contentHash": "3a9ebbd89dee80028705e6dfc87184a05776265fa73d0040f487d2da8e4671e5"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "漂移谱与增长阶刚性",
+          "workSummary": "比较漂移 Laplacian 的特征值与特征函数增长过滤，证明离散谱、Agmon 估计，并在径向或不变扇区得到 Hermite/Laguerre 型刚性。",
+          "techniques": [
+            "加权 Agmon 估计",
+            "局部化矩估计",
+            "翘曲积",
+            "正交多项式"
+          ],
+          "breakthrough": "用增长与对称条件获得谱比较及逆多项式分类，不要求曲率界或孤立子方程。",
+          "limitations": "全谱兼容性有明确反例；强刚性限于指定扇区且依赖增长及正则性假设。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 76,
+          "priorityReason": "用增长与对称条件获得谱比较及逆多项式分类，不要求曲率界或孤立子方程。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(M^n,g)$ be a complete, connected, noncompact Riemannian manifold, and let $f\\ge0$ be a proper $C^2$ weight. We assume polynomial bounds on $f$, $|\\nabla f|$, and $\\Delta f$ (Assumptions H1-H3), with growth exponent $\\alpha>0$. We study the drift Laplacian $L_f=\\Delta-\\langle\\nabla f,\\nabla\\cdot\\rangle$ on $L^2(M,e^{-f}dV)$. We assume that its eigenfunctions have finite polynomial growth orders $\\gamma_k$, measured on the level sets of $f^{1/\\alpha}$. We also assume that $\\gamma_k\\to\\infty$ in spectral order (Assumption H4). We compare this growth filtration with the filtration by eigenvalue $\\lambda_k$. For $\\alpha>1$, we study the relation $\\lambda_k\\asymp\\gamma_k^{(2\\alpha-2)/\\alpha}$, called compatibility. An explicit rotationally symmetric example shows that this relation can fail for the full spectrum, even when $\\alpha=2$. We prove discreteness and weighted Agmon estimates for $\\alpha>1$. A moment estimate bounds the concentration radius in terms of the growth order and a finite-scale prefactor. A lower localization condition gives one direction of the spectral comparison. For exact warped products with a one-dimensional base, we impose the radial growth condition and a regularity assumption on the radial drift. These give $\\alpha=2$ and $\\lambda_k\\asymp\\gamma_k$ in the radial sector. For general $(M,g)$, we assume a transitive isometric symmetry of the level sets instead of a warped-product structure. The invariant-sector growth condition and radial-drift regularity then give $\\alpha=2$ and $\\lambda_k\\asymp\\gamma_k\\asymp k$. Finally, exact polynomiality of the invariant eigenfunctions implies $\\alpha=2$ without the drift regularity assumptions. The reduced equation is then Hermite or generalized Laguerre after normalization. The arguments use neither curvature bounds nor soliton equations.",
+          "version": 1
+        }
       }
     }
   ]
