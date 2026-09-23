@@ -334,12 +334,11 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
       a
         ? '<dl>' +
           [
+            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
             ['完成的工作', a.workSummary],
             ['技术', a.techniques.join(' · ')],
             ['可能的突破', a.breakthrough],
             ['需谨慎处', conciseLimitations(a.limitations)],
-            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
-            ['排序理由', a.lowPriorityReason ?? a.priorityReason],
           ]
             .filter(([, value]) => value)
             .map(

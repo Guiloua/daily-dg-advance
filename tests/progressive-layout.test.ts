@@ -144,7 +144,7 @@ try {
   );
   assert.match(detail, /site-header/);
   assert.match(detail, /提交时间：待补齐/);
-  assert.match(detail, /特定算例，适用范围有限/);
+  assert.doesNotMatch(detail, /排序理由|特定算例，适用范围有限/);
   const archive = await readFile(join(out, 'archive/index.html'), 'utf8');
   assert.match(archive, /site-header/);
   assert.match(archive, /archive-page/);
