@@ -64,12 +64,11 @@ export function EntryView({
       {a ? (
         <div className="my-5 grid gap-4 sm:grid-cols-2">
           {[
+            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
             ['完成的工作', a.workSummary],
             ['主要突破', a.breakthrough],
             ['使用技术', a.techniques.join('；')],
             ['需谨慎处', conciseLimitations(a.limitations)],
-            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
-            ['排序理由', a.lowPriorityReason ?? a.priorityReason],
           ]
             .filter(([, text]) => text)
             .map(([label, text]) => (
