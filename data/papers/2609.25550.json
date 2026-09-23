@@ -29,21 +29,45 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-23T02:50:29.450889+00:00",
         "contentHash": "6f4cf5a7f461c69f10225f13424513865daa3cf133a5bb76ca97d0ac3b0bf427"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.25550v1",
+        "observedAt": "2026-09-23T02:53:00.439918+00:00",
+        "contentHash": "2703309a08f1579d4a28b589ab6394ee699791a64dbda2c3b67ef78568b4bb1f"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "低正则正质量定理",
-      "workSummary": "对一致接近欧氏空间、渐近平坦的 C⁰ 度量，证明 Ricci 流意义下非负标量曲率蕴含 C⁰ 质量非负。",
+      "workSummary": "在 Rⁿ（n≥3）上，对满足 (n−2)/2<τ<n−2 衰减且全局 C⁰ 小扰动的渐近平坦度量，证明 Ricci 流意义非负标量曲率蕴含连续质量非负。通过大时间 Ricci–DeTurck 流切片的粘合和共形变形，约化到经典正质量定理。",
       "techniques": [
-        "Ricci 流弱标量曲率",
-        "C⁰ 渐近平坦性",
-        "连续质量"
+        "Ricci–DeTurck 长时间平滑",
+        "连续局部质量控制",
+        "粘合与共形变形"
       ],
       "breakthrough": "把正质量结论推进到仅连续的欧氏小扰动度量。",
-      "limitations": "要求一致小扰动和指定弱曲率概念，不是任意 C⁰ 渐近平坦度量的正质量定理。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "已读 PDF 第 1–5 页主定理及其约化。要求 Rⁿ 上的全局小扰动与指定衰减范围；质量可为正无穷，本文不处理零质量刚性。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT-6 Astra 用于文献检索，并提出引理 2.6 的证明策略；与 ChatGPT 5.6 的交流部分启发了指数权重思路。具体权重、证明及写作由作者完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.25550v1 · PDF 第 5 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-23T02:53:00.439918+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.25550v1",
+        "contentHash": "2703309a08f1579d4a28b589ab6394ee699791a64dbda2c3b67ef78568b4bb1f",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 用于文献检索，并提出引理 2.6 的证明策略；与 ChatGPT 5.6 的交流部分启发了指数权重思路。具体权重、证明及写作由作者完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8bb3f166e269afb7d7483c791c90c61c505e880cf9ee7f42fa70f77eaca4cee2"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs"
+      ],
       "priorityScore": 95,
       "priorityReason": "把正质量结论推进到仅连续的欧氏小扰动度量。"
     },
@@ -82,21 +106,45 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-23T02:50:29.450889+00:00",
             "contentHash": "6f4cf5a7f461c69f10225f13424513865daa3cf133a5bb76ca97d0ac3b0bf427"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.25550v1",
+            "observedAt": "2026-09-23T02:53:00.439918+00:00",
+            "contentHash": "2703309a08f1579d4a28b589ab6394ee699791a64dbda2c3b67ef78568b4bb1f"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "低正则正质量定理",
-          "workSummary": "对一致接近欧氏空间、渐近平坦的 C⁰ 度量，证明 Ricci 流意义下非负标量曲率蕴含 C⁰ 质量非负。",
+          "workSummary": "在 Rⁿ（n≥3）上，对满足 (n−2)/2<τ<n−2 衰减且全局 C⁰ 小扰动的渐近平坦度量，证明 Ricci 流意义非负标量曲率蕴含连续质量非负。通过大时间 Ricci–DeTurck 流切片的粘合和共形变形，约化到经典正质量定理。",
           "techniques": [
-            "Ricci 流弱标量曲率",
-            "C⁰ 渐近平坦性",
-            "连续质量"
+            "Ricci–DeTurck 长时间平滑",
+            "连续局部质量控制",
+            "粘合与共形变形"
           ],
           "breakthrough": "把正质量结论推进到仅连续的欧氏小扰动度量。",
-          "limitations": "要求一致小扰动和指定弱曲率概念，不是任意 C⁰ 渐近平坦度量的正质量定理。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "已读 PDF 第 1–5 页主定理及其约化。要求 Rⁿ 上的全局小扰动与指定衰减范围；质量可为正无穷，本文不处理零质量刚性。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT-6 Astra 用于文献检索，并提出引理 2.6 的证明策略；与 ChatGPT 5.6 的交流部分启发了指数权重思路。具体权重、证明及写作由作者完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.25550v1 · PDF 第 5 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-23T02:53:00.439918+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.25550v1",
+            "contentHash": "2703309a08f1579d4a28b589ab6394ee699791a64dbda2c3b67ef78568b4bb1f",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 用于文献检索，并提出引理 2.6 的证明策略；与 ChatGPT 5.6 的交流部分启发了指数权重思路。具体权重、证明及写作由作者完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8bb3f166e269afb7d7483c791c90c61c505e880cf9ee7f42fa70f77eaca4cee2"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs"
+          ],
           "priorityScore": 95,
           "priorityReason": "把正质量结论推进到仅连续的欧氏小扰动度量。"
         },

@@ -34,25 +34,44 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-23T02:50:29.450065+00:00",
         "contentHash": "f0bbb6711964203e2a4349b4e13761b6c54ac6d7472a77cd87eb073c9d27b0e2"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.25316v1",
+        "observedAt": "2026-09-23T02:55:45.713477+00:00",
+        "contentHash": "d443a923cbf4b1dd3f0c8e247deb264b852d1fe07e8e56bd9ebcc090a395ec74"
       }
     ],
     "analysis": {
       "topic": "交叉方向与基础工具",
       "progressType": "高阶结合多面体实现",
-      "workSummary": "给出范畴 n-associahedra 的多胞体实现，其法扇是作者 velocity fan 的修正。",
+      "workSummary": "宣布以修改后的重心 velocity fan 实现高阶范畴 associahedra，并在文中集中展示 2-associahedra 的构造。Astra 找到关键法扇，作者调整终端坐标以统一一般 n 的构造。",
       "techniques": [
         "多胞体实现",
         "法扇",
         "高阶范畴组合"
       ],
       "breakthrough": "为高阶范畴结合结构提供具体多胞体模型；摘要明确把法扇发现归于 OpenAI Astra。",
-      "limitations": "简短摘要未说明全部实现条件或证明细节；AI 贡献目前依据官方摘要。",
-      "analysisDepth": "abstract",
+      "limitations": "已读 PDF 第 1、9 页构造背景和披露。本文是公告，完整多胞体性证明将于后续工作给出；不能把该公告当作完整证明文本。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
-      "aiEvidence": "官方摘要明确披露该多胞体实现的法扇由 OpenAI Astra 模型发现。",
-      "aiEvidenceSource": "https://arxiv.org/abs/2609.25316 · 官方摘要",
+      "aiEvidence": "作者披露 Astra 找到多胞体实现的法扇，随后作者为统一 n 维构造作调整；Astra 另用于制图和校对，Opus 与 Fable 用于 Lean 4 形式化，稿件正文由作者撰写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.25316v1 · PDF 第 1、9 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-23T02:55:45.713477+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.25316v1",
+        "contentHash": "d443a923cbf4b1dd3f0c8e247deb264b852d1fe07e8e56bd9ebcc090a395ec74",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Astra 找到多胞体实现的法扇，随后作者为统一 n 维构造作调整；Astra 另用于制图和校对，Opus 与 Fable 用于 Lean 4 形式化，稿件正文由作者撰写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ccca10c61ca778be06a1cb62ff055880493a09c264aed9442eb7027429d87c2c"
+      },
       "aiUsage": [
-        "ideas"
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
       ],
       "priorityScore": 75,
       "priorityReason": "为高阶范畴结合结构提供具体多胞体模型；摘要明确把法扇发现归于 OpenAI Astra。"
@@ -97,25 +116,44 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-23T02:50:29.450065+00:00",
             "contentHash": "f0bbb6711964203e2a4349b4e13761b6c54ac6d7472a77cd87eb073c9d27b0e2"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.25316v1",
+            "observedAt": "2026-09-23T02:55:45.713477+00:00",
+            "contentHash": "d443a923cbf4b1dd3f0c8e247deb264b852d1fe07e8e56bd9ebcc090a395ec74"
           }
         ],
         "analysis": {
           "topic": "交叉方向与基础工具",
           "progressType": "高阶结合多面体实现",
-          "workSummary": "给出范畴 n-associahedra 的多胞体实现，其法扇是作者 velocity fan 的修正。",
+          "workSummary": "宣布以修改后的重心 velocity fan 实现高阶范畴 associahedra，并在文中集中展示 2-associahedra 的构造。Astra 找到关键法扇，作者调整终端坐标以统一一般 n 的构造。",
           "techniques": [
             "多胞体实现",
             "法扇",
             "高阶范畴组合"
           ],
           "breakthrough": "为高阶范畴结合结构提供具体多胞体模型；摘要明确把法扇发现归于 OpenAI Astra。",
-          "limitations": "简短摘要未说明全部实现条件或证明细节；AI 贡献目前依据官方摘要。",
-          "analysisDepth": "abstract",
+          "limitations": "已读 PDF 第 1、9 页构造背景和披露。本文是公告，完整多胞体性证明将于后续工作给出；不能把该公告当作完整证明文本。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
-          "aiEvidence": "官方摘要明确披露该多胞体实现的法扇由 OpenAI Astra 模型发现。",
-          "aiEvidenceSource": "https://arxiv.org/abs/2609.25316 · 官方摘要",
+          "aiEvidence": "作者披露 Astra 找到多胞体实现的法扇，随后作者为统一 n 维构造作调整；Astra 另用于制图和校对，Opus 与 Fable 用于 Lean 4 形式化，稿件正文由作者撰写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.25316v1 · PDF 第 1、9 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-23T02:55:45.713477+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.25316v1",
+            "contentHash": "d443a923cbf4b1dd3f0c8e247deb264b852d1fe07e8e56bd9ebcc090a395ec74",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Astra 找到多胞体实现的法扇，随后作者为统一 n 维构造作调整；Astra 另用于制图和校对，Opus 与 Fable 用于 Lean 4 形式化，稿件正文由作者撰写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ccca10c61ca778be06a1cb62ff055880493a09c264aed9442eb7027429d87c2c"
+          },
           "aiUsage": [
-            "ideas"
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
           ],
           "priorityScore": 75,
           "priorityReason": "为高阶范畴结合结构提供具体多胞体模型；摘要明确把法扇发现归于 OpenAI Astra。"

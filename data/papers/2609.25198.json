@@ -29,22 +29,47 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-23T02:50:29.449024+00:00",
         "contentHash": "c5427f5e43a3e5980be06945f5dc0db0c242c6e9fa65a0abf3afdc722ad94fba"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.25198v1",
+        "observedAt": "2026-09-23T02:53:36.045705+00:00",
+        "contentHash": "5380b4f88fb511616ab6fdac21b91d1e595bb3d6c7ee446d860bb46b2146d466"
       }
     ],
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
       "progressType": "四维拓扑的好群新判据",
-      "workSummary": "引入群的 collision rank，证明有限该秩的群是四维拓扑中的好群，并给出超出次指数可和类的秩二例子。",
+      "workSummary": "以树上连续碰撞步骤定义群的 collision rank，证明有限秩足以实现盘嵌入；借助半轨道稳定子的陪集计数和局部有限性，证明一族 Sturmian 拓扑满群导出群具有秩二。",
       "techniques": [
-        "碰撞秩",
-        "四流形拓扑",
-        "Sturmian 系统",
-        "拓扑满群"
+        "碰撞树",
+        "capped grope 几何操作",
+        "半轨道稳定子",
+        "周期块与陪集计数"
       ],
       "breakthrough": "扩展四维好群的已知范围，例子包含连续统多个互不同构的无限单可和群。",
-      "limitations": "关键充分条件是有限 collision rank；摘要未给出任意群的判定方法。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "已读 PDF 第 1–3 页主结果、路线与定义。新群不是有限呈示群，不能成为紧流形的基本群；非交换自由群秩无限，其是否为好群仍未解决。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露与 ChatGPT-5.6 Sol 的长期讨论发展了群论策略，识别 Sturmian 系统拓扑满群作为候选并发展陪集计数和周期块论证；另与 Claude Opus 5 一起发展、检查碰撞秩性质及制图。原始定义与拓扑应用由作者提出。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.25198v1 · PDF 第 2–3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-23T02:53:36.045705+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.25198v1",
+        "contentHash": "5380b4f88fb511616ab6fdac21b91d1e595bb3d6c7ee446d860bb46b2146d466",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT-5.6 Sol 的长期讨论发展了群论策略，识别 Sturmian 系统拓扑满群作为候选并发展陪集计数和周期块论证；另与 Claude Opus 5 一起发展、检查碰撞秩性质及制图。原始定义与拓扑应用由作者提出。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8ad531d5718e6d363ff342535dfe55ca452c8b46af90e099c023fa7cb5fda8c2"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 91,
       "priorityReason": "扩展四维好群的已知范围，例子包含连续统多个互不同构的无限单可和群。"
     },
@@ -83,22 +108,47 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-23T02:50:29.449024+00:00",
             "contentHash": "c5427f5e43a3e5980be06945f5dc0db0c242c6e9fa65a0abf3afdc722ad94fba"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.25198v1",
+            "observedAt": "2026-09-23T02:53:36.045705+00:00",
+            "contentHash": "5380b4f88fb511616ab6fdac21b91d1e595bb3d6c7ee446d860bb46b2146d466"
           }
         ],
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
           "progressType": "四维拓扑的好群新判据",
-          "workSummary": "引入群的 collision rank，证明有限该秩的群是四维拓扑中的好群，并给出超出次指数可和类的秩二例子。",
+          "workSummary": "以树上连续碰撞步骤定义群的 collision rank，证明有限秩足以实现盘嵌入；借助半轨道稳定子的陪集计数和局部有限性，证明一族 Sturmian 拓扑满群导出群具有秩二。",
           "techniques": [
-            "碰撞秩",
-            "四流形拓扑",
-            "Sturmian 系统",
-            "拓扑满群"
+            "碰撞树",
+            "capped grope 几何操作",
+            "半轨道稳定子",
+            "周期块与陪集计数"
           ],
           "breakthrough": "扩展四维好群的已知范围，例子包含连续统多个互不同构的无限单可和群。",
-          "limitations": "关键充分条件是有限 collision rank；摘要未给出任意群的判定方法。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "已读 PDF 第 1–3 页主结果、路线与定义。新群不是有限呈示群，不能成为紧流形的基本群；非交换自由群秩无限，其是否为好群仍未解决。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露与 ChatGPT-5.6 Sol 的长期讨论发展了群论策略，识别 Sturmian 系统拓扑满群作为候选并发展陪集计数和周期块论证；另与 Claude Opus 5 一起发展、检查碰撞秩性质及制图。原始定义与拓扑应用由作者提出。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.25198v1 · PDF 第 2–3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-23T02:53:36.045705+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.25198v1",
+            "contentHash": "5380b4f88fb511616ab6fdac21b91d1e595bb3d6c7ee446d860bb46b2146d466",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT-5.6 Sol 的长期讨论发展了群论策略，识别 Sturmian 系统拓扑满群作为候选并发展陪集计数和周期块论证；另与 Claude Opus 5 一起发展、检查碰撞秩性质及制图。原始定义与拓扑应用由作者提出。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8ad531d5718e6d363ff342535dfe55ca452c8b46af90e099c023fa7cb5fda8c2"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 91,
           "priorityReason": "扩展四维好群的已知范围，例子包含连续统多个互不同构的无限单可和群。"
         },
