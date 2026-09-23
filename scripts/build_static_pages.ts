@@ -96,9 +96,10 @@ function renderPaperCard(report: PaperReport, basePath: string): string {
     <div><dt>技术</dt><dd>${renderMathText(report.techniques.join(' · '))}</dd></div>
     <div><dt>可能的突破</dt><dd>${renderMathText(report.breakthrough)}</dd></div>
     <div><dt>需谨慎处</dt><dd>${renderMathText(conciseLimitations(report.limitations))}</dd></div>
+    ${report.aiStatus === 'explicit' && report.aiEvidence ? `<div><dt>AI 使用说明</dt><dd>${renderMathText(report.aiEvidence)}</dd></div>` : ''}
     <div><dt>排序理由</dt><dd>${renderMathText(report.lowPriorityReason ?? report.priorityReason)}</dd></div>
   </dl>
-  <details><summary>英文摘要与分析依据</summary><div class="abstract">${renderMathText(report.abstract)}</div><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p><p>${renderMathText(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${renderMathText(report.revisionSummary)}</p>` : ''}</details>
+  <details><summary>英文摘要与分析依据</summary><div class="abstract">${renderMathText(report.abstract)}</div><p>${report.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文'} · v${report.version}</p>${report.aiStatus === 'explicit' ? '' : `<p>${renderMathText(report.aiEvidence ?? '未见已检查来源中的 AI 协作声明')}</p>`}${report.aiEvidenceSource ? `<p>${escapeHtml(report.aiEvidenceSource)}</p>` : ''}${report.revisionSummary ? `<p>${renderMathText(report.revisionSummary)}</p>` : ''}</details>
   <a class="detail-link" href="${paperUrl(basePath, report.arxivId)}">完整分析 →</a>
 </article>`;
 }

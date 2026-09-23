@@ -68,6 +68,7 @@ export function EntryView({
             ['主要突破', a.breakthrough],
             ['使用技术', a.techniques.join('；')],
             ['需谨慎处', conciseLimitations(a.limitations)],
+            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
             ['排序理由', a.lowPriorityReason ?? a.priorityReason],
           ]
             .filter(([, text]) => text)
@@ -100,7 +101,7 @@ export function EntryView({
       ) : null}
       <p className="my-3 text-xs text-muted-foreground">
         {a?.aiStatus === 'explicit'
-          ? `明确披露 AI 协作：${a.aiEvidence}（${a.aiEvidenceSource}）`
+          ? a.aiEvidenceSource
           : disclosureLabel(entry)}
       </p>
       {a?.aiReview ? (

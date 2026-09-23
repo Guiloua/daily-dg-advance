@@ -338,6 +338,7 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
             ['技术', a.techniques.join(' · ')],
             ['可能的突破', a.breakthrough],
             ['需谨慎处', conciseLimitations(a.limitations)],
+            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
             ['排序理由', a.lowPriorityReason ?? a.priorityReason],
           ]
             .filter(([, value]) => value)
@@ -352,7 +353,7 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
     <details${!a || detail ? ' open' : ''}><summary>英文摘要与分析依据</summary>
       <div class="abstract">${renderMathText(m.abstract ?? '摘要待补齐')}</div>
       <p>${a ? (a.analysisDepth === 'abstract' ? '摘要级分析' : '已补读正文') : '待解读'} · ${m.version ? 'v' + m.version : '版本待补齐'}</p>
-      <p>${renderMathText(a?.aiStatus === 'explicit' ? '明确披露 AI 协作：' + a.aiEvidence : disclosureLabel(entry))}</p>
+      ${a?.aiStatus === 'explicit' ? '' : '<p>' + renderMathText(disclosureLabel(entry)) + '</p>'}
       ${a?.aiEvidenceSource ? '<p>' + esc(a.aiEvidenceSource) + '</p>' : ''}
       ${a?.aiReview ? '<p>核查范围：' + esc(a.aiReview.note) + ' · ' + (a.aiReview.version ? 'v' + a.aiReview.version : '版本待核实') + (a.aiReview.pages ? ' · ' + a.aiReview.pages + ' 页' : '') + ' · 核查时间：' + formatUpdateTime(a.aiReview.checkedAt) + '（上海时间） · <a href="' + esc(a.aiReview.sourceUrl) + '">核查来源</a></p>' : ''}
       <p>提交时间：${m.submittedAt ? formatUpdateTime(m.submittedAt) : '待补齐'} · 修订时间：${m.updatedAt ? formatUpdateTime(m.updatedAt) : '待补齐'}（上海时间）</p>
