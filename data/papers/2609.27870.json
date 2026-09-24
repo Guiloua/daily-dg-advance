@@ -29,22 +29,46 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-24T02:43:48.160562+00:00",
         "contentHash": "464e903777d8b78c1308782af49e9006ee8e0d041f1aaa9d1a79c9c11722cc6a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.27870v1",
+        "observedAt": "2026-09-24T02:54:32.846015+00:00",
+        "contentHash": "fc004f8a7ec50d8010dc4a4f921ff941160e8a2451c9a47365810470f563cbe5"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "极小 Kähler 曲面的正标量曲率锥",
-      "workSummary": "刻画 Kodaira 维数 −∞ 的极小紧 Kähler 曲面的正标量曲率类：P² 全部类可实现，直纹曲面全部正总曲率类可实现当且仅当底亏格≤1 或秩二丛斜率半稳定。",
+      "workSummary": "在底亏格 g≥1 的直纹曲面上，令 Δ=2μ_max(E)−deg(E)、α=2π(aζ+bF)。正文给出正总曲率锥为 a>0、b>max{g−1,Δ/2}a，而逐点正标量曲率锥为 a>0、b>(g−1+Δ/2)a。",
       "techniques": [
-        "Enriques–Kodaira 分类",
-        "直纹曲面",
-        "斜率半稳定",
+        "Harder–Narasimhan 斜率",
+        "动量构造",
+        "变形到法锥",
         "双有理障碍"
       ],
       "breakthrough": "区分逐点正标量曲率与总标量曲率，并将不稳定高亏格底的障碍传至双有理模型。",
-      "limitations": "关于全部正总曲率类的充要条件，不应误解为每个不稳定类均无正曲率度量。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "两个锥在 g=1 或 Δ=0 时重合；g≥2 且不稳定时存在间隙。该数值公式针对所述极小直纹曲面，一般吹起情形仅陈述障碍传递。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 5.5 Plus 提出反例关键步骤命题 A.2，作者随后发展机制并联系斜率稳定性；另用 ChatGPT 5.5 Plus 与 5.6 Sol 改善写作和核查数学逻辑。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.27870v1 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-24T02:54:32.846015+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.27870v1",
+        "contentHash": "fc004f8a7ec50d8010dc4a4f921ff941160e8a2451c9a47365810470f563cbe5",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.5 Plus 提出反例关键步骤命题 A.2，作者随后发展机制并联系斜率稳定性；另用 ChatGPT 5.5 Plus 与 5.6 Sol 改善写作和核查数学逻辑。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dc772469da64f547a451832df036f29ac9c8bf9dede0f4b85cc8163760bbd429"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 92,
       "priorityReason": "区分逐点正标量曲率与总标量曲率，并将不稳定高亏格底的障碍传至双有理模型。"
     },
@@ -83,22 +107,46 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-24T02:43:48.160562+00:00",
             "contentHash": "464e903777d8b78c1308782af49e9006ee8e0d041f1aaa9d1a79c9c11722cc6a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.27870v1",
+            "observedAt": "2026-09-24T02:54:32.846015+00:00",
+            "contentHash": "fc004f8a7ec50d8010dc4a4f921ff941160e8a2451c9a47365810470f563cbe5"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "极小 Kähler 曲面的正标量曲率锥",
-          "workSummary": "刻画 Kodaira 维数 −∞ 的极小紧 Kähler 曲面的正标量曲率类：P² 全部类可实现，直纹曲面全部正总曲率类可实现当且仅当底亏格≤1 或秩二丛斜率半稳定。",
+          "workSummary": "在底亏格 g≥1 的直纹曲面上，令 Δ=2μ_max(E)−deg(E)、α=2π(aζ+bF)。正文给出正总曲率锥为 a>0、b>max{g−1,Δ/2}a，而逐点正标量曲率锥为 a>0、b>(g−1+Δ/2)a。",
           "techniques": [
-            "Enriques–Kodaira 分类",
-            "直纹曲面",
-            "斜率半稳定",
+            "Harder–Narasimhan 斜率",
+            "动量构造",
+            "变形到法锥",
             "双有理障碍"
           ],
           "breakthrough": "区分逐点正标量曲率与总标量曲率，并将不稳定高亏格底的障碍传至双有理模型。",
-          "limitations": "关于全部正总曲率类的充要条件，不应误解为每个不稳定类均无正曲率度量。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "两个锥在 g=1 或 Δ=0 时重合；g≥2 且不稳定时存在间隙。该数值公式针对所述极小直纹曲面，一般吹起情形仅陈述障碍传递。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 5.5 Plus 提出反例关键步骤命题 A.2，作者随后发展机制并联系斜率稳定性；另用 ChatGPT 5.5 Plus 与 5.6 Sol 改善写作和核查数学逻辑。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.27870v1 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-24T02:54:32.846015+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.27870v1",
+            "contentHash": "fc004f8a7ec50d8010dc4a4f921ff941160e8a2451c9a47365810470f563cbe5",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.5 Plus 提出反例关键步骤命题 A.2，作者随后发展机制并联系斜率稳定性；另用 ChatGPT 5.5 Plus 与 5.6 Sol 改善写作和核查数学逻辑。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dc772469da64f547a451832df036f29ac9c8bf9dede0f4b85cc8163760bbd429"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 92,
           "priorityReason": "区分逐点正标量曲率与总标量曲率，并将不稳定高亏格底的障碍传至双有理模型。"
         },

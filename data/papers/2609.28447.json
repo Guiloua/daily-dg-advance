@@ -32,6 +32,11 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-24T02:44:15.571521+00:00",
         "contentHash": "4d7f066ace6436ecabd27a1d5e0e6bea1f67c26edbd10258e98b619d328685e1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28447v1",
+        "observedAt": "2026-09-24T02:58:06.846514+00:00",
+        "contentHash": "22baa6e9da57c65dd8378a8c1d2478fd4a7cab7ca6c1d780874156fb591cbb66"
       }
     ],
     "analysis": {
@@ -48,10 +53,25 @@
       "limitations": "最优性为维数统一常数；形式化完整性此处依据作者报告，尚未独立运行证明工程。",
       "analysisDepth": "abstract",
       "aiStatus": "explicit",
-      "aiEvidence": "官方摘要明确披露证明由 AI 语言模型在人类主导的研究过程中发现。",
-      "aiEvidenceSource": "https://arxiv.org/abs/2609.28447 · 官方摘要",
+      "aiEvidence": "作者披露证明由 AI 语言模型响应第一作者提出的研究问题而发现，发展过程涉及矩阵估计、文献比较、精确标量计算和数值误差检查；AI 亦辅助 Lean 4 形式化。作者负责数学解释、文献归属和最终稿件。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.28447v1 · PDF 第 1、14 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-24T02:58:06.846514+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.28447v1",
+        "contentHash": "22baa6e9da57c65dd8378a8c1d2478fd4a7cab7ca6c1d780874156fb591cbb66",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露证明由 AI 语言模型响应第一作者提出的研究问题而发现，发展过程涉及矩阵估计、文献比较、精确标量计算和数值误差检查；AI 亦辅助 Lean 4 形式化。作者负责数学解释、文献归属和最终稿件。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "714fd8f1be044969d9732946aec1432610ce6d50cb37ff30e1ff5e56770b2a11"
+      },
       "aiUsage": [
-        "proofs"
+        "computation",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification"
       ],
       "priorityScore": 94,
       "priorityReason": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。"
@@ -94,6 +114,11 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-24T02:44:15.571521+00:00",
             "contentHash": "4d7f066ace6436ecabd27a1d5e0e6bea1f67c26edbd10258e98b619d328685e1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.28447v1",
+            "observedAt": "2026-09-24T02:58:06.846514+00:00",
+            "contentHash": "22baa6e9da57c65dd8378a8c1d2478fd4a7cab7ca6c1d780874156fb591cbb66"
           }
         ],
         "analysis": {
@@ -110,10 +135,25 @@
           "limitations": "最优性为维数统一常数；形式化完整性此处依据作者报告，尚未独立运行证明工程。",
           "analysisDepth": "abstract",
           "aiStatus": "explicit",
-          "aiEvidence": "官方摘要明确披露证明由 AI 语言模型在人类主导的研究过程中发现。",
-          "aiEvidenceSource": "https://arxiv.org/abs/2609.28447 · 官方摘要",
+          "aiEvidence": "作者披露证明由 AI 语言模型响应第一作者提出的研究问题而发现，发展过程涉及矩阵估计、文献比较、精确标量计算和数值误差检查；AI 亦辅助 Lean 4 形式化。作者负责数学解释、文献归属和最终稿件。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.28447v1 · PDF 第 1、14 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-24T02:58:06.846514+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.28447v1",
+            "contentHash": "22baa6e9da57c65dd8378a8c1d2478fd4a7cab7ca6c1d780874156fb591cbb66",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露证明由 AI 语言模型响应第一作者提出的研究问题而发现，发展过程涉及矩阵估计、文献比较、精确标量计算和数值误差检查；AI 亦辅助 Lean 4 形式化。作者负责数学解释、文献归属和最终稿件。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "714fd8f1be044969d9732946aec1432610ce6d50cb37ff30e1ff5e56770b2a11"
+          },
           "aiUsage": [
-            "proofs"
+            "computation",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification"
           ],
           "priorityScore": 94,
           "priorityReason": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。"
