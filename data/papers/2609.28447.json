@@ -18,17 +18,48 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "Lean 4 formalization with mathlib: this https URL",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-23T17:44:59Z",
+      "updatedAt": "2026-09-23T17:44:59Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-24T02:42:39.876836+00:00",
         "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-24T02:44:15.571521+00:00",
+        "contentHash": "4d7f066ace6436ecabd27a1d5e0e6bea1f67c26edbd10258e98b619d328685e1"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Khachiyan 椭球猜想的谱证明",
+      "workSummary": "证明穿过最大内接椭球中心的任意半空间截切，使最大内接椭球体积至多为原来的 √e/2，并以圆锥族证明跨维数常数最优。",
+      "techniques": [
+        "正定矩阵谱估计",
+        "秩一扰动",
+        "分数迹幂",
+        "凹性"
+      ],
+      "breakthrough": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。",
+      "limitations": "最优性为维数统一常数；形式化完整性此处依据作者报告，尚未独立运行证明工程。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "官方摘要明确披露证明由 AI 语言模型在人类主导的研究过程中发现。",
+      "aiEvidenceSource": "https://arxiv.org/abs/2609.28447 · 官方摘要",
+      "aiUsage": [
+        "proofs"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。"
+    },
+    "analysisBasis": {
+      "abstract": "For a convex body $K\\subset\\mathbb{R}^n$, let $w(K)$ denote the volume of its maximum-volume inscribed ellipsoid. We prove that every closed halfspace $H$ whose boundary passes through the center of the maximizing ellipsoid satisfies \\[ w(K\\cap H)\\le\\frac{\\sqrt e}{2}\\,w(K). \\] The constant is optimal uniformly over all dimensions, as witnessed by a family of circular cones, thereby establishing Khachiyan's conjecture. The proof converts containment, maximality, and the central-cut condition into algebraic constraints on positive definite matrices. Two complementary spectral bounds from a diagonal model extend to arbitrary center displacements through a directional rank-one estimate for fractional trace powers. Concavity determines their joint optimum. We also derive finite-dimensional bounds and a necessary condition for near equality, with self-contained supporting proofs and an alternative resolvent argument. An AI language model discovered the proof in a human-directed research process. Lean 4 with mathlib verifies the main theorem, sharpness, and supporting results.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -49,17 +80,48 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "Lean 4 formalization with mathlib: this https URL",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-23T17:44:59Z",
+          "updatedAt": "2026-09-23T17:44:59Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-24T02:42:39.876836+00:00",
             "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-24T02:44:15.571521+00:00",
+            "contentHash": "4d7f066ace6436ecabd27a1d5e0e6bea1f67c26edbd10258e98b619d328685e1"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Khachiyan 椭球猜想的谱证明",
+          "workSummary": "证明穿过最大内接椭球中心的任意半空间截切，使最大内接椭球体积至多为原来的 √e/2，并以圆锥族证明跨维数常数最优。",
+          "techniques": [
+            "正定矩阵谱估计",
+            "秩一扰动",
+            "分数迹幂",
+            "凹性"
+          ],
+          "breakthrough": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。",
+          "limitations": "最优性为维数统一常数；形式化完整性此处依据作者报告，尚未独立运行证明工程。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "官方摘要明确披露证明由 AI 语言模型在人类主导的研究过程中发现。",
+          "aiEvidenceSource": "https://arxiv.org/abs/2609.28447 · 官方摘要",
+          "aiUsage": [
+            "proofs"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "给出 Khachiyan 猜想的肯定解答，并报告 Lean 4 形式化核验。"
+        },
+        "analysisBasis": {
+          "abstract": "For a convex body $K\\subset\\mathbb{R}^n$, let $w(K)$ denote the volume of its maximum-volume inscribed ellipsoid. We prove that every closed halfspace $H$ whose boundary passes through the center of the maximizing ellipsoid satisfies \\[ w(K\\cap H)\\le\\frac{\\sqrt e}{2}\\,w(K). \\] The constant is optimal uniformly over all dimensions, as witnessed by a family of circular cones, thereby establishing Khachiyan's conjecture. The proof converts containment, maximality, and the central-cut condition into algebraic constraints on positive definite matrices. Two complementary spectral bounds from a diagonal model extend to arbitrary center displacements through a directional rank-one estimate for fractional trace powers. Concavity determines their joint optimum. We also derive finite-dimensional bounds and a necessary condition for near equality, with self-contained supporting proofs and an alternative resolvent argument. An AI language model discovered the proof in a human-directed research process. Lean 4 with mathlib verifies the main theorem, sharpness, and supporting results.",
+          "version": 1
+        }
       }
     }
   ]

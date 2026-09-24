@@ -19,17 +19,43 @@
       ],
       "primaryCategory": "cs.LG",
       "comment": "37 pages, 2 figures",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-23T12:07:18Z",
+      "updatedAt": "2026-09-23T12:07:18Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-24T02:42:27.498194+00:00",
         "contentHash": "c5abd67b1a406f6d56cd713089cc0f90da815e60f36ad75defdbfc3044dad5f6"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-24T02:44:15.568448+00:00",
+        "contentHash": "46f6a562aa44144b3c958e903a5b90b924c6f1d38cdc1e5768a9138f144b364d"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "结构正交矩阵的 Riemannian 优化",
+      "workSummary": "对交替块对角因子与置换构成的矩阵族研究光滑流形条件，给出双因子正交情形的几何工具和避免稠密矩阵的优化算法。",
+      "techniques": [
+        "Riemannian 优化",
+        "块对角分解",
+        "自动微分",
+        "参数共享"
+      ],
+      "breakthrough": "将低参数结构约束转化为高效可实现的流形运算。",
+      "limitations": "主要算法针对双因子正交情形；研究语言模型微调本身不是论文使用生成式 AI 的披露。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 54,
+      "priorityReason": "将低参数结构约束转化为高效可实现的流形运算。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we are concerned with matrices formed by block-diagonal factors interleaved with fixed permutations -- a flexible family of structured matrices. This class has recently drawn interest in deep learning architectures for its balanced expressivity-efficiency trade-off, yet efficient computational strategies for working with it remain to be found. We approach this problem through Riemannian geometry and examine under what conditions this class admits a smooth manifold structure. For the practically important case of orthogonal two-factor matrices, we derive the essential Riemannian tools and propose efficient algorithms for their implementation. The algorithms leverage automatic differentiation, support parameter sharing within each factor, and avoid explicit dense matrix construction. We test them within the Riemannian optimization framework on the best matrix approximation problem and for parameter-efficient fine-tuning of large language models. Beyond the two-factor setting, we study the geometric and matrix-theoretic properties of factorizations with a larger number of block-diagonal factors.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -51,17 +77,43 @@
           ],
           "primaryCategory": "cs.LG",
           "comment": "37 pages, 2 figures",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-23T12:07:18Z",
+          "updatedAt": "2026-09-23T12:07:18Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-24T02:42:27.498194+00:00",
             "contentHash": "c5abd67b1a406f6d56cd713089cc0f90da815e60f36ad75defdbfc3044dad5f6"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-24T02:44:15.568448+00:00",
+            "contentHash": "46f6a562aa44144b3c958e903a5b90b924c6f1d38cdc1e5768a9138f144b364d"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "结构正交矩阵的 Riemannian 优化",
+          "workSummary": "对交替块对角因子与置换构成的矩阵族研究光滑流形条件，给出双因子正交情形的几何工具和避免稠密矩阵的优化算法。",
+          "techniques": [
+            "Riemannian 优化",
+            "块对角分解",
+            "自动微分",
+            "参数共享"
+          ],
+          "breakthrough": "将低参数结构约束转化为高效可实现的流形运算。",
+          "limitations": "主要算法针对双因子正交情形；研究语言模型微调本身不是论文使用生成式 AI 的披露。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 54,
+          "priorityReason": "将低参数结构约束转化为高效可实现的流形运算。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we are concerned with matrices formed by block-diagonal factors interleaved with fixed permutations -- a flexible family of structured matrices. This class has recently drawn interest in deep learning architectures for its balanced expressivity-efficiency trade-off, yet efficient computational strategies for working with it remain to be found. We approach this problem through Riemannian geometry and examine under what conditions this class admits a smooth manifold structure. For the practically important case of orthogonal two-factor matrices, we derive the essential Riemannian tools and propose efficient algorithms for their implementation. The algorithms leverage automatic differentiation, support parameter sharing within each factor, and avoid explicit dense matrix construction. We test them within the Riemannian optimization framework on the best matrix approximation problem and for parameter-efficient fine-tuning of large language models. Beyond the two-factor setting, we study the geometric and matrix-theoretic properties of factorizations with a larger number of block-diagonal factors.",
+          "version": 1
+        }
       }
     }
   ]

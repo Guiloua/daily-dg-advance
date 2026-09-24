@@ -17,17 +17,43 @@
       ],
       "primaryCategory": "math.PR",
       "comment": "34 pages. Lean formalization: this https URL",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-23T17:48:06Z",
+      "updatedAt": "2026-09-23T17:48:06Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-24T02:42:39.876836+00:00",
         "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-24T02:44:15.571748+00:00",
+        "contentHash": "c10e1c642f1a012994fec3aa56d6f694e65584d611ef722211d2471d2912d80d"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "正则单纯形的 Gaussian 最大值极值",
+      "workSummary": "证明单位方差中心 Gaussian 向量的最大值被正则单纯形向量的最大值随机控制，去除此前独立 Gaussian 平滑，并刻画正阈值等号。",
+      "techniques": [
+        "Gaussian 比较",
+        "正则单纯形",
+        "随机占优",
+        "信号识别"
+      ],
+      "breakthrough": "验证所述最小 Gaussian 测度单纯形猜想，并给出带拒识信号模型的极值应用。",
+      "limitations": "等号唯一性针对固定正阈值；信号应用要求等能量等先验、足够维数及非退化共同随机幅度。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 93,
+      "priorityReason": "验证所述最小 Gaussian 测度单纯形猜想，并给出带拒识信号模型的极值应用。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $n\\ge2$, and let $X=(X_1,\\ldots,X_n)$ be a centered Gaussian vector with $\\mathrm{Var}(X_i)=1$ for every $i$. Let $Z_1,\\ldots,Z_n$ be independent standard Gaussians, and put $\\overline{Z}=(Z_1+\\cdots+Z_n)/n$. We prove $\\mathbb{P}\\{\\max_i X_i\\le t\\}\\ge\\mathbb{P}\\{\\sqrt{n/(n-1)}\\,\\max_i(Z_i-\\overline{Z})\\le t\\}$ for every $t\\in\\mathbb{R}$, and for each fixed $t>0$ equality holds only when $\\mathrm{Cov}(X_i,X_j)=-1/(n-1)$ for all $i\\ne j$. The right side is the distribution function of the maximum of the regular simplex vector. Equivalently, among all simplices containing a given centered ball, the regular simplex circumscribed about the ball has the least standard Gaussian measure, as conjectured by Balitskiy, Karasev, and Tsigler. In our preceding paper we proved this comparison after both maxima are smoothed by independent Gaussian noise of variance $1/(n-1)$, which suffices for the Weak Simplex Conjecture; here we remove the smoothing, which is what probabilities at a single threshold require. As an application we consider $n$ equally likely signals of equal energy in Gaussian noise, where the transmitter may also send nothing. At every positive false-alarm level, and for every law of a common nonnegative random amplitude not concentrated at zero, the regular simplex uniquely maximizes the average probability of correct identification whenever the signal dimension is at least $n-1$. A Lean formalization is available at this https URL .",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +73,43 @@
           ],
           "primaryCategory": "math.PR",
           "comment": "34 pages. Lean formalization: this https URL",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-23T17:48:06Z",
+          "updatedAt": "2026-09-23T17:48:06Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-24T02:42:39.876836+00:00",
             "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-24T02:44:15.571748+00:00",
+            "contentHash": "c10e1c642f1a012994fec3aa56d6f694e65584d611ef722211d2471d2912d80d"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "正则单纯形的 Gaussian 最大值极值",
+          "workSummary": "证明单位方差中心 Gaussian 向量的最大值被正则单纯形向量的最大值随机控制，去除此前独立 Gaussian 平滑，并刻画正阈值等号。",
+          "techniques": [
+            "Gaussian 比较",
+            "正则单纯形",
+            "随机占优",
+            "信号识别"
+          ],
+          "breakthrough": "验证所述最小 Gaussian 测度单纯形猜想，并给出带拒识信号模型的极值应用。",
+          "limitations": "等号唯一性针对固定正阈值；信号应用要求等能量等先验、足够维数及非退化共同随机幅度。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 93,
+          "priorityReason": "验证所述最小 Gaussian 测度单纯形猜想，并给出带拒识信号模型的极值应用。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $n\\ge2$, and let $X=(X_1,\\ldots,X_n)$ be a centered Gaussian vector with $\\mathrm{Var}(X_i)=1$ for every $i$. Let $Z_1,\\ldots,Z_n$ be independent standard Gaussians, and put $\\overline{Z}=(Z_1+\\cdots+Z_n)/n$. We prove $\\mathbb{P}\\{\\max_i X_i\\le t\\}\\ge\\mathbb{P}\\{\\sqrt{n/(n-1)}\\,\\max_i(Z_i-\\overline{Z})\\le t\\}$ for every $t\\in\\mathbb{R}$, and for each fixed $t>0$ equality holds only when $\\mathrm{Cov}(X_i,X_j)=-1/(n-1)$ for all $i\\ne j$. The right side is the distribution function of the maximum of the regular simplex vector. Equivalently, among all simplices containing a given centered ball, the regular simplex circumscribed about the ball has the least standard Gaussian measure, as conjectured by Balitskiy, Karasev, and Tsigler. In our preceding paper we proved this comparison after both maxima are smoothed by independent Gaussian noise of variance $1/(n-1)$, which suffices for the Weak Simplex Conjecture; here we remove the smoothing, which is what probabilities at a single threshold require. As an application we consider $n$ equally likely signals of equal energy in Gaussian noise, where the transmitter may also send nothing. At every positive false-alarm level, and for every law of a common nonnegative random amplitude not concentrated at zero, the regular simplex uniquely maximizes the average probability of correct identification whenever the signal dimension is at least $n-1$. A Lean formalization is available at this https URL .",
+          "version": 1
+        }
       }
     }
   ]

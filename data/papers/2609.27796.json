@@ -16,17 +16,43 @@
         "math.PR"
       ],
       "primaryCategory": "math.FA",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-08-17T17:37:43Z",
+      "updatedAt": "2026-08-17T17:37:43Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-24T02:42:39.876836+00:00",
         "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-24T02:43:48.158578+00:00",
+        "contentHash": "68c84536465462c144d2e2f8619608f291a34893d4697a856627196ddb5a1ae0"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Gaussian 多胞体的距离改进",
+      "workSummary": "对 n³ 个 Gaussian 向量生成的对称多胞体，证明其到交叉多胞体的 Banach–Mazur 距离以高概率至少为 c n^(5/8)(ln n)^(-5/8)。",
+      "techniques": [
+        "K/U 分解",
+        "外积行列式",
+        "Löwner 归一化",
+        "Maurey 经验方法"
+      ],
+      "breakthrough": "将已有下界指数 4/7 改进至 5/8。",
+      "limitations": "采样数固定为 n³，概率至少 1−2/n；不声称得到最佳可能指数。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 85,
+      "priorityReason": "将已有下界指数 4/7 改进至 5/8。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $B_1^n$ be the standard cross-polytope in $\\mathbb R^n$, let $g_1,\\ldots,g_m$ be independent standard Gaussian vectors in $\\mathbb R^n$, and set $G_m=\\operatorname{conv}\\{\\pm g_1,\\ldots,\\pm g_m\\}$. For $m=n^3$ it is proved that $$ \\mathbb P\\left\\{d_{\\mathrm{BM}}(G_m,B_1^n)\\geqslant c n^{5/8}(\\ln n)^{-5/8}\\right\\}\\geqslant1-\\frac2n $$ for a suitable absolute constant $c>0$. This improves the exponent $4/7$ in the recent lower bound of Friedland. The proof uses Friedland's discretization and conditioning argument together with the $K/U$ decomposition. A selected family of $K$ vectors is suppressed and the remaining $K$ vectors are quotiented out. In the resulting quotient simultaneous bounds are proved for every top dimensional exterior product formed from the suppressed $K$ vectors and the $U$ vectors. A Dvoretzky-Rogers selection after Löwner normalization converts these determinant estimates into a bound for the minimum volume ellipsoid of the whole projected polytope and Maurey's empirical method then gives the required Gaussian measure estimate.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +71,43 @@
             "math.PR"
           ],
           "primaryCategory": "math.FA",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-08-17T17:37:43Z",
+          "updatedAt": "2026-08-17T17:37:43Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-24T02:42:39.876836+00:00",
             "contentHash": "380ab82722036016d495cd2f06929d426af4f58468176a8f2022314b72b36ab4"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-24T02:43:48.158578+00:00",
+            "contentHash": "68c84536465462c144d2e2f8619608f291a34893d4697a856627196ddb5a1ae0"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Gaussian 多胞体的距离改进",
+          "workSummary": "对 n³ 个 Gaussian 向量生成的对称多胞体，证明其到交叉多胞体的 Banach–Mazur 距离以高概率至少为 c n^(5/8)(ln n)^(-5/8)。",
+          "techniques": [
+            "K/U 分解",
+            "外积行列式",
+            "Löwner 归一化",
+            "Maurey 经验方法"
+          ],
+          "breakthrough": "将已有下界指数 4/7 改进至 5/8。",
+          "limitations": "采样数固定为 n³，概率至少 1−2/n；不声称得到最佳可能指数。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 85,
+          "priorityReason": "将已有下界指数 4/7 改进至 5/8。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $B_1^n$ be the standard cross-polytope in $\\mathbb R^n$, let $g_1,\\ldots,g_m$ be independent standard Gaussian vectors in $\\mathbb R^n$, and set $G_m=\\operatorname{conv}\\{\\pm g_1,\\ldots,\\pm g_m\\}$. For $m=n^3$ it is proved that $$ \\mathbb P\\left\\{d_{\\mathrm{BM}}(G_m,B_1^n)\\geqslant c n^{5/8}(\\ln n)^{-5/8}\\right\\}\\geqslant1-\\frac2n $$ for a suitable absolute constant $c>0$. This improves the exponent $4/7$ in the recent lower bound of Friedland. The proof uses Friedland's discretization and conditioning argument together with the $K/U$ decomposition. A selected family of $K$ vectors is suppressed and the remaining $K$ vectors are quotiented out. In the resulting quotient simultaneous bounds are proved for every top dimensional exterior product formed from the suppressed $K$ vectors and the $U$ vectors. A Dvoretzky-Rogers selection after Löwner normalization converts these determinant estimates into a bound for the minimum volume ellipsoid of the whole projected polytope and Maurey's empirical method then gives the required Gaussian measure estimate.",
+          "version": 1
+        }
       }
     }
   ]

@@ -16,17 +16,43 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "20 pages, 1 figure",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-20T09:10:33Z",
+      "updatedAt": "2026-09-20T09:10:33Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-24T02:42:27.498194+00:00",
         "contentHash": "c5abd67b1a406f6d56cd713089cc0f90da815e60f36ad75defdbfc3044dad5f6"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-24T02:43:36.793767+00:00",
+        "contentHash": "3116dc6b26cdd6c02d08969cfdef9b3d4361b3cd721cb58f1e5506ba7f88ddec"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "统计势的 Hessian 插值",
+      "workSummary": "对多项分布与负多项分布的对数配分函数作凸组合，证明 Hessian 正定并描述二维曲率变号；构造相应复合分布与 Bregman 投影恒等式。",
+      "techniques": [
+        "Hessian 度量",
+        "Fisher 信息",
+        "Bregman 散度",
+        "矩阵体积方程"
+      ],
+      "breakthrough": "把曲率、统计分布和对称投影联系到同一参数族。",
+      "limitations": "插值对象是势而非概率密度；抽象矩阵演化的轨迹不必留在原度量族中。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 63,
+      "priorityReason": "把曲率、统计分布和对称投影联系到同一参数族。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the one-parameter family of Hessian metrics $g_\\alpha=\\alpha h_++(1-\\alpha)h_-$, $\\alpha\\in[0,1]$, formed by convexly combining the log-partition functions (not the densities) of the multinomial and negative multinomial Fisher information Hessians. Four results are proved in full. (1) $g_\\alpha\\succ0$ for all $\\alpha\\in[0,1]$; its Gaussian curvature ($n=2$) is $-\\tfrac14$ at $\\alpha=0$ and $+\\tfrac14$ at $\\alpha=1$, but non-constant for intermediate $\\alpha$, changing sign at a closed-form critical value $\\alpha^\\ast(w)$, with an analytic uniqueness proof. (2) Viewing $g_\\alpha$ as the spatial metric of a Kasner-type volume equation, positive-definiteness forces one conserved quantity $\\beta\\le0$, while a second, independent quantity $C=4\\det K$ governs the equation's branch (bounded oscillatory, parabolic, or unbounded growth) and is not fixed by $\\beta$ or positive-definiteness alone; we show this discriminant dictionary is a theorem about the abstract matrix equation, to which $g_\\alpha$ supplies initial data of either sign of $C$ without the trajectories remaining on $\\{g_\\alpha(\\theta)\\}$ itself. (3) $\\Psi_\\alpha$ is identified as the log-partition function of a compound distribution: a negative-binomial latent count $M$ (parameter $r=1-\\alpha$), augmented by a Bernoulli parity bit and split multinomially, with non-negative base measure for every $\\alpha$. (4) The associated Bregman divergence obeys a generalised Pythagorean theorem whose projection onto the symmetric locus is the arithmetic mean, independent of $\\alpha$; the endpoints' curvature sign matches the Gauss--Bonnet excess of genuine geodesic triangles. Numerical checks are kept separate from analytic proofs throughout.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +71,43 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "20 pages, 1 figure",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-20T09:10:33Z",
+          "updatedAt": "2026-09-20T09:10:33Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-24T02:42:27.498194+00:00",
             "contentHash": "c5abd67b1a406f6d56cd713089cc0f90da815e60f36ad75defdbfc3044dad5f6"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-24T02:43:36.793767+00:00",
+            "contentHash": "3116dc6b26cdd6c02d08969cfdef9b3d4361b3cd721cb58f1e5506ba7f88ddec"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "统计势的 Hessian 插值",
+          "workSummary": "对多项分布与负多项分布的对数配分函数作凸组合，证明 Hessian 正定并描述二维曲率变号；构造相应复合分布与 Bregman 投影恒等式。",
+          "techniques": [
+            "Hessian 度量",
+            "Fisher 信息",
+            "Bregman 散度",
+            "矩阵体积方程"
+          ],
+          "breakthrough": "把曲率、统计分布和对称投影联系到同一参数族。",
+          "limitations": "插值对象是势而非概率密度；抽象矩阵演化的轨迹不必留在原度量族中。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 63,
+          "priorityReason": "把曲率、统计分布和对称投影联系到同一参数族。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the one-parameter family of Hessian metrics $g_\\alpha=\\alpha h_++(1-\\alpha)h_-$, $\\alpha\\in[0,1]$, formed by convexly combining the log-partition functions (not the densities) of the multinomial and negative multinomial Fisher information Hessians. Four results are proved in full. (1) $g_\\alpha\\succ0$ for all $\\alpha\\in[0,1]$; its Gaussian curvature ($n=2$) is $-\\tfrac14$ at $\\alpha=0$ and $+\\tfrac14$ at $\\alpha=1$, but non-constant for intermediate $\\alpha$, changing sign at a closed-form critical value $\\alpha^\\ast(w)$, with an analytic uniqueness proof. (2) Viewing $g_\\alpha$ as the spatial metric of a Kasner-type volume equation, positive-definiteness forces one conserved quantity $\\beta\\le0$, while a second, independent quantity $C=4\\det K$ governs the equation's branch (bounded oscillatory, parabolic, or unbounded growth) and is not fixed by $\\beta$ or positive-definiteness alone; we show this discriminant dictionary is a theorem about the abstract matrix equation, to which $g_\\alpha$ supplies initial data of either sign of $C$ without the trajectories remaining on $\\{g_\\alpha(\\theta)\\}$ itself. (3) $\\Psi_\\alpha$ is identified as the log-partition function of a compound distribution: a negative-binomial latent count $M$ (parameter $r=1-\\alpha$), augmented by a Bernoulli parity bit and split multinomially, with non-negative base measure for every $\\alpha$. (4) The associated Bregman divergence obeys a generalised Pythagorean theorem whose projection onto the symmetric locus is the arithmetic mean, independent of $\\alpha$; the endpoints' curvature sign matches the Gauss--Bonnet excess of genuine geodesic triangles. Numerical checks are kept separate from analytic proofs throughout.",
+          "version": 1
+        }
       }
     }
   ]
