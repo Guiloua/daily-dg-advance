@@ -30,8 +30,27 @@
         "contentHash": "c69d063a500c8bf4ba62cda0285927838b2062b1e7c939ba2822aef29a8d833b"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "粗 Erdős–Pósa 猜想",
+      "workSummary": "证明图若不存在 k 个彼此分离的 q-fat 三角形模型，则 O(k log k) 个顶点的 O(q) 邻域可截获全部此类模型，并得到删去相应小顶点集后为森林的拟等距模型。",
+      "techniques": [
+        "粗几何",
+        "fat minor",
+        "拟树",
+        "圈的打包与覆盖"
+      ],
+      "breakthrough": "验证粗 Erdős–Pósa 猜想，并加强为仅有加性畸变的无 k·K₃ minor 模型。",
+      "limitations": "常数以 q、k 的粗阶给出；fat 模型与普通短圈应区分。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 87,
+      "priorityReason": "验证粗 Erdős–Pósa 猜想，并加强为仅有加性畸变的无 k·K₃ minor 模型。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove the coarse Erdős-Pósa conjecture of Georgakopoulos and Papasoglu. Informally, any graph either contains many fat cycles that are pairwise far apart, or there is a small number of bounded radius balls that together hit all of them. To be more precise, if $G$ is a graph with no $q$-fat model of $k \\cdot K_3$ for some $q, k \\in \\mathbb{N}$, then there is a set $X\\subseteq V(G)$ of $\\mathcal{O}(k\\log k)$ vertices such that every $q$-fat model of $K_3$ in $G$ has distance $\\mathcal{O}(q)$ from $X$. In another form more closely resembling Manning's theorem that characterises quasi-trees: if $G$ is a graph with no $q$-fat model of $k \\cdot K_3$ for some $q, k \\in \\mathbb{N}$, then $G$ is $\\mathcal{O}(q)$-quasi-isometric to a graph $H$ that contains a set $X\\subseteq V(H)$ of $\\mathcal{O}(k\\log k)$ vertices such that $H-X$ is a forest. Bootstrapping this result, we further prove that every graph with no $q$-fat model of $k \\cdot K_3$ is quasi-isometric to a graph with no $k \\cdot K_3$ minor, where the quasi-isometry can be chosen to only have additive distortion. This result also holds for $k = \\infty$. We also obtain an Erdős-Pósa theorem for long induced cycles that are far apart.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -64,8 +83,27 @@
             "contentHash": "c69d063a500c8bf4ba62cda0285927838b2062b1e7c939ba2822aef29a8d833b"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "粗 Erdős–Pósa 猜想",
+          "workSummary": "证明图若不存在 k 个彼此分离的 q-fat 三角形模型，则 O(k log k) 个顶点的 O(q) 邻域可截获全部此类模型，并得到删去相应小顶点集后为森林的拟等距模型。",
+          "techniques": [
+            "粗几何",
+            "fat minor",
+            "拟树",
+            "圈的打包与覆盖"
+          ],
+          "breakthrough": "验证粗 Erdős–Pósa 猜想，并加强为仅有加性畸变的无 k·K₃ minor 模型。",
+          "limitations": "常数以 q、k 的粗阶给出；fat 模型与普通短圈应区分。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 87,
+          "priorityReason": "验证粗 Erdős–Pósa 猜想，并加强为仅有加性畸变的无 k·K₃ minor 模型。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove the coarse Erdős-Pósa conjecture of Georgakopoulos and Papasoglu. Informally, any graph either contains many fat cycles that are pairwise far apart, or there is a small number of bounded radius balls that together hit all of them. To be more precise, if $G$ is a graph with no $q$-fat model of $k \\cdot K_3$ for some $q, k \\in \\mathbb{N}$, then there is a set $X\\subseteq V(G)$ of $\\mathcal{O}(k\\log k)$ vertices such that every $q$-fat model of $K_3$ in $G$ has distance $\\mathcal{O}(q)$ from $X$. In another form more closely resembling Manning's theorem that characterises quasi-trees: if $G$ is a graph with no $q$-fat model of $k \\cdot K_3$ for some $q, k \\in \\mathbb{N}$, then $G$ is $\\mathcal{O}(q)$-quasi-isometric to a graph $H$ that contains a set $X\\subseteq V(H)$ of $\\mathcal{O}(k\\log k)$ vertices such that $H-X$ is a forest. Bootstrapping this result, we further prove that every graph with no $q$-fat model of $k \\cdot K_3$ is quasi-isometric to a graph with no $k \\cdot K_3$ minor, where the quasi-isometry can be chosen to only have additive distortion. This result also holds for $k = \\infty$. We also obtain an Erdős-Pósa theorem for long induced cycles that are far apart.",
+          "version": 1
+        }
       }
     }
   ]

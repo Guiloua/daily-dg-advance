@@ -27,8 +27,27 @@
         "contentHash": "40007ee748d31f5957a02436925803e4cfc9797109286c84cbb4e7159099050f"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "旋转 Sierpiński 三角垫的交集维数",
+      "workSummary": "对每个共振角证明旋转 Sierpiński 三角垫交集为有限型，由显式有限矩阵计算 Hausdorff 与 Minkowski 维数；几乎处处角度给出上 Minkowski 维数至多 2dim_H(S)−2。",
+      "techniques": [
+        "分形交集",
+        "有限型结构",
+        "矩阵谱",
+        "Lean 形式化"
+      ],
+      "breakthrough": "同时提供可计算的共振维数及非共振一般上界，第二三节附形式化。",
+      "limitations": "所有非共振角两种维数均等于该上界仍是猜想；Lean 形式化本身不构成生成式 AI 使用声明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 79,
+      "priorityReason": "同时提供可计算的共振维数及非共振一般上界，第二三节附形式化。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the moiré pattern formed by the intersection of a planar Sierpiński gasket and a copy rotated about its centre. At every resonant angle, we prove that the intersection is of finite type and compute its Hausdorff and Minkowski dimensions from an explicit finite matrix; for Lebesgue-almost every angle, we bound its upper Minkowski dimension by $\\overline{\\dim}_{\\mathrm B}(\\mathcal S_\\theta)\\le 2\\dim_{\\mathrm H}(S)-2$. Finally, we conjecture that both dimensions equal this bound at every non-resonant angle. Sections 2 and 3 are formalised in Lean.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +77,27 @@
             "contentHash": "40007ee748d31f5957a02436925803e4cfc9797109286c84cbb4e7159099050f"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "旋转 Sierpiński 三角垫的交集维数",
+          "workSummary": "对每个共振角证明旋转 Sierpiński 三角垫交集为有限型，由显式有限矩阵计算 Hausdorff 与 Minkowski 维数；几乎处处角度给出上 Minkowski 维数至多 2dim_H(S)−2。",
+          "techniques": [
+            "分形交集",
+            "有限型结构",
+            "矩阵谱",
+            "Lean 形式化"
+          ],
+          "breakthrough": "同时提供可计算的共振维数及非共振一般上界，第二三节附形式化。",
+          "limitations": "所有非共振角两种维数均等于该上界仍是猜想；Lean 形式化本身不构成生成式 AI 使用声明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 79,
+          "priorityReason": "同时提供可计算的共振维数及非共振一般上界，第二三节附形式化。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the moiré pattern formed by the intersection of a planar Sierpiński gasket and a copy rotated about its centre. At every resonant angle, we prove that the intersection is of finite type and compute its Hausdorff and Minkowski dimensions from an explicit finite matrix; for Lebesgue-almost every angle, we bound its upper Minkowski dimension by $\\overline{\\dim}_{\\mathrm B}(\\mathcal S_\\theta)\\le 2\\dim_{\\mathrm H}(S)-2$. Finally, we conjecture that both dimensions equal this bound at every non-resonant angle. Sections 2 and 3 are formalised in Lean.",
+          "version": 1
+        }
       }
     }
   ]

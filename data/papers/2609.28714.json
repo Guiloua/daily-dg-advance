@@ -29,8 +29,27 @@
         "contentHash": "9b3a0322a90c3741e7f0d88e85058f0fa721496a9966c353f9941148bb4f7ef4"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "双曲守恒律 Riemann 解的泛型稳定",
+      "workSummary": "在严格双曲、真正非线性及 Rankine–Hugoniot 映射正则流形假设下，证明几乎处处左右状态的 n 波 Lax 可容许 Riemann 解对状态与 C² 通量扰动结构稳定。",
+      "techniques": [
+        "顺序横截性",
+        "波链",
+        "推前映射",
+        "横截矩阵"
+      ],
+      "breakthrough": "把多波结构稳定化为同一参考点上的 n×n 矩阵可逆性。",
+      "limitations": "属于一维系统并带指定非退化假设；机器学习通量是应用对象，不能据此推断作者使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 69,
+      "priorityReason": "把多波结构稳定化为同一参考点上的 n×n 矩阵可逆性。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper proves generic structural stability for Riemann solutions to $n \\times n$ systems of hyperbolic conservation laws in one spatial dimension. Under assumptions of strict hyperbolicity, genuine nonlinearity, and a regular manifold hypothesis on the Rankine-Hugoniot map, we show that for almost every pair of left and right states, any $n$-wave Riemann solution consisting of Lax-admissible shocks and rarefactions is structurally stable under perturbations of the left state, the right state, and the flux function in the $C^2$ topology. The central new idea is sequential transversality, which chains the $n$ waves through intermediate states and transports their tangent contributions to a common reference point via pushforward maps, reducing the structural stability condition to the invertibility of an $n \\times n$ transversality matrix. We apply the results to the $p$-system, polydisperse particle-laden thin films, and machine-learned flux approximations.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -62,8 +81,27 @@
             "contentHash": "9b3a0322a90c3741e7f0d88e85058f0fa721496a9966c353f9941148bb4f7ef4"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "双曲守恒律 Riemann 解的泛型稳定",
+          "workSummary": "在严格双曲、真正非线性及 Rankine–Hugoniot 映射正则流形假设下，证明几乎处处左右状态的 n 波 Lax 可容许 Riemann 解对状态与 C² 通量扰动结构稳定。",
+          "techniques": [
+            "顺序横截性",
+            "波链",
+            "推前映射",
+            "横截矩阵"
+          ],
+          "breakthrough": "把多波结构稳定化为同一参考点上的 n×n 矩阵可逆性。",
+          "limitations": "属于一维系统并带指定非退化假设；机器学习通量是应用对象，不能据此推断作者使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 69,
+          "priorityReason": "把多波结构稳定化为同一参考点上的 n×n 矩阵可逆性。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper proves generic structural stability for Riemann solutions to $n \\times n$ systems of hyperbolic conservation laws in one spatial dimension. Under assumptions of strict hyperbolicity, genuine nonlinearity, and a regular manifold hypothesis on the Rankine-Hugoniot map, we show that for almost every pair of left and right states, any $n$-wave Riemann solution consisting of Lax-admissible shocks and rarefactions is structurally stable under perturbations of the left state, the right state, and the flux function in the $C^2$ topology. The central new idea is sequential transversality, which chains the $n$ waves through intermediate states and transports their tangent contributions to a common reference point via pushforward maps, reducing the structural stability condition to the invertibility of an $n \\times n$ transversality matrix. We apply the results to the $p$-system, polydisperse particle-laden thin films, and machine-learned flux approximations.",
+          "version": 1
+        }
       }
     }
   ]

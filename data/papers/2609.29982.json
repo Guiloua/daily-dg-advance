@@ -28,8 +28,27 @@
         "contentHash": "a3395505d9dcd9e888b1d1693bef77b7cc08eab1d78f45030475a51886a4b065"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "曲率积分的体积亏损控制",
+      "workSummary": "对完整非紧非负截面曲率流形，以渐近体积比亏损 1−v(M) 控制任意球上的尺度不变标量曲率积分；对 sec≥1 的完整流形，以相对球面体积亏损控制标量曲率超额积分。",
+      "techniques": [
+        "标量曲率积分",
+        "渐近体积比",
+        "截面曲率下界",
+        "体积比较"
+      ],
+      "breakthrough": "把已有维数依赖积分界加强为定量体积亏损估计。",
+      "limitations": "非紧与 sec≥1 两个背景的积分公式不同；官方评论仅否认在证明中使用 AI，不能据此断定其他环节也未使用。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 92,
+      "priorityReason": "把已有维数依赖积分界加强为定量体积亏损估计。"
+    },
+    "analysisBasis": {
+      "abstract": "By the paper \\cite{Pet2009upper}, \\cite{LiNan2026}, we know that there exists $C(n)>0$, for any complete compact or non-compact Riemannian n manifold $M$ with non-negative sectional curvature, without boundary and any $R>0$, \\begin{equation} R^{2-n}\\int_{B(p,R)} Scal \\le C(n). \\end{equation} Based on this result, we will prove that (1) There exists constant $C(n)$. If $M$ is a complete, n dimensional, non-compact Riemannian manifold with non-negative sectional curvature, then for any $p\\in M$, $R>0$, \\begin{equation} R^{2-n}\\int_{B(p,R)} Scal \\ dvol \\le C(n)(1-v(M)), \\end{equation} where $Scal$ is the scalar curvature and $v(M)=\\lim\\limits_{R\\to \\infty} \\frac{volB(p,R)}{volB(0,R)}$ is the asymptotic volume ratio. (2) There exists constant $C(n)$. If $M$ is a complete, n dimensional Riemannian manifold with sectional curvature $\\ge 1$, then \\begin{equation} \\int_M (Scal-n(n-1)) \\ dvol \\le C(n)(1-\\frac{vol(M)}{vol(S^n(1))}). \\end{equation}",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -60,8 +79,27 @@
             "contentHash": "a3395505d9dcd9e888b1d1693bef77b7cc08eab1d78f45030475a51886a4b065"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "曲率积分的体积亏损控制",
+          "workSummary": "对完整非紧非负截面曲率流形，以渐近体积比亏损 1−v(M) 控制任意球上的尺度不变标量曲率积分；对 sec≥1 的完整流形，以相对球面体积亏损控制标量曲率超额积分。",
+          "techniques": [
+            "标量曲率积分",
+            "渐近体积比",
+            "截面曲率下界",
+            "体积比较"
+          ],
+          "breakthrough": "把已有维数依赖积分界加强为定量体积亏损估计。",
+          "limitations": "非紧与 sec≥1 两个背景的积分公式不同；官方评论仅否认在证明中使用 AI，不能据此断定其他环节也未使用。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 92,
+          "priorityReason": "把已有维数依赖积分界加强为定量体积亏损估计。"
+        },
+        "analysisBasis": {
+          "abstract": "By the paper \\cite{Pet2009upper}, \\cite{LiNan2026}, we know that there exists $C(n)>0$, for any complete compact or non-compact Riemannian n manifold $M$ with non-negative sectional curvature, without boundary and any $R>0$, \\begin{equation} R^{2-n}\\int_{B(p,R)} Scal \\le C(n). \\end{equation} Based on this result, we will prove that (1) There exists constant $C(n)$. If $M$ is a complete, n dimensional, non-compact Riemannian manifold with non-negative sectional curvature, then for any $p\\in M$, $R>0$, \\begin{equation} R^{2-n}\\int_{B(p,R)} Scal \\ dvol \\le C(n)(1-v(M)), \\end{equation} where $Scal$ is the scalar curvature and $v(M)=\\lim\\limits_{R\\to \\infty} \\frac{volB(p,R)}{volB(0,R)}$ is the asymptotic volume ratio. (2) There exists constant $C(n)$. If $M$ is a complete, n dimensional Riemannian manifold with sectional curvature $\\ge 1$, then \\begin{equation} \\int_M (Scal-n(n-1)) \\ dvol \\le C(n)(1-\\frac{vol(M)}{vol(S^n(1))}). \\end{equation}",
+          "version": 1
+        }
       }
     }
   ]
