@@ -44,9 +44,11 @@ Gerard Venema、Craig Guilbault
 
 The is an expanded version of a memorial article that is to appear in the Notices of the American Mathematical Society.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28515v1
 
 [arXiv](https://arxiv.org/abs/2609.28515)
 
@@ -108,9 +110,13 @@ Hong Kiat Tan、Andrea L. Bertozzi
 
 This paper proves generic structural stability for Riemann solutions to $n \times n$ systems of hyperbolic conservation laws in one spatial dimension. Under assumptions of strict hyperbolicity, genuine nonlinearity, and a regular manifold hypothesis on the Rankine-Hugoniot map, we show that for almost every pair of left and right states, any $n$-wave Riemann solution consisting of Lax-admissible shocks and rarefactions is structurally stable under perturbations of the left state, the right state, and the flux function in the $C^2$ topology. The central new idea is sequential transversality, which chains the $n$ waves through intermediate states and transports their tangent contributions to a common reference point via pushforward maps, reducing the structural stability condition to the invertibility of an $n \times n$ transversality matrix. We apply the results to the $p$-system, polydisperse particle-laden thin films, and machine-learned flux approximations.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露多种 Claude 与 GPT 模型用于手写笔记转 LaTeX、按草图生成 TikZ、检查技术错误及表述、对既有论证提出异议；审读发现末端稀疏波锚点问题并由作者重新推导修正。
 
+来源：https://arxiv.org/pdf/2609.28714v1 · PDF 第 55–56、58 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露多种 Claude 与 GPT 模型用于手写笔记转 LaTeX、按草图生成 TikZ、检查技术错误及表述、对既有论证提出异议；审读发现末端稀疏波锚点问题并由作者重新推导修正。
+
+来源：https://arxiv.org/pdf/2609.28714v1
 
 [arXiv](https://arxiv.org/abs/2609.28714)
 
@@ -294,9 +300,13 @@ Aakash Gupta、Louis H. Kauffman、Rama Mishra
 
 Links in projective space $\mathbb{R}P^3$ can be represented by diagrams in $\mathbb{R}P^2$ where the projective plane $\mathbb{R}P^2$ is represented by a disk with antipodal identifications on the boundary. In this context if we place an $n-$strand braid $\beta$ on this disk keeping its end points on the boundary then due to the identification of antipodal points it naturally represents a link diagram in $\mathbb{R}P^3$. We call this the projective closure of the braid $\beta$. In this paper we show that not all links in $\mathbb{R}P^3$ possess a diagram represented by projective closure of some braid.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确感谢 Google Gemini 2.5 Pro 为推论 2.15 建议一条论证路线。
 
+来源：https://arxiv.org/pdf/2609.29058v1 · PDF 第 17 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确感谢 Google Gemini 2.5 Pro 为推论 2.15 建议一条论证路线。
+
+来源：https://arxiv.org/pdf/2609.29058v1
 
 [arXiv](https://arxiv.org/abs/2609.29058)
 
@@ -324,9 +334,11 @@ Airi Aso
 
 Let $K$ be a hyperbolic knot and let $\rho_n$ be the $n$-dimensional irreducible representation induced from a lift of its holonomy representation. Motivated by Goda's asymptotic volume formula and the complexified Volume Conjecture, we study whether the higher-dimensional twisted Alexander invariants associated with $\rho_n$ detect the complex volume of the knot complement. We compute $$ \frac{\pi}{2} \log \left( \frac{A_{K,n-2}(1)A_{K,n+2}(1)} {A_{K,n}(1)^2} \right) $$ for all hyperbolic knots with at most six crossings. Our numerical experiments indicate that these values approach $$ \operatorname{Vol}(S^3\setminus K) +i\,2\pi^2\operatorname{CS}(S^3\setminus K) $$ modulo $i\pi^2\mathbb{Z}$. Based on these computations, we propose a complexified analogue of Goda's asymptotic volume formula.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29124v1
 
 [arXiv](https://arxiv.org/abs/2609.29124)
 
@@ -338,9 +350,11 @@ Qinghui Meng、Ximin Liu、Boxin Zhou
 
 In this paper, we conduct a systematic study of quandle colorings and quandle coloring quivers for pretzel links using the dihedral quandle $\mathbb{Z}_{n}$. First, we systematically investigate all possible colorings of 3-pretzel links, determining the number of distinct colorings in each case as well as the structure of their quandle coloring quivers. In order to obtain more general conclusions, we impose restrictions on $n$ based on the properties of the coefficient matrix of the system of congruence equations. So we examine the number of quandle colorings and the quandle coloring quivers for 4-pretzel links in the case where $n$ is prime. Finally, Combining the results of 4-pretzel links we rigorously derive both the coloring numbers and quandle coloring quivers for general $m$-pretzel links in the case where $n$ is prime, with full proofs provided.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29127v1
 
 [arXiv](https://arxiv.org/abs/2609.29127)
 
@@ -352,9 +366,11 @@ Tristan Humbert
 
 Let $(M,g)$ be a closed negatively curved surface. If $g$ is strictly $\tfrac 19$-pinched and has the same unmarked length spectrum as a hyperbolic metric, we show that $g$ is hyperbolic. As a consequence, we show that any hyperbolic metric on a surface admits a $C^2$-neighborhood in the space of metrics in which it is characterized by its unmarked length spectrum, up to isometry.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29188v1
 
 [arXiv](https://arxiv.org/abs/2609.29188)
 
@@ -366,9 +382,13 @@ Hongyi Sheng、Weimin Sheng、Jiazhuo Yang
 
 Let H^{n+1} be hyperbolic space of sectional curvature -1, with a fixed point o. We study the non-homogeneous curvature flow X_t=-f(r) sigma_k^{alpha} {nu} of smooth, closed, strictly h-convex hypersurfaces enclosing o, where r is the geodesic distance to o and alpha>0. The radial weight f is modeled on sinh^{beta}r; we treat both regimes: beta>1+k{alpha} and beta=1+k{alpha}. Under a structural condition of f, the flow exists smoothly for all time, preserves strict h-convexity, and contracts to o. The normalized radial function converges, exponentially in normalized time: to 1 and to a positive constant R_{infty} respectively in two different cases.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-5.6 Sol 与 KIMI K3 用于候选径向模型函数的探索性计算，初步结果提示需要额外凸性条件，随后由作者研究最终采用的 sinh 型权。
 
+来源：https://arxiv.org/pdf/2609.29199v1 · PDF 第 38 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 KIMI K3 用于候选径向模型函数的探索性计算，初步结果提示需要额外凸性条件，随后由作者研究最终采用的 sinh 型权。
+
+来源：https://arxiv.org/pdf/2609.29199v1
 
 [arXiv](https://arxiv.org/abs/2609.29199)
 
@@ -380,9 +400,11 @@ Arnaud Coatanay、Angélique Drémeau
 
 A regular observed statistical model may converge to a limit in which a previously identifiable signed parameter becomes identifiable only modulo a reflection. We study the local information geometry of this transition. For a twice differentiable Hellinger embedding with an exact limiting reflection, the observed displacement is forced into the two-jet form \(\varepsilon\lambda J_-+\lambda^2J_+/2\), up to higher-order terms. The mixed jet restores the sign away from the symmetric face, whereas the even jet is the first tangent inherited by the quotient. After nuisance elimination, a positive Gram determinant yields a nondegenerate cross-cap two-jet. The associated local asymptotic theory has three regimes governed by \(\tau_n=\sqrt n\,\varepsilon_n^2\): regular signed LAN, a critical curved Gaussian subexperiment, and a quotient regime with the \(n^{-1/4}\) signed scale. We prove that the same parabolic critical experiment persists for predictive likelihoods along a single stationary dependent trajectory. The limiting quotient has a regular Fisher metric in the invariant coordinate, while its pullback degenerates in the signed coordinate. For a solvable CIR--OU benchmark motivated by coherent sea-clutter observations, we derive the quotient Fisher metric and curvature explicitly and show that the curvature is strictly negative. We also determine the restricted holonomy of the full Amari family: \(\operatorname{Hol}_0(\nabla^{(a)})=SO(2)\) for \(a=0\), whereas \(\operatorname{Hol}_0(\nabla^{(a)})=GL^+(2,\mathbb R)\) for \(a\neq0\). The results separate the intrinsic geometry of the limiting quotient from the transverse geometry of its weak unfolding.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29260v1
 
 [arXiv](https://arxiv.org/abs/2609.29260)
 
@@ -394,9 +416,11 @@ Diego Artacho、Jihun Kim
 
 We introduce a class of generalised Killing spinors, termed affine Killing spinors (AKS), for which the associated endomorphism is a constant linear combination of the Ricci endomorphism and the identity map. We classify Riemannian spin manifolds admitting an AKS under two additional curvature hypotheses: harmonic curvature and local conformal flatness. Furthermore, we characterise Riemannian spin manifolds that admit a non-zero parallel one-form and an AKS. Additionally, we prove that in dimension three every curvature-homogeneous manifold carrying an AKS is locally homogeneous. Finally, we provide a complete classification of three-dimensional Lie groups equipped with a Bianchi metric admitting an invariant AKS.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29274v1
 
 [arXiv](https://arxiv.org/abs/2609.29274)
 
@@ -408,9 +432,13 @@ Chenghang Lu、Chao Xia
 
 In this paper, we prove that any compact immersed disk in a half $3$-space that has constant anisotropic mean curvature and satisfies the anisotropic capillary boundary condition is a homothetic Wulff cap.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露主要使用 ChatGPT 5.6 辅助部分 PDE 估计及检查计算；研究问题和主要数学想法由作者提出。
 
+来源：https://arxiv.org/pdf/2609.29289v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要使用 ChatGPT 5.6 辅助部分 PDE 估计及检查计算；研究问题和主要数学想法由作者提出。
+
+来源：https://arxiv.org/pdf/2609.29289v1
 
 [arXiv](https://arxiv.org/abs/2609.29289)
 
@@ -422,9 +450,11 @@ Shuang Ming、Baojun Wu
 
 Motivated by the study of asymptotics of quantum invariants, Dimofte and Garoufalidis introduced a power series associated to a suitable ideal triangulation of a cusped hyperbolic $3$-manifold. They proved that its constant term can be written in terms of Neumann-Zagier data and the complex shape parameters of ideal tetrahedra, and conjectured that it equals the adjoint twisted Reidemeister torsion. On the other hand, in the study of asymptotics of Turaev-Viro type invariants of cusped $ 3$-manifolds, the authors, together with Liu, Sun and Yang, found that the one-loop terms of their asymptotic expansions could be written in terms of Gram matrices and decorated edge lengths of ideal tetrahedra. In this paper, we prove the conjecture of Dimofte and Garoufalidis and relate the one-loop term appearing in the Turaev-Viro type invariant to the adjoint twisted Reidemeister torsion.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29299v1
 
 [arXiv](https://arxiv.org/abs/2609.29299)
 
@@ -436,9 +466,13 @@ Igor Kozyrev
 
 We study the Steklov problem on non-compact exterior free-boundary minimal surfaces. Boundary values need not determine a unique harmonic extension, so the operator also requires a prescription at infinity. For proper surfaces in $\mathbb{R}^3$ with compact boundary and finitely many regular ends of finite total curvature, we construct a natural class of such prescriptions. Every resulting operator is self-adjoint with compact resolvent; consequently, its spectrum is discrete, bounded below, and tends to $+\infty$. If the coordinate functions have linearly independent boundary traces, the prescription can be chosen so that these traces are eigenfunctions with eigenvalue $-1$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Claude 与 OpenAI Codex 用于多轮论证及引用审查、部分推导和稿段草拟重写、文献检索；包括正规端推导、封口构造及 Krein 公式相关草稿，均由作者复核。
 
+来源：https://arxiv.org/pdf/2609.29318v1 · PDF 第 31–32 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 与 OpenAI Codex 用于多轮论证及引用审查、部分推导和稿段草拟重写、文献检索；包括正规端推导、封口构造及 Krein 公式相关草稿，均由作者复核。
+
+来源：https://arxiv.org/pdf/2609.29318v1
 
 [arXiv](https://arxiv.org/abs/2609.29318)
 
@@ -450,9 +484,11 @@ Paul Le Breton
 
 Let $G \rightrightarrows G^{(0)}$ be a Lie groupoid, $\mathrm{A} G \rightarrow G^{(0)}$ its Lie algebroid and $X_1, \dots, X_r$ a family of sections of $\mathrm{A} G$ satisfying a Lie bracket generating condition of Hörmander type. We aim to build a pseudodifferential calculus allowing to study a Helffer-Nourrigat's conjecture on the groupoid $G$; in particular, we want differential operators of the form $\sum_{i = 1}^r X_i^2$ to have an invertible symbol. In this article we achieve the geometrical part of this construction by defining a "weighted" version of the deformation to the normal cone $\mathrm{DNC}(G, G^{(0)}) \rightrightarrows G^{(0)} \times \mathbb{R}_+$. Heuristically, we deform $G$ around $G^{(0)}$ with a "zoom" parameter $t \in \mathbb{R}_+$ by stretching $G$ by $t$ in the directions of the sections $X_i$, $t^2$ along $[X_i, X_j]$, $t^3$ along $[X_i, [X_j, X_k]]$ etc. In the case where $G = M \times M$ we recover a construction of Mohsen, and when the structure is equiregular we recover a construction of van Erp-Yuncken.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29331v1
 
 [arXiv](https://arxiv.org/abs/2609.29331)
 
@@ -460,13 +496,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Matheus Andrade Ribeiro de Moura Horácio
 
-作者证明任意维完整非稳态梯度 Kähler–Ricci 孤立子在常标量曲率下刚性，涵盖收缩与膨胀情形且不加其他曲率条件。
+由 Ricci 形式闭性和孤立子向量场实全纯性得到 L∇f Ric=0，再以 Ricci 幂迹递推推出 Ric²=λRic，应用既有刚性定理将普遍覆叠分解为 Kähler–Einstein 因子与复 Euclidean 因子。
 
 We prove that every complete nonsteady gradient Kähler-Ricci soliton with constant scalar curvature is rigid. This establishes Cao's rigidity conjecture for Kähler-Ricci solitons in arbitrary dimension and gives the corresponding result for expanding solitons, without additional curvature assumptions. The proof uses a rigidity criterion for gradient Ricci solitons with constant scalar curvature, expressed by the vanishing of the Lie derivative of the Ricci tensor along the soliton vector field. In the Kähler case, this vanishing follows from constant scalar curvature, the closedness of the Ricci form, and the classical real holomorphicity of the soliton vector field.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29359v1
 
 [arXiv](https://arxiv.org/abs/2609.29359)
 
@@ -478,9 +516,11 @@ Luca Barbato、Riccardo Molinarolo
 
 Let $\Omega$ be an open bounded connected subset of $\mathbb{R}^N$, $N \geq 2$, of class $C^{2,\alpha}$, for $\alpha \in (0,1)$. Let $p \geq 2$ and $\beta>0$. We prove the symmetry of the solution of the $p$-torsion problem with Robin boundary condition subject to the natural overdetermined condition coming from a shape derivative argument and to an extra condition on $\beta$ and on the minimum of the principal curvatures of $\partial\Omega$. The proof is based on some new integral identities, involving the linearized operator of the $p$-Laplacian applied to the standard $P$-function. In passing we prove some other rigidity results in the spirit of Serrin's and Alexandrov's Theorems.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明未用生成式 AI 生成研究想法、解释结果或撰写科学内容；资助项目名称中的 machine learning 不是本文使用 AI 的声明。
 
+来源：https://arxiv.org/pdf/2609.29393v1
 
 [arXiv](https://arxiv.org/abs/2609.29393)
 
@@ -492,9 +532,13 @@ Sandra Albrechtsen、Marthe Bonamy、Romain Bourneuf、James Davies
 
 We prove the coarse Erdős-Pósa conjecture of Georgakopoulos and Papasoglu. Informally, any graph either contains many fat cycles that are pairwise far apart, or there is a small number of bounded radius balls that together hit all of them. To be more precise, if $G$ is a graph with no $q$-fat model of $k \cdot K_3$ for some $q, k \in \mathbb{N}$, then there is a set $X\subseteq V(G)$ of $\mathcal{O}(k\log k)$ vertices such that every $q$-fat model of $K_3$ in $G$ has distance $\mathcal{O}(q)$ from $X$. In another form more closely resembling Manning's theorem that characterises quasi-trees: if $G$ is a graph with no $q$-fat model of $k \cdot K_3$ for some $q, k \in \mathbb{N}$, then $G$ is $\mathcal{O}(q)$-quasi-isometric to a graph $H$ that contains a set $X\subseteq V(H)$ of $\mathcal{O}(k\log k)$ vertices such that $H-X$ is a forest. Bootstrapping this result, we further prove that every graph with no $q$-fat model of $k \cdot K_3$ is quasi-isometric to a graph with no $k \cdot K_3$ minor, where the quasi-isometry can be chosen to only have additive distortion. This result also holds for $k = \infty$. We also obtain an Erdős-Pósa theorem for long induced cycles that are far apart.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 Sol 和 ChatGPT 6 Ultra 仅用于最终稿的小幅编辑。
 
+来源：https://arxiv.org/pdf/2609.29414v1 · PDF 第 70 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 和 ChatGPT 6 Ultra 仅用于最终稿的小幅编辑。
+
+来源：https://arxiv.org/pdf/2609.29414v1
 
 [arXiv](https://arxiv.org/abs/2609.29414)
 
@@ -502,13 +546,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yang-Hui He、Ziran Liu、Shing-Tung Yau
 
-作者提出对全部 28 个定向微分同胚类的光滑同伦七球构造严格正截面曲率度量：先在两个七维圆盘构造边界度量匹配的正曲率度量，再拼接。
+作者在两圆盘模型上用变纤维半径的联络度量和星作用商构造正曲率度量，证明边界诱导度量匹配且外法向第二基本形式之和正定，再应用严格正曲率拼接定理覆盖全部 28 个七维同伦球类型。
 
 We construct a smooth Riemannian metric with strictly positive sectional curvature on every smooth homotopy seven-sphere. For each smooth structure, we construct positively curved metrics on two seven-dimensional disks whose induced boundary metrics agree under the prescribed attaching map. Under this identification, a gluing theorem then yields the required smooth metric on the closed manifold. The construction applies to all 28 oriented diffeomorphism classes.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。
 
+来源：https://arxiv.org/pdf/2609.29426v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。
+
+来源：https://arxiv.org/pdf/2609.29426v1
 
 [arXiv](https://arxiv.org/abs/2609.29426)
 
@@ -520,9 +568,11 @@ Shreya Sinha、Allison Tsypin
 
 Building on recent work of Hom and Wan, we construct additional examples of exotic knot traces, providing partial progress toward their conjecture. Our approach uses the immersed-curve techniques in Heegaard Floer homology developed by Chen and Hanselman.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29432v1
 
 [arXiv](https://arxiv.org/abs/2609.29432)
 
@@ -534,9 +584,13 @@ Bruno Dular
 
 We show that non-Fuchsian geometrically finite hyperbolic structures on a given hyperbolizable 3-manifold M are uniquely determined, up to isotopy, by their bending laminations. Consequently, the bending map from the space of non-Fuchsian geometrically finite structures on M, endowed with the strong topology, to the space of bending laminations, endowed with Lecuire's tubular topology, is a homeomorphism. This extends the convex co-compact case established with Schlenker. The proof combines hyperbolic Dehn filling, continuity and properness of the bending map (Lecuire) and real-analyticity of its fibres (Bonahon). We also establish a criterion for contractibility of the boundary fibres of a continuous extension of a homeomorphism, extending Finney's theorem to a boundary setting. This topological result may be of independent interest.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 辅助起草和组织部分引言背景、校对及改善表达；数学想法、结果和证明由作者提出。
 
+来源：https://arxiv.org/pdf/2609.29450v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 辅助起草和组织部分引言背景、校对及改善表达；数学想法、结果和证明由作者提出。
+
+来源：https://arxiv.org/pdf/2609.29450v1
 
 [arXiv](https://arxiv.org/abs/2609.29450)
 
@@ -548,9 +602,11 @@ Sébastien Alvarez、Thibault Lefeuvre、Ben Lowe、Graham A. Smith
 
 The present paper studies integral geometry problems on three-dimensional Riemannian balls, where integration is performed over minimal surfaces or, more generally, $\Phi$-surfaces defined by an elliptic curvature functional $\Phi$. The space of all $\Phi$-surfaces spanned by round circles on the boundary is a three-dimensional manifold, which we call the space of circles. We show that, when the metric is $\Phi$-simple - a notion which extends to this setting the notion of simple metrics in the geodesic case -, the Gauss lifts of the $\Phi$-surfaces define a foliation of the unit tangent bundle that should be viewed as a two-dimensional analogue of the standard geodesic foliation. This is achieved by solving a foliated Plateau problem on the ball. We then analyze the associated surface Radon transform corresponding to integration along the surfaces and show that it has a finite-dimensional kernel; we also prove that it is injective for an open and dense set of metrics. In the special case of a foliation by minimal surfaces, we apply these results to solve the following boundary area rigidity problem: does the collection of areas of the minimal surfaces determine the metric up to isometry?
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29470v1
 
 [arXiv](https://arxiv.org/abs/2609.29470)
 
@@ -562,9 +618,13 @@ Nobuo Iida
 
 We solve the three-dimensional symplectization question for several examples. These include small Seifert fibered $L$-spaces, a family of Whitehead-link surgery $L$-spaces, $S^1\times S^2$, certain surgeries on the figure-eight knot, explicit families of Brieskorn spheres, and arbitrary finite connected sums mixing these manifolds. In particular, the result covers the Weeks manifold and infinitely many hyperbolic $L$-spaces. The main symplectic step is to construct Liouville cobordisms in both directions from a symplectomorphism of symplectizations. The resulting preservation of strong fillability and of the vanishing of the monopole Floer contact invariant, together with the comparison with the Heegaard Floer contact invariant, connected-sum formulas, and classification results for tight contact structures, proves the stated rigidity results.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露本文源于与 ChatGPT 的讨论，并使用其探索性检索文献、检查代数及符号计算、编辑英文和 LaTeX；引用及论证由作者独立核实。
 
+来源：https://arxiv.org/pdf/2609.29534v1 · PDF 第 20–21 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露本文源于与 ChatGPT 的讨论，并使用其探索性检索文献、检查代数及符号计算、编辑英文和 LaTeX；引用及论证由作者独立核实。
+
+来源：https://arxiv.org/pdf/2609.29534v1
 
 [arXiv](https://arxiv.org/abs/2609.29534)
 
@@ -576,9 +636,11 @@ Sébastien Alvarez、Thibault Lefeuvre、Ben Lowe、Graham A. Smith
 
 Nitsche proved that every smooth Jordan curve in $\mathbb{R}^3$ of total curvature at most $4\pi$ bounds a unique minimal disk, which is moreover strictly stable. We prove an analogue of this result for Riemannian $3$-balls with mean convex boundary, under an explicit pinching condition on the negative sectional curvature, together with a bound on the covariant derivative of the Ricci tensor. In this setting, every smooth Jordan curve in the boundary sphere of total curvature at most $4\pi$ bounds a unique embedded minimal disk which is strictly stable.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29542v1
 
 [arXiv](https://arxiv.org/abs/2609.29542)
 

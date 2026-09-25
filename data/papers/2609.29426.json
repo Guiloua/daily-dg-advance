@@ -26,22 +26,46 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:38:07.321081+00:00",
         "contentHash": "dd672b3531c2be7086ca34bcdb9957db91d29e1ac171461fbdab795af6ecb45a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.29426v1",
+        "observedAt": "2026-09-25T02:49:58.604694+00:00",
+        "contentHash": "53a6ac3312868df733720ab8f0e03075390e647d4036eac5d5e505e0d331c9f9"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "光滑七球的正截面曲率构造",
-      "workSummary": "作者提出对全部 28 个定向微分同胚类的光滑同伦七球构造严格正截面曲率度量：先在两个七维圆盘构造边界度量匹配的正曲率度量，再拼接。",
+      "workSummary": "作者在两圆盘模型上用变纤维半径的联络度量和星作用商构造正曲率度量，证明边界诱导度量匹配且外法向第二基本形式之和正定，再应用严格正曲率拼接定理覆盖全部 28 个七维同伦球类型。",
       "techniques": [
-        "异球",
-        "正截面曲率",
-        "圆盘边界匹配",
-        "度量拼接"
+        "四元数主丛与星作用商",
+        "变纤维半径联络度量",
+        "O’Neill 公式",
+        "第二基本形式匹配",
+        "严格正曲率拼接"
       ],
       "breakthrough": "若关键构造与拼接成立，将覆盖全部七维同伦球的正曲率存在性。",
-      "limitations": "边界诱导度量相同本身不保证光滑正截面曲率拼接；必须核对法向导数和拼接定理的完整条件。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "拼接同时要求 hN=φ* hS 与 BN+φ*BS>0；正截面曲率不等于严格 1/4-pinching，后者会排除异球。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.29426v1 · PDF 第 5 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:49:58.604694+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.29426v1",
+        "contentHash": "53a6ac3312868df733720ab8f0e03075390e647d4036eac5d5e505e0d331c9f9",
+        "pages": 32,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "65fc834aa1d7d70e3373e6f09de67a7331c26972c4809fb89a0f1c541cacf0de"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "proofs"
+      ],
       "priorityScore": 96,
       "priorityReason": "若关键构造与拼接成立，将覆盖全部七维同伦球的正曲率存在性。"
     },
@@ -77,22 +101,46 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:38:07.321081+00:00",
             "contentHash": "dd672b3531c2be7086ca34bcdb9957db91d29e1ac171461fbdab795af6ecb45a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.29426v1",
+            "observedAt": "2026-09-25T02:49:58.604694+00:00",
+            "contentHash": "53a6ac3312868df733720ab8f0e03075390e647d4036eac5d5e505e0d331c9f9"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "光滑七球的正截面曲率构造",
-          "workSummary": "作者提出对全部 28 个定向微分同胚类的光滑同伦七球构造严格正截面曲率度量：先在两个七维圆盘构造边界度量匹配的正曲率度量，再拼接。",
+          "workSummary": "作者在两圆盘模型上用变纤维半径的联络度量和星作用商构造正曲率度量，证明边界诱导度量匹配且外法向第二基本形式之和正定，再应用严格正曲率拼接定理覆盖全部 28 个七维同伦球类型。",
           "techniques": [
-            "异球",
-            "正截面曲率",
-            "圆盘边界匹配",
-            "度量拼接"
+            "四元数主丛与星作用商",
+            "变纤维半径联络度量",
+            "O’Neill 公式",
+            "第二基本形式匹配",
+            "严格正曲率拼接"
           ],
           "breakthrough": "若关键构造与拼接成立，将覆盖全部七维同伦球的正曲率存在性。",
-          "limitations": "边界诱导度量相同本身不保证光滑正截面曲率拼接；必须核对法向导数和拼接定理的完整条件。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "拼接同时要求 hN=φ* hS 与 BN+φ*BS>0；正截面曲率不等于严格 1/4-pinching，后者会排除异球。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.29426v1 · PDF 第 5 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:49:58.604694+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.29426v1",
+            "contentHash": "53a6ac3312868df733720ab8f0e03075390e647d4036eac5d5e505e0d331c9f9",
+            "pages": 32,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra 与 Claude Pro 辅助探索部分证明策略和计算，并由作者负责核验及表述。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "65fc834aa1d7d70e3373e6f09de67a7331c26972c4809fb89a0f1c541cacf0de"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "proofs"
+          ],
           "priorityScore": 96,
           "priorityReason": "若关键构造与拼接成立，将覆盖全部七维同伦球的正曲率存在性。"
         },
