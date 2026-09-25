@@ -25,21 +25,44 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:22:37.363573+00:00",
         "contentHash": "32a50fe6c083350d998bc1231d9d81ace85c63d61a18fdbacbb6a4d4517f8e3e"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28929v1",
+        "observedAt": "2026-09-25T02:44:28.477537+00:00",
+        "contentHash": "3cb49601419389c7d9bbbb060293883c684ab306b0ed8d9d0d5253a74dbc424a"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "圆周边界常均曲率圆盘刚性",
-      "workSummary": "证明 R³ 中紧致常均曲率浸入圆盘，若边界微分同胚映到圆周，则为平面圆盘或球冠。",
+      "workSummary": "通过圆盘上闭 force form 的全局原函数，把边界曲线的有向面积与能量恒等式相比较，导出边界脐性，再用 Hopf 微分与 Schwarz 反射证明整个浸入为平面圆盘或球冠。",
       "techniques": [
-        "常均曲率曲面",
-        "圆周边界",
-        "刚性分类"
+        "force form 原函数",
+        "通量恒等式",
+        "Hurwitz 等周不等式",
+        "Hopf 微分"
       ],
       "breakthrough": "在所述浸入与边界条件下得到圆盘的完全形状分类。",
-      "limitations": "拓扑类型必须是圆盘，边界映射须为微分同胚；不能直接推广到带把手曲面或多重覆盖边界。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "圆盘假设保证闭 force form 恰当；正亏格时会出现周期项，因此相同积分恒等式不能直接推广分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.28929v1 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:44:28.477537+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.28929v1",
+        "contentHash": "3cb49601419389c7d9bbbb060293883c684ab306b0ed8d9d0d5253a74dbc424a",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2f660695fbc7583e8790e0cf0cf38376dab9a15c2a6aac136b661940d680bfa6"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs"
+      ],
       "priorityScore": 94,
       "priorityReason": "在所述浸入与边界条件下得到圆盘的完全形状分类。"
     },
@@ -74,21 +97,44 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:22:37.363573+00:00",
             "contentHash": "32a50fe6c083350d998bc1231d9d81ace85c63d61a18fdbacbb6a4d4517f8e3e"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.28929v1",
+            "observedAt": "2026-09-25T02:44:28.477537+00:00",
+            "contentHash": "3cb49601419389c7d9bbbb060293883c684ab306b0ed8d9d0d5253a74dbc424a"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "圆周边界常均曲率圆盘刚性",
-          "workSummary": "证明 R³ 中紧致常均曲率浸入圆盘，若边界微分同胚映到圆周，则为平面圆盘或球冠。",
+          "workSummary": "通过圆盘上闭 force form 的全局原函数，把边界曲线的有向面积与能量恒等式相比较，导出边界脐性，再用 Hopf 微分与 Schwarz 反射证明整个浸入为平面圆盘或球冠。",
           "techniques": [
-            "常均曲率曲面",
-            "圆周边界",
-            "刚性分类"
+            "force form 原函数",
+            "通量恒等式",
+            "Hurwitz 等周不等式",
+            "Hopf 微分"
           ],
           "breakthrough": "在所述浸入与边界条件下得到圆盘的完全形状分类。",
-          "limitations": "拓扑类型必须是圆盘，边界映射须为微分同胚；不能直接推广到带把手曲面或多重覆盖边界。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "圆盘假设保证闭 force form 恰当；正亏格时会出现周期项，因此相同积分恒等式不能直接推广分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.28929v1 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:44:28.477537+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.28929v1",
+            "contentHash": "3cb49601419389c7d9bbbb060293883c684ab306b0ed8d9d0d5253a74dbc424a",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2f660695fbc7583e8790e0cf0cf38376dab9a15c2a6aac136b661940d680bfa6"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs"
+          ],
           "priorityScore": 94,
           "priorityReason": "在所述浸入与边界条件下得到圆盘的完全形状分类。"
         },

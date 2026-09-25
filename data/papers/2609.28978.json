@@ -27,22 +27,45 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:22:37.363903+00:00",
         "contentHash": "e460461131b5755a7b1718b9e279321cda0daec8aa6f4971d32d63fa18adf9b9"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28978v1",
+        "observedAt": "2026-09-25T02:44:16.912353+00:00",
+        "contentHash": "87a710af9c888e44356578b9c440409b3ddb7ded17adf3bc7909f13dec440677"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "复 Monge–Ampère 的距离稳定性",
-      "workSummary": "在紧 Kähler 流形同一上同调类中，将体积测度的 L¹ 接近提升为诱导距离函数的 L∞ 接近；在体积密度 Lᵖ、p>1 和 Ricci current 下界下，为非光滑 Kähler current 构造唯一的紧 RCD 度量空间。",
+      "workSummary": "对同类 Kähler 度量与共同 Lᵖ 体积控制，主定理在参考度量有 Ricci 下界时给出 dω′≤dω+ε 的单侧半稳定；两侧均有统一 Ricci 下界时得到距离的 L∞ 稳定。",
       "techniques": [
-        "复 Monge–Ampère 方程",
-        "距离稳定性",
-        "Kähler current",
-        "RCD 空间"
+        "复 Monge–Ampère 稳定性",
+        "segment inequality",
+        "距离半连续性",
+        "Kähler current 完备化"
       ],
       "breakthrough": "把势函数的解析稳定推进到距离几何，并识别其拓扑为原流形。",
-      "limitations": "距离比较依赖所述度量族及可积性控制；current 的 RCD 结论另需要 Ricci 下界。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "单侧半稳定只要求参考度量 Ricci 下界；双侧距离接近另需两个度量都满足统一 Ricci 下界，不能仅凭 Lᵖ 与体积 L¹ 接近推出。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.28978v1 · PDF 第 7 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:44:16.912353+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.28978v1",
+        "contentHash": "87a710af9c888e44356578b9c440409b3ddb7ded17adf3bc7909f13dec440677",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "228354e8468cac655f53cc4f2753c44d48d9868f4c3c9e55277466b454ebb054"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 95,
       "priorityReason": "把势函数的解析稳定推进到距离几何，并识别其拓扑为原流形。"
     },
@@ -79,22 +102,45 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:22:37.363903+00:00",
             "contentHash": "e460461131b5755a7b1718b9e279321cda0daec8aa6f4971d32d63fa18adf9b9"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.28978v1",
+            "observedAt": "2026-09-25T02:44:16.912353+00:00",
+            "contentHash": "87a710af9c888e44356578b9c440409b3ddb7ded17adf3bc7909f13dec440677"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "复 Monge–Ampère 的距离稳定性",
-          "workSummary": "在紧 Kähler 流形同一上同调类中，将体积测度的 L¹ 接近提升为诱导距离函数的 L∞ 接近；在体积密度 Lᵖ、p>1 和 Ricci current 下界下，为非光滑 Kähler current 构造唯一的紧 RCD 度量空间。",
+          "workSummary": "对同类 Kähler 度量与共同 Lᵖ 体积控制，主定理在参考度量有 Ricci 下界时给出 dω′≤dω+ε 的单侧半稳定；两侧均有统一 Ricci 下界时得到距离的 L∞ 稳定。",
           "techniques": [
-            "复 Monge–Ampère 方程",
-            "距离稳定性",
-            "Kähler current",
-            "RCD 空间"
+            "复 Monge–Ampère 稳定性",
+            "segment inequality",
+            "距离半连续性",
+            "Kähler current 完备化"
           ],
           "breakthrough": "把势函数的解析稳定推进到距离几何，并识别其拓扑为原流形。",
-          "limitations": "距离比较依赖所述度量族及可积性控制；current 的 RCD 结论另需要 Ricci 下界。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "单侧半稳定只要求参考度量 Ricci 下界；双侧距离接近另需两个度量都满足统一 Ricci 下界，不能仅凭 Lᵖ 与体积 L¹ 接近推出。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.28978v1 · PDF 第 7 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:44:16.912353+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.28978v1",
+            "contentHash": "87a710af9c888e44356578b9c440409b3ddb7ded17adf3bc7909f13dec440677",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "228354e8468cac655f53cc4f2753c44d48d9868f4c3c9e55277466b454ebb054"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 95,
           "priorityReason": "把势函数的解析稳定推进到距离几何，并识别其拓扑为原流形。"
         },

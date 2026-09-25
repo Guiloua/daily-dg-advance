@@ -24,6 +24,11 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:22:37.362111+00:00",
         "contentHash": "eeae7511feac8fcc626b7941dece84a057b5c43a02aa75a69006589ebd28a69e"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28905v1",
+        "observedAt": "2026-09-25T02:44:05.414508+00:00",
+        "contentHash": "3d1460a36cb8074af98b4ca2e2a41dab1aea93383274ab62f7bcb22c0822ede6"
       }
     ],
     "analysis": {
@@ -31,15 +36,32 @@
       "progressType": "退化 Weyl 问题的内蕴嵌入条件",
       "workSummary": "对球面光滑度量，若 Gauss 曲率除有限个 Hessian 正定的零点外为正，证明存在到 R³ 的整体 C²,¹ 等距嵌入；另在一般三维背景的可积性与逼近 pinching 条件下得到 W³,p 浸入。",
       "techniques": [
-        "退化等距嵌入",
-        "曲率 Hessian",
-        "Weyl 问题",
-        "逼近 pinching"
+        "退化 Monge–Ampère 正则性",
+        "三次 blow-up",
+        "Caffarelli 黏性解理论",
+        "一致曲率 pinching"
       ],
       "breakthrough": "给出一类仅依赖内蕴曲率条件的退化 Weyl 嵌入定理。",
-      "limitations": "有限零点的非退化性不可省略；一般背景结论还需曲率比较、逆平方根 Lᵖ 可积性及一致 pinching。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "Euclidean 嵌入要求有限曲率零点处 Hessian 正定；一般背景的 W³,p 定理另要求完整背景、近似浸入像落在同一紧集及 kε/Hε 的一致正下界。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 5.6 用于理论推导和计算辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.28905v1 · PDF 第 34 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:44:05.414508+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.28905v1",
+        "contentHash": "3d1460a36cb8074af98b4ca2e2a41dab1aea93383274ab62f7bcb22c0822ede6",
+        "pages": 36,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 用于理论推导和计算辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1bc44779a91fad57a6f0fb238b269883219f37fae754dd925461cd84c7a2a925"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs"
+      ],
       "priorityScore": 95,
       "priorityReason": "给出一类仅依赖内蕴曲率条件的退化 Weyl 嵌入定理。"
     },
@@ -73,6 +95,11 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:22:37.362111+00:00",
             "contentHash": "eeae7511feac8fcc626b7941dece84a057b5c43a02aa75a69006589ebd28a69e"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.28905v1",
+            "observedAt": "2026-09-25T02:44:05.414508+00:00",
+            "contentHash": "3d1460a36cb8074af98b4ca2e2a41dab1aea93383274ab62f7bcb22c0822ede6"
           }
         ],
         "analysis": {
@@ -80,15 +107,32 @@
           "progressType": "退化 Weyl 问题的内蕴嵌入条件",
           "workSummary": "对球面光滑度量，若 Gauss 曲率除有限个 Hessian 正定的零点外为正，证明存在到 R³ 的整体 C²,¹ 等距嵌入；另在一般三维背景的可积性与逼近 pinching 条件下得到 W³,p 浸入。",
           "techniques": [
-            "退化等距嵌入",
-            "曲率 Hessian",
-            "Weyl 问题",
-            "逼近 pinching"
+            "退化 Monge–Ampère 正则性",
+            "三次 blow-up",
+            "Caffarelli 黏性解理论",
+            "一致曲率 pinching"
           ],
           "breakthrough": "给出一类仅依赖内蕴曲率条件的退化 Weyl 嵌入定理。",
-          "limitations": "有限零点的非退化性不可省略；一般背景结论还需曲率比较、逆平方根 Lᵖ 可积性及一致 pinching。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "Euclidean 嵌入要求有限曲率零点处 Hessian 正定；一般背景的 W³,p 定理另要求完整背景、近似浸入像落在同一紧集及 kε/Hε 的一致正下界。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 5.6 用于理论推导和计算辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.28905v1 · PDF 第 34 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:44:05.414508+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.28905v1",
+            "contentHash": "3d1460a36cb8074af98b4ca2e2a41dab1aea93383274ab62f7bcb22c0822ede6",
+            "pages": 36,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 用于理论推导和计算辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1bc44779a91fad57a6f0fb238b269883219f37fae754dd925461cd84c7a2a925"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs"
+          ],
           "priorityScore": 95,
           "priorityReason": "给出一类仅依赖内蕴曲率条件的退化 Weyl 嵌入定理。"
         },

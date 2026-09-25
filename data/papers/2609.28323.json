@@ -29,21 +29,48 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:22:37.358958+00:00",
         "contentHash": "17751dc94c48ca6eb2baac51d9643bc249e0f92f0fa1dd455503dc49a6769aeb"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28323v1",
+        "observedAt": "2026-09-25T02:43:42.347119+00:00",
+        "contentHash": "a6defa1a432b1c8a0ce0ea26c1dd8e245568571881257ed43fab6c1587d6463f"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "Yamabe 方程孤立奇点分类",
-      "workSummary": "在 Riemannian 背景完成 3≤n≤29 维 Yamabe 方程正解的孤立奇点分类：奇点可去，或解渐近于 Fowler 解。",
+      "workSummary": "在 7≤n≤29 维证明 Yamabe 正解奇点的临界增长界 u≤Cd^{−(n−2)/2}，再由 Pohozaev 环域估计得到匹配下界和 Fowler 渐近；结合既有低维结果完成 3≤n≤29 分类。",
       "techniques": [
-        "Yamabe 方程",
-        "孤立奇点",
-        "Fowler 解渐近"
+        "伴随积分恒等式",
+        "六阶 metric jet 二次型",
+        "Pohozaev 环域估计",
+        "离散尺度迭代"
       ],
       "breakthrough": "把平坦背景的经典分类推广至所述维数范围的 Riemannian 情形。",
-      "limitations": "维数上限不可任意扩展；n≥30 的反例由后续论文给出，本篇不应被表述为所有维数的分类。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "主定理 1.1–1.2 的新增范围为 7≤n≤29；高维紧性在 n≥25 失效与此处孤立奇点上界的 n=30 阈值是不同问题。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.28323v1 · PDF 第 106 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:43:42.347119+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.28323v1",
+        "contentHash": "a6defa1a432b1c8a0ce0ea26c1dd8e245568571881257ed43fab6c1587d6463f",
+        "pages": 108,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3da92447a7b80c21c439dde3155574582ef906186896d06a7b0e5d8249b0f3ec"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 97,
       "priorityReason": "把平坦背景的经典分类推广至所述维数范围的 Riemannian 情形。"
     },
@@ -82,21 +109,48 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:22:37.358958+00:00",
             "contentHash": "17751dc94c48ca6eb2baac51d9643bc249e0f92f0fa1dd455503dc49a6769aeb"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.28323v1",
+            "observedAt": "2026-09-25T02:43:42.347119+00:00",
+            "contentHash": "a6defa1a432b1c8a0ce0ea26c1dd8e245568571881257ed43fab6c1587d6463f"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "Yamabe 方程孤立奇点分类",
-          "workSummary": "在 Riemannian 背景完成 3≤n≤29 维 Yamabe 方程正解的孤立奇点分类：奇点可去，或解渐近于 Fowler 解。",
+          "workSummary": "在 7≤n≤29 维证明 Yamabe 正解奇点的临界增长界 u≤Cd^{−(n−2)/2}，再由 Pohozaev 环域估计得到匹配下界和 Fowler 渐近；结合既有低维结果完成 3≤n≤29 分类。",
           "techniques": [
-            "Yamabe 方程",
-            "孤立奇点",
-            "Fowler 解渐近"
+            "伴随积分恒等式",
+            "六阶 metric jet 二次型",
+            "Pohozaev 环域估计",
+            "离散尺度迭代"
           ],
           "breakthrough": "把平坦背景的经典分类推广至所述维数范围的 Riemannian 情形。",
-          "limitations": "维数上限不可任意扩展；n≥30 的反例由后续论文给出，本篇不应被表述为所有维数的分类。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "主定理 1.1–1.2 的新增范围为 7≤n≤29；高维紧性在 n≥25 失效与此处孤立奇点上界的 n=30 阈值是不同问题。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.28323v1 · PDF 第 106 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:43:42.347119+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.28323v1",
+            "contentHash": "a6defa1a432b1c8a0ce0ea26c1dd8e245568571881257ed43fab6c1587d6463f",
+            "pages": 108,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3da92447a7b80c21c439dde3155574582ef906186896d06a7b0e5d8249b0f3ec"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 97,
           "priorityReason": "把平坦背景的经典分类推广至所述维数范围的 Riemannian 情形。"
         },

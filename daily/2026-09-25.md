@@ -6,13 +6,17 @@
 
 Zheng-Chao Han、Qinfeng Jiang、Hua-Yang Wang、Jingang Xiong、Lei Zhang
 
-在 Riemannian 背景完成 3≤n≤29 维 Yamabe 方程正解的孤立奇点分类：奇点可去，或解渐近于 Fowler 解。
+在 7≤n≤29 维证明 Yamabe 正解奇点的临界增长界 u≤Cd^{−(n−2)/2}，再由 Pohozaev 环域估计得到匹配下界和 Fowler 渐近；结合既有低维结果完成 3≤n≤29 分类。
 
 We complete, in the Riemannian setting, the classification of isolated singularities of positive solutions to the Yamabe equation for \(3\le n\le 29\), initiated in the flat case by Caffarelli, Gidas, and Spruck in 1989. Precisely, every isolated singularity is either removable or asymptotic to a Fowler solution. The sharpness of this range is established by counterexamples for \(n\ge30\) in our subsequent paper.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。
 
+来源：https://arxiv.org/pdf/2609.28323v1 · PDF 第 106 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT 5.6 Sol 与 Codex 用于文献阅读、探索性证明搜索、计算、论证检查和稿件准备；研究问题及证明路线由作者决定，采用的论证经作者修改核验。
+
+来源：https://arxiv.org/pdf/2609.28323v1
 
 [arXiv](https://arxiv.org/abs/2609.28323)
 
@@ -24,9 +28,11 @@ John Rached
 
 We prove the existence of weight 2 modular forms for some Veech groups, whose Fourier coefficients at a cusp determine the counts of numbers of branched Galois covers of punctured elliptic curves. We further prove there exist cusp forms, counting ramified genus $2$ covers, that are not invariant under any congruence subgroup of SL(2,Z). The main results may be viewed as analogs of the construction of an elliptic curve obtained as the quotient of the Jacobian of a classical modular curve, whose point counts modulo primes determine the coefficients of a Hecke eigenform, but where the uniformizing groups may be noncongruence.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28514v1
 
 [arXiv](https://arxiv.org/abs/2609.28514)
 
@@ -52,9 +58,11 @@ Thomas C. Martinez、Matthew J. Tyler
 
 For type $A$ braid varieties, including Richardson varieties and positroid varieties, we prove that the standard torus has a dense orbit exactly when the associated link is smoothly slice. More generally, we relate the smooth slice genus to the codimension of a generic standard-torus orbit. For knots, this codimension equals twice the slice genus. We also characterize algebraic tori among open affine Richardson varieties and positroid patches by 2-crown avoidance in their Bruhat intervals. Finally, positroid links have equal Seifert and slice genera, so a positroid link is smoothly slice exactly when it is an unlink.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28536v1
 
 [arXiv](https://arxiv.org/abs/2609.28536)
 
@@ -66,9 +74,13 @@ Jae Choon Cha、Byeorhi Kim
 
 We prove that topological isotopy implies smooth isotopy for neat surfaces with common nonempty boundary in a smooth orientable 4-manifold, in the presence of a geometric dual in the boundary. Together with our earlier work on surface smoothing, this shows that the natural map from smooth isotopy classes to topological isotopy classes of such surfaces with prescribed boundary is bijective.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露在稿件准备中使用生成式 AI 作文字编辑和语言润色。
 
+来源：https://arxiv.org/pdf/2609.28598v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露在稿件准备中使用生成式 AI 作文字编辑和语言润色。
+
+来源：https://arxiv.org/pdf/2609.28598v1
 
 [arXiv](https://arxiv.org/abs/2609.28598)
 
@@ -80,9 +92,11 @@ Anthony J. García、Rafael O. Ruggiero
 
 We study magnetic flows on closed Riemannian surfaces of genus at least two. Let $(M,g)$ be a surface without focal points and let $\Omega$ be a magnetic field. We prove that, above the Mañé critical value, the absence of conjugate points imposes geometric restrictions on the magnetic flow. First, we obtain a bound for the integral of the Lorentz force in terms of the geodesic curvature of the horocycles of the underlying Riemannian metric. As a consequence, a lower bound on the Gaussian curvature yields an explicit bound in terms of the area of the surface. The proofs combine the global geometry of magnetic geodesics with Liouville's formula for the geodesic curvature in the orthogonal coordinates given by the level sets and geodesics of a Busemann function on the universal cover.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28666v1
 
 [arXiv](https://arxiv.org/abs/2609.28666)
 
@@ -108,9 +122,13 @@ Siran Li、Xiangxiang Su
 
 This paper is concerned with the Weyl problem, \emph{i.e.}, the existence of isometric immersions or embeddings of two-spheres into the three-dimensional Euclidean space or general ambient three-manifolds. We establish two results on the degenerate Weyl problem, namely when the Gaussian curvature $K_g$ is only nonnegative rather than strictly positive. First, for a smooth metric $g$ on the two-sphere, if $K_g$ is strictly positive except at finitely many points where the Hessian of $K_g$ is positive definite, then $g$ admits a global $C^{2,1}$-isometric embedding into $\mathbb{R}^3$. It appears to be the first result on the degenerate Weyl problem with purely intrinsic conditions on $g$. Second, for a general simply-connected ambient three-manifold $(\mathcal{M},{\overline{g}})$, if $K_g \geq K_0 \geq {\rm sec}_{\overline{g}}$ for some constant $K_0$, $(K_g-K_0)^{-1/2} \in L^p$ with $p \geq 2$, and a certain uniform pinching condition holds for approximate nondegenerate isometric immersions, then there exists a $W^{3,p}$-isometric immersion. Alongside we also resolve the nondegenerate Weyl problem (\emph{i.e.}, when $K_g>0$) into general simply-connected ambient three-manifolds for $g$, ${\overline{g}} \in C^{2,1}$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 用于理论推导和计算辅助。
 
+来源：https://arxiv.org/pdf/2609.28905v1 · PDF 第 34 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 用于理论推导和计算辅助。
+
+来源：https://arxiv.org/pdf/2609.28905v1
 
 [arXiv](https://arxiv.org/abs/2609.28905)
 
@@ -122,9 +140,11 @@ Aliakbar Daemi、Christopher Scaduto
 
 For a surface with an odd number of punctures, the moduli space of flat $SU(2)$ connections with traceless holonomy around each puncture is a symplectic manifold. When the moduli space is nonempty, there is a natural homomorphism from the mapping class group of the punctured surface to the symplectic mapping class group of this moduli space. It is shown that this homomorphism is injective if and only if the dimension of the moduli space is greater than $2$. This generalizes work of Seidel and Wehrheim--Woodward. Also given is a complete classification of Lagrangian spheres in the projective plane blown up at $5$ points with its monotone symplectic structure, which is the moduli space for the 5-punctured sphere. Furthermore, it is determined when two such Lagrangian spheres can be displaced by a symplectic isotopy. Results are also obtained regarding Lagrangian spheres in the intersection of two quadrics in $\mathbb{C}\mathbb{P}^5$. The proofs involve instanton Floer theory and results on Heegaard splittings. A main technical result establishes the approximation of any Hamiltonian isotopy of the $SU(2)$ moduli space by holonomy perturbations which are used in instanton homology.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明研究结果的发展和本文写作未使用 AI 或 LLM；关于 AI 影响数学界氛围的说明不是工具使用。
 
+来源：https://arxiv.org/pdf/2609.28907v1
 
 [arXiv](https://arxiv.org/abs/2609.28907)
 
@@ -136,9 +156,11 @@ Keisuke Himeno、Masakazu Teragaito
 
 The first examples of asymmetric L-space knots were found by Baker and Luecke. Among Baker-Luecke knots, the simplest one has braid index 12. Later, it turned out that there are just 9 asymmetric hyperbolic L-space knots in the SnapPy census, and their braid indices take the values 4, 5, 6 and 7. It is known that asymmetric L-space knots have braid index at least 4. Recently, Baker and the second author give infinitely many asymmetric hyperbolic L-space knots with braid index 4. In this paper, we construct an asymmetric hyperbolic L-space knot with arbitrary braid index bigger than 4. In fact, there exist infinitely many such knots for each braid index.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28917v1
 
 [arXiv](https://arxiv.org/abs/2609.28917)
 
@@ -150,9 +172,11 @@ Juan Rafael Acosta-Portilla
 
 Let $X$ be a Banach space and let $\mathcal{N}(X)$ denote the family of equivalent norms on $X$. We study Hilbert projective metrics on its projectivization $\mathcal{N}'(X)$ induced by ambient cones of nonnegative functions, with particular attention to the intrinsic Hilbert metric induced by the cone $\mathcal{N}(X)\cup\{0\}$. First, we show that the symmetric logarithmic metric on $\mathcal{N}'(X)$ is the Hilbert projective metric induced by the cone of nonnegative real-valued functions, and we characterize the ambient cones that induce the same metric. We then study the intrinsic order on $\mathcal{N}(X)$. For this purpose, we introduce the triangular defect $\Delta_p(x,y)=p(x)+p(y)-p(x+y)$ and prove that two norms $p,q\in\mathcal{N}(X)$ belong to the same intrinsic part if and only if their triangular defects are uniformly comparable, that is, $a\Delta_p\leq\Delta_q\leq b\Delta_p$ for some $a,b>0$. This yields an explicit formula for the intrinsic Hilbert metric in terms of the pointwise comparison of the norms and of their triangular defects. Finally, the map $\Phi(p)=(p,\Delta_p)$ realizes the intrinsic cone order of $\mathcal{N}(X)$ inside a canonical product cone of nonnegative functions and preserves the Hilbert metric on each intrinsic part.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28922v1
 
 [arXiv](https://arxiv.org/abs/2609.28922)
 
@@ -160,13 +184,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Davi Maximo、Ivaldo Nunes
 
-证明 R³ 中紧致常均曲率浸入圆盘，若边界微分同胚映到圆周，则为平面圆盘或球冠。
+通过圆盘上闭 force form 的全局原函数，把边界曲线的有向面积与能量恒等式相比较，导出边界脐性，再用 Hopf 微分与 Schwarz 反射证明整个浸入为平面圆盘或球冠。
 
 We prove that a compact immersed disk of constant mean curvature in $\R^3$ whose boundary is mapped diffeomorphically onto a round circle is a planar disk or a spherical cap.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。
 
+来源：https://arxiv.org/pdf/2609.28929v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 按指示计算并整理 CMC 曲面的积分恒等式，其中包括命题 3.3；将该恒等式用于圆盘刚性证明的思路由作者识别。
+
+来源：https://arxiv.org/pdf/2609.28929v1
 
 [arXiv](https://arxiv.org/abs/2609.28929)
 
@@ -174,13 +202,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Bin Guo、Jian Song、Jacob Sturm
 
-在紧 Kähler 流形同一上同调类中，将体积测度的 L¹ 接近提升为诱导距离函数的 L∞ 接近；在体积密度 Lᵖ、p>1 和 Ricci current 下界下，为非光滑 Kähler current 构造唯一的紧 RCD 度量空间。
+对同类 Kähler 度量与共同 Lᵖ 体积控制，主定理在参考度量有 Ricci 下界时给出 dω′≤dω+ε 的单侧半稳定；两侧均有统一 Ricci 下界时得到距离的 L∞ 稳定。
 
 Let $X$ be a compact Kahler manifold. The analytic stability theorem of Kolodziej for complex Monge-Ampere equation states that for any Kahler metrics $\omega$ and $\omega'$ in the same cohomology class, if their volume measures are bounded in $L^p(X)$ (for some $p>1$) and close in $L^1(X)$, then their Kahler potentials are close in $L^\infty(X)$. In this paper, we establish the geometric stability for complex Monge-Ampère equations that $L^1$-closeness of volume measures implies $L^\infty$-closeness for the induced distance functions by $\omega$ and $\omega'$. Consequently, we prove that any non-smooth Kahler current with volume measure bounded in $L^p$ (for some $p>1$) and Ricci current bounded below induces a unique metric space, which turns out to be a compact RCD space homeomorphic to $X$ itself.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。
 
+来源：https://arxiv.org/pdf/2609.28978v1 · PDF 第 7 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 指出论证错误并建议引理 3.1 的关键不等式 (3.1)，用于从推论推广到主定理。
+
+来源：https://arxiv.org/pdf/2609.28978v1
 
 [arXiv](https://arxiv.org/abs/2609.28978)
 
@@ -188,13 +220,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Bin Guo、Jian Song、Jacob Sturm
 
-在正规 Kähler 空间上，从奇异度量势函数相对于光滑背景的 Hölder 连续性推出内蕴距离的 Hölder 连续性，并在 Kähler current 正性下识别完备化与原复空间。
+通过 Hölder 势控制诱导距离；在正规射影簇上利用有限投影图给出指数 α/(2D) 的距离上界，并在 current 有背景度量正下界时识别完备化。
 
 This paper is the continuation of our earlier work on Holder estimates for Kahler potentials on compact normal Kahler spaces. We establish a geometric counterpart for analytic Holder regularity of Kolodziej. If a singular metric $\omega_\phi$ has Holder continuous potentials with respect to a smooth background metric, then its distance function is Holder continuous with respect to a smooth background distance. The result holds on normal Kahler spaces and yields compactness of the metric completion as well as its identification with the underlying complex space if $\omega_\phi$ is a Kahler current. Under this positivity assumption, our estimates establish the Holder equivalence between the intrinsic canonical Kahler metrics and the extrinsic smooth metrics on Kahler-RCD spaces, particularly on smoothable Kahler-Einstein spaces.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.28982v1
 
 [arXiv](https://arxiv.org/abs/2609.28982)
 
@@ -202,13 +236,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Bin Guo、Jian Song、Jacob Sturm
 
-对紧正规 klt Kähler 空间上体积密度属 Lᵖ、p>1 的奇异度量，证明 pluripotential Ricci 下界与合成 RCD 下界等价，并为每个 Kähler 类构造 RCD 结构。
+对紧正规 klt Kähler 空间上具有有界局部势、适配体积密度 Lᵖ 控制并在正则部光滑正定的 current，证明 Ric≥−ω 的完备化为非塌缩 RCD(−1,2n) 空间，并识别其与原复空间同胚。
 
 This paper is the final installment in our series on the geometric theory of complex Monge-Ampere equations. We study singular Kahler metrics on compact normal Kahler spaces with klt singularities whose volume densities lie in $L^p$ for some $p>1$. We show that a lower bound for the Ricci current in the sense of pluripotential theory is equivalent to a synthetic Ricci lower bound in the sense of RCD theory. As a consequence, every Kahler class on a compact normal Kahler space with klt singularities admits an RCD structure, which makes differential geometric analysis available on singular complex spaces. As an application, we show that the fundamental group of a compact Kahler Calabi-Yau space with klt singularities is almost Abelian. We further establish compactness results for singular Kahler-Einstein spaces.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确将关键技术命题 5.1 的证明归于 ChatGPT-6 Astra。
 
+来源：https://arxiv.org/pdf/2609.28986v1 · PDF 第 9 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将关键技术命题 5.1 的证明归于 ChatGPT-6 Astra。
+
+来源：https://arxiv.org/pdf/2609.28986v1
 
 [arXiv](https://arxiv.org/abs/2609.28986)
 
@@ -220,9 +258,13 @@ Tomoyuki Hisamoto
 
 We prove sharp metric entropy estimates for spaces of Kähler potentials. In complex dimension $n$, normalized potentials have Kolmogorov entropy of order $\e^{-n}$ in the background $L^1$ metric. On a polarized manifold, a relative-entropy sublevel has the same order in the Mabuchi--Darvas $d_1$ metric, including its full finite-energy closure. The upper bound is $C_X(1+B)^{n+1}\e^{-n}$ for entropy budget $B$. For toric potentials, the sharp exponent is $n/2$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT-6 Astra 广泛用于探索候选证明及辅助检查计算、参考文献和表述；最终论证与行文由作者核验完成。
 
+来源：https://arxiv.org/pdf/2609.29002v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT-6 Astra 广泛用于探索候选证明及辅助检查计算、参考文献和表述；最终论证与行文由作者核验完成。
+
+来源：https://arxiv.org/pdf/2609.29002v1
 
 [arXiv](https://arxiv.org/abs/2609.29002)
 
@@ -234,9 +276,13 @@ Nikolay Bogachev
 
 We prove that a lattice $\Gamma$ in $\mathrm{PSL}_2(\mathbb{R})$ or $\mathrm{PSL}_2(\mathbb C)$ has positive trace gap, meaning that its traces are uniformly separated, if and only if it is derived from an admissible quaternion algebra. For cocompact Fuchsian groups, this proves the positive trace gap conjecture attributed to Sarnak by Geninska and Leuzinger in 2008. The same characterization by quaternion algebras holds if the difference set of traces is not dense. Our method also gives a similar result for lattices in $\mathrm{SL}_d(\mathbb R)$, for every $d\ge3$: a lattice $\Gamma<\mathrm{SL}_d(\mathbb R)$ has positive trace gap if and only if all its traces are integers. Equivalently, after conjugation, it has finite index in the norm-one group of an order in a central simple algebra of degree $d$ over $\mathbb Q$ that splits over $\mathbb R$. We also discuss spectral consequences and other applications of the results and techniques.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 LLM 用于讨论想法、计算、文献检索和检查证明，明确表示稿件由本人撰写；完稿后另一次引导模型解猜想的实验不计作本文核心贡献。
 
+来源：https://arxiv.org/pdf/2609.29033v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 用于讨论想法、计算、文献检索和检查证明，明确表示稿件由本人撰写；完稿后另一次引导模型解猜想的实验不计作本文核心贡献。
+
+来源：https://arxiv.org/pdf/2609.29033v1
 
 [arXiv](https://arxiv.org/abs/2609.29033)
 
@@ -262,9 +308,11 @@ Jih-Hsin Cheng、Hung-Lin Chiu、Wei-Ting Kao
 
 The first two authors derived the Weitzenböck-type Formula for a CR Dirac operator. In this paper, we apply the above-mentioned formula and follow the process as Riemannian case to derive a Reilly-type inequality. We give two applications for the CR Reilly inequality. One is a lower bound estimate of the p-mass in terms of the first eigenvalue of the modified hypersurface CR Dirac operator. Another one is to solve the CR Dirac equation on a bounded domain with an $S^{1}$-action and an APS-type boundary condition.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29077v1
 
 [arXiv](https://arxiv.org/abs/2609.29077)
 
