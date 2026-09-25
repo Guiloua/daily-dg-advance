@@ -652,9 +652,13 @@ Nobuo Iida
 
 We construct simply connected integral symplectic four-manifolds forming an exotic pair, with equal values of $c_1^2$, $c_2$, $c_1\mathbin{\cdot}[\omega]$, and $[\omega]^2$, but with symplectic Kodaira dimensions $-\infty$ and $2$. Since symplectic Kodaira dimension is invariant under Luttinger surgery, the two manifolds are not Luttinger-surgery equivalent. This gives a negative answer to Auroux's uniqueness question.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确披露本文反例构造最初由 ChatGPT 在讨论中建议，另用于探索性文献检索及英文、LaTeX 编辑；构造与全部论证由作者独立核实。
 
+来源：https://arxiv.org/pdf/2609.29561v1 · PDF 第 8 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露本文反例构造最初由 ChatGPT 在讨论中建议，另用于探索性文献检索及英文、LaTeX 编辑；构造与全部论证由作者独立核实。
+
+来源：https://arxiv.org/pdf/2609.29561v1
 
 [arXiv](https://arxiv.org/abs/2609.29561)
 
@@ -666,9 +670,11 @@ Fagui Li
 
 We prove sphere theorems for closed connected immersed hypersurfaces of constant scalar curvature in Euclidean space. Combining Ros's rigidity argument with the filling theorem of Huisken and Sinestrari, we show that every two-convex such hypersurface is a round sphere. As a consequence, Yau's conjecture holds for closed connected immersed hypersurfaces in \(\mathbb R^4\). Using Gromov's filling theorem, we also obtain higher-dimensional rigidity results under a principal-curvature index condition and an explicit scalar-curvature pinching condition.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29673v1
 
 [arXiv](https://arxiv.org/abs/2609.29673)
 
@@ -676,13 +682,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Luca Rizzi、Ye Zhang
 
-构造紧致、等正则、二步且无非平凡异常极短测地线的光滑亚 Riemannian 流形，使任意光滑正测度均不满足任何有限维 MCP(K,N)。
+在 R⁴ 构造光滑等正则二步理想结构，使距离平方的亚 Laplacian 沿趋于基点的光滑点无界；再选周期参数函数并取余紧格商得到紧致反例，排除任意光滑正测度的所有有限维 MCP。
 
 We construct a compact, equiregular, ideal sub-Riemannian manifold of step $2$ such that, for every smooth positive measure, the $\mathrm{MCP}(K,N)$ fails for all $K\in\mathbb{R}$ and $N \in (1,\infty)$. This shows that the real-analyticity assumption in the measure contraction theorem of Badreddine and Rifford in arXiv:1712.09900v2 cannot be replaced by smoothness. Moreover, our structure is ideal, i.e. it admits no non-trivial abnormal minimizing geodesics. Although failures of the measure contraction property for ideal structures were recently obtained in the higher-step setting, our construction shows that the phenomenon can already occur on compact, equiregular, ideal structures of step $2$. The proof exploits a differential consequence of the measure contraction property, namely a uniform upper bound for the sub-Laplacian of the squared distance near its base point, and constructs a structure for which this quantity is unbounded.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。
 
+来源：https://arxiv.org/pdf/2609.29698v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。
+
+来源：https://arxiv.org/pdf/2609.29698v1
 
 [arXiv](https://arxiv.org/abs/2609.29698)
 
@@ -694,9 +704,13 @@ Jonas Knoerr
 
 We present a proof classifying continuous isometry invariant valuations on polytopes in hyperbolic space $\mathbb{H}^n$ as linear combinations of the intrinsic volumes. The argument relies on an adaptation of the spherical case recently established by the author that circumvents an approximation step which does not generalize to the hyperbolic setting.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确披露 Claude Fable 5 在 Florian Besau 关于球面方法向双曲空间推广的提示下生成初始证明，随后由作者核验、修订和重新组织。
 
+来源：https://arxiv.org/pdf/2609.29716v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露 Claude Fable 5 在 Florian Besau 关于球面方法向双曲空间推广的提示下生成初始证明，随后由作者核验、修订和重新组织。
+
+来源：https://arxiv.org/pdf/2609.29716v1
 
 [arXiv](https://arxiv.org/abs/2609.29716)
 
@@ -708,9 +722,13 @@ Márcio Batista、Matheus B. Martins
 
 We establish index estimates for complete two-sided free boundary minimal surfaces in smooth mean-convex domains of $\mathbb{R}^3$ with noncompact boundary. We first prove $3{\rm Ind}_s(\Sigma)\geq 2g+b-1$, where $g$ and $b$ describe the conformal compactification. We then include all interior ends with their multiplicities, without further asymptotic assumptions, and selected boundary ends under an explicit condition ensuring vanishing cutoff errors. The proof combines a localized energy identity with a Riemann--Roch count on the conformal double. A boundary puncture at which the chosen forms are regular eliminates the exceptional space; if poles are allowed at every boundary puncture, this space has dimension at most one. We provide the mixed cutoff construction, examples distinguishing embedded boundary ends from reflected planar ends, and a separate analysis of the conformal Jacobi metric. The latter yields finite Dirichlet energy of the logarithmic conformal factor, but the unrestricted boundary-end estimate remains an open step. The compact-boundary case was treated by Cavalcante, Mendes, and dos Santos.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露生成式 AI 用于语言编辑及讨论部分论证的呈现方式；未将数学想法或证明推导归于 AI。
 
+来源：https://arxiv.org/pdf/2609.29723v1 · PDF 第 19 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 用于语言编辑及讨论部分论证的呈现方式；未将数学想法或证明推导归于 AI。
+
+来源：https://arxiv.org/pdf/2609.29723v1
 
 [arXiv](https://arxiv.org/abs/2609.29723)
 
@@ -722,9 +740,11 @@ David Kalaj、Jinsong Liu、Jian-feng Zhu
 
 In 2012, Iwaniec, Kovalev and Onninen proposed an upper Nitsche--Grötzsch type estimate for harmonic $K$-quasiconformal homeomorphisms between circular annuli: in normalized form, every such map $h:A(1,s)\to A(1,S)$ should satisfy \[ S \leq \frac{K+1}{2}s-\frac{K-1}{2s}. \] The radial and spiral-radial one-mode models explain why this estimate is natural. We show that this one-mode evidence does not extend to the unrestricted non-radial class. For every $1<s<S$, we construct a non-radial harmonic orientation-preserving diffeomorphism $h:A(1,s)\to A(1,S)$ with \[ \norm{\omega_h}_{\infty}<\frac{S-s}{S-s^{-1}}, \] strictly below the conjectural threshold. Thus, the dilatation lower bound predicted by the conjecture fails, even for smooth harmonic diffeomorphisms with prescribed circular boundary components. The construction uses a small high-frequency reparametrization of the outer boundary: it lowers the first Fourier-mode dilatation by order $t^2$, while the compensating high modes are exponentially damped at the inner boundary. We also record structured regimes in which the one-mode estimate survives, including an inner-boundary anti-conformal energy condition, a Fourier leakage criterion, and a low-frequency spectral stability result. In the minimal-surface interpretation, the upper radial model is helicoidal and vertical-periodic rather than single-valued catenoidal; accordingly, the counterexamples give vertical-periodic minimal annuli with slope below the expected helicoidal threshold, and lead to a non-radial extremal problem for harmonic annulus diffeomorphisms.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.29795v1
 
 [arXiv](https://arxiv.org/abs/2609.29795)
 
@@ -736,9 +756,13 @@ Michal Jablonowski
 
 We prove that both smooth homotopy four-spheres arising from the two framed surgeries on a section of a period-six mapping torus built from a quaternionic prism manifold with cyclic factor of order seven are standard. Their belt spheres give two smooth fibred two-knot realizations of the prism quandle of order fifty-six in the standard four-sphere. The knots have the same knot group and diffeomorphic exteriors but are inequivalent. Combined with the fibred-rigidity reduction, this yields exactly two fibred realizations in homotopy four-spheres, both standard. The proof combines a Whitehead-link model for the orbit orbifold, circle-action and surgery methods, cyclic branched-cover calculations, and a spin-bordism evaluation of a secondary invariant. This resolves the order-seven case in the classical prism-family realization problem.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.5–6 与 Claude 4.8–5.5 用于编辑、讨论、一致性检查及证明审查。
 
+来源：https://arxiv.org/pdf/2609.29839v1 · PDF 第 36 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.5–6 与 Claude 4.8–5.5 用于编辑、讨论、一致性检查及证明审查。
+
+来源：https://arxiv.org/pdf/2609.29839v1
 
 [arXiv](https://arxiv.org/abs/2609.29839)
 
@@ -750,9 +774,13 @@ Qizheng You
 
 This paper shows that one internal stabilization is enough to resolve all the self-referential tubes on an embedding. As an application, this paper gives a complete isotopy classification for embedded surfaces with a common geometric dual in orientable $S^2$-bundle over a surface, provided that the embedded surfaces have greater genus than the base surface of the bundle.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 仅用于文字润色、语法检查及使用 TikZ 制图的指导。
 
+来源：https://arxiv.org/pdf/2609.29854v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅用于文字润色、语法检查及使用 TikZ 制图的指导。
+
+来源：https://arxiv.org/pdf/2609.29854v1
 
 [arXiv](https://arxiv.org/abs/2609.29854)
 
@@ -764,9 +792,13 @@ Butian Zhang
 
 We show that the evaluations of combinatorial 1-cocycles defined by Gauss diagrams with a triangle on the canonical loops in the space of long knots are finite type invariants. Using Gauss diagrams, we construct two $\mathbb{Z}$-valued combinatorial 1-cocycles $\beta_1, \beta_2$ and a $\mathbb{Z}/2\mathbb{Z}$-valued 1-cocycle $\beta_3$ on the space of long knots and prove their cocyclicity by verifying their invariance under higher Reidemeister moves coming from the codimension-two singularities of plane curves. We show that they represent genuinely new 1-cohomology classes and compute their pairings with the rotation, rolling, half rolling, bracket and half bracket loops. A key new feature is that $\beta_1$ and $\beta_2$ can pair nontrivially with bracket and half-bracket loops. We conjecture that $(\alpha_3^1,\beta_1,\beta_2)$ over $\mathbb{Q}$, and their mod 2 reductions together with $\beta_3$ over $\mathbb{Z}/2\mathbb{Z}$, form bases of degree-one cohomology up to order 4 in the sense of Vassiliev. In addition, we show that the reparametrization loop is homotopic to the rolling loop concatenated with the rotation loop in $\operatorname{Emb}(S^1, S^3)$. Finally, we give the criteria for a 1-cohomology class in the long knot space to descend to 1-cohomology classes in $\operatorname{Emb}(S^1, S^3)$ and $\operatorname{Emb}(S^1, S^3)/\operatorname{Diff}^{+}(S^1)$. Using these criteria, we show that $\beta_1$ descends to a nontrivial 1-cohomology class in $\operatorname{Emb}(S^1,S^3)$, while $\beta_1 \bmod 2$ and $\beta_3$ descend to linearly independent nontrivial 1-cohomology classes in $\operatorname{Emb}(S^1, S^3)/\operatorname{Diff}^{+}(S^1)$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 润色语言，起草命题 7.5 的证明、提出定理 7.7 的初始证明想法及附录 A 两个公式，并绘制该节图表；所有材料由作者审阅。
 
+来源：https://arxiv.org/pdf/2609.29946v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 润色语言，起草命题 7.5 的证明、提出定理 7.7 的初始证明想法及附录 A 两个公式，并绘制该节图表；所有材料由作者审阅。
+
+来源：https://arxiv.org/pdf/2609.29946v1
 
 [arXiv](https://arxiv.org/abs/2609.29946)
 
@@ -778,9 +810,13 @@ Gao Chen、Kartick Ghosh、Ziyue Wang
 
 In this paper, we prove the equivalence between coerciveness and the existence of a solution to the generalised Monge-Ampère equations for right-Noetherian polynomials satisfying several assumptions. This includes the case of strictly interlacing polynomials. In particular, we have generalised Chu-Lee's result to supercritical but not hypercritical LYZ equations.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露以自行分解的命题为起点，要求 ChatGPT 6 Astra 给出反例或特殊情形证明，反复讨论后据反馈修改命题并大幅核改证明；另用于语法纠正。
 
+来源：https://arxiv.org/pdf/2609.29968v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露以自行分解的命题为起点，要求 ChatGPT 6 Astra 给出反例或特殊情形证明，反复讨论后据反馈修改命题并大幅核改证明；另用于语法纠正。
+
+来源：https://arxiv.org/pdf/2609.29968v1
 
 [arXiv](https://arxiv.org/abs/2609.29968)
 
@@ -792,9 +828,11 @@ Yin Jiang、Nan Li
 
 By the paper \cite{Pet2009upper}, \cite{LiNan2026}, we know that there exists $C(n)>0$, for any complete compact or non-compact Riemannian n manifold $M$ with non-negative sectional curvature, without boundary and any $R>0$, \begin{equation} R^{2-n}\int_{B(p,R)} Scal \le C(n). \end{equation} Based on this result, we will prove that (1) There exists constant $C(n)$. If $M$ is a complete, n dimensional, non-compact Riemannian manifold with non-negative sectional curvature, then for any $p\in M$, $R>0$, \begin{equation} R^{2-n}\int_{B(p,R)} Scal \ dvol \le C(n)(1-v(M)), \end{equation} where $Scal$ is the scalar curvature and $v(M)=\lim\limits_{R\to \infty} \frac{volB(p,R)}{volB(0,R)}$ is the asymptotic volume ratio. (2) There exists constant $C(n)$. If $M$ is a complete, n dimensional Riemannian manifold with sectional curvature $\ge 1$, then \begin{equation} \int_M (Scal-n(n-1)) \ dvol \le C(n)(1-\frac{vol(M)}{vol(S^n(1))}). \end{equation}
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。正文明确声明所有定理、性质与引理的证明及整篇写作未使用 AI；官方评论亦说明证明未用 AI。否定声明不计为明确使用。
 
+来源：https://arxiv.org/pdf/2609.29982v1
 
 [arXiv](https://arxiv.org/abs/2609.29982)
 
@@ -806,9 +844,13 @@ Xuanyu Li
 
 We study the behavior of isolated singularities of stationary harmonic maps with generic boundary data. For round sphere targets, we prove that, for $4\leqslant n\leqslant7$, every stable stationary harmonic map from a bounded smooth $n$-dimensional domain to round $(n-1)$-sphere with generic smooth boundary data has only radial projections composed with orthogonal transformations as tangent maps at its singularities; for 7-dimensional domains and round $k$-sphere targets with $k\geqslant7$, every stable stationary harmonic map with generic smooth boundary data is smooth. These results follow from a general minimum-index principle for closed real-analytic target manifolds. Under suitable target hypotheses ensuring strong compactness and excluding lower-dimensional singularity models, we show that, in the first domain dimension in which singularities can occur, generic boundary data force the link of every singular tangent map to attain the smallest possible Morse index. This principle applies both to stable stationary harmonic maps and, under the corresponding stronger target hypotheses, to all stationary harmonic maps. If no non-constant tangent map in the relevant class has a link attaining this minimum, generic smoothness follows. As an application, we establish a rigidity at infinity theorem. For $3\leqslant n\leqslant7$, we show that any energy-minimizing map from $n$-Euclidean space to round $(n-1)$-sphere admitting the radial projection as a blow-down limit must itself be a translate of the radial projection.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 LLM 仅用于参考文献检索和改善稿件表述。
 
+来源：https://arxiv.org/pdf/2609.29994v1 · PDF 第 7 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 仅用于参考文献检索和改善稿件表述。
+
+来源：https://arxiv.org/pdf/2609.29994v1
 
 [arXiv](https://arxiv.org/abs/2609.29994)
 
@@ -820,9 +862,11 @@ Victor Chepoi、Bruno J. Schmidt、Peter F. Stadler
 
 A graph $G=(V,E)$ is called smooth (respectively, strongly smooth) if for any two vertices $u,v\in V$, the distance point-shadow $v|u := \{ x\in V: d(u,x)=d(u,v)+d(v,x)\}$, respectively, the point-shadow $v/u := \{ x\in V: v\in\mathrm{conv}(u,x)\}$, is geodesically convex. Smooth graphs have been introduced by Nebeský (2005) in the context of step systems. Graphs with convex point-shadows and convex distance point-shadows also naturally occur in convexity theory. Brešar et al. (2026) recently showed that several classes of graphs are smooth and that smoothness is preserved by Cartesian products, gated amalgams, and isometric subgraphs. Weakly modular graphs comprise the most important classes of graphs from Metric Graph Theory: median, modular, Helly, bridged, and dual polar graphs. In this note, we characterize smooth and strongly smooth weakly modular graphs in terms of forbidden isometric subgraphs on 5 and 7 vertices. This settles Problem 1 of the paper by Brešar et al. We also characterize prime strongly smooth weakly modular graphs, i.e., strongly smooth weakly modular graphs that cannot be obtained from smaller graphs by Cartesian products and gated amalgams.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.30035v1
 
 [arXiv](https://arxiv.org/abs/2609.30035)
 
@@ -834,9 +878,11 @@ Yury Belousov、Viktoriia Georgievskaia
 
 A meander is a configuration of two simple plane curves intersecting transversely. The orders of their intersection points define a permutation that determines the configuration. When tangencies are allowed, however, different configurations can share the same permutation. We study the combinatorial and algebraic structures arising from this non-uniqueness. We give a realization criterion and show that the realizations of each realizable permutation form an affine space over the two-element field. We describe this space using an associated graph, called the component spine. We prove that the component spine of every permutation is a cactus. We also introduce the tangency polynomial, which counts realizations by their number of tangencies, investigate its properties, and prove that it factors over the cycles and bridges of the component spine. We derive a central limit theorem for tangency counts and obtain asymptotic formulas for the number of distinct tangency polynomials.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.30068v1
 
 [arXiv](https://arxiv.org/abs/2609.30068)
 
@@ -848,9 +894,13 @@ Shaosai Huang、Xin Peng
 
 Let $(X_i,d_i,\mathfrak m_i)$ be compact $\mathrm{RCD}(K,N)$ spaces converging to a space $X$ of rectifiable dimension $m$. Their first Betti numbers can drop by at most $N-m$. When equality holds, the maximal abelian covers have a non-collapsed limit $Y$ carrying a free isometric $\mathbb{R}^{N-m}$-action. We turn this limiting symmetry into fibrations of the approximating spaces. More precisely, after passing to a subsequence, there is an open full-measure set $G\subset X$, containing every regular point, on which $X$ is a topological orbifold and the $X_i$ admit local Seifert fibrations with $(N-m)$-torus fibres. Each finite local group acts on the fibre by translations. If the $X_i$ have no boundary, then $X\setminus G$ has Hausdorff codimension at least two. If $Y$ has no bubbling and $X$ is a smooth closed Riemannian orbifold, the local fibrations may be chosen as restrictions of a single global Seifert fibration. An affine replacement on the smooth manifold cover shows, in addition, that a finite cover of $X_i$ is homeomorphic to a product with $\mathbb{T}^{N-m}$; here we use the classification of affine torus bundles at the Betti number equality of Peng, Wang and Wang. When the base is a closed Riemannian manifold, the maps are torus bundles, confirming a conjecture of Zamora and Zhu for possibly singular RCD total spaces. The new ingredients are a pointwise linearization of the collapsing action at regular orbits, an invariant harmonic transverse coordinate compatible with finite isotropy, and an exactly equivariant orbit coordinate built from an elementary rounding-and-doubling argument in the collapsing deck group.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Claude Code 与 OpenAI Codex 用于探索讨论、测试和细化想法、文献来源整理、代码开发及验证、数学错误检查和编辑修订；未将具体核心想法单独归于模型。
 
+来源：https://arxiv.org/pdf/2609.30153v1 · PDF 第 47 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Code 与 OpenAI Codex 用于探索讨论、测试和细化想法、文献来源整理、代码开发及验证、数学错误检查和编辑修订；未将具体核心想法单独归于模型。
+
+来源：https://arxiv.org/pdf/2609.30153v1
 
 [arXiv](https://arxiv.org/abs/2609.30153)
 
@@ -862,9 +912,13 @@ Yuting Wu
 
 Let $(M, g)$ be an $n$ $(\ge 3)$ dimensional, non-collapsed compact Riemannian manifold and $\operatorname{Ric}^-$ be the negative part of the Ricci curvature and $\beta \in (\frac{2n}{n+2}, 2)$. We prove a relative volume comparison theorem when $|\operatorname{Ric}^-|^\beta$ is in the Kato class (cf. Definition 1.1), which results from a new integral Laplace comparison theorem in the spirit of \cite{PW} for a suitable conformal metric. This partly addresses an expectation in \cite{TZZZZ}, where the same result was proven when $|\operatorname{Ric}^-|^2$ is in the class.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 在探索阶段提示 Adams 的参考文献，并辅助修改润色表述；数学论证由作者独立发展。
 
+来源：https://arxiv.org/pdf/2609.30156v1 · PDF 第 14 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 在探索阶段提示 Adams 的参考文献，并辅助修改润色表述；数学论证由作者独立发展。
+
+来源：https://arxiv.org/pdf/2609.30156v1
 
 [arXiv](https://arxiv.org/abs/2609.30156)
 
@@ -876,9 +930,11 @@ Joseph Breen、Alexander Zupan
 
 We import the theory of $R$-links and derivative links into contact topology in both the Legendrian and transverse setting. This framework is used to characterize various forms of Lagrangian and symplectic sliceness, and more generally establishes one approach to what we call the Lagrangian slice-ribbon conjecture. Our main theorem asserts that a Legendrian knot with Thurston-Bennequin invariant $-1$ is Lagrangrian slice (resp. regularly Lagrangian slice) if and only if it supports a tight transverse (resp. Legendrian) $R$-link derivative.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明本文准备过程中未使用 LLM，思想与文字均由作者构思和撰写。
 
+来源：https://arxiv.org/pdf/2609.30182v1
 
 [arXiv](https://arxiv.org/abs/2609.30182)
 
@@ -890,9 +946,11 @@ Ziyu Neroli
 
 We study the moiré pattern formed by the intersection of a planar Sierpiński gasket and a copy rotated about its centre. At every resonant angle, we prove that the intersection is of finite type and compute its Hausdorff and Minkowski dimensions from an explicit finite matrix; for Lebesgue-almost every angle, we bound its upper Minkowski dimension by $\overline{\dim}_{\mathrm B}(\mathcal S_\theta)\le 2\dim_{\mathrm H}(S)-2$. Finally, we conjecture that both dimensions equal this bound at every non-resonant angle. Sections 2 and 3 are formalised in Lean.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.30235v1
 
 [arXiv](https://arxiv.org/abs/2609.30235)
 
@@ -904,8 +962,10 @@ Xerxes D. Arsiwalla、Louis H. Kauffman
 
 We introduce a new structural framework for constructing multivariate Alexander quandles based on a groupoid ${\cal G}$, composed of a disjoint union of delooping groupoids of deck groups. Compared to standard Alexander modules over group rings ${\mathbb{Z}}[{\mathbb{Z}}]$, the multivariate version involves modules over groupoid rings ${\mathbb{Z}}[{\cal G}]$. A manifestly categorical description is given in terms of ${\mathbb{Z}}$-Algebroids, whose functorial module theory yields an equivalent definition of multivariate Alexander modules. Using the category of elements construction, we define multivariate Alexander quandles from this groupoid framework. Three classes of multivariate quandle operations follow. In contrast to earlier approaches, we abstract the algebraic structure from explicit link-dependence. As a consequence, we have a structural framework for: (i) enumerating new classes of Alexander quandles, and (ii) finding new coloring invariants of links. We show that maps between ${\mathbb{Z}}$-modules, facilitated via multivariate quandle operations, realize a quiver presentation of quandles, which makes manifest the oidification of Alexander modules. Oidified Alexander modules, based on groupoids, provide a constructive framework for composing univariate quandles to obtain new multivariate ones. Finally, we comment on the possibility of new link invariants coming from groupoid-based formulations, including the fundamental groupoid.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.30262v1
 
 [arXiv](https://arxiv.org/abs/2609.30262)

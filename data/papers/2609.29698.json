@@ -25,22 +25,43 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-25T02:38:18.558435+00:00",
         "contentHash": "ef7bae449c18235812dfd502671075babb76678e37fbb825d3e96e81f276caf9"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.29698v1",
+        "observedAt": "2026-09-25T02:51:32.654982+00:00",
+        "contentHash": "870f54d72bc29056752402bb9f2150bb130c1c820323647768db7d56d9eaf825"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "二步理想亚 Riemannian 几何的 MCP 反例",
-      "workSummary": "构造紧致、等正则、二步且无非平凡异常极短测地线的光滑亚 Riemannian 流形，使任意光滑正测度均不满足任何有限维 MCP(K,N)。",
+      "workSummary": "在 R⁴ 构造光滑等正则二步理想结构，使距离平方的亚 Laplacian 沿趋于基点的光滑点无界；再选周期参数函数并取余紧格商得到紧致反例，排除任意光滑正测度的所有有限维 MCP。",
       "techniques": [
-        "测度收缩性质",
-        "亚 Laplacian",
-        "距离平方",
-        "二步分布"
+        "MCP 的微分判据",
+        "距离平方的水平 Hessian",
+        "Cauchy–Schwarz 渐近等号",
+        "周期化与余紧格商"
       ],
       "breakthrough": "说明测度收缩定理中的实解析条件不能直接弱化为光滑，即使在二步理想结构中也会失败。",
-      "limitations": "这是特定构造的反例，不意味着所有光滑二步结构都不满足 MCP。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "ideal 只排除非平凡异常极短测地线，弱于 fat 分布；反例不否定 fat 结构或实解析条件下的正面 MCP 定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.29698v1 · PDF 第 2 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-25T02:51:32.654982+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.29698v1",
+        "contentHash": "870f54d72bc29056752402bb9f2150bb130c1c820323647768db7d56d9eaf825",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0a911d83c64eb80bb6aa9be3016ba7bd08e61d9a99548af0b1042428936ed7df"
+      },
+      "aiUsage": [
+        "ideas"
+      ],
       "priorityScore": 91,
       "priorityReason": "说明测度收缩定理中的实解析条件不能直接弱化为光滑，即使在二步理想结构中也会失败。"
     },
@@ -75,22 +96,43 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-25T02:38:18.558435+00:00",
             "contentHash": "ef7bae449c18235812dfd502671075babb76678e37fbb825d3e96e81f276caf9"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.29698v1",
+            "observedAt": "2026-09-25T02:51:32.654982+00:00",
+            "contentHash": "870f54d72bc29056752402bb9f2150bb130c1c820323647768db7d56d9eaf825"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "二步理想亚 Riemannian 几何的 MCP 反例",
-          "workSummary": "构造紧致、等正则、二步且无非平凡异常极短测地线的光滑亚 Riemannian 流形，使任意光滑正测度均不满足任何有限维 MCP(K,N)。",
+          "workSummary": "在 R⁴ 构造光滑等正则二步理想结构，使距离平方的亚 Laplacian 沿趋于基点的光滑点无界；再选周期参数函数并取余紧格商得到紧致反例，排除任意光滑正测度的所有有限维 MCP。",
           "techniques": [
-            "测度收缩性质",
-            "亚 Laplacian",
-            "距离平方",
-            "二步分布"
+            "MCP 的微分判据",
+            "距离平方的水平 Hessian",
+            "Cauchy–Schwarz 渐近等号",
+            "周期化与余紧格商"
           ],
           "breakthrough": "说明测度收缩定理中的实解析条件不能直接弱化为光滑，即使在二步理想结构中也会失败。",
-          "limitations": "这是特定构造的反例，不意味着所有光滑二步结构都不满足 MCP。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "ideal 只排除非平凡异常极短测地线，弱于 fat 分布；反例不否定 fat 结构或实解析条件下的正面 MCP 定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.29698v1 · PDF 第 2 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-25T02:51:32.654982+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.29698v1",
+            "contentHash": "870f54d72bc29056752402bb9f2150bb130c1c820323647768db7d56d9eaf825",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。在作者提供自行构造的既有引理反例后，ChatGPT GPT-5.5 Pro 建议了结构 (10)，作者将其纳入本文并独立发展构造、核验论证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0a911d83c64eb80bb6aa9be3016ba7bd08e61d9a99548af0b1042428936ed7df"
+          },
+          "aiUsage": [
+            "ideas"
+          ],
           "priorityScore": 91,
           "priorityReason": "说明测度收缩定理中的实解析条件不能直接弱化为光滑，即使在二步理想结构中也会失败。"
         },
