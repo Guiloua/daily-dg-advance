@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-09-28
 
-已收录 42/42 · 解读 42/42 · 资料待补齐。
+已收录 42/42 · 解读 42/42。
 
 ## The maximum area of the convex hull of a polyhex
 
