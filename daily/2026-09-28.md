@@ -1,6 +1,48 @@
 # 几何前沿日报 · 2026-09-28
 
-已确认 24 篇，其他分类待补齐 · 解读 0 篇。
+已收录 42/42 · 解读 0/42 · 资料待补齐。
+
+## The maximum area of the convex hull of a polyhex
+
+Pragyaan Gaur
+
+中文解读待补齐
+
+A polyhex is an edge-connected set of n cells of the regular hexagonal tiling, where each cell has area one. We prove that the convex hull of a polyhex has area at most (1/6)*ceiling(n^2 + 14n/3), and we show that some polyhex reaches this bound for every n. This proves a conjecture of Kurz from 2008, which asked for the weaker bound (1/6)*floor(n^2 + 14n/3 + 1). The two bounds differ exactly when 3 divides n. We checked the upper bound in the Lean 4 proof assistant with the Mathlib library. We also report a computation over all polyhexes with at most 12 cells, which shows that for these sizes only one shape reaches the maximum, up to rotation and reflection.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30310)
+
+## Planar Contact Structures with Calabi-Yau Fillings and Topological Quantum Computation
+
+Atsuhide Mori
+
+中文解读待补齐
+
+We study planar open books obtained by lifting braids through branched covers of the disk D^2, together with the quantum operations in the Ising representation. We note a criterion for the associated Stein fillings to be Calabi-Yau (CY). Among positive factorizations of a fixed monodromy, every CY factorization has minimal length, and its filling minimizes \chi and b_2. An application to Baykur's recent examples gives one planar contact 3-manifold with infinitely many non-homeomorphic CY fillings. The cover there is of degree \ge 6. At degree 4 a single CY filling forces every filling to be CY, and the filling is unique in a certain case; at degree \le 3 the filling is unique and is CY under a mild condition. Admissible cuts of the covering disk decompose the openbook into subopenbooks. Every positive factorization then localizes to the pieces, and the CY condition holds exactly when it holds locally. This makes the state space a direct sum of tensor products indexed by the compatible parity choices with at most two qubits in each factor when the pieces have degree \le 4, which is also the range in which the CY condition depends only on the monodromy. For a particular degree 4 cover, the points, lines and flags of the two-qubit doily are realized by the system of its subopenbooks. Fifteen liftable braids there share the same quantum operation and the same Stein filling, and are separated only by which subopenbook systems they admit. A choice of tensor-product structure is thus carried by the lift and not by the braid group representation, which suggests a link between contact topology and quantum entanglement.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30406)
+
+## Area stability of plank covers
+
+Egor Bakaev、Amir Yehudayoff
+
+中文解读待补齐
+
+We prove a conjecture of András Bezdek on the stability of plank covers of the planar disk $D$. Namely, we show that if a sufficiently small concentric disk $rD$ is removed from $D$, then every finite family of planks covering the resulting annulus can be re-arranged to cover the whole disk. For the proof, we show a strong stability result for a related covering problem. If the hole has area $a \geq 0$ then the total overlap is $\geq c a/r$ where $c>0$ is a constant. This overlap estimate is not specific to the disk and is applicable to all planar symmetric convex bodies. We develop two new ingredients: a pruning procedure and a flattening mechanism.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30409)
 
 ## On the completeness of gravitational pp-wave spacetimes: A counterexample to the {Ehlers--Kundt} conjecture
 
@@ -16,6 +58,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.30419)
 
+## A Concordance Invariant For Knots from $CFK^\infty$
+
+Kashti Satish Umare
+
+中文解读待补齐
+
+We construct a multi-filtered smooth knot concordance invariant, $\beta(t^1, a, t^2)$, derived from the knot Floer complex $CFK^\infty$. $\beta$ is a three-variable piecewise linear function defined on $(0,2) \times \mathbb{R} \times (0,2)$. We demonstrate that $\beta$ satisfies a subadditivity relation. We apply $\beta$ to prove concordance results for a certain family of L-space knots. We show that the positive cones spanned by Teragaito's knots $K_{1,n}$ and $K_{2,n}$ are disjoint in the smooth concordance group $\mathcal{C}$. For positive L-space knots, we show $\beta$ completely determines the Alexander polynomial and distinguishes knots with identical $\Upsilon$ invariants.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30425)
+
+## A non-lattice periodic point set beating the optimal lattice packing-covering constant in dimension five
+
+Sven Ahrend、Mathieu Dutour Sikirić
+
+中文解读待补齐
+
+The packing-covering constant of a point set $X\subseteq\mathbb{R}^d$ is $\gamma(X)=\mu(X)/\rho(X)$, the covering radius divided by the packing radius. Among lattices, its minimum $\gamma_d$ is known for $d\leq 5$, attained by $\mathsf{A}_2^*$, $\mathsf{A}_3^*$, and Horváth's lattices $\mathsf{Ho}_4$, $\mathsf{Ho}_5$; Böröczky proved that $\gamma_3$ is optimal without the lattice restriction, but for $d=4,5$ the non-lattice problem was open. We exhibit a $2$-periodic non-lattice point set of $\mathbb{R}^5$ with $\gamma = 9/\sqrt{40} = 1.423024\ldots < \gamma_5 = \sqrt{3/2+\sqrt{13}/6} = 1.4494568\ldots$, so that in dimension five the packing-covering problem is not solved by lattices.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30513)
+
 ## Positive Weighted Curvatures on Compact Manifolds with Weighted Convex Boundary and Proper Manifolds
 
 Ruifeng Xu
@@ -29,6 +99,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.30527)
+
+## Short homology bases for translation surfaces
+
+Peter Buser、Achintya Dey、Eran Makover、Bjoern Muetzel
+
+中文解读待补齐
+
+Let $S$ be a closed translation surface of genus $g\ge 2$ with $\mathop{area}(S)= 4\pi g$. We show that for any $\lambda \in (0, 1)$ there exist $\lfloor \lambda \cdot g\rfloor$ homologically independent simple closed curves of length at most $ C(\lambda) \cdot \log(g)$, where $C(\lambda)$ is a constant that depends only on $\lambda$. This result is obtained from a mixed graph construction based on a Voronoi graph of the surface with the cone points as seeds and its dual graph. We also give a complementary result using only the Voronoi graph that produces $2g$ short loops that form a homology basis. This construction, however, depends on the length of a shortest saddle connection of the surface $S$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30561)
+
+## Uniformly Lipschitz Hyperbolic Group Actions on $\ell^p$
+
+Chris Gartland、Tianyi Zheng
+
+中文解读待补齐
+
+Let $\Gamma$ be a finitely generated hyperbolic group, and let $Q$ denote the conformal dimension of its Gromov boundary $\partial\Gamma$. We prove that for every $p < \frac{Q}{Q-1}$, the group $\Gamma$ admits a proper uniformly Lipschitz affine action on $\ell^p$ with compression exponent $1/p$. The $\ell^p$-space hosting the action is designed from a Markov chain on a specialized hyperbolic filling of $\partial\Gamma$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30583)
+
+## Topological components of surface group representations into the unitary group
+
+Xueyuan Wan
+
+中文解读待补齐
+
+We study representations of compact oriented surface groups into $\mathrm U(p)$ with elliptic-unipotent boundary holonomies, meaning that no boundary holonomy has eigenvalue $1$. We prove that the signature of the associated flat Hermitian bundle completely determines the connected component, and that every component is path-connected. For genus $g\geq1$ and $n\geq1$ boundary components, there are $np-1$ components; for $g=0$ and $n\geq2$, there are $(n-2)p+1$. The disk case is empty, while the closed-surface representation spaces are connected. The same component classification holds after taking the quotient by conjugation. Our proofs use the boundary rho invariant and explicit matrix deformations. For a three-holed sphere, the representation components have the homotopy types of complex Grassmannians, and their conjugation quotients are contractible.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30603)
 
 ## Positive scalar curvature on products of noncompact manifolds
 
@@ -57,6 +169,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.30697)
+
+## Coarse geometry of metric measure spaces
+
+Takayuki Okuda、Takashi Shioya
+
+中文解读待补齐
+
+Using ideas from optimal transport theory, we introduce a notion of measured coarse equivalence for metric measure spaces and define a corresponding variant of the uniformly finite homology of Block and Weinberger, called weighted $\ell^\infty$ homology, for large-scale doubling metric measure spaces. We prove that this homology is invariant under measured coarse equivalence and that the vanishing of its zeroth homology is equivalent to weighted non-amenability. The proofs combine techniques from optimal transport theory and the disintegration of measures.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30700)
 
 ## Energy convexity and uniformity of the $H$-surface flow in $\mathbb{R}^{3}$ with Dirichlet boundary condition
 
@@ -142,6 +268,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.31089)
 
+## An elementary solution to the polarization problem
+
+Gergely Ambrus
+
+中文解读待补齐
+
+By distilling and combining the ideas of previous arguments, we provide a self-contained and entirely elementary proof of the strong and linear polarization problems.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31124)
+
+## KnottedGraph: Scalable knotted-graph topology for scientific and mathematical discovery
+
+Hakan Akgün、Xianquan Yan、Kehan Liu、Zhaoyun Chen、Ching Hua Lee
+
+中文解读待补齐
+
+Scientific data span heterogeneous structures, including coordinates, networks, surfaces, volumes and fields, yet their topology can be quantified within a common framework through graph connectivity, cycle structure, genus and spatial embedding. Graph- and homology-based summaries do not determine spatial embedding, while standard knot and link polynomials require extensions to accommodate branching graphs. Here, we introduce KnottedGraph, a computational framework that converts such scientific representations to knotted graphs that retain graph connectivity and spatial embedding together. It constructs projected diagrams and PD codes, enabling various topological analyses, including Yamada-polynomial evaluation for topological classification. For scalable exact evaluation, it combines partial resolutions that leave the same unresolved connections and optimizes their processing order; the resulting algorithm is verified against published topological invariants of knotted graphs with up to 500 crossings. This scalability enables us to introduce an LLM-assisted mathematical-discovery methodology, in which computational topological data generated across knotted-graph families are used to identify candidate closed-form formulas. With this approach, we identify analytical Yamada-polynomials for generic graph motif families exhibiting Abelian and non-Abelian word sequences. Together, these scalable capabilities make knotted-graph topology computationally accessible across scientific domains, enabling large-scale classification and introducing a route from topological data to LLM-assisted AI4Math discovery.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31152)
+
+## Hexagon decompositions and the Weil-Petersson metric
+
+Marie Abadie
+
+中文解读待补齐
+
+We give an explicit quasi-isometry from the flip graph of triangulations $\mathscr{F}_{g,n}$ to the $\epsilon$-thick part of Teichmüller space equipped with the Teichmüller metric, by mapping each ideal triangulation to the hyperbolic surface whose shearing coordinates along that triangulation are all equal to zero. Extending this construction, we obtain a quasi-isometry $Q$ from the hexagon graph $\mathscr{H}_{g,n}$ to the augmented Teichmüller space $\overline{\operatorname{Teich}}_{g,n}$ equipped with the Weil-Petersson metric, and we estimate its width, that is, the Hausdorff distance between $Q(\mathscr{H}_{g,n})$ and $\overline{\operatorname{Teich}}_{g,n}$. By bounding the Weil-Petersson distance along grafting rays and the Teichmüller distance along shearing deformations, we show that the width is at most $\sqrt{g+n}\log(g+n)$. We also provide an explicit projection from any point in $\overline{\operatorname{Teich}}_{g,n}$ to the thick part of boundary strata, maintaining simultaneous control over the Weil-Petersson distance and the shearing coordinates.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31278)
+
 ## Topology and Dirichlet spectrum of free boundary minimal and CMC surfaces
 
 Alcides de Carvalho、Roney Santos
@@ -156,6 +324,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.31304)
 
+## The number of touching pairs of congruent sphere packings in Euclidean 3-space
+
+Cameron Strachan
+
+中文解读待补齐
+
+A packing of $n$ congruent balls in $\mathbb{R}^3$ is a family of interior-disjoint Euclidean balls all having the same radius. The contact number of a packing is the number of touching pairs of balls. In this paper we investigate the problem of determining the maximum contact number, $c(n)$, of a packing of $n$ congruent balls in $\mathbb{R}^3$. We first show that all packings of $n$ congruent balls that have a contact number of $c(n)$ are minimally rigid. Furthermore, we show that $c(n)=3n-6$ for $n=6,7,8,$ and $9$. These two results resolve a conjecture of K. Bezdek and Khan. During the proof of the latter result, we also enumerate the contact structures of all packings of $n$ congruent balls with contact number $c(n)$ for $n=6,7,$ and $8$. Additionally, we provide a lower bound construction which shows $c(n)> 6n-6\sqrt[3]{2}n^\frac{2}{3}$ when $n=16k^3-33k^2+24k-6$ where $k\in \mathbb{N}$. We also look at the restricted problem where each ball is centered on the face-centered cubic lattice $A_3$. In this case let $c_{A}(n)$ denote the maximum contact number. We show that $c_{A}(n)\leq 6n-\frac{6}{\sqrt[6]{2}}n^\frac{2}{3}$ for all $n$, and determine the asymptotics of $c_{A}(n)$ to be $c_{A}(n)=6n-(1+o(1))6\sqrt[3]{2}n^\frac{2}{3}$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31331)
+
 ## The mean curvature blows up at nondegenerate neck pinch singularities of Lagrangian mean curvature flow
 
 Jason D. Lotay、Goncalo Oliveira
@@ -169,6 +351,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.31343)
+
+## Bellman's Forest Problem and Computability
+
+Jacob Canel
+
+中文解读待补齐
+
+The goal of this paper is to refine methods in computable analysis and to employ them in the study of solutions of an optimization problem posed by Bellman. This problem asks how to find optimal (shortest) paths which do not fit into given plane figures. We show that each instance of Bellman's problem has an arbitrarily small uniformly computable perturbation for which the minimal length of path is computable, and thus the class of optimal paths is a $\Pi_1^0$ class, and there are uniformly computable paths which escape with arbitrarily small length greater than the minimum possible.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31352)
 
 ## Semilinear Neumann boundary value problems for measure-valued maps
 
@@ -198,6 +394,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.31373)
 
+## Unbalancing unit vectors
+
+Zilin Jiang、Jeck Lim、Skand Parvatikar
+
+中文解读待补齐
+
+We show that for every $n$ unit vectors $v_1, \dots, v_n$ in the $d$-dimensional Euclidean space, there exist signs $\varepsilon_1, \dots, \varepsilon_n \in \{\pm 1\}$ such that $\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \rVert \ge \sqrt{2n - d}$, and we characterize the equality cases.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31389)
+
 ## Hamilton's gradient estimates and Liouville theorems for $u_{t}=Δu^{m}+au\log u+bu$ on Riemannian manifolds
 
 Jun Sun、Jiaming Yang
@@ -211,6 +421,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.31393)
+
+## Horizon saddle connections and Veech groups of infinite-type dilation surfaces
+
+Oscar Rutilio Molina Medrano
+
+中文解读待补齐
+
+This paper studies Veech groups of dilation surfaces whose fundamental group is not finitely generated. We prove that if $ S$ is a surface with self-similar end space and every end is accumulated by genus, then every countable subgroup of $SL(2,\mathbb{R}) $ can be realized as the Veech group of a dilation surface homeomorphic to $ S$. Additionally, we can construct this dilation surface such that it realizes horizon saddle connections in a prescribed set of directions. This contrasts with the case of closed dilation surfaces, where horizon saddle connections impose restrictions on the algebraic structure of the Veech group.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31447)
+
+## On the Relation Between Non-Semisimple TQFTs
+
+Marco De Renzi
+
+中文解读待补齐
+
+The goal of this paper is to clarify the relation between the Kerler-Lyubashenko TQFT $J_\mathcal{E}$ associated with the adjoint end $\mathcal{E}$ of a (not necessarily semisimple) modular category $\mathcal{C}$ and its renormalized version $V_\mathcal{E}$ based on the modified trace supported by the ideal $\mathrm{Proj}(\mathcal{C})$ of projective objects of $\mathcal{C}$. More precisely, we construct a $3$-dimensional ETQFT $\boldsymbol{\hat{A}}_\mathcal{E}$ that contains both $J_\mathcal{E}$ and $V_\mathcal{E}$. The ETQFT $\boldsymbol{\hat{A}}_\mathcal{E}$ is given by a $2$-functor whose source is the $2$-category of admissible $3$-dimensional cobordisms, and whose target is the $2$-category of finitely complete linear categories. We improve on earlier versions of the construction by dropping the admissibility condition for surfaces. By doing so, we obtain an ETQFT whose circle category $\boldsymbol{\hat{A}}_\mathcal{E}(\boldsymbol{S}^1)$ is equivalent to the category $\mathcal{C}$, as opposed to the ideal $\mathrm{Proj}(\mathcal{C})$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31449)
 
 ## Rotationally Symmetric Zoll Metrics with a Cubic Integral
 
@@ -239,6 +477,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.31516)
+
+## Profinite Non-Rigidity of Arithmetic Lattices and the Kähler Property
+
+Yukun Du、Feng Hao、Kejia Zhu
+
+中文解读待补齐
+
+We study the profinite non-rigidity of arithmetic lattices and its implications for the Kähler property. In the first part, we characterize the absolute Dynkin types that admit non-isomorphic real forms of higher-rank Lie groups containing torsion-free arithmetic lattices with isomorphic profinite completions. In the second part, as a geometric application, we answer a question asked independently by Arapura and Libgober, by showing that the Kählerness of finitely presented, residually finite groups is not determined by its profinite completion.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31523)
 
 ## Bi-invariant Geodesic Regression: Existence, Uniqueness, and Convergence
 
