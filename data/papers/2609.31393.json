@@ -25,8 +25,28 @@
         "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "带反应项的非线性热方程估计",
+      "workSummary": "以 Nash–Moser 迭代和 Saloff–Coste Sobolev 不等式研究含 ulog u 与线性反应项的扩散方程，获得指定 m 范围内的正解梯度估计和常系数 Liouville 定理。",
+      "techniques": [
+        "Nash–Moser 迭代",
+        "Sobolev 不等式",
+        "Hamilton 型估计"
+      ],
+      "breakthrough": "把扩散梯度估计延伸到含可变系数反应项的流形方程。",
+      "limitations": "梯度估计与 Liouville 定理的指数范围不同，系数假设须核对；并未覆盖所有正指数。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 63,
+      "priorityReason": "适合带反应项的几何 PDE 应用，可与同日全指数纯扩散结果互补比较。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we apply Nash-Moser iteration and Saloff-Coste's Sobolev inequalities to derive gradient estimates for positive solutions to a class of nonlinear parabolic equations of the form \\begin{equation*} u_{t}=\\Delta u^{m}+a(x, t)u\\log u+b(x, t)u, \\quad 1-\\frac{2}{n}<m<1 \\quad \\text{or}\\quad 1<m<1+\\frac{1}{1+\\sqrt{2n}}, \\end{equation*} on a complete Riemannian manifold $(M,g)$ of dimension $n$, where $a(x, t)$, $b(x, t)$ are $C^{1}$ functions. For $a=b=0$, this equation becomes the porous medium equation (PME) or the fast diffusion equation (FDE) when $m>1$ or $m<1$, respectively. As consequences, we obtain Liouville type theorems for the corresponding constant coefficient equations when \\begin{equation*} 1-\\frac{1}{\\sqrt{n-1}}<m<1\\quad \\text{and}\\quad 1<m<1+\\frac{1}{\\sqrt{n-1}}. \\end{equation*}",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "带反应项的非线性热方程估计",
+          "workSummary": "以 Nash–Moser 迭代和 Saloff–Coste Sobolev 不等式研究含 ulog u 与线性反应项的扩散方程，获得指定 m 范围内的正解梯度估计和常系数 Liouville 定理。",
+          "techniques": [
+            "Nash–Moser 迭代",
+            "Sobolev 不等式",
+            "Hamilton 型估计"
+          ],
+          "breakthrough": "把扩散梯度估计延伸到含可变系数反应项的流形方程。",
+          "limitations": "梯度估计与 Liouville 定理的指数范围不同，系数假设须核对；并未覆盖所有正指数。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 63,
+          "priorityReason": "适合带反应项的几何 PDE 应用，可与同日全指数纯扩散结果互补比较。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we apply Nash-Moser iteration and Saloff-Coste's Sobolev inequalities to derive gradient estimates for positive solutions to a class of nonlinear parabolic equations of the form \\begin{equation*} u_{t}=\\Delta u^{m}+a(x, t)u\\log u+b(x, t)u, \\quad 1-\\frac{2}{n}<m<1 \\quad \\text{or}\\quad 1<m<1+\\frac{1}{1+\\sqrt{2n}}, \\end{equation*} on a complete Riemannian manifold $(M,g)$ of dimension $n$, where $a(x, t)$, $b(x, t)$ are $C^{1}$ functions. For $a=b=0$, this equation becomes the porous medium equation (PME) or the fast diffusion equation (FDE) when $m>1$ or $m<1$, respectively. As consequences, we obtain Liouville type theorems for the corresponding constant coefficient equations when \\begin{equation*} 1-\\frac{1}{\\sqrt{n-1}}<m<1\\quad \\text{and}\\quad 1<m<1+\\frac{1}{\\sqrt{n-1}}. \\end{equation*}",
+          "version": 1
+        }
       }
     }
   ]

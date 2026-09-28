@@ -25,8 +25,28 @@
         "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "全指数非线性扩散梯度估计",
+      "workSummary": "在 Ricci 有下界的完备流形上，对每个 m>1 和 0<m<1 的有界正解给出 u 的适当幂的局部 Hamilton 型梯度估计，推出非负 Ricci 下一致有界正古解为常数。",
+      "techniques": [
+        "内禀柱体上的上下比控制",
+        "局部梯度估计",
+        "停止论证"
+      ],
+      "breakthrough": "摘要声称覆盖快扩散和多孔介质的全部正指数，扩大经典估计的参数范围。",
+      "limitations": "估计针对 u 的依赖 m,n 的幂且含解上界；不能直接当作所有指数统一的常数估计。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 81,
+      "priorityReason": "全指数范围是显著特点，建议与同日受限指数论文比较假设和技术。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish local Hamilton-type gradient estimates for positive $C^{2,1}$ solutions of $u_t=\\Delta u^m$ on complete Riemannian manifolds whose Ricci curvature is bounded from below. For every fixed $m>1$ and every fixed $0<m<1$, there exist $\\beta=\\beta(m,n)>0$ and $C=C(m,n)>0$ such that a solution $0<u\\leqslant A$ in $B_{2R}(x_0)\\times(t_0-T,t_0]$ satisfies the following local gradient estimate \\begin{equation*} \\sup_{B_R(x_0)\\times(t_0-T/2,t_0]}|\\nabla u^\\beta| \\leqslant C A^\\beta \\left(\\frac1R+\\sqrt{k}+\\frac{A^{(1-m)/2}}{\\sqrt T}\\right), \\end{equation*} where $\\mathrm{Ric}_M\\geqslant-k$. The proof uses an intrinsic quantitative alternative to locate, around each prescribed positive point, a cylinder on which the solution has a controlled upper-to-lower ratio. A local gradient estimate on this cylinder is combined with a stopping argument. As a consequence, every uniformly bounded positive ancient solution on a connected complete manifold with nonnegative Ricci curvature is constant.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "全指数非线性扩散梯度估计",
+          "workSummary": "在 Ricci 有下界的完备流形上，对每个 m>1 和 0<m<1 的有界正解给出 u 的适当幂的局部 Hamilton 型梯度估计，推出非负 Ricci 下一致有界正古解为常数。",
+          "techniques": [
+            "内禀柱体上的上下比控制",
+            "局部梯度估计",
+            "停止论证"
+          ],
+          "breakthrough": "摘要声称覆盖快扩散和多孔介质的全部正指数，扩大经典估计的参数范围。",
+          "limitations": "估计针对 u 的依赖 m,n 的幂且含解上界；不能直接当作所有指数统一的常数估计。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 81,
+          "priorityReason": "全指数范围是显著特点，建议与同日受限指数论文比较假设和技术。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish local Hamilton-type gradient estimates for positive $C^{2,1}$ solutions of $u_t=\\Delta u^m$ on complete Riemannian manifolds whose Ricci curvature is bounded from below. For every fixed $m>1$ and every fixed $0<m<1$, there exist $\\beta=\\beta(m,n)>0$ and $C=C(m,n)>0$ such that a solution $0<u\\leqslant A$ in $B_{2R}(x_0)\\times(t_0-T,t_0]$ satisfies the following local gradient estimate \\begin{equation*} \\sup_{B_R(x_0)\\times(t_0-T/2,t_0]}|\\nabla u^\\beta| \\leqslant C A^\\beta \\left(\\frac1R+\\sqrt{k}+\\frac{A^{(1-m)/2}}{\\sqrt T}\\right), \\end{equation*} where $\\mathrm{Ric}_M\\geqslant-k$. The proof uses an intrinsic quantitative alternative to locate, around each prescribed positive point, a cylinder on which the solution has a controlled upper-to-lower ratio. A local gradient estimate on this cylinder is combined with a stopping argument. As a consequence, every uniformly bounded positive ancient solution on a connected complete manifold with nonnegative Ricci curvature is constant.",
+          "version": 1
+        }
       }
     }
   ]

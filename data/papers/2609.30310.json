@@ -25,8 +25,28 @@
         "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "锐化猜想与形式化验证",
+      "workSummary": "确定 n 个正六边形组成的连通 polyhex 的凸包最大面积，给出每个 n 的达界构造；新上界在 n 被 3 整除时严格改进 Kurz 的旧猜想。",
+      "techniques": [
+        "凸包面积估计",
+        "达界组合构造",
+        "Lean 4 与 Mathlib 验证"
+      ],
+      "breakthrough": "将离散平面极值问题得到精确公式，并为上界提供形式化检查。",
+      "limitations": "至多 12 格的唯一极值形状结论来自枚举，不能扩展为所有 n 的唯一性；Lean 使用本身不构成 AI 披露。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 63,
+      "priorityReason": "适合关注离散几何与形式化证明的读者，精确极值和验证代码具有可复用价值。"
+    },
+    "analysisBasis": {
+      "abstract": "A polyhex is an edge-connected set of n cells of the regular hexagonal tiling, where each cell has area one. We prove that the convex hull of a polyhex has area at most (1/6)*ceiling(n^2 + 14n/3), and we show that some polyhex reaches this bound for every n. This proves a conjecture of Kurz from 2008, which asked for the weaker bound (1/6)*floor(n^2 + 14n/3 + 1). The two bounds differ exactly when 3 divides n. We checked the upper bound in the Lean 4 proof assistant with the Mathlib library. We also report a computation over all polyhexes with at most 12 cells, which shows that for these sizes only one shape reaches the maximum, up to rotation and reflection.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "锐化猜想与形式化验证",
+          "workSummary": "确定 n 个正六边形组成的连通 polyhex 的凸包最大面积，给出每个 n 的达界构造；新上界在 n 被 3 整除时严格改进 Kurz 的旧猜想。",
+          "techniques": [
+            "凸包面积估计",
+            "达界组合构造",
+            "Lean 4 与 Mathlib 验证"
+          ],
+          "breakthrough": "将离散平面极值问题得到精确公式，并为上界提供形式化检查。",
+          "limitations": "至多 12 格的唯一极值形状结论来自枚举，不能扩展为所有 n 的唯一性；Lean 使用本身不构成 AI 披露。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 63,
+          "priorityReason": "适合关注离散几何与形式化证明的读者，精确极值和验证代码具有可复用价值。"
+        },
+        "analysisBasis": {
+          "abstract": "A polyhex is an edge-connected set of n cells of the regular hexagonal tiling, where each cell has area one. We prove that the convex hull of a polyhex has area at most (1/6)*ceiling(n^2 + 14n/3), and we show that some polyhex reaches this bound for every n. This proves a conjecture of Kurz from 2008, which asked for the weaker bound (1/6)*floor(n^2 + 14n/3 + 1). The two bounds differ exactly when 3 divides n. We checked the upper bound in the Lean 4 proof assistant with the Mathlib library. We also report a computation over all polyhexes with at most 12 cells, which shows that for these sizes only one shape reaches the maximum, up to rotation and reflection.",
+          "version": 1
+        }
       }
     }
   ]

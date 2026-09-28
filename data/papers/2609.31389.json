@@ -27,8 +27,28 @@
         "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "单位向量符号和的尖锐下界",
+      "workSummary": "证明对欧氏 d 维空间中 n 个单位向量可选符号，使向量和范数至少达到 √(2n−d)，并刻画等号情形。",
+      "techniques": [
+        "向量符号选择",
+        "欧氏范数估计",
+        "等号刚性"
+      ],
+      "breakthrough": "给出反平衡问题的具体尖锐界及极值结构。",
+      "limitations": "需核对 2n−d 非正时的表述和等号分类适用范围；摘要没有提供算法复杂度。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 68,
+      "priorityReason": "结论简洁且包含等号结构，适合离散和凸几何读者。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that for every $n$ unit vectors $v_1, \\dots, v_n$ in the $d$-dimensional Euclidean space, there exist signs $\\varepsilon_1, \\dots, \\varepsilon_n \\in \\{\\pm 1\\}$ such that $\\lVert \\varepsilon_1 v_1 + \\dots + \\varepsilon_n v_n \\rVert \\ge \\sqrt{2n - d}$, and we characterize the equality cases.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +78,28 @@
             "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "单位向量符号和的尖锐下界",
+          "workSummary": "证明对欧氏 d 维空间中 n 个单位向量可选符号，使向量和范数至少达到 √(2n−d)，并刻画等号情形。",
+          "techniques": [
+            "向量符号选择",
+            "欧氏范数估计",
+            "等号刚性"
+          ],
+          "breakthrough": "给出反平衡问题的具体尖锐界及极值结构。",
+          "limitations": "需核对 2n−d 非正时的表述和等号分类适用范围；摘要没有提供算法复杂度。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 68,
+          "priorityReason": "结论简洁且包含等号结构，适合离散和凸几何读者。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that for every $n$ unit vectors $v_1, \\dots, v_n$ in the $d$-dimensional Euclidean space, there exist signs $\\varepsilon_1, \\dots, \\varepsilon_n \\in \\{\\pm 1\\}$ such that $\\lVert \\varepsilon_1 v_1 + \\dots + \\varepsilon_n v_n \\rVert \\ge \\sqrt{2n - d}$, and we characterize the equality cases.",
+          "version": 1
+        }
       }
     }
   ]

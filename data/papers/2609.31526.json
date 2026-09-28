@@ -25,8 +25,28 @@
         "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "Lie 群回归估计的局部适定性",
+      "workSummary": "为双不变测地回归证明局部唯一估计量存在，给出邻域大小的显式界，并证明迭代算法线性收敛。",
+      "techniques": [
+        "Lie 群测地回归",
+        "局部唯一性估计",
+        "迭代收敛分析"
+      ],
+      "breakthrough": "为保持群对称性的统计估计提供此前缺少的存在与算法保证。",
+      "limitations": "仅为局部结论，不能推断全局唯一或任意初值收敛。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 59,
+      "priorityReason": "适合几何统计应用，理论保证具体但与本轮核心几何问题关联较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "Bi-invariant geodesic regression generalizes linear regression to Lie groups. Its main feature is that it respects the symmetries of the group so that the resulting estimator is independent of arbitrary choices such as a reference frame. However, the local existence and uniqueness of the underlying estimator have not been shown until now. Furthermore, the convergence properties of the proposed algorithm for computing the estimator are not known. In this work, we investigate these questions. We prove that, locally, a unique estimator exists and give explicit bounds on the size of this neighborhood. We also show that the proposed iterative algorithm converges linearly to this estimator.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "6133d3141ef7e0307393d4c759999596795041e0a3f7fb22bbc79e19e84fb175"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "Lie 群回归估计的局部适定性",
+          "workSummary": "为双不变测地回归证明局部唯一估计量存在，给出邻域大小的显式界，并证明迭代算法线性收敛。",
+          "techniques": [
+            "Lie 群测地回归",
+            "局部唯一性估计",
+            "迭代收敛分析"
+          ],
+          "breakthrough": "为保持群对称性的统计估计提供此前缺少的存在与算法保证。",
+          "limitations": "仅为局部结论，不能推断全局唯一或任意初值收敛。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 59,
+          "priorityReason": "适合几何统计应用，理论保证具体但与本轮核心几何问题关联较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "Bi-invariant geodesic regression generalizes linear regression to Lie groups. Its main feature is that it respects the symmetries of the group so that the resulting estimator is independent of arbitrary choices such as a reference frame. However, the local existence and uniqueness of the underlying estimator have not been shown until now. Furthermore, the convergence properties of the proposed algorithm for computing the estimator are not known. In this work, we investigate these questions. We prove that, locally, a unique estimator exists and give explicit bounds on the size of this neighborhood. We also show that the proposed iterative algorithm converges linearly to this estimator.",
+          "version": 1
+        }
       }
     }
   ]

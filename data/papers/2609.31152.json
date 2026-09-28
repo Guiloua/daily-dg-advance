@@ -31,8 +31,32 @@
         "contentHash": "ad4578260a663cad909a12a9d2c440f263204c44abad432b57f54b9cea28c621"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "空间图拓扑计算与辅助发现",
+      "workSummary": "提出保留图连通性及空间嵌入的 KnottedGraph 框架，生成图示与 PD 编码，以合并部分消解和优化顺序扩展 Yamada 多项式计算，并由计算数据和 LLM 辅助寻找公式。",
+      "techniques": [
+        "PD 编码",
+        "部分消解合并",
+        "Yamada 多项式",
+        "LLM 辅助模式识别"
+      ],
+      "breakthrough": "把有分支空间图的大规模拓扑计算与候选公式发现连接，摘要报告对至多 500 交叉实例的核对。",
+      "limitations": "候选公式发现不等于自动证明；运行规模依赖实例与算法结构，不能推广为任意图的多项式时间算法。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "摘要明确报告 LLM 辅助数学发现：以空间图拓扑计算数据识别候选闭式公式；公式发现与证明验证须分别评估。",
+      "aiEvidenceSource": "https://arxiv.org/list/math.GT/new · 该论文官方摘要",
+      "aiUsage": [
+        "exploration"
+      ],
+      "priorityScore": 77,
+      "priorityReason": "计算工具可直接复用，并明确报告 LLM 辅助数学发现，值得核对代码和公式验证。"
+    },
+    "analysisBasis": {
+      "abstract": "Scientific data span heterogeneous structures, including coordinates, networks, surfaces, volumes and fields, yet their topology can be quantified within a common framework through graph connectivity, cycle structure, genus and spatial embedding. Graph- and homology-based summaries do not determine spatial embedding, while standard knot and link polynomials require extensions to accommodate branching graphs. Here, we introduce KnottedGraph, a computational framework that converts such scientific representations to knotted graphs that retain graph connectivity and spatial embedding together. It constructs projected diagrams and PD codes, enabling various topological analyses, including Yamada-polynomial evaluation for topological classification. For scalable exact evaluation, it combines partial resolutions that leave the same unresolved connections and optimizes their processing order; the resulting algorithm is verified against published topological invariants of knotted graphs with up to 500 crossings. This scalability enables us to introduce an LLM-assisted mathematical-discovery methodology, in which computational topological data generated across knotted-graph families are used to identify candidate closed-form formulas. With this approach, we identify analytical Yamada-polynomials for generic graph motif families exhibiting Abelian and non-Abelian word sequences. Together, these scalable capabilities make knotted-graph topology computationally accessible across scientific domains, enabling large-scale classification and introducing a route from topological data to LLM-assisted AI4Math discovery.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -66,8 +90,32 @@
             "contentHash": "ad4578260a663cad909a12a9d2c440f263204c44abad432b57f54b9cea28c621"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "空间图拓扑计算与辅助发现",
+          "workSummary": "提出保留图连通性及空间嵌入的 KnottedGraph 框架，生成图示与 PD 编码，以合并部分消解和优化顺序扩展 Yamada 多项式计算，并由计算数据和 LLM 辅助寻找公式。",
+          "techniques": [
+            "PD 编码",
+            "部分消解合并",
+            "Yamada 多项式",
+            "LLM 辅助模式识别"
+          ],
+          "breakthrough": "把有分支空间图的大规模拓扑计算与候选公式发现连接，摘要报告对至多 500 交叉实例的核对。",
+          "limitations": "候选公式发现不等于自动证明；运行规模依赖实例与算法结构，不能推广为任意图的多项式时间算法。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "摘要明确报告 LLM 辅助数学发现：以空间图拓扑计算数据识别候选闭式公式；公式发现与证明验证须分别评估。",
+          "aiEvidenceSource": "https://arxiv.org/list/math.GT/new · 该论文官方摘要",
+          "aiUsage": [
+            "exploration"
+          ],
+          "priorityScore": 77,
+          "priorityReason": "计算工具可直接复用，并明确报告 LLM 辅助数学发现，值得核对代码和公式验证。"
+        },
+        "analysisBasis": {
+          "abstract": "Scientific data span heterogeneous structures, including coordinates, networks, surfaces, volumes and fields, yet their topology can be quantified within a common framework through graph connectivity, cycle structure, genus and spatial embedding. Graph- and homology-based summaries do not determine spatial embedding, while standard knot and link polynomials require extensions to accommodate branching graphs. Here, we introduce KnottedGraph, a computational framework that converts such scientific representations to knotted graphs that retain graph connectivity and spatial embedding together. It constructs projected diagrams and PD codes, enabling various topological analyses, including Yamada-polynomial evaluation for topological classification. For scalable exact evaluation, it combines partial resolutions that leave the same unresolved connections and optimizes their processing order; the resulting algorithm is verified against published topological invariants of knotted graphs with up to 500 crossings. This scalability enables us to introduce an LLM-assisted mathematical-discovery methodology, in which computational topological data generated across knotted-graph families are used to identify candidate closed-form formulas. With this approach, we identify analytical Yamada-polynomials for generic graph motif families exhibiting Abelian and non-Abelian word sequences. Together, these scalable capabilities make knotted-graph topology computationally accessible across scientific domains, enabling large-scale classification and introducing a route from topological data to LLM-assisted AI4Math discovery.",
+          "version": 1
+        }
       }
     }
   ]

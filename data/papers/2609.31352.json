@@ -25,8 +25,28 @@
         "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "几何逃逸优化的可计算性",
+      "workSummary": "研究 Bellman 森林问题中的最短逃逸路径，证明每个实例都存在任意小的可计算扰动，使最短长度可计算，且有长度任意接近最优的均匀可计算逃逸路径。",
+      "techniques": [
+        "可计算分析",
+        "可计算扰动",
+        "Π1零类"
+      ],
+      "breakthrough": "阐明几何优化的解集复杂性与近最优路径的算法可达性。",
+      "limitations": "结论涉及扰动后的实例，不能据此声称每个原问题的精确最优路径可计算。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 58,
+      "priorityReason": "适合关注几何优化与逻辑的交叉读者，主要价值在可计算性边界。"
+    },
+    "analysisBasis": {
+      "abstract": "The goal of this paper is to refine methods in computable analysis and to employ them in the study of solutions of an optimization problem posed by Bellman. This problem asks how to find optimal (shortest) paths which do not fit into given plane figures. We show that each instance of Bellman's problem has an arbitrarily small uniformly computable perturbation for which the minimal length of path is computable, and thus the class of optimal paths is a $\\Pi_1^0$ class, and there are uniformly computable paths which escape with arbitrarily small length greater than the minimum possible.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "几何逃逸优化的可计算性",
+          "workSummary": "研究 Bellman 森林问题中的最短逃逸路径，证明每个实例都存在任意小的可计算扰动，使最短长度可计算，且有长度任意接近最优的均匀可计算逃逸路径。",
+          "techniques": [
+            "可计算分析",
+            "可计算扰动",
+            "Π1零类"
+          ],
+          "breakthrough": "阐明几何优化的解集复杂性与近最优路径的算法可达性。",
+          "limitations": "结论涉及扰动后的实例，不能据此声称每个原问题的精确最优路径可计算。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 58,
+          "priorityReason": "适合关注几何优化与逻辑的交叉读者，主要价值在可计算性边界。"
+        },
+        "analysisBasis": {
+          "abstract": "The goal of this paper is to refine methods in computable analysis and to employ them in the study of solutions of an optimization problem posed by Bellman. This problem asks how to find optimal (shortest) paths which do not fit into given plane figures. We show that each instance of Bellman's problem has an arbitrarily small uniformly computable perturbation for which the minimal length of path is computable, and thus the class of optimal paths is a $\\Pi_1^0$ class, and there are uniformly computable paths which escape with arbitrarily small length greater than the minimum possible.",
+          "version": 1
+        }
       }
     }
   ]
