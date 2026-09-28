@@ -29,6 +29,11 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-09-28T02:32:49.741697+00:00",
         "contentHash": "ad4578260a663cad909a12a9d2c440f263204c44abad432b57f54b9cea28c621"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.31152v1",
+        "observedAt": "2026-09-28T02:44:59.846039+00:00",
+        "contentHash": "c0c9d3caa3b10114dc514d87f4796e26716e1070bfa05bb51c7565c32dd86e99"
       }
     ],
     "analysis": {
@@ -42,13 +47,26 @@
         "LLM 辅助模式识别"
       ],
       "breakthrough": "把有分支空间图的大规模拓扑计算与候选公式发现连接，摘要报告对至多 500 交叉实例的核对。",
-      "limitations": "候选公式发现不等于自动证明；运行规模依赖实例与算法结构，不能推广为任意图的多项式时间算法。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
-      "analysisDepth": "abstract",
+      "limitations": "正文按发现集与盲测集区分候选生成和验证；至多 500 交叉的结果是特定基准族的经验规模，不能推断任意图复杂度界或所有公式已获独立证明。 已补读相关主结果和构造或验证方法说明，未逐步复核全部证明；AI 披露另见独立核查记录。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
-      "aiEvidence": "摘要明确报告 LLM 辅助数学发现：以空间图拓扑计算数据识别候选闭式公式；公式发现与证明验证须分别评估。",
-      "aiEvidenceSource": "https://arxiv.org/list/math.GT/new · 该论文官方摘要",
+      "aiEvidence": "第 5–7、35 页明确将 LLM 用于从精确 Yamada 数据产生候选公式与传递结构；第 8 页致谢披露 GPT-5.6 Sol 用于语言整理、代码优化与候选生成。盲测及精确计算由研究框架完成，不把有限实例验证当成一般证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.31152v1 · 第 5–8 页及第 35 页，数学发现流程、致谢与 Supplementary Note 7",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-28T02:44:59.846039+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.31152v1",
+        "contentHash": "c0c9d3caa3b10114dc514d87f4796e26716e1070bfa05bb51c7565c32dd86e99",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 5–7、35 页明确将 LLM 用于从精确 Yamada 数据产生候选公式与传递结构；第 8 页致谢披露 GPT-5.6 Sol 用于语言整理、代码优化与候选生成。盲测及精确计算由研究框架完成，不把有限实例验证当成一般证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "685fb5a2389d23ffff768de1d7e4c29f28582e1bc263f1afb765767d45d32222"
+      },
       "aiUsage": [
-        "exploration"
+        "computation",
+        "exploration",
+        "writing"
       ],
       "priorityScore": 77,
       "priorityReason": "计算工具可直接复用，并明确报告 LLM 辅助数学发现，值得核对代码和公式验证。"
@@ -88,6 +106,11 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-09-28T02:32:49.741697+00:00",
             "contentHash": "ad4578260a663cad909a12a9d2c440f263204c44abad432b57f54b9cea28c621"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.31152v1",
+            "observedAt": "2026-09-28T02:44:59.846039+00:00",
+            "contentHash": "c0c9d3caa3b10114dc514d87f4796e26716e1070bfa05bb51c7565c32dd86e99"
           }
         ],
         "analysis": {
@@ -101,13 +124,26 @@
             "LLM 辅助模式识别"
           ],
           "breakthrough": "把有分支空间图的大规模拓扑计算与候选公式发现连接，摘要报告对至多 500 交叉实例的核对。",
-          "limitations": "候选公式发现不等于自动证明；运行规模依赖实例与算法结构，不能推广为任意图的多项式时间算法。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
-          "analysisDepth": "abstract",
+          "limitations": "正文按发现集与盲测集区分候选生成和验证；至多 500 交叉的结果是特定基准族的经验规模，不能推断任意图复杂度界或所有公式已获独立证明。 已补读相关主结果和构造或验证方法说明，未逐步复核全部证明；AI 披露另见独立核查记录。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
-          "aiEvidence": "摘要明确报告 LLM 辅助数学发现：以空间图拓扑计算数据识别候选闭式公式；公式发现与证明验证须分别评估。",
-          "aiEvidenceSource": "https://arxiv.org/list/math.GT/new · 该论文官方摘要",
+          "aiEvidence": "第 5–7、35 页明确将 LLM 用于从精确 Yamada 数据产生候选公式与传递结构；第 8 页致谢披露 GPT-5.6 Sol 用于语言整理、代码优化与候选生成。盲测及精确计算由研究框架完成，不把有限实例验证当成一般证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.31152v1 · 第 5–8 页及第 35 页，数学发现流程、致谢与 Supplementary Note 7",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-28T02:44:59.846039+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.31152v1",
+            "contentHash": "c0c9d3caa3b10114dc514d87f4796e26716e1070bfa05bb51c7565c32dd86e99",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 5–7、35 页明确将 LLM 用于从精确 Yamada 数据产生候选公式与传递结构；第 8 页致谢披露 GPT-5.6 Sol 用于语言整理、代码优化与候选生成。盲测及精确计算由研究框架完成，不把有限实例验证当成一般证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "685fb5a2389d23ffff768de1d7e4c29f28582e1bc263f1afb765767d45d32222"
+          },
           "aiUsage": [
-            "exploration"
+            "computation",
+            "exploration",
+            "writing"
           ],
           "priorityScore": 77,
           "priorityReason": "计算工具可直接复用，并明确报告 LLM 辅助数学发现，值得核对代码和公式验证。"

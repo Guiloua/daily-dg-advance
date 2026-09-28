@@ -22,6 +22,11 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-28T02:32:38.592569+00:00",
         "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.31331v1",
+        "observedAt": "2026-09-28T02:44:46.863793+00:00",
+        "contentHash": "5576f58ff47fba0e3c135f40ea32c514c52cc050c029c710d0d431ee36e8483b"
       }
     ],
     "analysis": {
@@ -29,16 +34,30 @@
       "progressType": "三维球堆积接触数的精确结果",
       "workSummary": "证明最大接触数堆积的最小刚性，并求得 n=6至9 时 c(n)=3n−6；枚举部分小规模接触结构，另给出 FCC 格点问题的渐近式。",
       "techniques": [
-        "接触图刚性",
-        "小规模枚举",
-        "FCC 构造与渐近估计"
+        "接触图与作者定义的最小刚性",
+        "小规模接触结构枚举",
+        "FCC 格点的渐近估计"
       ],
       "breakthrough": "解决 Bezdek–Khan 猜想的相关结论，并连接精确小例子与大规模表面修正项。",
-      "limitations": "非格点的下界仅针对指定 n 序列；FCC 渐近不能替代一般堆积的最优渐近。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "正文最小刚性按接触数至少 3n−6 及每球至少三接触定义，不能直接等同于通常无穷小刚性；精确分类限于小 n，FCC 渐近不能替代一般堆积渐近。 已补读上述正文主结果或相关方法章节，未逐步复核全部证明；AI 披露另见独立核查记录。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第 24 页致谢明确称 Claude 协助实现小规模球堆积与图搜索程序；仅确认编程计算辅助，不推断参与理论证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.31331v1 · 第 24 页，Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-28T02:44:46.863793+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.31331v1",
+        "contentHash": "5576f58ff47fba0e3c135f40ea32c514c52cc050c029c710d0d431ee36e8483b",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 24 页致谢明确称 Claude 协助实现小规模球堆积与图搜索程序；仅确认编程计算辅助，不推断参与理论证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6fe0ef468922b0d3ef6a94fe867625fde97f8dc66c47e8592a0f56a0795aa786"
+      },
+      "aiUsage": [
+        "computation"
+      ],
       "priorityScore": 78,
       "priorityReason": "多个可核对的精确结论与刚性工具相连，适合离散几何方向。"
     },
@@ -70,6 +89,11 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-28T02:32:38.592569+00:00",
             "contentHash": "395fec4d400d363ffa6266cc0251bc0fdd966c06003df0196adc87acd28781d9"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.31331v1",
+            "observedAt": "2026-09-28T02:44:46.863793+00:00",
+            "contentHash": "5576f58ff47fba0e3c135f40ea32c514c52cc050c029c710d0d431ee36e8483b"
           }
         ],
         "analysis": {
@@ -77,16 +101,30 @@
           "progressType": "三维球堆积接触数的精确结果",
           "workSummary": "证明最大接触数堆积的最小刚性，并求得 n=6至9 时 c(n)=3n−6；枚举部分小规模接触结构，另给出 FCC 格点问题的渐近式。",
           "techniques": [
-            "接触图刚性",
-            "小规模枚举",
-            "FCC 构造与渐近估计"
+            "接触图与作者定义的最小刚性",
+            "小规模接触结构枚举",
+            "FCC 格点的渐近估计"
           ],
           "breakthrough": "解决 Bezdek–Khan 猜想的相关结论，并连接精确小例子与大规模表面修正项。",
-          "limitations": "非格点的下界仅针对指定 n 序列；FCC 渐近不能替代一般堆积的最优渐近。 当前为摘要级数学分析，主结果和证明尚未逐段核查；AI 披露另见独立核查记录。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "正文最小刚性按接触数至少 3n−6 及每球至少三接触定义，不能直接等同于通常无穷小刚性；精确分类限于小 n，FCC 渐近不能替代一般堆积渐近。 已补读上述正文主结果或相关方法章节，未逐步复核全部证明；AI 披露另见独立核查记录。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第 24 页致谢明确称 Claude 协助实现小规模球堆积与图搜索程序；仅确认编程计算辅助，不推断参与理论证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.31331v1 · 第 24 页，Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-28T02:44:46.863793+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.31331v1",
+            "contentHash": "5576f58ff47fba0e3c135f40ea32c514c52cc050c029c710d0d431ee36e8483b",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 24 页致谢明确称 Claude 协助实现小规模球堆积与图搜索程序；仅确认编程计算辅助，不推断参与理论证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6fe0ef468922b0d3ef6a94fe867625fde97f8dc66c47e8592a0f56a0795aa786"
+          },
+          "aiUsage": [
+            "computation"
+          ],
           "priorityScore": 78,
           "priorityReason": "多个可核对的精确结论与刚性工具相连，适合离散几何方向。"
         },
