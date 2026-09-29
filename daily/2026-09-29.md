@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-09-29
 
-已收录 79/79 · 解读 79/79 · 资料待补齐。
+已收录 79/79 · 解读 79/79。
 
 ## Motion planning invariants and families of subgroups
 
