@@ -1,6 +1,48 @@
 # 几何前沿日报 · 2026-09-29
 
-已确认 58 篇，其他分类待补齐 · 解读 0 篇。
+已收录 79/79 · 解读 0/79 · 资料待补齐。
+
+## Motion planning invariants and families of subgroups
+
+Ekansh Jauhari、Ben Knudsen
+
+中文解读待补齐
+
+We introduce a notion of topological complexity of a group with respect to a family of subgroups, with the case of the trivial and diagonal families recovering the classical category and topological complexity, respectively. These invariants come equipped with a battery of upper and lower bounds derived from functoriality and Bredon cohomology. We introduce a new family of subgroups, the permutational family, and show that the corresponding invariant is a lower bound for the distributional topological complexity of Dranishnikov-Jauhari and Knudsen-Weinberger. As a first application, we show that the permutational and diagonal families coincide, and thus that classical and distributional topological complexity are equal, for a large class of torsion-free groups, extending work of Dranishnikov. Second, we show that the lower bounds of Grant-Lupton-Oprea are in fact lower bounds on distributional topological complexity; in particular, it follows that Farber's conjecture holds distributionally.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.30579)
+
+## Finite-Defect Rigidity and the Minimum Spherical 4-Design on the Two-Sphere
+
+Shalender Singh、Vishnupriya Singh
+
+中文解读待补齐
+
+We prove that every equal-weight spherical $4$-design on $\mathbb{S}^2$ has at least twelve points. Since the regular icosahedron is a spherical $5$-design, this determines the exact minimum$$N_4(\mathbb{S}^2)=12;$$equivalently, no such design has $9$, $10$ or $11$ this http URL proof is part of a finite-defect theory. If a spherical $2m$-design has corank $c=N-\dim P_m$, its Naimark complement consists of unit vectors $u_x\in\mathbb{S}^{c-1}$ forming a spherical $2$-design and satisfying the exact coupling$$u_x\cdot u_y=-\frac{K_m^{(d)}(x\cdot y)}{c}\qquad(x\ne y).$$This gives a pairwise kernel bound, an antipodal lower bound, Cayley-Bacharach information, and uniform lower bounds for multiplicative-relation spaces. In corank one the design splits into two equal spherical $m$-designs. We derive a residue formula for its signed Schoenberg coefficients; the coefficient of degree $m+3$ is negative exactly when $3\le d\le m+1$, excluding corank one throughout that range. At strengths four and six the only examples in any dimension are the regular hexagon and octagon, this http URL corank two the complement is a circle Gale frame. Multiplication by its phase forces at least $d-1$ linear-quadratic aliases and yields exact norm and socle identities in every dimension. For eleven nodes on $\mathbb{S}^2$, two aliases produce a real harmonic cubic and a Hermitian quartic matrix. A matrix-valued Cayley-Bacharach argument eliminates the generic branch; the exceptional branch reduces to a Pauli normal form and contradicts the second moments. In dimensions $d\ge4$ the corank-two problem remains open; we identify a forced quadratic socle as the obstruction to extending the present argument.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31689)
+
+## Lens Space Surgeries and the Bleiler-Litherland Conjecture
+
+Qilong Guo
+
+中文解读待补齐
+
+We prove the Bleiler-Litherland conjecture: every lens space obtained by a nontrivial Dehn surgery on a hyperbolic knot in $S^3$ has order at least 18. The key ingredient is a spectral obstruction: if a hyperbolic knot $K$ of genus $g$ admits a lens space surgery with slope $\pm(4g-2)$, then $\Delta_K(t)$ has a real root outside the unit circle. The proof combines Floer-theoretic restrictions on lens space surgeries, Gabai's degeneracy-slope bound and Gabai-Oertel's persistence theorem for essential laminations, Ni's fixed-point theorem for monodromy, and a mod-2 orientability criterion, together with the relation between homological monodromy and the Alexander polynomial. As a further application of this spectral obstruction, we obtain characterizing-slope results for torus knots.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.31757)
 
 ## Genus, Morse Index, and Area of Minimal Surfaces in Three-Manifolds
 
@@ -142,6 +184,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.32506)
 
+## Purely cosmetic surgeries on knots with low-span Jones polynomials
+
+Kazuhiro Ichihara
+
+中文解读待补齐
+
+In this paper, we show that a knot with a nontrivial Jones polynomial of span at most 11 does not admit purely cosmetic surgery.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32507)
+
 ## Activation Flow: Manufacturing Activations for Steering
 
 Hong Kiat Tan、Linh Le、David Williams-King
@@ -184,6 +240,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.32655)
 
+## Rademacher Type and Enflo Type Revisited
+
+Nika Areshidze
+
+中文解读待补齐
+
+We establish a dimension-free vector-valued Poincaré-type inequality on the discrete cube for Banach spaces with Rademacher type $p$, $1\le p\le2$. As a consequence, we obtain $$ T_p^R(X)\le T_p^E(X)\le p\,T_p^R(X). $$ This gives an alternative proof that Rademacher type and Enflo type coincide, while improving the constant $\pi/\sqrt{2}$ in the quantitative estimate of Ivanisvili, van Handel, and Volberg \cite{IVV} to $p$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32666)
+
 ## Positive sectional curvature and non-isometric circle actions on a family of eleven-spheres
 
 Shaoqiang Deng、Zhiguang Hu、Hui Zhang
@@ -212,6 +282,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.32812)
 
+## Closed escape path of smallest diameter in forest: dual formulation of Lebesgue's universal covering problem
+
+Zhipeng Deng
+
+中文解读待补齐
+
+Lebesgue's universal covering problem asks for the minimum area convex planar region capable of containing a congruent copy of every planar set of diameter at most one. In this paper, we develop an exact dual formulation of this problem through a minimum diameter analogue of Bellman's lost-in-a-forest problem. For a compact convex forest $F$, we define the critical escape diameter $D(F)$ as the minimum diameter of a closed path whose trace cannot be placed, under any rigid motion, entirely in the interior of $F$. We prove attainment of this minimum and establish a diameter cover/escape duality showing that the normalized body $D(F)^{-1}F$ is a Lebesgue universal cover. Consequently, the Lebesgue universal covering constant admits the exact representation \[ \mathcal L=\inf_F\frac{\operatorname{Area}(F)}{D(F)^2}, \] where the infimum ranges over compact convex planar bodies with nonempty interior. By reversing the rigid motion, we further characterize escape as intersection of a fixed path with every oppositely transformed boundary of $F$, and derive equivalent continuous curve, convex body, and support function optimization formulations. To make the infinite dimensional problem computationally tractable while retaining rigorous control of approximation error, we discretize the compact configuration space by an $\eta_m$-net and formulate the resulting problem as a minimum diameter traveling salesman problem with neighborhoods; for polygonal forests, an exact mixed-integer second-order cone formulation is obtained. We prove the quantitative certification, which yields convergent, rigorously certified universal cover bounds. The framework replaces finite tests of prescribed constant width shapes by a unified optimization over the full configuration space and extends naturally to other congruent and translative universal cover problems.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32931)
+
 ## The relative isoperimetric profile of a unit square with a central square removed
 
 Kyle Byassee、Hunter Johnson、Brandon Jones、Ezra Nance
@@ -226,6 +310,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.32946)
 
+## Integrality, smoothness and normality bounds for cube-truncated Hadamard simplices
+
+Nikita Lebedev
+
+中文解读待补齐
+
+Santos asked when intersections of dilated Hadamard simplices with cubes are integral, smooth, or normal, in a prescribed affine lattice. We construct a nonintegral example in dimension eleven and prove that no smaller-dimensional example exists. We characterize smoothness completely and show that every smooth member of this family is normal. An explicit example in dimension fifteen shows that integrality alone does not imply normality. For Sylvester simplices of order at least sixteen, we establish a sharp uniform integrality bound and construct counterexamples immediately below it. We also obtain sufficient normality bounds for general Hadamard simplices and stronger bounds for the Sylvester family. The proofs use integer decomposition for boxes with separated corner cuts and rounding under three signed slab constraints. All numbered results have formal counterparts verified in Lean.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32950)
+
+## A centerpoint theorem for three planar convex bodies
+
+Hongyu Cheng、Amitabh Basu
+
+中文解读待补齐
+
+For planar convex bodies $A_0,A_1,A_2$ satisfying $\frac12(A_0+A_2)\subseteq A_1$, we prove that the union of the three slices $\{i\}\times A_i\subseteq\mathbb{R}^3$, $i=0,1,2$, contains a point such that every closed halfspace containing it captures at least $2/9$ of their total area. This establishes the three-slice case of Oertel's mixed-integer centerpoint conjecture in $\mathbb{Z}\times\mathbb{R}^2$ with the best possible constant.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32953)
+
+## A second eight-faced polyhedron in which every two faces share an edge
+
+Gergely Röst、Viktor Vígh
+
+中文解读待补齐
+
+We report a novel polyhedral surface of genus~3 embedded in $\mathbb{R}^3$ with eight planar, simple, non-convex nonagonal faces, 24 vertices and 36 edges, in which every two faces share at least one edge: 20 pairs of faces share one edge and 8 pairs share two collinear edges. Its face planes are $3x-4y-2z=5$, $-2x+5y-5z=3$ and their images under the half-turns about the three coordinate axes, and all vertices are rational. The polyhedron has the same face vector, face sizes and number of edge multiplicities as the polyhedron described by Mizhaev, but it is not combinatorially equivalent to it. Our realisation has the symmetry group $D_2$ of order~4, whereas Mizhaev's polyhedron has a rotoreflection symmetry. The example was found by a computational geometric search, and all its properties were verified in exact rational arithmetic.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.32998)
+
 ## Alternative proof of the gradient estimate for complex Hessian equations
 
 Jianchun Chu、Yaxiong Liu
@@ -239,6 +365,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.33091)
+
+## Satellites and invariants of links
+
+Sergey A. Melikhov
+
+中文解读待补齐
+
+An invariant $v$ of $m$-component links is called "cableable" if there exists a $k$ such that whenever a link $L'$ is obtained from a link $L=(K_1,\dots,K_m)$ by replacing each knot $K_i$ with its $(p_i,q_i)$-cable for some $p_i$ and $q_i$, we have $v(L')=(p_1\cdots p_m)^kv(L)$. The following problem is implicit in a number of papers by P. M. Akhmetiev and originates from the Arnold-Moffatt program for finding topological lower bounds for the energy of a magnetic field: Does there exist a cableable finite type invariant of links in $S^3$ which is not a function of the pairwise linking numbers? We solve it affirmatively. Moreover, we show that the cables can be replaced by arbitrary satellites. Much of the proof is a study of low degree coefficients of the Conway potential function $\Omega_L(x_1,\dots,x_n)$ expanded as a formal power series in Conway's variables $z_i=x_i-x_i^{-1}$. We also discuss type $n$ invariants which are "cableable up to an invariant of type $n-1$", some cableable invariants which are not of finite type (particularly a certain modification of Milnor's $\bar\mu$-invariants), and applications to links of solenoids.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.33309)
 
 ## Hermitian connections with parallel torsion and constant holomorphic sectional curvature
 
@@ -338,6 +478,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.33643)
 
+## Log-concavity of flat arrangement polynomials
+
+Yuan Gao、Tianyu Yuan
+
+中文解读待补齐
+
+We prove log-concavity for the determinant-weighted external semi-activity polynomials of all real flat arrangements, strengthening their known trapezoidality. In fact, we establish a quadratic coefficient inequality that, in rank at least two, implies power concavity with an explicit rank-dependent exponent. The proof uses a new mixed-volume representation of the coefficients and the Alexandrov--Fenchel inequality. A more general formula gives a factorization and log-concavity for related mixed-volume sequences. As applications, we establish the conjectured log-concavity for spanning-tree polynomials of Eulerian digraphs, extend it to positive circulation weights, and strengthen the coefficient inequalities for Alexander polynomials of special alternating links.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.33651)
+
 ## RC-positivity of complex surfaces
 
 You-Cheng Chou、Kuang-Ru Wu
@@ -408,6 +562,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.33842)
 
+## On the Kashaev--Luo--Vartanov Partition Function for Cusped 3-Manifolds: Asymptotics and a squared norm property
+
+Ka Ho Wong
+
+中文解读待补齐
+
+We study the asymptotic and TQFT-type properties of the Kashaev--Luo--Vartanov (KLV) partition function. We show that the partition function depends on the prescribed angle structure only through its peripheral angular holonomies. For any geometric triangulation of a cusped 3-manifold realizing a hyperbolic cone structure, we express the exponential decay rate and the 1-loop term of the partition function in terms of, respectively, the volume and the adjoint twisted Reidemeister torsion of the corresponding hyperbolic cone structure. Consequently, these asymptotic formulas hold for any angle structure having the same peripheral angular holonomies as the geometric one. We further introduce a Reshetikhin--Turaev-type function associated with certain admissible Neumann--Zagier data, extending the Jones function in Teichmüller TQFT previously studied by Ben Aribi and the author. We show that, after a combinatorial normalization, for any triangulation, the KLV partition function can be expressed as a weighted integral of the squared norm of the Reshetikhin--Turaev-type function, where the weight is determined by the angular holonomies of peripheral curves. In particular, for FAMED triangulations, the Reshetikhin--Turaev-type function agrees with the Jones function, so that the normalized KLV partition function is obtained by integrating the squared norm of the integrand defining the Teichmüller TQFT partition function. This provides a noncompact analogue of the relationship between Turaev--Viro and Reshetikhin--Turaev invariants.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.33922)
+
 ## Codimension-four regularity of noncollapsed Ricci limit spaces under an integral volume-deficit bound
 
 Lingling Kong
@@ -421,6 +589,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.33995)
+
+## The monodromy of Xiao's genus-two fibrations in degrees 3, 4 and 5
+
+Zoltán Szabó
+
+中文解读待补齐
+
+We determine the vanishing cycles of Xiao's genus-two fibrations $X_d\to P^1$, $d=3,4,5$, whose fibers admit degree-$d$ maps to a fixed elliptic curve $E$. We tile the base $P^1$ by triangles and realize the surface $X_d$ as a degree-$d$ branched cover of $P^1\times E$. The covering description gives an explicit algorithm for the vanishing cycles. A vanishing path is recorded by the sides it crosses in the tiling; each crossing changes a labelled picture of the fiber by a local hexagon move, and the vanishing cycle is read from the terminal picture. We obtain the $7$, $13$, and $31$ vanishing cycles as explicit curves in a marked reference fiber. For $d=4,5$, these give new positive factorizations of the identity in the genus-two mapping class group, of types $(6,7)$ and $(12,19)$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34042)
+
+## Borel complexity for product of trees and commuting partial maps
+
+Koichi Oyakawa
+
+中文解读待补齐
+
+We prove that every acylindrical action on uniformly locally finite product of trees induces the hyperfinite orbit equivalence relation on the Roller boundary. As a byproduct, we construct an example of a standard Borel space and two commuting bounded-to-one surjective partial Borel maps that generate a universal countable Borel equivalence relation. This contrasts to Shinko-Weilacher-Yu's theorem on hyperfiniteness of bounded-to-one actions of commutative monoids.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34068)
 
 ## Local Combinatorial Criteria for Geometric Hyper-ideal Triangulations via Combinatorial Ricci Flow
 
@@ -506,6 +702,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.34291)
 
+## Riesz transform on eventually Gaussian local trees
+
+Fabrice Baudoin、Aobo Chen、Li Chen
+
+中文解读待补齐
+
+We study the Riesz transform $\mathcal{R}=\partial(-\Delta)^{-\frac{1}{2}}$ on uniform local trees, metric measure spaces that are locally real trees and whose canonical Dirichlet form is built from weak derivatives along the skeleton. The reference measure $m$ may be singular with respect to the length measure $\nu$, so boundedness of $\mathcal R$ is understood from $L^{p}(m)$ to $L^{p}(\nu)$. In contrast with fractal-like manifolds and cable systems, the diffusion is sub-Gaussian at small scales and Gaussian at large scales. Under uniform volume growth, two-sided heat kernel estimates and a pointwise gradient estimate for the heat kernel, we prove that a local Dini condition on the scale function implies boundedness of $\mathcal{R}$ on $L^{p}$ for every $p\in[2,\infty)$, and hence the reverse Riesz inequality for every $p\in(1,2]$. Conversely, boundedness of $\mathcal{R}$ for some $p<2$, or a reverse Riesz inequality for some $p>2$, forces the space to be one-dimensional at small scales. We show that a reverse Hölder inequality for harmonic functions yields the gradient estimate, and verify all hypotheses for spaces carrying a geometric group action whose generators have bounded displacement. As an application, for the alternating Vicsek fractafold in $\mathbb Z^{d}$ we determine the exact ranges of $p$ for which the Riesz and reverse Riesz inequalities hold.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34331)
+
 ## Schwarz lemma on bounded symmetric domains endowed with holomorphic invariant Kähler--Berwald metrics
 
 Yong He、Chunping Zhong
@@ -519,6 +729,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.34435)
+
+## Exceptional pretzel knots are not algebraically slice
+
+Suman Saurabh
+
+中文解读待补齐
+
+We prove that the Alexander polynomial of every knot in Lecuona's exceptional family of pretzel knots fails the Fox--Milnor condition. Consequently, none of these knots is algebraically or topologically slice. Together with work of Lecuona, Miller, and Kim--Lee--Song, this completes the slice--ribbon and topological-sliceness classifications for three-strand pretzel knots. It also removes the nonexceptional hypothesis from the Lecuona--Wand classification of prime fibered ribbon pretzel knots up to reordering of parameters.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34522)
 
 ## Scale-invariant bounds on thin sets for measures satisfying a first-order PDE and the anisotropic Michael-Simon inequality
 
@@ -604,6 +828,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.34835)
 
+## Optimization hierarchies for extremal geometry through complete positivity
+
+Bram Bekker
+
+中文解读待补齐
+
+Completely positive functions are an extension of completely positive matrices. They are known to characterize maximal spherical codes and maximum-density distance-avoiding subsets of $\mathbb{R}^n$ and certain compact metric spaces. This thesis expands this framework to related classes of problems in finite measure spaces and to the sphere-packing problem. For the latter, this is sharpened to show that the optimal sphere-packing density can be approximated using Schwartz functions. Converging hierarchies of semidefinite programming bounds on the size of optimal spherical codes are known, based on approximations of completely positive functions and the Lovász theta number of a graph. This thesis extends these hierarchies to distance-avoiding sets and similar problems and to the sphere-packing problem, and proves their convergence to the maximum density. For distance-avoiding sets, additional hierarchies, such as the moment hierarchy, are introduced and shown to be stronger than the completely positive hierarchy, hence they also converge. Related hierarchies for compact packing problems are also investigate. These bounds are implemented for Witsenhausen's problem, which asks for the maximum fraction $\alpha_n$ of the $n$-dimensional unit sphere that is coverable by a set avoiding orthogonal pairs; and for the $t$-almost-equiangular-set problem: finding the maximum size $\alpha(n,t)$ of a subset of the $n$-dimensional unit sphere in which every triple contains a pair with inner product $t \in [-1,1)$. An analytic solution to this bound yields an enumeration of optimal constructions for $n = 2$ and $3$ when $t \geq 0$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34845)
+
 ## Classification of hypersurfaces with constant principal curvatures in $\mathbb{H}^m\times \mathbb{H}^n$
 
 Haizhong Li、Renhao Tan、Zeke Yao
@@ -646,6 +884,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.34958)
 
+## Braid Stability and a Floer theory of Braid Isotopies
+
+Nicolas Grunder
+
+中文解读待补齐
+
+We build a Floer theory on the space of braids of periodic orbits of a Hamiltonian flow on a closed symplectic surface. The differential and continuation maps are defined by counting Floer isotopies of braids: tuples of Floer cylinders with pairwise disjoint graphs. With this new perspective, we prove a quantitative braid stability result that shows the persistence of braids under possibly large Hamiltonian perturbations. As an application, we show that for every $\alpha\geq 0$ there is a sequence of Hamiltonian diffeomorphisms $\phi_k$ on the two-torus $T^2$ such that $$d_H(\operatorname{Ent}_{\leq \alpha}(T^2,\omega),\phi_k)\to \infty \quad (k \to \infty),$$ where $\text{Ent}_{\leq \alpha}(T^2,\omega)\subset \text{Ham}(T^2,\omega)$ denotes the set of Hamiltonian diffeomorphisms with topological entropy at most $\alpha$ and $d_H$ the Hofer metric. We prove this result by studying only contractible periodic orbits, whereas analogous higher-genus statements were previously obtained using non-contractible orbits.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.34961)
+
 ## Submanifolds of higher rank with curvature normals of constant length
 
 Santiago Castañeda-Montoya、Guillermo Lobos、Carlos Olmos
@@ -659,6 +911,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.35007)
+
+## The complexity of computing the covering radius of a Euclidean lattice
+
+Frank Vallentin
+
+中文解读待补齐
+
+In this note, we prove that the covering radius problem for Euclidean lattices is complete for the second level of the polynomial hierarchy. The note also documents the author's first experiment with generative AI as a tool for mathematical research.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.35027)
 
 ## Derived deformation theory of heterotic $G_2$ systems near the standard embedding
 
@@ -730,6 +996,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2609.35313)
 
+## On pure braids and bonded braids
+
+Sofia Lambropoulou、Lucrezia Beatrice Lorenzi
+
+中文解读待补齐
+
+In this paper we investigate the relation between the bonded braid monoid BBn and the group of pure braids $P_n$, realised by an algebraic analogue of the topological tangle insertion, namely by replacing a bond by (a power of) a pure braid generator. To do so, we provide appropriate presentations for $P_n$ using cyclic relations and clasp generators, and extend them to presentations of $B_n$. We construct the monoid epimorphism $\Phi: BB_n \to Bn$, mapping bonds to pure braid generators, which is the main result of the paper. Using the isomorphism from the singular braid monoid $SB_n$ to the tight bonded braid monoid $BB_n$, we extend $\Phi$ to a new type of epimorphism $s \Phi: SB_n \to B_n$. The epimorphisms $\Phi$ and $s \Phi$ are extended to families of epimorphisms $\Phi_p$, $s \Phi_p$, $p \in \mathbb{Z}$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.35340)
+
 ## Orbifold Mapping Spaces via Bibundles
 
 Yoshihiro Sugimoto
@@ -743,6 +1023,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2609.35435)
+
+## A BMO-type representation formula for the total variation of SBV functions in Heisenberg groups
+
+Marco Di Marco、Sebastiano Don、Davide Vittone
+
+中文解读待补齐
+
+We prove a formula for the total variation of SBV functions in sub-Riemannian Heisenberg groups arising as the limit of certain BMO-type functionals.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2609.35577)
 
 ## Harmonic maps from spheres with lowest possible index and their properties
 
