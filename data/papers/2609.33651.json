@@ -23,6 +23,11 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-09-29T06:32:58.752813+00:00",
         "contentHash": "c1809e2c815ef133d9fd07e7b0ed2449183f62a6db719a1f80da2bae0f89a6e0"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.33651v1",
+        "observedAt": "2026-09-29T06:47:47.430260+00:00",
+        "contentHash": "57162bc9e00771ad259406b31a3b57be066ff053ea006f98c927753f07fae174"
       }
     ],
     "analysis": {
@@ -30,15 +35,33 @@
       "progressType": "混合体积实现与对数凹性",
       "workSummary": "证明所有实 flat arrangement 的行列式加权外半活动多项式对数凹，并给更强二次系数界；应用于 Euler 有向图的生成树多项式及特殊交错链环 Alexander 系数。",
       "techniques": [
-        "混合体积表示",
-        "Alexandrov–Fenchel 不等式"
+        "连续混合体积",
+        "Alexandrov–Fenchel",
+        "幂凹性",
+        "zonotopal 分层"
       ],
       "breakthrough": "几何表示统一推出多个组合和结多项式的系数不等式。",
-      "limitations": "各应用的图/链环类别有限定，不能推广任意 Alexander 多项式。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "各应用的图/链环类别有限定，不能推广任意 Alexander 多项式。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1、1.3：连续混合体积表示将多项式系数对应到相邻凸体，Alexandrov–Fenchel 导出强二次不等式，再产生 rank-dependent 幂凹性及等号局部常值条件。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.33651v1 · 第 7 页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:47:47.430260+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.33651v1",
+        "contentHash": "57162bc9e00771ad259406b31a3b57be066ff053ea006f98c927753f07fae174",
+        "pages": 39,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0dbaa0f07f30d5b9c6c232934d38bf633072a84d7d79c48d514f0aa88b8224e4"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 80,
       "priorityReason": "凸几何方法在组合与低维拓扑中形成有效交叉。"
     },
@@ -71,6 +94,11 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-09-29T06:32:58.752813+00:00",
             "contentHash": "c1809e2c815ef133d9fd07e7b0ed2449183f62a6db719a1f80da2bae0f89a6e0"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.33651v1",
+            "observedAt": "2026-09-29T06:47:47.430260+00:00",
+            "contentHash": "57162bc9e00771ad259406b31a3b57be066ff053ea006f98c927753f07fae174"
           }
         ],
         "analysis": {
@@ -78,15 +106,33 @@
           "progressType": "混合体积实现与对数凹性",
           "workSummary": "证明所有实 flat arrangement 的行列式加权外半活动多项式对数凹，并给更强二次系数界；应用于 Euler 有向图的生成树多项式及特殊交错链环 Alexander 系数。",
           "techniques": [
-            "混合体积表示",
-            "Alexandrov–Fenchel 不等式"
+            "连续混合体积",
+            "Alexandrov–Fenchel",
+            "幂凹性",
+            "zonotopal 分层"
           ],
           "breakthrough": "几何表示统一推出多个组合和结多项式的系数不等式。",
-          "limitations": "各应用的图/链环类别有限定，不能推广任意 Alexander 多项式。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "各应用的图/链环类别有限定，不能推广任意 Alexander 多项式。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1、1.3：连续混合体积表示将多项式系数对应到相邻凸体，Alexandrov–Fenchel 导出强二次不等式，再产生 rank-dependent 幂凹性及等号局部常值条件。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.33651v1 · 第 7 页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:47:47.430260+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.33651v1",
+            "contentHash": "57162bc9e00771ad259406b31a3b57be066ff053ea006f98c927753f07fae174",
+            "pages": 39,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0dbaa0f07f30d5b9c6c232934d38bf633072a84d7d79c48d514f0aa88b8224e4"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 80,
           "priorityReason": "凸几何方法在组合与低维拓扑中形成有效交叉。"
         },

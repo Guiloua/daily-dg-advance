@@ -21,6 +21,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-29T06:32:36.035238+00:00",
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.35731v1",
+        "observedAt": "2026-09-29T06:44:58.358281+00:00",
+        "contentHash": "61d26a76b50872e8eaee3a0cad94069dd19ec3226ac19df5ea51da901890d503"
       }
     ],
     "analysis": {
@@ -28,16 +33,33 @@
       "progressType": "稳定调和映射的锐部分正则性",
       "workSummary": "对紧源流形与带双不变度量的紧 Lie 群目标，证明稳定平稳调和映射的奇异集 Hausdorff 余维至少四，且该界为锐。",
       "techniques": [
-        "稳定性",
-        "平稳调和映射",
-        "Lie 群几何"
+        "锥稳定性",
+        "S2 调和映射",
+        "Grothendieck 主丛分解",
+        "维数下降"
       ],
       "breakthrough": "把目标的群结构转化为提升奇异余维的正则性。",
-      "limitations": "稳定、平稳和双不变目标度量均为要求，不能推广到所有弱调和映射。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "稳定、平稳和双不变目标度量均为要求，不能推广到所有弱调和映射。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 与证明路线：先假设存在非平凡 cone-stable 的 S2→G 调和映射，再用复化主丛的 Grothendieck 描述构造违反锥稳定性的变分；随后用于维数下降。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.35731v1 · 第 3 页 AI Acknowledgement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:44:58.358281+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.35731v1",
+        "contentHash": "61d26a76b50872e8eaee3a0cad94069dd19ec3226ac19df5ea51da901890d503",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a0184a45226fbcb92e2a6fbf30cd37bf7aba0b85d106c67d990e107d223dbc13"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 87,
       "priorityReason": "与调和映射奇点及稳定变分对象的正则性直接相关。"
     },
@@ -68,6 +90,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-29T06:32:36.035238+00:00",
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.35731v1",
+            "observedAt": "2026-09-29T06:44:58.358281+00:00",
+            "contentHash": "61d26a76b50872e8eaee3a0cad94069dd19ec3226ac19df5ea51da901890d503"
           }
         ],
         "analysis": {
@@ -75,16 +102,33 @@
           "progressType": "稳定调和映射的锐部分正则性",
           "workSummary": "对紧源流形与带双不变度量的紧 Lie 群目标，证明稳定平稳调和映射的奇异集 Hausdorff 余维至少四，且该界为锐。",
           "techniques": [
-            "稳定性",
-            "平稳调和映射",
-            "Lie 群几何"
+            "锥稳定性",
+            "S2 调和映射",
+            "Grothendieck 主丛分解",
+            "维数下降"
           ],
           "breakthrough": "把目标的群结构转化为提升奇异余维的正则性。",
-          "limitations": "稳定、平稳和双不变目标度量均为要求，不能推广到所有弱调和映射。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "稳定、平稳和双不变目标度量均为要求，不能推广到所有弱调和映射。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 与证明路线：先假设存在非平凡 cone-stable 的 S2→G 调和映射，再用复化主丛的 Grothendieck 描述构造违反锥稳定性的变分；随后用于维数下降。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.35731v1 · 第 3 页 AI Acknowledgement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:44:58.358281+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.35731v1",
+            "contentHash": "61d26a76b50872e8eaee3a0cad94069dd19ec3226ac19df5ea51da901890d503",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a0184a45226fbcb92e2a6fbf30cd37bf7aba0b85d106c67d990e107d223dbc13"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 87,
           "priorityReason": "与调和映射奇点及稳定变分对象的正则性直接相关。"
         },

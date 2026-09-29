@@ -24,9 +24,11 @@ Shalender Singh、Vishnupriya Singh
 
 We prove that every equal-weight spherical $4$-design on $\mathbb{S}^2$ has at least twelve points. Since the regular icosahedron is a spherical $5$-design, this determines the exact minimum$$N_4(\mathbb{S}^2)=12;$$equivalently, no such design has $9$, $10$ or $11$ this http URL proof is part of a finite-defect theory. If a spherical $2m$-design has corank $c=N-\dim P_m$, its Naimark complement consists of unit vectors $u_x\in\mathbb{S}^{c-1}$ forming a spherical $2$-design and satisfying the exact coupling$$u_x\cdot u_y=-\frac{K_m^{(d)}(x\cdot y)}{c}\qquad(x\ne y).$$This gives a pairwise kernel bound, an antipodal lower bound, Cayley-Bacharach information, and uniform lower bounds for multiplicative-relation spaces. In corank one the design splits into two equal spherical $m$-designs. We derive a residue formula for its signed Schoenberg coefficients; the coefficient of degree $m+3$ is negative exactly when $3\le d\le m+1$, excluding corank one throughout that range. At strengths four and six the only examples in any dimension are the regular hexagon and octagon, this http URL corank two the complement is a circle Gale frame. Multiplication by its phase forces at least $d-1$ linear-quadratic aliases and yields exact norm and socle identities in every dimension. For eleven nodes on $\mathbb{S}^2$, two aliases produce a real harmonic cubic and a Hermitian quartic matrix. A matrix-valued Cayley-Bacharach argument eliminates the generic branch; the exceptional branch reduces to a Pauli normal form and contradicts the second moments. In dimensions $d\ge4$ the corank-two problem remains open; we identify a forced quadratic socle as the obstruction to extending the present argument.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.31689v1
 
 [arXiv](https://arxiv.org/abs/2609.31689)
 
@@ -38,9 +40,13 @@ Qilong Guo
 
 We prove the Bleiler-Litherland conjecture: every lens space obtained by a nontrivial Dehn surgery on a hyperbolic knot in $S^3$ has order at least 18. The key ingredient is a spectral obstruction: if a hyperbolic knot $K$ of genus $g$ admits a lens space surgery with slope $\pm(4g-2)$, then $\Delta_K(t)$ has a real root outside the unit circle. The proof combines Floer-theoretic restrictions on lens space surgeries, Gabai's degeneracy-slope bound and Gabai-Oertel's persistence theorem for essential laminations, Ni's fixed-point theorem for monodromy, and a mod-2 orientability criterion, together with the relation between homological monodromy and the Alexander polynomial. As a further application of this spectral obstruction, we obtain characterizing-slope results for torus knots.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露用 AI 工具润色语言和改善句子流畅度，并承担全部内容责任；未披露数学证明贡献。
 
+来源：https://arxiv.org/pdf/2609.31757v1 · 第 9 页 AI-use disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露用 AI 工具润色语言和改善句子流畅度，并承担全部内容责任；未披露数学证明贡献。
+
+来源：https://arxiv.org/pdf/2609.31757v1
 
 [arXiv](https://arxiv.org/abs/2609.31757)
 
@@ -52,9 +58,13 @@ Riccardo Caniato
 
 We prove that, in every closed Riemannian three-manifold $(M^3,\bar g)$, there exists a constant $C>0$ such that every closed smoothly embedded minimal surface $\Sigma\subset M$ satisfies $b_1(\Sigma;\mathbb{Z}_2)\le C\bigl(\operatorname{Ind}(\Sigma)+\operatorname{Area}(\Sigma)\bigr)$. The estimate holds without orientability or two-sidedness assumptions and establishes the additive genus-index-area estimate conjectured by Song. For closed connected orientable two-sided minimal immersions, we also obtain explicit genus bounds under a lower bound on the ambient sectional curvature. Under positive ambient Ricci curvature, we prove the universal inequality $\gamma(\Sigma)\le 8\operatorname{Ind}(\Sigma)$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者仅披露用 ChatGPT-6 Astra 改善文字清晰度和风格，并识别数学论证潜在错误或缺口；明确说明研究想法及全部证明均未用 AI 开发，所有数学论证由作者独立核验。
 
+来源：https://arxiv.org/pdf/2609.32001v1 · 第 8 页 On the use of AI
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者仅披露用 ChatGPT-6 Astra 改善文字清晰度和风格，并识别数学论证潜在错误或缺口；明确说明研究想法及全部证明均未用 AI 开发，所有数学论证由作者独立核验。
+
+来源：https://arxiv.org/pdf/2609.32001v1
 
 [arXiv](https://arxiv.org/abs/2609.32001)
 
@@ -108,9 +118,13 @@ Jean-Marc Schlenker
 
 Let $S$ be a closed, oriented surface of genus at least $2$, let $h$ be a smooth Riemannian metric on $S$ with curvature $K\in (-1,0]$, and let $c\in \cT_S$ be a conformal structure on $S$. There exists a unique equivariant isometric immersion of $(S,h)$ in $\HH^3$ such that the pull-back by the hyperbolic Gauss map of the conformal structure at infinity is $c$. Dually, if $h^*$ is a smooth metric on $S$ with curvature $K^*\in (-\infty, 0)$ and if $c\in \cT_S$, there exists a unique equivariant immersion of $S$ into $\HH^3$ with third fundamental form $h^*$ and such that the pull-back of the conformal class at infinity by the Gauss map is $c$. Equivalently, given $h$ and $c\in \cT_S$, there is a unique pair $(E,u)$ where $E$ is a hyperbolic end with conformal structure at infinity $c$ and $u$ is an isometric embedding of $(S,h)$ in $E$. Given $h^*$ and $c$, there exists a unique pair $(E,u^*)$, where $E$ is a hyperbolic end with conformal structure at infinity $c$, and $u^*:S\to E$ is an embedding inducing the third fundamental form $h^*$. Those statements can be considered as a smooth counterpart of known or conjectural statements on the grafting map and on circle patterns.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Claude/Fable 等模型对引理 1.12 的证明有关键贡献，并在多轮作者指令后起草引理 1.13 和 1.15 的证明；模型还指出论证缺口及校对文字，最终稿由作者大幅编辑。
 
+来源：https://arxiv.org/pdf/2609.32300v1 · 第 7 页第 1.8 节
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude/Fable 等模型对引理 1.12 的证明有关键贡献，并在多轮作者指令后起草引理 1.13 和 1.15 的证明；模型还指出论证缺口及校对文字，最终稿由作者大幅编辑。
+
+来源：https://arxiv.org/pdf/2609.32300v1
 
 [arXiv](https://arxiv.org/abs/2609.32300)
 
@@ -164,9 +178,11 @@ Romy Marie Merkel
 
 We construct a sequence of AE Kähler metrics on C^2 with nonnegative and integrable scalar curvature whose ADM mass tends to zero but which, for a suitable choice of basepoints, fails to converge to Euclidean space in the pointed Gromov-Hausdorff sense. This shows that, without any additional assumptions, the excision in Klemmensen's stability result for the positive mass theorem for Kähler manifolds is crucial, which aligns with the findings in the (3-dimensional) Riemannian case.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文关键词命中只来自参考文献中 Claude LeBrun 的姓名；未见作者对本论文 AI 协作的披露，不能据此判断是否实际使用 AI。
 
+来源：https://arxiv.org/pdf/2609.32383v1
 
 [arXiv](https://arxiv.org/abs/2609.32383)
 
@@ -220,9 +236,11 @@ Daniel Álvarez、Kalin Krishna、Stefano Ronchi
 
 Motivated by recent developments in generalized Kähler geometry, we study morphisms of double Lie groupoids from a simplicial viewpoint. We show that the codiagonal functor $\Wbar$ extends from objects to horizontal and vertical principal bibundles and to square-shaped $(1,1)$-morphisms. The latter determine 2-dimensional morphisms of square and globular shape between anafunctors of Lie 2-groupoids. We illustrate these constructions through two applications: First, we revisit the equivalence between two models of nonabelian gerbes: groupoid bundle gerbes and principal 2-bundles. We show that a principal 2-bundle and its associated groupoid bundle gerbe determine equivalent anafunctors from a manifold to the corresponding structure Lie 2-group. Second, we refine the integration of Manin triples in transitive Courant algebroids. We show that integrations associated with different choices of suitably transverse Manin triples in the same Courant algebroid are related by symplectic Morita equivalences. Consequently, the resulting integration of the background Courant algebroid is well defined up to symplectic Morita equivalence.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 5 页明确表示图示使用 TikZiT 与 Quiver、未借助生成式 AI；其余全文检索未见正面协作披露。该局部否定也不能扩大为全部研究完全未用 AI。
 
+来源：https://arxiv.org/pdf/2609.32553v1
 
 [arXiv](https://arxiv.org/abs/2609.32553)
 
@@ -234,9 +252,11 @@ Timothy Buttsworth、William Hadden、Elli Heyes、Daniel Platt、Toby Wiseman
 
 The compact four-dimensional manifold $\mathbb{CP}_2\# 3\overline{\mathbb{CP}_2}$ is known to admit a toric Kähler-Einstein metric $g_{\text{KE}}$, but the metric is not known in closed form, which makes it difficult to draw conclusions about its geometry. In this article, we use a combination of analytic and computer-assisted techniques to produce an approximate Einstein metric $g$ described explicitly herein, and also prove that the true Einstein metric $g_{\text{KE}}$ is close to $g$, where both the closeness and the topology are described explicitly. As an application, we prove bounds on the first invariant eigenvalue of the Laplace-Beltrami operator, and prove that this Kähler-Einstein metric does not have positive holomorphic sectional curvature everywhere.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.32655v1
 
 [arXiv](https://arxiv.org/abs/2609.32655)
 
@@ -248,9 +268,13 @@ Nika Areshidze
 
 We establish a dimension-free vector-valued Poincaré-type inequality on the discrete cube for Banach spaces with Rademacher type $p$, $1\le p\le2$. As a consequence, we obtain $$ T_p^R(X)\le T_p^E(X)\le p\,T_p^R(X). $$ This gives an alternative proof that Rademacher type and Enflo type coincide, while improving the constant $\pi/\sqrt{2}$ in the quantitative estimate of Ivanisvili, van Handel, and Volberg \cite{IVV} to $p$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者致谢 AI 工具，明确最终稿数学论证和证明由作者核验与撰写；声明没有细分模型用途，不据此认定 AI 参与核心想法或证明。
 
+来源：https://arxiv.org/pdf/2609.32666v1 · 第 6 页 Acknowledgments
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者致谢 AI 工具，明确最终稿数学论证和证明由作者核验与撰写；声明没有细分模型用途，不据此认定 AI 参与核心想法或证明。
+
+来源：https://arxiv.org/pdf/2609.32666v1
 
 [arXiv](https://arxiv.org/abs/2609.32666)
 
@@ -262,9 +286,13 @@ Shaoqiang Deng、Zhiguang Hu、Hui Zhang
 
 We study the construction of positively curved Riemannian metrics by non-isometric circle actions. For a family of homotopy eleven-spheres whose Eells--Kuiper invariants form the even subgroup of $\mathbb{Z}/992$, we construct, on each member, a smooth background metric $q$ and three effective circle actions with generators $W_1,W_2,W_3$ such that the metric determined by $g^{-1}=q^{-1}+\sum_{a=1}^3W_a\otimes W_a$ has positive sectional curvature. Each action is non-isometric for every partial metric, including its incoming metric and the final metric. We first describe the sphere by gauge transformations of the quaternionic Hopf bundle. We then construct compatible metrics on two disks and smooth their inverse metrics while preserving the action formula. A local conjugation makes the circle actions non-isometric. For each fixed member, we obtain an explicit positive lower bound $2^{-54}(1+M_{0,k}+M_{1,k})^{-28}$, where $M_{0,k}$ and $M_{1,k}$ are norms of the curvature and its first covariant derivative for its fixed connection. The bound may depend on the member of the family.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。
 
+来源：https://arxiv.org/pdf/2609.32680v1 · 第 24 页 Acknowledgment
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。
+
+来源：https://arxiv.org/pdf/2609.32680v1
 
 [arXiv](https://arxiv.org/abs/2609.32680)
 
@@ -388,9 +416,13 @@ Shuwen Chen、Fangyang Zheng
 
 A long-standing conjecture in non-Kähler geometry states that a compact Hermitian manifold with constant Chern holomorphic sectional curvature should be Kähler when the constant is nonzero and Chern flat when the constant is zero. In this article, we study the corresponding problem for a Hermitian connection $\nabla$ with $\nabla T=0$. We first show that if the $\nabla$-holomorphic sectional curvature is constant, then the $(1,1)$-part of the curvature is $\nabla$-parallel. Our main result states that a nonzero constant forces $T=0$; consequently, the metric is Kähler and locally a complex space form. The proof is pointwise and requires neither compactness nor completeness. We also obtain applications to the Chern and Bismut connections.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露使用 ChatGPT 5.6 Sol 做探索计算、讨论可能的证明方向及文字润色，数学证明和计算均经作者检查；声明未明确将核心想法归因于 AI。
 
+来源：https://arxiv.org/pdf/2609.33374v1 · 第 20 页 Generative AI disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT 5.6 Sol 做探索计算、讨论可能的证明方向及文字润色，数学证明和计算均经作者检查；声明未明确将核心想法归因于 AI。
+
+来源：https://arxiv.org/pdf/2609.33374v1
 
 [arXiv](https://arxiv.org/abs/2609.33374)
 
@@ -416,9 +448,13 @@ Weiran Ding、Fagui Li、Xize Yang、Yunheng Zhang
 
 Let $M^n\to\Sph^{n+q}(1)$, $n\ge3$ and $q\ge2$, be a closed minimal immersion. Set $S=|h|^2$ and $Q=S+\lambda_2$, where $h$ is the second fundamental form and $\lambda_2$ is the second largest eigenvalue of Lu's fundamental matrix. We establish two complementary results concerning Lu's second-gap conjecture. First, for every $n\ge3$, we exhibit closed connected homogeneous minimal embeddings of $\Sph^1\times\Sph^{n-1}$ into $\Sph^{2n+1}(1)$ with constant $S$ and constant $Q$, whose $Q$-values are dense in $(n,2n)$. Totally geodesic inclusions yield the same density in every codimension $q\ge n+1$. Thus Lu's conjecture fails in these codimensions even under constant scalar curvature. Second, for every $n\ge3$, we prove that there exists $\gamma_n>0$, depending only on $n$, such that no closed connected minimal immersion into $\Sph^{n+2}(1)$ with constant $Q$ satisfies $n<Q<n+\gamma_n$. Hence Lu's second-gap conjecture holds in codimension two for all $n\ge3$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露使用 OpenAI GPT-6 Astra 辅助发展和检查数学论证及稿件准备，并由作者负责论证、参考文献与最终内容核验。
 
+来源：https://arxiv.org/pdf/2609.33552v1 · 第 21 页 AI Disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 OpenAI GPT-6 Astra 辅助发展和检查数学论证及稿件准备，并由作者负责论证、参考文献与最终内容核验。
+
+来源：https://arxiv.org/pdf/2609.33552v1
 
 [arXiv](https://arxiv.org/abs/2609.33552)
 
@@ -430,9 +466,13 @@ Daguang Chen、Hao Liu、Chengxi Yang
 
 For $3\le n\le6$, we determine the sharp isoperimetric bound for the mass-normalized first weighted Neumann eigenvalue on bounded Euclidean domains. For every finite nonnegative nonatomic measure $\mu$ on $\overline\Omega$, \begin{equation*} \overline\lambda_1^N(\Omega,\mu)\le\frac{n(n-1)}{n-2}\omega_n\sin^2\vartheta_n\left(\frac{|\Omega|}{\omega_n}\right)^{(n-2)/n}, \end{equation*} where $\omega_n$ is the volume of the unit ball and $\vartheta_n\in(\pi/2,\pi)$ is the angle at the first stationary radius of the regular rotational harmonic-map profile. The bound is attained on balls by a smooth positive radial density. In fact, we affirmatively resolve Question~1.12 posed by Vinokurov \cite{Vinokurov2026}. Furthermore, for admissible domains with finite boundary measure, we also prove the sharp strict Steklov bound \begin{equation*} \sigma_1(\Omega)|\partial\Omega|\,|\Omega|^{(2-n)/n}<\frac{n(n-1)}{n-2}\omega_n^{2/n}\sin^2\vartheta_n, \end{equation*} whose constant is approached by $C^1$ perforated domains.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 协助英文编辑、稿件润色和证明的初步探索，并由作者负责全部数学论证与最终稿；没有明确说明 AI 给出核心想法。
 
+来源：https://arxiv.org/pdf/2609.33555v1 · 第 12 页 Acknowledgments
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 协助英文编辑、稿件润色和证明的初步探索，并由作者负责全部数学论证与最终稿；没有明确说明 AI 给出核心想法。
+
+来源：https://arxiv.org/pdf/2609.33555v1
 
 [arXiv](https://arxiv.org/abs/2609.33555)
 
@@ -444,9 +484,13 @@ Xin Fu、Zexuan Ouyang
 
 Let $X$ be a fixed complex K3 surface and let $0\ne\alpha\in\overline{Kah_X}$ be a $(1,1)$-class on the boundary of the Kähler cone with $\alpha^2=0$. We build a novel connection between two seemingly unrelated, intensively studied problems: the rigidity of a closed positive current in the class $\alpha$ and the collapse geometry of a sequence of Ricci-flat Kähler metrics in the Kähler class $\alpha+t\kappa$ as $t\to 0^+$. More precisely, we prove that $\alpha$ contains a unique closed positive $(1,1)$-current if and only if the Ricci-flat metrics in class $\alpha+t\kappa$ collapse to a point in the Gromov--Hausdorff sense. Then we exhibit the first example of a nonrigid irrational nef class $\alpha$ on a Kummer surface, which answers a question of Filip--Tosatti and Sibony--Soldatenkov--Verbitsky. We also construct many new examples of rigid nef classes on hyperkähler manifolds, which extend the work of Filip--Tosatti and Sibony--Soldatenkov--Verbitsky.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 辅助技术细节和文字润色，并辅助命题 4.1、引理 5.3 的证明；第 9 节构造关键的各向异性格想法明确归因于 AI。作者说明主要问题和定理由自己提出，且所有建议均经核验修改。
 
+来源：https://arxiv.org/pdf/2609.33632v1 · 第 3 页 Declaration of AI use；第 24 页第 9 节
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助技术细节和文字润色，并辅助命题 4.1、引理 5.3 的证明；第 9 节构造关键的各向异性格想法明确归因于 AI。作者说明主要问题和定理由自己提出，且所有建议均经核验修改。
+
+来源：https://arxiv.org/pdf/2609.33632v1
 
 [arXiv](https://arxiv.org/abs/2609.33632)
 
@@ -458,9 +502,13 @@ Stephan Stadler
 
 For every integer $\nu\geq 2$, we construct a $(\nu+1)$-dimensional, locally compact, geodesically complete CAT(0) space of asymptotic rank $\nu$ which does not satisfy a linear isoperimetric inequality for integral $\nu$-cycles. Its filling function is bounded below by $c v\log v$ for all sufficiently large $v$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确说明 ChatGPT 协助稿件起草与编辑，由作者负责数学内容及最终文字；该段没有将数学发现或证明贡献归于 AI。
 
+来源：https://arxiv.org/pdf/2609.33633v1 · 第 4 页 Declaration on AI use
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明 ChatGPT 协助稿件起草与编辑，由作者负责数学内容及最终文字；该段没有将数学发现或证明贡献归于 AI。
+
+来源：https://arxiv.org/pdf/2609.33633v1
 
 [arXiv](https://arxiv.org/abs/2609.33633)
 
@@ -486,9 +534,13 @@ Yuan Gao、Tianyu Yuan
 
 We prove log-concavity for the determinant-weighted external semi-activity polynomials of all real flat arrangements, strengthening their known trapezoidality. In fact, we establish a quadratic coefficient inequality that, in rank at least two, implies power concavity with an explicit rank-dependent exponent. The proof uses a new mixed-volume representation of the coefficients and the Alexandrov--Fenchel inequality. A more general formula gives a factorization and log-concavity for related mixed-volume sequences. As applications, we establish the conjectured log-concavity for spanning-tree polynomials of Eulerian digraphs, extend it to positive circulation weights, and strengthen the coefficient inequalities for Alexander polynomials of special alternating links.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。
 
+来源：https://arxiv.org/pdf/2609.33651v1 · 第 7 页 Acknowledgements
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索性的数学讨论、发展及检查论证，之后由作者修改表达并负责最终数学内容；没有明确将主要想法归于 AI。
+
+来源：https://arxiv.org/pdf/2609.33651v1
 
 [arXiv](https://arxiv.org/abs/2609.33651)
 
@@ -500,9 +552,13 @@ You-Cheng Chou、Kuang-Ru Wu
 
 Given a compact complex surface with a nonflat Ricci-flat Kähler metric, we show that its holomorphic tangent bundle admits an RC-positive Hermitian metric. The proof relies on a characterization of RC-positivity through the anti-self-dual part of the Weyl operator, the Weitzenböck formula on the four dimensional Einstein manifold, and a conformal perturbation on the Ricci-flat metric. As a consequence, we prove that RC-positivity is not preserved after taking tensor, exterior, or symmetric power. Moreover, we show that RC-positivity is a strictly weaker notion than uniform RC-positivity, and that RC-positivity of holomorphic tangent bundle does not necessarily imply rational connectedness of the base manifold.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。
 
+来源：https://arxiv.org/pdf/2609.33656v1 · 第 4 页致谢
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。
+
+来源：https://arxiv.org/pdf/2609.33656v1
 
 [arXiv](https://arxiv.org/abs/2609.33656)
 
@@ -514,9 +570,13 @@ Jeff Viaclovsky
 
 We construct a two-parameter family of complex structures on the standard six-sphere, starting from a rational elliptic surface with singular fibers $III^*,I_1,I_1,I_1$. The resulting torus fibration over $\mathbb{P}^1$ has one multiple fiber of multiplicity four, one hexagonal fiber, and two rank-one degenerations. These complex structures are not biholomorphic to the original Alpöge--Claude examples.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 6 Astra 协助起草及修改表达、发展部分论证，并完成第 4、5 节的大部分计算；灵感由作者依据 Engel 文章和自身纤维/单值化限制形成，不将引用的 Alpöge–Claude 前作当成本论文披露。
 
+来源：https://arxiv.org/pdf/2609.33785v1 · 第 3 页第 1.1 节 Statement
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra 协助起草及修改表达、发展部分论证，并完成第 4、5 节的大部分计算；灵感由作者依据 Engel 文章和自身纤维/单值化限制形成，不将引用的 Alpöge–Claude 前作当成本论文披露。
+
+来源：https://arxiv.org/pdf/2609.33785v1
 
 [arXiv](https://arxiv.org/abs/2609.33785)
 
@@ -542,9 +602,13 @@ Wenfei Liu、Sönke Rollenske
 
 Following a similar path as the recent construction of a complex structure on $S^6$ we construct another such family, disjoint from the known ones.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露先手工探索后由 ChatGPT 承担计算；模型建议把光滑纤维 log-transform 的重数取零，产生现构造。作者规定文章结构和命题，模型逐步补写证明/计算，经历多轮人工修改与补充。
 
+来源：https://arxiv.org/pdf/2609.33826 · 第 2 页第 1.A 节 AI workflow and use disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露先手工探索后由 ChatGPT 承担计算；模型建议把光滑纤维 log-transform 的重数取零，产生现构造。作者规定文章结构和命题，模型逐步补写证明/计算，经历多轮人工修改与补充。
+
+来源：https://arxiv.org/pdf/2609.33826
 
 [arXiv](https://arxiv.org/abs/2609.33826)
 
@@ -556,9 +620,11 @@ Ziyang Qin、Yuan Liao、Ayush Khaitan、Bennett Chow
 
 We formalize the smooth three-dimensional Poincaré conjecture, together with the Moise smoothing theorem, yielding the topological three-dimensional Poincaré conjecture. The smooth proof follows the Hamilton--Perelman route through Ricci flow with surgery and finite-time extinction.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。关键词命中来自参考文献列出的 Tau Ceti 上游项目贡献者 Codex，与本论文当前作者使用 AI 的披露不同；全文检索未见本论文明确协作声明。
 
+来源：https://arxiv.org/pdf/2609.33842v1
 
 [arXiv](https://arxiv.org/abs/2609.33842)
 
@@ -570,9 +636,13 @@ Ka Ho Wong
 
 We study the asymptotic and TQFT-type properties of the Kashaev--Luo--Vartanov (KLV) partition function. We show that the partition function depends on the prescribed angle structure only through its peripheral angular holonomies. For any geometric triangulation of a cusped 3-manifold realizing a hyperbolic cone structure, we express the exponential decay rate and the 1-loop term of the partition function in terms of, respectively, the volume and the adjoint twisted Reidemeister torsion of the corresponding hyperbolic cone structure. Consequently, these asymptotic formulas hold for any angle structure having the same peripheral angular holonomies as the geometric one. We further introduce a Reshetikhin--Turaev-type function associated with certain admissible Neumann--Zagier data, extending the Jones function in Teichmüller TQFT previously studied by Ben Aribi and the author. We show that, after a combinatorial normalization, for any triangulation, the KLV partition function can be expressed as a weighted integral of the squared norm of the Reshetikhin--Turaev-type function, where the weight is determined by the angular holonomies of peripheral curves. In particular, for FAMED triangulations, the Reshetikhin--Turaev-type function agrees with the Jones function, so that the normalized KLV partition function is obtained by integrating the squared norm of the integrand defining the Teichmüller TQFT partition function. This provides a noncompact analogue of the relationship between Turaev--Viro and Reshetikhin--Turaev invariants.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于语言编辑及与工作广泛背景有关的概念讨论，以澄清表达和视角；数学结果、证明和结论均由作者独立发展。
 
+来源：https://arxiv.org/pdf/2609.33922v1 · 第 6 页 Acknowledgment
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于语言编辑及与工作广泛背景有关的概念讨论，以澄清表达和视角；数学结果、证明和结论均由作者独立发展。
+
+来源：https://arxiv.org/pdf/2609.33922v1
 
 [arXiv](https://arxiv.org/abs/2609.33922)
 
@@ -584,9 +654,13 @@ Lingling Kong
 
 Let $(X,d,p)$ be an $n$-dimensional noncollapsed Ricci limit space, where $n\ge4$. Under an integral volume-deficit bound, we prove that the metric singular set has Hausdorff codimension at least four and sigma-finite $(n-4)$-dimensional Hausdorff measure. This establishes a special case of the codimension-four regularity conjecture. Moreover, the nonmanifold locus is closed and has locally finite $(n-4)$-dimensional Hausdorff measure, and its intersection with each bounded ball satisfies a tubular-volume estimate of order $r^4$. In dimension four, the nonmanifold points form a locally finite set. A flat quotient example shows that the codimension bound is sharp.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确说明使用 AI 辅助基于参考文献 [8] 制定积分体积亏损条件 (AC)；披露涉及假设设计，未据此认定证明由 AI 完成。
 
+来源：https://arxiv.org/pdf/2609.33995v1 · 第 1 页致谢
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明使用 AI 辅助基于参考文献 [8] 制定积分体积亏损条件 (AC)；披露涉及假设设计，未据此认定证明由 AI 完成。
+
+来源：https://arxiv.org/pdf/2609.33995v1
 
 [arXiv](https://arxiv.org/abs/2609.33995)
 
@@ -640,9 +714,11 @@ Liam Mazurowski、Xuan Yao
 
 Assume that smooth metrics $g_k$ converge in measure to a smooth metric $g$. Gromov asked the following question: if all the metrics $g_k$ have non-negative scalar curvature does it follow that $g$ also has non-negative scalar curvature? We answer Gromov's question in dimension three. We show that, without further assumptions, the metric $g$ need not have non-negative scalar curvature and in fact $g$ may be completely arbitrary. However, if one assumes in addition that the identity maps $(M,g_k)\to (M,g)$ are uniformly bi-Lipschitz, then indeed $g$ must have non-negative scalar curvature. Our method of proof can also be used to show that, under an almost Euclidean entropy condition, scalar curvature lower bounds will persist under convergence of the metrics together with their inverses in $L^p$ for suitably large $p$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.34141v1
 
 [arXiv](https://arxiv.org/abs/2609.34141)
 
@@ -682,9 +758,13 @@ Filippo Gaia、Rafe Mazzeo、Ivan Miranda
 
 For every $n\geq 4$ and every $H$ in a neighborhood of $n-1$ (depending on $n$), we prove the existence of a properly embedded strongly stable CMC hypersurface in $\mathbb H^n$ with mean curvature $H$ and infinitely many ends, invariant under the action of a Schottky group. In particular, stable Bernstein-type rigidity fails in this range.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确将结合 Mazzeo–Pacard、Nayatani 和 Brooks 结果构造 H4 中 H>3 稳定 CMC 超曲面的想法归因于 ChatGPT 5.6 Sol；模型还协助中间计算及文献识别，最终稿和证明由作者发展、核验及撰写。
 
+来源：https://arxiv.org/pdf/2609.34283v1 · 第 5 页 AI use disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将结合 Mazzeo–Pacard、Nayatani 和 Brooks 结果构造 H4 中 H>3 稳定 CMC 超曲面的想法归因于 ChatGPT 5.6 Sol；模型还协助中间计算及文献识别，最终稿和证明由作者发展、核验及撰写。
+
+来源：https://arxiv.org/pdf/2609.34283v1
 
 [arXiv](https://arxiv.org/abs/2609.34283)
 
@@ -696,9 +776,13 @@ Keita Kunikawa
 
 We construct an embedded torus and an entire graph in $\mathbb{R}^4$ whose normal bundles are initially flat but lose this property instantaneously under mean curvature flow. We also give an example showing that the parallel principal normal condition is not preserved under mean curvature flow, even though the normal bundle remains flat along the flow.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露用 ChatGPT 5.6 建议适合的构造 ansatz、探索满足几何条件的例子，并辅助稿件编辑；计算和论证均由作者独立检查。
 
+来源：https://arxiv.org/pdf/2609.34291v1 · 第 5 页 AI Disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露用 ChatGPT 5.6 建议适合的构造 ansatz、探索满足几何条件的例子，并辅助稿件编辑；计算和论证均由作者独立检查。
+
+来源：https://arxiv.org/pdf/2609.34291v1
 
 [arXiv](https://arxiv.org/abs/2609.34291)
 
@@ -738,9 +822,13 @@ Suman Saurabh
 
 We prove that the Alexander polynomial of every knot in Lecuona's exceptional family of pretzel knots fails the Fox--Milnor condition. Consequently, none of these knots is algebraically or topologically slice. Together with work of Lecuona, Miller, and Kim--Lee--Song, this completes the slice--ribbon and topological-sliceness classifications for three-strand pretzel knots. It also removes the nonexceptional hypothesis from the Lecuona--Wand classification of prime fibered ribbon pretzel knots up to reordering of parameters.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确说明数学内容完全未用 AI；AI 仅用于少量语言编辑及协助编写图形的 TikZ 代码。保留该数学贡献的否定限定。
 
+来源：https://arxiv.org/pdf/2609.34522v1 · 第 2 页 AI Declaration
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明数学内容完全未用 AI；AI 仅用于少量语言编辑及协助编写图形的 TikZ 代码。保留该数学贡献的否定限定。
+
+来源：https://arxiv.org/pdf/2609.34522v1
 
 [arXiv](https://arxiv.org/abs/2609.34522)
 
@@ -752,9 +840,13 @@ Guido De Philippis、Luca Gennaioli、Alessandro Pigati、Filip Rindler
 
 We prove mass estimates for PDE-constrained measures on sets of $\sigma$-finite ${\mathcal H}^m$-measure, assuming an appropriate rank condition. As an application, we derive a Michael--Simon inequality for varifolds with bounded anisotropic first variation with respect to an integrand that satisfies the natural atomic condition (AC1).
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露商业 AI 模型给出定理 1.1 的初始且实质完整证明，结合已有解析引理与 log-Sobolev 型不等式；作者后来加强为密度高可积结果，核验所有证明，并用 AI 检查排字错误。
 
+来源：https://arxiv.org/pdf/2609.34573v1 · 第 2 页 Disclosure on AI usage；第 4 页第 1.3 节
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露商业 AI 模型给出定理 1.1 的初始且实质完整证明，结合已有解析引理与 log-Sobolev 型不等式；作者后来加强为密度高可积结果，核验所有证明，并用 AI 检查排字错误。
+
+来源：https://arxiv.org/pdf/2609.34573v1
 
 [arXiv](https://arxiv.org/abs/2609.34573)
 
@@ -780,9 +872,13 @@ Shujun Shi、Zhenan Sui
 
 We solve the asymptotic Plateau problem in hyperbolic space for the curvature given by the normalized geometric mean of the $p$-fold sums of the principal curvatures. For every $n\ge3$, $2\le p\le n-1$, and $\sigma\in(0,1)$, each bounded domain $\Omega\subset\mathbb{R}^n$ with smooth mean-convex boundary admits a unique complete admissible vertical graph with prescribed curvature $\sigma$ and asymptotic boundary $\partial\Omega\times\{0\}$. The result extends the known cases $(n,p)=(3,2)$ and $(4,3)$ to the stated range. The key curvature estimate is uniform with respect to the positive boundary height in the approximating Dirichlet problems. The proof establishes two lower bounds for the full third-derivative quadratic form under the linearized constraints: a sharp universal bound with coefficient $2/p$ and a stronger direction-dependent bound when the relevant principal curvature lies in a specified range.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确致谢 AI 工具，声明全部数学陈述和证明由作者独立核验；原文没有细分 AI 用途，故不推断其参与证明或核心想法。
 
+来源：https://arxiv.org/pdf/2609.34751v1 · 第 20 页 Acknowledgements
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确致谢 AI 工具，声明全部数学陈述和证明由作者独立核验；原文没有细分 AI 用途，故不推断其参与证明或核心想法。
+
+来源：https://arxiv.org/pdf/2609.34751v1
 
 [arXiv](https://arxiv.org/abs/2609.34751)
 
@@ -794,9 +890,11 @@ Dong Gao、Yong Luo、Hui Ma、Jiabin Yin
 
 We classify smoothly immersed Lagrangian $n$-balls, $n\geq 2$, in the unit ball of $\mathbb{C}^n$ with conformal Maslov form and Legendrian capillary boundary. The image of every such immersion is either an equatorial Lagrangian disk or is contained in a Whitney sphere centered at the origin. In dimension two, this confirms a conjecture of Li, Wang and Weng [Sci. China Math. 2021].
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.34787v1
 
 [arXiv](https://arxiv.org/abs/2609.34787)
 
@@ -864,9 +962,11 @@ Carlos Alberto Ochoa Flores
 
 A major problem in geometric analysis is to understand the behaviour of the Lagrangian mean curvature flow. This has proved to be a challenging problem, in particular, not many explicit examples of flows that exist for all time and converge to a minimal Lagrangian are known. In this paper we construct new examples of Lagrangian mean curvature flows in the Kummer K3 surface that converge to special Lagrangian spheres. We reduce the construction to a scalar perturbation problem that can be solved by a fixed point argument.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.34923v1
 
 [arXiv](https://arxiv.org/abs/2609.34923)
 
@@ -878,9 +978,13 @@ Guofang Wang、Mingwei Zhang
 
 We resolve an open problem posed by Frank--Loss. Let $n\ge 3$ and let $\varphi\in L^p(\mathbb{S}^n)$, with $\frac{n}{n-1}<p<\infty$, be a nontrivial Dirac zero mode on $\mathbb{S}^n$, i.e. a nonzero spinor satisfying \begin{equation*} D\varphi = iA\cdot\varphi, \end{equation*} where $D$ is the Dirac operator and $A$ is a vector field with $\mathrm{d} A^\flat\in L^{n/2}$. We prove the sharp lower bound \begin{equation*} \|\mathrm{d} A^\flat\|_{\frac{n}{2}} \ge 2\left[\frac{n}{2}\right]^{-\frac12}\frac{n-1}{n-2}S_n = \left[\frac{n}{2}\right]^{-\frac12}\frac{n(n-1)}{2}\omega_n^{\frac{2}{n}}. \end{equation*} Equality is attainable if and only if $n$ is odd; in that case, modulo conformal and gauge transformations, $\varphi$ is a Killing spinor and $A$ is a real multiple of the Reeb field associated with $\varphi$. The case $n=3$ was proved in our recent paper using a different method. In the paper we divide the remaining cases into 3 cases: i) $n\ge 5$ is odd, ii) $n\ge 5$ is even and iii) $n=4$. All these cases need to use different methods. For $n\ge 5$, the argument crucially reduces to an improved Sobolev inequality on $\mathbb{S}^n$ under a barycenter constraint. Specifically, for $u\in W^{1,2}(\mathbb{S}^n)$ we consider \begin{equation*} \mathfrak{a}_n := \inf\Bigg\{ \frac{ \int \Big(|\nabla u|^2 + \frac{n(n-2)}{4}u^2\Big) - \frac{n(n-2)}{4}\omega_n^{\frac{2}{n}}\|u\|_{\frac{2n}{n-2}}^2 }{ \omega_n^{\frac{2}{n}}\|u\|_{\frac{2n}{n-2}}^2 - \int u^2 } \,\Bigg|\, \int x|u|^{\frac{2n}{n-2}}=0,\ \omega_n^{\frac{2}{n}}\|u\|_{\frac{2n}{n-2}}^2 - \int u^2>0 \Bigg\}, \end{equation*} and we obtain the following universal estimate \begin{equation*} \mathfrak{a}_n > \frac{n(n-2)}{4(n^2-3n+1)}, \end{equation*} which is enough for our aim. Determining the exact value of $\mathfrak{a}_n$ remains open.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确说明 ChatGPT 在第 8.4 节建议把 Q 分为公式 (8.52) 的两项并分别估计；作者核验论证并简化估计。披露指向局部证明策略，未说主要问题由 AI 提出。
 
+来源：https://arxiv.org/pdf/2609.34958v1 · 第 48 页 Acknowledgements；第 8.4 节
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明 ChatGPT 在第 8.4 节建议把 Q 分为公式 (8.52) 的两项并分别估计；作者核验论证并简化估计。披露指向局部证明策略，未说主要问题由 AI 提出。
+
+来源：https://arxiv.org/pdf/2609.34958v1
 
 [arXiv](https://arxiv.org/abs/2609.34958)
 
@@ -892,9 +996,13 @@ Nicolas Grunder
 
 We build a Floer theory on the space of braids of periodic orbits of a Hamiltonian flow on a closed symplectic surface. The differential and continuation maps are defined by counting Floer isotopies of braids: tuples of Floer cylinders with pairwise disjoint graphs. With this new perspective, we prove a quantitative braid stability result that shows the persistence of braids under possibly large Hamiltonian perturbations. As an application, we show that for every $\alpha\geq 0$ there is a sequence of Hamiltonian diffeomorphisms $\phi_k$ on the two-torus $T^2$ such that $$d_H(\operatorname{Ent}_{\leq \alpha}(T^2,\omega),\phi_k)\to \infty \quad (k \to \infty),$$ where $\text{Ent}_{\leq \alpha}(T^2,\omega)\subset \text{Ham}(T^2,\omega)$ denotes the set of Hamiltonian diffeomorphisms with topological entropy at most $\alpha$ and $d_H$ the Hofer metric. We prove this result by studying only contractible periodic orbits, whereas analogous higher-genus statements were previously obtained using non-contractible orbits.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者仅披露使用 Claude 查找排字错误及核验第 5.3 节计算。
 
+来源：https://arxiv.org/pdf/2609.34961v1 · 第 8 页 AI Acknowledgment
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者仅披露使用 Claude 查找排字错误及核验第 5.3 节计算。
+
+来源：https://arxiv.org/pdf/2609.34961v1
 
 [arXiv](https://arxiv.org/abs/2609.34961)
 
@@ -948,9 +1056,11 @@ Nikolas Adaloglou、Johannes Hauber
 
 The Katok examples on $S^2$ are induced by Randers metrics obtained by perturbing the round metric by the standard rotational Killing field: allowing a scaling factor of the round metric gives a two-parameter family of Randers metrics $F_{\alpha,\beta}$, parametrised by positive real numbers $(\alpha,\beta)$. We compute the set of all $(\alpha,\beta)\in (0,2+\sqrt{3})^2$ for which $D^*(S^2,F^*_{\alpha,\beta})$, the unit codisc bundle with respect to $F^*_{\alpha,\beta}$, symplectically embeds into the round codisc bundle $D^*S^2$. This set has the structure of an infinite staircase. We also establish a dictionary between embeddings of these codisc bundles, singular $A_1$-ellipsoid embeddings, and $\mathbb{Z} _2$-equivariant ellipsoid embeddings, showing that these embedding problems are equivalent. Furthermore, we prove the analogous results for the $\mathbb{R} P^2$ case and discuss a broader family of examples for which this dictionary applies.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.35209v1
 
 [arXiv](https://arxiv.org/abs/2609.35209)
 
@@ -962,9 +1072,13 @@ Hongyi Sheng、Weimin Sheng、Jiazhuo Yang
 
 Let k be an integer from 1 to n, let f be a positive smooth function on the unit sphere, and consider the normalized flow X_t = -f({nu})|X|^{alpha} sigma_k({kappa}) {nu} + beta X, beta = C_n^k. In the supercritical range alpha > k+1, we prove the flow exists for all time and converges exponentially in C^{infty}, from every smooth strictly convex initial hypersurface enclosing the origin, to the unique smooth strictly convex solution of f(x)r^{alpha} sigma_k({kappa}) = beta u. The convergence is driven by the relative residual p = (log u)_t = beta - f(x)r^{alpha} {sigma}_k({kappa})/u, whose L^{infty} norm is nonincreasing and decays with the explicit exponent beta(alpha-k-1); the residual estimates are proved before, and independently of, the curvature estimates. Existence of a strictly convex solution of the stationary equation in this range, for arbitrary positive angular data, was previously obtained by Bryan-Ivaki-Scheuer through an expanding-type flow started from a barrier; the contribution here is the convergence of the normalized contracting flow from arbitrary initial data, with an explicit exponential rate, together with uniqueness of the limit.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。
 
+来源：https://arxiv.org/pdf/2609.35241v1 · 第 25–26 页 AI usage
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。
+
+来源：https://arxiv.org/pdf/2609.35241v1
 
 [arXiv](https://arxiv.org/abs/2609.35241)
 
@@ -976,9 +1090,13 @@ Tianzhi Hu
 
 We study a conjecture of Qiongling Li concerning the pointwise monotonicity of the energy density along the $\mathbb C^*$-flow of stable $\mathrm{SL}(n,\mathbb C)$ Higgs bundles. We prove that the conjecture holds in rank two: for every stable $\mathrm{SL}(2,\mathbb C)$ Higgs bundle, the energy density is pointwise nondecreasing along the $\mathbb C^*$-orbit. In contrast, we show that this phenomenon is genuinely rank-dependent. For every rank $n\geq 3$, we construct stable $\mathrm{SL}(n,\mathbb C)$ Higgs bundles for which the energy density fails to be monotone along the $\mathbb C^*$-flow.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于计算、中间结果的证明以及文字润色，并声明数学陈述已独立检查。
 
+来源：https://arxiv.org/pdf/2609.35278v1 · 第 3 页 AI Declaration
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于计算、中间结果的证明以及文字润色，并声明数学陈述已独立检查。
+
+来源：https://arxiv.org/pdf/2609.35278v1
 
 [arXiv](https://arxiv.org/abs/2609.35278)
 
@@ -1102,8 +1220,12 @@ Jacob Krantz
 
 Let $M$ be a compact Riemannian manifold, and let $G$ be a compact Lie group with bi-invariant metric. We show that the singular set of any stable stationary harmonic map $u : M \to G$ has Hausdorff codimension at least four. This is sharp.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。
 
+来源：https://arxiv.org/pdf/2609.35731v1 · 第 3 页 AI Acknowledgement
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 协助证明原先无法排除的第二变分正贡献消失（第 8 节），辅助改进作者自己撰写的表达，并指出论证可推广到不连通紧 Lie 群；原前作由作者不用 AI 完成。
+
+来源：https://arxiv.org/pdf/2609.35731v1
 
 [arXiv](https://arxiv.org/abs/2609.35731)

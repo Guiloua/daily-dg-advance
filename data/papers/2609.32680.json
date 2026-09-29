@@ -23,6 +23,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-29T06:32:36.035238+00:00",
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.32680v1",
+        "observedAt": "2026-09-29T06:47:00.530628+00:00",
+        "contentHash": "00ba734c5c459544426dd505ea921f0b7c8149f0a484ff363af8c88934f4e411"
       }
     ],
     "analysis": {
@@ -30,16 +35,32 @@
       "progressType": "异质球面正曲率构造",
       "workSummary": "作者对 Eells–Kuiper 不变量属于 Z/992 偶子群的同伦十一球族构造背景度量及三个非等距圆作用，使逆度量加上三个生成向量的平方后具有正截面曲率。",
       "techniques": [
-        "四元数 Hopf 丛",
-        "逆度量平滑",
-        "圆作用"
+        "逆度量秩一更新",
+        "Hopf 丛连接",
+        "边界平滑",
+        "非 Killing 圆作用"
       ],
       "breakthrough": "宣称以非等距圆作用在整族十一球面上得到显式正曲率下界。",
-      "limitations": "重大构造须检查局部拼接及曲率估计；下界依赖族成员连接范数。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "重大构造须检查局部拼接及曲率估计；下界依赖族成员连接范数。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 及逆度量公式的代数验证：三个圆作用项可交换相加，但每个阶段的非 Killing 性需独立验证；正定性只证明度量存在，不能替代正曲率与光滑边界拼接的检查。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.32680v1 · 第 24 页 Acknowledgment",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:47:00.530628+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.32680v1",
+        "contentHash": "00ba734c5c459544426dd505ea921f0b7c8149f0a484ff363af8c88934f4e411",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3ed319e3049c6d234784fa259cd7caa4ece365afd94c5e53fb4d3cefbdcfa95c"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration"
+      ],
       "priorityScore": 82,
       "priorityReason": "涉及异质球面正曲率的核心难题，应重点审读关键估计。"
     },
@@ -72,6 +93,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-29T06:32:36.035238+00:00",
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.32680v1",
+            "observedAt": "2026-09-29T06:47:00.530628+00:00",
+            "contentHash": "00ba734c5c459544426dd505ea921f0b7c8149f0a484ff363af8c88934f4e411"
           }
         ],
         "analysis": {
@@ -79,16 +105,32 @@
           "progressType": "异质球面正曲率构造",
           "workSummary": "作者对 Eells–Kuiper 不变量属于 Z/992 偶子群的同伦十一球族构造背景度量及三个非等距圆作用，使逆度量加上三个生成向量的平方后具有正截面曲率。",
           "techniques": [
-            "四元数 Hopf 丛",
-            "逆度量平滑",
-            "圆作用"
+            "逆度量秩一更新",
+            "Hopf 丛连接",
+            "边界平滑",
+            "非 Killing 圆作用"
           ],
           "breakthrough": "宣称以非等距圆作用在整族十一球面上得到显式正曲率下界。",
-          "limitations": "重大构造须检查局部拼接及曲率估计；下界依赖族成员连接范数。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "重大构造须检查局部拼接及曲率估计；下界依赖族成员连接范数。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 及逆度量公式的代数验证：三个圆作用项可交换相加，但每个阶段的非 Killing 性需独立验证；正定性只证明度量存在，不能替代正曲率与光滑边界拼接的检查。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.32680v1 · 第 24 页 Acknowledgment",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:47:00.530628+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.32680v1",
+            "contentHash": "00ba734c5c459544426dd505ea921f0b7c8149f0a484ff363af8c88934f4e411",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者致谢 ChatGPT 6 Astra 协助探索部分证明策略及计算，并声明人工核验与表述由作者负责；该段未明确把核心构造想法归于 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3ed319e3049c6d234784fa259cd7caa4ece365afd94c5e53fb4d3cefbdcfa95c"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration"
+          ],
           "priorityScore": 82,
           "priorityReason": "涉及异质球面正曲率的核心难题，应重点审读关键估计。"
         },

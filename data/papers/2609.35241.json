@@ -25,6 +25,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-29T06:32:36.035238+00:00",
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.35241v1",
+        "observedAt": "2026-09-29T06:48:22.595806+00:00",
+        "contentHash": "40861feab0501e7976742dc19d5d059186d306aa63a57b240c02992d96a2fa40"
       }
     ],
     "analysis": {
@@ -32,16 +37,33 @@
       "progressType": "超临界曲率流的任意初值收敛",
       "workSummary": "对 α>k+1 的归一化收缩 dual k-Minkowski 流及任意正光滑角数据，从包原点的严格凸初始超曲面证明全时存在并 C∞ 指数收敛至唯一稳态。",
       "techniques": [
-        "相对残差",
-        "先验曲率界",
-        "归一化曲率流"
+        "半径 ODE 比较",
+        "相对残差阻尼",
+        "严格凸曲率界",
+        "超临界指数收敛"
       ],
       "breakthrough": "残差估计先于曲率估计，得到显式 β(α−k−1) 衰减指数。",
-      "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 和径向先验界证明：半径极值与标量 ODE 比较给 C0 控制，α−k−1 为正是阻尼来源；残差衰减指数为 β(α−k−1)，临界球面例有连续稳态或漂移。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.35241v1 · 第 25–26 页 AI usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:48:22.595806+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.35241v1",
+        "contentHash": "40861feab0501e7976742dc19d5d059186d306aa63a57b240c02992d96a2fa40",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4f5bf69fce866519290a45f0f8de8397f766e573146333e585489a2f8fec23ab"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification"
+      ],
       "priorityScore": 79,
       "priorityReason": "为处方曲率流提供数据依赖明确的动态解法。"
     },
@@ -76,6 +98,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-29T06:32:36.035238+00:00",
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.35241v1",
+            "observedAt": "2026-09-29T06:48:22.595806+00:00",
+            "contentHash": "40861feab0501e7976742dc19d5d059186d306aa63a57b240c02992d96a2fa40"
           }
         ],
         "analysis": {
@@ -83,16 +110,33 @@
           "progressType": "超临界曲率流的任意初值收敛",
           "workSummary": "对 α>k+1 的归一化收缩 dual k-Minkowski 流及任意正光滑角数据，从包原点的严格凸初始超曲面证明全时存在并 C∞ 指数收敛至唯一稳态。",
           "techniques": [
-            "相对残差",
-            "先验曲率界",
-            "归一化曲率流"
+            "半径 ODE 比较",
+            "相对残差阻尼",
+            "严格凸曲率界",
+            "超临界指数收敛"
           ],
           "breakthrough": "残差估计先于曲率估计，得到显式 β(α−k−1) 衰减指数。",
-          "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读定理 1.1 和径向先验界证明：半径极值与标量 ODE 比较给 C0 控制，α−k−1 为正是阻尼来源；残差衰减指数为 β(α−k−1)，临界球面例有连续稳态或漂移。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.35241v1 · 第 25–26 页 AI usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:48:22.595806+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.35241v1",
+            "contentHash": "40861feab0501e7976742dc19d5d059186d306aa63a57b240c02992d96a2fa40",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 KIMI K3 协助常规计算和识别论证中的潜在问题，AI 还找到两篇相关文献；全部推导和证明由作者充分核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4f5bf69fce866519290a45f0f8de8397f766e573146333e585489a2f8fec23ab"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification"
+          ],
           "priorityScore": 79,
           "priorityReason": "为处方曲率流提供数据依赖明确的动态解法。"
         },

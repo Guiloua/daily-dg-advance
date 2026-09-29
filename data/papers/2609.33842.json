@@ -24,6 +24,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-29T06:32:36.035238+00:00",
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.33842v1",
+        "observedAt": "2026-09-29T06:48:46.601314+00:00",
+        "contentHash": "7902d44962b277400db895a152adb9a8f4ef597ed0148fdea151454e4b68b053"
       }
     ],
     "analysis": {
@@ -31,16 +36,28 @@
       "progressType": "几何证明形式化声明",
       "workSummary": "作者宣称在 Lean 中形式化平滑三维 Poincaré 猜想及 Moise 光滑化定理，经 Ricci 流手术和有限时消失得到拓扑版本。",
       "techniques": [
-        "Lean 形式化",
-        "Ricci 流手术",
-        "有限时消失"
+        "手术宽度",
+        "Dini 导数",
+        "积分因子",
+        "固定版本 Lean 产物"
       ],
       "breakthrough": "目标是把 Hamilton–Perelman 路线接入可机器检查的证明体系。",
-      "limitations": "须检查代码可复现性、axioms 与未形式化依赖；使用 Lean 本身不是 AI 协作披露。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
+      "limitations": "须检查代码可复现性、axioms 与未形式化依赖；使用 Lean 本身不是 AI 协作披露。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读第 2 节宽度和手术消失概要及第 3 节版本固定的验证入口：以 Dini 导数、手术跳跃不增和积分因子得到统一消失阈值；本次未下载或执行 Lean 产物，不能认定依赖公理审计完成。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:48:46.601314+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.33842v1",
+        "contentHash": "7902d44962b277400db895a152adb9a8f4ef597ed0148fdea151454e4b68b053",
+        "pages": 6,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。关键词命中来自参考文献列出的 Tau Ceti 上游项目贡献者 Codex，与本论文当前作者使用 AI 的披露不同；全文检索未见本论文明确协作声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ac81ac57145bbcd7dee823598802426c640a3432fafac3e8f05aab493fcdf9e3"
+      },
       "priorityScore": 78,
       "priorityReason": "大型几何分析形式化的依赖结构值得重点检查。"
     },
@@ -74,6 +91,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-29T06:32:36.035238+00:00",
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.33842v1",
+            "observedAt": "2026-09-29T06:48:46.601314+00:00",
+            "contentHash": "7902d44962b277400db895a152adb9a8f4ef597ed0148fdea151454e4b68b053"
           }
         ],
         "analysis": {
@@ -81,16 +103,28 @@
           "progressType": "几何证明形式化声明",
           "workSummary": "作者宣称在 Lean 中形式化平滑三维 Poincaré 猜想及 Moise 光滑化定理，经 Ricci 流手术和有限时消失得到拓扑版本。",
           "techniques": [
-            "Lean 形式化",
-            "Ricci 流手术",
-            "有限时消失"
+            "手术宽度",
+            "Dini 导数",
+            "积分因子",
+            "固定版本 Lean 产物"
           ],
           "breakthrough": "目标是把 Hamilton–Perelman 路线接入可机器检查的证明体系。",
-          "limitations": "须检查代码可复现性、axioms 与未形式化依赖；使用 Lean 本身不是 AI 协作披露。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
+          "limitations": "须检查代码可复现性、axioms 与未形式化依赖；使用 Lean 本身不是 AI 协作披露。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读第 2 节宽度和手术消失概要及第 3 节版本固定的验证入口：以 Dini 导数、手术跳跃不增和积分因子得到统一消失阈值；本次未下载或执行 Lean 产物，不能认定依赖公理审计完成。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:48:46.601314+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.33842v1",
+            "contentHash": "7902d44962b277400db895a152adb9a8f4ef597ed0148fdea151454e4b68b053",
+            "pages": 6,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。关键词命中来自参考文献列出的 Tau Ceti 上游项目贡献者 Codex，与本论文当前作者使用 AI 的披露不同；全文检索未见本论文明确协作声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ac81ac57145bbcd7dee823598802426c640a3432fafac3e8f05aab493fcdf9e3"
+          },
           "priorityScore": 78,
           "priorityReason": "大型几何分析形式化的依赖结构值得重点检查。"
         },

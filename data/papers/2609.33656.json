@@ -24,6 +24,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-09-29T06:32:36.035238+00:00",
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.33656v1",
+        "observedAt": "2026-09-29T06:48:34.324355+00:00",
+        "contentHash": "3a659d32787cc19b3c5ed557f9c4998fa5c1321297a9b147b6266bb97529547c"
       }
     ],
     "analysis": {
@@ -31,16 +36,32 @@
       "progressType": "RC 正性与反例",
       "workSummary": "证明非平坦 Ricci-flat Kähler 紧复曲面的切丛可赋 RC 正 Hermitian 度量，并推出 RC 正性不由张量、外幂、对称幂保持，也不迫使底流形有理连通。",
       "techniques": [
-        "反自对偶 Weyl 算子",
+        "RC 正性判据",
+        "共形丛度量扰动",
         "Weitzenböck 公式",
-        "共形扰动"
+        "反自对偶 Weyl 部分"
       ],
       "breakthrough": "严格区分 RC 正性、统一 RC 正性及有理连通性。",
-      "limitations": "RC 正的是所构造丛度量，而非原 Ricci-flat 度量的 Ricci 正性。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "limitations": "RC 正的是所构造丛度量，而非原 Ricci-flat 度量的 Ricci 正性。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读 RC 正性引理及共形扰动入口：在非负平均曲率下，相关 (1,1) 形式非零即给 RC 正性；先在开集正，再用全局共形改变推广，明确是丛度量性质。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.33656v1 · 第 4 页致谢",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-29T06:48:34.324355+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.33656v1",
+        "contentHash": "3a659d32787cc19b3c5ed557f9c4998fa5c1321297a9b147b6266bb97529547c",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a322b18e86e9a7fb26c0485ee7c219dd1901172adaf45d3ccd3a7118409a516a"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas"
+      ],
       "priorityScore": 78,
       "priorityReason": "厘清复曲率正性条件之间易混淆的蕴含关系。"
     },
@@ -74,6 +95,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-09-29T06:32:36.035238+00:00",
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.33656v1",
+            "observedAt": "2026-09-29T06:48:34.324355+00:00",
+            "contentHash": "3a659d32787cc19b3c5ed557f9c4998fa5c1321297a9b147b6266bb97529547c"
           }
         ],
         "analysis": {
@@ -81,16 +107,32 @@
           "progressType": "RC 正性与反例",
           "workSummary": "证明非平坦 Ricci-flat Kähler 紧复曲面的切丛可赋 RC 正 Hermitian 度量，并推出 RC 正性不由张量、外幂、对称幂保持，也不迫使底流形有理连通。",
           "techniques": [
-            "反自对偶 Weyl 算子",
+            "RC 正性判据",
+            "共形丛度量扰动",
             "Weitzenböck 公式",
-            "共形扰动"
+            "反自对偶 Weyl 部分"
           ],
           "breakthrough": "严格区分 RC 正性、统一 RC 正性及有理连通性。",
-          "limitations": "RC 正的是所构造丛度量，而非原 Ricci-flat 度量的 Ricci 正性。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "limitations": "RC 正的是所构造丛度量，而非原 Ricci-flat 度量的 Ricci 正性。 已补读主结果和方法片段，未独立验证整篇证明；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。 已读 RC 正性引理及共形扰动入口：在非负平均曲率下，相关 (1,1) 形式非零即给 RC 正性；先在开集正，再用全局共形改变推广，明确是丛度量性质。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.33656v1 · 第 4 页致谢",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-29T06:48:34.324355+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.33656v1",
+            "contentHash": "3a659d32787cc19b3c5ed557f9c4998fa5c1321297a9b147b6266bb97529547c",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确表示与 ChatGPT 5.6 Sol 的讨论帮助建立四维几何与 RC 正性之间的关键联系；披露点为研究联系与讨论，未声称全部证明由模型完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a322b18e86e9a7fb26c0485ee7c219dd1901172adaf45d3ccd3a7118409a516a"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas"
+          ],
           "priorityScore": 78,
           "priorityReason": "厘清复曲率正性条件之间易混淆的蕴含关系。"
         },
