@@ -27,8 +27,28 @@
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "超临界曲率流的任意初值收敛",
+      "workSummary": "对 α>k+1 的归一化收缩 dual k-Minkowski 流及任意正光滑角数据，从包原点的严格凸初始超曲面证明全时存在并 C∞ 指数收敛至唯一稳态。",
+      "techniques": [
+        "相对残差",
+        "先验曲率界",
+        "归一化曲率流"
+      ],
+      "breakthrough": "残差估计先于曲率估计，得到显式 β(α−k−1) 衰减指数。",
+      "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 79,
+      "priorityReason": "为处方曲率流提供数据依赖明确的动态解法。"
+    },
+    "analysisBasis": {
+      "abstract": "Let k be an integer from 1 to n, let f be a positive smooth function on the unit sphere, and consider the normalized flow X_t = -f({nu})|X|^{alpha} sigma_k({kappa}) {nu} + beta X, beta = C_n^k. In the supercritical range alpha > k+1, we prove the flow exists for all time and converges exponentially in C^{infty}, from every smooth strictly convex initial hypersurface enclosing the origin, to the unique smooth strictly convex solution of f(x)r^{alpha} sigma_k({kappa}) = beta u. The convergence is driven by the relative residual p = (log u)_t = beta - f(x)r^{alpha} {sigma}_k({kappa})/u, whose L^{infty} norm is nonincreasing and decays with the explicit exponent beta(alpha-k-1); the residual estimates are proved before, and independently of, the curvature estimates. Existence of a strictly convex solution of the stationary equation in this range, for arbitrary positive angular data, was previously obtained by Bryan-Ivaki-Scheuer through an expanding-type flow started from a barrier; the contribution here is the convergence of the normalized contracting flow from arbitrary initial data, with an explicit exponential rate, together with uniqueness of the limit.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +78,28 @@
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "超临界曲率流的任意初值收敛",
+          "workSummary": "对 α>k+1 的归一化收缩 dual k-Minkowski 流及任意正光滑角数据，从包原点的严格凸初始超曲面证明全时存在并 C∞ 指数收敛至唯一稳态。",
+          "techniques": [
+            "相对残差",
+            "先验曲率界",
+            "归一化曲率流"
+          ],
+          "breakthrough": "残差估计先于曲率估计，得到显式 β(α−k−1) 衰减指数。",
+          "limitations": "只覆盖超临界范围；稳态存在已有前作，新增是任意初值的收缩流收敛及速率。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 79,
+          "priorityReason": "为处方曲率流提供数据依赖明确的动态解法。"
+        },
+        "analysisBasis": {
+          "abstract": "Let k be an integer from 1 to n, let f be a positive smooth function on the unit sphere, and consider the normalized flow X_t = -f({nu})|X|^{alpha} sigma_k({kappa}) {nu} + beta X, beta = C_n^k. In the supercritical range alpha > k+1, we prove the flow exists for all time and converges exponentially in C^{infty}, from every smooth strictly convex initial hypersurface enclosing the origin, to the unique smooth strictly convex solution of f(x)r^{alpha} sigma_k({kappa}) = beta u. The convergence is driven by the relative residual p = (log u)_t = beta - f(x)r^{alpha} {sigma}_k({kappa})/u, whose L^{infty} norm is nonincreasing and decays with the explicit exponent beta(alpha-k-1); the residual estimates are proved before, and independently of, the curvature estimates. Existence of a strictly convex solution of the stationary equation in this range, for arbitrary positive angular data, was previously obtained by Bryan-Ivaki-Scheuer through an expanding-type flow started from a barrier; the contribution here is the convergence of the normalized contracting flow from arbitrary initial data, with an explicit exponential rate, together with uniqueness of the limit.",
+          "version": 1
+        }
       }
     }
   ]

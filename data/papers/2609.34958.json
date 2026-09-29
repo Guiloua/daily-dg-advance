@@ -27,8 +27,28 @@
         "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "Dirac 零模的锐阈值",
+      "workSummary": "对球面上的非平凡 Dirac 零模及 dA 属于 Ln/2 的磁场，给出锐下界；仅奇维可取等，模共形/gauge 后等号为 Killing 旋量与 Reeb 场倍数。",
+      "techniques": [
+        "Dirac 方程",
+        "重心约束 Sobolev 改进",
+        "共形与 gauge 变换"
+      ],
+      "breakthrough": "解决 Frank–Loss 问题，并厘清奇偶维等号差异。",
+      "limitations": "改进 Sobolev 常数的精确值仍开放；各维证明方法不同。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 85,
+      "priorityReason": "连接旋量、谱几何与锐函数不等式。"
+    },
+    "analysisBasis": {
+      "abstract": "We resolve an open problem posed by Frank--Loss. Let $n\\ge 3$ and let $\\varphi\\in L^p(\\mathbb{S}^n)$, with $\\frac{n}{n-1}<p<\\infty$, be a nontrivial Dirac zero mode on $\\mathbb{S}^n$, i.e. a nonzero spinor satisfying \\begin{equation*} D\\varphi = iA\\cdot\\varphi, \\end{equation*} where $D$ is the Dirac operator and $A$ is a vector field with $\\mathrm{d} A^\\flat\\in L^{n/2}$. We prove the sharp lower bound \\begin{equation*} \\|\\mathrm{d} A^\\flat\\|_{\\frac{n}{2}} \\ge 2\\left[\\frac{n}{2}\\right]^{-\\frac12}\\frac{n-1}{n-2}S_n = \\left[\\frac{n}{2}\\right]^{-\\frac12}\\frac{n(n-1)}{2}\\omega_n^{\\frac{2}{n}}. \\end{equation*} Equality is attainable if and only if $n$ is odd; in that case, modulo conformal and gauge transformations, $\\varphi$ is a Killing spinor and $A$ is a real multiple of the Reeb field associated with $\\varphi$. The case $n=3$ was proved in our recent paper using a different method. In the paper we divide the remaining cases into 3 cases: i) $n\\ge 5$ is odd, ii) $n\\ge 5$ is even and iii) $n=4$. All these cases need to use different methods. For $n\\ge 5$, the argument crucially reduces to an improved Sobolev inequality on $\\mathbb{S}^n$ under a barycenter constraint. Specifically, for $u\\in W^{1,2}(\\mathbb{S}^n)$ we consider \\begin{equation*} \\mathfrak{a}_n := \\inf\\Bigg\\{ \\frac{ \\int \\Big(|\\nabla u|^2 + \\frac{n(n-2)}{4}u^2\\Big) - \\frac{n(n-2)}{4}\\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 }{ \\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 - \\int u^2 } \\,\\Bigg|\\, \\int x|u|^{\\frac{2n}{n-2}}=0,\\ \\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 - \\int u^2>0 \\Bigg\\}, \\end{equation*} and we obtain the following universal estimate \\begin{equation*} \\mathfrak{a}_n > \\frac{n(n-2)}{4(n^2-3n+1)}, \\end{equation*} which is enough for our aim. Determining the exact value of $\\mathfrak{a}_n$ remains open.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +78,28 @@
             "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "Dirac 零模的锐阈值",
+          "workSummary": "对球面上的非平凡 Dirac 零模及 dA 属于 Ln/2 的磁场，给出锐下界；仅奇维可取等，模共形/gauge 后等号为 Killing 旋量与 Reeb 场倍数。",
+          "techniques": [
+            "Dirac 方程",
+            "重心约束 Sobolev 改进",
+            "共形与 gauge 变换"
+          ],
+          "breakthrough": "解决 Frank–Loss 问题，并厘清奇偶维等号差异。",
+          "limitations": "改进 Sobolev 常数的精确值仍开放；各维证明方法不同。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 85,
+          "priorityReason": "连接旋量、谱几何与锐函数不等式。"
+        },
+        "analysisBasis": {
+          "abstract": "We resolve an open problem posed by Frank--Loss. Let $n\\ge 3$ and let $\\varphi\\in L^p(\\mathbb{S}^n)$, with $\\frac{n}{n-1}<p<\\infty$, be a nontrivial Dirac zero mode on $\\mathbb{S}^n$, i.e. a nonzero spinor satisfying \\begin{equation*} D\\varphi = iA\\cdot\\varphi, \\end{equation*} where $D$ is the Dirac operator and $A$ is a vector field with $\\mathrm{d} A^\\flat\\in L^{n/2}$. We prove the sharp lower bound \\begin{equation*} \\|\\mathrm{d} A^\\flat\\|_{\\frac{n}{2}} \\ge 2\\left[\\frac{n}{2}\\right]^{-\\frac12}\\frac{n-1}{n-2}S_n = \\left[\\frac{n}{2}\\right]^{-\\frac12}\\frac{n(n-1)}{2}\\omega_n^{\\frac{2}{n}}. \\end{equation*} Equality is attainable if and only if $n$ is odd; in that case, modulo conformal and gauge transformations, $\\varphi$ is a Killing spinor and $A$ is a real multiple of the Reeb field associated with $\\varphi$. The case $n=3$ was proved in our recent paper using a different method. In the paper we divide the remaining cases into 3 cases: i) $n\\ge 5$ is odd, ii) $n\\ge 5$ is even and iii) $n=4$. All these cases need to use different methods. For $n\\ge 5$, the argument crucially reduces to an improved Sobolev inequality on $\\mathbb{S}^n$ under a barycenter constraint. Specifically, for $u\\in W^{1,2}(\\mathbb{S}^n)$ we consider \\begin{equation*} \\mathfrak{a}_n := \\inf\\Bigg\\{ \\frac{ \\int \\Big(|\\nabla u|^2 + \\frac{n(n-2)}{4}u^2\\Big) - \\frac{n(n-2)}{4}\\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 }{ \\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 - \\int u^2 } \\,\\Bigg|\\, \\int x|u|^{\\frac{2n}{n-2}}=0,\\ \\omega_n^{\\frac{2}{n}}\\|u\\|_{\\frac{2n}{n-2}}^2 - \\int u^2>0 \\Bigg\\}, \\end{equation*} and we obtain the following universal estimate \\begin{equation*} \\mathfrak{a}_n > \\frac{n(n-2)}{4(n^2-3n+1)}, \\end{equation*} which is enough for our aim. Determining the exact value of $\\mathfrak{a}_n$ remains open.",
+          "version": 1
+        }
       }
     }
   ]

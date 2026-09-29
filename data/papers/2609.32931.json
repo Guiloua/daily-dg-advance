@@ -25,8 +25,28 @@
         "contentHash": "81b7608c34283640fcc450cc086f9b68437179554d12fc3c1e36ebf5691a56b7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "普适覆盖的逃逸对偶",
+      "workSummary": "以凸平面森林中不能经刚体移动藏入内部的闭路径最小直径 D(F)，重写 Lebesgue 普适覆盖常数为面积/D(F)平方的下确界，并设计有误差认证的离散优化。",
+      "techniques": [
+        "覆盖—逃逸对偶",
+        "配置空间网",
+        "混合整数二阶锥"
+      ],
+      "breakthrough": "把全配置覆盖问题变为可收敛认证的路径优化。",
+      "limitations": "提供等价与界的计算框架，未给出普适覆盖常数的精确数值。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 68,
+      "priorityReason": "连接经典凸几何极值问题与优化认证。"
+    },
+    "analysisBasis": {
+      "abstract": "Lebesgue's universal covering problem asks for the minimum area convex planar region capable of containing a congruent copy of every planar set of diameter at most one. In this paper, we develop an exact dual formulation of this problem through a minimum diameter analogue of Bellman's lost-in-a-forest problem. For a compact convex forest $F$, we define the critical escape diameter $D(F)$ as the minimum diameter of a closed path whose trace cannot be placed, under any rigid motion, entirely in the interior of $F$. We prove attainment of this minimum and establish a diameter cover/escape duality showing that the normalized body $D(F)^{-1}F$ is a Lebesgue universal cover. Consequently, the Lebesgue universal covering constant admits the exact representation \\[ \\mathcal L=\\inf_F\\frac{\\operatorname{Area}(F)}{D(F)^2}, \\] where the infimum ranges over compact convex planar bodies with nonempty interior. By reversing the rigid motion, we further characterize escape as intersection of a fixed path with every oppositely transformed boundary of $F$, and derive equivalent continuous curve, convex body, and support function optimization formulations. To make the infinite dimensional problem computationally tractable while retaining rigorous control of approximation error, we discretize the compact configuration space by an $\\eta_m$-net and formulate the resulting problem as a minimum diameter traveling salesman problem with neighborhoods; for polygonal forests, an exact mixed-integer second-order cone formulation is obtained. We prove the quantitative certification, which yields convergent, rigorously certified universal cover bounds. The framework replaces finite tests of prescribed constant width shapes by a unified optimization over the full configuration space and extends naturally to other congruent and translative universal cover problems.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +74,28 @@
             "contentHash": "81b7608c34283640fcc450cc086f9b68437179554d12fc3c1e36ebf5691a56b7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "普适覆盖的逃逸对偶",
+          "workSummary": "以凸平面森林中不能经刚体移动藏入内部的闭路径最小直径 D(F)，重写 Lebesgue 普适覆盖常数为面积/D(F)平方的下确界，并设计有误差认证的离散优化。",
+          "techniques": [
+            "覆盖—逃逸对偶",
+            "配置空间网",
+            "混合整数二阶锥"
+          ],
+          "breakthrough": "把全配置覆盖问题变为可收敛认证的路径优化。",
+          "limitations": "提供等价与界的计算框架，未给出普适覆盖常数的精确数值。 当前为摘要级数学解读；AI 披露另行做独立全文核查，尚未核验的记录不代表未使用 AI。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 68,
+          "priorityReason": "连接经典凸几何极值问题与优化认证。"
+        },
+        "analysisBasis": {
+          "abstract": "Lebesgue's universal covering problem asks for the minimum area convex planar region capable of containing a congruent copy of every planar set of diameter at most one. In this paper, we develop an exact dual formulation of this problem through a minimum diameter analogue of Bellman's lost-in-a-forest problem. For a compact convex forest $F$, we define the critical escape diameter $D(F)$ as the minimum diameter of a closed path whose trace cannot be placed, under any rigid motion, entirely in the interior of $F$. We prove attainment of this minimum and establish a diameter cover/escape duality showing that the normalized body $D(F)^{-1}F$ is a Lebesgue universal cover. Consequently, the Lebesgue universal covering constant admits the exact representation \\[ \\mathcal L=\\inf_F\\frac{\\operatorname{Area}(F)}{D(F)^2}, \\] where the infimum ranges over compact convex planar bodies with nonempty interior. By reversing the rigid motion, we further characterize escape as intersection of a fixed path with every oppositely transformed boundary of $F$, and derive equivalent continuous curve, convex body, and support function optimization formulations. To make the infinite dimensional problem computationally tractable while retaining rigorous control of approximation error, we discretize the compact configuration space by an $\\eta_m$-net and formulate the resulting problem as a minimum diameter traveling salesman problem with neighborhoods; for polygonal forests, an exact mixed-integer second-order cone formulation is obtained. We prove the quantitative certification, which yields convergent, rigorously certified universal cover bounds. The framework replaces finite tests of prescribed constant width shapes by a unified optimization over the full configuration space and extends naturally to other congruent and translative universal cover problems.",
+          "version": 1
+        }
       }
     }
   ]
