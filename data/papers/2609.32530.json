@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2609.32530",
+  "slug": "2609.32530",
+  "latest": {
+    "arxivId": "2609.32530",
+    "metadata": {
+      "title": "Activation Flow: Manufacturing Activations for Steering",
+      "authors": [
+        "Hong Kiat Tan",
+        "Linh Le",
+        "David Williams-King"
+      ],
+      "abstract": "Difference-in-means steering requires activations recorded while a model shows the desired behavior, which a sandbagging model withholds by deliberately underperforming. We introduce Activation Flow (ActFlow), which manufactures these activations from $k$ correct labels without fine-tuning. ActFlow sets target logits that rank each labeled item's correct answer first, and moves the logits toward them by adding one vector $x$ to all $k$ residual streams at one layer. ActFlow is a family of ordinary differential equations for $x$, one for each rule that maps the required logit change to the velocity of $x$. The smallest-norm rule lands exactly on the targets, while the others keep only the top singular directions of the Jacobian. We test ActFlow on three instruction-tuned models, each locked by a sandbagging prompt and by a password-locked LoRA. At $k=40$, ActFlow keeping five singular directions raises the mean held-out ARC-Easy accuracy over the six locked models from $0.05$ to $0.85$, against $0.88$ for fine-tuning and $0.92$ for the honest models. Furthermore, it scores higher than the smallest-norm rule in 16 of the 18 combinations of locked model and $k$, and its steering direction is nearly orthogonal to the honest difference-in-means direction. It also unlocks two LoRA locks where the honest direction fails.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "math.DG"
+      ],
+      "primaryCategory": "cs.LG",
+      "comment": "20 pages. Code at this https URL",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-09-29T06:32:36.035238+00:00",
+        "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+      }
+    ],
+    "analysis": null,
+    "analysisBasis": null
+  },
+  "history": [
+    {
+      "date": "2026-09-29",
+      "entry": {
+        "arxivId": "2609.32530",
+        "metadata": {
+          "title": "Activation Flow: Manufacturing Activations for Steering",
+          "authors": [
+            "Hong Kiat Tan",
+            "Linh Le",
+            "David Williams-King"
+          ],
+          "abstract": "Difference-in-means steering requires activations recorded while a model shows the desired behavior, which a sandbagging model withholds by deliberately underperforming. We introduce Activation Flow (ActFlow), which manufactures these activations from $k$ correct labels without fine-tuning. ActFlow sets target logits that rank each labeled item's correct answer first, and moves the logits toward them by adding one vector $x$ to all $k$ residual streams at one layer. ActFlow is a family of ordinary differential equations for $x$, one for each rule that maps the required logit change to the velocity of $x$. The smallest-norm rule lands exactly on the targets, while the others keep only the top singular directions of the Jacobian. We test ActFlow on three instruction-tuned models, each locked by a sandbagging prompt and by a password-locked LoRA. At $k=40$, ActFlow keeping five singular directions raises the mean held-out ARC-Easy accuracy over the six locked models from $0.05$ to $0.85$, against $0.88$ for fine-tuning and $0.92$ for the honest models. Furthermore, it scores higher than the smallest-norm rule in 16 of the 18 combinations of locked model and $k$, and its steering direction is nearly orthogonal to the honest difference-in-means direction. It also unlocks two LoRA locks where the honest direction fails.",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL",
+            "math.DG"
+          ],
+          "primaryCategory": "cs.LG",
+          "comment": "20 pages. Code at this https URL",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-09-29T06:32:36.035238+00:00",
+            "contentHash": "93c6f97055ca0effddc8647d7c2de68369263eacee43d83d870f2c21beefe037"
+          }
+        ],
+        "analysis": null,
+        "analysisBasis": null
+      }
+    }
+  ]
+}
