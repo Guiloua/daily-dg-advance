@@ -31,22 +31,45 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-30T04:23:24.620441+00:00",
         "contentHash": "02afd216f8c6e549defedf2524e83798dc803cfd5f962e604d9bacdc125243b4"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.36491v1",
+        "observedAt": "2026-09-30T04:29:50.591125+00:00",
+        "contentHash": "70b783a07f98cabc8fbc38bbaa3d71ba73a130795dbe118723b225442fa72597"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "平坦高维环面的锐利 Willmore 界",
-      "workSummary": "证明 Euclidean 空间中平坦 n 环面的 Willmore 能量至少为 (4nπ²)ⁿᐟ²，等号在 Möbius 变换下由 Clifford 环面唯一达到；对 n≥3 的一般浸入环面给出 Chen 总均曲率猜想的反例。",
+      "workSummary": "对经 Möbius 变换后诱导平坦度量的 n 环面浸入，证明本文归一化的 Willmore 能量下界为 (4nπ²)^{n/2}，等号对应 Clifford 环面的 Möbius 像。核心为 Fourier 有限截断、Cauchy–Binet 与格行列式估计；对一般非平坦浸入，作者以 Clifford 环面的 Möbius 变换给出 n≥3 时 Chen 总平均曲率猜想的反例。",
       "techniques": [
-        "Willmore 能量",
-        "Clifford 环面",
-        "Möbius 变换",
-        "平坦浸入"
+        "Fourier 展开",
+        "Cauchy–Binet 公式",
+        "格行列式",
+        "Möbius 变换"
       ],
       "breakthrough": "同时给出平坦类的最优界和一般高维类的反例。",
-      "limitations": "Willmore 能量与所讨论的总均曲率泛函须区分；反例不否定平坦类的正面结果。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "本文 W 的归一化在二维环面上为通常 ∫|H|² 的四倍；高维共形不变量 W 与一般浸入的 ∫|H|^n 不同，后者的反例不否定前者在指定平坦类上的下界。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.36491v1 · PDF 第 24 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-30T04:29:50.591125+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.36491v1",
+        "contentHash": "70b783a07f98cabc8fbc38bbaa3d71ba73a130795dbe118723b225442fa72597",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8ea5fc9d8f566985b6e520121902c0dfbabaee1481d9329cf56e6b59ee361ef2"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 91,
       "priorityReason": "同时给出平坦类的最优界和一般高维类的反例。"
     },
@@ -87,22 +110,45 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-30T04:23:24.620441+00:00",
             "contentHash": "02afd216f8c6e549defedf2524e83798dc803cfd5f962e604d9bacdc125243b4"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.36491v1",
+            "observedAt": "2026-09-30T04:29:50.591125+00:00",
+            "contentHash": "70b783a07f98cabc8fbc38bbaa3d71ba73a130795dbe118723b225442fa72597"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "平坦高维环面的锐利 Willmore 界",
-          "workSummary": "证明 Euclidean 空间中平坦 n 环面的 Willmore 能量至少为 (4nπ²)ⁿᐟ²，等号在 Möbius 变换下由 Clifford 环面唯一达到；对 n≥3 的一般浸入环面给出 Chen 总均曲率猜想的反例。",
+          "workSummary": "对经 Möbius 变换后诱导平坦度量的 n 环面浸入，证明本文归一化的 Willmore 能量下界为 (4nπ²)^{n/2}，等号对应 Clifford 环面的 Möbius 像。核心为 Fourier 有限截断、Cauchy–Binet 与格行列式估计；对一般非平坦浸入，作者以 Clifford 环面的 Möbius 变换给出 n≥3 时 Chen 总平均曲率猜想的反例。",
           "techniques": [
-            "Willmore 能量",
-            "Clifford 环面",
-            "Möbius 变换",
-            "平坦浸入"
+            "Fourier 展开",
+            "Cauchy–Binet 公式",
+            "格行列式",
+            "Möbius 变换"
           ],
           "breakthrough": "同时给出平坦类的最优界和一般高维类的反例。",
-          "limitations": "Willmore 能量与所讨论的总均曲率泛函须区分；反例不否定平坦类的正面结果。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "本文 W 的归一化在二维环面上为通常 ∫|H|² 的四倍；高维共形不变量 W 与一般浸入的 ∫|H|^n 不同，后者的反例不否定前者在指定平坦类上的下界。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.36491v1 · PDF 第 24 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-30T04:29:50.591125+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.36491v1",
+            "contentHash": "70b783a07f98cabc8fbc38bbaa3d71ba73a130795dbe118723b225442fa72597",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8ea5fc9d8f566985b6e520121902c0dfbabaee1481d9329cf56e6b59ee361ef2"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 91,
           "priorityReason": "同时给出平坦类的最优界和一般高维类的反例。"
         },

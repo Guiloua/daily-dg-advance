@@ -10,9 +10,13 @@ Akashdeep Dey、Wenkui Du、Davide Parise、Lorenzo Sarnataro
 
 We study stable solutions of the Allen-Cahn equation with homogeneous Neumann boundary condition on Riemannian manifolds with boundary in the regime where the transition layers meet the boundary orthogonally. Under an a priori bound for the enhanced second fundamental form in the transition region, we establish uniform second-order Hölder estimates and quantitative mean curvature decay for the nodal hypersurfaces up to the boundary in ambient dimensions at most 10. The proof adapts the technique pioneered by Wang-Wei, adding a further correction determined by the geometry of the ambient boundary. Its leading contribution to mean curvature cancels on the nodal set but survives on non-zero level sets in the transition region, whose mean curvature need not decay uniformly. This phenomenon has no interior analogue and is exhibited by stable solutions constructed by Kowalczyk.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 仅在项目最后阶段辅助文献检索及语言编辑；数学内容由作者完成。
 
+来源：https://arxiv.org/pdf/2609.32829v1 · PDF 第 7 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅在项目最后阶段辅助文献检索及语言编辑；数学内容由作者完成。
+
+来源：https://arxiv.org/pdf/2609.32829v1
 
 [arXiv](https://arxiv.org/abs/2609.32829)
 
@@ -24,9 +28,13 @@ Alberto Verjovsky
 
 Let $M_f$ be the closed hyperbolic $3$--manifold which is the mapping torus of a pseudo-Anosov homeomorphism $f$ of a closed surface $S$ of genus at least two. The inclusion of the fiber subgroup \(\pi_1(S)\hookrightarrow \pi_1(M_f)\) has a Cannon--Thurston boundary map \(\partial\pi_1(S)\cong S^1\to S^2\cong\partial\pi_1(M_f)\), which is a Peano curve. We relate this map to two variational representatives of the fiber homotopy class: the harmonic map of Eells--Sampson and Hartman, and a least-area embedded minimal surface. Equivariant lifts of homotopic maps are a bounded distance apart; hence, for every marked conformal structure on $S$, the lift of the harmonic representative extends continuously to the closed disk with boundary value the Cannon--Thurston map, and a least-area fiber lifts to a properly embedded minimal plane in $\Hh^3$ with the same boundary map. We give area and curvature bounds for a least-area fiber, show that its largest principal curvature is at least one, and study the energy of the harmonic representatives as a function on Teichmüller space, its critical points, which are the zeros of the Hopf differential, and its invariance under the monodromy.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 和 Claude 用于校对、编辑修订及辅助检查计算；数学内容由作者独立核验。
 
+来源：https://arxiv.org/pdf/2609.35858v1 · PDF 第 11 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 和 Claude 用于校对、编辑修订及辅助检查计算；数学内容由作者独立核验。
+
+来源：https://arxiv.org/pdf/2609.35858v1
 
 [arXiv](https://arxiv.org/abs/2609.35858)
 
@@ -38,9 +46,13 @@ Eiichiro Hakamada
 
 In this paper, building on the work of Dai--Sasahira--Stoffregen, we derive constraints on the intersection forms of smooth, compact, indefinite, spin $4$-manifolds bounded by AR homology spheres using two methods. First, we use the constraints on the existence of $\operatorname{Pin}(2)$-equivariant maps between representation spheres, established by Hopkins--Lin--Shi--Xu in their proof of the $10/8 + 4$-inequality. Second, we compute Lin's $\kappa o$-invariant for AR homology spheres. Combined with Lin's version of the relative $10/8$-inequality, this computation yields constraints different from those based on Hopkins--Lin--Shi--Xu. As applications, we obtain new lower bounds on the minimal genus of surfaces bounded by knots whose double branched covers are AR homology spheres in various $4$-manifolds, and provide an obstruction to smooth $4$-manifold decompositions related to the $11/8$-conjecture.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Gemini、ChatGPT 和 Claude 辅助文献检索、检查计算、完善论证、改善写作及制作图形；数学想法与最终内容由作者负责。
 
+来源：https://arxiv.org/pdf/2609.35931v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Gemini、ChatGPT 和 Claude 辅助文献检索、检查计算、完善论证、改善写作及制作图形；数学想法与最终内容由作者负责。
+
+来源：https://arxiv.org/pdf/2609.35931v1
 
 [arXiv](https://arxiv.org/abs/2609.35931)
 
@@ -52,9 +64,11 @@ Soheil Azarpendar、Colin McCulloch
 
 We present formulas for the higher Alexander polynomials of satellite links.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.36040v1
 
 [arXiv](https://arxiv.org/abs/2609.36040)
 
@@ -66,9 +80,11 @@ Zuzanna Szancer
 
 Cao and Wang recently classified a class of locally strongly convex centroaffine hypersurfaces whose non-vanishing Tchebychev vector field $T$ satisfies $K(T,X)=\alpha X$ and $X(\alpha)=0$ for every $X\perp T$, together with $K(T,T)=\beta T$. In the degenerate case $\beta=2\alpha$, their higher-dimensional argument assumes in addition that the $T^\perp$-component of the difference tensor $K$ vanishes identically. We show that this extra assumption is unnecessary and the theorem can be strengthened.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.36095v1
 
 [arXiv](https://arxiv.org/abs/2609.36095)
 
@@ -80,9 +96,13 @@ Arseniy Akopyan、Alexander Polyanskii
 
 We give a short proof of the following theorem of K. Ball: If a centrally symmetric convex body $K\subset \mathbb R^d$ is covered by finitely many planks, then the sum of their relative widths with respect to $K$ is at least $1$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 辅助阐述，并简化部分公式和论证；证明的数学想法由作者提出。
 
+来源：https://arxiv.org/pdf/2609.36163v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助阐述，并简化部分公式和论证；证明的数学想法由作者提出。
+
+来源：https://arxiv.org/pdf/2609.36163v1
 
 [arXiv](https://arxiv.org/abs/2609.36163)
 
@@ -90,13 +110,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Noga Alon、Matija Bucić、James Davies
 
-将 Rᵈ 中典型范数单位距离图的染色上界从 2ᵈ 改进至锐利的 2d，并通过 Lonely runner 猜想的高维矩阵推广解决所述 view-obstruction 及 covering-radius 猜想。
+将 R^d 上 Baire 典型范数的单位距离图着色数上界降至 2d，并构造下界至少 2d 的非空开集以证明该统一上界最优。关键矩阵分离估计通过 log-det 权重平衡和加权最小二乘实现，并用于解决相应视线阻挡及格 zonotope 覆盖半径问题。
 
 The classical Hadwiger-Nelson problem asks for the chromatic number of the unit distance graph of the Euclidean plane. Over the years, this problem has been considered for a variety of other normed spaces, with higher-dimensional Euclidean space $\mathbb{R}^d$ being perhaps the most natural and well-studied. Alon, Bucić, and Sauermann proved that, for a typical norm on $\mathbb{R}^d$, the chromatic number of the unit distance graph is at most $2^d$. We improve this exponential bound to a linear one by showing that the chromatic number of a typical norm on $\mathbb{R}^d$ is at most $2d$ and that this is tight. This shows a stark difference in the behavior compared to the Euclidean case, where there is an exponential lower bound. One of the key ingredients is a certain high-dimensional, matrix generalization of the Lonely runner conjecture, which also allows us to completely settle the so-called view-obstruction conjecture of Schoenberg from 1978 and a more recent covering-radius conjecture of Henze and Malikiosis.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 6 Pro 在基于作者已有观察的长时间讨论后，提供了主定理最后所需的引理 7 的证明；下界论证也在其辅助下得到。
 
+来源：https://arxiv.org/pdf/2609.36220v1 · PDF 第 17 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Pro 在基于作者已有观察的长时间讨论后，提供了主定理最后所需的引理 7 的证明；下界论证也在其辅助下得到。
+
+来源：https://arxiv.org/pdf/2609.36220v1
 
 [arXiv](https://arxiv.org/abs/2609.36220)
 
@@ -104,13 +128,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Xiaolong Li、Peter Petersen
 
-对闭 Einstein 流形，以曲率算子特征值较弱部分和非负条件推出局部对称；实维 n 的阈值为 2(n−1)/3，并给出 Kähler–Einstein 与 quaternionic-Kähler 对应阈值。
+对闭连通 Einstein n 流形（n≥4），证明曲率算子的最小特征值加权部分和在 2(n−1)/3 阈值下非负即推出局部对称；Kähler–Einstein 与 quaternionic-Kähler 情形分别对 su(n)、sp(n) 上的限制得到 2(n+1)/3、2(n+2)/3 阈值。证明以排序特征向量的平均作用界和 Bochner 公式为核心。
 
 We prove Tachibana-type rigidity theorems for closed manifolds under weakened partial-sum conditions on the eigenvalues of curvature operators. Specifically, an Einstein manifold of dimension $n\geq4$ is locally symmetric if its curvature operator is $\frac{2(n-1)}{3}$-nonnegative. The corresponding thresholds are $\frac{2(n+1)}{3}$ for the primitive curvature operator of a Kähler-Einstein manifold of complex dimension $n\geq2$, and $\frac{2(n+2)}{3}$ for the curvature operator of a quaternionic-Kähler manifold of real dimension $4n\geq8$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 作为辅助工具参与论文的发展，未具体区分其用途；全部数学论证由作者负责。
 
+来源：https://arxiv.org/pdf/2609.36226v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 作为辅助工具参与论文的发展，未具体区分其用途；全部数学论证由作者负责。
+
+来源：https://arxiv.org/pdf/2609.36226v1
 
 [arXiv](https://arxiv.org/abs/2609.36226)
 
@@ -122,9 +150,11 @@ Yiyang Jiang、Xudong Chen
 
 We exhibit two vector fields on $S^2$, which generate the entire Lie algebra of algebraic vector fields. Compositions of the flows associated with these two vector fields enable us to approximate every diffeomorphism of $S^2$ isotopic to the identity in the $\mathrm{C}^r$-sense for any $r\geq 0$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.36256v1
 
 [arXiv](https://arxiv.org/abs/2609.36256)
 
@@ -136,9 +166,13 @@ Qixuan Fang、Fei Qi
 
 We construct a sheaf of $\frac{1}{2}\mathbb{Z}$-graded meromorphic open-string vertex algebras from a transitive Courant algebroid $E$ equipped with a generalized metric and a chosen generalized Levi-Civita connection on a smooth manifold. Using a holonomy principle for transitive anchored bundles, we realize these algebras as parallel sections of a tensor algebra bundle built from bosonic-fermionic affinizations of $E$. For even-rank $E$ with suitable Clifford module bundle data, we construct a sheaf of canonically twisted modules containing the canonical weighted spinor bundle in weight zero. The associative algebra of parallel tensors acts on spinor sections through iterates of an $E$-connection combining covariant differentiation and Clifford multiplication, with mixed terms incorporating the action of the bosonic connection on fermionic tensors. Distinguished states built from the inverse Courant pairing and inverse generalized metric give vertex-operator components, acting on embedded spinor sections as the canonical Dirac generating operator, its formal adjoint, and their anticommutator, the generalized Hodge Laplacian. In the exact Courant case with three-form $H$ and the exterior algebra Clifford module, the operators specialize to $d-H\wedge$, its adjoint, and the twisted Hodge Laplacian, reducing to the ordinary de Rham and Hodge operators when $H=0$. This extends the vertex-operator realization of geometric differential operators from functions to weighted spinors and differential forms, within the program of studying two-dimensional supersymmetric nonlinear sigma models.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6-Sol 和 6-Astra 用于检测旧稿的错误及缺口，并辅助组织附录 A。
 
+来源：https://arxiv.org/pdf/2609.36370v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6-Sol 和 6-Astra 用于检测旧稿的错误及缺口，并辅助组织附录 A。
+
+来源：https://arxiv.org/pdf/2609.36370v1
 
 [arXiv](https://arxiv.org/abs/2609.36370)
 
@@ -146,13 +180,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Wenqi Li、Jianyu Ou、Guoqiang Wu、Detang Zhou
 
-在完整梯度 Kähler–Ricci 收缩子 Ric+Hess f=g/2 上证明常标量曲率强制刚性，并通过 L∇f Ric=0 推出径向平坦的 Riemannian 判据。
+对完备梯度 Kähler–Ricci shrinker，在 Ric+∇²f=g/2 归一化及常标量曲率下，作者证明 R=k 且流形双全纯等距分裂为 N^{2k}×C^{m−k}，其中 Ric_N=g_N/2。证明先从 Ricci 形式与 Cartan 公式导出 L_{∇f}Ric=0，再证明径向平坦并利用紧正 Ricci Kähler 零截面的单连通性消除商空间。
 
 Let $(M^{2m},g,f,J)$ be a complete gradient Kähler--Ricci shrinker satisfying \[ \operatorname{Ric}+\nabla^2 f=\frac12 g. \] We prove that if the scalar curvature is constant, then the soliton is rigid. More precisely, there exists an integer $k\in\{0,\ldots,m\}$ such that \[ R\equiv k \] and \[ (M^{2m},g,J)\cong \bigl(N^{2k}\times\mathbb C^{m-k}, g_N+g_{\mathrm{Euc}},J_N\oplus J_0\bigr), \] where $(N^{2k},g_N,J_N)$ is Kähler--Einstein and \[ \operatorname{Ric}_{g_N}=\frac12 g_N. \] As part of the proof, we establish a Riemannian rigidity criterion: for a complete nonsteady gradient Ricci soliton with constant scalar curvature, the condition $\mathcal{L}_{\nabla f}\operatorname{Ric}=0$ implies radial flatness and hence rigidity.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。
 
+来源：https://arxiv.org/pdf/2609.36418v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。
+
+来源：https://arxiv.org/pdf/2609.36418v1
 
 [arXiv](https://arxiv.org/abs/2609.36418)
 
@@ -160,13 +198,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Ruijie Ni、Peng Wang、Zhenxiao Xie
 
-证明 Euclidean 空间中平坦 n 环面的 Willmore 能量至少为 (4nπ²)ⁿᐟ²，等号在 Möbius 变换下由 Clifford 环面唯一达到；对 n≥3 的一般浸入环面给出 Chen 总均曲率猜想的反例。
+对经 Möbius 变换后诱导平坦度量的 n 环面浸入，证明本文归一化的 Willmore 能量下界为 (4nπ²)^{n/2}，等号对应 Clifford 环面的 Möbius 像。核心为 Fourier 有限截断、Cauchy–Binet 与格行列式估计；对一般非平坦浸入，作者以 Clifford 环面的 Möbius 变换给出 n≥3 时 Chen 总平均曲率猜想的反例。
 
 This paper establishes the sharp lower bound $(4n\pi^2)^{n/2}$ for the Willmore energy $\mathcal{W}$ of flat $n$-tori in the Euclidean space. Up to Möbius transformations, the Clifford $n$-torus $\mathbb{S}^1\bigl(\sqrt{1/n}\,\bigr) \times \cdots \times \mathbb{S}^1\bigl(\sqrt{1/n}\,\bigr) \subset \mathbb{S}^{2n-1} \subset \mathbb{R}^{2n}$ is shown to be the unique minimizer attaining this bound. This also confirms Chen's conjecture for flat $n$-tori. However, when $n \geq3 $, we show that Chen's conjecture fails on the total mean curvature of general immersed $n$-tori: certain Möbius transformations of the Clifford $n$-torus strictly decrease the total mean curvature.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。
 
+来源：https://arxiv.org/pdf/2609.36491v1 · PDF 第 24 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 为引理 3.2、注 4.6 和命题 5.5 的部分论证生成初稿，识别可能缺口并润色语言；作者独立核验、实质修改并重写。
+
+来源：https://arxiv.org/pdf/2609.36491v1
 
 [arXiv](https://arxiv.org/abs/2609.36491)
 
@@ -178,9 +220,13 @@ Ruijie Ni、Peng Wang
 
 In this note, we provide an estimate for the Willmore energy of Klein bottles in $\mathbb R^N$, building on the ideas of Li-Yau and Montiel-Ros for $2$-tori. In particular, we prove that the Willmore energy $\mathcal{W}(\phi)> 6\pi$ for any conformal branched immersion $\phi:\mathbb{K}^2_b\rightarrow \mathbb R^N$, where $\mathbb{K}^2_b$ is a flat Klein bottle with $0.350\lesssim b \lesssim 0.755$. This confirms partially a conjecture of Kusner. Moreover, for a flat immersion $\psi:\mathbb{K}^2_b\rightarrow \mathbb R^N$, we derive a lower bound of $\mathcal{W}(\psi)$, which confirms a conjecture of Hirsch-Mäder-Baumdicker for flat Klein bottles in $\mathbb R^N$. We also construct a smooth family of flat Klein bottles in $\mathbb R^5$, with Willmore energy between $6.912\pi$ and $8\pi$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 Sol 用于命题 3.4 及引理 4.3 的证明，相关内容由作者独立核验。
 
+来源：https://arxiv.org/pdf/2609.36519v1 · PDF 第 29 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 用于命题 3.4 及引理 4.3 的证明，相关内容由作者独立核验。
+
+来源：https://arxiv.org/pdf/2609.36519v1
 
 [arXiv](https://arxiv.org/abs/2609.36519)
 
@@ -192,9 +238,13 @@ Skilyn Leon、Rosa Pavlak、Evelyn Pulla、Xi Sisi Shen
 
 We consider the isoperimetric problem with planar density equal to 1 on a horizontal strip and to a constant $\lambda>1$ outside the strip. We resolve a conjecture made by Cañete-Miranda Jr-Vittone by showing that every four-arc region admits a three-arc competitor with the same weighted area and strictly smaller weighted perimeter. The argument applies to every $\lambda>1$ and gives an explicit positive lower bound for the perimeter difference.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露以 GPT-6-Astra 协调多个模型的程序辅助发现中间结果、发展证明策略及 Lean 形式化，另用 AI 检查形式化与数学表述是否一致；最终数学论证由作者核验，稿件由作者撰写。
 
+来源：https://arxiv.org/pdf/2609.36564v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露以 GPT-6-Astra 协调多个模型的程序辅助发现中间结果、发展证明策略及 Lean 形式化，另用 AI 检查形式化与数学表述是否一致；最终数学论证由作者核验，稿件由作者撰写。
+
+来源：https://arxiv.org/pdf/2609.36564v1
 
 [arXiv](https://arxiv.org/abs/2609.36564)
 
@@ -206,9 +256,13 @@ Devendra Tiwari、Helena Verrill
 
 We introduce Picard Farey symbols for finite-index subgroups of \(G=\PSL_2(\ZZ[i])\), using the Gaussian Farey tessellation of \(\HH^3\) by ideal octahedra. A symbol records finitely many Gaussian-rational octahedral occurrences, their local stabilizers, and ordered cooriented face pairings. We prove that a valid marked symbol reconstructs the finite Picard-cell action and hence the subgroup, and we work out a range of exact examples. For a torsion-free subgroup of index \(n\), every fundamental domain formed from complete Farey octahedra contains \(n/12\) octahedra; a spanning-tree construction gives one with at most \(n/4+1\) side-pairing transformations. We also identify the Gaussian octahedral edge--face complex with the integral rank-two Steinberg presentation for \(\QQ(i)\). Thus the same decorated geometry directly determines a finite presentation of coefficient-valued Bianchi modular symbols; for \(\Gamma_1(2+i)\) we give the complete \(3\times4\) group-ring boundary matrix. Canonical reduction and an effective Hecke-compatible reduction remain open.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于编辑辅助、文献组织和制作图形；数学陈述与证明由作者负责。
 
+来源：https://arxiv.org/pdf/2609.36629v1 · PDF 第 35 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于编辑辅助、文献组织和制作图形；数学陈述与证明由作者负责。
+
+来源：https://arxiv.org/pdf/2609.36629v1
 
 [arXiv](https://arxiv.org/abs/2609.36629)
 
@@ -220,9 +274,11 @@ Romane Boutillier、Laurent Hauswirth、Magdalena Rodríguez
 
 Minimal surfaces bounded by cables or threads arise naturally in tensile architecture: a membrane under uniform tension takes the shape of a minimal surface, and its flexible, inextensible boundary lies along an asymptotic line of constant geodesic curvature. Such configurations have been studied experimentally since the 1960s at the Institute for Lightweight Structures in Stuttgart and more recently realized in gridshells built along networks of asymptotic and geodesic curves. Motivated by this architectural context, we construct two new families of embedded minimal surfaces bounded by finitely many asymptotic arcs of constant curvature, using the Plateau-conjugate method applied to the solution of a partially-free boundary problem for minimal disks that meet the unit sphere orthogonally along the free boundary component. For every integer $m\geq 3$ , we prove the existence of a one-parameter family of embedded minimal annuli, called tensile catenoids, whose boundary components each consist of $m$ asymptotic arcs of constant curvature that meet at cusps. As the parameter varies, the family degenerates from a planar configuration to a union of $m$ minimal disks. For every integer $k\geq 3$, we prove the existence of an embedded minimal surface with the topology of a sphere minus $k$ disks, called a tensile $k$-noid, each of whose $k$ boundary components consists of four asymptotic arcs joined by cusps. Both families are symmetric with respect to a horizontal plane and possess several vertical planes of symmetry. Embeddedness follows from showing that the fundamental piece obtained by conjugation is a graph contained in the region delimited by the planes of symmetry.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.36717v1
 
 [arXiv](https://arxiv.org/abs/2609.36717)
 
@@ -234,9 +290,13 @@ Zili Xu
 
 We prove two arithmetic nonexistence criteria for tight spherical $5$-designs in dimension $(2m+1)^2-2$ with $m$ even. Together, they recover the applicable criteria of Bannai-Munemasa-Venkov and Nebe-Venkov while covering parameters excluded by neither earlier result. Examples include $m=16,100$ under the first criterion and $m=96,168$ under the second. The proofs combine lattice moment identities, finite Gauss sums, and a determinant calculation modulo $3$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 Sol 辅助补充技术细节和改善语言，同时声明数学想法、证明策略及证明由作者发展核验。
 
+来源：https://arxiv.org/pdf/2609.36725v1 · PDF 第 17 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 辅助补充技术细节和改善语言，同时声明数学想法、证明策略及证明由作者发展核验。
+
+来源：https://arxiv.org/pdf/2609.36725v1
 
 [arXiv](https://arxiv.org/abs/2609.36725)
 
@@ -248,9 +308,13 @@ Taehee Kim、Takayuki Morifuji
 
 Dunfield, Friedl, and Jackson showed that if the $SL(2, \mathbb{C})$-character variety of a knot has an irreducible curve component that contains the character of an irreducible representation and a character with nonmonic twisted Alexander polynomial, then this component has only finitely many characters with monic twisted Alexander polynomials. In this paper, we give explicit upper bounds on the number of such characters in terms of a presentation of the knot group. In particular, we give upper bounds in terms of the crossing number of the knot.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-5.6 Sol 与 GPT-6 Astra 辅助文献检索、语言编辑及发展、完善、检查部分论证；Sol 建议采用精细版 Bézout 不等式，作者将其整理为引理 4.2 以改进上界。
 
+来源：https://arxiv.org/pdf/2609.36772v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 GPT-6 Astra 辅助文献检索、语言编辑及发展、完善、检查部分论证；Sol 建议采用精细版 Bézout 不等式，作者将其整理为引理 4.2 以改进上界。
+
+来源：https://arxiv.org/pdf/2609.36772v1
 
 [arXiv](https://arxiv.org/abs/2609.36772)
 
@@ -262,9 +326,11 @@ Antonio Candelieri、Iman Seyedi、Francesco Archetti
 
 Multistage Stochastic Programming requires scenario trees that accurately approximate the unknown underlying uncertainty process without violating the non-anticipativity constraint. Most of the existing method for scenario tree generation usually target just one of the two goals at the expense of the other, and just some recent methods try to simultaneously address both. In this paper, we propose to combine two recent distances from Optimal Transport Theory, specifically the ultrametric Gromov-Wasserstein and the Fused Gromov-Wasserstein, into a unique measure to simultaneously deal with the two goals. Our main result is a stability theorem showing that the optimal value of a Multistage Stochastic Programming problem changes by an amount controlled by a Holder-type power of the proposed distance between the true process and its scenario tree approximation, extending Wasserstein-based stability results to control marginal fidelity and non-anticipativity, simultaneously. We propose a block coordinate descent algorithm for the our scenario tree generation based on the proposed distance, and evaluate it on different inventory management test cases.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.36963v1
 
 [arXiv](https://arxiv.org/abs/2609.36963)
 
@@ -272,13 +338,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Nina Lebedeva、Artem Nepechiy
 
-引入有限 Hausdorff 维数、具有下曲率界但可能不完备的内蕴度量区域，定量证明其局部等距于 Alexandrov 空间。
+对局部紧、有限维、有内蕴距离且曲率有下界的 Alexandrov region，给出真正 Alexandrov 邻域。定量地，若曲率≥κ、0<r≤1、闭 r 球紧且 H^n(B_{r/2})≥εr^n，则存在 B_{cr}⊂A⊂B_r，c 仅依赖 ε、n、κ；证明路线结合比较半径迭代、Gromov–Hausdorff 紧性及严格凹函数提升。
 
 We introduce the notion of Alexandrov region. In contrast to Alexandrov spaces these are intrinsic metric spaces, which satisfy a lower curvature bound and have finite Hausdorff dimension, might however, be non-complete. We show a quantitative version of the statement that such regions are locally isometric to an Alexandrov space.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT GPT-6 用于校对、改正排印错误及改善语言风格。
 
+来源：https://arxiv.org/pdf/2609.36973v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT GPT-6 用于校对、改正排印错误及改善语言风格。
+
+来源：https://arxiv.org/pdf/2609.36973v1
 
 [arXiv](https://arxiv.org/abs/2609.36973)
 
@@ -290,9 +360,11 @@ Matteo Costantini、Daniel Greb、Carolina Tamborini
 
 We establish an Arakelov inequality for variations of Hodge structures underlying families of principally polarized complex Abelian varieties. In the equality case, this leads to a numerical characterization of certain totally geodesic ball quotients inside the moduli space of Abelian varieties. Our result extends work of Möller-Viehweg-Zuo by removing the strong positivity conditions imposed in their statement. For families over compact base spaces, our proof involves showing that the period map associated with a family of Abelian varieties factors through certain MMP operations and then generalizing the results of Möller, Viehweg, and Zuo to an appropriate singular setting. In the quasiprojective surface case, we implement a new approach that does not pass through Miyaoka-Yau-type uniformisation theorems but uses an argument going back to an idea of Mok, symmetric space theory and semistability considerations instead.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37023v1
 
 [arXiv](https://arxiv.org/abs/2609.37023)
 
@@ -304,9 +376,13 @@ Daniele De Gennaro、Anna Kubin
 
 We prove dynamical stability in arbitrary dimension for the modified Mullins--Sekerka flow, the gradient flow of the sharp-interface Ohta--Kawasaki energy on the flat torus. Specifically, we show that if an initial set has the same volume as a strictly stable critical set for the energy and is sufficiently close to it in $C^{3,\alpha}$, then the flow exists for all times and converges exponentially fast, in every $C^k$ norm, to a translate of that critical set. The proof relies on a quantitative Alexandrov-type estimate for strictly stable critical sets of the energy.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 仅用于语言编辑、改善行文流畅清晰度，明确表示未包含 AI 生成的数学内容。
 
+来源：https://arxiv.org/pdf/2609.37201v1 · PDF 第 14 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅用于语言编辑、改善行文流畅清晰度，明确表示未包含 AI 生成的数学内容。
+
+来源：https://arxiv.org/pdf/2609.37201v1
 
 [arXiv](https://arxiv.org/abs/2609.37201)
 
@@ -318,9 +394,11 @@ Guanghan Li、Mengliang Liu
 
 This paper is concerned with a capillary $L_p$ Christoffel--Minkowski-type problem involving the prescription of a class of $L_p$ geometric measures formed by the $k$-th capillary area measure and the $q$-th dual curvature measure. By establishing a gradient estimate, we prove the existence of an even, smooth, strictly convex solution in the parameter range $1<p<q\leq k+1$, where $1\leq k\leq n$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37258v1
 
 [arXiv](https://arxiv.org/abs/2609.37258)
 
@@ -328,13 +406,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Simon Salamon、Ragini Singhal
 
-在 SO(4) 余齐性一框架用严格计算机辅助 shooting 构造 Berger 空间首个非齐次 nearly parallel G₂ 结构，其锥具有完整 Spin(7) 和乐；另用 AC C₇ bubble 局部消解 sine cone 的有限商。
+在 Berger 空间 SO(5)/SO(3) 上构造非齐性完备 nearly parallel G2 结构，将 SO(4) 余齐性一方程转化为多参数打靶，利用 CAPD 区间包络与 Krawczyk 包含判据认证反射匹配零点。另对 (S³×S³)/Z4 上的 sine cone 给出单端去奇异族，放大极限为 AC C7 度量。
 
 Nearly $\mathrm{G}_2$ manifolds are positive Einstein seven-dimensional manifolds whose associated cone metric has special holonomy equal to, or contained in, $\mathrm{Spin}(7)$. We study nearly parallel $\mathrm{G}_2$-structures invariant under a cohomogeneity-one action of $\mathrm{SO}(4)$, and construct the first inhomogeneous nearly parallel $\mathrm{G}_2$-structure on the Berger space $\mathrm{SO}(5)/\mathrm{SO}(3)$. The cone over this metric has full holonomy $\mathrm{Spin}(7)$. The existence of the solution is established by a rigorous computer-assisted shooting argument. We also establish a local desingularisation of a finite quotient of the sine cone over $S^3\times S^3$ by gluing in the asymptotically conical $C_7$ bubble constructed by Foscolo--Haskins--Nordström. We show that as the singular orbit of a family of nearly parallel $\mathrm{G}_2$ manifolds collapses, away from the singular orbit the desingularising family converges to the sine cone quotient, while the natural blow-up converges to the AC torsion-free $\mathrm{G}_2$-metric of $C_7$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 Sol 辅助开发计算机程序及准备图形；代码经作者审查测试，计算与图形经独立核验。
 
+来源：https://arxiv.org/pdf/2609.37265v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 Sol 辅助开发计算机程序及准备图形；代码经作者审查测试，计算与图形经独立核验。
+
+来源：https://arxiv.org/pdf/2609.37265v1
 
 [arXiv](https://arxiv.org/abs/2609.37265)
 
@@ -346,9 +428,11 @@ Sun-Yung Alice Chang、Hongyi Liu
 
 We formulate and solve a degenerate elliptic boundary value problem for the $SU(\infty)$-Toda equation on $[0,\frac12)\times\mathbb{S}^2$. This constructs anti-self-dual Poincaré--Einstein metrics with circle symmetry on the $4$-ball and on complex line bundles over $\mathbb{S}^2$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37282v1
 
 [arXiv](https://arxiv.org/abs/2609.37282)
 
@@ -360,9 +444,13 @@ Kefeng Liu、Xueyuan Wan
 
 We construct slope-stable ample rank-two vector bundles on every Hirzebruch surface $\mathbb{F}_e$ that admit no smooth strongly pseudoconvex Finsler metric with semipositive Kobayashi curvature. These examples give a negative answer to Kobayashi's problem. The same bundles give counterexamples to the smooth strongly pseudoconvex Finsler formulation of Fulton's problem and to the Hartshorne--Schneider conjecture on the convexity of complements. For $e=1$, these counterexamples have a simply connected Fano base that is not a product.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 作为本工作的辅助工具，未细分具体用途；全部数学论证由作者核验完成。
 
+来源：https://arxiv.org/pdf/2609.37309v1 · PDF 第 34 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 作为本工作的辅助工具，未细分具体用途；全部数学论证由作者核验完成。
+
+来源：https://arxiv.org/pdf/2609.37309v1
 
 [arXiv](https://arxiv.org/abs/2609.37309)
 
@@ -374,9 +462,11 @@ Anatoly Eydelzon
 
 Starting with the vertices of a simplex in $\R^n$, we build a cubic vector field. If the semiaxes of the simplex's John ellipsoid are distinct, the Jacobian of this field has repeated eigenvalues exactly on the ellipsoid's focal sets. This works in every dimension $n\geq2$. We give examples in $\R^4$, $\R^3$, and $\R^2$: three focal quadrics, an ellipse and a hyperbola, and finally two points. In the plane, these two points are also the zeros of the derivative in the Siebeck--Marden theorem. Complex numbers explain why the planar case has a shorter formula.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37448v1
 
 [arXiv](https://arxiv.org/abs/2609.37448)
 
@@ -388,9 +478,13 @@ Emmanouil Doulgerakis、Thijs Laarhoven
 
 In an attempt to close the gap between the best provable and heuristic algorithms for hard lattice problems, such as the shortest (SVP) and closest vector problem (CVP), we analyze lattice sieving on Haar-random unimodular lattices. With well-chosen modifications to heuristic sieving, we show that the heuristic assumptions are no longer necessary, and we can provably achieve the same complexities as heuristic sieving on Haar-random lattices for various lattice problems. Concretely, with probability $1 - o(1)$ over the randomness of the Haar-random lattice and the algorithmic randomness, we show how to: 1. Solve SVP in time $2^{0.2924\ldots n + o(n)}$ and space $2^{0.2075\ldots n + o(n)}$; 2. Solve CVP for random targets with the same complexities; 3. Produce $2^{0.2075\ldots n + o(n)}$ discrete Gaussian samples at any width with these complexities, up to a $2^{-\Omega(n)}$ error in the joint distribution. This improves on the SVP complexities for Haar-random lattices of Pouly-Shen [Eurocrypt, 2026] running in time $2^{0.633n + o(n)}$ and space $2^{0.5n + o(n)}$, as well as the recent worst-case SVP (and average-case CVP) improvements of Gao-Feng-Hu and Hhan [Cryptology ePrint Archive, 2026], both running in time and space $2^{0.5n + o(n)}$ or higher. Similar to standard sieving methods, our approach proceeds through a series of thin spherical shells, starting from a large radius and iteratively combining vectors to obtain vectors from shells with smaller radius. Our main technical contribution is making a series of adjustments to guarantee that for each sieve list generated at each spherical shell, each list vector is independent and uniformly random over all lattice points within this shell. Once this invariant is satisfied, it is a matter of smooth sailing through the spherical shells until we find a solution.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT-5.6 Sol 用于对抗式证明审查、文献检索、完善证明、TikZ 制图和编辑，并发展利用近邻搜索严格达到 0.292 指数的详细证明。
 
+来源：https://arxiv.org/pdf/2609.37482v1 · PDF 第 8 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT-5.6 Sol 用于对抗式证明审查、文献检索、完善证明、TikZ 制图和编辑，并发展利用近邻搜索严格达到 0.292 指数的详细证明。
+
+来源：https://arxiv.org/pdf/2609.37482v1
 
 [arXiv](https://arxiv.org/abs/2609.37482)
 

@@ -32,21 +32,43 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-30T04:23:24.620104+00:00",
         "contentHash": "c1f36634d35d4609319dc3e4fc597a3afffb684fcdb7d30d797860adff832014"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.36418v1",
+        "observedAt": "2026-09-30T04:25:40.796693+00:00",
+        "contentHash": "185e04dcb39df3cc9efdab3556a7a88e2cb5c3c056f0c5875bbc7f8bfc43a3b6"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "常标量曲率 Kähler–Ricci 收缩子的刚性",
-      "workSummary": "在完整梯度 Kähler–Ricci 收缩子 Ric+Hess f=g/2 上证明常标量曲率强制刚性，并通过 L∇f Ric=0 推出径向平坦的 Riemannian 判据。",
+      "workSummary": "对完备梯度 Kähler–Ricci shrinker，在 Ric+∇²f=g/2 归一化及常标量曲率下，作者证明 R=k 且流形双全纯等距分裂为 N^{2k}×C^{m−k}，其中 Ric_N=g_N/2。证明先从 Ricci 形式与 Cartan 公式导出 L_{∇f}Ric=0，再证明径向平坦并利用紧正 Ricci Kähler 零截面的单连通性消除商空间。",
       "techniques": [
-        "Ricci 张量 Lie 导数",
+        "Ricci 形式",
+        "Lie 导数",
         "径向平坦",
-        "Kähler–Einstein 分裂"
+        "平坦向量丛"
       ],
       "breakthrough": "给出常标量曲率收缩子的结构刻画。",
-      "limitations": "结论限于完整梯度 Kähler 收缩子；正文需区分流形本身的直积分裂与覆叠或离散群商的表述。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "全局乘积分裂是本文收缩 Kähler 情形的结论；文中说明扩张情形仍可能出现商。一般非 Kähler 常标量曲率孤立子的刚性不能直接由本定理推出。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.36418v1 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-30T04:25:40.796693+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.36418v1",
+        "contentHash": "185e04dcb39df3cc9efdab3556a7a88e2cb5c3c056f0c5875bbc7f8bfc43a3b6",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "17bc82a4505864966985d3dd83c5ff17543c082dcd9388811f38e221194ba069"
+      },
+      "aiUsage": [
+        "verification"
+      ],
       "priorityScore": 91,
       "priorityReason": "给出常标量曲率收缩子的结构刻画。"
     },
@@ -88,21 +110,43 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-30T04:23:24.620104+00:00",
             "contentHash": "c1f36634d35d4609319dc3e4fc597a3afffb684fcdb7d30d797860adff832014"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.36418v1",
+            "observedAt": "2026-09-30T04:25:40.796693+00:00",
+            "contentHash": "185e04dcb39df3cc9efdab3556a7a88e2cb5c3c056f0c5875bbc7f8bfc43a3b6"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "常标量曲率 Kähler–Ricci 收缩子的刚性",
-          "workSummary": "在完整梯度 Kähler–Ricci 收缩子 Ric+Hess f=g/2 上证明常标量曲率强制刚性，并通过 L∇f Ric=0 推出径向平坦的 Riemannian 判据。",
+          "workSummary": "对完备梯度 Kähler–Ricci shrinker，在 Ric+∇²f=g/2 归一化及常标量曲率下，作者证明 R=k 且流形双全纯等距分裂为 N^{2k}×C^{m−k}，其中 Ric_N=g_N/2。证明先从 Ricci 形式与 Cartan 公式导出 L_{∇f}Ric=0，再证明径向平坦并利用紧正 Ricci Kähler 零截面的单连通性消除商空间。",
           "techniques": [
-            "Ricci 张量 Lie 导数",
+            "Ricci 形式",
+            "Lie 导数",
             "径向平坦",
-            "Kähler–Einstein 分裂"
+            "平坦向量丛"
           ],
           "breakthrough": "给出常标量曲率收缩子的结构刻画。",
-          "limitations": "结论限于完整梯度 Kähler 收缩子；正文需区分流形本身的直积分裂与覆叠或离散群商的表述。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "全局乘积分裂是本文收缩 Kähler 情形的结论；文中说明扩张情形仍可能出现商。一般非 Kähler 常标量曲率孤立子的刚性不能直接由本定理推出。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.36418v1 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-30T04:25:40.796693+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.36418v1",
+            "contentHash": "185e04dcb39df3cc9efdab3556a7a88e2cb5c3c056f0c5875bbc7f8bfc43a3b6",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要使用 ChatGPT 5.6 Sol 检查部分计算；研究问题和主要数学想法由作者提出。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "17bc82a4505864966985d3dd83c5ff17543c082dcd9388811f38e221194ba069"
+          },
+          "aiUsage": [
+            "verification"
+          ],
           "priorityScore": 91,
           "priorityReason": "给出常标量曲率收缩子的结构刻画。"
         },
