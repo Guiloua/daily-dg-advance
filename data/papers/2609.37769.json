@@ -31,22 +31,44 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-09-30T04:23:35.957162+00:00",
         "contentHash": "947ea87daf893957c5b2cafbc4ec045c8119abbc75d27482ff36f7f84b12482b"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.37769v1",
+        "observedAt": "2026-09-30T05:26:29.539031+00:00",
+        "contentHash": "5783d30f05d9c525c516ebe898dd2f83f35c946964adb1965472b842f1e0baf3"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "极小超曲面宽度的谱逼近与反例",
-      "workSummary": "作者在每个维数构造反例，否定用前 p+1 个特征函数的零集扫掠普遍渐近实现第 p 个宽度的猜想，反例可有正曲率且度量实解析。另允许在更大谱空间中选取检测相应上同调幂的扫掠，证明固定 p 时所得宽度随谱截断增大收敛到真正宽度。",
+      "workSummary": "在每个环境维数≥2 的扁椭球上，证明前 p+1 个 Laplace 特征函数所给零集扫掠的最大面积与第 p 宽度之比的 limsup>1，否定相应渐近最优性猜想。另允许在更大谱空间中选取检测上同调幂的 p 参数族，证明固定 p 时谱截断 N→∞ 所得零集宽度收敛到真正宽度；反例利用分离变量及两种 Weyl 律比较。",
       "techniques": [
-        "Almgren–Pitts 极小极大法",
-        "Laplace 谱",
         "零集扫掠",
-        "上同调检测"
+        "谱过滤",
+        "Weyl 律",
+        "极小极大宽度"
       ],
       "breakthrough": "区分受限零集族的渐近失效与扩大谱空间后的固定阶宽度逼近。",
-      "limitations": "反例的 p 增长与正面结论中固定 p、谱截断 N 趋于无穷是不同极限，不能混为一谈。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "反例否定固定谱族的渐近最优性，正面结论则固定 p 并增大 N；不能交换两种极限。正曲率实解析椭球也构成反例，结论不依赖一般粗糙度量。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.37769v1 · PDF 第 8 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-09-30T05:26:29.539031+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.37769v1",
+        "contentHash": "5783d30f05d9c525c516ebe898dd2f83f35c946964adb1965472b842f1e0baf3",
+        "pages": 36,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c78988789dcc83a8e7a8862a06795e350927400c6bb26a2445c43ae12173e22a"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 93,
       "priorityReason": "区分受限零集族的渐近失效与扩大谱空间后的固定阶宽度逼近。"
     },
@@ -87,22 +109,44 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-09-30T04:23:35.957162+00:00",
             "contentHash": "947ea87daf893957c5b2cafbc4ec045c8119abbc75d27482ff36f7f84b12482b"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.37769v1",
+            "observedAt": "2026-09-30T05:26:29.539031+00:00",
+            "contentHash": "5783d30f05d9c525c516ebe898dd2f83f35c946964adb1965472b842f1e0baf3"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "极小超曲面宽度的谱逼近与反例",
-          "workSummary": "作者在每个维数构造反例，否定用前 p+1 个特征函数的零集扫掠普遍渐近实现第 p 个宽度的猜想，反例可有正曲率且度量实解析。另允许在更大谱空间中选取检测相应上同调幂的扫掠，证明固定 p 时所得宽度随谱截断增大收敛到真正宽度。",
+          "workSummary": "在每个环境维数≥2 的扁椭球上，证明前 p+1 个 Laplace 特征函数所给零集扫掠的最大面积与第 p 宽度之比的 limsup>1，否定相应渐近最优性猜想。另允许在更大谱空间中选取检测上同调幂的 p 参数族，证明固定 p 时谱截断 N→∞ 所得零集宽度收敛到真正宽度；反例利用分离变量及两种 Weyl 律比较。",
           "techniques": [
-            "Almgren–Pitts 极小极大法",
-            "Laplace 谱",
             "零集扫掠",
-            "上同调检测"
+            "谱过滤",
+            "Weyl 律",
+            "极小极大宽度"
           ],
           "breakthrough": "区分受限零集族的渐近失效与扩大谱空间后的固定阶宽度逼近。",
-          "limitations": "反例的 p 增长与正面结论中固定 p、谱截断 N 趋于无穷是不同极限，不能混为一谈。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "反例否定固定谱族的渐近最优性，正面结论则固定 p 并增大 N；不能交换两种极限。正曲率实解析椭球也构成反例，结论不依赖一般粗糙度量。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.37769v1 · PDF 第 8 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-09-30T05:26:29.539031+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.37769v1",
+            "contentHash": "5783d30f05d9c525c516ebe898dd2f83f35c946964adb1965472b842f1e0baf3",
+            "pages": 36,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c78988789dcc83a8e7a8862a06795e350927400c6bb26a2445c43ae12173e22a"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 93,
           "priorityReason": "区分受限零集族的渐近失效与扩大谱空间后的固定阶宽度逼近。"
         },

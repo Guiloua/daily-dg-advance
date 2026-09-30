@@ -496,9 +496,13 @@ Thijs Laarhoven
 
 Analyses of dual lattice attacks have often assumed that the individual scores associated with short dual vectors are mutually independent. Laarhoven-Walter used this heuristic to derive explicit trade-offs between the target radius and query time for bounded distance decoding (BDD) with preprocessing. Ducas-Pulles subsequently demonstrated theoretical and experimental failures of this heuristic and proposed an alternative model conditioned on the target norm. In this note, we prove an explicit asymptotic trade-off for (decision-)BDD with preprocessing in the Haar-random lattice model, without heuristic assumptions. Using moment identities of Siegel and Rogers, we analyze cosine scores over complete dual balls and bound both error probabilities when distinguishing targets planted at a prescribed radius from uniform targets modulo the lattice. Optimizing the dual radius yields a trade-off between target radius and query time that matches the asymptotic prediction from the conditional model of Ducas-Pulles.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于数学探索、文献检索、起草、数值检查和排版；最终内容由作者负责。
 
+来源：https://arxiv.org/pdf/2609.37483v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于数学探索、文献检索、起草、数值检查和排版；最终内容由作者负责。
+
+来源：https://arxiv.org/pdf/2609.37483v1
 
 [arXiv](https://arxiv.org/abs/2609.37483)
 
@@ -506,13 +510,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Richard H. Bamler、Esther Cabezas-Rivas
 
-作者证明任意维紧无边界、非负 Alexandrov 曲率的 Euclidean 多面体空间可由单条 orbifold Ricci 流正时间切片逼近，并建立以小尺度不变积分曲率锥缺陷替代逐点下界的短时正则化理论。
+对任意维紧无边界、非负 Alexandrov 曲率的 Euclidean 多面体空间，构造从它出发的单条 orbifold Ricci 流，正时间切片具有几何非负曲率并在初时 Gromov–Hausdorff 收敛。其短时理论在双侧体积界、广义 segment inequality 和尺度不变的 L^{1+β} 曲率锥缺陷小量条件下给出与初始曲率上界无关的存在时间及 C/t 曲率估计；构造递归光滑法向 links 并作多尺度分析。
 
 We prove Petrunin's smoothing conjecture in all dimensions: every compact Euclidean polyhedral space without boundary and with nonnegative Alexandrov curvature is a Gromov-Hausdorff limit of smooth Riemannian orbifolds with geometrically nonnegative curvature. More strongly, the approximating metrics are positive-time slices of a single orbifold Ricci flow whose metric initial condition is the given polyhedral space. The proof rests on a new short-time existence and regularization theory for Ricci flow that, under two-sided volume bounds and a generalized segment inequality, replaces pointwise lower curvature control by small scale-invariant integral control of the defect from a preserved curvature cone. Although it allows arbitrarily large pointwise violations, this theory yields an existence time and positive-time curvature estimates independent of the initial upper curvature bound. As a further application, it gives rigidity consequences for manifolds with small integral curvature defect.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 用于改善表述，尤其是构造中的技术描述；2017 年草稿已包含定理 1.5 的完整证明及第 6 节构造纲要，明确表示未用 AI 发展新的数学想法。
 
+来源：https://arxiv.org/pdf/2609.37549v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于改善表述，尤其是构造中的技术描述；2017 年草稿已包含定理 1.5 的完整证明及第 6 节构造纲要，明确表示未用 AI 发展新的数学想法。
+
+来源：https://arxiv.org/pdf/2609.37549v1
 
 [arXiv](https://arxiv.org/abs/2609.37549)
 
@@ -524,9 +532,11 @@ Tian Gao、Dan Ma
 
 A complete classification is established for continuous, SL($n$) contravariant, and translation invariant tensor valuations defined on the Sobolev space $W^{1,p}(\mathbb R^n)$. When these valuations are further assumed to be homogeneous, the classification reveals that they are precisely the Fisher information tensors, which constitute a higher-order generalization of the Fisher information matrix.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37580v1
 
 [arXiv](https://arxiv.org/abs/2609.37580)
 
@@ -538,9 +548,11 @@ Zhi-Gang Wang、Deguang Zhong
 
 For orientation-preserving planar harmonic mappings, postcomposition by real-affine mappings induces automorphisms on the space of complex dilatations. Motivated by this fact and the lack of natural affine-invariant geometric quantities in classical distortion theory, we introduce the affine circumradius and affine diameter associated with the image of the complex dilatation. The exponentiated affine circumradius gives a characterization of minimal quasiconformal distortion under affine normalization. Optimal affine balancing is unique up to similarity and yields canonical harmonic mappings with centrally symmetric dilatation. Using a three-point support principle and a sharp hyperbolic Jung theorem, we establish universal sharp two-sided bounds for these invariants and provide their pseudohyperbolic reformulations. For canonically balanced mappings, we prove sharp second-order estimates for pre-Schwarzian derivatives, showing that affine normalization cancels leading-order conformal discrepancies. We develop an affine-stable hierarchical classification for families of harmonic quasiconformal mappings, including normality and an invariant ordering. This framework unifies extremal distortion problems and connects classical analytic function theory with the distortion theory of harmonic quasiconformal mappings.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37606v1
 
 [arXiv](https://arxiv.org/abs/2609.37606)
 
@@ -552,9 +564,11 @@ Siran Li、Isaac Newell
 
 We establish a quantitative stability estimate for codimension-one immersions into a round sphere. Let $(M,g)$ be an oriented Riemannian manifold and suppose that a prescribed shape operator is realised by a smooth isometric immersion $\theta:(M,g)\to\mathbb S^{n+1}$. We prove that, on every relatively compact strongly Lipschitz domain and for every $1<p<\infty$, any Sobolev immersion $\phi$ is close to $\theta$ modulo an ambient rotation, with the $W^{1,p}$-distances between both the immersions and their Gauss maps controlled by the $L^p$ stretching-plus-bending energies of $\phi$. No {\it a priori} bounds on the fundamental forms of $\phi$ are required. The proof proceeds by extending the immersions along normal geodesics and reducing the problem to an equidimensional geometric rigidity estimate on the sphere. A finite localisation and patching argument handles the possible non-injectivity of the normal extension of the reference immersion.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37665v1
 
 [arXiv](https://arxiv.org/abs/2609.37665)
 
@@ -566,9 +580,11 @@ Jiesong Zhang
 
 We prove that every codimension-one holomorphic Anosov diffeomorphism of a compact connected complex manifold is biholomorphically conjugate to a hyperbolic automorphism of a complex torus. This verifies a conjecture of Ghys in the codimension-one case and, in particular, in complex dimension three.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37695v1
 
 [arXiv](https://arxiv.org/abs/2609.37695)
 
@@ -580,9 +596,13 @@ Chen Jinxuan、Liu xiaobo、Yang wanxu
 
 In this paper, we obtain a classification of isoparametric submanifolds with arbitrary codimensions in products of simply-connected space forms, except for isoparametric hypersurfaces in $\mathbb{S}^n \times \mathbb{S}^m$ and $\mathbb{H}^n \times\mathbb{H}^m$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 GPT-5.5 Pro 辅助探索性计算、初步检查引理 5.6 的 Codazzi 方程与引理 A.2 的特征值计算，并帮助辨识第 8.4 节使用的 Riccati 方程反演方法及相关文献；作者独立核验计算与引用。
 
+来源：https://arxiv.org/pdf/2609.37739v1 · PDF 第 2、43 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.5 Pro 辅助探索性计算、初步检查引理 5.6 的 Codazzi 方程与引理 A.2 的特征值计算，并帮助辨识第 8.4 节使用的 Riccati 方程反演方法及相关文献；作者独立核验计算与引用。
+
+来源：https://arxiv.org/pdf/2609.37739v1
 
 [arXiv](https://arxiv.org/abs/2609.37739)
 
@@ -594,9 +614,11 @@ Subhadip Dey、Sami Douba、Konstantinos Tsouvalas
 
 We discuss some contexts in which the topological dynamics of certain Anosov subgroups of higher-rank Lie groups on "bad" subsets of flag manifolds can be analyzed using results from homogeneous dynamics in the infinite-covolume rank-one setting. For example, we show that a group of projective transformations dividing a strictly convex domain in projective space and intersecting Zariski-densely the stabilizer of an ellipsoid has a dense orbit in the complement of the domain, and acts minimally on the space of full projective flags tangent to the domain. This accounts for all known examples of divisible strictly convex domains in sufficiently high dimensions. We also provide examples of Zariski-dense groups that are Anosov in a partial flag manifold but such that the equivariant projection from the Benoist-Guivarc'h limit set in the Furstenberg boundary to the Anosov limit set is not a fibration.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明数学内容完全由作者取得，且稿件准备也未使用任何形式的 AI。
 
+来源：https://arxiv.org/pdf/2609.37752v1
 
 [arXiv](https://arxiv.org/abs/2609.37752)
 
@@ -604,13 +626,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Talant Talipov
 
-作者在每个维数构造反例，否定用前 p+1 个特征函数的零集扫掠普遍渐近实现第 p 个宽度的猜想，反例可有正曲率且度量实解析。另允许在更大谱空间中选取检测相应上同调幂的扫掠，证明固定 p 时所得宽度随谱截断增大收敛到真正宽度。
+在每个环境维数≥2 的扁椭球上，证明前 p+1 个 Laplace 特征函数所给零集扫掠的最大面积与第 p 宽度之比的 limsup>1，否定相应渐近最优性猜想。另允许在更大谱空间中选取检测上同调幂的 p 参数族，证明固定 p 时谱截断 N→∞ 所得零集宽度收敛到真正宽度；反例利用分离变量及两种 Weyl 律比较。
 
 Let $(M^{n+1},g)$ be a closed smooth Riemannian manifold, and let \[ 0=\lambda_0\leq\lambda_1\leq\ldots \] be the spectrum of the Laplace-Beltrami operator, with corresponding real eigenfunctions $\{\phi_j\}_{j\geq0}$. Let $\{\omega_p(M,g)\}_{p\geq1}$ denote Gromov's volume spectrum. In 2014, Marques-Neves conjectured that the sweepout generated by the nodal sets of $\phi_0,\ldots,\phi_p$ is asymptotically optimal for $\omega_p(M,g)$ as $p\to\infty$. We show that this conjecture is false in every dimension, even for positively curved real-analytic metrics. Nevertheless, we show that a less rigid notion of nodal sweepouts recovers the volume spectrum. Let \[ E_N(M,g):=\operatorname{span}\{\phi_0,\ldots,\phi_N\}, \qquad a_N\in H^1\bigl(\mathbb P(E_N(g));\mathbb Z_2\bigr) \] be the generator, and for $p\geq1$ define \[ \mathcal N_p^N(g) := \left\{ \Psi \mid X\text{ is a finite complex},\ \Psi\in C\bigl(X,\mathbb P(E_N(g))\bigr),\ \Psi^*(a_N^p)\neq0 \right\}. \] We define the nodal $(p,N)$-width by \[ \nu_p^N(M,g) := \inf_{\Psi\in\mathcal N_p^N(g)} \sup_{x\in\operatorname{dmn}(\Psi)} \mathcal H_g^{n}\bigl(\{\Psi_x=0\}\bigr). \] We prove the following filtration formula \[ \omega_p(M,g) = \lim_{N\to\infty}\nu_p^N(M,g) \] for every $p\geq1$. We state several questions on nodal geometry and min-max theory.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。
 
+来源：https://arxiv.org/pdf/2609.37769v1 · PDF 第 8 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6 Astra Pro 辅助找到定理 1.2 和命题 1.3 的证明；定理 1.4 的问题、主要想法和策略由作者提出，Sol Pro 与 Astra Pro 辅助严格化技术细节，Astra Pro 另用于识别错误。正文由作者撰写，论证经作者核验重写。
+
+来源：https://arxiv.org/pdf/2609.37769v1
 
 [arXiv](https://arxiv.org/abs/2609.37769)
 
@@ -622,9 +648,11 @@ James Dylan Douthitt、Lee Kennard、Josef Komissar
 
 With a view toward applications in Riemannian geometry, we explore coloop splitting properties of regular matroids. Nienhaus showed by classification in rank four that a regular matroid has a cocircuit whose deletion yields two coloops unless the matroid takes a particular form. In the latter case, one can split off any element of the ground set as a coloop. We reprove this using Seymour's structure theorem for regular matroids and prove an extension to matroids of ranks five and six. As an application to Riemannian geometry, we prove that the torus symmetry assumption in a recent result of Mouillé, Nienhaus, and the second author can be relaxed from rank ten to rank nine.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37778v1
 
 [arXiv](https://arxiv.org/abs/2609.37778)
 
@@ -636,9 +664,13 @@ Tristan C. Collins、Benjy Firester、Freid Tong
 
 If $T$ is an optimal transport map between bounded convex domains $\Omega$ and $\Omega'$, we characterize the regularity/singularity dichotomy for $DT$ at $(x,T(x)) \in \partial \Omega \times \partial \Omega'$. This is obtained through a new approach to the regularity theory based on affine degenerations of the tangent cones to $(\Omega, \Omega')$ at $(x,T(x))$. We formulate a general principle relating the optimal boundary regularity to a stability criterion and an $\mathrm{SL}(n)$ moduli space of pairs of convex cones. Among other results, we establish geometric criteria for existence and non-existence of homogeneous optimal transport maps between convex cones.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者在声明中披露 ChatGPT 5.6 用于文献综述、按作者要求起草 TikZ 代码及校对；第 41 页脚注另明确将一个凸锥退化的初等例子归于 ChatGPT 5.6-Sol 的建议，该署名针对例子，不能扩展为主定理来源。
 
+来源：https://arxiv.org/pdf/2609.37847v1 · PDF 第 7、41 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在声明中披露 ChatGPT 5.6 用于文献综述、按作者要求起草 TikZ 代码及校对；第 41 页脚注另明确将一个凸锥退化的初等例子归于 ChatGPT 5.6-Sol 的建议，该署名针对例子，不能扩展为主定理来源。
+
+来源：https://arxiv.org/pdf/2609.37847v1
 
 [arXiv](https://arxiv.org/abs/2609.37847)
 
@@ -650,9 +682,11 @@ Qun Chen、Guofang Wang、Mingwei Zhang
 
 Let $u:\mathbb{S}^{2n+1}\to\mathbb{CP}^n$ be a smooth nonconstant harmonic map. We prove that its Morse index is equal to $ 2n+2$ if and only if \begin{equation*} u = h \circ \pi \circ \Xi, \end{equation*} where $\Xi:\mathbb{S}^{2n+1}\to\mathbb{S}^{2n+1}$ is an isometric transformation, $\pi:\mathbb{S}^{2n+1}\to\mathbb{CP}^n$ is the Hopf map and $h:\mathbb{CP}^n\to\mathbb{CP}^n$ is a holomorphic map with degree one. When $n=1$, it refines a classical result of Urakawa and a recent result of Rivière. Moreover, we prove that $h\circ\pi\circ \Xi$ has nullity $3n^2+5n$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.37945v1
 
 [arXiv](https://arxiv.org/abs/2609.37945)
 
@@ -660,13 +694,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Aditya Kumar、Boyu Zhang
 
-证明非零符号数的闭 spin 四维流形去掉一点后，不存在完备且标量曲率有统一正下界的度量，特别适用于穿孔 K3。
+证明闭 spin 四维流形若 Â 属非零，去掉一点后仍不能具有完备、标量曲率有统一正下界的度量，特别包括穿孔 K3。论证以 μ-bubble 截断无穷端，用修正稳定算子的正谱条件推出 APS 指标消失，并构造指标与符号数为零的 spin 填充，从指标拼接得到矛盾。
 
 We show that a closed spin four-manifold with nonzero signature, even after being punctured, does not admit a complete metric with uniformly positive scalar curvature. In particular, the punctured $K3$ surface does not admit such a metric. This is known to be false in higher dimensions. A key new observation, which could be of independent interest, is that Gromov's $\mu$-bubbles are a convenient class of boundaries for the APS boundary value problem for the Dirac operator.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明本文的想法、计算及写作均未使用 AI 工具。
 
+来源：https://arxiv.org/pdf/2609.37948v1
 
 [arXiv](https://arxiv.org/abs/2609.37948)
 
@@ -678,9 +714,11 @@ Indranil Biswas、Sorin Dumitrescu
 
 For real codimension two smooth foliations, we study the transversely complex structures, transversely complex projective structures and transverse opers associated to the foliation. We prove a uniqueness theorem for the transversely holomorphic ${\mathbb C}{\mathbb P}^1$--bundle naturally associated with a transversely complex projective structures. A similar uniqueness theorem is proved for the transversely holomorphic filtered ${\mathbb C}{\mathbb P}^{r-1}$--bundle naturally associated to a transverse ${\rm PGL}(r,{\mathbb C})$--oper.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2609.38040v1
 
 [arXiv](https://arxiv.org/abs/2609.38040)
 
@@ -692,9 +730,13 @@ Shiri Artstein-Avidan
 
 We prove a sharp Santaló-type inequality for the product of $V(\varphi)$ and $V$ of the Legendre transform of $\varphi$, where $\varphi$ is an even geometric convex function on $\mathbb{R}^n$ and $V(\varphi)=\int(1+\varphi)^{-(n+1)}$. For this size functional, the Legendre transform and functional polarity give the same volume, so the same inequality holds for both dualities. Through a projective correspondence, the problem is equivalent to a new Santaló-type inequality with respect to standard volume and standard polarity, on a class of not necessarily centered convex bodies. This class consists of convex bodies $K\subset\mathbb R^n\times[-1,1]$ containing $\{0\}\times[-1,1]$, for which every horizontal section is centrally symmetric about the distinguished vertical axis. We determine the sharp upper bound for $\operatorname{vol}_{n+1}(K)\operatorname{vol}_{n+1}(K^\circ)$ in this class and classify all equality cases. When $n=1$, the extremizers are the disk and its horizontal linear images. When $n\ge 2$, the ball is no longer a maximizer, and the extremizer is unique up to horizontal linear transformations and the reflection $t\mapsto -t$. The symmetric Santaló inequality applied to horizontal sections, together with monotone transport, reduces the problem to a maximization problem for increasing curves in the square $[-1,1]^2$. We solve this problem using a global potential when $n=1$ and two Hamilton-Jacobi branches when $n\ge 2$. Finally, in dimension one we provide a sharp family of functional Santaló inequalities for the Legendre duality, interpolating between the volume $V$ and the exponential volume $\int \exp(-\varphi)$, with centered quadratics as the only equality cases.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 辅助探索可能的思路、检查计算和论证、改善表述；数学陈述与证明经作者独立核验。
 
+来源：https://arxiv.org/pdf/2609.38041v1 · PDF 第 47 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助探索可能的思路、检查计算和论证、改善表述；数学陈述与证明经作者独立核验。
+
+来源：https://arxiv.org/pdf/2609.38041v1
 
 [arXiv](https://arxiv.org/abs/2609.38041)
 
@@ -706,9 +748,13 @@ Jinzhou Huang
 
 In [OS05] the authors proved an exact triangle for the Heegaard Floer homology of the double branched covers associated to a skein sequence of links, and constructed a spectral sequence from the reduced Khovanov homology to the Heegaard Floer homology of the double branched cover of a link. For $L \subset S^3$ a link and $\Sigma(L)$ its double branched cover, the invariant $HF(\Sigma(L))$ doesn't capture the information of the natural involution on $\Sigma(L)$. In this paper we study the equivariant version of $HF(\Sigma(L))$ and prove that similar exact triangle and spectral sequence hold for this equivariant version.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于证明探索、排版及语言整理；论证、引用和最终内容由作者核验负责。
 
+来源：https://arxiv.org/pdf/2609.38117v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于证明探索、排版及语言整理；论证、引用和最终内容由作者核验负责。
+
+来源：https://arxiv.org/pdf/2609.38117v1
 
 [arXiv](https://arxiv.org/abs/2609.38117)
 
@@ -716,12 +762,16 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Fernando Galaz-García
 
-作者声称构造外来八维球面以及两个定向三阶十维同伦球面上的正截面曲率度量，结合丛构造、相容圆盘模型、等变极坐标正规形及边界拼接。
+作者构造外来八维球面及两个定向三阶十维同伦球面的正截面曲率度量。证明把 Sperança 丛写成等变极坐标正规形，利用无穷小作用算子范数≤2 将 He–Liu–Yau 的相容圆盘构造推广；北侧双翘曲度量保持水平二平面正曲率，在中心验证光滑性，再以 O’Neill 公式和边界匹配完成商空间及拼接。
 
 We prove that the exotic smooth $8$-sphere and both oriented homotopy $10$-spheres representing elements of order three admit Riemannian metrics with strictly positive sectional curvature. The construction combines Sperança's special $S^3$-$S^3$ bundle models with the compatible-disk construction of He, Liu and Yau. We show that the relevant bundles admit equivariant polar normal forms, with transition functions that are constant along meridians and conjugation-equivariant. We also show that the representation-dependent part of the He--Liu--Yau construction requires only a uniform bound on the infinitesimal action fields. Sperança's $8$- and $10$-dimensional examples satisfy this bound. The resulting northern and southern metrics have matching boundary metrics and compatible second fundamental forms, so the Reiser--Wraith gluing theorem gives the required positively curved metrics.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT Astra 与 Claude Opus 5.5 在其指导下辅助数学探索、稿件起草、文献检索及内部审查；最终论证和引用由作者独立核验。
 
+来源：https://arxiv.org/pdf/2609.38126v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra 与 Claude Opus 5.5 在其指导下辅助数学探索、稿件起草、文献检索及内部审查；最终论证和引用由作者独立核验。
+
+来源：https://arxiv.org/pdf/2609.38126v1
 
 [arXiv](https://arxiv.org/abs/2609.38126)
