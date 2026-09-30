@@ -18,17 +18,43 @@
       ],
       "primaryCategory": "cs.CR",
       "comment": "46 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-26T22:07:05Z",
+      "updatedAt": "2026-09-26T22:07:05Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-30T04:22:16.788131+00:00",
         "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-30T04:23:35.954224+00:00",
+        "contentHash": "0f1efcafce2639bcc0aef6ff9a3063b46a08177b567a3602d57e0a359fee5304"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "随机格筛的可证明启发式复杂度",
+      "workSummary": "在 Haar 随机幺模格上调整球壳筛，使列表向量保持独立均匀，从而以高概率在 2^(0.2924n+o(n)) 时间和 2^(0.2075n+o(n)) 空间解决 SVP 及随机目标 CVP。",
+      "techniques": [
+        "随机格",
+        "球壳筛",
+        "独立均匀不变量",
+        "离散 Gaussian 采样"
+      ],
+      "breakthrough": "在随机格模型中严格达到相应启发式筛复杂度。",
+      "limitations": "概率同时针对格和算法随机性，不能据此宣称任意最坏情形格有相同复杂度。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 77,
+      "priorityReason": "在随机格模型中严格达到相应启发式筛复杂度。"
+    },
+    "analysisBasis": {
+      "abstract": "In an attempt to close the gap between the best provable and heuristic algorithms for hard lattice problems, such as the shortest (SVP) and closest vector problem (CVP), we analyze lattice sieving on Haar-random unimodular lattices. With well-chosen modifications to heuristic sieving, we show that the heuristic assumptions are no longer necessary, and we can provably achieve the same complexities as heuristic sieving on Haar-random lattices for various lattice problems. Concretely, with probability $1 - o(1)$ over the randomness of the Haar-random lattice and the algorithmic randomness, we show how to: 1. Solve SVP in time $2^{0.2924\\ldots n + o(n)}$ and space $2^{0.2075\\ldots n + o(n)}$; 2. Solve CVP for random targets with the same complexities; 3. Produce $2^{0.2075\\ldots n + o(n)}$ discrete Gaussian samples at any width with these complexities, up to a $2^{-\\Omega(n)}$ error in the joint distribution. This improves on the SVP complexities for Haar-random lattices of Pouly-Shen [Eurocrypt, 2026] running in time $2^{0.633n + o(n)}$ and space $2^{0.5n + o(n)}$, as well as the recent worst-case SVP (and average-case CVP) improvements of Gao-Feng-Hu and Hhan [Cryptology ePrint Archive, 2026], both running in time and space $2^{0.5n + o(n)}$ or higher. Similar to standard sieving methods, our approach proceeds through a series of thin spherical shells, starting from a large radius and iteratively combining vectors to obtain vectors from shells with smaller radius. Our main technical contribution is making a series of adjustments to guarantee that for each sieve list generated at each spherical shell, each list vector is independent and uniformly random over all lattice points within this shell. Once this invariant is satisfied, it is a matter of smooth sailing through the spherical shells until we find a solution.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -49,17 +75,43 @@
           ],
           "primaryCategory": "cs.CR",
           "comment": "46 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-26T22:07:05Z",
+          "updatedAt": "2026-09-26T22:07:05Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-30T04:22:16.788131+00:00",
             "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-30T04:23:35.954224+00:00",
+            "contentHash": "0f1efcafce2639bcc0aef6ff9a3063b46a08177b567a3602d57e0a359fee5304"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "随机格筛的可证明启发式复杂度",
+          "workSummary": "在 Haar 随机幺模格上调整球壳筛，使列表向量保持独立均匀，从而以高概率在 2^(0.2924n+o(n)) 时间和 2^(0.2075n+o(n)) 空间解决 SVP 及随机目标 CVP。",
+          "techniques": [
+            "随机格",
+            "球壳筛",
+            "独立均匀不变量",
+            "离散 Gaussian 采样"
+          ],
+          "breakthrough": "在随机格模型中严格达到相应启发式筛复杂度。",
+          "limitations": "概率同时针对格和算法随机性，不能据此宣称任意最坏情形格有相同复杂度。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 77,
+          "priorityReason": "在随机格模型中严格达到相应启发式筛复杂度。"
+        },
+        "analysisBasis": {
+          "abstract": "In an attempt to close the gap between the best provable and heuristic algorithms for hard lattice problems, such as the shortest (SVP) and closest vector problem (CVP), we analyze lattice sieving on Haar-random unimodular lattices. With well-chosen modifications to heuristic sieving, we show that the heuristic assumptions are no longer necessary, and we can provably achieve the same complexities as heuristic sieving on Haar-random lattices for various lattice problems. Concretely, with probability $1 - o(1)$ over the randomness of the Haar-random lattice and the algorithmic randomness, we show how to: 1. Solve SVP in time $2^{0.2924\\ldots n + o(n)}$ and space $2^{0.2075\\ldots n + o(n)}$; 2. Solve CVP for random targets with the same complexities; 3. Produce $2^{0.2075\\ldots n + o(n)}$ discrete Gaussian samples at any width with these complexities, up to a $2^{-\\Omega(n)}$ error in the joint distribution. This improves on the SVP complexities for Haar-random lattices of Pouly-Shen [Eurocrypt, 2026] running in time $2^{0.633n + o(n)}$ and space $2^{0.5n + o(n)}$, as well as the recent worst-case SVP (and average-case CVP) improvements of Gao-Feng-Hu and Hhan [Cryptology ePrint Archive, 2026], both running in time and space $2^{0.5n + o(n)}$ or higher. Similar to standard sieving methods, our approach proceeds through a series of thin spherical shells, starting from a large radius and iteratively combining vectors to obtain vectors from shells with smaller radius. Our main technical contribution is making a series of adjustments to guarantee that for each sieve list generated at each spherical shell, each list vector is independent and uniformly random over all lattice points within this shell. Once this invariant is satisfied, it is a matter of smooth sailing through the spherical shells until we find a solution.",
+          "version": 1
+        }
       }
     }
   ]

@@ -16,17 +16,44 @@
         "math.OC",
         "math.MG"
       ],
-      "primaryCategory": "math.OC"
+      "primaryCategory": "math.OC",
+      "version": 1,
+      "submittedAt": "2026-09-29T08:01:47Z",
+      "updatedAt": "2026-09-29T08:01:47Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-30T04:22:16.788131+00:00",
         "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-30T04:23:24.623052+00:00",
+        "contentHash": "3bc7ddd971bd861b0ad8033b2965cdae1f56f2baa89199fc5f707fa4455069f6"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "超度量融合最优传输的情景树稳定性",
+      "workSummary": "融合 ultrametric 与 Fused Gromov–Wasserstein 距离，同时控制多阶段随机规划情景树的边际拟合和非预见性，证明最优值的 Hölder 型稳定并提出块坐标下降算法。",
+      "techniques": [
+        "最优传输",
+        "超度量",
+        "情景树",
+        "块坐标下降"
+      ],
+      "breakthrough": "用统一距离兼顾概率近似与时间信息约束。",
+      "limitations": "算法实验在库存管理案例上进行；稳定性依赖规划问题假设，不代表普适最优求解保证。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 60,
+      "priorityReason": "用统一距离兼顾概率近似与时间信息约束。"
+    },
+    "analysisBasis": {
+      "abstract": "Multistage Stochastic Programming requires scenario trees that accurately approximate the unknown underlying uncertainty process without violating the non-anticipativity constraint. Most of the existing method for scenario tree generation usually target just one of the two goals at the expense of the other, and just some recent methods try to simultaneously address both. In this paper, we propose to combine two recent distances from Optimal Transport Theory, specifically the ultrametric Gromov-Wasserstein and the Fused Gromov-Wasserstein, into a unique measure to simultaneously deal with the two goals. Our main result is a stability theorem showing that the optimal value of a Multistage Stochastic Programming problem changes by an amount controlled by a Holder-type power of the proposed distance between the true process and its scenario tree approximation, extending Wasserstein-based stability results to control marginal fidelity and non-anticipativity, simultaneously. We propose a block coordinate descent algorithm for the our scenario tree generation based on the proposed distance, and evaluate it on different inventory management test cases.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +72,44 @@
             "math.OC",
             "math.MG"
           ],
-          "primaryCategory": "math.OC"
+          "primaryCategory": "math.OC",
+          "version": 1,
+          "submittedAt": "2026-09-29T08:01:47Z",
+          "updatedAt": "2026-09-29T08:01:47Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-30T04:22:16.788131+00:00",
             "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-30T04:23:24.623052+00:00",
+            "contentHash": "3bc7ddd971bd861b0ad8033b2965cdae1f56f2baa89199fc5f707fa4455069f6"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "超度量融合最优传输的情景树稳定性",
+          "workSummary": "融合 ultrametric 与 Fused Gromov–Wasserstein 距离，同时控制多阶段随机规划情景树的边际拟合和非预见性，证明最优值的 Hölder 型稳定并提出块坐标下降算法。",
+          "techniques": [
+            "最优传输",
+            "超度量",
+            "情景树",
+            "块坐标下降"
+          ],
+          "breakthrough": "用统一距离兼顾概率近似与时间信息约束。",
+          "limitations": "算法实验在库存管理案例上进行；稳定性依赖规划问题假设，不代表普适最优求解保证。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 60,
+          "priorityReason": "用统一距离兼顾概率近似与时间信息约束。"
+        },
+        "analysisBasis": {
+          "abstract": "Multistage Stochastic Programming requires scenario trees that accurately approximate the unknown underlying uncertainty process without violating the non-anticipativity constraint. Most of the existing method for scenario tree generation usually target just one of the two goals at the expense of the other, and just some recent methods try to simultaneously address both. In this paper, we propose to combine two recent distances from Optimal Transport Theory, specifically the ultrametric Gromov-Wasserstein and the Fused Gromov-Wasserstein, into a unique measure to simultaneously deal with the two goals. Our main result is a stability theorem showing that the optimal value of a Multistage Stochastic Programming problem changes by an amount controlled by a Holder-type power of the proposed distance between the true process and its scenario tree approximation, extending Wasserstein-based stability results to control marginal fidelity and non-anticipativity, simultaneously. We propose a block coordinate descent algorithm for the our scenario tree generation based on the proposed distance, and evaluate it on different inventory management test cases.",
+          "version": 1
+        }
       }
     }
   ]

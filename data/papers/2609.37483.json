@@ -18,17 +18,42 @@
       ],
       "primaryCategory": "cs.CR",
       "comment": "7 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-28T02:05:02Z",
+      "updatedAt": "2026-09-28T02:05:02Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-09-30T04:22:16.788131+00:00",
         "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-09-30T04:23:35.954575+00:00",
+        "contentHash": "5312545fee6a98b06dc3793fe6652bbc69975ed0819cbe23e13bfdb8305f0e8e"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "对偶格译码攻击的严格渐近权衡",
+      "workSummary": "利用 Siegel–Rogers 矩恒等式分析完整对偶球上的余弦分数，在 Haar 随机格模型下控制判定 BDD 的两类误差，得到预处理查询时间与目标半径的显式渐近权衡。",
+      "techniques": [
+        "随机格矩公式",
+        "对偶余弦分数",
+        "预处理 BDD"
+      ],
+      "breakthrough": "摆脱逐向量分数独立性的启发式假设，验证条件模型的渐近预测。",
+      "limitations": "结果为随机格模型下的判定问题和预处理权衡，不是一般格上的最坏情形算法界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 73,
+      "priorityReason": "摆脱逐向量分数独立性的启发式假设，验证条件模型的渐近预测。"
+    },
+    "analysisBasis": {
+      "abstract": "Analyses of dual lattice attacks have often assumed that the individual scores associated with short dual vectors are mutually independent. Laarhoven-Walter used this heuristic to derive explicit trade-offs between the target radius and query time for bounded distance decoding (BDD) with preprocessing. Ducas-Pulles subsequently demonstrated theoretical and experimental failures of this heuristic and proposed an alternative model conditioned on the target norm. In this note, we prove an explicit asymptotic trade-off for (decision-)BDD with preprocessing in the Haar-random lattice model, without heuristic assumptions. Using moment identities of Siegel and Rogers, we analyze cosine scores over complete dual balls and bound both error probabilities when distinguishing targets planted at a prescribed radius from uniform targets modulo the lattice. Optimizing the dual radius yields a trade-off between target radius and query time that matches the asymptotic prediction from the conditional model of Ducas-Pulles.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -49,17 +74,42 @@
           ],
           "primaryCategory": "cs.CR",
           "comment": "7 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-28T02:05:02Z",
+          "updatedAt": "2026-09-28T02:05:02Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-09-30T04:22:16.788131+00:00",
             "contentHash": "e51dbd1b9bd1d0729483b368a8e8fcf48121642ba7f55d70eca81ba2dd0273d8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-09-30T04:23:35.954575+00:00",
+            "contentHash": "5312545fee6a98b06dc3793fe6652bbc69975ed0819cbe23e13bfdb8305f0e8e"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "对偶格译码攻击的严格渐近权衡",
+          "workSummary": "利用 Siegel–Rogers 矩恒等式分析完整对偶球上的余弦分数，在 Haar 随机格模型下控制判定 BDD 的两类误差，得到预处理查询时间与目标半径的显式渐近权衡。",
+          "techniques": [
+            "随机格矩公式",
+            "对偶余弦分数",
+            "预处理 BDD"
+          ],
+          "breakthrough": "摆脱逐向量分数独立性的启发式假设，验证条件模型的渐近预测。",
+          "limitations": "结果为随机格模型下的判定问题和预处理权衡，不是一般格上的最坏情形算法界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 73,
+          "priorityReason": "摆脱逐向量分数独立性的启发式假设，验证条件模型的渐近预测。"
+        },
+        "analysisBasis": {
+          "abstract": "Analyses of dual lattice attacks have often assumed that the individual scores associated with short dual vectors are mutually independent. Laarhoven-Walter used this heuristic to derive explicit trade-offs between the target radius and query time for bounded distance decoding (BDD) with preprocessing. Ducas-Pulles subsequently demonstrated theoretical and experimental failures of this heuristic and proposed an alternative model conditioned on the target norm. In this note, we prove an explicit asymptotic trade-off for (decision-)BDD with preprocessing in the Haar-random lattice model, without heuristic assumptions. Using moment identities of Siegel and Rogers, we analyze cosine scores over complete dual balls and bound both error probabilities when distinguishing targets planted at a prescribed radius from uniform targets modulo the lattice. Optimizing the dual radius yields a trade-off between target radius and query time that matches the asymptotic prediction from the conditional model of Ducas-Pulles.",
+          "version": 1
+        }
       }
     }
   ]
