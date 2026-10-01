@@ -24,27 +24,45 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-01T03:49:26.705702+00:00",
         "contentHash": "b84592418354c5c4135440a066a0a5b91c75ea280bd1fb0a340964a8fa7cc205"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.38295v1",
+        "observedAt": "2026-10-01T04:05:11.339511+00:00",
+        "contentHash": "4ac69246d9ee8b9bcba940663375210cd8b40daa192e6ac8fe19175cbca30c88"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "无条件对数凹测度的 KLS 界",
-      "workSummary": "作者证明各向同性、无条件对数凹概率测度满足不依赖维数的 Poincaré 不等式，利用测度变换及相应 Dunkl–Langevin 算子的谱分析处理无条件 KLS 猜想。",
+      "workSummary": "对各向同性无条件对数凹测度给出维数无关的 Poincaré 界。证明用逐坐标 1-Lipschitz 输运将问题化到重加权测度，再以 Dunkl–Langevin 算子建立谱隙二择一估计，选取尺度排除坏分支；核心路线与证明草图的 AI 来源在正文单列披露。",
       "techniques": [
-        "Dunkl 算子",
-        "测度变换",
-        "谱分析",
-        "Poincaré 不等式"
+        "Dunkl–Langevin 算子",
+        "1-Lipschitz 输运",
+        "重加权测度",
+        "谱隙二择一"
       ],
       "breakthrough": "若论证成立，将解决无条件对数凹类的 KLS 猜想。",
-      "limitations": "无条件对称性及各向同性是适用条件；不能写成一般对数凹测度的 KLS 猜想已解决。",
-      "analysisDepth": "abstract",
+      "limitations": "主定理仅针对无条件测度；文中粗略常数约为 10¹²，C≤8 只是初步 AI 辅助计算提示的优化方向，并非已证明的常数。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
-      "aiEvidence": "官方摘要明确披露：核心证明想法由生成式 AI 在与作者持续数周的互动中产生，作者随后完善并形式化论证。",
-      "aiEvidenceSource": "https://arxiv.org/list/math.MG/new · 官方摘要",
+      "aiEvidence": "作者披露模型在数周共同探索后独立建议 Dunkl–Langevin 新路线，并在随后四天互动中形成完整证明草图；作者再用数周核验、完善和简化。另提及 AI 辅助的初步常数优化计算，未将该优化列为已证结论。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.38295v1 · PDF 第 1、2、6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-01T04:05:11.339511+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.38295v1",
+        "contentHash": "4ac69246d9ee8b9bcba940663375210cd8b40daa192e6ac8fe19175cbca30c88",
+        "pages": 33,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露模型在数周共同探索后独立建议 Dunkl–Langevin 新路线，并在随后四天互动中形成完整证明草图；作者再用数周核验、完善和简化。另提及 AI 辅助的初步常数优化计算，未将该优化列为已证结论。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "da48c95a9584f44e9aa75ecb46ea8ba0922051603a953b8ab25e306fc6b37d57"
+      },
       "aiUsage": [
+        "computation",
+        "exploration",
         "ideas",
-        "exploration"
+        "proofs"
       ],
       "priorityScore": 99,
       "priorityReason": "若论证成立，将解决无条件对数凹类的 KLS 猜想。"
@@ -79,27 +97,45 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-01T03:49:26.705702+00:00",
             "contentHash": "b84592418354c5c4135440a066a0a5b91c75ea280bd1fb0a340964a8fa7cc205"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.38295v1",
+            "observedAt": "2026-10-01T04:05:11.339511+00:00",
+            "contentHash": "4ac69246d9ee8b9bcba940663375210cd8b40daa192e6ac8fe19175cbca30c88"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "无条件对数凹测度的 KLS 界",
-          "workSummary": "作者证明各向同性、无条件对数凹概率测度满足不依赖维数的 Poincaré 不等式，利用测度变换及相应 Dunkl–Langevin 算子的谱分析处理无条件 KLS 猜想。",
+          "workSummary": "对各向同性无条件对数凹测度给出维数无关的 Poincaré 界。证明用逐坐标 1-Lipschitz 输运将问题化到重加权测度，再以 Dunkl–Langevin 算子建立谱隙二择一估计，选取尺度排除坏分支；核心路线与证明草图的 AI 来源在正文单列披露。",
           "techniques": [
-            "Dunkl 算子",
-            "测度变换",
-            "谱分析",
-            "Poincaré 不等式"
+            "Dunkl–Langevin 算子",
+            "1-Lipschitz 输运",
+            "重加权测度",
+            "谱隙二择一"
           ],
           "breakthrough": "若论证成立，将解决无条件对数凹类的 KLS 猜想。",
-          "limitations": "无条件对称性及各向同性是适用条件；不能写成一般对数凹测度的 KLS 猜想已解决。",
-          "analysisDepth": "abstract",
+          "limitations": "主定理仅针对无条件测度；文中粗略常数约为 10¹²，C≤8 只是初步 AI 辅助计算提示的优化方向，并非已证明的常数。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
-          "aiEvidence": "官方摘要明确披露：核心证明想法由生成式 AI 在与作者持续数周的互动中产生，作者随后完善并形式化论证。",
-          "aiEvidenceSource": "https://arxiv.org/list/math.MG/new · 官方摘要",
+          "aiEvidence": "作者披露模型在数周共同探索后独立建议 Dunkl–Langevin 新路线，并在随后四天互动中形成完整证明草图；作者再用数周核验、完善和简化。另提及 AI 辅助的初步常数优化计算，未将该优化列为已证结论。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.38295v1 · PDF 第 1、2、6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-01T04:05:11.339511+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.38295v1",
+            "contentHash": "4ac69246d9ee8b9bcba940663375210cd8b40daa192e6ac8fe19175cbca30c88",
+            "pages": 33,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露模型在数周共同探索后独立建议 Dunkl–Langevin 新路线，并在随后四天互动中形成完整证明草图；作者再用数周核验、完善和简化。另提及 AI 辅助的初步常数优化计算，未将该优化列为已证结论。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "da48c95a9584f44e9aa75ecb46ea8ba0922051603a953b8ab25e306fc6b37d57"
+          },
           "aiUsage": [
+            "computation",
+            "exploration",
             "ideas",
-            "exploration"
+            "proofs"
           ],
           "priorityScore": 99,
           "priorityReason": "若论证成立，将解决无条件对数凹类的 KLS 猜想。"
