@@ -22,21 +22,47 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-01T03:49:15.615408+00:00",
         "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.39330v1",
+        "observedAt": "2026-10-01T04:16:55.710180+00:00",
+        "contentHash": "537c1314d6875ff6acd6985a7c098402fa11d891eed408f3f9c60a5eaf9c9a49"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "五六维平均曲率流的 planarity 估计",
-      "workSummary": "在五、六维完整 Andrews–Baker 二次夹逼范围内建立高余维平均曲率流的 planarity 估计，用尖锐 Kato 型不等式控制主法向扭转与第二基本形式梯度。",
+      "workSummary": "对闭 n 维欧氏空间高余维平均曲率流，在初始严格二次夹逼 Q=c|H|²−|A|²>0、c≤4/(3n) 下，用最大值原理证明 |A⁻|²/Q^(1−σ) 的最大值不增长（0<σ≤1/30）。新的尖锐 Kato 型不等式通过 Codazzi 关系控制主法向的扭转，吸收演化方程中的交叉项，补齐五、六维的全 Andrews–Baker 夹逼范围；光滑奇点放大极限因而降为余维一。",
       "techniques": [
-        "平均曲率流",
-        "曲率夹逼",
-        "Kato 不等式"
+        "尖锐 Kato 型不等式",
+        "Codazzi 关系",
+        "抛物最大值原理",
+        "平面性估计"
       ],
       "breakthrough": "补齐高曲率区渐近余维一估计在五六维的范围缺口。",
-      "limitations": "渐近余维一是高曲率区域的估计，不能直接断言整个初始子流形已落在某个超平面。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "要求初始严格正夹逼、闭浸入及余维至少二；定理写于 n≥5，但新增范围是五、六维。平面性结论不等于全部奇点已分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude Fable 5.1 找出关键尖锐 Kato 型不等式并给出约束优化初始证明，随后协助发展几何证明，并指出该不等式可去掉五、六维平面性估计的原限制；作者逐项核验并完成其余分析。Claude 与 ChatGPT 还用于数学讨论、检查及编辑反馈。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.39330v1 · PDF 第 1 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-01T04:16:55.710180+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.39330v1",
+        "contentHash": "537c1314d6875ff6acd6985a7c098402fa11d891eed408f3f9c60a5eaf9c9a49",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Fable 5.1 找出关键尖锐 Kato 型不等式并给出约束优化初始证明，随后协助发展几何证明，并指出该不等式可去掉五、六维平面性估计的原限制；作者逐项核验并完成其余分析。Claude 与 ChatGPT 还用于数学讨论、检查及编辑反馈。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0a0402536423b7ed8fce8d639c78ddfd05dcf8bb35f9923e3d267228bbba85df"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 91,
       "priorityReason": "补齐高曲率区渐近余维一估计在五六维的范围缺口。"
     },
@@ -68,21 +94,47 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-01T03:49:15.615408+00:00",
             "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.39330v1",
+            "observedAt": "2026-10-01T04:16:55.710180+00:00",
+            "contentHash": "537c1314d6875ff6acd6985a7c098402fa11d891eed408f3f9c60a5eaf9c9a49"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "五六维平均曲率流的 planarity 估计",
-          "workSummary": "在五、六维完整 Andrews–Baker 二次夹逼范围内建立高余维平均曲率流的 planarity 估计，用尖锐 Kato 型不等式控制主法向扭转与第二基本形式梯度。",
+          "workSummary": "对闭 n 维欧氏空间高余维平均曲率流，在初始严格二次夹逼 Q=c|H|²−|A|²>0、c≤4/(3n) 下，用最大值原理证明 |A⁻|²/Q^(1−σ) 的最大值不增长（0<σ≤1/30）。新的尖锐 Kato 型不等式通过 Codazzi 关系控制主法向的扭转，吸收演化方程中的交叉项，补齐五、六维的全 Andrews–Baker 夹逼范围；光滑奇点放大极限因而降为余维一。",
           "techniques": [
-            "平均曲率流",
-            "曲率夹逼",
-            "Kato 不等式"
+            "尖锐 Kato 型不等式",
+            "Codazzi 关系",
+            "抛物最大值原理",
+            "平面性估计"
           ],
           "breakthrough": "补齐高曲率区渐近余维一估计在五六维的范围缺口。",
-          "limitations": "渐近余维一是高曲率区域的估计，不能直接断言整个初始子流形已落在某个超平面。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "要求初始严格正夹逼、闭浸入及余维至少二；定理写于 n≥5，但新增范围是五、六维。平面性结论不等于全部奇点已分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude Fable 5.1 找出关键尖锐 Kato 型不等式并给出约束优化初始证明，随后协助发展几何证明，并指出该不等式可去掉五、六维平面性估计的原限制；作者逐项核验并完成其余分析。Claude 与 ChatGPT 还用于数学讨论、检查及编辑反馈。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.39330v1 · PDF 第 1 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-01T04:16:55.710180+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.39330v1",
+            "contentHash": "537c1314d6875ff6acd6985a7c098402fa11d891eed408f3f9c60a5eaf9c9a49",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Fable 5.1 找出关键尖锐 Kato 型不等式并给出约束优化初始证明，随后协助发展几何证明，并指出该不等式可去掉五、六维平面性估计的原限制；作者逐项核验并完成其余分析。Claude 与 ChatGPT 还用于数学讨论、检查及编辑反馈。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0a0402536423b7ed8fce8d639c78ddfd05dcf8bb35f9923e3d267228bbba85df"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 91,
           "priorityReason": "补齐高曲率区渐近余维一估计在五六维的范围缺口。"
         },

@@ -24,22 +24,46 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-01T03:49:15.615408+00:00",
         "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.40200v1",
+        "observedAt": "2026-10-01T04:16:20.592117+00:00",
+        "contentHash": "5fbef41943380a02fc7cb52d4bc50bb7e42dfeac32f126c18aef06932a4f400f"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "局部对称空间的 waist 与高维扩张",
-      "workSummary": "用低余维极小子流形的体积下界，证明 SL(n,R) 型紧局部对称流形在 d≤n/8 时构成拓扑高维扩张族，并推广至分裂单非紧实 Lie 群的线性秩范围。",
+      "workSummary": "对分裂单实李群 G 的对称空间紧商，证明低余维驻定整可求长 varifold 的体积与环境体积可比，从而得到 d<c·rank(G) 的拓扑高阶扩张；SL(n,R) 情形达到 d≤⌊n/8⌋。论证把极小子流形单调性公式与酉表示矩阵系数衰减结合，并在紧八元数双曲空间中推出二阶腰不等式及主同余覆盖的幂律收缩自由。",
       "techniques": [
         "极小子流形单调性",
-        "酉表示矩阵系数",
-        "waist",
-        "systolic freedom"
+        "驻定 varifold",
+        "矩阵系数衰减",
+        "腰不等式"
       ],
       "breakthrough": "将几何体积控制用于高维拓扑扩张，并给出局部对称的幂律 systolic freedom 例子。",
-      "limitations": "扩张维数受群秩限制；体积结论针对指定低余维极小子流形。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "高秩结论针对分裂单非紧实李群的对称空间紧商，腰定义采用文中广义分片线性映射；不能扩大到任意连续映射或任意非紧局部对称空间。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露大语言模型用于文献检索、证明检查及学习；模型辅助改进第 5 节估计，将腰不等式适用范围从秩的 2/3 次幂改进到随秩线性增长。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2609.40200v1 · PDF 第 6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-01T04:16:20.592117+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2609.40200v1",
+        "contentHash": "5fbef41943380a02fc7cb52d4bc50bb7e42dfeac32f126c18aef06932a4f400f",
+        "pages": 42,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露大语言模型用于文献检索、证明检查及学习；模型辅助改进第 5 节估计，将腰不等式适用范围从秩的 2/3 次幂改进到随秩线性增长。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "29f88d476ccad8e9cda5e51a56373e9669767f82648454820088a123ba9a88e2"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 92,
       "priorityReason": "将几何体积控制用于高维拓扑扩张，并给出局部对称的幂律 systolic freedom 例子。"
     },
@@ -73,22 +97,46 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-01T03:49:15.615408+00:00",
             "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2609.40200v1",
+            "observedAt": "2026-10-01T04:16:20.592117+00:00",
+            "contentHash": "5fbef41943380a02fc7cb52d4bc50bb7e42dfeac32f126c18aef06932a4f400f"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "局部对称空间的 waist 与高维扩张",
-          "workSummary": "用低余维极小子流形的体积下界，证明 SL(n,R) 型紧局部对称流形在 d≤n/8 时构成拓扑高维扩张族，并推广至分裂单非紧实 Lie 群的线性秩范围。",
+          "workSummary": "对分裂单实李群 G 的对称空间紧商，证明低余维驻定整可求长 varifold 的体积与环境体积可比，从而得到 d<c·rank(G) 的拓扑高阶扩张；SL(n,R) 情形达到 d≤⌊n/8⌋。论证把极小子流形单调性公式与酉表示矩阵系数衰减结合，并在紧八元数双曲空间中推出二阶腰不等式及主同余覆盖的幂律收缩自由。",
           "techniques": [
             "极小子流形单调性",
-            "酉表示矩阵系数",
-            "waist",
-            "systolic freedom"
+            "驻定 varifold",
+            "矩阵系数衰减",
+            "腰不等式"
           ],
           "breakthrough": "将几何体积控制用于高维拓扑扩张，并给出局部对称的幂律 systolic freedom 例子。",
-          "limitations": "扩张维数受群秩限制；体积结论针对指定低余维极小子流形。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "高秩结论针对分裂单非紧实李群的对称空间紧商，腰定义采用文中广义分片线性映射；不能扩大到任意连续映射或任意非紧局部对称空间。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露大语言模型用于文献检索、证明检查及学习；模型辅助改进第 5 节估计，将腰不等式适用范围从秩的 2/3 次幂改进到随秩线性增长。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2609.40200v1 · PDF 第 6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-01T04:16:20.592117+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2609.40200v1",
+            "contentHash": "5fbef41943380a02fc7cb52d4bc50bb7e42dfeac32f126c18aef06932a4f400f",
+            "pages": 42,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露大语言模型用于文献检索、证明检查及学习；模型辅助改进第 5 节估计，将腰不等式适用范围从秩的 2/3 次幂改进到随秩线性增长。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "29f88d476ccad8e9cda5e51a56373e9669767f82648454820088a123ba9a88e2"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 92,
           "priorityReason": "将几何体积控制用于高维拓扑扩张，并给出局部对称的幂律 systolic freedom 例子。"
         },
