@@ -25,8 +25,27 @@
         "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "有限测量的测地射线变换反演",
+      "workSummary": "从测地射线数据的有限局部平均值重建函数，在适当几何条件和足够细测量划分下，对固定有限维重建空间证明 Lipschitz 稳定性，并实现梯度下降与共轭梯度算法。",
+      "techniques": [
+        "测地射线变换",
+        "有限元",
+        "Lipschitz 稳定性",
+        "迭代重建"
+      ],
+      "breakthrough": "把有限测量稳定性与二维、三维数值重建相结合。",
+      "limitations": "稳定性针对固定有限维空间及足够细的测量，不能视为无限维反演的统一 Lipschitz 界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 73,
+      "priorityReason": "把有限测量稳定性与二维、三维数值重建相结合。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the inversion of the geodesic ray transform from finitely many local averages of its data. Under suitable geometric assumptions, we prove Lipschitz stability on any fixed finite-dimensional reconstruction space when the measurement partition is sufficiently fine. We develop convergent reconstruction algorithms based on Steepest Gradient Descent and Conjugate Gradients and implement them using piecewise constant finite element spaces. Numerical experiments in 2D and 3D illustrate the influence of geometry and measurement discretization on reconstruction quality.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +73,27 @@
             "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "有限测量的测地射线变换反演",
+          "workSummary": "从测地射线数据的有限局部平均值重建函数，在适当几何条件和足够细测量划分下，对固定有限维重建空间证明 Lipschitz 稳定性，并实现梯度下降与共轭梯度算法。",
+          "techniques": [
+            "测地射线变换",
+            "有限元",
+            "Lipschitz 稳定性",
+            "迭代重建"
+          ],
+          "breakthrough": "把有限测量稳定性与二维、三维数值重建相结合。",
+          "limitations": "稳定性针对固定有限维空间及足够细的测量，不能视为无限维反演的统一 Lipschitz 界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 73,
+          "priorityReason": "把有限测量稳定性与二维、三维数值重建相结合。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the inversion of the geodesic ray transform from finitely many local averages of its data. Under suitable geometric assumptions, we prove Lipschitz stability on any fixed finite-dimensional reconstruction space when the measurement partition is sufficiently fine. We develop convergent reconstruction algorithms based on Steepest Gradient Descent and Conjugate Gradients and implement them using piecewise constant finite element spaces. Numerical experiments in 2D and 3D illustrate the influence of geometry and measurement discretization on reconstruction quality.",
+          "version": 1
+        }
       }
     }
   ]

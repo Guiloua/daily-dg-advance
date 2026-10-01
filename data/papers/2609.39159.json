@@ -25,8 +25,26 @@
         "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "Tsai–Wang 形式的精确 comass 判据",
+      "workSummary": "以微分的非零奇异值给出 Tsai–Wang n 形式具有 comass 一的充要条件：Σ λ_i²/(1+λ_i²)≤1；进一步讨论严格不等式时的唯一校准平面及等号时的刚性。",
+      "techniques": [
+        "奇异值",
+        "comass",
+        "校准几何"
+      ],
+      "breakthrough": "给出精确代数阈值，并把超曲面情形的唯一性推广到更高余维。",
+      "limitations": "全局二择一及等号刚性的微分方程条件需以正文为准，不能仅从任意映射的逐点奇异值界推出。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 87,
+      "priorityReason": "给出精确代数阈值，并把超曲面情形的唯一性推广到更高余维。"
+    },
+    "analysisBasis": {
+      "abstract": "For a map $F:\\Omega\\subset\\mathbb{R}^n\\to\\mathbb{R}^m$, let $\\Theta(F)$ be the $n$-form on $\\Omega\\times\\mathbb{R}^m$ introduced by Tsai and Wang [ arXiv:2604.04336 ]. If $\\lambda_1,\\ldots,\\lambda_{r}$ are the nonzero singular values of $d F$ at any fixed point, we prove that $$ \\Theta(F) \\text{ has comass one if and only if }~ \\mathcal{S}(\\lambda):=\\sum_{i=1}^{r}\\frac{\\lambda_i^2}{1+\\lambda_i^2}\\leq1. $$ Note that if $\\text{rank} d F\\le1$, $\\mathcal{S}$ is always less than $1$. We also prove a dichotomy that if $\\mathcal{S}\\leq 1$, then either $\\mathcal{S} < 1$ or $\\mathcal{S}\\equiv1$. When $\\mathcal{S}<1$, the graph tangent plane is the only calibrated plane, generalizing the corresponding result for hypersurfaces. When $\\mathcal{S}\\equiv1$, we prove that $F$ is affine or of rank $2$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,8 +72,26 @@
             "contentHash": "a70c58abb2ff68a0844dc4a507c52136c05a2c664a1b516916c7166f93d46608"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "Tsai–Wang 形式的精确 comass 判据",
+          "workSummary": "以微分的非零奇异值给出 Tsai–Wang n 形式具有 comass 一的充要条件：Σ λ_i²/(1+λ_i²)≤1；进一步讨论严格不等式时的唯一校准平面及等号时的刚性。",
+          "techniques": [
+            "奇异值",
+            "comass",
+            "校准几何"
+          ],
+          "breakthrough": "给出精确代数阈值，并把超曲面情形的唯一性推广到更高余维。",
+          "limitations": "全局二择一及等号刚性的微分方程条件需以正文为准，不能仅从任意映射的逐点奇异值界推出。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 87,
+          "priorityReason": "给出精确代数阈值，并把超曲面情形的唯一性推广到更高余维。"
+        },
+        "analysisBasis": {
+          "abstract": "For a map $F:\\Omega\\subset\\mathbb{R}^n\\to\\mathbb{R}^m$, let $\\Theta(F)$ be the $n$-form on $\\Omega\\times\\mathbb{R}^m$ introduced by Tsai and Wang [ arXiv:2604.04336 ]. If $\\lambda_1,\\ldots,\\lambda_{r}$ are the nonzero singular values of $d F$ at any fixed point, we prove that $$ \\Theta(F) \\text{ has comass one if and only if }~ \\mathcal{S}(\\lambda):=\\sum_{i=1}^{r}\\frac{\\lambda_i^2}{1+\\lambda_i^2}\\leq1. $$ Note that if $\\text{rank} d F\\le1$, $\\mathcal{S}$ is always less than $1$. We also prove a dichotomy that if $\\mathcal{S}\\leq 1$, then either $\\mathcal{S} < 1$ or $\\mathcal{S}\\equiv1$. When $\\mathcal{S}<1$, the graph tangent plane is the only calibrated plane, generalizing the corresponding result for hypersurfaces. When $\\mathcal{S}\\equiv1$, we prove that $F$ is affine or of rank $2$.",
+          "version": 1
+        }
       }
     }
   ]
