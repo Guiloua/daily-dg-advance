@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-01
 
-已收录 49/49 · 解读 49/49 · 资料待补齐。
+已收录 49/49 · 解读 49/49。
 
 ## H-principle for corank two distributions of odd rank and maximal first Kronecker index
 
