@@ -16,17 +16,60 @@
         "math.SG"
       ],
       "primaryCategory": "math.GT",
-      "comment": "38 pages, 18 figures in color"
+      "comment": "38 pages, 18 figures in color",
+      "version": 1
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-02T03:03:47.382731+00:00",
         "contentHash": "12aeaf45efb3786ecdf80c3c7d468b27340265e8cc02cfa7c87d21ea5ef231cb"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01776",
+        "observedAt": "2026-10-02T03:18:38.489982+00:00",
+        "contentHash": "ffac65fbbc53feff58ceaae0e732f02c7265bcdc4199b7b0bceedac9656db0d4"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "无光滑截面的 symplectic Lefschetz 纤维化",
+      "workSummary": "构造属 7 和 9 的无穷族辛 Lefschetz 纤维化，无光滑截面但有伪截面，属 9 例子还排除球面分支的多截面。对每个 d≥2，证明 d 重截面存在当且仅当纤维类的整除度 m(f) 整除 d。去掉正则纤维后，最后一个二维手柄的附着圈给基本群障碍；其阿贝尔化控制整除度，而更高阶幂零商保留阻碍，解释同调层面存在伪截面却无截面的差别。",
+      "techniques": [
+        "点推动障碍",
+        "基本群幂零商",
+        "GAP 验证",
+        "纤维类整除度"
+      ],
+      "breakthrough": "给出长期截面问题的反例，并区分截面与多截面存在性。",
+      "limitations": "假设为 S² 上相对极小、连通纤维且有非空正 Lefschetz 临界点的纤维化。任意指定签名的更高奇数属构造不等于已经证明这些更高属例子都无截面。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明构造、图示和基本群计算由人工完成；AI 仅辅助核对计算输入的一致性、准备 GAP 验证代码及稿件最终修订，商计算在 GAP 中执行。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.01776 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:18:38.489982+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.01776",
+        "contentHash": "ffac65fbbc53feff58ceaae0e732f02c7265bcdc4199b7b0bceedac9656db0d4",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明构造、图示和基本群计算由人工完成；AI 仅辅助核对计算输入的一致性、准备 GAP 验证代码及稿件最终修订，商计算在 GAP 中执行。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f0ba2d74f6e8ce6ae6c9d2f7a8e03f213e637b6e1d2b9cee6d8afe33289feb7b"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "给出长期截面问题的反例，并区分截面与多截面存在性。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that not every symplectic Lefschetz fibration over the $2$--sphere admits a smooth section, settling a long-standing open problem. To prove this, we develop a method for studying sections via lifts of monodromy factorizations with point-pushing maps and the induced handle decomposition of the total space, and apply it to an infinite family of Lefschetz fibrations. In contrast, we show that every Lefschetz fibration over $S^2$ admits positive multisections. Some of these examples admit no multisections with spherical components. We also construct signature-zero Lefschetz fibrations of every odd genus $g\\geq 7$, which in turn give symplectic Lefschetz fibrations of any prescribed signature in each of these genera.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +88,60 @@
             "math.SG"
           ],
           "primaryCategory": "math.GT",
-          "comment": "38 pages, 18 figures in color"
+          "comment": "38 pages, 18 figures in color",
+          "version": 1
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-02T03:03:47.382731+00:00",
             "contentHash": "12aeaf45efb3786ecdf80c3c7d468b27340265e8cc02cfa7c87d21ea5ef231cb"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.01776",
+            "observedAt": "2026-10-02T03:18:38.489982+00:00",
+            "contentHash": "ffac65fbbc53feff58ceaae0e732f02c7265bcdc4199b7b0bceedac9656db0d4"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "无光滑截面的 symplectic Lefschetz 纤维化",
+          "workSummary": "构造属 7 和 9 的无穷族辛 Lefschetz 纤维化，无光滑截面但有伪截面，属 9 例子还排除球面分支的多截面。对每个 d≥2，证明 d 重截面存在当且仅当纤维类的整除度 m(f) 整除 d。去掉正则纤维后，最后一个二维手柄的附着圈给基本群障碍；其阿贝尔化控制整除度，而更高阶幂零商保留阻碍，解释同调层面存在伪截面却无截面的差别。",
+          "techniques": [
+            "点推动障碍",
+            "基本群幂零商",
+            "GAP 验证",
+            "纤维类整除度"
+          ],
+          "breakthrough": "给出长期截面问题的反例，并区分截面与多截面存在性。",
+          "limitations": "假设为 S² 上相对极小、连通纤维且有非空正 Lefschetz 临界点的纤维化。任意指定签名的更高奇数属构造不等于已经证明这些更高属例子都无截面。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明构造、图示和基本群计算由人工完成；AI 仅辅助核对计算输入的一致性、准备 GAP 验证代码及稿件最终修订，商计算在 GAP 中执行。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.01776 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:18:38.489982+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.01776",
+            "contentHash": "ffac65fbbc53feff58ceaae0e732f02c7265bcdc4199b7b0bceedac9656db0d4",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明构造、图示和基本群计算由人工完成；AI 仅辅助核对计算输入的一致性、准备 GAP 验证代码及稿件最终修订，商计算在 GAP 中执行。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f0ba2d74f6e8ce6ae6c9d2f7a8e03f213e637b6e1d2b9cee6d8afe33289feb7b"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "给出长期截面问题的反例，并区分截面与多截面存在性。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that not every symplectic Lefschetz fibration over the $2$--sphere admits a smooth section, settling a long-standing open problem. To prove this, we develop a method for studying sections via lifts of monodromy factorizations with point-pushing maps and the induced handle decomposition of the total space, and apply it to an infinite family of Lefschetz fibrations. In contrast, we show that every Lefschetz fibration over $S^2$ admits positive multisections. Some of these examples admit no multisections with spherical components. We also construct signature-zero Lefschetz fibrations of every odd genus $g\\geq 7$, which in turn give symplectic Lefschetz fibrations of any prescribed signature in each of these genera.",
+          "version": 1
+        }
       }
     }
   ]

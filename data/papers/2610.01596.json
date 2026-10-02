@@ -21,10 +21,51 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-02T03:03:47.382731+00:00",
         "contentHash": "12aeaf45efb3786ecdf80c3c7d468b27340265e8cc02cfa7c87d21ea5ef231cb"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01596v1",
+        "observedAt": "2026-10-02T03:16:26.968485+00:00",
+        "contentHash": "0fdea0836dd019e4d2a64a3aa2ea8f3039cab5cf081c875dbdb56eab9264ae17"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "难以单调化简的 unknot petal 图",
+      "workSummary": "认证穷举发现 9 花瓣 unknot 图中 108 个在指定 moves 和对称下无法直接化简，分成三种对称及镜像类；部分需经 11 花瓣，另一类需到 13 花瓣才能解开。",
+      "techniques": [
+        "认证穷举",
+        "petal permutation",
+        "Reidemeister 型 moves",
+        "arc presentation"
+      ],
+      "breakthrough": "给出 petal 图单调化简猜想的精确反例。",
+      "limitations": "难度依赖指定花瓣 moves；不能据此推断经典 unknot 一般 Reidemeister 化简的下界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude 辅助撰写 Python 代码和论文草稿；计算使用 SnapPy 与 SymPy。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.01596v1 · PDF 第 12 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:16:26.968485+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.01596v1",
+        "contentHash": "0fdea0836dd019e4d2a64a3aa2ea8f3039cab5cf081c875dbdb56eab9264ae17",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 辅助撰写 Python 代码和论文草稿；计算使用 SnapPy 与 SymPy。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5087e7316f5115a9cec3261ac22183732efefef99ef532b4ad3decb67357b330"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 86,
+      "priorityReason": "给出 petal 图单调化简猜想的精确反例。"
+    },
+    "analysisBasis": {
+      "abstract": "A petal diagram of a knot is a projection with a single multi-crossing and no nested loops; it is encoded by a permutation of the heights of the strands through the multi-crossing. Colton, Glover, Hughes and Sandberg proved a Reidemeister-type theorem for petal diagrams: two petal permutations represent the same knot if and only if they are related by trivial petal additions and deletions and by crossing exchanges. We ask whether every petal diagram of the unknot can be reduced to the one-petal diagram without ever increasing the number of petals, in analogy with Dynnikov's monotonic simplification theorem for rectangular diagrams. By an exhaustive, certified computer search we show that this is true for diagrams with at most 7 petals and false for 9 petals. Of the 40320 petal diagrams with 9 petals, 24992 represent the unknot, and exactly 108 of them are hard: none of them admits a crossing exchange or a trivial petal deletion, even if two natural petal-number-preserving symmetries are allowed. Up to these symmetries and mirror image there are three hard diagrams. Two of them can be untangled by passing through 11 petals; the third cannot be untangled through diagrams with at most 11 petals, but can through 13. We explain why the phenomenon differs from the rectangular case: a petal diagram is an arc presentation whose cyclic order of pages is determined by the order of its vertices on the binding, and no elementary move of Cromwell and Dynnikov preserves this rigid structure.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -48,10 +89,51 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-02T03:03:47.382731+00:00",
             "contentHash": "12aeaf45efb3786ecdf80c3c7d468b27340265e8cc02cfa7c87d21ea5ef231cb"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.01596v1",
+            "observedAt": "2026-10-02T03:16:26.968485+00:00",
+            "contentHash": "0fdea0836dd019e4d2a64a3aa2ea8f3039cab5cf081c875dbdb56eab9264ae17"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "难以单调化简的 unknot petal 图",
+          "workSummary": "认证穷举发现 9 花瓣 unknot 图中 108 个在指定 moves 和对称下无法直接化简，分成三种对称及镜像类；部分需经 11 花瓣，另一类需到 13 花瓣才能解开。",
+          "techniques": [
+            "认证穷举",
+            "petal permutation",
+            "Reidemeister 型 moves",
+            "arc presentation"
+          ],
+          "breakthrough": "给出 petal 图单调化简猜想的精确反例。",
+          "limitations": "难度依赖指定花瓣 moves；不能据此推断经典 unknot 一般 Reidemeister 化简的下界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude 辅助撰写 Python 代码和论文草稿；计算使用 SnapPy 与 SymPy。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.01596v1 · PDF 第 12 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:16:26.968485+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.01596v1",
+            "contentHash": "0fdea0836dd019e4d2a64a3aa2ea8f3039cab5cf081c875dbdb56eab9264ae17",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 辅助撰写 Python 代码和论文草稿；计算使用 SnapPy 与 SymPy。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5087e7316f5115a9cec3261ac22183732efefef99ef532b4ad3decb67357b330"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 86,
+          "priorityReason": "给出 petal 图单调化简猜想的精确反例。"
+        },
+        "analysisBasis": {
+          "abstract": "A petal diagram of a knot is a projection with a single multi-crossing and no nested loops; it is encoded by a permutation of the heights of the strands through the multi-crossing. Colton, Glover, Hughes and Sandberg proved a Reidemeister-type theorem for petal diagrams: two petal permutations represent the same knot if and only if they are related by trivial petal additions and deletions and by crossing exchanges. We ask whether every petal diagram of the unknot can be reduced to the one-petal diagram without ever increasing the number of petals, in analogy with Dynnikov's monotonic simplification theorem for rectangular diagrams. By an exhaustive, certified computer search we show that this is true for diagrams with at most 7 petals and false for 9 petals. Of the 40320 petal diagrams with 9 petals, 24992 represent the unknot, and exactly 108 of them are hard: none of them admits a crossing exchange or a trivial petal deletion, even if two natural petal-number-preserving symmetries are allowed. Up to these symmetries and mirror image there are three hard diagrams. Two of them can be untangled by passing through 11 petals; the third cannot be untangled through diagrams with at most 11 petals, but can through 13. We explain why the phenomenon differs from the rectangular case: a petal diagram is an arc presentation whose cyclic order of pages is determined by the order of its vertices on the binding, and no elementary move of Cromwell and Dynnikov preserves this rigid structure.",
+          "version": 1
+        }
       }
     }
   ]

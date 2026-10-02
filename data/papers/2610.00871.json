@@ -24,10 +24,54 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-02T03:03:24.882738+00:00",
         "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.00871v1",
+        "observedAt": "2026-10-02T03:09:38.249981+00:00",
+        "contentHash": "e74d3fbc7fa45cfa69256c7b3067e8b8b50895ea7e26cd516163dcadb26178c0"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "分离波动观测逆问题的尖锐谱阈值",
+      "workSummary": "对闭连通流形上分离的源集 S 和观测集 R，研究波方程源到观测映射能否确定度量。若 R 上每个 Laplace 特征函数有 exp(−Cλ^θ) 下界且 θ<1/2，则在满足该界的流形类内唯一；若 S、R 都满足，则在所有闭连通流形中唯一。任意维数 n≥2 均构造数据相同却不等距的例子，表明普遍成立的 θ=1/2 端点不足。Ingham 条件提供时间局部化核，并把唯一性推进到满足可积对数条件的更近端点速率。",
+      "techniques": [
+        "特征函数定量下界",
+        "Ingham 时间局部化",
+        "波方程逆问题",
+        "组合字反例"
+      ],
+      "breakthrough": "把唯一性与非唯一性分界落在明确的谱指数阈值。",
+      "limitations": "两种唯一性结论的比较类不同，不能混同。已知 S、R 的光滑结构而非预先知道其度量；另若知道一个同时连接两集的开集几何，则无需该特征函数下界也有唯一性。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude Code、ChatGPT、Codex（主要 Claude Opus 5、GPT-5.6 Sol）生成完善想法并测试猜想；GPT-5.6 Sol 提出初始非唯一性构造，后由作者与模型发展成第 4 节更简洁一般的构造；另用于文字修改及 TikZ 绘图。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.00871v1 · PDF 第 4、57 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:09:38.249981+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.00871v1",
+        "contentHash": "e74d3fbc7fa45cfa69256c7b3067e8b8b50895ea7e26cd516163dcadb26178c0",
+        "pages": 62,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Code、ChatGPT、Codex（主要 Claude Opus 5、GPT-5.6 Sol）生成完善想法并测试猜想；GPT-5.6 Sol 提出初始非唯一性构造，后由作者与模型发展成第 4 节更简洁一般的构造；另用于文字修改及 TikZ 绘图。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5cb2bd08ca29cb83f6c7b3a3715a350149c0e2d40d4c965d1a2fb7f5af03eb3f"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "把唯一性与非唯一性分界落在明确的谱指数阈值。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the inverse problem of determining a connected, closed Riemannian manifold of dimension at least two from wave observations. The sources are supported in an open set $S$, and the resulting waves are observed on an open receiver set $R$, which may be at a positive distance from $S$. We prove uniqueness up to isometry within the class of manifolds that satisfy a subcritical spectral lower bound: $\\|\\phi|_R\\|_{L^2(R)} \\ge ce^{-C\\lambda^\\theta}\\|\\phi\\|_{L^2(M)}$ for every eigenfunction $\\phi$, where $\\lambda$ is the corresponding eigenvalue, $\\theta\\in[0,1/2)$, and the constants $c,C>0$ do not depend on $\\phi$. If a bound of this type holds also on $S$, then uniqueness holds within the class of all connected, closed manifolds. By the spectral inequality, the bound always holds with $\\theta=1/2$. Uniqueness nevertheless fails at this endpoint: in every dimension $n\\ge 2$, we construct a pair of nonisometric connected, closed Riemannian $n$-manifolds that produce identical wave observations.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,10 +98,54 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-02T03:03:24.882738+00:00",
             "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.00871v1",
+            "observedAt": "2026-10-02T03:09:38.249981+00:00",
+            "contentHash": "e74d3fbc7fa45cfa69256c7b3067e8b8b50895ea7e26cd516163dcadb26178c0"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "分离波动观测逆问题的尖锐谱阈值",
+          "workSummary": "对闭连通流形上分离的源集 S 和观测集 R，研究波方程源到观测映射能否确定度量。若 R 上每个 Laplace 特征函数有 exp(−Cλ^θ) 下界且 θ<1/2，则在满足该界的流形类内唯一；若 S、R 都满足，则在所有闭连通流形中唯一。任意维数 n≥2 均构造数据相同却不等距的例子，表明普遍成立的 θ=1/2 端点不足。Ingham 条件提供时间局部化核，并把唯一性推进到满足可积对数条件的更近端点速率。",
+          "techniques": [
+            "特征函数定量下界",
+            "Ingham 时间局部化",
+            "波方程逆问题",
+            "组合字反例"
+          ],
+          "breakthrough": "把唯一性与非唯一性分界落在明确的谱指数阈值。",
+          "limitations": "两种唯一性结论的比较类不同，不能混同。已知 S、R 的光滑结构而非预先知道其度量；另若知道一个同时连接两集的开集几何，则无需该特征函数下界也有唯一性。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude Code、ChatGPT、Codex（主要 Claude Opus 5、GPT-5.6 Sol）生成完善想法并测试猜想；GPT-5.6 Sol 提出初始非唯一性构造，后由作者与模型发展成第 4 节更简洁一般的构造；另用于文字修改及 TikZ 绘图。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.00871v1 · PDF 第 4、57 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:09:38.249981+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.00871v1",
+            "contentHash": "e74d3fbc7fa45cfa69256c7b3067e8b8b50895ea7e26cd516163dcadb26178c0",
+            "pages": 62,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Code、ChatGPT、Codex（主要 Claude Opus 5、GPT-5.6 Sol）生成完善想法并测试猜想；GPT-5.6 Sol 提出初始非唯一性构造，后由作者与模型发展成第 4 节更简洁一般的构造；另用于文字修改及 TikZ 绘图。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5cb2bd08ca29cb83f6c7b3a3715a350149c0e2d40d4c965d1a2fb7f5af03eb3f"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "把唯一性与非唯一性分界落在明确的谱指数阈值。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the inverse problem of determining a connected, closed Riemannian manifold of dimension at least two from wave observations. The sources are supported in an open set $S$, and the resulting waves are observed on an open receiver set $R$, which may be at a positive distance from $S$. We prove uniqueness up to isometry within the class of manifolds that satisfy a subcritical spectral lower bound: $\\|\\phi|_R\\|_{L^2(R)} \\ge ce^{-C\\lambda^\\theta}\\|\\phi\\|_{L^2(M)}$ for every eigenfunction $\\phi$, where $\\lambda$ is the corresponding eigenvalue, $\\theta\\in[0,1/2)$, and the constants $c,C>0$ do not depend on $\\phi$. If a bound of this type holds also on $S$, then uniqueness holds within the class of all connected, closed manifolds. By the spectral inequality, the bound always holds with $\\theta=1/2$. Uniqueness nevertheless fails at this endpoint: in every dimension $n\\ge 2$, we construct a pair of nonisometric connected, closed Riemannian $n$-manifolds that produce identical wave observations.",
+          "version": 1
+        }
       }
     }
   ]

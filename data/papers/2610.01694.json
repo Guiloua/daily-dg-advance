@@ -24,10 +24,53 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-02T03:03:36.106643+00:00",
         "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01694v1",
+        "observedAt": "2026-10-02T03:17:39.201943+00:00",
+        "contentHash": "9fccfa0f86917830f09be09dd491ee8466febf57834921f5980ee2ae5cf401f1"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "非阿基米德 quiver 的 harmonic norm",
+      "workSummary": "对任意完整非阿基米德域上的有限 quiver 多稳定表示，证明存在 split HKKP harmonic norm；以闭像分离、权重强制性和 CAT(0) 最小化，再通过实半径标记的半稳定约化得到 split attainment。",
+      "techniques": [
+        "HKKP 势",
+        "CAT(0) 范数空间",
+        "闭像分离",
+        "半稳定约化"
+      ],
+      "breakthrough": "去掉球完备性和值群限制，回答指定 harmonic norm 存在问题。",
+      "limitations": "表示须多稳定；完成范数空间中的非 split 极小点与实际 split 范数需分别处理。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露通过与 ChatGPT-6.0 Sol 广泛交流补齐原论证中的重大缺口，认为论文想法与发展约由作者和 AI 各贡献一半；ChatGPT、Codex、Prism 用于讨论修订论证以及校对排版，例子由作者选择。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.01694v1 · PDF 第 4 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:17:39.201943+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.01694v1",
+        "contentHash": "9fccfa0f86917830f09be09dd491ee8466febf57834921f5980ee2ae5cf401f1",
+        "pages": 39,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露通过与 ChatGPT-6.0 Sol 广泛交流补齐原论证中的重大缺口，认为论文想法与发展约由作者和 AI 各贡献一半；ChatGPT、Codex、Prism 用于讨论修订论证以及校对排版，例子由作者选择。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "07404696f431e2e1f0b95f0247796efaa3be299c089cbde9d910947a2a9fbbc2"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 89,
+      "priorityReason": "去掉球完备性和值群限制，回答指定 harmonic norm 存在问题。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $K$ be any complete non-Archimedean field, not necessarily spherically complete. We prove that every polystable representation of a finite quiver over $K$ admits a split harmonic norm in the sense of Haiden--Katzarkov--Kontsevich--Pandit (HKKP), answering a question from their preprint \\emph{Towards Categorical Kähler Geometry}. Moret-Bailly's closed-image theorem gives a uniform separation from representations with destabilizing subobjects. A finite estimate on norm weights then yields a linear coercivity bound for stable representations and hence a minimum of the extended HKKP potential on the complete CAT(0) space of all norms. A direct first-variation computation identifies split minimizers with HKKP harmonic norms. Strict supporting hinges reduce split attainment to semistable reduction for quivers with arbitrary real radius labels. Small changes of the lifted splitting make each reversed extension nonsplit; a finite slope--rank descent proves termination. Consequently, every minimum in the completed norm space is attained by a split norm with the same arrow singular profiles, without restrictions on the value group or the quiver. Nonsplit minimizers illustrate split attainment in one and two radius modifications, and a two-parameter Berkovich analytic family separates polystability, semistability, and harmonicity of a chosen split norm.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,10 +97,53 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-02T03:03:36.106643+00:00",
             "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.01694v1",
+            "observedAt": "2026-10-02T03:17:39.201943+00:00",
+            "contentHash": "9fccfa0f86917830f09be09dd491ee8466febf57834921f5980ee2ae5cf401f1"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "非阿基米德 quiver 的 harmonic norm",
+          "workSummary": "对任意完整非阿基米德域上的有限 quiver 多稳定表示，证明存在 split HKKP harmonic norm；以闭像分离、权重强制性和 CAT(0) 最小化，再通过实半径标记的半稳定约化得到 split attainment。",
+          "techniques": [
+            "HKKP 势",
+            "CAT(0) 范数空间",
+            "闭像分离",
+            "半稳定约化"
+          ],
+          "breakthrough": "去掉球完备性和值群限制，回答指定 harmonic norm 存在问题。",
+          "limitations": "表示须多稳定；完成范数空间中的非 split 极小点与实际 split 范数需分别处理。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露通过与 ChatGPT-6.0 Sol 广泛交流补齐原论证中的重大缺口，认为论文想法与发展约由作者和 AI 各贡献一半；ChatGPT、Codex、Prism 用于讨论修订论证以及校对排版，例子由作者选择。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.01694v1 · PDF 第 4 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:17:39.201943+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.01694v1",
+            "contentHash": "9fccfa0f86917830f09be09dd491ee8466febf57834921f5980ee2ae5cf401f1",
+            "pages": 39,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露通过与 ChatGPT-6.0 Sol 广泛交流补齐原论证中的重大缺口，认为论文想法与发展约由作者和 AI 各贡献一半；ChatGPT、Codex、Prism 用于讨论修订论证以及校对排版，例子由作者选择。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "07404696f431e2e1f0b95f0247796efaa3be299c089cbde9d910947a2a9fbbc2"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 89,
+          "priorityReason": "去掉球完备性和值群限制，回答指定 harmonic norm 存在问题。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $K$ be any complete non-Archimedean field, not necessarily spherically complete. We prove that every polystable representation of a finite quiver over $K$ admits a split harmonic norm in the sense of Haiden--Katzarkov--Kontsevich--Pandit (HKKP), answering a question from their preprint \\emph{Towards Categorical Kähler Geometry}. Moret-Bailly's closed-image theorem gives a uniform separation from representations with destabilizing subobjects. A finite estimate on norm weights then yields a linear coercivity bound for stable representations and hence a minimum of the extended HKKP potential on the complete CAT(0) space of all norms. A direct first-variation computation identifies split minimizers with HKKP harmonic norms. Strict supporting hinges reduce split attainment to semistable reduction for quivers with arbitrary real radius labels. Small changes of the lifted splitting make each reversed extension nonsplit; a finite slope--rank descent proves termination. Consequently, every minimum in the completed norm space is attained by a split norm with the same arrow singular profiles, without restrictions on the value group or the quiver. Nonsplit minimizers illustrate split attainment in one and two radius modifications, and a two-parameter Berkovich analytic family separates polystability, semistability, and harmonicity of a chosen split norm.",
+          "version": 1
+        }
       }
     }
   ]

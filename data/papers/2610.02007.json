@@ -25,10 +25,50 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-02T03:03:36.106643+00:00",
         "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.02007v1",
+        "observedAt": "2026-10-02T03:19:46.356574+00:00",
+        "contentHash": "76d5a5449c714e4a27c6bc000e74af774bd813f71a09d0118ec56709d9fd61f2"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "测地 Sinkhorn 距离的离散逼近",
+      "workSummary": "证明熵最优输运导出的测地 Sinkhorn 距离在空间细化下 GH 收敛及测地线收敛，并证明时间链离散到能量的 Γ 收敛，进而实现数值方案。",
+      "techniques": [
+        "Sinkhorn divergence",
+        "GH 收敛",
+        "Γ 收敛",
+        "时间链离散"
+      ],
+      "breakthrough": "为新概率空间黎曼距离提供可证明收敛的计算方法。",
+      "limitations": "所逼近的是测地距离 d_S，不能与单次 Sinkhorn divergence 视为同一量。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者声明项目构思和数学内容未用 AI，但披露用于修正少量英文和排版错误；仅计入文字辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.02007v1 · PDF 第 46 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:19:46.356574+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.02007v1",
+        "contentHash": "76d5a5449c714e4a27c6bc000e74af774bd813f71a09d0118ec56709d9fd61f2",
+        "pages": 49,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明项目构思和数学内容未用 AI，但披露用于修正少量英文和排版错误；仅计入文字辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "09831225ea42c0940e499ced5a10dd5b6cc96d2f119bbc484b5d5c53c7ea33d2"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 85,
+      "priorityReason": "为新概率空间黎曼距离提供可证明收敛的计算方法。"
+    },
+    "analysisBasis": {
+      "abstract": "In [H. Lavenant, J. Luckhardt, G. Mordant, B. Schmitzer, L. Tamanini, The Riemannian geometry of Sinkhorn divergences. Ann. Inst. H. Poincaré Anal. Non Linéaire 43 (2026)] we introduced a Riemannian metric $\\mathsf{d}_S$ on the space of probability distributions obtained from entropic optimal transport, specifically from the Sinkhorn divergence $S_\\varepsilon$. In the present work we discuss how to approximate and compute $\\mathsf{d}_S$. Spatially, we prove Gromov--Hausdorff convergence of the metric and convergence of geodesics for increasingly fine Eulerian discretization of the base space. Temporally, we show $\\Gamma$-convergence of the chain discretization $N \\sum_{k=0}^{N-1} S_\\varepsilon(\\mu_k, \\mu_{k+1})$ to the energy functional defining $\\mathsf{d}_S$. We deduce and implement numerical schemes to compute approximations of $\\mathsf{d}_S$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,10 +96,50 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-02T03:03:36.106643+00:00",
             "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.02007v1",
+            "observedAt": "2026-10-02T03:19:46.356574+00:00",
+            "contentHash": "76d5a5449c714e4a27c6bc000e74af774bd813f71a09d0118ec56709d9fd61f2"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "测地 Sinkhorn 距离的离散逼近",
+          "workSummary": "证明熵最优输运导出的测地 Sinkhorn 距离在空间细化下 GH 收敛及测地线收敛，并证明时间链离散到能量的 Γ 收敛，进而实现数值方案。",
+          "techniques": [
+            "Sinkhorn divergence",
+            "GH 收敛",
+            "Γ 收敛",
+            "时间链离散"
+          ],
+          "breakthrough": "为新概率空间黎曼距离提供可证明收敛的计算方法。",
+          "limitations": "所逼近的是测地距离 d_S，不能与单次 Sinkhorn divergence 视为同一量。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者声明项目构思和数学内容未用 AI，但披露用于修正少量英文和排版错误；仅计入文字辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.02007v1 · PDF 第 46 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:19:46.356574+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.02007v1",
+            "contentHash": "76d5a5449c714e4a27c6bc000e74af774bd813f71a09d0118ec56709d9fd61f2",
+            "pages": 49,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明项目构思和数学内容未用 AI，但披露用于修正少量英文和排版错误；仅计入文字辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "09831225ea42c0940e499ced5a10dd5b6cc96d2f119bbc484b5d5c53c7ea33d2"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 85,
+          "priorityReason": "为新概率空间黎曼距离提供可证明收敛的计算方法。"
+        },
+        "analysisBasis": {
+          "abstract": "In [H. Lavenant, J. Luckhardt, G. Mordant, B. Schmitzer, L. Tamanini, The Riemannian geometry of Sinkhorn divergences. Ann. Inst. H. Poincaré Anal. Non Linéaire 43 (2026)] we introduced a Riemannian metric $\\mathsf{d}_S$ on the space of probability distributions obtained from entropic optimal transport, specifically from the Sinkhorn divergence $S_\\varepsilon$. In the present work we discuss how to approximate and compute $\\mathsf{d}_S$. Spatially, we prove Gromov--Hausdorff convergence of the metric and convergence of geodesics for increasingly fine Eulerian discretization of the base space. Temporally, we show $\\Gamma$-convergence of the chain discretization $N \\sum_{k=0}^{N-1} S_\\varepsilon(\\mu_k, \\mu_{k+1})$ to the energy functional defining $\\mathsf{d}_S$. We deduce and implement numerical schemes to compute approximations of $\\mathsf{d}_S$.",
+          "version": 1
+        }
       }
     }
   ]

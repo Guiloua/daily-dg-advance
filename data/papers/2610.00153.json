@@ -15,17 +15,63 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "13 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-10T16:13:51Z",
+      "updatedAt": "2026-09-10T16:13:51Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-02T03:03:24.882738+00:00",
         "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.00153v1",
+        "observedAt": "2026-10-02T03:22:50.611234+00:00",
+        "contentHash": "df317faf5e990800948e8cda6a84baee4ff8f47e34771eecdb906453a3101407"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "Yau 有界平均曲率嵌入问题的反例",
+      "workSummary": "构造 R⁴ 上 0.9δ≤g≤1.1δ 的完整度量，使 Ricci 有界、全局单射半径正而 Rm 无界。用迹、散度和分量 Laplace 都消失的二次张量乘径向正则对数，分离线性化 Ricci 与全曲率，再拼接不交曲率峰。短测地线在小球的停留时长控制曲率积分，Jacobi 方程给单射半径；标量 Gauss 方程先以有界 H 和标量下界控制 |A|，再由完整 Gauss 方程排除有限维欧氏 C² 等距浸入。",
+      "techniques": [
+        "无迹二次张量",
+        "径向对数扰动",
+        "曲率积分",
+        "Jacobi 方程",
+        "Gauss 方程"
+      ],
+      "breakthrough": "若构造与估计成立，将否定 Yau 的有界平均曲率嵌入问题。",
+      "limitations": "反例维数至少四，并排除有限维欧氏目标的 C² 等距浸入；它不反驳假设有界全曲率的其他嵌入问题。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Codex 提出并完善候选度量构造与证明、执行计算检查，并通过独立 AI agents 审查论证；作者指导研究方向、核对证明并完成最终修改。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.00153v1 · PDF 第 13 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:05:55.962188+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.00153v1",
+        "contentHash": "f2eb8e04a93f98a7ca8168d5e8b26dc6ca4e047dee1ccc1e9b1fbbb09b1f81a7",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 提出并完善候选度量构造与证明、执行计算检查，并通过独立 AI agents 审查论证；作者指导研究方向、核对证明并完成最终修改。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e0a924b9a2d4e065a30ce743b609014e1a7ec3f0b87703dac2b2cffe6f916690"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "verification"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "若构造与估计成立，将否定 Yau 的有界平均曲率嵌入问题。"
+    },
+    "analysisBasis": {
+      "abstract": "Yau asked whether every complete Riemannian manifold with bounded Ricci curvature and positive injectivity radius admits an isometric embedding into some Euclidean space with bounded mean curvature. We construct a counterexample: a smooth complete metric on $\\mathbb{R}^4$ with bounded Ricci curvature, positive injectivity radius, and unbounded full curvature. The Gauss equation then forces every $C^2$ isometric immersion of this metric into a finite-dimensional Euclidean space to have unbounded mean curvature. The metric is assembled from disjoint curvature peaks whose Ricci contractions stay uniformly bounded. A short-geodesic curvature estimate and the Jacobi equation give the uniform injectivity-radius bound. The construction works in every dimension at least four, and in dimension four the Ricci curvature may be chosen to tend to zero at infinity.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +89,63 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "13 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-10T16:13:51Z",
+          "updatedAt": "2026-09-10T16:13:51Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-02T03:03:24.882738+00:00",
             "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.00153v1",
+            "observedAt": "2026-10-02T03:22:50.611234+00:00",
+            "contentHash": "df317faf5e990800948e8cda6a84baee4ff8f47e34771eecdb906453a3101407"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "Yau 有界平均曲率嵌入问题的反例",
+          "workSummary": "构造 R⁴ 上 0.9δ≤g≤1.1δ 的完整度量，使 Ricci 有界、全局单射半径正而 Rm 无界。用迹、散度和分量 Laplace 都消失的二次张量乘径向正则对数，分离线性化 Ricci 与全曲率，再拼接不交曲率峰。短测地线在小球的停留时长控制曲率积分，Jacobi 方程给单射半径；标量 Gauss 方程先以有界 H 和标量下界控制 |A|，再由完整 Gauss 方程排除有限维欧氏 C² 等距浸入。",
+          "techniques": [
+            "无迹二次张量",
+            "径向对数扰动",
+            "曲率积分",
+            "Jacobi 方程",
+            "Gauss 方程"
+          ],
+          "breakthrough": "若构造与估计成立，将否定 Yau 的有界平均曲率嵌入问题。",
+          "limitations": "反例维数至少四，并排除有限维欧氏目标的 C² 等距浸入；它不反驳假设有界全曲率的其他嵌入问题。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Codex 提出并完善候选度量构造与证明、执行计算检查，并通过独立 AI agents 审查论证；作者指导研究方向、核对证明并完成最终修改。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.00153v1 · PDF 第 13 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:05:55.962188+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.00153v1",
+            "contentHash": "f2eb8e04a93f98a7ca8168d5e8b26dc6ca4e047dee1ccc1e9b1fbbb09b1f81a7",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 提出并完善候选度量构造与证明、执行计算检查，并通过独立 AI agents 审查论证；作者指导研究方向、核对证明并完成最终修改。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e0a924b9a2d4e065a30ce743b609014e1a7ec3f0b87703dac2b2cffe6f916690"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "verification"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "若构造与估计成立，将否定 Yau 的有界平均曲率嵌入问题。"
+        },
+        "analysisBasis": {
+          "abstract": "Yau asked whether every complete Riemannian manifold with bounded Ricci curvature and positive injectivity radius admits an isometric embedding into some Euclidean space with bounded mean curvature. We construct a counterexample: a smooth complete metric on $\\mathbb{R}^4$ with bounded Ricci curvature, positive injectivity radius, and unbounded full curvature. The Gauss equation then forces every $C^2$ isometric immersion of this metric into a finite-dimensional Euclidean space to have unbounded mean curvature. The metric is assembled from disjoint curvature peaks whose Ricci contractions stay uniformly bounded. A short-geodesic curvature estimate and the Jacobi equation give the uniform injectivity-radius bound. The construction works in every dimension at least four, and in dimension four the Ricci curvature may be chosen to tend to zero at infinity.",
+          "version": 1
+        }
       }
     }
   ]

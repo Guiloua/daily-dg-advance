@@ -23,10 +23,52 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-02T03:03:36.106643+00:00",
         "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01216v1",
+        "observedAt": "2026-10-02T03:12:39.403521+00:00",
+        "contentHash": "5e38e009965f502f334ed2990b0cadf2b26ce2f979c0ce4946a91df8d2bc8425"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "高维 Morley 单纯形的对称反例",
+      "workSummary": "用法向 Gram 矩阵刻画 Morley 单纯形正则性，计算正则点非零导数本征值；在指定高维构造无超平面反射对称的正则 Morley 例子，并给四维不可用根式表示的非正则原形。",
+      "techniques": [
+        "Gram 矩阵",
+        "Johnson scheme",
+        "Galois 群",
+        "有理区间算术"
+      ],
+      "breakthrough": "展示高维正则 Morley 输出与原形反射对称之间的分离。",
+      "limitations": "四、五维反射猜想仍未证明；反例只覆盖列明维数及无限组合族。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 和 Claude 用于探索性计算、代数核查及准备稿件，作者对内容负责。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.01216v1 · PDF 第 21 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:12:39.403521+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.01216v1",
+        "contentHash": "5e38e009965f502f334ed2990b0cadf2b26ce2f979c0ce4946a91df8d2bc8425",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 和 Claude 用于探索性计算、代数核查及准备稿件，作者对内容负责。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7316cd15e49473064507d6815a4943a2ff4f65b80258d0a9064a25071c1a75a7"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 81,
+      "priorityReason": "展示高维正则 Morley 输出与原形反射对称之间的分离。"
+    },
+    "analysisBasis": {
+      "abstract": "Trisecting the dihedral angles of an $n$-simplex defines its Morley simplex. We study the original simplices for which this simplex is regular. A criterion in terms of the Gram matrix of the facet normals reduces the problem to a matrix equation. The derivative of the Morley map at the regular simplex has two explicit eigenvalues, both nonzero for $n\\ge3$; thus the regular simplex is an isolated solution. We conjecture that in dimensions four and five a regular Morley simplex forces two hyperplane reflections interchanging disjoint pairs of vertices. We prove that this conclusion fails in every dimension $6\\le n\\le200$ and in every dimension $n=\\binom k2-1$ with $k\\ge9$: in these dimensions there are simplices with regular Morley simplex and no hyperplane reflection symmetry. The examples for $8\\le n\\le200$ have dihedral symmetry of order $2(n+1)$, while the infinite family is based on the Johnson scheme. In dimension four we give exact constructions of two nonregular examples, defined by irreducible polynomials of degrees $18$ and $8$ with Galois groups $S_{18}$ and $S_8$. Neither example is expressible by radicals. The computer assisted existence proofs use exact rational arithmetic and intervals with outward rounding.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,10 +94,52 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-02T03:03:36.106643+00:00",
             "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.01216v1",
+            "observedAt": "2026-10-02T03:12:39.403521+00:00",
+            "contentHash": "5e38e009965f502f334ed2990b0cadf2b26ce2f979c0ce4946a91df8d2bc8425"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "高维 Morley 单纯形的对称反例",
+          "workSummary": "用法向 Gram 矩阵刻画 Morley 单纯形正则性，计算正则点非零导数本征值；在指定高维构造无超平面反射对称的正则 Morley 例子，并给四维不可用根式表示的非正则原形。",
+          "techniques": [
+            "Gram 矩阵",
+            "Johnson scheme",
+            "Galois 群",
+            "有理区间算术"
+          ],
+          "breakthrough": "展示高维正则 Morley 输出与原形反射对称之间的分离。",
+          "limitations": "四、五维反射猜想仍未证明；反例只覆盖列明维数及无限组合族。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 和 Claude 用于探索性计算、代数核查及准备稿件，作者对内容负责。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.01216v1 · PDF 第 21 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:12:39.403521+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.01216v1",
+            "contentHash": "5e38e009965f502f334ed2990b0cadf2b26ce2f979c0ce4946a91df8d2bc8425",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 和 Claude 用于探索性计算、代数核查及准备稿件，作者对内容负责。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7316cd15e49473064507d6815a4943a2ff4f65b80258d0a9064a25071c1a75a7"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 81,
+          "priorityReason": "展示高维正则 Morley 输出与原形反射对称之间的分离。"
+        },
+        "analysisBasis": {
+          "abstract": "Trisecting the dihedral angles of an $n$-simplex defines its Morley simplex. We study the original simplices for which this simplex is regular. A criterion in terms of the Gram matrix of the facet normals reduces the problem to a matrix equation. The derivative of the Morley map at the regular simplex has two explicit eigenvalues, both nonzero for $n\\ge3$; thus the regular simplex is an isolated solution. We conjecture that in dimensions four and five a regular Morley simplex forces two hyperplane reflections interchanging disjoint pairs of vertices. We prove that this conclusion fails in every dimension $6\\le n\\le200$ and in every dimension $n=\\binom k2-1$ with $k\\ge9$: in these dimensions there are simplices with regular Morley simplex and no hyperplane reflection symmetry. The examples for $8\\le n\\le200$ have dihedral symmetry of order $2(n+1)$, while the infinite family is based on the Johnson scheme. In dimension four we give exact constructions of two nonregular examples, defined by irreducible polynomials of degrees $18$ and $8$ with Galois groups $S_{18}$ and $S_8$. Neither example is expressible by radicals. The computer assisted existence proofs use exact rational arithmetic and intervals with outward rounding.",
+          "version": 1
+        }
       }
     }
   ]

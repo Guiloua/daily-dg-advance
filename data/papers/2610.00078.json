@@ -15,17 +15,59 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-05T09:02:18Z",
+      "updatedAt": "2026-09-05T09:02:18Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-02T03:03:24.882738+00:00",
         "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.00078v1",
+        "observedAt": "2026-10-02T03:22:39.386356+00:00",
+        "contentHash": "2727af83af4fea4b05549945ec30ee85acc23bff81d052f63b4612d115179049"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "严格 nearly Kähler 超曲面的 Reeb 阻碍",
+      "workSummary": "证明严格 nearly Kähler 六维流形的定向实超曲面上 dη 每点非零：若为零，形算子组合与接触算子既需交换又需反交换，造成代数矛盾。并推出指定 Yano 半对称度量连接的 Ricci 张量处处非对称。",
+      "techniques": [
+        "Reeb 形式",
+        "Hopf 条件",
+        "交换与反交换",
+        "半对称连接"
+      ],
+      "breakthrough": "得到局部逐点阻碍，排除含 dη=0 条件的诱导接触类型。",
+      "limitations": "结果针对六维严格 nearly Kähler 环境及五维实超曲面；连接结论使用明确指定的 Yano 连接。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于起草辅助、语言编辑、稿件组织和 LaTeX 排版，作者随后审改并承担责任。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.00078v1 · PDF 第 21 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:05:44.214889+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.00078v1",
+        "contentHash": "8054e1dda63b370aedea20b518fe1425311e158de930d26c3b3affd2194f2590",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于起草辅助、语言编辑、稿件组织和 LaTeX 排版，作者随后审改并承担责任。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0abedce9b4a16c0c91dbb72847dded1f26040e1029c1109ced8ebc7945d97a38"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 79,
+      "priorityReason": "得到局部逐点阻碍，排除含 dη=0 条件的诱导接触类型。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $M^5$ be an oriented real hypersurface of a six-dimensional strict nearly Kähler manifold $(\\widetilde M^6,\\widetilde g,J)$, and let $\\xi=-JN$ and $\\eta=g(\\,\\cdot\\,,\\xi)$ denote the induced Reeb field and Reeb one-form. We prove the pointwise obstruction \\[ (d\\eta)_p\\neq0\\qquad\\text{for every }p\\in M. \\] The proof is local and uses only the hypersurface identity \\[ \\nabla_X\\xi=\\phi AX-G(X,N) \\] together with the six-dimensional strict nearly Kähler algebra. If $(d\\eta)_p=0$, then \\[ \\phi A+A\\phi=2G_N,\\qquad G_NX=G(X,N), \\] which forces the Hopf condition. On the contact hyperplane $\\mathcal D_p=\\ker\\eta_p$, the endomorphism $\\phi A+A\\phi$ then commutes with $\\phi$, whereas $G_N$ anti-commutes with $\\phi$ and satisfies \\[ G_N^2=-\\alpha I_{\\mathcal D_p},\\qquad \\alpha>0. \\] This contradiction proves the obstruction. As a connection-theoretic consequence, for the standard Yano semi-symmetric metric connection associated with $\\xi$, \\[ \\widehat\\nabla_XY=\\nabla_XY+\\eta(Y)X-g(X,Y)\\xi, \\] one has in dimension five \\[ \\operatorname{Skew}\\operatorname{Ric}^{\\widehat\\nabla}=-\\frac32\\,d\\eta, \\] and hence $\\operatorname{Ric}^{\\widehat\\nabla}$ is nowhere symmetric. The obstruction also rules out any local induced almost contact class whose defining conditions include $d\\eta=0$. We illustrate the result on the standard homogeneous strict nearly Kähler spaces.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +85,59 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-05T09:02:18Z",
+          "updatedAt": "2026-09-05T09:02:18Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-02T03:03:24.882738+00:00",
             "contentHash": "bda5b67ac9b41e3093e5b06e8b5fa93470a48beda129c87359334863bfb4d43f"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.00078v1",
+            "observedAt": "2026-10-02T03:22:39.386356+00:00",
+            "contentHash": "2727af83af4fea4b05549945ec30ee85acc23bff81d052f63b4612d115179049"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "严格 nearly Kähler 超曲面的 Reeb 阻碍",
+          "workSummary": "证明严格 nearly Kähler 六维流形的定向实超曲面上 dη 每点非零：若为零，形算子组合与接触算子既需交换又需反交换，造成代数矛盾。并推出指定 Yano 半对称度量连接的 Ricci 张量处处非对称。",
+          "techniques": [
+            "Reeb 形式",
+            "Hopf 条件",
+            "交换与反交换",
+            "半对称连接"
+          ],
+          "breakthrough": "得到局部逐点阻碍，排除含 dη=0 条件的诱导接触类型。",
+          "limitations": "结果针对六维严格 nearly Kähler 环境及五维实超曲面；连接结论使用明确指定的 Yano 连接。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于起草辅助、语言编辑、稿件组织和 LaTeX 排版，作者随后审改并承担责任。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.00078v1 · PDF 第 21 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:05:44.214889+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.00078v1",
+            "contentHash": "8054e1dda63b370aedea20b518fe1425311e158de930d26c3b3affd2194f2590",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于起草辅助、语言编辑、稿件组织和 LaTeX 排版，作者随后审改并承担责任。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0abedce9b4a16c0c91dbb72847dded1f26040e1029c1109ced8ebc7945d97a38"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 79,
+          "priorityReason": "得到局部逐点阻碍，排除含 dη=0 条件的诱导接触类型。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $M^5$ be an oriented real hypersurface of a six-dimensional strict nearly Kähler manifold $(\\widetilde M^6,\\widetilde g,J)$, and let $\\xi=-JN$ and $\\eta=g(\\,\\cdot\\,,\\xi)$ denote the induced Reeb field and Reeb one-form. We prove the pointwise obstruction \\[ (d\\eta)_p\\neq0\\qquad\\text{for every }p\\in M. \\] The proof is local and uses only the hypersurface identity \\[ \\nabla_X\\xi=\\phi AX-G(X,N) \\] together with the six-dimensional strict nearly Kähler algebra. If $(d\\eta)_p=0$, then \\[ \\phi A+A\\phi=2G_N,\\qquad G_NX=G(X,N), \\] which forces the Hopf condition. On the contact hyperplane $\\mathcal D_p=\\ker\\eta_p$, the endomorphism $\\phi A+A\\phi$ then commutes with $\\phi$, whereas $G_N$ anti-commutes with $\\phi$ and satisfies \\[ G_N^2=-\\alpha I_{\\mathcal D_p},\\qquad \\alpha>0. \\] This contradiction proves the obstruction. As a connection-theoretic consequence, for the standard Yano semi-symmetric metric connection associated with $\\xi$, \\[ \\widehat\\nabla_XY=\\nabla_XY+\\eta(Y)X-g(X,Y)\\xi, \\] one has in dimension five \\[ \\operatorname{Skew}\\operatorname{Ric}^{\\widehat\\nabla}=-\\frac32\\,d\\eta, \\] and hence $\\operatorname{Ric}^{\\widehat\\nabla}$ is nowhere symmetric. The obstruction also rules out any local induced almost contact class whose defining conditions include $d\\eta=0$. We illustrate the result on the standard homogeneous strict nearly Kähler spaces.",
+          "version": 1
+        }
       }
     }
   ]

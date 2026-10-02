@@ -16,17 +16,59 @@
         "math.MG"
       ],
       "primaryCategory": "math.DG",
-      "comment": "19 pages"
+      "comment": "19 pages",
+      "version": 1
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-02T03:03:36.106643+00:00",
         "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.01346",
+        "observedAt": "2026-10-02T03:15:02.048901+00:00",
+        "contentHash": "4e02bb65f1d82c1e45d181adb0ecb493f0fc781d5a4b6be33986d5e2d4cef73f"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "elastic diffeology 商空间的黎曼下降",
+      "workSummary": "证明连接、度量、Levi–Civita 结构及测地线沿 Q-charts 对应于纤维过渡伪群不变结构；应用于离散群主作用商，并完整描述无理环面的度量和零伪距离。",
+      "techniques": [
+        "Q-charts",
+        "迭代切丛",
+        "过渡伪群",
+        "测地流下降"
+      ],
+      "breakthrough": "扩展非传统光滑商中的黎曼结构工具。",
+      "limitations": "商需满足指定 Q-chart 或主作用条件；完整测地流不保证诱导伪距离为真正距离。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 与 Claude 用于语言编辑、检查证明以及讨论材料组织，所有数学结论经作者核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.01346 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-02T03:15:02.048901+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.01346",
+        "contentHash": "4e02bb65f1d82c1e45d181adb0ecb493f0fc781d5a4b6be33986d5e2d4cef73f",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 与 Claude 用于语言编辑、检查证明以及讨论材料组织，所有数学结论经作者核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a4ed874d9cc2d3ccd893c833e9669198d68f8ac264641c307bc7d4585cf363f4"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 74,
+      "priorityReason": "扩展非传统光滑商中的黎曼结构工具。"
+    },
+    "analysisBasis": {
+      "abstract": "Following Miyamoto, we consider Q-charts, a class of subductions $\\phi\\colon X\\to Y$ of diffeological spaces along which Blohmann's elasticity descends. We show that the Riemannian apparatus of elastic diffeology---vertical, horizontal and full connections, Riemannian metrics, Levi-Civita connections and geodesics---also descends along Q-charts. More precisely, structures on $Y$ correspond bijectively to structures on $X$ that are invariant under the pseudogroup $\\Psi(\\phi)$ of fibre-preserving transitions, and torsion-freeness, effectivity, flatness, fullness, the Levi-Civita property and the geodesic equation are preserved in both directions. The key input is that the iterated tangent bundles $T^nX$ and their fibre products $T_kX$ are the pullbacks along $\\phi$ of the corresponding bundles over $Y$. For quotients by principal actions of diffeologically discrete groups, we lift geodesics globally, prove that the class of elastic spaces on which $\\R$ is a curve object is closed under such quotients, and show that complete geodesic flows descend. As an application, we determine the Riemannian geometry of the irrational tori $\\Tor_\\alpha=\\R/(\\Z+\\alpha\\Z)$ completely. Let $\\vartheta$ be the one-form on $\\Tor_\\alpha$ induced by $dt$ on $\\R$. Every Riemannian metric is a positive constant multiple of $\\vartheta^2$, and the vertical connections form a one-parameter family of flat effective connections, a single member of which is the unique Levi-Civita connection of every metric. This connection has a complete geodesic flow, yet the induced pseudo-distance vanishes identically.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +87,59 @@
             "math.MG"
           ],
           "primaryCategory": "math.DG",
-          "comment": "19 pages"
+          "comment": "19 pages",
+          "version": 1
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-02T03:03:36.106643+00:00",
             "contentHash": "68a211cd470c86f61434f459e57d26e7c7f3399f59466f309fb37c44a922ae67"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.01346",
+            "observedAt": "2026-10-02T03:15:02.048901+00:00",
+            "contentHash": "4e02bb65f1d82c1e45d181adb0ecb493f0fc781d5a4b6be33986d5e2d4cef73f"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "elastic diffeology 商空间的黎曼下降",
+          "workSummary": "证明连接、度量、Levi–Civita 结构及测地线沿 Q-charts 对应于纤维过渡伪群不变结构；应用于离散群主作用商，并完整描述无理环面的度量和零伪距离。",
+          "techniques": [
+            "Q-charts",
+            "迭代切丛",
+            "过渡伪群",
+            "测地流下降"
+          ],
+          "breakthrough": "扩展非传统光滑商中的黎曼结构工具。",
+          "limitations": "商需满足指定 Q-chart 或主作用条件；完整测地流不保证诱导伪距离为真正距离。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 与 Claude 用于语言编辑、检查证明以及讨论材料组织，所有数学结论经作者核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.01346 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-02T03:15:02.048901+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.01346",
+            "contentHash": "4e02bb65f1d82c1e45d181adb0ecb493f0fc781d5a4b6be33986d5e2d4cef73f",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 与 Claude 用于语言编辑、检查证明以及讨论材料组织，所有数学结论经作者核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a4ed874d9cc2d3ccd893c833e9669198d68f8ac264641c307bc7d4585cf363f4"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 74,
+          "priorityReason": "扩展非传统光滑商中的黎曼结构工具。"
+        },
+        "analysisBasis": {
+          "abstract": "Following Miyamoto, we consider Q-charts, a class of subductions $\\phi\\colon X\\to Y$ of diffeological spaces along which Blohmann's elasticity descends. We show that the Riemannian apparatus of elastic diffeology---vertical, horizontal and full connections, Riemannian metrics, Levi-Civita connections and geodesics---also descends along Q-charts. More precisely, structures on $Y$ correspond bijectively to structures on $X$ that are invariant under the pseudogroup $\\Psi(\\phi)$ of fibre-preserving transitions, and torsion-freeness, effectivity, flatness, fullness, the Levi-Civita property and the geodesic equation are preserved in both directions. The key input is that the iterated tangent bundles $T^nX$ and their fibre products $T_kX$ are the pullbacks along $\\phi$ of the corresponding bundles over $Y$. For quotients by principal actions of diffeologically discrete groups, we lift geodesics globally, prove that the class of elastic spaces on which $\\R$ is a curve object is closed under such quotients, and show that complete geodesic flows descend. As an application, we determine the Riemannian geometry of the irrational tori $\\Tor_\\alpha=\\R/(\\Z+\\alpha\\Z)$ completely. Let $\\vartheta$ be the one-form on $\\Tor_\\alpha$ induced by $dt$ on $\\R$. Every Riemannian metric is a positive constant multiple of $\\vartheta^2$, and the vertical connections form a one-parameter family of flat effective connections, a single member of which is the unique Levi-Civita connection of every metric. This connection has a complete geodesic flow, yet the induced pseudo-distance vanishes identically.",
+          "version": 1
+        }
       }
     }
   ]
