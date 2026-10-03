@@ -10,7 +10,7 @@ import {
   PublicationOverview,
 } from './publication-view';
 import { LazyTrend } from './lazy-trend';
-import { disclosureStatus } from '@/lib/ai-disclosure';
+import { filterEntries, prepareEntries } from '@/lib/progressive-reading';
 export function ProgressiveDashboard({
   requestedDate,
 }: {
@@ -25,6 +25,9 @@ export function ProgressiveDashboard({
     [priority, setPriority] = useState('all'),
     [range, setRange] = useState<'6m' | '2y'>('6m'),
     [error, setError] = useState(false),
+    [loading, setLoading] = useState(true),
+    [datesError, setDatesError] = useState(false),
+    [datesRetry, setDatesRetry] = useState(0),
     [retry, setRetry] = useState(0),
     [ready, setReady] = useState(false);
   useEffect(() => {
@@ -62,50 +65,39 @@ export function ProgressiveDashboard({
     if (!ready) return;
     const c = new AbortController();
     setError(false);
-    setFeed(null);
+    setLoading(true);
     readJson<ProgressiveFeed>(
       '/api/reports/v2' + (date ? '?date=' + encodeURIComponent(date) : ''),
       c.signal,
     )
-      .then(setFeed)
+      .then((result) => {
+        if (!c.signal.aborted) setFeed(result);
+      })
       .catch(() => {
         if (!c.signal.aborted) setError(true);
+      })
+      .finally(() => {
+        if (!c.signal.aborted) setLoading(false);
       });
-    readJson<{ dates: string[] }>('/api/reports/v2?dates=true', c.signal)
-      .then((r) => setDates(r.dates))
-      .catch(() => {});
     return () => c.abort();
   }, [ready, date, retry]);
+  useEffect(() => {
+    if (!ready) return;
+    const c = new AbortController();
+    setDatesError(false);
+    readJson<{ dates: string[] }>('/api/reports/v2?dates=true', c.signal)
+      .then((result) => {
+        if (!c.signal.aborted) setDates(result.dates);
+      })
+      .catch(() => {
+        if (!c.signal.aborted) setDatesError(true);
+      });
+    return () => c.abort();
+  }, [ready, retry, datesRetry]);
+  const prepared = useMemo(() => prepareEntries(feed?.entries ?? []), [feed]);
   const visible = useMemo(
-    () =>
-      feed?.entries
-        .filter((e) => {
-          const a = e.analysis,
-            m = e.metadata;
-          return (
-            (!query ||
-              `${e.arxivId} ${m.title ?? ''} ${m.authors?.join(' ') ?? ''} ${m.abstract ?? ''} ${a?.workSummary ?? ''}`
-                .toLowerCase()
-                .includes(query.toLowerCase())) &&
-            (topic === 'all' || (a?.topic ?? 'pending') === topic) &&
-            (ai === 'all' || disclosureStatus(e) === ai) &&
-            (priority === 'all' ||
-              (a
-                ? a.priorityScore >= 75
-                  ? 'high'
-                  : a.priorityScore >= 50
-                    ? 'medium'
-                    : 'low'
-                : 'pending') === priority)
-          );
-        })
-        .sort(
-          (a, b) =>
-            (b.analysis?.priorityScore ?? -1) -
-              (a.analysis?.priorityScore ?? -1) ||
-            a.arxivId.localeCompare(b.arxivId),
-        ) ?? [],
-    [feed, query, topic, ai, priority],
+    () => filterEntries(prepared, { query, topic, ai, priority }),
+    [prepared, query, topic, ai, priority],
   );
   return (
     <main className="mx-auto max-w-[1040px] px-4 py-8 sm:px-6">
@@ -115,11 +107,25 @@ export function ProgressiveDashboard({
       </nav>
       {error ? (
         <p role="alert">
-          日报暂时读取失败。
+          {date ? `${date} 日报暂时读取失败。` : '日报暂时读取失败。'}
+          {feed ? `继续显示已加载的 ${feed.date} 日报。` : ''}
           <button onClick={() => setRetry((r) => r + 1)}>重试</button>
         </p>
-      ) : !feed ? (
-        <p>正在读取最新日报…</p>
+      ) : loading && feed ? (
+        <p role="status">正在读取{date || '最新公告'}日报…</p>
+      ) : null}
+      {datesError ? (
+        <p role="alert">
+          日期列表暂时读取失败，已加载日报仍可阅读。
+          <button onClick={() => setDatesRetry((r) => r + 1)}>
+            重试日期列表
+          </button>
+        </p>
+      ) : null}
+      {!feed ? (
+        loading ? (
+          <p role="status">正在读取最新日报…</p>
+        ) : null
       ) : (
         <>
           <PublicationHeader feed={feed} />

@@ -33,6 +33,9 @@ def main():
                 raise RuntimeError('Mirror content differs from acknowledged website snapshot')
             item['status'] = 'verified';atomic_json(path, state)
             print(json.dumps({'date': day, 'revision': item['revision'], 'mirror': 'verified'}))
+    # Release the publication lock before the cleaner acquires it again.
+    from cleanup_automation_cache import after_verification
+    after_verification(ROOT)
 
 
 if __name__ == '__main__':

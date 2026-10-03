@@ -27,7 +27,7 @@ def verify(feed, manifest, outbox):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--run',required=True);args=parser.parse_args()
     path=Path(args.run);progress=json.loads((path/'progress.json').read_text());day=progress['scheduledFor'][:10]
-    receipt={'schemaVersion':2,**progress,'scheduledDate':day,'completedAt':datetime.now(timezone.utc).isoformat(),'status':'failed','sitesVerified':False,'pagesVerified':False,'ingestVerified':False}
+    receipt={'schemaVersion':2,**progress,'runDirectory':str(path.resolve()),'scheduledDate':day,'completedAt':datetime.now(timezone.utc).isoformat(),'status':'failed','sitesVerified':False,'pagesVerified':False,'ingestVerified':False}
     notices=ROOT/'.automation/progress/notifications.json';previous=json.loads(notices.read_text()) if notices.exists() else {}
     try:
         outbox=json.loads((ROOT/'.automation/progress/mirror-outbox.json').read_text())['days']
@@ -46,6 +46,8 @@ def main():
     atomic_json(ROOT/'.automation/daily-outcomes'/f'{day}.json',receipt);atomic_json(ROOT/'.automation/daily-outcomes/history'/(receipt['runId']+'.json'),receipt)
     print(json.dumps({k:receipt.get(k) for k in ['runId','status','announcementDate','expectedCount','publishedCount','notify','errorSummary']}))
     if receipt['status']=='failed':raise SystemExit(1)
+    from cleanup_automation_cache import after_verification
+    after_verification(ROOT)
 
 
 if __name__=='__main__':main()

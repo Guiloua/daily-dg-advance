@@ -109,7 +109,8 @@ def main():
     publication_error = None
     from zoneinfo import ZoneInfo
     started = datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
-    initial = {'schemaVersion': 2, **run, 'scheduledDate': args.scheduled_for[:10], 'startedAt': started, 'status': 'running'}
+    initial = {'schemaVersion': 2, **run, 'scheduledDate': args.scheduled_for[:10], 'startedAt': started,
+               'status': 'running', 'runDirectory': str(out.resolve())}
     if args.publish:
         atomic_json(ROOT / '.automation/daily-outcomes' / (args.scheduled_for[:10] + '.json'), initial)
         atomic_json(ROOT / '.automation/daily-outcomes/history' / (args.run_id + '.json'), initial)

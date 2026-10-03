@@ -9,7 +9,7 @@
 3. 先复用同版本、同摘要与评论绑定的已有分析及 AI 核查，只对新增或来源发生变化的论文读取 listing 中的标题、作者、摘要、评论，按原有研究标准生成按 ID 索引的中文分析。保存准确的分析依据：英文摘要和已明确的版本。优先补读尚未完成的高优先级主结果；正文不可用保留摘要级分析。AI explicit 必须有已读来源的明确证据；尚未检查的条目保持未知。AI 披露专项核查必须覆盖全部论文（已有有效记录不重复检查），不受数学全文阅读优先级限制，按下节执行。
 4. 用 `--from-run <当前运行ID> --analyses <JSON> --analysis-source <来源JSON> --publish` 重用本次清单并增量发布分析；不重新请求清单。来源 JSON 可为带 papers 的元数据文件或按 ID 索引的 listing-reading.json。分析字段包括 topic、progressType、workSummary、techniques、breakthrough、limitations、analysisDepth、priorityScore、priorityReason；低于 50 分补 lowPriorityReason。
 5. 无冷却且本轮未耗尽尝试时，用 `--enrich` **仅补缺失元数据**。已有完整字段的论文不请求；每 20 个缺失 ID 一批，已知版本锁定 `idvN`。成功批次逐篇持久化在 `.automation/arxiv-metadata/`，失败后不从头抓取。Atom 不提供字段投影，因此响应仍含完整元数据，但本地仅填空缺，不覆盖已缓存摘要、评论、分析或 AI 披露。版本冲突保留原成果并待核查。
-6. 检查运行目录的 progress、pending 和 publications，以及 daily-outcomes 回执。状态 published_partial 表示两站已核验发布但仍待补齐；success 表示基础资料和摘要解读完整。镜像失败只重试 `scripts/progressive_mirror.py`，随后 `scripts/progressive_outcome.py --run <目录>` 核验。
+6. 检查运行目录的 progress、pending 和 publications，以及 daily-outcomes 回执。状态 published_partial 表示两站已核验发布但仍待补齐；success 表示基础资料和摘要解读完整。镜像失败只重试 `scripts/progressive_mirror.py`，随后 `scripts/progressive_outcome.py --run <目录>` 核验。手动补齐与 AI 核查补丁也将最终快照发布到同一运行目录的 `publications-<公告日>/`，同步镜像后执行该最终核验入口。
 
 ## 缓存、限流与恢复
 
@@ -68,3 +68,9 @@ Sites 成功写入后，mirror-outbox 保存最新日期快照。镜像保持最
 只有完整核验的分类清单可以产生精确日统计；有已知缺口的周不进入完整周图表。站点服务健康与资料完整度分开判断。运行报告只输出日期、数量、状态与脱敏错误，不输出凭据或整篇载荷。
 
 AI 用途统计：人工核对明确披露时，在哈希及版本绑定的 decision 中记录 `usage` 数组，可选 `writing`（写作与排版）、`literature`（资料与文献检索）、`ideas`（作者明确归因的核心想法或研究路线）、`proofs`（证明推导与完善）、`verification`（论证检查纠错）、`computation`（编程、计算、制图）、`exploration`（探索讨论）。同篇可多选，未细分用途留空；不能凭关键词或泛称“使用 AI”推断核心想法，明确否认的用途不计入。生成器将其写入 `aiUsage`，综述按论文去重统计。
+
+## 发布后缓存清理
+
+最终回执核验和镜像重试成功后自动调用 `scripts/cleanup_automation_cache.py` 的清理逻辑，逐公告日处理当前与历史缓存。仅当资料、解读完整、所有已发布 AI 核查均为版本/哈希/元数据/当前规则绑定的 `full_text_searched`，且对应快照与两站核验记录一致时，删除 PDF、提取文本和哈希一致的下载响应。保留人工判定、核查结论、快照、元数据、凭据、限流状态及未完成任务引用的文件。
+
+使用 `python3 scripts/cleanup_automation_cache.py --dry-run` 查看候选；清理结果记录在 `.automation/cache-cleanup/latest.json`，失败保持发布结果并在下一次核验后重试。成功删除前保存可复用核查记录；后续同版本、元数据和规则的核查复用记录，来源或规则变化时依照共享限流重新读取。手动运行也保存 `progress.json` 与当前 `runDirectory`，让清理识别需要续跑的候选。

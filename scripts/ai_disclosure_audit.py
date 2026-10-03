@@ -14,8 +14,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from arxiv_client import ArxivClient, Deferred, atomic_json
+from cache_lifecycle import source_lock
+from review_evidence import RULE_VERSION, metadata_hash, review_key, retained_analysis
 
-RULE_VERSION = 'ai-disclosure-search-v4'
 KEYWORDS = re.compile(
     r'(?i:chat\s*gpt|\bgpt[\s-]*[3456o]\b|open\s*ai|\bclaude\b|\bgemini\b|'
     r'\banthropic\b|\bgrok\b|\bmistral\b|\bqwen\b|\bllama\b|\bcodex\b|\bperplexity\b|'
@@ -56,16 +57,18 @@ def extract_pdf(path):
     return pages, complete, len(pages) == int(count[1])
 
 
-def metadata_hash(entry):
-    context = {key: entry['metadata'].get(key, '') for key in ('title', 'abstract', 'comment')}
-    return hashlib.sha256(json.dumps(context, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
-
-
 class LocalSourceUnavailable(RuntimeError):
     pass
 
 
 def audit_entry(entry, out, client, *, allow_network=True):
+    root = getattr(client, 'root', None)
+    root = Path(root) if isinstance(root, (str, Path)) else Path(out) / 'arxiv-cache'
+    with source_lock(root):
+        return _audit_entry(entry, Path(out), client, root, allow_network=allow_network)
+
+
+def _audit_entry(entry, out, client, root, *, allow_network):
     identifier = entry['arxivId']
     version = entry['metadata'].get('version')
     suffix = f'v{version}' if version else ''
@@ -74,6 +77,15 @@ def audit_entry(entry, out, client, *, allow_network=True):
     existing = json.loads(path.read_text()) if path.exists() else {}
     url = f'https://arxiv.org/pdf/{identifier}{suffix}'
     pdf = out / (slug + '.pdf')
+    if not pdf.exists():
+        retained = existing
+        registry = root.parent / 'progress/retained-ai-reviews.json'
+        if not retained_analysis(entry, retained) and version and registry.exists() and not registry.is_symlink() and not registry.parent.is_symlink():
+            retained = json.loads(registry.read_text()).get(review_key(entry), {})
+        if retained_analysis(entry, retained):
+            record = {**retained, 'runId': client.run_id}
+            atomic_json(path, record)
+            return record
     # Only explicitly versioned URLs are immutable across scheduled runs.
     local = pdf.exists() and (version is not None or existing.get('runId') == client.run_id)
     if not local and not allow_network:
@@ -173,6 +185,13 @@ def build_candidate(feed, records, decisions, run_id, scheduled_for):
             checkedAt=record['checkedAt'], version=record['version'], sourceUrl=record['sourceUrl'],
             contentHash=record['contentHash'], pages=record['pages'], note=note,
             **{k: record[k] for k in ('ruleVersion', 'metadataHash') if k in record})
+        retained = retained_analysis(entry, record)
+        if retained and decision is None:
+            # Reuse only the confirmed disclosure fields; retain today's mathematical analysis.
+            for key in ('aiStatus', 'aiEvidence', 'aiEvidenceSource', 'aiUsage', 'aiReview'):
+                analysis.pop(key, None)
+                if key in retained:
+                    analysis[key] = copy.deepcopy(retained[key])
         # Mathematical reading depth stays unchanged; distinguish its scope from AI review.
         analysis['limitations'] = analysis['limitations'].replace(
             '未见 AI 协作声明仅指这些已检查来源，不代表已核验整篇论文完全由人类完成。',
