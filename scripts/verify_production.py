@@ -212,6 +212,8 @@ def main() -> None:
         progressive_receipt = json.loads(args.daily_outcome.read_text())
         if progressive_receipt.get('schemaVersion') == 2:
             verify_progressive_run(args.site.rstrip('/'), progressive_receipt, args.scheduled_for)
+            from cleanup_automation_cache import after_verification
+            after_verification()
             return
     receipt = None
     if args.daily_outcome:
@@ -270,6 +272,9 @@ def main() -> None:
         "latestCompleteWeek": health["latestCompleteWeek"],
     }
     print(json.dumps(summary, ensure_ascii=False))
+    if args.daily_outcome:
+        from cleanup_automation_cache import after_verification
+        after_verification()
 
 
 if __name__ == "__main__":
