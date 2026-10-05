@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-05
 
-已收录 39/39 · 解读 39/39 · 资料待补齐。
+已收录 39/39 · 解读 39/39。
 
 ## Regularity for the prescribed vertical mean curvature system in the plane
 
