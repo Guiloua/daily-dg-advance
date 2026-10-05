@@ -23,10 +23,51 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-05T02:13:18.399851+00:00",
         "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.03517v1",
+        "observedAt": "2026-10-05T02:20:57.071276+00:00",
+        "contentHash": "33a32f9dce636124446054a751476cdefb7245b8ea1de32f0ca04509201806d1"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "高色数无三角形几何图的量化构造",
+      "workSummary": "构造 R³ 中 n 个 box 的无三角交图，独立数 n(log n)^(-1+o(1))、色数近 log n；把指定 girth 的 induced unit-distance 图最高色数归约到无限制版本，并给 R³ 直线交图、平面圆相切图的定量高 girth 高色数构造。",
+      "techniques": [
+        "几何交图",
+        "高 girth 构造",
+        "独立数估计",
+        "ordered graph"
+      ],
+      "breakthrough": "显著提升 Burling 型下界，并同时推进多类几何图的高色数问题。",
+      "limitations": "不同对象的 ambient 维数与 girth 条件不同；近对数界并不是精确达到已知 O(log n) 上界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露本文构造由 ChatGPT Astra 在作者指导后找到；文中另说明按参数族方向指导模型后迅速得到主要想法。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.03517v1 · PDF 第 2、11、21 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:20:57.071276+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.03517v1",
+        "contentHash": "33a32f9dce636124446054a751476cdefb7245b8ea1de32f0ca04509201806d1",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露本文构造由 ChatGPT Astra 在作者指导后找到；文中另说明按参数族方向指导模型后迅速得到主要想法。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d93812d759cff0b5a073735693bc14dcbb3e74a9af3999a1f30b462a05b8b9ce"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "显著提升 Burling 型下界，并同时推进多类几何图的高色数问题。"
+    },
+    "analysisBasis": {
+      "abstract": "We present several geometric constructions of triangle-free and large girth families of graphs with rapidly growing chromatic numbers. 1. We construct a triangle-free intersection graph of $n$ boxes in $\\mathbb{R}^3$ with independence number $n(\\log n)^{-1+o(1)}$, and thus chromatic number $(\\log n)^{1-o(1)}$. This is the first improvement over the double logarithmic lower bound of Burling from 1965, and almost matches the best known upper bound $O(\\log n)$. Moreover, the bound $o(n)$ on the independence number answers a question of Walczak. 2. We prove that if there exists a unit distance graph in $\\mathbb{R}^d$ of chromatic number $r$, then there also exists an induced unit distance graph in $\\mathbb{R}^d$ of girth at least $g$ and the same chromatic number. Thus, the problem of determining the maximum chromatic number of unit distance graphs with any prescribed lower bound on the girth reduces entirely to the unrestricted problem, thereby strengthening a long line of results. 3. We construct an intersection graph of $n$ lines in $\\mathbb{R}^3$ with girth at least $g$ and chromatic number $\\Omega_g((\\log n)^{1-o(1)})$. This quantitatively improves a construction of Davies. 4. We construct a set of $n$ circles in the plane such that the tangency graph of the circles has girth at least $g$ and chromatic number $\\Omega_g((\\log n)^{1-o(1)})$. This quantitatively improves the result of Davies, Keller, Kleist, Smorodinsky, and Walczak, and provides an alternative solution of Ringel's circle problem. 5. We construct triangle-free ordered graphs on $n$ vertices avoiding a fixed ordered path of length three as an induced subgraph, and having chromatic number $n^{\\Omega(1/\\log \\log n)}$. This is motivated by ordered analogues of the Gyárfás-Sumner conjecture.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,10 +93,51 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-05T02:13:18.399851+00:00",
             "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.03517v1",
+            "observedAt": "2026-10-05T02:20:57.071276+00:00",
+            "contentHash": "33a32f9dce636124446054a751476cdefb7245b8ea1de32f0ca04509201806d1"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "高色数无三角形几何图的量化构造",
+          "workSummary": "构造 R³ 中 n 个 box 的无三角交图，独立数 n(log n)^(-1+o(1))、色数近 log n；把指定 girth 的 induced unit-distance 图最高色数归约到无限制版本，并给 R³ 直线交图、平面圆相切图的定量高 girth 高色数构造。",
+          "techniques": [
+            "几何交图",
+            "高 girth 构造",
+            "独立数估计",
+            "ordered graph"
+          ],
+          "breakthrough": "显著提升 Burling 型下界，并同时推进多类几何图的高色数问题。",
+          "limitations": "不同对象的 ambient 维数与 girth 条件不同；近对数界并不是精确达到已知 O(log n) 上界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露本文构造由 ChatGPT Astra 在作者指导后找到；文中另说明按参数族方向指导模型后迅速得到主要想法。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.03517v1 · PDF 第 2、11、21 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:20:57.071276+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.03517v1",
+            "contentHash": "33a32f9dce636124446054a751476cdefb7245b8ea1de32f0ca04509201806d1",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露本文构造由 ChatGPT Astra 在作者指导后找到；文中另说明按参数族方向指导模型后迅速得到主要想法。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d93812d759cff0b5a073735693bc14dcbb3e74a9af3999a1f30b462a05b8b9ce"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "显著提升 Burling 型下界，并同时推进多类几何图的高色数问题。"
+        },
+        "analysisBasis": {
+          "abstract": "We present several geometric constructions of triangle-free and large girth families of graphs with rapidly growing chromatic numbers. 1. We construct a triangle-free intersection graph of $n$ boxes in $\\mathbb{R}^3$ with independence number $n(\\log n)^{-1+o(1)}$, and thus chromatic number $(\\log n)^{1-o(1)}$. This is the first improvement over the double logarithmic lower bound of Burling from 1965, and almost matches the best known upper bound $O(\\log n)$. Moreover, the bound $o(n)$ on the independence number answers a question of Walczak. 2. We prove that if there exists a unit distance graph in $\\mathbb{R}^d$ of chromatic number $r$, then there also exists an induced unit distance graph in $\\mathbb{R}^d$ of girth at least $g$ and the same chromatic number. Thus, the problem of determining the maximum chromatic number of unit distance graphs with any prescribed lower bound on the girth reduces entirely to the unrestricted problem, thereby strengthening a long line of results. 3. We construct an intersection graph of $n$ lines in $\\mathbb{R}^3$ with girth at least $g$ and chromatic number $\\Omega_g((\\log n)^{1-o(1)})$. This quantitatively improves a construction of Davies. 4. We construct a set of $n$ circles in the plane such that the tangency graph of the circles has girth at least $g$ and chromatic number $\\Omega_g((\\log n)^{1-o(1)})$. This quantitatively improves the result of Davies, Keller, Kleist, Smorodinsky, and Walczak, and provides an alternative solution of Ringel's circle problem. 5. We construct triangle-free ordered graphs on $n$ vertices avoiding a fixed ordered path of length three as an induced subgraph, and having chromatic number $n^{\\Omega(1/\\log \\log n)}$. This is motivated by ordered analogues of the Gyárfás-Sumner conjecture.",
+          "version": 1
+        }
       }
     }
   ]

@@ -16,17 +16,62 @@
         "math.DG"
       ],
       "primaryCategory": "math.MG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-02T07:31:57Z",
+      "updatedAt": "2026-10-02T07:31:57Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-05T02:13:18.399851+00:00",
         "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.02940v1",
+        "observedAt": "2026-10-05T02:25:51.493815+00:00",
+        "contentHash": "f92dc5210bfeddc9c19dd0e95855d04c0041158ec60cfa62a9f5078fd55990fd"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "以 Bishop–Gromov 刻画曲面曲率下界",
+      "workSummary": "对无边界拓扑曲面的 length space，以 ET（Sobolev 映射的近似度量微分为欧氏半范数）加逐紧集一致的小球 Hausdorff 面积上界 H²(Bᵣ(x))≤vκ(r)，刻画局部 Alexandrov 曲率下界 κ。经局部共形参数化得到分布不等式 Δlog f+κf²≤0，再以有界积分曲率理论把几乎处处的共形数据提升为处处的原度量。",
+      "techniques": [
+        "ET 条件",
+        "共形参数化",
+        "分布曲率不等式",
+        "有界积分曲率"
+      ],
+      "breakthrough": "尝试把二维曲率下界完全表达为体积比较。",
+      "limitations": "ET 用于排除非欧氏范数平面；单有球面积上界不足。无边界拓扑前提必要，非 length 度量的附录推广在 κ<0 时还可能出现孤立点与双曲 cusp 的无限距离分离。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露与 ChatGPT 紧密协作，涉及探索证明策略、完善论证、查找文献及起草修订稿件，作者对数学和最终文字负责。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.02940v1 · PDF 第 2 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:16:51.295974+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.02940v1",
+        "contentHash": "640f0d137b6a1a05700ec68f08789b5f107aabe28a8f15dcf91598716eecce15",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT 紧密协作，涉及探索证明策略、完善论证、查找文献及起草修订稿件，作者对数学和最终文字负责。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5d102be8a3790b7edc4d76436036a106daa6905212f6008b14d6f59e505f3d4a"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "尝试把二维曲率下界完全表达为体积比较。"
+    },
+    "analysisBasis": {
+      "abstract": "We characterize lower curvature bounds on metric surfaces by the Bishop--Gromov inequality for metric balls.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +90,62 @@
             "math.DG"
           ],
           "primaryCategory": "math.MG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-02T07:31:57Z",
+          "updatedAt": "2026-10-02T07:31:57Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-05T02:13:18.399851+00:00",
             "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.02940v1",
+            "observedAt": "2026-10-05T02:25:51.493815+00:00",
+            "contentHash": "f92dc5210bfeddc9c19dd0e95855d04c0041158ec60cfa62a9f5078fd55990fd"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "以 Bishop–Gromov 刻画曲面曲率下界",
+          "workSummary": "对无边界拓扑曲面的 length space，以 ET（Sobolev 映射的近似度量微分为欧氏半范数）加逐紧集一致的小球 Hausdorff 面积上界 H²(Bᵣ(x))≤vκ(r)，刻画局部 Alexandrov 曲率下界 κ。经局部共形参数化得到分布不等式 Δlog f+κf²≤0，再以有界积分曲率理论把几乎处处的共形数据提升为处处的原度量。",
+          "techniques": [
+            "ET 条件",
+            "共形参数化",
+            "分布曲率不等式",
+            "有界积分曲率"
+          ],
+          "breakthrough": "尝试把二维曲率下界完全表达为体积比较。",
+          "limitations": "ET 用于排除非欧氏范数平面；单有球面积上界不足。无边界拓扑前提必要，非 length 度量的附录推广在 κ<0 时还可能出现孤立点与双曲 cusp 的无限距离分离。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露与 ChatGPT 紧密协作，涉及探索证明策略、完善论证、查找文献及起草修订稿件，作者对数学和最终文字负责。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.02940v1 · PDF 第 2 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:16:51.295974+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.02940v1",
+            "contentHash": "640f0d137b6a1a05700ec68f08789b5f107aabe28a8f15dcf91598716eecce15",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT 紧密协作，涉及探索证明策略、完善论证、查找文献及起草修订稿件，作者对数学和最终文字负责。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5d102be8a3790b7edc4d76436036a106daa6905212f6008b14d6f59e505f3d4a"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "尝试把二维曲率下界完全表达为体积比较。"
+        },
+        "analysisBasis": {
+          "abstract": "We characterize lower curvature bounds on metric surfaces by the Bishop--Gromov inequality for metric balls.",
+          "version": 1
+        }
       }
     }
   ]

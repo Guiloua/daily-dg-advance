@@ -15,17 +15,61 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "30 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-02T04:40:16Z",
+      "updatedAt": "2026-10-02T04:40:16Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-05T02:13:07.066841+00:00",
         "contentHash": "5f6e255312daf94e19a4dd86196c4a6340bbdc6cfb8656b9f0660e054ada3120"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.02797v1",
+        "observedAt": "2026-10-05T02:25:40.333097+00:00",
+        "contentHash": "033b35f58f0a0c0bb5e252c23b39930cccf471159ce4eb6a5701a4f486d647e2"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "圆周 Möbius 能量的四阶非退化",
+      "workSummary": "精确计算分解能量 E₁、E₂ 在圆周的 normal Hessian，找到二阶抵消组合 F=2E₁+3E₂+2π²；前三阶导数全消失，四阶形式对光滑实法向场非负，零空间恰为圆周 Möbius 族的法向切空间。",
+      "techniques": [
+        "Fourier 共振块",
+        "加权差分三对角化",
+        "行列式公式",
+        "Möbius 不变性"
+      ],
+      "breakthrough": "在 Hessian 看不出的方向上建立四阶非退化。",
+      "limitations": "四阶非负和精确零空间是圆周处的变分结论，不直接等于对任意邻近曲线的全局能量下界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 等生成式 AI 辅助额外核查计算与逻辑一致性、文献搜索及稿件编辑组织；研究问题、论证、计算及结论由作者发展核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.02797v1 · PDF 第 29 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:16:39.563820+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.02797v1",
+        "contentHash": "915ffa32d41a87925fe8531f77c778f2c61eb52e9f6d44a3e8d545b000c192f2",
+        "pages": 30,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 等生成式 AI 辅助额外核查计算与逻辑一致性、文献搜索及稿件编辑组织；研究问题、论证、计算及结论由作者发展核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4c5a82c2cfebe623a827471cefa4f7757de5f4d67a009457cf34cdc7b41c6841"
+      },
+      "aiUsage": [
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 89,
+      "priorityReason": "在 Hessian 看不出的方向上建立四阶非退化。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the decomposed Möbius energies $E_1$ and $E_2$ at the round circle and determine their complete normal Hessians: $H_1(C)=2\\pi(|D_s|^3-|D_s|)I_2$ and $H_2(C)=-(4\\pi/3)(|D_s|^3-|D_s|)I_2$. Thus $H_1(C)=3H_E(C)$ and $H_2(C)=-2H_E(C)$, where $H_E(C)$ is the Hessian of the full Möbius energy. This exact proportionality singles out the Möbius-invariant combination $F=2E_1+3E_2+2\\pi^2$. We prove that $F(C)=0$ and that its first three derivatives vanish on the full space of parametrized variations. For scalar binormal variations, the fourth variation has a Fourier tensor with complete $3+1$ resonance cancellation and finite $2+2$ fixed-sum blocks. Their positivity follows from an explicit weighted-difference tridiagonalization and a closed determinant formula. For arbitrary normal variations in $\\mathbb{R}^3$, Möbius invariance in $\\mathbb{R}^4$ reduces the radial component to a second binormal direction. The resulting two-component quartic form splits into trace, symmetric-traceless, and antisymmetric blocks, which are positive on the active coordinates. Consequently, $D^4F(C)[u,u,u,u]\\geq 0$ for every smooth real normal field $u$, with equality exactly on the normal tangent space of the Möbius family of round circles. This yields a fourth-order nondegeneracy phenomenon that is not determined by the total-energy Hessian alone.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +87,61 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "30 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-02T04:40:16Z",
+          "updatedAt": "2026-10-02T04:40:16Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-05T02:13:07.066841+00:00",
             "contentHash": "5f6e255312daf94e19a4dd86196c4a6340bbdc6cfb8656b9f0660e054ada3120"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.02797v1",
+            "observedAt": "2026-10-05T02:25:40.333097+00:00",
+            "contentHash": "033b35f58f0a0c0bb5e252c23b39930cccf471159ce4eb6a5701a4f486d647e2"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "圆周 Möbius 能量的四阶非退化",
+          "workSummary": "精确计算分解能量 E₁、E₂ 在圆周的 normal Hessian，找到二阶抵消组合 F=2E₁+3E₂+2π²；前三阶导数全消失，四阶形式对光滑实法向场非负，零空间恰为圆周 Möbius 族的法向切空间。",
+          "techniques": [
+            "Fourier 共振块",
+            "加权差分三对角化",
+            "行列式公式",
+            "Möbius 不变性"
+          ],
+          "breakthrough": "在 Hessian 看不出的方向上建立四阶非退化。",
+          "limitations": "四阶非负和精确零空间是圆周处的变分结论，不直接等于对任意邻近曲线的全局能量下界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 等生成式 AI 辅助额外核查计算与逻辑一致性、文献搜索及稿件编辑组织；研究问题、论证、计算及结论由作者发展核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.02797v1 · PDF 第 29 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:16:39.563820+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.02797v1",
+            "contentHash": "915ffa32d41a87925fe8531f77c778f2c61eb52e9f6d44a3e8d545b000c192f2",
+            "pages": 30,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 等生成式 AI 辅助额外核查计算与逻辑一致性、文献搜索及稿件编辑组织；研究问题、论证、计算及结论由作者发展核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4c5a82c2cfebe623a827471cefa4f7757de5f4d67a009457cf34cdc7b41c6841"
+          },
+          "aiUsage": [
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 89,
+          "priorityReason": "在 Hessian 看不出的方向上建立四阶非退化。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the decomposed Möbius energies $E_1$ and $E_2$ at the round circle and determine their complete normal Hessians: $H_1(C)=2\\pi(|D_s|^3-|D_s|)I_2$ and $H_2(C)=-(4\\pi/3)(|D_s|^3-|D_s|)I_2$. Thus $H_1(C)=3H_E(C)$ and $H_2(C)=-2H_E(C)$, where $H_E(C)$ is the Hessian of the full Möbius energy. This exact proportionality singles out the Möbius-invariant combination $F=2E_1+3E_2+2\\pi^2$. We prove that $F(C)=0$ and that its first three derivatives vanish on the full space of parametrized variations. For scalar binormal variations, the fourth variation has a Fourier tensor with complete $3+1$ resonance cancellation and finite $2+2$ fixed-sum blocks. Their positivity follows from an explicit weighted-difference tridiagonalization and a closed determinant formula. For arbitrary normal variations in $\\mathbb{R}^3$, Möbius invariance in $\\mathbb{R}^4$ reduces the radial component to a second binormal direction. The resulting two-component quartic form splits into trace, symmetric-traceless, and antisymmetric blocks, which are positive on the active coordinates. Consequently, $D^4F(C)[u,u,u,u]\\geq 0$ for every smooth real normal field $u$, with equality exactly on the normal tangent space of the Möbius family of round circles. This yields a fourth-order nondegeneracy phenomenon that is not determined by the total-energy Hessian alone.",
+          "version": 1
+        }
       }
     }
   ]

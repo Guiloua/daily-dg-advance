@@ -16,17 +16,62 @@
       ],
       "primaryCategory": "math.AT",
       "comment": "34 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-29T18:25:51Z",
+      "updatedAt": "2026-09-29T18:25:51Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-05T02:13:29.804811+00:00",
         "contentHash": "c217af8df39b4c73251bc30192cc59f0e4e7611453512b52fcd1ef0a77a6600d"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.02244v1",
+        "observedAt": "2026-10-05T02:23:59.776820+00:00",
+        "contentHash": "0833d965e14b056c0b8d26d761571ae8239e23462155e015970e8e214f6127bb"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "流形同伦自等价的 bordism 框架",
+      "workSummary": "把 Hambleton–Kreck 的交换 braid 推广到满足结构映射分解与单值化平凡条件的 BO⟨n+1⟩ 流形，计算球面乘积及部分连通和的基点同伦自等价群；以交叉形式等距群为商，以球面不稳定同伦构造 kernel。",
+      "techniques": [
+        "Postnikov 截断",
+        "bordism braid",
+        "Whitehead 乘积",
+        "交叉形式"
+      ],
+      "breakthrough": "统一若干不同维数流形的同伦对称群计算。",
+      "limitations": "两个框架假设须保留；S⁴×S⁴ 的 kernel 仍是猜测，部分八维连通和也未完全算出。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude 辅助语言编辑、表述改进、LaTeX 引用及编译检查、书目信息核验和修订中部分计算与论证检查；作者独立核验全部数学内容，未由 AI 整体生成文字、代码或图。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.02244v1 · PDF 第 33 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:14:47.094718+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.02244v1",
+        "contentHash": "6f82fd0c7b000beffeaf133c2f56ce224e3be4608a3cafbfde4d5cf577c8febe",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 辅助语言编辑、表述改进、LaTeX 引用及编译检查、书目信息核验和修订中部分计算与论证检查；作者独立核验全部数学内容，未由 AI 整体生成文字、代码或图。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ccd59c5a87a52d97275aa458b7a6c58c605fe2cb2d87eeea02de859042c6f32e"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "统一若干不同维数流形的同伦对称群计算。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $M$ be a closed, oriented manifold. The group $\\operatorname{Aut}_\\bullet(M)$ of based self-equivalences of $M$ is a natural invariant in manifold classification, and Hambleton and Kreck's commutative braid gives a systematic way to compute it for $4$-manifolds. We extend their framework to $BO\\langle n+1\\rangle$-manifolds of dimension $2n$ or $2n-1$, under two hypotheses: (F), that the structure map factors through the Postnikov $n$-type, and (T), triviality of the relevant monodromy. Both hold whenever $M$ is stably parallelizable, which is the case in every example we treat. We then discuss products and connected sums of spheres. For $S^n\\times S^n$, the isometry group of the relevant intersection form is the symplectic group $Sp_2(\\mathbb{Z})=SL_2(\\mathbb{Z})$ when $n$ is odd, and the finite group $(\\mathbb{Z}/2)^2$ when $n$ is even, which we verify directly with a Whitehead-product argument. Feeding this into the braid gives, in each case, a short exact sequence $0\\to K\\to\\operatorname{Aut}_\\bullet(M)\\to Q\\to0$, with $Q$ this same isometry group and $K$ a bordism-theoretic kernel built from unstable homotopy groups of spheres. We work this out for $S^1\\times S^{m-1}$; for $S^3\\times S^3$, where the sequence splits as a direct product; for connected sums of $r$ copies of $S^3\\times S^3$, where permuting the summands acts non-trivially on $K$ instead; for $S^3\\times S^4$; and for $S^4\\times S^4$, where $Q$ is fully determined but $K$ is only conjectured. We also discuss the connected sum $(S^3\\times S^5)$ \\connsum $(S^3\\times S^5)$, where the same method gets most of the way to an answer without quite closing it. Throughout, comparing with the smooth structure set shows how differently homotopy and diffeomorphism classification can behave.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +90,62 @@
           ],
           "primaryCategory": "math.AT",
           "comment": "34 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-29T18:25:51Z",
+          "updatedAt": "2026-09-29T18:25:51Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-05T02:13:29.804811+00:00",
             "contentHash": "c217af8df39b4c73251bc30192cc59f0e4e7611453512b52fcd1ef0a77a6600d"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.02244v1",
+            "observedAt": "2026-10-05T02:23:59.776820+00:00",
+            "contentHash": "0833d965e14b056c0b8d26d761571ae8239e23462155e015970e8e214f6127bb"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "流形同伦自等价的 bordism 框架",
+          "workSummary": "把 Hambleton–Kreck 的交换 braid 推广到满足结构映射分解与单值化平凡条件的 BO⟨n+1⟩ 流形，计算球面乘积及部分连通和的基点同伦自等价群；以交叉形式等距群为商，以球面不稳定同伦构造 kernel。",
+          "techniques": [
+            "Postnikov 截断",
+            "bordism braid",
+            "Whitehead 乘积",
+            "交叉形式"
+          ],
+          "breakthrough": "统一若干不同维数流形的同伦对称群计算。",
+          "limitations": "两个框架假设须保留；S⁴×S⁴ 的 kernel 仍是猜测，部分八维连通和也未完全算出。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude 辅助语言编辑、表述改进、LaTeX 引用及编译检查、书目信息核验和修订中部分计算与论证检查；作者独立核验全部数学内容，未由 AI 整体生成文字、代码或图。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.02244v1 · PDF 第 33 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:14:47.094718+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.02244v1",
+            "contentHash": "6f82fd0c7b000beffeaf133c2f56ce224e3be4608a3cafbfde4d5cf577c8febe",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 辅助语言编辑、表述改进、LaTeX 引用及编译检查、书目信息核验和修订中部分计算与论证检查；作者独立核验全部数学内容，未由 AI 整体生成文字、代码或图。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ccd59c5a87a52d97275aa458b7a6c58c605fe2cb2d87eeea02de859042c6f32e"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "统一若干不同维数流形的同伦对称群计算。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $M$ be a closed, oriented manifold. The group $\\operatorname{Aut}_\\bullet(M)$ of based self-equivalences of $M$ is a natural invariant in manifold classification, and Hambleton and Kreck's commutative braid gives a systematic way to compute it for $4$-manifolds. We extend their framework to $BO\\langle n+1\\rangle$-manifolds of dimension $2n$ or $2n-1$, under two hypotheses: (F), that the structure map factors through the Postnikov $n$-type, and (T), triviality of the relevant monodromy. Both hold whenever $M$ is stably parallelizable, which is the case in every example we treat. We then discuss products and connected sums of spheres. For $S^n\\times S^n$, the isometry group of the relevant intersection form is the symplectic group $Sp_2(\\mathbb{Z})=SL_2(\\mathbb{Z})$ when $n$ is odd, and the finite group $(\\mathbb{Z}/2)^2$ when $n$ is even, which we verify directly with a Whitehead-product argument. Feeding this into the braid gives, in each case, a short exact sequence $0\\to K\\to\\operatorname{Aut}_\\bullet(M)\\to Q\\to0$, with $Q$ this same isometry group and $K$ a bordism-theoretic kernel built from unstable homotopy groups of spheres. We work this out for $S^1\\times S^{m-1}$; for $S^3\\times S^3$, where the sequence splits as a direct product; for connected sums of $r$ copies of $S^3\\times S^3$, where permuting the summands acts non-trivially on $K$ instead; for $S^3\\times S^4$; and for $S^4\\times S^4$, where $Q$ is fully determined but $K$ is only conjectured. We also discuss the connected sum $(S^3\\times S^5)$ \\connsum $(S^3\\times S^5)$, where the same method gets most of the way to an answer without quite closing it. Throughout, comparing with the smooth structure set shows how differently homotopy and diffeomorphism classification can behave.",
+          "version": 1
+        }
       }
     }
   ]

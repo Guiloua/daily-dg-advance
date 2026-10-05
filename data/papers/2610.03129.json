@@ -14,17 +14,59 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-02T10:50:04Z",
+      "updatedAt": "2026-10-02T10:50:04Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-05T02:13:07.066841+00:00",
         "contentHash": "5f6e255312daf94e19a4dd86196c4a6340bbdc6cfb8656b9f0660e054ada3120"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.03129v1",
+        "observedAt": "2026-10-05T02:26:58.579233+00:00",
+        "contentHash": "085715e99a2b356a12e24c84e0f90b8a1132cd8abade09e87a231a77ba188dcc"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "奇异 Reifenberg 初值 Ricci 流的唯一性",
+      "workSummary": "对两个完整 Ricci 流，若 |Rm|≤α/t、inj≥√(t/α)、Sec≥−1，距离局部一致趋于由同一 homeomorphism 识别的初始距离，且初始空间一致 Reifenberg，则该映射自动是微分同胚并使两流一致。证明比较使用 harmonic map heat flow；结合一致体积非塌缩 PIC2 极限的已知存在理论，推出规范光滑结构和相应微分同胚稳定性。",
+      "techniques": [
+        "harmonic map heat flow",
+        "尺度曲率控制",
+        "一致 Reifenberg",
+        "PIC2 极限"
+      ],
+      "breakthrough": "把奇异极限的光滑结构与流的唯一性联系。",
+      "limitations": "一致 Reifenberg 排除 cone 点，仍可允许 seam。应用需要各点统一体积下界；仅一个单位球非塌缩不足。高维截曲率下界一般不被流保持，因此存在性应用改用更强的 PIC2 下界。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 AI 仅在稿件准备最后阶段建议如何改善表述，所有数学想法及策略由作者独立发展。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.03129v1 · PDF 第 7 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:18:01.875076+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.03129v1",
+        "contentHash": "81dcfff031922cdd7a4a899c89032ed8da8b33fa7403ef2febfb504c98f76673",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅在稿件准备最后阶段建议如何改善表述，所有数学想法及策略由作者独立发展。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "679bc10b1beccf26ecb84ec7eef68bb677e152cb32ea5bac461b322fdc89b60a"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "把奇异极限的光滑结构与流的唯一性联系。"
+    },
+    "analysisBasis": {
+      "abstract": "We consider the problem of uniqueness of Ricci flows, starting from singular initial data. Even when the initial data is smooth and smoothly obtained, in the complete noncompact case uniqueness is not known in full generality. When starting from nonsmooth initial data, very little is known, even in the compact case. We obtain a uniqueness result for Ricci flows with scaling-invariant curvature bounds, a suitable noncollapsing assumption, and sectional curvature lower bounds, coming out of (possibly singular) Reifenberg spaces. As a consequence of our result, and existence results obtained by Simon--Topping and Lai, there is a canonical way to define a smooth structure on any Reifenberg uniformly volume-noncollapsed PIC2 limit space. Further, we obtain a diffeomorphic version of Perelman's stability theorem for these limit spaces.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -41,17 +83,59 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-02T10:50:04Z",
+          "updatedAt": "2026-10-02T10:50:04Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-05T02:13:07.066841+00:00",
             "contentHash": "5f6e255312daf94e19a4dd86196c4a6340bbdc6cfb8656b9f0660e054ada3120"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.03129v1",
+            "observedAt": "2026-10-05T02:26:58.579233+00:00",
+            "contentHash": "085715e99a2b356a12e24c84e0f90b8a1132cd8abade09e87a231a77ba188dcc"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "奇异 Reifenberg 初值 Ricci 流的唯一性",
+          "workSummary": "对两个完整 Ricci 流，若 |Rm|≤α/t、inj≥√(t/α)、Sec≥−1，距离局部一致趋于由同一 homeomorphism 识别的初始距离，且初始空间一致 Reifenberg，则该映射自动是微分同胚并使两流一致。证明比较使用 harmonic map heat flow；结合一致体积非塌缩 PIC2 极限的已知存在理论，推出规范光滑结构和相应微分同胚稳定性。",
+          "techniques": [
+            "harmonic map heat flow",
+            "尺度曲率控制",
+            "一致 Reifenberg",
+            "PIC2 极限"
+          ],
+          "breakthrough": "把奇异极限的光滑结构与流的唯一性联系。",
+          "limitations": "一致 Reifenberg 排除 cone 点，仍可允许 seam。应用需要各点统一体积下界；仅一个单位球非塌缩不足。高维截曲率下界一般不被流保持，因此存在性应用改用更强的 PIC2 下界。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 AI 仅在稿件准备最后阶段建议如何改善表述，所有数学想法及策略由作者独立发展。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.03129v1 · PDF 第 7 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:18:01.875076+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.03129v1",
+            "contentHash": "81dcfff031922cdd7a4a899c89032ed8da8b33fa7403ef2febfb504c98f76673",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅在稿件准备最后阶段建议如何改善表述，所有数学想法及策略由作者独立发展。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "679bc10b1beccf26ecb84ec7eef68bb677e152cb32ea5bac461b322fdc89b60a"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "把奇异极限的光滑结构与流的唯一性联系。"
+        },
+        "analysisBasis": {
+          "abstract": "We consider the problem of uniqueness of Ricci flows, starting from singular initial data. Even when the initial data is smooth and smoothly obtained, in the complete noncompact case uniqueness is not known in full generality. When starting from nonsmooth initial data, very little is known, even in the compact case. We obtain a uniqueness result for Ricci flows with scaling-invariant curvature bounds, a suitable noncollapsing assumption, and sectional curvature lower bounds, coming out of (possibly singular) Reifenberg spaces. As a consequence of our result, and existence results obtained by Simon--Topping and Lai, there is a canonical way to define a smooth structure on any Reifenberg uniformly volume-noncollapsed PIC2 limit space. Further, we obtain a diffeomorphic version of Perelman's stability theorem for these limit spaces.",
+          "version": 1
+        }
       }
     }
   ]

@@ -25,10 +25,55 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-05T02:13:18.399851+00:00",
         "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.03204v1",
+        "observedAt": "2026-10-05T02:18:24.965428+00:00",
+        "contentHash": "b573898ea48e41dfc38097db4182e7ee3ea29e9ff8053a5b548bc33d82c2b3e0"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Dvoretzky ε 猜想的多项式界",
+      "workSummary": "在 0<ε<1/2、ℓ≥2 时，以 n≥(C/ε)^((ℓ+1)/2)|log ε| 得到 rB_E⊂K∩E⊂(1+ε)rB_E。先在所有满足 T(B^ℓ)⊂K 的线性算子组成的凸体中均匀抽样，由 Brunn–Minkowski 和 union bound 以至少 1/2 概率得到近椭球截面，再融合 K 与欧氏球对应的子空间分布而获得同维近球截面及有限族同时版本。",
+      "techniques": [
+        "算子凸体均匀抽样",
+        "Brunn–Minkowski",
+        "union bound",
+        "子空间分布融合"
+      ],
+      "breakthrough": "把近似精度的维数依赖改为 1/ε 的多项式。",
+      "limitations": "子空间分布依赖 K，非 Grassmannian Haar 分布。本文一般凸体的指数 (ℓ+1)/2 是否能降至 (ℓ−1)/2 仍未知；ℓ=2 另有更强的拓扑界。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Grassmannian 上概率分布的想法来自 ChatGPT 与第二作者的讨论；ChatGPT 另用于寻找文献、检查和改进证明及语言编辑。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.03204v1 · PDF 第 5 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:18:24.965428+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.03204v1",
+        "contentHash": "b573898ea48e41dfc38097db4182e7ee3ea29e9ff8053a5b548bc33d82c2b3e0",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Grassmannian 上概率分布的想法来自 ChatGPT 与第二作者的讨论；ChatGPT 另用于寻找文献、检查和改进证明及语言编辑。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1dbc4d451574de7254e8decf9d55e5c728dbee8e2e0d6916298cd52b9dc7e336"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 99,
+      "priorityReason": "把近似精度的维数依赖改为 1/ε 的多项式。"
+    },
+    "analysisBasis": {
+      "abstract": "We present a simple proof of the $\\varepsilon$-Dvoretzky conjecture, which asserts that the dependence on the approximation parameter $\\varepsilon$ in Dvoretzky's theorem is polynomial in $1/\\varepsilon$. In particular, if $n \\geq (C/\\varepsilon)^{\\ell/2+1}$, then any $n$-dimensional convex body has, through any given interior point, an $\\ell$-dimensional section that is $\\varepsilon$-close to a Euclidean ball. Here, $C > 0$ is a universal constant. We in fact obtain a sharper dependence on $\\varepsilon$. The proof is probabilistic, but uses a different probabilistic model from those employed previously. We also prove a simultaneous version of our theorem for a finite family of convex bodies with the origin in their interior, yielding a common linear subspace on which all of the bodies have nearly-Euclidean sections. Finally, we compare the radius of the approximating Euclidean ball with familiar geometric parameters, such as the mean widths of the body and its dual.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,10 +101,55 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-05T02:13:18.399851+00:00",
             "contentHash": "750d46bfb57fcef89cac1b15c4e1619102eb99d592eb472a07e1ec04515ad602"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.03204v1",
+            "observedAt": "2026-10-05T02:18:24.965428+00:00",
+            "contentHash": "b573898ea48e41dfc38097db4182e7ee3ea29e9ff8053a5b548bc33d82c2b3e0"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Dvoretzky ε 猜想的多项式界",
+          "workSummary": "在 0<ε<1/2、ℓ≥2 时，以 n≥(C/ε)^((ℓ+1)/2)|log ε| 得到 rB_E⊂K∩E⊂(1+ε)rB_E。先在所有满足 T(B^ℓ)⊂K 的线性算子组成的凸体中均匀抽样，由 Brunn–Minkowski 和 union bound 以至少 1/2 概率得到近椭球截面，再融合 K 与欧氏球对应的子空间分布而获得同维近球截面及有限族同时版本。",
+          "techniques": [
+            "算子凸体均匀抽样",
+            "Brunn–Minkowski",
+            "union bound",
+            "子空间分布融合"
+          ],
+          "breakthrough": "把近似精度的维数依赖改为 1/ε 的多项式。",
+          "limitations": "子空间分布依赖 K，非 Grassmannian Haar 分布。本文一般凸体的指数 (ℓ+1)/2 是否能降至 (ℓ−1)/2 仍未知；ℓ=2 另有更强的拓扑界。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Grassmannian 上概率分布的想法来自 ChatGPT 与第二作者的讨论；ChatGPT 另用于寻找文献、检查和改进证明及语言编辑。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.03204v1 · PDF 第 5 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:18:24.965428+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.03204v1",
+            "contentHash": "b573898ea48e41dfc38097db4182e7ee3ea29e9ff8053a5b548bc33d82c2b3e0",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Grassmannian 上概率分布的想法来自 ChatGPT 与第二作者的讨论；ChatGPT 另用于寻找文献、检查和改进证明及语言编辑。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1dbc4d451574de7254e8decf9d55e5c728dbee8e2e0d6916298cd52b9dc7e336"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 99,
+          "priorityReason": "把近似精度的维数依赖改为 1/ε 的多项式。"
+        },
+        "analysisBasis": {
+          "abstract": "We present a simple proof of the $\\varepsilon$-Dvoretzky conjecture, which asserts that the dependence on the approximation parameter $\\varepsilon$ in Dvoretzky's theorem is polynomial in $1/\\varepsilon$. In particular, if $n \\geq (C/\\varepsilon)^{\\ell/2+1}$, then any $n$-dimensional convex body has, through any given interior point, an $\\ell$-dimensional section that is $\\varepsilon$-close to a Euclidean ball. Here, $C > 0$ is a universal constant. We in fact obtain a sharper dependence on $\\varepsilon$. The proof is probabilistic, but uses a different probabilistic model from those employed previously. We also prove a simultaneous version of our theorem for a finite family of convex bodies with the origin in their interior, yielding a common linear subspace on which all of the bodies have nearly-Euclidean sections. Finally, we compare the radius of the approximating Euclidean ball with familiar geometric parameters, such as the mean widths of the body and its dual.",
+          "version": 1
+        }
       }
     }
   ]

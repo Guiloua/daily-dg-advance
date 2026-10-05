@@ -16,17 +16,56 @@
         "math.GT"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-01T18:00:46Z",
+      "updatedAt": "2026-10-01T18:00:46Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-05T02:13:29.804811+00:00",
         "contentHash": "c217af8df39b4c73251bc30192cc59f0e4e7611453512b52fcd1ef0a77a6600d"
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.02325v1",
+        "observedAt": "2026-10-05T02:24:44.399816+00:00",
+        "contentHash": "8eea88a07af397c9d7c21b2cfb482281dbfa956c0f68d9dae48e9c46ccf3f257"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "所有 n≥5 维正 isotropic 曲率分类",
+      "workSummary": "对紧 PIC 流形，在不含非平凡不可压 (n−1) 维空间形式的前提下，将手术分类补齐到所有 n≥5；结论为球面或 S^(n−1)×R 的标准等距商的有限连通和。构造 Hamilton 曲率 ODE 横截不变凸锥，保留变量联合优化第一族的估计；第二族引入额外标量项并排除 λ 接近 1 的边界面，解决五、六维拼接。由 pinching 得到 n≥4 的非紧 κ 古解及一致 PIC 收缩孤立子分类。",
+      "techniques": [
+        "Hamilton 曲率 ODE",
+        "pinching 凸锥",
+        "联合参数优化",
+        "Ricci 流手术"
+      ],
+      "breakthrough": "填补正 isotropic 曲率分类在维数上的缺口。",
+      "limitations": "紧流形分类的不可压空间形式条件不能省略。非紧 ancient 解需完整、κ 非塌缩、一致 PIC；孤立子结论针对非平坦完整梯度收缩且一致 PIC。Mathematica 搜索不是替代手工可验的最终参数证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-05T02:15:37.639473+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.02325v1",
+        "contentHash": "26847d526002199cb1eff63f467409f5f579aa69bd156601d35daeb92d3fc0ab",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明工作任何阶段均未使用 LLM；Mathematica 用于代数计算、参数搜索与数值优化，属于另列计算软件，不计为生成式 AI 披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f1eb447420e2255b30f14037f410dcf4bd7bfa98faa47d3621bda59e806505ea"
+      },
+      "priorityScore": 99,
+      "priorityReason": "填补正 isotropic 曲率分类在维数上的缺口。"
+    },
+    "analysisBasis": {
+      "abstract": "We extend the classification of manifolds with positive isotropic curvature to all dimensions $n \\geq 5$. This result also completes the classification of uniformly positive isotropic curvature on complete non-compact $\\kappa$-noncollapsed ancient solutions and gradient shrinking Ricci solitons. The proof involves a construction of pinching cones in all dimensions, refining and extending to all dimensions the results of the first author. We have used MATHEMATICA to find viable parameters for the cone families. The final presentation is self-contained and can be verified manually. No stage of this work involved LLMs.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +84,56 @@
             "math.GT"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-01T18:00:46Z",
+          "updatedAt": "2026-10-01T18:00:46Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-05T02:13:29.804811+00:00",
             "contentHash": "c217af8df39b4c73251bc30192cc59f0e4e7611453512b52fcd1ef0a77a6600d"
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.02325v1",
+            "observedAt": "2026-10-05T02:24:44.399816+00:00",
+            "contentHash": "8eea88a07af397c9d7c21b2cfb482281dbfa956c0f68d9dae48e9c46ccf3f257"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "所有 n≥5 维正 isotropic 曲率分类",
+          "workSummary": "对紧 PIC 流形，在不含非平凡不可压 (n−1) 维空间形式的前提下，将手术分类补齐到所有 n≥5；结论为球面或 S^(n−1)×R 的标准等距商的有限连通和。构造 Hamilton 曲率 ODE 横截不变凸锥，保留变量联合优化第一族的估计；第二族引入额外标量项并排除 λ 接近 1 的边界面，解决五、六维拼接。由 pinching 得到 n≥4 的非紧 κ 古解及一致 PIC 收缩孤立子分类。",
+          "techniques": [
+            "Hamilton 曲率 ODE",
+            "pinching 凸锥",
+            "联合参数优化",
+            "Ricci 流手术"
+          ],
+          "breakthrough": "填补正 isotropic 曲率分类在维数上的缺口。",
+          "limitations": "紧流形分类的不可压空间形式条件不能省略。非紧 ancient 解需完整、κ 非塌缩、一致 PIC；孤立子结论针对非平坦完整梯度收缩且一致 PIC。Mathematica 搜索不是替代手工可验的最终参数证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-05T02:15:37.639473+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.02325v1",
+            "contentHash": "26847d526002199cb1eff63f467409f5f579aa69bd156601d35daeb92d3fc0ab",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明工作任何阶段均未使用 LLM；Mathematica 用于代数计算、参数搜索与数值优化，属于另列计算软件，不计为生成式 AI 披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f1eb447420e2255b30f14037f410dcf4bd7bfa98faa47d3621bda59e806505ea"
+          },
+          "priorityScore": 99,
+          "priorityReason": "填补正 isotropic 曲率分类在维数上的缺口。"
+        },
+        "analysisBasis": {
+          "abstract": "We extend the classification of manifolds with positive isotropic curvature to all dimensions $n \\geq 5$. This result also completes the classification of uniformly positive isotropic curvature on complete non-compact $\\kappa$-noncollapsed ancient solutions and gradient shrinking Ricci solitons. The proof involves a construction of pinching cones in all dimensions, refining and extending to all dimensions the results of the first author. We have used MATHEMATICA to find viable parameters for the cone families. The final presentation is self-contained and can be verified manually. No stage of this work involved LLMs.",
+          "version": 1
+        }
       }
     }
   ]
