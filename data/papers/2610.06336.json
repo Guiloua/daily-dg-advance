@@ -28,8 +28,27 @@
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "56 维以内 LeBrun–Salamon 猜想",
+      "workSummary": "作者证明 quaternionic dimension≤14 的 positive quaternionic Kähler 流形 LeBrun–Salamon 猜想，通过 minimal counterexample 的低秩 isometry group 与正 characteristic index 矛盾；高维阶段引入 signed orbital moments 和 Hodge–Riemann positivity。",
+      "techniques": [
+        "curvature moments",
+        "characteristic index",
+        "Hodge–Riemann",
+        "isometry rank"
+      ],
+      "breakthrough": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。",
+      "limitations": "实维上界56而非 quaternionic 56；附录 Lean partial verification 不能代表整个证明已形式化。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 99,
+      "priorityReason": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove the LeBrun--Salamon conjecture for positive quaternionic Kähler manifolds of quaternionic dimension n <= 14. To do so, we first show that the isometry group Isom(M) of any minimal counterexample M has rank at most one, hence dimension at most three. On the other hand, we consider a characteristic number which equals dim Isom(M) - (n+3) if n is even and dim Isom(M) - (n+1) if n is odd, and show that this index is a sum of positive quantities when n <= 14, yielding a contradiction. The toolset used to show positivity enlarges in stages. Projection curvature moments suffice through n=8; positive-semidefinite curvature moments extend the argument through n=10; and signed scalar orbital moments give the new inequalities needed for n=11,12. Scalar orbital moments alone fail at n=13; combining them with Hodge--Riemann positivity for squares of cohomology classes extends the proof to n=13,14. We give exact separating obstructions explaining the changes of method.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -60,8 +79,27 @@
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "56 维以内 LeBrun–Salamon 猜想",
+          "workSummary": "作者证明 quaternionic dimension≤14 的 positive quaternionic Kähler 流形 LeBrun–Salamon 猜想，通过 minimal counterexample 的低秩 isometry group 与正 characteristic index 矛盾；高维阶段引入 signed orbital moments 和 Hodge–Riemann positivity。",
+          "techniques": [
+            "curvature moments",
+            "characteristic index",
+            "Hodge–Riemann",
+            "isometry rank"
+          ],
+          "breakthrough": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。",
+          "limitations": "实维上界56而非 quaternionic 56；附录 Lean partial verification 不能代表整个证明已形式化。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 99,
+          "priorityReason": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove the LeBrun--Salamon conjecture for positive quaternionic Kähler manifolds of quaternionic dimension n <= 14. To do so, we first show that the isometry group Isom(M) of any minimal counterexample M has rank at most one, hence dimension at most three. On the other hand, we consider a characteristic number which equals dim Isom(M) - (n+3) if n is even and dim Isom(M) - (n+1) if n is odd, and show that this index is a sum of positive quantities when n <= 14, yielding a contradiction. The toolset used to show positivity enlarges in stages. Projection curvature moments suffice through n=8; positive-semidefinite curvature moments extend the argument through n=10; and signed scalar orbital moments give the new inequalities needed for n=11,12. Scalar orbital moments alone fail at n=13; combining them with Hodge--Riemann positivity for squares of cohomology classes extends the proof to n=13,14. We give exact separating obstructions explaining the changes of method.",
+          "version": 1
+        }
       }
     }
   ]

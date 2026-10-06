@@ -24,10 +24,52 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-06T04:29:31.877244+00:00",
         "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.05438v1",
+        "observedAt": "2026-10-06T04:38:26.881160+00:00",
+        "contentHash": "eb6302af01f2aff26495d90d7a14208b7b10b9c3d85752c73528ace2fe45e34d"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "双曲 monotile 的面积和直径 gap",
+      "workSummary": "对固定边数 compact geodesic monotile 给正直径下界，闭曲面有限 monohedral tiling 给拓扑无关面积界；vertex-proper 时界可独立于边数，并构造无条件边数增长的小直径反例。",
+      "techniques": [
+        "corner balance",
+        "packing polytope",
+        "covering duality",
+        "整数约束"
+      ],
+      "breakthrough": "说明几何 gap 所需的组合条件并提供显式有效常数。",
+      "limitations": "常数不宣称最优；允许 reflex 与非 edge-to-edge 不意味着可取消 vertex 条件。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 DeepSeek、Doubao 与 ChatGPT 6 等语言模型，与 SageMath、Maple 一起用于符号数值计算、文献检索和实验性检查；不能把普通软件单独算作生成式 AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.05438v1 · PDF 第 26 页，致谢",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:38:26.881160+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.05438v1",
+        "contentHash": "eb6302af01f2aff26495d90d7a14208b7b10b9c3d85752c73528ace2fe45e34d",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 DeepSeek、Doubao 与 ChatGPT 6 等语言模型，与 SageMath、Maple 一起用于符号数值计算、文献检索和实验性检查；不能把普通软件单独算作生成式 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8ee29aa650a7b9a5aa8d1f26122c409c909cbc69d6f48b4b080694ac043acc1c"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification"
+      ],
+      "priorityScore": 85,
+      "priorityReason": "说明几何 gap 所需的组合条件并提供显式有效常数。"
+    },
+    "analysisBasis": {
+      "abstract": "For each fixed $n$, we prove a positive lower bound for the diameter of a compact simple geodesic $n$-gonal monotile of the hyperbolic plane. We also prove a positive lower bound for the area of such a tile in a finite monohedral tiling of a closed hyperbolic surface, independent of the topology and metric. Both bounds become independent of $n$ for vertex-proper tilings, in which every genuine tile vertex belongs to at least three distinct tiles. This includes tilings by convex polygons. Reflex angles and non-edge-to-edge incidences are allowed. After qualitative proofs, we obtain explicit constants from a sharp gap estimate for packing polytopes with arbitrarily coupled nonnegative integer constraints. Exact corner balance applies on closed surfaces; in the plane, covering duality and ball counts give a boundary factor depending on the tile diameter. Following Zare, we give, for each integer $q\\ge2$, a geodesic construction with $2q+3$ sides and diameter less than $3/q$, showing that side counts cannot be unrestricted without an additional condition. The closed-surface results extend to regular curved sides. The geometric constants are effective but are not claimed to be optimal.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,10 +96,52 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-06T04:29:31.877244+00:00",
             "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.05438v1",
+            "observedAt": "2026-10-06T04:38:26.881160+00:00",
+            "contentHash": "eb6302af01f2aff26495d90d7a14208b7b10b9c3d85752c73528ace2fe45e34d"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "双曲 monotile 的面积和直径 gap",
+          "workSummary": "对固定边数 compact geodesic monotile 给正直径下界，闭曲面有限 monohedral tiling 给拓扑无关面积界；vertex-proper 时界可独立于边数，并构造无条件边数增长的小直径反例。",
+          "techniques": [
+            "corner balance",
+            "packing polytope",
+            "covering duality",
+            "整数约束"
+          ],
+          "breakthrough": "说明几何 gap 所需的组合条件并提供显式有效常数。",
+          "limitations": "常数不宣称最优；允许 reflex 与非 edge-to-edge 不意味着可取消 vertex 条件。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 DeepSeek、Doubao 与 ChatGPT 6 等语言模型，与 SageMath、Maple 一起用于符号数值计算、文献检索和实验性检查；不能把普通软件单独算作生成式 AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.05438v1 · PDF 第 26 页，致谢",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:38:26.881160+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.05438v1",
+            "contentHash": "eb6302af01f2aff26495d90d7a14208b7b10b9c3d85752c73528ace2fe45e34d",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 DeepSeek、Doubao 与 ChatGPT 6 等语言模型，与 SageMath、Maple 一起用于符号数值计算、文献检索和实验性检查；不能把普通软件单独算作生成式 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8ee29aa650a7b9a5aa8d1f26122c409c909cbc69d6f48b4b080694ac043acc1c"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification"
+          ],
+          "priorityScore": 85,
+          "priorityReason": "说明几何 gap 所需的组合条件并提供显式有效常数。"
+        },
+        "analysisBasis": {
+          "abstract": "For each fixed $n$, we prove a positive lower bound for the diameter of a compact simple geodesic $n$-gonal monotile of the hyperbolic plane. We also prove a positive lower bound for the area of such a tile in a finite monohedral tiling of a closed hyperbolic surface, independent of the topology and metric. Both bounds become independent of $n$ for vertex-proper tilings, in which every genuine tile vertex belongs to at least three distinct tiles. This includes tilings by convex polygons. Reflex angles and non-edge-to-edge incidences are allowed. After qualitative proofs, we obtain explicit constants from a sharp gap estimate for packing polytopes with arbitrarily coupled nonnegative integer constraints. Exact corner balance applies on closed surfaces; in the plane, covering duality and ball counts give a boundary factor depending on the tile diameter. Following Zare, we give, for each integer $q\\ge2$, a geodesic construction with $2q+3$ sides and diameter less than $3/q$, showing that side counts cannot be unrestricted without an additional condition. The closed-surface results extend to regular curved sides. The geometric constants are effective but are not claimed to be optimal.",
+          "version": 1
+        }
       }
     }
   ]

@@ -25,10 +25,45 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-06T04:29:20.310597+00:00",
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.05326v1",
+        "observedAt": "2026-10-06T04:38:01.889504+00:00",
+        "contentHash": "460115a55d52d65210820a8c8398ad429df52b51e82fd5f1f73cb3efd9d37ec7"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "Kendall shape 的胼胝体年龄回归",
+      "workSummary": "对 OASIS-1 的 128-landmark 轮廓做 geodesic regression，健康组解释率 0.1355，形变能量偏后部；AD 组年龄解释率低于 0.5%，另给切空间年龄分类 AUC0.791。",
+      "techniques": [
+        "Kendall shape space",
+        "测地回归",
+        "精确梯度",
+        "切空间分类"
+      ],
+      "breakthrough": "显示轮廓几何比单个标量更能定位年龄相关形态变化。",
+      "limitations": "是指定数据集的形态分析，不能当作临床诊断效果；与外部 volumetric benchmark 的比较非同一实验。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:38:01.889504+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.05326v1",
+        "contentHash": "460115a55d52d65210820a8c8398ad429df52b51e82fd5f1f73cb3efd9d37ec7",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8297379878687a7deec262cb977ceb4a4a938b6150b234f0d9515cc9b2dbaba1"
+      },
+      "priorityScore": 68,
+      "priorityReason": "显示轮廓几何比单个标量更能定位年龄相关形态变化。"
+    },
+    "analysisBasis": {
+      "abstract": "The corpus callosum (CC) is a major white-matter structure and a well-established marker of brain aging, but most studies quantify it using scalar summaries that discard its boundary geometry. We present a Riemannian shape-space framework for analyzing age-related morphological change in the midsagittal CC, applied to the OASIS-1 cohort. Each contour is represented by $128$ landmarks and embedded into Kendall shape space, where translation, rotation, and scale are removed. We derive a multivariate geodesic regression with exact Riemannian gradients and use the fitted age-velocity field to localize age-related deformation to five anatomical sub-regions. In the cognitively normal cohort ($n = 252$), geodesic regression outperforms the Euclidean linear benchmark ($R^2 = 0.1355$ vs.\\ $0.1216$). Regional energy is posterior-dominant: the Splenium carries $41.4\\%$ and the Isthmus $23.8\\%$ of total age-related shape change, together accounting for $\\sim 65\\%$ despite comprising only $\\sim 35\\%$ of landmarks. Signed projections confirm the ordering (Splenium $r = 0.570$; Isthmus $r = 0.473$). In contrast, age explains less than $0.5\\%$ of shape variance in Alzheimer's disease ($n = 88$), indicating that the disease disrupts the healthy aging trajectory. A tangent-space classifier achieves an age-group AUC of $0.791$ from the 2D contour alone, exceeding a recent volumetric benchmark ($0.67$).",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,10 +91,45 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-06T04:29:20.310597+00:00",
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.05326v1",
+            "observedAt": "2026-10-06T04:38:01.889504+00:00",
+            "contentHash": "460115a55d52d65210820a8c8398ad429df52b51e82fd5f1f73cb3efd9d37ec7"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "Kendall shape 的胼胝体年龄回归",
+          "workSummary": "对 OASIS-1 的 128-landmark 轮廓做 geodesic regression，健康组解释率 0.1355，形变能量偏后部；AD 组年龄解释率低于 0.5%，另给切空间年龄分类 AUC0.791。",
+          "techniques": [
+            "Kendall shape space",
+            "测地回归",
+            "精确梯度",
+            "切空间分类"
+          ],
+          "breakthrough": "显示轮廓几何比单个标量更能定位年龄相关形态变化。",
+          "limitations": "是指定数据集的形态分析，不能当作临床诊断效果；与外部 volumetric benchmark 的比较非同一实验。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:38:01.889504+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.05326v1",
+            "contentHash": "460115a55d52d65210820a8c8398ad429df52b51e82fd5f1f73cb3efd9d37ec7",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8297379878687a7deec262cb977ceb4a4a938b6150b234f0d9515cc9b2dbaba1"
+          },
+          "priorityScore": 68,
+          "priorityReason": "显示轮廓几何比单个标量更能定位年龄相关形态变化。"
+        },
+        "analysisBasis": {
+          "abstract": "The corpus callosum (CC) is a major white-matter structure and a well-established marker of brain aging, but most studies quantify it using scalar summaries that discard its boundary geometry. We present a Riemannian shape-space framework for analyzing age-related morphological change in the midsagittal CC, applied to the OASIS-1 cohort. Each contour is represented by $128$ landmarks and embedded into Kendall shape space, where translation, rotation, and scale are removed. We derive a multivariate geodesic regression with exact Riemannian gradients and use the fitted age-velocity field to localize age-related deformation to five anatomical sub-regions. In the cognitively normal cohort ($n = 252$), geodesic regression outperforms the Euclidean linear benchmark ($R^2 = 0.1355$ vs.\\ $0.1216$). Regional energy is posterior-dominant: the Splenium carries $41.4\\%$ and the Isthmus $23.8\\%$ of total age-related shape change, together accounting for $\\sim 65\\%$ despite comprising only $\\sim 35\\%$ of landmarks. Signed projections confirm the ordering (Splenium $r = 0.570$; Isthmus $r = 0.473$). In contrast, age explains less than $0.5\\%$ of shape variance in Alzheimer's disease ($n = 88$), indicating that the disease disrupts the healthy aging trajectory. A tangent-space classifier achieves an age-group AUC of $0.791$ from the 2D contour alone, exceeding a recent volumetric benchmark ($0.67$).",
+          "version": 1
+        }
       }
     }
   ]

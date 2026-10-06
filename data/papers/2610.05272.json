@@ -23,10 +23,47 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-06T04:29:20.310597+00:00",
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.05272v1",
+        "observedAt": "2026-10-06T04:37:38.278961+00:00",
+        "contentHash": "967dacabf84e14b95e9da92e71601434ad7036937f65b54e82ad8a006217289f"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "Riemannian Frank–Wolfe 的几何复杂度",
+      "workSummary": "用 double-geodesic modulus 与 logarithm map 微分分解 feasible geometry 和 ambient distortion；结合 quadratic error bound 得 O(t^(−p/(p−1)))，并对 p>3 构造双曲平面锐例。",
+      "techniques": [
+        "Frank–Wolfe",
+        "Rauch 比较",
+        "几何 modulus",
+        "谱刻画"
+      ],
+      "breakthrough": "把曲率与可行域形状对算法速度的贡献分开并验证指数锐性。",
+      "limitations": "锐性限定于 gap-feedback short-step policy 及指定 geometry-controlled 类。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:37:38.278961+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.05272v1",
+        "contentHash": "967dacabf84e14b95e9da92e71601434ad7036937f65b54e82ad8a006217289f",
+        "pages": 50,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中内容是参考文献中的 Artificial Intelligence and Statistics 会议名称，不是作者使用 AI 的声明。全文检索未见明确披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4dacbe0add0051436096a0c965c5b1cc58a36aff06ee04d5957513ce069669c6"
+      },
+      "priorityScore": 83,
+      "priorityReason": "把曲率与可行域形状对算法速度的贡献分开并验证指数锐性。"
+    },
+    "analysisBasis": {
+      "abstract": "Projection-free methods replace projections by linear minimization oracles, making their convergence fundamentally sensitive to the geometry of the feasible region. We develop a geometric framework for this dependence in Riemannian Frank--Wolfe optimization. A power-type double-geodesic modulus quantifies the intrinsic geometry of the feasible set, and an exact transfer principle shows that this modulus induces a Frank--Wolfe scaling margin modulated by the differential of the Riemannian logarithm map. The resulting factorization separates the contributions of feasible-set geometry and ambient Riemannian distortion. Rauch comparison provides explicit curvature-dependent certificates for this distortion, while on the positive-definite cone equipped with the affine-invariant metric the logarithm differential admits an exact spectral characterization in terms of relative eigenvalue spread. Combined with a quadratic error bound, the power-type geometry yields the convergence rate $O(t^{-p/(p-1)})$ for the gap-feedback short-step policy. For every fixed $p>3$, a compact feasible set in a hyperbolic plane attains the matching rate $\\Theta(t^{-p/(p-1)})$ under the same policy. The geometry-derived exponent $p/(p-1)$ is therefore sharp for the gap-feedback short-step policy over the geometry-controlled class considered here.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,10 +89,47 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-06T04:29:20.310597+00:00",
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.05272v1",
+            "observedAt": "2026-10-06T04:37:38.278961+00:00",
+            "contentHash": "967dacabf84e14b95e9da92e71601434ad7036937f65b54e82ad8a006217289f"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "Riemannian Frank–Wolfe 的几何复杂度",
+          "workSummary": "用 double-geodesic modulus 与 logarithm map 微分分解 feasible geometry 和 ambient distortion；结合 quadratic error bound 得 O(t^(−p/(p−1)))，并对 p>3 构造双曲平面锐例。",
+          "techniques": [
+            "Frank–Wolfe",
+            "Rauch 比较",
+            "几何 modulus",
+            "谱刻画"
+          ],
+          "breakthrough": "把曲率与可行域形状对算法速度的贡献分开并验证指数锐性。",
+          "limitations": "锐性限定于 gap-feedback short-step policy 及指定 geometry-controlled 类。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:37:38.278961+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.05272v1",
+            "contentHash": "967dacabf84e14b95e9da92e71601434ad7036937f65b54e82ad8a006217289f",
+            "pages": 50,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中内容是参考文献中的 Artificial Intelligence and Statistics 会议名称，不是作者使用 AI 的声明。全文检索未见明确披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4dacbe0add0051436096a0c965c5b1cc58a36aff06ee04d5957513ce069669c6"
+          },
+          "priorityScore": 83,
+          "priorityReason": "把曲率与可行域形状对算法速度的贡献分开并验证指数锐性。"
+        },
+        "analysisBasis": {
+          "abstract": "Projection-free methods replace projections by linear minimization oracles, making their convergence fundamentally sensitive to the geometry of the feasible region. We develop a geometric framework for this dependence in Riemannian Frank--Wolfe optimization. A power-type double-geodesic modulus quantifies the intrinsic geometry of the feasible set, and an exact transfer principle shows that this modulus induces a Frank--Wolfe scaling margin modulated by the differential of the Riemannian logarithm map. The resulting factorization separates the contributions of feasible-set geometry and ambient Riemannian distortion. Rauch comparison provides explicit curvature-dependent certificates for this distortion, while on the positive-definite cone equipped with the affine-invariant metric the logarithm differential admits an exact spectral characterization in terms of relative eigenvalue spread. Combined with a quadratic error bound, the power-type geometry yields the convergence rate $O(t^{-p/(p-1)})$ for the gap-feedback short-step policy. For every fixed $p>3$, a compact feasible set in a hyperbolic plane attains the matching rate $\\Theta(t^{-p/(p-1)})$ under the same policy. The geometry-derived exponent $p/(p-1)$ is therefore sharp for the gap-feedback short-step policy over the geometry-controlled class considered here.",
+          "version": 1
+        }
       }
     }
   ]

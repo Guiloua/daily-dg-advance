@@ -26,10 +26,51 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-06T04:29:20.310597+00:00",
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.05179v1",
+        "observedAt": "2026-10-06T04:36:14.480200+00:00",
+        "contentHash": "63215db3cddf557280dad21555cba0b1eb191130ed618b24c24cd8bd409b1a69"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "K-不稳定 toric 簇的 secondary polytope",
+      "workSummary": "用 Chow 最大 destabilizer 与 secondary polytope 的最短 GKZ 向量量化 Székelyhidi 的最优 test-function，并给 generalized GKZ 的性质与算法。",
+      "techniques": [
+        "toric K-stability",
+        "Chow-stability",
+        "GKZ",
+        "Calabi 流"
+      ],
+      "breakthrough": "将难以描述的最优 destabilizer 联系到有限维多面体计算。",
+      "limitations": "算法对 K-不稳定检测是潜在方法，摘要不声称普适有效复杂度界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT、Gemini 辅助构造 minimizer convergence 和附录 Riemann-sum expansion (A.2) 的证明；sGKZ 程序由 GPT 5.6 建立，另经 SageMath 测试。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.05179v1 · PDF 第 6 页，AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:36:14.480200+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.05179v1",
+        "contentHash": "63215db3cddf557280dad21555cba0b1eb191130ed618b24c24cd8bd409b1a69",
+        "pages": 49,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT、Gemini 辅助构造 minimizer convergence 和附录 Riemann-sum expansion (A.2) 的证明；sGKZ 程序由 GPT 5.6 建立，另经 SageMath 测试。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3758989092c14b4820a013efac6d2dddd746ae95d7ad250036524db5aaea2151"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs"
+      ],
+      "priorityScore": 87,
+      "priorityReason": "将难以描述的最优 destabilizer 联系到有限维多面体计算。"
+    },
+    "analysisBasis": {
+      "abstract": "For K-unstable toric varieties, Székelyhidi's optimal test-function $\\Theta_{P}$ is a mysterious concave function over the moment polytope $P$, which gives the maximal destabilizer for K-stability, and encodes the limiting behavior of the divergent Calabi flow. As balanced norms quantize cscK metrics, we show that $\\Theta_{P}$ can be quantized by the maximal destabilizers for Chow-stability, which are given by the shortest GKZ vectors, i.e., the least norm point on the secondary polytope for the set $P\\cap k^{-1}\\mathbb{Z}^{n}$. Properties and algorithm for general sGKZ vectors are given. Our result may provide a new method to detect the K-unstability of toric varieties.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,10 +99,51 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-06T04:29:20.310597+00:00",
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.05179v1",
+            "observedAt": "2026-10-06T04:36:14.480200+00:00",
+            "contentHash": "63215db3cddf557280dad21555cba0b1eb191130ed618b24c24cd8bd409b1a69"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "K-不稳定 toric 簇的 secondary polytope",
+          "workSummary": "用 Chow 最大 destabilizer 与 secondary polytope 的最短 GKZ 向量量化 Székelyhidi 的最优 test-function，并给 generalized GKZ 的性质与算法。",
+          "techniques": [
+            "toric K-stability",
+            "Chow-stability",
+            "GKZ",
+            "Calabi 流"
+          ],
+          "breakthrough": "将难以描述的最优 destabilizer 联系到有限维多面体计算。",
+          "limitations": "算法对 K-不稳定检测是潜在方法，摘要不声称普适有效复杂度界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT、Gemini 辅助构造 minimizer convergence 和附录 Riemann-sum expansion (A.2) 的证明；sGKZ 程序由 GPT 5.6 建立，另经 SageMath 测试。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.05179v1 · PDF 第 6 页，AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:36:14.480200+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.05179v1",
+            "contentHash": "63215db3cddf557280dad21555cba0b1eb191130ed618b24c24cd8bd409b1a69",
+            "pages": 49,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT、Gemini 辅助构造 minimizer convergence 和附录 Riemann-sum expansion (A.2) 的证明；sGKZ 程序由 GPT 5.6 建立，另经 SageMath 测试。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3758989092c14b4820a013efac6d2dddd746ae95d7ad250036524db5aaea2151"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs"
+          ],
+          "priorityScore": 87,
+          "priorityReason": "将难以描述的最优 destabilizer 联系到有限维多面体计算。"
+        },
+        "analysisBasis": {
+          "abstract": "For K-unstable toric varieties, Székelyhidi's optimal test-function $\\Theta_{P}$ is a mysterious concave function over the moment polytope $P$, which gives the maximal destabilizer for K-stability, and encodes the limiting behavior of the divergent Calabi flow. As balanced norms quantize cscK metrics, we show that $\\Theta_{P}$ can be quantized by the maximal destabilizers for Chow-stability, which are given by the shortest GKZ vectors, i.e., the least norm point on the secondary polytope for the set $P\\cap k^{-1}\\mathbb{Z}^{n}$. Properties and algorithm for general sGKZ vectors are given. Our result may provide a new method to detect the K-unstability of toric varieties.",
+          "version": 1
+        }
       }
     }
   ]

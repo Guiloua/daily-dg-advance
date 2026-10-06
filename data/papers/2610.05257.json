@@ -24,10 +24,51 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-06T04:29:20.310597+00:00",
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.05257v1",
+        "observedAt": "2026-10-06T04:37:25.939604+00:00",
+        "contentHash": "c8b07e3747bea9ce32e9fcb37b54a5c17a1de18c5542b5f529181bfef31208cf"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "one-phase free boundary 的周期分岔",
+      "workSummary": "构造三维 double-hairpin×line 的非平凡周期扰动；一般 product solution 在有限 Morse index、对称非退化及无穷远条件下产生周期分岔，并证明非紧 free boundary 的强距离非退化。",
+      "techniques": [
+        "Bernoulli 自由边界",
+        "分岔",
+        "有限 Morse index",
+        "距离非退化"
+      ],
+      "breakthrough": "扩展此前仅有 undulating cylinder 的周期解机制。",
+      "limitations": "四、五维的存在归约仍需 base solution 的非退化条件，不是对任意 product 都成立。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者先完成 §4 及附录 C 的计算，再用 Claude Opus 5.5 简化这些计算并审查最终稿的错误和不一致；其他数学内容、结果、证明与表述由作者完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.05257v1 · PDF 第 18 页脚注及第 46 页声明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:37:25.939604+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.05257v1",
+        "contentHash": "c8b07e3747bea9ce32e9fcb37b54a5c17a1de18c5542b5f529181bfef31208cf",
+        "pages": 48,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先完成 §4 及附录 C 的计算，再用 Claude Opus 5.5 简化这些计算并审查最终稿的错误和不一致；其他数学内容、结果、证明与表述由作者完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b07f138c1e6644a6e3d694b396858d4a50edff779c32bb9bcbe66a209eb6bef8"
+      },
+      "aiUsage": [
+        "computation",
+        "verification"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "扩展此前仅有 undulating cylinder 的周期解机制。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct new classical global solutions of the one-phase Bernoulli free boundary problem in $\\mathbb{R}^3$ whose positive phases are periodic perturbations of the product of the Hauswirth--Hélein--Pacard double hairpin domain with a line. In contrast with previous constructions of undulating cylinders, the free boundary of the base solution is not compact modulo translations. More generally, we show that the same scheme yields periodic solutions in $\\mathbb{R}^{n+1}$, $n \\geq 3$, bifurcating from product solutions $U(x,t)=u(x)$, when the base $u:\\mathbb{R}^n\\to [0,\\infty)$ has nontrivial finite Morse index, is nondegenerate within a symmetry class, and satisfies certain natural geometric conditions at infinity. In dimensions $n\\in\\{3,4\\}$, where the stable Bernstein theorem is available, the recent classification of finite Morse index solutions by Fernández-Real, Florit-Simon and Serra shows that every such solution satisfies these geometric conditions. Thus, the existence of undulating solutions in $\\mathbb{R}^{4}$ and $\\mathbb{R}^{5}$ bifurcating from their respective products reduces to a nondegeneracy property of the base solution. In order to confirm that the perturbed solutions are positive, we prove that finite Morse index solutions with noncompact free boundary satisfy a strong distance nondegeneracy estimate.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,10 +95,51 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-06T04:29:20.310597+00:00",
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.05257v1",
+            "observedAt": "2026-10-06T04:37:25.939604+00:00",
+            "contentHash": "c8b07e3747bea9ce32e9fcb37b54a5c17a1de18c5542b5f529181bfef31208cf"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "one-phase free boundary 的周期分岔",
+          "workSummary": "构造三维 double-hairpin×line 的非平凡周期扰动；一般 product solution 在有限 Morse index、对称非退化及无穷远条件下产生周期分岔，并证明非紧 free boundary 的强距离非退化。",
+          "techniques": [
+            "Bernoulli 自由边界",
+            "分岔",
+            "有限 Morse index",
+            "距离非退化"
+          ],
+          "breakthrough": "扩展此前仅有 undulating cylinder 的周期解机制。",
+          "limitations": "四、五维的存在归约仍需 base solution 的非退化条件，不是对任意 product 都成立。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者先完成 §4 及附录 C 的计算，再用 Claude Opus 5.5 简化这些计算并审查最终稿的错误和不一致；其他数学内容、结果、证明与表述由作者完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.05257v1 · PDF 第 18 页脚注及第 46 页声明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:37:25.939604+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.05257v1",
+            "contentHash": "c8b07e3747bea9ce32e9fcb37b54a5c17a1de18c5542b5f529181bfef31208cf",
+            "pages": 48,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先完成 §4 及附录 C 的计算，再用 Claude Opus 5.5 简化这些计算并审查最终稿的错误和不一致；其他数学内容、结果、证明与表述由作者完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b07f138c1e6644a6e3d694b396858d4a50edff779c32bb9bcbe66a209eb6bef8"
+          },
+          "aiUsage": [
+            "computation",
+            "verification"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "扩展此前仅有 undulating cylinder 的周期解机制。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct new classical global solutions of the one-phase Bernoulli free boundary problem in $\\mathbb{R}^3$ whose positive phases are periodic perturbations of the product of the Hauswirth--Hélein--Pacard double hairpin domain with a line. In contrast with previous constructions of undulating cylinders, the free boundary of the base solution is not compact modulo translations. More generally, we show that the same scheme yields periodic solutions in $\\mathbb{R}^{n+1}$, $n \\geq 3$, bifurcating from product solutions $U(x,t)=u(x)$, when the base $u:\\mathbb{R}^n\\to [0,\\infty)$ has nontrivial finite Morse index, is nondegenerate within a symmetry class, and satisfies certain natural geometric conditions at infinity. In dimensions $n\\in\\{3,4\\}$, where the stable Bernstein theorem is available, the recent classification of finite Morse index solutions by Fernández-Real, Florit-Simon and Serra shows that every such solution satisfies these geometric conditions. Thus, the existence of undulating solutions in $\\mathbb{R}^{4}$ and $\\mathbb{R}^{5}$ bifurcating from their respective products reduces to a nondegeneracy property of the base solution. In order to confirm that the perturbed solutions are positive, we prove that finite Morse index solutions with noncompact free boundary satisfy a strong distance nondegeneracy estimate.",
+          "version": 1
+        }
       }
     }
   ]
