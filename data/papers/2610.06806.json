@@ -25,22 +25,45 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-06T04:29:31.877244+00:00",
         "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.06806v1",
+        "observedAt": "2026-10-06T04:46:11.311181+00:00",
+        "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "高阶 Godbersen 与 simplex face-lattice",
-      "workSummary": "作者证明 Godbersen mixed-volume 不等式及 simplex 唯一等号，并以 face-lattice incidence 的新 simplex 刻画建立高阶推广，确认 Schneider 2000 猜想。",
+      "workSummary": "原 Godbersen 不等式在先前 Kotrbatý–Mouamine 工作中已证明。本篇通过 product-space mixed-volume monotonicity 的等号条件，转化为 mixed-area-measure support、touching cone 和 polar face-lattice incidence；证明该 incidence 即使 face lattice 无穷也刻画 simplex，从而得到一般凸体等号。再在 (Rⁿ)^p 的 diagonal/coordinate embedding 中给高阶 Godbersen 和 Schneider 2000 猜想的等号分类。",
       "techniques": [
-        "mixed volumes",
-        "face lattice",
-        "simplex 刻画",
-        "高阶不等式"
+        "mixed-volume 单调性等号",
+        "mixed area measure",
+        "touching cone 与 polarity",
+        "face-lattice incidence"
       ],
       "breakthrough": "连接凸体极值与组合 incidence，并推进到高阶混合体积。",
-      "limitations": "同日相关文章分别涉及原不等式与一般等号，应比较证明和归属；非平凡等号的参数条件须按定理保留。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "一般凸体等号须 full-dimensional 且 1≤k≤n−1；高阶任一 kᵢ=n 或 lower-dimensional 都为 trivial equality，simplex 唯一性只用于非平凡范围。本文原不等式归属既有工作，不能把所有部分都当作首次证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.06806v1 · PDF 第 5 页，AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:46:11.311181+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.06806v1",
+        "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f345fd4a0115043cfde2bdb9f9c9d3ad180647d9a106a1cb649093c4c2133d0b"
+      },
+      "aiUsage": [
+        "literature",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 98,
       "priorityReason": "连接凸体极值与组合 incidence，并推进到高阶混合体积。"
     },
@@ -75,22 +98,45 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-06T04:29:31.877244+00:00",
             "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.06806v1",
+            "observedAt": "2026-10-06T04:46:11.311181+00:00",
+            "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "高阶 Godbersen 与 simplex face-lattice",
-          "workSummary": "作者证明 Godbersen mixed-volume 不等式及 simplex 唯一等号，并以 face-lattice incidence 的新 simplex 刻画建立高阶推广，确认 Schneider 2000 猜想。",
+          "workSummary": "原 Godbersen 不等式在先前 Kotrbatý–Mouamine 工作中已证明。本篇通过 product-space mixed-volume monotonicity 的等号条件，转化为 mixed-area-measure support、touching cone 和 polar face-lattice incidence；证明该 incidence 即使 face lattice 无穷也刻画 simplex，从而得到一般凸体等号。再在 (Rⁿ)^p 的 diagonal/coordinate embedding 中给高阶 Godbersen 和 Schneider 2000 猜想的等号分类。",
           "techniques": [
-            "mixed volumes",
-            "face lattice",
-            "simplex 刻画",
-            "高阶不等式"
+            "mixed-volume 单调性等号",
+            "mixed area measure",
+            "touching cone 与 polarity",
+            "face-lattice incidence"
           ],
           "breakthrough": "连接凸体极值与组合 incidence，并推进到高阶混合体积。",
-          "limitations": "同日相关文章分别涉及原不等式与一般等号，应比较证明和归属；非平凡等号的参数条件须按定理保留。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "一般凸体等号须 full-dimensional 且 1≤k≤n−1；高阶任一 kᵢ=n 或 lower-dimensional 都为 trivial equality，simplex 唯一性只用于非平凡范围。本文原不等式归属既有工作，不能把所有部分都当作首次证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.06806v1 · PDF 第 5 页，AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:46:11.311181+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.06806v1",
+            "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f345fd4a0115043cfde2bdb9f9c9d3ad180647d9a106a1cb649093c4c2133d0b"
+          },
+          "aiUsage": [
+            "literature",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 98,
           "priorityReason": "连接凸体极值与组合 incidence，并推进到高阶混合体积。"
         },

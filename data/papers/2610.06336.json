@@ -26,22 +26,49 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-06T04:29:20.310597+00:00",
         "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.06336v1",
+        "observedAt": "2026-10-06T04:42:48.976885+00:00",
+        "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "56 维以内 LeBrun–Salamon 猜想",
-      "workSummary": "作者证明 quaternionic dimension≤14 的 positive quaternionic Kähler 流形 LeBrun–Salamon 猜想，通过 minimal counterexample 的低秩 isometry group 与正 characteristic index 矛盾；高维阶段引入 signed orbital moments 和 Hodge–Riemann positivity。",
+      "workSummary": "作者以 minimal-dimensional counterexample 的 twistor fixed-component recognition 推 rk Isom≤1、dim≤3；再将 d−δₙ 的 Salamon index 化为 scalar/quaternionic-Weyl 的正性积分，从而 d>δₙ>3。正性层级依次用 projection moments（n≤8）、PSD moments（n≤10）、signed scalar orbital moments（n=11,12）及 Hodge–Riemann squares（n=13,14），得到实维≤56 的 Wolf-space 分类。",
       "techniques": [
-        "curvature moments",
-        "characteristic index",
-        "Hodge–Riemann",
-        "isometry rank"
+        "twistor fixed locus",
+        "Salamon characteristic index",
+        "curvature moment cones",
+        "Hodge–Riemann squares"
       ],
       "breakthrough": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。",
-      "limitations": "实维上界56而非 quaternionic 56；附录 Lean partial verification 不能代表整个证明已形式化。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "limitations": "partial Lean formalization 仍以至多17个文献输入作假设，并依赖几何定义与语义核对；编译成功不能排除 vacuity。低 rank 结论只针对最小维反例，不能用于任意 positive quaternionic Kähler；scalar moments 单独在 n=13 已不足。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.06336v1 · PDF 第 3 页 §1.4；第 37–38 页附录 C",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-06T04:42:48.976885+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.06336v1",
+        "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fdb9c5d2883ee75cb7af5fdd8325d61197157af5db6cfffbff9fcb28edb5073a"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 99,
       "priorityReason": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。"
     },
@@ -77,22 +104,49 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-06T04:29:20.310597+00:00",
             "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.06336v1",
+            "observedAt": "2026-10-06T04:42:48.976885+00:00",
+            "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "56 维以内 LeBrun–Salamon 猜想",
-          "workSummary": "作者证明 quaternionic dimension≤14 的 positive quaternionic Kähler 流形 LeBrun–Salamon 猜想，通过 minimal counterexample 的低秩 isometry group 与正 characteristic index 矛盾；高维阶段引入 signed orbital moments 和 Hodge–Riemann positivity。",
+          "workSummary": "作者以 minimal-dimensional counterexample 的 twistor fixed-component recognition 推 rk Isom≤1、dim≤3；再将 d−δₙ 的 Salamon index 化为 scalar/quaternionic-Weyl 的正性积分，从而 d>δₙ>3。正性层级依次用 projection moments（n≤8）、PSD moments（n≤10）、signed scalar orbital moments（n=11,12）及 Hodge–Riemann squares（n=13,14），得到实维≤56 的 Wolf-space 分类。",
           "techniques": [
-            "curvature moments",
-            "characteristic index",
-            "Hodge–Riemann",
-            "isometry rank"
+            "twistor fixed locus",
+            "Salamon characteristic index",
+            "curvature moment cones",
+            "Hodge–Riemann squares"
           ],
           "breakthrough": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。",
-          "limitations": "实维上界56而非 quaternionic 56；附录 Lean partial verification 不能代表整个证明已形式化。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "limitations": "partial Lean formalization 仍以至多17个文献输入作假设，并依赖几何定义与语义核对；编译成功不能排除 vacuity。低 rank 结论只针对最小维反例，不能用于任意 positive quaternionic Kähler；scalar moments 单独在 n=13 已不足。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.06336v1 · PDF 第 3 页 §1.4；第 37–38 页附录 C",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-06T04:42:48.976885+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.06336v1",
+            "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fdb9c5d2883ee75cb7af5fdd8325d61197157af5db6cfffbff9fcb28edb5073a"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 99,
           "priorityReason": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。"
         },

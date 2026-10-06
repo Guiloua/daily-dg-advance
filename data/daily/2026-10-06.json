@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-06",
-  "revision": 3,
-  "contentHash": "b3538ae404b00909464db7a617bf3758caf04a1b8ff1f01de8b29fc606a1fc64",
-  "lastUpdated": "2026-10-06T04:41:20.384Z",
+  "revision": 4,
+  "contentHash": "558232a19998acc19eb23b1f5b9b450a80e8b1e98a06b1b03e6b19cc61c45a96",
+  "lastUpdated": "2026-10-06T04:47:45.747Z",
   "categories": [
     {
       "category": "mathDg",
@@ -2779,16 +2779,16 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "KLS 猜想的高阶 tilt 判据证明",
-        "workSummary": "作者提出 Kannan–Lovász–Simonovits 猜想证明，关键使用 Song–Zhang 最新的 tilt-average 高阶导数判据。",
+        "workSummary": "作者对任意 isotropic log-concave probability measure 宣称得到维数无关 Poincaré 常数。先将第三 centered moment 的 Hilbert–Schmidt bound 归纳传播到所有阶 cumulant，再用 inverse covariance quadratic variation 的 stochastic localization。由作者提出的 suspension 将独立副本的 tilt-average 高阶导数实现为更高维 mixed cumulant，最后应用 Song–Zhang criterion 得普遍界。",
         "techniques": [
-          "KLS",
-          "tilt average",
-          "高阶导数",
-          "等周常数"
+          "stochastic localization",
+          "逆 covariance",
+          "cumulant 归纳",
+          "suspension 与 tilt average"
         ],
         "breakthrough": "若正文的高阶控制成立，将解决高维凸几何的核心猜想。",
-        "limitations": "须核对判据的所有适用条件及导数界，不能只凭摘要把证明视为公认结论。",
-        "analysisDepth": "abstract",
+        "limitations": "关键是各阶 factorial 加权 cumulant 界及 suspension 转移必须维数无关；仅 thin-shell 界不足以推出完整 KLS。本次阅读主定理和 proof roadmap，尚未逐步独立核验 §4–7 的归纳与 suspension。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者明确声明多数证明和数学想法由 ChatGPT 找到；主要例外是 suspension 思路由作者建议，作者主要理解这些证明并改善表述。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.05474v1 · PDF 第 5 页，致谢",
@@ -2857,18 +2857,25 @@
         "breakthrough": "界定普通 TQFT 分类流形的局限并回答既有六维开放问题。",
         "limitations": "不否定 extended TQFT 或所有可能的量子不变量；有限 π₂ 的正结论不受此例影响。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露偶尔与 ChatGPT 讨论以理解相关既有文献及数学概念，并调试部分 LaTeX 代码。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05480v1 · PDF 第 10 页，致谢",
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:38:50.942649+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05480v1",
           "contentHash": "9d528bfc4c0361e445041c5925d102233f57ec2fcf6b4fe1110b4e7b22b55cee",
           "pages": 42,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露偶尔与 ChatGPT 讨论以理解相关既有文献及数学概念，并调试部分 LaTeX 代码。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "dc1f706fb95d732b01f02989d07570334aa8fb38f425babb1a3d3c07a55eac11"
         },
+        "aiUsage": [
+          "exploration",
+          "literature",
+          "writing"
+        ],
         "priorityScore": 93,
         "priorityReason": "界定普通 TQFT 分类流形的局限并回答既有六维开放问题。"
       },
@@ -2909,17 +2916,19 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "AdS 凸边界唯一性与 Mess 猜想",
-        "workSummary": "给 genus≥2 曲面两侧 K<−1 度量的凸 AdS 实现唯一性，并推出共同 filling 的两 measured laminations 唯一确定 GHMC AdS 时空，解决 Mess 猜想。",
+        "workSummary": "对 genus≥2 的 marked GHCC AdS spacetime，证明两侧 K<−1 的 smooth induced metrics 唯一确定结构，且 boundary map 在 C∞ quotient topology 为 homeomorphism。新输入是 induced-boundary infinitesimal rigidity，dual surface 把结果转为 third fundamental forms；再经 limiting argument 得 together-filling bending laminations 的 GHMC 非 Fuchsian 唯一性。",
         "techniques": [
-          "AdS 凸几何",
-          "bending laminations",
-          "GHMC",
-          "边界度量"
+          "boundary infinitesimal rigidity",
+          "凸 surface duality",
+          "third fundamental form",
+          "bending limit"
         ],
         "breakthrough": "在既有存在定理基础上完成两种 boundary data 的唯一性。",
-        "limitations": "存在分别引用 Tamburelli 与 Bonsante–Schlenker；laminations 必须 together fill。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "limitations": "唯一性模保 marking 的 isometry；存在定理来自 Tamburelli 和 Bonsante–Schlenker。本文解决 bending lamination 版 Mess 猜想，不能顺带声称 convex-core induced hyperbolic metrics 版也已解决；GHMC 并非 geodesically complete。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者在 GenAI statement 中披露生成式 AI 仅辅助制图和早期稿件校对；研究在无 GenAI 辅助下完成。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05506v1 · PDF 第 5 页，§1.4",
         "aiReview": {
           "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:39:03.282877+00:00",
@@ -2927,10 +2936,14 @@
           "sourceUrl": "https://arxiv.org/pdf/2610.05506v1",
           "contentHash": "48cbf10a0b6399ed3a881f09bd86a169da8af1ea820d8c484ae413e252209763",
           "pages": 46,
-          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 GenAI statement 中披露生成式 AI 仅辅助制图和早期稿件校对；研究在无 GenAI 辅助下完成。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "73ec518cc8145a630a9f0b5130fa8338863e6dacc7d285d6cf86a119c3f28a6a"
         },
+        "aiUsage": [
+          "computation",
+          "writing"
+        ],
         "priorityScore": 97,
         "priorityReason": "在既有存在定理基础上完成两种 boundary data 的唯一性。"
       },
@@ -2983,18 +2996,23 @@
         "breakthrough": "把有限维误差的 Fredholm 比较提升为 canonical 代数同构。",
         "limitations": "零 moment level 非空、reduction 可嵌入且实维≥3；负 tensor degree 部分有额外维数区别。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 ChatGPT 仅辅助校对和提高表述清晰度，中心数学想法及整体方法由作者提出。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05508 · PDF 第 25 页，Statement of usage",
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:39:14.906180+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05508",
           "contentHash": "c03ea3a1df9fb1bc2ec21df23324191fb3c4e83a7a16679c0d390dddff2ea124",
           "pages": 27,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 仅辅助校对和提高表述清晰度，中心数学想法及整体方法由作者提出。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "6a9e15b15faa9447e3b4e3f93ce790ac36c7c2f1def1b05518880b3f432f6306"
         },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 92,
         "priorityReason": "把有限维误差的 Fredholm 比较提升为 canonical 代数同构。"
       },
@@ -3105,18 +3123,23 @@
         "breakthrough": "给精确存在范围和最少一个临界点的实现。",
         "limitations": "hyperelliptic handlebody monodromy 被迫为无奇点 bundle；一般 fibration 不满足所述范围。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 LLM 工具用于编辑和校对。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05537v1 · PDF 第 2 页，致谢",
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:39:38.681135+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05537v1",
           "contentHash": "972a407341c5cbb18b08e4372eaa9e2f37e94deba7ce3b7db8d4509443626af9",
           "pages": 6,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 工具用于编辑和校对。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "26ec40ddbdfcbb19d87f588235dc37c72f8ac64fc19a46f3f2a4fe8acb4b355f"
         },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 89,
         "priorityReason": "给精确存在范围和最少一个临界点的实现。"
       },
@@ -3167,18 +3190,23 @@
         "breakthrough": "在群边界分支层面同时实现唯一遍历与任意遍历单纯形。",
         "limitations": "唯一遍历构造与 universality 是不同例子；一般 hyperbolic 群推广不沿用所有 rational 术语。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露论文准备在很大程度上依赖与 ChatGPT 的对话，作者核验所有证明并审阅编辑；声明未细分具体证明或核心想法的归属。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05581v1 · PDF 第 33 页，§10",
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:39:50.415104+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05581v1",
           "contentHash": "051c4e30827f528f0981f669aded5eb5daa8ecc323bb772417c1d6bc2f5cf348",
           "pages": 34,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露论文准备在很大程度上依赖与 ChatGPT 的对话，作者核验所有证明并审阅编辑；声明未细分具体证明或核心想法的归属。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "6c0724b2e191f03b8873c44de6db22131b70e1cd2ad8f212960dd479e2bba0ad"
         },
+        "aiUsage": [
+          "exploration"
+        ],
         "priorityScore": 88,
         "priorityReason": "在群边界分支层面同时实现唯一遍历与任意遍历单纯形。"
       },
@@ -3288,18 +3316,23 @@
         "breakthrough": "把曲率的普遍控制和唯一渐近几何联系起来。",
         "limitations": "自然 homeomorphism 不自动等于等距或代数同构，需核对无穷远 blow-down 的具体规范。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露初稿由 ChatGPT-6-Astra 生成，作者随后审阅并重写；未具体归因核心想法或证明发现。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05643v1 · PDF 第 4 页，Declaration",
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:40:13.872827+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05643v1",
           "contentHash": "b6a276b6841c68057cf94f93a352cf2fca7f4f5f18f693740f41c48f6616fedf",
           "pages": 29,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露初稿由 ChatGPT-6-Astra 生成，作者随后审阅并重写；未具体归因核心想法或证明发现。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "bf45d915f1f403eefbd82304070ff9a74099e83b1a4937a8800c7b7dcee53c53"
         },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 97,
         "priorityReason": "把曲率的普遍控制和唯一渐近几何联系起来。"
       },
@@ -3351,14 +3384,16 @@
         "limitations": "只涉及复二维 space form，不能推广到更高维 Lagrangian 子流形。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
         "aiReview": {
-          "status": "needs_review",
+          "status": "full_text_searched",
           "checkedAt": "2026-10-06T04:40:25.439347+00:00",
           "version": 1,
           "sourceUrl": "https://arxiv.org/pdf/2610.05703v1",
           "contentHash": "b0a819bcae2523d7670414558d69463dd0000a653215262965286ca1b7d966e4",
           "pages": 26,
-          "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中仅为作者单位 School of Data Science and Artificial Intelligence 的名称，不是 AI 使用声明。全文检索未见明确披露。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "7fb64aebfa99480f179dd266a074be2f3fc93b2be62b78a695ca58cb353402eb"
         },
@@ -3391,6 +3426,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05795v1",
+          "observedAt": "2026-10-06T04:40:37.118060+00:00",
+          "contentHash": "c91069a0ef6a1233ba472f7c204f862487f9c08e308d18ceb72ccb15a4eaefa7"
         }
       ],
       "analysis": {
@@ -3407,6 +3447,19 @@
         "limitations": "极限允许 orbifold 奇点，不能推翻 smooth 收敛情形的拓扑稳定。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:40:37.118060+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05795v1",
+          "contentHash": "c91069a0ef6a1233ba472f7c204f862487f9c08e308d18ceb72ccb15a4eaefa7",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中 Claude LeBrun 是参考文献中的数学家姓名，并非 Claude 模型或作者使用 AI 的声明。全文检索未见明确披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "93ec5319fed6e901e7df03bd7f2241b07f3b5ce12d1559dc6be2d1a90a2c24ad"
+        },
         "priorityScore": 93,
         "priorityReason": "说明即使 Ricci-flat Kähler 类中，极限附近的基本群也不局部稳定。"
       },
@@ -3439,6 +3492,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-06T04:29:31.877244+00:00",
           "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05805v1",
+          "observedAt": "2026-10-06T04:40:49.228816+00:00",
+          "contentHash": "addfb2e446221542e6da2e03721f3698404a0d33b5bec032cb97f028b2963eec"
         }
       ],
       "analysis": {
@@ -3455,6 +3513,17 @@
         "limitations": "经典 contraction 丧失后的稳定须用文中 temporal 条件，不是任意非收缩迭代都稳定。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:40:49.228816+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05805v1",
+          "contentHash": "addfb2e446221542e6da2e03721f3698404a0d33b5bec032cb97f028b2963eec",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "ba4c9998ece1828d1a4b8e6c8d63fa8c0d7f397e832e382f99e9e872c802c60d"
+        },
         "priorityScore": 77,
         "priorityReason": "在域几何变化时组织 metric 与 attractor 的稳定理论。"
       },
@@ -3482,6 +3551,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05824v1",
+          "observedAt": "2026-10-06T04:41:00.801676+00:00",
+          "contentHash": "af3841c94c562a951a4bcb4ad4a9d22e5eb68942e893fde9318847b274487bf8"
         }
       ],
       "analysis": {
@@ -3498,6 +3572,17 @@
         "limitations": "不同 form degree 的边界条件及参数须依正文定义，不视为普通 Hodge Laplacian 谱。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:41:00.801676+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05824v1",
+          "contentHash": "af3841c94c562a951a4bcb4ad4a9d22e5eb68942e893fde9318847b274487bf8",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "57fa9f7c04ca75a3460962d528c55c4920dd6f1c6adf5d850579bf3b32e167bd"
+        },
         "priorityScore": 86,
         "priorityReason": "将标量边界耦合谱理论扩展到 differential forms。"
       },
@@ -3527,6 +3612,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-06T04:29:31.877244+00:00",
           "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05883v1",
+          "observedAt": "2026-10-06T04:41:12.693478+00:00",
+          "contentHash": "18c5cb457564f66ea1b3f5a1d5e4da7ed9a31c7ee617a6e3baeb552166648327"
         }
       ],
       "analysis": {
@@ -3543,6 +3633,17 @@
         "limitations": "比较常数依赖维数，二次锐指数的断言针对三维及以上。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:41:12.693478+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05883v1",
+          "contentHash": "18c5cb457564f66ea1b3f5a1d5e4da7ed9a31c7ee617a6e3baeb552166648327",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "5c337a70cb91fe3fe95a71a2689d8e24b3c0812d562c43e7423e6ce0b05974b6"
+        },
         "priorityScore": 81,
         "priorityReason": "把二维 minimum-angle condition 的形状控制推广至任意维。"
       },
@@ -3572,6 +3673,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05933v1",
+          "observedAt": "2026-10-06T04:41:24.720339+00:00",
+          "contentHash": "85989b7bf8ec082e56e7692e98f49c25ebb3bb9f402e93b70303dc38bb974a9f"
         }
       ],
       "analysis": {
@@ -3587,7 +3693,25 @@
         "breakthrough": "解除早先存在定理的维数和定向限制。",
         "limitations": "得到的是新度量，不表示原度量 scalar 自动一致正；严格超临界阈值不可改为等号。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者提出中心构造想法；ChatGPT 6.0 Astra 辅助探索中间论证、模型计算和审查拟议证明的缺口。作者主导讨论、核验论证并完成最终写作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05933v1 · PDF 第 3 页，Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:41:24.720339+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05933v1",
+          "contentHash": "85989b7bf8ec082e56e7692e98f49c25ebb3bb9f402e93b70303dc38bb974a9f",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者提出中心构造想法；ChatGPT 6.0 Astra 辅助探索中间论证、模型计算和审查拟议证明的缺口。作者主导讨论、核验论证并完成最终写作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "cf4d4e1f19f111df414b200b2b838b79e4d2f88f92995eac4e1a3582b37e1c6b"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "verification"
+        ],
         "priorityScore": 95,
         "priorityReason": "解除早先存在定理的维数和定向限制。"
       },
@@ -3617,6 +3741,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.05962v1",
+          "observedAt": "2026-10-06T04:41:36.554776+00:00",
+          "contentHash": "2daa9072faacc5756e1f763f8affc947c3bc16bf8e8cca15b994380a51cb975b"
         }
       ],
       "analysis": {
@@ -3632,7 +3761,23 @@
         "breakthrough": "统一多个二维 vortex 系统的四维 gauge 理论实现。",
         "limitations": "只覆盖四类，且 converse 需要给定等变及 invariant metric 条件。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 ChatGPT 用于语言编辑及稿件准备中的其他编辑辅助。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.05962v1 · PDF 第 5 页，AI Declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:41:36.554776+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.05962v1",
+          "contentHash": "2daa9072faacc5756e1f763f8affc947c3bc16bf8e8cca15b994380a51cb975b",
+          "pages": 40,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于语言编辑及稿件准备中的其他编辑辅助。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e92e2a3649f4abcd5887028af71e8f28d2537c798fc38e967ae321bbc18fc1f5"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 87,
         "priorityReason": "统一多个二维 vortex 系统的四维 gauge 理论实现。"
       },
@@ -3664,22 +3809,46 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06067v1",
+          "observedAt": "2026-10-06T04:41:48.495446+00:00",
+          "contentHash": "f03dfc9b83ca336dc70b87cb67086fbe50528798138d8671cf43f9f9035aaece"
         }
       ],
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "Calabi 问题的 genus-one complex structure",
-        "workSummary": "作者构造 T²×S⁴ 上 complex structure，给 Calabi 问题 genus-one 情形肯定答案；所得 compact complex threefold 非 Kähler 且无 biholomorphic product 分解。",
+        "workSummary": "构造在 C* 上 period matrix 明确的 holomorphic complex-two-torus family，以两端 rank-one Tate 的 xy=q chart completion 和 holomorphic translation 拼成 compact threefold；光滑 gluing 先得 T²×Y，Y 为 smooth homotopy four-sphere，再用 Hirsch 稳定乘积定理得 T²×S⁴。holomorphic map 到 P¹ 的两个 critical locus 为 elliptic curve；该 smooth manifold 的任何 complex structure 均非 Kähler 且不为 nontrivial holomorphic product。",
         "techniques": [
-          "complex threefold",
-          "Calabi 问题",
-          "非 Kähler",
-          "乘积拓扑"
+          "period matrix 与 monodromy",
+          "Tate nodal completion",
+          "relative smooth gluing",
+          "Hirsch 稳定乘积"
         ],
         "breakthrough": "若构造的可积性与全局识别成立，将填补经典 complex structure 问题。",
-        "limitations": "只覆盖 genus-one，拓扑乘积不意味着复结构乘积。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "limitations": "T²×Y 的识别无需先证明 Y 标准，因此不解决 smooth 四维 Poincaré；构造也不依赖拟议 S⁶ complex structure。regular fibre 的 real torus splitting 不必 holomorphic，关键 analytic filling 与 boundary period gluing 需单独核验。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 Codex 辅助文献检索及数学构造、论证的发展与检查；未具体归因核心想法或完整证明的发现。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06067v1 · PDF 第 29 页，AI Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:41:48.495446+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06067v1",
+          "contentHash": "f03dfc9b83ca336dc70b87cb67086fbe50528798138d8671cf43f9f9035aaece",
+          "pages": 31,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 辅助文献检索及数学构造、论证的发展与检查；未具体归因核心想法或完整证明的发现。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "d27f0d0bcfd64dd9609eb28064a784356e1ef9376c0e005f2f36eec291ab407b"
+        },
+        "aiUsage": [
+          "exploration",
+          "literature",
+          "proofs",
+          "verification"
+        ],
         "priorityScore": 98,
         "priorityReason": "若构造的可积性与全局识别成立，将填补经典 complex structure 问题。"
       },
@@ -3712,6 +3881,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-06T04:29:31.877244+00:00",
           "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06246v1",
+          "observedAt": "2026-10-06T04:42:00.696594+00:00",
+          "contentHash": "681b7167b3b140a4f03b768bcde7b2878bb6a61d63358757d282c63580ba70d0"
         }
       ],
       "analysis": {
@@ -3728,6 +3902,17 @@
         "limitations": "penny、marble、matchstick 的额外约束不同，结论不能相互直接替代。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:42:00.696594+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06246v1",
+          "contentHash": "681b7167b3b140a4f03b768bcde7b2878bb6a61d63358757d282c63580ba70d0",
+          "pages": 12,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "75d6cc8255e64b0a5d00bd17001010971df4379238ccda382b985885cd352bfb"
+        },
         "priorityScore": 82,
         "priorityReason": "辨析 non-edge 几何限制如何改变经典 framework 刚性。"
       },
@@ -3758,6 +3943,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06261v1",
+          "observedAt": "2026-10-06T04:42:12.217982+00:00",
+          "contentHash": "416e072c46cce097098145e22513a266b3f38f7f63dfa2f7e087946c656892e8"
         }
       ],
       "analysis": {
@@ -3773,7 +3963,21 @@
         "breakthrough": "把须对所有宽度成立的经典球面刻画弱化到一个固定宽度。",
         "limitations": "截取面积的条件涉及 slab 位置不变性，不能仅凭任意截面面积对称推球面。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 Claude 与 ChatGPT 用于稿件准备并审阅 AI 辅助内容，但未细分具体用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06261v1 · PDF 第 13 页，致谢",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:42:12.217982+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06261v1",
+          "contentHash": "416e072c46cce097098145e22513a266b3f38f7f63dfa2f7e087946c656892e8",
+          "pages": 15,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 与 ChatGPT 用于稿件准备并审阅 AI 辅助内容，但未细分具体用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9ee66a93d3ebfe6f7b091883841f965d354c28b0835c3f4aaa730227fd36e368"
+        },
+        "aiUsage": [],
         "priorityScore": 93,
         "priorityReason": "把须对所有宽度成立的经典球面刻画弱化到一个固定宽度。"
       },
@@ -3803,6 +4007,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06276v1",
+          "observedAt": "2026-10-06T04:42:24.179014+00:00",
+          "contentHash": "6ac4d454501b91cbd44bdacd2faf496e2ed088ce933f0ab71a398e7d1c54fcfa"
         }
       ],
       "analysis": {
@@ -3818,7 +4027,26 @@
         "breakthrough": "把群的高维 filling 归约为几何 sublevel 检查。",
         "limitations": "这里是 integral homological 而非全部 homotopical filling，也不声称统一多项式次数。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者给定判据后，GPT 5.6 产出 §5–6 的组合论证以验证 Stein–Farley 条件，并自行表述、证明命题 4.16 作为充分判据；另用于编辑和校对。作者说明全文由自己写作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06276v1 · PDF 第 4 页，Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:42:24.179014+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06276v1",
+          "contentHash": "6ac4d454501b91cbd44bdacd2faf496e2ed088ce933f0ab71a398e7d1c54fcfa",
+          "pages": 29,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者给定判据后，GPT 5.6 产出 §5–6 的组合论证以验证 Stein–Farley 条件，并自行表述、证明命题 4.16 作为充分判据；另用于编辑和校对。作者说明全文由自己写作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "7082b32c3b3753bb7c940317f059e7163b39ec8480a9450d31ade015f4ace758"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 87,
         "priorityReason": "把群的高维 filling 归约为几何 sublevel 检查。"
       },
@@ -3848,6 +4076,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-06T04:29:31.877244+00:00",
           "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06300v1",
+          "observedAt": "2026-10-06T04:42:36.318574+00:00",
+          "contentHash": "1b9bbaf53a20355354cff235066c8f92ef1dee73aed367996a5ca90329ce06c7"
         }
       ],
       "analysis": {
@@ -3863,7 +4096,27 @@
         "breakthrough": "为 self-polar polytope 和 diameter graph 等后续几何实现奠定组合基础。",
         "limitations": "本篇是系列第一篇，摘要不声称完成所有三维几何实现。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者先提出研究问题、方法并写出全部原始证明；随后广泛用 AI 澄清表述、简化部分证明、发现错误、改进定义与论证、识别已有文献及制作图件。不是由 AI 首次提出研究问题或原始证明。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06300v1 · PDF 第 19 页，Declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:42:36.318574+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06300v1",
+          "contentHash": "1b9bbaf53a20355354cff235066c8f92ef1dee73aed367996a5ca90329ce06c7",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先提出研究问题、方法并写出全部原始证明；随后广泛用 AI 澄清表述、简化部分证明、发现错误、改进定义与论证、识别已有文献及制作图件。不是由 AI 首次提出研究问题或原始证明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "51e0bc946ef03321446cfdd9c016a0990b66721658f87da47bd90913a2426c81"
+        },
+        "aiUsage": [
+          "computation",
+          "literature",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 83,
         "priorityReason": "为 self-polar polytope 和 diameter graph 等后续几何实现奠定组合基础。"
       },
@@ -3896,22 +4149,49 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06336v1",
+          "observedAt": "2026-10-06T04:42:48.976885+00:00",
+          "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357"
         }
       ],
       "analysis": {
         "topic": "曲率与比较几何",
         "progressType": "56 维以内 LeBrun–Salamon 猜想",
-        "workSummary": "作者证明 quaternionic dimension≤14 的 positive quaternionic Kähler 流形 LeBrun–Salamon 猜想，通过 minimal counterexample 的低秩 isometry group 与正 characteristic index 矛盾；高维阶段引入 signed orbital moments 和 Hodge–Riemann positivity。",
+        "workSummary": "作者以 minimal-dimensional counterexample 的 twistor fixed-component recognition 推 rk Isom≤1、dim≤3；再将 d−δₙ 的 Salamon index 化为 scalar/quaternionic-Weyl 的正性积分，从而 d>δₙ>3。正性层级依次用 projection moments（n≤8）、PSD moments（n≤10）、signed scalar orbital moments（n=11,12）及 Hodge–Riemann squares（n=13,14），得到实维≤56 的 Wolf-space 分类。",
         "techniques": [
-          "curvature moments",
-          "characteristic index",
-          "Hodge–Riemann",
-          "isometry rank"
+          "twistor fixed locus",
+          "Salamon characteristic index",
+          "curvature moment cones",
+          "Hodge–Riemann squares"
         ],
         "breakthrough": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。",
-        "limitations": "实维上界56而非 quaternionic 56；附录 Lean partial verification 不能代表整个证明已形式化。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "limitations": "partial Lean formalization 仍以至多17个文献输入作假设，并依赖几何定义与语义核对；编译成功不能排除 vacuity。低 rank 结论只针对最小维反例，不能用于任意 positive quaternionic Kähler；scalar moments 单独在 n=13 已不足。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06336v1 · PDF 第 3 页 §1.4；第 37–38 页附录 C",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:42:48.976885+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06336v1",
+          "contentHash": "20312c033b9c20503e99600ae098284f90f5613c1d8c2ac71987341fe90bf357",
+          "pages": 40,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要用 GPT-6-Astra、GPT-5.6-Sol，偶用 Claude，多轮探索作者提出的路线、推导检查公式、编写计算、检索、查缺口和草拟。LLM 辅助计算对找到正性分解很关键；LLM agents 亦参与 Lean 部分形式化及其审查。作者核验并大幅重写。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "fdb9c5d2883ee75cb7af5fdd8325d61197157af5db6cfffbff9fcb28edb5073a"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "ideas",
+          "literature",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 99,
         "priorityReason": "若各阶段正性论证成立，将大幅推进 positive quaternionic Kähler 分类。"
       },
@@ -3942,6 +4222,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06375v1",
+          "observedAt": "2026-10-06T04:43:01.484910+00:00",
+          "contentHash": "450f4955188b0d4dfeeed98d3abfa44cc6344b440efd4381d0abc87bd4809803"
         }
       ],
       "analysis": {
@@ -3958,6 +4243,17 @@
         "limitations": "只覆盖不定中心 s≥1；exceptional 情形不能推广到多个最小 module 直和。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:43:01.484910+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06375v1",
+          "contentHash": "450f4955188b0d4dfeeed98d3abfa44cc6344b440efd4381d0abc87bd4809803",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "79e3658cbcae24dd6d7a05df0076b6233e17d6aac30194e4c37680c57116d08b"
+        },
         "priorityScore": 91,
         "priorityReason": "揭示不定中心与 Riemannian H-type 的 GO 分类差异。"
       },
@@ -3977,13 +4273,19 @@
         "categories": [
           "math.DG"
         ],
-        "primaryCategory": "math.DG"
+        "primaryCategory": "math.DG",
+        "version": 1
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06386",
+          "observedAt": "2026-10-06T04:43:13.211317+00:00",
+          "contentHash": "f4ce47d78f011e2c353c3e0c7ab6004b591294e737d35f50c18cada4270149fe"
         }
       ],
       "analysis": {
@@ -4000,12 +4302,23 @@
         "limitations": "边界嵌入与 annulus 拓扑仍必需；不涉及任意高 genus free-boundary surface。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:43:13.211317+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06386",
+          "contentHash": "f4ce47d78f011e2c353c3e0c7ab6004b591294e737d35f50c18cada4270149fe",
+          "pages": 10,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "d15f0dcaf3bda248decb2ca440824ab3e00b9364688d03aacaf5274b88569939"
+        },
         "priorityScore": 95,
         "priorityReason": "把已知 embedded 唯一性推进到更弱 immersion 假设。"
       },
       "analysisBasis": {
         "abstract": "It was recently proved that an embedded minimal annulus with free boundary in the unit ball $\\Bbb B^3$ of the Euclidean space is, up to a rotation, the critical catenoid. We prove that an immersed, possibly branched, free boundary minimal annulus in $\\Bbb B^3$ with embedded boundary components is necessarily free of branch points and is embedded. This shows the uniqueness of the critical catenoid holds under these weaker hypotheses. We then apply these results to prove that if $\\Omega$ is an annulus in $\\Bbb S^2$ for which there exists a smooth function satisfying the overdetermined eigenvalue problem \\begin{equation*} \\begin{cases} \\Delta u+ 2u = 0 \\quad \\text{on} \\quad \\Omega\\\\ \\qquad \\quad u=0 \\quad \\text{in}\\quad\\partial\\Omega\\\\ \\quad\\,\\,\\,\\, |\\nabla u|=1 \\quad \\text{in}\\quad \\partial\\Omega. \\end{cases} \\end{equation*} then $\\Omega$ is, up to rotation, a rotational annulus with equatorial symmetry.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -4028,6 +4341,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06429v1",
+          "observedAt": "2026-10-06T04:43:25.639631+00:00",
+          "contentHash": "76c7cbc616030db27e7002ab3c08203160ee0afef7f15cf977df3c3018a73b9f"
         }
       ],
       "analysis": {
@@ -4043,7 +4361,26 @@
         "breakthrough": "提供可传播的 shaking 数代数上界方法。",
         "limitations": "给的是上界判据，不是一般 shaking 数的精确计算。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 AI 用于最终校对与修订阶段的计算检查、英语表述改善，以及 §6 开放问题现状的文献审阅。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06429v1 · PDF 第 18 页，Tool Use",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:43:25.639631+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06429v1",
+          "contentHash": "76c7cbc616030db27e7002ab3c08203160ee0afef7f15cf977df3c3018a73b9f",
+          "pages": 18,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于最终校对与修订阶段的计算检查、英语表述改善，以及 §6 开放问题现状的文献审阅。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f7456116abecca893fb2c2ff26221de17bc02e54c26a232f8db9e7c263f2040e"
+        },
+        "aiUsage": [
+          "computation",
+          "literature",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 80,
         "priorityReason": "提供可传播的 shaking 数代数上界方法。"
       },
@@ -4072,6 +4409,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06440v1",
+          "observedAt": "2026-10-06T04:43:37.758440+00:00",
+          "contentHash": "a5df5ad0eb2807131b231b8dee2bc7c2f89d1ac0c77d89e74332fc0fa3b3e15a"
         }
       ],
       "analysis": {
@@ -4088,6 +4430,19 @@
         "limitations": "总空间识别是 homeomorphic，不应自动称为 smooth bundle 等价。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:43:37.758440+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06440v1",
+          "contentHash": "a5df5ad0eb2807131b231b8dee2bc7c2f89d1ac0c77d89e74332fc0fa3b3e15a",
+          "pages": 26,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 AI Statement 中明确声明稿件准备未使用 AI；此否定声明不计入披露使用的稿件。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e3800ef49e1ff89623e7b5dea5dffc74a4fbe126359ba74c955472b396d8f9d5"
+        },
         "priorityScore": 88,
         "priorityReason": "得到特定 symplectic Calabi–Yau 拓扑上的低 genus pencil。"
       },
@@ -4117,6 +4472,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06442v1",
+          "observedAt": "2026-10-06T04:43:49.887172+00:00",
+          "contentHash": "a75524c53caeaa4552f1de6ca4f938946f24559322a11fb5167b49b7761dd7e6"
         }
       ],
       "analysis": {
@@ -4132,7 +4492,23 @@
         "breakthrough": "澄清既有 construction 的群与覆盖拓扑，并限制降低 b₁ 的 surgery。",
         "limitations": "exotic universal-cover 断言使用 compatible symplectic gluing；原表面的另一构造具有不同签名及 π₁。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 LLM 工具仅辅助语法检查及语言编辑；数学想法、论证和结果来自作者。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06442v1 · PDF 第 19 页，AI Use Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:43:49.887172+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06442v1",
+          "contentHash": "a75524c53caeaa4552f1de6ca4f938946f24559322a11fb5167b49b7761dd7e6",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 工具仅辅助语法检查及语言编辑；数学想法、论证和结果来自作者。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "c72f6161f4312ebe322d376119c9da542c47dc9de85ad6b7b6a70d55488de909"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 91,
         "priorityReason": "澄清既有 construction 的群与覆盖拓扑，并限制降低 b₁ 的 surgery。"
       },
@@ -4163,6 +4539,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06463v1",
+          "observedAt": "2026-10-06T04:44:01.641611+00:00",
+          "contentHash": "6af4459ed67173b53ce00aa0f25208b4d67c23fa4a4c992e8b05cdd506773b58"
         }
       ],
       "analysis": {
@@ -4179,6 +4560,17 @@
         "limitations": "κ 的不同取值对应不同分支，不能统一外推为所有 contact metric 都 Sasakian。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:44:01.641611+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06463v1",
+          "contentHash": "6af4459ed67173b53ce00aa0f25208b4d67c23fa4a4c992e8b05cdd506773b58",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "4b0b8136706f1d203944c38541353672c52996060d0ae06563abaca7db3a141b"
+        },
         "priorityScore": 84,
         "priorityReason": "把 weak contact 几何与 Sasakian 刚性相连。"
       },
@@ -4207,6 +4599,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06466v1",
+          "observedAt": "2026-10-06T04:44:13.353701+00:00",
+          "contentHash": "66d56ffb53b19cc2f53558a2c09eb726d3567e972233a71553224581a997d92e"
         }
       ],
       "analysis": {
@@ -4222,7 +4619,23 @@
         "breakthrough": "区分三维局部极值与高维 saddle，揭示 scalar 约束的维数效应。",
         "limitations": "三维比较要求足够 C∞ 接近；高维不能沿用 entropy 局部上界。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露早期用 ChatGPT 进行某些计算，作者随后验证并重写输出；未细分核心想法或其他用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06466v1 · PDF 第 4 页，AI Declaration Statement",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:44:13.353701+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06466v1",
+          "contentHash": "66d56ffb53b19cc2f53558a2c09eb726d3567e972233a71553224581a997d92e",
+          "pages": 24,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露早期用 ChatGPT 进行某些计算，作者随后验证并重写输出；未细分核心想法或其他用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "ce568494308275138f73da7a40e2e5a20692c39b98cfbe2c95d7b6dc77065c95"
+        },
+        "aiUsage": [
+          "computation"
+        ],
         "priorityScore": 94,
         "priorityReason": "区分三维局部极值与高维 saddle，揭示 scalar 约束的维数效应。"
       },
@@ -4245,13 +4658,19 @@
           "math.CV",
           "math.DG"
         ],
-        "primaryCategory": "math.CV"
+        "primaryCategory": "math.CV",
+        "version": 1
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06473",
+          "observedAt": "2026-10-06T04:44:25.029525+00:00",
+          "contentHash": "ebd50dcc95674e20b8f9897421d65dc9737e01a7a6ff00b51f468099cfa0062e"
         }
       ],
       "analysis": {
@@ -4268,12 +4687,25 @@
         "limitations": "smoothness 仅在 regular data locus，不能忽略密度退化或奇异。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:44:25.029525+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06473",
+          "contentHash": "ebd50dcc95674e20b8f9897421d65dc9737e01a7a6ff00b51f468099cfa0062e",
+          "pages": 23,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明本工作没有使用 AI。否定声明不计入披露使用的稿件。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "0a5a4bc2377b84117854432b310157de644054bae1d820c45b3a0ff1d6a901b0"
+        },
         "priorityScore": 90,
         "priorityReason": "用不依赖 Kähler–Ricci regularization 的路线处理一般 Hermitian 正则性。"
       },
       "analysisBasis": {
         "abstract": "We study regularity of bounded weak solutions to complex Monge-Amp{è}re equations on compact Hermitian manifolds with right-hand side possibly decreasing in the unknown. Our proof relies on the domination principle and a priori estimates, partially motivated by the Monge-Amp{è}re eigenvalue problem. Our main result roughly says that any bounded solution is smooth in the regular locus of the data. When the right-hand side is strictly positive and smooth, we recover known results by Nie, Ko lodziej-Nguyen for the Hermitian case and Sz{é}kelyhidi-Tosatti for the K{ä}hler case, which rely on the regularizing property of the K{ä}hler-Ricci flow.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -4289,13 +4721,19 @@
           "math.GR",
           "math.GT"
         ],
-        "primaryCategory": "math.GN"
+        "primaryCategory": "math.GN",
+        "version": 1
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06485",
+          "observedAt": "2026-10-06T04:44:36.794216+00:00",
+          "contentHash": "ff74a1671742504382662ed5865ddf8584fde81a5ba2d0c68be5f10f115c712e"
         }
       ],
       "analysis": {
@@ -4312,12 +4750,23 @@
         "limitations": "等价不变量不等于已经证明其区分所有 links。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:44:36.794216+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06485",
+          "contentHash": "ff74a1671742504382662ed5865ddf8584fde81a5ba2d0c68be5f10f115c712e",
+          "pages": 48,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "fd80932db5da25bb3236682a0e0d4ffceb5ac828ed338ab2d2ffd3a820059877"
+        },
         "priorityScore": 87,
         "priorityReason": "把 colouring 完备性问题重述为 profinite 刚性问题。"
       },
       "analysisBasis": {
         "abstract": "We show that the numbers of colourings of a link by all finite quandles is equivalent, as an invariant of links, to the profinite completion of the peripheral system. This allows us to reformulate the classical question of the completeness of the former invariant in terms of profinite rigidity. We also develop some profinite quandle theory, and we show that a topological quandle is profinite if and only if it is compact and totally discontinuous and its group of inner automorphism is relatively compact in its homeomorphism group.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -4341,6 +4790,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06529v1",
+          "observedAt": "2026-10-06T04:44:48.874909+00:00",
+          "contentHash": "604988e0137cb67bc38dfb5c70d81e26c6b83f8963c161450df67b5059b4e476"
         }
       ],
       "analysis": {
@@ -4356,7 +4810,24 @@
         "breakthrough": "扩展经典 fully nonlinear elliptic 框架到非 spectral 方程。",
         "limitations": "弱化 spectral 假设仍需新的结构条件，不适用于任意非线性 Hessian 表达式。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 AI 少量辅助拼写纠错、引言润色和图件 LaTeX 代码生成。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06529v1 · PDF 第 5 页，AI use",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:44:48.874909+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06529v1",
+          "contentHash": "604988e0137cb67bc38dfb5c70d81e26c6b83f8963c161450df67b5059b4e476",
+          "pages": 40,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 少量辅助拼写纠错、引言润色和图件 LaTeX 代码生成。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "13c398faad35061bfc64b92b9ce70aacc1a3818c27b5fee9389e6fc8e792841f"
+        },
+        "aiUsage": [
+          "computation",
+          "writing"
+        ],
         "priorityScore": 92,
         "priorityReason": "扩展经典 fully nonlinear elliptic 框架到非 spectral 方程。"
       },
@@ -4386,6 +4857,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06573v1",
+          "observedAt": "2026-10-06T04:45:00.748148+00:00",
+          "contentHash": "aa500a3e5922f1b91c964341fcd743c899d44f647ab3e8ebb0eed637723160d5"
         }
       ],
       "analysis": {
@@ -4401,7 +4877,25 @@
         "breakthrough": "把经典 conformal Einstein 刚性推进至六阶曲率。",
         "limitations": "背景必须 Einstein 且 scalar 正，结论不是所有 constant Q₆ metric 均 Einstein。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 ChatGPT 简化、检查 Cotton 与 Bach tensor 的复杂代数项，主要验证命题 6.1 的计算，并辅助排版；局部 rigidity 的核心结果已在第一作者 2024 博士论文中建立。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06573v1 · PDF 第 18 页，Declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:00.748148+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06573v1",
+          "contentHash": "aa500a3e5922f1b91c964341fcd743c899d44f647ab3e8ebb0eed637723160d5",
+          "pages": 18,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 简化、检查 Cotton 与 Bach tensor 的复杂代数项，主要验证命题 6.1 的计算，并辅助排版；局部 rigidity 的核心结果已在第一作者 2024 博士论文中建立。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "205a08d10c7011721b949de47d291b382148bec07d48c79b628787df1a31f460"
+        },
+        "aiUsage": [
+          "computation",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 94,
         "priorityReason": "把经典 conformal Einstein 刚性推进至六阶曲率。"
       },
@@ -4435,6 +4929,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06669v1",
+          "observedAt": "2026-10-06T04:45:12.547040+00:00",
+          "contentHash": "7e4acd27444323c440bc3079c0fd00e48dcdb19f1833882eda828ff8bbf9cb20"
         }
       ],
       "analysis": {
@@ -4451,6 +4950,17 @@
         "limitations": "只针对文中比较类型；四次 fourfold 的结论限定 very general。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:12.547040+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06669v1",
+          "contentHash": "7e4acd27444323c440bc3079c0fd00e48dcdb19f1833882eda828ff8bbf9cb20",
+          "pages": 40,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "1ae6667544c796f8b9b876b21ef5edc88927755261fa0ef1cc23d1c0a320a70a"
+        },
         "priorityScore": 92,
         "priorityReason": "提出以 quantum connection 数据检测有理性的路线。"
       },
@@ -4479,6 +4989,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-06T04:29:20.310597+00:00",
           "contentHash": "dc062fd8f35ca436468fe579c0fc859fde2204e8ac3436503e66cdc4a7c125d7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06719v1",
+          "observedAt": "2026-10-06T04:45:23.972730+00:00",
+          "contentHash": "0ff379920875f5ec9f7ad53717abfb7a819b237059c3ba369275452fa9a2383c"
         }
       ],
       "analysis": {
@@ -4495,6 +5010,19 @@
         "limitations": "具体 ellipticity 及密度假设须保留，不意味所有 bounded 弱解无条件光滑。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:23.972730+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06719v1",
+          "contentHash": "0ff379920875f5ec9f7ad53717abfb7a819b237059c3ba369275452fa9a2383c",
+          "pages": 20,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明研究及稿件均在未使用 AI 的情况下完成。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e9b51be9bdcc10fe069ad361a12a6e550b1fb0371277281b13335479537333f4"
+        },
         "priorityScore": 89,
         "priorityReason": "将既有 smoothness 方法扩展到更一般 Hessian 系统。"
       },
@@ -4526,6 +5054,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06746v1",
+          "observedAt": "2026-10-06T04:45:35.769062+00:00",
+          "contentHash": "33e2bb87ef584e1191ee4f4b0edf4b66e885ffa422b921544ddac6436e255001"
         }
       ],
       "analysis": {
@@ -4542,6 +5075,19 @@
         "limitations": "归约不等于已构造 exotic CP² 或证明不存在，BMY 构造仍以 filling 条件为前提。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:35.769062+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06746v1",
+          "contentHash": "33e2bb87ef584e1191ee4f4b0edf4b66e885ffa422b921544ddac6436e255001",
+          "pages": 65,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明本工作准备过程中未使用仪器、软件或 AI 相关工具。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "6680e6ac10eb1e7e6ae71097e8ca515b0b05355ac1336405523f75308e31d06c"
+        },
         "priorityScore": 95,
         "priorityReason": "把经典 exotic CP² 问题的对称版本压缩为有限 filling 清单。"
       },
@@ -4574,6 +5120,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06747v1",
+          "observedAt": "2026-10-06T04:45:47.477693+00:00",
+          "contentHash": "78d7945a2890fa6346ada4980ba50a758d11dfd0054954aea559d58e5bfd68a5"
         }
       ],
       "analysis": {
@@ -4590,6 +5141,19 @@
         "limitations": "SKK 应用仅是部分计算，不能说所有相关群已完全确定。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:47.477693+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06747v1",
+          "contentHash": "78d7945a2890fa6346ada4980ba50a758d11dfd0054954aea559d58e5bfd68a5",
+          "pages": 14,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明没有任何部分由 AI 构思或写作；证明辅助使用的是计算 Dold/Steenrod 关系的普通 Python 代码，不据此归为生成式 AI。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e6c6248a5b18f7069c4d8084ed43d3c8abe6780c9cc7f830c771a6969d1fc446"
+        },
         "priorityScore": 88,
         "priorityReason": "完成 Euler 奇偶分类并推进 Pin 的切粘群计算。"
       },
@@ -4620,6 +5184,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-06T04:29:43.495505+00:00",
           "contentHash": "835faca1a44991ea3c33feb40c61c0725287dc524250cc987fc7a3374964b26b"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06752v1",
+          "observedAt": "2026-10-06T04:45:59.702879+00:00",
+          "contentHash": "878446a88958331a5c2e538989224c2b2760720bb1c67789d7b74afdf24f3b31"
         }
       ],
       "analysis": {
@@ -4635,7 +5204,23 @@
         "breakthrough": "推广交错多项式家族的构造与行列式状态表达。",
         "limitations": "mock-alternating 指 polynomial 性质，不保证 link 有 alternating diagram。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 AI 仅少量辅助排版、语法纠正和改写，以改善可读性及语言；作者审阅并承担数学责任。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06752v1 · PDF 第 12 页，致谢",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:45:59.702879+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06752v1",
+          "contentHash": "878446a88958331a5c2e538989224c2b2760720bb1c67789d7b74afdf24f3b31",
+          "pages": 13,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅少量辅助排版、语法纠正和改写，以改善可读性及语言；作者审阅并承担数学责任。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "716d0ecb57042f0ded46fc55d489270747d4d3ffbba3ca67a91600a7f89fb43f"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 81,
         "priorityReason": "推广交错多项式家族的构造与行列式状态表达。"
       },
@@ -4667,22 +5252,45 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-06T04:29:31.877244+00:00",
           "contentHash": "a6d3911d45e3a962e6275d2c28abf6849c497f78158c3de7679b763c3e235b9f"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.06806v1",
+          "observedAt": "2026-10-06T04:46:11.311181+00:00",
+          "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902"
         }
       ],
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "高阶 Godbersen 与 simplex face-lattice",
-        "workSummary": "作者证明 Godbersen mixed-volume 不等式及 simplex 唯一等号，并以 face-lattice incidence 的新 simplex 刻画建立高阶推广，确认 Schneider 2000 猜想。",
+        "workSummary": "原 Godbersen 不等式在先前 Kotrbatý–Mouamine 工作中已证明。本篇通过 product-space mixed-volume monotonicity 的等号条件，转化为 mixed-area-measure support、touching cone 和 polar face-lattice incidence；证明该 incidence 即使 face lattice 无穷也刻画 simplex，从而得到一般凸体等号。再在 (Rⁿ)^p 的 diagonal/coordinate embedding 中给高阶 Godbersen 和 Schneider 2000 猜想的等号分类。",
         "techniques": [
-          "mixed volumes",
-          "face lattice",
-          "simplex 刻画",
-          "高阶不等式"
+          "mixed-volume 单调性等号",
+          "mixed area measure",
+          "touching cone 与 polarity",
+          "face-lattice incidence"
         ],
         "breakthrough": "连接凸体极值与组合 incidence，并推进到高阶混合体积。",
-        "limitations": "同日相关文章分别涉及原不等式与一般等号，应比较证明和归属；非平凡等号的参数条件须按定理保留。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "limitations": "一般凸体等号须 full-dimensional 且 1≤k≤n−1；高阶任一 kᵢ=n 或 lower-dimensional 都为 trivial equality，simplex 唯一性只用于非平凡范围。本文原不等式归属既有工作，不能把所有部分都当作首次证明。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.06806v1 · PDF 第 5 页，AI disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-06T04:46:11.311181+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.06806v1",
+          "contentHash": "42e055ca6dbf2f76d221bd78f6df0ae489f25bc6820cae4593b4777f99c00902",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 辅助证明检查、纠正笔误及寻找文献，数学内容来自作者。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f345fd4a0115043cfde2bdb9f9c9d3ad180647d9a106a1cb649093c4c2133d0b"
+        },
+        "aiUsage": [
+          "literature",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 98,
         "priorityReason": "连接凸体极值与组合 incidence，并推进到高阶混合体积。"
       },
