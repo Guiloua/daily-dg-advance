@@ -21,21 +21,46 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08111v1",
+        "observedAt": "2026-10-07T03:45:17.439255+00:00",
+        "contentHash": "dee5588771ad4d3b94dcc1c8b8cdacdc25697cb0bdb3e9bfc3d89e76428e1bb8"
       }
     ],
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "Hermitian 准负全纯截曲率推出 canonical ample",
-      "workSummary": "证明紧 Kähler 流形若承载 Chern 连接意义下准负全纯截曲率的 Hermitian 度量，则 canonical bundle ample；该 Hermitian 度量不必 Kähler。",
+      "workSummary": "定理 1.1 证明紧 Kähler 流形只要有准负 Chern 全纯截曲率的 Hermitian 度量，就有 ample canonical bundle 并 projective。证明以 symmetrized curvature contraction 的 Berger averaging、integrated Chern–Lu 和 (n−1)-Hessian 辅助方程，得到局部严格负区的 mixed-volume 界，再由 volume polynomial 得 big，结合 nef 与无 rational curve 得 ample。",
       "techniques": [
-        "Chern curvature",
-        "canonical positivity",
-        "Hermitian"
+        "Berger projective averaging",
+        "symmetrized Chern curvature",
+        "Chern–Lu",
+        "Hessian 方程",
+        "volume polynomial"
       ],
-      "breakthrough": "证明 Yang–Zheng 准负猜想的 Kähler 流形情形。",
-      "limitations": "底层流形必须紧 Kähler；度量不必 Kähler 不等于取消流形的 Kähler 条件。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "处理测曲率的 Hermitian 度量无 Kähler 对称性的障碍，证明 Yang–Zheng 的 Kähler 流形情形。",
+      "limitations": "quasi-negative 表示处处非正且某一点所有方向严格负；底层流形仍须紧 Kähler。Hermitian 度量不需 pluriclosed、balanced 或 Kähler，不能误读为一般非 Kähler 流形的完整猜想。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于探索证明、辅助起草及语言润色；作者指导研究方向、核对数学陈述和证明并完成最终修订。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08111v1 · PDF 第 17 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:45:17.439255+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08111v1",
+        "contentHash": "dee5588771ad4d3b94dcc1c8b8cdacdc25697cb0bdb3e9bfc3d89e76428e1bb8",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索证明、辅助起草及语言润色；作者指导研究方向、核对数学陈述和证明并完成最终修订。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a1a6e1f71ac2212e4d43cebe35c38c88d527c51a8e3fe638654e97bda1dde55f"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 96,
       "priorityReason": "证明 Yang–Zheng 准负猜想的 Kähler 流形情形。"
     },
@@ -66,21 +91,46 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08111v1",
+            "observedAt": "2026-10-07T03:45:17.439255+00:00",
+            "contentHash": "dee5588771ad4d3b94dcc1c8b8cdacdc25697cb0bdb3e9bfc3d89e76428e1bb8"
           }
         ],
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "Hermitian 准负全纯截曲率推出 canonical ample",
-          "workSummary": "证明紧 Kähler 流形若承载 Chern 连接意义下准负全纯截曲率的 Hermitian 度量，则 canonical bundle ample；该 Hermitian 度量不必 Kähler。",
+          "workSummary": "定理 1.1 证明紧 Kähler 流形只要有准负 Chern 全纯截曲率的 Hermitian 度量，就有 ample canonical bundle 并 projective。证明以 symmetrized curvature contraction 的 Berger averaging、integrated Chern–Lu 和 (n−1)-Hessian 辅助方程，得到局部严格负区的 mixed-volume 界，再由 volume polynomial 得 big，结合 nef 与无 rational curve 得 ample。",
           "techniques": [
-            "Chern curvature",
-            "canonical positivity",
-            "Hermitian"
+            "Berger projective averaging",
+            "symmetrized Chern curvature",
+            "Chern–Lu",
+            "Hessian 方程",
+            "volume polynomial"
           ],
-          "breakthrough": "证明 Yang–Zheng 准负猜想的 Kähler 流形情形。",
-          "limitations": "底层流形必须紧 Kähler；度量不必 Kähler 不等于取消流形的 Kähler 条件。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "处理测曲率的 Hermitian 度量无 Kähler 对称性的障碍，证明 Yang–Zheng 的 Kähler 流形情形。",
+          "limitations": "quasi-negative 表示处处非正且某一点所有方向严格负；底层流形仍须紧 Kähler。Hermitian 度量不需 pluriclosed、balanced 或 Kähler，不能误读为一般非 Kähler 流形的完整猜想。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于探索证明、辅助起草及语言润色；作者指导研究方向、核对数学陈述和证明并完成最终修订。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08111v1 · PDF 第 17 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:45:17.439255+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08111v1",
+            "contentHash": "dee5588771ad4d3b94dcc1c8b8cdacdc25697cb0bdb3e9bfc3d89e76428e1bb8",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于探索证明、辅助起草及语言润色；作者指导研究方向、核对数学陈述和证明并完成最终修订。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a1a6e1f71ac2212e4d43cebe35c38c88d527c51a8e3fe638654e97bda1dde55f"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 96,
           "priorityReason": "证明 Yang–Zheng 准负猜想的 Kähler 流形情形。"
         },

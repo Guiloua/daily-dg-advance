@@ -23,21 +23,43 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.07687v1",
+        "observedAt": "2026-10-07T03:42:20.260329+00:00",
+        "contentHash": "5b58b51e65a623d4d78a97abc07ef045f0c9a574c31576865e756744b49c1069"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "第二类曲率算子的 Einstein 刚性",
-      "workSummary": "建立 Weyl 张量 symmetric 与 commutator 作用的锐估计；n≥5 完整 Einstein 流形在 Cₙ-nonnegative COSK 下有常非负截曲率，且 Cₙ/n→5/4；扩展 shifted 算子并分类相应对称空间。",
+      "workSummary": "定理 1.1 对完整连通 Einstein、n≥5 的 Cₙ-nonnegative 第二类曲率算子推出常非负截曲率，Cₙ/n→5/4。作者以 Weyl 的 symmetric 与 commutator 作用联合锐界改善 Bochner 权重；shifted operator 对调和形式给平行性，并分类其局部对称 Einstein 模型。",
       "techniques": [
-        "Weyl Bochner",
-        "COSK",
-        "shifted cone"
+        "Weyl 联合锐界",
+        "Bochner 权重比较",
+        "shifted COSK",
+        "对称空间谱"
       ],
-      "breakthrough": "以新的曲率算子锥推进 Tachibana 型刚性。",
-      "limitations": "Einstein、完整性和维数条件不可删；张量估计锐性不自动证明每个几何阈值最优。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "联合权重估计超越两种作用分别估计，形成更宽的 Einstein 刚性锥。",
+      "limitations": "n=4 有 CP² 边界例外，不能使用 n≥5 的常曲率结论。Conjecture A、B 仍未解决；张量估计最优与完整几何阈值最优应区分。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 协助发展论文，尤其是附录 A 的表示论计算和谱表；全文另有 AI 型对称空间记号，未将该记号算作独立披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.07687v1 · PDF 第 6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:42:20.260329+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.07687v1",
+        "contentHash": "5b58b51e65a623d4d78a97abc07ef045f0c9a574c31576865e756744b49c1069",
+        "pages": 42,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 协助发展论文，尤其是附录 A 的表示论计算和谱表；全文另有 AI 型对称空间记号，未将该记号算作独立披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4fb027b5fe002236a57a90f447bf3e4841b7af6fc4e0a0060264178abb339dd1"
+      },
+      "aiUsage": [
+        "computation"
+      ],
       "priorityScore": 96,
       "priorityReason": "以新的曲率算子锥推进 Tachibana 型刚性。"
     },
@@ -70,21 +92,43 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.07687v1",
+            "observedAt": "2026-10-07T03:42:20.260329+00:00",
+            "contentHash": "5b58b51e65a623d4d78a97abc07ef045f0c9a574c31576865e756744b49c1069"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "第二类曲率算子的 Einstein 刚性",
-          "workSummary": "建立 Weyl 张量 symmetric 与 commutator 作用的锐估计；n≥5 完整 Einstein 流形在 Cₙ-nonnegative COSK 下有常非负截曲率，且 Cₙ/n→5/4；扩展 shifted 算子并分类相应对称空间。",
+          "workSummary": "定理 1.1 对完整连通 Einstein、n≥5 的 Cₙ-nonnegative 第二类曲率算子推出常非负截曲率，Cₙ/n→5/4。作者以 Weyl 的 symmetric 与 commutator 作用联合锐界改善 Bochner 权重；shifted operator 对调和形式给平行性，并分类其局部对称 Einstein 模型。",
           "techniques": [
-            "Weyl Bochner",
-            "COSK",
-            "shifted cone"
+            "Weyl 联合锐界",
+            "Bochner 权重比较",
+            "shifted COSK",
+            "对称空间谱"
           ],
-          "breakthrough": "以新的曲率算子锥推进 Tachibana 型刚性。",
-          "limitations": "Einstein、完整性和维数条件不可删；张量估计锐性不自动证明每个几何阈值最优。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "联合权重估计超越两种作用分别估计，形成更宽的 Einstein 刚性锥。",
+          "limitations": "n=4 有 CP² 边界例外，不能使用 n≥5 的常曲率结论。Conjecture A、B 仍未解决；张量估计最优与完整几何阈值最优应区分。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 协助发展论文，尤其是附录 A 的表示论计算和谱表；全文另有 AI 型对称空间记号，未将该记号算作独立披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.07687v1 · PDF 第 6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:42:20.260329+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.07687v1",
+            "contentHash": "5b58b51e65a623d4d78a97abc07ef045f0c9a574c31576865e756744b49c1069",
+            "pages": 42,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 协助发展论文，尤其是附录 A 的表示论计算和谱表；全文另有 AI 型对称空间记号，未将该记号算作独立披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4fb027b5fe002236a57a90f447bf3e4841b7af6fc4e0a0060264178abb339dd1"
+          },
+          "aiUsage": [
+            "computation"
+          ],
           "priorityScore": 96,
           "priorityReason": "以新的曲率算子锥推进 Tachibana 型刚性。"
         },

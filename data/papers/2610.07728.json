@@ -25,21 +25,46 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-07T03:39:06.201500+00:00",
         "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.07728v1",
+        "observedAt": "2026-10-07T03:42:32.098718+00:00",
+        "contentHash": "6f19dd815c69127c4a3ed75abb69aa54a1e6d7c42bcb5c06b2e4769661667ada"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "KLS 猜想的无维 Poincaré 下界",
-      "workSummary": "作者宣称证明 isotropic log-concave 测度的无维 Poincaré 不等式，以统一张量积分曲率估计、算子引理及 stochastic localization 构成三步路线。",
+      "workSummary": "定理 1.1 宣称 Cov(μ)≤Id 的 log-concave 概率测度有统一局部 Lipschitz Poincaré 界，并推出无维 Cheeger 下界。证明路线先建立兼容张量 weighted Hodge 比较，再以统一 prefactor 控制任意积分幂，最后用 stochastic localization、Letwin 二次方差估计及 Appell degree induction 传回原测度。",
       "techniques": [
-        "积分算子",
-        "张量曲率",
+        "compatible tensor field",
+        "weighted Hodge",
+        "积分幂引理",
+        "Appell induction",
         "stochastic localization"
       ],
-      "breakthrough": "若正文论证成立，将证明 KLS 猜想及无维 Cheeger 下界。",
-      "limitations": "必须核查从低次多项式到任意积分次数的统一因子及局部化传递，不能将摘要宣称当作独立验证。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "若核心算子与传递估计成立，将去掉 KLS 中的全部维数依赖。",
+      "limitations": "低维仿射支撑的梯度在支撑内取。统一 tensor rank、共同积分 prefactor 和 Proposition 7.1 的低阶误差是关键；主证明依赖附录 A–E 的闭包、算子引理和归纳常数。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露多个前沿 AI 模型实质参与证明；在人类提出的问题框架下，模型提出统一张量秩的 weighted Hodge 比较、Appell 系数范数及相容场反复积分的传递路线，作者核验并负责。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.07728v1 · PDF 第 5 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:42:32.098718+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.07728v1",
+        "contentHash": "6f19dd815c69127c4a3ed75abb69aa54a1e6d7c42bcb5c06b2e4769661667ada",
+        "pages": 53,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露多个前沿 AI 模型实质参与证明；在人类提出的问题框架下，模型提出统一张量秩的 weighted Hodge 比较、Appell 系数范数及相容场反复积分的传递路线，作者核验并负责。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7df22ca3a1661c9c015c7c8c81a6770eff3b1e00b5ec0bf06fbd1fa34f22cbfa"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs"
+      ],
       "priorityScore": 99,
       "priorityReason": "若正文论证成立，将证明 KLS 猜想及无维 Cheeger 下界。"
     },
@@ -74,21 +99,46 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-07T03:39:06.201500+00:00",
             "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.07728v1",
+            "observedAt": "2026-10-07T03:42:32.098718+00:00",
+            "contentHash": "6f19dd815c69127c4a3ed75abb69aa54a1e6d7c42bcb5c06b2e4769661667ada"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "KLS 猜想的无维 Poincaré 下界",
-          "workSummary": "作者宣称证明 isotropic log-concave 测度的无维 Poincaré 不等式，以统一张量积分曲率估计、算子引理及 stochastic localization 构成三步路线。",
+          "workSummary": "定理 1.1 宣称 Cov(μ)≤Id 的 log-concave 概率测度有统一局部 Lipschitz Poincaré 界，并推出无维 Cheeger 下界。证明路线先建立兼容张量 weighted Hodge 比较，再以统一 prefactor 控制任意积分幂，最后用 stochastic localization、Letwin 二次方差估计及 Appell degree induction 传回原测度。",
           "techniques": [
-            "积分算子",
-            "张量曲率",
+            "compatible tensor field",
+            "weighted Hodge",
+            "积分幂引理",
+            "Appell induction",
             "stochastic localization"
           ],
-          "breakthrough": "若正文论证成立，将证明 KLS 猜想及无维 Cheeger 下界。",
-          "limitations": "必须核查从低次多项式到任意积分次数的统一因子及局部化传递，不能将摘要宣称当作独立验证。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "若核心算子与传递估计成立，将去掉 KLS 中的全部维数依赖。",
+          "limitations": "低维仿射支撑的梯度在支撑内取。统一 tensor rank、共同积分 prefactor 和 Proposition 7.1 的低阶误差是关键；主证明依赖附录 A–E 的闭包、算子引理和归纳常数。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露多个前沿 AI 模型实质参与证明；在人类提出的问题框架下，模型提出统一张量秩的 weighted Hodge 比较、Appell 系数范数及相容场反复积分的传递路线，作者核验并负责。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.07728v1 · PDF 第 5 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:42:32.098718+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.07728v1",
+            "contentHash": "6f19dd815c69127c4a3ed75abb69aa54a1e6d7c42bcb5c06b2e4769661667ada",
+            "pages": 53,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露多个前沿 AI 模型实质参与证明；在人类提出的问题框架下，模型提出统一张量秩的 weighted Hodge 比较、Appell 系数范数及相容场反复积分的传递路线，作者核验并负责。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7df22ca3a1661c9c015c7c8c81a6770eff3b1e00b5ec0bf06fbd1fa34f22cbfa"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs"
+          ],
           "priorityScore": 99,
           "priorityReason": "若正文论证成立，将证明 KLS 猜想及无维 Cheeger 下界。"
         },

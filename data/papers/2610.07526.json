@@ -23,21 +23,45 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-07T03:39:06.201500+00:00",
         "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.07526v1",
+        "observedAt": "2026-10-07T03:41:20.290760+00:00",
+        "contentHash": "5731a47fcbd91d116778df9fa0033353a82f9e24db3672e6cdb48f6552bc31d4"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "Szarek 不等式稳定性的最优常数",
-      "workSummary": "对排序非负单位向量的 Rademacher 和，确定到两点极值向量距离的最优线性稳定常数 (2−√2)^(3/2)/8；n≥4 时四等系数向量取等。",
+      "workSummary": "确定排序非负单位向量 Rademacher 和的最优线性稳定常数 (2−√2)^(3/2)/8，四等系数向量取等。a₁+a₂≥1 沿用既有估计；≤1 时以 Haagerup 函数给更强下界，先用 convexity，必要时分离最大余弦因子并控制振荡 Fourier tail。",
       "techniques": [
-        "Rademacher 和",
-        "稳定不等式",
-        "锐常数"
+        "Haagerup 函数",
+        "convexity",
+        "Fourier tail",
+        "系数分离"
       ],
-      "breakthrough": "完成 Szarek 下界的最优定量稳定估计。",
-      "limitations": "系数排序、非负及单位归一化不可忽略；四等系数取等例要求 n≥4。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "完成 L¹ Khinchin–Szarek 端点稳定常数的精确计算。",
+      "limitations": "四等系数取等需 n≥4；定理 2 的两项下界不同，振荡尾部 kernel 控制是补足旧常数的关键。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露在人类协助下三代 GPT Pro 从改进稳定常数到确定最优值的探索过程，并提供 2026 年 1–5 月交互记录及模型版本。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.07526v1 · PDF 第 2–3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:41:20.290760+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.07526v1",
+        "contentHash": "5731a47fcbd91d116778df9fa0033353a82f9e24db3672e6cdb48f6552bc31d4",
+        "pages": 8,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露在人类协助下三代 GPT Pro 从改进稳定常数到确定最优值的探索过程，并提供 2026 年 1–5 月交互记录及模型版本。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5e75f10283c6533b68712919c4fb8107311e6aa5431f3933134949577de6ed37"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs"
+      ],
       "priorityScore": 93,
       "priorityReason": "完成 Szarek 下界的最优定量稳定估计。"
     },
@@ -70,21 +94,45 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-07T03:39:06.201500+00:00",
             "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.07526v1",
+            "observedAt": "2026-10-07T03:41:20.290760+00:00",
+            "contentHash": "5731a47fcbd91d116778df9fa0033353a82f9e24db3672e6cdb48f6552bc31d4"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "Szarek 不等式稳定性的最优常数",
-          "workSummary": "对排序非负单位向量的 Rademacher 和，确定到两点极值向量距离的最优线性稳定常数 (2−√2)^(3/2)/8；n≥4 时四等系数向量取等。",
+          "workSummary": "确定排序非负单位向量 Rademacher 和的最优线性稳定常数 (2−√2)^(3/2)/8，四等系数向量取等。a₁+a₂≥1 沿用既有估计；≤1 时以 Haagerup 函数给更强下界，先用 convexity，必要时分离最大余弦因子并控制振荡 Fourier tail。",
           "techniques": [
-            "Rademacher 和",
-            "稳定不等式",
-            "锐常数"
+            "Haagerup 函数",
+            "convexity",
+            "Fourier tail",
+            "系数分离"
           ],
-          "breakthrough": "完成 Szarek 下界的最优定量稳定估计。",
-          "limitations": "系数排序、非负及单位归一化不可忽略；四等系数取等例要求 n≥4。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "完成 L¹ Khinchin–Szarek 端点稳定常数的精确计算。",
+          "limitations": "四等系数取等需 n≥4；定理 2 的两项下界不同，振荡尾部 kernel 控制是补足旧常数的关键。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露在人类协助下三代 GPT Pro 从改进稳定常数到确定最优值的探索过程，并提供 2026 年 1–5 月交互记录及模型版本。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.07526v1 · PDF 第 2–3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:41:20.290760+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.07526v1",
+            "contentHash": "5731a47fcbd91d116778df9fa0033353a82f9e24db3672e6cdb48f6552bc31d4",
+            "pages": 8,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露在人类协助下三代 GPT Pro 从改进稳定常数到确定最优值的探索过程，并提供 2026 年 1–5 月交互记录及模型版本。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5e75f10283c6533b68712919c4fb8107311e6aa5431f3933134949577de6ed37"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs"
+          ],
           "priorityScore": 93,
           "priorityReason": "完成 Szarek 下界的最优定量稳定估计。"
         },

@@ -23,22 +23,49 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08052v1",
+        "observedAt": "2026-10-07T03:44:41.328738+00:00",
+        "contentHash": "ca3b8f87efee68a07997b459fbc96cab2cb222daf103a9cab9582854cf128c90"
       }
     ],
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "无限多四流形上的正 Einstein 度量",
-      "workSummary": "作者构造 k≥2 时 #ₖ(S²×S²) 与 kCP²#(2k+1)CP̄² 上正 Einstein 度量，通过沿 torus 改变 cone angle 后去奇异并改变拓扑；描述 collapse、Ricci-flat 局部极限及 Wick rotation。",
+      "workSummary": "定理 1.1 宣称 k≥2 的 spin 与非 spin 两个四流形族均有正 Einstein 度量。定理 1.2 从 square 或 hexagon toric 初始度量沿中央 torus 改变 cone angle 2πβ，再以 θ 周期 (k+1)π、β=2/(k+1) 去奇异；同时给 quotient、collapse 与周期 Ricci-flat 极限。",
       "techniques": [
-        "cone angle",
-        "torus orbit",
-        "去奇异",
-        "collapse"
+        "torus 对称",
+        "cone-angle deformation",
+        "rod lattice",
+        "周期改变",
+        "Ricci-flat blow-up"
       ],
-      "breakthrough": "若构造成立，将给出无限多闭四流形同胚类型的正 Einstein 度量。",
-      "limitations": "spin 推论是同胚类型存在，不能视作任意给定光滑结构都 Einstein；去奇异的光滑性与周期兼容须核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "给出任意大 b₂ 的正 Einstein 四流形族及关联静态 Lorentzian 例子。",
+      "limitations": "spin 推论仅为同胚类型；两个族的 torus Gram matrix 对称不同，hexagon 允许 off-diagonal。全 β 存在性、角周期兼容和第 6 节去奇异光滑性是构造关键，所给度量还具有线性不稳定性。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 LLM 用于数值测试、文献查找、逻辑与常数依赖核查、排版润色，并将 spin 家族构造扩展到非 spin 家族、合并为统一证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08052v1 · PDF 第 6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:44:41.328738+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08052v1",
+        "contentHash": "ca3b8f87efee68a07997b459fbc96cab2cb222daf103a9cab9582854cf128c90",
+        "pages": 66,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 用于数值测试、文献查找、逻辑与常数依赖核查、排版润色，并将 spin 家族构造扩展到非 spin 家族、合并为统一证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bb0957379afde0eb7b5405ab13ec3950e3568ee20659d0afe391bf050699bcc3"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 99,
       "priorityReason": "若构造成立，将给出无限多闭四流形同胚类型的正 Einstein 度量。"
     },
@@ -71,22 +98,49 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08052v1",
+            "observedAt": "2026-10-07T03:44:41.328738+00:00",
+            "contentHash": "ca3b8f87efee68a07997b459fbc96cab2cb222daf103a9cab9582854cf128c90"
           }
         ],
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "无限多四流形上的正 Einstein 度量",
-          "workSummary": "作者构造 k≥2 时 #ₖ(S²×S²) 与 kCP²#(2k+1)CP̄² 上正 Einstein 度量，通过沿 torus 改变 cone angle 后去奇异并改变拓扑；描述 collapse、Ricci-flat 局部极限及 Wick rotation。",
+          "workSummary": "定理 1.1 宣称 k≥2 的 spin 与非 spin 两个四流形族均有正 Einstein 度量。定理 1.2 从 square 或 hexagon toric 初始度量沿中央 torus 改变 cone angle 2πβ，再以 θ 周期 (k+1)π、β=2/(k+1) 去奇异；同时给 quotient、collapse 与周期 Ricci-flat 极限。",
           "techniques": [
-            "cone angle",
-            "torus orbit",
-            "去奇异",
-            "collapse"
+            "torus 对称",
+            "cone-angle deformation",
+            "rod lattice",
+            "周期改变",
+            "Ricci-flat blow-up"
           ],
-          "breakthrough": "若构造成立，将给出无限多闭四流形同胚类型的正 Einstein 度量。",
-          "limitations": "spin 推论是同胚类型存在，不能视作任意给定光滑结构都 Einstein；去奇异的光滑性与周期兼容须核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "给出任意大 b₂ 的正 Einstein 四流形族及关联静态 Lorentzian 例子。",
+          "limitations": "spin 推论仅为同胚类型；两个族的 torus Gram matrix 对称不同，hexagon 允许 off-diagonal。全 β 存在性、角周期兼容和第 6 节去奇异光滑性是构造关键，所给度量还具有线性不稳定性。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 LLM 用于数值测试、文献查找、逻辑与常数依赖核查、排版润色，并将 spin 家族构造扩展到非 spin 家族、合并为统一证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08052v1 · PDF 第 6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:44:41.328738+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08052v1",
+            "contentHash": "ca3b8f87efee68a07997b459fbc96cab2cb222daf103a9cab9582854cf128c90",
+            "pages": 66,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 用于数值测试、文献查找、逻辑与常数依赖核查、排版润色，并将 spin 家族构造扩展到非 spin 家族、合并为统一证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bb0957379afde0eb7b5405ab13ec3950e3568ee20659d0afe391bf050699bcc3"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 99,
           "priorityReason": "若构造成立，将给出无限多闭四流形同胚类型的正 Einstein 度量。"
         },

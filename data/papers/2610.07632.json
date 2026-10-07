@@ -24,21 +24,45 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.07632v1",
+        "observedAt": "2026-10-07T03:42:08.532722+00:00",
+        "contentHash": "89bb39f2ce771609e55627e27dc1a49c7e95dfcb691fdf3be84dd11f6bb0276c"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "第一 Heisenberg 群的锐等周不等式",
-      "workSummary": "作者宣称对全部有限水平周长、正有限体积集合证明 H¹ 的锐等周不等式，等号恰为 Pansu 球的左平移与 dilation。",
+      "workSummary": "定理 1.1 宣称对全部有限水平周长集合成立 P_H(E)^4≥(512π²/27)|E|³，等号为 Haar 零集意义下的 Pansu 球左平移与 dilation。正文以 elliptic perimeter 减等周 profile 并加 vanishing pinning penalty 构造稳定光滑逼近，再用 centre reconstruction 和 full Hessian 强制中心集中。",
       "techniques": [
-        "水平周长",
-        "Pansu 球",
-        "有限周长集"
+        "椭圆周长正则化",
+        "profile subtraction",
+        "pinning penalty",
+        "中心重构",
+        "接触变分"
       ],
-      "breakthrough": "若论证成立，将解决第一 Heisenberg 群的完整锐等周与等号问题。",
-      "limitations": "有限周长集合的逼近、紧性及等号传递是关键，不能仅用光滑稳定性代替一般集合结论。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "把光滑 Pansu 刚性延伸到 H¹ 一般有限周长集合的路线，关键在保留二阶变分的逼近。",
+      "limitations": "常数按 [X,Y]=−2T 和 Haar 测度归一化；等号是几乎处处相等。第 3–4 节的 penalty Hessian、逼近及中心集中步骤决定一般集合结论，不能由高维 n≥2 的旧估计直接代替。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 6.0 Astra 帮助完善基于作者既有工作的证明策略并进行计算，作者独立核验全部论证与计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.07632v1 · PDF 第 3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:42:08.532722+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.07632v1",
+        "contentHash": "89bb39f2ce771609e55627e27dc1a49c7e95dfcb691fdf3be84dd11f6bb0276c",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6.0 Astra 帮助完善基于作者既有工作的证明策略并进行计算，作者独立核验全部论证与计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3e544286817e5f83da9c4a027f87bb53852a08ab7a48c704bc3421ffab3ff0a7"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs"
+      ],
       "priorityScore": 99,
       "priorityReason": "若论证成立，将解决第一 Heisenberg 群的完整锐等周与等号问题。"
     },
@@ -72,21 +96,45 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.07632v1",
+            "observedAt": "2026-10-07T03:42:08.532722+00:00",
+            "contentHash": "89bb39f2ce771609e55627e27dc1a49c7e95dfcb691fdf3be84dd11f6bb0276c"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "第一 Heisenberg 群的锐等周不等式",
-          "workSummary": "作者宣称对全部有限水平周长、正有限体积集合证明 H¹ 的锐等周不等式，等号恰为 Pansu 球的左平移与 dilation。",
+          "workSummary": "定理 1.1 宣称对全部有限水平周长集合成立 P_H(E)^4≥(512π²/27)|E|³，等号为 Haar 零集意义下的 Pansu 球左平移与 dilation。正文以 elliptic perimeter 减等周 profile 并加 vanishing pinning penalty 构造稳定光滑逼近，再用 centre reconstruction 和 full Hessian 强制中心集中。",
           "techniques": [
-            "水平周长",
-            "Pansu 球",
-            "有限周长集"
+            "椭圆周长正则化",
+            "profile subtraction",
+            "pinning penalty",
+            "中心重构",
+            "接触变分"
           ],
-          "breakthrough": "若论证成立，将解决第一 Heisenberg 群的完整锐等周与等号问题。",
-          "limitations": "有限周长集合的逼近、紧性及等号传递是关键，不能仅用光滑稳定性代替一般集合结论。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "把光滑 Pansu 刚性延伸到 H¹ 一般有限周长集合的路线，关键在保留二阶变分的逼近。",
+          "limitations": "常数按 [X,Y]=−2T 和 Haar 测度归一化；等号是几乎处处相等。第 3–4 节的 penalty Hessian、逼近及中心集中步骤决定一般集合结论，不能由高维 n≥2 的旧估计直接代替。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 6.0 Astra 帮助完善基于作者既有工作的证明策略并进行计算，作者独立核验全部论证与计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.07632v1 · PDF 第 3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:42:08.532722+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.07632v1",
+            "contentHash": "89bb39f2ce771609e55627e27dc1a49c7e95dfcb691fdf3be84dd11f6bb0276c",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6.0 Astra 帮助完善基于作者既有工作的证明策略并进行计算，作者独立核验全部论证与计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3e544286817e5f83da9c4a027f87bb53852a08ab7a48c704bc3421ffab3ff0a7"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs"
+          ],
           "priorityScore": 99,
           "priorityReason": "若论证成立，将解决第一 Heisenberg 群的完整锐等周与等号问题。"
         },
