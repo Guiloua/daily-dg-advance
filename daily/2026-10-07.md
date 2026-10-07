@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-07
 
-已收录 51/51 · 解读 51/51 · 资料待补齐。
+已收录 51/51 · 解读 51/51。
 
 ## Biquandle-Based Invariants of Virtual Knotoids under Connected Sum
 
