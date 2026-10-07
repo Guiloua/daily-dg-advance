@@ -26,8 +26,26 @@
         "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "平面 anisotropic Voronoi 的 Minkowski tensor",
+      "workSummary": "对核点处 star-convex 的平面 anisotropic Voronoi cell，用 contact function 的微分同胚变换推导任意阶、三种类型 Minkowski tensor 的半解析积分式。",
+      "techniques": [
+        "contact function",
+        "Minkowski tensor",
+        "Voronoi"
+      ],
+      "breakthrough": "将非凸各向异性 cell 的积分几何化为可计算边界积分。",
+      "limitations": "大部分积分无闭式；数值效率要求 contact function 及导数已知，且 cell 满足 star-convex 条件。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 83,
+      "priorityReason": "将非凸各向异性 cell 的积分几何化为可计算边界积分。"
+    },
+    "analysisBasis": {
+      "abstract": "Anisotropic Voronoi diagrams, in which each cell is the region first reached by an ellipse growing from its site, generate non-convex cells whose integral geometry can be described using Minkowski tensors of arbitrary order. In this work, we derive semi-analytical formulas for Minkowski tensors of arbitrary order of the 0th, 1st and 2nd kind for planar anisotropic Voronoi cells that are star convex at their nucleation point. The resulting formulas involve integrals of contact functions, which describe the cell boundary through a diffeomorphic transformation. This transformation renders the geometry amenable to analytical treatment, enabling us to obtain expressions for the desired Minkowski tensors. Although most of the integrals lack closed-form solutions, they can be efficiently approximated numerically once the contact function and its derivatives are known along the boundary of the cell of interest.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,8 +74,26 @@
             "contentHash": "8aedf414392bb3834c3b9b0bd0cd17df7bc7970c46ce3f63fc953eb495dec961"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "平面 anisotropic Voronoi 的 Minkowski tensor",
+          "workSummary": "对核点处 star-convex 的平面 anisotropic Voronoi cell，用 contact function 的微分同胚变换推导任意阶、三种类型 Minkowski tensor 的半解析积分式。",
+          "techniques": [
+            "contact function",
+            "Minkowski tensor",
+            "Voronoi"
+          ],
+          "breakthrough": "将非凸各向异性 cell 的积分几何化为可计算边界积分。",
+          "limitations": "大部分积分无闭式；数值效率要求 contact function 及导数已知，且 cell 满足 star-convex 条件。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 83,
+          "priorityReason": "将非凸各向异性 cell 的积分几何化为可计算边界积分。"
+        },
+        "analysisBasis": {
+          "abstract": "Anisotropic Voronoi diagrams, in which each cell is the region first reached by an ellipse growing from its site, generate non-convex cells whose integral geometry can be described using Minkowski tensors of arbitrary order. In this work, we derive semi-analytical formulas for Minkowski tensors of arbitrary order of the 0th, 1st and 2nd kind for planar anisotropic Voronoi cells that are star convex at their nucleation point. The resulting formulas involve integrals of contact functions, which describe the cell boundary through a diffeomorphic transformation. This transformation renders the geometry amenable to analytical treatment, enabling us to obtain expressions for the desired Minkowski tensors. Although most of the integrals lack closed-form solutions, they can be efficiently approximated numerically once the contact function and its derivatives are known along the boundary of the cell of interest.",
+          "version": 1
+        }
       }
     }
   ]

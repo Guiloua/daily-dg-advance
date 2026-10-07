@@ -29,8 +29,26 @@
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "FR3 的 Grassmannian signaling 实验原型",
+      "workSummary": "在 15GHz FR3 实现无需发射或接收 CSI 的 noncoherent MIMO，以 OFDM、SDR 与 RF 器件构建原型，LoS/NLoS 的符号误码实验与模拟相符。",
+      "techniques": [
+        "Grassmannian signaling",
+        "OFDM",
+        "SDR"
+      ],
+      "breakthrough": "把几何信号设计推进至 sub-6GHz 之外的实验。",
+      "limitations": "性能结论针对所测频率、场景与数据率，不是全部 6G 系统的优势证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 70,
+      "priorityReason": "把几何信号设计推进至 sub-6GHz 之外的实验。"
+    },
+    "analysisBasis": {
+      "abstract": "This work presents a prototype implementation of a noncoherent multiple-input multiple-output (MIMO) system based on Grassmannian signalling, where neither the transmitter nor receiver requires channel state information (CSI), operating at a carrier frequency of 15 GHz in the frequency range 3 (FR3) upper mid-band envisioned for 6G. To the best of our knowledge, this is the first prototype implementation of Grassmannian signaling reported in the literature beyond sub-6 GHz bands. We identify the motivation of applying Grassmannian signaling, a form of unitary space-time modulation (USTM), in this band for wireless and mobile applications with low spectral-efficiency requirements but strict reliability and power-efficiency demands. With this idea in mind, we present a system design integrated with orthogonal frequency-division multiplexing (OFDM) that addresses the challenges associated with the higher carrier frequencies of FR3 while providing reliable operation across a broad range of scenarios, including urban and rural environments as well as vehicular communications. We then present the prototype implementation of the proposed design, based on software-defined radio (SDR) devices integrated with radio-frequency (RF) mixers, filters, and power amplifiers to ensure adequate operation in the targeted band. Over-the-air (OTA) experiments based on symbol error rate (SER) measurements under non-line-of-sight (NLoS) and line-of-sight (LoS) scenarios, and across different data rates, show good agreement with software simulations, thereby validating the prototype implementation.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -62,8 +80,26 @@
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "FR3 的 Grassmannian signaling 实验原型",
+          "workSummary": "在 15GHz FR3 实现无需发射或接收 CSI 的 noncoherent MIMO，以 OFDM、SDR 与 RF 器件构建原型，LoS/NLoS 的符号误码实验与模拟相符。",
+          "techniques": [
+            "Grassmannian signaling",
+            "OFDM",
+            "SDR"
+          ],
+          "breakthrough": "把几何信号设计推进至 sub-6GHz 之外的实验。",
+          "limitations": "性能结论针对所测频率、场景与数据率，不是全部 6G 系统的优势证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 70,
+          "priorityReason": "把几何信号设计推进至 sub-6GHz 之外的实验。"
+        },
+        "analysisBasis": {
+          "abstract": "This work presents a prototype implementation of a noncoherent multiple-input multiple-output (MIMO) system based on Grassmannian signalling, where neither the transmitter nor receiver requires channel state information (CSI), operating at a carrier frequency of 15 GHz in the frequency range 3 (FR3) upper mid-band envisioned for 6G. To the best of our knowledge, this is the first prototype implementation of Grassmannian signaling reported in the literature beyond sub-6 GHz bands. We identify the motivation of applying Grassmannian signaling, a form of unitary space-time modulation (USTM), in this band for wireless and mobile applications with low spectral-efficiency requirements but strict reliability and power-efficiency demands. With this idea in mind, we present a system design integrated with orthogonal frequency-division multiplexing (OFDM) that addresses the challenges associated with the higher carrier frequencies of FR3 while providing reliable operation across a broad range of scenarios, including urban and rural environments as well as vehicular communications. We then present the prototype implementation of the proposed design, based on software-defined radio (SDR) devices integrated with radio-frequency (RF) mixers, filters, and power amplifiers to ensure adequate operation in the targeted band. Over-the-air (OTA) experiments based on symbol error rate (SER) measurements under non-line-of-sight (NLoS) and line-of-sight (LoS) scenarios, and across different data rates, show good agreement with software simulations, thereby validating the prototype implementation.",
+          "version": 1
+        }
       }
     }
   ]

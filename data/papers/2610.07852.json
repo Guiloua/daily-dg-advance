@@ -26,8 +26,26 @@
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "complex Hessian 方程的插值梯度估计",
+      "workSummary": "在紧 Kähler 流形上以二分曲率与解振幅约束将 Laplacian 估计线性控制于梯度，再经插值得到梯度界；应用于右端 L¹ 接近 1 的情形。",
+      "techniques": [
+        "complex Hessian",
+        "Laplacian 估计",
+        "插值"
+      ],
+      "breakthrough": "提供可避开 blow-up 的梯度估计路线。",
+      "limitations": "曲率与振幅约束不可省；L¹ 逼近结论处于指定结构条件。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 85,
+      "priorityReason": "提供可避开 blow-up 的梯度估计路线。"
+    },
+    "analysisBasis": {
+      "abstract": "In current work, we delve into the study of complex Hessian equations on compact Kähler manifolds. By imposing a constraint on both the bisectional curvature and the oscillation of the solution, we demonstrate that the Laplacian estimate can be linearly controlled by its gradient estimate. Consequently, we are able to derive gradient estimate for the solution using a standard interpolation argument, without the need to employ the blow-up technique. As an application, we demonstrate that when the right-hand side of the complex Hessian equations approximate 1 in the $L^1$ norm, the desired gradient estimate is obtained.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -56,8 +74,26 @@
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "complex Hessian 方程的插值梯度估计",
+          "workSummary": "在紧 Kähler 流形上以二分曲率与解振幅约束将 Laplacian 估计线性控制于梯度，再经插值得到梯度界；应用于右端 L¹ 接近 1 的情形。",
+          "techniques": [
+            "complex Hessian",
+            "Laplacian 估计",
+            "插值"
+          ],
+          "breakthrough": "提供可避开 blow-up 的梯度估计路线。",
+          "limitations": "曲率与振幅约束不可省；L¹ 逼近结论处于指定结构条件。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 85,
+          "priorityReason": "提供可避开 blow-up 的梯度估计路线。"
+        },
+        "analysisBasis": {
+          "abstract": "In current work, we delve into the study of complex Hessian equations on compact Kähler manifolds. By imposing a constraint on both the bisectional curvature and the oscillation of the solution, we demonstrate that the Laplacian estimate can be linearly controlled by its gradient estimate. Consequently, we are able to derive gradient estimate for the solution using a standard interpolation argument, without the need to employ the blow-up technique. As an application, we demonstrate that when the right-hand side of the complex Hessian equations approximate 1 in the $L^1$ norm, the desired gradient estimate is obtained.",
+          "version": 1
+        }
       }
     }
   ]

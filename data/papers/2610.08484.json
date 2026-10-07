@@ -27,8 +27,26 @@
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "连续 median filter 向 MCF 的能量强收敛",
+      "workSummary": "构造连续时间 median filter，stencil size 趋零时收敛到 level-set MCF，并证明能量收敛及界面重数一，核心为 Evans–Spruck 启发的 compensated compactness。",
+      "techniques": [
+        "median filter",
+        "能量收敛",
+        "compensated compactness"
+      ],
+      "breakthrough": "为 median 类 scheme 建立携带界面重数信息的强收敛。",
+      "limitations": "所述强收敛限于新构造的连续时间方案，不能自动推广到任意离散滤波器。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 94,
+      "priorityReason": "为 median 类 scheme 建立携带界面重数信息的强收敛。"
+    },
+    "analysisBasis": {
+      "abstract": "We introduce a continuous-time counterpart of the median filter that gradually denoises a given image. In the limit of vanishing stencil size, our results show that the evolution converges to level-set mean curvature flow. Surprisingly, and for the first time for any median-type filter scheme, we can prove the convergence of energies in this limit. Such strong convergence results are of major interest as they often have to be assumed in the literature to prove convergence of related schemes. Moreover, this result carries crucial geometric information, namely the unit multiplicity of interfaces. The proof relies on a compensated compactness argument inspired by the work of Evans and Spruck.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +76,26 @@
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "连续 median filter 向 MCF 的能量强收敛",
+          "workSummary": "构造连续时间 median filter，stencil size 趋零时收敛到 level-set MCF，并证明能量收敛及界面重数一，核心为 Evans–Spruck 启发的 compensated compactness。",
+          "techniques": [
+            "median filter",
+            "能量收敛",
+            "compensated compactness"
+          ],
+          "breakthrough": "为 median 类 scheme 建立携带界面重数信息的强收敛。",
+          "limitations": "所述强收敛限于新构造的连续时间方案，不能自动推广到任意离散滤波器。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 94,
+          "priorityReason": "为 median 类 scheme 建立携带界面重数信息的强收敛。"
+        },
+        "analysisBasis": {
+          "abstract": "We introduce a continuous-time counterpart of the median filter that gradually denoises a given image. In the limit of vanishing stencil size, our results show that the evolution converges to level-set mean curvature flow. Surprisingly, and for the first time for any median-type filter scheme, we can prove the convergence of energies in this limit. Such strong convergence results are of major interest as they often have to be assumed in the literature to prove convergence of related schemes. Moreover, this result carries crucial geometric information, namely the unit multiplicity of interfaces. The proof relies on a compensated compactness argument inspired by the work of Evans and Spruck.",
+          "version": 1
+        }
       }
     }
   ]
