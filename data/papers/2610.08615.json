@@ -23,21 +23,45 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08615v1",
+        "observedAt": "2026-10-07T03:49:19.705567+00:00",
+        "contentHash": "f9e4b49530648d799a6a7634ce0b45058c7272344ccdf67baa6f1cbca3853b28"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "分布标量曲率下 coordinate isoperimetric mass 正性",
-      "workSummary": "为连续渐近平坦度量建立 Huisken coordinate isoperimetric mass 的渐近式；在 W¹,ᵖ、p>n、衰减 τ>(n−2)/2 及非负分布标量曲率下证明坐标不变性和正质量，并联系 generalized ADM。",
+      "workSummary": "Theorem 1.1 在 W¹,ᵖ 渐近平坦、p>n、τ>(n−2)/2、非负分布标量曲率且曲率在紧集外为有限测度时，给 Huisken coordinate isoperimetric mass 非负及零质量 Euclidean 刚性。density theorem 构造 harmonically flat 近似保持非负曲率并收敛质量；低正则渐近式同时联系 generalized ADM 和坐标不变性。",
       "techniques": [
-        "低正则渐近平坦",
+        "coordinate isoperimetric mass",
+        "weighted Sobolev",
+        "有限曲率测度",
         "density theorem",
-        "ADM mass"
+        "RCD 刚性"
       ],
-      "breakthrough": "在较弱正则与衰减下保留既有质量定义及正质量定理。",
-      "limitations": "正则指数、衰减及分布曲率条件须保留；不等于所有连续渐近平坦度量都具有良好质量。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "在渐近端也允许低正则，保留已有质量定义并去掉额外 spin 限制。",
+      "limitations": "p>n、衰减阈值及紧集外曲率有限测度保证质量与密度过程。density theorem 的 τ′ 另受 τ′<2τ−1 限制；一般 C⁰ 的坐标不变性还需额外换坐标假设，不是任意连续度量的无条件结果。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08615v1 · PDF 第 6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:49:19.705567+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08615v1",
+        "contentHash": "f9e4b49530648d799a6a7634ce0b45058c7272344ccdf67baa6f1cbca3853b28",
+        "pages": 52,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d0f9d3d4022a5009882c3daa9f44dd6e8d2ccdde4cb4084a613de9b2a2ff7c27"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
       "priorityScore": 95,
       "priorityReason": "在较弱正则与衰减下保留既有质量定义及正质量定理。"
     },
@@ -70,21 +94,45 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08615v1",
+            "observedAt": "2026-10-07T03:49:19.705567+00:00",
+            "contentHash": "f9e4b49530648d799a6a7634ce0b45058c7272344ccdf67baa6f1cbca3853b28"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "分布标量曲率下 coordinate isoperimetric mass 正性",
-          "workSummary": "为连续渐近平坦度量建立 Huisken coordinate isoperimetric mass 的渐近式；在 W¹,ᵖ、p>n、衰减 τ>(n−2)/2 及非负分布标量曲率下证明坐标不变性和正质量，并联系 generalized ADM。",
+          "workSummary": "Theorem 1.1 在 W¹,ᵖ 渐近平坦、p>n、τ>(n−2)/2、非负分布标量曲率且曲率在紧集外为有限测度时，给 Huisken coordinate isoperimetric mass 非负及零质量 Euclidean 刚性。density theorem 构造 harmonically flat 近似保持非负曲率并收敛质量；低正则渐近式同时联系 generalized ADM 和坐标不变性。",
           "techniques": [
-            "低正则渐近平坦",
+            "coordinate isoperimetric mass",
+            "weighted Sobolev",
+            "有限曲率测度",
             "density theorem",
-            "ADM mass"
+            "RCD 刚性"
           ],
-          "breakthrough": "在较弱正则与衰减下保留既有质量定义及正质量定理。",
-          "limitations": "正则指数、衰减及分布曲率条件须保留；不等于所有连续渐近平坦度量都具有良好质量。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "在渐近端也允许低正则，保留已有质量定义并去掉额外 spin 限制。",
+          "limitations": "p>n、衰减阈值及紧集外曲率有限测度保证质量与密度过程。density theorem 的 τ′ 另受 τ′<2τ−1 限制；一般 C⁰ 的坐标不变性还需额外换坐标假设，不是任意连续度量的无条件结果。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08615v1 · PDF 第 6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:49:19.705567+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08615v1",
+            "contentHash": "f9e4b49530648d799a6a7634ce0b45058c7272344ccdf67baa6f1cbca3853b28",
+            "pages": 52,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d0f9d3d4022a5009882c3daa9f44dd6e8d2ccdde4cb4084a613de9b2a2ff7c27"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
           "priorityScore": 95,
           "priorityReason": "在较弱正则与衰减下保留既有质量定义及正质量定理。"
         },

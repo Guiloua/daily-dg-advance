@@ -23,21 +23,48 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-07T03:38:54.087286+00:00",
         "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08759v1",
+        "observedAt": "2026-10-07T03:50:54.935208+00:00",
+        "contentHash": "cfdeb28cc5477f7fcdbc0a13da77e7ccf55cf5bc00b0d4dd4fc9b2733920d512"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "极小边界正 Yamabe–Escobar 的锐维数阈值",
-      "workSummary": "证明一般情形 3≤n≤14 解集紧性、n≥15 反例；LCF 阈值 18、umbilic 阈值 20，并分别证明 Weyl–umbilicity vanishing 及超阈值反例。",
+      "workSummary": "Theorem 1.1 对 smooth compact connected、非空光滑边界及 positive Yamabe type 的流形，排除 round hemisphere conformal class 后给 C²,α 紧性：一般至 n=14、LCF 至 18、umbilic 至 20，且相邻维数起均有非紧例子。Theorem 1.6 在相应范围证明 boundary Weyl–umbilicity vanishing，并以扰动构造超阈值反例。",
       "techniques": [
-        "boundary bubble",
-        "Weyl–umbilicity",
-        "非紧构造"
+        "boundary blow-up",
+        "Pohozaev form",
+        "Weyl–umbilicity vanishing",
+        "Green blow-up",
+        "positive mass"
       ],
-      "breakthrough": "给出三种几何类的锐紧性维数阈值。",
-      "limitations": "round hemisphere conformal class 是已知例外；三类阈值不可互换，vanishing 结论自 n=4 起。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "同时确定三种几何类的紧性和 vanishing 锐阈值，纠正旧 umbilic 阈值中的边界项处理。",
+      "limitations": "positive Yamabe type、minimal boundary 方程与 hemisphere 例外不可省；三种阈值分别适用。紧性路线仍依赖所引用正质量定理及半空间端归约，超阈值构造与 vanishing 反例须分别核对。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08759v1 · PDF 第 6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:50:54.935208+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08759v1",
+        "contentHash": "cfdeb28cc5477f7fcdbc0a13da77e7ccf55cf5bc00b0d4dd4fc9b2733920d512",
+        "pages": 103,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8680b3b40b7c59d2bd41aab8ab309fd95682faeb0beeb47049698f92530316ff"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 98,
       "priorityReason": "给出三种几何类的锐紧性维数阈值。"
     },
@@ -70,21 +97,48 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-07T03:38:54.087286+00:00",
             "contentHash": "cd82e7e8139e49ed92cac546b85820bc84bcc8c18c8eac59d9ab9fa5b881a626"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08759v1",
+            "observedAt": "2026-10-07T03:50:54.935208+00:00",
+            "contentHash": "cfdeb28cc5477f7fcdbc0a13da77e7ccf55cf5bc00b0d4dd4fc9b2733920d512"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "极小边界正 Yamabe–Escobar 的锐维数阈值",
-          "workSummary": "证明一般情形 3≤n≤14 解集紧性、n≥15 反例；LCF 阈值 18、umbilic 阈值 20，并分别证明 Weyl–umbilicity vanishing 及超阈值反例。",
+          "workSummary": "Theorem 1.1 对 smooth compact connected、非空光滑边界及 positive Yamabe type 的流形，排除 round hemisphere conformal class 后给 C²,α 紧性：一般至 n=14、LCF 至 18、umbilic 至 20，且相邻维数起均有非紧例子。Theorem 1.6 在相应范围证明 boundary Weyl–umbilicity vanishing，并以扰动构造超阈值反例。",
           "techniques": [
-            "boundary bubble",
-            "Weyl–umbilicity",
-            "非紧构造"
+            "boundary blow-up",
+            "Pohozaev form",
+            "Weyl–umbilicity vanishing",
+            "Green blow-up",
+            "positive mass"
           ],
-          "breakthrough": "给出三种几何类的锐紧性维数阈值。",
-          "limitations": "round hemisphere conformal class 是已知例外；三类阈值不可互换，vanishing 结论自 n=4 起。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "同时确定三种几何类的紧性和 vanishing 锐阈值，纠正旧 umbilic 阈值中的边界项处理。",
+          "limitations": "positive Yamabe type、minimal boundary 方程与 hemisphere 例外不可省；三种阈值分别适用。紧性路线仍依赖所引用正质量定理及半空间端归约，超阈值构造与 vanishing 反例须分别核对。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08759v1 · PDF 第 6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:50:54.935208+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08759v1",
+            "contentHash": "cfdeb28cc5477f7fcdbc0a13da77e7ccf55cf5bc00b0d4dd4fc9b2733920d512",
+            "pages": 103,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8680b3b40b7c59d2bd41aab8ab309fd95682faeb0beeb47049698f92530316ff"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 98,
           "priorityReason": "给出三种几何类的锐紧性维数阈值。"
         },

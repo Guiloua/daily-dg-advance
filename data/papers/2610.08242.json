@@ -17,13 +17,19 @@
         "math.GT"
       ],
       "primaryCategory": "hep-th",
-      "comment": "24 pages"
+      "comment": "24 pages",
+      "version": 1
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-07T03:39:17.507906+00:00",
         "contentHash": "f79aef428b576405b9b3e2bd51901122643b5e3d19dd72d95d4c3490cedbd427"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08242",
+        "observedAt": "2026-10-07T03:47:44.417218+00:00",
+        "contentHash": "445860ad564f0b7552085b74082b18d1ed920991db6946d545c0c07e2850e691"
       }
     ],
     "analysis": {
@@ -39,13 +45,30 @@
       "breakthrough": "揭示结无关的表示组合结构并解释既有分解现象。",
       "limitations": "共同因子等于 Aᵐ 的 special polynomial 在摘要中只报告已计算例子，须与已证明普适分解区分。",
       "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08242 · PDF 第 24 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:47:44.417218+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08242",
+        "contentHash": "445860ad564f0b7552085b74082b18d1ed920991db6946d545c0c07e2850e691",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7dfcf4d964cf17c55ddd03c5f92b76d5d5a0e3b497c0b6e63d0321391322dd9e"
+      },
+      "aiUsage": [
+        "computation",
+        "verification"
+      ],
       "priorityScore": 90,
       "priorityReason": "揭示结无关的表示组合结构并解释既有分解现象。"
     },
     "analysisBasis": {
       "abstract": "HOMFLY-PT polynomials describe analytic continuation of Wilson averages in Chern-Simons theory to arbitrary complex values of two independent parameters $q$ and $A$. They also depend on the knot and representation of the gauge group. However, when $q^2$ is a primitive $m$-th root of unity, e.g. $q=\\pm e^{i\\pi/m}$, these polynomials exhibit a universal (knot-independent) factorization: $H_R$ becomes the product of the polynomials for the $m$-core of the Young diagram $R$ and of one and the same factor $H_{[m]}$ for every $m$-ribbon of $R$. In all the examples which we computed this factor is just the special polynomial at $A^m$. At $q=\\pm1$ factorization follows from the singularity of the cabled HOMFLY, which is the same for all representations. At $m>1$ the relevant singularity is in the projector, and what survives of it is a finite sum of braids $X_m$ -- the $m$-th power sum inside the cable, which can be freely moved through the other strands. For the proof we use the Murnaghan-Nakayama rule and the Adams operation. Discovery of this hidden structure explains the old factorization puzzle.",
-      "version": null
+      "version": 1
     }
   },
   "history": [
@@ -66,13 +89,19 @@
             "math.GT"
           ],
           "primaryCategory": "hep-th",
-          "comment": "24 pages"
+          "comment": "24 pages",
+          "version": 1
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-07T03:39:17.507906+00:00",
             "contentHash": "f79aef428b576405b9b3e2bd51901122643b5e3d19dd72d95d4c3490cedbd427"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08242",
+            "observedAt": "2026-10-07T03:47:44.417218+00:00",
+            "contentHash": "445860ad564f0b7552085b74082b18d1ed920991db6946d545c0c07e2850e691"
           }
         ],
         "analysis": {
@@ -88,13 +117,30 @@
           "breakthrough": "揭示结无关的表示组合结构并解释既有分解现象。",
           "limitations": "共同因子等于 Aᵐ 的 special polynomial 在摘要中只报告已计算例子，须与已证明普适分解区分。",
           "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08242 · PDF 第 24 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:47:44.417218+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08242",
+            "contentHash": "445860ad564f0b7552085b74082b18d1ed920991db6946d545c0c07e2850e691",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7dfcf4d964cf17c55ddd03c5f92b76d5d5a0e3b497c0b6e63d0321391322dd9e"
+          },
+          "aiUsage": [
+            "computation",
+            "verification"
+          ],
           "priorityScore": 90,
           "priorityReason": "揭示结无关的表示组合结构并解释既有分解现象。"
         },
         "analysisBasis": {
           "abstract": "HOMFLY-PT polynomials describe analytic continuation of Wilson averages in Chern-Simons theory to arbitrary complex values of two independent parameters $q$ and $A$. They also depend on the knot and representation of the gauge group. However, when $q^2$ is a primitive $m$-th root of unity, e.g. $q=\\pm e^{i\\pi/m}$, these polynomials exhibit a universal (knot-independent) factorization: $H_R$ becomes the product of the polynomials for the $m$-core of the Young diagram $R$ and of one and the same factor $H_{[m]}$ for every $m$-ribbon of $R$. In all the examples which we computed this factor is just the special polynomial at $A^m$. At $q=\\pm1$ factorization follows from the singularity of the cabled HOMFLY, which is the same for all representations. At $m>1$ the relevant singularity is in the projector, and what survives of it is a finite sum of braids $X_m$ -- the $m$-th power sum inside the cable, which can be freely moved through the other strands. For the proof we use the Murnaghan-Nakayama rule and the Adams operation. Discovery of this hidden structure explains the old factorization puzzle.",
-          "version": null
+          "version": 1
         }
       }
     }

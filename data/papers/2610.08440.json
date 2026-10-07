@@ -25,22 +25,44 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-07T03:39:17.507906+00:00",
         "contentHash": "f79aef428b576405b9b3e2bd51901122643b5e3d19dd72d95d4c3490cedbd427"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.08440v1",
+        "observedAt": "2026-10-07T03:48:44.280701+00:00",
+        "contentHash": "ce9b8e7761c6dca1fb284a8fb8080ad6f3fd050b8c309471eea37f18cd8d613a"
       }
     ],
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
       "progressType": "nearly Lefschetz 与四维 Lagrangian disk regularity",
-      "workSummary": "作者证明四维 Weinstein domain 中 Legendrian 边界的全部 Lagrangian disk 在 Weinstein deformation equivalence 下 regular；建立 positive allowable nearly Lefschetz 的 canonical Stein 结构与 planar quasiflexibility，并给 Kirby diagram 算法。",
+      "workSummary": "Theorem A 把四维 Weinstein domain 内 Legendrian 边界的 Lagrangian disk 实现为某个 Weinstein deformation equivalent 结构的 cocore，因而 regular；Theorem B 证明由 0/1-handles 构造的 regular filling 的 exterior 承载 Weinstein 结构。nearly Lefschetz 的 Stein 构造为 disk 与 complement 应用提供基础。",
       "techniques": [
+        "Weinstein deformation equivalence",
+        "cocore",
         "nearly Lefschetz",
-        "Stein",
-        "regular Lagrangian",
-        "multisection"
+        "Stein exterior"
       ],
-      "breakthrough": "解决二维 Lagrangian disk 的 Weinstein nearby analogue 及 Slice–Ribbon analogue 的部分。",
-      "limitations": "regularity 结论允许 Weinstein deformation，并非固定结构下的无条件 Hamiltonian 分类。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "解决 Lagrangian disk regularity 的 Weinstein deformation 版本，并推进 filling exterior 的 Stein 问题。",
+      "limitations": "deformation equivalence 允许微分同胚后 Weinstein homotopy，不等于沿原固定 symplectic form 保持 disk 的直接同伦。Theorem B 要求 filling 的 handle index≤1，较高维有 supercritical topology 障碍。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.08440v1 · PDF 第 7 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-07T03:48:44.280701+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.08440v1",
+        "contentHash": "ce9b8e7761c6dca1fb284a8fb8080ad6f3fd050b8c309471eea37f18cd8d613a",
+        "pages": 53,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c9e67338605c098899e04fa6c333718dbe9643ca735446b8667e5b6b2471db3c"
+      },
+      "aiUsage": [
+        "computation",
+        "verification"
+      ],
       "priorityScore": 98,
       "priorityReason": "解决二维 Lagrangian disk 的 Weinstein nearby analogue 及 Slice–Ribbon analogue 的部分。"
     },
@@ -75,22 +97,44 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-07T03:39:17.507906+00:00",
             "contentHash": "f79aef428b576405b9b3e2bd51901122643b5e3d19dd72d95d4c3490cedbd427"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.08440v1",
+            "observedAt": "2026-10-07T03:48:44.280701+00:00",
+            "contentHash": "ce9b8e7761c6dca1fb284a8fb8080ad6f3fd050b8c309471eea37f18cd8d613a"
           }
         ],
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
           "progressType": "nearly Lefschetz 与四维 Lagrangian disk regularity",
-          "workSummary": "作者证明四维 Weinstein domain 中 Legendrian 边界的全部 Lagrangian disk 在 Weinstein deformation equivalence 下 regular；建立 positive allowable nearly Lefschetz 的 canonical Stein 结构与 planar quasiflexibility，并给 Kirby diagram 算法。",
+          "workSummary": "Theorem A 把四维 Weinstein domain 内 Legendrian 边界的 Lagrangian disk 实现为某个 Weinstein deformation equivalent 结构的 cocore，因而 regular；Theorem B 证明由 0/1-handles 构造的 regular filling 的 exterior 承载 Weinstein 结构。nearly Lefschetz 的 Stein 构造为 disk 与 complement 应用提供基础。",
           "techniques": [
+            "Weinstein deformation equivalence",
+            "cocore",
             "nearly Lefschetz",
-            "Stein",
-            "regular Lagrangian",
-            "multisection"
+            "Stein exterior"
           ],
-          "breakthrough": "解决二维 Lagrangian disk 的 Weinstein nearby analogue 及 Slice–Ribbon analogue 的部分。",
-          "limitations": "regularity 结论允许 Weinstein deformation，并非固定结构下的无条件 Hamiltonian 分类。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "解决 Lagrangian disk regularity 的 Weinstein deformation 版本，并推进 filling exterior 的 Stein 问题。",
+          "limitations": "deformation equivalence 允许微分同胚后 Weinstein homotopy，不等于沿原固定 symplectic form 保持 disk 的直接同伦。Theorem B 要求 filling 的 handle index≤1，较高维有 supercritical topology 障碍。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.08440v1 · PDF 第 7 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-07T03:48:44.280701+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.08440v1",
+            "contentHash": "ce9b8e7761c6dca1fb284a8fb8080ad6f3fd050b8c309471eea37f18cd8d613a",
+            "pages": 53,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c9e67338605c098899e04fa6c333718dbe9643ca735446b8667e5b6b2471db3c"
+          },
+          "aiUsage": [
+            "computation",
+            "verification"
+          ],
           "priorityScore": 98,
           "priorityReason": "解决二维 Lagrangian disk 的 Weinstein nearby analogue 及 Slice–Ribbon analogue 的部分。"
         },

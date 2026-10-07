@@ -530,9 +530,11 @@ Viktor Vígh
 
 Kuperberg conjectured in 1983 that every convex body $K$ in the plane is contained in a quadrilateral of area at most $\frac{3}{\sqrt5}\,|K|$, the extremal bodies being the affine-regular pentagons. On the basis of numerical experiments we propose a stronger conjecture of a purely polygonal nature: every convex polygon $P$ is contained in a quadrilateral of area at most $\frac{3}{\sqrt5}\,|P|$ whose sides are parallel to sides or diagonals of $P$. This \emph{chord conjecture} implies the inequality conjectured by Kuperberg. For pentagons it is a theorem of Hong, Ismailescu, Kwak and Park, of which we give a short proof by area identities. We also show that the classical bound $\sqrt2$ remains valid for quadrilaterals with sides parallel to chords; the proof is similar to Ismailescu's proof of this bound, but it starts from an inscribed quadrilateral of maximal area instead of a circumscribed quadrilateral of minimal area. We close with a discussion of the difficulties in reaching the constant $\frac{3}{\sqrt5}$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露与 OpenAI 和 Anthropic 模型持续协作，模型参与证明发展、精确计算、文献研究、稿件准备及审查。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.08168v1 · PDF 第 8 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 OpenAI 和 Anthropic 模型持续协作，模型参与证明发展、精确计算、文献研究、稿件准备及审查。
 
 来源：https://arxiv.org/pdf/2610.08168v1
 
@@ -546,9 +548,9 @@ Vicent Gimeno i Garcia、Martín Torres-Valverde
 
 The mean exit time of a Brownian motion from a tube around a closed, minimal embedded \(n\)-dimen\-sional submanifold of the \((n+m)\)-dimen\-sional sphere is studied, establishing two-sided bounds via radial transplant. In accordance with known results when \(n = 0\) or \(m = 1,\) the mean exit time goes to infinity as \(n \to \infty\) and to \(0\) as \(m \to \infty.\) Simultaneously, bounds for the volume of such tubes are derived and compared to Weyl's tube formula.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明未使用 generative AI 生成 LaTeX、内容或结果，全文未检出其他使用披露。
 
 来源：https://arxiv.org/pdf/2610.08222v1
 
@@ -562,9 +564,13 @@ Shaochuang Huang、Zhuo Peng
 
 In this paper, we study strong uniqueness for smooth instantaneously complete Chern-Ricci flows on noncompact complex manifolds. Under suitable reference metric and positivity assumptions, we establish strong uniqueness for initial Hermitian metrics which are Kähler outside a compact set. The initial metric may be incomplete, and no curvature, metric comparison, or growth bounds are imposed on the evolving solutions. In particular, we obtain strong uniqueness from complete initial metrics in this class with bounded Chern-Ricci curvature. We also prove stationarity of flows from the Euclidean metric on $\mathbb{C}^n$ and uniqueness of the instantaneously complete flow from the Euclidean metric on the complex unit ball for all positive time. Finally, on complex surfaces, we show that a Ricci flow remaining Hermitian for a fixed complex structure is Kähler at all times if it is Kähler at one time, and derive a corresponding strong uniqueness result for Ricci flows in this class.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT-6 Astra 用于文字表达、探索和检查部分数学计算及论证；作者指导交互，实质修订采纳文本并独立核验。
 
+来源：https://arxiv.org/pdf/2610.08233v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT-6 Astra 用于文字表达、探索和检查部分数学计算及论证；作者指导交互，实质修订采纳文本并独立核验。
+
+来源：https://arxiv.org/pdf/2610.08233v1
 
 [arXiv](https://arxiv.org/abs/2610.08233)
 
@@ -576,9 +582,13 @@ Ya.Kononov、A.Morozov
 
 HOMFLY-PT polynomials describe analytic continuation of Wilson averages in Chern-Simons theory to arbitrary complex values of two independent parameters $q$ and $A$. They also depend on the knot and representation of the gauge group. However, when $q^2$ is a primitive $m$-th root of unity, e.g. $q=\pm e^{i\pi/m}$, these polynomials exhibit a universal (knot-independent) factorization: $H_R$ becomes the product of the polynomials for the $m$-core of the Young diagram $R$ and of one and the same factor $H_{[m]}$ for every $m$-ribbon of $R$. In all the examples which we computed this factor is just the special polynomial at $A^m$. At $q=\pm1$ factorization follows from the singularity of the cabled HOMFLY, which is the same for all representations. At $m>1$ the relevant singularity is in the projector, and what survives of it is a finite sum of braids $X_m$ -- the $m$-th power sum inside the cable, which can be freely moved through the other strands. For the proof we use the Murnaghan-Nakayama rule and the Adams operation. Discovery of this hidden structure explains the old factorization puzzle.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。
 
+来源：https://arxiv.org/pdf/2610.08242 · PDF 第 24 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude Opus 5.5 与 Fable 5.1 编写数值验证程序并生成图形，结果由作者检查。
+
+来源：https://arxiv.org/pdf/2610.08242
 
 [arXiv](https://arxiv.org/abs/2610.08242)
 
@@ -590,9 +600,13 @@ Hariharan Narayanan
 
 We study $\varepsilon$-relative approximation of mixed volumes of a fixed number $k$ of full-dimensional convex bodies in $\mathbb{R}^n$, given membership oracles and a known bound $B_n\subseteq K_i\subseteq R_0B_n$. We present a randomized algorithm that estimates any prescribed mixed volume within relative error $\varepsilon$ with probability at least $1-\delta$, using polynomially many oracle calls and bit operations in $n$, $\log R_0$, $\varepsilon^{-1}$, and $\log\delta^{-1}$ for fixed $k$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露以既有文献为上下文使用 Codex，辅助推导、计算、扩展证明与例子、文献比较及 LaTeX 稿件；模型提出关键 expectation identity (10)。
 
+来源：https://arxiv.org/pdf/2610.08248v1 · PDF 第 1 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露以既有文献为上下文使用 Codex，辅助推导、计算、扩展证明与例子、文献比较及 LaTeX 稿件；模型提出关键 expectation identity (10)。
+
+来源：https://arxiv.org/pdf/2610.08248v1
 
 [arXiv](https://arxiv.org/abs/2610.08248)
 
@@ -604,9 +618,13 @@ Zhiyuan Zhang、Axel Delaval、Leheng Chen、Jinxuan Chen、Jie Xu、Yuxuan Liao
 
 We present an AI-assisted Lean 4 formalization of the Poincaré conjecture. The project began with limited reusable formal infrastructure for the geometric analysis behind the proof. To organize this work, we combined a proof blueprint prepared by mathematicians with explicit milestone statements. These milestones enabled parallel agent work and gave mathematicians clear points to locate blockers and provide effective mathematical guidance. Our analysis identifies the human interventions and organizational choices behind this workflow. The project provides a starting point toward reusable infrastructure for future formalization projects; such infrastructure, once developed, could eventually reduce the cost of verifying mathematical results in geometric analysis.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者报告用商业 AI 模型和 coding agents 执行 Poincaré 证明的 Lean 4 形式化；数学家提供 blueprint、约 90 个 milestone、核查关键形式陈述并解决阻碍，agents 编写与修正形式证明代码并接受编译反馈。
 
+来源：https://arxiv.org/pdf/2610.08329v1 · PDF 第 1–5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者报告用商业 AI 模型和 coding agents 执行 Poincaré 证明的 Lean 4 形式化；数学家提供 blueprint、约 90 个 milestone、核查关键形式陈述并解决阻碍，agents 编写与修正形式证明代码并接受编译反馈。
+
+来源：https://arxiv.org/pdf/2610.08329v1
 
 [arXiv](https://arxiv.org/abs/2610.08329)
 
@@ -618,9 +636,13 @@ Antonio Bueno
 
 Let $H>0$ and $\kappa,\tau\in\mathbb{R}$ satisfy $4H^2+\kappa>0$ and $\kappa\leq 4\tau^2$. We prove that an immersed stable disk of constant mean curvature $H$ and circular boundary in the space $\mathbb{E}(\kappa,\tau)$ is a spherical cap of the canonical rotational $H$-sphere.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 检查全部边界计算并验证部分论证；作者对最终内容负责。
 
+来源：https://arxiv.org/pdf/2610.08342v1 · PDF 第 13 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 检查全部边界计算并验证部分论证；作者对最终内容负责。
+
+来源：https://arxiv.org/pdf/2610.08342v1
 
 [arXiv](https://arxiv.org/abs/2610.08342)
 
@@ -632,9 +654,11 @@ Natasha Diederen
 
 We construct an example of a smooth embedding of $\mathbb{S}^{p+q-1}$ in $\mathbb{R}^{p+q}$ whose evolution under the mean curvature flow forms an isolated singularity at one point, after which it is a smoothly embedded copy of $\mathbb{S}^{p-1}\times \mathbb{S}^q$. In doing so, we prove some general results about $SO(p)\times SO(q)$-invariant mean curvature flow whose initial data is generated by the rotation of a graphical profile curve, including an analysis of bubblesheet singularities. The most involved part of our analysis is an instant smoothness result, which requires a delicate approximation and pseudolocality.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.08357v1
 
 [arXiv](https://arxiv.org/abs/2610.08357)
 
@@ -642,13 +666,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Joseph Breen、Agniva Roy、Luya Wang
 
-作者证明四维 Weinstein domain 中 Legendrian 边界的全部 Lagrangian disk 在 Weinstein deformation equivalence 下 regular；建立 positive allowable nearly Lefschetz 的 canonical Stein 结构与 planar quasiflexibility，并给 Kirby diagram 算法。
+Theorem A 把四维 Weinstein domain 内 Legendrian 边界的 Lagrangian disk 实现为某个 Weinstein deformation equivalent 结构的 cocore，因而 regular；Theorem B 证明由 0/1-handles 构造的 regular filling 的 exterior 承载 Weinstein 结构。nearly Lefschetz 的 Stein 构造为 disk 与 complement 应用提供基础。
 
 We study Stein structures on nearly Lefschetz fibrations, with applications to symplectic and Lagrangian submanifolds in Weinstein domains. We prove that, up to Weinstein deformation equivalence, all Lagrangian disks with Legendrian boundary in $4$-dimensional Weinstein domains are regular in the sense of Eliashberg-Ganatra-Lazarev. This settles a Weinstein analogue of the nearby Lagrangian conjecture for two-dimensional Lagrangian disks, and resolves part of a Lagrangian analogue of the Slice-Ribbon conjecture. Along the way, we show that positive allowable nearly Lefschetz fibrations are supported by canonical Stein structures and prove a corresponding quasiflexibility result in the planar case. This yields a generalization of work of Boileau-Orevkov which may be of independent interest. Finally, we give an explicit algorithm producing a Weinstein Kirby diagram from the nearly Lefschetz fibration structure of a multisection complement.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。
 
+来源：https://arxiv.org/pdf/2610.08440v1 · PDF 第 7 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 仅检查和修正引理 3.8、6.5 的向量场计算，并编写第 3.1 节局部模型的可视化程序；明确未用 LLM 生成想法、文字和图形。
+
+来源：https://arxiv.org/pdf/2610.08440v1
 
 [arXiv](https://arxiv.org/abs/2610.08440)
 
@@ -660,9 +688,13 @@ Fabius Krämer、Tim Laux
 
 We introduce a continuous-time counterpart of the median filter that gradually denoises a given image. In the limit of vanishing stencil size, our results show that the evolution converges to level-set mean curvature flow. Surprisingly, and for the first time for any median-type filter scheme, we can prove the convergence of energies in this limit. Such strong convergence results are of major interest as they often have to be assumed in the literature to prove convergence of related schemes. Moreover, this result carries crucial geometric information, namely the unit multiplicity of interfaces. The proof relies on a compensated compactness argument inspired by the work of Evans and Spruck.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露多数稿件未用 AI，唯一使用是引理 2 的部分证明，即 (24)–(26)，来自与 ChatGPT Free Tier 的交互。
 
+来源：https://arxiv.org/pdf/2610.08484v1 · PDF 第 35 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露多数稿件未用 AI，唯一使用是引理 2 的部分证明，即 (24)–(26)，来自与 ChatGPT Free Tier 的交互。
+
+来源：https://arxiv.org/pdf/2610.08484v1
 
 [arXiv](https://arxiv.org/abs/2610.08484)
 
@@ -674,9 +706,13 @@ Naageswaran Manikandan
 
 In this article, we study reduced even and odd Khovanov homology, with a particular focus on positive and $0$-adequate links. For positive links, we show that the first reduced homology is supported in a single quantum grading, where it is free abelian, and that its rank is determined by the Seifert graph of any positive diagram. As a consequence, reduced even and odd Khovanov homology, as well as unreduced odd Khovanov homology, detect fiberedness among positive links, extending the previously known result for unreduced even Khovanov homology. We further show that the torsion in these three theories does not detect fiberedness in the same way as the torsion in unreduced even Khovanov homology. We further show that $(p,q)$-cables of positive knots with $q\geq p$ exhibit the same behavior, even though such cables need not themselves be positive. We also study the stable homotopy types associated to reduced even and odd Khovanov homologies in the extremal and almost extremal quantum gradings of $0$-adequate links. At the almost extremal quantum grading, we show that the reduced stable homotopy types are wedges of sphere spectra. This contrasts with the unreduced setting, where the corresponding homotopy types depend on whether the $0$-state graph is bipartite.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 仅用于修正语法和改善句式，没有其他用途。
 
+来源：https://arxiv.org/pdf/2610.08583v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅用于修正语法和改善句式，没有其他用途。
+
+来源：https://arxiv.org/pdf/2610.08583v1
 
 [arXiv](https://arxiv.org/abs/2610.08583)
 
@@ -684,13 +720,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Melanie Graf、Eduardo Hafemann
 
-为连续渐近平坦度量建立 Huisken coordinate isoperimetric mass 的渐近式；在 W¹,ᵖ、p>n、衰减 τ>(n−2)/2 及非负分布标量曲率下证明坐标不变性和正质量，并联系 generalized ADM。
+Theorem 1.1 在 W¹,ᵖ 渐近平坦、p>n、τ>(n−2)/2、非负分布标量曲率且曲率在紧集外为有限测度时，给 Huisken coordinate isoperimetric mass 非负及零质量 Euclidean 刚性。density theorem 构造 harmonically flat 近似保持非负曲率并收敛质量；低正则渐近式同时联系 generalized ADM 和坐标不变性。
 
 Extending the well-known Riemannian positive mass theorem to low-regularity metrics is an ongoing effort, starting from the early 2000s, that has recently seen renewed interest. Contrary to many other approaches we do not wish to assume smoothness at infinity nor to introduce a new definition of mass tailored to our approach, but rather go back to the coordinate isoperimetric mass originally proposed by Huisken. We establish new asymptotic expressions for the coordinate isoperimetric mass of continuous asymptotically flat metrics, which constitute the main ingredient in proving a finiteness criterion, coordinate invariance and equality to the generalized ADM mass of Lee and LeFloch under reasonable assumptions. In particular, for $W^{1,p}_{-\tau}$ asymptotically flat metrics, with $p>n$, $\tau>(n-2)/2$, and nonnegative distributional scalar curvature, the coordinate isoperimetric mass is indeed coordinate invariant, and we establish a positive mass theorem in this regularity without any topological assumptions aside from asymptotic flatness. Our proof relies on a density theorem similar to that of Lee, Lesourd, and Unger, but under a weaker regularity and decay assumption, which may be of independent interest.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。
 
+来源：https://arxiv.org/pdf/2610.08615v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于语法、拼写与措辞，并检查已完成稿中的选定证明；模型指出定理 2.6 中由坐标平移导致的维数或衰减限制，数学想法和证明由作者提出。
+
+来源：https://arxiv.org/pdf/2610.08615v1
 
 [arXiv](https://arxiv.org/abs/2610.08615)
 
@@ -702,9 +742,13 @@ Bruno de Mendonça Braga、Chris Gartland、Gilles Lancien、Pavlos Motakis、Ev
 
 A Banach space $X$ is $L$-embedded in its bidual if there is a projection $P\colon X^{**}\to X$ such that $\|x\|=\|Px\|+\|x-Px\|$ for all $x\in X^{**}$. We show that, as long as $X$ has dimension at least $2$, its Lipschitz-free space, denoted by $\mathcal{F}(X)$, is not $L$-embedded in its bidual. Our methods have applications to the problem of when the $L$-embeddability of $\mathcal{F}(M)$ passes to $\mathcal{F}(A)$ for a metric space $M$ and $A\subseteq M$. This is the case when $A$ is compact or when $A$ is geodesically closed.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者说明 AI 未用于想法、生成或验证证明，仅改善选定文本和查找文献；ChatGPT 找到 reversible Finsler manifold 的局部 bi-Lipschitz 嵌入参考文献，用于推论 6.4。
 
+来源：https://arxiv.org/pdf/2610.08616v1 · PDF 第 1 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明 AI 未用于想法、生成或验证证明，仅改善选定文本和查找文献；ChatGPT 找到 reversible Finsler manifold 的局部 bi-Lipschitz 嵌入参考文献，用于推论 6.4。
+
+来源：https://arxiv.org/pdf/2610.08616v1
 
 [arXiv](https://arxiv.org/abs/2610.08616)
 
@@ -716,9 +760,13 @@ Letizia Branca、Davide Dameno
 
 We study the critical points of a quadratic functional depending on the gradient of the Bach tensor on Riemannian four-manifolds, which generalize the Bach-flat condition. We show that, on every closed four-manifold, there exists a weak Bach-parallel metric, i.e. a critical point for this functional with respect to conformal variations: in particular, we prove that there exist infinitely many conformal classes which contain a unique minimizer for the functional, up to constant positive rescaling. Next, we analyze the global minima of the functional, i.e. metrics with parallel Bach tensor, relating these metrics to well-known variational problems. Using a version of de Rham's splitting theorem on complete four-manifolds, we provide a classification result for products of surfaces, exploiting the theory of conformal gradient solitons; we also construct a new explicit example of a Bach-flat metric which is neither locally conformally flat nor conformally Einstein and we characterize HCMU metrics on complete surfaces. Finally, we prove an equivalence between the Bach-parallel condition on 4D cylinders and the existence of critical metrics for a well-known quadratic curvature functional in dimension three: in this direction, we also prove a characterization of flat three-manifolds, under some curvature and finite energy assumptions.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者说明想法、证明和文字由作者完成，AI 仅查找参考文献并检查定理 1.6 证明 Step 2 的技术细节。
 
+来源：https://arxiv.org/pdf/2610.08628v1 · PDF 第 9 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明想法、证明和文字由作者完成，AI 仅查找参考文献并检查定理 1.6 证明 Step 2 的技术细节。
+
+来源：https://arxiv.org/pdf/2610.08628v1
 
 [arXiv](https://arxiv.org/abs/2610.08628)
 
@@ -730,9 +778,13 @@ Daniel López Neumann、Roland van der Veen
 
 The Akutsu-Deguchi-Ohtsuki (ADO) invariants of links are a non-semisimple version of the colored Jones polynomials. We prove that the top coefficients of the ADO invariants of links in $S^3$ are multiplicative under Murasugi-sum along connected minimal genus Seifert surfaces. More generally, for any simple complex Lie algebra $\mathfrak{g}$ of type ADE and any $r\geq 3$, we prove that the top coefficient of the $r$-th $\mathfrak{g}$-ADO invariant is multiplicative under Murasugi-sum. As a corollary, we get that all the $\mathfrak{g}$-ADO invariants of fibred links are $q$-monic, generalizing a previous result of the authors for $\mathfrak{sl}_2$. Moreover, whenever $\mathfrak{u}_q(\mathfrak{g})$ is ribbon, we find an expression for the top coefficient of the $r$-th $\mathfrak{g}$-ADO invariant in terms of Hopf algebra integrals of universal $\mathfrak{u}_q(\mathfrak{g})$-invariants of bottom tangles.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 在末期作小幅编辑，并尝试移除主定理的 connected 假设但未成功；明确未由 AI 写作，图形用 LatexDraw。
 
+来源：https://arxiv.org/pdf/2610.08638v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 在末期作小幅编辑，并尝试移除主定理的 connected 假设但未成功；明确未由 AI 写作，图形用 LatexDraw。
+
+来源：https://arxiv.org/pdf/2610.08638v1
 
 [arXiv](https://arxiv.org/abs/2610.08638)
 
@@ -744,9 +796,13 @@ Anar Akhmedov、Sümeyra Sakallı
 
 Let $S_E$ be the surface in Xiao's degree-four family identified by Polizzi as a smooth divisor in $E(3)$. Starting from Polizzi's branch model and Xiao's classification of the thirteen singular fibers, we derive the local spherical braids and their Picard--Lefschetz lifts, including the colored $3+3$ partitions at the seven reducible fibers. We identify the normalization of each bisection with $E/\{\pm1\}$ and its degree-two ruling map with the quotient by the involution induced by translation by a nonzero two-torsion point. We prove $\pi_1(S_E)\cong\mathbb Z^2$, compute the elementary-divisor-$4$ Albanese kernel of a regular genus-two fiber, and show that the six nonseparating Picard--Lefschetz transformations represent the six cusps of $\Gamma(4)$. We also prove that the natural product tori near an elliptic section are nullhomologous and cannot lower $b_1$ below $2$ by torus surgery. As a separate application of the degree-three monodromy, we give a twisted-double construction of an exotic $\mathbb CP^2\#7\overline{\mathbb CP}^{\,2}$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 LLM 工具有限参与语法检查及图形准备；数学想法、论证和结果归作者，计算由作者核对。
 
+来源：https://arxiv.org/pdf/2610.08655v1 · PDF 第 28 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 工具有限参与语法检查及图形准备；数学想法、论证和结果归作者，计算由作者核对。
+
+来源：https://arxiv.org/pdf/2610.08655v1
 
 [arXiv](https://arxiv.org/abs/2610.08655)
 
@@ -758,9 +814,11 @@ Nicolas Venkovic、Hartwig Anzt
 
 Anisotropic Voronoi diagrams, in which each cell is the region first reached by an ellipse growing from its site, generate non-convex cells whose integral geometry can be described using Minkowski tensors of arbitrary order. In this work, we derive semi-analytical formulas for Minkowski tensors of arbitrary order of the 0th, 1st and 2nd kind for planar anisotropic Voronoi cells that are star convex at their nucleation point. The resulting formulas involve integrals of contact functions, which describe the cell boundary through a diffeomorphic transformation. This transformation renders the geometry amenable to analytical treatment, enabling us to obtain expressions for the desired Minkowski tensors. Although most of the integrals lack closed-form solutions, they can be efficiently approximated numerically once the contact function and its derivatives are known along the boundary of the cell of interest.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.08656v1
 
 [arXiv](https://arxiv.org/abs/2610.08656)
 
@@ -772,9 +830,11 @@ Paul Sweeney Jr
 
 We show that if $M^n$, $n=6,7$, is the interior of a compact, contractible $n$-manifold with boundary $X$, such that $\pi_i(X,\partial X)=0$, $3\leq i \leq n-3$, and supports complete metrics with positive BiRicci curvature with $C$-quadratic decay at infinity for some $C>\frac{n^2}{4}$, then $M$ is diffeomorphic to $\mathbb{R}^n$. Furthermore, we construct a compact, contractible Newman $n$-manifold $N^n$, $n\geq6$, based on a presentation of the Higman group such that $\pi_i(N,\partial N)=0$, $3\leq i \leq n-3$, and $\mathrm{int}(N)$ admits a metric with uniform positive scalar curvature.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.08686v1
 
 [arXiv](https://arxiv.org/abs/2610.08686)
 
@@ -786,9 +846,11 @@ Leo Brauner、Oscar Ortega-Moreno
 
 We establish an Alexandrov--Fenchel type inequality in which one of the reference bodies is replaced by a function whose Hessian satisfies a balancing condition on its eigenvalues, without being required to be positive semidefinite. The proof hinges on a new extension of Alexandrov's inequality for mixed discriminants. As applications, we derive a log-concavity principle for linear functionals of area measures, answering a question of Colesanti, Hug, and Saorín-Gómez, as well as Brunn--Minkowski type inequalities for intrinsic volumes of mean section bodies, answering a question of Schuster.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.08746v1
 
 [arXiv](https://arxiv.org/abs/2610.08746)
 
@@ -796,13 +858,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Santiago Cordero-Misteli
 
-证明一般情形 3≤n≤14 解集紧性、n≥15 反例；LCF 阈值 18、umbilic 阈值 20，并分别证明 Weyl–umbilicity vanishing 及超阈值反例。
+Theorem 1.1 对 smooth compact connected、非空光滑边界及 positive Yamabe type 的流形，排除 round hemisphere conformal class 后给 C²,α 紧性：一般至 n=14、LCF 至 18、umbilic 至 20，且相邻维数起均有非紧例子。Theorem 1.6 在相应范围证明 boundary Weyl–umbilicity vanishing，并以扰动构造超阈值反例。
 
 We study the Yamabe--Escobar equation prescribing positive constant scalar curvature and minimal boundary. The compactness conjecture asks whether being conformally equivalent to the round hemisphere is the only obstruction for its set of positive solutions to be compact. In this paper we show that this is true for dimensions $3\leq n\leq 14$. We show that this dimensional threshold $n_*=14$ is sharp by constructing in $n\geq 15$ nonumbilic and non-locally-conformally-flat examples of metrics in the hemisphere for which a noncompact sequence of solutions exists. We do the same for the special classes of locally conformally flat metrics, $n_*^{LCF}=18$, and the metrics with umbilic boundary, $n_*^{umb} =20$. In all three settings we also prove that the Weyl--umbilicity vanishing conjecture holds for $4\leq n\leq n_*$ and construct counterexamples in $n>n_*$ by perturbing the noncompactness examples. To the best of the author's knowledge, these are the first locally conformally flat noncompactness constructions for the positive-scalar-curvature, minimal-boundary case of the Yamabe--Escobar equation, outside the conformal class of the round hemisphere.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。
 
+来源：https://arxiv.org/pdf/2610.08759v1 · PDF 第 6 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 generative AI、主要为 ChatGPT，参与数学探索、中间计算、数值验证、文献检索及稿件准备。
+
+来源：https://arxiv.org/pdf/2610.08759v1
 
 [arXiv](https://arxiv.org/abs/2610.08759)
 
@@ -814,8 +880,12 @@ Runze Zhang
 
 In this paper, we study joint deformations of pairs $(X,E)$, where $X$ is a compact complex manifold and $E\rightarrow X$ is a holomorphic vector bundle. We prove that $(X,E)$ has unobstructed deformations if $X$ is a Fujiki manifold with torsion canonical bundle and $H^2(X,\textrm{End}^0E)=0$, where $\textrm{End}^0 E$ denotes the trace-free endomorphism bundle. When the canonical bundle is trivial, the Fujiki assumption can be replaced by three weak $\partial\bar\partial$-conditions. We construct examples satisfying these conditions whose Frölicher spectral sequences do not degenerate at $E_1$. These results provide non-Kähler extensions of the theorems of Li--Pan and Iacono--Manetti. Without this vanishing assumption, we obtain both unobstructed and obstructed pairs. In Thomas's example, we prove unobstructedness of the pair, although the bundle has obstructed deformations with the manifold fixed. On the other hand, we prove that every strict projective Calabi--Yau manifold of dimension at least three admits a simple bundle with obstructed joint deformations. We also construct obstructed pairs with Hermitian flat bundles on complex tori. These results answer two questions raised by Felten.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 Proposition 3.12 的例子由 ChatGPT 建议，作者核查构造及全部证明细节；ChatGPT 也用于英语语法及语言编辑。
 
+来源：https://arxiv.org/pdf/2610.08776 · PDF 第 39–40 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Proposition 3.12 的例子由 ChatGPT 建议，作者核查构造及全部证明细节；ChatGPT 也用于英语语法及语言编辑。
+
+来源：https://arxiv.org/pdf/2610.08776
 
 [arXiv](https://arxiv.org/abs/2610.08776)
