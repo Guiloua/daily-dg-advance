@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-08
 
-已收录 58/58 · 解读 58/58 · 资料待补齐。
+已收录 58/58 · 解读 58/58。
 
 ## Surface Braid Invariants from Yang-Baxter Operators and Their Cohomology
 
@@ -996,7 +996,7 @@ In this paper, we establish a sharp dynamical isoperimetric principle for weak m
 
 Liuwei Gong、Seunghyeok Kim、Monica Musso、Juncheng Wei
 
-对 positive conformal compact manifold 分类 scalar-flat/positive boundary H 与 positive scalar/minimal boundary 两类方程的紧性维数，结合 Part I 得到 sharp transition，并研究非零边界 H。
+Theorem 1 对 smooth compact connected positive-conformal-type、非 hemisphere 给 boundary Yamabe 紧性：scalar-flat/positive boundary H 的 general/umbilic 维数至 14/21，positive scalar/minimal boundary 至 14/20，任意 fixed real boundary H 至 8。full conformal-Fermi tensor、scalar correction 与 critical-degree logarithmic negative squares 配合 Green mass 排除 blow-up。
 
 We determine the sharp compactness ranges for the scalar-flat and minimal-boundary Yamabe problems on smooth compact manifolds of positive conformal type, excluding the conformal round hemisphere. For zero scalar curvature and positive constant boundary mean curvature, compactness holds through dimension $14$ for general boundary and dimension $21$ for umbilic boundary. For positive scalar curvature and zero boundary mean curvature, the corresponding upper dimensions are $14$ and $20$. Together with the noncompactness examples in Part I, these results identify the transition dimensions in both boundary classes. For positive scalar curvature, we also prove compactness through dimension eight for every fixed real boundary mean curvature, and obtain higher-dimensional ranges when this curvature is near zero or sufficiently large and positive. The proof combines scalar-correction estimates for the full conformal Fermi metric expansion with a geometric formula expressing the logarithmic coefficient of the corrected energy as a negative sum of squares.
 
