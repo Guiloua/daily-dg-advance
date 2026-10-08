@@ -23,10 +23,52 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-08T02:30:58.116330+00:00",
         "contentHash": "878a96da6dab0f1ce1efea040eb0a7cfe873a9cad1ab8df48deb78feecf62279"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.09102v1",
+        "observedAt": "2026-10-08T02:57:06.029030+00:00",
+        "contentHash": "86825536a16c5383939e309ded4ff056d0ca27af29f1ea43a6f538c60185ee47"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "最少交点 filling curve system 的渐近计数",
+      "workSummary": "对 genus g≥2、达到 2g−1 个双交点的 filling curve system，计算 mapping class orbit 数的精确渐近式，并改进单曲线子类的上界与小 genus 计数。",
+      "techniques": [
+        "mapping class orbit",
+        "组合枚举",
+        "filling curves"
+      ],
+      "breakthrough": "确定极小交点 filling 系统的主渐近项。",
+      "limitations": "单条 filling curve 的对应渐近仍是猜想，不能从全部系统的渐近直接推出。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude 编写小 genus 计算代码，指出输入对应 curve system 并引导至对称群 character theory，促使作者研究成为本文主要结果的系统计数；另用于 ancillary code 与表述修订，作者撰写和核查论证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.09102v1 · PDF 第 3–4 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-08T02:57:06.029030+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.09102v1",
+        "contentHash": "86825536a16c5383939e309ded4ff056d0ca27af29f1ea43a6f538c60185ee47",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 编写小 genus 计算代码，指出输入对应 curve system 并引导至对称群 character theory，促使作者研究成为本文主要结果的系统计数；另用于 ancillary code 与表述修订，作者撰写和核查论证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6256d64326f8eebf87d155ab038132dfe21ab3ffd2ba4db67b5a918e1d0565ed"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "确定极小交点 filling 系统的主渐近项。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $S_g$ be the closed oriented surface of genus $g \\geq 2$, and let $\\Gamma$ be a finite collection of closed curves on $S_g$ that fills, in the sense that its complement is a union of disks. The total number of double points of such a $\\Gamma$ in minimal position is at least $2g-1$; we call $\\Gamma$ minimally intersecting when equality holds. We prove that the number $N_g$ of mapping class group orbits of minimally intersecting filling curve systems satisfies $N_g \\sim 16^g (2g)!/(64\\pi\\sqrt{2}\\, g^3)$ as $g \\to \\infty$. We also study the single-curve subproblem, in which $\\Gamma$ consists of a single component. Every such curve is in particular a filling system, so the corresponding count $N_g^{(1)}$ satisfies $N_g^{(1)} \\leq N_g$, which improves the upper bound previously known for single filling curves. Finally, we compute $N_g$ and $N_g^{(1)}$ exactly for small genus and conjecture an asymptotic growth rate.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -52,10 +94,52 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-08T02:30:58.116330+00:00",
             "contentHash": "878a96da6dab0f1ce1efea040eb0a7cfe873a9cad1ab8df48deb78feecf62279"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.09102v1",
+            "observedAt": "2026-10-08T02:57:06.029030+00:00",
+            "contentHash": "86825536a16c5383939e309ded4ff056d0ca27af29f1ea43a6f538c60185ee47"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "最少交点 filling curve system 的渐近计数",
+          "workSummary": "对 genus g≥2、达到 2g−1 个双交点的 filling curve system，计算 mapping class orbit 数的精确渐近式，并改进单曲线子类的上界与小 genus 计数。",
+          "techniques": [
+            "mapping class orbit",
+            "组合枚举",
+            "filling curves"
+          ],
+          "breakthrough": "确定极小交点 filling 系统的主渐近项。",
+          "limitations": "单条 filling curve 的对应渐近仍是猜想，不能从全部系统的渐近直接推出。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude 编写小 genus 计算代码，指出输入对应 curve system 并引导至对称群 character theory，促使作者研究成为本文主要结果的系统计数；另用于 ancillary code 与表述修订，作者撰写和核查论证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.09102v1 · PDF 第 3–4 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-08T02:57:06.029030+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.09102v1",
+            "contentHash": "86825536a16c5383939e309ded4ff056d0ca27af29f1ea43a6f538c60185ee47",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 编写小 genus 计算代码，指出输入对应 curve system 并引导至对称群 character theory，促使作者研究成为本文主要结果的系统计数；另用于 ancillary code 与表述修订，作者撰写和核查论证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6256d64326f8eebf87d155ab038132dfe21ab3ffd2ba4db67b5a918e1d0565ed"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "确定极小交点 filling 系统的主渐近项。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $S_g$ be the closed oriented surface of genus $g \\geq 2$, and let $\\Gamma$ be a finite collection of closed curves on $S_g$ that fills, in the sense that its complement is a union of disks. The total number of double points of such a $\\Gamma$ in minimal position is at least $2g-1$; we call $\\Gamma$ minimally intersecting when equality holds. We prove that the number $N_g$ of mapping class group orbits of minimally intersecting filling curve systems satisfies $N_g \\sim 16^g (2g)!/(64\\pi\\sqrt{2}\\, g^3)$ as $g \\to \\infty$. We also study the single-curve subproblem, in which $\\Gamma$ consists of a single component. Every such curve is in particular a filling system, so the corresponding count $N_g^{(1)}$ satisfies $N_g^{(1)} \\leq N_g$, which improves the upper bound previously known for single filling curves. Finally, we compute $N_g$ and $N_g^{(1)}$ exactly for small genus and conjecture an asymptotic growth rate.",
+          "version": 1
+        }
       }
     }
   ]

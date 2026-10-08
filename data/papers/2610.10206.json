@@ -27,10 +27,44 @@
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-08T02:30:58.116330+00:00",
         "contentHash": "878a96da6dab0f1ce1efea040eb0a7cfe873a9cad1ab8df48deb78feecf62279"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.10206v1",
+        "observedAt": "2026-10-08T03:05:08.341019+00:00",
+        "contentHash": "1229230f6bd5d4f29fcd1289e593587f00256dda361afd7287aa9f791df67ada"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "machine learning 给 slice genus 与 unknotting 上界",
+      "workSummary": "以 reinforcement learning 与 Bayesian optimization 搜索 link 的 slice、unknotting 及 strong-slice 上界，结合既有下界确定多项精确值，并复现及扩展 unknotting nonadditivity 轨迹。",
+      "techniques": [
+        "reinforcement learning",
+        "Bayesian optimization",
+        "link cobordism"
+      ],
+      "breakthrough": "用可检查操作序列辅助 knot 数值不变量的计算。",
+      "limitations": "搜索一般产生上界；只有与可靠下界一致时才能标为精确值。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "needs_review",
+        "checkedAt": "2026-10-08T03:05:08.341019+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.10206v1",
+        "contentHash": "1229230f6bd5d4f29fcd1289e593587f00256dda361afd7287aa9f791df67ada",
+        "pages": 72,
+        "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "64b06e2c5c0401988ebd782fafef921e7bd551f162d35f0046c3743987db3d24"
+      },
+      "priorityScore": 91,
+      "priorityReason": "用可检查操作序列辅助 knot 数值不变量的计算。"
+    },
+    "analysisBasis": {
+      "abstract": "Links are disjoint unions of circles smoothly embedded in $S^3$. We use reinforcement learning and Bayesian optimisation to obtain new upper bounds on several link invariants that are not known to be algorithmically computable: the slice genus and the unknotting number for links, and the strong slice genus for algebraically split links. We also compute lower bounds using known invariants. Combining the upper and lower bounds, we obtain new exact values in many cases. Our unknotting agents can reproduce the non-additivity of the unknotting number for several counterexamples due to Brittenham and Hermiller, in some cases finding new unknotting trajectories.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -60,10 +94,44 @@
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-08T02:30:58.116330+00:00",
             "contentHash": "878a96da6dab0f1ce1efea040eb0a7cfe873a9cad1ab8df48deb78feecf62279"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.10206v1",
+            "observedAt": "2026-10-08T03:05:08.341019+00:00",
+            "contentHash": "1229230f6bd5d4f29fcd1289e593587f00256dda361afd7287aa9f791df67ada"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "machine learning 给 slice genus 与 unknotting 上界",
+          "workSummary": "以 reinforcement learning 与 Bayesian optimization 搜索 link 的 slice、unknotting 及 strong-slice 上界，结合既有下界确定多项精确值，并复现及扩展 unknotting nonadditivity 轨迹。",
+          "techniques": [
+            "reinforcement learning",
+            "Bayesian optimization",
+            "link cobordism"
+          ],
+          "breakthrough": "用可检查操作序列辅助 knot 数值不变量的计算。",
+          "limitations": "搜索一般产生上界；只有与可靠下界一致时才能标为精确值。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "needs_review",
+            "checkedAt": "2026-10-08T03:05:08.341019+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.10206v1",
+            "contentHash": "1229230f6bd5d4f29fcd1289e593587f00256dda361afd7287aa9f791df67ada",
+            "pages": 72,
+            "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "64b06e2c5c0401988ebd782fafef921e7bd551f162d35f0046c3743987db3d24"
+          },
+          "priorityScore": 91,
+          "priorityReason": "用可检查操作序列辅助 knot 数值不变量的计算。"
+        },
+        "analysisBasis": {
+          "abstract": "Links are disjoint unions of circles smoothly embedded in $S^3$. We use reinforcement learning and Bayesian optimisation to obtain new upper bounds on several link invariants that are not known to be algorithmically computable: the slice genus and the unknotting number for links, and the strong slice genus for algebraically split links. We also compute lower bounds using known invariants. Combining the upper and lower bounds, we obtain new exact values in many cases. Our unknotting agents can reproduce the non-additivity of the unknotting number for several counterexamples due to Brittenham and Hermiller, in some cases finding new unknotting trajectories.",
+          "version": 1
+        }
       }
     }
   ]

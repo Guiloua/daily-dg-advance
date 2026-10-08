@@ -26,10 +26,52 @@
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-08T02:30:46.829138+00:00",
         "contentHash": "3d09f81a32e256b6634101804a4de8217156b1eb51a0f9b97c308b2c19a9106c"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.09310v1",
+        "observedAt": "2026-10-08T02:58:39.921058+00:00",
+        "contentHash": "2e937089faa36e508ab65047927517d38aced74da4f94d8c4e1f5c7858f7750c"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "anisotropic dilation 的最优 regularization",
+      "workSummary": "以保持方向的 spherical profile 变换径向统计量，对 Gibbs regularizer 推导闭式最优 profile 及 Jensen 改善，给有限样本估计并测试二维模型与 MNIST denoising。",
+      "techniques": [
+        "Gibbs",
+        "spherical profile",
+        "Jensen",
+        "稀疏 ReLU"
+      ],
+      "breakthrough": "把一类 regularization 的优化归结为几何径向变换。",
+      "limitations": "理论限于所定义的径向统计族；数值优势不能视作任意正则化方法的普适改进。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于校对及润色，并建议 Proposition 33 的 ray-wise coupling 和 Theorem 27 的 analytic continuation 思路。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.09310v1 · PDF 第 46 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-08T02:58:39.921058+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.09310v1",
+        "contentHash": "2e937089faa36e508ab65047927517d38aced74da4f94d8c4e1f5c7858f7750c",
+        "pages": 58,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于校对及润色，并建议 Proposition 33 的 ray-wise coupling 和 Theorem 27 的 analytic continuation 思路。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0d592e5426450d81b9bcc77ab57b4610061c2599edf0580474fd8c542ed3e142"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 81,
+      "priorityReason": "把一类 regularization 的优化归结为几何径向变换。"
+    },
+    "analysisBasis": {
+      "abstract": "A central question in data-driven inverse problems is how to construct a regularizer that adapts to the geometry of the data distribution. Recent work in optimal regularization shows that, within a broad Gibbs class, the regularizer best matched to a distribution $P$ is determined by a single, direction-dependent radial summary statistic $\\rho_P$. This suggests a way to control regularizer geometry by transforming the data. In particular, which transformations act on $\\rho_P$ in a simple, explicit way? Can they improve the optimization properties of the resulting variational problems or adapt a fixed base regularizer to data? To address these questions, we introduce anisotropic dilation, a direction-preserving map that rescales each point along its Euclidean ray by a positive profile on the sphere. Despite its simplicity, this family acts transitively on the space of radial summary statistics: any target regularizer in the Gibbs class can be reached from any source distribution by a single explicit profile. We characterize the resulting orbit structure on distributions, derive in closed form the profile that optimally adapts a fixed base regularizer to the data, and show that its improvement over isotropic rescaling is governed by a Jensen gap that is provably positive for several natural families. We also establish finite-sample generalization bounds for jointly learning the base regularizer and anisotropic profile, with explicit rates when the logarithm of the profile is parameterized by linear feature models or sparse ReLU networks. Building on this theory, we parameterize the base regularizer and anisotropic profile and learn them jointly from samples, yielding a data-adaptive regularizer for variational inverse problems. Experiments on a controlled two-dimensional family and MNIST denoising show that learning the profile further improves performance.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,10 +100,52 @@
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-08T02:30:46.829138+00:00",
             "contentHash": "3d09f81a32e256b6634101804a4de8217156b1eb51a0f9b97c308b2c19a9106c"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.09310v1",
+            "observedAt": "2026-10-08T02:58:39.921058+00:00",
+            "contentHash": "2e937089faa36e508ab65047927517d38aced74da4f94d8c4e1f5c7858f7750c"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "anisotropic dilation 的最优 regularization",
+          "workSummary": "以保持方向的 spherical profile 变换径向统计量，对 Gibbs regularizer 推导闭式最优 profile 及 Jensen 改善，给有限样本估计并测试二维模型与 MNIST denoising。",
+          "techniques": [
+            "Gibbs",
+            "spherical profile",
+            "Jensen",
+            "稀疏 ReLU"
+          ],
+          "breakthrough": "把一类 regularization 的优化归结为几何径向变换。",
+          "limitations": "理论限于所定义的径向统计族；数值优势不能视作任意正则化方法的普适改进。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于校对及润色，并建议 Proposition 33 的 ray-wise coupling 和 Theorem 27 的 analytic continuation 思路。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.09310v1 · PDF 第 46 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-08T02:58:39.921058+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.09310v1",
+            "contentHash": "2e937089faa36e508ab65047927517d38aced74da4f94d8c4e1f5c7858f7750c",
+            "pages": 58,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于校对及润色，并建议 Proposition 33 的 ray-wise coupling 和 Theorem 27 的 analytic continuation 思路。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0d592e5426450d81b9bcc77ab57b4610061c2599edf0580474fd8c542ed3e142"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 81,
+          "priorityReason": "把一类 regularization 的优化归结为几何径向变换。"
+        },
+        "analysisBasis": {
+          "abstract": "A central question in data-driven inverse problems is how to construct a regularizer that adapts to the geometry of the data distribution. Recent work in optimal regularization shows that, within a broad Gibbs class, the regularizer best matched to a distribution $P$ is determined by a single, direction-dependent radial summary statistic $\\rho_P$. This suggests a way to control regularizer geometry by transforming the data. In particular, which transformations act on $\\rho_P$ in a simple, explicit way? Can they improve the optimization properties of the resulting variational problems or adapt a fixed base regularizer to data? To address these questions, we introduce anisotropic dilation, a direction-preserving map that rescales each point along its Euclidean ray by a positive profile on the sphere. Despite its simplicity, this family acts transitively on the space of radial summary statistics: any target regularizer in the Gibbs class can be reached from any source distribution by a single explicit profile. We characterize the resulting orbit structure on distributions, derive in closed form the profile that optimally adapts a fixed base regularizer to the data, and show that its improvement over isotropic rescaling is governed by a Jensen gap that is provably positive for several natural families. We also establish finite-sample generalization bounds for jointly learning the base regularizer and anisotropic profile, with explicit rates when the logarithm of the profile is parameterized by linear feature models or sparse ReLU networks. Building on this theory, we parameterize the base regularizer and anisotropic profile and learn them jointly from samples, yielding a data-adaptive regularizer for variational inverse problems. Experiments on a controlled two-dimensional family and MNIST denoising show that learning the profile further improves performance.",
+          "version": 1
+        }
       }
     }
   ]

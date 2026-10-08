@@ -24,10 +24,52 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-08T02:30:35.282550+00:00",
         "contentHash": "5e76a9c9f7dacec401c85a0847b0e9edeec940c73e1b4c9f4255f8ba5b47bdce"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.09989v1",
+        "observedAt": "2026-10-08T03:03:14.805168+00:00",
+        "contentHash": "8e759745236e600cc009db815a5469285ff75b366b80d3b2d5f88c80e89849a1"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "有限 Ricci mass 的正 bisectional 曲率基本群",
+      "workSummary": "Theorem 1.1 对 complete noncompact Kähler、positive holomorphic bisectional curvature 证明 Ricci form 顶次积分有限，Theorem 1.2 因而推出基本群有限。关键是构造 Lipschitz psh function，具有正且有限的 Bedford–Taylor Monge–Ampère mass；以 truncated Bellman operator 作一致椭圆逼近，再用 concave elliptic regularity 与 Błocki 型梯度估计。",
+      "techniques": [
+        "truncated Bellman",
+        "一致椭圆逼近",
+        "psh weight",
+        "Bedford–Taylor",
+        "梯度估计"
+      ],
+      "breakthrough": "把既有 positive sectional curvature 的 Ricci-mass 结论推进至 positive holomorphic bisectional curvature，并得有限基本群。",
+      "limitations": "有限 Ricci mass 是本论文证明的结论，而非额外前提；基本群有限不等于 simply connected 或 biholomorphic to Cⁿ。注记中的二维 uniformization 属后续待成稿工作，不计入本文定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT Astra Pro 广泛参与证明路线探索，提出以 truncated Bellman operator 一致椭圆逼近 complex Monge–Ampère 的关键想法；作者未沿用模型的非正式 viscosity 论证，而独立发展 PDE 正则性与梯度估计。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.09989v1 · PDF 第 2–3 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-08T03:03:14.805168+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.09989v1",
+        "contentHash": "8e759745236e600cc009db815a5469285ff75b366b80d3b2d5f88c80e89849a1",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra Pro 广泛参与证明路线探索，提出以 truncated Bellman operator 一致椭圆逼近 complex Monge–Ampère 的关键想法；作者未沿用模型的非正式 viscosity 论证，而独立发展 PDE 正则性与梯度估计。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5744f8faf7b1048b65f5c4659c0db33b0dd28bd63bf621c9251c4d8c07fa236d"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "解决 Yau–Yang 基本群猜想的有限 Ricci mass 情形。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove the finiteness of the integral of the top power of the Ricci form on a complete, noncompact Kähler manifold with positive bisectional curvature. This settles a special case of a conjecture of Yau and Yang. An immediate corollary is the finiteness of the fundamental group of such manifolds. As in our previous work, the main idea involves the construction and use of plurisubharmonic weight functions with finite Monge-Ampère masses.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -54,10 +96,52 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-08T02:30:35.282550+00:00",
             "contentHash": "5e76a9c9f7dacec401c85a0847b0e9edeec940c73e1b4c9f4255f8ba5b47bdce"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.09989v1",
+            "observedAt": "2026-10-08T03:03:14.805168+00:00",
+            "contentHash": "8e759745236e600cc009db815a5469285ff75b366b80d3b2d5f88c80e89849a1"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "有限 Ricci mass 的正 bisectional 曲率基本群",
+          "workSummary": "Theorem 1.1 对 complete noncompact Kähler、positive holomorphic bisectional curvature 证明 Ricci form 顶次积分有限，Theorem 1.2 因而推出基本群有限。关键是构造 Lipschitz psh function，具有正且有限的 Bedford–Taylor Monge–Ampère mass；以 truncated Bellman operator 作一致椭圆逼近，再用 concave elliptic regularity 与 Błocki 型梯度估计。",
+          "techniques": [
+            "truncated Bellman",
+            "一致椭圆逼近",
+            "psh weight",
+            "Bedford–Taylor",
+            "梯度估计"
+          ],
+          "breakthrough": "把既有 positive sectional curvature 的 Ricci-mass 结论推进至 positive holomorphic bisectional curvature，并得有限基本群。",
+          "limitations": "有限 Ricci mass 是本论文证明的结论，而非额外前提；基本群有限不等于 simply connected 或 biholomorphic to Cⁿ。注记中的二维 uniformization 属后续待成稿工作，不计入本文定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT Astra Pro 广泛参与证明路线探索，提出以 truncated Bellman operator 一致椭圆逼近 complex Monge–Ampère 的关键想法；作者未沿用模型的非正式 viscosity 论证，而独立发展 PDE 正则性与梯度估计。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.09989v1 · PDF 第 2–3 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-08T03:03:14.805168+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.09989v1",
+            "contentHash": "8e759745236e600cc009db815a5469285ff75b366b80d3b2d5f88c80e89849a1",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra Pro 广泛参与证明路线探索，提出以 truncated Bellman operator 一致椭圆逼近 complex Monge–Ampère 的关键想法；作者未沿用模型的非正式 viscosity 论证，而独立发展 PDE 正则性与梯度估计。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5744f8faf7b1048b65f5c4659c0db33b0dd28bd63bf621c9251c4d8c07fa236d"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "解决 Yau–Yang 基本群猜想的有限 Ricci mass 情形。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove the finiteness of the integral of the top power of the Ricci form on a complete, noncompact Kähler manifold with positive bisectional curvature. This settles a special case of a conjecture of Yau and Yang. An immediate corollary is the finiteness of the fundamental group of such manifolds. As in our previous work, the main idea involves the construction and use of plurisubharmonic weight functions with finite Monge-Ampère masses.",
+          "version": 1
+        }
       }
     }
   ]
