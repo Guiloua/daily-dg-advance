@@ -240,7 +240,7 @@ We unify Jones' representations of braid groups and the oriented Thompson's grou
 
 明确披露 AI 协作：作者披露 GPT-6 Astra 用于改善可读性和校对，并指出早稿 normalization factor 的错误；作者负责数学论证。
 
-来源：https://arxiv.org/pdf/2610.09333v1 · PDF 第 4 页
+来源：https://arxiv.org/pdf/2610.09333v1 · PDF 第 3 页
 
 核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-6 Astra 用于改善可读性和校对，并指出早稿 normalization factor 的错误；作者负责数学论证。
 
@@ -656,9 +656,11 @@ Yude Liu、Qiang Sun、Ge Xiong
 
 The logarithmic Brunn--Minkowski and logarithmic Minkowski inequalities are proved for convex bodies whose centroids are at the origin, with equality precisely for independent positive dilations of common direct summands. This characterizes when centered convex bodies have the same cone-volume measure. The \(L_p\) Brunn--Minkowski and Minkowski inequalities are also obtained for every \(p>0\), with equality only for positive dilates, and the corresponding uniqueness of centered \(L_p\) surface area measures is established.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确披露全文证明均由 ChatGPT 生成，AI 还用于多轮 adversarial checking。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.10152v1 · PDF 第 31 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露全文证明均由 ChatGPT 生成，AI 还用于多轮 adversarial checking。
 
 来源：https://arxiv.org/pdf/2610.10152v1
 
@@ -672,9 +674,11 @@ Yutong Dai、Oliver Hayman、András Juhász、Ludovico Morellato
 
 Links are disjoint unions of circles smoothly embedded in $S^3$. We use reinforcement learning and Bayesian optimisation to obtain new upper bounds on several link invariants that are not known to be algorithmically computable: the slice genus and the unknotting number for links, and the strong slice genus for algebraically split links. We also compute lower bounds using known invariants. Combining the upper and lower bounds, we obtain new exact values in many cases. Our unknotting agents can reproduce the non-additivity of the unknotting number for several counterexamples due to Brittenham and Hermiller, in some cases finding new unknotting trajectories.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露第三作者用 ChatGPT 5.6/6 Pro 校对、审查代码和修复小 bug，第四作者用 Claude Opus 5 校对及辅助代码开发；前两位作者编写的大部分代码未用 AI。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.10206v1 · PDF 第 3 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露第三作者用 ChatGPT 5.6/6 Pro 校对、审查代码和修复小 bug，第四作者用 Claude Opus 5 校对及辅助代码开发；前两位作者编写的大部分代码未用 AI。
 
 来源：https://arxiv.org/pdf/2610.10206v1
 
@@ -684,13 +688,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Simon Jubert、Chung-Ming Pan
 
-去掉 weighted Yau–Tian–Donaldson correspondence 中 weight 的 log-concavity 条件，应用于 extremal Sasaki 与 conformally Kähler Einstein–Maxwell 几何。
+Theorem A 以 Chern–Lu 代替 Aubin–Yau 获得不需 log-concavity 的 weighted cscK integral Laplacian estimate，Theorem B 将 positive weights 下 extremal metric 存在与 relative weighted Mabuchi coercivity 等价；polarized 情形给 relative uniform weighted K-stability，regular quotient 对应 possibly irregular Sasaki。
 
 We remove the log-concavity assumption on the weight in the analytic weighted Yau--Tian--Donaldson correspondence established in [ arXiv:2406.10939 , arXiv:2407.09929 , arXiv:2503.22183 ] and discuss applications to Sasaki and conformally Kähler Einstein--Maxwell geometries.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.10216v1 · PDF 第 3、5 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。
 
 来源：https://arxiv.org/pdf/2610.10216v1
 
@@ -704,9 +710,11 @@ Alexander Fish、Dmitry Ryabogin、Wen Rui Sun、Vladyslav Yaskin
 
 For a convex body $K$ its parallel section function in the direction $\theta\in S^{n-1}$ is defined by $$A_{K,\theta}(t) = \mathrm{vol}_{n-1} \left( K \cap \{ x \in \mathbb{R}^n ~ | ~ \langle x, \theta \rangle = t \} \right) .$$ We study to what extent the body $K$ is determined by partial information about these functions. As applications, we characterize convex bodies with locally separable section functions, establish partial results on the homothety conjecture for bodies of flotation, and answer a question of Barker and Larman concerning the determination of convex bodies from section functions at infinitely many distances from the origin.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 用于 proof checking 和改善表述。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.10229v1 · PDF 第 27 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于 proof checking 和改善表述。
 
 来源：https://arxiv.org/pdf/2610.10229v1
 
@@ -736,9 +744,11 @@ Atsuhide Nagasaka
 
 The Melvin--Morton--Rozansky theorem relates the large-colour semiclassical limit of the coloured Jones polynomial to the inverse Alexander polynomial. Bar-Natan and Garoufalidis [BNG96] proved the theorem using weight systems and, more generally, established the corresponding formula for arbitrary complex semisimple Lie algebras. We give a direct proof of this semisimple Lie algebra generalization by analysing a state sum. For a complex semisimple Lie algebra $\mathfrak{g}$ and a dominant integral weight $\lambda$, we use the embedding $V_{d\lambda}\hookrightarrow V_{\lambda}^{\otimes d}$ to analyse the state sum. Under the specialization $q=e^{h/d}$, we show that, as $d\to\infty$, only the identity terms and those proportional to $E_{\alpha}\otimes F_{\alpha}$ contribute at leading order. It follows that the leading-order contribution decomposes over the positive roots, with each root contribution evaluated as in the $\mathfrak{sl}_{2}$ case. Writing $t_{\alpha}=e^{-2(\lambda,\alpha)h}$, the limit is therefore given by the product of $\Delta_{K}(t_{\alpha})^{-1}$ over the positive roots $\alpha$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 用于校对、proof polishing、语言完善、格式检查与 bibliographic metadata 检查，并对数学内容负责。
 
-核查范围：全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。
+来源：https://arxiv.org/pdf/2610.10269v1 · PDF 第 3 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于校对、proof polishing、语言完善、格式检查与 bibliographic metadata 检查，并对数学内容负责。
 
 来源：https://arxiv.org/pdf/2610.10269v1
 
@@ -752,9 +762,11 @@ Donato Mancini、Stefano Marini、Costantino Medori
 
 We give an explicit description of the orbits of the split real form $G_{2(2)}$ on the complex flag manifolds of $G_2$ and study their induced invariant CR structures. In particular we study their Levi forms and show that all possible cases in the simple homogeneous setting occur, namely Levi nondegeneracy, $k$-nondegeneracy for $2\leq k\leq 3$, and holomorphic degeneracy. Moreover, following the classical approach to orbits on flag manifolds, we give equations for these homogeneous CR manifolds.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10290v1
 
 [arXiv](https://arxiv.org/abs/2610.10290)
 
@@ -766,9 +778,11 @@ Shih-Yu Chang
 
 Given a manifold $M$ with an asymptotically cylindrical end, we construct the parametrix for the shifted Laplace operator $\Delta_g + 1$ on the blown-up $b$-double space $M_b^2$. We will review the geometry of manifold with a cylindrical end and construct the inverse directly via separation of variables, which motivates the parametrix construction. Next, we review the mapping properties and show how to get elliptic regularity from the mapping properties of the parametrix. Through this explicit example, we hope this paper provides another reference for the theory of $b$-operators introduced by Melrose \cite{Mel93}.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10315v1
 
 [arXiv](https://arxiv.org/abs/2610.10315)
 
@@ -776,13 +790,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Hai-Ping Fu、Yao Lu
 
-建立 curvature operator of second kind 的 double-form Bochner 公式；对 complete n≥4、harmonic Weyl 和指定 COSK 非负条件得到 conformally constant positive curvature 或 flat 的刚性。
+Theorem A 对 closed connected n≥3 的 symmetric harmonic double form，在 first Bianchi、first contraction zero 及 C(p,n)-positive/nonnegative COSK 下得到消失/平行；Corollary 1.2 对 complete n≥4 harmonic Weyl、3(n−1)/4-nonnegative COSK 且 Weyl norm bounded 得 global conformally positive constant curvature 或 isometric flat。
 
 We establish a Bochner formula for double forms in terms of the curvature operator of the second kind. As an application, we prove that a complete Riemannian manifold of dimension $n \ge 4$ with harmonic Weyl tensor and $\frac{3(n-1)}{4}$-nonnegative curvature operator of the second kind is either globally conformally equivalent to a space of positive constant curvature or is isometric to a flat manifold. We prove vanishing theorems for the Lichnérowicz Laplacian $\Delta$ on $(p,q)$ double forms. These generalize recent results of Nienhaus-Petersen-Wink \cite{NPW23} and Dai-Fu-Lu-Yang \cite{DF24,DFY24,FL1,FLD}.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10325v1
 
 [arXiv](https://arxiv.org/abs/2610.10325)
 
@@ -794,9 +810,13 @@ Balázs Márk Békési
 
 We construct coupled Dirac-harmonic maps from manifolds of the form $S^1\times M$ where $M$ is a spin manifold equipped with a pair of harmonic spinors satisfying a norm condition. This method produces coupled Dirac-harmonic maps from closed manifolds.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者说明数学想法、计算及写作由本人完成，LLM 仅用于工作结束时最后一次语法检查。
 
+来源：https://arxiv.org/pdf/2610.10330v1 · PDF 第 2 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明数学想法、计算及写作由本人完成，LLM 仅用于工作结束时最后一次语法检查。
+
+来源：https://arxiv.org/pdf/2610.10330v1
 
 [arXiv](https://arxiv.org/abs/2610.10330)
 
@@ -808,9 +828,13 @@ Alice Merz、Diego Santoro
 
 We show that zero is a characterising slope for the untwisted Whitehead double of any knot $K$. More generally, this holds for all $n$-twisted Whitehead doubles of $K$, with the assumption that $n\ne pq$ if $K$ is a non-trivial $(p,q)$-torus knot or $(p,q)$-cable. In particular, zero is a characterising slope for all twist knots.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI/LLM 仅用于文献研究，没有参与写作或提出数学想法。
 
+来源：https://arxiv.org/pdf/2610.10338v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI/LLM 仅用于文献研究，没有参与写作或提出数学想法。
+
+来源：https://arxiv.org/pdf/2610.10338v1
 
 [arXiv](https://arxiv.org/abs/2610.10338)
 
@@ -822,9 +846,13 @@ Hengyu Chen、Guangxiang Su
 
 We prove estimates for Gromov's Long Neck Foliated Conjecture in the spin cases, which involves leafwise scalar curvature. The same methods yield a quantitative version of a theorem of Su--Wang--Zhang and a Llarull-type theorem for closed foliated manifolds. A refinement, which involves mean curvature and partially generalizes a theorem of Cecchini--Zeidler, is also obtained.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者完成初稿后用 AI 校对，并将 Theorem 4.5 扩展为弱化 leafwise distance 条件的 Theorem 1.7；Theorem 4.6 由 AI 建议，作者核查最终稿。
 
+来源：https://arxiv.org/pdf/2610.10344 · PDF 第 42 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者完成初稿后用 AI 校对，并将 Theorem 4.5 扩展为弱化 leafwise distance 条件的 Theorem 1.7；Theorem 4.6 由 AI 建议，作者核查最终稿。
+
+来源：https://arxiv.org/pdf/2610.10344
 
 [arXiv](https://arxiv.org/abs/2610.10344)
 
@@ -836,9 +864,11 @@ Ameth Ndiaye
 
 In the upper half-space model of the hyperbolic space $\mathbb{H}^{n+1}$, a translation hypersurface of type I is a graph $x_{n+1}=f_1(x_1)+\cdots+f_n(x_n)$ and a translation hypersurface of type II is a graph $x_n=f_1(x_1)+\cdots+f_{n-1}(x_{n-1})+g(x_{n+1})$. We classify the minimal translation hypersurfaces of both types for every $n\geq 2$. We obtain these results as particular cases of a classification of the singular minimal translation hypersurfaces of $\mathbb{R}^{n+1}$ for an arbitrary exponent $\alpha\neq 0$, with respect to a direction orthogonal (type I) or parallel (type II) to the hyperplane over which the hypersurface is a graph. The minimal translation hypersurfaces of type I are exactly the parabolic cylinders over a one-parameter family of arches, which contradicts a nonexistence theorem in the literature. The minimal translation hypersurfaces of type II are the parabolic cylinders, the vertical totally geodesic hyperplanes and, when $n\geq 3$, the vertical cylinders over the Scherk surface.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10363v1
 
 [arXiv](https://arxiv.org/abs/2610.10363)
 
@@ -850,9 +880,11 @@ Peizhi Liu
 
 We construct a family of metric outer measures whose critical exponents form a packing spectrum interpolating between Hausdorff and packing dimensions. The spectrum is countably stable, bi-Lipschitz invariant, and locally Lipschitz continuous in the parameter below the packing endpoint, where a jump may occur. For nonempty compact sets, we prove a variational formula in terms of windowed local mass exponents of probability measures. We establish product inequalities pairing the packing spectrum with upper intermediate dimensions and obtain a converse characterization by products with compact sets. We characterize all attainable profiles by monotonicity, continuity below the packing endpoint, and a sharp inequality for the upper right Dini derivative. Every admissible profile is realized by a compact binary digit set whose uniform digit measure attains the variational supremum at every parameter below the packing endpoint and whose complementary digit set attains the product supremum at every parameter.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10375v1
 
 [arXiv](https://arxiv.org/abs/2610.10375)
 
@@ -864,9 +896,11 @@ Spyridon Filippas、Lauri Oksanen
 
 We consider the inverse problem of recovering a potential $q$, depending on space and time, in the wave equation $(\Box_g+q)u=0$ on a Lorentzian manifold. We prove Lipschitz stability for a formally determined version of this problem under a \textit{null-cone foliation} assumption. As a consequence, we obtain uniqueness in the Lorentzian Calderón problem for $q$ under this assumption. Our approach is based on a modification of the Bukhgeim--Klibanov method using distorted plane waves.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10413v1
 
 [arXiv](https://arxiv.org/abs/2610.10413)
 
@@ -878,9 +912,13 @@ Pablo Portilla Cuadrado
 
 Let $\boldsymbol{n}=(n_1,n_2,n_3):(\mathbb{C}^2,0)\to(\mathbb{C}^3,0)$ be a holomorphic map germ admitting an injective representative. We prove that if $(d\boldsymbol{n})_0=0$, then $\mathrm{ord}_0(\boldsymbol{n})\in\{2,3,4\}$. This reduces Lê's conjecture to excluding potential counterexamples $\boldsymbol{n}$ of orders $2$, $3$, and $4$. The proof combines techniques from the theory of plane curve singularities, explicit cobordism constructions, and genus bounds obtained by applying properties of the $\Upsilon$ invariant coming from knot Floer homology.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 5.6 用于文献检索、一般讨论及写作表述，并在早稿中发现 mn=4 论证的缺陷；AI 修补及其余两案的证明另列未来稿，不能计入本文已证明结果。
 
+来源：https://arxiv.org/pdf/2610.10418v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 5.6 用于文献检索、一般讨论及写作表述，并在早稿中发现 mn=4 论证的缺陷；AI 修补及其余两案的证明另列未来稿，不能计入本文已证明结果。
+
+来源：https://arxiv.org/pdf/2610.10418v1
 
 [arXiv](https://arxiv.org/abs/2610.10418)
 
@@ -888,13 +926,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Mingyang Li、Song Sun
 
-作者用 local gluing、rod structure 与 global virtual counting 构造任意大 b₂ 的 simply connected positive Einstein 四流形，并研究 algebraically special 类型、唯一性及 Page/CLW 的锥角变形。
+Theorem 1.1 宣称通过 torus fixed-point gluing 与 conical moduli-space virtual count 构造 #r(S²×S²) 及 CP²#kCP̄²#r(S²×S²) 等无限族；Theorem 1.3 对 closed simply connected、已有 effective T² action 的四流形给 toric Einstein 存在 iff χ≥3|τ|。Theorem 1.5 对六种 classical toric 类型给 scaling/isometry 唯一性。
 
 This is a continuation of our previous paper on toric gravitational instantons. We develop a systematic theory of compact simply-connected Einstein four-manifolds with toric symmetry. Applications include (1) The construction of simply connected positive Einstein four-manifolds with arbitrarily large $b_2$. Our method is based on local gluing combined with a global virtual counting argument. The key idea involves a particular design of rod structures to enable a gluing construction and restrict possible degenerations. (2) A topological characterization of algebraically special toric Einstein metrics. This uses special curvature identities for $W^+$ in the toric setting. (3) Uniqueness, up to scaling and isometry, on toric four-manifolds admitting algebraically special Einstein metrics. The proofs uses a variational study of the Einstein--Hilbert functional. (4) Diffeomorphism classification of compact toric Einstein four-manifolds in terms of an improved Hitchin-Thorpe inequality $\chi\geq3|\tau|$. In particular, our construction recovers all the classical toric Einstein metrics, including the Page and Chen--LeBrun--Weber metrics, starting from the round sphere through moduli spaces of conical Einstein metrics.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 参与数值实验、关键 differential inequality 与 W⁺ identity、rigidity 证明及稿件和图形；Appendix C 的分类扩展证明完全由 AI 基于作者已建立策略发展，主要 moduli-space 思想与 rod 设计由作者提出。
 
+来源：https://arxiv.org/pdf/2610.10425v1 · PDF 第 2、6–7 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 参与数值实验、关键 differential inequality 与 W⁺ identity、rigidity 证明及稿件和图形；Appendix C 的分类扩展证明完全由 AI 基于作者已建立策略发展，主要 moduli-space 思想与 rod 设计由作者提出。
+
+来源：https://arxiv.org/pdf/2610.10425v1
 
 [arXiv](https://arxiv.org/abs/2610.10425)
 
@@ -902,13 +944,15 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Amar Deep Sarkar
 
-证明 smooth bounded C-convex domain 中 Kobayashi Gromov hyperbolicity、finite D’Angelo type 与 ∂̄-Neumann subellipticity 等价，以 log-Bergman weight 给 sharp direction-radius power estimate，并研究 Lipschitz boundary。
+Theorem 1.1 对 bounded C-convex、C∞ boundary、n≥2 的 domain 证明 Kobayashi Gromov hyperbolicity、finite D’Angelo type 与 degree-one subellipticity 等价；directional disc radius 的 power bound 与 explicit log-Bergman weight 连接几何和 PDE，给各 degree 的每个 gain s<1/M。
 
 In this article, we study three properties of a bounded $\mathbb{C}$-convex domain $\Omega \subset \mathbb{C}^n$, $n \geq 2$, with smooth boundary, namely Gromov hyperbolicity of its Kobayashi distance, finiteness of the D'Angelo type of $\partial \Omega$, and the existence of a subelliptic estimate for the $\bar{\partial}$-Neumann problem on $(0,1)$-forms. We prove that these three properties are equivalent. The subelliptic estimates are obtained without Catlin's construction of plurisubharmonic weights. Our weights are explicit bounded transforms of the logarithm of the Bergman kernel. A single quantity controls all three properties, namely the radius of the largest disc through a point of $\Omega$ in a given complex direction. Gromov hyperbolicity forces a power bound for these radii. Finite type gives the power $1/M$, where $M$ is the maximal type, and this power cannot be improved. A subelliptic estimate gives a power bound through the canonical solution operator applied to normalized Bergman kernels. The analytic estimates need no boundary regularity. On a bounded pseudoconvex domain, a bounded weight whose induced Hessian on $(0,q)$-forms is bounded below by a negative power of the boundary distance gives a Sobolev estimate for the extension by zero of $(0,q)$-forms, and also eigenvalue bounds for the $\bar{\partial}$-Neumann operator. On smooth $\mathbb{C}$-convex domains of finite type, we show that the directional expansion exponent, the normal expansion exponent, and the supremum of the subelliptic gains are all equal to $1/M$. Next, we prove that on a Lipschitz $\mathbb{C}$-convex domain whose Kobayashi distance is Gromov hyperbolic, the Euclidean boundary and the Gromov boundary are bi-Hölder equivalent. Finally, we give a Hardy-type criterion for Gromov hyperbolicity of collar metrics.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.10445v1
 
 [arXiv](https://arxiv.org/abs/2610.10445)
 
@@ -916,13 +960,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jeff Viaclovsky
 
-作者宣称在 S⁶ 上构造具有任意大 local Kuranishi dimension 的 complex structure，并为 smooth CP³ 给对应构造。
+Theorem 1.1 以既有 Alpöge–Claude/Engel 的 IV* III I₁ complex torus fibration X₀ 为起点，用 twistor-conic comb smoothing、local filling 与 global extension 构造 m≥12 的 Xₘ≅X₀；h⁰,¹=2m+1、h⁰,²=2m，dim Def(Xₘ)≥8m−8，point blow-up 给 smooth CP³ 上 ≥8m−7。
 
 We construct complex structures on the six-sphere $S^6$ with arbitrarily large local Kuranishi dimension. As a corollary, we find the same phenomenon holds for the smooth manifold underlying complex projective 3-space $\mathbb{P}^3$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露主要数学想法由本人提出，与 ChatGPT 6 Astra 的长时间对话用于进一步探索、发展部分论证及改善表述；文中另提 AI 生成的前驱构造，未将该引用单独算作作者本人使用。
 
+来源：https://arxiv.org/pdf/2610.10451v1 · PDF 第 4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露主要数学想法由本人提出，与 ChatGPT 6 Astra 的长时间对话用于进一步探索、发展部分论证及改善表述；文中另提 AI 生成的前驱构造，未将该引用单独算作作者本人使用。
+
+来源：https://arxiv.org/pdf/2610.10451v1
 
 [arXiv](https://arxiv.org/abs/2610.10451)
 
@@ -930,13 +978,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Beomjun Choi、Wenkui Du、Seung Chul Park、Junseo Youn
 
-作者证明给定初始 area 下 round sphere 最大化 level-set 与 integral Brakke flow 的 extinction time，并给 mean-convex arrival-time Lᵖ 及 outward-minimizing spacetime-track 的 sharp volume bound。
+Theorem 1.1 对 smooth bounded Ω⊂Rⁿ⁺¹ 的 level-set flow 与初始 measure Hⁿ⌞∂Ω 的 integral Brakke flow 给 Text≤(P(Ω)/|Sⁿ|)^(2/n)/(2n)；等号分别需 ball 和 multiplicity-one standard shrinking sphere。outward-minimizing hull 加 elliptic regularization、mean-convex smoothing 将 smooth 估计传至弱流，另得 arrival-time sharp Lᵖ bound。
 
 In this paper, we establish a sharp dynamical isoperimetric principle for weak mean curvature flow. We prove that, among weak mean curvature flows with fixed area of initial smooth closed hypersurfaces, the standard smoothly shrinking spherical mean curvature flow uniquely maximizes the extinction time. More precisely, for the level set flow $K_t$ starting from the boundary of a smooth bounded domain $\Omega\subset\mathbb R^{n+1}$, as well as for the integral Brakke flow $\{\mu_t\}$ with initial Radon measure $\mu_0=\mathcal H^n\llcorner\partial\Omega$, we establish the corresponding optimal extinction time estimates \begin{equation*} T_{\rm ext}(\Omega),\, T^B_{\rm ext}(\Omega) \leq \frac{1}{2n} \left(\frac{P( \Omega)}{|{\mathbb{S}^n}|}\right)^{\frac{2}{n}}, \end{equation*} where $P(\Omega)$ is the perimeter of $\Omega$ representing the area of $\partial \Omega$, and the equality holds if and only if $\Omega$ is a round ball and the flow is the standard multiplicity-one smoothly self-shrinking round sphere. In particular, we obtain the sharp $L^p$-estimates for the arrival time function of a smooth bounded mean convex domain. In addition, we also establish the sharp isoperimetric inequality for the parabolic measure of the space-time track filling $X$ of outward minimizing level set flow starting from the boundary of a smooth bounded domain $\Omega\subset \mathbb R^{n+1}$: \begin{equation*} \mathcal H_{\mathrm{par}}^{n+2}(X) \leq \frac{\pi} {2n(n+2)^2|{\mathbb{S}^n}|^{{\frac{2}{n}}}} P(\Omega)^{\frac{n+2}{n}}, \end{equation*} where the equality holds if and only if $\Omega$ is a round ball and the flow is standard smoothly shrinking round sphere.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。
 
+来源：https://arxiv.org/pdf/2610.10461v1 · PDF 第 8 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。
+
+来源：https://arxiv.org/pdf/2610.10461v1
 
 [arXiv](https://arxiv.org/abs/2610.10461)
 
@@ -948,8 +1000,12 @@ Liuwei Gong、Seunghyeok Kim、Monica Musso、Juncheng Wei
 
 We determine the sharp compactness ranges for the scalar-flat and minimal-boundary Yamabe problems on smooth compact manifolds of positive conformal type, excluding the conformal round hemisphere. For zero scalar curvature and positive constant boundary mean curvature, compactness holds through dimension $14$ for general boundary and dimension $21$ for umbilic boundary. For positive scalar curvature and zero boundary mean curvature, the corresponding upper dimensions are $14$ and $20$. Together with the noncompactness examples in Part I, these results identify the transition dimensions in both boundary classes. For positive scalar curvature, we also prove compactness through dimension eight for every fixed real boundary mean curvature, and obtain higher-dimensional ranges when this curvature is near zero or sufficiently large and positive. The proof combines scalar-correction estimates for the full conformal Fermi metric expansion with a geometric formula expressing the logarithmic coefficient of the corrected energy as a negative sum of squares.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者披露 ChatGPT 与 Codex 用于稿件组织和措辞、记号检查及提交文件的准备和检查；数学论证与 computer-assisted calculation 另有文中验证资料，未从这段声明推定 AI 生成证明。
 
+来源：https://arxiv.org/pdf/2610.10485v1 · PDF 第 5 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 与 Codex 用于稿件组织和措辞、记号检查及提交文件的准备和检查；数学论证与 computer-assisted calculation 另有文中验证资料，未从这段声明推定 AI 生成证明。
+
+来源：https://arxiv.org/pdf/2610.10485v1
 
 [arXiv](https://arxiv.org/abs/2610.10485)

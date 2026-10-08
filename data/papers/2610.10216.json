@@ -33,27 +33,36 @@
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "extremal Sasaki 与 weighted K-stability",
-      "workSummary": "去掉 weighted Yau–Tian–Donaldson correspondence 中 weight 的 log-concavity 条件，应用于 extremal Sasaki 与 conformally Kähler Einstein–Maxwell 几何。",
+      "workSummary": "Theorem A 以 Chern–Lu 代替 Aubin–Yau 获得不需 log-concavity 的 weighted cscK integral Laplacian estimate，Theorem B 将 positive weights 下 extremal metric 存在与 relative weighted Mabuchi coercivity 等价；polarized 情形给 relative uniform weighted K-stability，regular quotient 对应 possibly irregular Sasaki。",
       "techniques": [
-        "weighted K-stability",
-        "Sasaki",
-        "YTD"
+        "Chern–Lu",
+        "weighted Laplacian",
+        "moment-map Hessian",
+        "Mabuchi coercivity",
+        "regular Sasaki quotient"
       ],
-      "breakthrough": "扩大加权稳定性对应的权函数范围。",
-      "limitations": "去掉一项 weight 条件不等于去掉 correspondence 的其余稳定性和几何假设。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "处理 log-convex 等实际 Sasaki weight，使原先受 log-concavity 限制的对应适用。",
+      "limitations": "v、w 仍为 smooth positive weights；algebraic correspondence 需 polarization。Sasaki 推论限于指定 regular quotient 所生成的 family，不能视作任意 CR/Reeb deformation 的无条件分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.10216v1 · PDF 第 3、5 页",
       "aiReview": {
-        "status": "needs_review",
+        "status": "full_text_searched",
         "checkedAt": "2026-10-08T03:05:19.913671+00:00",
         "version": 1,
         "sourceUrl": "https://arxiv.org/pdf/2610.10216v1",
         "contentHash": "f0e067da80dce5007e29f926c2e328703eb09be3fbd9b1232c2fe28cb21abfcb",
         "pages": 30,
-        "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。",
         "ruleVersion": "ai-disclosure-search-v4",
         "metadataHash": "e74357ac390694580871d8a4f1ae43f54a6c46ca8b55ab80774b87a1eae0e35c"
       },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 94,
       "priorityReason": "扩大加权稳定性对应的权函数范围。"
     },
@@ -96,27 +105,36 @@
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "extremal Sasaki 与 weighted K-stability",
-          "workSummary": "去掉 weighted Yau–Tian–Donaldson correspondence 中 weight 的 log-concavity 条件，应用于 extremal Sasaki 与 conformally Kähler Einstein–Maxwell 几何。",
+          "workSummary": "Theorem A 以 Chern–Lu 代替 Aubin–Yau 获得不需 log-concavity 的 weighted cscK integral Laplacian estimate，Theorem B 将 positive weights 下 extremal metric 存在与 relative weighted Mabuchi coercivity 等价；polarized 情形给 relative uniform weighted K-stability，regular quotient 对应 possibly irregular Sasaki。",
           "techniques": [
-            "weighted K-stability",
-            "Sasaki",
-            "YTD"
+            "Chern–Lu",
+            "weighted Laplacian",
+            "moment-map Hessian",
+            "Mabuchi coercivity",
+            "regular Sasaki quotient"
           ],
-          "breakthrough": "扩大加权稳定性对应的权函数范围。",
-          "limitations": "去掉一项 weight 条件不等于去掉 correspondence 的其余稳定性和几何假设。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "处理 log-convex 等实际 Sasaki weight，使原先受 log-concavity 限制的对应适用。",
+          "limitations": "v、w 仍为 smooth positive weights；algebraic correspondence 需 polarization。Sasaki 推论限于指定 regular quotient 所生成的 family，不能视作任意 CR/Reeb deformation 的无条件分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.10216v1 · PDF 第 3、5 页",
           "aiReview": {
-            "status": "needs_review",
+            "status": "full_text_searched",
             "checkedAt": "2026-10-08T03:05:19.913671+00:00",
             "version": 1,
             "sourceUrl": "https://arxiv.org/pdf/2610.10216v1",
             "contentHash": "f0e067da80dce5007e29f926c2e328703eb09be3fbd9b1232c2fe28cb21abfcb",
             "pages": 30,
-            "note": "全文关键词检索尚有待核对段落或文本提取缺口，不能据此认定未使用 AI。",
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 基于作者既有 Chern–Lu 路线给 Theorem 2.1 及 twisted 版本的策略，主要贡献为分析 I₁ 与辅助函数 H；作者比较旧稿、简化并重写估计，另用 LLM 润色英文。",
             "ruleVersion": "ai-disclosure-search-v4",
             "metadataHash": "e74357ac390694580871d8a4f1ae43f54a6c46ca8b55ab80774b87a1eae0e35c"
           },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 94,
           "priorityReason": "扩大加权稳定性对应的权函数范围。"
         },

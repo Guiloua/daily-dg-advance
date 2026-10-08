@@ -25,22 +25,45 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-08T02:30:35.282550+00:00",
         "contentHash": "5e76a9c9f7dacec401c85a0847b0e9edeec940c73e1b4c9f4255f8ba5b47bdce"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.10461v1",
+        "observedAt": "2026-10-08T03:09:19.193366+00:00",
+        "contentHash": "980d1a56c7eabf2782077477feb72799547bf42406a0f6d1dbfdf1e11a6d51dc"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "MCF extinction 的 sharp dynamical isoperimetry",
-      "workSummary": "作者证明给定初始 area 下 round sphere 最大化 level-set 与 integral Brakke flow 的 extinction time，并给 mean-convex arrival-time Lᵖ 及 outward-minimizing spacetime-track 的 sharp volume bound。",
+      "workSummary": "Theorem 1.1 对 smooth bounded Ω⊂Rⁿ⁺¹ 的 level-set flow 与初始 measure Hⁿ⌞∂Ω 的 integral Brakke flow 给 Text≤(P(Ω)/|Sⁿ|)^(2/n)/(2n)；等号分别需 ball 和 multiplicity-one standard shrinking sphere。outward-minimizing hull 加 elliptic regularization、mean-convex smoothing 将 smooth 估计传至弱流，另得 arrival-time sharp Lᵖ bound。",
       "techniques": [
-        "level-set",
-        "Brakke",
-        "arrival time",
-        "isoperimetry"
+        "outward-minimizing hull",
+        "elliptic regularization",
+        "mean-convex smoothing",
+        "rigidity convergence"
       ],
-      "breakthrough": "把静态等周几何推进到 extinction time 与 spacetime volume。",
-      "limitations": "Brakke 重数、初始 hypersurface 与 outward-minimizing 假设分别用于不同定理；等号条件不能跨版本移用。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "把已有 smooth mean-convex sharp bound 推进到可跨复杂奇点的 level-set 与 integral Brakke 流。",
+      "limitations": "Brakke 初始 measure 为指定重数一的 hypersurface measure；ball 初值本身不能强迫任意 Brakke flow 取等。arrival-time 结果要求 mean-convex，space-time volume 版本另需 outward-minimizing。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.10461v1 · PDF 第 8 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-08T03:09:19.193366+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.10461v1",
+        "contentHash": "980d1a56c7eabf2782077477feb72799547bf42406a0f6d1dbfdf1e11a6d51dc",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "19de7de6e65c7ab83db21b5cea1da11d1d4013f56bb90df082caecec4ad20e8f"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 98,
       "priorityReason": "把静态等周几何推进到 extinction time 与 spacetime volume。"
     },
@@ -75,22 +98,45 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-08T02:30:35.282550+00:00",
             "contentHash": "5e76a9c9f7dacec401c85a0847b0e9edeec940c73e1b4c9f4255f8ba5b47bdce"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.10461v1",
+            "observedAt": "2026-10-08T03:09:19.193366+00:00",
+            "contentHash": "980d1a56c7eabf2782077477feb72799547bf42406a0f6d1dbfdf1e11a6d51dc"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "MCF extinction 的 sharp dynamical isoperimetry",
-          "workSummary": "作者证明给定初始 area 下 round sphere 最大化 level-set 与 integral Brakke flow 的 extinction time，并给 mean-convex arrival-time Lᵖ 及 outward-minimizing spacetime-track 的 sharp volume bound。",
+          "workSummary": "Theorem 1.1 对 smooth bounded Ω⊂Rⁿ⁺¹ 的 level-set flow 与初始 measure Hⁿ⌞∂Ω 的 integral Brakke flow 给 Text≤(P(Ω)/|Sⁿ|)^(2/n)/(2n)；等号分别需 ball 和 multiplicity-one standard shrinking sphere。outward-minimizing hull 加 elliptic regularization、mean-convex smoothing 将 smooth 估计传至弱流，另得 arrival-time sharp Lᵖ bound。",
           "techniques": [
-            "level-set",
-            "Brakke",
-            "arrival time",
-            "isoperimetry"
+            "outward-minimizing hull",
+            "elliptic regularization",
+            "mean-convex smoothing",
+            "rigidity convergence"
           ],
-          "breakthrough": "把静态等周几何推进到 extinction time 与 spacetime volume。",
-          "limitations": "Brakke 重数、初始 hypersurface 与 outward-minimizing 假设分别用于不同定理；等号条件不能跨版本移用。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "把已有 smooth mean-convex sharp bound 推进到可跨复杂奇点的 level-set 与 integral Brakke 流。",
+          "limitations": "Brakke 初始 measure 为指定重数一的 hypersurface measure；ball 初值本身不能强迫任意 Brakke flow 取等。arrival-time 结果要求 mean-convex，space-time volume 版本另需 outward-minimizing。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.10461v1 · PDF 第 8 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-08T03:09:19.193366+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.10461v1",
+            "contentHash": "980d1a56c7eabf2782077477feb72799547bf42406a0f6d1dbfdf1e11a6d51dc",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 用于文献检索、语言编辑及 Proposition 6.1 rigidity 讨论中的 convergence 分析；outward-minimizing hull、elliptic regularization 和 smoothing 的关键策略由作者提出。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "19de7de6e65c7ab83db21b5cea1da11d1d4013f56bb90df082caecec4ad20e8f"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 98,
           "priorityReason": "把静态等周几何推进到 extinction time 与 spacetime volume。"
         },
