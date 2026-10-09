@@ -16,17 +16,54 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-08T07:17:27Z",
+      "updatedAt": "2026-10-08T07:17:27Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-09T02:31:40.273001+00:00",
         "contentHash": "d094bfd273bce3389dd3da63af999cc46a82b4738428ac0d2638253f320938d2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:28.418625+00:00",
+        "contentHash": "366aa6ca97ccfaf6e3a533fab9f77bc2b52af63be13554765a4daea479d20118"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+      "workSummary": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+      "techniques": [
+        "微分平坦性",
+        "隐式 Euler",
+        "反馈线性化"
+      ],
+      "breakthrough": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+      "limitations": "主要属于控制理论，与几何日报核心方向距离较远。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T03:00:04.808738+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.11386v1",
+        "contentHash": "69f253f2564d2992107647ed018b2a82e1a4dca20ddab5a7464a5a96ef0651bd",
+        "pages": 7,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "67cc01f880f74281fbd12477f1e09be9471bf8f7e7358a15420745fdb693c8c1"
+      },
+      "priorityScore": 37,
+      "priorityReason": "摘要级阅读线索：从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+      "lowPriorityReason": "主要属于控制理论，与几何日报核心方向距离较远；与本日报的几何研究主线关联较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper addresses the design of flatness-based tracking controllers for backward-flat nonlinear discrete-time systems. First, we show that backward-flat discrete-time systems can be constructively obtained from differentially flat continuous-time systems by applying an implicit Euler discretization to a structurally flat triangular representation. Subsequently, two approaches for the exact linearization of backward-flat systems are considered. Besides a dynamic feedback based on prelongations, we show that a linearizing feedback involving lower-order backward-shifts of the flat output can be employed without explicitly implementing the corresponding dynamic extension. This allows the order of the resulting tracking error dynamics to be reduced while requiring only stored values of past system trajectories. Based on the resulting linear input-output representation, flatness-based tracking control laws are derived. The proposed discretization and controller design are illustrated for a 2D gantry crane.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +82,54 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-08T07:17:27Z",
+          "updatedAt": "2026-10-08T07:17:27Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-09T02:31:40.273001+00:00",
             "contentHash": "d094bfd273bce3389dd3da63af999cc46a82b4738428ac0d2638253f320938d2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:28.418625+00:00",
+            "contentHash": "366aa6ca97ccfaf6e3a533fab9f77bc2b52af63be13554765a4daea479d20118"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+          "workSummary": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+          "techniques": [
+            "微分平坦性",
+            "隐式 Euler",
+            "反馈线性化"
+          ],
+          "breakthrough": "从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+          "limitations": "主要属于控制理论，与几何日报核心方向距离较远。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T03:00:04.808738+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.11386v1",
+            "contentHash": "69f253f2564d2992107647ed018b2a82e1a4dca20ddab5a7464a5a96ef0651bd",
+            "pages": 7,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "67cc01f880f74281fbd12477f1e09be9471bf8f7e7358a15420745fdb693c8c1"
+          },
+          "priorityScore": 37,
+          "priorityReason": "摘要级阅读线索：从连续系统的隐式 Euler 离散化构造 backward-flat 系统，并设计降低跟踪误差动力阶数的反馈控制。",
+          "lowPriorityReason": "主要属于控制理论，与几何日报核心方向距离较远；与本日报的几何研究主线关联较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper addresses the design of flatness-based tracking controllers for backward-flat nonlinear discrete-time systems. First, we show that backward-flat discrete-time systems can be constructively obtained from differentially flat continuous-time systems by applying an implicit Euler discretization to a structurally flat triangular representation. Subsequently, two approaches for the exact linearization of backward-flat systems are considered. Besides a dynamic feedback based on prelongations, we show that a linearizing feedback involving lower-order backward-shifts of the flat output can be employed without explicitly implementing the corresponding dynamic extension. This allows the order of the resulting tracking error dynamics to be reduced while requiring only stored values of past system trajectories. Based on the resulting linear input-output representation, flatness-based tracking control laws are derived. The proposed discretization and controller design are illustrated for a 2D gantry crane.",
+          "version": 1
+        }
       }
     }
   ]

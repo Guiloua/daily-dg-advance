@@ -18,17 +18,63 @@
       ],
       "primaryCategory": "cs.CG",
       "comment": "7 pages, 1 figure, 1 table",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-08T17:39:27Z",
+      "updatedAt": "2026-10-08T17:39:27Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-09T02:31:53.057672+00:00",
         "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:51.032897+00:00",
+        "contentHash": "a45896395d3e8d55879ae492c400cdec54f2ca297a1f74a8404b57b3f5f61993"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "证明单个连通三维 polycube 仅靠平移铺满空间的判定问题为 co-RE 完全，因而不可判定。",
+      "workSummary": "通过 Wang 铺砌、双素数 Sudoku 编码、周期商上的多瓷砖合并及连通化归约，证明单个连通三维 polycube 仅靠平移铺满 Z³ 或 R³ 的判定为 co-RE 完全；文中列出 Lean 的连通性、铺砌定义及四个主定理接口。",
+      "techniques": [
+        "Wang 铺砌归约",
+        "双素数 Sudoku",
+        "周期商编码",
+        "Lean 形式化"
+      ],
+      "breakthrough": "把三维平移铺砌不可判定性推进到单个连通瓷砖。",
+      "limitations": "本文是证明概要，完整细节在外部 Lean 仓库及 LLM 技术稿；此次已读声明和接口，未独立运行 Lean 或核验完整形式化依赖。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露大量使用 GPT 与 Claude 模型寻找、撰写并 Lean 形式化证明；另有模型生成的长技术文章，本文只给面向读者的概要，不能把 OpenAI 旧瓷砖的引用单独算作本稿使用。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.12392v1 · PDF 第 5–6 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T02:58:49.291011+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.12392v1",
+        "contentHash": "6e4d69a15a15375a742b0510ce666d92688a2a717742e42a2889ebd2e41f3526",
+        "pages": 7,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露大量使用 GPT 与 Claude 模型寻找、撰写并 Lean 形式化证明；另有模型生成的长技术文章，本文只给面向读者的概要，不能把 OpenAI 旧瓷砖的引用单独算作本稿使用。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "88aec91e3db153e7d3b7691ea647c8d51f634f04a3d41985f785bf03e1587511"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 48,
+      "priorityReason": "摘要级阅读线索：证明单个连通三维 polycube 仅靠平移铺满空间的判定问题为 co-RE 完全，因而不可判定。",
+      "lowPriorityReason": "属于离散可计算性方向；摘要提到既有 OpenAI 瓷砖不是本文 AI 使用披露；与本日报的几何研究主线关联较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove co-RE-completeness, and thus undecidability, of the following problem: given a single (connected) polycube, decide whether it tiles 3D Euclidean space by translations. We reduce from Wang tiling using the decorated two-prime Sudoku construction of Greenfeld and Tao and a cyclic encoding adapted from OpenAI's 3D aperiodic tile, and apply a reduction of Kim to make the prototile connected (via faces). Dimension three is optimal: translational monotiling is known to be decidable in $\\mathbb{Z}^2$ and for a single (possibly disconnected) polyomino in $\\mathbb{R}^2$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -49,17 +95,63 @@
           ],
           "primaryCategory": "cs.CG",
           "comment": "7 pages, 1 figure, 1 table",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-08T17:39:27Z",
+          "updatedAt": "2026-10-08T17:39:27Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-09T02:31:53.057672+00:00",
             "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:51.032897+00:00",
+            "contentHash": "a45896395d3e8d55879ae492c400cdec54f2ca297a1f74a8404b57b3f5f61993"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "证明单个连通三维 polycube 仅靠平移铺满空间的判定问题为 co-RE 完全，因而不可判定。",
+          "workSummary": "通过 Wang 铺砌、双素数 Sudoku 编码、周期商上的多瓷砖合并及连通化归约，证明单个连通三维 polycube 仅靠平移铺满 Z³ 或 R³ 的判定为 co-RE 完全；文中列出 Lean 的连通性、铺砌定义及四个主定理接口。",
+          "techniques": [
+            "Wang 铺砌归约",
+            "双素数 Sudoku",
+            "周期商编码",
+            "Lean 形式化"
+          ],
+          "breakthrough": "把三维平移铺砌不可判定性推进到单个连通瓷砖。",
+          "limitations": "本文是证明概要，完整细节在外部 Lean 仓库及 LLM 技术稿；此次已读声明和接口，未独立运行 Lean 或核验完整形式化依赖。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露大量使用 GPT 与 Claude 模型寻找、撰写并 Lean 形式化证明；另有模型生成的长技术文章，本文只给面向读者的概要，不能把 OpenAI 旧瓷砖的引用单独算作本稿使用。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.12392v1 · PDF 第 5–6 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T02:58:49.291011+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.12392v1",
+            "contentHash": "6e4d69a15a15375a742b0510ce666d92688a2a717742e42a2889ebd2e41f3526",
+            "pages": 7,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露大量使用 GPT 与 Claude 模型寻找、撰写并 Lean 形式化证明；另有模型生成的长技术文章，本文只给面向读者的概要，不能把 OpenAI 旧瓷砖的引用单独算作本稿使用。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "88aec91e3db153e7d3b7691ea647c8d51f634f04a3d41985f785bf03e1587511"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 48,
+          "priorityReason": "摘要级阅读线索：证明单个连通三维 polycube 仅靠平移铺满空间的判定问题为 co-RE 完全，因而不可判定。",
+          "lowPriorityReason": "属于离散可计算性方向；摘要提到既有 OpenAI 瓷砖不是本文 AI 使用披露；与本日报的几何研究主线关联较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove co-RE-completeness, and thus undecidability, of the following problem: given a single (connected) polycube, decide whether it tiles 3D Euclidean space by translations. We reduce from Wang tiling using the decorated two-prime Sudoku construction of Greenfeld and Tao and a cyclic encoding adapted from OpenAI's 3D aperiodic tile, and apply a reduction of Kim to make the prototile connected (via faces). Dimension three is optimal: translational monotiling is known to be decidable in $\\mathbb{Z}^2$ and for a single (possibly disconnected) polyomino in $\\mathbb{R}^2$.",
+          "version": 1
+        }
       }
     }
   ]

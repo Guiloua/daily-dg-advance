@@ -17,17 +17,62 @@
       ],
       "primaryCategory": "math.CO",
       "comment": "47 pages, 1 table",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-08T16:50:24Z",
+      "updatedAt": "2026-10-08T16:50:24Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-09T02:31:53.057672+00:00",
         "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:51.029793+00:00",
+        "contentHash": "4c94cfe13c761c0f7447ac80cccb5eafa510165f16b31e6008b6e5bf270a32ea"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+      "workSummary": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+      "techniques": [
+        "禁距图",
+        "可测色数",
+        "独立密度"
+      ],
+      "breakthrough": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+      "limitations": "多禁距版本要求各距离平方为有理数。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者详细披露 ChatGPT 找到关键参考文献，模型提出并初证多个定理及关键逆命题，协助完成主定理证明、改进界、纠错并起草编辑文稿。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.12301v1 · PDF 第 37 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T02:55:43.711014+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.12301v1",
+        "contentHash": "58e7154a0abb3eb8907532cc090cdfbb06a044244798c7a375684aa6b724a7af",
+        "pages": 47,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者详细披露 ChatGPT 找到关键参考文献，模型提出并初证多个定理及关键逆命题，协助完成主定理证明、改进界、纠错并起草编辑文稿。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ef3ee28e37e581f396c4c2667e733cbc84f18ffba7d1ab749dc0dc6a55c1be22"
+      },
+      "aiUsage": [
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 58,
+      "priorityReason": "摘要级阅读线索：在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。"
+    },
+    "analysisBasis": {
+      "abstract": "Due to the availability of powerful analytic techniques, vastly superior lower bounds are known for the measurable chromatic number of Euclidean spaces compared to their ordinary chromatic number. Indeed, even the breakthrough lower bound of 5 for the famous Hadwiger-Nelson problem lagged over 35 years behind that of the measurable setting. This raises the fundamental question of whether the measurable and ordinary chromatic number of Euclidean spaces differ as conjectured by Székely in 1984. Our main result is that $\\overline\\alpha(\\mathbb{R}^4)=m_1(\\mathbb{R}^4)$ and $\\chi(\\mathbb{R}^4)=\\chi^{(m)}(\\mathbb{R}^4)$, and for $d\\ge5$ that \\[ \\overline\\alpha(\\mathbb{Q}^d) = \\overline\\alpha(\\mathbb{R}^d)=m_1(\\mathbb{R}^d) \\qquad\\text{and}\\qquad \\chi(\\mathbb{Q}^d) = \\chi(\\mathbb{R}^d)=\\chi^{(m)}(\\mathbb{R}^d). \\] Our theorem also holds for multiple forbidden distances $D=\\{d_1,\\ldots,d_t\\}$ provided that $d_1^2,\\ldots,d_t^2 \\in \\mathbb{Q}$. As a consequence, we immediately lift numerous measurable chromatic number results into the ordinary setting. We also take the opportunity to further optimize the new bounds. For multiple distances, Erdős asked whether the chromatic number of $\\mathbb{R}^d$ with up to $k$ forbidden distances $D$ grows exponentially in $k$. By a theorem of Bukh, we obtain for $d \\ge 4$ that \\[ \\sup_{|D|=k}\\chi_D(\\mathbb{R}^d) \\ge m_1(\\mathbb{R}^d)^{-k}. \\] Making progress on another problem of Erdős, we prove that \\[ (2+o(1))^d \\le \\chi(\\mathbb{R}^d) \\le \\left(\\frac{3\\sqrt{3}}{4}+o(1)\\right)^d. \\] We also vastly improve the lower bounds for $\\chi(\\mathbb{R}^d)$ for small $d\\ge4$. We expect that our techniques could be developed much further. This includes the possibility of extending our main theorem that $\\chi(\\mathbb{R}^d)=\\chi^{(m)}(\\mathbb{R}^d)$ for $d\\ge 4$ to $d=3$ or possibly even to $d=2$ to tackle the Hadwiger-Nelson problem.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +92,62 @@
           ],
           "primaryCategory": "math.CO",
           "comment": "47 pages, 1 table",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-08T16:50:24Z",
+          "updatedAt": "2026-10-08T16:50:24Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-09T02:31:53.057672+00:00",
             "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:51.029793+00:00",
+            "contentHash": "4c94cfe13c761c0f7447ac80cccb5eafa510165f16b31e6008b6e5bf270a32ea"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+          "workSummary": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+          "techniques": [
+            "禁距图",
+            "可测色数",
+            "独立密度"
+          ],
+          "breakthrough": "在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。",
+          "limitations": "多禁距版本要求各距离平方为有理数。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者详细披露 ChatGPT 找到关键参考文献，模型提出并初证多个定理及关键逆命题，协助完成主定理证明、改进界、纠错并起草编辑文稿。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.12301v1 · PDF 第 37 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T02:55:43.711014+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.12301v1",
+            "contentHash": "58e7154a0abb3eb8907532cc090cdfbb06a044244798c7a375684aa6b724a7af",
+            "pages": 47,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者详细披露 ChatGPT 找到关键参考文献，模型提出并初证多个定理及关键逆命题，协助完成主定理证明、改进界、纠错并起草编辑文稿。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ef3ee28e37e581f396c4c2667e733cbc84f18ffba7d1ab749dc0dc6a55c1be22"
+          },
+          "aiUsage": [
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 58,
+          "priorityReason": "摘要级阅读线索：在四维及更高维的指定禁距情形，证明欧氏空间普通与可测色数相等，从而把可测色数下界转移到普通着色。"
+        },
+        "analysisBasis": {
+          "abstract": "Due to the availability of powerful analytic techniques, vastly superior lower bounds are known for the measurable chromatic number of Euclidean spaces compared to their ordinary chromatic number. Indeed, even the breakthrough lower bound of 5 for the famous Hadwiger-Nelson problem lagged over 35 years behind that of the measurable setting. This raises the fundamental question of whether the measurable and ordinary chromatic number of Euclidean spaces differ as conjectured by Székely in 1984. Our main result is that $\\overline\\alpha(\\mathbb{R}^4)=m_1(\\mathbb{R}^4)$ and $\\chi(\\mathbb{R}^4)=\\chi^{(m)}(\\mathbb{R}^4)$, and for $d\\ge5$ that \\[ \\overline\\alpha(\\mathbb{Q}^d) = \\overline\\alpha(\\mathbb{R}^d)=m_1(\\mathbb{R}^d) \\qquad\\text{and}\\qquad \\chi(\\mathbb{Q}^d) = \\chi(\\mathbb{R}^d)=\\chi^{(m)}(\\mathbb{R}^d). \\] Our theorem also holds for multiple forbidden distances $D=\\{d_1,\\ldots,d_t\\}$ provided that $d_1^2,\\ldots,d_t^2 \\in \\mathbb{Q}$. As a consequence, we immediately lift numerous measurable chromatic number results into the ordinary setting. We also take the opportunity to further optimize the new bounds. For multiple distances, Erdős asked whether the chromatic number of $\\mathbb{R}^d$ with up to $k$ forbidden distances $D$ grows exponentially in $k$. By a theorem of Bukh, we obtain for $d \\ge 4$ that \\[ \\sup_{|D|=k}\\chi_D(\\mathbb{R}^d) \\ge m_1(\\mathbb{R}^d)^{-k}. \\] Making progress on another problem of Erdős, we prove that \\[ (2+o(1))^d \\le \\chi(\\mathbb{R}^d) \\le \\left(\\frac{3\\sqrt{3}}{4}+o(1)\\right)^d. \\] We also vastly improve the lower bounds for $\\chi(\\mathbb{R}^d)$ for small $d\\ge4$. We expect that our techniques could be developed much further. This includes the possibility of extending our main theorem that $\\chi(\\mathbb{R}^d)=\\chi^{(m)}(\\mathbb{R}^d)$ for $d\\ge 4$ to $d=3$ or possibly even to $d=2$ to tackle the Hadwiger-Nelson problem.",
+          "version": 1
+        }
       }
     }
   ]

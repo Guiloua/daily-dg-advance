@@ -16,17 +16,61 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "5 pages, 1 figure",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-07T23:52:22Z",
+      "updatedAt": "2026-10-07T23:52:22Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-09T02:31:53.057672+00:00",
         "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:28.415300+00:00",
+        "contentHash": "f69a9d57934bffa2dcdea18946e2e2a619e58465d81e0e5e60e0d558e595cc97"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶",
+      "workSummary": "求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶；还给出放宽条件的界。",
+      "techniques": [
+        "极体体积",
+        "凸帽估计",
+        "Lean 形式化"
+      ],
+      "breakthrough": "还给出放宽条件的界。",
+      "limitations": "主公式要求极帽分母的乘积条件，其他界有单独范围。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 OpenAI Codex 辅助数学探索、Lean 证明开发、文献核查和手稿准备；研究由作者主导。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.11014v1 · PDF 第 4 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T02:56:16.585751+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.11014v1",
+        "contentHash": "9ab46c4fd95e4ad9d825442f46ea8e7a03bd594313b1ca047b7359c9bc431550",
+        "pages": 5,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 OpenAI Codex 辅助数学探索、Lean 证明开发、文献核查和手稿准备；研究由作者主导。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c8966a63dfe5c0bc476d326368801dc0f351718c320d61fb2d4f81b35a4682b0"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 56,
+      "priorityReason": "摘要级阅读线索：求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the minimum volume product of centrally symmetric polytopes obtained by adding facet apices to a cube while fixing their total outward height. Heights and tangential coordinates vary subject to a product condition on the polar-cap denominators. In every dimension at least two, the minimum has an explicit formula, attained by concentrating the height at one opposite pair of corner apices. For positive height in dimensions at least three, every minimizing array has this structure. The product condition strictly extends coordinatewise quadratic constraints. We also obtain two bounds without that condition: a four-dimensional Mahler bound for a specified height range, and a correction measuring volume generated jointly by two apices. The latter certifies a continuous family outside the preceding sufficient conditions. The proof combines known cap volumes with a sharp aggregate height estimate and a double-pyramid construction. Lean~4 verifies the actual-volume minimum, the necessary equality structure and both extensions.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +89,61 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "5 pages, 1 figure",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-07T23:52:22Z",
+          "updatedAt": "2026-10-07T23:52:22Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-09T02:31:53.057672+00:00",
             "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:28.415300+00:00",
+            "contentHash": "f69a9d57934bffa2dcdea18946e2e2a619e58465d81e0e5e60e0d558e595cc97"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶",
+          "workSummary": "求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶；还给出放宽条件的界。",
+          "techniques": [
+            "极体体积",
+            "凸帽估计",
+            "Lean 形式化"
+          ],
+          "breakthrough": "还给出放宽条件的界。",
+          "limitations": "主公式要求极帽分母的乘积条件，其他界有单独范围。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 OpenAI Codex 辅助数学探索、Lean 证明开发、文献核查和手稿准备；研究由作者主导。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.11014v1 · PDF 第 4 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T02:56:16.585751+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.11014v1",
+            "contentHash": "9ab46c4fd95e4ad9d825442f46ea8e7a03bd594313b1ca047b7359c9bc431550",
+            "pages": 5,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 OpenAI Codex 辅助数学探索、Lean 证明开发、文献核查和手稿准备；研究由作者主导。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c8966a63dfe5c0bc476d326368801dc0f351718c320d61fb2d4f81b35a4682b0"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 56,
+          "priorityReason": "摘要级阅读线索：求出固定总外凸高度的立方体加顶点对称多面体体积积最小值，最优配置把高度集中到一对相对角顶"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the minimum volume product of centrally symmetric polytopes obtained by adding facet apices to a cube while fixing their total outward height. Heights and tangential coordinates vary subject to a product condition on the polar-cap denominators. In every dimension at least two, the minimum has an explicit formula, attained by concentrating the height at one opposite pair of corner apices. For positive height in dimensions at least three, every minimizing array has this structure. The product condition strictly extends coordinatewise quadratic constraints. We also obtain two bounds without that condition: a four-dimensional Mahler bound for a specified height range, and a correction measuring volume generated jointly by two apices. The latter certifies a continuous family outside the preceding sufficient conditions. The proof combines known cap volumes with a sharp aggregate height estimate and a double-pyramid construction. Lean~4 verifies the actual-volume minimum, the necessary equality structure and both extensions.",
+          "version": 1
+        }
       }
     }
   ]

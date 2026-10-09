@@ -23,17 +23,61 @@
         "math.MG"
       ],
       "primaryCategory": "quant-ph",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-04T00:38:20Z",
+      "updatedAt": "2026-10-04T00:38:20Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-09T02:31:53.057672+00:00",
         "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:17.004467+00:00",
+        "contentHash": "a05ea67d3e5b108414721e3eeb91cd28e4a2e16b73fa7ee209b36c236589b8c8"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "建立量子稳定子码的 Lee 度量框架",
+      "workSummary": "建立量子稳定子码的 Lee 度量框架；联合度量可区别 X、Z 与 Y 型小位移误差，并给出 Lee-LDPC 码距离的线性上界。",
+      "techniques": [
+        "稳定子码",
+        "Lee 度量",
+        "Gray 映射"
+      ],
+      "breakthrough": "联合度量可区别 X、Z 与 Y 型小位移误差，并给出 Lee-LDPC 码距离的线性上界。",
+      "limitations": "结论面向离散小位移噪声与指定码族。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 与 Claude 在作者指示下帮助理解数的几何、改善行文并生成图表；全部主张由作者审核核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.04834v1 · PDF 第 64 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T02:59:41.440822+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.04834v1",
+        "contentHash": "1bac2b5373dc56da432006fa1188b17fff92b95c28dfcab2901f9d891e180cd1",
+        "pages": 111,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 与 Claude 在作者指示下帮助理解数的几何、改善行文并生成图表；全部主张由作者审核核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "aefd8ea17d6c570852301fd94676d14b2a01884b49d028ceaf9f722387481817"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 42,
+      "priorityReason": "摘要级阅读线索：建立量子稳定子码的 Lee 度量框架",
+      "lowPriorityReason": "结论面向离散小位移噪声与指定码族；与本日报的几何研究主线关联较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "We introduce a quantum coding framework for discrete small-shift noise, in which errors on qudits are modeled as low-weight $X$- and $Z$-type Pauli shifts, analogous to small phase-space displacements in continuous-variable systems. This structure is approximately respected by nuclear-spin noise and captured by the Lee metric, motivating a quantum extension of classical Lee-metric coding theory. We develop such a formalism for stabilizer codes over $\\mathbb{Z}_q$ for arbitrary $q$, using joint and separate Lee metrics for the $X$- and $Z$-components of errors. For qubits, the joint metric counts $Y$ errors twice and can yield codes that detect and correct $X$ and $Z$ errors with fewer physical qubits than codes designed for the conventional Hamming metric. We discuss Lee-weight spreading under Clifford gates and qubitize codes over $\\mathbb{Z}_4$ via the Gray map, finding codes with two-fold transversal non-qubit-Clifford gates. For quantum CSS Lee-LDPC codes on $n$ qudits, we prove that the Lee distance cannot exceed $O(n)$, uniformly in $q$, demonstrating an unexpected obstruction to using the large internal Hilbert space of a large-$q$ qudit to make high-Lee-distance codes. Under local Metropolis dynamics, certain classical $q$-ary ``helical repetition codes'' have exponentially long memory times at fixed temperature for sufficiently large $q$ (that grows with system length), which can be understood as spontaneous symmetry breaking at finite temperature, even in local one-dimensional models. Hypergraph products of these helical repetition codes provide local two-dimensional quantum codes that inherit self-correction for $Z$ errors, but self-correction for $X$ errors remains an open question.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -59,17 +103,61 @@
             "math.MG"
           ],
           "primaryCategory": "quant-ph",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-04T00:38:20Z",
+          "updatedAt": "2026-10-04T00:38:20Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-09T02:31:53.057672+00:00",
             "contentHash": "d0303b9345cea6881bc5bedb573d8f647ccd520cbe0bd55e15210d39a6908480"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:17.004467+00:00",
+            "contentHash": "a05ea67d3e5b108414721e3eeb91cd28e4a2e16b73fa7ee209b36c236589b8c8"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "建立量子稳定子码的 Lee 度量框架",
+          "workSummary": "建立量子稳定子码的 Lee 度量框架；联合度量可区别 X、Z 与 Y 型小位移误差，并给出 Lee-LDPC 码距离的线性上界。",
+          "techniques": [
+            "稳定子码",
+            "Lee 度量",
+            "Gray 映射"
+          ],
+          "breakthrough": "联合度量可区别 X、Z 与 Y 型小位移误差，并给出 Lee-LDPC 码距离的线性上界。",
+          "limitations": "结论面向离散小位移噪声与指定码族。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 与 Claude 在作者指示下帮助理解数的几何、改善行文并生成图表；全部主张由作者审核核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.04834v1 · PDF 第 64 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T02:59:41.440822+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.04834v1",
+            "contentHash": "1bac2b5373dc56da432006fa1188b17fff92b95c28dfcab2901f9d891e180cd1",
+            "pages": 111,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 与 Claude 在作者指示下帮助理解数的几何、改善行文并生成图表；全部主张由作者审核核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "aefd8ea17d6c570852301fd94676d14b2a01884b49d028ceaf9f722387481817"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 42,
+          "priorityReason": "摘要级阅读线索：建立量子稳定子码的 Lee 度量框架",
+          "lowPriorityReason": "结论面向离散小位移噪声与指定码族；与本日报的几何研究主线关联较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "We introduce a quantum coding framework for discrete small-shift noise, in which errors on qudits are modeled as low-weight $X$- and $Z$-type Pauli shifts, analogous to small phase-space displacements in continuous-variable systems. This structure is approximately respected by nuclear-spin noise and captured by the Lee metric, motivating a quantum extension of classical Lee-metric coding theory. We develop such a formalism for stabilizer codes over $\\mathbb{Z}_q$ for arbitrary $q$, using joint and separate Lee metrics for the $X$- and $Z$-components of errors. For qubits, the joint metric counts $Y$ errors twice and can yield codes that detect and correct $X$ and $Z$ errors with fewer physical qubits than codes designed for the conventional Hamming metric. We discuss Lee-weight spreading under Clifford gates and qubitize codes over $\\mathbb{Z}_4$ via the Gray map, finding codes with two-fold transversal non-qubit-Clifford gates. For quantum CSS Lee-LDPC codes on $n$ qudits, we prove that the Lee distance cannot exceed $O(n)$, uniformly in $q$, demonstrating an unexpected obstruction to using the large internal Hilbert space of a large-$q$ qudit to make high-Lee-distance codes. Under local Metropolis dynamics, certain classical $q$-ary ``helical repetition codes'' have exponentially long memory times at fixed temperature for sufficiently large $q$ (that grows with system length), which can be understood as spontaneous symmetry breaking at finite temperature, even in local one-dimensional models. Hypergraph products of these helical repetition codes provide local two-dimensional quantum codes that inherit self-correction for $Z$ errors, but self-correction for $X$ errors remains an open question.",
+          "version": 1
+        }
       }
     }
   ]

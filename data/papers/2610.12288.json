@@ -17,17 +17,59 @@
         "math.ST"
       ],
       "primaryCategory": "stat.ML",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-08T16:44:25Z",
+      "updatedAt": "2026-10-08T16:44:25Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-09T02:31:40.273001+00:00",
         "contentHash": "d094bfd273bce3389dd3da63af999cc46a82b4738428ac0d2638253f320938d2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-09T02:38:51.029046+00:00",
+        "contentHash": "e3c675a193e9d89b87eaf9441dce8b133d96b68ea89843debf00b8a9bb6ef492"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交",
+      "workSummary": "设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交；输出不存在证书或复杂度受控的候选流形。",
+      "techniques": [
+        "代数完全交",
+        "量化几何估计",
+        "样本复杂度"
+      ],
+      "breakthrough": "输出不存在证书或复杂度受控的候选流形。",
+      "limitations": "只覆盖预先限定维数、次数和条件数的假设类。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露生成式 AI 用于语言编辑和头脑风暴，作者负责内容、准确性及结论；未把核心研究想法归因给模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.12288v1 · PDF 第 8 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-09T02:57:52.214465+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.12288v1",
+        "contentHash": "a12e88da98487d76e55ebabca4c0c9317f1da8318d58229a882ee6684603c604",
+        "pages": 75,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 用于语言编辑和头脑风暴，作者负责内容、准确性及结论；未把核心研究想法归因给模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "74343937719becad902f426ade5205ab06fd656bac6355809f10ee987d2fc280"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 54,
+      "priorityReason": "摘要级阅读线索：设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交"
+    },
+    "analysisBasis": {
+      "abstract": "Given independent and identically distributed samples samples from a probability distribution in a potentially high-dimensional real space, we study the problem of testing whether the distribution is concentrated near a real algebraic complete intersection of prescribed dimension, bounded degree, and bounded condition number. We design an explicit and effective learning procedure which either certifies the nonexistence of such a manifold, up to a controlled relaxation of the approximation threshold, or returns a candidate regression manifold with controlled geometric complexity. Equivalently, the procedure tests the manifold hypothesis within this hypothesis class. The proposed procedure relies on quantitative geometric estimates for regular polynomial systems, which lead to a tractable auxiliary optimization problem. We then develop a data-driven algorithm to solve this auxiliary optimization problem, establishing explicit bounds on its sample and arithmetic complexity.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +89,59 @@
             "math.ST"
           ],
           "primaryCategory": "stat.ML",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-08T16:44:25Z",
+          "updatedAt": "2026-10-08T16:44:25Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-09T02:31:40.273001+00:00",
             "contentHash": "d094bfd273bce3389dd3da63af999cc46a82b4738428ac0d2638253f320938d2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-09T02:38:51.029046+00:00",
+            "contentHash": "e3c675a193e9d89b87eaf9441dce8b133d96b68ea89843debf00b8a9bb6ef492"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交",
+          "workSummary": "设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交；输出不存在证书或复杂度受控的候选流形。",
+          "techniques": [
+            "代数完全交",
+            "量化几何估计",
+            "样本复杂度"
+          ],
+          "breakthrough": "输出不存在证书或复杂度受控的候选流形。",
+          "limitations": "只覆盖预先限定维数、次数和条件数的假设类。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露生成式 AI 用于语言编辑和头脑风暴，作者负责内容、准确性及结论；未把核心研究想法归因给模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.12288v1 · PDF 第 8 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-09T02:57:52.214465+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.12288v1",
+            "contentHash": "a12e88da98487d76e55ebabca4c0c9317f1da8318d58229a882ee6684603c604",
+            "pages": 75,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 用于语言编辑和头脑风暴，作者负责内容、准确性及结论；未把核心研究想法归因给模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "74343937719becad902f426ade5205ab06fd656bac6355809f10ee987d2fc280"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 54,
+          "priorityReason": "摘要级阅读线索：设计显式学习程序，检验样本是否接近给定维数、次数与条件数受控的实代数完全交"
+        },
+        "analysisBasis": {
+          "abstract": "Given independent and identically distributed samples samples from a probability distribution in a potentially high-dimensional real space, we study the problem of testing whether the distribution is concentrated near a real algebraic complete intersection of prescribed dimension, bounded degree, and bounded condition number. We design an explicit and effective learning procedure which either certifies the nonexistence of such a manifold, up to a controlled relaxation of the approximation threshold, or returns a candidate regression manifold with controlled geometric complexity. Equivalently, the procedure tests the manifold hypothesis within this hypothesis class. The proposed procedure relies on quantitative geometric estimates for regular polynomial systems, which lead to a tractable auxiliary optimization problem. We then develop a data-driven algorithm to solve this auxiliary optimization problem, establishing explicit bounds on its sample and arithmetic complexity.",
+          "version": 1
+        }
       }
     }
   ]
