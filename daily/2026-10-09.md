@@ -1,6 +1,20 @@
 # 几何前沿日报 · 2026-10-09
 
-已确认 43 篇，其他分类待补齐 · 解读 0 篇。
+已收录 75/75 · 解读 0/75 · 资料待补齐。
+
+## Quantum codes in the Lee metric
+
+Jinkang Guo、Yiqiu Han、Aranya Chakraborty、Shubham P. Jain、Tianhao Liu、Victor V. Albert、Andrew Lucas
+
+中文解读待补齐
+
+We introduce a quantum coding framework for discrete small-shift noise, in which errors on qudits are modeled as low-weight $X$- and $Z$-type Pauli shifts, analogous to small phase-space displacements in continuous-variable systems. This structure is approximately respected by nuclear-spin noise and captured by the Lee metric, motivating a quantum extension of classical Lee-metric coding theory. We develop such a formalism for stabilizer codes over $\mathbb{Z}_q$ for arbitrary $q$, using joint and separate Lee metrics for the $X$- and $Z$-components of errors. For qubits, the joint metric counts $Y$ errors twice and can yield codes that detect and correct $X$ and $Z$ errors with fewer physical qubits than codes designed for the conventional Hamming metric. We discuss Lee-weight spreading under Clifford gates and qubitize codes over $\mathbb{Z}_4$ via the Gray map, finding codes with two-fold transversal non-qubit-Clifford gates. For quantum CSS Lee-LDPC codes on $n$ qudits, we prove that the Lee distance cannot exceed $O(n)$, uniformly in $q$, demonstrating an unexpected obstruction to using the large internal Hilbert space of a large-$q$ qudit to make high-Lee-distance codes. Under local Metropolis dynamics, certain classical $q$-ary ``helical repetition codes'' have exponentially long memory times at fixed temperature for sufficiently large $q$ (that grows with system length), which can be understood as spontaneous symmetry breaking at finite temperature, even in local one-dimensional models. Hypergraph products of these helical repetition codes provide local two-dimensional quantum codes that inherit self-correction for $Z$ errors, but self-correction for $X$ errors remains an open question.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.04834)
 
 ## Korevaar-Schoen Energy and Interpolations of Fractional Sobolev mappings on Carnot groups
 
@@ -15,6 +29,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.10551)
+
+## Foliations forcing closed orbits
+
+Ellis Buckminster、Audrey Rosevear
+
+中文解读待补齐
+
+We study foliations which force every transverse flow to have a closed orbit. We fully characterize this property among $C^2$ finite depth foliations on atoroidal 3-manifolds. We also show that for many foliations, this property can be broken by a $C^0$-small modification of the foliation. We produce closed orbits using the theory of endperiodic maps, and we construct $C^1$ flows without closed orbits by inserting dynamical plugs transverse to foliations along curves of attracting holonomy.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10558)
 
 ## Edge-Connectivity versus Lin--Lu--Yau Curvature
 
@@ -44,6 +72,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.10575)
 
+## A Faithful Action of the Mapping Class Group $\mathrm{Mod}(S_g)$ on the $(2g-1)$-Sphere
+
+Shile Wang
+
+中文解读待补齐
+
+We prove that $\mathrm{Mod}(S_g)$ acts faithfully by orientation-preserving homeomorphisms on a $(2g-1)$-sphere when $g \geq 3$ using equivariant blow-up and bi-orderability of the Torelli group.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10577)
+
 ## Examples of topological sphere $λ$-self-expander
 
 Mengdan Qi
@@ -58,6 +100,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.10634)
 
+## The Erdős-Falconer distance problem in the integer lattice
+
+Eyvindur Ari Palsson、Jian-An Wang
+
+中文解读待补齐
+
+In this paper we propose and study what we call the Erdős-Falconer distance problem in the integer lattice. One motivation is Magyar's discrete analog of the result of Furstenberg, Katznelson, and Weiss, who showed that all arbitrarily large distances had to appear for a set of positive upper Banach density in $\mathbb{R}^d$, $d\geq 2$. Another motivation is the Falconer distance problem, which can be viewed as a refinement of a result of Steinhaus, dropping assumptions from positive Lebesgue measure to merely asking about the dimension of sets. In this context we thus want to lower the assumption of positive upper Banach density and yet obtain statements that guarantee that we have lots of distinct distances. All of these questions are also related to the Erdős distinct distance problem. Our naming is as for the finite field variant of the problem, acknowledging that parts of the problem share similarities with the Erdős distinct distance problem while others share similarities with the Falconer distance problem. The main tool we use are $\ell^p$-improving inequalities for discrete spherical averages, which to the best of our knowledge is the first application of such bounds. One can use results on the Erdős distinct distance problem to make progress on our conjecture but surprisingly, even if using the strongest available bounds in high dimensions using the mechanism of Solymosi and Vu, then in certain regimes our methods do better. While a resolution of the Erdős distinct distance problem would imply our unpinned conjecture then no results on either the Erdős or Falconer distance problem seem to imply any results for our pinned variant. We view this problem as a model problem that might ultimately contribute back to the original pinned distance problems.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10665)
+
+## Finite group actions on nonpositively curved 3-manifolds
+
+Bena Tshishiku、Zhengyu Zou
+
+中文解读待补齐
+
+We show that every orientation-preserving action of a finite group on a closed nonpositively curved 3-manifold preserves a nonpositively curved metric.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10730)
+
+## Bounds on Legendrian Double Twist Knots
+
+Viktória Földvári、Vera Vértesi
+
+中文解读待补齐
+
+We study Legendrian realizations of double twist knots in the standard tight contact 3-sphere. For the family K(4,m), we give upper bounds on the number of oriented and unoriented Legendrian isotopy classes of maximal Thurston--Bennequin representatives. The proof uses bypass techniques in convex surface theory and the classification of tight contact structures.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10747)
+
 ## On Cylindrical singularities of minimal hypersurfaces
 
 Aria Halavati、Luca Spolaor
@@ -71,6 +155,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.10754)
+
+## Lifting braids over $\mathbb{RP}^2$ and non-orientable Lefschetz fibrations
+
+Valentina Bais、Porter Morgan、Daniele Zuddas
+
+中文解读待补齐
+
+We show that, given a closed connected non-orientable surface $F$ and a simple branched cover $p \colon F \rightarrow \mathbb{RP}^2$ of degree $d \geq 5$, every self-diffeomorphism of $F$ is isotopic to the lift of a self-diffeomorphism of $\mathbb{RP}^2$ with respect to $p$. As an application, we show that every Lefschetz fibration over a connected surface $B$ with $\partial B\neq \emptyset$ and closed non-orientable regular fiber can be expressed as the composition of a simple cover of $B\times \mathbb{RP}^2$ branched over a surface braided over $B$ and projection onto the $B$-factor.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10757)
+
+## The rational homology of quotients of the curve complex
+
+Andrew Putman
+
+中文解读待补齐
+
+Let $\mathop{Mod}_{g,n}$ be the mapping class group of a genus-$g$ surface with $n$ punctures and let $\mathcal{C}_{g,n}$ be its curve complex. For a finite-index subgroup $G < \mathop{Mod}_{g,n}$, Boggi proved that $\widetilde{H}_k(\mathcal{C}_{g,n}/G;\mathbb{Q}) = 0$ for $g+n \gg k$. This plays an important role in the work of Putman-Wieland on the virtual first Betti number of $\mathop{Mod}_{g,n}$. The proof of Boggi's theorem uses mixed Hodge theory and is embedded in his flawed paper purporting to show that the mapping class group has the congruence subgroup property. We give a detailed exposition of Boggi's proof aimed at geometric topologists.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10775)
 
 ## K-Moduli Wall Crossing and Automorphic Forms for the Moduli Space of Rational Elliptic Surfaces
 
@@ -184,6 +296,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.10937)
 
+## Symmetric products of absolute Lipschitz retracts
+
+Leonid V. Kovalev
+
+中文解读待补齐
+
+We prove that the Qth symmetric product of an absolute $\lambda$-Lipschitz retract, equipped with the bottleneck matching metric, is an absolute $(3Q-2)\lambda$-Lipschitz retract. This answers a question of De Pauw about the target spaces of Almgren's Q-valued maps. The main tool is a reconstruction theorem for bounded products of metric stars with finitely many rays, modulo a finite permutation group: these quotients are absolute 3-Lipschitz retracts, independently of the group and the number of coordinates.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10976)
+
+## Sharp Minimax Gram-Determinant Asymptotics for Labelled Unit Decompositions of the Identity
+
+Haozhou Zhang
+
+中文解读待补齐
+
+We show that González Merino and Schymura's Conjecture 4.8, a sufficient condition for Makai's reverse isodiametric conjecture, fails in all sufficiently large dimensions. Its three-dimensional case follows from Aliev's proof. Pełczyński and Szarek's construction for enclosing parallelepipeds implies this failure. Using random frames, we also determine the sharp exponential determinant guarantee for every fixed ratio greater than one between the number of vectors and the dimension.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.10979)
+
+## A sharp minimum for cube-apex bodies in every dimension
+
+Hanyue Shen、Pavel B. Dubovski
+
+中文解读待补齐
+
+We determine the minimum volume product of centrally symmetric polytopes obtained by adding facet apices to a cube while fixing their total outward height. Heights and tangential coordinates vary subject to a product condition on the polar-cap denominators. In every dimension at least two, the minimum has an explicit formula, attained by concentrating the height at one opposite pair of corner apices. For positive height in dimensions at least three, every minimizing array has this structure. The product condition strictly extends coordinatewise quadratic constraints. We also obtain two bounds without that condition: a four-dimensional Mahler bound for a specified height range, and a correction measuring volume generated jointly by two apices. The latter certifies a continuous family outside the preceding sufficient conditions. The proof combines known cap volumes with a sharp aggregate height estimate and a double-pyramid construction. Lean~4 verifies the actual-volume minimum, the necessary equality structure and both extensions.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11014)
+
 ## Four-dimensional shrinkers with pinched curvatures
 
 Xiaodong Cao、Jia-Yong Wu
@@ -212,6 +366,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.11077)
 
+## Braidings of Self-Equivalences and Bordism
+
+Ian Hambleton、Kursat Sozer
+
+中文解读待补齐
+
+Let $M$ be a closed, smooth or topological $n$-manifold, with $n \geq 4$. We construct a homotopy highly cartesian square relating the space ${\mathcal E}(M (\ell))$ of homotopy self-equivalences of $M$ (in a suitable range) over the Postnikov $\ell$-sections of its stable normal microbundle, and an $(\infty + n)$-fold loop space representing an associated (normal) bordism theory. This implies the existence of braids of interlocking exact sequences involving the homotopy groups of ${\mathcal E}(M(\ell))$ and certain Lashof bordism groups, leading to a conceptual explanation and broad generalization of earlier work of Hambleton--Kreck for closed, oriented $4$-manifolds.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11110)
+
 ## On Ricci solitons whose level hypersurfaces have parallel second fundamental form
 
 Matheus Andrade Ribeiro de Moura Horácio
@@ -225,6 +393,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.11209)
+
+## Bi-contact plugs and dynamical hyperbolicity
+
+Surena Hozoori
+
+中文解读待补齐
+
+We develop a theory of bi-contact plugs in dimension three to construct Anosov flows or, more generally, structurally stable nonsingular flows. For a transversely orientable hyperbolic plug with orientable filling Morse-Smale boundary laminations, we prove that every strongly transverse gluing map can be isotoped through strongly transverse maps to identify a strongly adapted contact form up to sign. The resulting flow is hyperbolic and is Anosov when the quotient is closed. This answers a question of Béguin-Bonatti-Yu under the stated orientability assumptions. The result also extends to gluing nonsingular partially hyperbolic flows. Anosov completion by reflection embeds each such hyperbolic plug in an Anosov flow on its oriented double. Further applications include a classification of structurally generic transversely oriented projectively Anosov flows without saddle periodic orbits, Morse-Smale examples with prescribed saddle count, a generalization of the construction of Bonatti-Bowden-Potrie to give embeddings of (attracting) hyperbolic plugs into (partially hyperbolic) projectively Anosov flows with the same topological entropy, and constructions on doubles and torus bundles with controlled invariant torus dynamics. Finally, every cooriented partially hyperbolic bi-contact plug admits a Liouville structure on its thickening, with Liouville trajectories projecting to positively reparametrized flow lines. Repelling plugs yield four-dimensional Liouville domains, often with chaotic skeletons.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11243)
 
 ## On the Structure of Sub-Riemannian Geodesic Orbit Manifolds
 
@@ -254,6 +436,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.11295)
 
+## Bounded cohomology of transformation groups in all degrees
+
+Michael Brandenbursky
+
+中文解读待补齐
+
+Let $M$ be a compact connected oriented smooth manifold, of dimension $n\ge2$. Let $\mathcal T_MG$ be one of the following transformation groups: $Homeo_0(M,\mu)$, $Diff_0(M,\mu)$, $Symp_0(M, \omega)$ (in case $M$ is symplectic) and $Ham(M, \omega )$ (in case $M$ is symplectic). Denote by $\overline{H}_b^d(\mathcal T_M)$ reduced bounded cohomology of $\mathcal T_M$ in degree $d$, and by $\overline{EH}^d(\mathcal T_M)$ reduced exact bounded cohomology of $\mathcal T_M$ in degree $d$. In this paper we prove that if $n=2$ and $M$ is a closed surface $\Sigma_g$ or a disc $\mathbb D$, then for every $d\ge 2$ $$\dim(\overline{H}b^d(\mathcal T_M))=\infty.$$ Moreover, $\dim\overline{EH}^d(\mathcal T_M)=\infty$ if $\mathcal T_M$ is either $Diff_0(\Sigma_g,\mu)$ or $Ham(\Sigma_g, \omega)$, or $Ham(\mathbb{D}, \omega)$; or $g>1$. In case $n>2$, under certain conditions on $\pi_1(M)$, we prove that for every degree $d\ge 2$ $$\dim\overline{EH}^d(\mathcal T_M)=\infty.$$ In particular, these results hold for $\mathcal T_M$ when $M$ is a closed, orientable smooth manifold admitting a Riemannian metric of strictly negative sectional curvature of an arbitrary dimension.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11327)
+
 ## Flatness-Based Controller Design for Backward-Flat Systems
 
 Johannes Schrotshamer、Bernd Kolar、Markus Schöberl
@@ -281,6 +477,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.11400)
+
+## The Erdős similarity problem for null sequences with adjacent ratios bounded below
+
+Kan Jiang、Lifeng Xi
+
+中文解读待补齐
+
+Let $(a_n)$ be a positive null sequence with $\liminf_{n\to\infty}a_{n+1}/a_n>0$. For every $\eta>0$, we construct a compact set $E\subset[0,1]$ with Lebesgue measure greater than $1-\eta$ containing no nontrivial affine copy of $\{a_n:n\ge1\}$. No monotonicity is assumed. The proof adapts a finite-tree construction for geometric sequences to grids chosen from a subsequence with two-sided ratio bounds. We also obtain one such set for any prescribed countable family of sequences, with infinitely many distinct points omitted from every affine copy.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11449)
 
 ## Doubling, Poincaré and Gromov-Hausdorff precompactness for tamed spaces
 
@@ -310,6 +520,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.11485)
 
+## On the Graph Corresponding to Center of Distances of Metric Space
+
+Oleksiy Dovgoshey、Olga Rovenska
+
+中文解读待补齐
+
+The center of distances $C(Y)$ of a metric space $(Y,\rho)$ is the set of all $t\geq 0$ for which the equation $\rho(y,p)=t $ has a solution for each point $p\in Y$. We say that a simple graph $CG_Y$ is the central graph of a metric space $(Y,\rho)$ if $Y$ is the vertex set of $CG_Y$ and distinct vertices $x,y\in Y$ are adjacent if and only if $\rho(x,y)\in C(Y)$. We prove the inequality $|E(CG_Y)| \geq \left\lceil \frac{1}{2}|Y| \right\rceil $ for all finite metric spaces $(Y,\rho)$ with $|Y|\geq 2$ and non-empty $CG_Y.$ It is also proved that the inequality $|E(CG_X)| \geq |X|-1 $ holds for each finite ultrametric space $(X,d)$. The central graphs of metric spaces $(Y,\rho)$ and ultrametric spaces $(X,d)$ satisfying $|E(CG_Y)|=\left\lceil \frac{1}{2}|Y| \right\rceil $ and, respectively, $|E(CG_X)|=|X|-1 $ are described up to graph isomorphism.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11596)
+
 ## Continuity and monotonicity of weighted perimeters of convex bodies
 
 Gyula Csató、Davide Giovagnoli
@@ -323,6 +547,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.11677)
+
+## Intermediate coverings, random images, and projections
+
+Yunhao Zhao、Yingyu Zhao、Chen Zhou、Shengyang Zang
+
+中文解读待补齐
+
+We study intermediate coverings of spectral families, Cantor sets, and projections of measures. Two perturbation families of a fixed ReLU tangent kernel have identical source thresholds. Their Brownian images have equal box thresholds and distinct intermediate thresholds, almost surely along prescribed geometric scales. For Cantor sets with delayed contractions, we obtain entropy formulas for the intermediate dimensions of the sets and their fractional Brownian images. These formulas yield endpoint asymptotics and a sharp separation theorem for the first phase transition. An oscillating variant has distinct lower and upper intermediate dimensions while preserving the Assouad spectrum. Finally, almost every orthogonal projection preserves both intermediate dimensions of a nonzero finite compactly supported measure whose quasi-Assouad dimension does not exceed the target dimension.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11680)
+
+## A Smooth Covariogram and the Transition Between Projection Bodies
+
+J. Haddad、C. H. Jiménez、M. Resende Guedes
+
+中文解读待补齐
+
+We introduce a smooth radial approximation of the covariogram of a convex body. The construction replaces the intersection \(K\cap(K+x)\) by the radial \((-p)\)-mean of \(K\) and \(K+x\), producing a family \(g_{K,p}\) which converges pointwise to the classical covariogram as \(p\to\infty\). For each fixed \(p>0\), the function \(g_{K,p}\) is smooth near the origin, and its Hessian is computed explicitly in terms of the operator defining the polar \(L_2\)-projection body. We study the simultaneous limit in which \(p\to\infty\) and the level deficit is \(\delta=p^\alpha\), \(\alpha<0\). The normalized level sets exhibit three regimes: the polar projection body appears for \(\alpha>-1\), the polar \(L_2\)-projection body appears for \(\alpha<-1\), and a critical transition body appears at \(\alpha=-1\). This transition body is described by an explicit \(\log\cosh\)-type boundary integral, placing the critical regime naturally within the framework of Orlicz projection bodies.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11700)
 
 ## $η-$ Hyperbolic Ricci Solitons on the Unit Tangent Bundle of the Hyperbolic Strip
 
@@ -380,6 +632,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.11800)
 
+## Gauss--Chebyshev Quadrature, $\mathbb S^1$-Designs, and the Planar Minkowski Inverse Problem: A One-Dimensional Model for Design-Induced Convex Geometry
+
+Congpei An
+
+中文解读待补齐
+
+We study the relation between equal-weight circle quadrature, Gauss--Chebyshev quadrature, and planar Minkowski reconstruction. The regular $N$-point grid is an $\mathbb S^1$-design of strength $N-1$; a half-step rotation of the $2M$-point grid projects to the classical $M$-point Gauss--Chebyshev rule. A common family of quadrature-error functionals gives exact identities for integration error, mixed-area error, and support-function error. For $N\ge3$, the centered Minkowski polygon $P_N$ with perimeter $2\pi$ has the exact Hausdorff distance from the unit disk $B^2$ \[ d_H(P_N,B^2)=1-\frac{\pi}{N}\cot\frac{\pi}{N} =\frac{\pi^2}{3N^2}+O(N^{-4}). \] With Steiner centering, we obtain $d_H(K_\mu,K_\nu)\le\pi W_1(\mu,\nu)$ for balanced, nondegenerate probability measures, where $W_1$ uses geodesic distance. Its exponent is sharp even for smooth positive densities near the uniform measure. The identity $W_1(\nu_N,\sigma)=\pi/(2N)$ yields a general $O(N^{-1})$ bound for the regular grid. The sharper $O(N^{-2})$ rate follows from the sparse discrepancy spectrum and the inverse multiplier $(1-k^2)^{-1}$. Finally, a perturbation estimate gives sufficient conditions for preserving the quadratic rate and its leading constant.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11814)
+
+## A note on realizing triples of slice, concordance and Seifert genera
+
+Boning Wang
+
+中文解读待补齐
+
+We show that every triple of integers $(a,b,c)$ satisfying $1\leq a\leq b\leq c$ is realized as the smooth slice genus, smooth concordance genus, and Seifert genus of a knot, respectively. This proves a conjecture of Kearney.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.11849)
+
 ## On ruled normal surfaces associated with rectifying curves
 
 Ana-Maria Boldeanu
@@ -436,6 +716,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.12027)
 
+## Embedding large subsets of Wasserstein spaces into Banach spaces
+
+Cyril Letrouit、Quentin Mérigot
+
+中文解读待补齐
+
+Embedding subsets of Wasserstein spaces into linear spaces is a problem of both theoretical and computational interest. In this work, we prove that three classical and natural embeddings of Wasserstein spaces into Banach spaces of non-trivial type are bi-Hölder on subsets of Wasserstein spaces given by moment bounds. These embeddings, all considered in multiple applications, are the linearized optimal transport embedding, the sliced-Wasserstein embedding, and a particular kernel mean embedding. Our results contrast with known obstructions to embeddin the full Wasserstein space into Banach spaces of non-trivial type. We also show the sharpness of our results regarding the moments required for our conclusions to hold.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12029)
+
+## Self measurable embeddings of mapping class groups
+
+Alexandra Gurieva
+
+中文解读待补齐
+
+Given a finite-type orientable surface without boundary, outside of a few low-complexity surfaces, we show that any measurable embedding of the associated mapping class group into itself is a measure equivalence. This is a measure-theoretic analog to the result of Ivanov and McCarthy that mapping class groups are co-Hopfian.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12054)
+
 ## Rational curves on toroidal compactifications of Picard modular varieties
 
 Soheil Memarinasorkhabi、Sai-Kee Yeung
@@ -449,6 +757,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12071)
+
+## Character variety of the five-punctured sphere and the determinantal quintic hypersurface
+
+Kazuhiro Hikami
+
+中文解读待补齐
+
+Using skein-theoretic methods, we study the SL2(C) character variety of the five-punctured sphere with arbitrary conjugacy class at each of the five punctures. We show that a Fricke-Klein-Vogt-type relation is realized as a symmetric determinantal hypersurface. We also give a realization of the character variety in terms of cluster variables. We explicitly derive the Poisson structure of the simple closed curves on the surface, and prove that cluster mutations induce automorphisms of the character variety.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12092)
 
 ## Mollifier smoothings of strongly convex $C^0$-Finsler structures
 
@@ -478,6 +800,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.12175)
 
+## Topological inequalities for conic-line arrangements with some prescribed singularities
+
+Marco Golla、Piotr Pokora
+
+中文解读待补齐
+
+We study arrangements of conics and lines in the complex projective plane from the viewpoint of 4-manifolds. We introduce combinatorial conic-line arrangements, the conic-line counterpart of rank-3 matroids, together with their topological and smooth realisations, and we ask which restrictions on a complex arrangement survive when its components are replaced by locally-flat spheres in the same homology classes with the same local singularity models. For an ADE combinatorial conic-line arrangement of even total degree admitting a topological realisation we prove a Hirzebruch-type inequality; the proof uses only branched covers and the local topology of rational double points. In the complex-algebraic category we show that equality holds exactly when the arrangement is a maximising curve, hence free with prescribed exponents. We then introduce divisible and odd combinatorial conic-line arrangements and obtain inequalities and congruences for the multiplicity sequence of their resolutions, via cyclic branched covers, the G-signature theorem, spin structures, and Furuta's 10/8-theorem.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12192)
+
 ## Einstein metrics with torus symmetry on $S^4$ and $\mathbb R^4$
 
 Xiuxiong Chen、Conghan Dong
@@ -505,6 +841,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12238)
+
+## Higher-rank local mixing for cusped positive representations
+
+Dongryul M. Kim、Hee Oh、Wenyu Pan
+
+中文解读待补齐
+
+Let $\Gamma<\operatorname{PSL}_2(\mathbb R)$ be a torsion-free, non-elementary, finitely generated Fuchsian group with parabolic elements, and let $\rho:\Gamma\to G$ be a type-preserving, Zariski dense, positive representation into a connected split semisimple real algebraic group. We prove quantitative local mixing for Bowen--Margulis--Sullivan measures on $\rho(\Gamma)\backslash G/M$, where $M$ is the centralizer of a maximal split torus in a compatible maximal compact subgroup. For every $u$ in the interior of the limit cone of $\rho(\Gamma)$, correlations of smooth compactly supported functions along $\exp(tu)$, normalized by $t^{(\operatorname{rank}_{\mathbb R}G-1)/2}$, admit a complete asymptotic expansion in integer powers of $t^{-1}$. We also obtain a uniform Gaussian asymptotic for transverse displacements, with an integrable remainder. We deduce asymptotics for matrix coefficients of the quasi-regular representation on $L^2(\rho(\Gamma)\backslash G)$ and for orbital counting in Riemannian balls. More generally, these conclusions hold for Zariski dense, relatively Borel Anosov representations of $\Gamma$ satisfying a peripheral root-balance condition. This includes relatively Borel Anosov representations into split simple groups of rank at most three and self-joinings of type-preserving geometrically finite real hyperbolic representations. To prove these results, we develop an intrinsic cusp geometry on the limit set of $\rho(\Gamma)$ in the Furstenberg boundary and use it to construct a countable Markov coding. We establish exponential moment bounds and uniform distortion estimates for the unbounded vector-valued return cocycle. Using peripheral Cartan growth and Zariski density, we establish the quantitative non-integrability needed for the spectral analysis.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12254)
 
 ## Hyperquiver varieties
 
@@ -548,6 +898,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.12296)
 
+## Measurable obstructions for unmeasurable colourings
+
+James Davies
+
+中文解读待补齐
+
+Due to the availability of powerful analytic techniques, vastly superior lower bounds are known for the measurable chromatic number of Euclidean spaces compared to their ordinary chromatic number. Indeed, even the breakthrough lower bound of 5 for the famous Hadwiger-Nelson problem lagged over 35 years behind that of the measurable setting. This raises the fundamental question of whether the measurable and ordinary chromatic number of Euclidean spaces differ as conjectured by Székely in 1984. Our main result is that $\overline\alpha(\mathbb{R}^4)=m_1(\mathbb{R}^4)$ and $\chi(\mathbb{R}^4)=\chi^{(m)}(\mathbb{R}^4)$, and for $d\ge5$ that \[ \overline\alpha(\mathbb{Q}^d) = \overline\alpha(\mathbb{R}^d)=m_1(\mathbb{R}^d) \qquad\text{and}\qquad \chi(\mathbb{Q}^d) = \chi(\mathbb{R}^d)=\chi^{(m)}(\mathbb{R}^d). \] Our theorem also holds for multiple forbidden distances $D=\{d_1,\ldots,d_t\}$ provided that $d_1^2,\ldots,d_t^2 \in \mathbb{Q}$. As a consequence, we immediately lift numerous measurable chromatic number results into the ordinary setting. We also take the opportunity to further optimize the new bounds. For multiple distances, Erdős asked whether the chromatic number of $\mathbb{R}^d$ with up to $k$ forbidden distances $D$ grows exponentially in $k$. By a theorem of Bukh, we obtain for $d \ge 4$ that \[ \sup_{|D|=k}\chi_D(\mathbb{R}^d) \ge m_1(\mathbb{R}^d)^{-k}. \] Making progress on another problem of Erdős, we prove that \[ (2+o(1))^d \le \chi(\mathbb{R}^d) \le \left(\frac{3\sqrt{3}}{4}+o(1)\right)^d. \] We also vastly improve the lower bounds for $\chi(\mathbb{R}^d)$ for small $d\ge4$. We expect that our techniques could be developed much further. This includes the possibility of extending our main theorem that $\chi(\mathbb{R}^d)=\chi^{(m)}(\mathbb{R}^d)$ for $d\ge 4$ to $d=3$ or possibly even to $d=2$ to tackle the Hadwiger-Nelson problem.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12301)
+
+## Drilling veering triangulations with applications to pseudo-Anosov flows
+
+Anna Parlak、Henry Segerman
+
+中文解读待补齐
+
+We develop an algorithm that takes as input a veering triangulation V and a flow cycle c of V, and outputs a veering parent V_c of V. Constructing veering parents combinatorializes drilling out closed orbits of transitive pseudo-Anosov flows. The algorithm relies on locally approximating the structure of the loom space associated to V in sufficient detail to carry out a certain modification of the Agol-Guéritaud construction. We use an implementation of the drilling algorithm to construct layered parents of non-layered veering triangulations (and hence Birkhoff sections for transitive pseudo-Anosov flows) and geometric parents of non-geometric veering triangulations. We also find closed orbits of (drilled) pseudo-Anosov flows that are not ambiently isotopic to the geodesics in their free homotopy classes, and show that certain veering triangulations encode almost orbit equivalent flows. In particular, we provide new computational evidence for a conjecture of Ghys asserting that all transitive Anosov flows with orientable invariant foliations are almost orbit equivalent.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12302)
+
 ## The sharp $L^2$-Michael--Simon inequality
 
 Jeffrey S. Case、Dawit Mengesha
@@ -561,6 +939,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12309)
+
+## Coloring graphs of homologous spheres
+
+Edgar A. Bering IV、Samantha Ford、Aarav Ghai、Maxwell Lyon、Om Shah
+
+中文解读待补齐
+
+The curve graph of a surface is the graph whose vertices are isotopy classes of essential, closed curves on the surface. Edges join vertices with disjoint representatives. The curve graph plays a central role in the theory of mapping class groups of surfaces. Gaster, Greene, and Vlamis have shown that the subgraph of the curve graph induced by curves in a single primitive homology class is uniquely and finitely colorable. In the analogy between the theory of mapping class groups of surfaces and outer automorphisms of free groups, the sphere graph of $M_r$, a connect sum of $r$ copies of $S_1 \times S_2$ plays an analogous role in the theory. Motivated by Gaster, Green, and Vlamis' result, we investigate $\mathcal{S}_v(M_r)$, the subgraph of the sphere graph of $M_r$ induced by spheres representing a single primitive homology class $[v] \in H_2(M_r;\mathbb{Z})$. We show that this graph is uniquely $r-1$ colorable. As a corollary, with $r\ge 3$ we obtain a nontrivial homomorphism from the Torelli subgroup $IO_r \le \operatorname{Out}(F_r)$ to the symmetric group on $r-1$ symbols; this parallels Gaster, Greene, and Vlamis' connection between their coloring and the Chillingworth homomorphism. In the course of our proof we find new smaller generating sets for mapping class groups of $M_r$ with spheres deleted.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12347)
 
 ## Prevalence of sparsity for negatively curved metrics
 
@@ -576,6 +968,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.12351)
 
+## The Colored Jones Function does not determine any colored Links--Gould polynomial
+
+Matthew Harper、Ben-Michael Kohli
+
+中文解读待补齐
+
+We prove that there is no uniform description of $\mathrm{LG}^{(n)}$ in terms of colored Jones polynomials for all knots, even when allowing infinitely many colors and arbitrary operations. We prove the $n=1$ case, using an existing cabling formula and the separation of the Conway and Kinoshita--Terasaka knots by $\mathrm{LG}^{(2)}$. We develop an odd cabling formula and use a Vandermonde argument to show that for each $n\geq 2$ some satellite of each of these knots is distinguished by $\mathrm{LG}^{(n)}$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12352)
+
+## Directed fractal percolation and non-Lipschitz variants
+
+Shirshendu Ganguly、Victor Ginsburg、Kaihao Jing
+
+中文解读待补齐
+
+While models of undirected and directed geometry in random i.i.d. disorder with rapidly decaying tails are expected to behave similarly and exhibit features of the Kardar--Parisi--Zhang universality class, the scenario when the background noise is fractal is expected to be significantly different. A canonical example of the latter is Liouville Quantum Gravity, where the planar Gaussian free field forms the fractal background. A toy model capturing some of the essential features is given by Mandelbrot's fractal percolation, a random Cantor set. In the simplest setting, dyadic cubes of different scales are retained independently with probability $p$ (a parameter of the model), and the intersection of all retained cubes forms the set of open sites. Connectivity properties of such sets have been intensely studied. Across [CCD88, Cha95], a surprising result was proven. Namely, while there is a phase transition for connectivity of the fractal percolation set (like in usual bond percolation), directed percolation never occurs. Results of a similar spirit have been obtained in geometric measure theory as well. As a step towards understanding last passage percolation (LPP) driven by the Gaussian free field (initiated in [GGN24]), we study the problem of quantifying LPP in fractal percolation. Developing a multi-scale framework, we show an almost polynomial gap from linear growth of the passage time. The obstruction to high LPP values is the Lipschitz nature of directed paths. Along these lines, [Cha96] showed that any connected subset of fractal percolation must have Hausdorff dimension strictly larger than one. We show that one can construct directed paths passing through open sites in fractal percolation provided they move exponentially fast in the spatial direction---a model we introduce and term as unrectifiable directed percolation.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12366)
+
 ## Differential $T_2$-Duality and Spans of Principal 3-Bundles with Connections
 
 Gianni Gagliardo、Christian Saemann、Roberto Tellez-Dominguez
@@ -589,6 +1009,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12383)
+
+## Tiling 3D by Translates of a Single Polycube is Undecidable
+
+Erik D. Demaine、Stefan Langerman
+
+中文解读待补齐
+
+We prove co-RE-completeness, and thus undecidability, of the following problem: given a single (connected) polycube, decide whether it tiles 3D Euclidean space by translations. We reduce from Wang tiling using the decorated two-prime Sudoku construction of Greenfeld and Tao and a cyclic encoding adapted from OpenAI's 3D aperiodic tile, and apply a reduction of Kim to make the prototile connected (via faces). Dimension three is optimal: translational monotiling is known to be decidable in $\mathbb{Z}^2$ and for a single (possibly disconnected) polyomino in $\mathbb{R}^2$.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12392)
+
+## Estimates on Fully Nonlinear Elliptic Equations with Unrectifiable Exceptional Gradient Sets
+
+Tuoc Phan
+
+中文解读待补齐
+
+We study fully nonlinear uniformly elliptic equations that are imposed only when the gradients of solutions lie outside a closed ball and a closed purely one-unrectifiable set that can be unbounded. We prove Harnack inequalities and Hölder regularity estimates for viscosity solutions, with constants independent of the exceptional set. The proofs use the geometry of the contact sets in the cusp and barrier arguments to exclude exceptional gradients. We also provide examples and counterexamples showing the role of pure one-unrectifiability. Materials and proofs are presented in detail to ensure the paper is fully self-contained and accessible to a broad audience.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12430)
 
 ## Self-intersecting sections of polar actions on simply connected manifolds
 
