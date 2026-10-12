@@ -70,9 +70,13 @@ Nihar Gargava、Matthias Gröbner、Michael Simkin
 
 For a positive integer $d$, let $\Delta_d^L$ denote the supremum of the densities of lattice sphere packings in $\mathbb R^d$. We prove that, for every sufficiently large $d$, $\Delta_d^L \gg d^2\log\log d\,2^{-d}$. Abuya-Gargava-Zhao obtained the same bound along a sparse sequence of dimensions by combining Venkatesh's cyclotomic symmetries with Klartag's stochastic ellipsoid method. We introduce a multi-cyclotomic gluing construction that allows this argument to work in every sufficiently large dimension.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者称 ChatGPT 协助组合分圆对称与随机框架的研究思路，先得到较弱证明，之后由人类合作者修订加强。
 
+来源：https://arxiv.org/pdf/2610.12619v1 · PDF 第 33 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 ChatGPT 协助组合分圆对称与随机框架的研究思路，先得到较弱证明，之后由人类合作者修订加强。
+
+来源：https://arxiv.org/pdf/2610.12619v1
 
 [arXiv](https://arxiv.org/abs/2610.12619)
 
@@ -84,9 +88,11 @@ Emin Abdullaev
 
 The paper studies $l^p$-wedge sums of metric spaces and provides a two-sided estimate for the pointed Gromov-Hausdorff distance between them. Using an upper bound for the Gromov-Hausdorff distance, the existence of an isometric embedding of $l^\infty$ into the Gromov-Hausdorff space of all non-empty metric spaces is proved.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.12626v1
 
 [arXiv](https://arxiv.org/abs/2610.12626)
 
@@ -126,9 +132,13 @@ Alex Guerra、Joshua Aduol、Yaqian Tang、Daniel Williams、Ryan P. Adams、Pet
 
 Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者称生成式 AI 协助实验迭代与训练设置、寻找文献，以及修订文字和数学陈述的精确性。
 
+来源：https://arxiv.org/pdf/2610.12776v1 · PDF 第 12 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称生成式 AI 协助实验迭代与训练设置、寻找文献，以及修订文字和数学陈述的精确性。
+
+来源：https://arxiv.org/pdf/2610.12776v1
 
 [arXiv](https://arxiv.org/abs/2610.12776)
 
@@ -154,9 +164,13 @@ Jacob Guynee
 
 We provide a presentation of the braid group in which the generating set is the set of all positive half-twists, the relations are balanced positive relations, and every relation is conjugate to one in a finite list. We then prove that for any such presentation, its positive monoid is not isomorphic to the quasipositive braid monoid. Finally, we show that the quasipositive braid monoid has no proper Garside family. These results settle a problem of Calegari from the K3 problems list.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者称所有证明在与 ChatGPT 讨论中完成，模型提出多种引理证明并找到定理 1.3 的证明；表述由作者完成。
 
+来源：https://arxiv.org/pdf/2610.12808v1 · PDF 第 3,4 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称所有证明在与 ChatGPT 讨论中完成，模型提出多种引理证明并找到定理 1.3 的证明；表述由作者完成。
+
+来源：https://arxiv.org/pdf/2610.12808v1
 
 [arXiv](https://arxiv.org/abs/2610.12808)
 
@@ -182,9 +196,11 @@ Fei Han、Varghese Mathai
 
 We construct a geometric theory on the brane space $S^2M=C^\infty(S^2,M)$ associated to a gerbe with connection on $M$. Normalized logarithmic holonomy around the latitude circles defines an average holonomy line bundle on the brane space, whose connection and averaged flux give an equivariantly flat superconnection. We prove that the completed periodic exotic twisted cohomology defined by this superconnection localizes to the twisted cohomology of $M$. This {\bf brane space localization} happens in two stages: circle localization lands on the free path space of $M$, and contracting the paths, after a correction of the twisting form, brings us back to $M$. Parallel transport along the meridians lets us average gerbe module connections, after which the circular iterated-integral construction applies. The resulting {\bf twisted brane Bismut-Chern forms} restrict to the twisted Chern forms on $M$; their variation is described by {\bf twisted brane Bismut-Chern-Simons forms.} For a T-dual pair, transporting the classical Hori morphisms through localization yields {\bf graded genus-0 T-duality} on brane cohomology. The composite of each morphism with its dual is minus the Euler operator in the level variable, so these morphisms are isomorphisms at every nonzero level. At level one these morphisms are compatible with the brane character and twisted $K$-theory T-duality.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.12825v1
 
 [arXiv](https://arxiv.org/abs/2610.12825)
 
@@ -252,9 +268,13 @@ Alexis Guérin、Felix Roz
 
 We construct an action of the positive half of the Witt algebra on colored $\mathfrak{gl}_N$-Khovanov-Rozansky homology and prove that this action is compatible with the functoriality of colored link homology. To establish this result, we use Bar-Natan's framework of canopolies to formulate and prove the relevant statements at the level of tangles.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者声明 AI 仅用于纠正语言错误，未披露数学协作。
 
+来源：https://arxiv.org/pdf/2610.13210v1 · PDF 第 3 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明 AI 仅用于纠正语言错误，未披露数学协作。
+
+来源：https://arxiv.org/pdf/2610.13210v1
 
 [arXiv](https://arxiv.org/abs/2610.13210)
 
@@ -294,9 +314,11 @@ Dirk Siersma
 
 We study the (typical) singularities of the distance function from a point in the ambient space to a polytopal complex in Euclidean space. By means of the Goresky-MacPherson splitting we generalize the existing linear theory to the quadratic distance function. Critical points occur on `selected' strata of the PL-space, where normal Morse Data determine the change of topology. On the homology level there exist indices with multiplicities, combined in a Morse vector. We focus mainly on PL-manifolds. We give bounds, depending on the dimension of the strata. In low dimensions we describe singularity types. At the end we discuss relations with Discrete Morse Theory.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明未使用 AI 或其他软件；图由作者用 GeoGebra 制作，普通绘图软件不等于 AI 协作。
 
+来源：https://arxiv.org/pdf/2610.13297v1
 
 [arXiv](https://arxiv.org/abs/2610.13297)
 
@@ -308,9 +330,11 @@ Ahmad Rafiqi、Ayberk Zeytin
 
 In this chapter, we discuss the interaction between low-dimensional dynamics, symbolic dynamics, and geometric topology, focusing on the algebraic characterization and asymptotic behaviour of stretch factors or equivalently pseudo-Anosov dilatations. We first review the algebraic foundations linking Perron--Frobenius theory, multi-variable Euclidean algorithms, and Lind's characterization of topological entropy for shifts of finite type, emphasizing recent constraints on the Perron--Frobenius degree of expansion constants. We then relate these dynamical invariants to the combinatorial world, examining train tracks for surfaces and automorphisms of free groups. Finally, we briefly review the relevance of fibered 3-manifolds, detailing how the Thurston norm, Fried's concavity theorem over fibered cones, and McMullen's Teichmüller polynomial come into play.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.13347v1
 
 [arXiv](https://arxiv.org/abs/2610.13347)
 
@@ -366,9 +390,11 @@ Ivan Nasonov、Gaiane Panina
 
 We prove that each simplex in $\mathbb{R}^4$ contains a point with at least $14$ emanating normals to the boundary. Earlier, the authors proved that each generic simple polytope in $\mathbb{R}^4$ contains a point with at least $12$ emanating normals to the boundary. This problem belongs to a piecewise linear counterpart of a longstanding problem concerning normals to smooth convex bodies.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。
 
+来源：https://arxiv.org/pdf/2610.13475v1
 
 [arXiv](https://arxiv.org/abs/2610.13475)
 
@@ -464,9 +490,13 @@ Joonas Ilmavirta、Teemu Saksala、Hjørdis Schlüter
 
 We study the gauge of the travel time tomography problem for elliptically anisotropic planar media. Under this assumption the respective slowness surfaces consist of an inner ellipse and an outer circle. Hence, the singularities of seismic waves propagate on geodesics given by two Riemannian metrics of which the one related to shear waves is conformally Euclidean. We show that if both of these metrics are lens rigid then, up to boundary fixing diffeomorphisms, each elliptically anisotropic stiffness tensor is uniquely determined by the lens data whenever it has at least one isotropic point. If none of those points exists, then there are exactly two elliptically anisotropic stiffness tensors with the same lens data. Clearly, not all boundary fixing diffeomorphisms preserve the imposed structure of the slowness surface. We show that the set of well-behaved diffeomorphisms is never a subgroup of all boundary fixing diffeomorphisms. Our proofs are based on an interplay of algebra and geometry, and the key of the proofs is a characterization of the elliptic anisotropy via several polynomial conditions.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者称 Claude 少量协助多条证明，ChatGPT 参与第 6 节讨论与多数计算，并协助语言编辑。
 
+来源：https://arxiv.org/pdf/2610.13747v1 · PDF 第 10 页
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 Claude 少量协助多条证明，ChatGPT 参与第 6 节讨论与多数计算，并协助语言编辑。
+
+来源：https://arxiv.org/pdf/2610.13747v1
 
 [arXiv](https://arxiv.org/abs/2610.13747)
 
@@ -534,9 +564,11 @@ Daniel E Widdowson、Tatiana V Kurlina、Olga D Anosova、Vitaliy A Kurlin
 
 Current AI predicts materials by speeding up energy minimisation and training on large databases. However, scaling data generation prevents manual analysis by domain experts. If novelty is evaluated by chemical compositions or traditional representations in Crystallographic Information Files, or standard structure matchers based on manually chosen thresholds, one can easily generate millions of ``new'' compositions or files without discovering truly novel materials. This paper uses a hierarchy of crystal invariants to continuously trace and quantify structural novelty based on the new mathematical definition of a crystal structure and asymptotic guarantees for invariant descriptors. The invariant-based analysis through cascade computations on a modest computer exposes the unexpected scale of duplication in the world's largest materials databases, shown here in the high-profile case of GNoME datasets. To prevent current ``embarrassment of over-prediction'', we propose necessary conditions for next-generation AI that should be automatically enforced before claiming any new materials.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中段落讨论 AI 材料发现研究对象及引用，未发现作者披露用生成式 AI 协作写作或研究。
 
+来源：https://arxiv.org/pdf/2610.13885v1
 
 [arXiv](https://arxiv.org/abs/2610.13885)
 

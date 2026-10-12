@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-12",
-  "revision": 6,
-  "contentHash": "c915800c9bb882bb4db0dae3689812be8eec1d3ba138e2cd9d6b56016f6b36d9",
-  "lastUpdated": "2026-10-12T02:48:07.163Z",
+  "revision": 7,
+  "contentHash": "3879a0b3b5b530ca5db7e2e56b9ee5c32819f2c124fe7d693054e64bdd964b6f",
+  "lastUpdated": "2026-10-12T02:52:58.842Z",
   "categories": [
     {
       "category": "mathDg",
@@ -376,6 +376,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.456686+00:00",
           "contentHash": "215b997edca1ccc0def197a079f0ebc62c007aa40e05137b546c9aa31348c727"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.12619v1",
+          "observedAt": "2026-10-12T02:48:41.526348+00:00",
+          "contentHash": "c041af7a4e643c4e610edfd556d66227b5d747ee120e5fa7abe09b3d54aa2fbc"
         }
       ],
       "analysis": {
@@ -389,7 +394,25 @@
         "breakthrough": "得到与稀疏维度结果同阶的 d²loglog(d)·2⁻ᵈ 下界。",
         "limitations": "这是渐近下界，未给出每个具体小维度的最优堆积。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者称 ChatGPT 协助组合分圆对称与随机框架的研究思路，先得到较弱证明，之后由人类合作者修订加强。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.12619v1 · PDF 第 33 页",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:48:41.526348+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.12619v1",
+          "contentHash": "c041af7a4e643c4e610edfd556d66227b5d747ee120e5fa7abe09b3d54aa2fbc",
+          "pages": 39,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 ChatGPT 协助组合分圆对称与随机框架的研究思路，先得到较弱证明，之后由人类合作者修订加强。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "a21d7308e58435d1ae8277a47466d19d4eb09fb3849e485e5dba7e36a4dfcf64"
+        },
+        "aiUsage": [
+          "exploration",
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 54,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 54/100；重点在于得到与稀疏维度结果同阶的 d²loglog(d)·2⁻ᵈ 下界。"
       },
@@ -425,6 +448,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.457381+00:00",
           "contentHash": "a77896c688cc43a59e6da786519871ed382b83f8de919b44baeebb6ccd3789b0"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.12626v1",
+          "observedAt": "2026-10-12T02:49:14.438020+00:00",
+          "contentHash": "2d2a6a52f05c1f0792f921dedfbad50ea013264db24b3be1c34cc3c5ed863aeb"
         }
       ],
       "analysis": {
@@ -439,6 +467,17 @@
         "limitations": "摘要未给出两侧估计的精确常数或适用空间条件。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:49:14.438020+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.12626v1",
+          "contentHash": "2d2a6a52f05c1f0792f921dedfbad50ea013264db24b3be1c34cc3c5ed863aeb",
+          "pages": 18,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "a6f330455f8ada6e9d78ac7d7c0b0b3156e0d59a01d584d57f39cfd9bd485b6b"
+        },
         "priorityScore": 48,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 48/100；重点在于把无限维 Banach 空间的几何嵌入到度量空间模空间。",
         "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
@@ -587,6 +626,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.458779+00:00",
           "contentHash": "2cb81a6aa4e38be5a89a43b821453d54146a51563a15513cf18439c303491d97"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.12776v1",
+          "observedAt": "2026-10-12T02:48:08.167859+00:00",
+          "contentHash": "8ab7ce36269a4434157fc7e612c5c5ba726db0625b3489cdc5378b7c84e48f81"
         }
       ],
       "analysis": {
@@ -601,7 +645,25 @@
         "breakthrough": "让旋转、体积形式与曲率等对象在通用 AD 流程中复用。",
         "limitations": "实验展示实现可行性，几何正确性和数值性能需结合具体算子核验。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者称生成式 AI 协助实验迭代与训练设置、寻找文献，以及修订文字和数学陈述的精确性。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.12776v1 · PDF 第 12 页",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:48:08.167859+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.12776v1",
+          "contentHash": "8ab7ce36269a4434157fc7e612c5c5ba726db0625b3489cdc5378b7c84e48f81",
+          "pages": 34,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称生成式 AI 协助实验迭代与训练设置、寻找文献，以及修订文字和数学陈述的精确性。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "6a6e585beed264a0fac9e6cb2282914b2b809b6c55d7cfcfe4cd4a1d9dfc194b"
+        },
+        "aiUsage": [
+          "exploration",
+          "literature",
+          "writing"
+        ],
         "priorityScore": 58,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 58/100；重点在于让旋转、体积形式与曲率等对象在通用 AD 流程中复用。"
       },
@@ -694,6 +756,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.459925+00:00",
           "contentHash": "a2065cdb7e7e92cb15e66bb23c802024eb029e6415f8a5fd8853a185d83c3122"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.12808v1",
+          "observedAt": "2026-10-12T02:47:22.688460+00:00",
+          "contentHash": "5994a106a79d968b719cc0231d51e118e85bda63089bf7d185e37fac62c02c54"
         }
       ],
       "analysis": {
@@ -707,7 +774,25 @@
         "breakthrough": "解决 Calegari K3 问题清单中的相关问题。",
         "limitations": "摘要针对特定生成与关系结构，不应推广为所有辫群正锥。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者称所有证明在与 ChatGPT 讨论中完成，模型提出多种引理证明并找到定理 1.3 的证明；表述由作者完成。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.12808v1 · PDF 第 3,4 页",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:47:22.688460+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.12808v1",
+          "contentHash": "5994a106a79d968b719cc0231d51e118e85bda63089bf7d185e37fac62c02c54",
+          "pages": 8,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称所有证明在与 ChatGPT 讨论中完成，模型提出多种引理证明并找到定理 1.3 的证明；表述由作者完成。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "b58f939cb9318501deb95432246de8019fe1379aade392ba9eb6a4b90c7a853a"
+        },
+        "aiUsage": [
+          "exploration",
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 61,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 61/100；重点在于解决 Calegari K3 问题清单中的相关问题。"
       },
@@ -796,6 +881,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.460639+00:00",
           "contentHash": "37f4ac58a748db9be60a94250ec712b35e611b939dff162eb037cffe02bcbc79"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.12825v1",
+          "observedAt": "2026-10-12T02:49:03.412618+00:00",
+          "contentHash": "12bfa6e5f13b159b7ccd40bd8f39121bde2348fcff7d945d20dd9133b9ff230e"
         }
       ],
       "analysis": {
@@ -811,6 +901,17 @@
         "limitations": "主要是高度专门的构造；应用范围取决于 gerbe 和 T 对偶假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:49:03.412618+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.12825v1",
+          "contentHash": "12bfa6e5f13b159b7ccd40bd8f39121bde2348fcff7d945d20dd9133b9ff230e",
+          "pages": 45,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "8a4344146285c672a47f25c7ec7f40a2c1fe5042451d21102aae9ae080850baa"
+        },
         "priorityScore": 52,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 52/100；重点在于将带 H-flux 的 genus-0 T-duality 与 brane 空间局部化联系起来。"
       },
@@ -1056,6 +1157,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.463129+00:00",
           "contentHash": "5b50d7984a623e75838ca39212536a43424765bc6765c25d8cd59d5f8a2cd2d9"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13210v1",
+          "observedAt": "2026-10-12T02:48:30.465229+00:00",
+          "contentHash": "621100d261c470db60e5b3a40cf13a9083ea433040736d8ffa0df1d7dc4138be"
         }
       ],
       "analysis": {
@@ -1069,7 +1175,23 @@
         "breakthrough": "把代数对称性提升到着色链环同调的函子结构。",
         "limitations": "摘要未给出新作用在具体结不变量上的计算后果。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者声明 AI 仅用于纠正语言错误，未披露数学协作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.13210v1 · PDF 第 3 页",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:48:30.465229+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13210v1",
+          "contentHash": "621100d261c470db60e5b3a40cf13a9083ea433040736d8ffa0df1d7dc4138be",
+          "pages": 38,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明 AI 仅用于纠正语言错误，未披露数学协作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f75d20c1b22a8b7c44f79c58711c074a47e3c4ede7b6299e50aca4c09db3a9ec"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 55,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 55/100；重点在于把代数对称性提升到着色链环同调的函子结构。"
       },
@@ -1211,6 +1333,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:00.464946+00:00",
           "contentHash": "073483c803467373a3825806750c71e8bc3d71ba66d392c078a8beef9fcce8a3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13297v1",
+          "observedAt": "2026-10-12T02:48:52.384790+00:00",
+          "contentHash": "729581044245aa88773057d6868dfcb1a0e8c84d83d5bda10ab96c9e7f786f35"
         }
       ],
       "analysis": {
@@ -1226,6 +1353,19 @@
         "limitations": "主要聚焦 PL 流形；一般复形的完整分类不在摘要中。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:48:52.384790+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13297v1",
+          "contentHash": "729581044245aa88773057d6868dfcb1a0e8c84d83d5bda10ab96c9e7f786f35",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确声明未使用 AI 或其他软件；图由作者用 GeoGebra 制作，普通绘图软件不等于 AI 协作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "bab468b5ad744d24dbfa081322a35d54290954f041b83bfaeed8941f40bb02ac"
+        },
         "priorityScore": 53,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 53/100；重点在于把已有线性理论推广至二次距离，并给低维奇点类型与维数界。"
       },
@@ -1263,6 +1403,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:55.803901+00:00",
           "contentHash": "a8e7a2149f4c7e6c3ded7b77f83f9be9410aac8ea0f31875ce827fc775a13bb9"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13347v1",
+          "observedAt": "2026-10-12T02:49:48.186821+00:00",
+          "contentHash": "5a3001d1537c1d8224e56e55c1a279b0cf9261ed358c40cb0dcd13feef367efa"
         }
       ],
       "analysis": {
@@ -1278,6 +1423,17 @@
         "limitations": "章节性质的综述，摘要未声称新的定理。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:49:48.186821+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13347v1",
+          "contentHash": "5a3001d1537c1d8224e56e55c1a279b0cf9261ed358c40cb0dcd13feef367efa",
+          "pages": 36,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "342e22881ea0bff8cf0cedc1a007a1247a9dacb8182326b951034712edb7b190"
+        },
         "priorityScore": 43,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 43/100；重点在于为曲面动力学与算术性质的交叉研究提供路线图。",
         "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
@@ -1472,6 +1628,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:55.807062+00:00",
           "contentHash": "4292dd99a31fb1b8303a67f53aae1d0bdb318db7acf05b5a429fc2bac58e7f5d"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13475v1",
+          "observedAt": "2026-10-12T02:49:25.293234+00:00",
+          "contentHash": "e7d3ddb08511b1a807903278e2273c244f3e53e105c31f37d64f33ae91752afb"
         }
       ],
       "analysis": {
@@ -1486,6 +1647,17 @@
         "limitations": "结论仅针对四维单纯形，且摘要未给出最优性。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:49:25.293234+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13475v1",
+          "contentHash": "e7d3ddb08511b1a807903278e2273c244f3e53e105c31f37d64f33ae91752afb",
+          "pages": 7,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "c1e543674620e25806589628c5fecfb11dce62c03f95f24ada14810d026e7869"
+        },
         "priorityScore": 48,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 48/100；重点在于把此前一般位置简单多胞体的 12 条下界提高到单纯形的 14 条。",
         "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
@@ -1841,6 +2013,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:55.811929+00:00",
           "contentHash": "a7673e91113e1eb837875b0d18fb6ee9b546a405a4524e2bb299cfff265f103d"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13747v1",
+          "observedAt": "2026-10-12T02:48:19.328633+00:00",
+          "contentHash": "ccf0e24816b69fb2a8e269978bd7984b67aee782407fc0fbf1735bbdb3feae29"
         }
       ],
       "analysis": {
@@ -1855,7 +2032,26 @@
         "breakthrough": "有各向同性点时在边界固定微分同胚模下唯一，无该点时恰有两个候选。",
         "limitations": "结论以两相关度量均透镜刚性为前提。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者称 Claude 少量协助多条证明，ChatGPT 参与第 6 节讨论与多数计算，并协助语言编辑。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.13747v1 · PDF 第 10 页",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:48:19.328633+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13747v1",
+          "contentHash": "ccf0e24816b69fb2a8e269978bd7984b67aee782407fc0fbf1735bbdb3feae29",
+          "pages": 56,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 Claude 少量协助多条证明，ChatGPT 参与第 6 节讨论与多数计算，并协助语言编辑。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "48146bd940c3ccb93da903f5e775cab91c8333b7d9e3b2d4ad613499ccca75f2"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 57,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 57/100；重点在于有各向同性点时在边界固定微分同胚模下唯一，无该点时恰有两个候选。"
       },
@@ -2101,6 +2297,11 @@
           "url": "https://export.arxiv.org/api/query",
           "observedAt": "2026-10-12T02:47:55.814012+00:00",
           "contentHash": "ea69196f05c1882f18466390bf33be36a072a06f43547b03d24f8345f2175b73"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.13885v1",
+          "observedAt": "2026-10-12T02:49:36.747511+00:00",
+          "contentHash": "963098101e9fb7f9c86f39696d86f86523dcb0a7be01b8ec9523a18dd1b77cdb"
         }
       ],
       "analysis": {
@@ -2116,6 +2317,19 @@
         "limitations": "研究重点是材料数据评估，非几何定理的新证明。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-12T02:49:36.747511+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.13885v1",
+          "contentHash": "963098101e9fb7f9c86f39696d86f86523dcb0a7be01b8ec9523a18dd1b77cdb",
+          "pages": 44,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。命中段落讨论 AI 材料发现研究对象及引用，未发现作者披露用生成式 AI 协作写作或研究。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9e91c8f51e0d0d5a87b60b53cb5ef2fd98d482a25deb675b4a43a04dda243df9"
+        },
         "priorityScore": 44,
         "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 44/100；重点在于提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
         "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
