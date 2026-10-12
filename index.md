@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-12
 
-已收录 41/41 · 解读 41/41 · 资料待补齐。
+已收录 41/41 · 解读 41/41。
 
 ## Large-volume fractional isoperimetry on products of closed manifolds and Euclidean spaces
 
