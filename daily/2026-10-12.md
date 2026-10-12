@@ -1,6 +1,6 @@
 # 几何前沿日报 · 2026-10-12
 
-已确认 28 篇，其他分类待补齐 · 解读 0 篇。
+已收录 41/41 · 解读 1/41 · 资料待补齐。
 
 ## Large-volume fractional isoperimetry on products of closed manifolds and Euclidean spaces
 
@@ -16,6 +16,38 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.08556)
 
+## Self-intersecting sections of polar actions on simply connected manifolds
+
+Stephan Wiesendorf
+
+构造 SU(3) 在闭单连通十一维流形上的极作用，其三维紧截面沿奇异层出现两个分支，否定截面总单射问题。
+
+We construct a polar action of $\mathrm{SU}(3)$ on a closed simply connected $11$-manifold with a compact three-dimensional section that is not injectively immersed. The section is injective over the regular part and has two distinct local branches along a singular stratum. All isotropy groups are connected, and all orbits are simply connected. This gives a negative answer to the injectivity question raised by Grove and Ziller.
+
+明确披露 AI 协作：作者披露与 ChatGPT 合作构造反例、完善数学构造、交叉核对已有文献并起草手稿，作者对内容负责。
+
+来源：https://arxiv.org/pdf/2610.12446v1 · PDF 第 2 页
+
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露与 ChatGPT 合作构造反例、完善数学构造、交叉核对已有文献并起草手稿，作者对内容负责。
+
+来源：https://arxiv.org/pdf/2610.12446v1
+
+[arXiv](https://arxiv.org/abs/2610.12446)
+
+## Singular Levi-flats and holomorphic foliations on projective spaces
+
+Bruno Scárdua
+
+中文解读待补齐
+
+We study codimension-one holomorphic foliations admitting invariant singular real-analytic Levi-flat varieties. Our main problem is to determine when the local meromorphic first integrals furnished by the Levi-flat geometry can be continued coherently and globalized. We introduce a pencil-singularity condition and a projective compatibility condition for local meromorphic parameters. In the projective plane these yield a characterization of foliations admitting a primitive rational first integral, while in higher-dimensional projective space they give a rational integrability criterion under a generic local-product hypothesis along the dicritical locus. We also obtain semi-global and Stein versions of these results. In a different direction, we study foliations admitting infinitely many invariant Levi-flat varieties and prove a Darboux-type alternative: either the foliation admits a rational first integral, or infinitely many Levi-flats contain a common invariant algebraic curve whose virtual holonomy is abelian. Under additional assumptions on the singularities, this leads to the existence of a closed rational, and in the absence of saddle-nodes a closed logarithmic, defining \(1\)-form.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12497)
+
 ## Triality rotation of connections and Dirac operators on SU(3)
 
 Joao Baptista
@@ -29,6 +61,34 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12548)
+
+## A cyclotomic gluing construction for lattice sphere packings
+
+Nihar Gargava、Matthias Gröbner、Michael Simkin
+
+中文解读待补齐
+
+For a positive integer $d$, let $\Delta_d^L$ denote the supremum of the densities of lattice sphere packings in $\mathbb R^d$. We prove that, for every sufficiently large $d$, $\Delta_d^L \gg d^2\log\log d\,2^{-d}$. Abuya-Gargava-Zhao obtained the same bound along a sparse sequence of dimensions by combining Venkatesh's cyclotomic symmetries with Klartag's stochastic ellipsoid method. We introduce a multi-cyclotomic gluing construction that allows this argument to work in every sufficiently large dimension.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12619)
+
+## Pointed Gromov-Hausdorff Distance between $l^p$-Wedge Sums and Isometric Embeddings of $l^\infty$
+
+Emin Abdullaev
+
+中文解读待补齐
+
+The paper studies $l^p$-wedge sums of metric spaces and provides a two-sided estimate for the pointed Gromov-Hausdorff distance between them. Using an upper bound for the Gromov-Hausdorff distance, the existence of an isometric embedding of $l^\infty$ into the Gromov-Hausdorff space of all non-empty metric spaces is proved.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12626)
 
 ## Equivariant Steklov homogenisation and stability of spectral representations
 
@@ -85,6 +145,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.12785)
+
+## Quasipositive Braids, Presentations, and Garside Structures
+
+Jacob Guynee
+
+中文解读待补齐
+
+We provide a presentation of the braid group in which the generating set is the set of all positive half-twists, the relations are balanced positive relations, and every relation is conjugate to one in a finite list. We then prove that for any such presentation, its positive monoid is not isomorphic to the quasipositive braid monoid. Finally, we show that the quasipositive braid monoid has no proper Garside family. These results settle a problem of Calegari from the K3 problems list.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.12808)
 
 ## Compact Mean Curvature Flows from Non-Compact Initial Data
 
@@ -170,6 +244,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.13055)
 
+## Symmetries of colored Khovanov-Rozansky homology
+
+Alexis Guérin、Felix Roz
+
+中文解读待补齐
+
+We construct an action of the positive half of the Witt algebra on colored $\mathfrak{gl}_N$-Khovanov-Rozansky homology and prove that this action is compatible with the functoriality of colored link homology. To establish this result, we use Bar-Natan's framework of canopolies to formulate and prove the relevant statements at the level of tangles.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13210)
+
 ## Minimizing tangent maps into complex projective space
 
 Matilde Gianocca、André Guerra、David Ziener
@@ -183,6 +271,48 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.13214)
+
+## Recognizing oriented knots from finite quotients with one marked element
+
+Indranil Biswas、Shrinit Singh
+
+中文解读待补齐
+
+For an oriented tame knot $K$, let $G_K$ be its group, with positive meridian $\mu_K$ and preferred longitude $\lambda_K$. We prove that the profinite completion $\widehat{G_K}$, marked by the conjugacy class of $\mu_K\lambda_K$, determines $K$ up to oriented equivalence. In fact, every isomorphism preserving this mark preserves the meridian and longitude with the same conjugator. The proof combines Xu's genuineness theorem with profinite JSJ theory and simultaneous boundary realization, and applies to satellite and composite knots. Consequently, Eisermann's colouring polynomials over all finite groups determine oriented knots.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13260)
+
+## Critical Point Theory for the Distance Function on PL-Spaces
+
+Dirk Siersma
+
+中文解读待补齐
+
+We study the (typical) singularities of the distance function from a point in the ambient space to a polytopal complex in Euclidean space. By means of the Goresky-MacPherson splitting we generalize the existing linear theory to the quadratic distance function. Critical points occur on `selected' strata of the PL-space, where normal Morse Data determine the change of topology. On the homology level there exist indices with multiplicities, combined in a Morse vector. We focus mainly on PL-manifolds. We give bounds, depending on the dimension of the strata. In low dimensions we describe singularity types. At the end we discuss relations with Discrete Morse Theory.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13297)
+
+## Thurston's Legacy at the Interface of Surface Dynamics, Train Tracks, and Arithmetic
+
+Ahmad Rafiqi、Ayberk Zeytin
+
+中文解读待补齐
+
+In this chapter, we discuss the interaction between low-dimensional dynamics, symbolic dynamics, and geometric topology, focusing on the algebraic characterization and asymptotic behaviour of stretch factors or equivalently pseudo-Anosov dilatations. We first review the algebraic foundations linking Perron--Frobenius theory, multi-variable Euclidean algorithms, and Lind's characterization of topological entropy for shifts of finite type, emphasizing recent constraints on the Perron--Frobenius degree of expansion constants. We then relate these dynamical invariants to the combinatorial world, examining train tracks for surfaces and automorphisms of free groups. Finally, we briefly review the relevance of fibered 3-manifolds, detailing how the Thurston norm, Fried's concavity theorem over fibered cones, and McMullen's Teichmüller polynomial come into play.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13347)
 
 ## Ruling out Infinite-Time Bubbling under $SO(4)$-Equivariant Yang--Mills Flow on $\mathbb{S}^4\times SU(2)$
 
@@ -225,6 +355,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.13423)
+
+## Each simplex in $\mathbb{R}^4$ has a point with at least $14$ emanating normals to its boundary
+
+Ivan Nasonov、Gaiane Panina
+
+中文解读待补齐
+
+We prove that each simplex in $\mathbb{R}^4$ contains a point with at least $14$ emanating normals to the boundary. Earlier, the authors proved that each generic simple polytope in $\mathbb{R}^4$ contains a point with at least $12$ emanating normals to the boundary. This problem belongs to a piecewise linear counterpart of a longstanding problem concerning normals to smooth convex bodies.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13475)
 
 ## Compactly supported instability of Riemannian Schwarzschild--Tangherlini metrics
 
@@ -324,6 +468,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.13747)
 
+## Linearity of Graph Manifold Groups
+
+Daniel T. Wise
+
+中文解读待补齐
+
+We complete the proof that every compact 3-manifold group is linear. Specifically, we construct a faithful representation in GL5(Q[u]) for a finite-index subgroup of every closed non-geometric graph-manifold group.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13801)
+
 ## Existence and uniqueness of bound states with prescribed number of nodes for nonlinear dispersive equations on spherically symmetric manifolds
 
 Valentino Badalucco
@@ -366,6 +524,20 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 [arXiv](https://arxiv.org/abs/2610.13848)
 
+## Necessary conditions for benchmarking next-generation AI in materials discovery
+
+Daniel E Widdowson、Tatiana V Kurlina、Olga D Anosova、Vitaliy A Kurlin
+
+中文解读待补齐
+
+Current AI predicts materials by speeding up energy minimisation and training on large databases. However, scaling data generation prevents manual analysis by domain experts. If novelty is evaluated by chemical compositions or traditional representations in Crystallographic Information Files, or standard structure matchers based on manually chosen thresholds, one can easily generate millions of ``new'' compositions or files without discovering truly novel materials. This paper uses a hierarchy of crystal invariants to continuously trace and quantify structural novelty based on the new mathematical definition of a crystal structure and asymptotic guarantees for invariant descriptors. The invariant-based analysis through cascade computations on a modest computer exposes the unexpected scale of duplication in the world's largest materials databases, shown here in the high-profile case of GNoME datasets. To prevent current ``embarrassment of over-prediction'', we propose necessary conditions for next-generation AI that should be automatically enforced before claiming any new materials.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13885)
+
 ## A Lean Formalization of the Hamilton--Perelman Proof of Thurston's Geometrization Conjecture
 
 Yuan Liao、Ziyang Qin、Jui-Hui Chung、Ayush Khaitan、Zhengyang Zhang、Hongzhou Lin、Zijian Zhang、Ligeng Zhu、Peng Lu、Bennett Chow
@@ -393,3 +565,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 
 [arXiv](https://arxiv.org/abs/2610.13913)
+
+## On some rigidity results for high-dimensional confoliations
+
+Fabio Gironella、Seungook Yu
+
+中文解读待补齐
+
+The main result is an obstruction to the presence of contact regions for c-symplectic confoliations in any odd ambient dimension. As a first application, we prove a 5-dimensional analogue (under stronger assumptions) of a Reeb stability theorem for confoliations in dimension 3 due to Eliashberg and Thurston. Refining work of the first author with Cardona, we further give two new notions of contact approximations of c-symplectic confoliations in any odd ambient dimension generalizing the 3-dimensional notion of Eliashberg-Thurston. As a second application of our main theorem, we then give an example, in any ambient odd dimension, of a c-symplectic (and in fact strong symplectic) foliation that cannot be contact approximated, in either of these two senses. This relies on the property, of independent interest, that contact structures approximating (in these senses) a weakly c-symplectic confoliation are also weakly fillable. The proofs of all these statements rely on pseudo-holomorphic curve theory. Lastly, we describe several natural classes of examples of these types of contact approximations of c-symplectic confoliations.
+
+AI 披露待完成核查（不能仅凭摘要判断）
+
+
+
+[arXiv](https://arxiv.org/abs/2610.13927)
