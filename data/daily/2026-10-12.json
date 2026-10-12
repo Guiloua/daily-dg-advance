@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-12",
-  "revision": 3,
-  "contentHash": "d6e972d6d6aece4fb5dc7656e04cc8361acbc5e8e4f2fc73b1ecca750b775b51",
-  "lastUpdated": "2026-10-12T02:35:54.686Z",
+  "revision": 4,
+  "contentHash": "c3b208dff33b407a64c6c4069ee2b2a39fd73c056016e81ce70e2f2eaa24f0c7",
+  "lastUpdated": "2026-10-12T02:41:24.356Z",
   "categories": [
     {
       "category": "mathDg",
@@ -153,8 +153,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "定量等周定理",
+        "workSummary": "证明闭流形与欧氏空间乘积上，大体积分数周长的唯一极小者是直柱，并给出周长亏量的稳定性控制。",
+        "techniques": [
+          "热半群定义的分数周长",
+          "谱约化",
+          "欧氏切片重排"
+        ],
+        "breakthrough": "将周期分数等周问题的大体积极小形状及稳定性归入统一判据。",
+        "limitations": "结论要求半径与流形首特征值满足显式阈值。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 78,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 78/100；重点在于将周期分数等周问题的大体积极小形状及稳定性归入统一判据。"
+      },
+      "analysisBasis": {
+        "abstract": "Let $M$ be a closed connected Riemannian manifold and let $\\mathcal P_s$ be the fractional perimeter on $M\\times\\mathbb R^k$ defined through its heat semigroup, where $k\\ge1$ and $0<s<1$. We prove that the straight cylinder $M\\times B_R$, with $B_R\\subset\\mathbb R^k$ a ball of radius $R$, uniquely minimizes $\\mathcal P_s$ among all measurable sets of the same volume, up to translations in $\\mathbb R^k$ and null sets, whenever $R\\sqrt{\\lambda_1(M)}$ is at least an explicit threshold depending only on $k$ and $s$. Here $\\lambda_1(M)$ is the first positive eigenvalue of the nonnegative Laplace--Beltrami operator $-\\Delta_M$ on $M$. Under a larger threshold, the perimeter deficit controls both the deviation of the slice volumes from their mean and the square of the asymmetry relative to straight cylinders. For flat tori this gives large-volume uniqueness of straight cylinders for the periodic fractional perimeter, including singly periodic sets in every ambient dimension. The proof combines spectral reduction on $M$ with rearrangement of the Euclidean slices and a one-variable comparison between an interaction gain and a concavity loss.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12446",
@@ -243,8 +261,26 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "有理可积性判据",
+        "workSummary": "建立奇异 Levi-flat 不变簇给出的局部亚纯首次积分延拓为整体有理首次积分的条件。",
+        "techniques": [
+          "铅笔奇点条件",
+          "局部参数的射影兼容",
+          "虚全纯群"
+        ],
+        "breakthrough": "在射影平面给出刻画，并得到高维判据及无穷 Levi-flat 的 Darboux 型二择。",
+        "limitations": "高维结论依赖 dicritical 轨迹附近的局部乘积等假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 68,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 68/100；重点在于在射影平面给出刻画，并得到高维判据及无穷 Levi-flat 的 Darboux 型二择。"
+      },
+      "analysisBasis": {
+        "abstract": "We study codimension-one holomorphic foliations admitting invariant singular real-analytic Levi-flat varieties. Our main problem is to determine when the local meromorphic first integrals furnished by the Levi-flat geometry can be continued coherently and globalized. We introduce a pencil-singularity condition and a projective compatibility condition for local meromorphic parameters. In the projective plane these yield a characterization of foliations admitting a primitive rational first integral, while in higher-dimensional projective space they give a rational integrability criterion under a generic local-product hypothesis along the dicritical locus. We also obtain semi-global and Stein versions of these results. In a different direction, we study foliations admitting infinitely many invariant Levi-flat varieties and prove a Darboux-type alternative: either the foliation admits a rational first integral, or infinitely many Levi-flats contain a common invariant algebraic curve whose virtual holonomy is abelian. Under additional assumptions on the singularities, this leads to the existence of a closed rational, and in the absence of saddle-nodes a closed logarithmic, defining \\(1\\)-form.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12548",
@@ -268,8 +304,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "对称性构造",
+        "workSummary": "在 SU(3) 上用 triality 将任意度量联络旋转成一个规范的三元轨道，并研究 Dirac 算子。",
+        "techniques": [
+          "Spin(8) triality",
+          "Okubo 乘积",
+          "旋量提升"
+        ],
+        "breakthrough": "曲率范数与若干 Yang–Mills 泛函在旋转下保持，形成新的模空间对称。",
+        "limitations": "构造依赖 SU(3) 的八维特殊表示结构。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 72,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 72/100；重点在于曲率范数与若干 Yang–Mills 泛函在旋转下保持，形成新的模空间对称。"
+      },
+      "analysisBasis": {
+        "abstract": "We show how triality, the symmetry permuting the three 8-dimensional representations of $\\mathrm{Spin}(8)$, can also appear as a symmetry of geometric objects such as connections and Dirac operators. Take any Riemannian metric $g$ on the manifold $M = \\mathrm{SU}(3)$ and let $\\nabla$ be a metric connection on $TM$. Using an explicit model of Clifford multiplication by deformed Okubo products, we combine spinorial lifts with isometries $TM \\simeq S^+ \\simeq S^-$ to show that $\\nabla$ can be rotated into two new metric connections on $TM$. So there is a canonical $\\mathbb{Z}_3$-orbit of metric connections determined by $(g, \\nabla)$, with no other choices. The three connections coincide when $g$ is bi-invariant and $\\nabla$ belongs to the Cartan-Schouten line, but in general they are different. The rotations of $\\nabla$ preserve the norm of the curvature, so they define a new $\\mathbb{Z}_3$-symmetry of the moduli space of Yang-Mills connections on $TM$. They also preserve the Chern-Simons 3-form and adjoint Yang-Mills-Higgs functionals. After choosing an orientation on $M$, the rotated connections define three self-adjoint, Dirac-type operators on the spinor bundle. We prove that these operators are natural, in the sense that they commute with the Kosmann derivatives of spinors along all invariant Killing vector fields that preserve $\\nabla$. We also show that they are not isospectral, in general. This is verified by computing the simplest eigenvalue for the Levi-Civita connection and observing that it splits among the three operators as the bi-invariant metric on $M$ is deformed to one with isometry group $(\\mathrm{SU}(3) \\times \\mathrm{SU}(2) \\times \\mathrm{U}(1)) / \\mathbb{Z}_6$. Finally, we outline how the constructions in the paper may extend to general 8-manifolds with a $\\mathrm{PSU}(3)$-structure.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12619",
@@ -296,8 +350,25 @@
           "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "格堆积下界",
+        "workSummary": "把此前只沿稀疏维度成立的格球堆积密度下界推广到所有充分大的维度。",
+        "techniques": [
+          "多重分圆拼接",
+          "随机椭球方法"
+        ],
+        "breakthrough": "得到与稀疏维度结果同阶的 d²loglog(d)·2⁻ᵈ 下界。",
+        "limitations": "这是渐近下界，未给出每个具体小维度的最优堆积。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 54,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 54/100；重点在于得到与稀疏维度结果同阶的 d²loglog(d)·2⁻ᵈ 下界。"
+      },
+      "analysisBasis": {
+        "abstract": "For a positive integer $d$, let $\\Delta_d^L$ denote the supremum of the densities of lattice sphere packings in $\\mathbb R^d$. We prove that, for every sufficiently large $d$, $\\Delta_d^L \\gg d^2\\log\\log d\\,2^{-d}$. Abuya-Gargava-Zhao obtained the same bound along a sparse sequence of dimensions by combining Venkatesh's cyclotomic symmetries with Klartag's stochastic ellipsoid method. We introduce a multi-cyclotomic gluing construction that allows this argument to work in every sufficiently large dimension.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12626",
@@ -321,8 +392,26 @@
           "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "度量测度几何、极限与奇异空间",
+        "progressType": "距离估计与嵌入",
+        "workSummary": "估计不同 l^p 楔和之间的 pointed Gromov–Hausdorff 距离，并构造 l^∞ 到度量空间 GH 空间的等距嵌入。",
+        "techniques": [
+          "楔和构造",
+          "GH 距离上下界"
+        ],
+        "breakthrough": "把无限维 Banach 空间的几何嵌入到度量空间模空间。",
+        "limitations": "摘要未给出两侧估计的精确常数或适用空间条件。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 48,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 48/100；重点在于把无限维 Banach 空间的几何嵌入到度量空间模空间。",
+        "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+      },
+      "analysisBasis": {
+        "abstract": "The paper studies $l^p$-wedge sums of metric spaces and provides a two-sided estimate for the pointed Gromov-Hausdorff distance between them. Using an upper bound for the Gromov-Hausdorff distance, the existence of an isometric embedding of $l^\\infty$ into the Gromov-Hausdorff space of all non-empty metric spaces is proved.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12725",
@@ -349,8 +438,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "谱表示与反例",
+        "workSummary": "证明等变谱收敛保留孤立谱簇的有限群表示，并把 Laplace 表示转移到 Steklov 谱簇。",
+        "techniques": [
+          "等变谱收敛",
+          "Steklov 均匀化",
+          "群表示"
+        ],
+        "breakthrough": "构造首 Steklov 重数 16、21 及至少 24 的曲面例子，反驳 Jammes 猜想。",
+        "limitations": "实例依赖特定曲面及有限群作用；一般上界仍需分别研究。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 80,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 80/100；重点在于构造首 Steklov 重数 16、21 及至少 24 的曲面例子，反驳 Jammes 猜想。"
+      },
+      "analysisBasis": {
+        "abstract": "We prove that isolated spectral clusters preserve their finite-group representation under equivariant spectral convergence. In particular, an irreducible limiting eigenspace cannot split into several nearby eigenvalues, while an isotypic limiting eigenspace imposes corresponding divisibility constraints on the multiplicities in the approximating cluster. We then construct a one-parameter equivariant Steklov homogenisation on closed orientable surfaces, allowing Laplace spectral representations to be transferred to Steklov spectral clusters. Applied to the hyperbolic surfaces of Fortier Bourque, Gruda-Mediavilla, Petri, and Pineault, this yields first Steklov multiplicities 16 and 21 in genera 10 and 17, and at least 24 in genus 37. These examples give counterexamples to Jammes's conjecture on first Steklov multiplicity.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12763",
@@ -376,8 +483,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "几何流奇点定理",
+        "workSummary": "证明泛型紧曲面及高维泛型紧均值凸超曲面的平均曲率流只有有限个奇点。",
+        "techniques": [
+          "球形和柱形奇点",
+          "初值扰动",
+          "非退化性"
+        ],
+        "breakthrough": "在所述两类情形解决 Ilmanen 与 Colding–Minicozzi–Pedersen 的泛型 Morse 正则性猜想。",
+        "limitations": "高维结论要求均值凸；更广泛推广需先验证奇点类型假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 90,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 90/100；重点在于在所述两类情形解决 Ilmanen 与 Colding–Minicozzi–Pedersen 的泛型 Morse 正则性猜想。"
+      },
+      "analysisBasis": {
+        "abstract": "We show that for a generic compact initial surface in $\\mathbb{R}^3$, and any generic compact initial mean convex hypersurface in higher dimensions, the mean curvature flow encounters only finitely many singularities. This resolves the full generic Morse regularity conjectures of Ilmanen and Colding-Minicozzi-Pedersen in the above two cases. More generally, we show that if a mean curvature flow of a compact hypersurface has only multiplicity one spherical and cylindrical singularities, then after a small perturbation of the initial condition only non-degenerate cylindrical and spherical singularities appear.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12776",
@@ -408,8 +533,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "几何计算框架",
+        "workSummary": "用不依赖坐标基的统一导数算子表达多种几何微分运算，并映射到现有自动微分原语。",
+        "techniques": [
+          "无坐标微分",
+          "JAX 批处理与编译",
+          "流形算子"
+        ],
+        "breakthrough": "让旋转、体积形式与曲率等对象在通用 AD 流程中复用。",
+        "limitations": "实验展示实现可行性，几何正确性和数值性能需结合具体算子核验。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 58,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 58/100；重点在于让旋转、体积形式与曲率等对象在通用 AD 流程中复用。"
+      },
+      "analysisBasis": {
+        "abstract": "Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12785",
@@ -440,8 +583,26 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "CR 特征类构造",
+        "workSummary": "构造闭 Levi 非退化 CR 流形，其一系列 Chern 单项式在实上同调中非零。",
+        "techniques": [
+          "伪 Kähler 乘积",
+          "圆丛",
+          "Chern 类计算"
+        ],
+        "breakthrough": "说明严格伪凸情形的 Chern 类消失定理不能普遍延伸到非退化 Levi 情形。",
+        "limitations": "非零范围受维数、指标和权重约束。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 69,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 69/100；重点在于说明严格伪凸情形的 Chern 类消失定理不能普遍延伸到非退化 Levi 情形。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct closed Levi non-degenerate CR manifolds with non-vanishing Chern monomials. For every $n \\geq 2$ and $\\lceil n / 4 \\rceil \\leq m \\leq \\lfloor n / 2 \\rfloor$, there exists a $(2 n + 1)$-dimensional example of signature $(\\lfloor n / 2 \\rfloor, \\lceil n / 2 \\rceil)$ on which all Chern monomials with positive indices at most $m$ and total weight at most $n - m$ are non-zero in cohomology with real coefficients. Taking $m = \\lceil n / 4 \\rceil$ gives examples with $c_{1}^{\\lfloor 3 n / 4 \\rfloor} \\neq 0$. For $n = 4$ or $n \\geq 6$, the latter examples show that the Chern-class vanishing theorem for strictly pseudoconvex CR manifolds does not extend to the Levi non-degenerate case. In these dimensions, their underlying manifolds admit no strictly pseudoconvex CR structures. The construction uses circle bundles over products of integral pseudo-Kähler manifolds.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12808",
@@ -465,8 +626,25 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "辫群正幺半群结构",
+        "workSummary": "给出以所有正半扭为生成元的辫群表示，证明其正幺半群并非拟正辫幺半群，后者无真 Garside 族。",
+        "techniques": [
+          "平衡正关系",
+          "共轭下的有限关系清单"
+        ],
+        "breakthrough": "解决 Calegari K3 问题清单中的相关问题。",
+        "limitations": "摘要针对特定生成与关系结构，不应推广为所有辫群正锥。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 61,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 61/100；重点在于解决 Calegari K3 问题清单中的相关问题。"
+      },
+      "analysisBasis": {
+        "abstract": "We provide a presentation of the braid group in which the generating set is the set of all positive half-twists, the relations are balanced positive relations, and every relation is conjugate to one in a finite list. We then prove that for any such presentation, its positive monoid is not isomorphic to the quasipositive braid monoid. Finally, we show that the quasipositive braid monoid has no proper Garside family. These results settle a problem of Calegari from the K3 problems list.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12817",
@@ -491,8 +669,25 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "平均曲率流构造",
+        "workSummary": "构造从非紧初始数据产生、却在正时间成为紧嵌入曲面的有限时平均曲率流解。",
+        "techniques": [
+          "几何流解构造",
+          "非紧初值"
+        ],
+        "breakthrough": "显示初始数据的非紧性不必沿流保持。",
+        "limitations": "摘要未说明初始数据的完整类别及唯一性。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 65,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 65/100；重点在于显示初始数据的非紧性不必沿流保持。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct compact, embedded solutions to the mean curvature flow in $\\mathbb{R}^{n+1}$ that arise from various non-compact initial data and exist for a finite time.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12825",
@@ -519,8 +714,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "扭曲上同调局部化",
+        "workSummary": "在球面映射的 brane 空间上由 gerbe 构造平均全纯线丛和超联络，证明扭曲上同调局部化回原流形。",
+        "techniques": [
+          "gerbe holonomy",
+          "圈作用局部化",
+          "Bismut–Chern 形式"
+        ],
+        "breakthrough": "将带 H-flux 的 genus-0 T-duality 与 brane 空间局部化联系起来。",
+        "limitations": "主要是高度专门的构造；应用范围取决于 gerbe 和 T 对偶假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 52,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 52/100；重点在于将带 H-flux 的 genus-0 T-duality 与 brane 空间局部化联系起来。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct a geometric theory on the brane space $S^2M=C^\\infty(S^2,M)$ associated to a gerbe with connection on $M$. Normalized logarithmic holonomy around the latitude circles defines an average holonomy line bundle on the brane space, whose connection and averaged flux give an equivariantly flat superconnection. We prove that the completed periodic exotic twisted cohomology defined by this superconnection localizes to the twisted cohomology of $M$. This {\\bf brane space localization} happens in two stages: circle localization lands on the free path space of $M$, and contracting the paths, after a correction of the twisting form, brings us back to $M$. Parallel transport along the meridians lets us average gerbe module connections, after which the circular iterated-integral construction applies. The resulting {\\bf twisted brane Bismut-Chern forms} restrict to the twisted Chern forms on $M$; their variation is described by {\\bf twisted brane Bismut-Chern-Simons forms.} For a T-dual pair, transporting the classical Hori morphisms through localization yields {\\bf graded genus-0 T-duality} on brane cohomology. The composite of each morphism with its dual is minus the Euler operator in the level variable, so these morphisms are isomorphisms at every nonzero level. At level one these morphisms are compatible with the brane character and twisted $K$-theory T-duality.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12852",
@@ -545,8 +758,25 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "曲率与比较几何",
+        "progressType": "特征值锐下界",
+        "workSummary": "在积分 Ricci 曲率足够小的闭流形上，为 p≥2 的 p-Laplace 首个非零特征值建立锐的 Zhong–Yang 型下界。",
+        "techniques": [
+          "Sobolev 截断的全局椭圆估计",
+          "一维比较剖面扰动"
+        ],
+        "breakthrough": "将经典谱比较的锐性推进到积分曲率控制与非线性 p-Laplace 情形。",
+        "limitations": "需要小积分曲率及 p≥2；摘要未说明阈值的最优性。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 77,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 77/100；重点在于将经典谱比较的锐性推进到积分曲率控制与非线性 p-Laplace 情形。"
+      },
+      "analysisBasis": {
+        "abstract": "We prove a sharp Zhong-Yang type lower bound for the first nonzero eigenvalue of the $p$-Laplacian on closed manifolds with small integral Ricci curvature for $p \\geq 2$. The proof combines a global elliptic estimate obtained by Sobolev truncation with strict perturbations of one-dimensional comparison profiles.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.12930",
@@ -569,8 +799,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "曲率与比较几何",
+        "progressType": "刚性定理新证明",
+        "workSummary": "通过点态张量恒等式及其迹，给出循环平行 Ricci 条件下多类空间的直接刚性证明。",
+        "techniques": [
+          "Ricci 张量二次方程",
+          "径向平坦性",
+          "加权散度公式"
+        ],
+        "breakthrough": "统一梯度 Ricci soliton、准 Einstein 及若干临界空间的证明路线。",
+        "limitations": "主要贡献是证明与统一方法，具体结论仍依赖各类空间原有全局条件。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 63,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 63/100；重点在于统一梯度 Ricci soliton、准 Einstein 及若干临界空间的证明路线。"
+      },
+      "analysisBasis": {
+        "abstract": "We give direct proofs of rigidity results for gradient Ricci solitons, compact quasi-Einstein manifolds with boundary, and critical spaces with cyclic parallel Ricci tensor. For solitons and quasi-Einstein manifolds, successive traces of first-order pointwise identities yield quadratic equations for the Ricci tensor and its modification. These equations imply radial flatness and radial $Q$-flatness, respectively, and the corresponding global rigidity theorems apply. For critical spaces, comparison of two expressions for the Laplacian of the Hessian gives a pointwise tensor identity whose scalar contraction yields a weighted divergence formula. Integration then gives the vacuum static, CPE, and Miao--Tam conclusions. The same comparison also proves Ricci parallelism pointwise for solitons and quasi-Einstein manifolds.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13005",
@@ -594,8 +842,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "复空间度量存在性",
+        "workSummary": "在不可约约化紧复空间的正则部分建立广义 Gauduchon 方程的有界正解与唯一常数。",
+        "techniques": [
+          "Hermitian 度量",
+          "∂∂̄ 方程",
+          "爆破不变量"
+        ],
+        "breakthrough": "同时证明紧复流形广义 Gauduchon 常数的全符号集合在光滑中心爆破下保持。",
+        "limitations": "解定义在奇异空间正则部分，奇点上的延拓性质未由摘要保证。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 67,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 67/100；重点在于同时证明紧复流形广义 Gauduchon 常数的全符号集合在光滑中心爆破下保持。"
+      },
+      "analysisBasis": {
+        "abstract": "Let $X$ be an irreducible reduced compact complex space of dimension $n$, and let $\\omega$ be a Hermitian metric on $X$. For each $1\\le k\\le n-1$, we prove that there exist a constant $c_k$ and a smooth positive function $\\rho$ on $X_{\\mathrm{reg}}$ such that $\\ii\\partial\\bar\\partial(\\rho\\omega^k)\\wedge\\omega^{n-k-1}=c_k\\rho\\omega^n$. The function $\\rho$ is bounded above and bounded away from zero. The constant $c_k$ is unique, and $\\rho$ is unique up to a positive multiple among bounded smooth positive solutions. We also prove that the full sign set $\\{-1,0,1\\}$ of the generalized Gauduchon constants $c_k$ on a compact complex manifold is preserved by finite sequences of blow-ups with smooth centers.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13055",
@@ -628,8 +894,26 @@
           "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "度量测度几何、极限与奇异空间",
+        "progressType": "拟等距刚性反例",
+        "workSummary": "构造同一七维幂零格上的两个词度量，其渐近锥等距而所有拟等距都有严格大于一的乘法常数。",
+        "techniques": [
+          "位移 cocycle",
+          "不变均值",
+          "上同调环约束"
+        ],
+        "breakthrough": "展示渐近锥相同仍不足以保证近似等距的定量刚性。",
+        "limitations": "间隙针对构造的七维例子，普遍下界并非摘要结论。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 75,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 75/100；重点在于展示渐近锥相同仍不足以保证近似等距的定量刚性。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct two word metrics on the same seven-dimensional torsion-free nilpotent lattice whose asymptotic cones are isometric, but for which every quasi-isometry has multiplicative constant at least $1+\\varepsilon$, for one fixed $\\varepsilon>0$. We use a convex invariant of a fixed quasi-isometry $\\Psi:N\\to M$. The displacement cocycle of $\\Psi$ and the right-invariant means on $N$ determine a compact convex set $\\mathcal A(\\Psi)\\subseteq\\operatorname{Hom}(V_N,V_M)$. If $\\mathscr G_{\\mathrm{pt}}(\\Psi)$ denotes the first-layer maps of the graded homomorphisms that occur as blow-downs of $\\Psi$ with varying basepoints, then $$ \\mathcal A(\\Psi)=\\operatorname{conv}\\mathscr G_{\\mathrm{pt}}(\\Psi), \\qquad\\operatorname{Ext}\\mathcal A(\\Psi)\\subseteq\\mathscr G_{\\mathrm{pt}}(\\Psi). $$ For every extreme point $L\\in\\mathcal A(\\Psi)$, the dual map $L^*$ is also the degree-one part of an isomorphism of the full real cohomology rings. This cohomological compatibility, together with the realization of first-layer Pansu differentials by invariant means, yields the multiplicative constant gap stated above.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13210",
@@ -655,8 +939,25 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "结同调代数作用",
+        "workSummary": "在着色 gl_N Khovanov–Rozansky 同调上构造正半 Witt 代数作用，并证明与链环函子性相容。",
+        "techniques": [
+          "Bar-Natan canopoly",
+          "tangle 层级论证"
+        ],
+        "breakthrough": "把代数对称性提升到着色链环同调的函子结构。",
+        "limitations": "摘要未给出新作用在具体结不变量上的计算后果。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 55,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 55/100；重点在于把代数对称性提升到着色链环同调的函子结构。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct an action of the positive half of the Witt algebra on colored $\\mathfrak{gl}_N$-Khovanov-Rozansky homology and prove that this action is compatible with the functoriality of colored link homology. To establish this result, we use Bar-Natan's framework of canopolies to formulate and prove the relevant statements at the level of tangles.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13214",
@@ -683,8 +984,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "极小调和映射分类",
+        "workSummary": "分类从 S²、S³ 到复射影空间、其零次齐次延拓仍极小的非平凡光滑调和映射。",
+        "techniques": [
+          "极小切映射",
+          "等距嵌入",
+          "Hopf 映射"
+        ],
+        "breakthrough": "两种源维数分别归为等距嵌入及全纯等距嵌入与 Hopf 映射的复合。",
+        "limitations": "分类针对 S² 与 S³，且要求齐次延拓极小。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 79,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 79/100；重点在于两种源维数分别归为等距嵌入及全纯等距嵌入与 Hopf 映射的复合。"
+      },
+      "analysisBasis": {
+        "abstract": "We classify all nonconstant smooth harmonic maps $\\mathbb{S}^2\\to \\mathbb{CP}^n$ and $\\mathbb{S}^3\\to \\mathbb{CP}^n$ whose 0-homogeneous extensions are minimizing: they are, respectively, isometric embeddings or holomorphic isometric embeddings composed with a Hopf map.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13260",
@@ -710,8 +1029,26 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "结的有限商识别",
+        "workSummary": "证明带正经线与首选经线组合标记的结群 profinite 完备化确定有向驯结。",
+        "techniques": [
+          "profinite JSJ",
+          "边界同步实现",
+          "有限群着色"
+        ],
+        "breakthrough": "推出全部有限群上的 Eisermann 着色多项式确定有向结。",
+        "limitations": "关键是标记元素及定向；无标记完备化不在此结论内。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 74,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 74/100；重点在于推出全部有限群上的 Eisermann 着色多项式确定有向结。"
+      },
+      "analysisBasis": {
+        "abstract": "For an oriented tame knot $K$, let $G_K$ be its group, with positive meridian $\\mu_K$ and preferred longitude $\\lambda_K$. We prove that the profinite completion $\\widehat{G_K}$, marked by the conjugacy class of $\\mu_K\\lambda_K$, determines $K$ up to oriented equivalence. In fact, every isomorphism preserving this mark preserves the meridian and longitude with the same conjugator. The proof combines Xu's genuineness theorem with profinite JSJ theory and simultaneous boundary realization, and applies to satellite and composite knots. Consequently, Eisermann's colouring polynomials over all finite groups determine oriented knots.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13297",
@@ -736,8 +1073,26 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "度量测度几何、极限与奇异空间",
+        "progressType": "PL 空间距离临界点",
+        "workSummary": "研究欧氏空间中点到多胞复形的平方距离函数的典型奇点及临界点引起的拓扑变化。",
+        "techniques": [
+          "Goresky–MacPherson 分裂",
+          "正规 Morse 数据",
+          "Morse 向量"
+        ],
+        "breakthrough": "把已有线性理论推广至二次距离，并给低维奇点类型与维数界。",
+        "limitations": "主要聚焦 PL 流形；一般复形的完整分类不在摘要中。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 53,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 53/100；重点在于把已有线性理论推广至二次距离，并给低维奇点类型与维数界。"
+      },
+      "analysisBasis": {
+        "abstract": "We study the (typical) singularities of the distance function from a point in the ambient space to a polytopal complex in Euclidean space. By means of the Goresky-MacPherson splitting we generalize the existing linear theory to the quadratic distance function. Critical points occur on `selected' strata of the PL-space, where normal Morse Data determine the change of topology. On the homology level there exist indices with multiplicities, combined in a Morse vector. We focus mainly on PL-manifolds. We give bounds, depending on the dimension of the strata. In low dimensions we describe singularity types. At the end we discuss relations with Discrete Morse Theory.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13347",
@@ -763,8 +1118,27 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "综述与脉络整理",
+        "workSummary": "综述伪 Anosov 伸缩因子、Perron–Frobenius 理论、train tracks 及纤维化三维流形之间的联系。",
+        "techniques": [
+          "文献综述",
+          "符号动力系统",
+          "Thurston 范数"
+        ],
+        "breakthrough": "为曲面动力学与算术性质的交叉研究提供路线图。",
+        "limitations": "章节性质的综述，摘要未声称新的定理。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 43,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 43/100；重点在于为曲面动力学与算术性质的交叉研究提供路线图。",
+        "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+      },
+      "analysisBasis": {
+        "abstract": "In this chapter, we discuss the interaction between low-dimensional dynamics, symbolic dynamics, and geometric topology, focusing on the algebraic characterization and asymptotic behaviour of stretch factors or equivalently pseudo-Anosov dilatations. We first review the algebraic foundations linking Perron--Frobenius theory, multi-variable Euclidean algorithms, and Lind's characterization of topological entropy for shifts of finite type, emphasizing recent constraints on the Perron--Frobenius degree of expansion constants. We then relate these dynamical invariants to the combinatorial world, examining train tracks for surfaces and automorphisms of free groups. Finally, we briefly review the relevance of fibered 3-manifolds, detailing how the Thurston norm, Fried's concavity theorem over fibered cones, and McMullen's Teichmüller polynomial come into play.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13392",
@@ -788,8 +1162,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "Yang–Mills 流收敛",
+        "workSummary": "在 S⁴ 上 SO(4) 等变联络的 Yang–Mills 流中排除预期的无穷时气泡，并证明光滑等变初值收敛至平坦联络。",
+        "techniques": [
+          "等变约化",
+          "流的长期行为",
+          "瞬子反瞬子构型"
+        ],
+        "breakthrough": "为该对称类别的长期动力学给出全局收敛结论。",
+        "limitations": "结论限定 SO(4) 等变及平凡 SU(2) 丛。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 78,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 78/100；重点在于为该对称类别的长期动力学给出全局收敛结论。"
+      },
+      "analysisBasis": {
+        "abstract": "We study the Yang--Mills flow on $\\mathbb{S}^4$ restricted to $\\mathrm{SO}(4)$-equivariant connections on the trivial $\\mathrm{SU}(2)$ bundle. It was expected that antipodal instanton--anti-instanton configurations would lead to infinite-time singularities along the flow. We show that this does not occur. Moreover, for any smooth equivariant initial condition, the flow converges to the trivial flat connection.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13405",
@@ -818,8 +1210,28 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "极小曲面逆问题刚性",
+        "workSummary": "证明在极小曲面叶状分解条件下，极小曲面面积数据确定三维流形度量至固定边界的等距。",
+        "techniques": [
+          "极小曲面面积数据",
+          "边界刚性",
+          "Einstein 度量"
+        ],
+        "breakthrough": "解决所述外部形式最小面积边界刚性猜想，并给出带附加条件的 Einstein 全局刚性。",
+        "limitations": "叶状分解及 Einstein 情形的拓扑、非陷获条件不可省略。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者评论明确声明使用 AI 简化并核验部分证明。",
+        "aiEvidenceSource": "https://arxiv.org/abs/2610.13405 · author comment",
+        "priorityScore": 84,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 84/100；重点在于解决所述外部形式最小面积边界刚性猜想，并给出带附加条件的 Einstein 全局刚性。"
+      },
+      "analysisBasis": {
+        "abstract": "We study the recovery of a three-dimensional Riemannian manifold from the areas of minimal surfaces. We show that areas of minimal surfaces determine the metric on manifolds foliated by minimal surfaces, up to boundary-fixing isometry. This resolves the conjecture on boundary rigidity for least-area data in an exterior formulation, even without topological restrictions on the minimal surfaces. We also prove global rigidity for Einstein metrics on compact three-manifolds with boundary, assuming $\\(\\pi_1(M,\\partial M)=0\\)$ and a non-trapping condition. The Einstein result includes the",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13423",
@@ -844,8 +1256,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "奇异等周边界构造",
+        "workSummary": "构造黎曼流形中平均曲率非零且具有奇点的等周边界。",
+        "techniques": [
+          "稳定极小切锥",
+          "弱严格稳定",
+          "体积约束局部极小"
+        ],
+        "breakthrough": "给出首批非零 CMC 的奇异等周边界例子，并建立局部唯一极小判据。",
+        "limitations": "奇点模型需严格稳定且严格极小的正则切锥。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 74,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 74/100；重点在于给出首批非零 CMC 的奇异等周边界例子，并建立局部唯一极小判据。"
+      },
+      "analysisBasis": {
+        "abstract": "We produce the first examples of singular isoperimetric boundaries with non-zero constant mean curvature in Riemannian manifolds. The main technical ingredient is establishing that, for constant mean curvature hypersurfaces containing isolated singularities modelled on strictly stable, strictly minimising regular tangent cones, weak strict stability implies local unique volume-constrained minimisation.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13475",
@@ -869,8 +1299,26 @@
           "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "凸几何法线计数",
+        "workSummary": "证明 R⁴ 中任意单纯形内部存在一点，从该点向边界发出的法线至少有 14 条。",
+        "techniques": [
+          "分段线性凸几何",
+          "法线计数"
+        ],
+        "breakthrough": "把此前一般位置简单多胞体的 12 条下界提高到单纯形的 14 条。",
+        "limitations": "结论仅针对四维单纯形，且摘要未给出最优性。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 48,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 48/100；重点在于把此前一般位置简单多胞体的 12 条下界提高到单纯形的 14 条。",
+        "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+      },
+      "analysisBasis": {
+        "abstract": "We prove that each simplex in $\\mathbb{R}^4$ contains a point with at least $14$ emanating normals to the boundary. Earlier, the authors proved that each generic simple polytope in $\\mathbb{R}^4$ contains a point with at least $12$ emanating normals to the boundary. This problem belongs to a piecewise linear counterpart of a longstanding problem concerning normals to smooth convex bodies.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13507",
@@ -894,8 +1342,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "非紧 Einstein 型度量不稳定性",
+        "workSummary": "证明 Schwarzschild–Tangherlini 度量的负稳定方向可由紧支撑 TT 张量近似，因此具有通常意义下的不稳定性。",
+        "techniques": [
+          "TT 张量机器",
+          "加权 Sobolev 近似",
+          "二次变分"
+        ],
+        "breakthrough": "把此前非紧支撑的失稳证据转成光滑紧支撑变分。",
+        "limitations": "适用 n≥4 的所述度量；摘要未给出精确紧支撑张量的显式形式。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 64,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 64/100；重点在于把此前非紧支撑的失稳证据转成光滑紧支撑变分。"
+      },
+      "analysisBasis": {
+        "abstract": "On the Riemannian Schwarzschild--Tangherlini metric of dimension $n\\geq 4$, we show that the destabilizing TT tensor of Ozuch lies in the image of the ``TT-tensor machine''. By continuity, it can then be approximated, in suitable weighted Sobolev spaces, by smooth compactly supported TT tensors, on which the stability quadratic form is still negative. This proves instability in the usual sense for noncompact manifolds. To our knowledge, no exact smooth compactly supported destabilizing TT tensor was known before, even in 4D.",
+        "version": null
+      }
     },
     {
       "arxivId": "2610.13645",
@@ -926,8 +1392,25 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "双曲测地线集合判别",
+        "workSummary": "给出有限测地线段靠近 Birman–Series 集的可检验延长条件，并构造高亏格曲面上的近稠密例子。",
+        "techniques": [
+          "双向简单延长",
+          "双曲曲面构造"
+        ],
+        "breakthrough": "将集合的稀疏性与有限尺度上约 g⁻²ᐟ³ 的近稠密行为并置。",
+        "limitations": "近稠密例子要求亏格足够大；尺度常数由正文决定。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 60,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 60/100；重点在于将集合的稀疏性与有限尺度上约 g⁻²ᐟ³ 的近稠密行为并置。"
+      },
+      "analysisBasis": {
+        "abstract": "By a celebrated result of Birman and Series, the set of simple complete geodesics form a nowhere dense subset of a hyperbolic surface. We show that a segment of finite length is in a (small) neighborhood of this set if it can be \"extended simply\" in both directions for long enough. We deduce that, for large enough genus $g$, there exist surfaces with a Birman-Series set that is roughly $\\frac{1}{g^{\\sfrac{2}{3}}}$-dense.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13657",
@@ -952,8 +1435,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "lcK 度量刚性分类",
+        "workSummary": "分类紧局部共形 Kähler 流形上存在非平凡 Gauduchon 联络平行向量场时的度量类型。",
+        "techniques": [
+          "Gauduchon 联络",
+          "Bismut holonomy",
+          "Vaisman 几何"
+        ],
+        "breakthrough": "除特殊参数外迫使度量落入 Vaisman、全局共形 Kähler 或 Kähler 三类。",
+        "limitations": "t=1/3 需另论；摘要只在复维二给出该参数的结论。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 65,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 65/100；重点在于除特殊参数外迫使度量落入 Vaisman、全局共形 Kähler 或 Kähler 三类。"
+      },
+      "analysisBasis": {
+        "abstract": "We prove that on a compact locally conformally Kähler manifold, the existence of a non-trivial parallel vector field with respect to a Gauduchon connection $\\nabla^t$, for $t\\ne \\frac{1}{3}$, forces the metric to be either Vaisman (for $t=-1$), globally conformally Kähler (for $t=1$), or Kähler for all other values of $t$. As a consequence, we characterize compact Vaisman manifolds in terms of their Bismut holonomy group. Moreover, we show that in complex dimension two, the existence of a non-trivial $\\nabla^\\frac{1}{3}$-parallel vector field forces the metric to be globally conformally Kähler.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13661",
@@ -977,8 +1478,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "重整化面积与 Willmore 能量",
+        "workSummary": "把双曲极小曲面的重整化面积与共形紧化 Willmore 能量比例关系扩展到更广的曲面方程。",
+        "techniques": [
+          "线性 Weingarten 曲面",
+          "双曲椭圆积分",
+          "旋转环面"
+        ],
+        "breakthrough": "构造 Willmore 能量覆盖 (2π²,∞) 的旋转环面族，并含趋近 Clifford 环面的子族。",
+        "limitations": "普遍比例只对论文规定的曲面方程类成立。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 66,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 66/100；重点在于构造 Willmore 能量覆盖 (2π²,∞) 的旋转环面族，并含趋近 Clifford 环面的子族。"
+      },
+      "analysisBasis": {
+        "abstract": "In [1, Proposition 8.1], Alexakis and Mazzeo showed that the renormalized area of minimal surfaces in the hyperbolic space $\\mathbb{H}^3$ approaching the ideal boundary $\\partial_\\infty\\mathbb{H}^3$ is the negative of the Willmore energy of their Euclidean conformal compactifications. In this paper, we investigate whether there are other geometric surface equations for which these two quantities satisfy a universal proportionality relation. We answer this question in the affirmative by extending the Alexakis--Mazzeo result to a broader class of geometric equations containing, as two distinguished cases, the equations defining generalized singular minimal surfaces in $\\mathbb{R}^3$ and linear Weingarten surfaces in $\\mathbb{H}^3$. Moreover, for rotational linear Weingarten surfaces, we express both energies in terms of generalized hyperelliptic integrals and show that their doubles form a family of rotational tori in $\\mathbb{R}^3$ whose Willmore energies realize all values in $(2\\pi^2,\\infty)$, with a particular subfamily converging to the Clifford torus in $\\mathcal{W}^{2,p}$ for every $1\\leq p<\\infty$, as the optimal value $2\\pi^2$ is approached.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13738",
@@ -1008,8 +1527,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "Steklov 谱锐上界",
+        "workSummary": "为纤维闭合、基底有边界的 warped product 建立涉及体积和基底、纤维谱的锐 Steklov 上界。",
+        "techniques": [
+          "变量分离",
+          "加权 Helmholtz–Steklov 比较",
+          "谱均匀化"
+        ],
+        "breakthrough": "覆盖一维纤维并提高先前仅高维纤维的结果。",
+        "limitations": "上界依赖 warped product 结构及相应几何约束。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 72,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 72/100；重点在于覆盖一维纤维并提高先前仅高维纤维的结果。"
+      },
+      "analysisBasis": {
+        "abstract": "We obtain sharp isoperimetric-type upper bounds for Steklov eigenvalues on warped products whose bases are compact Riemannian manifolds with boundary and whose fibres are closed Riemannian manifolds. These bounds involve the volume of the warped product and of its boundary, as well as the eigenvalues of the Laplace operator on the fibre and the Steklov eigenvalues of the base. After separation of variables, these bounds are obtained by comparison with auxiliary Helmholtz-Steklov problems on the base involving weighted Laplace operators naturally induced by the warping function. We also study the effect of various natural geometric constraints, such as the warping function being identically equal to one on the boundary. The proofs make use of various spectral approximation methods, including homogenisation on manifolds when the fibres are one-dimensional.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13746",
@@ -1036,8 +1573,25 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "调和映射流奇点连续性",
+        "workSummary": "以加权 Łojasiewicz–Simon 不等式证明孤立气泡有限时奇点下的 body map 连续性。",
+        "techniques": [
+          "缩放模下的调和映射邻域",
+          "加权 Łojasiewicz–Simon 不等式"
+        ],
+        "breakthrough": "在孤立气泡情形解决 Topping 猜想。",
+        "limitations": "仍需有限时且只形成孤立气泡的条件。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 81,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 81/100；重点在于在孤立气泡情形解决 Topping 猜想。"
+      },
+      "analysisBasis": {
+        "abstract": "By establishing a weighted Lojasiewicz-Simon inequality for maps which are close to a fixed harmonic map modulo scaling, we prove Topping's conjecture on continuity of the body map in the case of finite time singularities at which only isolated bubbles form.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13747",
@@ -1064,8 +1618,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "弹性介质走时层析刚性",
+        "workSummary": "在平面椭圆各向异性弹性介质中分析双度量透镜数据对刚度张量的识别及二义性。",
+        "techniques": [
+          "慢度曲面",
+          "透镜刚性",
+          "代数特征化"
+        ],
+        "breakthrough": "有各向同性点时在边界固定微分同胚模下唯一，无该点时恰有两个候选。",
+        "limitations": "结论以两相关度量均透镜刚性为前提。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 57,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 57/100；重点在于有各向同性点时在边界固定微分同胚模下唯一，无该点时恰有两个候选。"
+      },
+      "analysisBasis": {
+        "abstract": "We study the gauge of the travel time tomography problem for elliptically anisotropic planar media. Under this assumption the respective slowness surfaces consist of an inner ellipse and an outer circle. Hence, the singularities of seismic waves propagate on geodesics given by two Riemannian metrics of which the one related to shear waves is conformally Euclidean. We show that if both of these metrics are lens rigid then, up to boundary fixing diffeomorphisms, each elliptically anisotropic stiffness tensor is uniquely determined by the lens data whenever it has at least one isotropic point. If none of those points exists, then there are exactly two elliptically anisotropic stiffness tensors with the same lens data. Clearly, not all boundary fixing diffeomorphisms preserve the imposed structure of the slowness surface. We show that the set of well-behaved diffeomorphisms is never a subgroup of all boundary fixing diffeomorphisms. Our proofs are based on an interplay of algebra and geometry, and the key of the proofs is a characterization of the elliptic anisotropy via several polynomial conditions.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13801",
@@ -1089,8 +1661,25 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何拓扑、低维流形与结",
+        "progressType": "三维流形群线性表示",
+        "workSummary": "构造闭非几何 graph manifold 群有限指数子群到 GL₅(Q[u]) 的忠实表示。",
+        "techniques": [
+          "graph manifold 分解",
+          "有理多项式矩阵表示"
+        ],
+        "breakthrough": "补全每个紧三维流形群都线性的证明。",
+        "limitations": "显式表示针对有限指数子群，需与既有其他流形类别结果合并。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 77,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 77/100；重点在于补全每个紧三维流形群都线性的证明。"
+      },
+      "analysisBasis": {
+        "abstract": "We complete the proof that every compact 3-manifold group is linear. Specifically, we construct a faithful representation in GL5(Q[u]) for a finite-index subgroup of every closed non-geometric graph-manifold group.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13813",
@@ -1116,8 +1705,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "径向束缚态存在唯一性",
+        "workSummary": "在广类球对称流形上，为非线性色散方程对应椭圆 ODE 构造指定节点数的径向束缚态。",
+        "techniques": [
+          "径向约化",
+          "非线性椭圆 ODE",
+          "节点计数"
+        ],
+        "breakthrough": "在温和条件下对模型幂非线性进一步证明唯一性，并允许某些原点奇性。",
+        "limitations": "唯一性只针对模型非线性及论文假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 59,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 59/100；重点在于在温和条件下对模型幂非线性进一步证明唯一性，并允许某些原点奇性。"
+      },
+      "analysisBasis": {
+        "abstract": "Standing waves $e^{i\\omega t}u(x)$ of nonlinear dispersive equations, such as the nonlinear Schrödinger and Klein--Gordon equations, have a profile $u$ that solves a nonlinear elliptic ODE of the form $\\Delta u+f(u)=0$. We prove the existence of radial bound states with a prescribed number of nodal surfaces for this equation, on a large class of spherically symmetric manifolds and nonlinearities $f$. Under mild assumptions, we prove uniqueness of such bound states for the model nonlinearity $f(u)=|u|^{p-1}u-u$. Both existence and uniqueness results apply to some manifolds with a singularity at the origin.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13831",
@@ -1144,8 +1751,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "Bergman 度量刚性与反例族",
+        "workSummary": "构造不可数个两两非双全纯等价的光滑非 Reinhardt 域，其 Bergman 度量仍有常正全纯截面曲率。",
+        "techniques": [
+          "夹心原理",
+          "仿射刚性",
+          "角向扰动"
+        ],
+        "breakthrough": "展示相同 Bergman 曲率并不能决定域的双全纯类型或自同构群。",
+        "limitations": "构造依赖 Hayashida–Kamimoto 型无界域和夹心条件。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 62,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 62/100；重点在于展示相同 Bergman 曲率并不能决定域的双全纯类型或自同构群。"
+      },
+      "analysisBasis": {
+        "abstract": "Based on earlier work by Wiegerinck and Huang-Li, Hayashida-Kamimoto constructed unbounded non-smooth Reinhardt domains in \\({\\mathbb C}^n\\), \\(n\\geq 3\\), whose Bergman spaces are finite-dimensional and whose Bergman metrics have constant positive holomorphic sectional curvature \\(2\\). In this note, we prove a Sandwich Principle for the Hayashida-Kamimoto domains that allows us to construct, inside every prescribed sandwich, uncountably many pairwise biholomorphically inequivalent smooth non-Reinhardt domains whose Bergman metrics also have constant positive holomorphic sectional curvature \\(2\\). We also classify biholomorphisms between domains sandwiched by the domains of Hayashida-Kamimoto with the help of an affine rigidity theorem in the spirit of Cartan rigidity, which should be of independent interest. For explicit angular perturbation families, we determine the full automorphism group and obtain, in particular, an abundance of examples with trivial automorphism group.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13848",
@@ -1172,8 +1797,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "几何分析、几何 PDE 与几何流",
+        "progressType": "Nirenberg 猜想反例",
+        "workSummary": "构造负高斯曲率嵌入环面，其两条边界为切平面内严格凸曲线，而内部有两条闭渐近曲线。",
+        "techniques": [
+          "Lelieuvre 公式",
+          "直纹环面",
+          "Riccati 周期解"
+        ],
+        "breakthrough": "反驳 Nirenberg 于 1962 年提出的相关猜想。",
+        "limitations": "反例是特定环面构造，并非任意负曲率曲面的普遍行为。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 72,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 72/100；重点在于反驳 Nirenberg 于 1962 年提出的相关猜想。"
+      },
+      "analysisBasis": {
+        "abstract": "We construct a smooth embedded annulus in $R^3$ with negative Gauss curvature in its interior whose boundary consists of two strictly convex curves in planes tangent to the annulus, and which contains two closed asymptotic curves. This gives a counterexample to a 1962 conjecture of Nirenberg. The construction is based on Lelieuvre's formula, which yields a closed curve that is then realized as an asymptotic curve on a ruled annulus. The second asymptotic curve is obtained from the periodic solution of a Riccati equation.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13885",
@@ -1200,8 +1843,27 @@
           "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "材料发现基准方法",
+        "workSummary": "以晶体结构不变量层级追踪结构新颖性，指出大型材料数据集中常见的重复计数问题。",
+        "techniques": [
+          "晶体不变量",
+          "级联计算",
+          "GNoME 数据分析"
+        ],
+        "breakthrough": "提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+        "limitations": "研究重点是材料数据评估，非几何定理的新证明。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 44,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 44/100；重点在于提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+        "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+      },
+      "analysisBasis": {
+        "abstract": "Current AI predicts materials by speeding up energy minimisation and training on large databases. However, scaling data generation prevents manual analysis by domain experts. If novelty is evaluated by chemical compositions or traditional representations in Crystallographic Information Files, or standard structure matchers based on manually chosen thresholds, one can easily generate millions of ``new'' compositions or files without discovering truly novel materials. This paper uses a hierarchy of crystal invariants to continuously trace and quantify structural novelty based on the new mathematical definition of a crystal structure and asymptotic guarantees for invariant descriptors. The invariant-based analysis through cascade computations on a modest computer exposes the unexpected scale of duplication in the world's largest materials databases, shown here in the high-profile case of GNoME datasets. To prevent current ``embarrassment of over-prediction'', we propose necessary conditions for next-generation AI that should be automatically enforced before claiming any new materials.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13897",
@@ -1233,8 +1895,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "交叉方向与基础工具",
+        "progressType": "Lean 形式化证明",
+        "workSummary": "给出 Hamilton–Perelman Ricci 流证明 Thurston 几何化猜想的 Lean 声明与验证记录。",
+        "techniques": [
+          "Lean 形式化",
+          "Ricci 流",
+          "几何化"
+        ],
+        "breakthrough": "把经典几何化论证转成机器可核查的形式化成果。",
+        "limitations": "摘要非常简短；应核对代码、依赖及验证范围后再断言形式化覆盖的细节。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 70,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 70/100；重点在于把经典几何化论证转成机器可核查的形式化成果。"
+      },
+      "analysisBasis": {
+        "abstract": "We formalize the Hamilton--Perelman Ricci-flow proof of Thurston's geometrization conjecture. The public Lean declaration is reproduced in this paper. Its geometric interpretation follows, and verification is recorded in 4.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13913",
@@ -1259,8 +1939,26 @@
           "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "亚黎曼 Bernstein 问题反例",
+        "workSummary": "在每个 n≥2 的 Heisenberg 群构造全局周长极小的光滑非特征整 intrinsic 图，但其边界不是竖直超平面。",
+        "techniques": [
+          "Heisenberg 周长",
+          "intrinsic 图",
+          "全局极小构造"
+        ],
+        "breakthrough": "否定高维 Heisenberg 场景中的朴素 Bernstein 刚性。",
+        "limitations": "结论针对 n≥2；低维情形需另论。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 76,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 76/100；重点在于否定高维 Heisenberg 场景中的朴素 Bernstein 刚性。"
+      },
+      "analysisBasis": {
+        "abstract": "In every sub-Riemannian Heisenberg group $\\mathbb H^n$, with $n\\geq 2$, we prove the existence of a global perimeter minimizer whose boundary is a smooth, non-characteristic, entire intrinsic graph but it is not a vertical hyperplane.",
+        "version": 1
+      }
     },
     {
       "arxivId": "2610.13927",
@@ -1286,15 +1984,33 @@
           "contentHash": "3ae8c177437ed727284a90ddf834be9a648f4359896cda12e0ec33713505812d"
         }
       ],
-      "analysis": null,
-      "analysisBasis": null
+      "analysis": {
+        "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+        "progressType": "高维 confoliation 刚性",
+        "workSummary": "给出任意奇维 c-symplectic confoliation 接触区域的障碍，并构造不能作两种意义接触近似的叶状结构。",
+        "techniques": [
+          "伪全纯曲线",
+          "弱可填充性",
+          "接触近似"
+        ],
+        "breakthrough": "推广低维稳定性与近似概念，同时展示高维接触近似的限制。",
+        "limitations": "五维 Reeb 稳定性类比需更强假设。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+        "analysisDepth": "abstract",
+        "aiStatus": "no_disclosure_observed",
+        "priorityScore": 66,
+        "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 66/100；重点在于推广低维稳定性与近似概念，同时展示高维接触近似的限制。"
+      },
+      "analysisBasis": {
+        "abstract": "The main result is an obstruction to the presence of contact regions for c-symplectic confoliations in any odd ambient dimension. As a first application, we prove a 5-dimensional analogue (under stronger assumptions) of a Reeb stability theorem for confoliations in dimension 3 due to Eliashberg and Thurston. Refining work of the first author with Cardona, we further give two new notions of contact approximations of c-symplectic confoliations in any odd ambient dimension generalizing the 3-dimensional notion of Eliashberg-Thurston. As a second application of our main theorem, we then give an example, in any ambient odd dimension, of a c-symplectic (and in fact strong symplectic) foliation that cannot be contact approximated, in either of these two senses. This relies on the property, of independent interest, that contact structures approximating (in these senses) a weakly c-symplectic confoliation are also weakly fillable. The proofs of all these statements rely on pseudo-holomorphic curve theory. Lastly, we describe several natural classes of examples of these types of contact approximations of c-symplectic confoliations.",
+        "version": 1
+      }
     }
   ],
   "coverage": {
     "expectedCount": 41,
     "confirmedCount": 41,
     "publishedCount": 41,
-    "analyzedCount": 1,
+    "analyzedCount": 41,
     "metadataCount": 1,
     "listingsComplete": true,
     "complete": false

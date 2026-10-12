@@ -27,8 +27,27 @@
         "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "材料发现基准方法",
+      "workSummary": "以晶体结构不变量层级追踪结构新颖性，指出大型材料数据集中常见的重复计数问题。",
+      "techniques": [
+        "晶体不变量",
+        "级联计算",
+        "GNoME 数据分析"
+      ],
+      "breakthrough": "提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+      "limitations": "研究重点是材料数据评估，非几何定理的新证明。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 44,
+      "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 44/100；重点在于提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+      "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "Current AI predicts materials by speeding up energy minimisation and training on large databases. However, scaling data generation prevents manual analysis by domain experts. If novelty is evaluated by chemical compositions or traditional representations in Crystallographic Information Files, or standard structure matchers based on manually chosen thresholds, one can easily generate millions of ``new'' compositions or files without discovering truly novel materials. This paper uses a hierarchy of crystal invariants to continuously trace and quantify structural novelty based on the new mathematical definition of a crystal structure and asymptotic guarantees for invariant descriptors. The invariant-based analysis through cascade computations on a modest computer exposes the unexpected scale of duplication in the world's largest materials databases, shown here in the high-profile case of GNoME datasets. To prevent current ``embarrassment of over-prediction'', we propose necessary conditions for next-generation AI that should be automatically enforced before claiming any new materials.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -58,8 +77,27 @@
             "contentHash": "82d97b6f24b8648752d3dd2b81d159ae687e646e65a3fc204721ed88a2fa5741"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "材料发现基准方法",
+          "workSummary": "以晶体结构不变量层级追踪结构新颖性，指出大型材料数据集中常见的重复计数问题。",
+          "techniques": [
+            "晶体不变量",
+            "级联计算",
+            "GNoME 数据分析"
+          ],
+          "breakthrough": "提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+          "limitations": "研究重点是材料数据评估，非几何定理的新证明。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 44,
+          "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 44/100；重点在于提出在宣称 AI 发现新材料前应自动执行的必要基准检查。",
+          "lowPriorityReason": "与本简报三类几何核心问题的直接关联较弱，或当前摘要证据不足以支持更高阅读优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "Current AI predicts materials by speeding up energy minimisation and training on large databases. However, scaling data generation prevents manual analysis by domain experts. If novelty is evaluated by chemical compositions or traditional representations in Crystallographic Information Files, or standard structure matchers based on manually chosen thresholds, one can easily generate millions of ``new'' compositions or files without discovering truly novel materials. This paper uses a hierarchy of crystal invariants to continuously trace and quantify structural novelty based on the new mathematical definition of a crystal structure and asymptotic guarantees for invariant descriptors. The invariant-based analysis through cascade computations on a modest computer exposes the unexpected scale of duplication in the world's largest materials databases, shown here in the high-profile case of GNoME datasets. To prevent current ``embarrassment of over-prediction'', we propose necessary conditions for next-generation AI that should be automatically enforced before claiming any new materials.",
+          "version": 1
+        }
       }
     }
   ]

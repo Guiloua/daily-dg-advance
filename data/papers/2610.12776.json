@@ -31,8 +31,26 @@
         "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "几何计算框架",
+      "workSummary": "用不依赖坐标基的统一导数算子表达多种几何微分运算，并映射到现有自动微分原语。",
+      "techniques": [
+        "无坐标微分",
+        "JAX 批处理与编译",
+        "流形算子"
+      ],
+      "breakthrough": "让旋转、体积形式与曲率等对象在通用 AD 流程中复用。",
+      "limitations": "实验展示实现可行性，几何正确性和数值性能需结合具体算子核验。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 58,
+      "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 58/100；重点在于让旋转、体积形式与曲率等对象在通用 AD 流程中复用。"
+    },
+    "analysisBasis": {
+      "abstract": "Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -66,8 +84,26 @@
             "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "几何计算框架",
+          "workSummary": "用不依赖坐标基的统一导数算子表达多种几何微分运算，并映射到现有自动微分原语。",
+          "techniques": [
+            "无坐标微分",
+            "JAX 批处理与编译",
+            "流形算子"
+          ],
+          "breakthrough": "让旋转、体积形式与曲率等对象在通用 AD 流程中复用。",
+          "limitations": "实验展示实现可行性，几何正确性和数值性能需结合具体算子核验。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 58,
+          "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 58/100；重点在于让旋转、体积形式与曲率等对象在通用 AD 流程中复用。"
+        },
+        "analysisBasis": {
+          "abstract": "Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.",
+          "version": 1
+        }
       }
     }
   ]
