@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.12776",
+  "slug": "2610.12776",
+  "latest": {
+    "arxivId": "2610.12776",
+    "metadata": {
+      "title": "Coordinate-Free Automatic Differentiation",
+      "authors": [
+        "Alex Guerra",
+        "Joshua Aduol",
+        "Yaqian Tang",
+        "Daniel Williams",
+        "Ryan P. Adams",
+        "Peter Orbanz"
+      ],
+      "abstract": "Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.",
+      "categories": [
+        "cs.LG",
+        "cs.MS",
+        "math.DG"
+      ],
+      "primaryCategory": "cs.LG",
+      "comment": "34 pages, 18 figures",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-12T02:30:29.339072+00:00",
+        "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
+      }
+    ],
+    "analysis": null,
+    "analysisBasis": null
+  },
+  "history": [
+    {
+      "date": "2026-10-12",
+      "entry": {
+        "arxivId": "2610.12776",
+        "metadata": {
+          "title": "Coordinate-Free Automatic Differentiation",
+          "authors": [
+            "Alex Guerra",
+            "Joshua Aduol",
+            "Yaqian Tang",
+            "Daniel Williams",
+            "Ryan P. Adams",
+            "Peter Orbanz"
+          ],
+          "abstract": "Automatic differentiation (AD) is a cornerstone of modern machine learning. Since all AD frameworks implicitly fix a basis of Euclidean space to define gradients and Jacobians, they natively process mathematical objects that are arrays of a fixed set of coordinates. This makes it awkward to express objects such as rotations, volume forms, and curvatures that arise, for example, in applications of AI to science. Bespoke workarounds lack reusability. We show that (i) a single, basis-independent derivative operator can represent many geometric differential operations, and (ii) this operator can be expressed entirely in terms of existing AD primitives. This reusable transformation can be composed with JAX batching, compilation, and hardware acceleration. Geometry enters as algebraic data. We experimentally demonstrate its reuse across different manifold operators, its composition through a spacetime inverse-problem pipeline, and its use in optimization over different rotor subgroups.",
+          "categories": [
+            "cs.LG",
+            "cs.MS",
+            "math.DG"
+          ],
+          "primaryCategory": "cs.LG",
+          "comment": "34 pages, 18 figures",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-12T02:30:29.339072+00:00",
+            "contentHash": "6c859476f67c22550e2ca583bc9608d9710cd2cd784dd1a5f39af68a9ae68a4b"
+          }
+        ],
+        "analysis": null,
+        "analysisBasis": null
+      }
+    }
+  ]
+}
