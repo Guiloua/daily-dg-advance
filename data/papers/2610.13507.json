@@ -30,6 +30,11 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-10-12T02:47:55.807584+00:00",
         "contentHash": "e7968ca588a6586758fa42f141059fc236d3bed70be34e51b5ab5d50335b7642"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.13507",
+        "observedAt": "2026-10-12T02:55:46.070175+00:00",
+        "contentHash": "522d9bc54f7db3cb01783ab38b3845160d506be55ca5c99e8622351c00f311d9"
       }
     ],
     "analysis": {
@@ -44,13 +49,31 @@
       "breakthrough": "把此前非紧支撑的失稳证据转成光滑紧支撑变分。",
       "limitations": "适用 n≥4 的所述度量；摘要未给出精确紧支撑张量的显式形式。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
       "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者称 Claude 协助求解第 4、5 节常微分方程及英文写作，并由作者核验结果。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.13507 · PDF 第 20 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-12T02:46:37.929343+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.13507",
+        "contentHash": "522d9bc54f7db3cb01783ab38b3845160d506be55ca5c99e8622351c00f311d9",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 Claude 协助求解第 4、5 节常微分方程及英文写作，并由作者核验结果。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5e14a185a3d6f05947b90ed0efc88752ab3b8c5cce352563fcf188298fd3d001"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 64,
       "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 64/100；重点在于把此前非紧支撑的失稳证据转成光滑紧支撑变分。"
     },
     "analysisBasis": {
       "abstract": "On the Riemannian Schwarzschild--Tangherlini metric of dimension $n\\geq 4$, we show that the destabilizing TT tensor of Ozuch lies in the image of the ``TT-tensor machine''. By continuity, it can then be approximated, in suitable weighted Sobolev spaces, by smooth compactly supported TT tensors, on which the stability quadratic form is still negative. This proves instability in the usual sense for noncompact manifolds. To our knowledge, no exact smooth compactly supported destabilizing TT tensor was known before, even in 4D.",
-      "version": null
+      "version": 1
     }
   },
   "history": [
@@ -84,6 +107,11 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-10-12T02:47:55.807584+00:00",
             "contentHash": "e7968ca588a6586758fa42f141059fc236d3bed70be34e51b5ab5d50335b7642"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.13507",
+            "observedAt": "2026-10-12T02:55:46.070175+00:00",
+            "contentHash": "522d9bc54f7db3cb01783ab38b3845160d506be55ca5c99e8622351c00f311d9"
           }
         ],
         "analysis": {
@@ -98,13 +126,31 @@
           "breakthrough": "把此前非紧支撑的失稳证据转成光滑紧支撑变分。",
           "limitations": "适用 n≥4 的所述度量；摘要未给出精确紧支撑张量的显式形式。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
           "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者称 Claude 协助求解第 4、5 节常微分方程及英文写作，并由作者核验结果。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.13507 · PDF 第 20 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-12T02:46:37.929343+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.13507",
+            "contentHash": "522d9bc54f7db3cb01783ab38b3845160d506be55ca5c99e8622351c00f311d9",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称 Claude 协助求解第 4、5 节常微分方程及英文写作，并由作者核验结果。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5e14a185a3d6f05947b90ed0efc88752ab3b8c5cce352563fcf188298fd3d001"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 64,
           "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 64/100；重点在于把此前非紧支撑的失稳证据转成光滑紧支撑变分。"
         },
         "analysisBasis": {
           "abstract": "On the Riemannian Schwarzschild--Tangherlini metric of dimension $n\\geq 4$, we show that the destabilizing TT tensor of Ozuch lies in the image of the ``TT-tensor machine''. By continuity, it can then be approximated, in suitable weighted Sobolev spaces, by smooth compactly supported TT tensors, on which the stability quadratic form is still negative. This proves instability in the usual sense for noncompact manifolds. To our knowledge, no exact smooth compactly supported destabilizing TT tensor was known before, even in 4D.",
-          "version": null
+          "version": 1
         }
       }
     }

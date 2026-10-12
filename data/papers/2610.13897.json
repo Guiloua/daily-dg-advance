@@ -37,6 +37,11 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-10-12T02:47:55.814389+00:00",
         "contentHash": "bb77c50efbdc91dbfddf291d3db79b7d381c4dd5760d95881a2de969424377c7"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.13897v1",
+        "observedAt": "2026-10-12T02:55:46.081257+00:00",
+        "contentHash": "07cc360bb8efe3d78df7f95e26d7dde852c50d65374685b18a945c24b27c3a04"
       }
     ],
     "analysis": {
@@ -51,7 +56,25 @@
       "breakthrough": "把经典几何化论证转成机器可核查的形式化成果。",
       "limitations": "摘要非常简短；应核对代码、依赖及验证范围后再断言形式化覆盖的细节。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
       "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露代理式 Lean 形式化流程：多模型构建器生成代码，GPT-6-Astra 审阅，Lean 内核及作者共同核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.13897v1 · PDF 第 4 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-12T02:45:08.386021+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.13897v1",
+        "contentHash": "07cc360bb8efe3d78df7f95e26d7dde852c50d65374685b18a945c24b27c3a04",
+        "pages": 7,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露代理式 Lean 形式化流程：多模型构建器生成代码，GPT-6-Astra 审阅，Lean 内核及作者共同核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5240315c5f32cf248d1ae90acddde49ed17e7d77e80e161edd4998ab8762c390"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification"
+      ],
       "priorityScore": 70,
       "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 70/100；重点在于把经典几何化论证转成机器可核查的形式化成果。"
     },
@@ -98,6 +121,11 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-10-12T02:47:55.814389+00:00",
             "contentHash": "bb77c50efbdc91dbfddf291d3db79b7d381c4dd5760d95881a2de969424377c7"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.13897v1",
+            "observedAt": "2026-10-12T02:55:46.081257+00:00",
+            "contentHash": "07cc360bb8efe3d78df7f95e26d7dde852c50d65374685b18a945c24b27c3a04"
           }
         ],
         "analysis": {
@@ -112,7 +140,25 @@
           "breakthrough": "把经典几何化论证转成机器可核查的形式化成果。",
           "limitations": "摘要非常简短；应核对代码、依赖及验证范围后再断言形式化覆盖的细节。 本条数学解读依据官方摘要与评论；论文全文尚未作数学审读，AI 披露另行核查。",
           "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露代理式 Lean 形式化流程：多模型构建器生成代码，GPT-6-Astra 审阅，Lean 内核及作者共同核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.13897v1 · PDF 第 4 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-12T02:45:08.386021+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.13897v1",
+            "contentHash": "07cc360bb8efe3d78df7f95e26d7dde852c50d65374685b18a945c24b27c3a04",
+            "pages": 7,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露代理式 Lean 形式化流程：多模型构建器生成代码，GPT-6-Astra 审阅，Lean 内核及作者共同核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5240315c5f32cf248d1ae90acddde49ed17e7d77e80e161edd4998ab8762c390"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification"
+          ],
           "priorityScore": 70,
           "priorityReason": "按几何相关性、结果新颖性、技术可复用性及摘要证据清晰度综合评分 70/100；重点在于把经典几何化论证转成机器可核查的形式化成果。"
         },
