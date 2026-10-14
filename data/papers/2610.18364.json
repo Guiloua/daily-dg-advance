@@ -35,14 +35,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "无预设曲率界的 Ricci 流强唯一性",
-      "workSummary": "作者宣称对初始 Ricci 曲率有下界且单射半径一致正下界的光滑完备 Ricci 流，建立不预设流曲率界的统一伪局部性和强唯一性。还证明相应 Ricci 平坦初值的流静止，以及任意完备平坦初值的静止性，从而回答所有维度欧氏初值的 Chen 强唯一性问题。",
+      "workSummary": "作者宣称仅凭初始 Ricci 下界和统一正注入半径，即可使每个光滑完备 Ricci 流在统一短时间满足 |Rm|≤α/t，且 α 可任意指定。由此得到同初值流的短时间强唯一性；Ricci 平坦且不塌缩的初值及任意完备平坦初值所生流在整个存在期间保持静止。",
       "techniques": [
-        "统一伪局部性",
-        "完备 Ricci 流强唯一性"
+        "Perelman 熵比较",
+        "共轭热方程的 Dirichlet 穷竭",
+        "Fisher 信息变分表示",
+        "空间加权点选与重标度",
+        "熵刚性"
       ],
-      "breakthrough": "去除流上的先验曲率界，并覆盖欧氏空间初值的强唯一性问题。",
-      "limitations": "一般强唯一性要求初始 Ricci 下界及一致正单射半径；任意平坦初值的静止性为另一个结论。",
-      "analysisDepth": "abstract",
+      "breakthrough": "在不预设流的全局曲率界或 L-完备性下建立统一短时间曲率控制，并用于强唯一性。",
+      "limitations": "初始度量须光滑完备、Ric≥−K、注入半径≥i0>0，流的每个时间切片须完备；一般同初值流的推论直接给出的是统一短时间唯一性，平坦初值静止性则覆盖整个存在区间。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者明确将本文证明的主要想法归于 ChatGPT-6 Astra；作者在吸收 AI 思路并与 AI 交互后自行完成全文写作，承担最终内容责任。不能据此计为 AI 辅助写作。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18364v1 · PDF 第 6 页",
@@ -105,14 +108,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "无预设曲率界的 Ricci 流强唯一性",
-          "workSummary": "作者宣称对初始 Ricci 曲率有下界且单射半径一致正下界的光滑完备 Ricci 流，建立不预设流曲率界的统一伪局部性和强唯一性。还证明相应 Ricci 平坦初值的流静止，以及任意完备平坦初值的静止性，从而回答所有维度欧氏初值的 Chen 强唯一性问题。",
+          "workSummary": "作者宣称仅凭初始 Ricci 下界和统一正注入半径，即可使每个光滑完备 Ricci 流在统一短时间满足 |Rm|≤α/t，且 α 可任意指定。由此得到同初值流的短时间强唯一性；Ricci 平坦且不塌缩的初值及任意完备平坦初值所生流在整个存在期间保持静止。",
           "techniques": [
-            "统一伪局部性",
-            "完备 Ricci 流强唯一性"
+            "Perelman 熵比较",
+            "共轭热方程的 Dirichlet 穷竭",
+            "Fisher 信息变分表示",
+            "空间加权点选与重标度",
+            "熵刚性"
           ],
-          "breakthrough": "去除流上的先验曲率界，并覆盖欧氏空间初值的强唯一性问题。",
-          "limitations": "一般强唯一性要求初始 Ricci 下界及一致正单射半径；任意平坦初值的静止性为另一个结论。",
-          "analysisDepth": "abstract",
+          "breakthrough": "在不预设流的全局曲率界或 L-完备性下建立统一短时间曲率控制，并用于强唯一性。",
+          "limitations": "初始度量须光滑完备、Ric≥−K、注入半径≥i0>0，流的每个时间切片须完备；一般同初值流的推论直接给出的是统一短时间唯一性，平坦初值静止性则覆盖整个存在区间。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者明确将本文证明的主要想法归于 ChatGPT-6 Astra；作者在吸收 AI 思路并与 AI 交互后自行完成全文写作，承担最终内容责任。不能据此计为 AI 辅助写作。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18364v1 · PDF 第 6 页",

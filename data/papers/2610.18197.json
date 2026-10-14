@@ -34,15 +34,19 @@
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
-      "progressType": "总曲率有界的均曲率流切流正则性",
-      "workSummary": "证明光滑闭嵌入均曲率流在首次奇异时刻的每个切流均有光滑支撑，只需整个存在区间内 ∫|A|ⁿ 的一致上界。该结论把 Ilmanen 的切流光滑性结果扩展到更高维。",
+      "progressType": "临界总曲率有界下的切流支撑光滑性",
+      "workSummary": "对 Rⁿ⁺¹ 中 n≥2 的光滑闭嵌入均曲率流，证明首次奇异时刻所有切流在一致 ∫|A|ⁿ 界下具有光滑支撑。以局部均曲率流建立各连通分量接近一的面积比，再结合 Allard 正则性、切超平面唯一性和最大值原理消除孤立集中点。",
       "techniques": [
-        "尺度不变总曲率控制",
-        "均曲率流切流"
+        "局部均曲率流",
+        "小 Lⁿ 曲率下的分量面积比",
+        "Allard 正则性",
+        "曲率 varifold 紧致性",
+        "Edelen–Minter 切锥唯一性",
+        "强最大值原理"
       ],
-      "breakthrough": "在高维以临界总曲率界保证首次奇异时的切流支撑光滑。",
-      "limitations": "要求闭嵌入初始流和首次奇异时刻；结论是支撑光滑，不等同于断言重数为一。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把二维切流支撑光滑性策略推广到高维，以连通分量面积比填补小临界曲率不足以直接使用 Allard 的障碍。",
+      "limitations": "主定理针对闭嵌入超曲面及统一临界总曲率界；重数一且光滑收敛到闭自缩子的更强结论仍作为 Conjecture 1.3 提出。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 辅助写作已知但无文献来源的附录，所有建议经作者检查；明确声明全部数学想法由作者独立发展，不能据附录写作推断 AI 提供主证明或核心想法。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18197v1 · PDF 第 4 页",
@@ -103,15 +107,19 @@
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
-          "progressType": "总曲率有界的均曲率流切流正则性",
-          "workSummary": "证明光滑闭嵌入均曲率流在首次奇异时刻的每个切流均有光滑支撑，只需整个存在区间内 ∫|A|ⁿ 的一致上界。该结论把 Ilmanen 的切流光滑性结果扩展到更高维。",
+          "progressType": "临界总曲率有界下的切流支撑光滑性",
+          "workSummary": "对 Rⁿ⁺¹ 中 n≥2 的光滑闭嵌入均曲率流，证明首次奇异时刻所有切流在一致 ∫|A|ⁿ 界下具有光滑支撑。以局部均曲率流建立各连通分量接近一的面积比，再结合 Allard 正则性、切超平面唯一性和最大值原理消除孤立集中点。",
           "techniques": [
-            "尺度不变总曲率控制",
-            "均曲率流切流"
+            "局部均曲率流",
+            "小 Lⁿ 曲率下的分量面积比",
+            "Allard 正则性",
+            "曲率 varifold 紧致性",
+            "Edelen–Minter 切锥唯一性",
+            "强最大值原理"
           ],
-          "breakthrough": "在高维以临界总曲率界保证首次奇异时的切流支撑光滑。",
-          "limitations": "要求闭嵌入初始流和首次奇异时刻；结论是支撑光滑，不等同于断言重数为一。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把二维切流支撑光滑性策略推广到高维，以连通分量面积比填补小临界曲率不足以直接使用 Allard 的障碍。",
+          "limitations": "主定理针对闭嵌入超曲面及统一临界总曲率界；重数一且光滑收敛到闭自缩子的更强结论仍作为 Conjecture 1.3 提出。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 辅助写作已知但无文献来源的附录，所有建议经作者检查；明确声明全部数学想法由作者独立发展，不能据附录写作推断 AI 提供主证明或核心想法。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18197v1 · PDF 第 4 页",

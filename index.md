@@ -210,7 +210,7 @@ Surround a unit ball with a ring of $n$ equal infinite circular cylinders, each 
 
 Annalisa Cesaroni、Matteo Novaga
 
-作者宣称证明每个三维平行多面体的表面积至少为 12√2 倍内切半径平方，且等号当且仅当其相似于正菱形十二面体。
+作者宣称任意三维平移铺砌凸多面体 P 的表面积均不低于 12√2 r(P)²，且等号恰为正菱形十二面体的相似形。非截角 Fedorov 类型由已知固定体积不等式与 Gauss 格堆积界得到，剩余截角八面体型转化为 Selling 图权重和仿射度量的优化。
 
 We prove that every three-dimensional parallelohedron $P$ satisfies \[ \mathcal H^2(\partial P)\ge 12\sqrt2\,r(P)^2, \] where $r(P)$ is the inradius of $P$, with equality if and only if $P$ is similar to the regular rhombic dodecahedron.
 
@@ -482,7 +482,7 @@ We resolve the long-standing problem of Rudin concerning uniformly bounded ortho
 
 John B. Etnyre、Hyunki Min、Bülent Tosun、Konstantinos Varvarezos
 
-作者给出沿任意环面结任意手术所得流形的紧接触结构完整分类，并获得部分高亏格曲面丛的接触结构分类。辛可填充性分析还反驳一项有关 Brieskorn 球面 Stein 可填充性的猜想。
+作者宣称分类任意环面结任意有理手术所得三维流形的 tight 接触结构至同痕。大部分手术区间给出闭式计数，正结的 [pq−p−q,pq−1) 与负结的 [pq−|q|,pq−1) 用分类算法计数，并研究 Stein、强辛和弱辛可填充性。
 
 We give a complete classification of tight contact structures on manifolds obtained from any surgery along any torus knot, which provides the first such classification on an infinite family of knots. The main tools are the classification of non-loose torus knots, bordered contact invariants via their immersed curve interpretations, and non-thickenable tori in knot complements. As a byproduct of this classification, we also give the first classification of contact structures on some surface bundles over the circle with fibers of genus larger than $1$. The symplectic fillability of these contact structures is also studied and leads to, among other things, the disproof of a conjecture of Ghiggini and Van Horn-Morris on Stein fillability of some contact structures on a Brieskorn sphere.
 
@@ -674,7 +674,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jiahao Wang
 
-作者证明任何维数 m≥2 的连通闭定向光滑超曲面浸入，若满足 K=〈X,ν〉，则实际上嵌入为单位球，无需先验凸性。通过正曲率分支、极性浸入和面积测度一阶矩排除非全局凸性，最后应用严格凸收缩子分类。
+作者证明 m≥2 的任意闭连通定向光滑浸入，只要存在全局法向满足 K=〈X,ν〉，即嵌入为以原点为中心的单位球，无需预设凸性。方法从离原点最远点选出正曲率分支，以极性浸入与全局表面积测度恒等式排除非紧退化方向，再应用严格凸收缩子分类。
 
 For every $m\geq2$, we prove that any connected closed oriented smooth immersion $X:M^m\to\mathbb{R}^{m+1}$ satisfying \[ K=\left\langle X,\nu\right\rangle \] is an embedding onto the unit sphere. No convexity is assumed. At a point maximizing $|X|$, we find a strictly convex component of $\{K>0\}$. If this component does not coincide with $M$, its polar immersion bounds an unbounded convex set. A finite area lemma then extends the local surface area formula for the polar body to a global measure identity. Using the vanishing first moment of surface area measure, we show that the origin lies in the interior of the polar body, contradicting the existence of recession directions. Thus the hypersurface is strictly convex, and the classification of strictly convex shrinkers completes the proof.
 
@@ -738,7 +738,7 @@ We compute cohomology spaces of the ortosymplectic Lie superalgebra $\mathfrak{o
 
 Haozhao Li、Bing Wang、Kai Zheng
 
-作者证明紧 Kähler 流形上复 Monge–Ampère 方程在右端为正 C^α 函数时的全局 C^(2,α) 估计。
+作者宣称紧连通 Kähler 流形上，若 F∈C^α、0<α<1 且体积兼容，则任意有界 ω-psh 多重位势解的归一化势函数均具有全局 C^(2,α) 控制，且所得 Kähler 形式严格为正。先用椭圆逼近得到 C^(1,β)，再通过辅助抛物方程反复改进 β，使其越过局部二阶正则性的阈值。
 
 In this paper, we prove a global $C^{2,\alpha}$ estimate for the complex Monge--Ampère equation with a positive $C^\alpha$ right-hand side on a compact Kähler manifold.
 
@@ -1436,7 +1436,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Kefeng Liu、Liangdi Zhang
 
-作者宣称极化流形上某一固定有限参数的量子 Mabuchi 能量半稳定性等价于一致 K-稳定性及 cscK 度量的唯一存在，并建立不同参数及普通 Mabuchi 斜率的尖锐比较。有自同构时在 Futaki 特征消失下给出环面扭转等变判据，还构造离散自同构 ruled 曲面上临界参数及其与 α-不变量比值均无界的极化。
+作者宣称在固定有限参数上对全部正规 ample 测试构形的量子 Mabuchi 斜率非负，等价于普通一致 K-稳定及唯一 cscK 度量存在；通过只依赖维数与 α-invariant 的尖锐参数斜率增益实现对应。含自同构时改用极大连通约化子群的环面扭曲和 Futaki 中心消失条件，并构造固定离散自同构 ruled surface 上临界参数随极化无界的例子。
 
 For polarized manifolds, we show that semistability for the quantized Mabuchi energy at one fixed finite parameter is equivalent to uniform K-stability and to unique existence of constant scalar curvature Kähler (cscK) metrics. We obtain sharp comparisons between quantized Mabuchi slopes at different parameters and with the ordinary Mabuchi slope. In the presence of automorphisms, we give an equivariant criterion using torus twists under the vanishing of the Futaki character. The estimates also hold for finite-energy geodesic rays in compact Kähler classes. On a fixed ruled surface with discrete automorphism group, we construct cscK polarizations with unbounded critical parameters. Their ratios to the $\alpha$-invariant are also unbounded.
 
@@ -1958,7 +1958,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Siran Li、Zijun Wang
 
-构造 R⁵ 区域到紧致 Kähler 曲面的驻定弱调和映射，其一个切映射虽弱调和却不驻定。目标为在同一纤维四个四面体顶点处吹起的 CP¹×CP¹，非驻定性源于顶点上缺陷测度的四面体对称性破缺。
+作者宣称构造 R⁵ 原点邻域到四点吹起 CP¹×CP¹ 的驻定弱调和映射，整族缩放而非仅子序列均弱收敛到唯一的非驻定弱调和切映射；恒定延拓到附加变量后给出所有 n>5 的同类反例。
 
 We construct a stationary weakly harmonic map from a domain in \R^5 into a compact Kähler surface for which a tangent map is weakly harmonic but nonstationary. The target manifold is the blow-up of \CP^1\times\CP^1 at four points lying in one fiber and arranged at the vertices of a regular tetrahedron. The nonstationarity of the tangent map arises from the break down of the tetrahedral symmetry in the defect measure concentrated on the vertices.
 
@@ -2038,7 +2038,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yongheng Han、Zhen Wang
 
-证明光滑闭嵌入均曲率流在首次奇异时刻的每个切流均有光滑支撑，只需整个存在区间内 ∫|A|ⁿ 的一致上界。该结论把 Ilmanen 的切流光滑性结果扩展到更高维。
+对 Rⁿ⁺¹ 中 n≥2 的光滑闭嵌入均曲率流，证明首次奇异时刻所有切流在一致 ∫|A|ⁿ 界下具有光滑支撑。以局部均曲率流建立各连通分量接近一的面积比，再结合 Allard 正则性、切超平面唯一性和最大值原理消除孤立集中点。
 
 We prove that every tangent flow at the first singular time of a smooth, closed, embedded mean curvature flow has smooth support, provided that the total curvature satisfies $\sup_{t\in[0,T)}\int_{M_t}|A|^n\,d\mu_t<\infty$. This extends Ilmanen's smoothness result for tangent flows to higher dimensions.
 
@@ -2120,7 +2120,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Shaochuang Huang、Zhuo Peng
 
-作者宣称对初始 Ricci 曲率有下界且单射半径一致正下界的光滑完备 Ricci 流，建立不预设流曲率界的统一伪局部性和强唯一性。还证明相应 Ricci 平坦初值的流静止，以及任意完备平坦初值的静止性，从而回答所有维度欧氏初值的 Chen 强唯一性问题。
+作者宣称仅凭初始 Ricci 下界和统一正注入半径，即可使每个光滑完备 Ricci 流在统一短时间满足 |Rm|≤α/t，且 α 可任意指定。由此得到同初值流的短时间强唯一性；Ricci 平坦且不塌缩的初值及任意完备平坦初值所生流在整个存在期间保持静止。
 
 In this paper, we prove a uniform pseudolocality theorem for smooth complete Ricci flows whose initial metrics have Ricci curvature bounded below and uniformly positive injectivity radius. No a priori curvature bound is assumed on the flow. As a consequence, we obtain strong uniqueness for smooth complete Ricci flows from a complete metric with the above geometric bounds. We also prove that every smooth complete Ricci flow from a complete Ricci-flat metric with uniformly positive injectivity radius is stationary. The same conclusion holds for any complete flat initial metric. In particular, we give an affirmative answer to Chen's question on the strong uniqueness of Ricci flow from Euclidean space in every dimension.
 
@@ -2138,7 +2138,7 @@ In this paper, we prove a uniform pseudolocality theorem for smooth complete Ric
 
 Yiyue Zhang、Bowen Zhao
 
-作者宣称每个 n≥3 均有维数依赖半径阈值，使充分小的标准球冠具有任意填充刚性：相同内蕴边界度量且标量曲率、外法向平均曲率不低于球冠的光滑紧连通可定向填充，必等距于球冠。
+作者宣称任意维数 n≥3 的充分小圆球冠具有填充刚性：只指定整个边界的圆度量，并要求标量曲率及外法向平均曲率不低于球冠模型，任何光滑紧连通定向填充即等距于原球冠。归一化边界为单位球面时，标量曲率参数 C 必须足够小；结论不预设内部拓扑或 spin 结构。
 
 We prove an analogue of Min-Oo's conjecture for sufficiently small spherical caps in the unit round sphere. For every dimension $n\ge3$, there exists $r_*(n)>0$ such that the following holds for every round cap of radius $0<r\le r_*(n)$: any smooth compact connected oriented Riemannian fill-in with the same intrinsic boundary metric and with scalar curvature and outward boundary mean curvature at least those of the cap is isometric to the cap.
 
@@ -2234,7 +2234,7 @@ We consider the image of the comparison homomorphism from bounded cohomology to 
 
 Yong Luo、Linlin Sun、Jiabin Yin
 
-作者宣称对 n≥3 的连通闭极小 Legendrian 浸入，若 |B|²≤(n−1)(n+2)/n，则在酉变换下为全测地球面或极小 Calabi 乘积像的有限覆盖，从而证明 Luo–Sun 的相应猜想。
+作者宣称闭连通极小 Legendrian 浸入 M^n→S^(2n+1) 在 n≥3、|B|²≤(n−1)(n+2)/n 时，只可能是全测地球面或极小 Calabi 乘积像的有限覆盖。等号模型在奇数维由 S¹×S^(n−1) 嵌入给出，偶数维需商去 (θ,x)∼(θ+π,−x)。
 
 Let $F:M^n\to\mathbb{S}^{2n+1}$ be a minimal Legendrian immersion of a connected closed manifold, where $n\ge3$, and let $B$ be its second fundamental form. We prove that if $|B|^2\le(n-1)(n+2)/n$, then, up to a unitary transformation, $F$ parametrizes a totally geodesic sphere or is a finite covering of the image of the minimal Calabi product of a point and a totally geodesic Legendrian sphere. This proves Conjecture 1 of Luo and Sun [Ann. Inst. H. Poincaré C Anal. Non Linéaire 40 (2023), p. 548].
 
