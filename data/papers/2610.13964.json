@@ -15,17 +15,44 @@
         "cs.CG"
       ],
       "primaryCategory": "math.MG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-08T06:19:55Z",
+      "updatedAt": "2026-09-08T06:19:55Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:14.273579+00:00",
+        "contentHash": "70c541a3f3196adb89c37b230d39bca8a8a97e9e7a86a5a8e277629b8ceb0657"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "三维等宽体体积下界改进",
+      "workSummary": "作者证明任意三维宽度 w 的凸体体积至少为 0.41275w³，改进此前认证下界。关键是 Jung 外接半径等号附近的接触四面体估计，再结合球面与纺锤区域的互不交体积分解处理不同半径区间。",
+      "techniques": [
+        "接触四面体估计",
+        "Jung 外接半径不等式",
+        "体积分解",
+        "凸性与对称化",
+        "径向输运上界函数"
+      ],
+      "breakthrough": "以解析论证提高三维 Blaschke–Lebesgue 问题的体积下界。",
+      "limitations": "这是下界改进，未确定最小体积或极小体；摘要声称无需计算机辅助证书。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 92,
+      "priorityReason": "经典三维等宽凸体极值问题的常数改进。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^3$ of constant width $w>0$ satisfies \\[ \\operatorname{Vol}(K)\\ge \\frac{1651}{4000}w^3=0.41275\\,w^3. \\] This improves the certified lower bound $0.411040473721188\\ldots\\,w^3$ announced by Hyra and the earlier spectral bound $4\\pi w^3/33$ of Nishioka. The main new ingredient is a contact-tetrahedron estimate near equality in Jung's circumradius inequality. Four balanced contacts of a minimum circumscribed ball form a near-regular tetrahedron; constant width then forces, beyond the tetrahedron itself, spherical regions over its faces, spindle sectors along its edges, and additional face-edge sectors. These regions can be selected with pairwise disjoint interiors and quantified by the total squared-edge deficit. A sharp convexity argument relates that deficit to the circumradius, and a symmetrization argument controls the four face contributions with only quadratic loss. This gives the analytic bound $\\operatorname{Vol}(K)>0.41275318$ near the Jung endpoint. For the complementary circumradius range we use Hyra's radial transport/tangent-majorant mechanism together with closed-form contact and antipodal profiles. The antipodal contribution has an elementary primitive. For the contact contribution, a second-order concavity estimate converts the angular Jacobian into an explicit rational lower density; that density is monotone in the circumradius. The whole intermediate range therefore reduces to a single endpoint calculation, giving $\\operatorname{Vol}(K)>0.41275168$. For smaller circumradius the tangent-majorant inequality with its nonnegative gap discarded already gives $\\operatorname{Vol}(K)>0.41308109$. The proof is entirely analytic and requires no computer-assisted certificate.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +70,44 @@
             "cs.CG"
           ],
           "primaryCategory": "math.MG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-08T06:19:55Z",
+          "updatedAt": "2026-09-08T06:19:55Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:14.273579+00:00",
+            "contentHash": "70c541a3f3196adb89c37b230d39bca8a8a97e9e7a86a5a8e277629b8ceb0657"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "三维等宽体体积下界改进",
+          "workSummary": "作者证明任意三维宽度 w 的凸体体积至少为 0.41275w³，改进此前认证下界。关键是 Jung 外接半径等号附近的接触四面体估计，再结合球面与纺锤区域的互不交体积分解处理不同半径区间。",
+          "techniques": [
+            "接触四面体估计",
+            "Jung 外接半径不等式",
+            "体积分解",
+            "凸性与对称化",
+            "径向输运上界函数"
+          ],
+          "breakthrough": "以解析论证提高三维 Blaschke–Lebesgue 问题的体积下界。",
+          "limitations": "这是下界改进，未确定最小体积或极小体；摘要声称无需计算机辅助证书。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 92,
+          "priorityReason": "经典三维等宽凸体极值问题的常数改进。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^3$ of constant width $w>0$ satisfies \\[ \\operatorname{Vol}(K)\\ge \\frac{1651}{4000}w^3=0.41275\\,w^3. \\] This improves the certified lower bound $0.411040473721188\\ldots\\,w^3$ announced by Hyra and the earlier spectral bound $4\\pi w^3/33$ of Nishioka. The main new ingredient is a contact-tetrahedron estimate near equality in Jung's circumradius inequality. Four balanced contacts of a minimum circumscribed ball form a near-regular tetrahedron; constant width then forces, beyond the tetrahedron itself, spherical regions over its faces, spindle sectors along its edges, and additional face-edge sectors. These regions can be selected with pairwise disjoint interiors and quantified by the total squared-edge deficit. A sharp convexity argument relates that deficit to the circumradius, and a symmetrization argument controls the four face contributions with only quadratic loss. This gives the analytic bound $\\operatorname{Vol}(K)>0.41275318$ near the Jung endpoint. For the complementary circumradius range we use Hyra's radial transport/tangent-majorant mechanism together with closed-form contact and antipodal profiles. The antipodal contribution has an elementary primitive. For the contact contribution, a second-order concavity estimate converts the angular Jacobian into an explicit rational lower density; that density is monotone in the circumradius. The whole intermediate range therefore reduces to a single endpoint calculation, giving $\\operatorname{Vol}(K)>0.41275168$. For smaller circumradius the tangent-majorant inequality with its nonnegative gap discarded already gives $\\operatorname{Vol}(K)>0.41308109$. The proof is entirely analytic and requires no computer-assisted certificate.",
+          "version": 1
+        }
       }
     }
   ]

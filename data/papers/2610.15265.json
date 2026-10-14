@@ -17,17 +17,43 @@
       ],
       "primaryCategory": "cs.CR",
       "comment": "27 pages, 4 figures, 2 tables",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-11T01:26:34Z",
+      "updatedAt": "2026-10-11T01:26:34Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:37.332136+00:00",
+        "contentHash": "41232e7e39e163f22945a4e5545e94c3e36f94055998510f99f2898c07d12c1a"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "随机格枚举复杂度界",
+      "workSummary": "研究 Haar 随机格最短向量半径下的未剪枝枚举树：准 HKZ 基的指数为 1/(2e)，全体基中最优指数以高概率落在约 0.1464 至 0.1474 之间。递归稠密子格分解改进上界，并给出随机格 CVPP 的多项式空间查询算法。",
+      "techniques": [
+        "原始子格链均值公式",
+        "稠密半秩子格",
+        "HKZ 与对偶 HKZ",
+        "递归分块"
+      ],
+      "breakthrough": "把随机格最优枚举基的指数范围显著缩窄，排除几何级数假设预测的过小树规模。",
+      "limitations": "结论针对 Haar 随机格及未剪枝枚举；下界恰好取到仍使用额外启发式假设。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 74,
+      "priorityReason": "连接随机格几何、子格结构与枚举复杂度。"
+    },
+    "analysisBasis": {
+      "abstract": "To bridge the gap between worst-case and heuristic analyses of lattice enumeration, we study the sizes of (unpruned) enumeration trees on $n$-dimensional Haar-random lattices. Writing $n^{cn+o(n)}$ for the tree size at the shortest vector radius, we investigate the asymptotic scaling of $c$, and which bases minimize it. For quasi-HKZ bases, we rigorously analyze the random-lattice HKZ geometry and establish $c=1/(2e)\\approx 0.1839$. This matches the worst-case enumeration exponent of Hanrot-Stehlé and confirms earlier predictions for the geometry of HKZ bases on random lattices. Searching beyond quasi-HKZ bases, we prove that with high probability, the minimum achievable tree size exponent $c$ over all bases of a random lattice satisfies: \\begin{align} 0.1464 \\approx \\frac{2-\\sqrt{2}}{4}\\leq c<0.1474. \\end{align} For the lower bound, we use Kim's mean-value formula for nested chains of primitive sublattices to rule out bases with small prefix determinants. This strengthens the earlier Rankin-based heuristic lower bound exponent $c \\geq 1/8$, discussed by Nguyen and Hanrot-Stehlé, and rules out the existence of random-lattice bases with trees as small as predicted by the geometric series assumption. For the upper bound, we show that with high probability a dense primitive half-rank sublattice exists with determinant at most $n^{n/8 + o(n)}$. Combining dual HKZ on this sublattice with HKZ on its quotient gives a basis with $c \\leq 1/(4\\sqrt{e}) \\approx 0.1516$. Recursively splitting each half lowers the upper bound below $0.1474$, and under a natural heuristic assumption we prove that the lower bound is tight. Combined with the collision search of Feng-Gao-Liu, our two-block construction gives a polynomial-space algorithm solving the closest vector problem with preprocessing (CVPP) on random lattices in query time $n^{0.0892 n + o(n)}$ for arbitrary targets.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +73,43 @@
           ],
           "primaryCategory": "cs.CR",
           "comment": "27 pages, 4 figures, 2 tables",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-11T01:26:34Z",
+          "updatedAt": "2026-10-11T01:26:34Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:37.332136+00:00",
+            "contentHash": "41232e7e39e163f22945a4e5545e94c3e36f94055998510f99f2898c07d12c1a"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "随机格枚举复杂度界",
+          "workSummary": "研究 Haar 随机格最短向量半径下的未剪枝枚举树：准 HKZ 基的指数为 1/(2e)，全体基中最优指数以高概率落在约 0.1464 至 0.1474 之间。递归稠密子格分解改进上界，并给出随机格 CVPP 的多项式空间查询算法。",
+          "techniques": [
+            "原始子格链均值公式",
+            "稠密半秩子格",
+            "HKZ 与对偶 HKZ",
+            "递归分块"
+          ],
+          "breakthrough": "把随机格最优枚举基的指数范围显著缩窄，排除几何级数假设预测的过小树规模。",
+          "limitations": "结论针对 Haar 随机格及未剪枝枚举；下界恰好取到仍使用额外启发式假设。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 74,
+          "priorityReason": "连接随机格几何、子格结构与枚举复杂度。"
+        },
+        "analysisBasis": {
+          "abstract": "To bridge the gap between worst-case and heuristic analyses of lattice enumeration, we study the sizes of (unpruned) enumeration trees on $n$-dimensional Haar-random lattices. Writing $n^{cn+o(n)}$ for the tree size at the shortest vector radius, we investigate the asymptotic scaling of $c$, and which bases minimize it. For quasi-HKZ bases, we rigorously analyze the random-lattice HKZ geometry and establish $c=1/(2e)\\approx 0.1839$. This matches the worst-case enumeration exponent of Hanrot-Stehlé and confirms earlier predictions for the geometry of HKZ bases on random lattices. Searching beyond quasi-HKZ bases, we prove that with high probability, the minimum achievable tree size exponent $c$ over all bases of a random lattice satisfies: \\begin{align} 0.1464 \\approx \\frac{2-\\sqrt{2}}{4}\\leq c<0.1474. \\end{align} For the lower bound, we use Kim's mean-value formula for nested chains of primitive sublattices to rule out bases with small prefix determinants. This strengthens the earlier Rankin-based heuristic lower bound exponent $c \\geq 1/8$, discussed by Nguyen and Hanrot-Stehlé, and rules out the existence of random-lattice bases with trees as small as predicted by the geometric series assumption. For the upper bound, we show that with high probability a dense primitive half-rank sublattice exists with determinant at most $n^{n/8 + o(n)}$. Combining dual HKZ on this sublattice with HKZ on its quotient gives a basis with $c \\leq 1/(4\\sqrt{e}) \\approx 0.1516$. Recursively splitting each half lowers the upper bound below $0.1474$, and under a natural heuristic assumption we prove that the lower bound is tight. Combined with the collision search of Feng-Gao-Liu, our two-block construction gives a polynomial-space algorithm solving the closest vector problem with preprocessing (CVPP) on random lattices in query time $n^{0.0892 n + o(n)}$ for arbitrary targets.",
+          "version": 1
+        }
       }
     }
   ]

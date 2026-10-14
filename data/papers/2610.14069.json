@@ -16,17 +16,60 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "12 pages, no figures",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-07T20:06:19Z",
+      "updatedAt": "2026-10-07T20:06:19Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-14T06:17:57.953425+00:00",
         "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:25.870899+00:00",
+        "contentHash": "5f1ae626ac2750e25481c5fc171175a6209dbffad50edfce7c72fb8adfc08a83"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "两矩 Dirichlet 特征值界",
+      "workSummary": "在正 Ricci 下界及非负外法向边界平均曲率条件下，从混合内半径模型推导仅含一个平方根的第一 Dirichlet 特征值代数下界。还证明模型特征值是固定维数、曲率及内半径下的几何下确界，最大内半径处由圆半球达到。",
+      "techniques": [
+        "Kasue 混合内半径模型",
+        "势函数前两矩",
+        "点态校正估计",
+        "塌缩球构造"
+      ],
+      "breakthrough": "把模型谱界转化为精确度较高的显式代数界，并识别几何下确界。",
+      "limitations": "要求紧连通光滑有边界流形、Ric≥(n−1)Kg 且 K>0；O_n(s⁴) 相对误差针对固定 n 的 s→0。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露生成式 AI 用于语言编辑和文献检索。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.14069v1 · PDF 第 11 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-14T06:29:02.395640+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.14069v1",
+        "contentHash": "7141d6c9a54e84c0c181a90a449ba661a7e5182e7774d46aca968ef373df1fb7",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 用于语言编辑和文献检索。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0a0feeb40bd2eac7ac6358f7bc6d44e9fda896c6ddf34c0594c3d57f38995f26"
+      },
+      "aiUsage": [
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 87,
+      "priorityReason": "曲率、内半径与边界条件控制特征值。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(M^n,g)$, $n\\ge2$, be a compact connected Riemannian manifold with smooth nonempty boundary, $\\operatorname{Ric}_M\\ge(n-1)Kg$ for $K>0$, and nonnegative outward boundary mean curvature. We derive an explicit algebraic lower bound $B_\\eta$ for the first Dirichlet eigenvalue from Kasue's mixed inradius model. With $R$ the inradius and $s=4KR^2/\\pi^2$, the bound involves one square root and approximates the model eigenvalue with relative error $O_n(s^4)$ as $s\\downarrow0$ for fixed $n$. The construction uses the first two moments of a positive representation of the averaged model potential and a sharp pointwise corrector estimate. For the chosen spectral transfer, the first two moments determine an optimal bound. We also show that the model eigenvalue is the geometric infimum at fixed $(n,K,R)$. For $0<s<1$, it is approached by smooth collapsing balls with sectional curvature at least $K$ and totally geodesic boundary. At the maximal inradius, the model value is attained by the round hemisphere. The bound strictly improves the variance refinement throughout $0<s\\le1$. We also give a direct algebraic comparison with an optimized power-test benchmark.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +88,60 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "12 pages, no figures",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-07T20:06:19Z",
+          "updatedAt": "2026-10-07T20:06:19Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-14T06:17:57.953425+00:00",
             "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:25.870899+00:00",
+            "contentHash": "5f1ae626ac2750e25481c5fc171175a6209dbffad50edfce7c72fb8adfc08a83"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "两矩 Dirichlet 特征值界",
+          "workSummary": "在正 Ricci 下界及非负外法向边界平均曲率条件下，从混合内半径模型推导仅含一个平方根的第一 Dirichlet 特征值代数下界。还证明模型特征值是固定维数、曲率及内半径下的几何下确界，最大内半径处由圆半球达到。",
+          "techniques": [
+            "Kasue 混合内半径模型",
+            "势函数前两矩",
+            "点态校正估计",
+            "塌缩球构造"
+          ],
+          "breakthrough": "把模型谱界转化为精确度较高的显式代数界，并识别几何下确界。",
+          "limitations": "要求紧连通光滑有边界流形、Ric≥(n−1)Kg 且 K>0；O_n(s⁴) 相对误差针对固定 n 的 s→0。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露生成式 AI 用于语言编辑和文献检索。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.14069v1 · PDF 第 11 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-14T06:29:02.395640+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.14069v1",
+            "contentHash": "7141d6c9a54e84c0c181a90a449ba661a7e5182e7774d46aca968ef373df1fb7",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 用于语言编辑和文献检索。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0a0feeb40bd2eac7ac6358f7bc6d44e9fda896c6ddf34c0594c3d57f38995f26"
+          },
+          "aiUsage": [
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 87,
+          "priorityReason": "曲率、内半径与边界条件控制特征值。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(M^n,g)$, $n\\ge2$, be a compact connected Riemannian manifold with smooth nonempty boundary, $\\operatorname{Ric}_M\\ge(n-1)Kg$ for $K>0$, and nonnegative outward boundary mean curvature. We derive an explicit algebraic lower bound $B_\\eta$ for the first Dirichlet eigenvalue from Kasue's mixed inradius model. With $R$ the inradius and $s=4KR^2/\\pi^2$, the bound involves one square root and approximates the model eigenvalue with relative error $O_n(s^4)$ as $s\\downarrow0$ for fixed $n$. The construction uses the first two moments of a positive representation of the averaged model potential and a sharp pointwise corrector estimate. For the chosen spectral transfer, the first two moments determine an optimal bound. We also show that the model eigenvalue is the geometric infimum at fixed $(n,K,R)$. For $0<s<1$, it is approached by smooth collapsing balls with sectional curvature at least $K$ and totally geodesic boundary. At the maximal inradius, the model value is attained by the round hemisphere. The bound strictly improves the variance refinement throughout $0<s\\le1$. We also give a direct algebraic comparison with an optimized power-test benchmark.",
+          "version": 1
+        }
       }
     }
   ]

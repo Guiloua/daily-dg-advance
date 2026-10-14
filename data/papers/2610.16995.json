@@ -17,17 +17,43 @@
         "math.DG"
       ],
       "primaryCategory": "cs.LG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-12T15:45:47Z",
+      "updatedAt": "2026-10-12T15:45:47Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-14T06:17:57.953425+00:00",
         "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:11.927417+00:00",
+        "contentHash": "22604261e6d11add5b4d782bf209abcc770ca1218b157ddc481844e56c333efb"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "观测等变的扩散几何学习",
+      "workSummary": "提出 Intrinsic Geometry Matching，通过数据自带的扰动学习潜在过程的 carré du champ 算子，恢复扩散几何并保持观测变化下的等变性。分子动力学、图像及视频实验报告较现有神经和图方法更好的表现与扩展性。",
+      "techniques": [
+        "carré du champ 算子学习",
+        "自然扰动",
+        "观测等变性",
+        "跨空间数据训练"
+      ],
+      "breakthrough": "以潜在过程的扩散结构分离环境观测造成的几何扭曲。",
+      "limitations": "方法依赖可利用的自然扰动；性能结论来自所列实验数据，不能直接推广至任意过程。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 58,
+      "priorityReason": "扩散几何提供几何学习接口但主要贡献为方法与实验"
+    },
+    "analysisBasis": {
+      "abstract": "Real data are often arbitrary, indirect observations of an unknown underlying process, and those observations can distort its geometry. Existing geometric methods equip data with the induced geometry of the ambient space, but this entangles the true geometry of the process with the distortion of the observation. To address this, we introduce Intrinsic Geometry Matching (IGM): a scalable approach to learn the intrinsic geometry of the underlying process. Specifically, we learn the carré du champ operator of the process, allowing us to recover its diffusion geometry. Our method uses the fact that data often come with natural perturbations, like steps in a time series, to recover the intrinsic carré du champ while transforming naturally with changes in observation: it is observation-equivariant. Furthermore, since this equivariance relates the geometry of different spaces, we can train a model using additional sources of data, even when that data lies in another space. We evaluate IGM on molecular dynamics, image, and video data and find better performance and scaling than existing neural and graph-based geometric tools.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +73,43 @@
             "math.DG"
           ],
           "primaryCategory": "cs.LG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-12T15:45:47Z",
+          "updatedAt": "2026-10-12T15:45:47Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-14T06:17:57.953425+00:00",
             "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:11.927417+00:00",
+            "contentHash": "22604261e6d11add5b4d782bf209abcc770ca1218b157ddc481844e56c333efb"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "观测等变的扩散几何学习",
+          "workSummary": "提出 Intrinsic Geometry Matching，通过数据自带的扰动学习潜在过程的 carré du champ 算子，恢复扩散几何并保持观测变化下的等变性。分子动力学、图像及视频实验报告较现有神经和图方法更好的表现与扩展性。",
+          "techniques": [
+            "carré du champ 算子学习",
+            "自然扰动",
+            "观测等变性",
+            "跨空间数据训练"
+          ],
+          "breakthrough": "以潜在过程的扩散结构分离环境观测造成的几何扭曲。",
+          "limitations": "方法依赖可利用的自然扰动；性能结论来自所列实验数据，不能直接推广至任意过程。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 58,
+          "priorityReason": "扩散几何提供几何学习接口但主要贡献为方法与实验"
+        },
+        "analysisBasis": {
+          "abstract": "Real data are often arbitrary, indirect observations of an unknown underlying process, and those observations can distort its geometry. Existing geometric methods equip data with the induced geometry of the ambient space, but this entangles the true geometry of the process with the distortion of the observation. To address this, we introduce Intrinsic Geometry Matching (IGM): a scalable approach to learn the intrinsic geometry of the underlying process. Specifically, we learn the carré du champ operator of the process, allowing us to recover its diffusion geometry. Our method uses the fact that data often come with natural perturbations, like steps in a time series, to recover the intrinsic carré du champ while transforming naturally with changes in observation: it is observation-equivariant. Furthermore, since this equivariance relates the geometry of different spaces, we can train a model using additional sources of data, even when that data lies in another space. We evaluate IGM on molecular dynamics, image, and video data and find better performance and scaling than existing neural and graph-based geometric tools.",
+          "version": 1
+        }
       }
     }
   ]

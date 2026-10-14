@@ -17,17 +17,45 @@
         "math.MG",
         "math.NT"
       ],
-      "primaryCategory": "math.MG"
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-10-09T23:00:11Z",
+      "updatedAt": "2026-10-09T23:00:11Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:25.875307+00:00",
+        "contentHash": "1a9e25a43997a4976bc58d41a362daac559036f007c104194ade0e1f05ef6c4e"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "格点接吻数下界与构造",
+      "workSummary": "对所有 p≥1 给出 lp 格点接吻数至少 2^Ω(√n) 的下界，对 p>2 另给出 Ω(αp^n) 的指数下界。通过与精确局部稠密格的等价关系提供高效随机构造，尤其改善欧氏格接吻数此前长期未突破的下界。",
+      "techniques": [
+        "精确局部稠密格",
+        "Craig 格",
+        "Zⁿ 稀疏化",
+        "棋盘格旋转",
+        "随机构造"
+      ],
+      "breakthrough": "在欧氏情形获得平方根维数指数下界，在 p>2 时获得维数指数下界。",
+      "limitations": "p=2 的结果不是 2^Ω(n)；两类指数界的维数尺度不能混同。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 92,
+      "priorityReason": "高维格装填中长期接吻数下界的改进。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\kappa_p(n)$ denote the maximum kissing number of a lattice $\\mathcal{L} \\subset \\mathbb{R}^n$. We prove that $\\kappa_p(n) \\geq 2^{\\Omega(\\sqrt{n})}$ for all $p\\ge 1$ and that $\\kappa_p(n) \\geq \\Omega(\\alpha_p^n)$ for all $p > 2$, where $\\alpha_p > 1$ is a constant depending only on $p$. In particular, our former result improves on the previously best known lower bound of $\\kappa_2(n) \\geq 2^{\\Theta(\\log^2 n)}$ for the $\\ell_2$ kissing number, which has stood for over $60$ years. (In concurrent and independent work, Laarhoven and Kominers [arXiv, 2026] showed a similar lower bound on $\\kappa_2(n)$ using similar techniques.) In fact, our lower bounds follow from efficient (randomized) constructions of lattices with large kissing number. Our results use a general construction of lattices with large kissing number. Specifically, we show a simple equivalence between such lattices and a new object that we call an exact locally dense lattice. Closely related objects appear throughout the literature on computational lattice problems. Our constructions of lattices with large kissing number then follow as corollaries by showing that constructions due to Bennett and Peikert [RANDOM, 2023] (using Craig lattices) and Aggarwal and Stephens-Davidowitz [STOC, 2018] (using sparsification of $\\mathbb{Z}^n$) in fact give exact locally dense lattices, as well as a new construction of exact locally dense lattices built from rotations of the $m$-dimensional checkerboard lattice $D_m$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -47,17 +75,45 @@
             "math.MG",
             "math.NT"
           ],
-          "primaryCategory": "math.MG"
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-10-09T23:00:11Z",
+          "updatedAt": "2026-10-09T23:00:11Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:25.875307+00:00",
+            "contentHash": "1a9e25a43997a4976bc58d41a362daac559036f007c104194ade0e1f05ef6c4e"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "格点接吻数下界与构造",
+          "workSummary": "对所有 p≥1 给出 lp 格点接吻数至少 2^Ω(√n) 的下界，对 p>2 另给出 Ω(αp^n) 的指数下界。通过与精确局部稠密格的等价关系提供高效随机构造，尤其改善欧氏格接吻数此前长期未突破的下界。",
+          "techniques": [
+            "精确局部稠密格",
+            "Craig 格",
+            "Zⁿ 稀疏化",
+            "棋盘格旋转",
+            "随机构造"
+          ],
+          "breakthrough": "在欧氏情形获得平方根维数指数下界，在 p>2 时获得维数指数下界。",
+          "limitations": "p=2 的结果不是 2^Ω(n)；两类指数界的维数尺度不能混同。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 92,
+          "priorityReason": "高维格装填中长期接吻数下界的改进。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\kappa_p(n)$ denote the maximum kissing number of a lattice $\\mathcal{L} \\subset \\mathbb{R}^n$. We prove that $\\kappa_p(n) \\geq 2^{\\Omega(\\sqrt{n})}$ for all $p\\ge 1$ and that $\\kappa_p(n) \\geq \\Omega(\\alpha_p^n)$ for all $p > 2$, where $\\alpha_p > 1$ is a constant depending only on $p$. In particular, our former result improves on the previously best known lower bound of $\\kappa_2(n) \\geq 2^{\\Theta(\\log^2 n)}$ for the $\\ell_2$ kissing number, which has stood for over $60$ years. (In concurrent and independent work, Laarhoven and Kominers [arXiv, 2026] showed a similar lower bound on $\\kappa_2(n)$ using similar techniques.) In fact, our lower bounds follow from efficient (randomized) constructions of lattices with large kissing number. Our results use a general construction of lattices with large kissing number. Specifically, we show a simple equivalence between such lattices and a new object that we call an exact locally dense lattice. Closely related objects appear throughout the literature on computational lattice problems. Our constructions of lattices with large kissing number then follow as corollaries by showing that constructions due to Bennett and Peikert [RANDOM, 2023] (using Craig lattices) and Aggarwal and Stephens-Davidowitz [STOC, 2018] (using sparsification of $\\mathbb{Z}^n$) in fact give exact locally dense lattices, as well as a new construction of exact locally dense lattices built from rotations of the $m$-dimensional checkerboard lattice $D_m$.",
+          "version": 1
+        }
       }
     }
   ]

@@ -14,17 +14,58 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-13T17:40:33Z",
+      "updatedAt": "2026-10-13T17:40:33Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-14T06:17:57.953425+00:00",
         "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:34.626622+00:00",
+        "contentHash": "2adaf7047b5de7bd3ebe037bc5f8ac72cdebfbf284a0a866f02b90c4de3c15a9"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "球面三维空间形式的尖锐 Yamabe 上界",
+      "workSummary": "作者宣称任意自由作用的非平凡有限 Γ<SO(4) 满足 σ(S³/Γ)=|Γ|⁻²/³Y(S³)，并对每个光滑共形类给出同一上界，商圆类取到等号。区别于既有 RP³ 结果，路线是在正标量曲率边界路径上建立带标记的等变 Poincaré–Einstein 填充，再从共同内部不动点构造可下降的 Li–Qing–Shi 测试函数。",
+      "techniques": [
+        "scalar-flat adapted 紧化",
+        "排除边界与 ALE 内部曲率泡",
+        "Einstein–DeTurck 与调和映射规范",
+        "等变 Fredholm 奇偶性",
+        "共同内部不动点",
+        "Li–Qing–Shi 相对体积测试函数"
+      ],
+      "breakthrough": "核心是保留 Γ 作用取得达到球面常数的 Γ 不变测试函数；普通球面 Yamabe 上界本身不保证测试函数不变。",
+      "limitations": "Γ 须有限、非平凡且自由作用；正 Yamabe 类的论证依赖等变填充存在性和带标记解空间的奇偶延拓，不能只由度量紧致性推出。只给商圆类达到等号，不声称它是唯一等号共形类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-14T06:27:13.280712+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.18793v1",
+        "contentHash": "d5efe637f76465965789910b1d102066e8a5678ff16804c4362cae28bfbdcb0b",
+        "pages": 77,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文完整提取并检索；命中均为参考文献作者 Claude LeBrun，附近致谢仅感谢导师提出问题及指导，未见作者 AI 工具使用声明。补充检索 GenAI、Doubao、Fable、Kimi、Danus、Prism、WorkBuddy 未见命中。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a2ac130dca5249c4d71a8fdedee05f3740c794140083353477f94f7ed88f4750"
+      },
+      "priorityScore": 98,
+      "priorityReason": "三维球面空间形式精确共形不变量的重要声明"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\Gamma<SO(4)$ be a nontrivial finite group acting freely on $S^3$, and let $M=S^3/\\Gamma$. We prove that every smooth conformal class $C$ on $M$ satisfies \\[ Y(M,C)\\le |\\Gamma|^{-2/3}Y(S^3), \\] with equality for the quotient-round conformal class. Consequently, \\[ \\sigma(M)=|\\Gamma|^{-2/3}Y(S^3). \\] Our approach uses four-dimensional Poincaré--Einstein fillings of the ball. We first establish compactness for fillings whose conformal infinities range over a compact family of positive-scalar-curvature metrics. Since compactness alone does not guarantee continuation through degenerate Einstein metrics, we use equivariant Fredholm parity to obtain a filling with the prescribed boundary conformal class and group action. A common interior fixed point then makes the Li--Qing--Shi boundary test function invariant, and its descent to $M$ gives the sharp covering factor.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -41,17 +82,58 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-13T17:40:33Z",
+          "updatedAt": "2026-10-13T17:40:33Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-14T06:17:57.953425+00:00",
             "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:34.626622+00:00",
+            "contentHash": "2adaf7047b5de7bd3ebe037bc5f8ac72cdebfbf284a0a866f02b90c4de3c15a9"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "球面三维空间形式的尖锐 Yamabe 上界",
+          "workSummary": "作者宣称任意自由作用的非平凡有限 Γ<SO(4) 满足 σ(S³/Γ)=|Γ|⁻²/³Y(S³)，并对每个光滑共形类给出同一上界，商圆类取到等号。区别于既有 RP³ 结果，路线是在正标量曲率边界路径上建立带标记的等变 Poincaré–Einstein 填充，再从共同内部不动点构造可下降的 Li–Qing–Shi 测试函数。",
+          "techniques": [
+            "scalar-flat adapted 紧化",
+            "排除边界与 ALE 内部曲率泡",
+            "Einstein–DeTurck 与调和映射规范",
+            "等变 Fredholm 奇偶性",
+            "共同内部不动点",
+            "Li–Qing–Shi 相对体积测试函数"
+          ],
+          "breakthrough": "核心是保留 Γ 作用取得达到球面常数的 Γ 不变测试函数；普通球面 Yamabe 上界本身不保证测试函数不变。",
+          "limitations": "Γ 须有限、非平凡且自由作用；正 Yamabe 类的论证依赖等变填充存在性和带标记解空间的奇偶延拓，不能只由度量紧致性推出。只给商圆类达到等号，不声称它是唯一等号共形类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-14T06:27:13.280712+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.18793v1",
+            "contentHash": "d5efe637f76465965789910b1d102066e8a5678ff16804c4362cae28bfbdcb0b",
+            "pages": 77,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文完整提取并检索；命中均为参考文献作者 Claude LeBrun，附近致谢仅感谢导师提出问题及指导，未见作者 AI 工具使用声明。补充检索 GenAI、Doubao、Fable、Kimi、Danus、Prism、WorkBuddy 未见命中。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a2ac130dca5249c4d71a8fdedee05f3740c794140083353477f94f7ed88f4750"
+          },
+          "priorityScore": 98,
+          "priorityReason": "三维球面空间形式精确共形不变量的重要声明"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\Gamma<SO(4)$ be a nontrivial finite group acting freely on $S^3$, and let $M=S^3/\\Gamma$. We prove that every smooth conformal class $C$ on $M$ satisfies \\[ Y(M,C)\\le |\\Gamma|^{-2/3}Y(S^3), \\] with equality for the quotient-round conformal class. Consequently, \\[ \\sigma(M)=|\\Gamma|^{-2/3}Y(S^3). \\] Our approach uses four-dimensional Poincaré--Einstein fillings of the ball. We first establish compactness for fillings whose conformal infinities range over a compact family of positive-scalar-curvature metrics. Since compactness alone does not guarantee continuation through degenerate Einstein metrics, we use equivariant Fredholm parity to obtain a filling with the prescribed boundary conformal class and group action. A common interior fixed point then makes the Li--Qing--Shi boundary test function invariant, and its descent to $M$ gives the sharp covering factor.",
+          "version": 1
+        }
       }
     }
   ]

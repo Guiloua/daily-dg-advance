@@ -16,17 +16,58 @@
       ],
       "primaryCategory": "math.PR",
       "comment": "10 pages. The use of AI is described in the acknowledgements",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-12T13:09:21Z",
+      "updatedAt": "2026-10-12T13:09:21Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:00.296897+00:00",
+        "contentHash": "d89dc57edec8dd56e2f340763c7545bdd2d3e158fbc565b5e51c3fc8d78dfb29"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "典型一维边缘的最佳 Gaussian 逼近阶",
+      "workSummary": "对 Rⁿ 中各向同性对数凹概率测度，证明典型一维边缘与标准 Gaussian 的 Kolmogorov 距离至多 C/n，且一般不能改善其维数阶。相较 Bobkov–Chistyakov–Götze 的估计消去一个对数因子。",
+      "techniques": [
+        "各向同性对数凹边缘分析",
+        "Kolmogorov 距离估计"
+      ],
+      "breakthrough": "在对数凹条件下取得一般意义上最佳的 1/n 逼近阶。",
+      "limitations": "对象是典型边缘而非所有方向；常数 C 为普适常数但不宣称数值最优。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.16740v1 · PDF 第 2 页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-14T06:25:58.243697+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.16740v1",
+        "contentHash": "786dba5ca7f4c05455e2cd94ff80edd92943808efe17fa502f044af2115cd395",
+        "pages": 10,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ff67e6fbcad4a3336903889b72ac80c246ae66a677f2fda3f9bb7fb7fb15df5c"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "高维凸几何中心极限定理的最佳维数阶改进。"
+    },
+    "analysisBasis": {
+      "abstract": "We study one-dimensional marginals of an isotropic, log-concave probability measure in $\\mathbb{R}^n$. We show that the Kolmogorov distance between a typical marginal and the standard Gaussian distribution is at most $C/n$, for a universal constant $C > 0$. This bound is optimal in general, up to the value of the universal constant. It improves the Gaussian approximation bound of Bobkov, Chistyakov and Götze by a logarithmic factor in the log-concave setting.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +86,58 @@
           ],
           "primaryCategory": "math.PR",
           "comment": "10 pages. The use of AI is described in the acknowledgements",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-12T13:09:21Z",
+          "updatedAt": "2026-10-12T13:09:21Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:00.296897+00:00",
+            "contentHash": "d89dc57edec8dd56e2f340763c7545bdd2d3e158fbc565b5e51c3fc8d78dfb29"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "典型一维边缘的最佳 Gaussian 逼近阶",
+          "workSummary": "对 Rⁿ 中各向同性对数凹概率测度，证明典型一维边缘与标准 Gaussian 的 Kolmogorov 距离至多 C/n，且一般不能改善其维数阶。相较 Bobkov–Chistyakov–Götze 的估计消去一个对数因子。",
+          "techniques": [
+            "各向同性对数凹边缘分析",
+            "Kolmogorov 距离估计"
+          ],
+          "breakthrough": "在对数凹条件下取得一般意义上最佳的 1/n 逼近阶。",
+          "limitations": "对象是典型边缘而非所有方向；常数 C 为普适常数但不宣称数值最优。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.16740v1 · PDF 第 2 页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-14T06:25:58.243697+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.16740v1",
+            "contentHash": "786dba5ca7f4c05455e2cd94ff80edd92943808efe17fa502f044af2115cd395",
+            "pages": 10,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ff67e6fbcad4a3336903889b72ac80c246ae66a677f2fda3f9bb7fb7fb15df5c"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "高维凸几何中心极限定理的最佳维数阶改进。"
+        },
+        "analysisBasis": {
+          "abstract": "We study one-dimensional marginals of an isotropic, log-concave probability measure in $\\mathbb{R}^n$. We show that the Kolmogorov distance between a typical marginal and the standard Gaussian distribution is at most $C/n$, for a universal constant $C > 0$. This bound is optimal in general, up to the value of the universal constant. It improves the Gaussian approximation bound of Bobkov, Chistyakov and Götze by a logarithmic factor in the log-concave setting.",
+          "version": 1
+        }
       }
     }
   ]

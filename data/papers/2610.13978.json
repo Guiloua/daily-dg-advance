@@ -14,17 +14,42 @@
         "math.MG"
       ],
       "primaryCategory": "math.MG",
-      "comment": "Code and data: this https URL"
+      "comment": "Code and data: this https URL",
+      "version": 1,
+      "submittedAt": "2026-09-22T07:59:12Z",
+      "updatedAt": "2026-09-22T07:59:12Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:14.274790+00:00",
+        "contentHash": "9b3d6df4f1455305482a16a94228c554e64aca4ccd4006f528394ca243d6725d"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "203 球装填数值下界",
+      "workSummary": "从已有公开构型继续数值优化，得到单位立方体内 203 个同半径球的可行半径 r>0.088145634693，改善先前约 0.088145402159 的记录。作者用独立的 100 位算术程序检查球间及球壁约束并公开坐标。",
+      "techniques": [
+        "数值优化",
+        "100 位算术可行性检查"
+      ],
+      "breakthrough": "小幅改善指定球数的装填构造下界。",
+      "limitations": "这是经高精度程序检查的数值构造下界，未给出全局最优性或上界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 56,
+      "priorityReason": "可复现装填记录，主要贡献为特定构型优化。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper reports an improved numerical lower bound for packing 203 equal spheres in a unit cube. Let r denote the maximum common radius of equal non-overlapping spheres that can be packed in a unit cube. For N = 203, the configuration currently listed in Packomania has a feasible radius of approximately r = 0.088145402159. Starting from this public configuration, we perform further numerical optimization and obtain a new feasible configuration with r > 0.088145634693. The final configuration is checked by an independent verification program using 100-digit arithmetic. All 20503 sphere-pair constrains and all 1218 sphere-wall constraints are satisfied. The coordinates of the new configuration and the related programs are provided as supplementary material.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -41,17 +66,42 @@
             "math.MG"
           ],
           "primaryCategory": "math.MG",
-          "comment": "Code and data: this https URL"
+          "comment": "Code and data: this https URL",
+          "version": 1,
+          "submittedAt": "2026-09-22T07:59:12Z",
+          "updatedAt": "2026-09-22T07:59:12Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:14.274790+00:00",
+            "contentHash": "9b3d6df4f1455305482a16a94228c554e64aca4ccd4006f528394ca243d6725d"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "203 球装填数值下界",
+          "workSummary": "从已有公开构型继续数值优化，得到单位立方体内 203 个同半径球的可行半径 r>0.088145634693，改善先前约 0.088145402159 的记录。作者用独立的 100 位算术程序检查球间及球壁约束并公开坐标。",
+          "techniques": [
+            "数值优化",
+            "100 位算术可行性检查"
+          ],
+          "breakthrough": "小幅改善指定球数的装填构造下界。",
+          "limitations": "这是经高精度程序检查的数值构造下界，未给出全局最优性或上界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 56,
+          "priorityReason": "可复现装填记录，主要贡献为特定构型优化。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper reports an improved numerical lower bound for packing 203 equal spheres in a unit cube. Let r denote the maximum common radius of equal non-overlapping spheres that can be packed in a unit cube. For N = 203, the configuration currently listed in Packomania has a feasible radius of approximately r = 0.088145402159. Starting from this public configuration, we perform further numerical optimization and obtain a new feasible configuration with r > 0.088145634693. The final configuration is checked by an independent verification program using 100-digit arithmetic. All 20503 sphere-pair constrains and all 1218 sphere-wall constraints are satisfied. The coordinates of the new configuration and the related programs are provided as supplementary material.",
+          "version": 1
+        }
       }
     }
   ]

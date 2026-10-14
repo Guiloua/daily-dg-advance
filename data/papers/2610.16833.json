@@ -19,17 +19,42 @@
       ],
       "primaryCategory": "math.AP",
       "comment": "22 pages. 1 figure",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-12T14:14:55Z",
+      "updatedAt": "2026-10-12T14:14:55Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-14T06:17:57.953425+00:00",
         "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:00.297993+00:00",
+        "contentHash": "2104d7a07882872126d6a43d0189f045cc8b6057b4b9e6382e884cff2a43fb31"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "格点调和映射与低温 Gibbs 正则性",
+      "workSummary": "建立从 Zᵈ 到 S^(N−1) 的离散能量极小调和映射正则性；二维区域内部 Hölder 控制不要求边值正则。利用对全部边界配置的一致性，在 d=2、N≥3 时把局部正则性推广至温度趋零的无限体积 spin-O(N) Gibbs 测度，并讨论更高维情形。",
+      "techniques": [
+        "格点 Dirichlet 能量",
+        "边值一致 Hölder 估计",
+        "低温 Gibbs 测度"
+      ],
+      "breakthrough": "区别于连续模型，在无边界正则前提下把零温极小性质延伸到低温统计模型。",
+      "limitations": "低温 Gibbs 推广明确针对 d=2、N≥3；更高维仅讨论相应影响，不可写成统一全维定理。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 88,
+      "priorityReason": "离散几何分析与低温自旋系统之间的统一正则性工具。"
+    },
+    "analysisBasis": {
+      "abstract": "The purpose of this note is twofold. First, we revisit the classical regularity theory of harmonic maps in the setting of maps defined on a lattice $\\mathbb{Z}^d$ instead of $\\mathbb{R}^d$ or some other manifold. The target space of our harmonic maps will be spheres $\\mathbb{S}^{N-1}, N\\geq 2$. A harmonic map $\\sigma : \\mathbb{Z}^d \\to \\mathbb{S}^{N-1}$ is a map which in any finite subgraph $\\Lambda$ minimizes the internal Dirichlet energy $\\frac 1 2 \\sum_{i \\sim j \\in \\Lambda} \\|\\sigma_i -\\sigma_j\\|^2$ given the boundary condition $\\sigma_{|\\partial \\Lambda}$. One key difference between our setting and the continuum is that our main Hölder regularity statement in a large domain $\\Lambda\\subset \\mathbb{Z}^{d=2}$ does not require any regularity assumption on the map $\\sigma$ restricted to the boundary of the domain. For example, when $d=2$ and $N=3$, the Hölder regularity induced in the bulk of the domain holds uniformly in all boundary configurations $\\sigma \\in (\\mathbb{S}^{2})^{\\partial \\Lambda}$ (this is in contrast with the continuum which requires extensions in suitable Sobolev spaces). The fact we obtain results uniformly in the boundary conditions allows us to extend our results for positive temperatures. Namely, as $T \\searrow 0$, we obtain a local regularity theory for all infinite volume Spin $O(N)$ Gibbs measures, at least when $d=2$ and $N\\geq 3$. We also discuss implications of our analysis in dimensions $d\\geq 3$.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -51,17 +76,42 @@
           ],
           "primaryCategory": "math.AP",
           "comment": "22 pages. 1 figure",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-12T14:14:55Z",
+          "updatedAt": "2026-10-12T14:14:55Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-14T06:17:57.953425+00:00",
             "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:00.297993+00:00",
+            "contentHash": "2104d7a07882872126d6a43d0189f045cc8b6057b4b9e6382e884cff2a43fb31"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "格点调和映射与低温 Gibbs 正则性",
+          "workSummary": "建立从 Zᵈ 到 S^(N−1) 的离散能量极小调和映射正则性；二维区域内部 Hölder 控制不要求边值正则。利用对全部边界配置的一致性，在 d=2、N≥3 时把局部正则性推广至温度趋零的无限体积 spin-O(N) Gibbs 测度，并讨论更高维情形。",
+          "techniques": [
+            "格点 Dirichlet 能量",
+            "边值一致 Hölder 估计",
+            "低温 Gibbs 测度"
+          ],
+          "breakthrough": "区别于连续模型，在无边界正则前提下把零温极小性质延伸到低温统计模型。",
+          "limitations": "低温 Gibbs 推广明确针对 d=2、N≥3；更高维仅讨论相应影响，不可写成统一全维定理。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 88,
+          "priorityReason": "离散几何分析与低温自旋系统之间的统一正则性工具。"
+        },
+        "analysisBasis": {
+          "abstract": "The purpose of this note is twofold. First, we revisit the classical regularity theory of harmonic maps in the setting of maps defined on a lattice $\\mathbb{Z}^d$ instead of $\\mathbb{R}^d$ or some other manifold. The target space of our harmonic maps will be spheres $\\mathbb{S}^{N-1}, N\\geq 2$. A harmonic map $\\sigma : \\mathbb{Z}^d \\to \\mathbb{S}^{N-1}$ is a map which in any finite subgraph $\\Lambda$ minimizes the internal Dirichlet energy $\\frac 1 2 \\sum_{i \\sim j \\in \\Lambda} \\|\\sigma_i -\\sigma_j\\|^2$ given the boundary condition $\\sigma_{|\\partial \\Lambda}$. One key difference between our setting and the continuum is that our main Hölder regularity statement in a large domain $\\Lambda\\subset \\mathbb{Z}^{d=2}$ does not require any regularity assumption on the map $\\sigma$ restricted to the boundary of the domain. For example, when $d=2$ and $N=3$, the Hölder regularity induced in the bulk of the domain holds uniformly in all boundary configurations $\\sigma \\in (\\mathbb{S}^{2})^{\\partial \\Lambda}$ (this is in contrast with the continuum which requires extensions in suitable Sobolev spaces). The fact we obtain results uniformly in the boundary conditions allows us to extend our results for positive temperatures. Namely, as $T \\searrow 0$, we obtain a local regularity theory for all infinite volume Spin $O(N)$ Gibbs measures, at least when $d=2$ and $N\\geq 3$. We also discuss implications of our analysis in dimensions $d\\geq 3$.",
+          "version": 1
+        }
       }
     }
   ]

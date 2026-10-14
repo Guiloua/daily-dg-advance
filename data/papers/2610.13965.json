@@ -16,17 +16,43 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "12 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-09-10T06:22:41Z",
+      "updatedAt": "2026-09-10T06:22:41Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:14.273913+00:00",
+        "contentHash": "9d0ddbcb03dbd86d1293a8f38c57768a5b797819378b165544d4800ac2f2ad35"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "奇偶类 Jensen 不等式",
+      "workSummary": "对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。",
+      "techniques": [
+        "维数归纳",
+        "下确界卷积",
+        "二次核",
+        "局部支撑不等式"
+      ],
+      "breakthrough": "把 Jensen 与支撑理论推广到无限定义域的固定坐标奇偶类。",
+      "limitations": "重心必须位于同一个逐坐标奇偶类；仅要求总奇偶一致不足。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 58,
+      "priorityReason": "离散凸分析的全局支撑与几何优化工具。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove Jensen's inequality on each coordinatewise parity class of a jump $M$-convex function on $\\mathbb{Z}^n$, without assuming strong base orderability or a finite effective domain. If a finite convex combination of domain points has its barycenter in the same parity class, then the barycenter belongs to the domain and satisfies Jensen's inequality. We also prove that every domain point admits an affine support on its entire parity class. The set of support vectors is characterized by at most $3^n-1$ local inequalities, which yield optimality certificates, attained duality, and an exact formula for linear growth and stability under linear perturbations. The same conclusions hold for distributions with finite first moment supported on domain points of a single parity class, provided their mean lies in that class. We characterize equality by contact sets and give a quantitative bound on the Jensen gap. The proof combines induction on dimension with the known closure under infimal convolution: convolution with an even-box indicator gives finite-domain supports, a quadratic kernel proves barycenter feasibility, and a fixed local kernel yields global supports. A two-dimensional example shows that total parity alone does not suffice.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +71,43 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "12 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-09-10T06:22:41Z",
+          "updatedAt": "2026-09-10T06:22:41Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:14.273913+00:00",
+            "contentHash": "9d0ddbcb03dbd86d1293a8f38c57768a5b797819378b165544d4800ac2f2ad35"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "奇偶类 Jensen 不等式",
+          "workSummary": "对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。",
+          "techniques": [
+            "维数归纳",
+            "下确界卷积",
+            "二次核",
+            "局部支撑不等式"
+          ],
+          "breakthrough": "把 Jensen 与支撑理论推广到无限定义域的固定坐标奇偶类。",
+          "limitations": "重心必须位于同一个逐坐标奇偶类；仅要求总奇偶一致不足。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 58,
+          "priorityReason": "离散凸分析的全局支撑与几何优化工具。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove Jensen's inequality on each coordinatewise parity class of a jump $M$-convex function on $\\mathbb{Z}^n$, without assuming strong base orderability or a finite effective domain. If a finite convex combination of domain points has its barycenter in the same parity class, then the barycenter belongs to the domain and satisfies Jensen's inequality. We also prove that every domain point admits an affine support on its entire parity class. The set of support vectors is characterized by at most $3^n-1$ local inequalities, which yield optimality certificates, attained duality, and an exact formula for linear growth and stability under linear perturbations. The same conclusions hold for distributions with finite first moment supported on domain points of a single parity class, provided their mean lies in that class. We characterize equality by contact sets and give a quantitative bound on the Jensen gap. The proof combines induction on dimension with the known closure under infimal convolution: convolution with an even-box indicator gives finite-domain supports, a quadratic kernel proves barycenter feasibility, and a fixed local kernel yields global supports. A two-dimensional example shows that total parity alone does not suffice.",
+          "version": 1
+        }
       }
     }
   ]

@@ -15,17 +15,42 @@
         "math.DG"
       ],
       "primaryCategory": "math.ST",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-12T16:09:55Z",
+      "updatedAt": "2026-10-12T16:09:55Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-14T06:17:57.953425+00:00",
         "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:11.929965+00:00",
+        "contentHash": "c0f14a9745849f155412dd3d6cefe4adadfd84598b2c18d2c51b757bd1ece32b"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "图 Laplace 算子的可识别性",
+      "workSummary": "在固定紧致无边界光滑流形上，已知正连续严格递减的径向核及固定带宽时，测地距离构造的非归一化图 Laplace 算子确定度量及几乎处处意义的采样密度。欧氏环境距离版本还能确定嵌入至刚体运动；在紧致参数类中给出独立同分布样本下一致恢复。",
+      "techniques": [
+        "积分算子可识别性",
+        "经验与总体算子距离最小化",
+        "径向核"
+      ],
+      "breakthrough": "同时恢复流形几何和采样密度而非仅恢复归一化后的组合量。",
+      "limitations": "采样密度正且连续，参数类紧致；一致恢复假设经验算子可在流形任意点求值。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 67,
+      "priorityReason": "几何统计识别性强但恢复假设需要明确保留"
+    },
+    "analysisBasis": {
+      "abstract": "We study whether an unnormalized graph Laplace operator can determine both the geometry of a manifold and its sampling density. On a fixed compact smooth manifold without boundary, we use a known positive, continuous, strictly decreasing radial kernel at a fixed positive bandwidth. For positive sampling densities, the operator built from geodesic distances determines the Riemannian metric and identifies the density up to equality almost everywhere. When the metric is induced by a Euclidean embedding, the operator built from ambient distances also determines the embedding up to rotations, reflections and translations, and the density. On compact parameter classes with positive continuous densities, minimizing the distance between empirical and popula- tion operators gives estimates that converge to the true parameters under independent, identically distributed sampling. This recovery result assumes that the empirical operator can be evaluated at arbitrary points of the manifold.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +68,42 @@
             "math.DG"
           ],
           "primaryCategory": "math.ST",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-12T16:09:55Z",
+          "updatedAt": "2026-10-12T16:09:55Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-14T06:17:57.953425+00:00",
             "contentHash": "2689ad3a6645088ef7964f6833403045ea8cdca9fb26d523616743079e22ac27"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:11.929965+00:00",
+            "contentHash": "c0f14a9745849f155412dd3d6cefe4adadfd84598b2c18d2c51b757bd1ece32b"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "图 Laplace 算子的可识别性",
+          "workSummary": "在固定紧致无边界光滑流形上，已知正连续严格递减的径向核及固定带宽时，测地距离构造的非归一化图 Laplace 算子确定度量及几乎处处意义的采样密度。欧氏环境距离版本还能确定嵌入至刚体运动；在紧致参数类中给出独立同分布样本下一致恢复。",
+          "techniques": [
+            "积分算子可识别性",
+            "经验与总体算子距离最小化",
+            "径向核"
+          ],
+          "breakthrough": "同时恢复流形几何和采样密度而非仅恢复归一化后的组合量。",
+          "limitations": "采样密度正且连续，参数类紧致；一致恢复假设经验算子可在流形任意点求值。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 67,
+          "priorityReason": "几何统计识别性强但恢复假设需要明确保留"
+        },
+        "analysisBasis": {
+          "abstract": "We study whether an unnormalized graph Laplace operator can determine both the geometry of a manifold and its sampling density. On a fixed compact smooth manifold without boundary, we use a known positive, continuous, strictly decreasing radial kernel at a fixed positive bandwidth. For positive sampling densities, the operator built from geodesic distances determines the Riemannian metric and identifies the density up to equality almost everywhere. When the metric is induced by a Euclidean embedding, the operator built from ambient distances also determines the embedding up to rotations, reflections and translations, and the density. On compact parameter classes with positive continuous densities, minimizing the distance between empirical and popula- tion operators gives estimates that converge to the true parameters under independent, identically distributed sampling. This recovery result assumes that the empirical operator can be evaluated at arbitrary points of the manifold.",
+          "version": 1
+        }
       }
     }
   ]

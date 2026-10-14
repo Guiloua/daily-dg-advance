@@ -16,17 +16,43 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "22 pages. Includes a deterministic exact-rational companion verifier and independent 4-dimensional and 22-dimensional Krawczyk certificates",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-08-19T08:11:26Z",
+      "updatedAt": "2026-08-19T08:11:26Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:14.271766+00:00",
+        "contentHash": "4e64a854c116f409f1f8c3a7bb5484710c4f19e6bc7085656df35371819ffd8b"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Gerver 沙发构造严格认证",
+      "workSummary": "用精确有理数与独立的 4 维、22 维 Krawczyk 包含证书认证 Gerver 沙发的切换参数、支撑约束、接触拓扑和面积界。进一步直接证明该连通闭集可沿连续刚体运动通过走廊，并与经典十八片构造一致。",
+      "techniques": [
+        "Krawczyk 包含证书",
+        "精确区间传播",
+        "支撑函数",
+        "刚体运动构造"
+      ],
+      "breakthrough": "为 Gerver 经典构造及 Baek 变分框架中的相关几何假设提供可复现的严格证书。",
+      "limitations": "认证针对 Gerver 既有构造及其可行运动，不单独给出所有沙发的最优性结论。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 89,
+      "priorityReason": "移动沙发问题中可复核的全局几何认证。"
+    },
+    "analysisBasis": {
+      "abstract": "The moving sofa problem asks for the largest planar set that can pass through a unit-width right-angled hallway. Gerver's 1992 construction remains the largest explicit example, but its defining switching parameters, continuum of supporting hallways, and contact topology involve transcendental equations and global inequalities. We give a reproducible exact-rational certification of the construction. A strict four-dimensional Krawczyk inclusion encloses the reduced switching system, while an independent twenty-two-dimensional Krawczyk calculation verifies Romik's full matching and contact equations in an explicit rational box. Exact interval propagation through the five analytic phases proves the support identities, global half-plane constraints, inner-wall separation, niche topology, oriented contacts, injectivity, and area bounds. From the certified support functions we identify every supporting hallway as L_t=x(t)+R_tL. For G=K_0\\setminus\\mathcal N(K_0) we prove directly that G is nonempty, closed, and connected and that \\Phi_t(q)=R_{-t}(q-x(t)) is a continuous path in SE(2) carrying G through the hallway, with the correct initial and final arms. We further identify G with Romik's reconstruction of Gerver's classical eighteen-piece sofa. The deterministic companion verifier uses only Python's standard library and exact rational arithmetic. As a consequence, the Gerver-specific geometric hypotheses in Baek's recent variational framework are rigorously certified; we also clarify the one-sided tangent-speed convention at two contact-curve junctions.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +71,43 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "22 pages. Includes a deterministic exact-rational companion verifier and independent 4-dimensional and 22-dimensional Krawczyk certificates",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-08-19T08:11:26Z",
+          "updatedAt": "2026-08-19T08:11:26Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:14.271766+00:00",
+            "contentHash": "4e64a854c116f409f1f8c3a7bb5484710c4f19e6bc7085656df35371819ffd8b"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Gerver 沙发构造严格认证",
+          "workSummary": "用精确有理数与独立的 4 维、22 维 Krawczyk 包含证书认证 Gerver 沙发的切换参数、支撑约束、接触拓扑和面积界。进一步直接证明该连通闭集可沿连续刚体运动通过走廊，并与经典十八片构造一致。",
+          "techniques": [
+            "Krawczyk 包含证书",
+            "精确区间传播",
+            "支撑函数",
+            "刚体运动构造"
+          ],
+          "breakthrough": "为 Gerver 经典构造及 Baek 变分框架中的相关几何假设提供可复现的严格证书。",
+          "limitations": "认证针对 Gerver 既有构造及其可行运动，不单独给出所有沙发的最优性结论。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 89,
+          "priorityReason": "移动沙发问题中可复核的全局几何认证。"
+        },
+        "analysisBasis": {
+          "abstract": "The moving sofa problem asks for the largest planar set that can pass through a unit-width right-angled hallway. Gerver's 1992 construction remains the largest explicit example, but its defining switching parameters, continuum of supporting hallways, and contact topology involve transcendental equations and global inequalities. We give a reproducible exact-rational certification of the construction. A strict four-dimensional Krawczyk inclusion encloses the reduced switching system, while an independent twenty-two-dimensional Krawczyk calculation verifies Romik's full matching and contact equations in an explicit rational box. Exact interval propagation through the five analytic phases proves the support identities, global half-plane constraints, inner-wall separation, niche topology, oriented contacts, injectivity, and area bounds. From the certified support functions we identify every supporting hallway as L_t=x(t)+R_tL. For G=K_0\\setminus\\mathcal N(K_0) we prove directly that G is nonempty, closed, and connected and that \\Phi_t(q)=R_{-t}(q-x(t)) is a continuous path in SE(2) carrying G through the hallway, with the correct initial and final arms. We further identify G with Romik's reconstruction of Gerver's classical eighteen-piece sofa. The deterministic companion verifier uses only Python's standard library and exact rational arithmetic. As a consequence, the Gerver-specific geometric hypotheses in Baek's recent variational framework are rigorously certified; we also clarify the one-sided tangent-speed convention at two contact-curve junctions.",
+          "version": 1
+        }
       }
     }
   ]

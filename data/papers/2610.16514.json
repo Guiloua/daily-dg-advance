@@ -15,17 +15,42 @@
         "math.GT"
       ],
       "primaryCategory": "math.GT",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-12T10:03:54Z",
+      "updatedAt": "2026-10-12T10:03:54Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-10-14T06:18:53.799844+00:00",
         "contentHash": "bd8bf3d4dcf5b2a525da13ca39b198decdcc001469815ce01ad21bca6493b804"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:24:00.294143+00:00",
+        "contentHash": "fd4fb8985862b68a9e67aadbf8676322242419d5032aebaa6df6f79bab410522"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "网格图亏格的匹配算法",
+      "workSummary": "由网格图绕数矩阵直接计算其亏格 g(G)：经列规范化、行列约化与最小顶点覆盖修正后，以完美匹配选取网格状态，再应用已有网格同调公式。创新是算法及强多项式分析，而非新的结不变量。",
+      "techniques": [
+        "Hungarian 算法",
+        "König 定理",
+        "网格同调亏格公式"
+      ],
+      "breakthrough": "将网格图亏格求解转化为代数匹配计算。",
+      "limitations": "直接计算的是指定网格图的 g(G)，一般结亏格 g(K) 还涉及网格移动，不能据此宣称已求出。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 69,
+      "priorityReason": "结网格数据与组合优化之间的算法联系。"
+    },
+    "analysisBasis": {
+      "abstract": "Grid diagrams encode knots and links combinatorially through an (n,n) winding matrix W(G). A fundamental invariant of the grid diagram is its genus g(G), which records essential topological information about the underlying knot. We give an algebraic algorithm that computes g(G) directly from W(G). The method repurposes the Hungarian algorithm ,after a column normalization that makes the matrix non-negative, it applies row-column reductions and minimum-vertex-cover corrections until the zero entries admit a perfect matching, equivalently until the minimum marking number equals n. By Konig's theorem the resulting permutation defines a distinguished grid state, and g(G) is then read from this matrix via the classical grid homology formula (Ozsvath-Stipsicz-Szabo). The novelty of this paper is the algorithm and its strongly polynomial analysis; the underlying invariant is known grid-homology theory. We illustrate the method on the trefoil and additional examples, and discuss extensions to (m,n) matrices and grid-move navigation toward the knot genus g(K).",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +68,42 @@
             "math.GT"
           ],
           "primaryCategory": "math.GT",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-12T10:03:54Z",
+          "updatedAt": "2026-10-12T10:03:54Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-10-14T06:18:53.799844+00:00",
             "contentHash": "bd8bf3d4dcf5b2a525da13ca39b198decdcc001469815ce01ad21bca6493b804"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:24:00.294143+00:00",
+            "contentHash": "fd4fb8985862b68a9e67aadbf8676322242419d5032aebaa6df6f79bab410522"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "网格图亏格的匹配算法",
+          "workSummary": "由网格图绕数矩阵直接计算其亏格 g(G)：经列规范化、行列约化与最小顶点覆盖修正后，以完美匹配选取网格状态，再应用已有网格同调公式。创新是算法及强多项式分析，而非新的结不变量。",
+          "techniques": [
+            "Hungarian 算法",
+            "König 定理",
+            "网格同调亏格公式"
+          ],
+          "breakthrough": "将网格图亏格求解转化为代数匹配计算。",
+          "limitations": "直接计算的是指定网格图的 g(G)，一般结亏格 g(K) 还涉及网格移动，不能据此宣称已求出。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 69,
+          "priorityReason": "结网格数据与组合优化之间的算法联系。"
+        },
+        "analysisBasis": {
+          "abstract": "Grid diagrams encode knots and links combinatorially through an (n,n) winding matrix W(G). A fundamental invariant of the grid diagram is its genus g(G), which records essential topological information about the underlying knot. We give an algebraic algorithm that computes g(G) directly from W(G). The method repurposes the Hungarian algorithm ,after a column normalization that makes the matrix non-negative, it applies row-column reductions and minimum-vertex-cover corrections until the zero entries admit a perfect matching, equivalently until the minimum marking number equals n. By Konig's theorem the resulting permutation defines a distinguished grid state, and g(G) is then read from this matrix via the classical grid homology formula (Ozsvath-Stipsicz-Szabo). The novelty of this paper is the algorithm and its strongly polynomial analysis; the underlying invariant is known grid-homology theory. We illustrate the method on the trefoil and additional examples, and discuss extensions to (m,n) matrices and grid-move navigation toward the knot genus g(K).",
+          "version": 1
+        }
       }
     }
   ]

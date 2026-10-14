@@ -15,17 +15,42 @@
         "math.CO"
       ],
       "primaryCategory": "math.MG",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-06T04:12:13Z",
+      "updatedAt": "2026-10-06T04:12:13Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:25.870189+00:00",
+        "contentHash": "a46c5039165d6515f45f334a457843ea90d91e6e1045240599077f71f255b1af"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "l1 Jung 常数上界",
+      "workSummary": "证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。",
+      "techniques": [
+        "环境包围球",
+        "Hadamard 矩阵构造",
+        "Lean 形式化"
+      ],
+      "breakthrough": "给出全部 4k+1 维的上界，并在 Hadamard 条件下识别三维数的精确常数。",
+      "limitations": "一般 k 的精确值还依赖相应 Hadamard 矩阵存在；上界本身不需该条件。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 85,
+      "priorityReason": "赋范空间包围半径的维数精确界。"
+    },
+    "analysisBasis": {
+      "abstract": "For every integer $k\\ge1$, we prove that each nonempty bounded set in real $\\ell_1^{4k+1}$ has an ambient enclosing ball of radius at most $(4k-1)/(4k)$ times its diameter. The bound is sharp in dimension five: $J(\\ell_1^5)=3/4$. If a Hadamard matrix of order $4k$ exists, then $J(\\ell_1^{4k-1})=J(\\ell_1^{4k})=J(\\ell_1^{4k+1})=(4k-1)/(4k)$. The upper bound for every $k\\ge1$ has been formalized in Lean.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -43,17 +68,42 @@
             "math.CO"
           ],
           "primaryCategory": "math.MG",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-06T04:12:13Z",
+          "updatedAt": "2026-10-06T04:12:13Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:25.870189+00:00",
+            "contentHash": "a46c5039165d6515f45f334a457843ea90d91e6e1045240599077f71f255b1af"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "l1 Jung 常数上界",
+          "workSummary": "证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。",
+          "techniques": [
+            "环境包围球",
+            "Hadamard 矩阵构造",
+            "Lean 形式化"
+          ],
+          "breakthrough": "给出全部 4k+1 维的上界，并在 Hadamard 条件下识别三维数的精确常数。",
+          "limitations": "一般 k 的精确值还依赖相应 Hadamard 矩阵存在；上界本身不需该条件。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 85,
+          "priorityReason": "赋范空间包围半径的维数精确界。"
+        },
+        "analysisBasis": {
+          "abstract": "For every integer $k\\ge1$, we prove that each nonempty bounded set in real $\\ell_1^{4k+1}$ has an ambient enclosing ball of radius at most $(4k-1)/(4k)$ times its diameter. The bound is sharp in dimension five: $J(\\ell_1^5)=3/4$. If a Hadamard matrix of order $4k$ exists, then $J(\\ell_1^{4k-1})=J(\\ell_1^{4k})=J(\\ell_1^{4k+1})=(4k-1)/(4k)$. The upper bound for every $k\\ge1$ has been formalized in Lean.",
+          "version": 1
+        }
       }
     }
   ]

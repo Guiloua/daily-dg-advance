@@ -16,17 +16,42 @@
       ],
       "primaryCategory": "cs.CG",
       "comment": "18 pages. Code, machine-verification scripts and resumable certificates at this https URL",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-05T14:07:31Z",
+      "updatedAt": "2026-10-05T14:07:31Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:25.869403+00:00",
+        "contentHash": "b86d3b8ad333eef19411eed5dad4a428149eb615bafa8f5d1d49911df7a62197"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "三维弯折走廊沙发上界",
+      "workSummary": "对单位方形截面、转弯面相互垂直的三维走廊，给出依赖中段长度 M 的三个体积上界。最强结果在 M>2.2 时给出 3.4083，其中 M=4 的问题因而具有有限且定量的上界。",
+      "techniques": [
+        "首次过弯强制事件",
+        "倾斜管弦长与 Fubini 估计",
+        "认证分支定界"
+      ],
+      "breakthrough": "将特定三维移动沙发问题的体积上界收紧至 3.4083。",
+      "limitations": "最强上界采用带保守余量的双精度计算辅助证书；不同上界分别要求 M≥3.53、M≥2.61、M>2.2。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 81,
+      "priorityReason": "三维走廊可搬运体的全局体积上界。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $K_M \\subset \\mathbb{R}^3$ be the \"snaky\" corridor with unit-square cross-section: an infinite entry arm parallel to the $x$-axis, a middle arm parallel to the $y$-axis whose clear straight section has length $M$, and an infinite exit arm parallel to the $z$-axis, with the two turns lying in the $x$-$y$ and $y$-$z$ planes. Let $V^*(K_M)$ be the supremum of the volumes of connected bodies that can be moved continuously (by rigid motions) from the entry arm to the exit arm while remaining inside $K_M$. We prove $V^*(K_M) \\le 7.8691$ for every $M \\ge 3.53$ (Theorem A); by a sharper analysis of the same mechanism, $V^*(K_M) \\le 4.2862$ for every $M \\ge 2.61$ (Theorem B); and, by replacing the final analytic caps with a certified branch-and-bound computation over the compact family of entry tubes compatible with the forced events, $V^*(K_M) \\le 3.4083$ for every $M > 2.2$ (Theorem C; computer-assisted, in double precision with conservative slack). In particular all three bounds apply to the corridor with $M = 4$ used in Problem 6.64 of Georgiev, Gómez-Serrano, Tao and Wagner ( arXiv:2511.02864 ), and uniformly to every \"turns far apart\" reading of that problem. To the best of our knowledge, this is the first upper bound for the snaky-corridor 3D moving sofa problem; previously not even finiteness of $V^*$ had been recorded. This note proves upper bounds only; combined with the certified lower bound 1.8558404 from the author's separate certification work via the problem's own evaluation pipeline, the state of the problem becomes $1.8558404 \\le V^*(K_4) \\le 3.4083$. Theorems A and B are elementary and self-contained: a first-crossing (elbow) event forces a definite tilt of the body's own entry tube, and Fubini-type chord estimates for tilted tubes cap the volume. Theorem C certifies, by the same forced-event skeleton, the largest corridor volume that any admissible entry tube can carry.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -45,17 +70,42 @@
           ],
           "primaryCategory": "cs.CG",
           "comment": "18 pages. Code, machine-verification scripts and resumable certificates at this https URL",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-05T14:07:31Z",
+          "updatedAt": "2026-10-05T14:07:31Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:25.869403+00:00",
+            "contentHash": "b86d3b8ad333eef19411eed5dad4a428149eb615bafa8f5d1d49911df7a62197"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "三维弯折走廊沙发上界",
+          "workSummary": "对单位方形截面、转弯面相互垂直的三维走廊，给出依赖中段长度 M 的三个体积上界。最强结果在 M>2.2 时给出 3.4083，其中 M=4 的问题因而具有有限且定量的上界。",
+          "techniques": [
+            "首次过弯强制事件",
+            "倾斜管弦长与 Fubini 估计",
+            "认证分支定界"
+          ],
+          "breakthrough": "将特定三维移动沙发问题的体积上界收紧至 3.4083。",
+          "limitations": "最强上界采用带保守余量的双精度计算辅助证书；不同上界分别要求 M≥3.53、M≥2.61、M>2.2。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 81,
+          "priorityReason": "三维走廊可搬运体的全局体积上界。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $K_M \\subset \\mathbb{R}^3$ be the \"snaky\" corridor with unit-square cross-section: an infinite entry arm parallel to the $x$-axis, a middle arm parallel to the $y$-axis whose clear straight section has length $M$, and an infinite exit arm parallel to the $z$-axis, with the two turns lying in the $x$-$y$ and $y$-$z$ planes. Let $V^*(K_M)$ be the supremum of the volumes of connected bodies that can be moved continuously (by rigid motions) from the entry arm to the exit arm while remaining inside $K_M$. We prove $V^*(K_M) \\le 7.8691$ for every $M \\ge 3.53$ (Theorem A); by a sharper analysis of the same mechanism, $V^*(K_M) \\le 4.2862$ for every $M \\ge 2.61$ (Theorem B); and, by replacing the final analytic caps with a certified branch-and-bound computation over the compact family of entry tubes compatible with the forced events, $V^*(K_M) \\le 3.4083$ for every $M > 2.2$ (Theorem C; computer-assisted, in double precision with conservative slack). In particular all three bounds apply to the corridor with $M = 4$ used in Problem 6.64 of Georgiev, Gómez-Serrano, Tao and Wagner ( arXiv:2511.02864 ), and uniformly to every \"turns far apart\" reading of that problem. To the best of our knowledge, this is the first upper bound for the snaky-corridor 3D moving sofa problem; previously not even finiteness of $V^*$ had been recorded. This note proves upper bounds only; combined with the certified lower bound 1.8558404 from the author's separate certification work via the problem's own evaluation pipeline, the state of the problem becomes $1.8558404 \\le V^*(K_4) \\le 3.4083$. Theorems A and B are elementary and self-contained: a first-crossing (elbow) event forces a definite tilt of the body's own entry tube, and Fubini-type chord estimates for tilted tubes cap the volume. Theorem C certifies, by the same forced-event skeleton, the largest corridor volume that any admissible entry tube can carry.",
+          "version": 1
+        }
       }
     }
   ]

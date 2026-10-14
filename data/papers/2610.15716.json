@@ -20,17 +20,43 @@
       ],
       "primaryCategory": "math.PR",
       "comment": "29 pages; comments are welcome!",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-10-11T15:58:26Z",
+      "updatedAt": "2026-10-11T15:58:26Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-10-14T06:18:29.129754+00:00",
         "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-14T06:23:48.779299+00:00",
+        "contentHash": "e6a12b1f719603e0a44cdcbde263434611aaa75845269733e3bd300eda03e2d9"
       }
     ],
-    "analysis": null,
-    "analysisBasis": null
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Rényi 熵尖锐 Rogers–Shephard 界",
+      "workSummary": "对对数凹随机向量的独立同分布副本 X、X′，建立 p≥1 与 a,b>0 下 hₚ(aX−bX′)≤hₚ(X)+n log(a+b)，并给出各端点等号分类。作者宣称 Shannon 情形解决 Madiman–Kontoyiannis 的熵 Rogers–Shephard 猜想，同时用高维单纯形证明 0<p<1 时非加权界可失效。",
+      "techniques": [
+        "加权凸交集",
+        "指数提升",
+        "对数仿射密度",
+        "条件互信息亏损分解"
+      ],
+      "breakthrough": "确定 Rényi 阶数一的临界性，并统一尖锐常数和等号结构。",
+      "limitations": "要求对数凹分布及独立同分布副本；p=∞ 的等号类比有限 p 更大，p<1 不可推广同一界。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "priorityScore": 95,
+      "priorityReason": "凸几何与信息熵之间的重要尖锐不等式及猜想主张。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish sharp weighted Rogers--Shephard inequalities for Rényi differential entropy. For independent copies $X,X'$ of a log-concave random vector in $\\R^n$, we prove $h_p(aX-bX')\\le h_p(X)+n\\log(a+b)$ for all $a,b>0$ and $1\\le p\\le\\infty$, where orders $1$ and $\\infty$ correspond to Shannon entropy and min-entropy, respectively. The Shannon case settles the entropic Rogers--Shephard conjecture of Madiman and Kontoyiannis and its higher-dimensional formulation. For $1\\le p<\\infty$, equality holds precisely for invertible affine images of random vectors with independent exponential coordinates. At $p=\\infty$, the larger equality class is characterized by possibly extended-valued convex potentials that are positively homogeneous of degree one. For every $0<p<1$, uniform laws on sufficiently high-dimensional simplices violate the unweighted bound. Thus $p=1$ is the critical order for this bound to hold in every dimension. The proof combines weighted convex intersections with an exponential lift to a log-affine probability density. At the Shannon endpoint, this lift yields an exact deficit decomposition with a conditional mutual information term for an additive channel with asymmetric Laplace noise.",
+      "version": 1
+    }
   },
   "history": [
     {
@@ -53,17 +79,43 @@
           ],
           "primaryCategory": "math.PR",
           "comment": "29 pages; comments are welcome!",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-10-11T15:58:26Z",
+          "updatedAt": "2026-10-11T15:58:26Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-10-14T06:18:29.129754+00:00",
             "contentHash": "7cd64425b46a9c6684dc9eef368ba643a48c911423beacfd1e842c2a40c2a3f0"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-14T06:23:48.779299+00:00",
+            "contentHash": "e6a12b1f719603e0a44cdcbde263434611aaa75845269733e3bd300eda03e2d9"
           }
         ],
-        "analysis": null,
-        "analysisBasis": null
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Rényi 熵尖锐 Rogers–Shephard 界",
+          "workSummary": "对对数凹随机向量的独立同分布副本 X、X′，建立 p≥1 与 a,b>0 下 hₚ(aX−bX′)≤hₚ(X)+n log(a+b)，并给出各端点等号分类。作者宣称 Shannon 情形解决 Madiman–Kontoyiannis 的熵 Rogers–Shephard 猜想，同时用高维单纯形证明 0<p<1 时非加权界可失效。",
+          "techniques": [
+            "加权凸交集",
+            "指数提升",
+            "对数仿射密度",
+            "条件互信息亏损分解"
+          ],
+          "breakthrough": "确定 Rényi 阶数一的临界性，并统一尖锐常数和等号结构。",
+          "limitations": "要求对数凹分布及独立同分布副本；p=∞ 的等号类比有限 p 更大，p<1 不可推广同一界。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "priorityScore": 95,
+          "priorityReason": "凸几何与信息熵之间的重要尖锐不等式及猜想主张。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish sharp weighted Rogers--Shephard inequalities for Rényi differential entropy. For independent copies $X,X'$ of a log-concave random vector in $\\R^n$, we prove $h_p(aX-bX')\\le h_p(X)+n\\log(a+b)$ for all $a,b>0$ and $1\\le p\\le\\infty$, where orders $1$ and $\\infty$ correspond to Shannon entropy and min-entropy, respectively. The Shannon case settles the entropic Rogers--Shephard conjecture of Madiman and Kontoyiannis and its higher-dimensional formulation. For $1\\le p<\\infty$, equality holds precisely for invertible affine images of random vectors with independent exponential coordinates. At $p=\\infty$, the larger equality class is characterized by possibly extended-valued convex potentials that are positively homogeneous of degree one. For every $0<p<1$, uniform laws on sufficiently high-dimensional simplices violate the unweighted bound. Thus $p=1$ is the critical order for this bound to hold in every dimension. The proof combines weighted convex intersections with an exponential lift to a log-affine probability density. At the Shannon endpoint, this lift yields an exact deficit decomposition with a conditional mutual information term for an additive channel with asymmetric Laplace noise.",
+          "version": 1
+        }
       }
     }
   ]
