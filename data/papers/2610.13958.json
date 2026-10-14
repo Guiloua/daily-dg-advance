@@ -34,15 +34,17 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "magnitude 理论反例与连续性",
-      "workSummary": "给出 magnitude 理论的十三项结果，包括零点导数与最大能量的关系、14 点严格负型空间的非单调性反例，以及有限点集处的 Hausdorff 连续性。另构造紧空间，否定若干连续性、可处理性与维数关系猜想。",
+      "workSummary": "作者把紧负型空间 magnitude 在零尺度的右导数识别为质量一的有限有符号测度最大能量，允许 +∞，并构造若干小尺度与单调性反例。对有限维正定赋范空间中的有限集合证明 Hausdorff 连续性；紧集合及维数关系则出现凸、测地甚至双重收敛下的失效。",
       "techniques": [
-        "有限度量空间构造",
-        "负型空间",
-        "Hausdorff 与 Lipschitz 收敛"
+        "Schoenberg 球面实现",
+        "有符号测度最大能量",
+        "相似核与 weighting",
+        "有限负型空间构造",
+        "Hausdorff 聚类分割"
       ],
-      "breakthrough": "展示 magnitude 单调性、紧集连续性和 magnitude 维数关系的多种失效机制。",
-      "limitations": "有限集处的连续性限定于有限维正定赋范空间；紧集即使凸或测地也未必连续。",
-      "analysisDepth": "abstract",
+      "breakthrough": "同时解决一阶变化与有限点集连续性问题，并展示其对紧集和一般尺度单调性不可直接推广。",
+      "limitations": "最大能量取遍质量一的有符号测度，不能替换成概率测度；连续性定理的极限集与逼近集均有限，非一般紧集。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露研究早期使用 GPT 5.6 Sol 查找需要阅读的背景文献。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.13958v1 · PDF 第 30 页",
@@ -103,15 +105,17 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "magnitude 理论反例与连续性",
-          "workSummary": "给出 magnitude 理论的十三项结果，包括零点导数与最大能量的关系、14 点严格负型空间的非单调性反例，以及有限点集处的 Hausdorff 连续性。另构造紧空间，否定若干连续性、可处理性与维数关系猜想。",
+          "workSummary": "作者把紧负型空间 magnitude 在零尺度的右导数识别为质量一的有限有符号测度最大能量，允许 +∞，并构造若干小尺度与单调性反例。对有限维正定赋范空间中的有限集合证明 Hausdorff 连续性；紧集合及维数关系则出现凸、测地甚至双重收敛下的失效。",
           "techniques": [
-            "有限度量空间构造",
-            "负型空间",
-            "Hausdorff 与 Lipschitz 收敛"
+            "Schoenberg 球面实现",
+            "有符号测度最大能量",
+            "相似核与 weighting",
+            "有限负型空间构造",
+            "Hausdorff 聚类分割"
           ],
-          "breakthrough": "展示 magnitude 单调性、紧集连续性和 magnitude 维数关系的多种失效机制。",
-          "limitations": "有限集处的连续性限定于有限维正定赋范空间；紧集即使凸或测地也未必连续。",
-          "analysisDepth": "abstract",
+          "breakthrough": "同时解决一阶变化与有限点集连续性问题，并展示其对紧集和一般尺度单调性不可直接推广。",
+          "limitations": "最大能量取遍质量一的有符号测度，不能替换成概率测度；连续性定理的极限集与逼近集均有限，非一般紧集。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露研究早期使用 GPT 5.6 Sol 查找需要阅读的背景文献。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.13958v1 · PDF 第 30 页",

@@ -34,14 +34,16 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "耦合 anomaly flow 延拓估计",
-      "workSummary": "将先前 anomaly flow 的延拓结果推广到紧复三维流形上同时演化全纯向量丛 Hermitian 度量的耦合流。对一般斜率参数 α′ 给出足够小条件使流从 [0,τ) 延伸至 [0,τ+ε)，并修正旧论证 k=1 时的量纲问题。",
+      "workSummary": "在有无零全纯体积形式的紧复三维流形上，研究包含全纯向量丛度量的耦合 anomaly flow，并在丛度量方程中加入 dilaton 因子以匹配演化系数。在 dilaton上下界、扭率及一阶扭率和两种Chern曲率一致有界时，|α′| 满足依赖这些界的小量条件即可越过有限终止时间延拓。",
       "techniques": [
-        "耦合几何流估计",
-        "斜率小量条件"
+        "Chern 曲率演化与Bianchi恒等式",
+        "Shi 型导数估计",
+        "Young 不等式平衡",
+        "Lp 能量控制"
       ],
-      "breakthrough": "把奇异时间前延拓准则推广到包含向量丛度量的耦合 anomaly flow。",
-      "limitations": "延拓要求 α′ 满足足够小条件；摘要不是无条件全时间存在结论。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把延拓估计加入规范丛曲率耦合，并修正k=1斜率小量条件的量纲。",
+      "limitations": "须控制1/(2|Ω|ω)、扭率、DT、Rm及F，并要求|α′|足够小；这里使用的修改流与原始丛方程系数不同但固定点相同，结论不是无条件长时间存在。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -99,14 +101,16 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "耦合 anomaly flow 延拓估计",
-          "workSummary": "将先前 anomaly flow 的延拓结果推广到紧复三维流形上同时演化全纯向量丛 Hermitian 度量的耦合流。对一般斜率参数 α′ 给出足够小条件使流从 [0,τ) 延伸至 [0,τ+ε)，并修正旧论证 k=1 时的量纲问题。",
+          "workSummary": "在有无零全纯体积形式的紧复三维流形上，研究包含全纯向量丛度量的耦合 anomaly flow，并在丛度量方程中加入 dilaton 因子以匹配演化系数。在 dilaton上下界、扭率及一阶扭率和两种Chern曲率一致有界时，|α′| 满足依赖这些界的小量条件即可越过有限终止时间延拓。",
           "techniques": [
-            "耦合几何流估计",
-            "斜率小量条件"
+            "Chern 曲率演化与Bianchi恒等式",
+            "Shi 型导数估计",
+            "Young 不等式平衡",
+            "Lp 能量控制"
           ],
-          "breakthrough": "把奇异时间前延拓准则推广到包含向量丛度量的耦合 anomaly flow。",
-          "limitations": "延拓要求 α′ 满足足够小条件；摘要不是无条件全时间存在结论。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把延拓估计加入规范丛曲率耦合，并修正k=1斜率小量条件的量纲。",
+          "limitations": "须控制1/(2|Ω|ω)、扭率、DT、Rm及F，并要求|α′|足够小；这里使用的修改流与原始丛方程系数不同但固定点相同，结论不是无条件长时间存在。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

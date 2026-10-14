@@ -36,15 +36,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "非局部周长管公式",
-      "workSummary": "对闭 C¹,¹ 欧氏子流形的管状邻域，证明非局部周长适当缩放后趋于子流形 Hausdorff 测度乘以余维单位球的分数周长。有限点集还得到广义超几何函数形式的精确管公式，其无限项包含整数和非整数幂，系数依赖点的相对位置。",
+      "workSummary": "对闭 C^(1,1) 欧氏子流形 M，薄管分数周长乘 ρ^(s−n) 收敛到余维 n 的单位球分数周长乘 H^m(M)。有限点集则有收敛的超几何精确管公式：首项为点数乘 ρ^(N−s)，相互作用项由两两距离决定并产生 ρ^(2N+2k) 的无限级数。",
       "techniques": [
-        "非局部周长缩放",
-        "广义超几何函数",
-        "解析核展开"
+        "正 reach 薄管坐标",
+        "切平面–法向球乘積近似",
+        "切向分数核积分",
+        "3F2 超几何展开"
       ],
-      "breakthrough": "展示非局部 Weyl 型管公式与经典有限多项式公式在项数及几何依赖上的差异。",
-      "limitations": "精确公式针对有限点集；一般子流形为缩放极限，解析核推广另需解析性。",
-      "analysisDepth": "abstract",
+      "breakthrough": "非局部周长的薄管首项仍是局部 Hausdorff 量，但完整点集展开保留位置间非局部作用。",
+      "limitations": "0<s<1；正维子流形要求C^(1,1)、余维≥1。完整精确公式只对有限点集给出，ρ须小于最小点距的一半，不是一般子流形的完整曲率多项式。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -104,15 +105,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "非局部周长管公式",
-          "workSummary": "对闭 C¹,¹ 欧氏子流形的管状邻域，证明非局部周长适当缩放后趋于子流形 Hausdorff 测度乘以余维单位球的分数周长。有限点集还得到广义超几何函数形式的精确管公式，其无限项包含整数和非整数幂，系数依赖点的相对位置。",
+          "workSummary": "对闭 C^(1,1) 欧氏子流形 M，薄管分数周长乘 ρ^(s−n) 收敛到余维 n 的单位球分数周长乘 H^m(M)。有限点集则有收敛的超几何精确管公式：首项为点数乘 ρ^(N−s)，相互作用项由两两距离决定并产生 ρ^(2N+2k) 的无限级数。",
           "techniques": [
-            "非局部周长缩放",
-            "广义超几何函数",
-            "解析核展开"
+            "正 reach 薄管坐标",
+            "切平面–法向球乘積近似",
+            "切向分数核积分",
+            "3F2 超几何展开"
           ],
-          "breakthrough": "展示非局部 Weyl 型管公式与经典有限多项式公式在项数及几何依赖上的差异。",
-          "limitations": "精确公式针对有限点集；一般子流形为缩放极限，解析核推广另需解析性。",
-          "analysisDepth": "abstract",
+          "breakthrough": "非局部周长的薄管首项仍是局部 Hausdorff 量，但完整点集展开保留位置间非局部作用。",
+          "limitations": "0<s<1；正维子流形要求C^(1,1)、余维≥1。完整精确公式只对有限点集给出，ρ须小于最小点距的一半，不是一般子流形的完整曲率多项式。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

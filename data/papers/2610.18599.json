@@ -36,15 +36,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "各向异性 Weyl 律与 Grassmann 丛等分布",
-      "workSummary": "建立紧致黎曼流形余维一各向异性体积谱的 Weyl 律，并在固定环境度量下导出整个 Grassmann 丛的等分布。对三至六维闭连通光滑流形，构造对趋于面积的各向异性泛函驻定的光滑嵌入超曲面，其累计提升面积测度趋于均匀测度。",
+      "workSummary": "对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的积分。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。",
       "techniques": [
-        "各向异性体积谱",
-        "Weyl 律",
-        "Grassmann 丛测度提升"
+        "相对 Z₂ 周期与强质量 sweepout",
+        "Lusternik–Schnirelmann 定位不等式",
+        "冻结各向异性与薄板拼接",
+        "有限维平均谱导数",
+        "近面积 min-max 正则性"
       ],
-      "breakthrough": "在固定度量下同时控制位置与切平面分布，而不只控制流形上的面积分布。",
-      "limitations": "等分布构造维数为三至六；超曲面针对变化的各向异性驻定，不能称每个都是固定面积泛函的极小超曲面。",
-      "analysisDepth": "abstract",
+      "breakthrough": "固定度量即可控制任意角向测试，并取得所有 p 共用的近面积各向异性光滑实现邻域。",
+      "limitations": "超曲面对各自 Fⱼ 平稳，未宣称是原面积能量的极小超曲面；光滑实现与等分布限于闭环境维数 3–6，Weyl 律自身允许 d≥2 及光滑边界。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ASTRA 帮助发现第 4.2、4.3 节的初始 cube-to-slab 映射和高阶 join 思路，补全 Weyl 律上界论证；亦用于写作、生成图形及加速计算。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18599v1 · PDF 第 6、7 页",
@@ -110,15 +112,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "各向异性 Weyl 律与 Grassmann 丛等分布",
-          "workSummary": "建立紧致黎曼流形余维一各向异性体积谱的 Weyl 律，并在固定环境度量下导出整个 Grassmann 丛的等分布。对三至六维闭连通光滑流形，构造对趋于面积的各向异性泛函驻定的光滑嵌入超曲面，其累计提升面积测度趋于均匀测度。",
+          "workSummary": "对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的积分。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。",
           "techniques": [
-            "各向异性体积谱",
-            "Weyl 律",
-            "Grassmann 丛测度提升"
+            "相对 Z₂ 周期与强质量 sweepout",
+            "Lusternik–Schnirelmann 定位不等式",
+            "冻结各向异性与薄板拼接",
+            "有限维平均谱导数",
+            "近面积 min-max 正则性"
           ],
-          "breakthrough": "在固定度量下同时控制位置与切平面分布，而不只控制流形上的面积分布。",
-          "limitations": "等分布构造维数为三至六；超曲面针对变化的各向异性驻定，不能称每个都是固定面积泛函的极小超曲面。",
-          "analysisDepth": "abstract",
+          "breakthrough": "固定度量即可控制任意角向测试，并取得所有 p 共用的近面积各向异性光滑实现邻域。",
+          "limitations": "超曲面对各自 Fⱼ 平稳，未宣称是原面积能量的极小超曲面；光滑实现与等分布限于闭环境维数 3–6，Weyl 律自身允许 d≥2 及光滑边界。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ASTRA 帮助发现第 4.2、4.3 节的初始 cube-to-slab 映射和高阶 join 思路，补全 Weyl 律上界论证；亦用于写作、生成图形及加速计算。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18599v1 · PDF 第 6、7 页",

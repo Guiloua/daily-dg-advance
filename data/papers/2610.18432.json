@@ -36,11 +36,16 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "零 Yamabe 情形的指定标量曲率反例",
-      "workSummary": "在 n≥5 的平坦环面上构造变号、均值为负的光滑函数，却无法作为给定共形类内任意度量的标量曲率。",
-      "techniques": [],
-      "breakthrough": "表明变号与负均值并不足以保证零 Yamabe 情形的共形标量曲率可实现性。",
-      "limitations": "反例限 n≥5 的平坦环面及固定共形类，不否定其他共形类中的可实现性。",
-      "analysisDepth": "abstract",
+      "workSummary": "作者宣称在标准平坦 Tⁿ、n≥5 上，取非负光滑 φ 仅在 x₀ 为零且邻域恰为平方距离，所有足够大 A 的 f_A=1−Aφ 虽变号且平均为负，仍不可能成为任意点态共形度量的标量曲率。对假定正解 −Δu=f_Au^(n+2)/(n−2)，先控制负背景中的质量、数值和梯度，再用 X=∇φ 的 Pohozaev 恒等式给出互相矛盾的加权矩界。",
+      "techniques": [
+        "临界标量曲率方程",
+        "质量与外部次调和估计",
+        "Green 表示",
+        "Pohozaev 内外变分"
+      ],
+      "breakthrough": "显示三四维成立的变号且负平均充分性在五维以上已于平坦环面失效。",
+      "limitations": "障碍限于指定平坦共形类，不意味着 f_A 不能由其他共形类实现。φ 在唯一零点附近须严格为平方距离；n≥5 的阈值来自 n>2(n+2)/(n−2) 的可积性。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者明确披露本文反例由 ChatGPT 建议，作者已核查其正确性并承担数学内容责任。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18432v1 · PDF 第 2 页",
@@ -103,11 +108,16 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "零 Yamabe 情形的指定标量曲率反例",
-          "workSummary": "在 n≥5 的平坦环面上构造变号、均值为负的光滑函数，却无法作为给定共形类内任意度量的标量曲率。",
-          "techniques": [],
-          "breakthrough": "表明变号与负均值并不足以保证零 Yamabe 情形的共形标量曲率可实现性。",
-          "limitations": "反例限 n≥5 的平坦环面及固定共形类，不否定其他共形类中的可实现性。",
-          "analysisDepth": "abstract",
+          "workSummary": "作者宣称在标准平坦 Tⁿ、n≥5 上，取非负光滑 φ 仅在 x₀ 为零且邻域恰为平方距离，所有足够大 A 的 f_A=1−Aφ 虽变号且平均为负，仍不可能成为任意点态共形度量的标量曲率。对假定正解 −Δu=f_Au^(n+2)/(n−2)，先控制负背景中的质量、数值和梯度，再用 X=∇φ 的 Pohozaev 恒等式给出互相矛盾的加权矩界。",
+          "techniques": [
+            "临界标量曲率方程",
+            "质量与外部次调和估计",
+            "Green 表示",
+            "Pohozaev 内外变分"
+          ],
+          "breakthrough": "显示三四维成立的变号且负平均充分性在五维以上已于平坦环面失效。",
+          "limitations": "障碍限于指定平坦共形类，不意味着 f_A 不能由其他共形类实现。φ 在唯一零点附近须严格为平方距离；n≥5 的阈值来自 n>2(n+2)/(n−2) 的可积性。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者明确披露本文反例由 ChatGPT 建议，作者已核查其正确性并承担数学内容责任。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18432v1 · PDF 第 2 页",

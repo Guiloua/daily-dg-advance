@@ -34,16 +34,18 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "近邻–近对径计数尖锐界",
-      "workSummary": "对直径至多 1 的有限欧氏点集，作者证明近邻有序对数至少为 ε^((d−1)/2) 倍近对径有序对数乘一个仅依赖维数的常数，并推广到有限正 Borel 测度。该指数为尖锐值，作者据此解决 Steinerberger 提出的猜想。",
+      "workSummary": "作者证明任意固定维数的直径≤1 紧支撑有限正测度，其 ε 近邻质量至少为 cd ε^((d−1)/2) 倍近对径质量。半径1/2球面的球冠尺度给出尖锐性，有限点集通过采样实现同阶；证明核心是在格距与球冠厚度同阶时，支撑方向关联算子具有统一 L² 范数界。",
       "techniques": [
-        "支撑方向关联算子",
-        "一致 L² 估计",
+        "支撑球冠算子",
+        "格点质量离散化",
+        "二次角度亏损",
         "gnomonic 坐标",
-        "Fenchel–Young 间隙关联估计"
+        "Fenchel–Young 间隙",
+        "加权 Schur 估计"
       ],
-      "breakthrough": "建立任意维数中近邻与近对径数量的尖锐尺度关系。",
-      "limitations": "常数依赖维数，要求 0<ε<1 与直径归一化；近邻计数包含对角有序对。",
-      "analysisDepth": "abstract",
+      "breakthrough": "去除平面已有界中的对数损失并在每个固定维数得到尖锐指数。",
+      "limitations": "计数为有序对且近邻包含对角项；常数依赖维数，测度须有限正且支撑直径≤1，0<ε<1。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 GPT-5.6 Pro 协助发展算子范数表述，并探索、起草和核查若干技术论证。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14037v1 · PDF 第 13 页",
@@ -107,16 +109,18 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "近邻–近对径计数尖锐界",
-          "workSummary": "对直径至多 1 的有限欧氏点集，作者证明近邻有序对数至少为 ε^((d−1)/2) 倍近对径有序对数乘一个仅依赖维数的常数，并推广到有限正 Borel 测度。该指数为尖锐值，作者据此解决 Steinerberger 提出的猜想。",
+          "workSummary": "作者证明任意固定维数的直径≤1 紧支撑有限正测度，其 ε 近邻质量至少为 cd ε^((d−1)/2) 倍近对径质量。半径1/2球面的球冠尺度给出尖锐性，有限点集通过采样实现同阶；证明核心是在格距与球冠厚度同阶时，支撑方向关联算子具有统一 L² 范数界。",
           "techniques": [
-            "支撑方向关联算子",
-            "一致 L² 估计",
+            "支撑球冠算子",
+            "格点质量离散化",
+            "二次角度亏损",
             "gnomonic 坐标",
-            "Fenchel–Young 间隙关联估计"
+            "Fenchel–Young 间隙",
+            "加权 Schur 估计"
           ],
-          "breakthrough": "建立任意维数中近邻与近对径数量的尖锐尺度关系。",
-          "limitations": "常数依赖维数，要求 0<ε<1 与直径归一化；近邻计数包含对角有序对。",
-          "analysisDepth": "abstract",
+          "breakthrough": "去除平面已有界中的对数损失并在每个固定维数得到尖锐指数。",
+          "limitations": "计数为有序对且近邻包含对角项；常数依赖维数，测度须有限正且支撑直径≤1，0<ε<1。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 GPT-5.6 Pro 协助发展算子范数表述，并探索、起草和核查若干技术论证。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14037v1 · PDF 第 13 页",

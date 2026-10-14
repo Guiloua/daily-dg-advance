@@ -34,17 +34,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "一般 h-凸体的 AF 不等式与等号刚性",
-      "workSummary": "以 horospherical 函数及球面卷积光滑逼近一般双曲 h-凸体，将两类 Alexandrov–Fenchel 不等式扩展到非光滑对象，并证明等号恰为测地球。经典版本借助不依赖曲率界的 Hausdorff 稳定性，修正版借助保修正 quermassintegral 的全局约束流和测度刚性。",
+      "workSummary": "以 horospherical 支撑函数的球面卷积，为双曲空间任意 h-凸体建立内外嵌套的光滑严格 h-凸逼近。将 0≤l<k≤n 的经典与修正 Alexandrov–Fenchel 不等式及等号为测地球推广到非光滑体，并给出修正 quermassintegral 严格包含单调性与修正面积测度刚性。",
       "techniques": [
-        "Radon 测度值张量",
-        "球面卷积",
-        "Hausdorff 稳定性",
-        "全局约束曲率流",
-        "修正支持测度"
+        "球面卷积与 Radon 张量",
+        "嵌套 Hausdorff 逼近",
+        "不依赖曲率界的缺陷稳定性",
+        "修正支持及面积测度",
+        "约束曲率流的 L¹ 控制"
       ],
-      "breakthrough": "同时解决弱 h-凸体的光滑逼近、不等式延伸与等号分类。",
-      "limitations": "对象为 Hⁿ⁺¹ 中 n≥2 的 h-凸体；光滑逼近本身不足以推出等号刚性，需另外的稳定性和流论证。",
-      "analysisDepth": "abstract",
+      "breakthrough": "等号刚性另由稳定性和弱测度处理，而非仅依赖光滑逼近，覆盖主曲率可能为一或无穷的非光滑 h-凸体。",
+      "limitations": "h-凸指紧致域为 horoball 交，光滑时主曲率≥1；不能将不等式推广到一般双曲凸体。缺陷稳定性常数仍依赖维数、阶次及体积范围。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 用于文献检索、检查和完善数学细节、改善表述与语言；主要想法及指导性证明策略源于作者早先工作，主定理由作者提出，所有计算由作者亲自完成。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18761v1 · PDF 第 7、8 页",
@@ -108,17 +108,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "一般 h-凸体的 AF 不等式与等号刚性",
-          "workSummary": "以 horospherical 函数及球面卷积光滑逼近一般双曲 h-凸体，将两类 Alexandrov–Fenchel 不等式扩展到非光滑对象，并证明等号恰为测地球。经典版本借助不依赖曲率界的 Hausdorff 稳定性，修正版借助保修正 quermassintegral 的全局约束流和测度刚性。",
+          "workSummary": "以 horospherical 支撑函数的球面卷积，为双曲空间任意 h-凸体建立内外嵌套的光滑严格 h-凸逼近。将 0≤l<k≤n 的经典与修正 Alexandrov–Fenchel 不等式及等号为测地球推广到非光滑体，并给出修正 quermassintegral 严格包含单调性与修正面积测度刚性。",
           "techniques": [
-            "Radon 测度值张量",
-            "球面卷积",
-            "Hausdorff 稳定性",
-            "全局约束曲率流",
-            "修正支持测度"
+            "球面卷积与 Radon 张量",
+            "嵌套 Hausdorff 逼近",
+            "不依赖曲率界的缺陷稳定性",
+            "修正支持及面积测度",
+            "约束曲率流的 L¹ 控制"
           ],
-          "breakthrough": "同时解决弱 h-凸体的光滑逼近、不等式延伸与等号分类。",
-          "limitations": "对象为 Hⁿ⁺¹ 中 n≥2 的 h-凸体；光滑逼近本身不足以推出等号刚性，需另外的稳定性和流论证。",
-          "analysisDepth": "abstract",
+          "breakthrough": "等号刚性另由稳定性和弱测度处理，而非仅依赖光滑逼近，覆盖主曲率可能为一或无穷的非光滑 h-凸体。",
+          "limitations": "h-凸指紧致域为 horoball 交，光滑时主曲率≥1；不能将不等式推广到一般双曲凸体。缺陷稳定性常数仍依赖维数、阶次及体积范围。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 用于文献检索、检查和完善数学细节、改善表述与语言；主要想法及指导性证明策略源于作者早先工作，主定理由作者提出，所有计算由作者亲自完成。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18761v1 · PDF 第 7、8 页",

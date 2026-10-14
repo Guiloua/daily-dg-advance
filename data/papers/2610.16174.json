@@ -33,14 +33,17 @@
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "多项式增长全纯函数维数界",
-      "workSummary": "对复维数 n 的完备非紧 Kähler 流形，仅在 Ricci 曲率非负假设下给出次数 d≥0 的多项式增长全纯函数空间维数界 C(n)(1+d)ⁿ。d≥1 时为 C′(n)dⁿ，且增长阶尖锐。",
+      "workSummary": "对完备连通非紧、Ricci≥0 的复 n 维 Kähler 流形，证明所有实 d≥0 下 dim_C O_d≤C(n)(1+d)ⁿ，无非塌缩或体积增长要求。把有限维函数空间的投影求值按热核测度平衡，以最小化 log(F*AF) 的行列式一正定矩阵定义泛函，构造随空间选择的平凡全纯线丛度量，再用联络热迹计数及多项式增长积分推出界。",
       "techniques": [
-        "多项式增长全纯函数",
-        "维数估计"
+        "热核测度投影平衡",
+        "行列式约束对数泛函",
+        "Chern 联络恒等式",
+        "热半群支配",
+        "体积无关热迹计数"
       ],
-      "breakthrough": "在非负 Ricci 条件下取得与复维数匹配的尖锐多项式维数增长阶。",
-      "limitations": "要求完备非紧 Kähler 与非负 Ricci 曲率；尖锐指增长阶，摘要不称常数最佳。",
-      "analysisDepth": "abstract",
+      "breakthrough": "将仅非负 Ricci 下的维数界达到欧氏模型的 dⁿ 增长阶，并消去此前欧氏体积增长假设。",
+      "limitations": "尖锐仅指次数增长阶，不是 dim O_d≤dim O_d(Cⁿ) 的精确欧氏比较；d=0 需保留1+d以容纳常数。未得到局部三圆定理或最佳常数。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -97,14 +100,17 @@
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "多项式增长全纯函数维数界",
-          "workSummary": "对复维数 n 的完备非紧 Kähler 流形，仅在 Ricci 曲率非负假设下给出次数 d≥0 的多项式增长全纯函数空间维数界 C(n)(1+d)ⁿ。d≥1 时为 C′(n)dⁿ，且增长阶尖锐。",
+          "workSummary": "对完备连通非紧、Ricci≥0 的复 n 维 Kähler 流形，证明所有实 d≥0 下 dim_C O_d≤C(n)(1+d)ⁿ，无非塌缩或体积增长要求。把有限维函数空间的投影求值按热核测度平衡，以最小化 log(F*AF) 的行列式一正定矩阵定义泛函，构造随空间选择的平凡全纯线丛度量，再用联络热迹计数及多项式增长积分推出界。",
           "techniques": [
-            "多项式增长全纯函数",
-            "维数估计"
+            "热核测度投影平衡",
+            "行列式约束对数泛函",
+            "Chern 联络恒等式",
+            "热半群支配",
+            "体积无关热迹计数"
           ],
-          "breakthrough": "在非负 Ricci 条件下取得与复维数匹配的尖锐多项式维数增长阶。",
-          "limitations": "要求完备非紧 Kähler 与非负 Ricci 曲率；尖锐指增长阶，摘要不称常数最佳。",
-          "analysisDepth": "abstract",
+          "breakthrough": "将仅非负 Ricci 下的维数界达到欧氏模型的 dⁿ 增长阶，并消去此前欧氏体积增长假设。",
+          "limitations": "尖锐仅指次数增长阶，不是 dim O_d≤dim O_d(Cⁿ) 的精确欧氏比较；d=0 需保留1+d以容纳常数。未得到局部三圆定理或最佳常数。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

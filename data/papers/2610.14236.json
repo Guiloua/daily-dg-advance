@@ -34,16 +34,17 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "平面树拟共形一致化与延拓",
-      "workSummary": "将平面弧的一致化推广到具有一致分支分离的拟共形树，使其等价于 Hausdorff 维数任意接近 1 的拟凸平面树。保持每个分支点逆时针次序的拟对称或双 Lipschitz 树同胚可延拓到全平面，并由此产生包含 Vicsek 分形的 Julia 集例子。",
+      "workSummary": "具有一致相对分支分离的平面拟共形树可由全平面拟共形映射化为 semi-geodesic 树，并将 Hausdorff 维数降至任意 1+ε 以下。更基本的延拓定理只需树上嵌入保持每个分支点的逆时针循环次序：拟对称嵌入可拟共形延拓，双 Lipschitz 嵌入可双 Lipschitz 延拓。",
       "techniques": [
-        "拟共形一致化",
-        "拟对称延拓",
-        "双 Lipschitz 延拓",
-        "一致拟正则动力系统"
+        "bounded turning 与 doubling",
+        "相对分支分离",
+        "分支循环次序",
+        "semi-geodesic 一致化",
+        "平面拟共形及双 Lipschitz 延拓"
       ],
-      "breakthrough": "把树上的几何同胚延拓为平面映射，并联系分形 Julia 集。",
-      "limitations": "一致化要求一致分支分离；延拓须保持每个分支点的平面取向。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把抽象树的度量一致化提升为保持平面嵌入拓扑的环境一致化。",
+      "limitations": "分支分离用于一致化而非延拓定理本身；保持分支循环次序不可省去。维数任意接近1不表示一定达到1，延拓结论不能直接推广至三维。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露图 2 与图 14 使用 GPT-6 Astra 制作。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14236v1 · PDF 第 7 页",
@@ -104,16 +105,17 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "平面树拟共形一致化与延拓",
-          "workSummary": "将平面弧的一致化推广到具有一致分支分离的拟共形树，使其等价于 Hausdorff 维数任意接近 1 的拟凸平面树。保持每个分支点逆时针次序的拟对称或双 Lipschitz 树同胚可延拓到全平面，并由此产生包含 Vicsek 分形的 Julia 集例子。",
+          "workSummary": "具有一致相对分支分离的平面拟共形树可由全平面拟共形映射化为 semi-geodesic 树，并将 Hausdorff 维数降至任意 1+ε 以下。更基本的延拓定理只需树上嵌入保持每个分支点的逆时针循环次序：拟对称嵌入可拟共形延拓，双 Lipschitz 嵌入可双 Lipschitz 延拓。",
           "techniques": [
-            "拟共形一致化",
-            "拟对称延拓",
-            "双 Lipschitz 延拓",
-            "一致拟正则动力系统"
+            "bounded turning 与 doubling",
+            "相对分支分离",
+            "分支循环次序",
+            "semi-geodesic 一致化",
+            "平面拟共形及双 Lipschitz 延拓"
           ],
-          "breakthrough": "把树上的几何同胚延拓为平面映射，并联系分形 Julia 集。",
-          "limitations": "一致化要求一致分支分离；延拓须保持每个分支点的平面取向。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把抽象树的度量一致化提升为保持平面嵌入拓扑的环境一致化。",
+          "limitations": "分支分离用于一致化而非延拓定理本身；保持分支循环次序不可省去。维数任意接近1不表示一定达到1，延拓结论不能直接推广至三维。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露图 2 与图 14 使用 GPT-6 Astra 制作。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14236v1 · PDF 第 7 页",

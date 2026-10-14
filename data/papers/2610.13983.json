@@ -36,15 +36,15 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "lp 等距集线性超额",
-      "workSummary": "对每个固定实数 p>4，构造点数超过 n+1 且超额至少随 n 线性增长的 lp 等距集。固定维数时，充分大的有限 p 下最大点数仍为 n+1；允许固定超额的最小维数随 p 以 p^(1+o(1)) 增长，并将构造与有限界形式化。",
+      "workSummary": "对每个固定有限 p>4，构造 ℓpⁿ 中超出 n+1 且超额随 n 至少线性增长的等距点集；固定 n≥2 时，p≥max{6,2n(log n)²} 又强制最大值回到 n+1。至少多出固定 k 点的最低维 Dk(p)，在 p≥6 满足 p/[2(log p)²]<Dk(p)≤256kp/9。",
       "techniques": [
-        "等距集构造",
-        "维数阈值估计",
-        "Lean 形式化"
+        "Walsh 矩阵与角色坐标 seed",
+        "球面 seed 直和及标签放大",
+        "近似距离矩阵的秩障碍"
       ],
-      "breakthrough": "刻画 p=4 两侧等距集超额行为与维数代价。",
-      "limitations": "线性超额固定 p 后令维数增大；固定维数再令 p 增大时结论相反，两个极限不可混用。",
-      "analysisDepth": "abstract",
+      "breakthrough": "同时量化固定 p 的线性超额与高 p 时额外点的维数代价，得到固定 k 下 Dk(p)=p^(1+o(1))。",
+      "limitations": "不决定一般 (p,n) 的精确等距数或精确最低维；p=∞ 的立方体 2ⁿ 点现象不能作为有限大 p 的极限等值结论。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -104,15 +104,15 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "lp 等距集线性超额",
-          "workSummary": "对每个固定实数 p>4，构造点数超过 n+1 且超额至少随 n 线性增长的 lp 等距集。固定维数时，充分大的有限 p 下最大点数仍为 n+1；允许固定超额的最小维数随 p 以 p^(1+o(1)) 增长，并将构造与有限界形式化。",
+          "workSummary": "对每个固定有限 p>4，构造 ℓpⁿ 中超出 n+1 且超额随 n 至少线性增长的等距点集；固定 n≥2 时，p≥max{6,2n(log n)²} 又强制最大值回到 n+1。至少多出固定 k 点的最低维 Dk(p)，在 p≥6 满足 p/[2(log p)²]<Dk(p)≤256kp/9。",
           "techniques": [
-            "等距集构造",
-            "维数阈值估计",
-            "Lean 形式化"
+            "Walsh 矩阵与角色坐标 seed",
+            "球面 seed 直和及标签放大",
+            "近似距离矩阵的秩障碍"
           ],
-          "breakthrough": "刻画 p=4 两侧等距集超额行为与维数代价。",
-          "limitations": "线性超额固定 p 后令维数增大；固定维数再令 p 增大时结论相反，两个极限不可混用。",
-          "analysisDepth": "abstract",
+          "breakthrough": "同时量化固定 p 的线性超额与高 p 时额外点的维数代价，得到固定 k 下 Dk(p)=p^(1+o(1))。",
+          "limitations": "不决定一般 (p,n) 的精确等距数或精确最低维；p=∞ 的立方体 2ⁿ 点现象不能作为有限大 p 的极限等值结论。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

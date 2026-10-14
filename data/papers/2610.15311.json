@@ -35,15 +35,17 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "轴对称超曲面尖锐不等式",
-      "workSummary": "在 n≥2 的欧氏空间闭嵌入轴对称超曲面上建立尖锐 Alexandrov–Fenchel 不等式，并刻画等号仅为圆球。轴凸时直接比较各阶归一化平均曲率积分；非轴凸时需要符号修正，偶数阶配对仍保留原不等式。",
+      "workSummary": "对 n≥2、闭连通嵌入的可容许 C¹,¹ 轴对称超曲面，轴凸时各阶曲率积分满足尖锐 Alexandrov–Fenchel 不等式，0≤ℓ<k≤n−1且等号仅圆球。无轴凸性时对切向角折叠后积分 εθʲHⱼ 成立，因此偶数阶配对无需符号修正；ℓ偶数时还可用 ∫|H_k| 控制下阶积分。",
       "techniques": [
-        "加权单调重排",
-        "切向角折叠",
-        "凸比较体"
+        "加权参数dτ=xⁿ⁻ᵏ⁻¹ds",
+        "切向角递增重排",
+        "余弦原函数比较",
+        "coarea分布估计",
+        "折角符号修正"
       ],
-      "breakthrough": "将旋转曲面重排方法推广到任意维轴对称超曲面，并处理非轴凸情形。",
-      "limitations": "要求可容许 C¹,¹ 轮廓；一般非轴凸情形不可省略积分的符号修正。",
-      "analysisDepth": "abstract",
+      "breakthrough": "以保高阶、增低阶的凸比较体覆盖非k凸轴凸对象，并在一般轴对称类保留偶数阶尖锐界。",
+      "limitations": "可容许轮廓须从轴上一极到另一极，内部半径为正，排除不碰轴的闭轮廓旋转环面。一般非轴凸的奇数阶无符号修正不等式不成立；只轴对称不足以推出Minkowski界。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 GPT-6.0 Astra 与 KIMI K3 用于探索性计算、寻找证明方向和文字润色；Astra 特别建议了定理 4.4 的证明策略。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.15311v1 · PDF 第 29 页",
@@ -108,15 +110,17 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "轴对称超曲面尖锐不等式",
-          "workSummary": "在 n≥2 的欧氏空间闭嵌入轴对称超曲面上建立尖锐 Alexandrov–Fenchel 不等式，并刻画等号仅为圆球。轴凸时直接比较各阶归一化平均曲率积分；非轴凸时需要符号修正，偶数阶配对仍保留原不等式。",
+          "workSummary": "对 n≥2、闭连通嵌入的可容许 C¹,¹ 轴对称超曲面，轴凸时各阶曲率积分满足尖锐 Alexandrov–Fenchel 不等式，0≤ℓ<k≤n−1且等号仅圆球。无轴凸性时对切向角折叠后积分 εθʲHⱼ 成立，因此偶数阶配对无需符号修正；ℓ偶数时还可用 ∫|H_k| 控制下阶积分。",
           "techniques": [
-            "加权单调重排",
-            "切向角折叠",
-            "凸比较体"
+            "加权参数dτ=xⁿ⁻ᵏ⁻¹ds",
+            "切向角递增重排",
+            "余弦原函数比较",
+            "coarea分布估计",
+            "折角符号修正"
           ],
-          "breakthrough": "将旋转曲面重排方法推广到任意维轴对称超曲面，并处理非轴凸情形。",
-          "limitations": "要求可容许 C¹,¹ 轮廓；一般非轴凸情形不可省略积分的符号修正。",
-          "analysisDepth": "abstract",
+          "breakthrough": "以保高阶、增低阶的凸比较体覆盖非k凸轴凸对象，并在一般轴对称类保留偶数阶尖锐界。",
+          "limitations": "可容许轮廓须从轴上一极到另一极，内部半径为正，排除不碰轴的闭轮廓旋转环面。一般非轴凸的奇数阶无符号修正不等式不成立；只轴对称不足以推出Minkowski界。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 GPT-6.0 Astra 与 KIMI K3 用于探索性计算、寻找证明方向和文字润色；Astra 特别建议了定理 4.4 的证明策略。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.15311v1 · PDF 第 29 页",

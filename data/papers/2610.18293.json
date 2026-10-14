@@ -35,14 +35,17 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "Legendrian 子流形的夹逼球面定理",
-      "workSummary": "对 n≥5 的闭单连通球面 Legendrian 子流形，在明确含第二基本形式及 H=tr B 的夹逼条件下证明其同胚于 Sⁿ；n≥4 时另有 b₁=0 条件下的球面定理。Calabi 乘积达到等号，并给出夹逼允许局部负各向同性曲率的构造。",
+      "workSummary": "对闭单连通 n≥5 的 Legendrian 浸入 Mⁿ→S²ⁿ⁺¹，在 |B|²≤δ_n(|H|) 的点态 pinching 下得到 M 同胚于 Sⁿ，其中 H=tr B 为未平均向量。更强定理对 n≥4 只要求 b₁(M;R)=0，但改用严格 |B|²<F_n(|H|)；相位旋转 Lawson–Simons 变分消去同调，并以二复形 systolic 不等式使基本群自由后平凡。",
       "techniques": [
+        "Legendrian 对称三次张量",
+        "平均曲率形式全局势",
         "相位旋转 Lawson–Simons 变分",
-        "有限二维复形的 systolic 不等式"
+        "正反流收缩二骨架",
+        "systolic 不等式"
       ],
-      "breakthrough": "在不保证非负各向同性曲率的夹逼区间获得拓扑球面结论。",
-      "limitations": "首个定理需 n≥5 和单连通；H 为未归一化迹，Calabi 等号例说明不能删除单连通条件。",
-      "analysisDepth": "abstract",
+      "breakthrough": "以b₁消失和显式外在pinching推出拓扑球，且允许某点等方曲率为负。",
+      "limitations": "结论为同胚，未分类浸入或证明标准光滑球。δ_n条件允许等号但需单连通；F_n条件需处处严格。Calabi的S¹×Sⁿ⁻¹等号例阻止省略单连通，亦不证明界在单连通类最优；δ₄不能从该比较推出四维同版结论。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 辅助发展与检查数学证明，并改善语言和呈现；作者审查修订全部辅助内容并对数学正确性及全文负责。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18293v1 · PDF 第 13 页",
@@ -106,14 +109,17 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "Legendrian 子流形的夹逼球面定理",
-          "workSummary": "对 n≥5 的闭单连通球面 Legendrian 子流形，在明确含第二基本形式及 H=tr B 的夹逼条件下证明其同胚于 Sⁿ；n≥4 时另有 b₁=0 条件下的球面定理。Calabi 乘积达到等号，并给出夹逼允许局部负各向同性曲率的构造。",
+          "workSummary": "对闭单连通 n≥5 的 Legendrian 浸入 Mⁿ→S²ⁿ⁺¹，在 |B|²≤δ_n(|H|) 的点态 pinching 下得到 M 同胚于 Sⁿ，其中 H=tr B 为未平均向量。更强定理对 n≥4 只要求 b₁(M;R)=0，但改用严格 |B|²<F_n(|H|)；相位旋转 Lawson–Simons 变分消去同调，并以二复形 systolic 不等式使基本群自由后平凡。",
           "techniques": [
+            "Legendrian 对称三次张量",
+            "平均曲率形式全局势",
             "相位旋转 Lawson–Simons 变分",
-            "有限二维复形的 systolic 不等式"
+            "正反流收缩二骨架",
+            "systolic 不等式"
           ],
-          "breakthrough": "在不保证非负各向同性曲率的夹逼区间获得拓扑球面结论。",
-          "limitations": "首个定理需 n≥5 和单连通；H 为未归一化迹，Calabi 等号例说明不能删除单连通条件。",
-          "analysisDepth": "abstract",
+          "breakthrough": "以b₁消失和显式外在pinching推出拓扑球，且允许某点等方曲率为负。",
+          "limitations": "结论为同胚，未分类浸入或证明标准光滑球。δ_n条件允许等号但需单连通；F_n条件需处处严格。Calabi的S¹×Sⁿ⁻¹等号例阻止省略单连通，亦不证明界在单连通类最优；δ₄不能从该比较推出四维同版结论。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 辅助发展与检查数学证明，并改善语言和呈现；作者审查修订全部辅助内容并对数学正确性及全文负责。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18293v1 · PDF 第 13 页",

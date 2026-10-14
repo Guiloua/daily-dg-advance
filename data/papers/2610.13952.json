@@ -34,15 +34,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "重心 Banach–Mazur 直径改进",
-      "workSummary": "作者证明平面凸体的重心 Banach–Mazur 直径严格小于 4，将此前 69/17 的上界降到 4 以下。等号方向的三角形刚性与紧致性排除了极端距离 4。",
+      "workSummary": "作者宣称存在统一 ε₀>0，使任意两平面凸体的质心 Banach–Mazur 距离≤4−ε₀，改进 69/17 上界。以一维凹截面矩窗口构造内含于凸体且两倍外包的协方差椭圆；极值对若距离四，则两体均须三角形，反与线性等价距离一矛盾。",
       "techniques": [
-        "协方差椭圆夹逼",
-        "等号刚性",
-        "紧致性"
+        "凹截面的 tent 分解",
+        "零一阶矩的二阶矩窗口",
+        "协方差椭圆 sandwich",
+        "正规化凸体类紧致性"
       ],
-      "breakthrough": "首次给出统一严格低于 4 的上界。",
-      "limitations": "4 以下的差距是非定量的，摘要未给出具体改进常数。",
-      "analysisDepth": "abstract",
+      "breakthrough": "通过不能同时达到两个尖锐因子的等号结构，获得统一严格小于四的上界。",
+      "limitations": "ε₀ 非定量，未给显式改进数值；研究质心受限距离，且仍未证明猜测的精确直径 5/2。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 GPT-5.6 Sol 与 Claude Fable 5 协助计算、分析和综合；Sol 提供简化既有论证的解析捷径。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.13952v1 · PDF 第 1 页",
@@ -105,15 +106,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "重心 Banach–Mazur 直径改进",
-          "workSummary": "作者证明平面凸体的重心 Banach–Mazur 直径严格小于 4，将此前 69/17 的上界降到 4 以下。等号方向的三角形刚性与紧致性排除了极端距离 4。",
+          "workSummary": "作者宣称存在统一 ε₀>0，使任意两平面凸体的质心 Banach–Mazur 距离≤4−ε₀，改进 69/17 上界。以一维凹截面矩窗口构造内含于凸体且两倍外包的协方差椭圆；极值对若距离四，则两体均须三角形，反与线性等价距离一矛盾。",
           "techniques": [
-            "协方差椭圆夹逼",
-            "等号刚性",
-            "紧致性"
+            "凹截面的 tent 分解",
+            "零一阶矩的二阶矩窗口",
+            "协方差椭圆 sandwich",
+            "正规化凸体类紧致性"
           ],
-          "breakthrough": "首次给出统一严格低于 4 的上界。",
-          "limitations": "4 以下的差距是非定量的，摘要未给出具体改进常数。",
-          "analysisDepth": "abstract",
+          "breakthrough": "通过不能同时达到两个尖锐因子的等号结构，获得统一严格小于四的上界。",
+          "limitations": "ε₀ 非定量，未给显式改进数值；研究质心受限距离，且仍未证明猜测的精确直径 5/2。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 GPT-5.6 Sol 与 Claude Fable 5 协助计算、分析和综合；Sol 提供简化既有论证的解析捷径。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.13952v1 · PDF 第 1 页",

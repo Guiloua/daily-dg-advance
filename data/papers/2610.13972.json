@@ -36,11 +36,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "球周柱体插入判定",
-      "workSummary": "研究围绕单位球、各触球及相邻柱体的 n 根同半径无限圆柱，重排后能否再加一根同样圆柱。证明 3≤n≤7 时不能、n≥9 时可以，另对四柱最大半径猜想确认预测值的首位小数。",
-      "techniques": [],
-      "breakthrough": "除 n=8 外判定整族球周柱体插入问题。",
-      "limitations": "n=8 仍未解决；四柱半径结果仅确认首位小数，而非精确最优半径。",
-      "analysisDepth": "abstract",
+      "workSummary": "对半径 ωn=sin(π/n)/(1−sin(π/n)) 的无限圆柱全部触单位球且内部两两不交，作者证明 n=3至7时至多n根，而n≥9时可放至少n+1根。有限有理证书控制上界；四柱最大半径只被夹在1+√2与91/37之间，并未确定精确值。",
+      "techniques": [
+        "圆柱分离参数 τ=2ω/(1+ω)",
+        "有限有理证书",
+        "半定规划与独立验证器",
+        "环构型扩张"
+      ],
+      "breakthrough": "把单独的Kuperberg六柱问题扩展为除n=8外的整族插入判定。",
+      "limitations": "原始圆柱环半径须取ωn，圆柱无限长且都触球；n=8仍开放，四柱91/37上界不能当作极值半径。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 Claude 用于想法讨论与文献综述，协助编写证书和构型搜索程序、审核测试验证器，以及校对编辑文字。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.13972v1 · PDF 第 28 页",
@@ -107,11 +112,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "球周柱体插入判定",
-          "workSummary": "研究围绕单位球、各触球及相邻柱体的 n 根同半径无限圆柱，重排后能否再加一根同样圆柱。证明 3≤n≤7 时不能、n≥9 时可以，另对四柱最大半径猜想确认预测值的首位小数。",
-          "techniques": [],
-          "breakthrough": "除 n=8 外判定整族球周柱体插入问题。",
-          "limitations": "n=8 仍未解决；四柱半径结果仅确认首位小数，而非精确最优半径。",
-          "analysisDepth": "abstract",
+          "workSummary": "对半径 ωn=sin(π/n)/(1−sin(π/n)) 的无限圆柱全部触单位球且内部两两不交，作者证明 n=3至7时至多n根，而n≥9时可放至少n+1根。有限有理证书控制上界；四柱最大半径只被夹在1+√2与91/37之间，并未确定精确值。",
+          "techniques": [
+            "圆柱分离参数 τ=2ω/(1+ω)",
+            "有限有理证书",
+            "半定规划与独立验证器",
+            "环构型扩张"
+          ],
+          "breakthrough": "把单独的Kuperberg六柱问题扩展为除n=8外的整族插入判定。",
+          "limitations": "原始圆柱环半径须取ωn，圆柱无限长且都触球；n=8仍开放，四柱91/37上界不能当作极值半径。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 Claude 用于想法讨论与文献综述，协助编写证书和构型搜索程序、审核测试验证器，以及校对编辑文字。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.13972v1 · PDF 第 28 页",

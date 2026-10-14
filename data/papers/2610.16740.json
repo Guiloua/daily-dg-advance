@@ -35,14 +35,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "典型一维边缘的最佳 Gaussian 逼近阶",
-      "workSummary": "对 Rⁿ 中各向同性对数凹概率测度，证明典型一维边缘与标准 Gaussian 的 Kolmogorov 距离至多 C/n，且一般不能改善其维数阶。相较 Bobkov–Chistyakov–Götze 的估计消去一个对数因子。",
+      "workSummary": "对 Rⁿ 中各向同性对数凹随机向量，证明一维边际 Kolmogorov 距离的球面均方根≤C/n，因而至少九成方向达到该阶；该速率一般尖锐至常数。n≥4 时还给分布函数及密度的球面平均 L² 平方误差≤C/n²。",
       "techniques": [
-        "各向同性对数凹边缘分析",
-        "Kolmogorov 距离估计"
+        "差测度的距离及逆距离核表示",
+        "各向同性消去 Taylor 前三项",
+        "对数凹矩估计",
+        "Markov–Chebyshev 转换"
       ],
-      "breakthrough": "在对数凹条件下取得一般意义上最佳的 1/n 逼近阶。",
-      "limitations": "对象是典型边缘而非所有方向；常数 C 为普适常数但不宣称数值最优。",
-      "analysisDepth": "abstract",
+      "breakthrough": "在一般对数凹情形除去已有近 Gaussian 边际界的对数因子，不要求独立坐标或无条件对称性。",
+      "limitations": "结论是球面平均及指定比例典型方向，而非所有方向；密度 L² 定理需 n≥4；更高覆盖比例可调整常数，未给固定 C 下趋于一的概率。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.16740v1 · PDF 第 2 页",
@@ -105,14 +107,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "典型一维边缘的最佳 Gaussian 逼近阶",
-          "workSummary": "对 Rⁿ 中各向同性对数凹概率测度，证明典型一维边缘与标准 Gaussian 的 Kolmogorov 距离至多 C/n，且一般不能改善其维数阶。相较 Bobkov–Chistyakov–Götze 的估计消去一个对数因子。",
+          "workSummary": "对 Rⁿ 中各向同性对数凹随机向量，证明一维边际 Kolmogorov 距离的球面均方根≤C/n，因而至少九成方向达到该阶；该速率一般尖锐至常数。n≥4 时还给分布函数及密度的球面平均 L² 平方误差≤C/n²。",
           "techniques": [
-            "各向同性对数凹边缘分析",
-            "Kolmogorov 距离估计"
+            "差测度的距离及逆距离核表示",
+            "各向同性消去 Taylor 前三项",
+            "对数凹矩估计",
+            "Markov–Chebyshev 转换"
           ],
-          "breakthrough": "在对数凹条件下取得一般意义上最佳的 1/n 逼近阶。",
-          "limitations": "对象是典型边缘而非所有方向；常数 C 为普适常数但不宣称数值最优。",
-          "analysisDepth": "abstract",
+          "breakthrough": "在一般对数凹情形除去已有近 Gaussian 边际界的对数因子，不要求独立坐标或无条件对称性。",
+          "limitations": "结论是球面平均及指定比例典型方向，而非所有方向；密度 L² 定理需 n≥4；更高覆盖比例可调整常数，未给固定 C 下趋于一的概率。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 将既有论文的证明简化，并用于校对；研究项目由作者提出，作者理解、核验并进一步改写证明。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.16740v1 · PDF 第 2 页",

@@ -34,16 +34,18 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "中间 Ricci 曲率下的常秩与分裂",
-      "workSummary": "对调和曲率流形及梯度 Ricci 孤子，证明非负 k-中间 Ricci 曲率在 1≤k≤n−2 时使 Ricci 张量常秩且零分布平行；完备时万有覆盖沿零方向等距分裂。并在每个 n≥4 的维度说明非负 Ricci 曲率本身不足以保证常秩。",
+      "workSummary": "对调和曲率流形及收缩、稳态或膨胀梯度 Ricci 孤立子，只要某个 1≤k≤n−2 的中间 Ricci 曲率非负，Ricci 张量就有常秩且核分布平行。完备时通用覆盖沿核分裂为欧氏因子与正 Ricci 因子，孤立子势在欧氏方向为高斯二次项加线性项。",
       "techniques": [
-        "常秩定理",
-        "中间 Ricci 曲率",
-        "平行零分布",
-        "等距分裂"
+        "中间 Ricci 曲率代数估计",
+        "Ricci 最低特征值子迹",
+        "粘性微分不等式",
+        "强最大值原理",
+        "Bochner 平行性",
+        "de Rham 分解"
       ],
-      "breakthrough": "得到两类几何中同一曲率条件下的刚性，并以反例表明指标范围尖锐。",
-      "limitations": "要求调和曲率或梯度 Ricci 孤子结构；分裂需要完备性，不能只假设 Ric≥0。",
-      "analysisDepth": "abstract",
+      "breakthrough": "将常秩与核方向分裂从非负截面曲率放宽到除 Ricci 端点外的中间曲率层级。",
+      "limitations": "完备性只为全局分裂所需；常秩是局部到全局的连通结论。n≥4 时只假设普通 Ric≥0 不足，文中反例是局部构造，不能写成完备反例。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 用于语言编辑与探索性计算，全部数学论证和计算由作者独立核查；未披露 AI 提供研究核心想法或证明。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.17691v1 · PDF 第 22 页",
@@ -106,16 +108,18 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "中间 Ricci 曲率下的常秩与分裂",
-          "workSummary": "对调和曲率流形及梯度 Ricci 孤子，证明非负 k-中间 Ricci 曲率在 1≤k≤n−2 时使 Ricci 张量常秩且零分布平行；完备时万有覆盖沿零方向等距分裂。并在每个 n≥4 的维度说明非负 Ricci 曲率本身不足以保证常秩。",
+          "workSummary": "对调和曲率流形及收缩、稳态或膨胀梯度 Ricci 孤立子，只要某个 1≤k≤n−2 的中间 Ricci 曲率非负，Ricci 张量就有常秩且核分布平行。完备时通用覆盖沿核分裂为欧氏因子与正 Ricci 因子，孤立子势在欧氏方向为高斯二次项加线性项。",
           "techniques": [
-            "常秩定理",
-            "中间 Ricci 曲率",
-            "平行零分布",
-            "等距分裂"
+            "中间 Ricci 曲率代数估计",
+            "Ricci 最低特征值子迹",
+            "粘性微分不等式",
+            "强最大值原理",
+            "Bochner 平行性",
+            "de Rham 分解"
           ],
-          "breakthrough": "得到两类几何中同一曲率条件下的刚性，并以反例表明指标范围尖锐。",
-          "limitations": "要求调和曲率或梯度 Ricci 孤子结构；分裂需要完备性，不能只假设 Ric≥0。",
-          "analysisDepth": "abstract",
+          "breakthrough": "将常秩与核方向分裂从非负截面曲率放宽到除 Ricci 端点外的中间曲率层级。",
+          "limitations": "完备性只为全局分裂所需；常秩是局部到全局的连通结论。n≥4 时只假设普通 Ric≥0 不足，文中反例是局部构造，不能写成完备反例。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 用于语言编辑与探索性计算，全部数学论证和计算由作者独立核查；未披露 AI 提供研究核心想法或证明。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.17691v1 · PDF 第 22 页",

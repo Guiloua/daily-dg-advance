@@ -34,15 +34,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "h-凸域曲率测度与保体积流",
-      "workSummary": "在双曲空间引入修正曲率测度，以平移版广义 Alexandrov 定理刻画测地球，并推广 Kohlmann 的结果。对严格 h-凸超曲面的保体积平移 α-Gauss 曲率流，证明任意 α>0 均全时存在并光滑收敛至测地球。",
+      "workSummary": "以双曲主曲率κᵢ−1的对称函数定义紧h凸域修正曲率测度，证明n≥2、2≤k≤n时修正第n−k测度与第n测度对每个Borel集成固定正比例，域必为测地球。对光滑闭、严格h凸初始超曲面，外法向速度为面积平均减去移位Gauss曲率的α/n次幂的保体积流，在所有α>0下长期保持严格h凸并光滑指数收敛到同体积测地球。",
       "techniques": [
-        "修正曲率测度",
-        "广义 Alexandrov 定理",
-        "保体积平移 Gauss 曲率流"
+        "广义主曲率与修正曲率测度",
+        "移位Minkowski公式",
+        "支持函数与逆移位曲率辅助函数",
+        "保体积移位Gauss流",
+        "Hausdorff极限识别"
       ],
-      "breakthrough": "把弱曲率测度刚性用于识别曲率流的 Hausdorff 极限。",
-      "limitations": "流结论要求严格 h-凸初始超曲面和 α>0，不能推广到任意凸性。",
-      "analysisDepth": "abstract",
+      "breakthrough": "将κ−1适配的测度刚性用于识别保体积高次幂流的极限，而不限于一次齐次速度。",
+      "limitations": "测度定理要求对所有Borel集的比例关系，不只是总积分；光滑流要求初始κᵢ>1，不能以仅凸或κᵢ≥1直接代替。一般非光滑h凸域的测度结果不自动给出光滑流。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -100,15 +102,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "h-凸域曲率测度与保体积流",
-          "workSummary": "在双曲空间引入修正曲率测度，以平移版广义 Alexandrov 定理刻画测地球，并推广 Kohlmann 的结果。对严格 h-凸超曲面的保体积平移 α-Gauss 曲率流，证明任意 α>0 均全时存在并光滑收敛至测地球。",
+          "workSummary": "以双曲主曲率κᵢ−1的对称函数定义紧h凸域修正曲率测度，证明n≥2、2≤k≤n时修正第n−k测度与第n测度对每个Borel集成固定正比例，域必为测地球。对光滑闭、严格h凸初始超曲面，外法向速度为面积平均减去移位Gauss曲率的α/n次幂的保体积流，在所有α>0下长期保持严格h凸并光滑指数收敛到同体积测地球。",
           "techniques": [
-            "修正曲率测度",
-            "广义 Alexandrov 定理",
-            "保体积平移 Gauss 曲率流"
+            "广义主曲率与修正曲率测度",
+            "移位Minkowski公式",
+            "支持函数与逆移位曲率辅助函数",
+            "保体积移位Gauss流",
+            "Hausdorff极限识别"
           ],
-          "breakthrough": "把弱曲率测度刚性用于识别曲率流的 Hausdorff 极限。",
-          "limitations": "流结论要求严格 h-凸初始超曲面和 α>0，不能推广到任意凸性。",
-          "analysisDepth": "abstract",
+          "breakthrough": "将κ−1适配的测度刚性用于识别保体积高次幂流的极限，而不限于一次齐次速度。",
+          "limitations": "测度定理要求对所有Borel集的比例关系，不只是总积分；光滑流要求初始κᵢ>1，不能以仅凸或κᵢ≥1直接代替。一般非光滑h凸域的测度结果不自动给出光滑流。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

@@ -34,14 +34,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "圆装填折纸猜想声明",
-      "workSummary": "作者宣称证明 Lang 的圆装填折纸猜想：五边以上的任意轴向多边形都可通过适当添加新圆来约化。区域中轴结构提供找出新增圆的具体算法，结果也延伸到含 rivers 的构型。",
+      "workSummary": "作者宣称由相邻外切、非相邻不相交圆构成的简单N边形（N>4、无需凸），总能在内部加入一个与至少三圆相切且不交其他圆的新圆，使分割后最大边数降至N−1。圆间自由域中轴是有N个叶子的树，内部顶点对应可加入圆；树引理选出有效顶点，递归至多N−4个圆降为三四边形，且可用尺规Apollonius构造。",
       "techniques": [
-        "区域中轴",
-        "新增圆构造算法"
+        "相切圆自由域",
+        "medial axis有限树",
+        "树组合引理",
+        "Apollonius相切圆尺规构造"
       ],
-      "breakthrough": "把高边数轴向多边形约化为三角形和四边形。",
-      "limitations": "结论限定于圆装填折纸设计中的轴向多边形及文中 rivers 构型。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把Lang折纸circle/river设计猜想归约为中轴树选择，给出具体降阶算法及最坏新增圆数。",
+      "limitations": "新圆会增加flap，结果主要是几何可构造性而非折叠效率最优。圆心多边形须简单，非相邻切触的退化情形先分割处理；river扩展另有模型，不能当作任意圆堆积降阶。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -99,14 +101,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "圆装填折纸猜想声明",
-          "workSummary": "作者宣称证明 Lang 的圆装填折纸猜想：五边以上的任意轴向多边形都可通过适当添加新圆来约化。区域中轴结构提供找出新增圆的具体算法，结果也延伸到含 rivers 的构型。",
+          "workSummary": "作者宣称由相邻外切、非相邻不相交圆构成的简单N边形（N>4、无需凸），总能在内部加入一个与至少三圆相切且不交其他圆的新圆，使分割后最大边数降至N−1。圆间自由域中轴是有N个叶子的树，内部顶点对应可加入圆；树引理选出有效顶点，递归至多N−4个圆降为三四边形，且可用尺规Apollonius构造。",
           "techniques": [
-            "区域中轴",
-            "新增圆构造算法"
+            "相切圆自由域",
+            "medial axis有限树",
+            "树组合引理",
+            "Apollonius相切圆尺规构造"
           ],
-          "breakthrough": "把高边数轴向多边形约化为三角形和四边形。",
-          "limitations": "结论限定于圆装填折纸设计中的轴向多边形及文中 rivers 构型。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把Lang折纸circle/river设计猜想归约为中轴树选择，给出具体降阶算法及最坏新增圆数。",
+          "limitations": "新圆会增加flap，结果主要是几何可构造性而非折叠效率最优。圆心多边形须简单，非相邻切触的退化情形先分割处理；river扩展另有模型，不能当作任意圆堆积降阶。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

@@ -37,16 +37,18 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "r-平均曲率收缩端构造唯一性",
-      "workSummary": "对 1≤r≤n−1 和任意正斜率旋转圆锥，构造渐近于该锥的光滑嵌入收缩端，证明正轮廓唯一及完整可微渐近展开。进一步去掉旋转对称假设：光滑单重收敛到同一圆锥的两个端在紧集外重合。",
+      "workSummary": "对 1≤r≤n−1 的 Sr=c〈X,N〉收缩方程，作者在任意正斜率圆锥上构造唯一正旋转轮廓，并给出轮廓偏差 O(x^(−r)) 及导数偏差 O(x^(−r−1))。同向定向、光滑单重渐近于同一圆锥的两个非对称端，在紧集外也必须重合。",
       "techniques": [
-        "轮廓常微分方程",
-        "渐近展开",
-        "漂移 Laplacian",
-        "弱锥端上的近特征函数分析"
+        "Gårding 锥与 Newton 张量",
+        "旋转轮廓 ODE",
+        "角度缺陷 xu′−u",
+        "超多项式差值衰减",
+        "非线性径向变换",
+        "漂移 Laplace 近特征函数"
       ],
-      "breakthrough": "从旋转构造推进到同一圆锥的非对称收缩端外部唯一性。",
-      "limitations": "要求光滑、重数一的锥渐近；扩展到非圆锥时须严格 r-admissible 且锥截面主曲率常值。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把次数 r 的全非线性收缩方程的旋转构造推广到无对称假设的圆锥端唯一性。",
+      "limitations": "须 c<0、正斜率、1≤r≤n−1，并有所有阶光滑单重锥渐近及相同法向。端在无穷方向完备，不等于完整超曲面；一般 admissible 锥截面的唯一性仍开放。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露生成式 AI 用于语言编辑、组织表述，以及讨论和检查部分代数计算。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14227v1 · PDF 第 34 页",
@@ -112,16 +114,18 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "r-平均曲率收缩端构造唯一性",
-          "workSummary": "对 1≤r≤n−1 和任意正斜率旋转圆锥，构造渐近于该锥的光滑嵌入收缩端，证明正轮廓唯一及完整可微渐近展开。进一步去掉旋转对称假设：光滑单重收敛到同一圆锥的两个端在紧集外重合。",
+          "workSummary": "对 1≤r≤n−1 的 Sr=c〈X,N〉收缩方程，作者在任意正斜率圆锥上构造唯一正旋转轮廓，并给出轮廓偏差 O(x^(−r)) 及导数偏差 O(x^(−r−1))。同向定向、光滑单重渐近于同一圆锥的两个非对称端，在紧集外也必须重合。",
           "techniques": [
-            "轮廓常微分方程",
-            "渐近展开",
-            "漂移 Laplacian",
-            "弱锥端上的近特征函数分析"
+            "Gårding 锥与 Newton 张量",
+            "旋转轮廓 ODE",
+            "角度缺陷 xu′−u",
+            "超多项式差值衰减",
+            "非线性径向变换",
+            "漂移 Laplace 近特征函数"
           ],
-          "breakthrough": "从旋转构造推进到同一圆锥的非对称收缩端外部唯一性。",
-          "limitations": "要求光滑、重数一的锥渐近；扩展到非圆锥时须严格 r-admissible 且锥截面主曲率常值。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把次数 r 的全非线性收缩方程的旋转构造推广到无对称假设的圆锥端唯一性。",
+          "limitations": "须 c<0、正斜率、1≤r≤n−1，并有所有阶光滑单重锥渐近及相同法向。端在无穷方向完备，不等于完整超曲面；一般 admissible 锥截面的唯一性仍开放。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露生成式 AI 用于语言编辑、组织表述，以及讨论和检查部分代数计算。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14227v1 · PDF 第 34 页",

@@ -33,14 +33,15 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "高维透镜空间 Yamabe 不变量反例",
-      "workSummary": "对奇数 n≥5 及充分大的素数 q>3，证明 L₃qⁿ 的光滑 Yamabe 不变量严格高于商圆共形类的 Yamabe 常数。借助 spin bordism 与 Ammann–Dahl–Humbert 手术定理，给出 min{q⁻²/ⁿY(Sⁿ),Λₙ} 的下界。",
+      "workSummary": "作者宣称每个奇维 n≥5 都有无穷多个标准透镜空间 Lⁿ₃q，其平滑 Yamabe 不变量严格大于商圆共形类的 (3q)⁻²/ⁿY(Sⁿ)。通过互素覆盖 transfer 在 spin bordism 中生成透镜类，结合 Ammann–Dahl–Humbert 手术阈值，取得 σ(Lⁿ₃q)≥min{q⁻²/ⁿY(Sⁿ),Λₙ}，足够大的 q 即给出严格改进。",
       "techniques": [
-        "spin bordism",
-        "Yamabe 手术定理"
+        "spin bordism 骨架滤过",
+        "互素覆盖 transfer 与 Bézout 组合",
+        "Yamabe 手术阈值"
       ],
-      "breakthrough": "在每个奇数 n≥5 的维度，否定商圆共形类总是最大化 Yamabe 不变量的预期。",
-      "limitations": "q 须充分大且为大于三的素数；不是所有透镜空间的反例。",
-      "analysisDepth": "abstract",
+      "breakthrough": "主张商圆共形类在所有奇维至少五的某些球面空间形式上并非 Yamabe 最优，给出维数一致的反例路线。",
+      "limitations": "仅取得严格下界，未计算 σ 的精确值或给出最优度量。主定理取足够大素数 q；证明实际只需 q>3 为奇数且与3互素。维数限制 n≥5 来自手术定理，不能延伸为三维反例。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -97,14 +98,15 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "高维透镜空间 Yamabe 不变量反例",
-          "workSummary": "对奇数 n≥5 及充分大的素数 q>3，证明 L₃qⁿ 的光滑 Yamabe 不变量严格高于商圆共形类的 Yamabe 常数。借助 spin bordism 与 Ammann–Dahl–Humbert 手术定理，给出 min{q⁻²/ⁿY(Sⁿ),Λₙ} 的下界。",
+          "workSummary": "作者宣称每个奇维 n≥5 都有无穷多个标准透镜空间 Lⁿ₃q，其平滑 Yamabe 不变量严格大于商圆共形类的 (3q)⁻²/ⁿY(Sⁿ)。通过互素覆盖 transfer 在 spin bordism 中生成透镜类，结合 Ammann–Dahl–Humbert 手术阈值，取得 σ(Lⁿ₃q)≥min{q⁻²/ⁿY(Sⁿ),Λₙ}，足够大的 q 即给出严格改进。",
           "techniques": [
-            "spin bordism",
-            "Yamabe 手术定理"
+            "spin bordism 骨架滤过",
+            "互素覆盖 transfer 与 Bézout 组合",
+            "Yamabe 手术阈值"
           ],
-          "breakthrough": "在每个奇数 n≥5 的维度，否定商圆共形类总是最大化 Yamabe 不变量的预期。",
-          "limitations": "q 须充分大且为大于三的素数；不是所有透镜空间的反例。",
-          "analysisDepth": "abstract",
+          "breakthrough": "主张商圆共形类在所有奇维至少五的某些球面空间形式上并非 Yamabe 最优，给出维数一致的反例路线。",
+          "limitations": "仅取得严格下界，未计算 σ 的精确值或给出最优度量。主定理取足够大素数 q；证明实际只需 q>3 为奇数且与3互素。维数限制 n≥5 来自手术定理，不能延伸为三维反例。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

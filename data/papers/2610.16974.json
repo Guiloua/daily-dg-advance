@@ -35,15 +35,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "静态势的谱与节集估计",
-      "workSummary": "在紧致带边界静态流形上，建立 Dirichlet、Neumann 特征值与标量曲率的比较关系，并用谱条件控制静态势的变号及零集连通性。进一步刻画混合 Robin–Dirichlet 第一特征值在允许的保体积变形下的临界 Robin 静态三元组。",
+      "workSummary": "对 n≥3 的紧连通带边界静态流形，把势 V 视为特征值 R/(n−1)、边界系数 H/(n−1) 的 Robin 特征函数，证明相应第 k 个 Dirichlet 值严格大于 R/(n−1)。当 R>0 且 λ₁ᴰ≤R/(n−1) 时 V 必变号，并以节域的边界曲率修正项控制第 d(V) 个 Neumann 值。",
       "techniques": [
-        "特征值比较",
-        "静态势节集",
-        "Robin 边界变分"
+        "Robin 参数单调性",
+        "Dirichlet 极限",
+        "节域截断函数",
+        "min–max 原理",
+        "静态 Hessian 方程"
       ],
-      "breakthrough": "联结静态几何的谱信息、零集结构及特征值临界性。",
-      "limitations": "零集连通、触边和变号结论分别需相应充分谱条件；变分限定为允许的保体积变形。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把静态势的节域结构转化为带具体边界曲率修正的谱不等式。",
+      "limitations": "无边界修正的 Neumann 比较另需 H≤0，不能忽略平均曲率符号；H 在各边界分支可不同，标量曲率 R 恒定。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 用于查找非标准球面 Einstein 度量的既有例子、定位测试函数构造的参考文献、改善表达、校对和对论证呈现提供反馈；明确说明研究想法及所有证明均独立于 AI 开发。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.16974v1 · PDF 第 17 页",
@@ -107,15 +109,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "静态势的谱与节集估计",
-          "workSummary": "在紧致带边界静态流形上，建立 Dirichlet、Neumann 特征值与标量曲率的比较关系，并用谱条件控制静态势的变号及零集连通性。进一步刻画混合 Robin–Dirichlet 第一特征值在允许的保体积变形下的临界 Robin 静态三元组。",
+          "workSummary": "对 n≥3 的紧连通带边界静态流形，把势 V 视为特征值 R/(n−1)、边界系数 H/(n−1) 的 Robin 特征函数，证明相应第 k 个 Dirichlet 值严格大于 R/(n−1)。当 R>0 且 λ₁ᴰ≤R/(n−1) 时 V 必变号，并以节域的边界曲率修正项控制第 d(V) 个 Neumann 值。",
           "techniques": [
-            "特征值比较",
-            "静态势节集",
-            "Robin 边界变分"
+            "Robin 参数单调性",
+            "Dirichlet 极限",
+            "节域截断函数",
+            "min–max 原理",
+            "静态 Hessian 方程"
           ],
-          "breakthrough": "联结静态几何的谱信息、零集结构及特征值临界性。",
-          "limitations": "零集连通、触边和变号结论分别需相应充分谱条件；变分限定为允许的保体积变形。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把静态势的节域结构转化为带具体边界曲率修正的谱不等式。",
+          "limitations": "无边界修正的 Neumann 比较另需 H≤0，不能忽略平均曲率符号；H 在各边界分支可不同，标量曲率 R 恒定。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 用于查找非标准球面 Einstein 度量的既有例子、定位测试函数构造的参考文献、改善表达、校对和对论证呈现提供反馈；明确说明研究想法及所有证明均独立于 AI 开发。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.16974v1 · PDF 第 17 页",

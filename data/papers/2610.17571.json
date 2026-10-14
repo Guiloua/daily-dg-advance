@@ -36,16 +36,16 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "双均场方程与指定曲率存在性",
-      "workSummary": "在紧致带边界黎曼曲面上，通过引入边界积分常数，为带非线性 Neumann 条件的双均场方程给出解的充分条件，并应用于拓扑圆盘的 Gauss 曲率及边界测地曲率指定。标准半球上以边界 Φ=h+√(h²+K) 的最大点处明确微分不等式保证光滑解存在。",
+      "workSummary": "在 ρ+ρ′=2π 的临界双均场问题中，通过边界 Neumann Green 函数正则项 A 和积分常数 Λ(G,h)，在 A+(ρ/π)logK+(ρ′/π)logh² 的边界最大点给出明确充分不等式，保证变分能量达到极小值并有光滑解。h≡0、ρ′=0 的端点另有 Kν/K+2κ<0 条件。",
       "techniques": [
+        "临界 Moser–Trudinger 变分",
+        "边界 Neumann Green 展开",
         "边界积分常数",
-        "双均场方程",
-        "非线性 Neumann 条件",
-        "边界半阶 Laplace 算子"
+        "浓集点最大值选择"
       ],
-      "breakthrough": "将边界与内部均场耦合转化为可用于曲率指定的存在条件。",
-      "limitations": "K>0，h>0 或恒零，ρ>0、ρ′≥0 且 ρ+ρ′=2π；半球结论需指定最大点处不等式。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把边界浓集的精细积分信息转为无对称性的临界存在判据。",
+      "limitations": "正 h 主定理需 ρ、ρ′均正；h≡0 是单独端点定理。一般双均场解还需附加积分兼容关系才对应指定内部及边界曲率，不能省略这一几何约束。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -105,16 +105,16 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "双均场方程与指定曲率存在性",
-          "workSummary": "在紧致带边界黎曼曲面上，通过引入边界积分常数，为带非线性 Neumann 条件的双均场方程给出解的充分条件，并应用于拓扑圆盘的 Gauss 曲率及边界测地曲率指定。标准半球上以边界 Φ=h+√(h²+K) 的最大点处明确微分不等式保证光滑解存在。",
+          "workSummary": "在 ρ+ρ′=2π 的临界双均场问题中，通过边界 Neumann Green 函数正则项 A 和积分常数 Λ(G,h)，在 A+(ρ/π)logK+(ρ′/π)logh² 的边界最大点给出明确充分不等式，保证变分能量达到极小值并有光滑解。h≡0、ρ′=0 的端点另有 Kν/K+2κ<0 条件。",
           "techniques": [
+            "临界 Moser–Trudinger 变分",
+            "边界 Neumann Green 展开",
             "边界积分常数",
-            "双均场方程",
-            "非线性 Neumann 条件",
-            "边界半阶 Laplace 算子"
+            "浓集点最大值选择"
           ],
-          "breakthrough": "将边界与内部均场耦合转化为可用于曲率指定的存在条件。",
-          "limitations": "K>0，h>0 或恒零，ρ>0、ρ′≥0 且 ρ+ρ′=2π；半球结论需指定最大点处不等式。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把边界浓集的精细积分信息转为无对称性的临界存在判据。",
+          "limitations": "正 h 主定理需 ρ、ρ′均正；h≡0 是单独端点定理。一般双均场解还需附加积分兼容关系才对应指定内部及边界曲率，不能省略这一几何约束。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

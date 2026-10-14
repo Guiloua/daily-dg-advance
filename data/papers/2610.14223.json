@@ -36,15 +36,17 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "CMC 张量与显式间隙定理",
-      "workSummary": "为球面或双曲空间与直线的乘积中的常平均曲率超曲面构造对称无迹张量，推广 Abresch–Rosenberg 张量。其消失刻画旋转 CMC 球，积分 Simons 恒等式导出显式间隙与夹挤阈值，并分析大平均曲率的二阶渐近。",
+      "workSummary": "为 Sⁿ×R 与 Hⁿ×R 的CMC超曲面构造以旋转球轮廓确定的无迹张量 B，其Codazzi缺陷虽一般不为零，却线性依赖B；完整连通双侧浸入的B≡0恰为旋转CMC球。对闭双侧n≥3对象，由精确积分Simons恒等式取得显式张量gap；一变量模型阈值在双曲积h>1、球面积h>h_S(n)时给严格pinching刚性，其中h=tr A/n。",
       "techniques": [
-        "Codazzi 缺陷",
-        "积分 Simons 恒等式",
-        "代数夹挤估计"
+        "旋转CMC模型系数",
+        "线性Codazzi缺陷",
+        "精确积分Simons恒等式",
+        "Okumura不等式",
+        "模型截曲率阈值"
       ],
-      "breakthrough": "给出高维乘积空间中带明确常数的 CMC 刚性间隙。",
-      "limitations": "双曲情形要求 h>1；球面情形要求指定维数相关下界，且夹挤超过凸性阈值只在列出的维数和 h 条件下成立。",
-      "analysisDepth": "abstract",
+      "breakthrough": "在高维缺乏真正Codazzi张量时，保留可控线性缺陷仍建立以旋转球为零集的定量刚性。",
+      "limitations": "零集分类n≥2、双曲球存在范围nh>n−1，与gap要求h>1不同；Theorem D需闭且严格sup|B|<R*。非严格x+版本还要求a₀>0；不应把所有闭gap自动外推完备非紧，也不能把高维B称Codazzi。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露生成式 AI 用于语言编辑、组织表述，以及讨论和检查部分代数计算。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14223v1 · PDF 第 28 页",
@@ -109,15 +111,17 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "CMC 张量与显式间隙定理",
-          "workSummary": "为球面或双曲空间与直线的乘积中的常平均曲率超曲面构造对称无迹张量，推广 Abresch–Rosenberg 张量。其消失刻画旋转 CMC 球，积分 Simons 恒等式导出显式间隙与夹挤阈值，并分析大平均曲率的二阶渐近。",
+          "workSummary": "为 Sⁿ×R 与 Hⁿ×R 的CMC超曲面构造以旋转球轮廓确定的无迹张量 B，其Codazzi缺陷虽一般不为零，却线性依赖B；完整连通双侧浸入的B≡0恰为旋转CMC球。对闭双侧n≥3对象，由精确积分Simons恒等式取得显式张量gap；一变量模型阈值在双曲积h>1、球面积h>h_S(n)时给严格pinching刚性，其中h=tr A/n。",
           "techniques": [
-            "Codazzi 缺陷",
-            "积分 Simons 恒等式",
-            "代数夹挤估计"
+            "旋转CMC模型系数",
+            "线性Codazzi缺陷",
+            "精确积分Simons恒等式",
+            "Okumura不等式",
+            "模型截曲率阈值"
           ],
-          "breakthrough": "给出高维乘积空间中带明确常数的 CMC 刚性间隙。",
-          "limitations": "双曲情形要求 h>1；球面情形要求指定维数相关下界，且夹挤超过凸性阈值只在列出的维数和 h 条件下成立。",
-          "analysisDepth": "abstract",
+          "breakthrough": "在高维缺乏真正Codazzi张量时，保留可控线性缺陷仍建立以旋转球为零集的定量刚性。",
+          "limitations": "零集分类n≥2、双曲球存在范围nh>n−1，与gap要求h>1不同；Theorem D需闭且严格sup|B|<R*。非严格x+版本还要求a₀>0；不应把所有闭gap自动外推完备非紧，也不能把高维B称Codazzi。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露生成式 AI 用于语言编辑、组织表述，以及讨论和检查部分代数计算。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14223v1 · PDF 第 28 页",

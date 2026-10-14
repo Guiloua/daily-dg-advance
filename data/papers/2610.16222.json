@@ -35,15 +35,16 @@
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "SL₂(R) 最优测地线综合",
-      "workSummary": "研究 SL₂(R) 上所取左不变黎曼度量的指数映射，求出共轭与 Maxwell 时间、截迹及整体极小测地线。证明首个 Maxwell 时间等于截断时间，给出截迹的矩阵描述、注入半径 π√14/4，并说明每条测地线具有 equi-optimal 性。",
+      "workSummary": "在 SL₂(R) 的左不变度量 ⟨ξ,η⟩=tr(ξηᵀ)/2 下，以 Euler–Poincaré 和 Hadamard 全局逆映射方法重证第一 Maxwell 时间等于割时间。割迹是对称负定行列式一矩阵，割迹与共轭迹只交于 −Id，单射半径为 π√14/4，ω=0 测地线全局最短且全部测地线 equi-optimal。",
       "techniques": [
-        "Euler–Poincaré 方程及线性化",
-        "Maxwell 分层",
-        "指数映射整体分析"
+        "Euler–Poincaré 线性化",
+        "SO(2) 伴随对称",
+        "Maxwell 时间方程",
+        "Hadamard 全局微分同胚定理"
       ],
-      "breakthrough": "形成从测地线方程到截迹与注入半径的显式最优综合。",
-      "limitations": "数值注入半径及结构结论针对文中指定左不变度量，不能视为所有 SL₂(R) 度量的统一结果。",
-      "analysisDepth": "abstract",
+      "breakthrough": "补充已知割时间理论的直接矩阵刻画与显式全局最优性、半径数据。",
+      "limitations": "仅此 Frobenius 型归一化左不变度量，即已有对称族 I₁=I₂=I₃ 特例；不是任意 SL₂ 左不变度量的合成。割时间等于 Maxwell 时间本身为替代证明。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -102,15 +103,16 @@
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "SL₂(R) 最优测地线综合",
-          "workSummary": "研究 SL₂(R) 上所取左不变黎曼度量的指数映射，求出共轭与 Maxwell 时间、截迹及整体极小测地线。证明首个 Maxwell 时间等于截断时间，给出截迹的矩阵描述、注入半径 π√14/4，并说明每条测地线具有 equi-optimal 性。",
+          "workSummary": "在 SL₂(R) 的左不变度量 ⟨ξ,η⟩=tr(ξηᵀ)/2 下，以 Euler–Poincaré 和 Hadamard 全局逆映射方法重证第一 Maxwell 时间等于割时间。割迹是对称负定行列式一矩阵，割迹与共轭迹只交于 −Id，单射半径为 π√14/4，ω=0 测地线全局最短且全部测地线 equi-optimal。",
           "techniques": [
-            "Euler–Poincaré 方程及线性化",
-            "Maxwell 分层",
-            "指数映射整体分析"
+            "Euler–Poincaré 线性化",
+            "SO(2) 伴随对称",
+            "Maxwell 时间方程",
+            "Hadamard 全局微分同胚定理"
           ],
-          "breakthrough": "形成从测地线方程到截迹与注入半径的显式最优综合。",
-          "limitations": "数值注入半径及结构结论针对文中指定左不变度量，不能视为所有 SL₂(R) 度量的统一结果。",
-          "analysisDepth": "abstract",
+          "breakthrough": "补充已知割时间理论的直接矩阵刻画与显式全局最优性、半径数据。",
+          "limitations": "仅此 Frobenius 型归一化左不变度量，即已有对称族 I₁=I₂=I₃ 特例；不是任意 SL₂ 左不变度量的合成。割时间等于 Maxwell 时间本身为替代证明。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,
