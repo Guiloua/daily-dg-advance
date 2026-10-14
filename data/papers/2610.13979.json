@@ -34,15 +34,17 @@
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
       "progressType": "Luo 三个猜想的共同反例",
-      "workSummary": "作者以透镜空间 L(3,1) 的极小双四面体剖分构造一个零伦同环边，同时反驳 Luo 论文所述的三个猜想。证明结合四边形匹配方程、形状参数显式计算和已知体积最大化结果。",
+      "workSummary": "作者给出L(3,1)的最小两四面体面配对，三条全局边a/b/c次数为2/5/5；基本群化为Z/3且a可缩。其四边形匹配矩阵的最多两个非零坐标解仅支撑{x₁,y₁}，所以不存在三组2-quad cluster；结合无Thurston方程解和全部体积极大点光滑，作者宣称同例反驳Luo原述三猜想。",
       "techniques": [
-        "正规四边形匹配方程",
-        "形状参数计算",
-        "体积最大化"
+        "显式四面体面配对",
+        "基本群表示",
+        "四边形有符号匹配矩阵",
+        "shape参数",
+        "圆值角结构体积极值"
       ],
-      "breakthrough": "用一个具体极小剖分同时否定三项剖分猜想。",
-      "limitations": "反驳针对 Luo 论文中明确陈述的猜想版本，不能据此否定所有修正版。",
-      "analysisDepth": "abstract",
+      "breakthrough": "用一个可明确计算的最小三角剖分同时破坏三种存在性或极值推论。",
+      "limitations": "三角剖分允许仿射面自识别；2-quad解是实线性匹配解，不加非负及每四面体单一类型限制。L(3,1)非单连通，因此不反驳用于Poincaré路线的单连通受限版本。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 提供反例想法并辅助英语润色。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.13979v1 · PDF 第 5 页",
@@ -104,15 +106,17 @@
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
           "progressType": "Luo 三个猜想的共同反例",
-          "workSummary": "作者以透镜空间 L(3,1) 的极小双四面体剖分构造一个零伦同环边，同时反驳 Luo 论文所述的三个猜想。证明结合四边形匹配方程、形状参数显式计算和已知体积最大化结果。",
+          "workSummary": "作者给出L(3,1)的最小两四面体面配对，三条全局边a/b/c次数为2/5/5；基本群化为Z/3且a可缩。其四边形匹配矩阵的最多两个非零坐标解仅支撑{x₁,y₁}，所以不存在三组2-quad cluster；结合无Thurston方程解和全部体积极大点光滑，作者宣称同例反驳Luo原述三猜想。",
           "techniques": [
-            "正规四边形匹配方程",
-            "形状参数计算",
-            "体积最大化"
+            "显式四面体面配对",
+            "基本群表示",
+            "四边形有符号匹配矩阵",
+            "shape参数",
+            "圆值角结构体积极值"
           ],
-          "breakthrough": "用一个具体极小剖分同时否定三项剖分猜想。",
-          "limitations": "反驳针对 Luo 论文中明确陈述的猜想版本，不能据此否定所有修正版。",
-          "analysisDepth": "abstract",
+          "breakthrough": "用一个可明确计算的最小三角剖分同时破坏三种存在性或极值推论。",
+          "limitations": "三角剖分允许仿射面自识别；2-quad解是实线性匹配解，不加非负及每四面体单一类型限制。L(3,1)非单连通，因此不反驳用于Poincaré路线的单连通受限版本。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 提供反例想法并辅助英语润色。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.13979v1 · PDF 第 5 页",

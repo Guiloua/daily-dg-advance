@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-14",
-  "revision": 8,
-  "contentHash": "22ea0dd9b52403a329fc84f6c7bae90872e0f14452755c293ff5ddfd9868ea66",
-  "lastUpdated": "2026-10-14T07:22:17.204Z",
+  "revision": 9,
+  "contentHash": "240a9ce80813fa00fb12ba7ec05dfb19e4760566480e126261ddde06829f3066",
+  "lastUpdated": "2026-10-14T07:27:58.381Z",
   "categories": [
     {
       "category": "mathDg",
@@ -350,14 +350,17 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "特定角度测地树分类",
-        "workSummary": "在 K-Space 中，作者按顶点度数及 90°、120°、150°、180° 的允许组合给出 Platonic 测地树的存在与不存在条件，并据此分类边界顶点与新增顶点处的构型。三边情形将 Steiner 点与 Fermat 点识别。",
+        "workSummary": "作者提出在欧氏、正曲率球面及负曲率双曲K-space中，相邻测地边夹角取90°/120°/150°/180°的Platonic树，并以单顶点单位切向量平衡∑eᵢ=0分析局部角型。正文构造m≥4的循环120°、其余90°的cosine矩阵，及偶数m的对跖正交方向；同时区分三价120°Steiner点与高价Fermat点，并讨论全120°等角型的排除。",
         "techniques": [
-          "角度组合分类",
-          "Steiner 点与 Fermat 点"
+          "单位切向量Fermat平衡",
+          "角cosine矩阵",
+          "循环方向构造",
+          "正交对跖坐标",
+          "逐顶点角型分析"
         ],
-        "breakthrough": "给出指定 Platonic 角度体系下测地树的局部分类。",
-        "limitations": "分类限定于文中 K-Space 和列出的角度体系；m≥4 时全为 120° 的构型不存在。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把特定离散角组合的测地网络以局部向量平衡和坐标模式组织起来。",
+        "limitations": "构造需要选择相容方向和足够环境维数，不意味着任意固定端点都能实现这些角型；局部平衡或角矩阵不自动保证整个树全局最短。双曲理想端点的边为无限长射线，不能混作有限总长树。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -484,14 +487,17 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "反投影不等式等号与反例",
-        "workSummary": "完整刻画已有三维反投影不等式的等号情形，并在每个 n≥9 的维数构造反例，说明同一反投影不等式不成立。反例可取至多 n+2 个面的满维多面体。",
+        "workSummary": "对Pₙ(K)=Vₙ(ΠK)/Vₙ(K)ⁿ⁻¹，补齐三维尖锐反向投影界P₃≤18的等号分类：恰为四面体。另一方面构造九维反例并提升到所有n≥9，每个为至多n+2个面的满维多面体，Pₙ严格超过单纯形的(n+1)nⁿ/n!值，故该一般高维单纯形上界失效。",
         "techniques": [
-          "多面体反例构造",
-          "等号情形分析"
+          "投影体与仿射不变量",
+          "广义锥体等号约化",
+          "投影体积计算",
+          "几何一阶变分",
+          "高维提升"
         ],
-        "breakthrough": "同时补齐三维刚性和高维失效边界。",
-        "limitations": "反例结论从 n≥9 开始，摘要没有解决维数 4 至 8 的情形。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把三维唯一极值形状与高维单纯形非极值的维数分界同时明确。",
+        "limitations": "反驳的是任意凸体的单纯形上界，不是Petty最小投影猜想；4≤n≤8仍未解决。新贡献为三维等号分类，三维18上界本身引用此前结果。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -550,13 +556,17 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "Heisenberg 度量等距面研究",
-        "workSummary": "研究 Heisenberg 群在 Carnot–Carathéodory 度量下的等距面，接续此前对 Korányi 度量等距面的工作。",
+        "workSummary": "比较 Heisenberg 群 Carnot–Carathéodory 与 Korányi 等距中分集：竖直标准锚点的 CC 中分集为 t=0，而有限 C-circle 情形保留 t/|z|² 参数，需 Reeb 角反解的超越距离方程。正文对 t=0 计算 XF=2y、YF=−2x，在非特征点得到水平平均曲率零。",
         "techniques": [
-          "Carnot–Carathéodory 度量"
+          "CC 距离随竖向坐标的单调性",
+          "相似归一化不变量",
+          "Reeb 角超越反解",
+          "水平一阶与二阶导数",
+          "Taylor 曲率近似"
         ],
-        "breakthrough": "将等距面研究从 Korányi 度量转向次黎曼长度度量。",
-        "limitations": "摘要仅说明研究对象，没有列出具体分类定理或适用构型。",
-        "analysisDepth": "abstract",
+        "breakthrough": "展示相同度量对称群不保证等距中分集相同，并指出有限圆锚点不能随意归约到同一水平标准对。",
+        "limitations": "t=0 的原点是水平法向消失的特征点，与引言无特征点说法不一致；曲率公式只在非特征点定义，零分母本身不能推出曲率发散。一般中分集的数值近似不等同于全部拓扑的严格分类。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -684,11 +694,16 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "仿射面积–容量猜想反例",
-        "workSummary": "对 n≥2、1<p<n，作者否定 Ludwig–Xiao–Zhang 提出的两个问题：凸体 Lp 积分仿射表面积与球归一化变分容量的上界关系，以及 Lp 凸化水平集的对应解析不等式。",
-        "techniques": [],
-        "breakthrough": "否定凸体与解析水平集两个版本的拟议容量不等式。",
-        "limitations": "参数范围为 1<p<n，凸体须含原点于内部；摘要未描述反例构造或替代上界。",
-        "analysisDepth": "abstract",
+        "workSummary": "对每个n≥2、1<p<n，作者构造原点对称、C∞边界且Gauss曲率处处正的凸体，使球归一化的Lp积分仿射面积≤容量不等式严格失效。高次偶球谐扰动给出几何反例，再以Minkowski泛函的光滑截断和Lp凸化水平集的精确缩放，将其转成非负紧支撑光滑函数的积分反例。",
+        "techniques": [
+          "高次偶球谐扰动",
+          "Lp 表面积测度",
+          "Minkowski 泛函光滑截断",
+          "Lp 凸化水平集缩放"
+        ],
+        "breakthrough": "否定问题的全部n、p允许参数，而反例仍可保持对称、光滑和严格凸。",
+        "limitations": "结论为1<p<n；p=1的凸体比较仍成立。被否定的是指定球归一化常数，不表示容量与仿射面积之间不存在任何其他形式比较。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -811,15 +826,16 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "六四面体链可运动性判据",
-        "workSummary": "对六个全等等腰四面体铰接成的 kaleidocycle，从三重对称推导紧凑闭合方程，并建立连续无阻运动的两种等价充要条件。判据给出可实现几何参数的尖锐界，另研究八个链面贴合的八面体对称构型。",
+        "workSummary": "对三个全等 disphenoid 及其三个镜像组成的三重对称六铰万花环，给出不中断无阻挡运动的充要条件：铰边长 a、铰间距 d 和斜角 α 满足 0<a≤2d√(1/3−cot²α)。等号对应极端位置相邻四面体面接触；证明结合旋转闭合、几何 clearance 及实数量词消去。",
         "techniques": [
-          "旋转复合",
-          "三重对称",
-          "Bricard 6R 闭合方程"
+          "三重旋转合成",
+          "Bricard 6R 闭合方程",
+          "几何 clearance 条件",
+          "精确符号量词消去"
         ],
-        "breakthrough": "用四面体参数精确判定六节链的连续无阻运动。",
-        "limitations": "充要条件针对六个全等 disphenoid 的闭链，并不覆盖任意四面体链。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把抽象六铰闭合关系转成 constituent 四面体几何量的等价可实现判据。",
+        "limitations": "仅三重对称六片类，不含 Möbius 万花环；根号正要求 π/3<α<2π/3。八环面对面高对称组装在精确刚体模型中仍阻挡，不能把实物容差下运动当作判据反例。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -874,17 +890,18 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "26 圆盘半径和双边界",
-        "workSummary": "对单位正方形内 26 个内部不交、半径可变的圆盘，给出半径和介于 2.6359830849… 与 2.7169197561… 的界。下界附精确有理可行性证书，上界以截断 power cells 的角度成本和 Euler 边数约束推导。",
+        "workSummary": "对单位正方形内26个正半径、内部互不相交圆盘，给出半径总和的范围2.635983084917607783…≤S₂₆≤2.716919756099889566…。下界用50位十进制作为精确有理数核查429个包含及不交约束；上界以clipped power cell包含对应圆盘，将外角倒数成本转成面积，配合Euler边数及四角边界transition预算求得。",
         "techniques": [
-          "power diagram",
-          "外角成本不等式",
-          "Euler 边数计数",
-          "凹单变量优化",
-          "精确数值证书"
+          "加权Voronoi power cells",
+          "外角—面积局部不等式",
+          "Euler边数预算",
+          "边界四cell循环",
+          "一变量凹优化",
+          "有理与外向舍入区间证书"
         ],
-        "breakthrough": "为非对称最佳已知构型给出非平凡全局上界。",
-        "limitations": "上下界仍有差距，未确定 S26 的精确值；目标是半径之和而非总面积。",
-        "analysisDepth": "abstract",
+        "breakthrough": "将原面积Cauchy–Schwarz上界2.876813…降至2.716919…，消去旧上下界间隙约66.4%。",
+        "limitations": "未求出S₂₆精确值，认证差距仍约0.08094；上下界构造与证明独立。对象是变半径圆盘的半径和，不是等半径圆盘最大半径问题。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -1013,16 +1030,18 @@
       "analysis": {
         "topic": "交叉方向与基础工具",
         "progressType": "奇偶类 Jensen 不等式",
-        "workSummary": "对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。",
+        "workSummary": "对同时两输出交换公理定义的jump M-凸函数，在固定逐坐标奇偶类r+2Z^n内，任意实凸组合若重心仍落在该类，就自动属于有效定义域并满足Jensen不等式。全局仿射支撑可由z+{−2,0,2}^n中至多3^n−1个局部不等式刻画，不要求有效定义域有限或强基可排序。",
         "techniques": [
+          "同时两输出交换公理",
+          "有限盒限制",
           "维数归纳",
-          "下确界卷积",
-          "二次核",
-          "局部支撑不等式"
+          "偶盒指示函数下确界卷积",
+          "唯一零二次核",
+          "局部仿射支撑"
         ],
-        "breakthrough": "把 Jensen 与支撑理论推广到无限定义域的固定坐标奇偶类。",
-        "limitations": "重心必须位于同一个逐坐标奇偶类；仅要求总奇偶一致不足。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把重心可行性纳入Jensen结论，并用有限邻域控制无限定义域的支撑理论。",
+        "limitations": "输入与重心均须同一逐坐标奇偶类，单独总奇偶一致不足；普通conv而非闭凸包用于上图精确表述。含正权重+∞输入时不等式虽成立，却不再保证重心可行。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 ChatGPT 与 Codex 在其指导下协助证明发展、核查论证与参考文献，以及稿件准备。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.13965v1 · PDF 第 12 页",
@@ -1227,14 +1246,16 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "203 球装填数值下界",
-        "workSummary": "从已有公开构型继续数值优化，得到单位立方体内 203 个同半径球的可行半径 r>0.088145634693，改善先前约 0.088145402159 的记录。作者用独立的 100 位算术程序检查球间及球壁约束并公开坐标。",
+        "workSummary": "作者从公开203球装箱配置继续数值优化，转为单位半径球的最小容器边长问题，经自适应缩容、局部优化与扰动取得L=11.344861302244816，报告单位立方体半径r>0.088145634693。另以保存十进制坐标作100位计算，复查20503个球对与1218个球墙约束无违例，改进原约0.088145402159的数值配置。",
         "techniques": [
-          "数值优化",
-          "100 位算术可行性检查"
+          "尺度变换r=1/L",
+          "自适应容器缩小",
+          "局部优化与扰动",
+          "独立100位几何约束重算"
         ],
-        "breakthrough": "小幅改善指定球数的装填构造下界。",
-        "limitations": "这是经高精度程序检查的数值构造下界，未给出全局最优性或上界。",
-        "analysisDepth": "abstract",
+        "breakthrough": "对既有高质量203球配置作进一步微调，报告新的可行半径数值下界。",
+        "limitations": "仅改善构造下界，未给全局上界或最佳性；正文明确100位检查为高精度数值验证而非外向舍入区间证明，不能写成严格区间认证。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -1289,15 +1310,17 @@
       "analysis": {
         "topic": "几何拓扑、低维流形与结",
         "progressType": "Luo 三个猜想的共同反例",
-        "workSummary": "作者以透镜空间 L(3,1) 的极小双四面体剖分构造一个零伦同环边，同时反驳 Luo 论文所述的三个猜想。证明结合四边形匹配方程、形状参数显式计算和已知体积最大化结果。",
+        "workSummary": "作者给出L(3,1)的最小两四面体面配对，三条全局边a/b/c次数为2/5/5；基本群化为Z/3且a可缩。其四边形匹配矩阵的最多两个非零坐标解仅支撑{x₁,y₁}，所以不存在三组2-quad cluster；结合无Thurston方程解和全部体积极大点光滑，作者宣称同例反驳Luo原述三猜想。",
         "techniques": [
-          "正规四边形匹配方程",
-          "形状参数计算",
-          "体积最大化"
+          "显式四面体面配对",
+          "基本群表示",
+          "四边形有符号匹配矩阵",
+          "shape参数",
+          "圆值角结构体积极值"
         ],
-        "breakthrough": "用一个具体极小剖分同时否定三项剖分猜想。",
-        "limitations": "反驳针对 Luo 论文中明确陈述的猜想版本，不能据此否定所有修正版。",
-        "analysisDepth": "abstract",
+        "breakthrough": "用一个可明确计算的最小三角剖分同时破坏三种存在性或极值推论。",
+        "limitations": "三角剖分允许仿射面自识别；2-quad解是实线性匹配解，不加非负及每四面体单一类型限制。L(3,1)非单连通，因此不反驳用于Poincaré路线的单连通受限版本。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 ChatGPT 提供反例想法并辅助英语润色。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.13979v1 · PDF 第 5 页",
@@ -1691,11 +1714,17 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "立方体棱锥体积维数比较",
-        "workSummary": "对单位 n 维立方体中底面为超平面截面的棱锥，证明一般最大体积 M_n 满足 nM_n<(n+1)M^0_(n+1)，后者要求底面截面经过立方体中心。",
-        "techniques": [],
-        "breakthrough": "给出一般截面棱锥与高一维中心截面棱锥的严格体积比较。",
-        "limitations": "比较成立于 n≥2；摘要没有给出各维最大体积的显式值或极值构型。",
-        "analysisDepth": "abstract",
+        "workSummary": "对单位 n 立方体中以超平面截面为底的最大棱锥体积 Mn，证明 nMn<(n+1)M⁰n+1，其中 M⁰ 为过中心截面的最大值。得到 n≥3 时 cn<Mn<cn−1、Mn 随 n 严格下降并有 n⁻¹/² 渐近阶；三维精确值为 (1+√2)/6，中央截面等号仅主对角正交底面及对角端点顶点。",
+        "techniques": [
+          "Brunn–Minkowski 截面凹性",
+          "提升一维的中央截面",
+          "严格等号排除",
+          "对角截面体积导数",
+          "精确整数校验"
+        ],
+        "breakthrough": "用跨维中央截面比较给出非中央棱锥的严格界与单调性。",
+        "limitations": "底面须为整个超平面截面而非任意底多面体；n≥3 中央截面最大值 cn 严格小于全局 Mn，只有三维给出全局精确值。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -1820,16 +1849,18 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "三维走廊沙发认证构造下界",
-        "workSummary": "在中段长度为 4 的指定三维走廊中，构造连通体的刚体运动，并用问题既定评估流程认证体积下界 1.8558404。混合精度 CMA-ES 与细网格梯度优化改进路径，同时加入防止插值和网格误差夸大目标值的约束。",
+        "workSummary": "作者在固定三维走廊K4及统一评估配置下，用扭转骨架、CMA-ES与细网格梯度优化，将流程报告值提升至1.8558404。该数字要成为连通实体积的严密下界，仍依赖尚未证明的points-to-cubes转换；正文只无条件证明采样点的连续轨迹留在走廊内，并未完成认证网格处的实体连通性检查。",
         "techniques": [
-          "错位扭转运动",
-          "CMA-ES",
-          "混合精度重评分",
-          "细网格梯度优化"
+          "第二转角集中扭转",
+          "混合网格 CMA-ES",
+          "细网格梯度优化",
+          "阶梯式连续刚体运动",
+          "轴凸走廊与8角包络",
+          "控制点间距与插值刷新"
         ],
-        "breakthrough": "在统一路径认证配置下改善该走廊问题的构造下界。",
-        "limitations": "数值认证采用规定的网格与平移、旋转容差；下界只针对 K4，且与上界 3.4083 仍有差距。",
-        "analysisDepth": "abstract",
+        "breakthrough": "在同一评估器和相同容差下改进明确路径，并识别优化器利用离散目标的三个失效模式。",
+        "limitations": "Remark2.5明确体素计数缺口；认证网格h=0.001/0.002只导出计数，连通性证据来自较粗网格。最终计数未用验证算术重跑，故1.8558404是条件性体积下界报告，不能作为已严密确定的下界。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 Claude 协助润色论文表述并编写部分代码。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.14051v1 · PDF 第 16 页",
@@ -1888,15 +1919,16 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "l1 Jung 常数上界",
-        "workSummary": "证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。",
+        "workSummary": "对所有整数k≥1，实ℓ₁^(4k+1)中任意非空有界集可由环境中心球以半径≤(4k−1)/(4k)倍直径包围，五维恰为3/4。若4k阶Hadamard矩阵存在，维数4k−1、4k、4k+1的Jung常数同等于该值；证明将极小包围球接触点的平衡符号约化为坐标cut半度量的二次型界。",
         "techniques": [
-          "环境包围球",
-          "Hadamard 矩阵构造",
-          "Lean 形式化"
+          "极小包围球接触点约化",
+          "平衡符号与坐标gap",
+          "cut半度量二次型界",
+          "Hadamard下界"
         ],
-        "breakthrough": "给出全部 4k+1 维的上界，并在 Hadamard 条件下识别三维数的精确常数。",
-        "limitations": "一般 k 的精确值还依赖相应 Hadamard 矩阵存在；上界本身不需该条件。",
-        "analysisDepth": "abstract",
+        "breakthrough": "无条件推进维数4k+1的上界，并在Hadamard阶数下补齐相邻三个维数的精确值。",
+        "limitations": "中心允许位于整个环境空间，非约束于集合或凸包；精确值的Hadamard条件不能无条件去掉。给出h+1维结论而非Ivanov全部h、h+1、h+2维猜想；Lean形式化不等于本文全部其他结论均已形式化。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露大语言模型协助研究与稿件准备，未细分具体用途。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.14055v1 · PDF 第 10 页",
@@ -2086,15 +2118,17 @@
       "analysis": {
         "topic": "交叉方向与基础工具",
         "progressType": "tt*-Toda 解空间编织作用",
-        "workSummary": "通过 distinguished bases 上编织群作用的代数描述，将 Dubrovin 的解空间作用程序系统化，并在具体量子微分方程例子中实现。进一步推广到任意 tt*-Toda 解，其中包含复射影空间的量子上同调例子。",
+        "workSummary": "在径向、反对称tt*-Toda全局解及其关联线性ODE上，把Stokes数据的辫群作用实现为解空间V上双线性型L的特殊基变换。三角基是distinguished bases的真子集，σ₁⋯σₙ作用等于循环对称诱导的ϕ；当全纯数据k₀,…,kₙ为非负整数，定理4.19给出该循环作用的有限阶，且计算单值根矩阵M_F的阶。",
         "techniques": [
-          "distinguished bases",
-          "编织群作用",
-          "tt*-Toda 方程"
+          "关联meromorphic ODE解空间",
+          "Stokes三角基",
+          "双线性格与反射",
+          "循环对称单值根",
+          "基变换辫群作用"
         ],
-        "breakthrough": "给出较系统的代数实现并扩展所覆盖的 tt*-Toda 解。",
-        "limitations": "作用针对指定微分方程解空间，摘要未给出任意量子上同调系统的同类结论。",
-        "analysisDepth": "abstract",
+        "breakthrough": "以函数论具体实现Dubrovin程序，并由量子CP²特例延展到所取tt*-Toda解家族。",
+        "limitations": "整数数据保证的是指定循环辫元有限阶，不等于完整辫群或所有子群轨道有限；一般非整数数据不享此定理。既有全局解存在分类为引用结果，本工作不独立重新证明全部tt*物理分类。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -2606,15 +2640,17 @@
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "复多项式图像等距刚性",
-        "workSummary": "对次数至少 2 的单变量复多项式图像，证明内禀长度等距与外在欧氏等距等价，并由指定模一线性变换、平移及系数共轭刻画。每个内禀等距均可延拓为空间 C² 的等距；实多项式图像则呈现内外距离的明显差异。",
+        "workSummary": "单变量复多项式图在C²中、次数≥2时，内在长度等距与外在欧氏等距等价，恰由自变量单位旋转/平移、因变量单位旋转/平移及系数共轭联系；每个内等距都延拓为环境刚性运动。方法把图度量写成(1+|p′|²)|dz|²，再用Myers–Steenrod、全平面仿射/反仿射性质及z,z̄系数比较。",
         "techniques": [
-          "内禀长度度量",
-          "欧氏等距分类",
-          "多项式共轭"
+          "Myers–Steenrod正则性",
+          "全平面共形等距",
+          "Wirtinger导数",
+          "多项式混合系数比较",
+          "欧氏子集等距延拓"
         ],
-        "breakthrough": "识别复多项式图像的强等距延拓刚性，并对比实情形。",
-        "limitations": "复情形刚性分类要求次数至少 2；实图像的内禀等距并不蕴含外在等距。",
-        "analysisDepth": "abstract",
+        "breakthrough": "复多项式图的内外等距分类完全一致，突出复曲面与实曲线的刚性差异。",
+        "limitations": "实多项式图按弧长都内等距于直线，外等距仍只允许轴反射、平移和半转；次数≤1为平面或直线例外。结论不覆盖多变量多项式图或一般全纯函数图。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 Claude 用于语言润色、改善可读性及组织想法和证明的表述。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.14291v1 · PDF 第 9 页",
@@ -2741,15 +2777,17 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "非梯度漂移抛物性框架",
-        "workSummary": "以不变测度为框架，将加权体积与 Laplace 算子的几何分析联系扩展到一般非梯度漂移。由此系统研究抛物性与体积增长关系，并推出非梯度几何结构的体积有限性结果。",
+        "workSummary": "对一般漂移Δ_X=Δ−〈X,∇〉，以正密度不变测度组织势论，证明X抛物性等价于无正Green函数、所有紧集的非变分X-capacity为零及全局X-Green公式。若不变测度dμ=e⁻ᶠdvol还满足L²(μ)中X−∇f有限，则完备环境下加权球面面积倒数积分发散推出Δ_X及其对偶均抛物，因而不变测度唯一至常数；proper Lyapunov函数满足Δ_Xγ→−∞则还推出有限总质量。",
         "techniques": [
-          "不变测度",
-          "漂移 Laplace 算子",
-          "体积增长与抛物性"
+          "正密度不变测度",
+          "非变分Laplacian capacity",
+          "全局Green公式",
+          "L²对称缺陷",
+          "Khasminskii Lyapunov函数"
         ],
-        "breakthrough": "为失去自然加权测度对应的非梯度漂移建立替代框架。",
-        "limitations": "摘要没有列明具体增长阈值或不变测度存在条件，不能将体积有限性泛化到所有漂移结构。",
-        "analysisDepth": "abstract",
+        "breakthrough": "将非梯度漂移的体积增长与抛物性联系到有限对称缺陷的典范测度，而非任取不变测度。",
+        "limitations": "一般不变测度即使增长适中也不能无条件推出抛物性；体积判据需完备及L²缺陷有限。Lp次调和Liouville定理另需L∞缺陷或所给增长替代条件；不同条件不可混用。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 AI 仅用于最终检查错字与记号不一致。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.14375v1 · PDF 第 36 页",
@@ -3156,14 +3194,17 @@
       "analysis": {
         "topic": "交叉方向与基础工具",
         "progressType": "osp(1|2) 微分算子上同调",
-        "workSummary": "计算实 1|1 维超空间上正交辛李超代数 osp(1|2) 的上同调，系数取作用于加权密度的 n 元微分算子超空间。",
+        "workSummary": "在 R¹|¹ 标准接触结构上计算 osp(1|2) 作用于 n 元加权密度微分算子模的上同调。证明一般、微分及多项式算子系数三种 cohomology 等价，每个 cocycle 模 coboundary 可取对 X₁ 消失的约化形式，再给出低阶显式维数与基，j≥3 全部消失。",
         "techniques": [
-          "李超代数上同调",
-          "加权密度微分算子"
+          "Lie 超代数 coboundary 复形",
+          "约化多项式 cocycle",
+          "Cartan 权空间分解",
+          "奇生成元的 kernel/像商",
+          "显式多重微分算子基"
         ],
-        "breakthrough": "给出指定超代数在多元微分算子模上的上同调计算。",
-        "limitations": "限定于 osp(1|2)、实 1|1 超空间和文中加权密度模；摘要未列出各权重分支的具体维数。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把经典 sl₂ 多微分算子上同调的降约和共振计算扩展到接触超几何。",
+        "limitations": "限定 osp(1|2)、R¹|¹ 及指定 n 元算子系数模；低阶非零仅在特定权共振条件，不能从此推出一般接触超代数或任意系数模高阶上同调消失。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -3343,14 +3384,17 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "Riemann 曲面指数 Green 能量",
-        "workSummary": "研究 Riemann 曲面有限点构型的指数 Green 能量，证明最优或近最优构型必须在曲面上充分分散。特别分析圆球面并获得构型最小 Green 能量的取值。",
+        "workSummary": "在紧黎曼曲面上，只要固定一个 β>0 的指数 Green 能量对 N 点配置一致有界，即得平均零势 L¹ 控制、二阶积分误差 O(N⁻¹) 和尖锐 W₁∼N⁻¹/²；更一般凹连续模积分误差有对应量化阶。另研究每个 β、N 的无碰撞极小配置、力平衡及最优常数的 Gibbs entropy 导数。",
         "techniques": [
-          "Green 能量",
-          "有限点构型极小化"
+          "Green 势差测度分部积分",
+          "热核平滑",
+          "原子运输下界",
+          "凹连续模量化",
+          "能量 Euler–Lagrange 平衡"
         ],
-        "breakthrough": "将能量近极小性与点在曲面上的均匀分布性质联系。",
-        "limitations": "摘要未给出一般曲面上的精确最小值、点数范围或分散性的定量常数。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把单一指数矩条件与最优原子运输尺度联系，分离不依赖谱或全纯来源的普适后果。",
+        "limitations": "能量条件只给 O(N⁻¹/⁴) 覆盖半径且不强制微观分离；p>1 的一般 Wp 界不称尖锐。额外 O(N⁻¹/²) 覆盖及全 p 运输来自伴随构造的更强逐点控制。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "官方摘要披露稿件第一版写作得到 ChatGPT 帮助。",
         "aiEvidenceSource": "https://arxiv.org/abs/2610.15004v1 · 官方摘要",
@@ -3707,14 +3751,17 @@
       "analysis": {
         "topic": "曲率与比较几何",
         "progressType": "特定扭曲积截迹确定",
-        "workSummary": "确定二维完备扭曲积 R×S¹、度量 dt²+m(t)²dθ² 的截迹结构；扭曲函数为正偶函数，且曲率在指定外部区域非正、在上半子午线指定区间递减。",
+        "workSummary": "对正偶扭曲函数m定义的完备旋转圆柱dt²+m(t)²dθ²，在中段Gauss曲率沿半子午线下降且外部非正时，作者用Clairaut常数与半周期函数刻画割迹。圆柱上割迹由对面子午线和可能出现的反射纬线弧组成；通用覆盖中相应纬线射线在阈值外可完全消失。",
         "techniques": [
-          "扭曲积几何",
-          "截迹结构分析"
+          "Clairaut 常数",
+          "测地半周期积分",
+          "Gauss 曲率 G=−m″/m",
+          "半周期单调性",
+          "通用覆盖割迹"
         ],
-        "breakthrough": "在允许内外曲率行为不同的一类旋转对称圆柱上描述截迹。",
-        "limitations": "适用范围限于正偶扭曲函数与给定分段曲率单调、符号条件。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把全半子午线曲率单调条件放宽为中段单调与外部非正，同时保持显式割迹结构。",
+        "limitations": "模型实际为二维R×S¹，m光滑、严格正且偶；需指定有限t1及曲率条件。对面子午线来自圆柱商拓扑，通用覆盖的空割迹结论不能直接搬回圆柱。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -3841,14 +3888,16 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "负度数 Chern–Yamabe 流收敛",
-        "workSummary": "证明紧 Hermitian 流形在 Gauduchon 度数为负时，作者此前引入的 Chern–Yamabe 流收敛到指定 Chern 标量曲率问题的解。",
+        "workSummary": "在复维 n≥2、Gauduchon degree 负的紧 Hermitian 共形类中，证明指定 g≤0 且不恒零的 Chern–Yamabe 流全时存在并整流在 C¹,α 收敛至唯一光滑解。去掉先前 g 有零点时须共形类含 balanced 度量的条件，也把子序列收敛升级为整流收敛；说明任意光滑初值同样适用。",
         "techniques": [
-          "Chern–Yamabe 流",
-          "先验收敛分析"
+          "Gauduchon 积分消散",
+          "椭圆 W²,p 界",
+          "时间导数 L² 能量",
+          "Poincaré 方差估计"
         ],
-        "breakthrough": "用几何流实现负 Gauduchon 度数下的指定 Chern 标量曲率。",
-        "limitations": "指定曲率函数必须非正且不恒为零；结论不覆盖正度数或变号曲率。",
-        "analysisDepth": "abstract",
+        "breakthrough": "在保留负 degree 的条件下，允许非正目标曲率零点而无需 balanced 结构。",
+        "limitations": "仅负 Gauduchon degree 和非正非零 g；不能推出零 degree、正 degree 或变号目标曲率的流收敛。收敛陈述为 C¹,α，不额外声称新的全阶速率。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -4338,13 +4387,16 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "不交极小图猜想的必要性质",
-        "workSummary": "研究 R³ 中零边值的互不相交非平凡极小图；已知最多三个、猜想最多两个，本文讨论若确有三个时它们必须满足的性质。",
+        "workSummary": "设三个互不相交的单连通平面无界域上存在正值、边界为零的极小图，正文定理1证明每个图的圆周最大高度M(r,u)在大r时被正常数倍r上下夹住。以半平面等温坐标写成单叶调和映射h+ḡ，并归一化高度为2Re ζ、g′=−1/h′；定理2给指定子扇形像域中的Laplacian按1/|z|衰减及接近极限扇形边界的次线性高度。",
         "techniques": [
-          "极小图几何分析"
+          "Weierstrass等温坐标",
+          "半平面单叶调和映射",
+          "解析伸缩与Poisson表示",
+          "极小图共轭函数"
         ],
-        "breakthrough": "为潜在三图配置增加结构约束。",
-        "limitations": "并未宣称证明最多两个的猜想；对象为 R³ 中零边值极小图。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把潜在三个不交极小图限制为线性最大高度增长，并增加扇形内外的渐近约束。",
+        "limitations": "要求三个底域均单连通、u>0且边界零；定理只给假定三图存在时的必要性质，未证明三图不存在，也未解决Meeks最多两个猜想。扇形像域的Laplacian衰减不是整个无界域的统一结论。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -4451,15 +4503,17 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "退化 Kähler 类的辅助 Hessian 方程",
-        "workSummary": "提出用 k-Hessian 方程辅助研究 Kähler 类向数值维数为 k 的 nef 类退化，并给出统一平均值不等式和 Hessian 方程统一先验估计作为验证。",
+        "workSummary": "在紧Kähler n维流形上取半正定χ，其nef类的数值维数k=n−1，令ω_t=χ+tω_X。对右端密度一致Lq控制、q>2的归一化退化k-Hessian方程，正文定理3给出独立于t的L∞估计；定理6对相应退化线性化算子的零均值v、指定超水平集上的二次可微与L v≥−a条件，给出sup v≤C(1+L¹范数)的平均值界。",
         "techniques": [
-          "辅助 k-Hessian 方程",
-          "统一平均值不等式",
-          "先验估计"
+          "辅助复k-Hessian方程",
+          "k-subharmonic一致Lp界",
+          "混合Hessian不等式",
+          "最大值比较",
+          "De Giorgi迭代"
         ],
-        "breakthrough": "为退化 Kähler 类分析提供与数值维数匹配的辅助方程。",
-        "limitations": "摘要所述结果为方法的验证性估计，尚未宣称解决全部退化 Kähler 类问题。",
-        "analysisDepth": "abstract",
+        "breakthrough": "以数值维数对应的混合体积替代必须big的顶次体积，在k=n−1的非big退化中获得统一估计。",
+        "limitations": "主定理实际假设k=n−1，不是所有1<k<n都已证明；推广依赖尚猜想的更强k-sh Lp范围。正文为简化假设χ半正定，弱化需另改envelope论证；平均值界用于线性化Hessian算子，非普通退化度量Laplacian。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 ChatGPT Plus 模型用于查找参考文献、背景结果的精确表述及他人贡献，并辅助管理写作过程；明确声明主结果定理 3、6 及其证明未使用 AI。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.15866v1 · PDF 第 4 页",
@@ -5200,16 +5254,17 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "循环结构的四维曲率刻画",
-        "workSummary": "对带循环张量结构 Q 的四维黎曼流形，证明曲率张量在末两变量保持 Q 作用时流形为 almost-Einstein。进一步对 P=Q² 的乘积结构给出曲率表达、截曲率与 Ricci 曲率，并构造嵌入 R¹⁰ 的局部乘积超曲面例子。",
+        "workSummary": "对四维循环结构Q及相容度量，若曲率最后两变量满足R(x,y,Qz,Qu)=R(x,y,z,u)，作者由分量恒等式得到Ric=(τ/4)(g−g̃)，其中g̃(x,y)=g(Q²x,y)。相应曲率为(τ/8)(π1−π2)，并用Q生成基写出特定二平面的截曲率；较弱P=Q²不变性也给出almost-Einstein形式。",
         "techniques": [
-          "循环张量结构",
-          "乘积结构",
-          "结构生成特殊基",
-          "超曲面嵌入"
+          "循环矩阵分量",
+          "Q² 几乎乘积结构",
+          "Bianchi 恒等式",
+          "Ricci 张量收缩",
+          "Q 生成基角度关系"
         ],
-        "breakthrough": "建立特定四维附加结构与 almost-Einstein 曲率性质之间的关系。",
-        "limitations": "结论依赖四维循环结构与指定曲率不变性；almost-Einstein 不应改写为一般 Einstein。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把循环结构曲率不变性化为可显式计算的两张量Ricci与曲率表达。",
+        "limitations": "almost-Einstein在本文指Ric为g与g̃的函数系数组合，不是通常共形几何的同名方程。Q不变性强于P不变性；τ=0时公式给出Ric=0，不能无条件沿用正文“不得Einstein”的措辞。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -5314,14 +5369,17 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "欧氏双保守超曲面描述与构造",
-        "workSummary": "研究欧氏空间中的双保守超曲面，即双调和浸入方程切向部分为零的等距浸入，并先描述这类对象、再给出构造。",
+        "workSummary": "作者宣称非恒平均曲率的欧氏 biconservative 超曲面，在 h 的正则点邻域由余维二 isoparametric 平均曲率等值叶组成，叶的环境对称延拓到超曲面。反向由非零平均曲率向量的 isoparametric 叶，通过避开 focal 线的局部法向常微分方程构造 proper BCH；改变方程系数亦构造极小超曲面。",
         "techniques": [
-          "双调和方程切向分量",
-          "等距浸入构造"
+          "h 正则等值叶",
+          "Riccati 与 Codazzi 主曲率演化",
+          "平行法向标架",
+          "focal 线外的有理 ODE",
+          "初值唯一性与对称延拓"
         ],
-        "breakthrough": "提供双保守条件下欧氏超曲面的几何描述与实例。",
-        "limitations": "双保守只要求切向方程消失，弱于完整双调和条件；摘要未宣称完成全部分类。",
-        "analysisDepth": "abstract",
+        "breakthrough": "将局部 biconservative 几何转为给定等参余维二叶的法向演化问题。",
+        "limitations": "本稿 proper 指非 CMC，结论只在 h 正则点及局部子域；biconservative 仅双调和方程切向部分为零，不能称构造了非极小双调和超曲面或解决 Chen 猜想。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -5612,7 +5670,7 @@
       "analysis": {
         "topic": "曲率与比较几何",
         "progressType": "Kähler Ricci pinching 刚性与紧性",
-        "workSummary": "复维 n≥2 的完备非紧 Kähler 流形有欧氏体积增长时，非负双截曲率与紧集外 Ricci 特征值 pinching 推出平坦；非负 Ricci 加二次曲率衰减则仅推出 Ricci 平坦。pinching 可弱至 Ricmin≥c[log(2+r)]⁻¹/(n−1)Ricmax；全局正双截曲率配合紧集外非负截曲率及一致 pinching 另推出紧性，无体积增长要求。",
+        "workSummary": "复维 n≥2 的完备非紧 Kähler 流形有欧氏体积增长时，非负双截曲率与紧集外 Ricci 特征值 pinching 推出平坦；非负 Ricci 加二次曲率衰减则仅推出 Ricci 平坦。pinching 可弱至 Ricmin≥c/[log(2+r)]^(1/(n−1))Ricmax；全局正双截曲率配合紧集外非负截曲率及一致 pinching 另推出紧性，无体积增长要求。",
         "techniques": [
           "顶次 Ricci 积分有限性",
           "特征值乘积与标量曲率积分比较",
@@ -6128,14 +6186,16 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "常曲率 Hamilton 平稳 Lagrangian 曲面",
-        "workSummary": "在复二维空间形中，证明连通 Hamilton 平稳 Lagrangian 曲面若 Gaussian 曲率 K 为常数，则 K=ε，或 K=0≠ε 且平均曲率向量长度恒定。特别地，平均曲率长度不恒定时必须 K=ε。",
+        "workSummary": "对复二维空间形式 holomorphic curvature 4ε 中连通 Hamiltonian 驻定 Lagrangian 曲面，若 Gauss 曲率 K 恒定，则 K=ε，或 K=0≠ε 且平均曲率模恒定。因此非恒定 |H| 只能出现在 K=ε 的已知类中。",
         "techniques": [
-          "Hamilton 平稳 Lagrangian 条件",
-          "常曲率约束"
+          "全纯平均曲率形式",
+          "cubic Hopf 微分",
+          "Gauss–Codazzi 可积系统",
+          "全纯模平方恒等式刚性"
         ],
-        "breakthrough": "将允许的内蕴曲率与平均曲率行为压缩到两种情形。",
-        "limitations": "要求复二维空间形、连通性及常 Gaussian 曲率，不是一般 Lagrangian 曲面分类。",
-        "analysisDepth": "abstract",
+        "breakthrough": "排除常 K≠ε 而非恒定 |H| 的可能性，补齐曲率分支约束。",
+        "limitations": "要求 Hamiltonian 驻定、Lagrangian、连通及常 K；没有要求曲面完备或闭，也不把该曲率约束误写成新枚举全部浸入模型。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露使用 ChatGPT 探索证明策略，并自行核查全部数学论证。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.16767v1 · PDF 第 5 页",
@@ -6859,13 +6919,17 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "调和态射的指标与零度计算",
-        "workSummary": "计算从 S³ 到 S² 的任意调和态射的指标及零度。",
+        "workSummary": "对圆S³的Hopf映射后接度数d≥1的CP¹全纯映射，作者精确计算调和映射的实Morse指数4d、零度8d。沿Hopf圆纤维作权空间分解，把Jacobi负空间及核转化为CP¹上O(2d−m)的全纯截面，再由Riemann–Roch计数。",
         "techniques": [
-          "指标与零度计算"
+          "Jacobi 算子与Dirichlet能量二阶变分",
+          "Hopf 圆作用权分解",
+          "一阶算子D与Dolbeault对应",
+          "CP¹ 线丛 O(2d−m)",
+          "Riemann–Roch"
         ],
-        "breakthrough": "为这一球面间调和态射类给出稳定性相关的完整指标数据。",
-        "limitations": "对象限定为 S³ 到 S² 的调和态射。",
-        "analysisDepth": "abstract",
+        "breakthrough": "从Hopf映射已知指数4/零度8推广到任意非恒定全纯后复合，并精确体现次数。",
+        "limitations": "底为标准圆S³、靶CP¹等同半径1/2球面；计数是实维数，不能把复截面维数直接作指数。结论为Hopf后复合类，不是所有S³→S²调和映射。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露使用公开版 GPT-6 Astra 准备本稿，但未细分用途；明确声明全部数学陈述和证明由作者开发并写作，不能推断 AI 提供核心想法或证明。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.17087v1 · PDF 第 9 页",
@@ -7931,15 +7995,18 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "等变解析挠率的族比较公式",
-        "workSummary": "构造 Kähler 纤维化的无穷小等变解析挠率形式，并以等变 Bott–Chern currents 和 I-genus 比较 Ma 的等变解析挠率。所得模 ∂ 与 ∂̄ 恰当形式的公式，将 Bismut–Goette 比较结果扩展到族。",
+        "workSummary": "在紧纤维Kähler纤维化、局部自由直接像及具有moment map的紧Lie群纤维作用下，构造Lie代数零点附近解析的无穷小等变解析扭率形式。以等变Bott–Chern流及I-genus比较它与Ma的群元素扭率，等式成立于模∂和∂̄恰当形式的商空间；紧Kähler底时进一步描述极点与对数奇异项。",
         "techniques": [
-          "等变解析挠率",
-          "Bott–Chern currents",
-          "I-genus"
+          "Bismut 超联络",
+          "正则化热积分",
+          "等变 moment map",
+          "Bott–Chern 流",
+          "I-genus",
+          "双参数算子与轮廓积分"
         ],
-        "breakthrough": "提供族层面的两种等变解析挠率之间的比较。",
-        "limitations": "公式在 Kähler 纤维化中成立，比较按 ∂-及 ∂̄-恰当形式取模。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把Bismut–Goette扭率比较扩展至纤维族和高次数微分形式。",
+        "limitations": "须紧纤维、局部自由R•π*ξ及moment map；K位于g的中心化子Lie代数且足够小。比较是模∂/∂̄恰当形式的等式，不是选定代表的逐项恒等；奇异展开还要求底紧Kähler。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -8047,16 +8114,17 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "旗流形旋量与正则锦标赛计数",
-        "workSummary": "指出奇数 n 时 SU(n)/Tⁿ⁻¹ 不变旋量空间的维数等于 n 阶带标号正则锦标赛的数量。按 Weyl 群双覆盖分解该空间，并用 Dirac 及其等变扭曲版本的特征空间证明 n≡1 mod 4 时不可约表示重数为偶数。",
+        "workSummary": "奇数n时SU(n)/T^(n−1)不变旋量的维数等于有标号正则锦标赛数：反转平衡子图将其计数与旋量权重对应。Weyl群双覆盖作用下，奇偶扭曲Dirac算子得到两个相互配对的特征空间，使自伴随符号扭转表示的重数为偶数，n≡1 mod4时所有不可约表示重数均偶。",
         "techniques": [
-          "不变旋量",
+          "正则锦标赛与平衡子图",
+          "旗流形旋量权重",
           "Weyl 群双覆盖",
-          "Dirac 算子",
-          "正则锦标赛计数"
+          "Clifford 代数",
+          "奇偶扭曲 Dirac 算子"
         ],
-        "breakthrough": "建立齐性旋量几何与组合计数的对应并获得重数奇偶约束。",
-        "limitations": "维数对应要求 n 为奇数；偶重数结论限 n≡1 mod 4。",
-        "analysisDepth": "abstract",
+        "breakthrough": "把不变旋量计数和表示重数约束转为可计算的有向图组合数据。",
+        "limitations": "讨论SU(n)全旗流形且n奇数；不是一般群旗流形的计数公式。原Dirac算子对双覆盖并不等变，需奇偶扭曲后才得到等变特征空间分解。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 Claude 和 ChatGPT 辅助探索性计算、可能的证明方向及编辑润色；作者自行写作数学证明与计算并负责全文。可能的证明方向属于思路探索，不等同于 AI 完成证明。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.18084v1 · PDF 第 25 页",
@@ -8861,16 +8929,17 @@
       "analysis": {
         "topic": "曲率与比较几何",
         "progressType": "有界 Betti 数定理的现代证明输入",
-        "workSummary": "重述闭 n 维流形在 Ric≥−(n−1)、直径≤D 下总有界 Betti 数仅依赖 n、D 的既有结果，并以 Kapovitch–Wilking 广义 Margulis 引理提供直接现代输入。讨论有界上同调比较映射的像及其与同调 ℓ¹ 半范数的关系。",
+        "workSummary": "重访闭黎曼n流形在Ric≥−(n−1)、直径≤D下，总bounded Betti数由C(n,D)控制的既有定理。这里bounded Betti是有界上同调到普通上同调比较映射像的维数；本文明确借Kapovitch–Wilking广义Margulis引理，取得固定小球基本群在整体中的像为virtually nilpotent，从而补齐原覆盖证明所需维数一致amenability半径。",
         "techniques": [
-          "广义 Margulis 引理",
-          "局部基本群的虚幂零性",
-          "有界上同调",
-          "ℓ¹ 半范数"
+          "广义Margulis引理",
+          "局部基本群像与商",
+          "度量重缩放",
+          "amenable覆盖",
+          "比较同态"
         ],
-        "breakthrough": "用局部群的更强结构简化作者既有有界 Betti 数结论的论证。",
-        "limitations": "属于既有定理的解释与证明更新；有界 Betti 数指比较映射像的维数，不是普通 Betti 数。",
-        "analysisDepth": "abstract",
+        "breakthrough": "用已完整证明的Ricci下界局部群理论澄清此前有界Betti估计的确切输入和历史依赖。",
+        "limitations": "不是新提出总Betti界，也不控制全部普通高阶Betti数或整个有界上同调维数。比较像同时依赖群与普通拓扑，不能说只由基本群决定；这里只用virtually nilpotent推出amenable，不需全部一致指标强度。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -8994,7 +9063,7 @@
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "各向异性 Weyl 律与 Grassmann 丛等分布",
-        "workSummary": "对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的积分。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。",
+        "workSummary": "对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的 L^(d/(d−1)) 范数。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。",
         "techniques": [
           "相对 Z₂ 周期与强质量 sweepout",
           "Lusternik–Schnirelmann 定位不等式",
@@ -9456,16 +9525,17 @@
       "analysis": {
         "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
         "progressType": "指定三块 dHYM 链的存在稳定性对应",
-        "workSummary": "对 P¹×P¹ 上固定产品 Kähler 类与相位、权重 (4,2,0) 的不变秩四 dHYM 链，证明光滑严格校准约化解存在当且仅当 A 可逆且 zᵀAᵀBz 非恒零。该条件也刻画指定等变 coherent 范畴中的稳定、半稳定及多稳定，覆盖十一种非空系数层和秩一边界。",
+        "workSummary": "在P¹×P¹固定积Kähler形式及charge −4+24i所选相位上，研究O(1)→O(2)²→O(3)、竖直权4/2/0的rank-four不变dHYM系统。对任意线性箭头ψ=Bz、φ=(Az)ᵀ，正文定理4.1将光滑严格校准解和所定义SU(2)等变coherent范畴中的稳定、半稳定、多稳定统一刻画为rank A=2且zᵀAᵀBz不恒零，包括rank B=1及除子重合边界。",
         "techniques": [
-          "有序非交换中间方程",
-          "移动谱测试",
-          "除子质量控制",
-          "全局值、梯度与符号估计"
+          "等变coherent子链全清单",
+          "固定charge相位不等式",
+          "非交换中间反交换子",
+          "Leray–Schauder延拓",
+          "移动谱测试与除子质量预算"
         ],
-        "breakthrough": "在完整指定链模型中统一解析存在性与等变范畴稳定性。",
-        "limitations": "仅固定链、权重、Kähler 类与相位；不主张全 coherent／derived 范畴对应、唯一性或跨链统一估计。",
-        "analysisDepth": "abstract",
+        "breakthrough": "在固定四秩三块系统中保留非交换方程与除子修正而取得存在—稳定对应，11层中恰两层存活。",
+        "limitations": "不是全coherent或derived稳定性的普遍对应，不宣称唯一性、变链统一估计或大体积极限。A/B的系数秩与逐点箭头秩不同；rank B=1的零点须保留除子质量，不能等同处处子丛。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 GPT-5.6 Sol 与 GPT-6 Astra 在作者指导下大幅辅助初期探索、解析推导及稿件起草；作者核查论证并对数学声明负责。初期探索未具体说明核心研究想法来源，不另计核心想法。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2610.18788v1 · PDF 第 61 页",

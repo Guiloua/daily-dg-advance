@@ -36,15 +36,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "退化 Kähler 类的辅助 Hessian 方程",
-      "workSummary": "提出用 k-Hessian 方程辅助研究 Kähler 类向数值维数为 k 的 nef 类退化，并给出统一平均值不等式和 Hessian 方程统一先验估计作为验证。",
+      "workSummary": "在紧Kähler n维流形上取半正定χ，其nef类的数值维数k=n−1，令ω_t=χ+tω_X。对右端密度一致Lq控制、q>2的归一化退化k-Hessian方程，正文定理3给出独立于t的L∞估计；定理6对相应退化线性化算子的零均值v、指定超水平集上的二次可微与L v≥−a条件，给出sup v≤C(1+L¹范数)的平均值界。",
       "techniques": [
-        "辅助 k-Hessian 方程",
-        "统一平均值不等式",
-        "先验估计"
+        "辅助复k-Hessian方程",
+        "k-subharmonic一致Lp界",
+        "混合Hessian不等式",
+        "最大值比较",
+        "De Giorgi迭代"
       ],
-      "breakthrough": "为退化 Kähler 类分析提供与数值维数匹配的辅助方程。",
-      "limitations": "摘要所述结果为方法的验证性估计，尚未宣称解决全部退化 Kähler 类问题。",
-      "analysisDepth": "abstract",
+      "breakthrough": "以数值维数对应的混合体积替代必须big的顶次体积，在k=n−1的非big退化中获得统一估计。",
+      "limitations": "主定理实际假设k=n−1，不是所有1<k<n都已证明；推广依赖尚猜想的更强k-sh Lp范围。正文为简化假设χ半正定，弱化需另改envelope论证；平均值界用于线性化Hessian算子，非普通退化度量Laplacian。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT Plus 模型用于查找参考文献、背景结果的精确表述及他人贡献，并辅助管理写作过程；明确声明主结果定理 3、6 及其证明未使用 AI。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.15866v1 · PDF 第 4 页",
@@ -108,15 +110,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "退化 Kähler 类的辅助 Hessian 方程",
-          "workSummary": "提出用 k-Hessian 方程辅助研究 Kähler 类向数值维数为 k 的 nef 类退化，并给出统一平均值不等式和 Hessian 方程统一先验估计作为验证。",
+          "workSummary": "在紧Kähler n维流形上取半正定χ，其nef类的数值维数k=n−1，令ω_t=χ+tω_X。对右端密度一致Lq控制、q>2的归一化退化k-Hessian方程，正文定理3给出独立于t的L∞估计；定理6对相应退化线性化算子的零均值v、指定超水平集上的二次可微与L v≥−a条件，给出sup v≤C(1+L¹范数)的平均值界。",
           "techniques": [
-            "辅助 k-Hessian 方程",
-            "统一平均值不等式",
-            "先验估计"
+            "辅助复k-Hessian方程",
+            "k-subharmonic一致Lp界",
+            "混合Hessian不等式",
+            "最大值比较",
+            "De Giorgi迭代"
           ],
-          "breakthrough": "为退化 Kähler 类分析提供与数值维数匹配的辅助方程。",
-          "limitations": "摘要所述结果为方法的验证性估计，尚未宣称解决全部退化 Kähler 类问题。",
-          "analysisDepth": "abstract",
+          "breakthrough": "以数值维数对应的混合体积替代必须big的顶次体积，在k=n−1的非big退化中获得统一估计。",
+          "limitations": "主定理实际假设k=n−1，不是所有1<k<n都已证明；推广依赖尚猜想的更强k-sh Lp范围。正文为简化假设χ半正定，弱化需另改envelope论证；平均值界用于线性化Hessian算子，非普通退化度量Laplacian。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT Plus 模型用于查找参考文献、背景结果的精确表述及他人贡献，并辅助管理写作过程；明确声明主结果定理 3、6 及其证明未使用 AI。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.15866v1 · PDF 第 4 页",

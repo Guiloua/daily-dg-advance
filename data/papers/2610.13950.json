@@ -35,14 +35,17 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "特定角度测地树分类",
-      "workSummary": "在 K-Space 中，作者按顶点度数及 90°、120°、150°、180° 的允许组合给出 Platonic 测地树的存在与不存在条件，并据此分类边界顶点与新增顶点处的构型。三边情形将 Steiner 点与 Fermat 点识别。",
+      "workSummary": "作者提出在欧氏、正曲率球面及负曲率双曲K-space中，相邻测地边夹角取90°/120°/150°/180°的Platonic树，并以单顶点单位切向量平衡∑eᵢ=0分析局部角型。正文构造m≥4的循环120°、其余90°的cosine矩阵，及偶数m的对跖正交方向；同时区分三价120°Steiner点与高价Fermat点，并讨论全120°等角型的排除。",
       "techniques": [
-        "角度组合分类",
-        "Steiner 点与 Fermat 点"
+        "单位切向量Fermat平衡",
+        "角cosine矩阵",
+        "循环方向构造",
+        "正交对跖坐标",
+        "逐顶点角型分析"
       ],
-      "breakthrough": "给出指定 Platonic 角度体系下测地树的局部分类。",
-      "limitations": "分类限定于文中 K-Space 和列出的角度体系；m≥4 时全为 120° 的构型不存在。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把特定离散角组合的测地网络以局部向量平衡和坐标模式组织起来。",
+      "limitations": "构造需要选择相容方向和足够环境维数，不意味着任意固定端点都能实现这些角型；局部平衡或角矩阵不自动保证整个树全局最短。双曲理想端点的边为无限长射线，不能混作有限总长树。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -101,14 +104,17 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "特定角度测地树分类",
-          "workSummary": "在 K-Space 中，作者按顶点度数及 90°、120°、150°、180° 的允许组合给出 Platonic 测地树的存在与不存在条件，并据此分类边界顶点与新增顶点处的构型。三边情形将 Steiner 点与 Fermat 点识别。",
+          "workSummary": "作者提出在欧氏、正曲率球面及负曲率双曲K-space中，相邻测地边夹角取90°/120°/150°/180°的Platonic树，并以单顶点单位切向量平衡∑eᵢ=0分析局部角型。正文构造m≥4的循环120°、其余90°的cosine矩阵，及偶数m的对跖正交方向；同时区分三价120°Steiner点与高价Fermat点，并讨论全120°等角型的排除。",
           "techniques": [
-            "角度组合分类",
-            "Steiner 点与 Fermat 点"
+            "单位切向量Fermat平衡",
+            "角cosine矩阵",
+            "循环方向构造",
+            "正交对跖坐标",
+            "逐顶点角型分析"
           ],
-          "breakthrough": "给出指定 Platonic 角度体系下测地树的局部分类。",
-          "limitations": "分类限定于文中 K-Space 和列出的角度体系；m≥4 时全为 120° 的构型不存在。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把特定离散角组合的测地网络以局部向量平衡和坐标模式组织起来。",
+          "limitations": "构造需要选择相容方向和足够环境维数，不意味着任意固定端点都能实现这些角型；局部平衡或角矩阵不自动保证整个树全局最短。双曲理想端点的边为无限长射线，不能混作有限总长树。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

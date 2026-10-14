@@ -33,14 +33,16 @@
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "常曲率 Hamilton 平稳 Lagrangian 曲面",
-      "workSummary": "在复二维空间形中，证明连通 Hamilton 平稳 Lagrangian 曲面若 Gaussian 曲率 K 为常数，则 K=ε，或 K=0≠ε 且平均曲率向量长度恒定。特别地，平均曲率长度不恒定时必须 K=ε。",
+      "workSummary": "对复二维空间形式 holomorphic curvature 4ε 中连通 Hamiltonian 驻定 Lagrangian 曲面，若 Gauss 曲率 K 恒定，则 K=ε，或 K=0≠ε 且平均曲率模恒定。因此非恒定 |H| 只能出现在 K=ε 的已知类中。",
       "techniques": [
-        "Hamilton 平稳 Lagrangian 条件",
-        "常曲率约束"
+        "全纯平均曲率形式",
+        "cubic Hopf 微分",
+        "Gauss–Codazzi 可积系统",
+        "全纯模平方恒等式刚性"
       ],
-      "breakthrough": "将允许的内蕴曲率与平均曲率行为压缩到两种情形。",
-      "limitations": "要求复二维空间形、连通性及常 Gaussian 曲率，不是一般 Lagrangian 曲面分类。",
-      "analysisDepth": "abstract",
+      "breakthrough": "排除常 K≠ε 而非恒定 |H| 的可能性，补齐曲率分支约束。",
+      "limitations": "要求 Hamiltonian 驻定、Lagrangian、连通及常 K；没有要求曲面完备或闭，也不把该曲率约束误写成新枚举全部浸入模型。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露使用 ChatGPT 探索证明策略，并自行核查全部数学论证。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.16767v1 · PDF 第 5 页",
@@ -101,14 +103,16 @@
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "常曲率 Hamilton 平稳 Lagrangian 曲面",
-          "workSummary": "在复二维空间形中，证明连通 Hamilton 平稳 Lagrangian 曲面若 Gaussian 曲率 K 为常数，则 K=ε，或 K=0≠ε 且平均曲率向量长度恒定。特别地，平均曲率长度不恒定时必须 K=ε。",
+          "workSummary": "对复二维空间形式 holomorphic curvature 4ε 中连通 Hamiltonian 驻定 Lagrangian 曲面，若 Gauss 曲率 K 恒定，则 K=ε，或 K=0≠ε 且平均曲率模恒定。因此非恒定 |H| 只能出现在 K=ε 的已知类中。",
           "techniques": [
-            "Hamilton 平稳 Lagrangian 条件",
-            "常曲率约束"
+            "全纯平均曲率形式",
+            "cubic Hopf 微分",
+            "Gauss–Codazzi 可积系统",
+            "全纯模平方恒等式刚性"
           ],
-          "breakthrough": "将允许的内蕴曲率与平均曲率行为压缩到两种情形。",
-          "limitations": "要求复二维空间形、连通性及常 Gaussian 曲率，不是一般 Lagrangian 曲面分类。",
-          "analysisDepth": "abstract",
+          "breakthrough": "排除常 K≠ε 而非恒定 |H| 的可能性，补齐曲率分支约束。",
+          "limitations": "要求 Hamiltonian 驻定、Lagrangian、连通及常 K；没有要求曲面完备或闭，也不把该曲率约束误写成新枚举全部浸入模型。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露使用 ChatGPT 探索证明策略，并自行核查全部数学论证。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.16767v1 · PDF 第 5 页",

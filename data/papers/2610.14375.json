@@ -37,15 +37,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "非梯度漂移抛物性框架",
-      "workSummary": "以不变测度为框架，将加权体积与 Laplace 算子的几何分析联系扩展到一般非梯度漂移。由此系统研究抛物性与体积增长关系，并推出非梯度几何结构的体积有限性结果。",
+      "workSummary": "对一般漂移Δ_X=Δ−〈X,∇〉，以正密度不变测度组织势论，证明X抛物性等价于无正Green函数、所有紧集的非变分X-capacity为零及全局X-Green公式。若不变测度dμ=e⁻ᶠdvol还满足L²(μ)中X−∇f有限，则完备环境下加权球面面积倒数积分发散推出Δ_X及其对偶均抛物，因而不变测度唯一至常数；proper Lyapunov函数满足Δ_Xγ→−∞则还推出有限总质量。",
       "techniques": [
-        "不变测度",
-        "漂移 Laplace 算子",
-        "体积增长与抛物性"
+        "正密度不变测度",
+        "非变分Laplacian capacity",
+        "全局Green公式",
+        "L²对称缺陷",
+        "Khasminskii Lyapunov函数"
       ],
-      "breakthrough": "为失去自然加权测度对应的非梯度漂移建立替代框架。",
-      "limitations": "摘要没有列明具体增长阈值或不变测度存在条件，不能将体积有限性泛化到所有漂移结构。",
-      "analysisDepth": "abstract",
+      "breakthrough": "将非梯度漂移的体积增长与抛物性联系到有限对称缺陷的典范测度，而非任取不变测度。",
+      "limitations": "一般不变测度即使增长适中也不能无条件推出抛物性；体积判据需完备及L²缺陷有限。Lp次调和Liouville定理另需L∞缺陷或所给增长替代条件；不同条件不可混用。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 AI 仅用于最终检查错字与记号不一致。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14375v1 · PDF 第 36 页",
@@ -109,15 +111,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "非梯度漂移抛物性框架",
-          "workSummary": "以不变测度为框架，将加权体积与 Laplace 算子的几何分析联系扩展到一般非梯度漂移。由此系统研究抛物性与体积增长关系，并推出非梯度几何结构的体积有限性结果。",
+          "workSummary": "对一般漂移Δ_X=Δ−〈X,∇〉，以正密度不变测度组织势论，证明X抛物性等价于无正Green函数、所有紧集的非变分X-capacity为零及全局X-Green公式。若不变测度dμ=e⁻ᶠdvol还满足L²(μ)中X−∇f有限，则完备环境下加权球面面积倒数积分发散推出Δ_X及其对偶均抛物，因而不变测度唯一至常数；proper Lyapunov函数满足Δ_Xγ→−∞则还推出有限总质量。",
           "techniques": [
-            "不变测度",
-            "漂移 Laplace 算子",
-            "体积增长与抛物性"
+            "正密度不变测度",
+            "非变分Laplacian capacity",
+            "全局Green公式",
+            "L²对称缺陷",
+            "Khasminskii Lyapunov函数"
           ],
-          "breakthrough": "为失去自然加权测度对应的非梯度漂移建立替代框架。",
-          "limitations": "摘要没有列明具体增长阈值或不变测度存在条件，不能将体积有限性泛化到所有漂移结构。",
-          "analysisDepth": "abstract",
+          "breakthrough": "将非梯度漂移的体积增长与抛物性联系到有限对称缺陷的典范测度，而非任取不变测度。",
+          "limitations": "一般不变测度即使增长适中也不能无条件推出抛物性；体积判据需完备及L²缺陷有限。Lp次调和Liouville定理另需L∞缺陷或所给增长替代条件；不同条件不可混用。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 AI 仅用于最终检查错字与记号不一致。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14375v1 · PDF 第 36 页",

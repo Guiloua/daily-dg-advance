@@ -34,14 +34,16 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "负度数 Chern–Yamabe 流收敛",
-      "workSummary": "证明紧 Hermitian 流形在 Gauduchon 度数为负时，作者此前引入的 Chern–Yamabe 流收敛到指定 Chern 标量曲率问题的解。",
+      "workSummary": "在复维 n≥2、Gauduchon degree 负的紧 Hermitian 共形类中，证明指定 g≤0 且不恒零的 Chern–Yamabe 流全时存在并整流在 C¹,α 收敛至唯一光滑解。去掉先前 g 有零点时须共形类含 balanced 度量的条件，也把子序列收敛升级为整流收敛；说明任意光滑初值同样适用。",
       "techniques": [
-        "Chern–Yamabe 流",
-        "先验收敛分析"
+        "Gauduchon 积分消散",
+        "椭圆 W²,p 界",
+        "时间导数 L² 能量",
+        "Poincaré 方差估计"
       ],
-      "breakthrough": "用几何流实现负 Gauduchon 度数下的指定 Chern 标量曲率。",
-      "limitations": "指定曲率函数必须非正且不恒为零；结论不覆盖正度数或变号曲率。",
-      "analysisDepth": "abstract",
+      "breakthrough": "在保留负 degree 的条件下，允许非正目标曲率零点而无需 balanced 结构。",
+      "limitations": "仅负 Gauduchon degree 和非正非零 g；不能推出零 degree、正 degree 或变号目标曲率的流收敛。收敛陈述为 C¹,α，不额外声称新的全阶速率。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -99,14 +101,16 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "负度数 Chern–Yamabe 流收敛",
-          "workSummary": "证明紧 Hermitian 流形在 Gauduchon 度数为负时，作者此前引入的 Chern–Yamabe 流收敛到指定 Chern 标量曲率问题的解。",
+          "workSummary": "在复维 n≥2、Gauduchon degree 负的紧 Hermitian 共形类中，证明指定 g≤0 且不恒零的 Chern–Yamabe 流全时存在并整流在 C¹,α 收敛至唯一光滑解。去掉先前 g 有零点时须共形类含 balanced 度量的条件，也把子序列收敛升级为整流收敛；说明任意光滑初值同样适用。",
           "techniques": [
-            "Chern–Yamabe 流",
-            "先验收敛分析"
+            "Gauduchon 积分消散",
+            "椭圆 W²,p 界",
+            "时间导数 L² 能量",
+            "Poincaré 方差估计"
           ],
-          "breakthrough": "用几何流实现负 Gauduchon 度数下的指定 Chern 标量曲率。",
-          "limitations": "指定曲率函数必须非正且不恒为零；结论不覆盖正度数或变号曲率。",
-          "analysisDepth": "abstract",
+          "breakthrough": "在保留负 degree 的条件下，允许非正目标曲率零点而无需 balanced 结构。",
+          "limitations": "仅负 Gauduchon degree 和非正非零 g；不能推出零 degree、正 degree 或变号目标曲率的流收敛。收敛陈述为 C¹,α，不额外声称新的全阶速率。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

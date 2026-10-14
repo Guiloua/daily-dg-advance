@@ -6,7 +6,7 @@
 
 Anastasios N. Zachos
 
-在 K-Space 中，作者按顶点度数及 90°、120°、150°、180° 的允许组合给出 Platonic 测地树的存在与不存在条件，并据此分类边界顶点与新增顶点处的构型。三边情形将 Steiner 点与 Fermat 点识别。
+作者提出在欧氏、正曲率球面及负曲率双曲K-space中，相邻测地边夹角取90°/120°/150°/180°的Platonic树，并以单顶点单位切向量平衡∑eᵢ=0分析局部角型。正文构造m≥4的循环120°、其余90°的cosine矩阵，及偶数m的对跖正交方向；同时区分三价120°Steiner点与高价Fermat点，并讨论全120°等角型的排除。
 
 In this paper, We prove that: (A) If $m\ge 4,$ there exists a Platonic geodesic tree having $m$ edges (geodesic segments), which form $m$ platonic angles with measure $120^{o}$ and $(\frac{m(m-1)}{2}-m)$ platonic angles with measure $90^{o}.$ (Existence of a Fermat Coordinate system) (B) If $m=2,$ there exists a Platonic geodesic tree with three vertices and 2 edges, which meet at $120^{\circ}$ or $150^{\circ}$ or $180^{\circ}$ (Minimal spanning geodesic tree). (C) If $m=3,$ there exists a Platonic tree and the Steiner point is identical with the Fermat point, having three edges, which meet at $120^{\circ}$ (Hexagonal coordinate system). (D) If $m$ is even and $m \ge 4,$ there exists a Platonic geodesic tree having $m$ edges , which form platonic angles with only two distinct measures $90^{o}$ and $180^{\circ}.$ (Existence of a Cartesian coordinate system). (E) If $m\ge 4$, there does not exist a Platonic geodesic tree having $m$ edges , which form only platonic angles with measure $120^{o}$ (Non existence of a Fermat coordinate system). (F) If $m\ge 3,$ there does not exist a Platonic geodesic tree having $m$ edges, which form platonic angles with only one measure $150^{o},$ or two distinct measures $120^{\circ}$ and $150^{\circ}$ or two distinct measures $90^{\circ}$ and $150^{\circ}$ (Non existence of a Fermat coordinate system). A classification of platonic geodesic trees with boundary vertex set $V$ and added vertex set $Q$ in the $K-$Space is given by conditions (A), (B), (C), (D), (E), (F), which characterize each vertex in $V\cup Q.$
 
@@ -40,7 +40,7 @@ We prove that the centroid Banach--Mazur diameter of planar convex bodies is str
 
 Yibin Feng、Shengnan Hu、Weiru Liu、Lei Xu
 
-完整刻画已有三维反投影不等式的等号情形，并在每个 n≥9 的维数构造反例，说明同一反投影不等式不成立。反例可取至多 n+2 个面的满维多面体。
+对Pₙ(K)=Vₙ(ΠK)/Vₙ(K)ⁿ⁻¹，补齐三维尖锐反向投影界P₃≤18的等号分类：恰为四面体。另一方面构造九维反例并提升到所有n≥9，每个为至多n+2个面的满维多面体，Pₙ严格超过单纯形的(n+1)nⁿ/n!值，故该一般高维单纯形上界失效。
 
 In \cite {ChenFengLiXiXu2026}, a reverse projection inequality for general convex bodies was established in three dimensions. In this paper, we completely characterize the equality cases of this inequality. We further show that the reverse projection inequality fails in every dimension $n\geq9$. The counterexamples are constructed as full-dimensional polytopes with at most $n+2$ facets.
 
@@ -56,7 +56,7 @@ In \cite {ChenFengLiXiXu2026}, a reverse projection inequality for general conve
 
 Gaoshun Gou、Joonhyung Kim、Ioannis D. Platis、Li-Jie Sun
 
-研究 Heisenberg 群在 Carnot–Carathéodory 度量下的等距面，接续此前对 Korányi 度量等距面的工作。
+比较 Heisenberg 群 Carnot–Carathéodory 与 Korányi 等距中分集：竖直标准锚点的 CC 中分集为 t=0，而有限 C-circle 情形保留 t/|z|² 参数，需 Reeb 角反解的超越距离方程。正文对 t=0 计算 XF=2y、YF=−2x，在非特征点得到水平平均曲率零。
 
 Following previous work on metric bisectors with respect to the Korányi metric, we study here bisectors in the Heisenberg group $\mathfrak{H}$ equipped with the Carnot--Carathéodory metric $d_{cc}$.
 
@@ -90,7 +90,7 @@ The moving sofa problem asks for the largest planar set that can pass through a 
 
 Yibin Feng、Ding Zhang
 
-对 n≥2、1<p<n，作者否定 Ludwig–Xiao–Zhang 提出的两个问题：凸体 Lp 积分仿射表面积与球归一化变分容量的上界关系，以及 Lp 凸化水平集的对应解析不等式。
+对每个n≥2、1<p<n，作者构造原点对称、C∞边界且Gauss曲率处处正的凸体，使球归一化的Lp积分仿射面积≤容量不等式严格失效。高次偶球谐扰动给出几何反例，再以Minkowski泛函的光滑截断和Lp凸化水平集的精确缩放，将其转成非负紧支撑光滑函数的积分反例。
 
 For $n\geq 2$ and $1<p<n$, Ludwig-Xiao-Zhang \cite{LXYZ} asked whether the $L_p$-integral affine surface area of every convex body containing the origin in its interior is bounded above by the ball-normalized multiple of \(L_p\)-variational capacity, and whether the analogous analytic inequality holds for $L_p$-convexified level sets. We answer both questions negatively.
 
@@ -124,7 +124,7 @@ We prove thirteen results concerning three aspects of magnitude theory. The firs
 
 Herbert Kociemba
 
-对六个全等等腰四面体铰接成的 kaleidocycle，从三重对称推导紧凑闭合方程，并建立连续无阻运动的两种等价充要条件。判据给出可实现几何参数的尖锐界，另研究八个链面贴合的八面体对称构型。
+对三个全等 disphenoid 及其三个镜像组成的三重对称六铰万花环，给出不中断无阻挡运动的充要条件：铰边长 a、铰间距 d 和斜角 α 满足 0<a≤2d√(1/3−cot²α)。等号对应极端位置相邻四面体面接触；证明结合旋转闭合、几何 clearance 及实数量词消去。
 
 A classical kaleidocycle is a closed cyclic chain of congruent, edge-hinged tetrahedra with successive hinge axes at right angles, capable of continuous inside-out motion. Kaleidocycles composed of six isosceles tetrahedra (disphenoids) form a natural generalization in which consecutive hinge axes need not be perpendicular. Their kinematics are governed by the closure equation for threefold-symmetric Bricard 6R linkages. We derive a new compact closure equation directly from threefold symmetry using the composition of rotations, and show its equivalence to the classical formulation. Furthermore, we establish two equivalent necessary and sufficient criteria for a kaleidocycle to admit continuous, unblocked motion in terms of the geometric parameters of the constituent disphenoid. These criteria yield sharp bounds on the admissible geometric parameters of realizable kaleidocycles. Finally, we study assemblies of eight such kaleidocycles joined face-to-face. We identify a configuration exhibiting full octahedral symmetry, which forms a polyhedral structure closely related to the disdyakis dodecahedron.
 
@@ -140,7 +140,7 @@ A classical kaleidocycle is a closed cyclic chain of congruent, edge-hinged tetr
 
 Ayush Agarwal
 
-对单位正方形内 26 个内部不交、半径可变的圆盘，给出半径和介于 2.6359830849… 与 2.7169197561… 的界。下界附精确有理可行性证书，上界以截断 power cells 的角度成本和 Euler 边数约束推导。
+对单位正方形内26个正半径、内部互不相交圆盘，给出半径总和的范围2.635983084917607783…≤S₂₆≤2.716919756099889566…。下界用50位十进制作为精确有理数核查429个包含及不交约束；上界以clipped power cell包含对应圆盘，将外角倒数成本转成面积，配合Euler边数及四角边界transition预算求得。
 
 Let $S_{26}$ denote the supremum of the sum of the radii of 26 pairwise interior-disjoint closed disks of positive radius contained in the unit square. We prove $2.635983084917607783\ldots \le S_{26}\le \sqrt{\frac{2577}{2500}+\frac{11}{\sqrt3}}=2.716919756099889566\ldots$. The lower bound is accompanied by an exact rational feasibility certificate. For the upper bound, we assign the disks their clipped power cells, convert cell area into a reciprocal exterior-angle cost, and combine this local inequality with Euler side counts. The extremal case for the resulting relaxation has four boundary transitions and a four-cell boundary cycle; its continuous angle allocation is reduced to a concave one-variable problem. All finite numerical inequalities are rigorously enclosed by a reproducible certificate. The argument does not determine $S_{26}$ exactly, but gives a nontrivial global upper bound for a benchmark whose best-known packing is asymmetric.
 
@@ -174,7 +174,7 @@ We prove that every convex body $K\subset\mathbb{R}^3$ of constant width $w>0$ s
 
 Xinyue Liu
 
-对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。
+对同时两输出交换公理定义的jump M-凸函数，在固定逐坐标奇偶类r+2Z^n内，任意实凸组合若重心仍落在该类，就自动属于有效定义域并满足Jensen不等式。全局仿射支撑可由z+{−2,0,2}^n中至多3^n−1个局部不等式刻画，不要求有效定义域有限或强基可排序。
 
 We prove Jensen's inequality on each coordinatewise parity class of a jump $M$-convex function on $\mathbb{Z}^n$, without assuming strong base orderability or a finite effective domain. If a finite convex combination of domain points has its barycenter in the same parity class, then the barycenter belongs to the domain and satisfies Jensen's inequality. We also prove that every domain point admits an affine support on its entire parity class. The set of support vectors is characterized by at most $3^n-1$ local inequalities, which yield optimality certificates, attained duality, and an exact formula for linear growth and stability under linear perturbations. The same conclusions hold for distributions with finite first moment supported on domain points of a single parity class, provided their mean lies in that class. We characterize equality by contact sets and give a quantitative bound on the Jensen gap. The proof combines induction on dimension with the known closure under infimal convolution: convolution with an even-box indicator gives finite-domain supports, a quadratic kernel proves barycenter feasibility, and a fixed local kernel yields global supports. A two-dimensional example shows that total parity alone does not suffice.
 
@@ -228,7 +228,7 @@ We prove that every three-dimensional parallelohedron $P$ satisfies \[ \mathcal 
 
 Peng Lu
 
-从已有公开构型继续数值优化，得到单位立方体内 203 个同半径球的可行半径 r>0.088145634693，改善先前约 0.088145402159 的记录。作者用独立的 100 位算术程序检查球间及球壁约束并公开坐标。
+作者从公开203球装箱配置继续数值优化，转为单位半径球的最小容器边长问题，经自适应缩容、局部优化与扰动取得L=11.344861302244816，报告单位立方体半径r>0.088145634693。另以保存十进制坐标作100位计算，复查20503个球对与1218个球墙约束无违例，改进原约0.088145402159的数值配置。
 
 This paper reports an improved numerical lower bound for packing 203 equal spheres in a unit cube. Let r denote the maximum common radius of equal non-overlapping spheres that can be packed in a unit cube. For N = 203, the configuration currently listed in Packomania has a feasible radius of approximately r = 0.088145402159. Starting from this public configuration, we perform further numerical optimization and obtain a new feasible configuration with r > 0.088145634693. The final configuration is checked by an independent verification program using 100-digit arithmetic. All 20503 sphere-pair constrains and all 1218 sphere-wall constraints are satisfied. The coordinates of the new configuration and the related programs are provided as supplementary material.
 
@@ -244,7 +244,7 @@ This paper reports an improved numerical lower bound for packing 203 equal spher
 
 Qilong Guo
 
-作者以透镜空间 L(3,1) 的极小双四面体剖分构造一个零伦同环边，同时反驳 Luo 论文所述的三个猜想。证明结合四边形匹配方程、形状参数显式计算和已知体积最大化结果。
+作者给出L(3,1)的最小两四面体面配对，三条全局边a/b/c次数为2/5/5；基本群化为Z/3且a可缩。其四边形匹配矩阵的最多两个非零坐标解仅支撑{x₁,y₁}，所以不存在三组2-quad cluster；结合无Thurston方程解和全部体积极大点光滑，作者宣称同例反驳Luo原述三猜想。
 
 We give a single counterexample to Conjectures 1--3 as stated in Luo's paper: a minimal two-tetrahedron triangulation of the lens space L(3,1) with a null-homotopic loop edge. The proof uses quadrilateral matching equations, an explicit calculation of shape parameters, and known results on volume maximization.
 
@@ -344,7 +344,7 @@ We formulate and solve a $G$-equivariant analogue of the Seiberg-Witten equation
 
 Nikolai Nikolov
 
-对单位 n 维立方体中底面为超平面截面的棱锥，证明一般最大体积 M_n 满足 nM_n<(n+1)M^0_(n+1)，后者要求底面截面经过立方体中心。
+对单位 n 立方体中以超平面截面为底的最大棱锥体积 Mn，证明 nMn<(n+1)M⁰n+1，其中 M⁰ 为过中心截面的最大值。得到 n≥3 时 cn<Mn<cn−1、Mn 随 n 严格下降并有 n⁻¹/² 渐近阶；三维精确值为 (1+√2)/6，中央截面等号仅主对角正交底面及对角端点顶点。
 
 Let $Q_n=[0,1]^n$, $n\ge2$. Denote by $M_n$ be the maximal volume of a pyramid in $Q_n$ whose base is a hyperplane section of $Q_n$, and by $M_n^0$ the corresponding maximum when the section contains the center of $Q_n$. We prove that $nM_n<(n+1)M_{n+1}^0$.
 
@@ -378,7 +378,7 @@ Let $K_M \subset \mathbb{R}^3$ be the "snaky" corridor with unit-square cross-se
 
 Yuzhe Tang
 
-在中段长度为 4 的指定三维走廊中，构造连通体的刚体运动，并用问题既定评估流程认证体积下界 1.8558404。混合精度 CMA-ES 与细网格梯度优化改进路径，同时加入防止插值和网格误差夸大目标值的约束。
+作者在固定三维走廊K4及统一评估配置下，用扭转骨架、CMA-ES与细网格梯度优化，将流程报告值提升至1.8558404。该数字要成为连通实体积的严密下界，仍依赖尚未证明的points-to-cubes转换；正文只无条件证明采样点的连续轨迹留在走廊内，并未完成认证网格处的实体连通性检查。
 
 Consider the "snaky" corridor $K_4 \subset \mathbb{R}^3$ from Problem 6.64 of arXiv:2511.02864 : a tube of unit-square cross-section whose two right-angle turns lie in perpendicular planes, with a straight middle section of clear length $4$. We exhibit explicit rigid motions of connected bodies through $K_4$ and certify their volumes with the problem's own evaluation pipeline, unmodified, at the tight motion tolerances of its final scoring stage (translation $0.005$, rotation $0.05$ degrees). The certificates give $V^*(K_4) \ge 1.8355162$ at grid fineness $0.002$ and $V^*(K_4) \ge 1.8558404$ at grid fineness $0.001$, against the previously reported $1.81$; rerunning the pipeline's published best path under the identical configuration yields $1.8179428$, so every comparison is path against path under one fixed certifier. Three stages produce the record motion: a simple "staggered twist" backbone in which the whole 90-degree twist about the tube axis happens inside the second turn; evolutionary (CMA-ES) refinement, including a mixed-fidelity scheme that re-scores each generation's leading candidates on a grid twice as fine and lets those ranks steer recombination; and a gradient polish carried out directly at the finer carve resolution, guarded by periodic rebuilding of the frozen interpolation structure and by a penalty on control-pose spacing. These guards close three documented failure modes in which an optimizer inflates its own objective: frozen-structure inflation, spacing stretch, and exploitation of a coarse grid by optimizing and selecting on it. A staircase-based predictor with two grid bases, anchored by matching grid sensitivity, forecast the certificates to about $0.001$ before the runs. With the companion note's upper bound $V^*(K_4) \le 3.4083$, the problem now sits in the bracket $1.8558404 \le V^*(K_4) \le 3.4083$. All paths, notebooks and certified results are public.
 
@@ -396,7 +396,7 @@ Consider the "snaky" corridor $K_4 \subset \mathbb{R}^3$ from Problem 6.64 of ar
 
 Xiao Li
 
-证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。
+对所有整数k≥1，实ℓ₁^(4k+1)中任意非空有界集可由环境中心球以半径≤(4k−1)/(4k)倍直径包围，五维恰为3/4。若4k阶Hadamard矩阵存在，维数4k−1、4k、4k+1的Jung常数同等于该值；证明将极小包围球接触点的平衡符号约化为坐标cut半度量的二次型界。
 
 For every integer $k\ge1$, we prove that each nonempty bounded set in real $\ell_1^{4k+1}$ has an ambient enclosing ball of radius at most $(4k-1)/(4k)$ times its diameter. The bound is sharp in dimension five: $J(\ell_1^5)=3/4$. If a Hadamard matrix of order $4k$ exists, then $J(\ell_1^{4k-1})=J(\ell_1^{4k})=J(\ell_1^{4k+1})=(4k-1)/(4k)$. The upper bound for every $k\ge1$ has been formalized in Lean.
 
@@ -448,7 +448,7 @@ Let $(M^n,g)$, $n\ge2$, be a compact connected Riemannian manifold with smooth n
 
 Yudai Hateruma
 
-通过 distinguished bases 上编织群作用的代数描述，将 Dubrovin 的解空间作用程序系统化，并在具体量子微分方程例子中实现。进一步推广到任意 tt*-Toda 解，其中包含复射影空间的量子上同调例子。
+在径向、反对称tt*-Toda全局解及其关联线性ODE上，把Stokes数据的辫群作用实现为解空间V上双线性型L的特殊基变换。三角基是distinguished bases的真子集，σ₁⋯σₙ作用等于循环对称诱导的ϕ；当全纯数据k₀,…,kₙ为非负整数，定理4.19给出该循环作用的有限阶，且计算单值根矩阵M_F的阶。
 
 We implement (in a concrete example) a procedure of Dubrovin which gives a braid group action on spaces of solutions of ordinary differential equations such as the quantum differential equation of complex projective space. Such actions originated in physics for the tt* (topological-antitopological fusion) equations. We make the procedure systematic by utilizing an algebraic description of braid group actions on distinguished bases. We also generalize to the case of (arbitrary) solutions of the tt*-Toda equations, one of which corresponds to the quantum cohomology of complex projective space.
 
@@ -580,7 +580,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Alexandre Fernandes、Claudia Fernandes、Edson Sampaio
 
-对次数至少 2 的单变量复多项式图像，证明内禀长度等距与外在欧氏等距等价，并由指定模一线性变换、平移及系数共轭刻画。每个内禀等距均可延拓为空间 C² 的等距；实多项式图像则呈现内外距离的明显差异。
+单变量复多项式图在C²中、次数≥2时，内在长度等距与外在欧氏等距等价，恰由自变量单位旋转/平移、因变量单位旋转/平移及系数共轭联系；每个内等距都延拓为环境刚性运动。方法把图度量写成(1+|p′|²)|dz|²，再用Myers–Steenrod、全平面仿射/反仿射性质及z,z̄系数比较。
 
 We classify graphs of complex polynomials in one variable up to isometry, both for the inner (length) distance and for the outer (Euclidean) distance of $\mathbb{C}^2\cong\mathbb{R}^4$. For polynomials $p,q$ with $°p\ge 2$ we show that the graphs of $p$ and $q$ are inner isometric if and only if they are outer isometric, if and only if $p(z)=\alpha\,q(\beta z+h)+k$ or $p(z)=\alpha\,\bar q(\beta z+h)+k$ for some $\alpha,\beta,h,k\in\mathbb{C}$ with $|\alpha|=|\beta|=1$, where $\bar q$ denotes the polynomial with conjugate coefficients. Moreover, every inner isometry between such graphs is the restriction of an isometry of $\mathbb{C}^2$; in this sense graphs of complex polynomials are isometrically rigid. We contrast this with the real case, where the two distances behave very differently: the graphs of any two real polynomials are inner isometric, whereas, for degree at least $2$, outer isometries are generated by translations, reflections in horizontal and vertical lines and half-turns.
 
@@ -614,7 +614,7 @@ We prove that Choe's higher-dimensional Enneper hypersurfaces in $\mathbb R^{n+1
 
 Leandro F. Pessoa、Stefano Pigola、Alberto G. Setti
 
-以不变测度为框架，将加权体积与 Laplace 算子的几何分析联系扩展到一般非梯度漂移。由此系统研究抛物性与体积增长关系，并推出非梯度几何结构的体积有限性结果。
+对一般漂移Δ_X=Δ−〈X,∇〉，以正密度不变测度组织势论，证明X抛物性等价于无正Green函数、所有紧集的非变分X-capacity为零及全局X-Green公式。若不变测度dμ=e⁻ᶠdvol还满足L²(μ)中X−∇f有限，则完备环境下加权球面面积倒数积分发散推出Δ_X及其对偶均抛物，因而不变测度唯一至常数；proper Lyapunov函数满足Δ_Xγ→−∞则还推出有限总质量。
 
 The interplay between a weighted volume measure and its naturally associated weighted Laplace operator is fundamental to the geometric analysis of weighted structures governed by gradient vector fields. Beyond the gradient setting, however, the theory has remained considerably less developed, largely because this natural correspondence is lost. In this paper, we identify invariant measures as the appropriate framework for extending the theory to general drifted Laplace operators. This approach yields a systematic treatment of parabolicity in the non-gradient setting, reveals its connection with volume growth, and leads to new volume finiteness results for non-gradient geometric structures.
 
@@ -722,7 +722,7 @@ We study closed simply connected six-manifolds with positive sectional curvature
 
 Mabrouk Ben Ammar、Amina Jabeur
 
-计算实 1|1 维超空间上正交辛李超代数 osp(1|2) 的上同调，系数取作用于加权密度的 n 元微分算子超空间。
+在 R¹|¹ 标准接触结构上计算 osp(1|2) 作用于 n 元加权密度微分算子模的上同调。证明一般、微分及多项式算子系数三种 cohomology 等价，每个 cocycle 模 coboundary 可取对 X₁ 消失的约化形式，再给出低阶显式维数与基，j≥3 全部消失。
 
 We compute cohomology spaces of the ortosymplectic Lie superalgebra $\mathfrak{osp}(1|2)$ on the (1,1)-dimensional real superspace with coefficients in the superspace $\frak{D}_{{\lambda},\mu}$ of $n$-ary differential operators acting on weighted densities (${\lambda}\in\mathbb{R}^n$ and $\mu\in\mathbb{R}$).
 
@@ -770,7 +770,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Haakan Hedenmalm、Song-Yan Xie
 
-研究 Riemann 曲面有限点构型的指数 Green 能量，证明最优或近最优构型必须在曲面上充分分散。特别分析圆球面并获得构型最小 Green 能量的取值。
+在紧黎曼曲面上，只要固定一个 β>0 的指数 Green 能量对 N 点配置一致有界，即得平均零势 L¹ 控制、二阶积分误差 O(N⁻¹) 和尖锐 W₁∼N⁻¹/²；更一般凹连续模积分误差有对应量化阶。另研究每个 β、N 的无碰撞极小配置、力平衡及最优常数的 Gibbs entropy 导数。
 
 We study the exponential Green energies associated with a finite point configuration on a Riemann surface. We focus on studying optimal or close-to-optimal configurations, and show that they must be well-spread out on the surface. We study in particular the round sphere and obtain values for the minimal Green energy of a configuration. The first version of this paper was written with the help of ChatGPT.
 
@@ -868,7 +868,7 @@ We study complete K$ä$hler metrics with prescribed signs of holomorphic bisecti
 
 Nathaphon Boonnam
 
-确定二维完备扭曲积 R×S¹、度量 dt²+m(t)²dθ² 的截迹结构；扭曲函数为正偶函数，且曲率在指定外部区域非正、在上半子午线指定区间递减。
+对正偶扭曲函数m定义的完备旋转圆柱dt²+m(t)²dθ²，在中段Gauss曲率沿半子午线下降且外部非正时，作者用Clairaut常数与半周期函数刻画割迹。圆柱上割迹由对面子午线和可能出现的反射纬线弧组成；通用覆盖中相应纬线射线在阈值外可完全消失。
 
 In this paper, we determine the structure of the cut locus for a class of complete warped product manifolds $M=(R^1\times S^1,dt^2+m(t)^2d\theta^2)$, where the warping function $m(t)$ is positive and even, under the assumption that there exists a positive number $t_1$ such that the Gaussian curvature is nonpositive on the domain $t^{-1}\left((t_1,\infty) \right)$ and is decreasing along the subarc $t^{-1}([0,t_1])\cap\theta^{-1}(0)$ of the upper half meridian.
 
@@ -902,7 +902,7 @@ We establish sharp Alexandrov--Fenchel inequalities for closed, embedded, axisym
 
 Weike Yu
 
-证明紧 Hermitian 流形在 Gauduchon 度数为负时，作者此前引入的 Chern–Yamabe 流收敛到指定 Chern 标量曲率问题的解。
+在复维 n≥2、Gauduchon degree 负的紧 Hermitian 共形类中，证明指定 g≤0 且不恒零的 Chern–Yamabe 流全时存在并整流在 C¹,α 收敛至唯一光滑解。去掉先前 g 有零点时须共形类含 balanced 度量的条件，也把子序列收敛升级为整流收敛；说明任意光滑初值同样适用。
 
 In this note, we prove that on a compact Hermitian manifold with negative Gauduchon degree, the Chern-Yamabe flow introduced in our recent work [13] converges to the solution of prescribed Chern scalar curvature problem, provided that the candidate curvature function is nonpositive and not identically zero.
 
@@ -1032,7 +1032,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Allen Weitsman
 
-研究 R³ 中零边值的互不相交非平凡极小图；已知最多三个、猜想最多两个，本文讨论若确有三个时它们必须满足的性质。
+设三个互不相交的单连通平面无界域上存在正值、边界为零的极小图，正文定理1证明每个图的圆周最大高度M(r,u)在大r时被正常数倍r上下夹住。以半平面等温坐标写成单叶调和映射h+ḡ，并归一化高度为2Re ζ、g′=−1/h′；定理2给指定子扇形像域中的Laplacian按1/|z|衰减及接近极限扇形边界的次线性高度。
 
 It is known that there can be at most 3 disjoint nontrivial minimal graphs in R^3 with 0 boundary values, and conjectured that there can be at most 2. We explore properties that the graphs would have if there were 3.
 
@@ -1062,7 +1062,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Johannes G. Scheffler
 
-提出用 k-Hessian 方程辅助研究 Kähler 类向数值维数为 k 的 nef 类退化，并给出统一平均值不等式和 Hessian 方程统一先验估计作为验证。
+在紧Kähler n维流形上取半正定χ，其nef类的数值维数k=n−1，令ω_t=χ+tω_X。对右端密度一致Lq控制、q>2的归一化退化k-Hessian方程，正文定理3给出独立于t的L∞估计；定理6对相应退化线性化算子的零均值v、指定超水平集上的二次可微与L v≥−a条件，给出sup v≤C(1+L¹范数)的平均值界。
 
 We propose k-Hessian equations as auxiliary equations for degenera- tions of Kähler classes to nef classes of numerical dimension k. As proof-of-concept results, we provide a uniform mean-value inequality and uniform à priori estimates for Hessian equa- tions.
 
@@ -1258,7 +1258,7 @@ We study the exponential map on the group of real two-by-two matrices with deter
 
 Iva Dokuzova、Georgi Dzhelepov、Dimitar Razpopov
 
-对带循环张量结构 Q 的四维黎曼流形，证明曲率张量在末两变量保持 Q 作用时流形为 almost-Einstein。进一步对 P=Q² 的乘积结构给出曲率表达、截曲率与 Ricci 曲率，并构造嵌入 R¹⁰ 的局部乘积超曲面例子。
+对四维循环结构Q及相容度量，若曲率最后两变量满足R(x,y,Qz,Qu)=R(x,y,z,u)，作者由分量恒等式得到Ric=(τ/4)(g−g̃)，其中g̃(x,y)=g(Q²x,y)。相应曲率为(τ/8)(π1−π2)，并用Q生成基写出特定二平面的截曲率；较弱P=Q²不变性也给出almost-Einstein形式。
 
 This paper considers a four-dimensional Riemannian manifold with an additional circulant tensor structure $Q$. We prove that such a manifold is almost-Einstein if the curvature tensor preserves the action of the structure on the last two arguments. Additionally, we examine an associated Riemannian product manifold $(M, g, Q)$ where $P=Q^{2}$, deriving explicit expressions for the curvature tensor in terms of the metric and the product structure. The sectional and Ricci curvatures of these manifolds are determined using special bases generated by the images of a given vector under the structure $Q$. Finally, we construct a non-trivial example of a four-dimensional locally product manifold by embedding a four-dimensional hypersurface into a ten-dimensional Euclidean space.
 
@@ -1288,7 +1288,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Hiba Bibi、Marc Soret、Marina Ville
 
-研究欧氏空间中的双保守超曲面，即双调和浸入方程切向部分为零的等距浸入，并先描述这类对象、再给出构造。
+作者宣称非恒平均曲率的欧氏 biconservative 超曲面，在 h 的正则点邻域由余维二 isoparametric 平均曲率等值叶组成，叶的环境对称延拓到超曲面。反向由非零平均曲率向量的 isoparametric 叶，通过避开 focal 线的局部法向常微分方程构造 proper BCH；改变方程系数亦构造极小超曲面。
 
 An isometric immersion $X: \Sigma^n \longrightarrow \mathbb{E}^{n+1}$ is biharmonic (BHH) if $\Delta^2 X = 0$, i.e., if $\Delta H =0$, where $\Delta$ and $H$ are the metric Laplacian and the mean curvature vector field of $\Sigma^n$ respectively. More generally, biconservative hypersurfaces (BCHs) are isometric immersions for which only the tangential part of the biharmonic equation vanishes. BCHs are first described and then constructed.
 
@@ -1364,7 +1364,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Gang Liu、Lei Ni
 
-复维 n≥2 的完备非紧 Kähler 流形有欧氏体积增长时，非负双截曲率与紧集外 Ricci 特征值 pinching 推出平坦；非负 Ricci 加二次曲率衰减则仅推出 Ricci 平坦。pinching 可弱至 Ricmin≥c[log(2+r)]⁻¹/(n−1)Ricmax；全局正双截曲率配合紧集外非负截曲率及一致 pinching 另推出紧性，无体积增长要求。
+复维 n≥2 的完备非紧 Kähler 流形有欧氏体积增长时，非负双截曲率与紧集外 Ricci 特征值 pinching 推出平坦；非负 Ricci 加二次曲率衰减则仅推出 Ricci 平坦。pinching 可弱至 Ricmin≥c/[log(2+r)]^(1/(n−1))Ricmax；全局正双截曲率配合紧集外非负截曲率及一致 pinching 另推出紧性，无体积增长要求。
 
 We study Ricci pinching problem on complete Kähler manifolds. For complete noncompact manifolds with Euclidean volume growth, we prove flatness under nonnegative bisectional curvature and Ricci pinching, and Ricci flatness under nonnegative Ricci curvature, quadratic curvature decay, and the same pinching condition. In both cases, the pinching constant may tend to zero at a logarithmic rate. Examples show that the logarithmic exponent is sharp in complex dimension two. Second part of the paper proves that a complete Kähler manifold of complex dimension at least two with positive holomorphic bisectional curvature is compact if its sectional curvature is nonnegative and its Ricci curvature is uniformly pinched outside a compact set. No volume-growth assumption or curvature upper bound is needed. Heat smoothing of the Busemann function supplies a strictly plurisubharmonic exhaustion with bounded gradient, so the general top Ricci-mass theorem of Datar--Pingali--Seshadri applies. The new ingridents are integral estimates for the Ricci form. The analytic arguments use scalar curvature gap theorems and a critical-$L^n$ vanishing theorem for closed real $(1,1)$-forms under nonnegative Ricci curvature and nonnegative quadratic orthogonal bisectional curvature. The Hodge-Laplace heat eqution deformation conserves the signed top-degree integral, including its initial value, while norm domination and scalar heat-semigroup decay force this integral to vanish. For semipositive initial forms this gives pointwise vanishing of the top wedge power.
 
@@ -1500,7 +1500,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Toru Sasahara
 
-在复二维空间形中，证明连通 Hamilton 平稳 Lagrangian 曲面若 Gaussian 曲率 K 为常数，则 K=ε，或 K=0≠ε 且平均曲率向量长度恒定。特别地，平均曲率长度不恒定时必须 K=ε。
+对复二维空间形式 holomorphic curvature 4ε 中连通 Hamiltonian 驻定 Lagrangian 曲面，若 Gauss 曲率 K 恒定，则 K=ε，或 K=0≠ε 且平均曲率模恒定。因此非恒定 |H| 只能出现在 K=ε 的已知类中。
 
 Let $M$ be a connected Hamiltonian stationary Lagrangian surface of constant Gaussian curvature $K$ in a two-dimensional complex space form $\Mtilde^2(4\epsilon)$ of constant holomorphic sectional curvature $4\epsilon$, and let $H$ denote its mean curvature vector field. We prove that either $K=\epsilon$ or $K=0\ne\epsilon$ and $|H|$ is constant. In particular, if $|H|$ is non-constant, then $K=\epsilon$.
 
@@ -1694,7 +1694,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Eric Loubeau、Radu Slobodeanu
 
-计算从 S³ 到 S² 的任意调和态射的指标及零度。
+对圆S³的Hopf映射后接度数d≥1的CP¹全纯映射，作者精确计算调和映射的实Morse指数4d、零度8d。沿Hopf圆纤维作权空间分解，把Jacobi负空间及核转化为CP¹上O(2d−m)的全纯截面，再由Riemann–Roch计数。
 
 We compute the index and nullity of any harmonic morphism from $S^3$ to $S^2$.
 
@@ -1976,7 +1976,7 @@ We construct a stationary weakly harmonic map from a domain in \R^5 into a compa
 
 Yuxiang Li
 
-构造 Kähler 纤维化的无穷小等变解析挠率形式，并以等变 Bott–Chern currents 和 I-genus 比较 Ma 的等变解析挠率。所得模 ∂ 与 ∂̄ 恰当形式的公式，将 Bismut–Goette 比较结果扩展到族。
+在紧纤维Kähler纤维化、局部自由直接像及具有moment map的紧Lie群纤维作用下，构造Lie代数零点附近解析的无穷小等变解析扭率形式。以等变Bott–Chern流及I-genus比较它与Ma的群元素扭率，等式成立于模∂和∂̄恰当形式的商空间；紧Kähler底时进一步描述极点与对数奇异项。
 
 In this paper, we first construct infinitesimal equivariant analytic torsion forms for Kähler fibrations. We then compare them with Ma's equivariant analytic torsion forms, modulo $\partial$- and $\overline{\partial}$-exact forms, in terms of equivariant Bott--Chern currents and the $I$-genus. Our comparison formula extends that of Bismut and Goette to families.
 
@@ -2006,7 +2006,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Diego Conti、Simon Salamon
 
-指出奇数 n 时 SU(n)/Tⁿ⁻¹ 不变旋量空间的维数等于 n 阶带标号正则锦标赛的数量。按 Weyl 群双覆盖分解该空间，并用 Dirac 及其等变扭曲版本的特征空间证明 n≡1 mod 4 时不可约表示重数为偶数。
+奇数n时SU(n)/T^(n−1)不变旋量的维数等于有标号正则锦标赛数：反转平衡子图将其计数与旋量权重对应。Weyl群双覆盖作用下，奇偶扭曲Dirac算子得到两个相互配对的特征空间，使自伴随符号扭转表示的重数为偶数，n≡1 mod4时所有不可约表示重数均偶。
 
 It is observed that the dimension of the space of invariant spinors on the manifold $\mathrm{SU}(n)/T^{n-1}$ of full flags in $\mathbb{C}^n$ equals the number $\mathrm{RT}(n)$ of labelled regular tournaments of order $n$, for $n$ odd. This space is decomposed under a double cover of the Weyl group, and realized as a pair of eigenspaces, first for the Dirac operator, then for a twisted version of it which acts equivariantly; this is used to show that multiplicities of irreducible representations are even for $n\equiv 1\pmod 4$.
 
@@ -2218,7 +2218,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Zhongmin Shen、Jyh-Yang Wu
 
-重述闭 n 维流形在 Ric≥−(n−1)、直径≤D 下总有界 Betti 数仅依赖 n、D 的既有结果，并以 Kapovitch–Wilking 广义 Margulis 引理提供直接现代输入。讨论有界上同调比较映射的像及其与同调 ℓ¹ 半范数的关系。
+重访闭黎曼n流形在Ric≥−(n−1)、直径≤D下，总bounded Betti数由C(n,D)控制的既有定理。这里bounded Betti是有界上同调到普通上同调比较映射像的维数；本文明确借Kapovitch–Wilking广义Margulis引理，取得固定小球基本群在整体中的像为virtually nilpotent，从而补齐原覆盖证明所需维数一致amenability半径。
 
 We consider the image of the comparison homomorphism from bounded cohomology to ordinary cohomology. Its dimension is called the bounded Betti number. In our earlier work we proved that the total bounded Betti number of a closed Riemannian $n$-manifold satisfying $\Ric\geq -(n-1)$ and $\Diam\leq D$ is bounded by a constant depending only on $n$ and $D$. The original proof used the amenability of the images of sufficiently small local fundamental groups. Since that work was written, Kapovitch and Wilking proved Gromov's generalized Margulis lemma under a lower Ricci curvature bound. Their theorem gives the stronger conclusion that these local groups are uniformly virtually nilpotent. We explain how their result supplies a direct modern input for the bounded Betti number theorem. We also discuss the topological meaning of the bounded part of ordinary cohomology and its relation to the $\ell^1$-seminorm on homology.
 
@@ -2252,7 +2252,7 @@ Let $F:M^n\to\mathbb{S}^{2n+1}$ be a minimal Legendrian immersion of a connected
 
 Antonio De Rosa、Aria Halavati
 
-对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的积分。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。
+对紧连通 d≥2 流形及正、连续、可比且法向一次齐次延拓凸的各向异性能量，建立余维一 p-width 的 Weyl 律，系数为局部冻结 Weyl 常数的 L^(d/(d−1)) 范数。闭流形 3≤d≤6 时，在固定背景度量下构造对 Fⱼ→1 各自平稳的光滑嵌入超曲面，其累计面积提升到无定向 Grassmannian 丛后对全部连续测试函数等分布。
 
 We establish a Weyl law for the codimension-one anisotropic volume spectrum on compact Riemannian manifolds. We then use this law to obtain equidistribution in the full Grassmannian bundle while keeping the ambient metric fixed. More precisely, on every closed connected smooth Riemannian manifold of dimension three through six, we construct smooth, embedded hypersurfaces stationary for anisotropies smoothly converging to area. The cumulative sum of their area measures, when lifted to the Grassmannian bundle, converges to the uniform measure.
 
@@ -2374,7 +2374,7 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yuqi Li、Hao-Yu Sun
 
-对 P¹×P¹ 上固定产品 Kähler 类与相位、权重 (4,2,0) 的不变秩四 dHYM 链，证明光滑严格校准约化解存在当且仅当 A 可逆且 zᵀAᵀBz 非恒零。该条件也刻画指定等变 coherent 范畴中的稳定、半稳定及多稳定，覆盖十一种非空系数层和秩一边界。
+在P¹×P¹固定积Kähler形式及charge −4+24i所选相位上，研究O(1)→O(2)²→O(3)、竖直权4/2/0的rank-four不变dHYM系统。对任意线性箭头ψ=Bz、φ=(Az)ᵀ，正文定理4.1将光滑严格校准解和所定义SU(2)等变coherent范畴中的稳定、半稳定、多稳定统一刻画为rank A=2且zᵀAᵀBz不恒零，包括rank B=1及除子重合边界。
 
 We study the invariant rank-four deformed Hermitian--Yang--Mills equation associated with the chain $\mathcal{O}(1)\to\mathcal{O}(2)^{\oplus2}\to\mathcal{O}(3)$ over $\mathbb P^1$, with vertical weights $(4,2,0)$ and a fixed product Kähler class and phase. For arbitrary linear arrows $\psi=Bz$ and $\phi=(Az)^T$, smooth strictly calibrated reduced solutions exist exactly when $A$ is invertible and $z^TA^TBz$ is not identically zero. The same condition characterizes stability, semistability and polystability in the specified equivariant coherent category. The classification includes all eleven nonempty coefficient strata and both coincident and distinct divisor points on the rank-one lower boundary. The analytic proof retains the ordered, noncommuting middle equation. After constructing positive-parameter solutions, it rules out unbounded metric values by combining the source budgets with moving spectral tests; on the rank-one lower boundary, the divisor mass must also be retained. Global value, gradient and symbol estimates then give a smooth strictly calibrated endpoint on the original chain. No equivalence with full coherent or derived-category stability, uniqueness, or estimate uniform across changing chains is asserted.
 

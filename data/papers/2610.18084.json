@@ -35,16 +35,17 @@
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "旗流形旋量与正则锦标赛计数",
-      "workSummary": "指出奇数 n 时 SU(n)/Tⁿ⁻¹ 不变旋量空间的维数等于 n 阶带标号正则锦标赛的数量。按 Weyl 群双覆盖分解该空间，并用 Dirac 及其等变扭曲版本的特征空间证明 n≡1 mod 4 时不可约表示重数为偶数。",
+      "workSummary": "奇数n时SU(n)/T^(n−1)不变旋量的维数等于有标号正则锦标赛数：反转平衡子图将其计数与旋量权重对应。Weyl群双覆盖作用下，奇偶扭曲Dirac算子得到两个相互配对的特征空间，使自伴随符号扭转表示的重数为偶数，n≡1 mod4时所有不可约表示重数均偶。",
       "techniques": [
-        "不变旋量",
+        "正则锦标赛与平衡子图",
+        "旗流形旋量权重",
         "Weyl 群双覆盖",
-        "Dirac 算子",
-        "正则锦标赛计数"
+        "Clifford 代数",
+        "奇偶扭曲 Dirac 算子"
       ],
-      "breakthrough": "建立齐性旋量几何与组合计数的对应并获得重数奇偶约束。",
-      "limitations": "维数对应要求 n 为奇数；偶重数结论限 n≡1 mod 4。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把不变旋量计数和表示重数约束转为可计算的有向图组合数据。",
+      "limitations": "讨论SU(n)全旗流形且n奇数；不是一般群旗流形的计数公式。原Dirac算子对双覆盖并不等变，需奇偶扭曲后才得到等变特征空间分解。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 Claude 和 ChatGPT 辅助探索性计算、可能的证明方向及编辑润色；作者自行写作数学证明与计算并负责全文。可能的证明方向属于思路探索，不等同于 AI 完成证明。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.18084v1 · PDF 第 25 页",
@@ -109,16 +110,17 @@
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "旗流形旋量与正则锦标赛计数",
-          "workSummary": "指出奇数 n 时 SU(n)/Tⁿ⁻¹ 不变旋量空间的维数等于 n 阶带标号正则锦标赛的数量。按 Weyl 群双覆盖分解该空间，并用 Dirac 及其等变扭曲版本的特征空间证明 n≡1 mod 4 时不可约表示重数为偶数。",
+          "workSummary": "奇数n时SU(n)/T^(n−1)不变旋量的维数等于有标号正则锦标赛数：反转平衡子图将其计数与旋量权重对应。Weyl群双覆盖作用下，奇偶扭曲Dirac算子得到两个相互配对的特征空间，使自伴随符号扭转表示的重数为偶数，n≡1 mod4时所有不可约表示重数均偶。",
           "techniques": [
-            "不变旋量",
+            "正则锦标赛与平衡子图",
+            "旗流形旋量权重",
             "Weyl 群双覆盖",
-            "Dirac 算子",
-            "正则锦标赛计数"
+            "Clifford 代数",
+            "奇偶扭曲 Dirac 算子"
           ],
-          "breakthrough": "建立齐性旋量几何与组合计数的对应并获得重数奇偶约束。",
-          "limitations": "维数对应要求 n 为奇数；偶重数结论限 n≡1 mod 4。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把不变旋量计数和表示重数约束转为可计算的有向图组合数据。",
+          "limitations": "讨论SU(n)全旗流形且n奇数；不是一般群旗流形的计数公式。原Dirac算子对双覆盖并不等变，需奇偶扭曲后才得到等变特征空间分解。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 Claude 和 ChatGPT 辅助探索性计算、可能的证明方向及编辑润色；作者自行写作数学证明与计算并负责全文。可能的证明方向属于思路探索，不等同于 AI 完成证明。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.18084v1 · PDF 第 25 页",

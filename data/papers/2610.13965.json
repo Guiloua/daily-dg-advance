@@ -35,16 +35,18 @@
     "analysis": {
       "topic": "交叉方向与基础工具",
       "progressType": "奇偶类 Jensen 不等式",
-      "workSummary": "对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。",
+      "workSummary": "对同时两输出交换公理定义的jump M-凸函数，在固定逐坐标奇偶类r+2Z^n内，任意实凸组合若重心仍落在该类，就自动属于有效定义域并满足Jensen不等式。全局仿射支撑可由z+{−2,0,2}^n中至多3^n−1个局部不等式刻画，不要求有效定义域有限或强基可排序。",
       "techniques": [
+        "同时两输出交换公理",
+        "有限盒限制",
         "维数归纳",
-        "下确界卷积",
-        "二次核",
-        "局部支撑不等式"
+        "偶盒指示函数下确界卷积",
+        "唯一零二次核",
+        "局部仿射支撑"
       ],
-      "breakthrough": "把 Jensen 与支撑理论推广到无限定义域的固定坐标奇偶类。",
-      "limitations": "重心必须位于同一个逐坐标奇偶类；仅要求总奇偶一致不足。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把重心可行性纳入Jensen结论，并用有限邻域控制无限定义域的支撑理论。",
+      "limitations": "输入与重心均须同一逐坐标奇偶类，单独总奇偶一致不足；普通conv而非闭凸包用于上图精确表述。含正权重+∞输入时不等式虽成立，却不再保证重心可行。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露 ChatGPT 与 Codex 在其指导下协助证明发展、核查论证与参考文献，以及稿件准备。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.13965v1 · PDF 第 12 页",
@@ -108,16 +110,18 @@
         "analysis": {
           "topic": "交叉方向与基础工具",
           "progressType": "奇偶类 Jensen 不等式",
-          "workSummary": "对整数格上的 jump M-凸函数，证明每个逐坐标奇偶类上的 Jensen 不等式及全局仿射支撑，不要求有限有效定义域或强基可排序性。局部至多 3^n−1 个不等式刻画支撑向量，并导出对偶、稳定性和 Jensen 间隙估计。",
+          "workSummary": "对同时两输出交换公理定义的jump M-凸函数，在固定逐坐标奇偶类r+2Z^n内，任意实凸组合若重心仍落在该类，就自动属于有效定义域并满足Jensen不等式。全局仿射支撑可由z+{−2,0,2}^n中至多3^n−1个局部不等式刻画，不要求有效定义域有限或强基可排序。",
           "techniques": [
+            "同时两输出交换公理",
+            "有限盒限制",
             "维数归纳",
-            "下确界卷积",
-            "二次核",
-            "局部支撑不等式"
+            "偶盒指示函数下确界卷积",
+            "唯一零二次核",
+            "局部仿射支撑"
           ],
-          "breakthrough": "把 Jensen 与支撑理论推广到无限定义域的固定坐标奇偶类。",
-          "limitations": "重心必须位于同一个逐坐标奇偶类；仅要求总奇偶一致不足。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把重心可行性纳入Jensen结论，并用有限邻域控制无限定义域的支撑理论。",
+          "limitations": "输入与重心均须同一逐坐标奇偶类，单独总奇偶一致不足；普通conv而非闭凸包用于上图精确表述。含正权重+∞输入时不等式虽成立，却不再保证重心可行。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露 ChatGPT 与 Codex 在其指导下协助证明发展、核查论证与参考文献，以及稿件准备。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.13965v1 · PDF 第 12 页",

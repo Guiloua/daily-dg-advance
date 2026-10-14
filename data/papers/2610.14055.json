@@ -34,15 +34,16 @@
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "l1 Jung 常数上界",
-      "workSummary": "证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。",
+      "workSummary": "对所有整数k≥1，实ℓ₁^(4k+1)中任意非空有界集可由环境中心球以半径≤(4k−1)/(4k)倍直径包围，五维恰为3/4。若4k阶Hadamard矩阵存在，维数4k−1、4k、4k+1的Jung常数同等于该值；证明将极小包围球接触点的平衡符号约化为坐标cut半度量的二次型界。",
       "techniques": [
-        "环境包围球",
-        "Hadamard 矩阵构造",
-        "Lean 形式化"
+        "极小包围球接触点约化",
+        "平衡符号与坐标gap",
+        "cut半度量二次型界",
+        "Hadamard下界"
       ],
-      "breakthrough": "给出全部 4k+1 维的上界，并在 Hadamard 条件下识别三维数的精确常数。",
-      "limitations": "一般 k 的精确值还依赖相应 Hadamard 矩阵存在；上界本身不需该条件。",
-      "analysisDepth": "abstract",
+      "breakthrough": "无条件推进维数4k+1的上界，并在Hadamard阶数下补齐相邻三个维数的精确值。",
+      "limitations": "中心允许位于整个环境空间，非约束于集合或凸包；精确值的Hadamard条件不能无条件去掉。给出h+1维结论而非Ivanov全部h、h+1、h+2维猜想；Lean形式化不等于本文全部其他结论均已形式化。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "作者披露大语言模型协助研究与稿件准备，未细分具体用途。",
       "aiEvidenceSource": "https://arxiv.org/pdf/2610.14055v1 · PDF 第 10 页",
@@ -101,15 +102,16 @@
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "l1 Jung 常数上界",
-          "workSummary": "证明实 l1^(4k+1) 中任意非空有界集可由半径至多 (4k−1)/(4k) 倍直径的环境球包围。五维常数为 3/4；若存在 4k 阶 Hadamard 矩阵，则连续三个维数 4k−1、4k、4k+1 的常数都等于此值。",
+          "workSummary": "对所有整数k≥1，实ℓ₁^(4k+1)中任意非空有界集可由环境中心球以半径≤(4k−1)/(4k)倍直径包围，五维恰为3/4。若4k阶Hadamard矩阵存在，维数4k−1、4k、4k+1的Jung常数同等于该值；证明将极小包围球接触点的平衡符号约化为坐标cut半度量的二次型界。",
           "techniques": [
-            "环境包围球",
-            "Hadamard 矩阵构造",
-            "Lean 形式化"
+            "极小包围球接触点约化",
+            "平衡符号与坐标gap",
+            "cut半度量二次型界",
+            "Hadamard下界"
           ],
-          "breakthrough": "给出全部 4k+1 维的上界，并在 Hadamard 条件下识别三维数的精确常数。",
-          "limitations": "一般 k 的精确值还依赖相应 Hadamard 矩阵存在；上界本身不需该条件。",
-          "analysisDepth": "abstract",
+          "breakthrough": "无条件推进维数4k+1的上界，并在Hadamard阶数下补齐相邻三个维数的精确值。",
+          "limitations": "中心允许位于整个环境空间，非约束于集合或凸包；精确值的Hadamard条件不能无条件去掉。给出h+1维结论而非Ivanov全部h、h+1、h+2维猜想；Lean形式化不等于本文全部其他结论均已形式化。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "作者披露大语言模型协助研究与稿件准备，未细分具体用途。",
           "aiEvidenceSource": "https://arxiv.org/pdf/2610.14055v1 · PDF 第 10 页",

@@ -33,14 +33,17 @@
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "特定扭曲积截迹确定",
-      "workSummary": "确定二维完备扭曲积 R×S¹、度量 dt²+m(t)²dθ² 的截迹结构；扭曲函数为正偶函数，且曲率在指定外部区域非正、在上半子午线指定区间递减。",
+      "workSummary": "对正偶扭曲函数m定义的完备旋转圆柱dt²+m(t)²dθ²，在中段Gauss曲率沿半子午线下降且外部非正时，作者用Clairaut常数与半周期函数刻画割迹。圆柱上割迹由对面子午线和可能出现的反射纬线弧组成；通用覆盖中相应纬线射线在阈值外可完全消失。",
       "techniques": [
-        "扭曲积几何",
-        "截迹结构分析"
+        "Clairaut 常数",
+        "测地半周期积分",
+        "Gauss 曲率 G=−m″/m",
+        "半周期单调性",
+        "通用覆盖割迹"
       ],
-      "breakthrough": "在允许内外曲率行为不同的一类旋转对称圆柱上描述截迹。",
-      "limitations": "适用范围限于正偶扭曲函数与给定分段曲率单调、符号条件。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把全半子午线曲率单调条件放宽为中段单调与外部非正，同时保持显式割迹结构。",
+      "limitations": "模型实际为二维R×S¹，m光滑、严格正且偶；需指定有限t1及曲率条件。对面子午线来自圆柱商拓扑，通用覆盖的空割迹结论不能直接搬回圆柱。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
       "aiEvidence": null,
       "aiEvidenceSource": null,
@@ -97,14 +100,17 @@
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "特定扭曲积截迹确定",
-          "workSummary": "确定二维完备扭曲积 R×S¹、度量 dt²+m(t)²dθ² 的截迹结构；扭曲函数为正偶函数，且曲率在指定外部区域非正、在上半子午线指定区间递减。",
+          "workSummary": "对正偶扭曲函数m定义的完备旋转圆柱dt²+m(t)²dθ²，在中段Gauss曲率沿半子午线下降且外部非正时，作者用Clairaut常数与半周期函数刻画割迹。圆柱上割迹由对面子午线和可能出现的反射纬线弧组成；通用覆盖中相应纬线射线在阈值外可完全消失。",
           "techniques": [
-            "扭曲积几何",
-            "截迹结构分析"
+            "Clairaut 常数",
+            "测地半周期积分",
+            "Gauss 曲率 G=−m″/m",
+            "半周期单调性",
+            "通用覆盖割迹"
           ],
-          "breakthrough": "在允许内外曲率行为不同的一类旋转对称圆柱上描述截迹。",
-          "limitations": "适用范围限于正偶扭曲函数与给定分段曲率单调、符号条件。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把全半子午线曲率单调条件放宽为中段单调与外部非正，同时保持显式割迹结构。",
+          "limitations": "模型实际为二维R×S¹，m光滑、严格正且偶；需指定有限t1及曲率条件。对面子午线来自圆柱商拓扑，通用覆盖的空割迹结论不能直接搬回圆柱。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
           "aiEvidence": null,
           "aiEvidenceSource": null,

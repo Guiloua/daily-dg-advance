@@ -36,14 +36,17 @@
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "Riemann 曲面指数 Green 能量",
-      "workSummary": "研究 Riemann 曲面有限点构型的指数 Green 能量，证明最优或近最优构型必须在曲面上充分分散。特别分析圆球面并获得构型最小 Green 能量的取值。",
+      "workSummary": "在紧黎曼曲面上，只要固定一个 β>0 的指数 Green 能量对 N 点配置一致有界，即得平均零势 L¹ 控制、二阶积分误差 O(N⁻¹) 和尖锐 W₁∼N⁻¹/²；更一般凹连续模积分误差有对应量化阶。另研究每个 β、N 的无碰撞极小配置、力平衡及最优常数的 Gibbs entropy 导数。",
       "techniques": [
-        "Green 能量",
-        "有限点构型极小化"
+        "Green 势差测度分部积分",
+        "热核平滑",
+        "原子运输下界",
+        "凹连续模量化",
+        "能量 Euler–Lagrange 平衡"
       ],
-      "breakthrough": "将能量近极小性与点在曲面上的均匀分布性质联系。",
-      "limitations": "摘要未给出一般曲面上的精确最小值、点数范围或分散性的定量常数。",
-      "analysisDepth": "abstract",
+      "breakthrough": "把单一指数矩条件与最优原子运输尺度联系，分离不依赖谱或全纯来源的普适后果。",
+      "limitations": "能量条件只给 O(N⁻¹/⁴) 覆盖半径且不强制微观分离；p>1 的一般 Wp 界不称尖锐。额外 O(N⁻¹/²) 覆盖及全 p 运输来自伴随构造的更强逐点控制。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "explicit",
       "aiEvidence": "官方摘要披露稿件第一版写作得到 ChatGPT 帮助。",
       "aiEvidenceSource": "https://arxiv.org/abs/2610.15004v1 · 官方摘要",
@@ -106,14 +109,17 @@
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "Riemann 曲面指数 Green 能量",
-          "workSummary": "研究 Riemann 曲面有限点构型的指数 Green 能量，证明最优或近最优构型必须在曲面上充分分散。特别分析圆球面并获得构型最小 Green 能量的取值。",
+          "workSummary": "在紧黎曼曲面上，只要固定一个 β>0 的指数 Green 能量对 N 点配置一致有界，即得平均零势 L¹ 控制、二阶积分误差 O(N⁻¹) 和尖锐 W₁∼N⁻¹/²；更一般凹连续模积分误差有对应量化阶。另研究每个 β、N 的无碰撞极小配置、力平衡及最优常数的 Gibbs entropy 导数。",
           "techniques": [
-            "Green 能量",
-            "有限点构型极小化"
+            "Green 势差测度分部积分",
+            "热核平滑",
+            "原子运输下界",
+            "凹连续模量化",
+            "能量 Euler–Lagrange 平衡"
           ],
-          "breakthrough": "将能量近极小性与点在曲面上的均匀分布性质联系。",
-          "limitations": "摘要未给出一般曲面上的精确最小值、点数范围或分散性的定量常数。",
-          "analysisDepth": "abstract",
+          "breakthrough": "把单一指数矩条件与最优原子运输尺度联系，分离不依赖谱或全纯来源的普适后果。",
+          "limitations": "能量条件只给 O(N⁻¹/⁴) 覆盖半径且不强制微观分离；p>1 的一般 Wp 界不称尖锐。额外 O(N⁻¹/²) 覆盖及全 p 运输来自伴随构造的更强逐点控制。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "explicit",
           "aiEvidence": "官方摘要披露稿件第一版写作得到 ChatGPT 帮助。",
           "aiEvidenceSource": "https://arxiv.org/abs/2610.15004v1 · 官方摘要",
