@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-15",
-  "revision": 4,
-  "contentHash": "5aa0d642b725bc31fa0848531a35d91df55e0d244d0b591f749e6519758dcf13",
-  "lastUpdated": "2026-10-15T02:54:31.669Z",
+  "revision": 5,
+  "contentHash": "3c26af33297ed19e4cdb55e8e707b634c96412af9983ae42aacce1ad04324f43",
+  "lastUpdated": "2026-10-15T03:06:28.327Z",
   "categories": [
     {
       "category": "mathDg",
@@ -170,6 +170,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.10804v1",
+          "observedAt": "2026-10-15T03:02:18.450241+00:00",
+          "contentHash": "fb7837ac3f81f6f18cb4259ea7aac738210d351e1236358d98110c71625e2c74"
         }
       ],
       "analysis": {
@@ -187,6 +192,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:02:18.450241+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.10804v1",
+          "contentHash": "fb7837ac3f81f6f18cb4259ea7aac738210d351e1236358d98110c71625e2c74",
+          "pages": 20,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。首页脚注明确表示该工作的发展与写作未使用人工智能模型，并附有关于模型处理的声明。全文检索只命中这段否定声明，未见正面 AI 协作披露；记录的是作者声明及检索结果，未独立证明所有研究过程未使用 AI。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "df945903c9ef2ffa4240e3edd68f4fd80fd82586d1bd303f0822f8c2bde711a4"
+        },
         "priorityScore": 67,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；标准接触三球中的刻画不能直接推广到所有接触流形；具体映射的核与像需查正文。"
       },
@@ -220,6 +236,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.18887v1",
+          "observedAt": "2026-10-15T02:57:55.018446+00:00",
+          "contentHash": "72abe1b94a5edac3445648fb59ffd5956bd8edd8a820ad9930424dd174f6b86e"
         }
       ],
       "analysis": {
@@ -234,9 +255,24 @@
         "breakthrough": "把 ending lamination 的视角延伸到更一般的群作用，并指出仅凭末端不变量判断几何有限性的边界。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。摘要明确存在几何无限但末端 currents 集中于外围子群轨道的例子，不能把几种推广视为普遍等价。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Tool Use 明确将通过引理 4.25 处理命题 4.23 的思路，以及该引理的初始证明，归于大语言模型。该声明具体涉及研究路线和证明贡献；原文未提供模型名称或写作用途，故不补写这些信息。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.18887v1 · PDF 第 40 页，Tool Use",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:57:55.018446+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.18887v1",
+          "contentHash": "72abe1b94a5edac3445648fb59ffd5956bd8edd8a820ad9930424dd174f6b86e",
+          "pages": 42,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool Use 明确将通过引理 4.25 处理命题 4.23 的思路，以及该引理的初始证明，归于大语言模型。该声明具体涉及研究路线和证明贡献；原文未提供模型名称或写作用途，故不补写这些信息。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "d15e5c4b81f2c89c6affd6695d4824422097f56093d636ba9e76066bcc79fdde"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 85,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；摘要明确存在几何无限但末端 currents 集中于外围子群轨道的例子，不能把几种推广视为普遍等价。"
       },
@@ -271,6 +307,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.18896v1",
+          "observedAt": "2026-10-15T03:03:43.272919+00:00",
+          "contentHash": "47cd89de224d95098e9ce8735ad20010baabf7d76e3f160f2707f6906980f19c"
         }
       ],
       "analysis": {
@@ -285,9 +326,23 @@
         "breakthrough": "在指定的非对角化类型下获得由内蕴度量决定的外在刚性。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。仅覆盖 Magid 分类的指定情形并附带函数依赖与测地性假设，不是所有 Lorentz 超曲面的刚性结论。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Acknowledgements 明确说明使用 Anthropic 的 Claude 改善稿件语言和可读性。该段支持语言润色，不支持 AI 参与证明或核心数学思路。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.18896v1 · PDF 第 12 页，Acknowledgements",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:03:43.272919+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.18896v1",
+          "contentHash": "47cd89de224d95098e9ce8735ad20010baabf7d76e3f160f2707f6906980f19c",
+          "pages": 13,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Acknowledgements 明确说明使用 Anthropic 的 Claude 改善稿件语言和可读性。该段支持语言润色，不支持 AI 参与证明或核心数学思路。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "620726515e9e957ee473f14ab6f4c1b55962065a7db41bec811a673d4d53570d"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 58,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；仅覆盖 Magid 分类的指定情形并附带函数依赖与测地性假设，不是所有 Lorentz 超曲面的刚性结论。"
       },
@@ -325,6 +380,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.18940v1",
+          "observedAt": "2026-10-15T03:04:45.142477+00:00",
+          "contentHash": "4e07a6b1169023978142b6fb1da13798b5e162ce1b11f15c3e2c24afec8d099f"
         }
       ],
       "analysis": {
@@ -339,9 +399,26 @@
         "breakthrough": "将三维流形指标的整数性问题置入更广的簇代数框架。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。整数性带有条件，摘要未列全；不能据此宣称任意箭图或任意 mutation loop 均已覆盖。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI disclosure 披露有限使用 ChatGPT 6-Astra 进行初步数学讨论、一致性检查、Mathematica 编程辅助、语法修改及例子和反例搜索，并说明未找到猜想 2 的反例。作者独立重建并完成数学论证、撰写正文并核实参考文献；这些说明不抵消已披露的讨论、检查、编程及语言辅助。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.18940v1 · PDF 第 4 页，AI disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:04:45.142477+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.18940v1",
+          "contentHash": "4e07a6b1169023978142b6fb1da13798b5e162ce1b11f15c3e2c24afec8d099f",
+          "pages": 31,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI disclosure 披露有限使用 ChatGPT 6-Astra 进行初步数学讨论、一致性检查、Mathematica 编程辅助、语法修改及例子和反例搜索，并说明未找到猜想 2 的反例。作者独立重建并完成数学论证、撰写正文并核实参考文献；这些说明不抵消已披露的讨论、检查、编程及语言辅助。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "94f6fce093f81118b2edcc8cc0084498514bf0675ec21c9bd78b2adc1f542c3a"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 53,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；整数性带有条件，摘要未列全；不能据此宣称任意箭图或任意 mutation loop 均已覆盖。"
       },
@@ -376,6 +453,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.18947v1",
+          "observedAt": "2026-10-15T02:54:44.168404+00:00",
+          "contentHash": "047b7612679f46ada0e4f7a2c26893a42a57ffedd4c72ab47509dadc11021009"
         }
       ],
       "analysis": {
@@ -393,6 +475,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:54:44.168404+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.18947v1",
+          "contentHash": "047b7612679f46ada0e4f7a2c26893a42a57ffedd4c72ab47509dadc11021009",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "c4c5617f8dab058de4fc792a37da5a0b38a3e3cf547b848a116bc9a672a1e2e4"
+        },
         "priorityScore": 94,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；本条仅据摘要，尚未审读分类证明；维数为三且 S 为常数，不能外推为一般维数或变曲率的分类。"
       },
@@ -427,6 +520,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19036v1",
+          "observedAt": "2026-10-15T03:03:55.799600+00:00",
+          "contentHash": "ca83b65d3e75bfbbee7cdb8e2d841d424e48123433f5964d6862e9abc1899fc0"
         }
       ],
       "analysis": {
@@ -444,6 +542,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:03:55.799600+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19036v1",
+          "contentHash": "ca83b65d3e75bfbbee7cdb8e2d841d424e48123433f5964d6862e9abc1899fc0",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "985455935540092d7171b19480fe7709f639a5b2c2c0d8c56a734e1bb0520ede"
+        },
         "priorityScore": 55,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；以模型和问题为主；附带 Maple 计算不等于 AI 协作声明，也不代表已经完成所有模型分类。"
       },
@@ -480,6 +589,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19037v1",
+          "observedAt": "2026-10-15T03:00:43.223478+00:00",
+          "contentHash": "59223c565bb00cd560aca467763e07b95ef2762311334f914789bba1daf251c4"
         }
       ],
       "analysis": {
@@ -494,9 +608,23 @@
         "breakthrough": "把可逆性同时连接到表示论中的对合、brane 几何与 Langlands 对偶。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。奇偶秩采用不同的谱曲线假设；对偶支撑结果限于所述正规 Hitchin 基底及指定群，不能直接覆盖奇异全模空间。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI declaration 披露 LLM 用于语言编辑、风格改善、校对，以及发现表述中的潜在不一致；数学结果和证明由作者发展并独立核验。按该范围记录写作编辑辅助，不据此认定 AI 完成数学证明或核心想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19037v1 · PDF 第 24 页，Declarations: AI declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:00:43.223478+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19037v1",
+          "contentHash": "59223c565bb00cd560aca467763e07b95ef2762311334f914789bba1daf251c4",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI declaration 披露 LLM 用于语言编辑、风格改善、校对，以及发现表述中的潜在不一致；数学结果和证明由作者发展并独立核验。按该范围记录写作编辑辅助，不据此认定 AI 完成数学证明或核心想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9e1199c38986829c594847229e58e5ed9834eaee591b1c32c1d40491a5dd47b9"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 76,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；奇偶秩采用不同的谱曲线假设；对偶支撑结果限于所述正规 Hitchin 基底及指定群，不能直接覆盖奇异全模空间。"
       },
@@ -533,6 +661,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-15T02:49:33.687387+00:00",
           "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19085v1",
+          "observedAt": "2026-10-15T02:59:55.401360+00:00",
+          "contentHash": "48c8232ccbca74d2ea5448ae9563e5f2db2c34fbf37245c35aff58bf7e5060b3"
         }
       ],
       "analysis": {
@@ -547,9 +680,23 @@
         "breakthrough": "把多种体积乘积和谱不等式纳入 cost 框架，并记录等号与指数阈值障碍。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。二阶变分只在有正当微分依据的方向成立；受限谱问题与标量 (B) 性质须分别理解。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Statement of AI use 明确说明 AI 用于写作润色、一些小的技术推进，并被要求补充第 7 节实例；主要想法和结果在 2026 年春季前已由作者发展。文中的其他 OpenAI 命中属于外部研究动态和引用，不能作为本篇工具使用的额外证据。已明确记录写作；技术推进的具体工具用途未细分，不推断核心想法归属。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19085v1 · PDF 第 5 页，Statement of AI use",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:59:55.401360+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19085v1",
+          "contentHash": "48c8232ccbca74d2ea5448ae9563e5f2db2c34fbf37245c35aff58bf7e5060b3",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Statement of AI use 明确说明 AI 用于写作润色、一些小的技术推进，并被要求补充第 7 节实例；主要想法和结果在 2026 年春季前已由作者发展。文中的其他 OpenAI 命中属于外部研究动态和引用，不能作为本篇工具使用的额外证据。已明确记录写作；技术推进的具体工具用途未细分，不推断核心想法归属。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "99c9fed8acf02658157b79c1e491b755984a4189bcfb686440f692e3322ce70b"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 80,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；二阶变分只在有正当微分依据的方向成立；受限谱问题与标量 (B) 性质须分别理解。"
       },
@@ -585,6 +732,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19194v1",
+          "observedAt": "2026-10-15T03:04:19.981323+00:00",
+          "contentHash": "e7dae935fde0972a3d94162f163bb98c10bab1d452a2936231ffddbf86520305"
         }
       ],
       "analysis": {
@@ -599,9 +751,24 @@
         "breakthrough": "把既有分类转化为可复现的枚举流程，同时记录反向流对应的对偶。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Tool use declaration 逐项披露 Claude 辅助编写和调试 Python 枚举及图形转换代码、从程序输出生成附录 LaTeX/TikZ 图，以及起草编辑算法说明、引言和结论的部分英文文字并建议 arXiv 分类。作者独立核验输出、修改文本与代码，数学定义和结果来自作者及所引文献。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19194v1 · PDF 第 17 页，Tool use declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:04:19.981323+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19194v1",
+          "contentHash": "e7dae935fde0972a3d94162f163bb98c10bab1d452a2936231ffddbf86520305",
+          "pages": 20,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool use declaration 逐项披露 Claude 辅助编写和调试 Python 枚举及图形转换代码、从程序输出生成附录 LaTeX/TikZ 图，以及起草编辑算法说明、引言和结论的部分英文文字并建议 arXiv 分类。作者独立核验输出、修改文本与代码，数学定义和结果来自作者及所引文献。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "5cdf8a3e2872b1b5962676983978d678b34e3e65999d7d3b83df87254ff5591a"
+        },
+        "aiUsage": [
+          "computation",
+          "writing"
+        ],
         "priorityScore": 54,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。"
       },
@@ -638,6 +805,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-15T02:49:33.687387+00:00",
           "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19214v1",
+          "observedAt": "2026-10-15T03:01:18.533586+00:00",
+          "contentHash": "744ab434bef8f5beed8aac7784cb37becf261c61bbc31d797a6a167ccfed14de"
         }
       ],
       "analysis": {
@@ -655,6 +827,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:01:18.533586+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19214v1",
+          "contentHash": "744ab434bef8f5beed8aac7784cb37becf261c61bbc31d797a6a167ccfed14de",
+          "pages": 12,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "283d88c765f4acc138b5752393de170bf9bec8a5956bf8dc290170a2df8932ac"
+        },
         "priorityScore": 73,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；所有 m 的判据阈值不等于所有 m 的几何最优维数；摘要只在指定族上确认两者相同。"
       },
@@ -688,6 +871,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19241v1",
+          "observedAt": "2026-10-15T02:58:55.153320+00:00",
+          "contentHash": "9cd9b164f414f8e5e023ee0eecbe56416b32db7b930d21774819116fe2b8dd46"
         }
       ],
       "analysis": {
@@ -702,9 +890,26 @@
         "breakthrough": "以较弱的无穷远几何条件实现 Gromov 所述耗尽构造，并给出可量化的近似版本。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。维数上界及一端、无 tentacle 等假设不可省略；更一般的结论控制积分误差，未必给出逐点同号。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI Statement 明确披露 Claude Opus 5 用于核查证明、检索文献、简化和起草部分论证，以及写作过程中的错误检查。作者同时说明想法和证明属于作者并承担内容责任；不把这些辅助用途扩张成 AI 提出核心想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19241v1 · PDF 第 4 页，AI Statement",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:58:55.153320+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19241v1",
+          "contentHash": "9cd9b164f414f8e5e023ee0eecbe56416b32db7b930d21774819116fe2b8dd46",
+          "pages": 17,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Statement 明确披露 Claude Opus 5 用于核查证明、检索文献、简化和起草部分论证，以及写作过程中的错误检查。作者同时说明想法和证明属于作者并承担内容责任；不把这些辅助用途扩张成 AI 提出核心想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9265a55b0f7780e94e54f87c5355fcbba7cab0178b547b18c8ed9b36555bf1f9"
+        },
+        "aiUsage": [
+          "literature",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 83,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；维数上界及一端、无 tentacle 等假设不可省略；更一般的结论控制积分误差，未必给出逐点同号。"
       },
@@ -739,6 +944,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-15T02:49:33.687387+00:00",
           "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19253v1",
+          "observedAt": "2026-10-15T03:05:20.220756+00:00",
+          "contentHash": "3bd23b9c2be226c8cabab895fdc3923c0c805df4fb858000c367a335a1faf4c0"
         }
       ],
       "analysis": {
@@ -756,6 +966,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:05:20.220756+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19253v1",
+          "contentHash": "3bd23b9c2be226c8cabab895fdc3923c0c805df4fb858000c367a335a1faf4c0",
+          "pages": 7,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "2bd7b70bd87267d131b24ab8e7c5eb4c2d76429b99348247f470653f92119a91"
+        },
         "priorityScore": 30,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；作者明确不声称从其余四公设推出第五公设；对当前几何研究的新增定理贡献较有限。",
         "lowPriorityReason": "以基础公理的重新组织为主，暂未看到面向当前几何前沿问题的实质性新工具或定理。"
@@ -790,6 +1011,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19263v1",
+          "observedAt": "2026-10-15T02:57:07.724914+00:00",
+          "contentHash": "72c14690d8912b63c13336460756b52e5dbb47157efddd12d772790bbdd1cc6d"
         }
       ],
       "analysis": {
@@ -807,6 +1033,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:57:07.724914+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19263v1",
+          "contentHash": "72c14690d8912b63c13336460756b52e5dbb47157efddd12d772790bbdd1cc6d",
+          "pages": 10,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 AI Declaration 中明确表示该工作准备过程未使用 AI，官方评论也写有 No AI。全文检索命中均为该否定声明，未观察到正面 AI 协作披露；这记录作者声明及检索结果，不构成对未使用 AI 的独立证明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "775f75cc02a662510bb39c94a26f4c7be509795d3b75f3779678e6783fb4e34f"
+        },
         "priorityScore": 86,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；摘要称为最简单的已知分解，尚非全部 exotic R4 的统一分类；评论中的 No AI 是作者否定声明，仍需独立全文核查。"
       },
@@ -828,7 +1065,8 @@
           "math.DG"
         ],
         "primaryCategory": "math.DG",
-        "comment": "49 pages, 2 figures"
+        "comment": "49 pages, 2 figures",
+        "version": 1
       },
       "sources": [
         {
@@ -840,6 +1078,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19273",
+          "observedAt": "2026-10-15T02:55:44.291687+00:00",
+          "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7"
         }
       ],
       "analysis": {
@@ -854,15 +1097,30 @@
         "breakthrough": "以不变上同调类的有理性区分长期塌缩行为，兼顾基空间与覆盖空间。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19273 · PDF 第 8 页，第 1.7 节 AI disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:55:44.291687+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19273",
+          "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7",
+          "pages": 49,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "59c47b4c4a047f7b08c2db9406129e26053b54c696605829ada07c02467cfd55"
+        },
+        "aiUsage": [
+          "verification",
+          "writing"
+        ],
         "priorityScore": 90,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。"
       },
       "analysisBasis": {
         "abstract": "We study the $\\alpha$-Ricci flow $(g(t),\\alpha(t))$, which is a Ricci flow coupled with a harmonic 1-form heat flow, on the 2-torus $M$. We prove global existence for this flow as well as a Type III curvature estimate. The long-time behavior of the $\\alpha$-Ricci flow depends on the cohomology class $[\\alpha] \\in H^1(M,\\mathbb{R})$, which is invariant under the flow. If $[\\alpha]$ is rational, then as $t\\to\\infty$, $(M,t^{-1}g(t))$ Gromov--Hausdorff converges to $S^1$ with length $\\ell([\\alpha])/\\sqrt 2$ where $\\ell([\\alpha])$ is the primitive length of $[\\alpha]$. On the universal cover, the rescaled flow $(s^{-1}\\tilde g(st),\\tilde\\alpha(st))$ smoothly converges to an expander $(g^*(t),\\alpha^*(t))$ on $\\mathbb{R}^2$ as $s\\to \\infty$ where $\\alpha^*(t)$ is nonzero and constant in spacetime and $g^*(t)$ is flat and expanding in the $\\alpha^*$ direction. If $[\\alpha]$ is irrational, then there is a sequence $s_i\\to\\infty$ such that $(M,s_i^{-1}g(s_it))$ Gromov--Hausdorff converges to a point. Moreover, on the universal cover, $(s_i^{-1}\\tilde g(s_it),\\tilde\\alpha(s_it))$ smoothly converges to $(g^*(t),\\alpha^*(t))$.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -893,6 +1151,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19333v1",
+          "observedAt": "2026-10-15T02:59:19.674392+00:00",
+          "contentHash": "407c4ee271f960539af15e439d5ac698476f74d0e653ad5895c65517b48f48fd"
         }
       ],
       "analysis": {
@@ -907,9 +1170,23 @@
         "breakthrough": "构造并扩展 tight 但代数过扭的实例，显示两种性质之间的区别。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。必须保留 tb、filling 与手术系数条件；代数过扭不能直接当成几何过扭。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "文末 AI declaration 明确说明使用 LLM 校对稿件，其余工作由作者完成。该段支持写作校对辅助，未披露 AI 证明推导、数学想法或文献检索。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19333v1 · PDF 第 35 页，AI declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:59:19.674392+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19333v1",
+          "contentHash": "407c4ee271f960539af15e439d5ac698476f74d0e653ad5895c65517b48f48fd",
+          "pages": 36,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。文末 AI declaration 明确说明使用 LLM 校对稿件，其余工作由作者完成。该段支持写作校对辅助，未披露 AI 证明推导、数学想法或文献检索。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "ba4e8cd2e18815cad0f81d98a03af53f200f816cf0312b5886abcbb5c626eeaa"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 82,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；必须保留 tb、filling 与手术系数条件；代数过扭不能直接当成几何过扭。"
       },
@@ -947,6 +1224,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19355v1",
+          "observedAt": "2026-10-15T03:04:08.172896+00:00",
+          "contentHash": "a80e9b928a12fd77e67aa53a0cd1c96dc2b3868b889b8a4c173e3371ab25bdf0"
         }
       ],
       "analysis": {
@@ -961,9 +1243,23 @@
         "breakthrough": "为非半单量子拓扑提供可比较的显式样例及代数描述。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。特例中仅依赖奇偶性说明区分能力有限；摘要中的 Hopf 代数与 ribbon 理想假设不可混用。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "第 1.2 节明确说明部分图示由 Claude 辅助准备，并由作者逐一检查；数学内容、结果、证明及写作均为作者完成。记录制图辅助，不推断 AI 数学证明或文字写作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19355v1 · PDF 第 3 页，第 1.2 节 Statement on the use of AI",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:04:08.172896+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19355v1",
+          "contentHash": "a80e9b928a12fd77e67aa53a0cd1c96dc2b3868b889b8a4c173e3371ab25bdf0",
+          "pages": 29,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1.2 节明确说明部分图示由 Claude 辅助准备，并由作者逐一检查；数学内容、结果、证明及写作均为作者完成。记录制图辅助，不推断 AI 数学证明或文字写作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "4835e0d88a1474128812a09faa74209f0803ddbd9bed5033397d333b3fbbf843"
+        },
+        "aiUsage": [
+          "computation"
+        ],
         "priorityScore": 55,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；特例中仅依赖奇偶性说明区分能力有限；摘要中的 Hopf 代数与 ribbon 理想假设不可混用。"
       },
@@ -998,6 +1294,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19467v1",
+          "observedAt": "2026-10-15T03:01:54.317885+00:00",
+          "contentHash": "594ac8c07ca2c2397631befe0a1420f2a65f3e0cf4002996f5fac5d028dd7a0a"
         }
       ],
       "analysis": {
@@ -1012,9 +1313,25 @@
         "breakthrough": "揭示相对版本中同时存在丰富的自由部分与可指定的有限阶结构。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。无限秩结论明确针对代数对应；不能不经核查就认定全部代数结论自动提升到几何群。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI Disclosure 披露作者与 ChatGPT 5.6 Sol 讨论数论命题 5.2，模型提出证明并由作者检查；其他使用仅为最终稿校对。记录限定于该命题的证明辅助、讨论与写作校对，不推断 AI 完成相对结协边的主要研究路线。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19467v1 · PDF 第 3 页，AI Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:01:54.317885+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19467v1",
+          "contentHash": "594ac8c07ca2c2397631befe0a1420f2a65f3e0cf4002996f5fac5d028dd7a0a",
+          "pages": 14,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 披露作者与 ChatGPT 5.6 Sol 讨论数论命题 5.2，模型提出证明并由作者检查；其他使用仅为最终稿校对。记录限定于该命题的证明辅助、讨论与写作校对，不推断 AI 完成相对结协边的主要研究路线。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e2713174552967410f4fdd83b90e978ec25513a26162004228b3534db92334ef"
+        },
+        "aiUsage": [
+          "exploration",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 69,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；无限秩结论明确针对代数对应；不能不经核查就认定全部代数结论自动提升到几何群。"
       },
@@ -1056,6 +1373,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-15T02:49:33.687387+00:00",
           "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19585v1",
+          "observedAt": "2026-10-15T02:58:43.381476+00:00",
+          "contentHash": "febbfde52a034a32e2f32ef405f7df778dcaab27a9fbed7868b86b8c7f1ee92f"
         }
       ],
       "analysis": {
@@ -1070,9 +1392,26 @@
         "breakthrough": "给出可复现的更可靠候选，同时把数值搜索与严格几何验证衔接。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Use of generative AI 明确披露 Codex（ChatGPT 6 Astra）辅助数值实验、优化、单位宽验证和制图代码，以及稿件编辑、证明检查和额外 Lean 4 形式化证明的生成。第 4 页说明该形式化基于此前论证、已编译核验，但数值界略松于正文；普通 Lean 使用本身不是判据，此处依据的是明确的 AI 生成披露。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19585v1 · PDF 第 4 页及第 30 页 Use of generative AI",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:58:43.381476+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19585v1",
+          "contentHash": "febbfde52a034a32e2f32ef405f7df778dcaab27a9fbed7868b86b8c7f1ee92f",
+          "pages": 33,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of generative AI 明确披露 Codex（ChatGPT 6 Astra）辅助数值实验、优化、单位宽验证和制图代码，以及稿件编辑、证明检查和额外 Lean 4 形式化证明的生成。第 4 页说明该形式化基于此前论证、已编译核验，但数值界略松于正文；普通 Lean 使用本身不是判据，此处依据的是明确的 AI 生成披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "5d26900851da1d4e346330a448b88a973127ee45ba4b39b6cfffb29a143aa156"
+        },
+        "aiUsage": [
+          "computation",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 84,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。"
       },
@@ -1106,6 +1445,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19653v1",
+          "observedAt": "2026-10-15T03:01:30.172573+00:00",
+          "contentHash": "3d87b61c83ea119bafb1016f44b8adfa07c8b3023aaba946403d0db2aecf6d5c"
         }
       ],
       "analysis": {
@@ -1120,9 +1464,23 @@
         "breakthrough": "把经典 k=n 的 Calabi 度量球面描述推广至一般 k-Hessian 势空间。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。对象为光滑 admissible 势与固定质量的正密度；摘要未讨论弱势空间完备化或奇异密度边界。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "On the usage of AI 明确说明想法全部属于作者，但使用 ChatGPT Plus 简化定理 5.1 的证明。该声明支持证明完善，不支持 AI 提出核心想法或其他未说明用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19653v1 · PDF 第 2 页，On the usage of AI",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:01:30.172573+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19653v1",
+          "contentHash": "3d87b61c83ea119bafb1016f44b8adfa07c8b3023aaba946403d0db2aecf6d5c",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。On the usage of AI 明确说明想法全部属于作者，但使用 ChatGPT Plus 简化定理 5.1 的证明。该声明支持证明完善，不支持 AI 提出核心想法或其他未说明用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "1f0aaf062f26817d28780de2d749be5140d8ca70cef0f2343b39bad2b6098047"
+        },
+        "aiUsage": [
+          "proofs"
+        ],
         "priorityScore": 73,
         "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；对象为光滑 admissible 势与固定质量的正密度；摘要未讨论弱势空间完备化或奇异密度边界。"
       },
@@ -1163,6 +1521,11 @@
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-10-15T02:49:33.687387+00:00",
           "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19664v1",
+          "observedAt": "2026-10-15T02:54:55.891092+00:00",
+          "contentHash": "b95df878a3bcd2d16cd41d135a3631124f358a152b884a8ebb0f7dfb8f33de39"
         }
       ],
       "analysis": {
@@ -1177,9 +1540,28 @@
         "breakthrough": "在不要求边界光滑或限制零点重数的条件下，给出比原多边形命题更强的域估计。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。此处仅据摘要转述作者定理；归一化方式与旋转正方形例外须按正文精确理解。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "致谢明确列出 DeepSeek、豆包和 ChatGPT 辅助证明探索、数学检查、文献检索和表述；ChatGPT/Codex 另辅助探索性数值测试。作者明确说明这些测试不作为定理证据，重现的图例来自 Dumas–Wolf，并由作者承担数学内容责任。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19664v1 · PDF 第 11 页，Acknowledgements",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:54:55.891092+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19664v1",
+          "contentHash": "b95df878a3bcd2d16cd41d135a3631124f358a152b884a8ebb0f7dfb8f33de39",
+          "pages": 12,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确列出 DeepSeek、豆包和 ChatGPT 辅助证明探索、数学检查、文献检索和表述；ChatGPT/Codex 另辅助探索性数值测试。作者明确说明这些测试不作为定理证据，重现的图例来自 Dumas–Wolf，并由作者承担数学内容责任。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "848acadf01e10d9c0baa22aefce8acd5246211466dc6ef6a0123b93b21e22c8b"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "literature",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 94,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；此处仅据摘要转述作者定理；归一化方式与旋转正方形例外须按正文精确理解。"
       },
@@ -1215,6 +1597,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19667v1",
+          "observedAt": "2026-10-15T02:59:43.524309+00:00",
+          "contentHash": "35186631bebf0c36ecb8d60394adef5a42b4202e2253002146e9c9a343a577f0"
         }
       ],
       "analysis": {
@@ -1229,9 +1616,24 @@
         "breakthrough": "把方程存在判据转化为标量曲率可指定性的限制。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。摘要未写出充分条件和被否定问题的精确版本，不能宣称解决一般指定标量曲率问题。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "致谢明确说明 AI 首先给出平坦环面上具体而简单的构造，作者随后注意到该论证可以推广到一般紧流形。该声明将反例构造的初始数学想法归于 AI，支持想法与证明构造贡献；未披露具体模型或明确写作用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19667v1 · PDF 第 15 页，Acknowledgement",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:59:43.524309+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19667v1",
+          "contentHash": "35186631bebf0c36ecb8d60394adef5a42b4202e2253002146e9c9a343a577f0",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确说明 AI 首先给出平坦环面上具体而简单的构造，作者随后注意到该论证可以推广到一般紧流形。该声明将反例构造的初始数学想法归于 AI，支持想法与证明构造贡献；未披露具体模型或明确写作用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "1ac96164c78c99c59a65e2a568d2b44c9dcd3f2ace897999a137a302f2da578b"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 81,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要未写出充分条件和被否定问题的精确版本，不能宣称解决一般指定标量曲率问题。"
       },
@@ -1271,6 +1673,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19707v1",
+          "observedAt": "2026-10-15T02:55:20.160186+00:00",
+          "contentHash": "7f8957f521debd8deb8bbcb74ba5fe12984963257686a0ea0b477961d666d260"
         }
       ],
       "analysis": {
@@ -1285,9 +1692,23 @@
         "breakthrough": "用允许测地线经过薄区的估计确定高 genus 直径阶。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。asymp 表示上下界量级，不能当作精确渐近常数；n 固定，联合大 genus 与大 puncture 的情形不在摘要范围内。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI disclosure 明确表示使用 AI 工具辅助稿件准备与编辑，同时说明全部数学想法由作者发展并由作者承担最终责任。该段仅支持写作编辑辅助，不能据此认定 AI 参与证明或提出核心数学想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19707v1 · PDF 第 4 页，AI disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:55:20.160186+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19707v1",
+          "contentHash": "7f8957f521debd8deb8bbcb74ba5fe12984963257686a0ea0b477961d666d260",
+          "pages": 27,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI disclosure 明确表示使用 AI 工具辅助稿件准备与编辑，同时说明全部数学想法由作者发展并由作者承担最终责任。该段仅支持写作编辑辅助，不能据此认定 AI 参与证明或提出核心数学想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "1ca3a76c625468ec9a7e36734b3710cd41239a8f1f1061a568b0e353cb40f9ce"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 93,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；asymp 表示上下界量级，不能当作精确渐近常数；n 固定，联合大 genus 与大 puncture 的情形不在摘要范围内。"
       },
@@ -1324,6 +1745,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19787v1",
+          "observedAt": "2026-10-15T03:00:07.256303+00:00",
+          "contentHash": "99e0a415191baed0b070f2edd74ad8525e2149f406d93c06d5f289f136c47099"
         }
       ],
       "analysis": {
@@ -1338,9 +1764,24 @@
         "breakthrough": "将作用的几何位移和概率漂移联系成适用于多种群的定量工具。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。弱非柱状性及随机游走的具体假设须查正文；摘要不能支持任意测度或任意群作用的统一间隙。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI-use statement 披露 ChatGPT 5.6 在末期检查中主要给出编辑意见，还指出问题 7.9 与 7.12 的部分答案；作者独立核验后收入附录 A，并说明其余准备过程未使用 AI。记录写作编辑与新增数学论证贡献，不把附录问题的部分答案扩张为主要定理的核心想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.19787v1 · PDF 第 7 页，AI-use statement；所述 Appendix A",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:00:07.256303+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19787v1",
+          "contentHash": "99e0a415191baed0b070f2edd74ad8525e2149f406d93c06d5f289f136c47099",
+          "pages": 51,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI-use statement 披露 ChatGPT 5.6 在末期检查中主要给出编辑意见，还指出问题 7.9 与 7.12 的部分答案；作者独立核验后收入附录 A，并说明其余准备过程未使用 AI。记录写作编辑与新增数学论证贡献，不把附录问题的部分答案扩张为主要定理的核心想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "14e7adc783e52e416c7bb759e0a39138af2b4077b566218f9c33d006abca9ae2"
+        },
+        "aiUsage": [
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 78,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；弱非柱状性及随机游走的具体假设须查正文；摘要不能支持任意测度或任意群作用的统一间隙。"
       },
@@ -1377,6 +1818,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19828v1",
+          "observedAt": "2026-10-15T03:01:06.652361+00:00",
+          "contentHash": "e8a5981c011bea3278a6d295cdcf99d1aedd617fa55974be7ed9088e6be90c3f"
         }
       ],
       "analysis": {
@@ -1393,6 +1839,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:01:06.652361+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19828v1",
+          "contentHash": "e8a5981c011bea3278a6d295cdcf99d1aedd617fa55974be7ed9088e6be90c3f",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Statement 明确表示研究和写作均未使用 AI 或生成式工具；后续关于不同意 LLM 训练的句子也是权利声明，不是工具使用披露。核对全文命中后未见正面 AI 协作声明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "84a6cb8be111fa9ff3e4226a8f0452ea0c4b2568fb2d8c807dacdf9c4ffaca1e"
+        },
         "priorityScore": 75,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要非常简短，未提供数值、实现映射类或证明方法；本条不推断更高 genus 规律。"
       },
@@ -1427,6 +1884,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19837v1",
+          "observedAt": "2026-10-15T02:56:07.940030+00:00",
+          "contentHash": "4046151224da10270eefecaa3052ca612ebe663f6a0e30f455c6cf2e716b8532"
         }
       ],
       "analysis": {
@@ -1444,6 +1906,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:56:07.940030+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19837v1",
+          "contentHash": "4046151224da10270eefecaa3052ca612ebe663f6a0e30f455c6cf2e716b8532",
+          "pages": 22,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "364c087649056b9138d157cc22b390d08bc54a479c4f8f85f4d40be38749420e"
+        },
         "priorityScore": 88,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；紧型结论仍需定位条件，Cayley 平面只覆盖所述半径范围；余下区间给出的是证明机制障碍而非谱不等式反例。"
       },
@@ -1477,6 +1950,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.19887v1",
+          "observedAt": "2026-10-15T03:00:54.801049+00:00",
+          "contentHash": "2794277a78e4222d5b83810f56176bfb299ff97e8d2726b1ea7c751a0ae76b37"
         }
       ],
       "analysis": {
@@ -1494,6 +1972,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:00:54.801049+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.19887v1",
+          "contentHash": "2794277a78e4222d5b83810f56176bfb299ff97e8d2726b1ea7c751a0ae76b37",
+          "pages": 18,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "4422900fce10d27d682e8a9dc0577eea841b8f49fb3ebab9233c00f241d13b15"
+        },
         "priorityScore": 76,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；核心是已知椭圆定理的另一证明；增长条件及漂移项处理的适用范围须保留。"
       },
@@ -1527,6 +2016,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20011v1",
+          "observedAt": "2026-10-15T03:04:33.420722+00:00",
+          "contentHash": "b44687673f3b015f3be3f9e2d5979f7ac8fc308f142475171f4b1481b4af787c"
         }
       ],
       "analysis": {
@@ -1544,6 +2038,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:04:33.420722+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20011v1",
+          "contentHash": "b44687673f3b015f3be3f9e2d5979f7ac8fc308f142475171f4b1481b4af787c",
+          "pages": 92,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f060aad9a254d0689b113262adf8a5141d6ed61111765ec4a5c10c9afddc3264"
+        },
         "priorityScore": 54,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要未列存在定理所需的消失或正则性条件，不应视为任意叶状结构均无障碍。"
       },
@@ -1576,6 +2081,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20042v1",
+          "observedAt": "2026-10-15T03:05:08.692195+00:00",
+          "contentHash": "2fd4dff7b914ca2c021b3819884faf5249ab2c0da9e89195db51eb213e2323cd"
         }
       ],
       "analysis": {
@@ -1593,6 +2103,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:05:08.692195+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20042v1",
+          "contentHash": "2fd4dff7b914ca2c021b3819884faf5249ab2c0da9e89195db51eb213e2323cd",
+          "pages": 17,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "55acd0f1206834b40995e0e5b204fbdbbc8b97382166aa86e2fa382a281e18f2"
+        },
         "priorityScore": 45,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；固定分布、联络与左不变条件下的显式分类，通用几何分析方法的外推空间暂不明确。",
         "lowPriorityReason": "工作集中于固定三维左不变模型的参数求解，面向更广泛几何问题的新机制在摘要中尚不突出。"
@@ -1630,6 +2151,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20054v1",
+          "observedAt": "2026-10-15T02:56:20.227592+00:00",
+          "contentHash": "4ca3e15da1ead9b3c83382aff6f2fc8bc17a18edb05f73dd2b9d4313d705621f"
         }
       ],
       "analysis": {
@@ -1647,6 +2173,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:56:20.227592+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20054v1",
+          "contentHash": "4ca3e15da1ead9b3c83382aff6f2fc8bc17a18edb05f73dd2b9d4313d705621f",
+          "pages": 35,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "01215695a87b61d2c66a69d9b544e681d5818584b9c0149bf66855d4234bda65"
+        },
         "priorityScore": 88,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要只声称存在及时间连续性，没有给出一般唯一性、光滑性或所有时间的经典流结论。"
       },
@@ -1679,6 +2216,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20088v1",
+          "observedAt": "2026-10-15T02:59:31.730961+00:00",
+          "contentHash": "0b4e91ccfec7a432190ee29320836d66682c0d7d0ed2647d764d6d56885aeee5"
         }
       ],
       "analysis": {
@@ -1696,6 +2238,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:59:31.730961+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20088v1",
+          "contentHash": "0b4e91ccfec7a432190ee29320836d66682c0d7d0ed2647d764d6d56885aeee5",
+          "pages": 9,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "549053a999ba3f7639628de31827c68d12d7670564a313410199dd973f240498"
+        },
         "priorityScore": 82,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；文末关于最优全尺度最小体积熵的不等式仍为猜想，不能与已经证明的树比较混同。"
       },
@@ -1731,6 +2284,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20097v1",
+          "observedAt": "2026-10-15T03:02:06.822365+00:00",
+          "contentHash": "96141b0c56088e77a8c2ccf40e098ecaa3be5a56816ff372ce92bad149e48b37"
         }
       ],
       "analysis": {
@@ -1744,9 +2302,27 @@
         "breakthrough": "指出欧氏域型谱比较推广到曲流形时的具体失效模型。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。摘要未给出违背不等式的精确指标及数值；结论针对相应流形模型，不表示所有谱比较均失败。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI usage disclosure 明确披露 AI 用于数学讨论与编辑，并建议了第 3 节反例；相关论证和计算经作者检查并实质性重写。第 1–2 页另说明曾要求 AI 对欧氏及双曲有界域进行反例数值搜索，改进数值方案后这些空间中未报告反例。分别记录反例思路、论证辅助、探索讨论、计算与写作，不把数值未发现反例写成证明。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20097v1 · PDF 第 1–2 页引言及第 8 页 AI usage disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:02:06.822365+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20097v1",
+          "contentHash": "96141b0c56088e77a8c2ccf40e098ecaa3be5a56816ff372ce92bad149e48b37",
+          "pages": 9,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI usage disclosure 明确披露 AI 用于数学讨论与编辑，并建议了第 3 节反例；相关论证和计算经作者检查并实质性重写。第 1–2 页另说明曾要求 AI 对欧氏及双曲有界域进行反例数值搜索，改进数值方案后这些空间中未报告反例。分别记录反例思路、论证辅助、探索讨论、计算与写作，不把数值未发现反例写成证明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "20c4013da13fce93e07aacfc67aed259753947910d26eaaa0a036a2e5f5a4de1"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "ideas",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 68,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要未给出违背不等式的精确指标及数值；结论针对相应流形模型，不表示所有谱比较均失败。"
       },
@@ -1785,6 +2361,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20123v1",
+          "observedAt": "2026-10-15T03:03:07.148931+00:00",
+          "contentHash": "5f255b7461fc3ed33c68d333b657c62d14ee412c1c7775d3a8e86684c6e0ab17"
         }
       ],
       "analysis": {
@@ -1799,9 +2380,23 @@
         "breakthrough": "处理移动 action strips 与双转向点邻域的一致拼接，给出特殊 Painlevé 解的严格构造。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。讨论限于所构造的 Borel 域与特定零参数解，不能扩展为所有 Painlevé I 初值的全局描述。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Statements 明确披露使用 AI 改善论文表述，并提及遵循 Leiden Declaration on Artificial Intelligence and Mathematics。原文未说明模型，也未将证明或核心数学想法归因于 AI，因此只记录写作表述辅助。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20123v1 · PDF 第 4 页，Statements",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:03:07.148931+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20123v1",
+          "contentHash": "5f255b7461fc3ed33c68d333b657c62d14ee412c1c7775d3a8e86684c6e0ab17",
+          "pages": 88,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Statements 明确披露使用 AI 改善论文表述，并提及遵循 Leiden Declaration on Artificial Intelligence and Mathematics。原文未说明模型，也未将证明或核心数学想法归因于 AI，因此只记录写作表述辅助。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f711b5e6732846038e9f98bfc3bf9612df85c2c7980ef7bf3a027c68963d31b8"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 62,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；讨论限于所构造的 Borel 域与特定零参数解，不能扩展为所有 Painlevé I 初值的全局描述。"
       },
@@ -1836,6 +2431,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20131v1",
+          "observedAt": "2026-10-15T03:02:42.621412+00:00",
+          "contentHash": "038435b0818cc0b26df30004395f8d8e0a8bc914cc4a92568fda4e2cddd5c340"
         }
       ],
       "analysis": {
@@ -1853,6 +2453,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:02:42.621412+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20131v1",
+          "contentHash": "038435b0818cc0b26df30004395f8d8e0a8bc914cc4a92568fda4e2cddd5c340",
+          "pages": 29,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。首页明确说明只使用 LaTeX、arXiv 和 MathSciNet，未使用其他计算机资源或 AI 程序；第 23 页把较难例子的计算留给读者、或可能留给 Claude，是面向未来的建议，并非声明作者已使用 Claude。核对全部命中后未见正面 AI 协作披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "e57c860ae101a33564e5058649b117b41ad0e87cbe2d2980663a227ce0cda2a8"
+        },
         "priorityScore": 64,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；需核对具体 solenoid 与等价关系的假设；摘要没有声称对所有层状空间均给出完整计算。"
       },
@@ -1889,6 +2500,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20153v1",
+          "observedAt": "2026-10-15T03:03:19.590810+00:00",
+          "contentHash": "589d31b5458a98fb5c8b0876faf421f173b91ac47be8686309d6cfb47dff29d7"
         }
       ],
       "analysis": {
@@ -1906,6 +2522,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:03:19.590810+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20153v1",
+          "contentHash": "589d31b5458a98fb5c8b0876faf421f173b91ac47be8686309d6cfb47dff29d7",
+          "pages": 25,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "57a17a3f5cc3d6c55369b46dac3e3a99e33b59aaa6930b597ee4cf5baaa70708"
+        },
         "priorityScore": 62,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；一般只保证单射；不能把不变形式计算直接当成任意紧商的全部上同调。"
       },
@@ -1942,6 +2569,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20177v1",
+          "observedAt": "2026-10-15T02:58:07.017039+00:00",
+          "contentHash": "d64a404ad30c6a955f11131c6c50ec833a6886f9ebd88123ea38065bb76f0689"
         }
       ],
       "analysis": {
@@ -1956,9 +2588,25 @@
         "breakthrough": "为无限维自然度量的距离非退化性提供有限维量子化近似工具。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。有理性及 ε-positive 下界是摘要明确的限制，不能宣称对整个正 Lagrangian 空间无条件成立。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "第 1.3 节致谢明确说明使用 ChatGPT Astra 校对稿件、纠正若干错误并寻找补充文献。该段支持写作校对、纠错检查与文献检索，未将主要定理或核心想法归因于 AI。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20177v1 · PDF 第 6 页，第 1.3 节 Acknowledgments",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:58:07.017039+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20177v1",
+          "contentHash": "d64a404ad30c6a955f11131c6c50ec833a6886f9ebd88123ea38065bb76f0689",
+          "pages": 36,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1.3 节致谢明确说明使用 ChatGPT Astra 校对稿件、纠正若干错误并寻找补充文献。该段支持写作校对、纠错检查与文献检索，未将主要定理或核心想法归因于 AI。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "1522710f441e30297c7cd8aa35f68e0e5b8568f5b099ca7ccdc2acac69770027"
+        },
+        "aiUsage": [
+          "literature",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 85,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；有理性及 ε-positive 下界是摘要明确的限制，不能宣称对整个正 Lagrangian 空间无条件成立。"
       },
@@ -1999,6 +2647,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20197v1",
+          "observedAt": "2026-10-15T02:57:19.537360+00:00",
+          "contentHash": "e1428b9a821ea3fb78ffa75b315daf7676ae771c652bc594170811940f34bd2b"
         }
       ],
       "analysis": {
@@ -2013,9 +2666,26 @@
         "breakthrough": "以群的拓扑维数排除特定高秩表示和 Clifford–Klein 紧商。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。需要指定抛物型及 p>q≥2；结论不是所有 Anosov 表示或所有 G2 齐性空间的普遍障碍。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Declaration of AI use 明确披露 ChatGPT 与 Gemini 辅助澄清背景、证明探索和语言润色，ChatGPT-5.6 还辅助检索 SU(2,1) 例子的文献。作者说明模型对推论 1.5 给出的证明错误，但交流提供启发并帮助其组织证明、推广至引理 1.4；核心策略和关键论证由作者实质性发展并核验。保留错误建议和人工主导的限定，不将其计为 AI 提供核心想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20197v1 · PDF 第 4 页，Declaration of AI use",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:57:19.537360+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20197v1",
+          "contentHash": "e1428b9a821ea3fb78ffa75b315daf7676ae771c652bc594170811940f34bd2b",
+          "pages": 14,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Declaration of AI use 明确披露 ChatGPT 与 Gemini 辅助澄清背景、证明探索和语言润色，ChatGPT-5.6 还辅助检索 SU(2,1) 例子的文献。作者说明模型对推论 1.5 给出的证明错误，但交流提供启发并帮助其组织证明、推广至引理 1.4；核心策略和关键论证由作者实质性发展并核验。保留错误建议和人工主导的限定，不将其计为 AI 提供核心想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "0d0bbab35272bb516fcd50926c6fb65cdc9c34aee6c1f5edd977bed31f3ee19c"
+        },
+        "aiUsage": [
+          "exploration",
+          "literature",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 86,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；需要指定抛物型及 p>q≥2；结论不是所有 Anosov 表示或所有 G2 齐性空间的普遍障碍。"
       },
@@ -2050,6 +2720,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20232v1",
+          "observedAt": "2026-10-15T03:03:31.548634+00:00",
+          "contentHash": "8db8e9e234918db7585399907bb74a503655156a92ef41f00b17e3be6616d031"
         }
       ],
       "analysis": {
@@ -2067,6 +2742,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:03:31.548634+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20232v1",
+          "contentHash": "8db8e9e234918db7585399907bb74a503655156a92ef41f00b17e3be6616d031",
+          "pages": 15,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "0a380e30ac3dffa55e182b65abb1370fdc113975cfc15148e6fdf58d17448aa1"
+        },
         "priorityScore": 60,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；SE(3) 指三维空间的运动群，其本身为实六维；分类限于左不变复结构。"
       },
@@ -2101,6 +2787,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20265v1",
+          "observedAt": "2026-10-15T02:55:32.209132+00:00",
+          "contentHash": "9c7fedf292db9105957cf2e9f1135bd00deb965102e0221be336723da4599b1f"
         }
       ],
       "analysis": {
@@ -2118,6 +2809,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:55:32.209132+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20265v1",
+          "contentHash": "9c7fedf292db9105957cf2e9f1135bd00deb965102e0221be336723da4599b1f",
+          "pages": 37,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "92bbd8c40dea86f2a4671bddf195fce3c93e764848ddcccca9eb2f4b605621bf"
+        },
         "priorityScore": 93,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；仍需足够小的环带与角度阈值；Lipschitz 情形使用单独估计，不能只套用光滑初值结论。"
       },
@@ -2152,6 +2854,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20300v1",
+          "observedAt": "2026-10-15T03:04:56.885258+00:00",
+          "contentHash": "1fe60da74687a493274fcab66d64304aa127c56b0ca3aefea5c2e7a9919108d9"
         }
       ],
       "analysis": {
@@ -2169,6 +2876,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:04:56.885258+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20300v1",
+          "contentHash": "1fe60da74687a493274fcab66d64304aa127c56b0ca3aefea5c2e7a9919108d9",
+          "pages": 8,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "605f315746fdc97bbcee757ba1b2c8e1adc345d4942518632b0b00bc2b82166e"
+        },
         "priorityScore": 51,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要没有给出与其他奇 K 理论模型的比较或新应用，不宜扩大其当前应用范围。"
       },
@@ -2210,6 +2928,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20358v1",
+          "observedAt": "2026-10-15T03:00:19.247343+00:00",
+          "contentHash": "8e63d9950d82493863b38a1d75b9d21c6ef7ad3f7d7fe158d1cebe233821608a"
         }
       ],
       "analysis": {
@@ -2227,6 +2950,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:00:19.247343+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20358v1",
+          "contentHash": "8e63d9950d82493863b38a1d75b9d21c6ef7ad3f7d7fe158d1cebe233821608a",
+          "pages": 11,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 4 页明确声明数学内容全部由作者在未使用 AI 的情况下取得，稿件准备也未使用任何 AI。全文检索命中均为该否定声明，未见正面 AI 协作披露；这不是对作者未使用 AI 的独立证明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "b3d76e19163e8e1ec9d7a6a1e5c4a85a733c58a614e35f99b54b5362245958c4"
+        },
         "priorityScore": 78,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；结论为局部极值且依赖对称性，不能写成任意双曲三维流形上的全局最小性。"
       },
@@ -2261,6 +2995,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20406v1",
+          "observedAt": "2026-10-15T02:55:08.113838+00:00",
+          "contentHash": "07e1ebcf0abbe4291946bacf0af4aab9c476db3e5b48720f60e4579d60e7c3eb"
         }
       ],
       "analysis": {
@@ -2275,9 +3014,27 @@
         "breakthrough": "若证明成立，将对全局 CMC 叶状结构作出强烈限制，并在低维得到完全刚性。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。目前仅阅读摘要，尚未核对其对叶状结构的完整定义与证明；全维极小性和 n≤6 的平行超平面结论必须区分。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "致谢明确说明与 Claude、Gemini、ChatGPT 协作，涉及探索证明策略、完善论证、查找参考文献及起草修改稿件；作者称已独立验证全部 AI 建议并承担最终内容责任。未将一般证明策略探索擅自计为 AI 提供核心想法。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20406v1 · PDF 第 16 页，Acknowledgments",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:55:08.113838+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20406v1",
+          "contentHash": "07e1ebcf0abbe4291946bacf0af4aab9c476db3e5b48720f60e4579d60e7c3eb",
+          "pages": 18,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确说明与 Claude、Gemini、ChatGPT 协作，涉及探索证明策略、完善论证、查找参考文献及起草修改稿件；作者称已独立验证全部 AI 建议并承担最终内容责任。未将一般证明策略探索擅自计为 AI 提供核心想法。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9209872f1576080482016a364b4172ee8993f7c823a259e20b689974f5d98407"
+        },
+        "aiUsage": [
+          "exploration",
+          "literature",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 94,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；目前仅阅读摘要，尚未核对其对叶状结构的完整定义与证明；全维极小性和 n≤6 的平行超平面结论必须区分。"
       },
@@ -2313,6 +3070,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20430v1",
+          "observedAt": "2026-10-15T03:02:30.396414+00:00",
+          "contentHash": "d22cf606bb8e0c1144906d40555f863f53230c584643c4a69997037c4b76b064"
         }
       ],
       "analysis": {
@@ -2330,6 +3092,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:02:30.396414+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20430v1",
+          "contentHash": "d22cf606bb8e0c1144906d40555f863f53230c584643c4a69997037c4b76b064",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "0b3fb35cce6ffca329f96bc4c90d5bdefda2efac67d88c8fd8276f7bce7c00a9"
+        },
         "priorityScore": 67,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；变形开放依赖上同调不跳跃假设，模空间的 Hausdorff 性也限于文中指定的构造。"
       },
@@ -2363,6 +3136,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20440v1",
+          "observedAt": "2026-10-15T02:58:19.090140+00:00",
+          "contentHash": "9edb67785948e9c2bc2d484f7e78f3b967db7946c36f481d1e2c803a1660a9bb"
         }
       ],
       "analysis": {
@@ -2377,9 +3155,21 @@
         "breakthrough": "用纤维几何而非总空间维数得到总空间的定量拓扑几何控制。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。n≥2、定向性及纤维内蕴度量条件不可省略；摘要没有给出所有可能等号情形。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "Use of AI tools 明确表示作者在本工作中使用 GPT-6 Astra 并引导其推理，同时由作者承担论文内容责任。声明未细分具体研究步骤或用途，因此保留明确使用结论而不推断核心想法、证明贡献或写作用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20440v1 · PDF 第 13 页，Use of AI tools",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:58:19.090140+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20440v1",
+          "contentHash": "9edb67785948e9c2bc2d484f7e78f3b967db7946c36f481d1e2c803a1660a9bb",
+          "pages": 14,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of AI tools 明确表示作者在本工作中使用 GPT-6 Astra 并引导其推理，同时由作者承担论文内容责任。声明未细分具体研究步骤或用途，因此保留明确使用结论而不推断核心想法、证明贡献或写作用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "c328fef4a681de10c00140d6e6d0171b099f6f50d7640f435ccb307c142966e4"
+        },
+        "aiUsage": [],
         "priorityScore": 85,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；n≥2、定向性及纤维内蕴度量条件不可省略；摘要没有给出所有可能等号情形。"
       },
@@ -2414,6 +3204,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20453v1",
+          "observedAt": "2026-10-15T02:57:31.125248+00:00",
+          "contentHash": "6ed8867b9255891d5edd7503e0bec2b0062686363a2df8e918e9cb2762faf920"
         }
       ],
       "analysis": {
@@ -2431,6 +3226,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:57:31.125248+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20453v1",
+          "contentHash": "6ed8867b9255891d5edd7503e0bec2b0062686363a2df8e918e9cb2762faf920",
+          "pages": 9,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文和摘要中的 OpenAI 命中均指对外部 Solomon–Yau 定理及其预印本的引用，位于摘要、引言和参考文献。引用一篇 AI 机构的数学论文不等于本篇作者使用 AI 工具；未检索到本篇的正面协作披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "2eb1593efc320e7ab5735da8cb0fb5c8d7d8049b6bc918099630ade5823ae553"
+        },
         "priorityScore": 86,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要引用 OpenAI 的外部数学结果不等于本篇使用了 AI；依赖定理及从 Allen–Cahn 极限得到 Brakke 流的细节尚未核验。"
       },
@@ -2469,6 +3275,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20468v1",
+          "observedAt": "2026-10-15T02:57:43.107058+00:00",
+          "contentHash": "5b704011c192601e01901ebd1073095d86dc4956dd1c89172ca2e3ccf2116d19"
         }
       ],
       "analysis": {
@@ -2487,6 +3298,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:57:43.107058+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20468v1",
+          "contentHash": "5b704011c192601e01901ebd1073095d86dc4956dd1c89172ca2e3ccf2116d19",
+          "pages": 31,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "875ee625837ce7422dc6033ca70fa3b65f8ff1f969327eb318397367a724a323"
+        },
         "priorityScore": 86,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；严格不等式、无 trapped surface 与蓝移控制缺一不可；不能将该局部球对称判据概括为一般宇宙监督证明。"
       },
@@ -2525,6 +3347,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20469v1",
+          "observedAt": "2026-10-15T02:56:32.100081+00:00",
+          "contentHash": "8c26f0b81ccba09da5984e2e9ec51bcced1a406a6236fa0b8f6de6135bfb5b68"
         }
       ],
       "analysis": {
@@ -2539,9 +3366,25 @@
         "breakthrough": "在摘要所述框架下去除既有质量比小量条件，处理电磁耦合系统。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。本文作为相关工作的附录，弱宇宙监督的整体结论还依赖该前作的假设与其余证明；不能当成一般非球对称带电情形。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI Disclosure 明确说明两步 blow-up 分析通过与 AI 交流想法最终完成；作者已有第一次 blow-up 的想法，并将第二次 blow-up 分析的关键输入明确归于 AI。该声明支持关键研究路线、证明完善与探索交流；没有披露具体模型，故不补写模型名称。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20469v1 · PDF 第 4 页，AI Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:56:32.100081+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20469v1",
+          "contentHash": "8c26f0b81ccba09da5984e2e9ec51bcced1a406a6236fa0b8f6de6135bfb5b68",
+          "pages": 51,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确说明两步 blow-up 分析通过与 AI 交流想法最终完成；作者已有第一次 blow-up 的想法，并将第二次 blow-up 分析的关键输入明确归于 AI。该声明支持关键研究路线、证明完善与探索交流；没有披露具体模型，故不补写模型名称。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "414982710e8c004360199894a42be119c0eeff2804eba9fda14bd81c742f0ed5"
+        },
+        "aiUsage": [
+          "exploration",
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 88,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；本文作为相关工作的附录，弱宇宙监督的整体结论还依赖该前作的假设与其余证明；不能当成一般非球对称带电情形。"
       },
@@ -2576,6 +3419,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20478v1",
+          "observedAt": "2026-10-15T03:02:54.649914+00:00",
+          "contentHash": "e1c19e0d939663076e2ff4aa60fc13c3b19fe8ddacdc925355403b4f89c92bec"
         }
       ],
       "analysis": {
@@ -2593,6 +3441,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:02:54.649914+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20478v1",
+          "contentHash": "e1c19e0d939663076e2ff4aa60fc13c3b19fe8ddacdc925355403b4f89c92bec",
+          "pages": 27,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "d0369bd6d486be79eae43c448154f7e143b4194e8ce463c7619fb132ce3e175a"
+        },
         "priorityScore": 63,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；分裂计数针对文中构造的实现，不能不经额外论证推广到这些底空间上的所有环面丛。"
       },
@@ -2625,6 +3484,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20485v1",
+          "observedAt": "2026-10-15T02:55:56.025094+00:00",
+          "contentHash": "2c3ac924566a2ef52b268132de077df1adf9963a5fb9e995d331a68c889f63a8"
         }
       ],
       "analysis": {
@@ -2641,6 +3505,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:55:56.025094+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20485v1",
+          "contentHash": "2c3ac924566a2ef52b268132de077df1adf9963a5fb9e995d331a68c889f63a8",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "a3834c0c43baf289e2034eb82db15e92bc5796f673072b2af69ddbce203c2367"
+        },
         "priorityScore": 90,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；维数三和 γ 的开区间为明确限制；谱算子中 Ric 的精确定义须依正文，不能外推端点或高维等号情形。"
       },
@@ -2675,6 +3550,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20499v1",
+          "observedAt": "2026-10-15T02:56:43.844911+00:00",
+          "contentHash": "2c7ec484fc795c98267d609e514d377c9299f8ec41fca0afdb3f82dc90ae726b"
         }
       ],
       "analysis": {
@@ -2692,6 +3572,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:56:43.844911+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20499v1",
+          "contentHash": "2c7ec484fc795c98267d609e514d377c9299f8ec41fca0afdb3f82dc90ae726b",
+          "pages": 47,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 2 页脚注明确说明本文的新想法和结果形成于 LLM 技术冲击之前，且未从这些模型获益；这是对 AI 参与数学结果的否定声明。核对全部关键词命中后未发现正面协作披露，不据此断言已经独立证明所有写作过程均未使用 AI。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "6c45a0da6632420622072e963211e527215c3668f7a29b18e0c34685f4b48828"
+        },
         "priorityScore": 88,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；高余维稳定范围是必要限定；不能忽略奇异层，反例也说明有光滑同调代表不保证局部极小周期可光滑逼近。"
       },
@@ -2726,6 +3617,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20508v1",
+          "observedAt": "2026-10-15T02:58:31.157191+00:00",
+          "contentHash": "ca56c174d6880f52578ccb3b771eaf2a36761ae30a145cba6ef69080715c6a23"
         }
       ],
       "analysis": {
@@ -2743,6 +3639,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:58:31.157191+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20508v1",
+          "contentHash": "ca56c174d6880f52578ccb3b771eaf2a36761ae30a145cba6ef69080715c6a23",
+          "pages": 15,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "ae3638d29e8fe4b84126409fc5bfba86cc2c023482a477e7aca69e1007e72407"
+        },
         "priorityScore": 85,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；是带增长假设的两种情形，而非对所有维数和任意增长的 Meeks 猜想的完整证明。"
       },
@@ -2764,7 +3671,8 @@
           "math.QA"
         ],
         "primaryCategory": "math.GT",
-        "comment": "50 pages, many figures, 5 tables. Comments welcome!"
+        "comment": "50 pages, many figures, 5 tables. Comments welcome!",
+        "version": 1
       },
       "sources": [
         {
@@ -2776,6 +3684,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20558",
+          "observedAt": "2026-10-15T03:01:42.631365+00:00",
+          "contentHash": "2b22575d501e3da7f20f7c2a9b543749497ff3139b44c0e2e5d87442349cf89b"
         }
       ],
       "analysis": {
@@ -2790,15 +3703,29 @@
         "breakthrough": "用曲面范畴模型使有理 tangles 的同调计算与稳定性结构相联系。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。结果对象为有理 tangle；摘要未支持任意 tangle 的稳定化，具体函子与分次约定尚需核查。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI Declaration 否认 AI 参与数学想法、制图和正文写作，但另明确说明 Google Gemini 辅助组织部分文献引用，之后由作者按需修改。文献引用辅助仍属于已披露使用，不能被前面的否定措辞抵消；不推断 AI 参与证明或发现新文献。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20558 · PDF 第 3 页，AI Declaration",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:01:42.631365+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20558",
+          "contentHash": "2b22575d501e3da7f20f7c2a9b543749497ff3139b44c0e2e5d87442349cf89b",
+          "pages": 50,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Declaration 否认 AI 参与数学想法、制图和正文写作，但另明确说明 Google Gemini 辅助组织部分文献引用，之后由作者按需修改。文献引用辅助仍属于已披露使用，不能被前面的否定措辞抵消；不推断 AI 参与证明或发现新文献。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "7318d255576dbc4dcb2b89a5bf8163af75691399343f0368c73f0354b1d283b9"
+        },
+        "aiUsage": [
+          "literature"
+        ],
         "priorityScore": 70,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；结果对象为有理 tangle；摘要未支持任意 tangle 的稳定化，具体函子与分次约定尚需核查。"
       },
       "analysisBasis": {
         "abstract": "We compute minimal $\\mathfrak{sl}_N$ complexes for oriented rational tangles, denoted $[\\![\\tau_{u/v}^{O}]\\!]_N$, in terms of the topological Fukaya category of the $3$-punctured disk. This demonstrates that the complexes stabilize, allowing us to define a HOMFLY-PT homology for rational tangles.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -2828,6 +3755,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20559v1",
+          "observedAt": "2026-10-15T02:54:32.123474+00:00",
+          "contentHash": "b68c2358c00a0cf1e28d2b2e889ede28ebd49f62ebb153a5f9f6b0997014b431"
         }
       ],
       "analysis": {
@@ -2842,9 +3774,27 @@
         "breakthrough": "提出一参数恒等式及特定初值类的归约方案，为一般情形指出待解退化 PDE 系统。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。形式上函数自由度相同不意味着涵盖任意初值；一般 PDE 存在理论仍待建立，且依赖外部全维黎曼 Penrose 定理。摘要提及 OpenAI 前作不能单独证明本篇 AI 协作。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "附录 C 明确说明使用 Claude 协助一般参数 Schoen–Yau 恒等式的代数推导、数值与代数双重核验，并在式 (4.7) 的构造中获得数学建议；还用其起草讨论笔记并探索未纳入本文的一般存在理论。作者强调 t=1 恒等式先由人类推出、正文由作者撰写，且认为 AI 帮助并非决定性；这些限定不抵消已经披露的辅助用途。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20559v1 · PDF 第 37–38 页，Appendix C: AI statement",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:54:32.123474+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20559v1",
+          "contentHash": "b68c2358c00a0cf1e28d2b2e889ede28ebd49f62ebb153a5f9f6b0997014b431",
+          "pages": 40,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。附录 C 明确说明使用 Claude 协助一般参数 Schoen–Yau 恒等式的代数推导、数值与代数双重核验，并在式 (4.7) 的构造中获得数学建议；还用其起草讨论笔记并探索未纳入本文的一般存在理论。作者强调 t=1 恒等式先由人类推出、正文由作者撰写，且认为 AI 帮助并非决定性；这些限定不抵消已经披露的辅助用途。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "36d0426fa03ecb67e1abea7e9b078941d510921962f2d9559533f856ad147342"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 96,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；形式上函数自由度相同不意味着涵盖任意初值；一般 PDE 存在理论仍待建立，且依赖外部全维黎曼 Penrose 定理。摘要提及 OpenAI 前作不能单独证明本篇 AI 协作。"
       },
@@ -2879,6 +3829,11 @@
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-10-15T02:49:45.059107+00:00",
           "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20566v1",
+          "observedAt": "2026-10-15T02:56:55.925358+00:00",
+          "contentHash": "172eda39347d3f5df5be0462ab91868825c81d652d257ba4002f342be778f686"
         }
       ],
       "analysis": {
@@ -2893,9 +3848,24 @@
         "breakthrough": "将一个方向条件提升为 Veech 性质，给出简短而强的结构刻画。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。摘要仅一句结论，尚未读取论证及 completely parabolic 的定义约定；不推断证明工具与额外推广。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI Disclosure 明确将定理 1 的第一个证明归于 ChatGPT；作者随后为各中间结果给出替代证明，并说明写作全部由人类完成。人类写作和后续替代证明不抵消首次核心证明由 AI 找到的披露。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20566v1 · PDF 第 2 页，AI Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:56:55.925358+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20566v1",
+          "contentHash": "172eda39347d3f5df5be0462ab91868825c81d652d257ba4002f342be778f686",
+          "pages": 3,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确将定理 1 的第一个证明归于 ChatGPT；作者随后为各中间结果给出替代证明，并说明写作全部由人类完成。人类写作和后续替代证明不抵消首次核心证明由 AI 找到的披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "6f61343ae92a34daaf44af4ca9d9668d758a9b872b58557fbec3e9ec5067dfaf"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs"
+        ],
         "priorityScore": 87,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要仅一句结论，尚未读取论证及 completely parabolic 的定义约定；不推断证明工具与额外推广。"
       },
@@ -2931,6 +3901,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20568v1",
+          "observedAt": "2026-10-15T03:00:31.353963+00:00",
+          "contentHash": "7e12fea4484b390dea1a4dd8bc259f25636f5b2d72280c5ed438db09cab08043"
         }
       ],
       "analysis": {
@@ -2948,6 +3923,17 @@
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T03:00:31.353963+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20568v1",
+          "contentHash": "7e12fea4484b390dea1a4dd8bc259f25636f5b2d72280c5ed438db09cab08043",
+          "pages": 30,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "da30343f6f3211154f04d56ba914297b6eacb85c072412dae3a9637bf208a998"
+        },
         "priorityScore": 77,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；曲面存在混合实例与三维特征场完备时的排除应分别表述，不能把猜想写成在所有情形均获肯定。"
       },
@@ -2983,6 +3969,11 @@
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-10-15T02:49:22.574698+00:00",
           "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.20581v1",
+          "observedAt": "2026-10-15T02:59:07.681141+00:00",
+          "contentHash": "1cd924b0ab0c7b88ecab0676fd03a45c911bb9390f186a60298f43c4b140fb78"
         }
       ],
       "analysis": {
@@ -2997,9 +3988,24 @@
         "breakthrough": "对指定拓扑类型的过定问题域给出完整分类声称。",
         "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。摘要未提供证明路线和正则性约定，尚不能核验全部条件；不能延伸到更多边界分支或高维。 AI 披露以独立全文核查记录为准。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
-        "aiEvidence": null,
-        "aiEvidenceSource": null,
+        "aiStatus": "explicit",
+        "aiEvidence": "AI declaration 说明主要证明策略与关键想法由作者多年独立发展；ChatGPT 在最后阶段辅助代数简化及技术讨论，附录技术引理 7.6 的证明直接由 ChatGPT 给出后由作者重写。作者明确否认 AI 写作，因此记录证明辅助和技术探索，不计写作或核心想法贡献。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2610.20581v1 · PDF 第 4 页，AI declaration；所述附录引理 7.6",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-10-15T02:59:07.681141+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2610.20581v1",
+          "contentHash": "1cd924b0ab0c7b88ecab0676fd03a45c911bb9390f186a60298f43c4b140fb78",
+          "pages": 33,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI declaration 说明主要证明策略与关键想法由作者多年独立发展；ChatGPT 在最后阶段辅助代数简化及技术讨论，附录技术引理 7.6 的证明直接由 ChatGPT 给出后由作者重写。作者明确否认 AI 写作，因此记录证明辅助和技术探索，不计写作或核心想法贡献。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "9b8e4924b99724151cda2f4cb99cb942e985107eacebc7dfb8f0b8fc353b6556"
+        },
+        "aiUsage": [
+          "exploration",
+          "proofs"
+        ],
         "priorityScore": 83,
         "priorityReason": "按结论范围、几何关联与方法可迁移性安排阅读；摘要未提供证明路线和正则性约定，尚不能核验全部条件；不能延伸到更多边界分支或高维。"
       },

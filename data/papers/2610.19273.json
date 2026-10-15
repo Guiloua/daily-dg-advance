@@ -15,7 +15,8 @@
         "math.DG"
       ],
       "primaryCategory": "math.DG",
-      "comment": "49 pages, 2 figures"
+      "comment": "49 pages, 2 figures",
+      "version": 1
     },
     "sources": [
       {
@@ -27,6 +28,11 @@
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-10-15T02:49:22.574698+00:00",
         "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.19273",
+        "observedAt": "2026-10-15T02:55:44.291687+00:00",
+        "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7"
       }
     ],
     "analysis": {
@@ -41,15 +47,30 @@
       "breakthrough": "以不变上同调类的有理性区分长期塌缩行为，兼顾基空间与覆盖空间。",
       "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。 AI 披露以独立全文核查记录为准。",
       "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "aiEvidence": null,
-      "aiEvidenceSource": null,
+      "aiStatus": "explicit",
+      "aiEvidence": "第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.19273 · PDF 第 8 页，第 1.7 节 AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-15T02:55:44.291687+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.19273",
+        "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7",
+        "pages": 49,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "59c47b4c4a047f7b08c2db9406129e26053b54c696605829ada07c02467cfd55"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
       "priorityScore": 90,
       "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。"
     },
     "analysisBasis": {
       "abstract": "We study the $\\alpha$-Ricci flow $(g(t),\\alpha(t))$, which is a Ricci flow coupled with a harmonic 1-form heat flow, on the 2-torus $M$. We prove global existence for this flow as well as a Type III curvature estimate. The long-time behavior of the $\\alpha$-Ricci flow depends on the cohomology class $[\\alpha] \\in H^1(M,\\mathbb{R})$, which is invariant under the flow. If $[\\alpha]$ is rational, then as $t\\to\\infty$, $(M,t^{-1}g(t))$ Gromov--Hausdorff converges to $S^1$ with length $\\ell([\\alpha])/\\sqrt 2$ where $\\ell([\\alpha])$ is the primitive length of $[\\alpha]$. On the universal cover, the rescaled flow $(s^{-1}\\tilde g(st),\\tilde\\alpha(st))$ smoothly converges to an expander $(g^*(t),\\alpha^*(t))$ on $\\mathbb{R}^2$ as $s\\to \\infty$ where $\\alpha^*(t)$ is nonzero and constant in spacetime and $g^*(t)$ is flat and expanding in the $\\alpha^*$ direction. If $[\\alpha]$ is irrational, then there is a sequence $s_i\\to\\infty$ such that $(M,s_i^{-1}g(s_it))$ Gromov--Hausdorff converges to a point. Moreover, on the universal cover, $(s_i^{-1}\\tilde g(s_it),\\tilde\\alpha(s_it))$ smoothly converges to $(g^*(t),\\alpha^*(t))$.",
-      "version": null
+      "version": 1
     }
   },
   "history": [
@@ -68,7 +89,8 @@
             "math.DG"
           ],
           "primaryCategory": "math.DG",
-          "comment": "49 pages, 2 figures"
+          "comment": "49 pages, 2 figures",
+          "version": 1
         },
         "sources": [
           {
@@ -80,6 +102,11 @@
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-10-15T02:49:22.574698+00:00",
             "contentHash": "718c48c396d373aa4eef3ed11913bbd87b5580f1a4c6a961b8e3d9df5cad4f0e"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.19273",
+            "observedAt": "2026-10-15T02:55:44.291687+00:00",
+            "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7"
           }
         ],
         "analysis": {
@@ -94,15 +121,30 @@
           "breakthrough": "以不变上同调类的有理性区分长期塌缩行为，兼顾基空间与覆盖空间。",
           "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。 AI 披露以独立全文核查记录为准。",
           "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "aiEvidence": null,
-          "aiEvidenceSource": null,
+          "aiStatus": "explicit",
+          "aiEvidence": "第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.19273 · PDF 第 8 页，第 1.7 节 AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-15T02:55:44.291687+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.19273",
+            "contentHash": "eb16446ce92b5bea252be9b0232ab947ecdf727834e472c0ba0f3597a00c7ce7",
+            "pages": 49,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1.7 节明确披露 ChatGPT（GPT-6 Astra）用于语言润色，并协助检查表述和论证；数学想法和论证由作者发展，所有建议经作者审查。核查支持写作辅助与论证检查，不把它扩张为 AI 提供核心想法或独立完成证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "59c47b4c4a047f7b08c2db9406129e26053b54c696605829ada07c02467cfd55"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
           "priorityScore": 90,
           "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；无理情形在摘要中仅保证子序列；各结论针对二维环面，不能直接推广到高维。"
         },
         "analysisBasis": {
           "abstract": "We study the $\\alpha$-Ricci flow $(g(t),\\alpha(t))$, which is a Ricci flow coupled with a harmonic 1-form heat flow, on the 2-torus $M$. We prove global existence for this flow as well as a Type III curvature estimate. The long-time behavior of the $\\alpha$-Ricci flow depends on the cohomology class $[\\alpha] \\in H^1(M,\\mathbb{R})$, which is invariant under the flow. If $[\\alpha]$ is rational, then as $t\\to\\infty$, $(M,t^{-1}g(t))$ Gromov--Hausdorff converges to $S^1$ with length $\\ell([\\alpha])/\\sqrt 2$ where $\\ell([\\alpha])$ is the primitive length of $[\\alpha]$. On the universal cover, the rescaled flow $(s^{-1}\\tilde g(st),\\tilde\\alpha(st))$ smoothly converges to an expander $(g^*(t),\\alpha^*(t))$ on $\\mathbb{R}^2$ as $s\\to \\infty$ where $\\alpha^*(t)$ is nonzero and constant in spacetime and $g^*(t)$ is flat and expanding in the $\\alpha^*$ direction. If $[\\alpha]$ is irrational, then there is a sequence $s_i\\to\\infty$ such that $(M,s_i^{-1}g(s_it))$ Gromov--Hausdorff converges to a point. Moreover, on the universal cover, $(s_i^{-1}\\tilde g(s_it),\\tilde\\alpha(s_it))$ smoothly converges to $(g^*(t),\\alpha^*(t))$.",
-          "version": null
+          "version": 1
         }
       }
     }
