@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.19194",
+  "slug": "2610.19194",
+  "latest": {
+    "arxivId": "2610.19194",
+    "metadata": {
+      "title": "Enumeration of one-cycle signed chord diagrams and their duals for optimal Morse flows on closed surfaces",
+      "authors": [
+        "Alexandr Prishlyak"
+      ],
+      "abstract": "Optimal Morse vector fields on closed surfaces, i.e.\\ fields with the minimal possible number of critical points (a single source and a single sink), are classified up to topological trajectory equivalence by one-cycle signed chord diagrams in Kybalko, Prishlyak and Shchurko (2018). We recall this construction and the associated duality, which corresponds to reversing the direction of the flow, in a unified encoding in which both endpoints of a chord carry the same label, and we make it algorithmic. We give an explicit traversal procedure that detects one-cycle diagrams, a canonical form of an equivalence class under cyclic shifts, reversal and relabeling of chords, and a construction of the dual diagram. On this basis we describe an algorithm that enumerates all one-cycle signed chord diagrams with a given number of chords, both for orientable and for non-orientable surfaces, groups them into equivalence classes, pairs each class with its dual, and identifies the self-dual ones. The algorithm is implemented in Python and archived in Zenodo; its output is validated against the Harer--Zagier numbers in the orientable case and against orbit-size counts in both cases. We also note that, when a one-cycle diagram is read as a cellular embedding of a one-vertex graph, its dual diagram describes the embedding of the dual graph.",
+      "categories": [
+        "math.CO",
+        "math.DS",
+        "math.GT"
+      ],
+      "primaryCategory": "math.CO",
+      "comment": "20 pages, 13 figures",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-15T02:33:58.780685+00:00",
+        "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "算法化与枚举",
+      "workSummary": "将闭曲面上最优 Morse 向量场对应的单圈带符号弦图统一编码，给出判定、规范化、对偶及自对偶枚举算法，并用 Harer–Zagier 数与轨道大小核验 Python 实现。",
+      "techniques": [
+        "带符号弦图",
+        "循环移位与轨道枚举",
+        "Morse 流的拓扑分类"
+      ],
+      "breakthrough": "把既有分类转化为可复现的枚举流程，同时记录反向流对应的对偶。",
+      "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。 AI 披露以独立全文核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 54,
+      "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。"
+    },
+    "analysisBasis": {
+      "abstract": "Optimal Morse vector fields on closed surfaces, i.e.\\ fields with the minimal possible number of critical points (a single source and a single sink), are classified up to topological trajectory equivalence by one-cycle signed chord diagrams in Kybalko, Prishlyak and Shchurko (2018). We recall this construction and the associated duality, which corresponds to reversing the direction of the flow, in a unified encoding in which both endpoints of a chord carry the same label, and we make it algorithmic. We give an explicit traversal procedure that detects one-cycle diagrams, a canonical form of an equivalence class under cyclic shifts, reversal and relabeling of chords, and a construction of the dual diagram. On this basis we describe an algorithm that enumerates all one-cycle signed chord diagrams with a given number of chords, both for orientable and for non-orientable surfaces, groups them into equivalence classes, pairs each class with its dual, and identifies the self-dual ones. The algorithm is implemented in Python and archived in Zenodo; its output is validated against the Harer--Zagier numbers in the orientable case and against orbit-size counts in both cases. We also note that, when a one-cycle diagram is read as a cellular embedding of a one-vertex graph, its dual diagram describes the embedding of the dual graph.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-15",
+      "entry": {
+        "arxivId": "2610.19194",
+        "metadata": {
+          "title": "Enumeration of one-cycle signed chord diagrams and their duals for optimal Morse flows on closed surfaces",
+          "authors": [
+            "Alexandr Prishlyak"
+          ],
+          "abstract": "Optimal Morse vector fields on closed surfaces, i.e.\\ fields with the minimal possible number of critical points (a single source and a single sink), are classified up to topological trajectory equivalence by one-cycle signed chord diagrams in Kybalko, Prishlyak and Shchurko (2018). We recall this construction and the associated duality, which corresponds to reversing the direction of the flow, in a unified encoding in which both endpoints of a chord carry the same label, and we make it algorithmic. We give an explicit traversal procedure that detects one-cycle diagrams, a canonical form of an equivalence class under cyclic shifts, reversal and relabeling of chords, and a construction of the dual diagram. On this basis we describe an algorithm that enumerates all one-cycle signed chord diagrams with a given number of chords, both for orientable and for non-orientable surfaces, groups them into equivalence classes, pairs each class with its dual, and identifies the self-dual ones. The algorithm is implemented in Python and archived in Zenodo; its output is validated against the Harer--Zagier numbers in the orientable case and against orbit-size counts in both cases. We also note that, when a one-cycle diagram is read as a cellular embedding of a one-vertex graph, its dual diagram describes the embedding of the dual graph.",
+          "categories": [
+            "math.CO",
+            "math.DS",
+            "math.GT"
+          ],
+          "primaryCategory": "math.CO",
+          "comment": "20 pages, 13 figures",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-15T02:33:58.780685+00:00",
+            "contentHash": "34c6e0630937166cb575b9ea0fa00a31cdd77ccae64db780db669df42abe2ca3"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "算法化与枚举",
+          "workSummary": "将闭曲面上最优 Morse 向量场对应的单圈带符号弦图统一编码，给出判定、规范化、对偶及自对偶枚举算法，并用 Harer–Zagier 数与轨道大小核验 Python 实现。",
+          "techniques": [
+            "带符号弦图",
+            "循环移位与轨道枚举",
+            "Morse 流的拓扑分类"
+          ],
+          "breakthrough": "把既有分类转化为可复现的枚举流程，同时记录反向流对应的对偶。",
+          "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。 AI 披露以独立全文核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 54,
+          "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；不是重新建立全部 Morse 向量场分类；程序与验证数据尚未独立执行复核。"
+        },
+        "analysisBasis": {
+          "abstract": "Optimal Morse vector fields on closed surfaces, i.e.\\ fields with the minimal possible number of critical points (a single source and a single sink), are classified up to topological trajectory equivalence by one-cycle signed chord diagrams in Kybalko, Prishlyak and Shchurko (2018). We recall this construction and the associated duality, which corresponds to reversing the direction of the flow, in a unified encoding in which both endpoints of a chord carry the same label, and we make it algorithmic. We give an explicit traversal procedure that detects one-cycle diagrams, a canonical form of an equivalence class under cyclic shifts, reversal and relabeling of chords, and a construction of the dual diagram. On this basis we describe an algorithm that enumerates all one-cycle signed chord diagrams with a given number of chords, both for orientable and for non-orientable surfaces, groups them into equivalence classes, pairs each class with its dual, and identifies the self-dual ones. The algorithm is implemented in Python and archived in Zenodo; its output is validated against the Harer--Zagier numbers in the orientable case and against orbit-size counts in both cases. We also note that, when a one-cycle diagram is read as a cellular embedding of a one-vertex graph, its dual diagram describes the embedding of the dual graph.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.19585",
+  "slug": "2610.19585",
+  "latest": {
+    "arxivId": "2610.19585",
+    "metadata": {
+      "title": "A short open space curve of unit width",
+      "authors": [
+        "Tinko Sebastian Bartels",
+        "Dennis Kevin Choy",
+        "Ruixiang Wu",
+        "Tongxin Li"
+      ],
+      "abstract": "In this work, we propose a curve to be a minimum of length among rectifiable, continuous curves of unit width in three-dimensional Euclidean space. We show that a previously conjectured minimizer of that problem is not of unit width, give the numerical derivation of a candidate family of unit width curves, prove that it admits a strict local minimum within that candidate family and that this minimum is of unit width and length $3.905124162243593\\ldots$. The curve consists of eight straight segments, two cone geodesics, and three circular helices. Its parameters are specified by a uniquely isolated solution of the joining and stationarity equations. To establish unit width in every direction, we combine analytic estimates with interval arithmetic on a finite covering of the remaining directions. We conjecture that the curve is globally minimizing. We supplement this work with the programs used to identify the candidates, replicate the computer-assisted parts of our proof, as well as a formalization of our proof in Lean.",
+      "categories": [
+        "math.MG",
+        "math.DG"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-15T02:33:47.226544+00:00",
+        "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "计算辅助构造与严格验证",
+      "workSummary": "提出长度约 3.905124162243593 的三维单位宽开曲线，指出旧候选不具有单位宽；新曲线由线段、圆锥测地线和圆柱螺线拼接，证明其在候选族中为严格局部极小，并用解析估计和区间算术覆盖全部方向验证单位宽。",
+      "techniques": [
+        "区间算术",
+        "拼接与驻点方程",
+        "Lean 形式化"
+      ],
+      "breakthrough": "给出可复现的更可靠候选，同时把数值搜索与严格几何验证衔接。",
+      "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。 AI 披露以独立全文核查记录为准。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "priorityScore": 84,
+      "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。"
+    },
+    "analysisBasis": {
+      "abstract": "In this work, we propose a curve to be a minimum of length among rectifiable, continuous curves of unit width in three-dimensional Euclidean space. We show that a previously conjectured minimizer of that problem is not of unit width, give the numerical derivation of a candidate family of unit width curves, prove that it admits a strict local minimum within that candidate family and that this minimum is of unit width and length $3.905124162243593\\ldots$. The curve consists of eight straight segments, two cone geodesics, and three circular helices. Its parameters are specified by a uniquely isolated solution of the joining and stationarity equations. To establish unit width in every direction, we combine analytic estimates with interval arithmetic on a finite covering of the remaining directions. We conjecture that the curve is globally minimizing. We supplement this work with the programs used to identify the candidates, replicate the computer-assisted parts of our proof, as well as a formalization of our proof in Lean.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-15",
+      "entry": {
+        "arxivId": "2610.19585",
+        "metadata": {
+          "title": "A short open space curve of unit width",
+          "authors": [
+            "Tinko Sebastian Bartels",
+            "Dennis Kevin Choy",
+            "Ruixiang Wu",
+            "Tongxin Li"
+          ],
+          "abstract": "In this work, we propose a curve to be a minimum of length among rectifiable, continuous curves of unit width in three-dimensional Euclidean space. We show that a previously conjectured minimizer of that problem is not of unit width, give the numerical derivation of a candidate family of unit width curves, prove that it admits a strict local minimum within that candidate family and that this minimum is of unit width and length $3.905124162243593\\ldots$. The curve consists of eight straight segments, two cone geodesics, and three circular helices. Its parameters are specified by a uniquely isolated solution of the joining and stationarity equations. To establish unit width in every direction, we combine analytic estimates with interval arithmetic on a finite covering of the remaining directions. We conjecture that the curve is globally minimizing. We supplement this work with the programs used to identify the candidates, replicate the computer-assisted parts of our proof, as well as a formalization of our proof in Lean.",
+          "categories": [
+            "math.MG",
+            "math.DG"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-15T02:33:47.226544+00:00",
+            "contentHash": "e5d73ec4ce1aa2e3b30b6ef7acde37d7c6187ef5a202d99fcb5861d9703a69a5"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "计算辅助构造与严格验证",
+          "workSummary": "提出长度约 3.905124162243593 的三维单位宽开曲线，指出旧候选不具有单位宽；新曲线由线段、圆锥测地线和圆柱螺线拼接，证明其在候选族中为严格局部极小，并用解析估计和区间算术覆盖全部方向验证单位宽。",
+          "techniques": [
+            "区间算术",
+            "拼接与驻点方程",
+            "Lean 形式化"
+          ],
+          "breakthrough": "给出可复现的更可靠候选，同时把数值搜索与严格几何验证衔接。",
+          "limitations": "依据官方标题、摘要及作者评论的摘要级分析，尚未审读数学证明。全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。 AI 披露以独立全文核查记录为准。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "priorityScore": 84,
+          "priorityReason": "按与几何研究的关联、结论范围和可迁移方法安排阅读；全局最短性仍为猜想；候选族内局部极小不能写成所有可求长连续曲线中的最优解。Lean 本身也不构成 AI 使用证据。"
+        },
+        "analysisBasis": {
+          "abstract": "In this work, we propose a curve to be a minimum of length among rectifiable, continuous curves of unit width in three-dimensional Euclidean space. We show that a previously conjectured minimizer of that problem is not of unit width, give the numerical derivation of a candidate family of unit width curves, prove that it admits a strict local minimum within that candidate family and that this minimum is of unit width and length $3.905124162243593\\ldots$. The curve consists of eight straight segments, two cone geodesics, and three circular helices. Its parameters are specified by a uniquely isolated solution of the joining and stationarity equations. To establish unit width in every direction, we combine analytic estimates with interval arithmetic on a finite covering of the remaining directions. We conjecture that the curve is globally minimizing. We supplement this work with the programs used to identify the candidates, replicate the computer-assisted parts of our proof, as well as a formalization of our proof in Lean.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
