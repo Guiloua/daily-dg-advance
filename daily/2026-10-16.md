@@ -10,9 +10,13 @@ Arnaud Chéritat
 
 We classify all periodic tilings with a monotile known as $\mathbf{R1}$ and called here the undertile, which underlies several aperiodic monotiles such as the Taylor-Socolar one. The classification is done using deflation, through a study of fracture lines between zones where deflation can be performed. A full classification of fracture patterns is given, that also applies to non-periodic tilings with the undertile. This can be used to reprove non-periodicity of some existing monotiles based on the undertile.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 44—45 页跨页致谢说明，作者未将 AI 用于研究或文字撰写，但明确使用 Google Search 的 AI Overview 查询兼容的 LaTeX 宏包及命令以实现所需版式；记录排版辅助，不记录证明或研究构思用途。
 
+来源：https://arxiv.org/pdf/2610.20663v1 · 第 44—45 页，Acknowledgements 跨页段落
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 44—45 页跨页致谢说明，作者未将 AI 用于研究或文字撰写，但明确使用 Google Search 的 AI Overview 查询兼容的 LaTeX 宏包及命令以实现所需版式；记录排版辅助，不记录证明或研究构思用途。
+
+来源：https://arxiv.org/pdf/2610.20663v1
 
 [arXiv](https://arxiv.org/abs/2610.20663)
 
@@ -24,9 +28,13 @@ Sean P. Carroll、Thomas Csizmadia、Jeroen Schillewaert
 
 Let $T=\langle f,g\mid f^{l}=g^{m}=W^{n}=1\rangle$ be a generalised triangle group in which $W$ is the Farey word of a rational slope $q=r/s$, and suppose that $T$ is the fundamental group of a hyperbolic $3$-orbifold whose singular locus has no spherical vertices. Let $G=\langle f,g\mid f^{l}=g^{m}=W^{n}\rangle$ be the associated central extension. We compute an explicit free resolution of the trivial module over $\mathbb{Z}G$ of minimal length, with differentials given in closed form by Fox derivatives. From this resolution we deduce an explicit free resolution over $\mathbb{Z}T$ which is $2$-periodic in degrees at least two, and we compute the integral homology and cohomology of both groups. Strebel treated the classical family $q=0/1$ in 1983. Since then only the family $q=1/2$ has been treated, by Ellis and Williams, and for that family our resolution over $\mathbb{Z}T$ has strictly smaller rank in every degree.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 3 页 AI usage 说明作者此前两年完成初稿时未用 AI，随后使用 OpenAI GPT-6 Astra 校对并发现小的不准确之处；仅记录校对与检查纠错，不归因为研究构思或证明生成。
 
+来源：https://arxiv.org/pdf/2610.20932v1 · 第 3 页，AI usage
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 3 页 AI usage 说明作者此前两年完成初稿时未用 AI，随后使用 OpenAI GPT-6 Astra 校对并发现小的不准确之处；仅记录校对与检查纠错，不归因为研究构思或证明生成。
+
+来源：https://arxiv.org/pdf/2610.20932v1
 
 [arXiv](https://arxiv.org/abs/2610.20932)
 
@@ -38,9 +46,13 @@ Tommy Hofmann、John Nicholson
 
 We resolve a conjecture of S. Plotnick from 1983 concerning the homotopy type of four-dimensional knot complements. We show that the exteriors of two branched twist spins of the trefoil, which were shown by Plotnick not to be homotopy equivalent as boundary pairs and hence not homeomorphic, are in fact simple homotopy equivalent. The main ingredient of the proof is the construction of an explicit element of augmentation $49$ in the integral group ring of $\operatorname{SL}_2(\mathbb{F}_5)$ which is a unit modulo the group norm and commutes with the element inducing the monodromy on the fundamental group.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 2 页 AI usage 声明：作者称研究想法由其提出，AI 仅用于代码辅助、稿件起草与校对以及计算正确性核验；未将核心想法归于 AI。
 
+来源：https://arxiv.org/pdf/2610.21051v1 · 第 2 页，Declaration on AI usage
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 2 页 AI usage 声明：作者称研究想法由其提出，AI 仅用于代码辅助、稿件起草与校对以及计算正确性核验；未将核心想法归于 AI。
+
+来源：https://arxiv.org/pdf/2610.21051v1
 
 [arXiv](https://arxiv.org/abs/2610.21051)
 
@@ -52,9 +64,13 @@ Hokuto Konno、Jianfeng Lin、Anubhav Mukherjee、Juan Muñoz-Echániz
 
 We study a class of diffeomorphisms of closed manifolds obtained from Davis' reflection trick construction, which are obtained by reflecting a diffeomorphism supported in the fundamental chamber of such a manifold. We use this construction to exhibit the first examples of closed aspherical $4$-manifolds with diffeomorphisms that are topologically isotopic to the identity map, but not smoothly isotopic to it.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 3 页 AI Disclosure 明确说明，Lemma 3.8 证明所需的文献检索使用 GPT 6-Astra；声明未说模型生成该引理的证明。
 
+来源：https://arxiv.org/pdf/2610.21083v1 · 第 3 页，AI Disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 3 页 AI Disclosure 明确说明，Lemma 3.8 证明所需的文献检索使用 GPT 6-Astra；声明未说模型生成该引理的证明。
+
+来源：https://arxiv.org/pdf/2610.21083v1
 
 [arXiv](https://arxiv.org/abs/2610.21083)
 
@@ -66,9 +82,13 @@ Honghuai Fang
 
 We study integral Newton rings attached to symmetric quantum colors. We show that their boundary values at a deleted node are exactly the elements of Habiro's cyclotomic completion, and we describe their quantum neighborhoods at $q=1$ uniformly in the rank. The symmetric-color $\mathfrak{sl}_n$ invariants of a knot are the values of an element of such a ring. In its expansion at $q=1$, the coefficient of $(q-1)^m$ has denominator dividing the $(n-1+2m)$th power of the Alexander polynomial, with integral numerator, and this exponent is sharp. For $5_2$ and $6_1$ at $q=i$, the period matrices of the rank-two coefficient recurrences have spectral modules of exact order three in the Picard group of an affine elliptic curve.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 59 页 Declaration of AI Use 声明 Claude Opus 5.5 仅用于语言编辑与润色；作者独立主导并完成研究、核阅终稿并负责，不记录证明或核心想法用途。
 
+来源：https://arxiv.org/pdf/2610.21102v1 · 第 59 页，Declaration of AI Use
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 59 页 Declaration of AI Use 声明 Claude Opus 5.5 仅用于语言编辑与润色；作者独立主导并完成研究、核阅终稿并负责，不记录证明或核心想法用途。
+
+来源：https://arxiv.org/pdf/2610.21102v1
 
 [arXiv](https://arxiv.org/abs/2610.21102)
 
@@ -80,9 +100,13 @@ Inhyeok Choi、Henry Talbott
 
 We study random quotients of acylindrically hyperbolic groups and hierchically hyperbolic groups, whose (partial) hyperbolicity is captured by their actions on Gromov hyperbolic spaces. We show that if an acylindrically hyperbolic group $G$ acts on a Gromov hyperbolic space $X$ coarsely transitively with a WPD element, then the quotient of $X$ by the normal closure of a random element of $G$ has linearly connected boundary. If $G$ is a group with a (relative) hierarchically hyperbolic group structure, with a quasi-tree top domain $X$, then in fact the quotient of $X$ by the normal closure of a random element of $G$ has boundary homeomorphic to the Nöbeling curve.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 7 页第 1.5 节声明，Talbott 尝试 LLM 的唯一产出是让作者注意到 Urysohn–Menger 求和公式这一潜在工具；作者同时称其余工作未使用 AI、文字和图片均由人完成。这里仅记录工具检索与探索用途。
 
+来源：https://arxiv.org/pdf/2610.21141v1 · 第 7 页，第 1.5 节 Artificial Intelligence Declaration
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 7 页第 1.5 节声明，Talbott 尝试 LLM 的唯一产出是让作者注意到 Urysohn–Menger 求和公式这一潜在工具；作者同时称其余工作未使用 AI、文字和图片均由人完成。这里仅记录工具检索与探索用途。
+
+来源：https://arxiv.org/pdf/2610.21141v1
 
 [arXiv](https://arxiv.org/abs/2610.21141)
 
@@ -94,9 +118,13 @@ Eaman Eftekhary、Marzieh Souri
 
 The Heegaard Floer pillowcase is a recurring local model for rational tangle replacement and exact-triangle constructions. We compute the triangle product for its standard rational-slope triples of curves and encode all contributing classes in a finite generating polynomial. One slope ordering gives a vanishing map. For the other, a closed form for the generating function is computed. One may assume that the slopes are $\tfrac10,\tfrac pq$ and $\tfrac{p'}{q'}$. When an integer lies between the two finite slopes, the closed form has a particularly simple description and there are exactly $2(pq'-p'q)+2qq'$ contributing classes. We also compute the absolute Maslov bi-gradings of the intersection generators in the employed model, relating the planar labels to the graded Floer groups of two-bridge knots and links.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 15 页第 5 节说明，双分次 Theorem 2.6 通过与 GPT-6 交流形成并证明；GPT-6 给出作者对 Theorem 1.2 更强猜想的反例，协助证明 Theorem 4.3 三条件的等价，还参与校对、语法和表述改进；作者核验并负责。
 
+来源：https://arxiv.org/pdf/2610.21153v1 · 第 15 页，第 5 节 Tool Use
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 15 页第 5 节说明，双分次 Theorem 2.6 通过与 GPT-6 交流形成并证明；GPT-6 给出作者对 Theorem 1.2 更强猜想的反例，协助证明 Theorem 4.3 三条件的等价，还参与校对、语法和表述改进；作者核验并负责。
+
+来源：https://arxiv.org/pdf/2610.21153v1
 
 [arXiv](https://arxiv.org/abs/2610.21153)
 
@@ -108,9 +136,13 @@ Andrew Salmon
 
 We give the asymptotic rate of Delsarte's linear programming bound for binary codes and spherical codes. This extends previous work of the author which formulated and proved an analogue of the conjecture of Afkhami-Jeddi, Cohn, Hartman, de Laat, and Tajdini for binary codes, obtaining the rate of the Delsarte linear program at distance $1/2-1/\pi$. The lower bounds introduce ideas from potential theory into the study of Delsarte's bounds, whereby the measures underlying a system of orthogonal polynomials give an obstacle problem. We solve the resulting obstacle problem in the case of binary codes and spherical codes, obtaining a closed form for the lower bound in terms of elliptic integrals. For the upper bounds, we relate the $N$-qubit construction for binary codes used in previous work of the author to the constructions in OpenAI's Chapter 2 for spherical codes and observe that they both involve interlacing spectra. This leads to a variational problem involving measures constructed from these spectra under the Markov-Krein correspondence. This variational problem admits an exact solution and matches the lower bound.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 4—5 页用途声明：作者与 GPT-5.6 Sol 共同形成球面码和二元码上界，曾与 Sol、Astra 探索论证加强；Opus 5.5 识别 MacWilliams 变换的相容性，并在作者指导下把半速率结果重述为薄障碍问题、找到关键引理的推广；稿件使用 Codex 起草。声明同时把二元情形的核心不等式化简归于作者的逐步认识。
 
+来源：https://arxiv.org/pdf/2610.21263v1 · 第 4—5 页，Use of Generative Artificial Intelligence
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 4—5 页用途声明：作者与 GPT-5.6 Sol 共同形成球面码和二元码上界，曾与 Sol、Astra 探索论证加强；Opus 5.5 识别 MacWilliams 变换的相容性，并在作者指导下把半速率结果重述为薄障碍问题、找到关键引理的推广；稿件使用 Codex 起草。声明同时把二元情形的核心不等式化简归于作者的逐步认识。
+
+来源：https://arxiv.org/pdf/2610.21263v1
 
 [arXiv](https://arxiv.org/abs/2610.21263)
 
@@ -122,9 +154,13 @@ Quang Hung Tran
 
 We study a variant of Napoleon's construction on the unit sphere, in which the triangles erected on the sides of a spherical triangle $ABC$ are required to have similar isosceles chord triangles with apex angle $\beta\in(0,\pi/2)$. For a non-equilateral $ABC$, we prove that the triangle $XYZ$ of spherical circumcentres is equilateral if and only if $\cos(\theta_a+\theta_b+\theta_c\pm\Omega/2)=0$, where $\theta_a,\theta_b,\theta_c$ are the base angles of the isosceles spherical triangles $XBC$, $YCA$, $ZAB$, $\Omega$ is the area of $ABC$, and the sign $+$ (resp.~$-$) corresponds to the outward (resp.~inward) construction. We derive from this an explicit classification in terms of two quadrics and a cubic inequality. It recovers the theorem of Dipierro, Noakes and Valdinoci for $\beta=\pi/3$, and exhibits three families of solutions for $\beta>\pi/3$, together with a fourth one when $\cos\beta<1/4$.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 15 页致谢 Claude（Anthropic）和 GPT Sol 6.1（OpenAI）在论文准备及计算检查中的帮助；明确用途记录为计算正确性核查，其余准备工作未细分，不能据此推断模型提出核心想法或生成证明。
 
+来源：https://arxiv.org/pdf/2610.21408v1 · 第 15 页，Acknowledgments
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 15 页致谢 Claude（Anthropic）和 GPT Sol 6.1（OpenAI）在论文准备及计算检查中的帮助；明确用途记录为计算正确性核查，其余准备工作未细分，不能据此推断模型提出核心想法或生成证明。
+
+来源：https://arxiv.org/pdf/2610.21408v1
 
 [arXiv](https://arxiv.org/abs/2610.21408)
 
@@ -136,9 +172,13 @@ Tom Baumbach、Zhang Chen、Martin Henk
 
 For a fixed set $U=(u_1,\ldots,u_m)$ of outer unit normals, we consider the cone-volume map which associates to a vector of support numbers $b\in\mathbb R^m_{> 0}$ the cone-volume vector $\gamma\in\mathbb R^m$ of the polytope \[ P(U,b)=\{x\in\mathbb{R}^n:U^\top x\leq b\}. \] We study its fibers $S(U,\gamma)$ over prescribed cone-volume vectors $\gamma$, with particular emphasis on finiteness and non-uniqueness. We give characterizations of the irreducibility of $U$ in terms of properties of the cone-volume map and its solution sets. In particular, for irreducible $U$, we show that $S(U,\gamma)$ is finite for all $\gamma$ outside a set of measure zero in the cone-volume cone, and we give an explicit upper bound for its cardinality. In the planar case, we prove that $S(U,\gamma)$ has semialgebraic dimension at most one for arbitrary $U$. Moreover, for every $U\in\mathcal{U}(2,m)$ with $m\geq 4$, there exists a cone-volume vector $\gamma$ for which $S(U,\gamma)$ contains at least two distinct elements. As a consequence, there exist two distinct smooth planar convex bodies with the same cone-volume measure. Finally, for $U$ in general position, we show that the number of solutions is odd for every cone-volume vector outside the exceptional set.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 29 页致谢明确区分两种用途：ChatGPT 用于语言编辑、文风与论证表述讨论，未由其生成证明；Theorem 1.6 在与 Claude 的交流中形成，其现象先由作者数值观察，变分与度论证明及首版表述由 Claude 产出，作者随后核验并负责。
 
+来源：https://arxiv.org/pdf/2610.21533v1 · 第 29 页，Acknowledgements
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 29 页致谢明确区分两种用途：ChatGPT 用于语言编辑、文风与论证表述讨论，未由其生成证明；Theorem 1.6 在与 Claude 的交流中形成，其现象先由作者数值观察，变分与度论证明及首版表述由 Claude 产出，作者随后核验并负责。
+
+来源：https://arxiv.org/pdf/2610.21533v1
 
 [arXiv](https://arxiv.org/abs/2610.21533)
 
@@ -150,9 +190,11 @@ Dragomir Grozev、Nikolai Nikolov
 
 We investigate when a parallelotope containing vertices of the unit cube $Q_n=[0,1]^n$ covers $\Bbb R^n$ by integer translates. We prove the covering property for every parallelepiped containing five vertices of $Q_3$, and, in any dimension, for every parallelotope containing a facet of $Q_n$ and one vertex of the opposite facet. As a consequence, we obtain the sharp bound $1/n$ for the volume of a pyramid contained in $Q_n$ with a parallelotope base. We also give an alternative proof of this bound.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。对该版本全部可提取页面完成当前规则的 AI 披露检索，未见命中；结论不等于未使用 AI。
 
+来源：https://arxiv.org/pdf/2610.21572v1
 
 [arXiv](https://arxiv.org/abs/2610.21572)
 
@@ -164,9 +206,13 @@ Alexander Hock、Sergey Shadrin
 
 We prove a version of topological recursion for the correlation differentials of colored HOMFLY-PT polynomials of torus knots on the corresponding augmentation curves, following the proposal of Gu, Jockers, Klemm, and Soroush. To this end, we explicitly construct the spectral curve from the so-called auxiliary curve of Brini, Eynard, and Mariño and prove that it coincides with the augmentation curve for every torus knot with coprime $(r,s)$. Finally, our version of topological recursion proves the higher-genus closed-string prediction of the Aganagic--Vafa conjecture for all torus knot augmentation curves.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 5 页致谢说明，AI agents 被大量用于产出和完善证明；作者提供代数技巧与证明思路，要求模型列出推论，模型在形式计算方面作用明显。作者同时声明最终证明版本、行文和文本仍由人工完成，不能因人工成文而抹去证明协作。
 
+来源：https://arxiv.org/pdf/2610.21585v1 · 第 5 页，致谢后的 AI 用途说明
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 5 页致谢说明，AI agents 被大量用于产出和完善证明；作者提供代数技巧与证明思路，要求模型列出推论，模型在形式计算方面作用明显。作者同时声明最终证明版本、行文和文本仍由人工完成，不能因人工成文而抹去证明协作。
+
+来源：https://arxiv.org/pdf/2610.21585v1
 
 [arXiv](https://arxiv.org/abs/2610.21585)
 
@@ -178,9 +224,13 @@ Eeva Kuure、Markus Myllyoja、Aleksi Pyörälä
 
 We study the visible parts and orthogonal projections of the affine fractal percolation. We show that for the affine fractal percolation $E$, conditioned on $E \neq \varnothing$, almost surely the dimension of the visible part is equal to $\min\{1, \dim_{\rm H} E\}$ from all directions except for the major contracting direction. The visible part from the major contracting direction is notably different from the other directions, and we provide a formula for its Hausdorff and box dimensions. In addition, we show that almost surely conditioned on $E \neq \varnothing$, $\dim_{\rm H} \pi(E) =\min\{ 1, \dim_{\rm H} E\}$ for every orthogonal projection $\pi$ excluding the one onto the major contracting direction, and given $\dim_{\rm H} E >1$, these projections contain intervals.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第 7 页 AI disclosure 说明使用 AI 探索参考文献，同时明确否认 AI 生成证明思路或其他内容；仅记录文献检索用途。
 
+来源：https://arxiv.org/pdf/2610.21768v1 · 第 7 页，AI disclosure
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 7 页 AI disclosure 说明使用 AI 探索参考文献，同时明确否认 AI 生成证明思路或其他内容；仅记录文献检索用途。
+
+来源：https://arxiv.org/pdf/2610.21768v1
 
 [arXiv](https://arxiv.org/abs/2610.21768)
 
@@ -192,9 +242,11 @@ Mathias Braun、Nicola Gigli、Robert McCann、Simone Vincini
 
 We develop a relaxation-based approach to Sobolev functions and Cheeger energies on metric spacetimes, in analogy with the construction used in positive signature. For an exponent $p<0$, we introduce a pre-$p$-Cheeger energy built from a local steepness constant on causal functions, and define the $p$-Cheeger energy as its relaxation in $L^0$; this yields, by construction, a convex and lower semicontinuous functional together with an associated maximal relaxed subslope. We establish natural calculus rules for the resulting Sobolev class. We then define the $p$-heat flow as the gradient flow of the $p$-Cheeger energy in $L^2$ and its generator, the $p$-d'Alembertian. Combining a Kuwada-type lemma with entropy growth estimates along the flow, we show that our notion of Sobolev class and relaxed subslope coincides with the Sobolev class and weak subslope introduced by Beran et al.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 1 页命中为目录；第 4 页第 1.4 节声明作者未在本文准备过程中使用 AI 模型，全文检索未见正面协作披露。
 
+来源：https://arxiv.org/pdf/2610.21775v1
 
 [arXiv](https://arxiv.org/abs/2610.21775)
 
@@ -206,9 +258,11 @@ Cameron Gates Rudd
 
 We construct metrics on pseudoAnosov mapping tori that make every fiber an intrinsically hyperbolic stable minimal surface, and which have scalar curvature identically -6. Using this, we give a new proof (with improved constant) of an inequality bounding the hyperbolic volume of a pseudoAnosov mapping torus by the Weil-Petersson translation length (and consequently, the entropy) of its monodromy.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。对该版本全部可提取页面完成当前规则的 AI 披露检索，未见命中；结论不等于未使用 AI。
 
+来源：https://arxiv.org/pdf/2610.21885v1
 
 [arXiv](https://arxiv.org/abs/2610.21885)
 
@@ -220,9 +274,11 @@ Chunna Zeng、Xiaoyu Cheng
 
 All $\operatorname{SL}(n)$-covariant symmetric tensor valuations on convex polytopes in $\mathbb R^n$ are completely classified without any continuity assumptions. It is shown that the only such valuation is the moment tensor.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。对该版本全部可提取页面完成当前规则的 AI 披露检索，未见命中；结论不等于未使用 AI。
 
+来源：https://arxiv.org/pdf/2610.22114v1
 
 [arXiv](https://arxiv.org/abs/2610.22114)
 
@@ -234,9 +290,11 @@ Christian El Emam、Filippo Mazzoli、Nicholas Rungi、Andrea Seppi、Andrea Tam
 
 We construct a deformation space for minimal immersions into $\mathrm{PSL}(2,\mathbb{C})$ with its holomorphic Killing form, and define an explicit, mapping class group invariant, complex hyperKähler structure on such deformation space. Such complex hyperKähler structure restricts to: Donaldson's hyperKähler structure on a totally real copy of almost-Fuchsian space, Mazzoli-Seppi-Tamburelli's para-hyperKähler structure on a totally real copy of maximally globally hyperbolic $\mathbb{A}\mathrm{d}\mathbb{S}^3$ manifolds, and Loustau-Sanders' complex bi-Kähler structure on a holomorphic copy of quasi-Fuchsian space. Moreover, all these loci are totally geodesic. We discuss other geometric aspects of this space, such as the Hamiltonian property of a natural $\mathbb{C}^*$-action, involving the Goldman symplectic form and a complex-valued area functional.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 9 页 GenAI declaration 明确否认在任何阶段使用生成式 AI；第 66 页命中来自参考文献作者姓名，未见正面协作披露。
 
+来源：https://arxiv.org/pdf/2610.22288v1
 
 [arXiv](https://arxiv.org/abs/2610.22288)
 
@@ -248,9 +306,11 @@ Ansel Goh
 
 We classify $h$-cobordisms between compact simply-connected $4$-manifolds with boundary in both the smooth and topological categories. This extends a result of Kreck, which proved the corresponding result for closed manifolds. As an application, we recover the injectivity portion of Orson-Powell's computation of the mapping class group for simply-connected topological $4$-manifolds with boundary.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 3 页 AI Statement 明确声明准备本文时未使用 AI 工具，全文检索未见正面协作披露。
 
+来源：https://arxiv.org/pdf/2610.22305v1
 
 [arXiv](https://arxiv.org/abs/2610.22305)
 
@@ -262,8 +322,10 @@ Asger Tornquist
 
 We construct a complete, second countable metric space with uncountable Scott rank. This answers a well-known question posed by Fokina, Friedman, K{ö}rwien and Nies, and shows that the known upper bound $\omega_1$ on the rank, proved by Doucha, is sharp. Further, a Baire category based variant of the rank of metric spaces is developed, and this is used to give new proofs of the known rank bounds based only on standard methods of descriptive set theory.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+全文检索未见 AI 协作披露（不代表未使用 AI）
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 37 页评论讨论 AI 解题与人类洞见的一般观点，未陈述本研究实际使用模型；全文检索未见本文正面协作披露，不能据此认定没有使用 AI。
 
+来源：https://arxiv.org/pdf/2610.22351v1
 
 [arXiv](https://arxiv.org/abs/2610.22351)
