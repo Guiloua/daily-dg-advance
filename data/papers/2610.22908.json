@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.22908",
+  "slug": "2610.22908",
+  "latest": {
+    "arxivId": "2610.22908",
+    "metadata": {
+      "title": "Nearly Sharp Uniform Projection Bounds and Superlinear Vitushkin Inequalities for Deterministic Self-Similar Sets",
+      "authors": [
+        "Caleb Marshall"
+      ],
+      "abstract": "For each $\\alpha\\in(0,1)$, we construct an explicit deterministic finite homogeneous planar iterated function system of similarities satisfying the strong separation condition, whose attractor $E_\\alpha$ has positive finite one-dimensional Hausdorff measure and, for all sufficiently small $\\delta>0$, satisfies $\\sup_{0\\le\\theta<\\pi}H^1(\\pi_\\theta(N_\\delta(E_\\alpha)))\\lesssim_\\alpha(\\log\\delta^{-1})^{-\\alpha}$. The defining system depends only on $\\alpha$ and is fixed at every scale. For these same sets, we prove the sharp analytic capacity law $\\gamma(N_\\delta(E_\\alpha))\\asymp_\\alpha(\\log\\delta^{-1})^{-1/2}$ as $\\delta\\rightarrow0$. Consequently, each $E_\\alpha$ satisfies the quantitative Vitushkin comparison $\\operatorname{Fav}(N_\\delta(E_\\alpha))\\lesssim_\\alpha\\gamma(N_\\delta(E_\\alpha))^{2\\alpha}$ for every $\\delta\\in(0,1)$. These comparisons are superlinear for $\\alpha>1/2$, with exponents arbitrarily close to the optimal upper limit two for this class of self-similar sets. A completely specified sixteen-map system gives $\\alpha=53/100$ and comparison exponent $53/50$. Inspired by Falconer's Venetian blind constructions, the projection argument combines exact collinear cylinder subfamilies, quantitative distribution of word orientations, and a cover indexed by first successful symbolic blocks. The rotation parameters are explicit powers of a real algebraic number, linking the construction to simultaneous Diophantine approximation. The capacity estimate follows from the curvature characterization of analytic capacity and a telescoping inequality for cylinder masses.",
+      "categories": [
+        "math.CA",
+        "math.CV",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CA",
+      "comment": "1 figure. Comments welcome",
+      "version": 1,
+      "submittedAt": "2026-10-16T04:16:29Z",
+      "updatedAt": "2026-10-16T04:16:29Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-19T09:23:18.693256+00:00",
+        "contentHash": "2363ceaa01f298cd14781f3b616fa46fac2a4897347e58645eeecda2a41fcfbf"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-19T09:34:56.246470+00:00",
+        "contentHash": "df1e10070496f974ae3a08fbf0bfa395897d2ef173eac7f5ea6d466815fbe968"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "确定性分形的投影与容量",
+      "workSummary": "构造固定于所有尺度的确定性自相似平面集，获得各方向投影的对数衰减界和解析容量的锐对数阶，并推出指数可逼近二的超线性 Vitushkin 比较。",
+      "techniques": [
+        "Venetian blind 构造",
+        "丢番图逼近",
+        "解析容量的曲率刻画"
+      ],
+      "breakthrough": "把全方向投影控制与精确容量衰减组织在同一显式 IFS 模型中。",
+      "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。常数依赖 α，指数只逼近而非达到二；结果针对构造的自相似集，不是任意有限长度集的统一律。 AI 披露另见独立全文核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-19T09:26:56.977434+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.22908v1",
+        "contentHash": "5fabf60f6397e9353f6654a56fda91a58a9a7cef9f527d8277879a0fb555b479",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fa57d25af5b3452a34e12b3b913c05182063a89c06c31dd913cfa1e825b09b49"
+      },
+      "priorityScore": 78,
+      "priorityReason": "把全方向投影控制与精确容量衰减组织在同一显式 IFS 模型中。 常数依赖 α，指数只逼近而非达到二；结果针对构造的自相似集，不是任意有限长度集的统一律。"
+    },
+    "analysisBasis": {
+      "abstract": "For each $\\alpha\\in(0,1)$, we construct an explicit deterministic finite homogeneous planar iterated function system of similarities satisfying the strong separation condition, whose attractor $E_\\alpha$ has positive finite one-dimensional Hausdorff measure and, for all sufficiently small $\\delta>0$, satisfies $\\sup_{0\\le\\theta<\\pi}H^1(\\pi_\\theta(N_\\delta(E_\\alpha)))\\lesssim_\\alpha(\\log\\delta^{-1})^{-\\alpha}$. The defining system depends only on $\\alpha$ and is fixed at every scale. For these same sets, we prove the sharp analytic capacity law $\\gamma(N_\\delta(E_\\alpha))\\asymp_\\alpha(\\log\\delta^{-1})^{-1/2}$ as $\\delta\\rightarrow0$. Consequently, each $E_\\alpha$ satisfies the quantitative Vitushkin comparison $\\operatorname{Fav}(N_\\delta(E_\\alpha))\\lesssim_\\alpha\\gamma(N_\\delta(E_\\alpha))^{2\\alpha}$ for every $\\delta\\in(0,1)$. These comparisons are superlinear for $\\alpha>1/2$, with exponents arbitrarily close to the optimal upper limit two for this class of self-similar sets. A completely specified sixteen-map system gives $\\alpha=53/100$ and comparison exponent $53/50$. Inspired by Falconer's Venetian blind constructions, the projection argument combines exact collinear cylinder subfamilies, quantitative distribution of word orientations, and a cover indexed by first successful symbolic blocks. The rotation parameters are explicit powers of a real algebraic number, linking the construction to simultaneous Diophantine approximation. The capacity estimate follows from the curvature characterization of analytic capacity and a telescoping inequality for cylinder masses.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-19",
+      "entry": {
+        "arxivId": "2610.22908",
+        "metadata": {
+          "title": "Nearly Sharp Uniform Projection Bounds and Superlinear Vitushkin Inequalities for Deterministic Self-Similar Sets",
+          "authors": [
+            "Caleb Marshall"
+          ],
+          "abstract": "For each $\\alpha\\in(0,1)$, we construct an explicit deterministic finite homogeneous planar iterated function system of similarities satisfying the strong separation condition, whose attractor $E_\\alpha$ has positive finite one-dimensional Hausdorff measure and, for all sufficiently small $\\delta>0$, satisfies $\\sup_{0\\le\\theta<\\pi}H^1(\\pi_\\theta(N_\\delta(E_\\alpha)))\\lesssim_\\alpha(\\log\\delta^{-1})^{-\\alpha}$. The defining system depends only on $\\alpha$ and is fixed at every scale. For these same sets, we prove the sharp analytic capacity law $\\gamma(N_\\delta(E_\\alpha))\\asymp_\\alpha(\\log\\delta^{-1})^{-1/2}$ as $\\delta\\rightarrow0$. Consequently, each $E_\\alpha$ satisfies the quantitative Vitushkin comparison $\\operatorname{Fav}(N_\\delta(E_\\alpha))\\lesssim_\\alpha\\gamma(N_\\delta(E_\\alpha))^{2\\alpha}$ for every $\\delta\\in(0,1)$. These comparisons are superlinear for $\\alpha>1/2$, with exponents arbitrarily close to the optimal upper limit two for this class of self-similar sets. A completely specified sixteen-map system gives $\\alpha=53/100$ and comparison exponent $53/50$. Inspired by Falconer's Venetian blind constructions, the projection argument combines exact collinear cylinder subfamilies, quantitative distribution of word orientations, and a cover indexed by first successful symbolic blocks. The rotation parameters are explicit powers of a real algebraic number, linking the construction to simultaneous Diophantine approximation. The capacity estimate follows from the curvature characterization of analytic capacity and a telescoping inequality for cylinder masses.",
+          "categories": [
+            "math.CA",
+            "math.CV",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CA",
+          "comment": "1 figure. Comments welcome",
+          "version": 1,
+          "submittedAt": "2026-10-16T04:16:29Z",
+          "updatedAt": "2026-10-16T04:16:29Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-19T09:23:18.693256+00:00",
+            "contentHash": "2363ceaa01f298cd14781f3b616fa46fac2a4897347e58645eeecda2a41fcfbf"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-19T09:34:56.246470+00:00",
+            "contentHash": "df1e10070496f974ae3a08fbf0bfa395897d2ef173eac7f5ea6d466815fbe968"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "确定性分形的投影与容量",
+          "workSummary": "构造固定于所有尺度的确定性自相似平面集，获得各方向投影的对数衰减界和解析容量的锐对数阶，并推出指数可逼近二的超线性 Vitushkin 比较。",
+          "techniques": [
+            "Venetian blind 构造",
+            "丢番图逼近",
+            "解析容量的曲率刻画"
+          ],
+          "breakthrough": "把全方向投影控制与精确容量衰减组织在同一显式 IFS 模型中。",
+          "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。常数依赖 α，指数只逼近而非达到二；结果针对构造的自相似集，不是任意有限长度集的统一律。 AI 披露另见独立全文核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-19T09:26:56.977434+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.22908v1",
+            "contentHash": "5fabf60f6397e9353f6654a56fda91a58a9a7cef9f527d8277879a0fb555b479",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fa57d25af5b3452a34e12b3b913c05182063a89c06c31dd913cfa1e825b09b49"
+          },
+          "priorityScore": 78,
+          "priorityReason": "把全方向投影控制与精确容量衰减组织在同一显式 IFS 模型中。 常数依赖 α，指数只逼近而非达到二；结果针对构造的自相似集，不是任意有限长度集的统一律。"
+        },
+        "analysisBasis": {
+          "abstract": "For each $\\alpha\\in(0,1)$, we construct an explicit deterministic finite homogeneous planar iterated function system of similarities satisfying the strong separation condition, whose attractor $E_\\alpha$ has positive finite one-dimensional Hausdorff measure and, for all sufficiently small $\\delta>0$, satisfies $\\sup_{0\\le\\theta<\\pi}H^1(\\pi_\\theta(N_\\delta(E_\\alpha)))\\lesssim_\\alpha(\\log\\delta^{-1})^{-\\alpha}$. The defining system depends only on $\\alpha$ and is fixed at every scale. For these same sets, we prove the sharp analytic capacity law $\\gamma(N_\\delta(E_\\alpha))\\asymp_\\alpha(\\log\\delta^{-1})^{-1/2}$ as $\\delta\\rightarrow0$. Consequently, each $E_\\alpha$ satisfies the quantitative Vitushkin comparison $\\operatorname{Fav}(N_\\delta(E_\\alpha))\\lesssim_\\alpha\\gamma(N_\\delta(E_\\alpha))^{2\\alpha}$ for every $\\delta\\in(0,1)$. These comparisons are superlinear for $\\alpha>1/2$, with exponents arbitrarily close to the optimal upper limit two for this class of self-similar sets. A completely specified sixteen-map system gives $\\alpha=53/100$ and comparison exponent $53/50$. Inspired by Falconer's Venetian blind constructions, the projection argument combines exact collinear cylinder subfamilies, quantitative distribution of word orientations, and a cover indexed by first successful symbolic blocks. The rotation parameters are explicit powers of a real algebraic number, linking the construction to simultaneous Diophantine approximation. The capacity estimate follows from the curvature characterization of analytic capacity and a telescoping inequality for cylinder masses.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

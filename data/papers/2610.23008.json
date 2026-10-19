@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.23008",
+  "slug": "2610.23008",
+  "latest": {
+    "arxivId": "2610.23008",
+    "metadata": {
+      "title": "Classification of real Lie algebras of dimension four",
+      "authors": [
+        "Mehdi Nadjafikhah"
+      ],
+      "abstract": "We present an exhaustive, coordinate-free, and self-contained classification of four-dimensional real Lie algebras up to isomorphism. In dimension three, classification schemes frequently exploit Bryant's classical exterior duality isomorphism $\\Lambda^2\\mathfrak{g} \\cong \\mathfrak{g}^* \\otimes \\Lambda^3\\mathfrak{g}$, which reduces the Jacobi identity to an elegant linear algebraic condition on a single $3\\times 3$ matrix. We explicitly demonstrate that this accidental isomorphism breaks down in dimension four due to the dimensional mismatch $\\dim \\Lambda^2\\mathfrak{g} = 6 \\neq 4 = \\dim(\\mathfrak{g}^* \\otimes \\Lambda^4\\mathfrak{g})$, transforming the Jacobi identity into a non-linear system of 16 quadratic constraints on 24 structure constants. To overcome this geometric obstruction without relying on brute-force polynomial elimination, we employ an intrinsic Lie-theoretic reduction: the Levi--Malcev decomposition isolates the non-solvable sector into direct products with three-dimensional simple ideals, while the solvable sector is classified by anchoring the structure to its nilradical $\\mathfrak{n}$, which is an intrinsic characteristic ideal. For codimension-one nilradicals ($\\dim\\mathfrak{n} = 3$), the problem is reduced to classifying outer derivations of $\\mathbb{R}^3$ and the Heisenberg algebra $\\mathfrak{h}_3$ under the action of the automorphism group modulo global rescaling and central translations. For two-dimensional nilradicals, the structure is resolved via maximal abelian sub-algebras of $\\mathfrak{gl}(2,\\mathbb{R})$ lacking nilpotent elements. Complete proofs are supplied for all reductions, precise moduli parameter ranges are established to eliminate redundancies, and an explicit isomorphism dictionary is provided bridging our structural models with classical tabulations in mathematical physics.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-16T06:37:42Z",
+      "updatedAt": "2026-10-16T06:37:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-19T09:23:06.332347+00:00",
+        "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-19T09:34:56.247550+00:00",
+        "contentHash": "feab79bffa522d058c445b148dc56226fb271b0a4efdd1c3db5ae0356e63d2bf"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "四维李代数分类的重述",
+      "workSummary": "通过 Levi–Malcev 分解与 nilradical，将四维实李代数分类化为外导子的自同构轨道及二维线性代数子代数问题，并给出与经典表的对应。",
+      "techniques": [
+        "nilradical",
+        "外导子轨道",
+        "Levi–Malcev 分解"
+      ],
+      "breakthrough": "以特征理想和结构归约组织既有四维分类。",
+      "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。不能把改进证明组织方式当成首次解决四维分类；参数区间的无冗余性仍需核验。 AI 披露另见独立全文核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-19T09:28:00.059103+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.23008v1",
+        "contentHash": "078bfeaf2d4f2fb4e90df9394578d0fc2d610c1bb2ce6fbe46d4f4686a9acc6e",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d81d2cdc2235df9181ac5ac6533a128b40af383b72eb7186f8dc1a1637887bd1"
+      },
+      "priorityScore": 42,
+      "priorityReason": "以特征理想和结构归约组织既有四维分类。 不能把改进证明组织方式当成首次解决四维分类；参数区间的无冗余性仍需核验。",
+      "lowPriorityReason": "主要整理既有分类与表述；摘要尚未显示面向一般几何问题的实质性新定理或方法。"
+    },
+    "analysisBasis": {
+      "abstract": "We present an exhaustive, coordinate-free, and self-contained classification of four-dimensional real Lie algebras up to isomorphism. In dimension three, classification schemes frequently exploit Bryant's classical exterior duality isomorphism $\\Lambda^2\\mathfrak{g} \\cong \\mathfrak{g}^* \\otimes \\Lambda^3\\mathfrak{g}$, which reduces the Jacobi identity to an elegant linear algebraic condition on a single $3\\times 3$ matrix. We explicitly demonstrate that this accidental isomorphism breaks down in dimension four due to the dimensional mismatch $\\dim \\Lambda^2\\mathfrak{g} = 6 \\neq 4 = \\dim(\\mathfrak{g}^* \\otimes \\Lambda^4\\mathfrak{g})$, transforming the Jacobi identity into a non-linear system of 16 quadratic constraints on 24 structure constants. To overcome this geometric obstruction without relying on brute-force polynomial elimination, we employ an intrinsic Lie-theoretic reduction: the Levi--Malcev decomposition isolates the non-solvable sector into direct products with three-dimensional simple ideals, while the solvable sector is classified by anchoring the structure to its nilradical $\\mathfrak{n}$, which is an intrinsic characteristic ideal. For codimension-one nilradicals ($\\dim\\mathfrak{n} = 3$), the problem is reduced to classifying outer derivations of $\\mathbb{R}^3$ and the Heisenberg algebra $\\mathfrak{h}_3$ under the action of the automorphism group modulo global rescaling and central translations. For two-dimensional nilradicals, the structure is resolved via maximal abelian sub-algebras of $\\mathfrak{gl}(2,\\mathbb{R})$ lacking nilpotent elements. Complete proofs are supplied for all reductions, precise moduli parameter ranges are established to eliminate redundancies, and an explicit isomorphism dictionary is provided bridging our structural models with classical tabulations in mathematical physics.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-19",
+      "entry": {
+        "arxivId": "2610.23008",
+        "metadata": {
+          "title": "Classification of real Lie algebras of dimension four",
+          "authors": [
+            "Mehdi Nadjafikhah"
+          ],
+          "abstract": "We present an exhaustive, coordinate-free, and self-contained classification of four-dimensional real Lie algebras up to isomorphism. In dimension three, classification schemes frequently exploit Bryant's classical exterior duality isomorphism $\\Lambda^2\\mathfrak{g} \\cong \\mathfrak{g}^* \\otimes \\Lambda^3\\mathfrak{g}$, which reduces the Jacobi identity to an elegant linear algebraic condition on a single $3\\times 3$ matrix. We explicitly demonstrate that this accidental isomorphism breaks down in dimension four due to the dimensional mismatch $\\dim \\Lambda^2\\mathfrak{g} = 6 \\neq 4 = \\dim(\\mathfrak{g}^* \\otimes \\Lambda^4\\mathfrak{g})$, transforming the Jacobi identity into a non-linear system of 16 quadratic constraints on 24 structure constants. To overcome this geometric obstruction without relying on brute-force polynomial elimination, we employ an intrinsic Lie-theoretic reduction: the Levi--Malcev decomposition isolates the non-solvable sector into direct products with three-dimensional simple ideals, while the solvable sector is classified by anchoring the structure to its nilradical $\\mathfrak{n}$, which is an intrinsic characteristic ideal. For codimension-one nilradicals ($\\dim\\mathfrak{n} = 3$), the problem is reduced to classifying outer derivations of $\\mathbb{R}^3$ and the Heisenberg algebra $\\mathfrak{h}_3$ under the action of the automorphism group modulo global rescaling and central translations. For two-dimensional nilradicals, the structure is resolved via maximal abelian sub-algebras of $\\mathfrak{gl}(2,\\mathbb{R})$ lacking nilpotent elements. Complete proofs are supplied for all reductions, precise moduli parameter ranges are established to eliminate redundancies, and an explicit isomorphism dictionary is provided bridging our structural models with classical tabulations in mathematical physics.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-16T06:37:42Z",
+          "updatedAt": "2026-10-16T06:37:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-19T09:23:06.332347+00:00",
+            "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-19T09:34:56.247550+00:00",
+            "contentHash": "feab79bffa522d058c445b148dc56226fb271b0a4efdd1c3db5ae0356e63d2bf"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "四维李代数分类的重述",
+          "workSummary": "通过 Levi–Malcev 分解与 nilradical，将四维实李代数分类化为外导子的自同构轨道及二维线性代数子代数问题，并给出与经典表的对应。",
+          "techniques": [
+            "nilradical",
+            "外导子轨道",
+            "Levi–Malcev 分解"
+          ],
+          "breakthrough": "以特征理想和结构归约组织既有四维分类。",
+          "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。不能把改进证明组织方式当成首次解决四维分类；参数区间的无冗余性仍需核验。 AI 披露另见独立全文核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-19T09:28:00.059103+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.23008v1",
+            "contentHash": "078bfeaf2d4f2fb4e90df9394578d0fc2d610c1bb2ce6fbe46d4f4686a9acc6e",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d81d2cdc2235df9181ac5ac6533a128b40af383b72eb7186f8dc1a1637887bd1"
+          },
+          "priorityScore": 42,
+          "priorityReason": "以特征理想和结构归约组织既有四维分类。 不能把改进证明组织方式当成首次解决四维分类；参数区间的无冗余性仍需核验。",
+          "lowPriorityReason": "主要整理既有分类与表述；摘要尚未显示面向一般几何问题的实质性新定理或方法。"
+        },
+        "analysisBasis": {
+          "abstract": "We present an exhaustive, coordinate-free, and self-contained classification of four-dimensional real Lie algebras up to isomorphism. In dimension three, classification schemes frequently exploit Bryant's classical exterior duality isomorphism $\\Lambda^2\\mathfrak{g} \\cong \\mathfrak{g}^* \\otimes \\Lambda^3\\mathfrak{g}$, which reduces the Jacobi identity to an elegant linear algebraic condition on a single $3\\times 3$ matrix. We explicitly demonstrate that this accidental isomorphism breaks down in dimension four due to the dimensional mismatch $\\dim \\Lambda^2\\mathfrak{g} = 6 \\neq 4 = \\dim(\\mathfrak{g}^* \\otimes \\Lambda^4\\mathfrak{g})$, transforming the Jacobi identity into a non-linear system of 16 quadratic constraints on 24 structure constants. To overcome this geometric obstruction without relying on brute-force polynomial elimination, we employ an intrinsic Lie-theoretic reduction: the Levi--Malcev decomposition isolates the non-solvable sector into direct products with three-dimensional simple ideals, while the solvable sector is classified by anchoring the structure to its nilradical $\\mathfrak{n}$, which is an intrinsic characteristic ideal. For codimension-one nilradicals ($\\dim\\mathfrak{n} = 3$), the problem is reduced to classifying outer derivations of $\\mathbb{R}^3$ and the Heisenberg algebra $\\mathfrak{h}_3$ under the action of the automorphism group modulo global rescaling and central translations. For two-dimensional nilradicals, the structure is resolved via maximal abelian sub-algebras of $\\mathfrak{gl}(2,\\mathbb{R})$ lacking nilpotent elements. Complete proofs are supplied for all reductions, precise moduli parameter ranges are established to eliminate redundancies, and an explicit isomorphism dictionary is provided bridging our structural models with classical tabulations in mathematical physics.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

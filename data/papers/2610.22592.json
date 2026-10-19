@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.22592",
+  "slug": "2610.22592",
+  "latest": {
+    "arxivId": "2610.22592",
+    "metadata": {
+      "title": "Computing Fréchet on Unknown Submanifolds of Riemannian Manifolds",
+      "authors": [
+        "Ian McPherson",
+        "Mauro Maggioni"
+      ],
+      "abstract": "Empirical averages are fundamental statistical primitives. On nonlinear spaces, their generalization, the Fréchet mean, generally lacks a closed-form solution, and its computation requires solving an optimization problem. We study the computation of intrinsic Fréchet means for data supported on an unknown compact $d$-dimensional Riemannian manifold $M_{1}$ embedded in an ambient metric space $(X,d_{\\operatorname{obs}})$. Such settings arise when observations are better represented in non-Euclidean spaces, like probability distributions in Wasserstein space. We assume access only to a local sampler on $M_{1}$ and the observation metric $d_{\\operatorname{obs}}$, without knowledge of its intrinsic geometry. We propose a graph-based iterative algorithm that adaptively samples the manifold and approximates geodesic interpolation. Under mild assumptions, we establish an $O(1/T)$ expected objective gap guarantee using at most $\\widetilde{O}(T^{4d+3})$ sampled points. As a byproduct of our analysis we extend the metric equivalence guarantees of ISOMAP from Euclidean to Riemannian ambient spaces, which may be of independent interest. Numerical experiments demonstrate the effectiveness of our method for computing intrinsic averages on unknown data manifolds.",
+      "categories": [
+        "math.OC",
+        "math.DG",
+        "stat.ML"
+      ],
+      "primaryCategory": "math.OC",
+      "comment": "80 pages (35 pages of main text, approximately 41 pages of appendices, plus references and contents); 18 figures",
+      "version": 1,
+      "submittedAt": "2026-10-15T19:40:18Z",
+      "updatedAt": "2026-10-15T19:40:18Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-19T09:23:06.332347+00:00",
+        "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-19T09:34:56.244162+00:00",
+        "contentHash": "b14b70685934f6c8adbe903728d3b3f39af7865ecf812f54fc81448477726ae4"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "未知流形上的优化算法",
+      "workSummary": "仅用未知紧嵌入流形的局部采样器和观测距离，自适应建图逼近测地插值并计算内蕴 Fréchet 均值；在所述假设下获得期望目标差 O(1/T)，采样量至多为 T^(4d+3) 的对数量级修正。",
+      "techniques": [
+        "图测地逼近",
+        "自适应采样",
+        "流形上的统计优化"
+      ],
+      "breakthrough": "同时把 ISOMAP 的度量等价保证扩展至黎曼环境空间。",
+      "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。采样复杂度随内蕴维数快速增长；不能把理论收敛率误读为高维低成本计算保证。 AI 披露另见独立全文核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明主要数学想法、结果和证明已有初稿；后续 ChatGPT 辅助证明检查、识别并移除不必要假设及语言表述，Codex 将旧数值代码推广至任意环境空间。全部修改由作者审核，不能把这些辅助用途写成 AI 提供原始核心想法。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.22592v1 · PDF 第 35–36 页，Declaration of Generative AI Use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-19T09:25:03.872668+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.22592v1",
+        "contentHash": "6665fcd29b87509b0ade29072dc059b8433fd0e5567234ee01dd1f3101c90c9e",
+        "pages": 80,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明主要数学想法、结果和证明已有初稿；后续 ChatGPT 辅助证明检查、识别并移除不必要假设及语言表述，Codex 将旧数值代码推广至任意环境空间。全部修改由作者审核，不能把这些辅助用途写成 AI 提供原始核心想法。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "646a311b0660c6035de498462437621dfaacf200fdfa87c4ba06d6b9ef7a0b2b"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 80,
+      "priorityReason": "同时把 ISOMAP 的度量等价保证扩展至黎曼环境空间。 采样复杂度随内蕴维数快速增长；不能把理论收敛率误读为高维低成本计算保证。"
+    },
+    "analysisBasis": {
+      "abstract": "Empirical averages are fundamental statistical primitives. On nonlinear spaces, their generalization, the Fréchet mean, generally lacks a closed-form solution, and its computation requires solving an optimization problem. We study the computation of intrinsic Fréchet means for data supported on an unknown compact $d$-dimensional Riemannian manifold $M_{1}$ embedded in an ambient metric space $(X,d_{\\operatorname{obs}})$. Such settings arise when observations are better represented in non-Euclidean spaces, like probability distributions in Wasserstein space. We assume access only to a local sampler on $M_{1}$ and the observation metric $d_{\\operatorname{obs}}$, without knowledge of its intrinsic geometry. We propose a graph-based iterative algorithm that adaptively samples the manifold and approximates geodesic interpolation. Under mild assumptions, we establish an $O(1/T)$ expected objective gap guarantee using at most $\\widetilde{O}(T^{4d+3})$ sampled points. As a byproduct of our analysis we extend the metric equivalence guarantees of ISOMAP from Euclidean to Riemannian ambient spaces, which may be of independent interest. Numerical experiments demonstrate the effectiveness of our method for computing intrinsic averages on unknown data manifolds.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-19",
+      "entry": {
+        "arxivId": "2610.22592",
+        "metadata": {
+          "title": "Computing Fréchet on Unknown Submanifolds of Riemannian Manifolds",
+          "authors": [
+            "Ian McPherson",
+            "Mauro Maggioni"
+          ],
+          "abstract": "Empirical averages are fundamental statistical primitives. On nonlinear spaces, their generalization, the Fréchet mean, generally lacks a closed-form solution, and its computation requires solving an optimization problem. We study the computation of intrinsic Fréchet means for data supported on an unknown compact $d$-dimensional Riemannian manifold $M_{1}$ embedded in an ambient metric space $(X,d_{\\operatorname{obs}})$. Such settings arise when observations are better represented in non-Euclidean spaces, like probability distributions in Wasserstein space. We assume access only to a local sampler on $M_{1}$ and the observation metric $d_{\\operatorname{obs}}$, without knowledge of its intrinsic geometry. We propose a graph-based iterative algorithm that adaptively samples the manifold and approximates geodesic interpolation. Under mild assumptions, we establish an $O(1/T)$ expected objective gap guarantee using at most $\\widetilde{O}(T^{4d+3})$ sampled points. As a byproduct of our analysis we extend the metric equivalence guarantees of ISOMAP from Euclidean to Riemannian ambient spaces, which may be of independent interest. Numerical experiments demonstrate the effectiveness of our method for computing intrinsic averages on unknown data manifolds.",
+          "categories": [
+            "math.OC",
+            "math.DG",
+            "stat.ML"
+          ],
+          "primaryCategory": "math.OC",
+          "comment": "80 pages (35 pages of main text, approximately 41 pages of appendices, plus references and contents); 18 figures",
+          "version": 1,
+          "submittedAt": "2026-10-15T19:40:18Z",
+          "updatedAt": "2026-10-15T19:40:18Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-19T09:23:06.332347+00:00",
+            "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-19T09:34:56.244162+00:00",
+            "contentHash": "b14b70685934f6c8adbe903728d3b3f39af7865ecf812f54fc81448477726ae4"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "未知流形上的优化算法",
+          "workSummary": "仅用未知紧嵌入流形的局部采样器和观测距离，自适应建图逼近测地插值并计算内蕴 Fréchet 均值；在所述假设下获得期望目标差 O(1/T)，采样量至多为 T^(4d+3) 的对数量级修正。",
+          "techniques": [
+            "图测地逼近",
+            "自适应采样",
+            "流形上的统计优化"
+          ],
+          "breakthrough": "同时把 ISOMAP 的度量等价保证扩展至黎曼环境空间。",
+          "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。采样复杂度随内蕴维数快速增长；不能把理论收敛率误读为高维低成本计算保证。 AI 披露另见独立全文核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明主要数学想法、结果和证明已有初稿；后续 ChatGPT 辅助证明检查、识别并移除不必要假设及语言表述，Codex 将旧数值代码推广至任意环境空间。全部修改由作者审核，不能把这些辅助用途写成 AI 提供原始核心想法。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.22592v1 · PDF 第 35–36 页，Declaration of Generative AI Use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-19T09:25:03.872668+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.22592v1",
+            "contentHash": "6665fcd29b87509b0ade29072dc059b8433fd0e5567234ee01dd1f3101c90c9e",
+            "pages": 80,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明主要数学想法、结果和证明已有初稿；后续 ChatGPT 辅助证明检查、识别并移除不必要假设及语言表述，Codex 将旧数值代码推广至任意环境空间。全部修改由作者审核，不能把这些辅助用途写成 AI 提供原始核心想法。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "646a311b0660c6035de498462437621dfaacf200fdfa87c4ba06d6b9ef7a0b2b"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 80,
+          "priorityReason": "同时把 ISOMAP 的度量等价保证扩展至黎曼环境空间。 采样复杂度随内蕴维数快速增长；不能把理论收敛率误读为高维低成本计算保证。"
+        },
+        "analysisBasis": {
+          "abstract": "Empirical averages are fundamental statistical primitives. On nonlinear spaces, their generalization, the Fréchet mean, generally lacks a closed-form solution, and its computation requires solving an optimization problem. We study the computation of intrinsic Fréchet means for data supported on an unknown compact $d$-dimensional Riemannian manifold $M_{1}$ embedded in an ambient metric space $(X,d_{\\operatorname{obs}})$. Such settings arise when observations are better represented in non-Euclidean spaces, like probability distributions in Wasserstein space. We assume access only to a local sampler on $M_{1}$ and the observation metric $d_{\\operatorname{obs}}$, without knowledge of its intrinsic geometry. We propose a graph-based iterative algorithm that adaptively samples the manifold and approximates geodesic interpolation. Under mild assumptions, we establish an $O(1/T)$ expected objective gap guarantee using at most $\\widetilde{O}(T^{4d+3})$ sampled points. As a byproduct of our analysis we extend the metric equivalence guarantees of ISOMAP from Euclidean to Riemannian ambient spaces, which may be of independent interest. Numerical experiments demonstrate the effectiveness of our method for computing intrinsic averages on unknown data manifolds.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

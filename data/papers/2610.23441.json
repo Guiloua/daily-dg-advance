@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.23441",
+  "slug": "2610.23441",
+  "latest": {
+    "arxivId": "2610.23441",
+    "metadata": {
+      "title": "Complete harmonic metrics and subharmonic functions on the complex plane",
+      "authors": [
+        "Natsuo Miyatake"
+      ],
+      "abstract": "This paper continues our previous work \\cite{Miy6} on an extension of the Li--Mochizuki theorem concerning the existence and uniqueness of complete diagonal harmonic metrics on cyclic Higgs bundles over open Riemann surfaces. We consider the extended Hitchin equation associated with general subharmonic weight functions on the canonical bundle, not necessarily induced by holomorphic $r$-differentials. We establish uniqueness of complete solutions with determinant $1$ for arbitrary subharmonic weight functions, without additional regularity assumptions on them. We also prove that, on the complex plane, such a complete solution exists whenever the weight function is not identically $-\\infty$. Furthermore, if $(\\varphi_\\epsilon)_{\\epsilon>0}$ is a family of smooth subharmonic weight functions decreasing to such a weight function $\\varphi$ as $\\epsilon\\searrow0$, the associated family of smooth complete solutions $(h_\\epsilon)_{\\epsilon>0}$ with $\\det(h_\\epsilon)=1$ converges monotonically to the unique complete solution $h$ associated with $\\varphi$ and satisfying $\\det(h)=1$.",
+      "categories": [
+        "math.DG",
+        "math.AP",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "This paper is a continuation of arXiv:2508.12848 and subsumes all of its uniqueness results. The two papers will be merged into a single manuscript for journal submission. 43 pages",
+      "version": 1,
+      "submittedAt": "2026-10-16T13:23:57Z",
+      "updatedAt": "2026-10-16T13:23:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-19T09:23:06.332347+00:00",
+        "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-19T09:35:07.703459+00:00",
+        "contentHash": "234e70a2931608b6bcbb8faf87014524581d1fc2c0d853c31bf1be7aa72bf754"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "低正则权重的调和度量",
+      "workSummary": "将 cyclic Higgs bundle 的扩展 Hitchin 方程推广到一般次调和权重，证明行列式一的完备解唯一性；在复平面上只要权重不恒为负无穷就存在，并由光滑递减权重的解单调逼近。",
+      "techniques": [
+        "扩展 Hitchin 方程",
+        "次调和权重",
+        "单调逼近"
+      ],
+      "breakthrough": "放宽由全纯微分诱导及额外正则性条件，并整合前作唯一性结论。",
+      "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。平面上的存在性与一般开 Riemann 曲面上的唯一性须区分；结构仍限于所述对角完备解。 AI 披露另见独立全文核查。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "致谢明确披露 ChatGPT 用于数学讨论、英文编辑及文献检索；其中 GPT-6.1 Sol 建议了命题 25 的当前表述，帮助突破作者旧表述无法处理一般唯一性的困难，讨论也帮助识别多处论证缺口。该段具体归因关键研究路线，并由作者核验最终数学内容。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.23441v1 · PDF 第 3 页，Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-19T09:29:16.648015+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.23441v1",
+        "contentHash": "36f765a1647eb346633db00de0f6f0d895019f0230e85775fa90fb16dba88225",
+        "pages": 43,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确披露 ChatGPT 用于数学讨论、英文编辑及文献检索；其中 GPT-6.1 Sol 建议了命题 25 的当前表述，帮助突破作者旧表述无法处理一般唯一性的困难，讨论也帮助识别多处论证缺口。该段具体归因关键研究路线，并由作者核验最终数学内容。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5b1aee834ebde989f55380de297ebc719e8f7e835c114a47ed39bc637bcd3b69"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 80,
+      "priorityReason": "放宽由全纯微分诱导及额外正则性条件，并整合前作唯一性结论。 平面上的存在性与一般开 Riemann 曲面上的唯一性须区分；结构仍限于所述对角完备解。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper continues our previous work \\cite{Miy6} on an extension of the Li--Mochizuki theorem concerning the existence and uniqueness of complete diagonal harmonic metrics on cyclic Higgs bundles over open Riemann surfaces. We consider the extended Hitchin equation associated with general subharmonic weight functions on the canonical bundle, not necessarily induced by holomorphic $r$-differentials. We establish uniqueness of complete solutions with determinant $1$ for arbitrary subharmonic weight functions, without additional regularity assumptions on them. We also prove that, on the complex plane, such a complete solution exists whenever the weight function is not identically $-\\infty$. Furthermore, if $(\\varphi_\\epsilon)_{\\epsilon>0}$ is a family of smooth subharmonic weight functions decreasing to such a weight function $\\varphi$ as $\\epsilon\\searrow0$, the associated family of smooth complete solutions $(h_\\epsilon)_{\\epsilon>0}$ with $\\det(h_\\epsilon)=1$ converges monotonically to the unique complete solution $h$ associated with $\\varphi$ and satisfying $\\det(h)=1$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-19",
+      "entry": {
+        "arxivId": "2610.23441",
+        "metadata": {
+          "title": "Complete harmonic metrics and subharmonic functions on the complex plane",
+          "authors": [
+            "Natsuo Miyatake"
+          ],
+          "abstract": "This paper continues our previous work \\cite{Miy6} on an extension of the Li--Mochizuki theorem concerning the existence and uniqueness of complete diagonal harmonic metrics on cyclic Higgs bundles over open Riemann surfaces. We consider the extended Hitchin equation associated with general subharmonic weight functions on the canonical bundle, not necessarily induced by holomorphic $r$-differentials. We establish uniqueness of complete solutions with determinant $1$ for arbitrary subharmonic weight functions, without additional regularity assumptions on them. We also prove that, on the complex plane, such a complete solution exists whenever the weight function is not identically $-\\infty$. Furthermore, if $(\\varphi_\\epsilon)_{\\epsilon>0}$ is a family of smooth subharmonic weight functions decreasing to such a weight function $\\varphi$ as $\\epsilon\\searrow0$, the associated family of smooth complete solutions $(h_\\epsilon)_{\\epsilon>0}$ with $\\det(h_\\epsilon)=1$ converges monotonically to the unique complete solution $h$ associated with $\\varphi$ and satisfying $\\det(h)=1$.",
+          "categories": [
+            "math.DG",
+            "math.AP",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "This paper is a continuation of arXiv:2508.12848 and subsumes all of its uniqueness results. The two papers will be merged into a single manuscript for journal submission. 43 pages",
+          "version": 1,
+          "submittedAt": "2026-10-16T13:23:57Z",
+          "updatedAt": "2026-10-16T13:23:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-19T09:23:06.332347+00:00",
+            "contentHash": "f50a63268c4e8782623b819050ce733ba48094a8830040fd9cbf1c1ce79de5ee"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-19T09:35:07.703459+00:00",
+            "contentHash": "234e70a2931608b6bcbb8faf87014524581d1fc2c0d853c31bf1be7aa72bf754"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "低正则权重的调和度量",
+          "workSummary": "将 cyclic Higgs bundle 的扩展 Hitchin 方程推广到一般次调和权重，证明行列式一的完备解唯一性；在复平面上只要权重不恒为负无穷就存在，并由光滑递减权重的解单调逼近。",
+          "techniques": [
+            "扩展 Hitchin 方程",
+            "次调和权重",
+            "单调逼近"
+          ],
+          "breakthrough": "放宽由全纯微分诱导及额外正则性条件，并整合前作唯一性结论。",
+          "limitations": "依据官方摘要和作者评论的摘要级分析，尚未审读完整证明。平面上的存在性与一般开 Riemann 曲面上的唯一性须区分；结构仍限于所述对角完备解。 AI 披露另见独立全文核查。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "致谢明确披露 ChatGPT 用于数学讨论、英文编辑及文献检索；其中 GPT-6.1 Sol 建议了命题 25 的当前表述，帮助突破作者旧表述无法处理一般唯一性的困难，讨论也帮助识别多处论证缺口。该段具体归因关键研究路线，并由作者核验最终数学内容。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.23441v1 · PDF 第 3 页，Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-19T09:29:16.648015+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.23441v1",
+            "contentHash": "36f765a1647eb346633db00de0f6f0d895019f0230e85775fa90fb16dba88225",
+            "pages": 43,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确披露 ChatGPT 用于数学讨论、英文编辑及文献检索；其中 GPT-6.1 Sol 建议了命题 25 的当前表述，帮助突破作者旧表述无法处理一般唯一性的困难，讨论也帮助识别多处论证缺口。该段具体归因关键研究路线，并由作者核验最终数学内容。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5b1aee834ebde989f55380de297ebc719e8f7e835c114a47ed39bc637bcd3b69"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 80,
+          "priorityReason": "放宽由全纯微分诱导及额外正则性条件，并整合前作唯一性结论。 平面上的存在性与一般开 Riemann 曲面上的唯一性须区分；结构仍限于所述对角完备解。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper continues our previous work \\cite{Miy6} on an extension of the Li--Mochizuki theorem concerning the existence and uniqueness of complete diagonal harmonic metrics on cyclic Higgs bundles over open Riemann surfaces. We consider the extended Hitchin equation associated with general subharmonic weight functions on the canonical bundle, not necessarily induced by holomorphic $r$-differentials. We establish uniqueness of complete solutions with determinant $1$ for arbitrary subharmonic weight functions, without additional regularity assumptions on them. We also prove that, on the complex plane, such a complete solution exists whenever the weight function is not identically $-\\infty$. Furthermore, if $(\\varphi_\\epsilon)_{\\epsilon>0}$ is a family of smooth subharmonic weight functions decreasing to such a weight function $\\varphi$ as $\\epsilon\\searrow0$, the associated family of smooth complete solutions $(h_\\epsilon)_{\\epsilon>0}$ with $\\det(h_\\epsilon)=1$ converges monotonically to the unique complete solution $h$ associated with $\\varphi$ and satisfying $\\det(h)=1$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
