@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.24254",
+  "slug": "2610.24254",
+  "latest": {
+    "arxivId": "2610.24254",
+    "metadata": {
+      "title": "Dimension Thresholds for Relative-Error Representations of Finite Metrics in Pseudo-Euclidean Spaces",
+      "authors": [
+        "Nikita Muravya",
+        "Aleksandr Bespalov",
+        "Anna Vozianova"
+      ],
+      "abstract": "A finite metric space with $N$ points admits an exact representation in a pseudo-Euclidean space of dimension at most $N-1$. We study the minimum dimension required for relative-error approximation of squared distances. Our main result gives an upper bound for arbitrary metrics in terms of local distance ratios: for $4/5<\\varepsilon<1$, dimension $O((N/k)\\log N+k\\rho_k^4\\log N/(\\varepsilon-4/5)^2)$ suffices, where $\\rho_k$ is the largest ratio, over all points, between the distance to the $k$th closest point (counting the point itself) and the nearest-neighbour distance. The proof combines a low-rank landmark approximation with a sparse correction controlled by its factorization norm. For metrics with distances in $[1,\\Phi]$, where $\\Phi\\ge5$ is fixed, the worst-case dimension is $\\Theta(N)$ for $0<\\varepsilon<4/5$, lies between $\\Omega(\\sqrt N)$ and $O(\\sqrt N\\log N)$ for $4/5<\\varepsilon<12/13$, and is $\\Theta(\\log N)$ for $\\varepsilon>(\\Phi^2-1)/(\\Phi^2+1)$. For $\\Phi>5$, an intermediate range remains without matching bounds. Sign-pattern counting yields the $\\Omega(\\sqrt N)$ lower bound for $4/5<\\varepsilon<12/13$, while Hadamard matrices give explicit linear lower bounds for $\\varepsilon<4/5$ via a known approximate-rank estimate. We also construct configurations with null squared intervals whose minimum representation dimension remains $N-1$ for every $\\varepsilon<1$. Finally, for every fixed $0<\\varepsilon<3/5$, we show that the quadratic dependence on the parameter $C$ in the dimension bound derived from Deng et al.'s pseudo-Euclidean Johnson-Lindenstrauss lemma is necessary up to a logarithmic factor.",
+      "categories": [
+        "math.MG",
+        "cs.CG"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-20T07:46:28.164640+00:00",
+        "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.24254v1",
+        "observedAt": "2026-10-20T07:49:02.382020+00:00",
+        "contentHash": "b2b352c92e8c87573356252274121eb882f201a7fade89931863b16496347671"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "维数阈值与上下界",
+      "workSummary": "研究有限度量在伪欧氏空间中对平方距离作相对误差逼近的最低维数，给出由局部距离比控制的上界及若干误差区间的下界。",
+      "techniques": [
+        "低秩地标近似",
+        "稀疏修正与分解范数",
+        "符号模式计数"
+      ],
+      "breakthrough": "展示误差跨越 4/5 等阈值时最坏维数从线性到近平方根再到对数的不同尺度。",
+      "limitations": "某些参数区间仍无匹配上下界；伪欧氏平方距离近似不等同于正定欧氏嵌入。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T07:49:02.382020+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.24254v1",
+        "contentHash": "b2b352c92e8c87573356252274121eb882f201a7fade89931863b16496347671",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "64085db231391c003a07b21110a925e2f8217100a34ad578330959ddc565e220"
+      },
+      "priorityScore": 76,
+      "priorityReason": "对有限度量嵌入和降维边界有系统结论。"
+    },
+    "analysisBasis": {
+      "abstract": "A finite metric space with $N$ points admits an exact representation in a pseudo-Euclidean space of dimension at most $N-1$. We study the minimum dimension required for relative-error approximation of squared distances. Our main result gives an upper bound for arbitrary metrics in terms of local distance ratios: for $4/5<\\varepsilon<1$, dimension $O((N/k)\\log N+k\\rho_k^4\\log N/(\\varepsilon-4/5)^2)$ suffices, where $\\rho_k$ is the largest ratio, over all points, between the distance to the $k$th closest point (counting the point itself) and the nearest-neighbour distance. The proof combines a low-rank landmark approximation with a sparse correction controlled by its factorization norm. For metrics with distances in $[1,\\Phi]$, where $\\Phi\\ge5$ is fixed, the worst-case dimension is $\\Theta(N)$ for $0<\\varepsilon<4/5$, lies between $\\Omega(\\sqrt N)$ and $O(\\sqrt N\\log N)$ for $4/5<\\varepsilon<12/13$, and is $\\Theta(\\log N)$ for $\\varepsilon>(\\Phi^2-1)/(\\Phi^2+1)$. For $\\Phi>5$, an intermediate range remains without matching bounds. Sign-pattern counting yields the $\\Omega(\\sqrt N)$ lower bound for $4/5<\\varepsilon<12/13$, while Hadamard matrices give explicit linear lower bounds for $\\varepsilon<4/5$ via a known approximate-rank estimate. We also construct configurations with null squared intervals whose minimum representation dimension remains $N-1$ for every $\\varepsilon<1$. Finally, for every fixed $0<\\varepsilon<3/5$, we show that the quadratic dependence on the parameter $C$ in the dimension bound derived from Deng et al.'s pseudo-Euclidean Johnson-Lindenstrauss lemma is necessary up to a logarithmic factor.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.24254",
+        "metadata": {
+          "title": "Dimension Thresholds for Relative-Error Representations of Finite Metrics in Pseudo-Euclidean Spaces",
+          "authors": [
+            "Nikita Muravya",
+            "Aleksandr Bespalov",
+            "Anna Vozianova"
+          ],
+          "abstract": "A finite metric space with $N$ points admits an exact representation in a pseudo-Euclidean space of dimension at most $N-1$. We study the minimum dimension required for relative-error approximation of squared distances. Our main result gives an upper bound for arbitrary metrics in terms of local distance ratios: for $4/5<\\varepsilon<1$, dimension $O((N/k)\\log N+k\\rho_k^4\\log N/(\\varepsilon-4/5)^2)$ suffices, where $\\rho_k$ is the largest ratio, over all points, between the distance to the $k$th closest point (counting the point itself) and the nearest-neighbour distance. The proof combines a low-rank landmark approximation with a sparse correction controlled by its factorization norm. For metrics with distances in $[1,\\Phi]$, where $\\Phi\\ge5$ is fixed, the worst-case dimension is $\\Theta(N)$ for $0<\\varepsilon<4/5$, lies between $\\Omega(\\sqrt N)$ and $O(\\sqrt N\\log N)$ for $4/5<\\varepsilon<12/13$, and is $\\Theta(\\log N)$ for $\\varepsilon>(\\Phi^2-1)/(\\Phi^2+1)$. For $\\Phi>5$, an intermediate range remains without matching bounds. Sign-pattern counting yields the $\\Omega(\\sqrt N)$ lower bound for $4/5<\\varepsilon<12/13$, while Hadamard matrices give explicit linear lower bounds for $\\varepsilon<4/5$ via a known approximate-rank estimate. We also construct configurations with null squared intervals whose minimum representation dimension remains $N-1$ for every $\\varepsilon<1$. Finally, for every fixed $0<\\varepsilon<3/5$, we show that the quadratic dependence on the parameter $C$ in the dimension bound derived from Deng et al.'s pseudo-Euclidean Johnson-Lindenstrauss lemma is necessary up to a logarithmic factor.",
+          "categories": [
+            "math.MG",
+            "cs.CG"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-20T07:46:28.164640+00:00",
+            "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.24254v1",
+            "observedAt": "2026-10-20T07:49:02.382020+00:00",
+            "contentHash": "b2b352c92e8c87573356252274121eb882f201a7fade89931863b16496347671"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "维数阈值与上下界",
+          "workSummary": "研究有限度量在伪欧氏空间中对平方距离作相对误差逼近的最低维数，给出由局部距离比控制的上界及若干误差区间的下界。",
+          "techniques": [
+            "低秩地标近似",
+            "稀疏修正与分解范数",
+            "符号模式计数"
+          ],
+          "breakthrough": "展示误差跨越 4/5 等阈值时最坏维数从线性到近平方根再到对数的不同尺度。",
+          "limitations": "某些参数区间仍无匹配上下界；伪欧氏平方距离近似不等同于正定欧氏嵌入。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T07:49:02.382020+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.24254v1",
+            "contentHash": "b2b352c92e8c87573356252274121eb882f201a7fade89931863b16496347671",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "64085db231391c003a07b21110a925e2f8217100a34ad578330959ddc565e220"
+          },
+          "priorityScore": 76,
+          "priorityReason": "对有限度量嵌入和降维边界有系统结论。"
+        },
+        "analysisBasis": {
+          "abstract": "A finite metric space with $N$ points admits an exact representation in a pseudo-Euclidean space of dimension at most $N-1$. We study the minimum dimension required for relative-error approximation of squared distances. Our main result gives an upper bound for arbitrary metrics in terms of local distance ratios: for $4/5<\\varepsilon<1$, dimension $O((N/k)\\log N+k\\rho_k^4\\log N/(\\varepsilon-4/5)^2)$ suffices, where $\\rho_k$ is the largest ratio, over all points, between the distance to the $k$th closest point (counting the point itself) and the nearest-neighbour distance. The proof combines a low-rank landmark approximation with a sparse correction controlled by its factorization norm. For metrics with distances in $[1,\\Phi]$, where $\\Phi\\ge5$ is fixed, the worst-case dimension is $\\Theta(N)$ for $0<\\varepsilon<4/5$, lies between $\\Omega(\\sqrt N)$ and $O(\\sqrt N\\log N)$ for $4/5<\\varepsilon<12/13$, and is $\\Theta(\\log N)$ for $\\varepsilon>(\\Phi^2-1)/(\\Phi^2+1)$. For $\\Phi>5$, an intermediate range remains without matching bounds. Sign-pattern counting yields the $\\Omega(\\sqrt N)$ lower bound for $4/5<\\varepsilon<12/13$, while Hadamard matrices give explicit linear lower bounds for $\\varepsilon<4/5$ via a known approximate-rank estimate. We also construct configurations with null squared intervals whose minimum representation dimension remains $N-1$ for every $\\varepsilon<1$. Finally, for every fixed $0<\\varepsilon<3/5$, we show that the quadratic dependence on the parameter $C$ in the dimension bound derived from Deng et al.'s pseudo-Euclidean Johnson-Lindenstrauss lemma is necessary up to a logarithmic factor.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

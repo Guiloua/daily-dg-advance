@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.26706",
+  "slug": "2610.26706",
+  "latest": {
+    "arxivId": "2610.26706",
+    "metadata": {
+      "title": "Curvature distributions and the Steiner formula for characteristic surfaces in the Heisenberg group",
+      "authors": [
+        "Davide Barilari",
+        "Eugenio Bellini",
+        "Tommaso Rossi"
+      ],
+      "abstract": "We establish a new Steiner-type formula for smooth surfaces in the sub-Riemannian Heisenberg group. The main novelty is that we admit characteristic points, whose presence produces nontrivial singularities both of the distance from the surface and of its tubular neighborhood. Such singularities are reflected in the Steiner formula: the expansion up to a given order $N\\geq 4$ of the volume of the $\\varepsilon$-tubular neighborhood $\\mathcal T_S(\\varepsilon)$ of a surface $S$ is no longer polynomial, in general, taking the form \\[ \\mathrm{vol}(\\mathcal T_S(\\varepsilon)) = \\sum_{j=1}^3\\alpha_j\\varepsilon^j+\\sum_{n=4}^N \\left(\\alpha_n+\\beta_n\\log\\varepsilon\\right)\\varepsilon^n+o(\\varepsilon^N),\\qquad\\text{as }\\varepsilon\\to0^+ . \\] More precisely, under a geometric stability condition on characteristic points, we prove that the first three coefficients are integrals over $S$ of locally integrable curvature densities, coinciding with those known in the non-characteristic case. A new phenomenon appears at order $4$, equal to the homogeneous dimension of the Heisenberg group, where logarithmic terms may occur. We show that the higher-order coefficients are naturally described by a distributional analogue of Federer's curvature measures, whose logarithmic components are supported on the characteristic set. We compute the fourth-order coefficients explicitly. The proof is based on different ingredients of independent interest: (i) an explicit formula for the cut time of homogeneous surfaces, (ii) a fine analysis of the normal exponential map through blow-ups, (iii) the study of the stability of the surface cut locus under perturbations.",
+      "categories": [
+        "math.DG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-20T07:46:28.164640+00:00",
+        "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.26706v1",
+        "observedAt": "2026-10-20T08:05:53.991994+00:00",
+        "contentHash": "0bac8db7f30602dfcbb828b08b6f3573fc20714c7214fe5a5e5becf16c47d0f2"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "特征点附近的 Steiner 展开",
+      "workSummary": "对 Heisenberg 群中允许特征点的光滑曲面，在特征点稳定性条件下建立管状邻域体积展开：前三阶为曲率密度积分，从四阶起可出现 ε^n log ε 项。",
+      "techniques": [
+        "齐性曲面 cut time",
+        "法指数映射 blow-up",
+        "分布型曲率测度"
+      ],
+      "breakthrough": "刻画特征集对非多项式管体积展开的贡献，并显式计算四阶系数。",
+      "limitations": "依赖特征点几何稳定性；高阶系数需以分布理解，不能直接当作普通可积曲率。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 AI 仅用于英文校对及部分代数计算的复核，未用于生成或发展数学内容；仍应记录正面的校对与计算检查用途。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.26706v1 · 第10页 AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T08:05:53.991994+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.26706v1",
+        "contentHash": "0bac8db7f30602dfcbb828b08b6f3573fc20714c7214fe5a5e5becf16c47d0f2",
+        "pages": 67,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅用于英文校对及部分代数计算的复核，未用于生成或发展数学内容；仍应记录正面的校对与计算检查用途。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "83283a2d8414222f8dfc6ffd172952922d03d65af45425fc5448b5fd8e7746ae"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "亚黎曼几何中将特征奇性纳入经典管公式的重要推进。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a new Steiner-type formula for smooth surfaces in the sub-Riemannian Heisenberg group. The main novelty is that we admit characteristic points, whose presence produces nontrivial singularities both of the distance from the surface and of its tubular neighborhood. Such singularities are reflected in the Steiner formula: the expansion up to a given order $N\\geq 4$ of the volume of the $\\varepsilon$-tubular neighborhood $\\mathcal T_S(\\varepsilon)$ of a surface $S$ is no longer polynomial, in general, taking the form \\[ \\mathrm{vol}(\\mathcal T_S(\\varepsilon)) = \\sum_{j=1}^3\\alpha_j\\varepsilon^j+\\sum_{n=4}^N \\left(\\alpha_n+\\beta_n\\log\\varepsilon\\right)\\varepsilon^n+o(\\varepsilon^N),\\qquad\\text{as }\\varepsilon\\to0^+ . \\] More precisely, under a geometric stability condition on characteristic points, we prove that the first three coefficients are integrals over $S$ of locally integrable curvature densities, coinciding with those known in the non-characteristic case. A new phenomenon appears at order $4$, equal to the homogeneous dimension of the Heisenberg group, where logarithmic terms may occur. We show that the higher-order coefficients are naturally described by a distributional analogue of Federer's curvature measures, whose logarithmic components are supported on the characteristic set. We compute the fourth-order coefficients explicitly. The proof is based on different ingredients of independent interest: (i) an explicit formula for the cut time of homogeneous surfaces, (ii) a fine analysis of the normal exponential map through blow-ups, (iii) the study of the stability of the surface cut locus under perturbations.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.26706",
+        "metadata": {
+          "title": "Curvature distributions and the Steiner formula for characteristic surfaces in the Heisenberg group",
+          "authors": [
+            "Davide Barilari",
+            "Eugenio Bellini",
+            "Tommaso Rossi"
+          ],
+          "abstract": "We establish a new Steiner-type formula for smooth surfaces in the sub-Riemannian Heisenberg group. The main novelty is that we admit characteristic points, whose presence produces nontrivial singularities both of the distance from the surface and of its tubular neighborhood. Such singularities are reflected in the Steiner formula: the expansion up to a given order $N\\geq 4$ of the volume of the $\\varepsilon$-tubular neighborhood $\\mathcal T_S(\\varepsilon)$ of a surface $S$ is no longer polynomial, in general, taking the form \\[ \\mathrm{vol}(\\mathcal T_S(\\varepsilon)) = \\sum_{j=1}^3\\alpha_j\\varepsilon^j+\\sum_{n=4}^N \\left(\\alpha_n+\\beta_n\\log\\varepsilon\\right)\\varepsilon^n+o(\\varepsilon^N),\\qquad\\text{as }\\varepsilon\\to0^+ . \\] More precisely, under a geometric stability condition on characteristic points, we prove that the first three coefficients are integrals over $S$ of locally integrable curvature densities, coinciding with those known in the non-characteristic case. A new phenomenon appears at order $4$, equal to the homogeneous dimension of the Heisenberg group, where logarithmic terms may occur. We show that the higher-order coefficients are naturally described by a distributional analogue of Federer's curvature measures, whose logarithmic components are supported on the characteristic set. We compute the fourth-order coefficients explicitly. The proof is based on different ingredients of independent interest: (i) an explicit formula for the cut time of homogeneous surfaces, (ii) a fine analysis of the normal exponential map through blow-ups, (iii) the study of the stability of the surface cut locus under perturbations.",
+          "categories": [
+            "math.DG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-20T07:46:28.164640+00:00",
+            "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.26706v1",
+            "observedAt": "2026-10-20T08:05:53.991994+00:00",
+            "contentHash": "0bac8db7f30602dfcbb828b08b6f3573fc20714c7214fe5a5e5becf16c47d0f2"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "特征点附近的 Steiner 展开",
+          "workSummary": "对 Heisenberg 群中允许特征点的光滑曲面，在特征点稳定性条件下建立管状邻域体积展开：前三阶为曲率密度积分，从四阶起可出现 ε^n log ε 项。",
+          "techniques": [
+            "齐性曲面 cut time",
+            "法指数映射 blow-up",
+            "分布型曲率测度"
+          ],
+          "breakthrough": "刻画特征集对非多项式管体积展开的贡献，并显式计算四阶系数。",
+          "limitations": "依赖特征点几何稳定性；高阶系数需以分布理解，不能直接当作普通可积曲率。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 AI 仅用于英文校对及部分代数计算的复核，未用于生成或发展数学内容；仍应记录正面的校对与计算检查用途。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.26706v1 · 第10页 AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T08:05:53.991994+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.26706v1",
+            "contentHash": "0bac8db7f30602dfcbb828b08b6f3573fc20714c7214fe5a5e5becf16c47d0f2",
+            "pages": 67,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 AI 仅用于英文校对及部分代数计算的复核，未用于生成或发展数学内容；仍应记录正面的校对与计算检查用途。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "83283a2d8414222f8dfc6ffd172952922d03d65af45425fc5448b5fd8e7746ae"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "亚黎曼几何中将特征奇性纳入经典管公式的重要推进。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a new Steiner-type formula for smooth surfaces in the sub-Riemannian Heisenberg group. The main novelty is that we admit characteristic points, whose presence produces nontrivial singularities both of the distance from the surface and of its tubular neighborhood. Such singularities are reflected in the Steiner formula: the expansion up to a given order $N\\geq 4$ of the volume of the $\\varepsilon$-tubular neighborhood $\\mathcal T_S(\\varepsilon)$ of a surface $S$ is no longer polynomial, in general, taking the form \\[ \\mathrm{vol}(\\mathcal T_S(\\varepsilon)) = \\sum_{j=1}^3\\alpha_j\\varepsilon^j+\\sum_{n=4}^N \\left(\\alpha_n+\\beta_n\\log\\varepsilon\\right)\\varepsilon^n+o(\\varepsilon^N),\\qquad\\text{as }\\varepsilon\\to0^+ . \\] More precisely, under a geometric stability condition on characteristic points, we prove that the first three coefficients are integrals over $S$ of locally integrable curvature densities, coinciding with those known in the non-characteristic case. A new phenomenon appears at order $4$, equal to the homogeneous dimension of the Heisenberg group, where logarithmic terms may occur. We show that the higher-order coefficients are naturally described by a distributional analogue of Federer's curvature measures, whose logarithmic components are supported on the characteristic set. We compute the fourth-order coefficients explicitly. The proof is based on different ingredients of independent interest: (i) an explicit formula for the cut time of homogeneous surfaces, (ii) a fine analysis of the normal exponential map through blow-ups, (iii) the study of the stability of the surface cut locus under perturbations.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

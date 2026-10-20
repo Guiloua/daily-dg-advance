@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.24253",
+  "slug": "2610.24253",
+  "latest": {
+    "arxivId": "2610.24253",
+    "metadata": {
+      "title": "Sharp Gromov Hyperbolicity Constants for Cartesian Products of Finitely Many Trees",
+      "authors": [
+        "Junior Michel",
+        "Anier Soria Lorente",
+        "Jean Marie-Vilaire"
+      ],
+      "abstract": "Let $X=T_1\\times\\cdots\\times T_k$, $k\\ge2$, be a Cartesian product of finite nontrivial trees with unit edges, and write $d_i=\\diam T_i$, $S=\\sum_id_i$ and $M=\\max_id_i$. We prove that the thin-triangle hyperbolicity constant of the geodesic realization of $X$ is \\[ \\Rips(X)=\\min\\Bigl\\{\\frac S2,\\ S-M+\\frac12\\Bigr\\}, \\] and that the four-point hyperbolicity constant of its vertex metric is the value \\[ \\mathcal{P}(d_1,\\dots,d_k) = \\max_{E\\subseteq\\{1,\\dots,k\\}} \\min\\left\\{ \\sum_{i\\in E} d_i,\\, \\sum_{i\\notin E} d_i \\right\\}. \\] of the best two-way partition of the diameters. Both constants therefore depend only on the diameter vector, and their difference is governed by the partition imbalance $\\eta$ of that vector: it equals $\\eta/2$ when $M\\le S-M$ and $1/2$ otherwise. In particular the two constants coincide if and only if the diameters admit a perfect partition, and their difference is unbounded. For $k\\ge3$ the first formula exhibits a many-factor balancing phenomenon: several short factors can collectively balance the longest one and force the universal bound $\\frac12\\diam X$ to be attained. The proofs are self-contained and rest on an exact distance formula for the geodesic realization of $X$. For the $\\ell_1$-product of the factors, i.e.\\ the $\\ell_1$-metric on the associated cube complex, we obtain $\\Rips=\\min\\{S/2,S-M\\}$, which identifies the half-unit above as a pure $1$-skeleton effect, and we show that the four-point formula holds for $\\ell_1$-products of arbitrary $0$-hyperbolic metric spaces, in particular for weighted trees and $\\R$-trees. We also treat products with unbounded factors and record algorithmic consequences.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-20T07:46:28.164640+00:00",
+        "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.24253v1",
+        "observedAt": "2026-10-20T07:48:50.273020+00:00",
+        "contentHash": "0a5b38a959a4a2bbd5501df31be03a509e43433219e292cb43c6d5706bf61469"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "最优常数公式",
+      "workSummary": "求出有限树笛卡尔积图的薄三角双曲常数与顶点四点双曲常数，分别由直径和、最大直径及最佳二分划分决定，并比较立方复形的 ℓ¹ 度量。",
+      "techniques": [
+        "测地实现的精确距离",
+        "直径分割",
+        "树积几何"
+      ],
+      "breakthrough": "量化图的一维骨架效应，揭示两种双曲常数之差可以无界。",
+      "limitations": "必须区分图的测地实现、顶点度量和整个 ℓ¹ 立方复形，三者常数不能混用。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T07:48:50.273020+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.24253v1",
+        "contentHash": "0a5b38a959a4a2bbd5501df31be03a509e43433219e292cb43c6d5706bf61469",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ae12125c04638021b2711f216312637b14b11ce429dbab90c14bf225c9bb5fe7"
+      },
+      "priorityScore": 77,
+      "priorityReason": "精确常数和空间模型之间的差异对度量几何估计很有参考价值。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $X=T_1\\times\\cdots\\times T_k$, $k\\ge2$, be a Cartesian product of finite nontrivial trees with unit edges, and write $d_i=\\diam T_i$, $S=\\sum_id_i$ and $M=\\max_id_i$. We prove that the thin-triangle hyperbolicity constant of the geodesic realization of $X$ is \\[ \\Rips(X)=\\min\\Bigl\\{\\frac S2,\\ S-M+\\frac12\\Bigr\\}, \\] and that the four-point hyperbolicity constant of its vertex metric is the value \\[ \\mathcal{P}(d_1,\\dots,d_k) = \\max_{E\\subseteq\\{1,\\dots,k\\}} \\min\\left\\{ \\sum_{i\\in E} d_i,\\, \\sum_{i\\notin E} d_i \\right\\}. \\] of the best two-way partition of the diameters. Both constants therefore depend only on the diameter vector, and their difference is governed by the partition imbalance $\\eta$ of that vector: it equals $\\eta/2$ when $M\\le S-M$ and $1/2$ otherwise. In particular the two constants coincide if and only if the diameters admit a perfect partition, and their difference is unbounded. For $k\\ge3$ the first formula exhibits a many-factor balancing phenomenon: several short factors can collectively balance the longest one and force the universal bound $\\frac12\\diam X$ to be attained. The proofs are self-contained and rest on an exact distance formula for the geodesic realization of $X$. For the $\\ell_1$-product of the factors, i.e.\\ the $\\ell_1$-metric on the associated cube complex, we obtain $\\Rips=\\min\\{S/2,S-M\\}$, which identifies the half-unit above as a pure $1$-skeleton effect, and we show that the four-point formula holds for $\\ell_1$-products of arbitrary $0$-hyperbolic metric spaces, in particular for weighted trees and $\\R$-trees. We also treat products with unbounded factors and record algorithmic consequences.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.24253",
+        "metadata": {
+          "title": "Sharp Gromov Hyperbolicity Constants for Cartesian Products of Finitely Many Trees",
+          "authors": [
+            "Junior Michel",
+            "Anier Soria Lorente",
+            "Jean Marie-Vilaire"
+          ],
+          "abstract": "Let $X=T_1\\times\\cdots\\times T_k$, $k\\ge2$, be a Cartesian product of finite nontrivial trees with unit edges, and write $d_i=\\diam T_i$, $S=\\sum_id_i$ and $M=\\max_id_i$. We prove that the thin-triangle hyperbolicity constant of the geodesic realization of $X$ is \\[ \\Rips(X)=\\min\\Bigl\\{\\frac S2,\\ S-M+\\frac12\\Bigr\\}, \\] and that the four-point hyperbolicity constant of its vertex metric is the value \\[ \\mathcal{P}(d_1,\\dots,d_k) = \\max_{E\\subseteq\\{1,\\dots,k\\}} \\min\\left\\{ \\sum_{i\\in E} d_i,\\, \\sum_{i\\notin E} d_i \\right\\}. \\] of the best two-way partition of the diameters. Both constants therefore depend only on the diameter vector, and their difference is governed by the partition imbalance $\\eta$ of that vector: it equals $\\eta/2$ when $M\\le S-M$ and $1/2$ otherwise. In particular the two constants coincide if and only if the diameters admit a perfect partition, and their difference is unbounded. For $k\\ge3$ the first formula exhibits a many-factor balancing phenomenon: several short factors can collectively balance the longest one and force the universal bound $\\frac12\\diam X$ to be attained. The proofs are self-contained and rest on an exact distance formula for the geodesic realization of $X$. For the $\\ell_1$-product of the factors, i.e.\\ the $\\ell_1$-metric on the associated cube complex, we obtain $\\Rips=\\min\\{S/2,S-M\\}$, which identifies the half-unit above as a pure $1$-skeleton effect, and we show that the four-point formula holds for $\\ell_1$-products of arbitrary $0$-hyperbolic metric spaces, in particular for weighted trees and $\\R$-trees. We also treat products with unbounded factors and record algorithmic consequences.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-20T07:46:28.164640+00:00",
+            "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.24253v1",
+            "observedAt": "2026-10-20T07:48:50.273020+00:00",
+            "contentHash": "0a5b38a959a4a2bbd5501df31be03a509e43433219e292cb43c6d5706bf61469"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "最优常数公式",
+          "workSummary": "求出有限树笛卡尔积图的薄三角双曲常数与顶点四点双曲常数，分别由直径和、最大直径及最佳二分划分决定，并比较立方复形的 ℓ¹ 度量。",
+          "techniques": [
+            "测地实现的精确距离",
+            "直径分割",
+            "树积几何"
+          ],
+          "breakthrough": "量化图的一维骨架效应，揭示两种双曲常数之差可以无界。",
+          "limitations": "必须区分图的测地实现、顶点度量和整个 ℓ¹ 立方复形，三者常数不能混用。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T07:48:50.273020+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.24253v1",
+            "contentHash": "0a5b38a959a4a2bbd5501df31be03a509e43433219e292cb43c6d5706bf61469",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ae12125c04638021b2711f216312637b14b11ce429dbab90c14bf225c9bb5fe7"
+          },
+          "priorityScore": 77,
+          "priorityReason": "精确常数和空间模型之间的差异对度量几何估计很有参考价值。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $X=T_1\\times\\cdots\\times T_k$, $k\\ge2$, be a Cartesian product of finite nontrivial trees with unit edges, and write $d_i=\\diam T_i$, $S=\\sum_id_i$ and $M=\\max_id_i$. We prove that the thin-triangle hyperbolicity constant of the geodesic realization of $X$ is \\[ \\Rips(X)=\\min\\Bigl\\{\\frac S2,\\ S-M+\\frac12\\Bigr\\}, \\] and that the four-point hyperbolicity constant of its vertex metric is the value \\[ \\mathcal{P}(d_1,\\dots,d_k) = \\max_{E\\subseteq\\{1,\\dots,k\\}} \\min\\left\\{ \\sum_{i\\in E} d_i,\\, \\sum_{i\\notin E} d_i \\right\\}. \\] of the best two-way partition of the diameters. Both constants therefore depend only on the diameter vector, and their difference is governed by the partition imbalance $\\eta$ of that vector: it equals $\\eta/2$ when $M\\le S-M$ and $1/2$ otherwise. In particular the two constants coincide if and only if the diameters admit a perfect partition, and their difference is unbounded. For $k\\ge3$ the first formula exhibits a many-factor balancing phenomenon: several short factors can collectively balance the longest one and force the universal bound $\\frac12\\diam X$ to be attained. The proofs are self-contained and rest on an exact distance formula for the geodesic realization of $X$. For the $\\ell_1$-product of the factors, i.e.\\ the $\\ell_1$-metric on the associated cube complex, we obtain $\\Rips=\\min\\{S/2,S-M\\}$, which identifies the half-unit above as a pure $1$-skeleton effect, and we show that the four-point formula holds for $\\ell_1$-products of arbitrary $0$-hyperbolic metric spaces, in particular for weighted trees and $\\R$-trees. We also treat products with unbounded factors and record algorithmic consequences.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

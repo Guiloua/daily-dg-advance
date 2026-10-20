@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.26070",
+  "slug": "2610.26070",
+  "latest": {
+    "arxivId": "2610.26070",
+    "metadata": {
+      "title": "Distributions of metric $n$-point invariants and applications to molecular evolution",
+      "authors": [
+        "Michael Bleher",
+        "Mario Gómez",
+        "Facundo Mémoli",
+        "Maximilian Neumann",
+        "Andreas Ott"
+      ],
+      "abstract": "Datasets often arise as samples from a metric measure space whose geometry reflects the data-generating process. We introduce metric $n$-point invariants, defined as functions of the pairwise distances of $n$-point configurations, to study the geometry of such spaces. This provides a unified framework for existing concepts, such as the pairwise distance itself, the Gromov product, and Vietoris-Rips persistence diagrams. The distribution of a metric $n$-point invariant $F$ over random $n$-point configurations can be used to extract geometric information from the space and is obtained as the pushforward of Gromov's $n$-th curvature measure $\\mu_n$ along $F$. Our main result is an explicit bound for the expected $p$-Wasserstein distance between $\\mu_n$ and the empirical curvature measure $\\hat{\\mu}_{n}$ of finitely many sampled $n$-point configurations, and carries over to the associated distributions of Lipschitz metric $n$-point invariants. From this we derive the sample size needed to achieve a prescribed accuracy and level of confidence in the approximation of the curvature measure. As an application, we use metric $n$-point invariants to study molecular evolution. We describe how site-wise nucleotide frequencies shape the corresponding distributions in Jukes-Cantor and Halpern-Bruno substitution models, and analyse five million SARS-CoV-2 genomes, revealing increasingly common failures of the four-point condition, constrained nucleotide accessibility consistent with the biased mutation spectrum, and rare cycles in persistent homology reflecting recurrent mutations across lineages. These findings demonstrate the potential of our sampling-based approach to the geometry of data as a scalable, phylogeny-free tool for detecting and quantifying evolutionary structure in large genomic datasets.",
+      "categories": [
+        "math.MG",
+        "q-bio.PE"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "43 pages, 7 figures",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-20T07:46:28.164640+00:00",
+        "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.26070",
+        "observedAt": "2026-10-20T08:02:45.648832+00:00",
+        "contentHash": "b0cbd53fa78c9d5acf679cf2f9ea8173644832f86467f3d14ee75ad064a4158b"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "度量采样误差与应用",
+      "workSummary": "把 n 点距离构型不变量的分布视为 Gromov 曲率测度的推前，给出经验曲率测度到总体测度的期望 Wasserstein 误差界，并推导样本量保证。",
+      "techniques": [
+        "n 点曲率测度",
+        "Wasserstein 采样误差",
+        "Lipschitz 不变量推前"
+      ],
+      "breakthrough": "统一距离、Gromov 乘积和持久图等统计量，并展示大规模分子进化数据应用。",
+      "limitations": "基因组结果依赖具体替换模型及数据处理；采样分布近似并非无条件重建全部度量测度空间。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Codex 与 Claude Code 用于部分文字改写、对照引文核对陈述、制图脚本以及将研究代码重构为 Python 包，所有输出由作者审阅。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.26070 · 第39页 Tool and computational resource disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T08:02:45.648832+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.26070",
+        "contentHash": "b0cbd53fa78c9d5acf679cf2f9ea8173644832f86467f3d14ee75ad064a4158b",
+        "pages": 43,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 与 Claude Code 用于部分文字改写、对照引文核对陈述、制图脚本以及将研究代码重构为 Python 包，所有输出由作者审阅。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ce9ba59b89ec2bc3447a6d10bd227a049cacb23389acbfe16ce20c343473ec92"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 70,
+      "priorityReason": "度量几何与可扩展数据分析之间有明确误差控制。"
+    },
+    "analysisBasis": {
+      "abstract": "Datasets often arise as samples from a metric measure space whose geometry reflects the data-generating process. We introduce metric $n$-point invariants, defined as functions of the pairwise distances of $n$-point configurations, to study the geometry of such spaces. This provides a unified framework for existing concepts, such as the pairwise distance itself, the Gromov product, and Vietoris-Rips persistence diagrams. The distribution of a metric $n$-point invariant $F$ over random $n$-point configurations can be used to extract geometric information from the space and is obtained as the pushforward of Gromov's $n$-th curvature measure $\\mu_n$ along $F$. Our main result is an explicit bound for the expected $p$-Wasserstein distance between $\\mu_n$ and the empirical curvature measure $\\hat{\\mu}_{n}$ of finitely many sampled $n$-point configurations, and carries over to the associated distributions of Lipschitz metric $n$-point invariants. From this we derive the sample size needed to achieve a prescribed accuracy and level of confidence in the approximation of the curvature measure. As an application, we use metric $n$-point invariants to study molecular evolution. We describe how site-wise nucleotide frequencies shape the corresponding distributions in Jukes-Cantor and Halpern-Bruno substitution models, and analyse five million SARS-CoV-2 genomes, revealing increasingly common failures of the four-point condition, constrained nucleotide accessibility consistent with the biased mutation spectrum, and rare cycles in persistent homology reflecting recurrent mutations across lineages. These findings demonstrate the potential of our sampling-based approach to the geometry of data as a scalable, phylogeny-free tool for detecting and quantifying evolutionary structure in large genomic datasets.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.26070",
+        "metadata": {
+          "title": "Distributions of metric $n$-point invariants and applications to molecular evolution",
+          "authors": [
+            "Michael Bleher",
+            "Mario Gómez",
+            "Facundo Mémoli",
+            "Maximilian Neumann",
+            "Andreas Ott"
+          ],
+          "abstract": "Datasets often arise as samples from a metric measure space whose geometry reflects the data-generating process. We introduce metric $n$-point invariants, defined as functions of the pairwise distances of $n$-point configurations, to study the geometry of such spaces. This provides a unified framework for existing concepts, such as the pairwise distance itself, the Gromov product, and Vietoris-Rips persistence diagrams. The distribution of a metric $n$-point invariant $F$ over random $n$-point configurations can be used to extract geometric information from the space and is obtained as the pushforward of Gromov's $n$-th curvature measure $\\mu_n$ along $F$. Our main result is an explicit bound for the expected $p$-Wasserstein distance between $\\mu_n$ and the empirical curvature measure $\\hat{\\mu}_{n}$ of finitely many sampled $n$-point configurations, and carries over to the associated distributions of Lipschitz metric $n$-point invariants. From this we derive the sample size needed to achieve a prescribed accuracy and level of confidence in the approximation of the curvature measure. As an application, we use metric $n$-point invariants to study molecular evolution. We describe how site-wise nucleotide frequencies shape the corresponding distributions in Jukes-Cantor and Halpern-Bruno substitution models, and analyse five million SARS-CoV-2 genomes, revealing increasingly common failures of the four-point condition, constrained nucleotide accessibility consistent with the biased mutation spectrum, and rare cycles in persistent homology reflecting recurrent mutations across lineages. These findings demonstrate the potential of our sampling-based approach to the geometry of data as a scalable, phylogeny-free tool for detecting and quantifying evolutionary structure in large genomic datasets.",
+          "categories": [
+            "math.MG",
+            "q-bio.PE"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "43 pages, 7 figures",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-20T07:46:28.164640+00:00",
+            "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.26070",
+            "observedAt": "2026-10-20T08:02:45.648832+00:00",
+            "contentHash": "b0cbd53fa78c9d5acf679cf2f9ea8173644832f86467f3d14ee75ad064a4158b"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "度量采样误差与应用",
+          "workSummary": "把 n 点距离构型不变量的分布视为 Gromov 曲率测度的推前，给出经验曲率测度到总体测度的期望 Wasserstein 误差界，并推导样本量保证。",
+          "techniques": [
+            "n 点曲率测度",
+            "Wasserstein 采样误差",
+            "Lipschitz 不变量推前"
+          ],
+          "breakthrough": "统一距离、Gromov 乘积和持久图等统计量，并展示大规模分子进化数据应用。",
+          "limitations": "基因组结果依赖具体替换模型及数据处理；采样分布近似并非无条件重建全部度量测度空间。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Codex 与 Claude Code 用于部分文字改写、对照引文核对陈述、制图脚本以及将研究代码重构为 Python 包，所有输出由作者审阅。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.26070 · 第39页 Tool and computational resource disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T08:02:45.648832+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.26070",
+            "contentHash": "b0cbd53fa78c9d5acf679cf2f9ea8173644832f86467f3d14ee75ad064a4158b",
+            "pages": 43,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 与 Claude Code 用于部分文字改写、对照引文核对陈述、制图脚本以及将研究代码重构为 Python 包，所有输出由作者审阅。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ce9ba59b89ec2bc3447a6d10bd227a049cacb23389acbfe16ce20c343473ec92"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 70,
+          "priorityReason": "度量几何与可扩展数据分析之间有明确误差控制。"
+        },
+        "analysisBasis": {
+          "abstract": "Datasets often arise as samples from a metric measure space whose geometry reflects the data-generating process. We introduce metric $n$-point invariants, defined as functions of the pairwise distances of $n$-point configurations, to study the geometry of such spaces. This provides a unified framework for existing concepts, such as the pairwise distance itself, the Gromov product, and Vietoris-Rips persistence diagrams. The distribution of a metric $n$-point invariant $F$ over random $n$-point configurations can be used to extract geometric information from the space and is obtained as the pushforward of Gromov's $n$-th curvature measure $\\mu_n$ along $F$. Our main result is an explicit bound for the expected $p$-Wasserstein distance between $\\mu_n$ and the empirical curvature measure $\\hat{\\mu}_{n}$ of finitely many sampled $n$-point configurations, and carries over to the associated distributions of Lipschitz metric $n$-point invariants. From this we derive the sample size needed to achieve a prescribed accuracy and level of confidence in the approximation of the curvature measure. As an application, we use metric $n$-point invariants to study molecular evolution. We describe how site-wise nucleotide frequencies shape the corresponding distributions in Jukes-Cantor and Halpern-Bruno substitution models, and analyse five million SARS-CoV-2 genomes, revealing increasingly common failures of the four-point condition, constrained nucleotide accessibility consistent with the biased mutation spectrum, and rare cycles in persistent homology reflecting recurrent mutations across lineages. These findings demonstrate the potential of our sampling-based approach to the geometry of data as a scalable, phylogeny-free tool for detecting and quantifying evolutionary structure in large genomic datasets.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

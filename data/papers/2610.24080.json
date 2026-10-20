@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.24080",
+  "slug": "2610.24080",
+  "latest": {
+    "arxivId": "2610.24080",
+    "metadata": {
+      "title": "An equiregular counterexample to the Sard conjecture for sub-Riemannian endpoint maps",
+      "authors": [
+        "Bangjie Wang",
+        "Igor Zelenko"
+      ],
+      "abstract": "Lerario, Rizzi and Tiberio disproved the sub-Riemannian Sard conjecture with a rank-two distribution on $\\mathbb R^4$, of degree of nonholonomy five at the origin, whose endpoint map from that point has no regular values. Their distribution is neither equiregular nor real-analytic, and the equiregular case has remained open. We construct an equiregular rank-two distribution on an open set diffeomorphic to $\\mathbb R^9$, with small growth vector $(2,3,5,8,9)$, whose endpoint map from the origin has no regular values. This growth vector is maximal and generic for rank-two distributions in dimension nine, so the failure of the Sard property is not tied to any degeneracy of the growth vector. Singular curves of the Lerario--Rizzi--Tiberio-type structure built from the same coefficient lift, inside the strip where our distribution is defined, to singular curves, and the vertical displacement of a horizontal loop is an explicit strip integral. Realising an open set of vertical displacements by singular loops reduces to a graded moment problem, which we solve with pairs of bumps of opposite winding, an anisotropic rescaling, and an inverse function theorem uniform over infinitely many scales. We also state, with proofs deferred to a planned longer version, two results about our distribution: a description of its abnormal dynamics in the cotangent bundle, which explains the example from a dynamical point of view, and the non-constancy of its Tanaka symbol. The latter motivates an equiregular counterexample in dimension twelve with constant Tanaka symbol (constant nilpotentisation), announced here and to be proved in a separate paper. The longer version will also contain obstructions to real-analytic and lower-dimensional versions, and a transversal variant of the construction, which also leads to a modification of the Lerario--Rizzi--Tiberio counterexample.",
+      "categories": [
+        "math.DG",
+        "math.DS"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "25 pages",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-20T07:46:16.660115+00:00",
+        "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.24080v1",
+        "observedAt": "2026-10-20T07:47:02.804991+00:00",
+        "contentHash": "f4ad0c3bdd053d41bb06d20f62c721d179ddd86e9ce2c83ccb8dc256685a4706"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "反例与边界澄清",
+      "workSummary": "在九维空间构造增长向量为 (2,3,5,8,9) 的等正则秩二分布，其原点端点映射没有正则值，否定等正则情形的亚黎曼 Sard 猜想。",
+      "techniques": [
+        "奇异水平环路提升",
+        "分次矩问题",
+        "多尺度逆函数定理"
+      ],
+      "breakthrough": "把既有非等正则反例推进到最大且泛型增长向量，表明失败不能归因于增长向量退化。",
+      "limitations": "九维结论涉及全部奇异水平曲线的端点，不处理长度极小奇异曲线的 minimizing Sard 性质。附录异常动力学与符号结果延后证明，十二维常符号例子仍为预告；实解析情形未解决。已读主定理及证明概要，未逐步审读完整证明或重跑 Lean。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露升维总策略来自第二作者；Claude 具体生成显式结构、主定理初版证明，并提出和求解关键矩问题，故仅将这部分技术构造记为核心思路辅助。作者逐行检查并重写关键分析。ChatGPT 审阅形式化报告并提议修订，Codex 协助 Lean 定义、证明脚本和调试。本次未独立重跑形式化。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.24080v1 · 第23–24页 AI-assisted tools disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T07:47:02.804991+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.24080v1",
+        "contentHash": "f4ad0c3bdd053d41bb06d20f62c721d179ddd86e9ce2c83ccb8dc256685a4706",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露升维总策略来自第二作者；Claude 具体生成显式结构、主定理初版证明，并提出和求解关键矩问题，故仅将这部分技术构造记为核心思路辅助。作者逐行检查并重写关键分析。ChatGPT 审阅形式化报告并提议修订，Codex 协助 Lean 定义、证明脚本和调试。本次未独立重跑形式化。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e094921c48956f394b7f3951dcaa7158132b79c619ad5d0fb7702ad87e7297fc"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "直接改变亚黎曼奇异端点问题的适用边界，优先检查构造与各项预告的区分。"
+    },
+    "analysisBasis": {
+      "abstract": "Lerario, Rizzi and Tiberio disproved the sub-Riemannian Sard conjecture with a rank-two distribution on $\\mathbb R^4$, of degree of nonholonomy five at the origin, whose endpoint map from that point has no regular values. Their distribution is neither equiregular nor real-analytic, and the equiregular case has remained open. We construct an equiregular rank-two distribution on an open set diffeomorphic to $\\mathbb R^9$, with small growth vector $(2,3,5,8,9)$, whose endpoint map from the origin has no regular values. This growth vector is maximal and generic for rank-two distributions in dimension nine, so the failure of the Sard property is not tied to any degeneracy of the growth vector. Singular curves of the Lerario--Rizzi--Tiberio-type structure built from the same coefficient lift, inside the strip where our distribution is defined, to singular curves, and the vertical displacement of a horizontal loop is an explicit strip integral. Realising an open set of vertical displacements by singular loops reduces to a graded moment problem, which we solve with pairs of bumps of opposite winding, an anisotropic rescaling, and an inverse function theorem uniform over infinitely many scales. We also state, with proofs deferred to a planned longer version, two results about our distribution: a description of its abnormal dynamics in the cotangent bundle, which explains the example from a dynamical point of view, and the non-constancy of its Tanaka symbol. The latter motivates an equiregular counterexample in dimension twelve with constant Tanaka symbol (constant nilpotentisation), announced here and to be proved in a separate paper. The longer version will also contain obstructions to real-analytic and lower-dimensional versions, and a transversal variant of the construction, which also leads to a modification of the Lerario--Rizzi--Tiberio counterexample.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.24080",
+        "metadata": {
+          "title": "An equiregular counterexample to the Sard conjecture for sub-Riemannian endpoint maps",
+          "authors": [
+            "Bangjie Wang",
+            "Igor Zelenko"
+          ],
+          "abstract": "Lerario, Rizzi and Tiberio disproved the sub-Riemannian Sard conjecture with a rank-two distribution on $\\mathbb R^4$, of degree of nonholonomy five at the origin, whose endpoint map from that point has no regular values. Their distribution is neither equiregular nor real-analytic, and the equiregular case has remained open. We construct an equiregular rank-two distribution on an open set diffeomorphic to $\\mathbb R^9$, with small growth vector $(2,3,5,8,9)$, whose endpoint map from the origin has no regular values. This growth vector is maximal and generic for rank-two distributions in dimension nine, so the failure of the Sard property is not tied to any degeneracy of the growth vector. Singular curves of the Lerario--Rizzi--Tiberio-type structure built from the same coefficient lift, inside the strip where our distribution is defined, to singular curves, and the vertical displacement of a horizontal loop is an explicit strip integral. Realising an open set of vertical displacements by singular loops reduces to a graded moment problem, which we solve with pairs of bumps of opposite winding, an anisotropic rescaling, and an inverse function theorem uniform over infinitely many scales. We also state, with proofs deferred to a planned longer version, two results about our distribution: a description of its abnormal dynamics in the cotangent bundle, which explains the example from a dynamical point of view, and the non-constancy of its Tanaka symbol. The latter motivates an equiregular counterexample in dimension twelve with constant Tanaka symbol (constant nilpotentisation), announced here and to be proved in a separate paper. The longer version will also contain obstructions to real-analytic and lower-dimensional versions, and a transversal variant of the construction, which also leads to a modification of the Lerario--Rizzi--Tiberio counterexample.",
+          "categories": [
+            "math.DG",
+            "math.DS"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "25 pages",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-20T07:46:16.660115+00:00",
+            "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.24080v1",
+            "observedAt": "2026-10-20T07:47:02.804991+00:00",
+            "contentHash": "f4ad0c3bdd053d41bb06d20f62c721d179ddd86e9ce2c83ccb8dc256685a4706"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "反例与边界澄清",
+          "workSummary": "在九维空间构造增长向量为 (2,3,5,8,9) 的等正则秩二分布，其原点端点映射没有正则值，否定等正则情形的亚黎曼 Sard 猜想。",
+          "techniques": [
+            "奇异水平环路提升",
+            "分次矩问题",
+            "多尺度逆函数定理"
+          ],
+          "breakthrough": "把既有非等正则反例推进到最大且泛型增长向量，表明失败不能归因于增长向量退化。",
+          "limitations": "九维结论涉及全部奇异水平曲线的端点，不处理长度极小奇异曲线的 minimizing Sard 性质。附录异常动力学与符号结果延后证明，十二维常符号例子仍为预告；实解析情形未解决。已读主定理及证明概要，未逐步审读完整证明或重跑 Lean。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露升维总策略来自第二作者；Claude 具体生成显式结构、主定理初版证明，并提出和求解关键矩问题，故仅将这部分技术构造记为核心思路辅助。作者逐行检查并重写关键分析。ChatGPT 审阅形式化报告并提议修订，Codex 协助 Lean 定义、证明脚本和调试。本次未独立重跑形式化。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.24080v1 · 第23–24页 AI-assisted tools disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T07:47:02.804991+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.24080v1",
+            "contentHash": "f4ad0c3bdd053d41bb06d20f62c721d179ddd86e9ce2c83ccb8dc256685a4706",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露升维总策略来自第二作者；Claude 具体生成显式结构、主定理初版证明，并提出和求解关键矩问题，故仅将这部分技术构造记为核心思路辅助。作者逐行检查并重写关键分析。ChatGPT 审阅形式化报告并提议修订，Codex 协助 Lean 定义、证明脚本和调试。本次未独立重跑形式化。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e094921c48956f394b7f3951dcaa7158132b79c619ad5d0fb7702ad87e7297fc"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "直接改变亚黎曼奇异端点问题的适用边界，优先检查构造与各项预告的区分。"
+        },
+        "analysisBasis": {
+          "abstract": "Lerario, Rizzi and Tiberio disproved the sub-Riemannian Sard conjecture with a rank-two distribution on $\\mathbb R^4$, of degree of nonholonomy five at the origin, whose endpoint map from that point has no regular values. Their distribution is neither equiregular nor real-analytic, and the equiregular case has remained open. We construct an equiregular rank-two distribution on an open set diffeomorphic to $\\mathbb R^9$, with small growth vector $(2,3,5,8,9)$, whose endpoint map from the origin has no regular values. This growth vector is maximal and generic for rank-two distributions in dimension nine, so the failure of the Sard property is not tied to any degeneracy of the growth vector. Singular curves of the Lerario--Rizzi--Tiberio-type structure built from the same coefficient lift, inside the strip where our distribution is defined, to singular curves, and the vertical displacement of a horizontal loop is an explicit strip integral. Realising an open set of vertical displacements by singular loops reduces to a graded moment problem, which we solve with pairs of bumps of opposite winding, an anisotropic rescaling, and an inverse function theorem uniform over infinitely many scales. We also state, with proofs deferred to a planned longer version, two results about our distribution: a description of its abnormal dynamics in the cotangent bundle, which explains the example from a dynamical point of view, and the non-constancy of its Tanaka symbol. The latter motivates an equiregular counterexample in dimension twelve with constant Tanaka symbol (constant nilpotentisation), announced here and to be proved in a separate paper. The longer version will also contain obstructions to real-analytic and lower-dimensional versions, and a transversal variant of the construction, which also leads to a modification of the Lerario--Rizzi--Tiberio counterexample.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

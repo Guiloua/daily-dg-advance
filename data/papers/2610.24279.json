@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.24279",
+  "slug": "2610.24279",
+  "latest": {
+    "arxivId": "2610.24279",
+    "metadata": {
+      "title": "Every Extended Metric Space Is Isometrically Embeddable into the Gromov--Hausdorff Class",
+      "authors": [
+        "Ryo Fukano"
+      ],
+      "abstract": "Let $\\mathfrak{GH}$ denote the Gromov-Hausdorff class of isometry classes of nonempty metric spaces, equipped with the Gromov-Hausdorff distance, which is an extended pseudometric. We prove that every nonempty extended metric space is isometrically embeddable into $\\mathfrak{GH}$. More precisely, for every nonempty extended metric space $X$, the embedding can be chosen so that all image points are represented by metrics on a common underlying set of cardinality $\\max\\{\\mathrm{dens}\\,X,\\aleph_0\\}$, where $\\mathrm{dens}\\,X$ denotes the density character of $X$. To establish this result, for every nonempty set $I$, we realize the space of all real-valued functions on $I$, equipped with the uniform extended metric, as a family of metrics on a fixed underlying set. Under this realization, the Gromov-Hausdorff distance agrees with the uniform extended distance between functions, including when this distance is infinite, and each resulting metric space is complete, uniformly discrete, and unbounded, with cardinality $\\max\\{|I|,\\aleph_0\\}$. When $I$ is countable, the representing spaces can also be chosen proper and of bounded geometry. We also show that, for every infinite cardinal $\\kappa$, there are exactly $2^\\kappa$ clouds represented by metric spaces of cardinality at most $\\kappa$, and that $2^\\kappa$ of their cardinality-restricted parts are isometrically universal for all metric spaces of density character at most $\\kappa$. Furthermore, every sphere of positive radius centered at a point of the constructed copies of $\\ell^\\infty(\\kappa)$ in the zero-distance quotients admits isometric embeddings of all metric spaces of density character at most $\\kappa$ and diameter at most twice the radius.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "19 pages",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-20T07:46:28.164640+00:00",
+        "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.24279v1",
+        "observedAt": "2026-10-20T07:49:14.171649+00:00",
+        "contentHash": "fc44c62b141e47144f8b25c34b560767f7f875222a96e006301dfc2f69cecf9e"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "等距普适性定理",
+      "workSummary": "证明任意非空扩展度量空间可等距嵌入 Gromov–Hausdorff 类，且像可统一表示为同一基数底集上的度量；同时研究 cloud 的数量及受基数限制的普适性。",
+      "techniques": [
+        "函数空间的统一扩展距离",
+        "离散无界度量构造",
+        "密度基数控制"
+      ],
+      "breakthrough": "把 GH 类的等距普适性推进到允许无穷距离的任意扩展度量空间。",
+      "limitations": "目标是非空度量空间的整体 GH 类及相应零距离商，不能直接替换为紧致 GH 空间。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露使用 GPT-6.0 辅助准备稿件，并自行审阅和修改数学内容；未细分具体辅助用途，不推断核心想法或证明由模型产生。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.24279v1 · 第18页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T07:49:14.171649+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.24279v1",
+        "contentHash": "fc44c62b141e47144f8b25c34b560767f7f875222a96e006301dfc2f69cecf9e",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露使用 GPT-6.0 辅助准备稿件，并自行审阅和修改数学内容；未细分具体辅助用途，不推断核心想法或证明由模型产生。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "26670447b8ed130344a50b5c438f5e0bfe837444833f8cafcb22eaa2c28365fa"
+      },
+      "aiUsage": [],
+      "priorityScore": 85,
+      "priorityReason": "拓展 GH 几何的全局结构认识，构造的基数控制值得细读。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\mathfrak{GH}$ denote the Gromov-Hausdorff class of isometry classes of nonempty metric spaces, equipped with the Gromov-Hausdorff distance, which is an extended pseudometric. We prove that every nonempty extended metric space is isometrically embeddable into $\\mathfrak{GH}$. More precisely, for every nonempty extended metric space $X$, the embedding can be chosen so that all image points are represented by metrics on a common underlying set of cardinality $\\max\\{\\mathrm{dens}\\,X,\\aleph_0\\}$, where $\\mathrm{dens}\\,X$ denotes the density character of $X$. To establish this result, for every nonempty set $I$, we realize the space of all real-valued functions on $I$, equipped with the uniform extended metric, as a family of metrics on a fixed underlying set. Under this realization, the Gromov-Hausdorff distance agrees with the uniform extended distance between functions, including when this distance is infinite, and each resulting metric space is complete, uniformly discrete, and unbounded, with cardinality $\\max\\{|I|,\\aleph_0\\}$. When $I$ is countable, the representing spaces can also be chosen proper and of bounded geometry. We also show that, for every infinite cardinal $\\kappa$, there are exactly $2^\\kappa$ clouds represented by metric spaces of cardinality at most $\\kappa$, and that $2^\\kappa$ of their cardinality-restricted parts are isometrically universal for all metric spaces of density character at most $\\kappa$. Furthermore, every sphere of positive radius centered at a point of the constructed copies of $\\ell^\\infty(\\kappa)$ in the zero-distance quotients admits isometric embeddings of all metric spaces of density character at most $\\kappa$ and diameter at most twice the radius.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.24279",
+        "metadata": {
+          "title": "Every Extended Metric Space Is Isometrically Embeddable into the Gromov--Hausdorff Class",
+          "authors": [
+            "Ryo Fukano"
+          ],
+          "abstract": "Let $\\mathfrak{GH}$ denote the Gromov-Hausdorff class of isometry classes of nonempty metric spaces, equipped with the Gromov-Hausdorff distance, which is an extended pseudometric. We prove that every nonempty extended metric space is isometrically embeddable into $\\mathfrak{GH}$. More precisely, for every nonempty extended metric space $X$, the embedding can be chosen so that all image points are represented by metrics on a common underlying set of cardinality $\\max\\{\\mathrm{dens}\\,X,\\aleph_0\\}$, where $\\mathrm{dens}\\,X$ denotes the density character of $X$. To establish this result, for every nonempty set $I$, we realize the space of all real-valued functions on $I$, equipped with the uniform extended metric, as a family of metrics on a fixed underlying set. Under this realization, the Gromov-Hausdorff distance agrees with the uniform extended distance between functions, including when this distance is infinite, and each resulting metric space is complete, uniformly discrete, and unbounded, with cardinality $\\max\\{|I|,\\aleph_0\\}$. When $I$ is countable, the representing spaces can also be chosen proper and of bounded geometry. We also show that, for every infinite cardinal $\\kappa$, there are exactly $2^\\kappa$ clouds represented by metric spaces of cardinality at most $\\kappa$, and that $2^\\kappa$ of their cardinality-restricted parts are isometrically universal for all metric spaces of density character at most $\\kappa$. Furthermore, every sphere of positive radius centered at a point of the constructed copies of $\\ell^\\infty(\\kappa)$ in the zero-distance quotients admits isometric embeddings of all metric spaces of density character at most $\\kappa$ and diameter at most twice the radius.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "19 pages",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-20T07:46:28.164640+00:00",
+            "contentHash": "9b1ed29f5c99e2f5fd8dd9085cd24ef40f77b23ccd25cf52cca45f73331d1d65"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.24279v1",
+            "observedAt": "2026-10-20T07:49:14.171649+00:00",
+            "contentHash": "fc44c62b141e47144f8b25c34b560767f7f875222a96e006301dfc2f69cecf9e"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "等距普适性定理",
+          "workSummary": "证明任意非空扩展度量空间可等距嵌入 Gromov–Hausdorff 类，且像可统一表示为同一基数底集上的度量；同时研究 cloud 的数量及受基数限制的普适性。",
+          "techniques": [
+            "函数空间的统一扩展距离",
+            "离散无界度量构造",
+            "密度基数控制"
+          ],
+          "breakthrough": "把 GH 类的等距普适性推进到允许无穷距离的任意扩展度量空间。",
+          "limitations": "目标是非空度量空间的整体 GH 类及相应零距离商，不能直接替换为紧致 GH 空间。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露使用 GPT-6.0 辅助准备稿件，并自行审阅和修改数学内容；未细分具体辅助用途，不推断核心想法或证明由模型产生。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.24279v1 · 第18页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T07:49:14.171649+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.24279v1",
+            "contentHash": "fc44c62b141e47144f8b25c34b560767f7f875222a96e006301dfc2f69cecf9e",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露使用 GPT-6.0 辅助准备稿件，并自行审阅和修改数学内容；未细分具体辅助用途，不推断核心想法或证明由模型产生。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "26670447b8ed130344a50b5c438f5e0bfe837444833f8cafcb22eaa2c28365fa"
+          },
+          "aiUsage": [],
+          "priorityScore": 85,
+          "priorityReason": "拓展 GH 几何的全局结构认识，构造的基数控制值得细读。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\mathfrak{GH}$ denote the Gromov-Hausdorff class of isometry classes of nonempty metric spaces, equipped with the Gromov-Hausdorff distance, which is an extended pseudometric. We prove that every nonempty extended metric space is isometrically embeddable into $\\mathfrak{GH}$. More precisely, for every nonempty extended metric space $X$, the embedding can be chosen so that all image points are represented by metrics on a common underlying set of cardinality $\\max\\{\\mathrm{dens}\\,X,\\aleph_0\\}$, where $\\mathrm{dens}\\,X$ denotes the density character of $X$. To establish this result, for every nonempty set $I$, we realize the space of all real-valued functions on $I$, equipped with the uniform extended metric, as a family of metrics on a fixed underlying set. Under this realization, the Gromov-Hausdorff distance agrees with the uniform extended distance between functions, including when this distance is infinite, and each resulting metric space is complete, uniformly discrete, and unbounded, with cardinality $\\max\\{|I|,\\aleph_0\\}$. When $I$ is countable, the representing spaces can also be chosen proper and of bounded geometry. We also show that, for every infinite cardinal $\\kappa$, there are exactly $2^\\kappa$ clouds represented by metric spaces of cardinality at most $\\kappa$, and that $2^\\kappa$ of their cardinality-restricted parts are isometrically universal for all metric spaces of density character at most $\\kappa$. Furthermore, every sphere of positive radius centered at a point of the constructed copies of $\\ell^\\infty(\\kappa)$ in the zero-distance quotients admits isometric embeddings of all metric spaces of density character at most $\\kappa$ and diameter at most twice the radius.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

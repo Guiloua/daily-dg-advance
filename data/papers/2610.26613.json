@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.26613",
+  "slug": "2610.26613",
+  "latest": {
+    "arxivId": "2610.26613",
+    "metadata": {
+      "title": "The two-step spectral locus of the octonionic structure operator",
+      "authors": [
+        "Sergey Grigorian"
+      ],
+      "abstract": "We continue the study of the octonionic spectrum of the octonionic structure operator $h$ on $W=\\mathbb O\\otimes_{\\mathbb R}V$, where $V$ is the seven-dimensional representation of $G_2$. The real spectrum and the octonionic one-step spectrum, given by the equation $h(w)=w\\lambda$ for real or octonion $\\lambda$, have been determined in earlier work. In this paper, we study the two-step equation $h(w)=(w\\lambda_1)\\lambda_2$. Due to non-associativity, this does not in general reduce to the one-step problem. An adapted quaternionic frame represents successive right multiplication by an operator with four real coefficients. The $SU(2)$ subgroup fixing the frame splits $W$ into invariant sectors of dimensions $16$, $12$ and $28$. We factor the determinant of the resulting 4-parameter operator pencil and characterize the pairs for which a nonzero solution exists. The singular locus of this pencil in $\\mathbb R^4$ is the union of an explicit algebraic set and a round $3$-sphere. The $12$-dimensional sector carries the one-step problem at the reversed product $\\lambda_2\\lambda_1$. The $28$-dimensional sector contributes no additional real singular points; the fixed sector produces solutions even when neither product lies in the one-step right spectrum.",
+      "categories": [
+        "math.RA",
+        "math.DG",
+        "math.RT"
+      ],
+      "primaryCategory": "math.RA",
+      "comment": "34 pages, 2 figures",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-20T07:46:16.660115+00:00",
+        "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.26613v1",
+        "observedAt": "2026-10-20T08:05:40.346461+00:00",
+        "contentHash": "85b9fa18616bbec8f2c6860c7c06286f6ac01c9e6361a3d93960e47dbfdd2feb"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "非结合谱方程分类",
+      "workSummary": "研究八元数结构算子的两步右乘谱方程，用适配四元数标架与 SU(2) 分解计算四参数算子铅笔的行列式，刻画其奇异集合及新增解。",
+      "techniques": [
+        "八元数非结合性",
+        "SU(2) 表示分解",
+        "算子铅笔因式分解"
+      ],
+      "breakthrough": "显示两步谱不能由乘积归约到一步谱，并精确描述额外分支。",
+      "limitations": "针对特定 G₂ 表示上的结构算子，不能当作一般八元数矩阵的完整谱理论。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Codex 与 Claude Code 整理核验研究材料、辅助 Python 计算脚本和排版，ChatGPT 用于数学头脑风暴及文字编辑；主要想法归于作者，数学结果由作者验证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.26613v1 · 第3页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T08:05:40.346461+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.26613v1",
+        "contentHash": "85b9fa18616bbec8f2c6860c7c06286f6ac01c9e6361a3d93960e47dbfdd2feb",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 与 Claude Code 整理核验研究材料、辅助 Python 计算脚本和排版，ChatGPT 用于数学头脑风暴及文字编辑；主要想法归于作者，数学结果由作者验证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "371581ff13795f5dc0c9738b38e606701f635fb08ed9c979e094c7b32601d950"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 54,
+      "priorityReason": "代数和特殊几何的细致例子，直接几何应用尚待展开。"
+    },
+    "analysisBasis": {
+      "abstract": "We continue the study of the octonionic spectrum of the octonionic structure operator $h$ on $W=\\mathbb O\\otimes_{\\mathbb R}V$, where $V$ is the seven-dimensional representation of $G_2$. The real spectrum and the octonionic one-step spectrum, given by the equation $h(w)=w\\lambda$ for real or octonion $\\lambda$, have been determined in earlier work. In this paper, we study the two-step equation $h(w)=(w\\lambda_1)\\lambda_2$. Due to non-associativity, this does not in general reduce to the one-step problem. An adapted quaternionic frame represents successive right multiplication by an operator with four real coefficients. The $SU(2)$ subgroup fixing the frame splits $W$ into invariant sectors of dimensions $16$, $12$ and $28$. We factor the determinant of the resulting 4-parameter operator pencil and characterize the pairs for which a nonzero solution exists. The singular locus of this pencil in $\\mathbb R^4$ is the union of an explicit algebraic set and a round $3$-sphere. The $12$-dimensional sector carries the one-step problem at the reversed product $\\lambda_2\\lambda_1$. The $28$-dimensional sector contributes no additional real singular points; the fixed sector produces solutions even when neither product lies in the one-step right spectrum.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.26613",
+        "metadata": {
+          "title": "The two-step spectral locus of the octonionic structure operator",
+          "authors": [
+            "Sergey Grigorian"
+          ],
+          "abstract": "We continue the study of the octonionic spectrum of the octonionic structure operator $h$ on $W=\\mathbb O\\otimes_{\\mathbb R}V$, where $V$ is the seven-dimensional representation of $G_2$. The real spectrum and the octonionic one-step spectrum, given by the equation $h(w)=w\\lambda$ for real or octonion $\\lambda$, have been determined in earlier work. In this paper, we study the two-step equation $h(w)=(w\\lambda_1)\\lambda_2$. Due to non-associativity, this does not in general reduce to the one-step problem. An adapted quaternionic frame represents successive right multiplication by an operator with four real coefficients. The $SU(2)$ subgroup fixing the frame splits $W$ into invariant sectors of dimensions $16$, $12$ and $28$. We factor the determinant of the resulting 4-parameter operator pencil and characterize the pairs for which a nonzero solution exists. The singular locus of this pencil in $\\mathbb R^4$ is the union of an explicit algebraic set and a round $3$-sphere. The $12$-dimensional sector carries the one-step problem at the reversed product $\\lambda_2\\lambda_1$. The $28$-dimensional sector contributes no additional real singular points; the fixed sector produces solutions even when neither product lies in the one-step right spectrum.",
+          "categories": [
+            "math.RA",
+            "math.DG",
+            "math.RT"
+          ],
+          "primaryCategory": "math.RA",
+          "comment": "34 pages, 2 figures",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-20T07:46:16.660115+00:00",
+            "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.26613v1",
+            "observedAt": "2026-10-20T08:05:40.346461+00:00",
+            "contentHash": "85b9fa18616bbec8f2c6860c7c06286f6ac01c9e6361a3d93960e47dbfdd2feb"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "非结合谱方程分类",
+          "workSummary": "研究八元数结构算子的两步右乘谱方程，用适配四元数标架与 SU(2) 分解计算四参数算子铅笔的行列式，刻画其奇异集合及新增解。",
+          "techniques": [
+            "八元数非结合性",
+            "SU(2) 表示分解",
+            "算子铅笔因式分解"
+          ],
+          "breakthrough": "显示两步谱不能由乘积归约到一步谱，并精确描述额外分支。",
+          "limitations": "针对特定 G₂ 表示上的结构算子，不能当作一般八元数矩阵的完整谱理论。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Codex 与 Claude Code 整理核验研究材料、辅助 Python 计算脚本和排版，ChatGPT 用于数学头脑风暴及文字编辑；主要想法归于作者，数学结果由作者验证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.26613v1 · 第3页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T08:05:40.346461+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.26613v1",
+            "contentHash": "85b9fa18616bbec8f2c6860c7c06286f6ac01c9e6361a3d93960e47dbfdd2feb",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Codex 与 Claude Code 整理核验研究材料、辅助 Python 计算脚本和排版，ChatGPT 用于数学头脑风暴及文字编辑；主要想法归于作者，数学结果由作者验证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "371581ff13795f5dc0c9738b38e606701f635fb08ed9c979e094c7b32601d950"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 54,
+          "priorityReason": "代数和特殊几何的细致例子，直接几何应用尚待展开。"
+        },
+        "analysisBasis": {
+          "abstract": "We continue the study of the octonionic spectrum of the octonionic structure operator $h$ on $W=\\mathbb O\\otimes_{\\mathbb R}V$, where $V$ is the seven-dimensional representation of $G_2$. The real spectrum and the octonionic one-step spectrum, given by the equation $h(w)=w\\lambda$ for real or octonion $\\lambda$, have been determined in earlier work. In this paper, we study the two-step equation $h(w)=(w\\lambda_1)\\lambda_2$. Due to non-associativity, this does not in general reduce to the one-step problem. An adapted quaternionic frame represents successive right multiplication by an operator with four real coefficients. The $SU(2)$ subgroup fixing the frame splits $W$ into invariant sectors of dimensions $16$, $12$ and $28$. We factor the determinant of the resulting 4-parameter operator pencil and characterize the pairs for which a nonzero solution exists. The singular locus of this pencil in $\\mathbb R^4$ is the union of an explicit algebraic set and a round $3$-sphere. The $12$-dimensional sector carries the one-step problem at the reversed product $\\lambda_2\\lambda_1$. The $28$-dimensional sector contributes no additional real singular points; the fixed sector produces solutions even when neither product lies in the one-step right spectrum.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

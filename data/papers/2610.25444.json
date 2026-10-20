@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.25444",
+  "slug": "2610.25444",
+  "latest": {
+    "arxivId": "2610.25444",
+    "metadata": {
+      "title": "Endpoint capacity at strictly stable minimal boundaries:Gaussian layers and Schwarzschild deficits",
+      "authors": [
+        "Sehong Park"
+      ],
+      "abstract": "Let $(M^n,\\mathfrak g)$, $3\\le n\\le7$, be a one-ended asymptotically flat manifold whose boundary $\\Sigma$ is a connected, strictly stable, outermost minimal hypersurface. As $p\\downarrow1$, the $p$-capacity of $\\Sigma$ converges to its area, by a theorem of Fogagnolo and Mazzieri. We establish a higher-order asymptotic expansion governed by a single function on $\\Sigma$: the positive solution $g$ of the reciprocal Jacobi equation $Jg=g^{-1}$. After a universal term, the first correction is determined by the average of $\\log g$, and the capacitary potential drops from one to zero across a Gaussian boundary layer of width $g\\sqrt{p-1}$; under the normalized energy measure, the logarithm of the gradient has limiting variance $\\frac12$ plus the variance of $\\log g$. In dimension three, assuming in addition that $R_{\\mathfrak g}+|\\mathrm{II}|^2\\ge0$ along $\\Sigma$, we identify the capacity deficit of $\\Sigma$ relative to the Schwarzschild horizon of the same area at order $p-1$: it is nonnegative, vanishes exactly when the induced metric of $\\Sigma$ is round and $R_{\\mathfrak g}+|\\mathrm{II}|^2\\equiv0$, and controls the deviation of $g$ from a constant through a relative-entropy identity.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "26 pages",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-20T07:46:16.660115+00:00",
+        "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.25444v1",
+        "observedAt": "2026-10-20T07:55:54.128895+00:00",
+        "contentHash": "a08a90244c41f9a1b3a1d1114c43b53be30945c6ab3daab2deb040674b62a604"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "容量高阶渐近",
+      "workSummary": "对3至7维单端渐近平坦流形的连通严格稳定最外极小边界，求 p→1 时 p-容量的高阶展开，以 Jg=g^{-1} 的正解控制高斯边界层及首个修正。",
+      "techniques": [
+        "倒数 Jacobi 方程",
+        "高斯边界层",
+        "相对熵恒等式"
+      ],
+      "breakthrough": "把容量趋于面积的零阶极限推进为可辨识边界稳定性的高阶缺额。",
+      "limitations": "三维 Schwarzschild 缺额的非负及等号结论另需边界上 R+|II|²≥0；不能扩展为整体 Schwarzschild 刚性。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露生成式 AI 辅助数学探索、计算和稿件准备，并自行审阅修订；文末研究机构名称的 AI 命中不另作证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.25444v1 · 第25页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T07:55:54.128895+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.25444v1",
+        "contentHash": "a08a90244c41f9a1b3a1d1114c43b53be30945c6ab3daab2deb040674b62a604",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 辅助数学探索、计算和稿件准备，并自行审阅修订；文末研究机构名称的 AI 命中不另作证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d910a9896d90965c9a85c2b1d1c964bf05c311d09f345ef8f5394df3e377d0ab"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 86,
+      "priorityReason": "连接容量、极小边界稳定性与广义相对论几何不等式。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(M^n,\\mathfrak g)$, $3\\le n\\le7$, be a one-ended asymptotically flat manifold whose boundary $\\Sigma$ is a connected, strictly stable, outermost minimal hypersurface. As $p\\downarrow1$, the $p$-capacity of $\\Sigma$ converges to its area, by a theorem of Fogagnolo and Mazzieri. We establish a higher-order asymptotic expansion governed by a single function on $\\Sigma$: the positive solution $g$ of the reciprocal Jacobi equation $Jg=g^{-1}$. After a universal term, the first correction is determined by the average of $\\log g$, and the capacitary potential drops from one to zero across a Gaussian boundary layer of width $g\\sqrt{p-1}$; under the normalized energy measure, the logarithm of the gradient has limiting variance $\\frac12$ plus the variance of $\\log g$. In dimension three, assuming in addition that $R_{\\mathfrak g}+|\\mathrm{II}|^2\\ge0$ along $\\Sigma$, we identify the capacity deficit of $\\Sigma$ relative to the Schwarzschild horizon of the same area at order $p-1$: it is nonnegative, vanishes exactly when the induced metric of $\\Sigma$ is round and $R_{\\mathfrak g}+|\\mathrm{II}|^2\\equiv0$, and controls the deviation of $g$ from a constant through a relative-entropy identity.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.25444",
+        "metadata": {
+          "title": "Endpoint capacity at strictly stable minimal boundaries:Gaussian layers and Schwarzschild deficits",
+          "authors": [
+            "Sehong Park"
+          ],
+          "abstract": "Let $(M^n,\\mathfrak g)$, $3\\le n\\le7$, be a one-ended asymptotically flat manifold whose boundary $\\Sigma$ is a connected, strictly stable, outermost minimal hypersurface. As $p\\downarrow1$, the $p$-capacity of $\\Sigma$ converges to its area, by a theorem of Fogagnolo and Mazzieri. We establish a higher-order asymptotic expansion governed by a single function on $\\Sigma$: the positive solution $g$ of the reciprocal Jacobi equation $Jg=g^{-1}$. After a universal term, the first correction is determined by the average of $\\log g$, and the capacitary potential drops from one to zero across a Gaussian boundary layer of width $g\\sqrt{p-1}$; under the normalized energy measure, the logarithm of the gradient has limiting variance $\\frac12$ plus the variance of $\\log g$. In dimension three, assuming in addition that $R_{\\mathfrak g}+|\\mathrm{II}|^2\\ge0$ along $\\Sigma$, we identify the capacity deficit of $\\Sigma$ relative to the Schwarzschild horizon of the same area at order $p-1$: it is nonnegative, vanishes exactly when the induced metric of $\\Sigma$ is round and $R_{\\mathfrak g}+|\\mathrm{II}|^2\\equiv0$, and controls the deviation of $g$ from a constant through a relative-entropy identity.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "26 pages",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-20T07:46:16.660115+00:00",
+            "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.25444v1",
+            "observedAt": "2026-10-20T07:55:54.128895+00:00",
+            "contentHash": "a08a90244c41f9a1b3a1d1114c43b53be30945c6ab3daab2deb040674b62a604"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "容量高阶渐近",
+          "workSummary": "对3至7维单端渐近平坦流形的连通严格稳定最外极小边界，求 p→1 时 p-容量的高阶展开，以 Jg=g^{-1} 的正解控制高斯边界层及首个修正。",
+          "techniques": [
+            "倒数 Jacobi 方程",
+            "高斯边界层",
+            "相对熵恒等式"
+          ],
+          "breakthrough": "把容量趋于面积的零阶极限推进为可辨识边界稳定性的高阶缺额。",
+          "limitations": "三维 Schwarzschild 缺额的非负及等号结论另需边界上 R+|II|²≥0；不能扩展为整体 Schwarzschild 刚性。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露生成式 AI 辅助数学探索、计算和稿件准备，并自行审阅修订；文末研究机构名称的 AI 命中不另作证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.25444v1 · 第25页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T07:55:54.128895+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.25444v1",
+            "contentHash": "a08a90244c41f9a1b3a1d1114c43b53be30945c6ab3daab2deb040674b62a604",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露生成式 AI 辅助数学探索、计算和稿件准备，并自行审阅修订；文末研究机构名称的 AI 命中不另作证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d910a9896d90965c9a85c2b1d1c964bf05c311d09f345ef8f5394df3e377d0ab"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 86,
+          "priorityReason": "连接容量、极小边界稳定性与广义相对论几何不等式。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(M^n,\\mathfrak g)$, $3\\le n\\le7$, be a one-ended asymptotically flat manifold whose boundary $\\Sigma$ is a connected, strictly stable, outermost minimal hypersurface. As $p\\downarrow1$, the $p$-capacity of $\\Sigma$ converges to its area, by a theorem of Fogagnolo and Mazzieri. We establish a higher-order asymptotic expansion governed by a single function on $\\Sigma$: the positive solution $g$ of the reciprocal Jacobi equation $Jg=g^{-1}$. After a universal term, the first correction is determined by the average of $\\log g$, and the capacitary potential drops from one to zero across a Gaussian boundary layer of width $g\\sqrt{p-1}$; under the normalized energy measure, the logarithm of the gradient has limiting variance $\\frac12$ plus the variance of $\\log g$. In dimension three, assuming in addition that $R_{\\mathfrak g}+|\\mathrm{II}|^2\\ge0$ along $\\Sigma$, we identify the capacity deficit of $\\Sigma$ relative to the Schwarzschild horizon of the same area at order $p-1$: it is nonnegative, vanishes exactly when the induced metric of $\\Sigma$ is round and $R_{\\mathfrak g}+|\\mathrm{II}|^2\\equiv0$, and controls the deviation of $g$ from a constant through a relative-entropy identity.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.26815",
+  "slug": "2610.26815",
+  "latest": {
+    "arxivId": "2610.26815",
+    "metadata": {
+      "title": "Tight lower bounds for Lipschitz geodesically convex optimization on hyperbolic space",
+      "authors": [
+        "Christopher Criscitiello"
+      ],
+      "abstract": "We determine the dimension-independent first-order query complexity of minimizing a Lipschitz geodesically convex (g-convex) function on hyperbolic space. Given a ball of radius $r$ containing a global minimizer, we prove that $\\Omega(\\zeta_r/\\epsilon^2)$ queries are necessary to attain accuracy $\\epsilon Mr$, where $M$ is the Lipschitz constant and $\\zeta_r=r/\\tanh r$ captures the effect of curvature. This matches the known $O(\\zeta_r/\\epsilon^2)$ upper bound for the Riemannian subgradient method (Zhang and Sra, 2016). This is the first query-complexity result for g-convex optimization that is tight simultaneously in curvature and target accuracy. The standard Euclidean recipe of constructing hard instances as maxima of affine functions does not transfer to hyperbolic space, so the lower bound requires a new mechanism. Our starting point is the worst-function construction of Criscitiello and Boumal (2023, Appendix A). It gives the same lower bound for a subclass of algorithms, including the subgradient method, whose queries remain in prescribed g-convex regions. We retain this geometric setup and carefully tune and augment their hard function to accommodate every deterministic first-order algorithm. The key new mechanism is an advance-or-stall scheme: when a query lies in these regions, the oracle reveals at most one new information direction (advance); when a query leaves them, we show that the oracle can answer without revealing any new hidden direction (stall). Unlike earlier curvature-dependent lower bounds, the proof uses no ball-packing argument.",
+      "categories": [
+        "math.OC",
+        "math.DG",
+        "math.NA"
+      ],
+      "primaryCategory": "math.OC",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-20T07:46:16.660115+00:00",
+        "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.26815v1",
+        "observedAt": "2026-10-20T08:07:17.154592+00:00",
+        "contentHash": "48a12afd457a8ade98379c5bd3bddc462accae4cb5bf337975344c79f571a868"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "双曲凸优化的紧查询下界",
+      "workSummary": "对双曲空间上的 Lipschitz 测地凸函数，证明确定性一阶算法达到 εMr 精度需要 Ω((r/tanh r)/ε²) 次查询，与已知次梯度上界匹配。",
+      "techniques": [
+        "advance-or-stall 预言机",
+        "隐藏信息方向",
+        "曲率相关复杂度"
+      ],
+      "breakthrough": "同时匹配曲率尺度与目标精度，克服欧氏仿射硬例不能直接迁移的问题。",
+      "limitations": "下界针对确定性一阶模型及含全局极小点的给定球；不自动涵盖随机或高阶预言机。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者称反射方法与 advance-or-stall 方案早于 AI 协助；将调谐法向量的构造及分析（特别引理4.3）明确归于 GPT-6 Pro，后者也辅助第5节黑箱归约、写作及图1–3。只将该具体关键构造记为核心思路辅助。第39页 Claude 为文献作者姓名。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.26815v1 · 第38页 AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-20T08:07:17.154592+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.26815v1",
+        "contentHash": "48a12afd457a8ade98379c5bd3bddc462accae4cb5bf337975344c79f571a868",
+        "pages": 41,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称反射方法与 advance-or-stall 方案早于 AI 协助；将调谐法向量的构造及分析（特别引理4.3）明确归于 GPT-6 Pro，后者也辅助第5节黑箱归约、写作及图1–3。只将该具体关键构造记为核心思路辅助。第39页 Claude 为文献作者姓名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5385bd9d7bf8ef514ffe834fc7c3693b6d60e8625cc2ca6f96fc55406585fbea"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 82,
+      "priorityReason": "几何优化中的锐复杂度工具，与曲率效应关系明确。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the dimension-independent first-order query complexity of minimizing a Lipschitz geodesically convex (g-convex) function on hyperbolic space. Given a ball of radius $r$ containing a global minimizer, we prove that $\\Omega(\\zeta_r/\\epsilon^2)$ queries are necessary to attain accuracy $\\epsilon Mr$, where $M$ is the Lipschitz constant and $\\zeta_r=r/\\tanh r$ captures the effect of curvature. This matches the known $O(\\zeta_r/\\epsilon^2)$ upper bound for the Riemannian subgradient method (Zhang and Sra, 2016). This is the first query-complexity result for g-convex optimization that is tight simultaneously in curvature and target accuracy. The standard Euclidean recipe of constructing hard instances as maxima of affine functions does not transfer to hyperbolic space, so the lower bound requires a new mechanism. Our starting point is the worst-function construction of Criscitiello and Boumal (2023, Appendix A). It gives the same lower bound for a subclass of algorithms, including the subgradient method, whose queries remain in prescribed g-convex regions. We retain this geometric setup and carefully tune and augment their hard function to accommodate every deterministic first-order algorithm. The key new mechanism is an advance-or-stall scheme: when a query lies in these regions, the oracle reveals at most one new information direction (advance); when a query leaves them, we show that the oracle can answer without revealing any new hidden direction (stall). Unlike earlier curvature-dependent lower bounds, the proof uses no ball-packing argument.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-20",
+      "entry": {
+        "arxivId": "2610.26815",
+        "metadata": {
+          "title": "Tight lower bounds for Lipschitz geodesically convex optimization on hyperbolic space",
+          "authors": [
+            "Christopher Criscitiello"
+          ],
+          "abstract": "We determine the dimension-independent first-order query complexity of minimizing a Lipschitz geodesically convex (g-convex) function on hyperbolic space. Given a ball of radius $r$ containing a global minimizer, we prove that $\\Omega(\\zeta_r/\\epsilon^2)$ queries are necessary to attain accuracy $\\epsilon Mr$, where $M$ is the Lipschitz constant and $\\zeta_r=r/\\tanh r$ captures the effect of curvature. This matches the known $O(\\zeta_r/\\epsilon^2)$ upper bound for the Riemannian subgradient method (Zhang and Sra, 2016). This is the first query-complexity result for g-convex optimization that is tight simultaneously in curvature and target accuracy. The standard Euclidean recipe of constructing hard instances as maxima of affine functions does not transfer to hyperbolic space, so the lower bound requires a new mechanism. Our starting point is the worst-function construction of Criscitiello and Boumal (2023, Appendix A). It gives the same lower bound for a subclass of algorithms, including the subgradient method, whose queries remain in prescribed g-convex regions. We retain this geometric setup and carefully tune and augment their hard function to accommodate every deterministic first-order algorithm. The key new mechanism is an advance-or-stall scheme: when a query lies in these regions, the oracle reveals at most one new information direction (advance); when a query leaves them, we show that the oracle can answer without revealing any new hidden direction (stall). Unlike earlier curvature-dependent lower bounds, the proof uses no ball-packing argument.",
+          "categories": [
+            "math.OC",
+            "math.DG",
+            "math.NA"
+          ],
+          "primaryCategory": "math.OC",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-20T07:46:16.660115+00:00",
+            "contentHash": "648807e3c13d8b1c8a9e6a4dbf60391cc4b4bbd8d0f7b251dc39e76f727c53fe"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.26815v1",
+            "observedAt": "2026-10-20T08:07:17.154592+00:00",
+            "contentHash": "48a12afd457a8ade98379c5bd3bddc462accae4cb5bf337975344c79f571a868"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "双曲凸优化的紧查询下界",
+          "workSummary": "对双曲空间上的 Lipschitz 测地凸函数，证明确定性一阶算法达到 εMr 精度需要 Ω((r/tanh r)/ε²) 次查询，与已知次梯度上界匹配。",
+          "techniques": [
+            "advance-or-stall 预言机",
+            "隐藏信息方向",
+            "曲率相关复杂度"
+          ],
+          "breakthrough": "同时匹配曲率尺度与目标精度，克服欧氏仿射硬例不能直接迁移的问题。",
+          "limitations": "下界针对确定性一阶模型及含全局极小点的给定球；不自动涵盖随机或高阶预言机。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者称反射方法与 advance-or-stall 方案早于 AI 协助；将调谐法向量的构造及分析（特别引理4.3）明确归于 GPT-6 Pro，后者也辅助第5节黑箱归约、写作及图1–3。只将该具体关键构造记为核心思路辅助。第39页 Claude 为文献作者姓名。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.26815v1 · 第38页 AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-20T08:07:17.154592+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.26815v1",
+            "contentHash": "48a12afd457a8ade98379c5bd3bddc462accae4cb5bf337975344c79f571a868",
+            "pages": 41,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称反射方法与 advance-or-stall 方案早于 AI 协助；将调谐法向量的构造及分析（特别引理4.3）明确归于 GPT-6 Pro，后者也辅助第5节黑箱归约、写作及图1–3。只将该具体关键构造记为核心思路辅助。第39页 Claude 为文献作者姓名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5385bd9d7bf8ef514ffe834fc7c3693b6d60e8625cc2ca6f96fc55406585fbea"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 82,
+          "priorityReason": "几何优化中的锐复杂度工具，与曲率效应关系明确。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the dimension-independent first-order query complexity of minimizing a Lipschitz geodesically convex (g-convex) function on hyperbolic space. Given a ball of radius $r$ containing a global minimizer, we prove that $\\Omega(\\zeta_r/\\epsilon^2)$ queries are necessary to attain accuracy $\\epsilon Mr$, where $M$ is the Lipschitz constant and $\\zeta_r=r/\\tanh r$ captures the effect of curvature. This matches the known $O(\\zeta_r/\\epsilon^2)$ upper bound for the Riemannian subgradient method (Zhang and Sra, 2016). This is the first query-complexity result for g-convex optimization that is tight simultaneously in curvature and target accuracy. The standard Euclidean recipe of constructing hard instances as maxima of affine functions does not transfer to hyperbolic space, so the lower bound requires a new mechanism. Our starting point is the worst-function construction of Criscitiello and Boumal (2023, Appendix A). It gives the same lower bound for a subclass of algorithms, including the subgradient method, whose queries remain in prescribed g-convex regions. We retain this geometric setup and carefully tune and augment their hard function to accommodate every deterministic first-order algorithm. The key new mechanism is an advance-or-stall scheme: when a query lies in these regions, the oracle reveals at most one new information direction (advance); when a query leaves them, we show that the oracle can answer without revealing any new hidden direction (stall). Unlike earlier curvature-dependent lower bounds, the proof uses no ball-packing argument.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
