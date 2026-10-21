@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.28302",
+  "slug": "2610.28302",
+  "latest": {
+    "arxivId": "2610.28302",
+    "metadata": {
+      "title": "Learning Normal Coordinates on Riemannian Manifolds with Flow Charts",
+      "authors": [
+        "Edmond Cunningham"
+      ],
+      "abstract": "Riemannian manifolds are powerful models for problems with non-Euclidean structure. Recent work in geometric machine learning has focused on training deep neural networks to learn Riemannian metrics from high-dimensional data. However, many geometric algorithms require repeated evaluations of the exponential and logarithmic maps, whose high computational cost restricts the utility of learned Riemannian manifolds in practice. We propose to address this cost by training a conditional invertible neural network, called a flow chart, to approximate normal coordinates around points on a given Riemannian manifold. With this approach, the exponential and logarithmic maps can be approximated by fast Euclidean operations in the model's learned coordinate space. Our main contribution is an efficient loss function for training flow charts that is nonnegative and, under suitable domain assumptions, is zero precisely when the chart is normal. Across sixteen synthetic and data-derived geometries, flow charts are competitive with a specialized neural geodesic interpolator for logarithmic map estimation, while also being able to estimate the exponential map. When pretrained, flow charts provide a median speedup of 60-70x over numerical baselines at comparable logarithmic map estimation error, and their learned coordinates improve the accuracy of a numerical geodesic solver.",
+      "categories": [
+        "cs.LG",
+        "math.DG"
+      ],
+      "primaryCategory": "cs.LG",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-21T02:34:32.591191+00:00",
+        "contentHash": "aee867b481afe17b8c74097da610183e4983d8ec646bb19279fa27bafdcbc191"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.28302v1",
+        "observedAt": "2026-10-21T02:42:42.771945+00:00",
+        "contentHash": "527faf5860038b2da18dc4ee85406b9e2302d8dd24f5047b21f6ad6c10752733"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "学习正规坐标的算法",
+      "workSummary": "以条件可逆神经网络学习已给黎曼流形上的正规坐标，构造非负训练损失，在合适定义域下零损失恰刻画正规图，并在16种几何上比较指数和对数映射近似。",
+      "techniques": [
+        "条件可逆网络",
+        "正规坐标损失",
+        "神经测地近似"
+      ],
+      "breakthrough": "预训练模型在实验中以相近对数映射误差取得约60–70倍中位提速，并可辅助数值测地求解。",
+      "limitations": "速度属于指定基线和实验设置；模型近似不等于解析精确的指数映射，零损失定理也有定义域条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者称研究想法、方法和损失函数由本人设计；ChatGPT 与 Claude 辅助实验、代码与调试、作业运行、结果分析、制图和性能优化，并建议证明草稿、核对推导和校对文字。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.28302v1 · 第11页 AI use statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-21T02:42:42.771945+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.28302v1",
+        "contentHash": "527faf5860038b2da18dc4ee85406b9e2302d8dd24f5047b21f6ad6c10752733",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称研究想法、方法和损失函数由本人设计；ChatGPT 与 Claude 辅助实验、代码与调试、作业运行、结果分析、制图和性能优化，并建议证明草稿、核对推导和校对文字。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "689c5e4b64698671bced6da1431646595c22f55df5141e9c231fc8da524140d5"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 50,
+      "priorityReason": "算法与几何接口有价值，但当前主要证据是特定实验中的性能。"
+    },
+    "analysisBasis": {
+      "abstract": "Riemannian manifolds are powerful models for problems with non-Euclidean structure. Recent work in geometric machine learning has focused on training deep neural networks to learn Riemannian metrics from high-dimensional data. However, many geometric algorithms require repeated evaluations of the exponential and logarithmic maps, whose high computational cost restricts the utility of learned Riemannian manifolds in practice. We propose to address this cost by training a conditional invertible neural network, called a flow chart, to approximate normal coordinates around points on a given Riemannian manifold. With this approach, the exponential and logarithmic maps can be approximated by fast Euclidean operations in the model's learned coordinate space. Our main contribution is an efficient loss function for training flow charts that is nonnegative and, under suitable domain assumptions, is zero precisely when the chart is normal. Across sixteen synthetic and data-derived geometries, flow charts are competitive with a specialized neural geodesic interpolator for logarithmic map estimation, while also being able to estimate the exponential map. When pretrained, flow charts provide a median speedup of 60-70x over numerical baselines at comparable logarithmic map estimation error, and their learned coordinates improve the accuracy of a numerical geodesic solver.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-21",
+      "entry": {
+        "arxivId": "2610.28302",
+        "metadata": {
+          "title": "Learning Normal Coordinates on Riemannian Manifolds with Flow Charts",
+          "authors": [
+            "Edmond Cunningham"
+          ],
+          "abstract": "Riemannian manifolds are powerful models for problems with non-Euclidean structure. Recent work in geometric machine learning has focused on training deep neural networks to learn Riemannian metrics from high-dimensional data. However, many geometric algorithms require repeated evaluations of the exponential and logarithmic maps, whose high computational cost restricts the utility of learned Riemannian manifolds in practice. We propose to address this cost by training a conditional invertible neural network, called a flow chart, to approximate normal coordinates around points on a given Riemannian manifold. With this approach, the exponential and logarithmic maps can be approximated by fast Euclidean operations in the model's learned coordinate space. Our main contribution is an efficient loss function for training flow charts that is nonnegative and, under suitable domain assumptions, is zero precisely when the chart is normal. Across sixteen synthetic and data-derived geometries, flow charts are competitive with a specialized neural geodesic interpolator for logarithmic map estimation, while also being able to estimate the exponential map. When pretrained, flow charts provide a median speedup of 60-70x over numerical baselines at comparable logarithmic map estimation error, and their learned coordinates improve the accuracy of a numerical geodesic solver.",
+          "categories": [
+            "cs.LG",
+            "math.DG"
+          ],
+          "primaryCategory": "cs.LG",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-21T02:34:32.591191+00:00",
+            "contentHash": "aee867b481afe17b8c74097da610183e4983d8ec646bb19279fa27bafdcbc191"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.28302v1",
+            "observedAt": "2026-10-21T02:42:42.771945+00:00",
+            "contentHash": "527faf5860038b2da18dc4ee85406b9e2302d8dd24f5047b21f6ad6c10752733"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "学习正规坐标的算法",
+          "workSummary": "以条件可逆神经网络学习已给黎曼流形上的正规坐标，构造非负训练损失，在合适定义域下零损失恰刻画正规图，并在16种几何上比较指数和对数映射近似。",
+          "techniques": [
+            "条件可逆网络",
+            "正规坐标损失",
+            "神经测地近似"
+          ],
+          "breakthrough": "预训练模型在实验中以相近对数映射误差取得约60–70倍中位提速，并可辅助数值测地求解。",
+          "limitations": "速度属于指定基线和实验设置；模型近似不等于解析精确的指数映射，零损失定理也有定义域条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者称研究想法、方法和损失函数由本人设计；ChatGPT 与 Claude 辅助实验、代码与调试、作业运行、结果分析、制图和性能优化，并建议证明草稿、核对推导和校对文字。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.28302v1 · 第11页 AI use statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-21T02:42:42.771945+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.28302v1",
+            "contentHash": "527faf5860038b2da18dc4ee85406b9e2302d8dd24f5047b21f6ad6c10752733",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称研究想法、方法和损失函数由本人设计；ChatGPT 与 Claude 辅助实验、代码与调试、作业运行、结果分析、制图和性能优化，并建议证明草稿、核对推导和校对文字。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "689c5e4b64698671bced6da1431646595c22f55df5141e9c231fc8da524140d5"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 50,
+          "priorityReason": "算法与几何接口有价值，但当前主要证据是特定实验中的性能。"
+        },
+        "analysisBasis": {
+          "abstract": "Riemannian manifolds are powerful models for problems with non-Euclidean structure. Recent work in geometric machine learning has focused on training deep neural networks to learn Riemannian metrics from high-dimensional data. However, many geometric algorithms require repeated evaluations of the exponential and logarithmic maps, whose high computational cost restricts the utility of learned Riemannian manifolds in practice. We propose to address this cost by training a conditional invertible neural network, called a flow chart, to approximate normal coordinates around points on a given Riemannian manifold. With this approach, the exponential and logarithmic maps can be approximated by fast Euclidean operations in the model's learned coordinate space. Our main contribution is an efficient loss function for training flow charts that is nonnegative and, under suitable domain assumptions, is zero precisely when the chart is normal. Across sixteen synthetic and data-derived geometries, flow charts are competitive with a specialized neural geodesic interpolator for logarithmic map estimation, while also being able to estimate the exponential map. When pretrained, flow charts provide a median speedup of 60-70x over numerical baselines at comparable logarithmic map estimation error, and their learned coordinates improve the accuracy of a numerical geodesic solver.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

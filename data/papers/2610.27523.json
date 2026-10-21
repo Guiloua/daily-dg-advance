@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.27523",
+  "slug": "2610.27523",
+  "latest": {
+    "arxivId": "2610.27523",
+    "metadata": {
+      "title": "An orthogonality inequality in $\\mathbb{RP}^{n-1}$ and the double-cap conjecture",
+      "authors": [
+        "Allen Ibiapina",
+        "Carlos Gomes",
+        "Alan Pio",
+        "Samuel Belo",
+        "Ernandes Ferreira"
+      ],
+      "abstract": "The orthogonal neighborhood of a set in real projective space is the union of the hyperplanes perpendicular to its points. We prove that caps minimize neighborhood measure among measurable sets of fixed measure in $\\mathbb{RP}^{n-1}$, for $n \\geq 3$, with rigidity up to null sets. This yields the double-cap conjecture: a measurable subset of $S^{n-1}$ containing no orthogonal pair has measure at most that of two opposite open caps of radius $\\pi/4$. The argument combines compactness of the Funk transform, rotation comparisons, and projective variations. We also obtain qualitative stability and determine the measurable fractional chromatic number of the spherical orthogonality graph. AI played an assistive role in preparing this paper. The formalization and verification workflow for a separate Lean 4 proof of the main inequality and double-cap result, based on a different argument, were carried out almost entirely using AI-assisted tools.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "28 pages, 1 figure",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-21T02:34:44.125750+00:00",
+        "contentHash": "8a1789660b9f67d16ef0bdaaef45679f3fc1cfe0099584406cc6ec7571b22d77"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.27523v1",
+        "observedAt": "2026-10-21T02:38:40.428148+00:00",
+        "contentHash": "af0c08223ada4e80dd4ce521e2ceca24f5360bf32dd6a3035e3aa35ecd20e776"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "射影正交邻域不等式",
+      "workSummary": "对 n≥3 的完备可测射影集 A，证明其正交邻域内测度不低于同测度球冠的邻域值，并以模零集球冠刻画非平凡等号；推出 double-cap 及若干染色应用。",
+      "techniques": [
+        "Funk 变换紧性",
+        "旋转比较",
+        "射影变分"
+      ],
+      "breakthrough": "连接射影邻域等周型不等式与 double-cap 猜想，另附不同论证的 Lean 形式化流程。",
+      "limitations": "使用内测度处理完备可测集的点态邻域，等号按模零集理解；另附 Lean 证明与本文论证不同，不覆盖本文证明及额外应用。本次已读主定理、推论机制和证明概要，未独立重跑 Lean 或逐步核验变分证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露另一个不同论证的 Lean 4 证明，其形式化和核验流程几乎全程由 AI 工具辅助；该仓库只核验仓库中的陈述和论证，并不核验本文证明及其他应用。本次未独立构建 Lean。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.27523v1 · 第1页摘要及第5页 Separate Lean proof",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-21T02:38:40.428148+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.27523v1",
+        "contentHash": "af0c08223ada4e80dd4ce521e2ceca24f5360bf32dd6a3035e3aa35ecd20e776",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露另一个不同论证的 Lean 4 证明，其形式化和核验流程几乎全程由 AI 工具辅助；该仓库只核验仓库中的陈述和论证，并不核验本文证明及其他应用。本次未独立构建 Lean。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "27596ea4d3455dc22cf6f42ec009f6c0b47300cd7a974ca773195f3dd7f4a1db"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "经典球面极值问题的重大声称，优先核对主定理范围和两条证明的关系。"
+    },
+    "analysisBasis": {
+      "abstract": "The orthogonal neighborhood of a set in real projective space is the union of the hyperplanes perpendicular to its points. We prove that caps minimize neighborhood measure among measurable sets of fixed measure in $\\mathbb{RP}^{n-1}$, for $n \\geq 3$, with rigidity up to null sets. This yields the double-cap conjecture: a measurable subset of $S^{n-1}$ containing no orthogonal pair has measure at most that of two opposite open caps of radius $\\pi/4$. The argument combines compactness of the Funk transform, rotation comparisons, and projective variations. We also obtain qualitative stability and determine the measurable fractional chromatic number of the spherical orthogonality graph. AI played an assistive role in preparing this paper. The formalization and verification workflow for a separate Lean 4 proof of the main inequality and double-cap result, based on a different argument, were carried out almost entirely using AI-assisted tools.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-21",
+      "entry": {
+        "arxivId": "2610.27523",
+        "metadata": {
+          "title": "An orthogonality inequality in $\\mathbb{RP}^{n-1}$ and the double-cap conjecture",
+          "authors": [
+            "Allen Ibiapina",
+            "Carlos Gomes",
+            "Alan Pio",
+            "Samuel Belo",
+            "Ernandes Ferreira"
+          ],
+          "abstract": "The orthogonal neighborhood of a set in real projective space is the union of the hyperplanes perpendicular to its points. We prove that caps minimize neighborhood measure among measurable sets of fixed measure in $\\mathbb{RP}^{n-1}$, for $n \\geq 3$, with rigidity up to null sets. This yields the double-cap conjecture: a measurable subset of $S^{n-1}$ containing no orthogonal pair has measure at most that of two opposite open caps of radius $\\pi/4$. The argument combines compactness of the Funk transform, rotation comparisons, and projective variations. We also obtain qualitative stability and determine the measurable fractional chromatic number of the spherical orthogonality graph. AI played an assistive role in preparing this paper. The formalization and verification workflow for a separate Lean 4 proof of the main inequality and double-cap result, based on a different argument, were carried out almost entirely using AI-assisted tools.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "28 pages, 1 figure",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-21T02:34:44.125750+00:00",
+            "contentHash": "8a1789660b9f67d16ef0bdaaef45679f3fc1cfe0099584406cc6ec7571b22d77"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.27523v1",
+            "observedAt": "2026-10-21T02:38:40.428148+00:00",
+            "contentHash": "af0c08223ada4e80dd4ce521e2ceca24f5360bf32dd6a3035e3aa35ecd20e776"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "射影正交邻域不等式",
+          "workSummary": "对 n≥3 的完备可测射影集 A，证明其正交邻域内测度不低于同测度球冠的邻域值，并以模零集球冠刻画非平凡等号；推出 double-cap 及若干染色应用。",
+          "techniques": [
+            "Funk 变换紧性",
+            "旋转比较",
+            "射影变分"
+          ],
+          "breakthrough": "连接射影邻域等周型不等式与 double-cap 猜想，另附不同论证的 Lean 形式化流程。",
+          "limitations": "使用内测度处理完备可测集的点态邻域，等号按模零集理解；另附 Lean 证明与本文论证不同，不覆盖本文证明及额外应用。本次已读主定理、推论机制和证明概要，未独立重跑 Lean 或逐步核验变分证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露另一个不同论证的 Lean 4 证明，其形式化和核验流程几乎全程由 AI 工具辅助；该仓库只核验仓库中的陈述和论证，并不核验本文证明及其他应用。本次未独立构建 Lean。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.27523v1 · 第1页摘要及第5页 Separate Lean proof",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-21T02:38:40.428148+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.27523v1",
+            "contentHash": "af0c08223ada4e80dd4ce521e2ceca24f5360bf32dd6a3035e3aa35ecd20e776",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露另一个不同论证的 Lean 4 证明，其形式化和核验流程几乎全程由 AI 工具辅助；该仓库只核验仓库中的陈述和论证，并不核验本文证明及其他应用。本次未独立构建 Lean。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "27596ea4d3455dc22cf6f42ec009f6c0b47300cd7a974ca773195f3dd7f4a1db"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "经典球面极值问题的重大声称，优先核对主定理范围和两条证明的关系。"
+        },
+        "analysisBasis": {
+          "abstract": "The orthogonal neighborhood of a set in real projective space is the union of the hyperplanes perpendicular to its points. We prove that caps minimize neighborhood measure among measurable sets of fixed measure in $\\mathbb{RP}^{n-1}$, for $n \\geq 3$, with rigidity up to null sets. This yields the double-cap conjecture: a measurable subset of $S^{n-1}$ containing no orthogonal pair has measure at most that of two opposite open caps of radius $\\pi/4$. The argument combines compactness of the Funk transform, rotation comparisons, and projective variations. We also obtain qualitative stability and determine the measurable fractional chromatic number of the spherical orthogonality graph. AI played an assistive role in preparing this paper. The formalization and verification workflow for a separate Lean 4 proof of the main inequality and double-cap result, based on a different argument, were carried out almost entirely using AI-assisted tools.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

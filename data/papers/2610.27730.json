@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.27730",
+  "slug": "2610.27730",
+  "latest": {
+    "arxivId": "2610.27730",
+    "metadata": {
+      "title": "Sharp boundedness criteria for nonnegative kernels on regular curves in the Heisenberg group",
+      "authors": [
+        "Lingxiao Zhang"
+      ],
+      "abstract": "In this paper we study singular integrals associated with the nonnegative kernels \\[ K_\\alpha(x,y,z)=\\frac{|z|^{\\alpha/2}}{\\|(x,y,z)\\|^{\\alpha+1}}, \\qquad \\alpha>0, \\] in the first Heisenberg group $\\mathbb H$, where $\\|\\cdot\\|$ denotes the Korányi norm. This family was introduced by Chousionis and Li. We first show that there exists a compact $1$-Ahlfors regular horizontal $C^1$ curve $E\\subset\\mathbb H$ such that the singular integrals associated with $K_\\alpha$ are unbounded on $L^2(E)$ for every $0<\\alpha<4$. This extends the counterexamples of Chousionis, Li and Zhang from $0<\\alpha<2$ to the full range $0<\\alpha<4$. Combined with the boundedness theorem of Fässler and Orponen for $\\alpha\\ge4$, our result determines the exact range of exponents for boundedness on every $1$-Ahlfors regular curve. We also consider the more general kernels \\[ K_\\Phi(p)=\\frac{1}{\\|p\\|} \\Phi\\!\\left(\\frac{|z|^{1/2}}{\\|p\\|}\\right), \\qquad p=(x,y,z)\\neq0, \\] where $\\Phi:[0,1]\\to[0,\\infty)$ is continuous and nondecreasing, with $\\Phi(0)=0$. We show that the associated singular integral is $L^2$-bounded on every $1$-Ahlfors regular curve if and only if $\\Phi(u)=O(u^4)$ as $u\\to0$. When this condition fails, we construct a compact $1$-Ahlfors regular horizontal $C^1$ curve on which the operator is unbounded. The curves in both constructions can be chosen as horizontal lifts of planar $C^1$ graphs with arbitrarily small slope.",
+      "categories": [
+        "math.CA",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CA",
+      "comment": "13 pages",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-21T02:34:44.125750+00:00",
+        "contentHash": "8a1789660b9f67d16ef0bdaaef45679f3fc1cfe0099584406cc6ec7571b22d77"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.27730v1",
+        "observedAt": "2026-10-21T02:40:07.136009+00:00",
+        "contentHash": "63a6c9f22f629b4ef93bc905145f370b686b49239eb097fe5fb3fccf765d5e3d"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Heisenberg 奇异积分锐判据",
+      "workSummary": "构造紧一维 Ahlfors 正则水平 C¹ 曲线，使指定非负核在所有 0<α<4 时 L² 无界，结合已有 α≥4 正面定理确定阈值，并推广为 Φ(u)=O(u⁴) 的充要条件。",
+      "techniques": [
+        "小斜率水平提升",
+        "一维 Ahlfors 正则性",
+        "核的四阶消失"
+      ],
+      "breakthrough": "把已知反例区间从 α<2 推至完整临界阈值四。",
+      "limitations": "判据要求 Φ 连续、非负、非降且 Φ(0)=0；讨论的是对每条正则曲线一致成立的类别性结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 对稿件提供反馈，协助文献比较及投稿声明措辞和 TikZ 制图；数学陈述与证明保留作者原稿内容。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.27730v1 · 第12页 Use of AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-21T02:40:07.136009+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.27730v1",
+        "contentHash": "63a6c9f22f629b4ef93bc905145f370b686b49239eb097fe5fb3fccf765d5e3d",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 对稿件提供反馈，协助文献比较及投稿声明措辞和 TikZ 制图；数学陈述与证明保留作者原稿内容。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dde25a77ccb9349976a9a5cb855140d4be04320e22f20af079340eff9c389e6f"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 87,
+      "priorityReason": "亚黎曼调和分析中清晰而锐利的边界结果。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper we study singular integrals associated with the nonnegative kernels \\[ K_\\alpha(x,y,z)=\\frac{|z|^{\\alpha/2}}{\\|(x,y,z)\\|^{\\alpha+1}}, \\qquad \\alpha>0, \\] in the first Heisenberg group $\\mathbb H$, where $\\|\\cdot\\|$ denotes the Korányi norm. This family was introduced by Chousionis and Li. We first show that there exists a compact $1$-Ahlfors regular horizontal $C^1$ curve $E\\subset\\mathbb H$ such that the singular integrals associated with $K_\\alpha$ are unbounded on $L^2(E)$ for every $0<\\alpha<4$. This extends the counterexamples of Chousionis, Li and Zhang from $0<\\alpha<2$ to the full range $0<\\alpha<4$. Combined with the boundedness theorem of Fässler and Orponen for $\\alpha\\ge4$, our result determines the exact range of exponents for boundedness on every $1$-Ahlfors regular curve. We also consider the more general kernels \\[ K_\\Phi(p)=\\frac{1}{\\|p\\|} \\Phi\\!\\left(\\frac{|z|^{1/2}}{\\|p\\|}\\right), \\qquad p=(x,y,z)\\neq0, \\] where $\\Phi:[0,1]\\to[0,\\infty)$ is continuous and nondecreasing, with $\\Phi(0)=0$. We show that the associated singular integral is $L^2$-bounded on every $1$-Ahlfors regular curve if and only if $\\Phi(u)=O(u^4)$ as $u\\to0$. When this condition fails, we construct a compact $1$-Ahlfors regular horizontal $C^1$ curve on which the operator is unbounded. The curves in both constructions can be chosen as horizontal lifts of planar $C^1$ graphs with arbitrarily small slope.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-21",
+      "entry": {
+        "arxivId": "2610.27730",
+        "metadata": {
+          "title": "Sharp boundedness criteria for nonnegative kernels on regular curves in the Heisenberg group",
+          "authors": [
+            "Lingxiao Zhang"
+          ],
+          "abstract": "In this paper we study singular integrals associated with the nonnegative kernels \\[ K_\\alpha(x,y,z)=\\frac{|z|^{\\alpha/2}}{\\|(x,y,z)\\|^{\\alpha+1}}, \\qquad \\alpha>0, \\] in the first Heisenberg group $\\mathbb H$, where $\\|\\cdot\\|$ denotes the Korányi norm. This family was introduced by Chousionis and Li. We first show that there exists a compact $1$-Ahlfors regular horizontal $C^1$ curve $E\\subset\\mathbb H$ such that the singular integrals associated with $K_\\alpha$ are unbounded on $L^2(E)$ for every $0<\\alpha<4$. This extends the counterexamples of Chousionis, Li and Zhang from $0<\\alpha<2$ to the full range $0<\\alpha<4$. Combined with the boundedness theorem of Fässler and Orponen for $\\alpha\\ge4$, our result determines the exact range of exponents for boundedness on every $1$-Ahlfors regular curve. We also consider the more general kernels \\[ K_\\Phi(p)=\\frac{1}{\\|p\\|} \\Phi\\!\\left(\\frac{|z|^{1/2}}{\\|p\\|}\\right), \\qquad p=(x,y,z)\\neq0, \\] where $\\Phi:[0,1]\\to[0,\\infty)$ is continuous and nondecreasing, with $\\Phi(0)=0$. We show that the associated singular integral is $L^2$-bounded on every $1$-Ahlfors regular curve if and only if $\\Phi(u)=O(u^4)$ as $u\\to0$. When this condition fails, we construct a compact $1$-Ahlfors regular horizontal $C^1$ curve on which the operator is unbounded. The curves in both constructions can be chosen as horizontal lifts of planar $C^1$ graphs with arbitrarily small slope.",
+          "categories": [
+            "math.CA",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CA",
+          "comment": "13 pages",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-21T02:34:44.125750+00:00",
+            "contentHash": "8a1789660b9f67d16ef0bdaaef45679f3fc1cfe0099584406cc6ec7571b22d77"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.27730v1",
+            "observedAt": "2026-10-21T02:40:07.136009+00:00",
+            "contentHash": "63a6c9f22f629b4ef93bc905145f370b686b49239eb097fe5fb3fccf765d5e3d"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Heisenberg 奇异积分锐判据",
+          "workSummary": "构造紧一维 Ahlfors 正则水平 C¹ 曲线，使指定非负核在所有 0<α<4 时 L² 无界，结合已有 α≥4 正面定理确定阈值，并推广为 Φ(u)=O(u⁴) 的充要条件。",
+          "techniques": [
+            "小斜率水平提升",
+            "一维 Ahlfors 正则性",
+            "核的四阶消失"
+          ],
+          "breakthrough": "把已知反例区间从 α<2 推至完整临界阈值四。",
+          "limitations": "判据要求 Φ 连续、非负、非降且 Φ(0)=0；讨论的是对每条正则曲线一致成立的类别性结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 对稿件提供反馈，协助文献比较及投稿声明措辞和 TikZ 制图；数学陈述与证明保留作者原稿内容。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.27730v1 · 第12页 Use of AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-21T02:40:07.136009+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.27730v1",
+            "contentHash": "63a6c9f22f629b4ef93bc905145f370b686b49239eb097fe5fb3fccf765d5e3d",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 对稿件提供反馈，协助文献比较及投稿声明措辞和 TikZ 制图；数学陈述与证明保留作者原稿内容。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dde25a77ccb9349976a9a5cb855140d4be04320e22f20af079340eff9c389e6f"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 87,
+          "priorityReason": "亚黎曼调和分析中清晰而锐利的边界结果。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper we study singular integrals associated with the nonnegative kernels \\[ K_\\alpha(x,y,z)=\\frac{|z|^{\\alpha/2}}{\\|(x,y,z)\\|^{\\alpha+1}}, \\qquad \\alpha>0, \\] in the first Heisenberg group $\\mathbb H$, where $\\|\\cdot\\|$ denotes the Korányi norm. This family was introduced by Chousionis and Li. We first show that there exists a compact $1$-Ahlfors regular horizontal $C^1$ curve $E\\subset\\mathbb H$ such that the singular integrals associated with $K_\\alpha$ are unbounded on $L^2(E)$ for every $0<\\alpha<4$. This extends the counterexamples of Chousionis, Li and Zhang from $0<\\alpha<2$ to the full range $0<\\alpha<4$. Combined with the boundedness theorem of Fässler and Orponen for $\\alpha\\ge4$, our result determines the exact range of exponents for boundedness on every $1$-Ahlfors regular curve. We also consider the more general kernels \\[ K_\\Phi(p)=\\frac{1}{\\|p\\|} \\Phi\\!\\left(\\frac{|z|^{1/2}}{\\|p\\|}\\right), \\qquad p=(x,y,z)\\neq0, \\] where $\\Phi:[0,1]\\to[0,\\infty)$ is continuous and nondecreasing, with $\\Phi(0)=0$. We show that the associated singular integral is $L^2$-bounded on every $1$-Ahlfors regular curve if and only if $\\Phi(u)=O(u^4)$ as $u\\to0$. When this condition fails, we construct a compact $1$-Ahlfors regular horizontal $C^1$ curve on which the operator is unbounded. The curves in both constructions can be chosen as horizontal lifts of planar $C^1$ graphs with arbitrarily small slope.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
