@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.29011",
+  "slug": "2610.29011",
+  "latest": {
+    "arxivId": "2610.29011",
+    "metadata": {
+      "title": "Affine $G$-multibiquandle modules for colored links I: representability of coloring functors and color-profile polynomials",
+      "authors": [
+        "Sang Youl Lee"
+      ],
+      "abstract": "Let $R$ be a commutative ring with identity, let $G$ be an abelian group, and fix $u\\in R[G]^\\times$. For each component-labeled oriented link diagram $(D,\\sigma)$, we construct a finitely presented $R[G]$-module $M_u(D,\\sigma;R[G])$ with a universal affine coloring $U_{D,\\sigma}$. Every affine coloring with values in an $R[G]$-module factors uniquely through $U_{D,\\sigma}$ by a module homomorphism. Thus the module represents the affine coloring functor. Each specified colored Reidemeister move induces a unique module isomorphism compatible with coloring transport, and the module isomorphism class is a colored-link invariant. The representing modules and universal colorings commute with arbitrary scalar extension, without a flatness assumption. For classical links, simultaneous rescaling of the component labels removes the common deformation unit. For any multibiquandle, associated-biquandle colorings decompose into fibers indexed by component labelings. For finite targets and palettes, we define a color-profile polynomial recording the joint distribution of fiber sizes and numbers of palette labels used, and prove its invariance under oriented link isotopy. In the affine case, the representing modules determine these fibers, and their specialized dimensions determine the coloring counts over finite fields. The color-profile polynomial is not determined, in general, by the full unweighted distribution of coloring-fiber sizes. It therefore retains information beyond the associated-biquandle coloring count.",
+      "categories": [
+        "math.GT",
+        "math.CO"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "54 pages, 3 figures",
+      "version": 1,
+      "submittedAt": "2026-10-21T00:22:59Z",
+      "updatedAt": "2026-10-21T00:22:59Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-22T02:36:56.484585+00:00",
+        "contentHash": "eb1f5f3146fe2325af3a45f6858115436dbc83a23073a7e9d86147974446a6bc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-22T02:44:55.350698+00:00",
+        "contentHash": "4c3f08873f13b18a87a4ff20457ef18efddd07de86200d2a4b7ce140872995d5"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "着色函子的模表示",
+      "workSummary": "为带分量标记有向链环构造有限表示的群环模及泛着色，证明 Reidemeister 输运不变性、任意标量扩张相容性，并定义记录着色纤维与标签数的多项式。",
+      "techniques": [
+        "群环模",
+        "着色函子可表示性",
+        "color-profile 多项式"
+      ],
+      "breakthrough": "保留普通着色计数及未加权纤维分布之外的信息。",
+      "limitations": "不声称不变量完备；适用指定仿射多 biquandle 与系数条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "明确披露 ChatGPT 用于排版、英语编辑、计算脚本与证书生成、文献搜索及修稿；未声称核心数学想法由 AI 提出。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.29011v1 · PDF 第 53 页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-22T02:39:25.672727+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.29011v1",
+        "contentHash": "273852d134f59f5530dc8cb67f04514dfc8b94a9deabee880bfcf2ff3130ac5f",
+        "pages": 54,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。明确披露 ChatGPT 用于排版、英语编辑、计算脚本与证书生成、文献搜索及修稿；未声称核心数学想法由 AI 提出。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5c87f0e3f23f272b9b0f79bed62a9e0633d8d91589e9ae18fd40a4de89740c01"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 47,
+      "priorityReason": "代数结不变量的专门工具，广泛几何应用尚待展开。",
+      "lowPriorityReason": "代数结不变量的专门工具，广泛几何应用尚待展开。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $R$ be a commutative ring with identity, let $G$ be an abelian group, and fix $u\\in R[G]^\\times$. For each component-labeled oriented link diagram $(D,\\sigma)$, we construct a finitely presented $R[G]$-module $M_u(D,\\sigma;R[G])$ with a universal affine coloring $U_{D,\\sigma}$. Every affine coloring with values in an $R[G]$-module factors uniquely through $U_{D,\\sigma}$ by a module homomorphism. Thus the module represents the affine coloring functor. Each specified colored Reidemeister move induces a unique module isomorphism compatible with coloring transport, and the module isomorphism class is a colored-link invariant. The representing modules and universal colorings commute with arbitrary scalar extension, without a flatness assumption. For classical links, simultaneous rescaling of the component labels removes the common deformation unit. For any multibiquandle, associated-biquandle colorings decompose into fibers indexed by component labelings. For finite targets and palettes, we define a color-profile polynomial recording the joint distribution of fiber sizes and numbers of palette labels used, and prove its invariance under oriented link isotopy. In the affine case, the representing modules determine these fibers, and their specialized dimensions determine the coloring counts over finite fields. The color-profile polynomial is not determined, in general, by the full unweighted distribution of coloring-fiber sizes. It therefore retains information beyond the associated-biquandle coloring count.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-22",
+      "entry": {
+        "arxivId": "2610.29011",
+        "metadata": {
+          "title": "Affine $G$-multibiquandle modules for colored links I: representability of coloring functors and color-profile polynomials",
+          "authors": [
+            "Sang Youl Lee"
+          ],
+          "abstract": "Let $R$ be a commutative ring with identity, let $G$ be an abelian group, and fix $u\\in R[G]^\\times$. For each component-labeled oriented link diagram $(D,\\sigma)$, we construct a finitely presented $R[G]$-module $M_u(D,\\sigma;R[G])$ with a universal affine coloring $U_{D,\\sigma}$. Every affine coloring with values in an $R[G]$-module factors uniquely through $U_{D,\\sigma}$ by a module homomorphism. Thus the module represents the affine coloring functor. Each specified colored Reidemeister move induces a unique module isomorphism compatible with coloring transport, and the module isomorphism class is a colored-link invariant. The representing modules and universal colorings commute with arbitrary scalar extension, without a flatness assumption. For classical links, simultaneous rescaling of the component labels removes the common deformation unit. For any multibiquandle, associated-biquandle colorings decompose into fibers indexed by component labelings. For finite targets and palettes, we define a color-profile polynomial recording the joint distribution of fiber sizes and numbers of palette labels used, and prove its invariance under oriented link isotopy. In the affine case, the representing modules determine these fibers, and their specialized dimensions determine the coloring counts over finite fields. The color-profile polynomial is not determined, in general, by the full unweighted distribution of coloring-fiber sizes. It therefore retains information beyond the associated-biquandle coloring count.",
+          "categories": [
+            "math.GT",
+            "math.CO"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "54 pages, 3 figures",
+          "version": 1,
+          "submittedAt": "2026-10-21T00:22:59Z",
+          "updatedAt": "2026-10-21T00:22:59Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-22T02:36:56.484585+00:00",
+            "contentHash": "eb1f5f3146fe2325af3a45f6858115436dbc83a23073a7e9d86147974446a6bc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-22T02:44:55.350698+00:00",
+            "contentHash": "4c3f08873f13b18a87a4ff20457ef18efddd07de86200d2a4b7ce140872995d5"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "着色函子的模表示",
+          "workSummary": "为带分量标记有向链环构造有限表示的群环模及泛着色，证明 Reidemeister 输运不变性、任意标量扩张相容性，并定义记录着色纤维与标签数的多项式。",
+          "techniques": [
+            "群环模",
+            "着色函子可表示性",
+            "color-profile 多项式"
+          ],
+          "breakthrough": "保留普通着色计数及未加权纤维分布之外的信息。",
+          "limitations": "不声称不变量完备；适用指定仿射多 biquandle 与系数条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "明确披露 ChatGPT 用于排版、英语编辑、计算脚本与证书生成、文献搜索及修稿；未声称核心数学想法由 AI 提出。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.29011v1 · PDF 第 53 页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-22T02:39:25.672727+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.29011v1",
+            "contentHash": "273852d134f59f5530dc8cb67f04514dfc8b94a9deabee880bfcf2ff3130ac5f",
+            "pages": 54,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。明确披露 ChatGPT 用于排版、英语编辑、计算脚本与证书生成、文献搜索及修稿；未声称核心数学想法由 AI 提出。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5c87f0e3f23f272b9b0f79bed62a9e0633d8d91589e9ae18fd40a4de89740c01"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 47,
+          "priorityReason": "代数结不变量的专门工具，广泛几何应用尚待展开。",
+          "lowPriorityReason": "代数结不变量的专门工具，广泛几何应用尚待展开。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $R$ be a commutative ring with identity, let $G$ be an abelian group, and fix $u\\in R[G]^\\times$. For each component-labeled oriented link diagram $(D,\\sigma)$, we construct a finitely presented $R[G]$-module $M_u(D,\\sigma;R[G])$ with a universal affine coloring $U_{D,\\sigma}$. Every affine coloring with values in an $R[G]$-module factors uniquely through $U_{D,\\sigma}$ by a module homomorphism. Thus the module represents the affine coloring functor. Each specified colored Reidemeister move induces a unique module isomorphism compatible with coloring transport, and the module isomorphism class is a colored-link invariant. The representing modules and universal colorings commute with arbitrary scalar extension, without a flatness assumption. For classical links, simultaneous rescaling of the component labels removes the common deformation unit. For any multibiquandle, associated-biquandle colorings decompose into fibers indexed by component labelings. For finite targets and palettes, we define a color-profile polynomial recording the joint distribution of fiber sizes and numbers of palette labels used, and prove its invariance under oriented link isotopy. In the affine case, the representing modules determine these fibers, and their specialized dimensions determine the coloring counts over finite fields. The color-profile polynomial is not determined, in general, by the full unweighted distribution of coloring-fiber sizes. It therefore retains information beyond the associated-biquandle coloring count.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

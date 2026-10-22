@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.28828",
+  "slug": "2610.28828",
+  "latest": {
+    "arxivId": "2610.28828",
+    "metadata": {
+      "title": "A counterexample to Gale's conjecture in $\\mathbb{R}^3$",
+      "authors": [
+        "Vsevolod Voronov"
+      ],
+      "abstract": "It is known that for every partition of the sphere $S^2$ of unit diameter into four parts, the largest diameter of a part is at least $\\sqrt{(3+\\sqrt{3})/6} = 0.88807\\dots$, and this bound is attained. The conjecture of D.~Gale (1953) asserts that no set in $\\mathbb{R}^3$ has a larger ratio. In this paper, we construct a $101$-point set $V\\subset\\mathbb{R}^3$ such that every partition of $V$ into four parts contains a part of diameter greater than $0.88928 \\, \\operatorname{diam} V$.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "11 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-10-20T18:47:33Z",
+      "updatedAt": "2026-10-20T18:47:33Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-22T02:36:45.111327+00:00",
+        "contentHash": "b57afc98bd877d37019733f1f42e957fcfecd2061903012367248f069a658525"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-22T02:44:55.347489+00:00",
+        "contentHash": "5d53b69ff9f4ccf087e2cb68954cf40121d1078ee285641237af83dbd89a1f41"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "有限点集反例",
+      "workSummary": "构造三维101点集，任意四分划中都有一部分直径超过整体直径的0.88928倍，严格超过单位直径球面四分划的最优比值约0.88807，否定 Gale 猜想。",
+      "techniques": [
+        "有限点构型",
+        "直径四分划",
+        "组合几何下界"
+      ],
+      "breakthrough": "明确区分球面极值与任意三维集合的分划行为。",
+      "limitations": "结果是否依赖计算证书及数值严格化需读正文；不涉及任意分块数的最优值。 已补读 Gale 命题、结果表及坐标证书说明。核对了 101 点、阈值 0.88928D 和不可能四染色的验证方式；未独立执行 SAT 求解或逐一复算 2030 条边，因此不将论文中的计算证书称作本站独立验证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露多模型代码演化、GPT-6 Astra 提出的部分算法及启发式搜索路线，且这些辅助算法促成反例集合的发现；另用 AI 编写算法文档、整理代码库和校订语言。原始问题与 2024 年研究目标先于该协助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.28828v1 · PDF 第 2 页 AI disclosure；第 5–6 页算法与搜索说明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-22T02:38:00.937860+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.28828v1",
+        "contentHash": "f02a13440d24f32a7123f313c471f4ce7058c2f5bb26350edb38925e0af78d36",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露多模型代码演化、GPT-6 Astra 提出的部分算法及启发式搜索路线，且这些辅助算法促成反例集合的发现；另用 AI 编写算法文档、整理代码库和校订语言。原始问题与 2024 年研究目标先于该协助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5437fb954d5d589c61b3642d4023dde746a601f945e42b4b857f022259294525"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 87,
+      "priorityReason": "经典离散几何猜想的具体反例，优先核对构型与严格界。"
+    },
+    "analysisBasis": {
+      "abstract": "It is known that for every partition of the sphere $S^2$ of unit diameter into four parts, the largest diameter of a part is at least $\\sqrt{(3+\\sqrt{3})/6} = 0.88807\\dots$, and this bound is attained. The conjecture of D.~Gale (1953) asserts that no set in $\\mathbb{R}^3$ has a larger ratio. In this paper, we construct a $101$-point set $V\\subset\\mathbb{R}^3$ such that every partition of $V$ into four parts contains a part of diameter greater than $0.88928 \\, \\operatorname{diam} V$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-22",
+      "entry": {
+        "arxivId": "2610.28828",
+        "metadata": {
+          "title": "A counterexample to Gale's conjecture in $\\mathbb{R}^3$",
+          "authors": [
+            "Vsevolod Voronov"
+          ],
+          "abstract": "It is known that for every partition of the sphere $S^2$ of unit diameter into four parts, the largest diameter of a part is at least $\\sqrt{(3+\\sqrt{3})/6} = 0.88807\\dots$, and this bound is attained. The conjecture of D.~Gale (1953) asserts that no set in $\\mathbb{R}^3$ has a larger ratio. In this paper, we construct a $101$-point set $V\\subset\\mathbb{R}^3$ such that every partition of $V$ into four parts contains a part of diameter greater than $0.88928 \\, \\operatorname{diam} V$.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "11 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-10-20T18:47:33Z",
+          "updatedAt": "2026-10-20T18:47:33Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-22T02:36:45.111327+00:00",
+            "contentHash": "b57afc98bd877d37019733f1f42e957fcfecd2061903012367248f069a658525"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-22T02:44:55.347489+00:00",
+            "contentHash": "5d53b69ff9f4ccf087e2cb68954cf40121d1078ee285641237af83dbd89a1f41"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "有限点集反例",
+          "workSummary": "构造三维101点集，任意四分划中都有一部分直径超过整体直径的0.88928倍，严格超过单位直径球面四分划的最优比值约0.88807，否定 Gale 猜想。",
+          "techniques": [
+            "有限点构型",
+            "直径四分划",
+            "组合几何下界"
+          ],
+          "breakthrough": "明确区分球面极值与任意三维集合的分划行为。",
+          "limitations": "结果是否依赖计算证书及数值严格化需读正文；不涉及任意分块数的最优值。 已补读 Gale 命题、结果表及坐标证书说明。核对了 101 点、阈值 0.88928D 和不可能四染色的验证方式；未独立执行 SAT 求解或逐一复算 2030 条边，因此不将论文中的计算证书称作本站独立验证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露多模型代码演化、GPT-6 Astra 提出的部分算法及启发式搜索路线，且这些辅助算法促成反例集合的发现；另用 AI 编写算法文档、整理代码库和校订语言。原始问题与 2024 年研究目标先于该协助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.28828v1 · PDF 第 2 页 AI disclosure；第 5–6 页算法与搜索说明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-22T02:38:00.937860+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.28828v1",
+            "contentHash": "f02a13440d24f32a7123f313c471f4ce7058c2f5bb26350edb38925e0af78d36",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露多模型代码演化、GPT-6 Astra 提出的部分算法及启发式搜索路线，且这些辅助算法促成反例集合的发现；另用 AI 编写算法文档、整理代码库和校订语言。原始问题与 2024 年研究目标先于该协助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5437fb954d5d589c61b3642d4023dde746a601f945e42b4b857f022259294525"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 87,
+          "priorityReason": "经典离散几何猜想的具体反例，优先核对构型与严格界。"
+        },
+        "analysisBasis": {
+          "abstract": "It is known that for every partition of the sphere $S^2$ of unit diameter into four parts, the largest diameter of a part is at least $\\sqrt{(3+\\sqrt{3})/6} = 0.88807\\dots$, and this bound is attained. The conjecture of D.~Gale (1953) asserts that no set in $\\mathbb{R}^3$ has a larger ratio. In this paper, we construct a $101$-point set $V\\subset\\mathbb{R}^3$ such that every partition of $V$ into four parts contains a part of diameter greater than $0.88928 \\, \\operatorname{diam} V$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

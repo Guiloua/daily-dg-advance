@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.29238",
+  "slug": "2610.29238",
+  "latest": {
+    "arxivId": "2610.29238",
+    "metadata": {
+      "title": "Strongly log-concave measures and lattices",
+      "authors": [
+        "Brayden Letwin",
+        "Victor Reis",
+        "Thomas Rothvoss"
+      ],
+      "abstract": "Let $\\Lambda \\subset \\mathbb{R}^n$ be a full rank lattice with the property that $\\det \\Gamma \\ge 1$ for all sublattices $\\Gamma \\subseteq \\Lambda^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that $f$ is $\\alpha$-strongly log-concave, where $\\alpha = 2\\pi/e$, and $X + \\Lambda$ is uniform on $\\mathbb{R}^n/\\Lambda$. Moreover, we show that the existence of such a density $f$ characterizes the assumption on $\\Gamma$ up to a constant. There are a few consequences of the above. First, for such lattices we can bound the covering radius \\[ \\mu(\\Lambda, K) = \\max_{x \\in \\mathbb{R}^n} \\min_{\\lambda \\in \\Lambda} \\|x-\\lambda\\|_K \\le \\sqrt{\\frac{2e}{\\pi}} \\cdot \\mathbb{E}_G\\, \\|G\\|_K \\] of a convex body $K \\subset \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,I)$. This implies an $O(n\\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. Second, we establish as a consequence an alternative proof of the reverse Minkowski theorem with an explicit constant.",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "19 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-10-21T05:46:44Z",
+      "updatedAt": "2026-10-21T05:46:44Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-22T02:36:45.111327+00:00",
+        "contentHash": "b57afc98bd877d37019733f1f42e957fcfecd2061903012367248f069a658525"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-22T02:44:55.351419+00:00",
+        "contentHash": "5356b5933daf014b6c7ffe49b9581517819793870edd227bdf63868c5b9fa93f"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "定量估计与等价刻画",
+      "workSummary": "用强对数凹概率密度描述格及其对偶子格的行列式约束，并推出覆盖半径、平坦性和逆 Minkowski 型结论。",
+      "techniques": [
+        "强对数凹测度",
+        "格上周期化密度",
+        "高斯均值与覆盖半径"
+      ],
+      "breakthrough": "构造强对数凹常数 2π/e 的密度，使其模格分布均匀；给出覆盖半径的显式高斯估计和平坦性界。",
+      "limitations": "需满足所有对偶子格的行列式下界；部分平坦性阶数与既有结果相同，贡献也包括新方法和显式常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "AI Disclosure 明确表示研究发展过程中使用 ChatGPT 5.6 Pro 和 6 Pro，但未细分贡献，不据此推断核心想法或证明归属。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.29238v1 · PDF 第 5 页 §1.2 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-22T02:39:49.383205+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.29238v1",
+        "contentHash": "2359b477e30d6ab7c4e7f1ff9456c7ac1f490e8bd10887a3697683509f733e22",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确表示研究发展过程中使用 ChatGPT 5.6 Pro 和 6 Pro，但未细分贡献，不据此推断核心想法或证明归属。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f499be2a68126a8c33419257bc92a39d65f6361df0ad963d474e800b8aa8f0de"
+      },
+      "aiUsage": [
+        "exploration"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "概率几何与格几何之间的联系及常数清晰。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\Lambda \\subset \\mathbb{R}^n$ be a full rank lattice with the property that $\\det \\Gamma \\ge 1$ for all sublattices $\\Gamma \\subseteq \\Lambda^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that $f$ is $\\alpha$-strongly log-concave, where $\\alpha = 2\\pi/e$, and $X + \\Lambda$ is uniform on $\\mathbb{R}^n/\\Lambda$. Moreover, we show that the existence of such a density $f$ characterizes the assumption on $\\Gamma$ up to a constant. There are a few consequences of the above. First, for such lattices we can bound the covering radius \\[ \\mu(\\Lambda, K) = \\max_{x \\in \\mathbb{R}^n} \\min_{\\lambda \\in \\Lambda} \\|x-\\lambda\\|_K \\le \\sqrt{\\frac{2e}{\\pi}} \\cdot \\mathbb{E}_G\\, \\|G\\|_K \\] of a convex body $K \\subset \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,I)$. This implies an $O(n\\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. Second, we establish as a consequence an alternative proof of the reverse Minkowski theorem with an explicit constant.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-22",
+      "entry": {
+        "arxivId": "2610.29238",
+        "metadata": {
+          "title": "Strongly log-concave measures and lattices",
+          "authors": [
+            "Brayden Letwin",
+            "Victor Reis",
+            "Thomas Rothvoss"
+          ],
+          "abstract": "Let $\\Lambda \\subset \\mathbb{R}^n$ be a full rank lattice with the property that $\\det \\Gamma \\ge 1$ for all sublattices $\\Gamma \\subseteq \\Lambda^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that $f$ is $\\alpha$-strongly log-concave, where $\\alpha = 2\\pi/e$, and $X + \\Lambda$ is uniform on $\\mathbb{R}^n/\\Lambda$. Moreover, we show that the existence of such a density $f$ characterizes the assumption on $\\Gamma$ up to a constant. There are a few consequences of the above. First, for such lattices we can bound the covering radius \\[ \\mu(\\Lambda, K) = \\max_{x \\in \\mathbb{R}^n} \\min_{\\lambda \\in \\Lambda} \\|x-\\lambda\\|_K \\le \\sqrt{\\frac{2e}{\\pi}} \\cdot \\mathbb{E}_G\\, \\|G\\|_K \\] of a convex body $K \\subset \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,I)$. This implies an $O(n\\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. Second, we establish as a consequence an alternative proof of the reverse Minkowski theorem with an explicit constant.",
+          "categories": [
+            "math.MG",
+            "math.PR"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "19 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-10-21T05:46:44Z",
+          "updatedAt": "2026-10-21T05:46:44Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-22T02:36:45.111327+00:00",
+            "contentHash": "b57afc98bd877d37019733f1f42e957fcfecd2061903012367248f069a658525"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-22T02:44:55.351419+00:00",
+            "contentHash": "5356b5933daf014b6c7ffe49b9581517819793870edd227bdf63868c5b9fa93f"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "定量估计与等价刻画",
+          "workSummary": "用强对数凹概率密度描述格及其对偶子格的行列式约束，并推出覆盖半径、平坦性和逆 Minkowski 型结论。",
+          "techniques": [
+            "强对数凹测度",
+            "格上周期化密度",
+            "高斯均值与覆盖半径"
+          ],
+          "breakthrough": "构造强对数凹常数 2π/e 的密度，使其模格分布均匀；给出覆盖半径的显式高斯估计和平坦性界。",
+          "limitations": "需满足所有对偶子格的行列式下界；部分平坦性阶数与既有结果相同，贡献也包括新方法和显式常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "AI Disclosure 明确表示研究发展过程中使用 ChatGPT 5.6 Pro 和 6 Pro，但未细分贡献，不据此推断核心想法或证明归属。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.29238v1 · PDF 第 5 页 §1.2 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-22T02:39:49.383205+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.29238v1",
+            "contentHash": "2359b477e30d6ab7c4e7f1ff9456c7ac1f490e8bd10887a3697683509f733e22",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确表示研究发展过程中使用 ChatGPT 5.6 Pro 和 6 Pro，但未细分贡献，不据此推断核心想法或证明归属。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f499be2a68126a8c33419257bc92a39d65f6361df0ad963d474e800b8aa8f0de"
+          },
+          "aiUsage": [
+            "exploration"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "概率几何与格几何之间的联系及常数清晰。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\Lambda \\subset \\mathbb{R}^n$ be a full rank lattice with the property that $\\det \\Gamma \\ge 1$ for all sublattices $\\Gamma \\subseteq \\Lambda^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that $f$ is $\\alpha$-strongly log-concave, where $\\alpha = 2\\pi/e$, and $X + \\Lambda$ is uniform on $\\mathbb{R}^n/\\Lambda$. Moreover, we show that the existence of such a density $f$ characterizes the assumption on $\\Gamma$ up to a constant. There are a few consequences of the above. First, for such lattices we can bound the covering radius \\[ \\mu(\\Lambda, K) = \\max_{x \\in \\mathbb{R}^n} \\min_{\\lambda \\in \\Lambda} \\|x-\\lambda\\|_K \\le \\sqrt{\\frac{2e}{\\pi}} \\cdot \\mathbb{E}_G\\, \\|G\\|_K \\] of a convex body $K \\subset \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,I)$. This implies an $O(n\\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. Second, we establish as a consequence an alternative proof of the reverse Minkowski theorem with an explicit constant.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
