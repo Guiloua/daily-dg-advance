@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.31528",
+  "slug": "2610.31528",
+  "latest": {
+    "arxivId": "2610.31528",
+    "metadata": {
+      "title": "Positive sectional curvature on exotic spheres in infinitely many dimensions",
+      "authors": [
+        "Fernando Galaz-García"
+      ],
+      "abstract": "We show that there exist exotic spheres with metrics of strictly positive sectional curvature in infinitely many dimensions: in every dimension $n\\equiv3\\pmod4$ with $n\\geq11$ and $n\\not\\equiv255\\pmod{256}$. Previously, every known closed simply connected manifold of positive sectional curvature in a dimension above $24$ was diffeomorphic to a compact rank-one symmetric space. The spheres we consider are certain homotopy spheres arising as quotients of special $S^3$-$S^3$ bundles introduced by Sperança. These homotopy spheres are determined by an orthogonal representation $\\rho$ of $S^3$ and an $S^3$-conjugation-equivariant map $\\beta$, and are denoted $\\Sigma_{\\rho,\\beta}$. By recent constructions, such spheres admit Riemannian metrics of strictly positive sectional curvature. In this paper we consider the spheres $\\Sigma_{\\rho_b,\\beta}$ of dimension $4b+3$, $b\\geq2$, where $\\rho_b$ is the representation of $S^3$ on $\\mathbb{R}^3\\oplus\\mathbb{H}^b$ by left multiplication on the second summand. For these spheres, we show that the Eells-Kuiper invariant is the product of an integer $k(\\beta)$ depending only on $\\beta$ and a rational number $r_b$ given by one coefficient of a power series built from the $\\hat A$- and $L$-genera. We then show that, for every $b\\geq2$ with $b\\not\\equiv63\\pmod{64}$, there is a map $\\beta$ for which the Eells-Kuiper invariant does not vanish, and thus the corresponding sphere is exotic. A computer calculation also gives the dimensions $n\\equiv255\\pmod{256}$ below $2^{16}$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "36 pages, 3 tables. Programs and outputs archived at Zenodo, doi: https://doi.org/10.5281/zenodo.23571372",
+      "version": 1,
+      "submittedAt": "2026-10-22T16:36:34Z",
+      "updatedAt": "2026-10-22T16:36:34Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-23T06:51:16.945807+00:00",
+        "contentHash": "dcfa8cbf76c5570bfe192ec222e5ccf179fd9cc56825573862d867a79dc2c9b8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-23T07:26:58.507266+00:00",
+        "contentHash": "377c0d761f8e797f5540b3c0267cfbcc69db21f9afdaadcc5465da790796cac2"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "异域球面存在性与拓扑判别",
+      "workSummary": "对 n≡3 mod 4、n≥11 且 n≢255 mod 256 的维数，以 Eells–Kuiper 不变量构造异域 star 球面，再结合所引 compatible-disk 与粘合结果得到正截面曲率度量。",
+      "techniques": [
+        "特殊 S³–S³ 丛商",
+        "正曲率度量构造的既有输入",
+        "Â 与 L 属的幂级数系数",
+        "同伦球面不变量"
+      ],
+      "breakthrough": "在 n≡3 mod 4、n≥11 且 n≢255 mod 256 的维数中，通过非零不变量证明候选球面具有异域光滑结构。",
+      "limitations": "无限维主结论的拓扑判别不依赖计算；被排除同余类在 n<2¹⁶ 的结论依赖作者精确程序，本站未独立运行。外部正曲率构造与粘合定理是关键输入，Lean 项目仍把文献结果作为显式假设；未逐步验证这些输入或全部 2-adic 论证。 已补读 Theorem A、Corollary B、Theorem C 及 §2.2 外部曲率输入，不是对整篇证明的独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT Astra 与 Claude Opus 5.5 协助数学探索、草稿、计算程序、文献检索和内部审阅；后文说明作者独立核验并负责。提及 Lean 形式化和以文献结论为显式假设，不据此声称外部曲率输入已全部形式化证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.31528v1 · PDF 第 4–5 页 Acknowledgements and AI Assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-23T07:11:53.511324+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.31528v1",
+        "contentHash": "53cb6dd8e3a1c38741dc6f66e500c4446b88c040a29923fd8a93a0a5d02c54ee",
+        "pages": 36,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra 与 Claude Opus 5.5 协助数学探索、草稿、计算程序、文献检索和内部审阅；后文说明作者独立核验并负责。提及 Lean 形式化和以文献结论为显式假设，不据此声称外部曲率输入已全部形式化证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b695f3276126cdc7f87d3cb590d9dbed54a36c37b5836bd2ed762040653a690e"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "若所用构造及不变量论证成立，将显著扩展正截面曲率异域球面的维数范围，需优先核对正文。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that there exist exotic spheres with metrics of strictly positive sectional curvature in infinitely many dimensions: in every dimension $n\\equiv3\\pmod4$ with $n\\geq11$ and $n\\not\\equiv255\\pmod{256}$. Previously, every known closed simply connected manifold of positive sectional curvature in a dimension above $24$ was diffeomorphic to a compact rank-one symmetric space. The spheres we consider are certain homotopy spheres arising as quotients of special $S^3$-$S^3$ bundles introduced by Sperança. These homotopy spheres are determined by an orthogonal representation $\\rho$ of $S^3$ and an $S^3$-conjugation-equivariant map $\\beta$, and are denoted $\\Sigma_{\\rho,\\beta}$. By recent constructions, such spheres admit Riemannian metrics of strictly positive sectional curvature. In this paper we consider the spheres $\\Sigma_{\\rho_b,\\beta}$ of dimension $4b+3$, $b\\geq2$, where $\\rho_b$ is the representation of $S^3$ on $\\mathbb{R}^3\\oplus\\mathbb{H}^b$ by left multiplication on the second summand. For these spheres, we show that the Eells-Kuiper invariant is the product of an integer $k(\\beta)$ depending only on $\\beta$ and a rational number $r_b$ given by one coefficient of a power series built from the $\\hat A$- and $L$-genera. We then show that, for every $b\\geq2$ with $b\\not\\equiv63\\pmod{64}$, there is a map $\\beta$ for which the Eells-Kuiper invariant does not vanish, and thus the corresponding sphere is exotic. A computer calculation also gives the dimensions $n\\equiv255\\pmod{256}$ below $2^{16}$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-23",
+      "entry": {
+        "arxivId": "2610.31528",
+        "metadata": {
+          "title": "Positive sectional curvature on exotic spheres in infinitely many dimensions",
+          "authors": [
+            "Fernando Galaz-García"
+          ],
+          "abstract": "We show that there exist exotic spheres with metrics of strictly positive sectional curvature in infinitely many dimensions: in every dimension $n\\equiv3\\pmod4$ with $n\\geq11$ and $n\\not\\equiv255\\pmod{256}$. Previously, every known closed simply connected manifold of positive sectional curvature in a dimension above $24$ was diffeomorphic to a compact rank-one symmetric space. The spheres we consider are certain homotopy spheres arising as quotients of special $S^3$-$S^3$ bundles introduced by Sperança. These homotopy spheres are determined by an orthogonal representation $\\rho$ of $S^3$ and an $S^3$-conjugation-equivariant map $\\beta$, and are denoted $\\Sigma_{\\rho,\\beta}$. By recent constructions, such spheres admit Riemannian metrics of strictly positive sectional curvature. In this paper we consider the spheres $\\Sigma_{\\rho_b,\\beta}$ of dimension $4b+3$, $b\\geq2$, where $\\rho_b$ is the representation of $S^3$ on $\\mathbb{R}^3\\oplus\\mathbb{H}^b$ by left multiplication on the second summand. For these spheres, we show that the Eells-Kuiper invariant is the product of an integer $k(\\beta)$ depending only on $\\beta$ and a rational number $r_b$ given by one coefficient of a power series built from the $\\hat A$- and $L$-genera. We then show that, for every $b\\geq2$ with $b\\not\\equiv63\\pmod{64}$, there is a map $\\beta$ for which the Eells-Kuiper invariant does not vanish, and thus the corresponding sphere is exotic. A computer calculation also gives the dimensions $n\\equiv255\\pmod{256}$ below $2^{16}$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "36 pages, 3 tables. Programs and outputs archived at Zenodo, doi: https://doi.org/10.5281/zenodo.23571372",
+          "version": 1,
+          "submittedAt": "2026-10-22T16:36:34Z",
+          "updatedAt": "2026-10-22T16:36:34Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-23T06:51:16.945807+00:00",
+            "contentHash": "dcfa8cbf76c5570bfe192ec222e5ccf179fd9cc56825573862d867a79dc2c9b8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-23T07:26:58.507266+00:00",
+            "contentHash": "377c0d761f8e797f5540b3c0267cfbcc69db21f9afdaadcc5465da790796cac2"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "异域球面存在性与拓扑判别",
+          "workSummary": "对 n≡3 mod 4、n≥11 且 n≢255 mod 256 的维数，以 Eells–Kuiper 不变量构造异域 star 球面，再结合所引 compatible-disk 与粘合结果得到正截面曲率度量。",
+          "techniques": [
+            "特殊 S³–S³ 丛商",
+            "正曲率度量构造的既有输入",
+            "Â 与 L 属的幂级数系数",
+            "同伦球面不变量"
+          ],
+          "breakthrough": "在 n≡3 mod 4、n≥11 且 n≢255 mod 256 的维数中，通过非零不变量证明候选球面具有异域光滑结构。",
+          "limitations": "无限维主结论的拓扑判别不依赖计算；被排除同余类在 n<2¹⁶ 的结论依赖作者精确程序，本站未独立运行。外部正曲率构造与粘合定理是关键输入，Lean 项目仍把文献结果作为显式假设；未逐步验证这些输入或全部 2-adic 论证。 已补读 Theorem A、Corollary B、Theorem C 及 §2.2 外部曲率输入，不是对整篇证明的独立核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT Astra 与 Claude Opus 5.5 协助数学探索、草稿、计算程序、文献检索和内部审阅；后文说明作者独立核验并负责。提及 Lean 形式化和以文献结论为显式假设，不据此声称外部曲率输入已全部形式化证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.31528v1 · PDF 第 4–5 页 Acknowledgements and AI Assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-23T07:11:53.511324+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.31528v1",
+            "contentHash": "53cb6dd8e3a1c38741dc6f66e500c4446b88c040a29923fd8a93a0a5d02c54ee",
+            "pages": 36,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT Astra 与 Claude Opus 5.5 协助数学探索、草稿、计算程序、文献检索和内部审阅；后文说明作者独立核验并负责。提及 Lean 形式化和以文献结论为显式假设，不据此声称外部曲率输入已全部形式化证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b695f3276126cdc7f87d3cb590d9dbed54a36c37b5836bd2ed762040653a690e"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "若所用构造及不变量论证成立，将显著扩展正截面曲率异域球面的维数范围，需优先核对正文。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that there exist exotic spheres with metrics of strictly positive sectional curvature in infinitely many dimensions: in every dimension $n\\equiv3\\pmod4$ with $n\\geq11$ and $n\\not\\equiv255\\pmod{256}$. Previously, every known closed simply connected manifold of positive sectional curvature in a dimension above $24$ was diffeomorphic to a compact rank-one symmetric space. The spheres we consider are certain homotopy spheres arising as quotients of special $S^3$-$S^3$ bundles introduced by Sperança. These homotopy spheres are determined by an orthogonal representation $\\rho$ of $S^3$ and an $S^3$-conjugation-equivariant map $\\beta$, and are denoted $\\Sigma_{\\rho,\\beta}$. By recent constructions, such spheres admit Riemannian metrics of strictly positive sectional curvature. In this paper we consider the spheres $\\Sigma_{\\rho_b,\\beta}$ of dimension $4b+3$, $b\\geq2$, where $\\rho_b$ is the representation of $S^3$ on $\\mathbb{R}^3\\oplus\\mathbb{H}^b$ by left multiplication on the second summand. For these spheres, we show that the Eells-Kuiper invariant is the product of an integer $k(\\beta)$ depending only on $\\beta$ and a rational number $r_b$ given by one coefficient of a power series built from the $\\hat A$- and $L$-genera. We then show that, for every $b\\geq2$ with $b\\not\\equiv63\\pmod{64}$, there is a map $\\beta$ for which the Eells-Kuiper invariant does not vanish, and thus the corresponding sphere is exotic. A computer calculation also gives the dimensions $n\\equiv255\\pmod{256}$ below $2^{16}$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.31600",
+  "slug": "2610.31600",
+  "latest": {
+    "arxivId": "2610.31600",
+    "metadata": {
+      "title": "SympFormer: Inertial Attention Blocks from Damped Hamiltonian Dynamics on Spaces of Probability Measures",
+      "authors": [
+        "Viktor Stein",
+        "Levin Maier",
+        "Wuchen Li",
+        "Gabriele Steidl"
+      ],
+      "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+      "categories": [
+        "math.SG",
+        "math.AP",
+        "math.DG",
+        "math.DS",
+        "stat.ML"
+      ],
+      "primaryCategory": "math.SG",
+      "comment": "97 pages, 5 figures, 4 tables, comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-22T17:32:11Z",
+      "updatedAt": "2026-10-22T17:32:11Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-23T06:51:16.945807+00:00",
+        "contentHash": "dcfa8cbf76c5570bfe192ec222e5ccf179fd9cc56825573862d867a79dc2c9b8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-23T07:26:58.509288+00:00",
+        "contentHash": "fba9487e29aeb30cc02a5a14071cda4ade51db09ac2de6eed500e8fed83bea55"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "几何模型与算法构造",
+      "workSummary": "以概率测度空间上的阻尼 Hamilton 动力学解释惯性注意力模块，发展 Wasserstein 与商 Stein 几何。",
+      "techniques": [
+        "局部迁移率与商几何",
+        "阻尼 Hamilton 系统",
+        "矩演化与有限时爆破",
+        "几何校正的注意力模块"
+      ],
+      "breakthrough": "在明确域上建立梯度流和惯性表述，在线性注意力中给出全局存在与二阶矩爆破的条件，并联系连续爆破与离散层阈值。",
+      "limitations": "数值实验限于所述 nanoGPT 类模型及数据集，相对特定对照改进不能外推为所有大模型更优；研究 AI 机制也不等于作者披露借助 AI 写作或证明。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第 56 页明确披露 ChatGPT 与 Codex 用于语言和 LaTeX 编辑、软件实现调试、数学表述与数值方法的探索讨论、计算结果的组织呈现。其他命中属于论文研究对象或机器学习文献，不据此推断使用。作者复核全部采用材料并负责。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.31600v1 · PDF 第 56 页 Declaration of generative AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-23T07:16:30.045705+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.31600v1",
+        "contentHash": "470f0a4a3e01cf76c5adbe15ae4f9f5fce3b108e04b7ee37943afeb9ae9e9563",
+        "pages": 97,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 56 页明确披露 ChatGPT 与 Codex 用于语言和 LaTeX 编辑、软件实现调试、数学表述与数值方法的探索讨论、计算结果的组织呈现。其他命中属于论文研究对象或机器学习文献，不据此推断使用。作者复核全部采用材料并负责。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "25550555a985b1dcbb4899008d45fb9419a018bff62410b028f819eae97fc5d2"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 71,
+      "priorityReason": "几何动力学与机器学习的交叉工具，理论假设和实验结论需分开。"
+    },
+    "analysisBasis": {
+      "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-23",
+      "entry": {
+        "arxivId": "2610.31600",
+        "metadata": {
+          "title": "SympFormer: Inertial Attention Blocks from Damped Hamiltonian Dynamics on Spaces of Probability Measures",
+          "authors": [
+            "Viktor Stein",
+            "Levin Maier",
+            "Wuchen Li",
+            "Gabriele Steidl"
+          ],
+          "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+          "categories": [
+            "math.SG",
+            "math.AP",
+            "math.DG",
+            "math.DS",
+            "stat.ML"
+          ],
+          "primaryCategory": "math.SG",
+          "comment": "97 pages, 5 figures, 4 tables, comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-22T17:32:11Z",
+          "updatedAt": "2026-10-22T17:32:11Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-23T06:51:16.945807+00:00",
+            "contentHash": "dcfa8cbf76c5570bfe192ec222e5ccf179fd9cc56825573862d867a79dc2c9b8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-23T07:26:58.509288+00:00",
+            "contentHash": "fba9487e29aeb30cc02a5a14071cda4ade51db09ac2de6eed500e8fed83bea55"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "几何模型与算法构造",
+          "workSummary": "以概率测度空间上的阻尼 Hamilton 动力学解释惯性注意力模块，发展 Wasserstein 与商 Stein 几何。",
+          "techniques": [
+            "局部迁移率与商几何",
+            "阻尼 Hamilton 系统",
+            "矩演化与有限时爆破",
+            "几何校正的注意力模块"
+          ],
+          "breakthrough": "在明确域上建立梯度流和惯性表述，在线性注意力中给出全局存在与二阶矩爆破的条件，并联系连续爆破与离散层阈值。",
+          "limitations": "数值实验限于所述 nanoGPT 类模型及数据集，相对特定对照改进不能外推为所有大模型更优；研究 AI 机制也不等于作者披露借助 AI 写作或证明。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第 56 页明确披露 ChatGPT 与 Codex 用于语言和 LaTeX 编辑、软件实现调试、数学表述与数值方法的探索讨论、计算结果的组织呈现。其他命中属于论文研究对象或机器学习文献，不据此推断使用。作者复核全部采用材料并负责。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.31600v1 · PDF 第 56 页 Declaration of generative AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-23T07:16:30.045705+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.31600v1",
+            "contentHash": "470f0a4a3e01cf76c5adbe15ae4f9f5fce3b108e04b7ee37943afeb9ae9e9563",
+            "pages": 97,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第 56 页明确披露 ChatGPT 与 Codex 用于语言和 LaTeX 编辑、软件实现调试、数学表述与数值方法的探索讨论、计算结果的组织呈现。其他命中属于论文研究对象或机器学习文献，不据此推断使用。作者复核全部采用材料并负责。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "25550555a985b1dcbb4899008d45fb9419a018bff62410b028f819eae97fc5d2"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 71,
+          "priorityReason": "几何动力学与机器学习的交叉工具，理论假设和实验结论需分开。"
+        },
+        "analysisBasis": {
+          "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

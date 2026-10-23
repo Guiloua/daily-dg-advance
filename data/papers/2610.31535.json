@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.31535",
+  "slug": "2610.31535",
+  "latest": {
+    "arxivId": "2610.31535",
+    "metadata": {
+      "title": "Short curves in homogeneous spaces of the unitary group for unitarily invariant norms",
+      "authors": [
+        "Gabriel Larotonda"
+      ],
+      "abstract": "Let A be a unital *-subalgebra of $M_n(C)$ and let $M = U(n)/U(A)$, with the quotient Finsler metric induced by a unitarily invariant norm on $u(n)$, normalized so that $||iP|| = 1$ for rank-one projections $P$. This family contains the unitary orbits of Hermitian matrices, in particular flag manifolds and Grassmann manifolds. We prove that if $z_0$ is a minimal lifting of a tangent vector $X$ with $||X||_{\\infty} < \\pi/2$, then the one-parameter group $t \\mapsto e^{t z_0}\\cdot o$ has minimal length among all piecewise smooth curves in $M$ joining its endpoints. The same holds in manifolds $N=SU(n)/(SU(n) \\cap A)$ for every Ad-invariant Finsler norm on $su(n)$, not necessarily symmetric (i.e. the unit sphere does not need to be balanced). The proof relies on the convexity of the distance from the identity along geodesic segments, valid for all these norms. We also prove that the ball of radius $\\pi/2$ around the identity, for the spectral norm, is convex along one-parameter segments. This extends known results for the p-Schatten norms with p even, and gives a new proof for the operator norm, where the result is due to Duran, Mata-Lorenzo and Recht.",
+      "categories": [
+        "math.GR",
+        "math.FA",
+        "math.MG"
+      ],
+      "primaryCategory": "math.GR",
+      "comment": "9 pages",
+      "version": 1,
+      "submittedAt": "2026-10-22T16:45:43Z",
+      "updatedAt": "2026-10-22T16:45:43Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-23T06:51:53.359582+00:00",
+        "contentHash": "e4a03b658fb6c925d733996b1f53ebeed0fdc8ce6780e3ce6f8bf0ae20bf125a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-23T07:26:58.507965+00:00",
+        "contentHash": "8853b97b333f22b8faa2a8c1b49e1272577f0b02a772373d9c052f786765fc77"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "短测地线极小性",
+      "workSummary": "研究酉群商齐性空间上由酉不变范数诱导的 Finsler 商度量及其短曲线。",
+      "techniques": [
+        "最小提升",
+        "酉不变及 Ad 不变范数",
+        "沿单参数子群的距离凸性"
+      ],
+      "breakthrough": "在指定 π/2 短程条件下证明单参数群投影的长度极小，并推广到 SU(n) 的可能非对称 Ad 不变 Finsler 范数。",
+      "limitations": "有范数归一化、最小提升和短程阈值要求；不是全部长测地线均全局极小，也不自动给出任意范数下唯一性。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Claude 协助草拟编辑、对照原文检查参考文献，并为部分辅助结果（如 Proposition 4.3）建议论证，作者逐一核验。该说明不等同于将整篇核心方法归给 AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.31535v1 · PDF 第 8 页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-23T07:14:32.698293+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.31535v1",
+        "contentHash": "385922f2cb740628627982a9dd3f96be93a44d991b87696521e6c8bc8b21bcbb",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 协助草拟编辑、对照原文检查参考文献，并为部分辅助结果（如 Proposition 4.3）建议论证，作者逐一核验。该说明不等同于将整篇核心方法归给 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c6fa160f0402c52ebe58d16402d36383210f7ce6dc862447e3ea9a7a6f8726f6"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 75,
+      "priorityReason": "统一多种矩阵范数下的齐性几何极小曲线。"
+    },
+    "analysisBasis": {
+      "abstract": "Let A be a unital *-subalgebra of $M_n(C)$ and let $M = U(n)/U(A)$, with the quotient Finsler metric induced by a unitarily invariant norm on $u(n)$, normalized so that $||iP|| = 1$ for rank-one projections $P$. This family contains the unitary orbits of Hermitian matrices, in particular flag manifolds and Grassmann manifolds. We prove that if $z_0$ is a minimal lifting of a tangent vector $X$ with $||X||_{\\infty} < \\pi/2$, then the one-parameter group $t \\mapsto e^{t z_0}\\cdot o$ has minimal length among all piecewise smooth curves in $M$ joining its endpoints. The same holds in manifolds $N=SU(n)/(SU(n) \\cap A)$ for every Ad-invariant Finsler norm on $su(n)$, not necessarily symmetric (i.e. the unit sphere does not need to be balanced). The proof relies on the convexity of the distance from the identity along geodesic segments, valid for all these norms. We also prove that the ball of radius $\\pi/2$ around the identity, for the spectral norm, is convex along one-parameter segments. This extends known results for the p-Schatten norms with p even, and gives a new proof for the operator norm, where the result is due to Duran, Mata-Lorenzo and Recht.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-23",
+      "entry": {
+        "arxivId": "2610.31535",
+        "metadata": {
+          "title": "Short curves in homogeneous spaces of the unitary group for unitarily invariant norms",
+          "authors": [
+            "Gabriel Larotonda"
+          ],
+          "abstract": "Let A be a unital *-subalgebra of $M_n(C)$ and let $M = U(n)/U(A)$, with the quotient Finsler metric induced by a unitarily invariant norm on $u(n)$, normalized so that $||iP|| = 1$ for rank-one projections $P$. This family contains the unitary orbits of Hermitian matrices, in particular flag manifolds and Grassmann manifolds. We prove that if $z_0$ is a minimal lifting of a tangent vector $X$ with $||X||_{\\infty} < \\pi/2$, then the one-parameter group $t \\mapsto e^{t z_0}\\cdot o$ has minimal length among all piecewise smooth curves in $M$ joining its endpoints. The same holds in manifolds $N=SU(n)/(SU(n) \\cap A)$ for every Ad-invariant Finsler norm on $su(n)$, not necessarily symmetric (i.e. the unit sphere does not need to be balanced). The proof relies on the convexity of the distance from the identity along geodesic segments, valid for all these norms. We also prove that the ball of radius $\\pi/2$ around the identity, for the spectral norm, is convex along one-parameter segments. This extends known results for the p-Schatten norms with p even, and gives a new proof for the operator norm, where the result is due to Duran, Mata-Lorenzo and Recht.",
+          "categories": [
+            "math.GR",
+            "math.FA",
+            "math.MG"
+          ],
+          "primaryCategory": "math.GR",
+          "comment": "9 pages",
+          "version": 1,
+          "submittedAt": "2026-10-22T16:45:43Z",
+          "updatedAt": "2026-10-22T16:45:43Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-23T06:51:53.359582+00:00",
+            "contentHash": "e4a03b658fb6c925d733996b1f53ebeed0fdc8ce6780e3ce6f8bf0ae20bf125a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-23T07:26:58.507965+00:00",
+            "contentHash": "8853b97b333f22b8faa2a8c1b49e1272577f0b02a772373d9c052f786765fc77"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "短测地线极小性",
+          "workSummary": "研究酉群商齐性空间上由酉不变范数诱导的 Finsler 商度量及其短曲线。",
+          "techniques": [
+            "最小提升",
+            "酉不变及 Ad 不变范数",
+            "沿单参数子群的距离凸性"
+          ],
+          "breakthrough": "在指定 π/2 短程条件下证明单参数群投影的长度极小，并推广到 SU(n) 的可能非对称 Ad 不变 Finsler 范数。",
+          "limitations": "有范数归一化、最小提升和短程阈值要求；不是全部长测地线均全局极小，也不自动给出任意范数下唯一性。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Claude 协助草拟编辑、对照原文检查参考文献，并为部分辅助结果（如 Proposition 4.3）建议论证，作者逐一核验。该说明不等同于将整篇核心方法归给 AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.31535v1 · PDF 第 8 页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-23T07:14:32.698293+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.31535v1",
+            "contentHash": "385922f2cb740628627982a9dd3f96be93a44d991b87696521e6c8bc8b21bcbb",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Claude 协助草拟编辑、对照原文检查参考文献，并为部分辅助结果（如 Proposition 4.3）建议论证，作者逐一核验。该说明不等同于将整篇核心方法归给 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c6fa160f0402c52ebe58d16402d36383210f7ce6dc862447e3ea9a7a6f8726f6"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 75,
+          "priorityReason": "统一多种矩阵范数下的齐性几何极小曲线。"
+        },
+        "analysisBasis": {
+          "abstract": "Let A be a unital *-subalgebra of $M_n(C)$ and let $M = U(n)/U(A)$, with the quotient Finsler metric induced by a unitarily invariant norm on $u(n)$, normalized so that $||iP|| = 1$ for rank-one projections $P$. This family contains the unitary orbits of Hermitian matrices, in particular flag manifolds and Grassmann manifolds. We prove that if $z_0$ is a minimal lifting of a tangent vector $X$ with $||X||_{\\infty} < \\pi/2$, then the one-parameter group $t \\mapsto e^{t z_0}\\cdot o$ has minimal length among all piecewise smooth curves in $M$ joining its endpoints. The same holds in manifolds $N=SU(n)/(SU(n) \\cap A)$ for every Ad-invariant Finsler norm on $su(n)$, not necessarily symmetric (i.e. the unit sphere does not need to be balanced). The proof relies on the convexity of the distance from the identity along geodesic segments, valid for all these norms. We also prove that the ball of radius $\\pi/2$ around the identity, for the spectral norm, is convex along one-parameter segments. This extends known results for the p-Schatten norms with p even, and gives a new proof for the operator norm, where the result is due to Duran, Mata-Lorenzo and Recht.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
