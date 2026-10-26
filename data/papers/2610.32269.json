@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.32269",
+  "slug": "2610.32269",
+  "latest": {
+    "arxivId": "2610.32269",
+    "metadata": {
+      "title": "Conway polynomials of $Th(p,q)$ and $Th(q,p)$: a proof of Takemura's conjecture",
+      "authors": [
+        "Werner Alois Stanggassinger"
+      ],
+      "abstract": "Takemura conjectured that the Conway polynomials $\\sum a_\\ell z^\\ell$ of the Turk's head link $Th(p,q)$ and $\\sum b_\\ell z^\\ell$ of $Th(q,p)$ satisfy $a_\\ell=b_\\ell$ for $\\ell\\equiv0,1\\pmod 4$ and $a_\\ell=-b_\\ell$ for $\\ell\\equiv2,3\\pmod4$, and proved it for $q=2,3$. We prove it for all $p,q\\ge1$, knots and links. Equivalently, $\\nabla_{Th(q,p)}(z)=c\\,\\nabla_{Th(p,q)}(iz)$ with $c=1$ if $\\gcd(p,q)$ is odd and $c=-i$ if it is even. The proof combines a product formula $\\nabla_{Th(p,q)}(z)^2=\\prod_{j=1}^{p-1}\\prod_{k=1}^{q-1}(z^2+2\\cos\\frac{2\\pi k}{q}-2\\cos\\frac{2\\pi j}{p})$, which comes from the reduced Burau representation, with the leading coefficients, read off the Seifert surface of the closed braid.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "7 pages. Scripts and outputs of the checks: this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-23T07:26:23Z",
+      "updatedAt": "2026-10-23T07:26:23Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-26T15:11:33.133776+00:00",
+        "contentHash": "c5e92cd1c205f9b37808210f2f1a8d547d143fed919e7b28de1c008d0fc6de89"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-26T15:38:19.308563+00:00",
+        "contentHash": "ada679405de6a67d964eb655ce537c06858448b0bcc6593420e65e64d1895de8"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "多项式恒等式与猜想证明",
+      "workSummary": "研究 Turk's head links 在交换参数 p、q 后 Conway 多项式系数的模四符号关系。",
+      "techniques": [
+        "约化 Burau 表示",
+        "多项式平方的乘积公式",
+        "Seifert 曲面与首项系数"
+      ],
+      "breakthrough": "将 Takemura 已证的部分参数推进到全部 p,q≥1，兼顾 knots 与 links，并给出替换 z→iz 时的整体相位因子。",
+      "limitations": "平方乘积公式本身不足以决定符号，相位还需首项系数及 gcd 奇偶性；程序核对不能替代这些论证。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露研究问题的选择和方向由本人决定，Claude Code 在合作中发展形式化、算法与证明，并撰写英文正文和 LaTeX、进行文献检查、运行计算及多轮独立代理审阅；原文明确表示证明由 Claude Code 在作者指导下完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.32269v1 · PDF 第 1 页说明与第 6–7 页 Tool use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-26T15:17:34.033437+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.32269v1",
+        "contentHash": "206e630e293dad94129e7b5dabaaf14650040fed0a288328d43502a1abe97a6e",
+        "pages": 7,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露研究问题的选择和方向由本人决定，Claude Code 在合作中发展形式化、算法与证明，并撰写英文正文和 LaTeX、进行文献检查、运行计算及多轮独立代理审阅；原文明确表示证明由 Claude Code 在作者指导下完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8dd8c6dac546372d2d5a6511c553e2bc84b9cc2be01f071c8689a5df8680baa7"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 78,
+      "priorityReason": "对具体链环族给出完整而可计算的恒等式。"
+    },
+    "analysisBasis": {
+      "abstract": "Takemura conjectured that the Conway polynomials $\\sum a_\\ell z^\\ell$ of the Turk's head link $Th(p,q)$ and $\\sum b_\\ell z^\\ell$ of $Th(q,p)$ satisfy $a_\\ell=b_\\ell$ for $\\ell\\equiv0,1\\pmod 4$ and $a_\\ell=-b_\\ell$ for $\\ell\\equiv2,3\\pmod4$, and proved it for $q=2,3$. We prove it for all $p,q\\ge1$, knots and links. Equivalently, $\\nabla_{Th(q,p)}(z)=c\\,\\nabla_{Th(p,q)}(iz)$ with $c=1$ if $\\gcd(p,q)$ is odd and $c=-i$ if it is even. The proof combines a product formula $\\nabla_{Th(p,q)}(z)^2=\\prod_{j=1}^{p-1}\\prod_{k=1}^{q-1}(z^2+2\\cos\\frac{2\\pi k}{q}-2\\cos\\frac{2\\pi j}{p})$, which comes from the reduced Burau representation, with the leading coefficients, read off the Seifert surface of the closed braid.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-26",
+      "entry": {
+        "arxivId": "2610.32269",
+        "metadata": {
+          "title": "Conway polynomials of $Th(p,q)$ and $Th(q,p)$: a proof of Takemura's conjecture",
+          "authors": [
+            "Werner Alois Stanggassinger"
+          ],
+          "abstract": "Takemura conjectured that the Conway polynomials $\\sum a_\\ell z^\\ell$ of the Turk's head link $Th(p,q)$ and $\\sum b_\\ell z^\\ell$ of $Th(q,p)$ satisfy $a_\\ell=b_\\ell$ for $\\ell\\equiv0,1\\pmod 4$ and $a_\\ell=-b_\\ell$ for $\\ell\\equiv2,3\\pmod4$, and proved it for $q=2,3$. We prove it for all $p,q\\ge1$, knots and links. Equivalently, $\\nabla_{Th(q,p)}(z)=c\\,\\nabla_{Th(p,q)}(iz)$ with $c=1$ if $\\gcd(p,q)$ is odd and $c=-i$ if it is even. The proof combines a product formula $\\nabla_{Th(p,q)}(z)^2=\\prod_{j=1}^{p-1}\\prod_{k=1}^{q-1}(z^2+2\\cos\\frac{2\\pi k}{q}-2\\cos\\frac{2\\pi j}{p})$, which comes from the reduced Burau representation, with the leading coefficients, read off the Seifert surface of the closed braid.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "7 pages. Scripts and outputs of the checks: this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-23T07:26:23Z",
+          "updatedAt": "2026-10-23T07:26:23Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-26T15:11:33.133776+00:00",
+            "contentHash": "c5e92cd1c205f9b37808210f2f1a8d547d143fed919e7b28de1c008d0fc6de89"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-26T15:38:19.308563+00:00",
+            "contentHash": "ada679405de6a67d964eb655ce537c06858448b0bcc6593420e65e64d1895de8"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "多项式恒等式与猜想证明",
+          "workSummary": "研究 Turk's head links 在交换参数 p、q 后 Conway 多项式系数的模四符号关系。",
+          "techniques": [
+            "约化 Burau 表示",
+            "多项式平方的乘积公式",
+            "Seifert 曲面与首项系数"
+          ],
+          "breakthrough": "将 Takemura 已证的部分参数推进到全部 p,q≥1，兼顾 knots 与 links，并给出替换 z→iz 时的整体相位因子。",
+          "limitations": "平方乘积公式本身不足以决定符号，相位还需首项系数及 gcd 奇偶性；程序核对不能替代这些论证。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露研究问题的选择和方向由本人决定，Claude Code 在合作中发展形式化、算法与证明，并撰写英文正文和 LaTeX、进行文献检查、运行计算及多轮独立代理审阅；原文明确表示证明由 Claude Code 在作者指导下完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.32269v1 · PDF 第 1 页说明与第 6–7 页 Tool use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-26T15:17:34.033437+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.32269v1",
+            "contentHash": "206e630e293dad94129e7b5dabaaf14650040fed0a288328d43502a1abe97a6e",
+            "pages": 7,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露研究问题的选择和方向由本人决定，Claude Code 在合作中发展形式化、算法与证明，并撰写英文正文和 LaTeX、进行文献检查、运行计算及多轮独立代理审阅；原文明确表示证明由 Claude Code 在作者指导下完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8dd8c6dac546372d2d5a6511c553e2bc84b9cc2be01f071c8689a5df8680baa7"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 78,
+          "priorityReason": "对具体链环族给出完整而可计算的恒等式。"
+        },
+        "analysisBasis": {
+          "abstract": "Takemura conjectured that the Conway polynomials $\\sum a_\\ell z^\\ell$ of the Turk's head link $Th(p,q)$ and $\\sum b_\\ell z^\\ell$ of $Th(q,p)$ satisfy $a_\\ell=b_\\ell$ for $\\ell\\equiv0,1\\pmod 4$ and $a_\\ell=-b_\\ell$ for $\\ell\\equiv2,3\\pmod4$, and proved it for $q=2,3$. We prove it for all $p,q\\ge1$, knots and links. Equivalently, $\\nabla_{Th(q,p)}(z)=c\\,\\nabla_{Th(p,q)}(iz)$ with $c=1$ if $\\gcd(p,q)$ is odd and $c=-i$ if it is even. The proof combines a product formula $\\nabla_{Th(p,q)}(z)^2=\\prod_{j=1}^{p-1}\\prod_{k=1}^{q-1}(z^2+2\\cos\\frac{2\\pi k}{q}-2\\cos\\frac{2\\pi j}{p})$, which comes from the reduced Burau representation, with the leading coefficients, read off the Seifert surface of the closed braid.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

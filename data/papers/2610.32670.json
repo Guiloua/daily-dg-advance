@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.32670",
+  "slug": "2610.32670",
+  "latest": {
+    "arxivId": "2610.32670",
+    "metadata": {
+      "title": "A Linear Lower Bound for Convex Body Chasing in Every $\\ell_p$ Norm",
+      "authors": [
+        "Nicolas Christianson"
+      ],
+      "abstract": "We establish an $\\Omega(d)$ lower bound on the competitive ratio of convex body chasing in $\\mathbb{R}^d$ with $\\ell_p$ movement costs for any $p \\in [1, \\infty)$. Previously, the best known lower bound for general $p$ was $\\Omega(\\max\\{\\sqrt{d}, d^{1-1/p}\\})$, established by Bubeck et al. (2019); a linear lower bound was known only for $p = \\infty$, realized by the standard construction of chasing faces of a hypercube. Our lower bound strictly improves on the prior bound for every fixed $p \\in [1, \\infty)$ and shows that the functional Steiner point algorithm of Sellke (2023) - which has competitive ratio $O(d)$ - is asymptotically optimal for every $\\ell_p$ norm. Our lower bound is based on the recursive construction of Bubeck, Coester, and Rabani (2023) for metrical service systems, which gives a lower bound of $\\Omega(r^2)$ for requests of size $O(r)$ in that setting. We show that requests in their construction, each comprising a set of discrete points in a graph metric, can be mapped to the vertices of convex requests in a $(2r+1)$-dimensional vector space while approximately preserving movement costs up to a factor of $O(r)$, which establishes the lower bound.",
+      "categories": [
+        "cs.DS",
+        "cs.CG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.DS",
+      "version": 1,
+      "submittedAt": "2026-10-23T14:12:52Z",
+      "updatedAt": "2026-10-23T14:12:52Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-26T15:11:21.017452+00:00",
+        "contentHash": "9accb6fc010312a2c7baed4578ec8aa362c76ae0151f78fafb06bc401cc39624"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-26T15:38:31.131361+00:00",
+        "contentHash": "052eef52c7f9c81f8607c5c4a1157c8261d29b42276925a95f413bafe51d4c5c"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "在线几何下界",
+      "workSummary": "研究 R^d 中凸体追逐问题，在 ℓp 移动代价下构造竞争比的线性维数下界。",
+      "techniques": [
+        "对手序列与竞争分析",
+        "离散服务系统的凸几何嵌入",
+        "运动代价失真控制"
+      ],
+      "breakthrough": "对每个 1≤p<∞ 得到 Ω(d) 下界，使已有 O(d) 算法在该渐近意义下最优，补全与 ℓ∞ 已知结果的对应。",
+      "limitations": "这是最坏情形竞争比下界，非平均输入性能；渐近最优不表示已确定每个维数的精确常数或所有范数的一般下界。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确将利用 Bubeck–Coester–Rabani 构造并映射为凸请求这一关键研究路线归给 GPT-6 Pro，且模型写了初稿，作者大幅修改；模型访问资助本身不是使用判定依据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.32670v1 · PDF 第 2–3 页 §1.1 Acknowledgment of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-26T15:18:59.980074+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.32670v1",
+        "contentHash": "6155f778b5109c530f39ae419498576cc578cebe72f2ceb5fb423e14fd7d67ad",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将利用 Bubeck–Coester–Rabani 构造并映射为凸请求这一关键研究路线归给 GPT-6 Pro，且模型写了初稿，作者大幅修改；模型访问资助本身不是使用判定依据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f6b0fe68f2b8491a8c2f7f48fcc2b793074f698cf93ef6bd3d5a57de4b7d461a"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 79,
+      "priorityReason": "几何在线算法中清晰的维数阶改进。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish an $\\Omega(d)$ lower bound on the competitive ratio of convex body chasing in $\\mathbb{R}^d$ with $\\ell_p$ movement costs for any $p \\in [1, \\infty)$. Previously, the best known lower bound for general $p$ was $\\Omega(\\max\\{\\sqrt{d}, d^{1-1/p}\\})$, established by Bubeck et al. (2019); a linear lower bound was known only for $p = \\infty$, realized by the standard construction of chasing faces of a hypercube. Our lower bound strictly improves on the prior bound for every fixed $p \\in [1, \\infty)$ and shows that the functional Steiner point algorithm of Sellke (2023) - which has competitive ratio $O(d)$ - is asymptotically optimal for every $\\ell_p$ norm. Our lower bound is based on the recursive construction of Bubeck, Coester, and Rabani (2023) for metrical service systems, which gives a lower bound of $\\Omega(r^2)$ for requests of size $O(r)$ in that setting. We show that requests in their construction, each comprising a set of discrete points in a graph metric, can be mapped to the vertices of convex requests in a $(2r+1)$-dimensional vector space while approximately preserving movement costs up to a factor of $O(r)$, which establishes the lower bound.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-26",
+      "entry": {
+        "arxivId": "2610.32670",
+        "metadata": {
+          "title": "A Linear Lower Bound for Convex Body Chasing in Every $\\ell_p$ Norm",
+          "authors": [
+            "Nicolas Christianson"
+          ],
+          "abstract": "We establish an $\\Omega(d)$ lower bound on the competitive ratio of convex body chasing in $\\mathbb{R}^d$ with $\\ell_p$ movement costs for any $p \\in [1, \\infty)$. Previously, the best known lower bound for general $p$ was $\\Omega(\\max\\{\\sqrt{d}, d^{1-1/p}\\})$, established by Bubeck et al. (2019); a linear lower bound was known only for $p = \\infty$, realized by the standard construction of chasing faces of a hypercube. Our lower bound strictly improves on the prior bound for every fixed $p \\in [1, \\infty)$ and shows that the functional Steiner point algorithm of Sellke (2023) - which has competitive ratio $O(d)$ - is asymptotically optimal for every $\\ell_p$ norm. Our lower bound is based on the recursive construction of Bubeck, Coester, and Rabani (2023) for metrical service systems, which gives a lower bound of $\\Omega(r^2)$ for requests of size $O(r)$ in that setting. We show that requests in their construction, each comprising a set of discrete points in a graph metric, can be mapped to the vertices of convex requests in a $(2r+1)$-dimensional vector space while approximately preserving movement costs up to a factor of $O(r)$, which establishes the lower bound.",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.DS",
+          "version": 1,
+          "submittedAt": "2026-10-23T14:12:52Z",
+          "updatedAt": "2026-10-23T14:12:52Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-26T15:11:21.017452+00:00",
+            "contentHash": "9accb6fc010312a2c7baed4578ec8aa362c76ae0151f78fafb06bc401cc39624"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-26T15:38:31.131361+00:00",
+            "contentHash": "052eef52c7f9c81f8607c5c4a1157c8261d29b42276925a95f413bafe51d4c5c"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "在线几何下界",
+          "workSummary": "研究 R^d 中凸体追逐问题，在 ℓp 移动代价下构造竞争比的线性维数下界。",
+          "techniques": [
+            "对手序列与竞争分析",
+            "离散服务系统的凸几何嵌入",
+            "运动代价失真控制"
+          ],
+          "breakthrough": "对每个 1≤p<∞ 得到 Ω(d) 下界，使已有 O(d) 算法在该渐近意义下最优，补全与 ℓ∞ 已知结果的对应。",
+          "limitations": "这是最坏情形竞争比下界，非平均输入性能；渐近最优不表示已确定每个维数的精确常数或所有范数的一般下界。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确将利用 Bubeck–Coester–Rabani 构造并映射为凸请求这一关键研究路线归给 GPT-6 Pro，且模型写了初稿，作者大幅修改；模型访问资助本身不是使用判定依据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.32670v1 · PDF 第 2–3 页 §1.1 Acknowledgment of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-26T15:18:59.980074+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.32670v1",
+            "contentHash": "6155f778b5109c530f39ae419498576cc578cebe72f2ceb5fb423e14fd7d67ad",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将利用 Bubeck–Coester–Rabani 构造并映射为凸请求这一关键研究路线归给 GPT-6 Pro，且模型写了初稿，作者大幅修改；模型访问资助本身不是使用判定依据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f6b0fe68f2b8491a8c2f7f48fcc2b793074f698cf93ef6bd3d5a57de4b7d461a"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 79,
+          "priorityReason": "几何在线算法中清晰的维数阶改进。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish an $\\Omega(d)$ lower bound on the competitive ratio of convex body chasing in $\\mathbb{R}^d$ with $\\ell_p$ movement costs for any $p \\in [1, \\infty)$. Previously, the best known lower bound for general $p$ was $\\Omega(\\max\\{\\sqrt{d}, d^{1-1/p}\\})$, established by Bubeck et al. (2019); a linear lower bound was known only for $p = \\infty$, realized by the standard construction of chasing faces of a hypercube. Our lower bound strictly improves on the prior bound for every fixed $p \\in [1, \\infty)$ and shows that the functional Steiner point algorithm of Sellke (2023) - which has competitive ratio $O(d)$ - is asymptotically optimal for every $\\ell_p$ norm. Our lower bound is based on the recursive construction of Bubeck, Coester, and Rabani (2023) for metrical service systems, which gives a lower bound of $\\Omega(r^2)$ for requests of size $O(r)$ in that setting. We show that requests in their construction, each comprising a set of discrete points in a graph metric, can be mapped to the vertices of convex requests in a $(2r+1)$-dimensional vector space while approximately preserving movement costs up to a factor of $O(r)$, which establishes the lower bound.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
