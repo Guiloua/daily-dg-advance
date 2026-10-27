@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35000",
+  "slug": "2610.35000",
+  "latest": {
+    "arxivId": "2610.35000",
+    "metadata": {
+      "title": "Genus Increase in Closed Mean Curvature Flows",
+      "authors": [
+        "Jingwen Chen"
+      ],
+      "abstract": "We construct counterexamples to Ilmanen's genus-reduction conjecture for closed mean curvature flows. We prove that a compact hypersurface with a single isolated conical singularity and a power rate of convergence to its cone admits a mean curvature flow whose forward rescaled limit is a prescribed expander smoothly asymptotic to that cone. Combining this theorem with closed mean curvature flows with prescribed tangent flows ( arXiv:2405.15577 , arXiv:2607.23879 ) and the noncompact counterexample ( arXiv:2605.09657 ) gives the desired examples.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "18 pages, comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-26T08:13:12Z",
+      "updatedAt": "2026-10-26T08:13:12Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:12.951755+00:00",
+        "contentHash": "9beeeedfeca2e94346c969f18819d1cd912ecd2079b0feed4ff9ccaabef2a76a"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "闭平均曲率流的亏格增加反例",
+      "workSummary": "已核对 Theorems 1.1–1.2 与 Corollary 1.3：对 n≥2 的紧超曲面，除原点外光滑嵌入无边界，锥的 link 为光滑紧嵌入超曲面，并在原点附近为锥上法图且全阶导数满足 |∇^j h|≤C_j r^{1+α₀−j}、α₀>0。给定连通、完整、properly embedded 且以重数一光滑渐近同锥的 expander E，可构造正时刻光滑闭嵌入流，其向前抛物重标度极限为 √tE。结合既有指定 AC shrinker Σ 的入射闭流，可拼成仅在 (0,0) 奇异的 integral Brakke 流；n=2 时为 Bamler–Kleiner 意义的 almost regular 流，且奇点两侧亏格差恰为 genus(E)−genus(Σ)。据此一个固定的光滑连通闭初始曲面具有任意大亏格增加的不同延拓。",
+      "techniques": [
+        "锥上内外法图拼接与加权抛物范数",
+        "expander 稳定算子的离散谱分解",
+        "全局右逆构造及截断误差估计",
+        "收缩映射",
+        "面积连续性、matching motion 与 almost regularity",
+        "固定外部曲面及 Euler 示性数的亏格比较"
+      ],
+      "breakthrough": "将同一个闭流的孤立锥奇点延拓到任意指定同锥 expander，精确实现局部模型差所决定的亏格增加。闭例子的结论比仅非紧流更强，同时明确落在 almost regular integral Brakke 延拓类别。",
+      "limitations": "已读 PDF 第 1–5、13–17 页，核对定理、证明路线、入射流幂率继承、弱拼接及 almost regularity 和亏格比较，未逐步核验全部线性逆估计或被引用论文。反例属于非唯一的 almost regular integral Brakke 延拓，不是声称 level set、最内或最外流的亏格增加；正文第 2 页明确回顾这些更受限流的亏格不增结果。初始锥渐近要求全阶幂率，E 需连通且重数一；没有假设 expander 非退化。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确在使用 AI 之前已提出指定 expander 产生亏格增加、拼接缩放 expander、扰动论证的主要思想和策略；谱分解及收缩映射也注明来自已有学者工作。ChatGPT 6 Pro 主要协助把内外逆拼成全局右逆并估计截断误差，还协助草拟、文献检索、计算及查找潜在论证漏洞。因此标 proofs、writing、literature、computation、verification，不将作者既有核心思路或已引用学者的方法记为 AI ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35000v1 · PDF 第 4 页，AI declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:32:55.554130+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35000v1",
+        "contentHash": "b6fc0e49ecb588d935e004a89bc8ed5fdc741ae90d384f15fb590100a764909e",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确在使用 AI 之前已提出指定 expander 产生亏格增加、拼接缩放 expander、扰动论证的主要思想和策略；谱分解及收缩映射也注明来自已有学者工作。ChatGPT 6 Pro 主要协助把内外逆拼成全局右逆并估计截断误差，还协助草拟、文献检索、计算及查找潜在论证漏洞。因此标 proofs、writing、literature、computation、verification，不将作者既有核心思路或已引用学者的方法记为 AI ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "79273afaa0ffa2f901985b8b112f3d096b40402c5099582072b393102355531a"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 100,
+      "priorityReason": "当日最高优先级：重要猜想的闭流反例，应核验流类别、expander 限制、比较时刻及引用依赖。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct counterexamples to Ilmanen's genus-reduction conjecture for closed mean curvature flows. We prove that a compact hypersurface with a single isolated conical singularity and a power rate of convergence to its cone admits a mean curvature flow whose forward rescaled limit is a prescribed expander smoothly asymptotic to that cone. Combining this theorem with closed mean curvature flows with prescribed tangent flows ( arXiv:2405.15577 , arXiv:2607.23879 ) and the noncompact counterexample ( arXiv:2605.09657 ) gives the desired examples.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35000",
+        "metadata": {
+          "title": "Genus Increase in Closed Mean Curvature Flows",
+          "authors": [
+            "Jingwen Chen"
+          ],
+          "abstract": "We construct counterexamples to Ilmanen's genus-reduction conjecture for closed mean curvature flows. We prove that a compact hypersurface with a single isolated conical singularity and a power rate of convergence to its cone admits a mean curvature flow whose forward rescaled limit is a prescribed expander smoothly asymptotic to that cone. Combining this theorem with closed mean curvature flows with prescribed tangent flows ( arXiv:2405.15577 , arXiv:2607.23879 ) and the noncompact counterexample ( arXiv:2605.09657 ) gives the desired examples.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "18 pages, comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-26T08:13:12Z",
+          "updatedAt": "2026-10-26T08:13:12Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:12.951755+00:00",
+            "contentHash": "9beeeedfeca2e94346c969f18819d1cd912ecd2079b0feed4ff9ccaabef2a76a"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "闭平均曲率流的亏格增加反例",
+          "workSummary": "已核对 Theorems 1.1–1.2 与 Corollary 1.3：对 n≥2 的紧超曲面，除原点外光滑嵌入无边界，锥的 link 为光滑紧嵌入超曲面，并在原点附近为锥上法图且全阶导数满足 |∇^j h|≤C_j r^{1+α₀−j}、α₀>0。给定连通、完整、properly embedded 且以重数一光滑渐近同锥的 expander E，可构造正时刻光滑闭嵌入流，其向前抛物重标度极限为 √tE。结合既有指定 AC shrinker Σ 的入射闭流，可拼成仅在 (0,0) 奇异的 integral Brakke 流；n=2 时为 Bamler–Kleiner 意义的 almost regular 流，且奇点两侧亏格差恰为 genus(E)−genus(Σ)。据此一个固定的光滑连通闭初始曲面具有任意大亏格增加的不同延拓。",
+          "techniques": [
+            "锥上内外法图拼接与加权抛物范数",
+            "expander 稳定算子的离散谱分解",
+            "全局右逆构造及截断误差估计",
+            "收缩映射",
+            "面积连续性、matching motion 与 almost regularity",
+            "固定外部曲面及 Euler 示性数的亏格比较"
+          ],
+          "breakthrough": "将同一个闭流的孤立锥奇点延拓到任意指定同锥 expander，精确实现局部模型差所决定的亏格增加。闭例子的结论比仅非紧流更强，同时明确落在 almost regular integral Brakke 延拓类别。",
+          "limitations": "已读 PDF 第 1–5、13–17 页，核对定理、证明路线、入射流幂率继承、弱拼接及 almost regularity 和亏格比较，未逐步核验全部线性逆估计或被引用论文。反例属于非唯一的 almost regular integral Brakke 延拓，不是声称 level set、最内或最外流的亏格增加；正文第 2 页明确回顾这些更受限流的亏格不增结果。初始锥渐近要求全阶幂率，E 需连通且重数一；没有假设 expander 非退化。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确在使用 AI 之前已提出指定 expander 产生亏格增加、拼接缩放 expander、扰动论证的主要思想和策略；谱分解及收缩映射也注明来自已有学者工作。ChatGPT 6 Pro 主要协助把内外逆拼成全局右逆并估计截断误差，还协助草拟、文献检索、计算及查找潜在论证漏洞。因此标 proofs、writing、literature、computation、verification，不将作者既有核心思路或已引用学者的方法记为 AI ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35000v1 · PDF 第 4 页，AI declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:32:55.554130+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35000v1",
+            "contentHash": "b6fc0e49ecb588d935e004a89bc8ed5fdc741ae90d384f15fb590100a764909e",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确在使用 AI 之前已提出指定 expander 产生亏格增加、拼接缩放 expander、扰动论证的主要思想和策略；谱分解及收缩映射也注明来自已有学者工作。ChatGPT 6 Pro 主要协助把内外逆拼成全局右逆并估计截断误差，还协助草拟、文献检索、计算及查找潜在论证漏洞。因此标 proofs、writing、literature、computation、verification，不将作者既有核心思路或已引用学者的方法记为 AI ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "79273afaa0ffa2f901985b8b112f3d096b40402c5099582072b393102355531a"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 100,
+          "priorityReason": "当日最高优先级：重要猜想的闭流反例，应核验流类别、expander 限制、比较时刻及引用依赖。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct counterexamples to Ilmanen's genus-reduction conjecture for closed mean curvature flows. We prove that a compact hypersurface with a single isolated conical singularity and a power rate of convergence to its cone admits a mean curvature flow whose forward rescaled limit is a prescribed expander smoothly asymptotic to that cone. Combining this theorem with closed mean curvature flows with prescribed tangent flows ( arXiv:2405.15577 , arXiv:2607.23879 ) and the noncompact counterexample ( arXiv:2605.09657 ) gives the desired examples.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

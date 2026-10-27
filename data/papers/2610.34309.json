@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34309",
+  "slug": "2610.34309",
+  "latest": {
+    "arxivId": "2610.34309",
+    "metadata": {
+      "title": "Beyond Brown's radial tests: admissibility, parabolicity, and a doubling-Poincaré prior that neither test decides",
+      "authors": [
+        "Oleg Roshka"
+      ],
+      "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $\\delta_F$ is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
+      "categories": [
+        "math.ST",
+        "math.DG",
+        "math.PR"
+      ],
+      "primaryCategory": "math.ST",
+      "comment": "19 pages, 8 figures",
+      "version": 1,
+      "submittedAt": "2026-10-25T14:22:58Z",
+      "updatedAt": "2026-10-25T14:22:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.849694+00:00",
+        "contentHash": "13fc5c6e4e547351d44297ad30265963ee6b854a4375ce4bc69242ddc5994247"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "加权抛物性判据与统计反例",
+      "workSummary": "把 Brown 的正态均值二次损失可容许性理论解释为加权空间 (R^m,f*dx) 上扩散的常返性。倍增且支持尺度不变 Poincaré 不等式时，常返、Brown 球面判据与球体积判据等价；仍有 R³ 先验使原球面及射线测试均不判定，却由体积判据知暂留。在该类别之外，分别用非球面穷竭通量界和乘积热核构造可容许与不可容许例子，并证明对数 Lipschitz 正权与先验边缘密度双边可比。",
+      "techniques": [
+        "倍增与尺度不变 Poincaré",
+        "加权扩散及体积增长",
+        "非球面穷竭的通量界",
+        "乘积热核"
+      ],
+      "breakthrough": "精确揭示现代加权流形势理论能够在哪一侧补足 Brown 原有测试，并把权空间例子实现为先验。",
+      "limitations": "类内等价是对常返条件的刻画，不表示原球面测试单独判定所有暂留例；类别外的双侧例子不能反推到倍增–Poincaré 类内。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露与模型协作：Claude/Claude Code 阅读来源、建立并测试第四和第五节构造、写数值脚本和草拟正文；Gemini 与作者共同发展的思路产生 Theorem 3.4 的柱形权及 Section 5.1 的首个相干候选，其失败导向格点构造。因此包含具体核心构造的 ideas、构造论证 proofs、来源 literature、计算 computation、测试 verification、探索 exploration 和 writing。末句由作者自行核对全部陈述，不误记为模型独立保证正确性。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34309v1 · PDF 第 16–17 页，Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:28:23.572414+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34309v1",
+        "contentHash": "db802ac86ae862c1af39c84c31239d3f78e9d00081708648b357287593f41dbf",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露与模型协作：Claude/Claude Code 阅读来源、建立并测试第四和第五节构造、写数值脚本和草拟正文；Gemini 与作者共同发展的思路产生 Theorem 3.4 的柱形权及 Section 5.1 的首个相干候选，其失败导向格点构造。因此包含具体核心构造的 ideas、构造论证 proofs、来源 literature、计算 computation、测试 verification、探索 exploration 和 writing。末句由作者自行核对全部陈述，不误记为模型独立保证正确性。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6912dae663af278b0badc8dabad2a5296f24c0a9ed793bb0d06729338b230b94"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 70,
+      "priorityReason": "与热核和抛物性直接相关，是度量测度分析向统计迁移的实例。"
+    },
+    "analysisBasis": {
+      "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $\\delta_F$ is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34309",
+        "metadata": {
+          "title": "Beyond Brown's radial tests: admissibility, parabolicity, and a doubling-Poincaré prior that neither test decides",
+          "authors": [
+            "Oleg Roshka"
+          ],
+          "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $\\delta_F$ is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
+          "categories": [
+            "math.ST",
+            "math.DG",
+            "math.PR"
+          ],
+          "primaryCategory": "math.ST",
+          "comment": "19 pages, 8 figures",
+          "version": 1,
+          "submittedAt": "2026-10-25T14:22:58Z",
+          "updatedAt": "2026-10-25T14:22:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.849694+00:00",
+            "contentHash": "13fc5c6e4e547351d44297ad30265963ee6b854a4375ce4bc69242ddc5994247"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "加权抛物性判据与统计反例",
+          "workSummary": "把 Brown 的正态均值二次损失可容许性理论解释为加权空间 (R^m,f*dx) 上扩散的常返性。倍增且支持尺度不变 Poincaré 不等式时，常返、Brown 球面判据与球体积判据等价；仍有 R³ 先验使原球面及射线测试均不判定，却由体积判据知暂留。在该类别之外，分别用非球面穷竭通量界和乘积热核构造可容许与不可容许例子，并证明对数 Lipschitz 正权与先验边缘密度双边可比。",
+          "techniques": [
+            "倍增与尺度不变 Poincaré",
+            "加权扩散及体积增长",
+            "非球面穷竭的通量界",
+            "乘积热核"
+          ],
+          "breakthrough": "精确揭示现代加权流形势理论能够在哪一侧补足 Brown 原有测试，并把权空间例子实现为先验。",
+          "limitations": "类内等价是对常返条件的刻画，不表示原球面测试单独判定所有暂留例；类别外的双侧例子不能反推到倍增–Poincaré 类内。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露与模型协作：Claude/Claude Code 阅读来源、建立并测试第四和第五节构造、写数值脚本和草拟正文；Gemini 与作者共同发展的思路产生 Theorem 3.4 的柱形权及 Section 5.1 的首个相干候选，其失败导向格点构造。因此包含具体核心构造的 ideas、构造论证 proofs、来源 literature、计算 computation、测试 verification、探索 exploration 和 writing。末句由作者自行核对全部陈述，不误记为模型独立保证正确性。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34309v1 · PDF 第 16–17 页，Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:28:23.572414+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34309v1",
+            "contentHash": "db802ac86ae862c1af39c84c31239d3f78e9d00081708648b357287593f41dbf",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露与模型协作：Claude/Claude Code 阅读来源、建立并测试第四和第五节构造、写数值脚本和草拟正文；Gemini 与作者共同发展的思路产生 Theorem 3.4 的柱形权及 Section 5.1 的首个相干候选，其失败导向格点构造。因此包含具体核心构造的 ideas、构造论证 proofs、来源 literature、计算 computation、测试 verification、探索 exploration 和 writing。末句由作者自行核对全部陈述，不误记为模型独立保证正确性。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6912dae663af278b0badc8dabad2a5296f24c0a9ed793bb0d06729338b230b94"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 70,
+          "priorityReason": "与热核和抛物性直接相关，是度量测度分析向统计迁移的实例。"
+        },
+        "analysisBasis": {
+          "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $\\delta_F$ is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

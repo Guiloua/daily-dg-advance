@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33721",
+  "slug": "2610.33721",
+  "latest": {
+    "arxivId": "2610.33721",
+    "metadata": {
+      "title": "Multi-marginal optimal transport on sub-Riemannian manifolds",
+      "authors": [
+        "Haowei Lin"
+      ],
+      "abstract": "In this paper, we study multi-marginal optimal transport on ideal sub-Riemannian manifolds. We establish a sub-Riemannian barycentric balance condition and prove the existence of a solution to the Monge problem under an additional assumption. We also investigate the absolute continuity of Wasserstein barycenters. Our results extend and improve upon those of Pass, Pinamonti, and Vedovato (Methods Appl. Anal. 28 (2021), 61-76) on the Heisenberg group, answering two open questions raised in their work.",
+      "categories": [
+        "math.DG",
+        "math.MG",
+        "math.OC"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "21 pages",
+      "version": 1,
+      "submittedAt": "2026-10-24T15:07:36Z",
+      "updatedAt": "2026-10-24T15:07:36Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33721v1",
+        "observedAt": "2026-10-27T07:21:02.326267+00:00",
+        "contentHash": "192fd40b552597fb2031f1aee6febfb623b702ef8b10c201d81abc50e04db164"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.703363+00:00",
+        "contentHash": "08d01d7431340233edbf2fb595395de7182f7619ceb4f7fd2317ccd57af6cbb7"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "最优运输推广",
+      "workSummary": "在 ideal 亚黎曼流形上，以平方距离和的重心成本研究多边际运输。定理 4.4 在第一边际紧支撑且绝对连续、其余紧支撑及条件 A 下给出 Monge 解；A 要求每个边际不给支持点组重心集合 B 赋质量。定理 5.4/5.5 将条件放宽为 B：各边际在 B 上的奇异质量集中于同一个至多可数集合，从而得到 Wasserstein 重心绝对连续及 Monge 解几乎处处唯一。",
+      "techniques": [
+        "亚黎曼重心平衡条件",
+        "多边际最优运输与 Monge 表示",
+        "Wasserstein 重心绝对连续性分析"
+      ],
+      "breakthrough": "关键改进是仅要求第一边际绝对连续，并在条件 B 下容许特定静止坐标；第 4.2 节还给出重心映射单射失效的反例。此处的附加条件已由正文具体化，不是无条件推广到全部亚黎曼空间。",
+      "limitations": "补读第 1–4、11、18–21 页，核对 A/B 和对应结论及 AI 声明，渲染查看第 18 页。ideal 假设、紧支撑与条件 B 均须保留；未独立验证控制论重心刻画及全部输运正则性证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者先明确论文证明策略由本人发展，再披露 ChatGPT 构造第 4.2 节两个反例，促使作者放弃去掉 ideality 假设建立平衡条件的路线；ChatGPT 还给出定理 4.1 的证明，并用于语言编辑及证明核查。这有明确指向核心反例、路线调整和指定证明的贡献，应与作者原创总体策略区分。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33721v1 · PDF 第 20–21 页 Use of AI declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:21:02.326267+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33721v1",
+        "contentHash": "192fd40b552597fb2031f1aee6febfb623b702ef8b10c201d81abc50e04db164",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先明确论文证明策略由本人发展，再披露 ChatGPT 构造第 4.2 节两个反例，促使作者放弃去掉 ideality 假设建立平衡条件的路线；ChatGPT 还给出定理 4.1 的证明，并用于语言编辑及证明核查。这有明确指向核心反例、路线调整和指定证明的贡献，应与作者原创总体策略区分。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5446d4b985c35621091a9af4c5e99c94068a1aecdda5e27401d61df8c8bffec4"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "直接涉及度量测度几何与最优运输，值得精读适用假设及异常测地线相关输入。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we study multi-marginal optimal transport on ideal sub-Riemannian manifolds. We establish a sub-Riemannian barycentric balance condition and prove the existence of a solution to the Monge problem under an additional assumption. We also investigate the absolute continuity of Wasserstein barycenters. Our results extend and improve upon those of Pass, Pinamonti, and Vedovato (Methods Appl. Anal. 28 (2021), 61-76) on the Heisenberg group, answering two open questions raised in their work.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33721",
+        "metadata": {
+          "title": "Multi-marginal optimal transport on sub-Riemannian manifolds",
+          "authors": [
+            "Haowei Lin"
+          ],
+          "abstract": "In this paper, we study multi-marginal optimal transport on ideal sub-Riemannian manifolds. We establish a sub-Riemannian barycentric balance condition and prove the existence of a solution to the Monge problem under an additional assumption. We also investigate the absolute continuity of Wasserstein barycenters. Our results extend and improve upon those of Pass, Pinamonti, and Vedovato (Methods Appl. Anal. 28 (2021), 61-76) on the Heisenberg group, answering two open questions raised in their work.",
+          "categories": [
+            "math.DG",
+            "math.MG",
+            "math.OC"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "21 pages",
+          "version": 1,
+          "submittedAt": "2026-10-24T15:07:36Z",
+          "updatedAt": "2026-10-24T15:07:36Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33721v1",
+            "observedAt": "2026-10-27T07:21:02.326267+00:00",
+            "contentHash": "192fd40b552597fb2031f1aee6febfb623b702ef8b10c201d81abc50e04db164"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.703363+00:00",
+            "contentHash": "08d01d7431340233edbf2fb595395de7182f7619ceb4f7fd2317ccd57af6cbb7"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "最优运输推广",
+          "workSummary": "在 ideal 亚黎曼流形上，以平方距离和的重心成本研究多边际运输。定理 4.4 在第一边际紧支撑且绝对连续、其余紧支撑及条件 A 下给出 Monge 解；A 要求每个边际不给支持点组重心集合 B 赋质量。定理 5.4/5.5 将条件放宽为 B：各边际在 B 上的奇异质量集中于同一个至多可数集合，从而得到 Wasserstein 重心绝对连续及 Monge 解几乎处处唯一。",
+          "techniques": [
+            "亚黎曼重心平衡条件",
+            "多边际最优运输与 Monge 表示",
+            "Wasserstein 重心绝对连续性分析"
+          ],
+          "breakthrough": "关键改进是仅要求第一边际绝对连续，并在条件 B 下容许特定静止坐标；第 4.2 节还给出重心映射单射失效的反例。此处的附加条件已由正文具体化，不是无条件推广到全部亚黎曼空间。",
+          "limitations": "补读第 1–4、11、18–21 页，核对 A/B 和对应结论及 AI 声明，渲染查看第 18 页。ideal 假设、紧支撑与条件 B 均须保留；未独立验证控制论重心刻画及全部输运正则性证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者先明确论文证明策略由本人发展，再披露 ChatGPT 构造第 4.2 节两个反例，促使作者放弃去掉 ideality 假设建立平衡条件的路线；ChatGPT 还给出定理 4.1 的证明，并用于语言编辑及证明核查。这有明确指向核心反例、路线调整和指定证明的贡献，应与作者原创总体策略区分。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33721v1 · PDF 第 20–21 页 Use of AI declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:21:02.326267+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33721v1",
+            "contentHash": "192fd40b552597fb2031f1aee6febfb623b702ef8b10c201d81abc50e04db164",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先明确论文证明策略由本人发展，再披露 ChatGPT 构造第 4.2 节两个反例，促使作者放弃去掉 ideality 假设建立平衡条件的路线；ChatGPT 还给出定理 4.1 的证明，并用于语言编辑及证明核查。这有明确指向核心反例、路线调整和指定证明的贡献，应与作者原创总体策略区分。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5446d4b985c35621091a9af4c5e99c94068a1aecdda5e27401d61df8c8bffec4"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "直接涉及度量测度几何与最优运输，值得精读适用假设及异常测地线相关输入。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we study multi-marginal optimal transport on ideal sub-Riemannian manifolds. We establish a sub-Riemannian barycentric balance condition and prove the existence of a solution to the Monge problem under an additional assumption. We also investigate the absolute continuity of Wasserstein barycenters. Our results extend and improve upon those of Pass, Pinamonti, and Vedovato (Methods Appl. Anal. 28 (2021), 61-76) on the Heisenberg group, answering two open questions raised in their work.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33216",
+  "slug": "2610.33216",
+  "latest": {
+    "arxivId": "2610.33216",
+    "metadata": {
+      "title": "Absorption probabilities of random walks without symmetry or general position",
+      "authors": [
+        "Artyom Bolotin",
+        "Dmitry Zaporozhets"
+      ],
+      "abstract": "Let $S_1,S_2,\\dots$ be a random walk in $\\mathbb R^d$ with independent identically distributed increments. We show that, for every distribution of the increments and for every $n\\ge1$, \\[ \\mathbb P\\bigl[0\\notin\\mathrm{conv}(S_1,\\dots,S_n)\\bigr] = \\sum_{m=1}^n\\frac1{m!}\\sum_{\\substack{k_1,\\dots,k_m\\ge1\\\\ k_1+\\dots+k_m=n}}\\frac{1}{k_1\\cdots k_m}\\,\\mathbb P\\bigl[0\\notin\\mathrm{conv}(S^{(1)}_{k_1},\\dots,S^{(m)}_{k_m})\\bigr], \\] where $S^{(1)},S^{(2)},\\dots$ are independent copies of the walk. No symmetry, general position or moment assumptions are needed. The result rests on a deterministic identity: for arbitrary vectors $x_1,\\dots,x_n$, the number of orderings for which the convex hull of the partial sums avoids the origin equals the number of permutations for which the convex hull of the cycle sums avoids it. We derive it from a permutation-averaging identity for valuations obtained in our earlier work. Consequences include the identities of Sparre Andersen and Spitzer, the distribution-free absorption probabilities of Kabluchko, Vysotsky and Zaporozhets, their generating function found by Petrov, Randon-Furling and Zaporozhets, and a formula for the probability that the origin is never absorbed.",
+      "categories": [
+        "math.PR",
+        "math.CO",
+        "math.MG"
+      ],
+      "primaryCategory": "math.PR",
+      "version": 1,
+      "submittedAt": "2026-10-23T19:07:40Z",
+      "updatedAt": "2026-10-23T19:07:40Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33216v1",
+        "observedAt": "2026-10-27T07:21:43.368229+00:00",
+        "contentHash": "420553c6b7392bf900bfa4f78df6805d802132667e6ab72822ad96ee6b7d6195"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.700226+00:00",
+        "contentHash": "3802fef6ba8ad155d933eb9562fd7e33a2a60cceee2ebeca44011253eb0e1e2b"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "无分布限制的恒等式",
+      "workSummary": "对 R^d 中具有独立同分布增量的随机游走，作者将前 n 个部分和凸包不含原点的概率，表达为按 n 的有序正整数分拆加权的独立游走终点凸包不含原点概率之和；不要求对称性、一般位置或矩条件。结果来自任意向量的确定性排列恒等式，并统一若干吸收概率与生成函数公式。",
+      "techniques": [
+        "部分和排序与置换循环和的计数对应",
+        "赋值的置换平均恒等式",
+        "按循环长度的概率分解"
+      ],
+      "breakthrough": "在保留增量独立同分布条件下去掉通常的对称、一般位置和矩条件，给出可用于退化分布的统一凸包吸收恒等式。",
+      "limitations": "一般分布下恒等式右端仍依赖分布；不能误读为所有吸收概率均分布无关。确定性恒等式与概率结论的逻辑条件不同，后者仍要求增量独立同分布。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者称本文主要结果是在与 OpenAI Astra 的长期持续讨论中得到，Claude Opus 5.5 协助准备及编辑文本；同时明确证明所依赖的赋值置换平均恒等式早已由第一作者在未用 AI 的本科论文中获得。现有披露未细分某个新定理或核心构造的具体模型贡献，归为数学探索与写作辅助，不能把早期基础恒等式归于 AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33216v1 · PDF 第 8 页 Declaration of generative AI and AI-assisted technologies",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:21:43.368229+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33216v1",
+        "contentHash": "420553c6b7392bf900bfa4f78df6805d802132667e6ab72822ad96ee6b7d6195",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称本文主要结果是在与 OpenAI Astra 的长期持续讨论中得到，Claude Opus 5.5 协助准备及编辑文本；同时明确证明所依赖的赋值置换平均恒等式早已由第一作者在未用 AI 的本科论文中获得。现有披露未细分某个新定理或核心构造的具体模型贡献，归为数学探索与写作辅助，不能把早期基础恒等式归于 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1d7ecf03eb5f7fb53b36eccb564bfbfdf519fd6d2a860205d3e6f1b4b4baa5a4"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 49,
+      "priorityReason": "凸几何与概率的有用交叉工具，但并非当前黎曼比较或几何流的直接进展。",
+      "lowPriorityReason": "凸几何与概率的有用交叉工具，但并非当前黎曼比较或几何流的直接进展。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $S_1,S_2,\\dots$ be a random walk in $\\mathbb R^d$ with independent identically distributed increments. We show that, for every distribution of the increments and for every $n\\ge1$, \\[ \\mathbb P\\bigl[0\\notin\\mathrm{conv}(S_1,\\dots,S_n)\\bigr] = \\sum_{m=1}^n\\frac1{m!}\\sum_{\\substack{k_1,\\dots,k_m\\ge1\\\\ k_1+\\dots+k_m=n}}\\frac{1}{k_1\\cdots k_m}\\,\\mathbb P\\bigl[0\\notin\\mathrm{conv}(S^{(1)}_{k_1},\\dots,S^{(m)}_{k_m})\\bigr], \\] where $S^{(1)},S^{(2)},\\dots$ are independent copies of the walk. No symmetry, general position or moment assumptions are needed. The result rests on a deterministic identity: for arbitrary vectors $x_1,\\dots,x_n$, the number of orderings for which the convex hull of the partial sums avoids the origin equals the number of permutations for which the convex hull of the cycle sums avoids it. We derive it from a permutation-averaging identity for valuations obtained in our earlier work. Consequences include the identities of Sparre Andersen and Spitzer, the distribution-free absorption probabilities of Kabluchko, Vysotsky and Zaporozhets, their generating function found by Petrov, Randon-Furling and Zaporozhets, and a formula for the probability that the origin is never absorbed.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33216",
+        "metadata": {
+          "title": "Absorption probabilities of random walks without symmetry or general position",
+          "authors": [
+            "Artyom Bolotin",
+            "Dmitry Zaporozhets"
+          ],
+          "abstract": "Let $S_1,S_2,\\dots$ be a random walk in $\\mathbb R^d$ with independent identically distributed increments. We show that, for every distribution of the increments and for every $n\\ge1$, \\[ \\mathbb P\\bigl[0\\notin\\mathrm{conv}(S_1,\\dots,S_n)\\bigr] = \\sum_{m=1}^n\\frac1{m!}\\sum_{\\substack{k_1,\\dots,k_m\\ge1\\\\ k_1+\\dots+k_m=n}}\\frac{1}{k_1\\cdots k_m}\\,\\mathbb P\\bigl[0\\notin\\mathrm{conv}(S^{(1)}_{k_1},\\dots,S^{(m)}_{k_m})\\bigr], \\] where $S^{(1)},S^{(2)},\\dots$ are independent copies of the walk. No symmetry, general position or moment assumptions are needed. The result rests on a deterministic identity: for arbitrary vectors $x_1,\\dots,x_n$, the number of orderings for which the convex hull of the partial sums avoids the origin equals the number of permutations for which the convex hull of the cycle sums avoids it. We derive it from a permutation-averaging identity for valuations obtained in our earlier work. Consequences include the identities of Sparre Andersen and Spitzer, the distribution-free absorption probabilities of Kabluchko, Vysotsky and Zaporozhets, their generating function found by Petrov, Randon-Furling and Zaporozhets, and a formula for the probability that the origin is never absorbed.",
+          "categories": [
+            "math.PR",
+            "math.CO",
+            "math.MG"
+          ],
+          "primaryCategory": "math.PR",
+          "version": 1,
+          "submittedAt": "2026-10-23T19:07:40Z",
+          "updatedAt": "2026-10-23T19:07:40Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33216v1",
+            "observedAt": "2026-10-27T07:21:43.368229+00:00",
+            "contentHash": "420553c6b7392bf900bfa4f78df6805d802132667e6ab72822ad96ee6b7d6195"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.700226+00:00",
+            "contentHash": "3802fef6ba8ad155d933eb9562fd7e33a2a60cceee2ebeca44011253eb0e1e2b"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "无分布限制的恒等式",
+          "workSummary": "对 R^d 中具有独立同分布增量的随机游走，作者将前 n 个部分和凸包不含原点的概率，表达为按 n 的有序正整数分拆加权的独立游走终点凸包不含原点概率之和；不要求对称性、一般位置或矩条件。结果来自任意向量的确定性排列恒等式，并统一若干吸收概率与生成函数公式。",
+          "techniques": [
+            "部分和排序与置换循环和的计数对应",
+            "赋值的置换平均恒等式",
+            "按循环长度的概率分解"
+          ],
+          "breakthrough": "在保留增量独立同分布条件下去掉通常的对称、一般位置和矩条件，给出可用于退化分布的统一凸包吸收恒等式。",
+          "limitations": "一般分布下恒等式右端仍依赖分布；不能误读为所有吸收概率均分布无关。确定性恒等式与概率结论的逻辑条件不同，后者仍要求增量独立同分布。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者称本文主要结果是在与 OpenAI Astra 的长期持续讨论中得到，Claude Opus 5.5 协助准备及编辑文本；同时明确证明所依赖的赋值置换平均恒等式早已由第一作者在未用 AI 的本科论文中获得。现有披露未细分某个新定理或核心构造的具体模型贡献，归为数学探索与写作辅助，不能把早期基础恒等式归于 AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33216v1 · PDF 第 8 页 Declaration of generative AI and AI-assisted technologies",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:21:43.368229+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33216v1",
+            "contentHash": "420553c6b7392bf900bfa4f78df6805d802132667e6ab72822ad96ee6b7d6195",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称本文主要结果是在与 OpenAI Astra 的长期持续讨论中得到，Claude Opus 5.5 协助准备及编辑文本；同时明确证明所依赖的赋值置换平均恒等式早已由第一作者在未用 AI 的本科论文中获得。现有披露未细分某个新定理或核心构造的具体模型贡献，归为数学探索与写作辅助，不能把早期基础恒等式归于 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1d7ecf03eb5f7fb53b36eccb564bfbfdf519fd6d2a860205d3e6f1b4b4baa5a4"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 49,
+          "priorityReason": "凸几何与概率的有用交叉工具，但并非当前黎曼比较或几何流的直接进展。",
+          "lowPriorityReason": "凸几何与概率的有用交叉工具，但并非当前黎曼比较或几何流的直接进展。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $S_1,S_2,\\dots$ be a random walk in $\\mathbb R^d$ with independent identically distributed increments. We show that, for every distribution of the increments and for every $n\\ge1$, \\[ \\mathbb P\\bigl[0\\notin\\mathrm{conv}(S_1,\\dots,S_n)\\bigr] = \\sum_{m=1}^n\\frac1{m!}\\sum_{\\substack{k_1,\\dots,k_m\\ge1\\\\ k_1+\\dots+k_m=n}}\\frac{1}{k_1\\cdots k_m}\\,\\mathbb P\\bigl[0\\notin\\mathrm{conv}(S^{(1)}_{k_1},\\dots,S^{(m)}_{k_m})\\bigr], \\] where $S^{(1)},S^{(2)},\\dots$ are independent copies of the walk. No symmetry, general position or moment assumptions are needed. The result rests on a deterministic identity: for arbitrary vectors $x_1,\\dots,x_n$, the number of orderings for which the convex hull of the partial sums avoids the origin equals the number of permutations for which the convex hull of the cycle sums avoids it. We derive it from a permutation-averaging identity for valuations obtained in our earlier work. Consequences include the identities of Sparre Andersen and Spitzer, the distribution-free absorption probabilities of Kabluchko, Vysotsky and Zaporozhets, their generating function found by Petrov, Randon-Furling and Zaporozhets, and a formula for the probability that the origin is never absorbed.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

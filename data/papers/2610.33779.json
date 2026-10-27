@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33779",
+  "slug": "2610.33779",
+  "latest": {
+    "arxivId": "2610.33779",
+    "metadata": {
+      "title": "The Geometry of Limits in ReLU Function Spaces",
+      "authors": [
+        "Kathryn A. Lindsey"
+      ],
+      "abstract": "We study the geometry and closure of spaces of functions realized by ReLU neural networks of fixed architecture. We first establish a general result about limits of continuous piecewise-linear (CPWL) functions: the minimum number of convex sets on which a function is affine is lower semicontinuous under pointwise convergence. The proof uses a connection to hypergraph coloring and a compactness principle, and yields quantitative bounds on the polyhedral complexity of continuous limits. We then characterize the functions realizable by shallow ReLU networks with vector-valued outputs, extending a known scalar-valued characterization. Using this and the geometry of limiting hyperplane arrangements, we prove that fixed-width shallow scalar ReLU realization spaces are closed in the weighted supremum norm on the whole input space. In contrast, we construct an explicit sequence of networks with architecture $(2,3,2\\mid1)$ whose limit is not realizable by that architecture. Non-closedness holds both globally in weighted supremum norm and under uniform convergence on compact sets with nonempty interior, disproving a conjecture of Petersen, Raslan, and Voigtlaender. Finally, we show that non-closedness for a fixed scalar-output ReLU architecture necessarily involves a \\emph{blow-up residue}, in which diverging output coefficients amplify an emerging linear dependence among hidden features. Together, these results provide geometric and functional-analytic tools for studying the boundaries and degenerations of ReLU realization spaces.",
+      "categories": [
+        "math.FA",
+        "cs.LG",
+        "math.GN",
+        "math.MG"
+      ],
+      "primaryCategory": "math.FA",
+      "comment": "37 pages",
+      "version": 1,
+      "submittedAt": "2026-10-24T16:32:56Z",
+      "updatedAt": "2026-10-24T16:32:56Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33779v1",
+        "observedAt": "2026-10-27T07:23:18.338222+00:00",
+        "contentHash": "d526d41cc2ee00153a806e67f9524d7c192386490f36d3db48dc605f6b75d1b2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.703701+00:00",
+        "contentHash": "5593c2851826204c0019bfc22af3c5765551fa6b016e9fa5763a6f2f0a0fbde5"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "闭性分类与反例",
+      "workSummary": "作者证明连续分片线性函数的最小凸仿射分块数在逐点收敛下下半连续，并给出连续极限的多面体复杂度界；刻画向量值浅层 ReLU 可实现函数后，证明固定宽度标量浅层实现空间在全空间加权上确界范数下闭。又构造架构 (2,3,2|1) 的非闭性序列，声称否定一项既有猜想。",
+      "techniques": [
+        "超图染色与紧性原则",
+        "极限超平面排列几何",
+        "隐藏特征线性相关与发散输出系数"
+      ],
+      "breakthrough": "解释固定架构 ReLU 实现空间边界的几何退化机制，并指出标量输出架构的非闭性必伴随发散系数放大新生线性相关的 blow-up residue。",
+      "limitations": "浅层闭性针对特定加权全局范数；反例涉及指定更深架构，且在全局加权范数和有非空内部紧集上的一致收敛中均声称非闭。不可将不同架构和拓扑下结论混用；猜想反例仍需核查。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露长期与 ChatGPT、Claude 进行迭代数学讨论以测试猜想、发展和审查论证、改善表述；特别明确第 6 节反例由 Claude Opus 5.5 在作者指导搜索中发现并解释。作者先指定架构 (2,3,2|1) 并提供第 7 节 blow-up residue 机制，模型随后搜索逾一小时得到反例，故属于具体核心反例贡献，但不能把研究问题、总体方向或该机制本身归于 AI。全部结果与证明由作者核查。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33779v1 · PDF 第 5 页 Acknowledgements 中 AI 使用段落",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:23:18.338222+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33779v1",
+        "contentHash": "d526d41cc2ee00153a806e67f9524d7c192386490f36d3db48dc605f6b75d1b2",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露长期与 ChatGPT、Claude 进行迭代数学讨论以测试猜想、发展和审查论证、改善表述；特别明确第 6 节反例由 Claude Opus 5.5 在作者指导搜索中发现并解释。作者先指定架构 (2,3,2|1) 并提供第 7 节 blow-up residue 机制，模型随后搜索逾一小时得到反例，故属于具体核心反例贡献，但不能把研究问题、总体方向或该机制本身归于 AI。全部结果与证明由作者核查。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ed65bac2b2b837bc5c8056bc784cd613317f0b43d6187028a6b634662e0291b1"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 44,
+      "priorityReason": "具有紧性和退化的概念联系，但主题偏神经网络函数空间，非几何分析主线。",
+      "lowPriorityReason": "具有紧性和退化的概念联系，但主题偏神经网络函数空间，非几何分析主线。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the geometry and closure of spaces of functions realized by ReLU neural networks of fixed architecture. We first establish a general result about limits of continuous piecewise-linear (CPWL) functions: the minimum number of convex sets on which a function is affine is lower semicontinuous under pointwise convergence. The proof uses a connection to hypergraph coloring and a compactness principle, and yields quantitative bounds on the polyhedral complexity of continuous limits. We then characterize the functions realizable by shallow ReLU networks with vector-valued outputs, extending a known scalar-valued characterization. Using this and the geometry of limiting hyperplane arrangements, we prove that fixed-width shallow scalar ReLU realization spaces are closed in the weighted supremum norm on the whole input space. In contrast, we construct an explicit sequence of networks with architecture $(2,3,2\\mid1)$ whose limit is not realizable by that architecture. Non-closedness holds both globally in weighted supremum norm and under uniform convergence on compact sets with nonempty interior, disproving a conjecture of Petersen, Raslan, and Voigtlaender. Finally, we show that non-closedness for a fixed scalar-output ReLU architecture necessarily involves a \\emph{blow-up residue}, in which diverging output coefficients amplify an emerging linear dependence among hidden features. Together, these results provide geometric and functional-analytic tools for studying the boundaries and degenerations of ReLU realization spaces.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33779",
+        "metadata": {
+          "title": "The Geometry of Limits in ReLU Function Spaces",
+          "authors": [
+            "Kathryn A. Lindsey"
+          ],
+          "abstract": "We study the geometry and closure of spaces of functions realized by ReLU neural networks of fixed architecture. We first establish a general result about limits of continuous piecewise-linear (CPWL) functions: the minimum number of convex sets on which a function is affine is lower semicontinuous under pointwise convergence. The proof uses a connection to hypergraph coloring and a compactness principle, and yields quantitative bounds on the polyhedral complexity of continuous limits. We then characterize the functions realizable by shallow ReLU networks with vector-valued outputs, extending a known scalar-valued characterization. Using this and the geometry of limiting hyperplane arrangements, we prove that fixed-width shallow scalar ReLU realization spaces are closed in the weighted supremum norm on the whole input space. In contrast, we construct an explicit sequence of networks with architecture $(2,3,2\\mid1)$ whose limit is not realizable by that architecture. Non-closedness holds both globally in weighted supremum norm and under uniform convergence on compact sets with nonempty interior, disproving a conjecture of Petersen, Raslan, and Voigtlaender. Finally, we show that non-closedness for a fixed scalar-output ReLU architecture necessarily involves a \\emph{blow-up residue}, in which diverging output coefficients amplify an emerging linear dependence among hidden features. Together, these results provide geometric and functional-analytic tools for studying the boundaries and degenerations of ReLU realization spaces.",
+          "categories": [
+            "math.FA",
+            "cs.LG",
+            "math.GN",
+            "math.MG"
+          ],
+          "primaryCategory": "math.FA",
+          "comment": "37 pages",
+          "version": 1,
+          "submittedAt": "2026-10-24T16:32:56Z",
+          "updatedAt": "2026-10-24T16:32:56Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33779v1",
+            "observedAt": "2026-10-27T07:23:18.338222+00:00",
+            "contentHash": "d526d41cc2ee00153a806e67f9524d7c192386490f36d3db48dc605f6b75d1b2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.703701+00:00",
+            "contentHash": "5593c2851826204c0019bfc22af3c5765551fa6b016e9fa5763a6f2f0a0fbde5"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "闭性分类与反例",
+          "workSummary": "作者证明连续分片线性函数的最小凸仿射分块数在逐点收敛下下半连续，并给出连续极限的多面体复杂度界；刻画向量值浅层 ReLU 可实现函数后，证明固定宽度标量浅层实现空间在全空间加权上确界范数下闭。又构造架构 (2,3,2|1) 的非闭性序列，声称否定一项既有猜想。",
+          "techniques": [
+            "超图染色与紧性原则",
+            "极限超平面排列几何",
+            "隐藏特征线性相关与发散输出系数"
+          ],
+          "breakthrough": "解释固定架构 ReLU 实现空间边界的几何退化机制，并指出标量输出架构的非闭性必伴随发散系数放大新生线性相关的 blow-up residue。",
+          "limitations": "浅层闭性针对特定加权全局范数；反例涉及指定更深架构，且在全局加权范数和有非空内部紧集上的一致收敛中均声称非闭。不可将不同架构和拓扑下结论混用；猜想反例仍需核查。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露长期与 ChatGPT、Claude 进行迭代数学讨论以测试猜想、发展和审查论证、改善表述；特别明确第 6 节反例由 Claude Opus 5.5 在作者指导搜索中发现并解释。作者先指定架构 (2,3,2|1) 并提供第 7 节 blow-up residue 机制，模型随后搜索逾一小时得到反例，故属于具体核心反例贡献，但不能把研究问题、总体方向或该机制本身归于 AI。全部结果与证明由作者核查。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33779v1 · PDF 第 5 页 Acknowledgements 中 AI 使用段落",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:23:18.338222+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33779v1",
+            "contentHash": "d526d41cc2ee00153a806e67f9524d7c192386490f36d3db48dc605f6b75d1b2",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露长期与 ChatGPT、Claude 进行迭代数学讨论以测试猜想、发展和审查论证、改善表述；特别明确第 6 节反例由 Claude Opus 5.5 在作者指导搜索中发现并解释。作者先指定架构 (2,3,2|1) 并提供第 7 节 blow-up residue 机制，模型随后搜索逾一小时得到反例，故属于具体核心反例贡献，但不能把研究问题、总体方向或该机制本身归于 AI。全部结果与证明由作者核查。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ed65bac2b2b837bc5c8056bc784cd613317f0b43d6187028a6b634662e0291b1"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 44,
+          "priorityReason": "具有紧性和退化的概念联系，但主题偏神经网络函数空间，非几何分析主线。",
+          "lowPriorityReason": "具有紧性和退化的概念联系，但主题偏神经网络函数空间，非几何分析主线。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the geometry and closure of spaces of functions realized by ReLU neural networks of fixed architecture. We first establish a general result about limits of continuous piecewise-linear (CPWL) functions: the minimum number of convex sets on which a function is affine is lower semicontinuous under pointwise convergence. The proof uses a connection to hypergraph coloring and a compactness principle, and yields quantitative bounds on the polyhedral complexity of continuous limits. We then characterize the functions realizable by shallow ReLU networks with vector-valued outputs, extending a known scalar-valued characterization. Using this and the geometry of limiting hyperplane arrangements, we prove that fixed-width shallow scalar ReLU realization spaces are closed in the weighted supremum norm on the whole input space. In contrast, we construct an explicit sequence of networks with architecture $(2,3,2\\mid1)$ whose limit is not realizable by that architecture. Non-closedness holds both globally in weighted supremum norm and under uniform convergence on compact sets with nonempty interior, disproving a conjecture of Petersen, Raslan, and Voigtlaender. Finally, we show that non-closedness for a fixed scalar-output ReLU architecture necessarily involves a \\emph{blow-up residue}, in which diverging output coefficients amplify an emerging linear dependence among hidden features. Together, these results provide geometric and functional-analytic tools for studying the boundaries and degenerations of ReLU realization spaces.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

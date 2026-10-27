@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35305",
+  "slug": "2610.35305",
+  "latest": {
+    "arxivId": "2610.35305",
+    "metadata": {
+      "title": "Knot Floer complexes of generalized L-space knots",
+      "authors": [
+        "Shengyu Zou"
+      ],
+      "abstract": "In this paper, we study height 4 knots, which generalize L-space knots and almost L-space knots studied by Ozsváth--Szabó, Baldwin--Sivek, and Binns. A knot $K\\subset S^3$ is called a height $m$ knot if $\\operatorname{rank} \\widehat{HF}(S^3_n(K))-n=m$ for all integers $n\\geq 2g(K)-1$, where $\\widehat{HF}$ is the hat version of Heegaard Floer homology introduced by Ozsváth--Szabó. In particular, height 0 and height 2 knots are exactly L-space knots and almost L-space knots, respectively. We prove that the knot Floer complex $CFK^\\infty(S^3,K)$ of a height 4 knot $K$ admits a basis that is horizontally and vertically simplified--an hv-basis for short. Moreover, we show that under such an hv-basis, the horizontal and vertical differentials fall into six cases, generalizing the results for L-space knots and almost L-space knots. The hv-basis of the knot Floer complex of $K$ can determine, via an explicit algorithm, the immersed curve of Hanselman-Rasmussen-Watson for the knot complement of $K$. Consequently, our results facilitate further exploration of computations of $\\widehat{HF}$ for the gluing of two height 4 knot complements.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "89 pages, 122 figures, 26 tables. Most figures depict subquotient complexes by displaying their generators and differentials",
+      "version": 1,
+      "submittedAt": "2026-10-26T12:10:29Z",
+      "updatedAt": "2026-10-26T12:10:29Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-27T07:16:02.941181+00:00",
+        "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:24.827948+00:00",
+        "contentHash": "294cfe023b2922a96ceba99f3887545f7a22c0ef42c8cd99e855c7859d9d21be"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "结 Floer 复形的结构分类",
+      "workSummary": "对满足所有整数 n≥2g(K)−1 时 rank ĤF(S³_n(K))−n=4 的高度 4 结，证明其 CFK∞ 存在同时水平、竖直简化的 hv 基。作者将该基下的水平和竖直微分分成六种情形，并给出从 hv 基求结补空间 Hanselman–Rasmussen–Watson 浸入曲线的显式算法。",
+      "techniques": [
+        "Heegaard Floer 大手术秩条件",
+        "结 Floer 复形 hv 基",
+        "浸入曲线算法"
+      ],
+      "breakthrough": "把 L-space 结与 almost L-space 结的既有结构描述推进到高度 4，为两个此类结补空间拼接后的 ĤF 计算提供工具。",
+      "limitations": "六种情形描述的是所述基下的水平、竖直微分；摘要没有声称分类所有高度 4 结，也没有直接给出所有拼接的同调结果。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Tool Use 明确披露 ChatGPT (OpenAI) 交互辅助英文编辑、LaTeX 排版及 TikZ 图的准备修订；作者自行检查数学陈述与证明并负责。故只标记写作/制图，不把作者自己的核验记为 AI 核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35305v1 · PDF 第 89 页 Tool Use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:34:54.575379+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35305v1",
+        "contentHash": "3dd8d1af92da21648d64089b156ba51c5345370b9a8c9b7a530c4b10279eec0e",
+        "pages": 89,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool Use 明确披露 ChatGPT (OpenAI) 交互辅助英文编辑、LaTeX 排版及 TikZ 图的准备修订；作者自行检查数学陈述与证明并负责。故只标记写作/制图，不把作者自己的核验记为 AI 核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "965e4677eaa7cf8260b606e6ed13c8f747105e37af810d3b8c63ce7467f70abe"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 48,
+      "priorityReason": "低维拓扑中的详细结构与算法工作，但偏离曲率和几何 PDE 主线。",
+      "lowPriorityReason": "低维拓扑中的详细结构与算法工作，但偏离曲率和几何 PDE 主线。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we study height 4 knots, which generalize L-space knots and almost L-space knots studied by Ozsváth--Szabó, Baldwin--Sivek, and Binns. A knot $K\\subset S^3$ is called a height $m$ knot if $\\operatorname{rank} \\widehat{HF}(S^3_n(K))-n=m$ for all integers $n\\geq 2g(K)-1$, where $\\widehat{HF}$ is the hat version of Heegaard Floer homology introduced by Ozsváth--Szabó. In particular, height 0 and height 2 knots are exactly L-space knots and almost L-space knots, respectively. We prove that the knot Floer complex $CFK^\\infty(S^3,K)$ of a height 4 knot $K$ admits a basis that is horizontally and vertically simplified--an hv-basis for short. Moreover, we show that under such an hv-basis, the horizontal and vertical differentials fall into six cases, generalizing the results for L-space knots and almost L-space knots. The hv-basis of the knot Floer complex of $K$ can determine, via an explicit algorithm, the immersed curve of Hanselman-Rasmussen-Watson for the knot complement of $K$. Consequently, our results facilitate further exploration of computations of $\\widehat{HF}$ for the gluing of two height 4 knot complements.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35305",
+        "metadata": {
+          "title": "Knot Floer complexes of generalized L-space knots",
+          "authors": [
+            "Shengyu Zou"
+          ],
+          "abstract": "In this paper, we study height 4 knots, which generalize L-space knots and almost L-space knots studied by Ozsváth--Szabó, Baldwin--Sivek, and Binns. A knot $K\\subset S^3$ is called a height $m$ knot if $\\operatorname{rank} \\widehat{HF}(S^3_n(K))-n=m$ for all integers $n\\geq 2g(K)-1$, where $\\widehat{HF}$ is the hat version of Heegaard Floer homology introduced by Ozsváth--Szabó. In particular, height 0 and height 2 knots are exactly L-space knots and almost L-space knots, respectively. We prove that the knot Floer complex $CFK^\\infty(S^3,K)$ of a height 4 knot $K$ admits a basis that is horizontally and vertically simplified--an hv-basis for short. Moreover, we show that under such an hv-basis, the horizontal and vertical differentials fall into six cases, generalizing the results for L-space knots and almost L-space knots. The hv-basis of the knot Floer complex of $K$ can determine, via an explicit algorithm, the immersed curve of Hanselman-Rasmussen-Watson for the knot complement of $K$. Consequently, our results facilitate further exploration of computations of $\\widehat{HF}$ for the gluing of two height 4 knot complements.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "89 pages, 122 figures, 26 tables. Most figures depict subquotient complexes by displaying their generators and differentials",
+          "version": 1,
+          "submittedAt": "2026-10-26T12:10:29Z",
+          "updatedAt": "2026-10-26T12:10:29Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-27T07:16:02.941181+00:00",
+            "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:24.827948+00:00",
+            "contentHash": "294cfe023b2922a96ceba99f3887545f7a22c0ef42c8cd99e855c7859d9d21be"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "结 Floer 复形的结构分类",
+          "workSummary": "对满足所有整数 n≥2g(K)−1 时 rank ĤF(S³_n(K))−n=4 的高度 4 结，证明其 CFK∞ 存在同时水平、竖直简化的 hv 基。作者将该基下的水平和竖直微分分成六种情形，并给出从 hv 基求结补空间 Hanselman–Rasmussen–Watson 浸入曲线的显式算法。",
+          "techniques": [
+            "Heegaard Floer 大手术秩条件",
+            "结 Floer 复形 hv 基",
+            "浸入曲线算法"
+          ],
+          "breakthrough": "把 L-space 结与 almost L-space 结的既有结构描述推进到高度 4，为两个此类结补空间拼接后的 ĤF 计算提供工具。",
+          "limitations": "六种情形描述的是所述基下的水平、竖直微分；摘要没有声称分类所有高度 4 结，也没有直接给出所有拼接的同调结果。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Tool Use 明确披露 ChatGPT (OpenAI) 交互辅助英文编辑、LaTeX 排版及 TikZ 图的准备修订；作者自行检查数学陈述与证明并负责。故只标记写作/制图，不把作者自己的核验记为 AI 核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35305v1 · PDF 第 89 页 Tool Use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:34:54.575379+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35305v1",
+            "contentHash": "3dd8d1af92da21648d64089b156ba51c5345370b9a8c9b7a530c4b10279eec0e",
+            "pages": 89,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool Use 明确披露 ChatGPT (OpenAI) 交互辅助英文编辑、LaTeX 排版及 TikZ 图的准备修订；作者自行检查数学陈述与证明并负责。故只标记写作/制图，不把作者自己的核验记为 AI 核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "965e4677eaa7cf8260b606e6ed13c8f747105e37af810d3b8c63ce7467f70abe"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 48,
+          "priorityReason": "低维拓扑中的详细结构与算法工作，但偏离曲率和几何 PDE 主线。",
+          "lowPriorityReason": "低维拓扑中的详细结构与算法工作，但偏离曲率和几何 PDE 主线。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we study height 4 knots, which generalize L-space knots and almost L-space knots studied by Ozsváth--Szabó, Baldwin--Sivek, and Binns. A knot $K\\subset S^3$ is called a height $m$ knot if $\\operatorname{rank} \\widehat{HF}(S^3_n(K))-n=m$ for all integers $n\\geq 2g(K)-1$, where $\\widehat{HF}$ is the hat version of Heegaard Floer homology introduced by Ozsváth--Szabó. In particular, height 0 and height 2 knots are exactly L-space knots and almost L-space knots, respectively. We prove that the knot Floer complex $CFK^\\infty(S^3,K)$ of a height 4 knot $K$ admits a basis that is horizontally and vertically simplified--an hv-basis for short. Moreover, we show that under such an hv-basis, the horizontal and vertical differentials fall into six cases, generalizing the results for L-space knots and almost L-space knots. The hv-basis of the knot Floer complex of $K$ can determine, via an explicit algorithm, the immersed curve of Hanselman-Rasmussen-Watson for the knot complement of $K$. Consequently, our results facilitate further exploration of computations of $\\widehat{HF}$ for the gluing of two height 4 knot complements.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

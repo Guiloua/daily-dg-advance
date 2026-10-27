@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35492",
+  "slug": "2610.35492",
+  "latest": {
+    "arxivId": "2610.35492",
+    "metadata": {
+      "title": "Uniform large-genus asymptotics of Weil-Petersson volumes",
+      "authors": [
+        "Zhiyi Li",
+        "Qihang Wang"
+      ],
+      "abstract": "Let $V_{g,n}$ denote the Weil--Petersson volume of the moduli space of genus-$g$ hyperbolic surfaces with $n$ cusps. We obtain an asymptotic expansion in inverse powers of the genus as $g\\to\\infty$, uniformly for all $n\\ge0$. This includes cusp counts of order $\\sqrt g$ and larger, where the fixed-$n$ expansion of Mirzakhani and Zograf no longer gives a uniform approximation. The leading term is explicit and has relative error $O(g^{-1})$. Truncating the expansion at a suitably chosen order proportional to $\\sqrt g$ gives relative error $O(\\exp(-a\\sqrt g))$ for some $a>0$, with no restriction on the growth of $n$. For fixed $n$, the leading term identifies the universal constant in the Mirzakhani--Zograf asymptotics as $1/\\sqrt\\pi$, as conjectured by Zograf. We also answer two questions of Mirzakhani: we determine explicit asymptotic profiles for volume ratios uniformly in the number of cusps, and for adjacent coefficient ratios of the one-boundary volume polynomial uniformly over all degrees. The proof uses a positive recursion for mixed $\\kappa_1$--$\\psi$ intersection numbers, with the absolute normalization determined by comparison with the known asymptotics of pure $\\psi$ intersection numbers.",
+      "categories": [
+        "math.DG",
+        "math.AG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "75 pages, no figures. An earlier version was first made publicly available on Zenodo on 16 October 2026: this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-26T14:21:42Z",
+      "updatedAt": "2026-10-26T14:21:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:24.829531+00:00",
+        "contentHash": "8bfdc2480cf08e276703900359ea08a3907519411c1473422c3f5bef9a9527da"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "模空间体积的一致大亏格渐近",
+      "workSummary": "正文定理 1.1、14.2 对轨形约定下的尖点 Weil–Petersson 体积给出对所有整数 n≥0 一致的大亏格展开：设 h=2g−1，则 Vg,n/ V̂g,n 减去前 K 项的绝对值至多 CB^(K+1)((K+1)!)²/h^(K+1)，其中 0≤K≤c√h，常数与 n 无关。显式主项 V̂ 使用 λ(Y)=2(n−1)/(2g−1) 确定的 Bessel 鞍点；K=0 给出相对误差 O(g⁻¹)，取 K 为足够小常数倍 √g 给出 O(exp(−a√g))。固定 n 时恢复 Vg,n=(2g−3+n)!(4π²)^(2g−3+n)/√(πg)·(1+O_n(g⁻¹))。",
+      "techniques": [
+        "以正递推代替混合 κ₁–ψ 交数中的交错求和",
+        "与显式 harmonic 模型作一致上下比较",
+        "dilaton 与 KdV 方程逐阶改进；纯 ψ 端点及 Painlevé I 固定绝对归一化",
+        "正因式分解与 Fourier 界作一致系数提取；零尖点权端改用 Poisson 积分"
+      ],
+      "breakthrough": "把固定 n 展开中随 n²/g 失控的误差重组为对任意增长尖点数一致的展开，并无 resurgence 假设地识别 Zograf 常数 1/√π。正文还给出体积比 O(g⁻¹) 的一致相对控制及全次数相邻系数比；其随机双曲曲面应用在 n/√g→∞ 下得到多个小正特征值的概率上界。",
+      "limitations": "已读 PDF 第 1–8 页（主定理、主项、归一化与证明路线）、第 56–58 页（定理 14.1、14.2 及组装）和第 73 页（局限）。全 n 一致性针对 g→∞、零边界长度的尖点体积；固定亏格的大尖点数结论另依赖已有固定亏格渐近。第 4 页主项的 k=0 因子按极限定义，n=0 单独给式。O(g⁻¹) 是所选未修正主项的最优阶，非所有高阶展开的极限；小特征值仅有上界，未证明匹配渐近、下界或特征值 Poisson 律。尚未逐步核验全篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "Disclosure of automated assistance 明确列出 OpenAI GPT-6.1 Sol、GPT-6 Astra、Anthropic Claude Fable 5.1 与 Claude Opus 5.5，称其共同参与证明论证与一致渐近估计的发展、恒等式及参考文献检查、既有结果比较和文字修订。故标记证明、核验、文献、写作；未单独把特定核心构造归于 AI，不额外标记 ideas。第 75 页 Claude Itzykson 是参考文献作者姓名，属于误命中。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35492v1 · PDF 第 73 页 Disclosure of automated assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:35:50.042472+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35492v1",
+        "contentHash": "1089f520eca44d8b651e2b0d3ebde440cff39b0077e7b0f7ce877d1f44e7e35f",
+        "pages": 75,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Disclosure of automated assistance 明确列出 OpenAI GPT-6.1 Sol、GPT-6 Astra、Anthropic Claude Fable 5.1 与 Claude Opus 5.5，称其共同参与证明论证与一致渐近估计的发展、恒等式及参考文献检查、既有结果比较和文字修订。故标记证明、核验、文献、写作；未单独把特定核心构造归于 AI，不额外标记 ideas。第 75 页 Claude Itzykson 是参考文献作者姓名，属于误命中。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ecb2b26973485c08d8b6228ec48c013d0c0b5f014282f2b78939e1d7f04e013b"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "正文确认无 n 增长限制的一致体积定理，并连接随机双曲曲面小谱，潜在影响大；需继续检查正递推与两端系数提取的全证明。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $V_{g,n}$ denote the Weil--Petersson volume of the moduli space of genus-$g$ hyperbolic surfaces with $n$ cusps. We obtain an asymptotic expansion in inverse powers of the genus as $g\\to\\infty$, uniformly for all $n\\ge0$. This includes cusp counts of order $\\sqrt g$ and larger, where the fixed-$n$ expansion of Mirzakhani and Zograf no longer gives a uniform approximation. The leading term is explicit and has relative error $O(g^{-1})$. Truncating the expansion at a suitably chosen order proportional to $\\sqrt g$ gives relative error $O(\\exp(-a\\sqrt g))$ for some $a>0$, with no restriction on the growth of $n$. For fixed $n$, the leading term identifies the universal constant in the Mirzakhani--Zograf asymptotics as $1/\\sqrt\\pi$, as conjectured by Zograf. We also answer two questions of Mirzakhani: we determine explicit asymptotic profiles for volume ratios uniformly in the number of cusps, and for adjacent coefficient ratios of the one-boundary volume polynomial uniformly over all degrees. The proof uses a positive recursion for mixed $\\kappa_1$--$\\psi$ intersection numbers, with the absolute normalization determined by comparison with the known asymptotics of pure $\\psi$ intersection numbers.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35492",
+        "metadata": {
+          "title": "Uniform large-genus asymptotics of Weil-Petersson volumes",
+          "authors": [
+            "Zhiyi Li",
+            "Qihang Wang"
+          ],
+          "abstract": "Let $V_{g,n}$ denote the Weil--Petersson volume of the moduli space of genus-$g$ hyperbolic surfaces with $n$ cusps. We obtain an asymptotic expansion in inverse powers of the genus as $g\\to\\infty$, uniformly for all $n\\ge0$. This includes cusp counts of order $\\sqrt g$ and larger, where the fixed-$n$ expansion of Mirzakhani and Zograf no longer gives a uniform approximation. The leading term is explicit and has relative error $O(g^{-1})$. Truncating the expansion at a suitably chosen order proportional to $\\sqrt g$ gives relative error $O(\\exp(-a\\sqrt g))$ for some $a>0$, with no restriction on the growth of $n$. For fixed $n$, the leading term identifies the universal constant in the Mirzakhani--Zograf asymptotics as $1/\\sqrt\\pi$, as conjectured by Zograf. We also answer two questions of Mirzakhani: we determine explicit asymptotic profiles for volume ratios uniformly in the number of cusps, and for adjacent coefficient ratios of the one-boundary volume polynomial uniformly over all degrees. The proof uses a positive recursion for mixed $\\kappa_1$--$\\psi$ intersection numbers, with the absolute normalization determined by comparison with the known asymptotics of pure $\\psi$ intersection numbers.",
+          "categories": [
+            "math.DG",
+            "math.AG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "75 pages, no figures. An earlier version was first made publicly available on Zenodo on 16 October 2026: this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-26T14:21:42Z",
+          "updatedAt": "2026-10-26T14:21:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:24.829531+00:00",
+            "contentHash": "8bfdc2480cf08e276703900359ea08a3907519411c1473422c3f5bef9a9527da"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "模空间体积的一致大亏格渐近",
+          "workSummary": "正文定理 1.1、14.2 对轨形约定下的尖点 Weil–Petersson 体积给出对所有整数 n≥0 一致的大亏格展开：设 h=2g−1，则 Vg,n/ V̂g,n 减去前 K 项的绝对值至多 CB^(K+1)((K+1)!)²/h^(K+1)，其中 0≤K≤c√h，常数与 n 无关。显式主项 V̂ 使用 λ(Y)=2(n−1)/(2g−1) 确定的 Bessel 鞍点；K=0 给出相对误差 O(g⁻¹)，取 K 为足够小常数倍 √g 给出 O(exp(−a√g))。固定 n 时恢复 Vg,n=(2g−3+n)!(4π²)^(2g−3+n)/√(πg)·(1+O_n(g⁻¹))。",
+          "techniques": [
+            "以正递推代替混合 κ₁–ψ 交数中的交错求和",
+            "与显式 harmonic 模型作一致上下比较",
+            "dilaton 与 KdV 方程逐阶改进；纯 ψ 端点及 Painlevé I 固定绝对归一化",
+            "正因式分解与 Fourier 界作一致系数提取；零尖点权端改用 Poisson 积分"
+          ],
+          "breakthrough": "把固定 n 展开中随 n²/g 失控的误差重组为对任意增长尖点数一致的展开，并无 resurgence 假设地识别 Zograf 常数 1/√π。正文还给出体积比 O(g⁻¹) 的一致相对控制及全次数相邻系数比；其随机双曲曲面应用在 n/√g→∞ 下得到多个小正特征值的概率上界。",
+          "limitations": "已读 PDF 第 1–8 页（主定理、主项、归一化与证明路线）、第 56–58 页（定理 14.1、14.2 及组装）和第 73 页（局限）。全 n 一致性针对 g→∞、零边界长度的尖点体积；固定亏格的大尖点数结论另依赖已有固定亏格渐近。第 4 页主项的 k=0 因子按极限定义，n=0 单独给式。O(g⁻¹) 是所选未修正主项的最优阶，非所有高阶展开的极限；小特征值仅有上界，未证明匹配渐近、下界或特征值 Poisson 律。尚未逐步核验全篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "Disclosure of automated assistance 明确列出 OpenAI GPT-6.1 Sol、GPT-6 Astra、Anthropic Claude Fable 5.1 与 Claude Opus 5.5，称其共同参与证明论证与一致渐近估计的发展、恒等式及参考文献检查、既有结果比较和文字修订。故标记证明、核验、文献、写作；未单独把特定核心构造归于 AI，不额外标记 ideas。第 75 页 Claude Itzykson 是参考文献作者姓名，属于误命中。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35492v1 · PDF 第 73 页 Disclosure of automated assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:35:50.042472+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35492v1",
+            "contentHash": "1089f520eca44d8b651e2b0d3ebde440cff39b0077e7b0f7ce877d1f44e7e35f",
+            "pages": 75,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Disclosure of automated assistance 明确列出 OpenAI GPT-6.1 Sol、GPT-6 Astra、Anthropic Claude Fable 5.1 与 Claude Opus 5.5，称其共同参与证明论证与一致渐近估计的发展、恒等式及参考文献检查、既有结果比较和文字修订。故标记证明、核验、文献、写作；未单独把特定核心构造归于 AI，不额外标记 ideas。第 75 页 Claude Itzykson 是参考文献作者姓名，属于误命中。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ecb2b26973485c08d8b6228ec48c013d0c0b5f014282f2b78939e1d7f04e013b"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "正文确认无 n 增长限制的一致体积定理，并连接随机双曲曲面小谱，潜在影响大；需继续检查正递推与两端系数提取的全证明。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $V_{g,n}$ denote the Weil--Petersson volume of the moduli space of genus-$g$ hyperbolic surfaces with $n$ cusps. We obtain an asymptotic expansion in inverse powers of the genus as $g\\to\\infty$, uniformly for all $n\\ge0$. This includes cusp counts of order $\\sqrt g$ and larger, where the fixed-$n$ expansion of Mirzakhani and Zograf no longer gives a uniform approximation. The leading term is explicit and has relative error $O(g^{-1})$. Truncating the expansion at a suitably chosen order proportional to $\\sqrt g$ gives relative error $O(\\exp(-a\\sqrt g))$ for some $a>0$, with no restriction on the growth of $n$. For fixed $n$, the leading term identifies the universal constant in the Mirzakhani--Zograf asymptotics as $1/\\sqrt\\pi$, as conjectured by Zograf. We also answer two questions of Mirzakhani: we determine explicit asymptotic profiles for volume ratios uniformly in the number of cusps, and for adjacent coefficient ratios of the one-boundary volume polynomial uniformly over all degrees. The proof uses a positive recursion for mixed $\\kappa_1$--$\\psi$ intersection numbers, with the absolute normalization determined by comparison with the known asymptotics of pure $\\psi$ intersection numbers.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

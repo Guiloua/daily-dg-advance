@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33280",
+  "slug": "2610.33280",
+  "latest": {
+    "arxivId": "2610.33280",
+    "metadata": {
+      "title": "On the Upsilon invariant and the Baldwin-Vela-Vick b-invariant of fibered knots",
+      "authors": [
+        "Linh Truong"
+      ],
+      "abstract": "For a null-homologous fibered knot $K$ in a rational homology sphere, Baldwin and Vela-Vick define a refinement $b(K)$ of the Ozsváth-Szabó contact invariant. We prove that if the Ozsváth-Stipsicz-Szabó concordance invariant Upsilon has slope $\\Upsilon'_K(t)=-g(K)$ for some $t\\in[0,\\frac{2}{n+1})$, where $g(K)$ is the genus of $K$, then $b(K)>n$. This extends a result of He, Hubbard, and the author on the Upsilon invariant and right-veering monodromies. We also prove that the knot Floer homology of a fibered knot in the $g(K)-b(K)$ Alexander grading is nonvanishing. As an application, we give many families of fibered cable knots whose $b(K)$ invariant grows arbitrarily large. Finally, we prove that if a monodromy of a fibered knot is neither right-veering nor left-veering, then the third-to-top term of knot Floer homology is nonvanishing.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "12 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-10-23T20:44:27Z",
+      "updatedAt": "2026-10-23T20:44:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-27T07:16:02.941181+00:00",
+        "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33280v1",
+        "observedAt": "2026-10-27T07:22:15.587549+00:00",
+        "contentHash": "3b9b002c9fe25b9ae3e2714bcabb60203294aac0f84db737ae215f3770eb011d"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.701214+00:00",
+        "contentHash": "018c24d5dae4e73175e7d6fca8d313fe1cb7c752e20d1dcbefcf9c71d05b3699"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "不变量约束与实例",
+      "workSummary": "对有理同调三维球中的零同调纤维结 K，作者证明：若某个 t∈[0,2/(n+1)) 处 Upsilon 的斜率为 −g(K)，则 Baldwin–Vela-Vick 不变量 b(K)>n；并证明 Alexander 分次 g(K)−b(K) 处结 Floer 同调非零，给出 b 任意大的纤维缆结族。",
+      "techniques": [
+        "Upsilon 斜率与纤维结过滤结构",
+        "结 Floer 同调的 Alexander 分次",
+        "纤维缆结与单值映射分析"
+      ],
+      "breakthrough": "把 Upsilon 的局部斜率信息提升为 b 不变量的任意阶下界，并联系特定分次同调的非消失；非右旋且非左旋单值映射还迫使从顶端数第三项非零。",
+      "limitations": "斜率假设包含明确的 t 区间，不能概括成 Upsilon 任意处斜率达到 −g 即推出相同结论。定理限定零同调纤维结与有理同调球背景。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明示 ChatGPT Sol 协助计算推论 5.1 中缆结的 Upsilon 函数，ChatGPT Astra 用于生成一幅图；披露没有声称模型提出核心证明或研究路线。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33280v1 · PDF 第 3 页第 1.2 节 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:22:15.587549+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33280v1",
+        "contentHash": "3b9b002c9fe25b9ae3e2714bcabb60203294aac0f84db737ae215f3770eb011d",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示 ChatGPT Sol 协助计算推论 5.1 中缆结的 Upsilon 函数，ChatGPT Astra 用于生成一幅图；披露没有声称模型提出核心证明或研究路线。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "df6215b9e4a0eaf3346baf8c110933a2201bce00b6a73ef739770603386084ca"
+      },
+      "aiUsage": [
+        "computation"
+      ],
+      "priorityScore": 38,
+      "priorityReason": "主要面向结 Floer 与接触拓扑，与用户的几何分析及曲率主线较远。",
+      "lowPriorityReason": "主要面向结 Floer 与接触拓扑，与用户的几何分析及曲率主线较远。"
+    },
+    "analysisBasis": {
+      "abstract": "For a null-homologous fibered knot $K$ in a rational homology sphere, Baldwin and Vela-Vick define a refinement $b(K)$ of the Ozsváth-Szabó contact invariant. We prove that if the Ozsváth-Stipsicz-Szabó concordance invariant Upsilon has slope $\\Upsilon'_K(t)=-g(K)$ for some $t\\in[0,\\frac{2}{n+1})$, where $g(K)$ is the genus of $K$, then $b(K)>n$. This extends a result of He, Hubbard, and the author on the Upsilon invariant and right-veering monodromies. We also prove that the knot Floer homology of a fibered knot in the $g(K)-b(K)$ Alexander grading is nonvanishing. As an application, we give many families of fibered cable knots whose $b(K)$ invariant grows arbitrarily large. Finally, we prove that if a monodromy of a fibered knot is neither right-veering nor left-veering, then the third-to-top term of knot Floer homology is nonvanishing.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33280",
+        "metadata": {
+          "title": "On the Upsilon invariant and the Baldwin-Vela-Vick b-invariant of fibered knots",
+          "authors": [
+            "Linh Truong"
+          ],
+          "abstract": "For a null-homologous fibered knot $K$ in a rational homology sphere, Baldwin and Vela-Vick define a refinement $b(K)$ of the Ozsváth-Szabó contact invariant. We prove that if the Ozsváth-Stipsicz-Szabó concordance invariant Upsilon has slope $\\Upsilon'_K(t)=-g(K)$ for some $t\\in[0,\\frac{2}{n+1})$, where $g(K)$ is the genus of $K$, then $b(K)>n$. This extends a result of He, Hubbard, and the author on the Upsilon invariant and right-veering monodromies. We also prove that the knot Floer homology of a fibered knot in the $g(K)-b(K)$ Alexander grading is nonvanishing. As an application, we give many families of fibered cable knots whose $b(K)$ invariant grows arbitrarily large. Finally, we prove that if a monodromy of a fibered knot is neither right-veering nor left-veering, then the third-to-top term of knot Floer homology is nonvanishing.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "12 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-10-23T20:44:27Z",
+          "updatedAt": "2026-10-23T20:44:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-27T07:16:02.941181+00:00",
+            "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33280v1",
+            "observedAt": "2026-10-27T07:22:15.587549+00:00",
+            "contentHash": "3b9b002c9fe25b9ae3e2714bcabb60203294aac0f84db737ae215f3770eb011d"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.701214+00:00",
+            "contentHash": "018c24d5dae4e73175e7d6fca8d313fe1cb7c752e20d1dcbefcf9c71d05b3699"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "不变量约束与实例",
+          "workSummary": "对有理同调三维球中的零同调纤维结 K，作者证明：若某个 t∈[0,2/(n+1)) 处 Upsilon 的斜率为 −g(K)，则 Baldwin–Vela-Vick 不变量 b(K)>n；并证明 Alexander 分次 g(K)−b(K) 处结 Floer 同调非零，给出 b 任意大的纤维缆结族。",
+          "techniques": [
+            "Upsilon 斜率与纤维结过滤结构",
+            "结 Floer 同调的 Alexander 分次",
+            "纤维缆结与单值映射分析"
+          ],
+          "breakthrough": "把 Upsilon 的局部斜率信息提升为 b 不变量的任意阶下界，并联系特定分次同调的非消失；非右旋且非左旋单值映射还迫使从顶端数第三项非零。",
+          "limitations": "斜率假设包含明确的 t 区间，不能概括成 Upsilon 任意处斜率达到 −g 即推出相同结论。定理限定零同调纤维结与有理同调球背景。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明示 ChatGPT Sol 协助计算推论 5.1 中缆结的 Upsilon 函数，ChatGPT Astra 用于生成一幅图；披露没有声称模型提出核心证明或研究路线。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33280v1 · PDF 第 3 页第 1.2 节 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:22:15.587549+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33280v1",
+            "contentHash": "3b9b002c9fe25b9ae3e2714bcabb60203294aac0f84db737ae215f3770eb011d",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示 ChatGPT Sol 协助计算推论 5.1 中缆结的 Upsilon 函数，ChatGPT Astra 用于生成一幅图；披露没有声称模型提出核心证明或研究路线。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "df6215b9e4a0eaf3346baf8c110933a2201bce00b6a73ef739770603386084ca"
+          },
+          "aiUsage": [
+            "computation"
+          ],
+          "priorityScore": 38,
+          "priorityReason": "主要面向结 Floer 与接触拓扑，与用户的几何分析及曲率主线较远。",
+          "lowPriorityReason": "主要面向结 Floer 与接触拓扑，与用户的几何分析及曲率主线较远。"
+        },
+        "analysisBasis": {
+          "abstract": "For a null-homologous fibered knot $K$ in a rational homology sphere, Baldwin and Vela-Vick define a refinement $b(K)$ of the Ozsváth-Szabó contact invariant. We prove that if the Ozsváth-Stipsicz-Szabó concordance invariant Upsilon has slope $\\Upsilon'_K(t)=-g(K)$ for some $t\\in[0,\\frac{2}{n+1})$, where $g(K)$ is the genus of $K$, then $b(K)>n$. This extends a result of He, Hubbard, and the author on the Upsilon invariant and right-veering monodromies. We also prove that the knot Floer homology of a fibered knot in the $g(K)-b(K)$ Alexander grading is nonvanishing. As an application, we give many families of fibered cable knots whose $b(K)$ invariant grows arbitrarily large. Finally, we prove that if a monodromy of a fibered knot is neither right-veering nor left-veering, then the third-to-top term of knot Floer homology is nonvanishing.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

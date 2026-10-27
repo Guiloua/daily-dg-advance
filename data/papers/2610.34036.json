@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34036",
+  "slug": "2610.34036",
+  "latest": {
+    "arxivId": "2610.34036",
+    "metadata": {
+      "title": "A simple construction of smooth counterexamples to the Loewner and Carathéodory conjectures",
+      "authors": [
+        "Naoya Ando",
+        "Masaaki Umehara"
+      ],
+      "abstract": "Alpöge recently announced smooth counterexamples to the Loewner and Carathéodory conjectures. We present a simpler construction based on a trigonometric function as a seed. Using this, for every positive integer $k$, we construct a smooth real-valued function on the plane, flat at the origin, whose Hessian eigenline fields have an isolated singularity of index $1+k/2$. A support-function parametrization realizes this index as an umbilic index of a non-real analytic $C^\\infty$-regular surface germ in Euclidean $3$-space. The same framework, applied to a rapidly decreasing function on the whole plane, gives a strictly convex closed smooth surface with exactly one umbilic, of index $2$. This paper is self-contained with regard to the existence of an umbilic of index $2$ and the construction of a counterexample to the Carathéodory conjecture.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-25T03:56:48Z",
+      "updatedAt": "2026-10-25T03:56:48Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.34036v1",
+        "observedAt": "2026-10-27T07:26:09.539924+00:00",
+        "contentHash": "5cc42ba4d06bce43fba80aaa52f88dc81c73ef31b828334d40f442ecc0902c3c"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.846143+00:00",
+        "contentHash": "f1c11087e9368fba886cde54bed99a467a045a8532c9b9cd25e1389ada82680f"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "重大反例声称待核验",
+      "workSummary": "作者给出非实解析 C∞ 范畴中 Loewner 与 Carathéodory 反例的显式构造：平坦函数 Hk 的 Hessian 特征线场局部指数为 1+k/2；第 2.2 定理用快速衰减种子 fδ 和球面支撑函数 ρε=1+ε fδ/(1+|W|²)，声称产生严格凸闭光滑嵌入且仅一个指数二脐点。",
+      "techniques": [
+        "无零点的三角种子无迹 Hessian",
+        "复二阶导数绕数与半整数线场指数",
+        "球面支撑函数与 Bonnet 对应",
+        "无穷远平坦延拓、小扰动凸性及 Poincaré–Hopf 指数和"
+      ],
+      "breakthrough": "正文给出局部任意高脐点指数及全局单脐点闭严格凸曲面的自含构造，定位为对 Alpöge 公告的简化。第 2.2 定理以小 ε 维持嵌入和支撑算子正性，以有限点二阶导数不消失排除其他脐点。",
+      "limitations": "补读第 1–4、9、12 页的公式、脐点条件和全局定理；仍应表述为作者预印本的反例主张。光滑且非实解析的范围不可改写为解析范畴；中间全局非消失估计及所有链式求导尚未独立验证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在第 3 页明确披露 ChatGPT（OpenAI，GPT-6.1）协助搜索用于构造的候选函数，并改进表述。声明没有指明最终采用的种子函数、关键引理或完整构造究竟由模型提出，因此保守标记构造候选探索和写作辅助，不升级为已明确归因的核心构思。第 1 页介绍 Alpöge 的 AI 辅助公告属于他人研究，不能单独作为本作者使用证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34036v1 · PDF 第 3 页引言末、Local index computation 之前；第 1 页为他人工作介绍",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:26:09.539924+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34036v1",
+        "contentHash": "5cc42ba4d06bce43fba80aaa52f88dc81c73ef31b828334d40f442ecc0902c3c",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第 3 页明确披露 ChatGPT（OpenAI，GPT-6.1）协助搜索用于构造的候选函数，并改进表述。声明没有指明最终采用的种子函数、关键引理或完整构造究竟由模型提出，因此保守标记构造候选探索和写作辅助，不升级为已明确归因的核心构思。第 1 页介绍 Alpöge 的 AI 辅助公告属于他人研究，不能单独作为本作者使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "98b7f0822efce47dd81fc87be63483de031f4bfc78ec46193e576634a426bb9b"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "直接触及曲面曲率和经典猜想，优先精读全部构造，尤其全局拼接与单脐点验证。"
+    },
+    "analysisBasis": {
+      "abstract": "Alpöge recently announced smooth counterexamples to the Loewner and Carathéodory conjectures. We present a simpler construction based on a trigonometric function as a seed. Using this, for every positive integer $k$, we construct a smooth real-valued function on the plane, flat at the origin, whose Hessian eigenline fields have an isolated singularity of index $1+k/2$. A support-function parametrization realizes this index as an umbilic index of a non-real analytic $C^\\infty$-regular surface germ in Euclidean $3$-space. The same framework, applied to a rapidly decreasing function on the whole plane, gives a strictly convex closed smooth surface with exactly one umbilic, of index $2$. This paper is self-contained with regard to the existence of an umbilic of index $2$ and the construction of a counterexample to the Carathéodory conjecture.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34036",
+        "metadata": {
+          "title": "A simple construction of smooth counterexamples to the Loewner and Carathéodory conjectures",
+          "authors": [
+            "Naoya Ando",
+            "Masaaki Umehara"
+          ],
+          "abstract": "Alpöge recently announced smooth counterexamples to the Loewner and Carathéodory conjectures. We present a simpler construction based on a trigonometric function as a seed. Using this, for every positive integer $k$, we construct a smooth real-valued function on the plane, flat at the origin, whose Hessian eigenline fields have an isolated singularity of index $1+k/2$. A support-function parametrization realizes this index as an umbilic index of a non-real analytic $C^\\infty$-regular surface germ in Euclidean $3$-space. The same framework, applied to a rapidly decreasing function on the whole plane, gives a strictly convex closed smooth surface with exactly one umbilic, of index $2$. This paper is self-contained with regard to the existence of an umbilic of index $2$ and the construction of a counterexample to the Carathéodory conjecture.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-25T03:56:48Z",
+          "updatedAt": "2026-10-25T03:56:48Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.34036v1",
+            "observedAt": "2026-10-27T07:26:09.539924+00:00",
+            "contentHash": "5cc42ba4d06bce43fba80aaa52f88dc81c73ef31b828334d40f442ecc0902c3c"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.846143+00:00",
+            "contentHash": "f1c11087e9368fba886cde54bed99a467a045a8532c9b9cd25e1389ada82680f"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "重大反例声称待核验",
+          "workSummary": "作者给出非实解析 C∞ 范畴中 Loewner 与 Carathéodory 反例的显式构造：平坦函数 Hk 的 Hessian 特征线场局部指数为 1+k/2；第 2.2 定理用快速衰减种子 fδ 和球面支撑函数 ρε=1+ε fδ/(1+|W|²)，声称产生严格凸闭光滑嵌入且仅一个指数二脐点。",
+          "techniques": [
+            "无零点的三角种子无迹 Hessian",
+            "复二阶导数绕数与半整数线场指数",
+            "球面支撑函数与 Bonnet 对应",
+            "无穷远平坦延拓、小扰动凸性及 Poincaré–Hopf 指数和"
+          ],
+          "breakthrough": "正文给出局部任意高脐点指数及全局单脐点闭严格凸曲面的自含构造，定位为对 Alpöge 公告的简化。第 2.2 定理以小 ε 维持嵌入和支撑算子正性，以有限点二阶导数不消失排除其他脐点。",
+          "limitations": "补读第 1–4、9、12 页的公式、脐点条件和全局定理；仍应表述为作者预印本的反例主张。光滑且非实解析的范围不可改写为解析范畴；中间全局非消失估计及所有链式求导尚未独立验证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在第 3 页明确披露 ChatGPT（OpenAI，GPT-6.1）协助搜索用于构造的候选函数，并改进表述。声明没有指明最终采用的种子函数、关键引理或完整构造究竟由模型提出，因此保守标记构造候选探索和写作辅助，不升级为已明确归因的核心构思。第 1 页介绍 Alpöge 的 AI 辅助公告属于他人研究，不能单独作为本作者使用证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34036v1 · PDF 第 3 页引言末、Local index computation 之前；第 1 页为他人工作介绍",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:26:09.539924+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34036v1",
+            "contentHash": "5cc42ba4d06bce43fba80aaa52f88dc81c73ef31b828334d40f442ecc0902c3c",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第 3 页明确披露 ChatGPT（OpenAI，GPT-6.1）协助搜索用于构造的候选函数，并改进表述。声明没有指明最终采用的种子函数、关键引理或完整构造究竟由模型提出，因此保守标记构造候选探索和写作辅助，不升级为已明确归因的核心构思。第 1 页介绍 Alpöge 的 AI 辅助公告属于他人研究，不能单独作为本作者使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "98b7f0822efce47dd81fc87be63483de031f4bfc78ec46193e576634a426bb9b"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "直接触及曲面曲率和经典猜想，优先精读全部构造，尤其全局拼接与单脐点验证。"
+        },
+        "analysisBasis": {
+          "abstract": "Alpöge recently announced smooth counterexamples to the Loewner and Carathéodory conjectures. We present a simpler construction based on a trigonometric function as a seed. Using this, for every positive integer $k$, we construct a smooth real-valued function on the plane, flat at the origin, whose Hessian eigenline fields have an isolated singularity of index $1+k/2$. A support-function parametrization realizes this index as an umbilic index of a non-real analytic $C^\\infty$-regular surface germ in Euclidean $3$-space. The same framework, applied to a rapidly decreasing function on the whole plane, gives a strictly convex closed smooth surface with exactly one umbilic, of index $2$. This paper is self-contained with regard to the existence of an umbilic of index $2$ and the construction of a counterexample to the Carathéodory conjecture.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

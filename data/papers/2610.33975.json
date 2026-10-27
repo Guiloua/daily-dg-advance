@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33975",
+  "slug": "2610.33975",
+  "latest": {
+    "arxivId": "2610.33975",
+    "metadata": {
+      "title": "A Pythagoras Tree Grown from a Dodecahedron",
+      "authors": [
+        "Miguel Esteban Pérez Ibarra"
+      ],
+      "abstract": "The Pythagoras tree of A. E. Bosman (1942) is drawn with squares in the plane and, in the three-dimensional versions we know of, with cubes. This article documents a tree built instead from regular dodecahedra: each dodecahedron carries five smaller copies, one on each edge of a single pentagonal \"crown\" face, scaled by $g \\approx 0.4346$ and twisted by $45^\\circ$ about the edge. The construction first existed only as a pair of rendered images and two undocumented C++ programs. We recover its exact parameters from the original Blender scene, reformulate it as an iterated function system with condensation, and prove with a short computer-assisted argument that it never collides with itself: two of its dodecahedra overlap only when one is the parent of the other. A Pythagorean identity for the six face axes of the dodecahedron singles out the scale $1/\\sqrt{5}$ and the twist $\\arccos(1/\\sqrt{5})$. With these values each child rests flat against a face of its parent, the five children together have exactly the parent's surface area, and the crown of the tree is a fractal of Hausdorff dimension exactly 2. Finally we ask whether the tree can grow on all twelve faces at once. A parity argument shows that at the artwork's proportions it cannot, but smaller scale factors admit certified clash-free all-faces trees.",
+      "categories": [
+        "math.MG",
+        "cs.CG",
+        "math.HO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "11 pages, 7 figures. Code and data: this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-25T01:15:55Z",
+      "updatedAt": "2026-10-25T01:15:55Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33975v1",
+        "observedAt": "2026-10-27T07:25:30.051014+00:00",
+        "contentHash": "254458a5767c213dab96699e930f947958c6251a442f4469dd8c70103e1890e9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.844303+00:00",
+        "contentHash": "085e5a4d909b0b61c9f263d6e24a73c8e14db052fbcb33e8695e17f7a276a5dd"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "分形构造与计算机辅助验证",
+      "workSummary": "从正十二面体生成的树形作品出发，作者恢复其缩放约 0.4346、绕边扭转 45° 的原始参数，改写为带凝聚项的迭代函数系统，并用计算机辅助论证排除除父子外的十二面体重叠。另一组缩放 1/√5、扭角 arccos(1/√5) 参数使子体贴合父面，五个子体总表面积等于父体，树冠 Hausdorff 维数恰为二。",
+      "techniques": [
+        "带凝聚项的迭代函数系统",
+        "正十二面体轴的勾股恒等式",
+        "计算机辅助碰撞认证",
+        "全十二面生长的奇偶障碍"
+      ],
+      "breakthrough": "区分艺术作品参数与精确勾股参数，提供无碰撞认证及二维分形树冠；还说明作品比例下无法同时沿全部十二面生长，而更小比例可实现认证无碰撞。",
+      "limitations": "原作品参数与精确 1/√5 参数是两组不同构造，不能混为一谈；原构造仅排除非父子重叠。分形维数和贴面结论针对摘要指定参数，非所有十二面体树。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:25:30.051014+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33975v1",
+        "contentHash": "254458a5767c213dab96699e930f947958c6251a442f4469dd8c70103e1890e9",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。11 页 PDF 的文本提取完整、页数匹配、无短文本页，现有全文与元数据披露检索无命中；额外点写 A.I. 及拆行模型名检索也未发现作者披露。当前未观察到披露，不等同于确认未使用 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fa0e8800bfdb43826c651b90c8d99127322b4e1aceee9f74e7be8724e9541db1"
+      },
+      "priorityScore": 25,
+      "priorityReason": "偏计算几何与数学展示，对几何分析和曲率流的直接帮助有限。",
+      "lowPriorityReason": "偏计算几何与数学展示，对几何分析和曲率流的直接帮助有限。"
+    },
+    "analysisBasis": {
+      "abstract": "The Pythagoras tree of A. E. Bosman (1942) is drawn with squares in the plane and, in the three-dimensional versions we know of, with cubes. This article documents a tree built instead from regular dodecahedra: each dodecahedron carries five smaller copies, one on each edge of a single pentagonal \"crown\" face, scaled by $g \\approx 0.4346$ and twisted by $45^\\circ$ about the edge. The construction first existed only as a pair of rendered images and two undocumented C++ programs. We recover its exact parameters from the original Blender scene, reformulate it as an iterated function system with condensation, and prove with a short computer-assisted argument that it never collides with itself: two of its dodecahedra overlap only when one is the parent of the other. A Pythagorean identity for the six face axes of the dodecahedron singles out the scale $1/\\sqrt{5}$ and the twist $\\arccos(1/\\sqrt{5})$. With these values each child rests flat against a face of its parent, the five children together have exactly the parent's surface area, and the crown of the tree is a fractal of Hausdorff dimension exactly 2. Finally we ask whether the tree can grow on all twelve faces at once. A parity argument shows that at the artwork's proportions it cannot, but smaller scale factors admit certified clash-free all-faces trees.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33975",
+        "metadata": {
+          "title": "A Pythagoras Tree Grown from a Dodecahedron",
+          "authors": [
+            "Miguel Esteban Pérez Ibarra"
+          ],
+          "abstract": "The Pythagoras tree of A. E. Bosman (1942) is drawn with squares in the plane and, in the three-dimensional versions we know of, with cubes. This article documents a tree built instead from regular dodecahedra: each dodecahedron carries five smaller copies, one on each edge of a single pentagonal \"crown\" face, scaled by $g \\approx 0.4346$ and twisted by $45^\\circ$ about the edge. The construction first existed only as a pair of rendered images and two undocumented C++ programs. We recover its exact parameters from the original Blender scene, reformulate it as an iterated function system with condensation, and prove with a short computer-assisted argument that it never collides with itself: two of its dodecahedra overlap only when one is the parent of the other. A Pythagorean identity for the six face axes of the dodecahedron singles out the scale $1/\\sqrt{5}$ and the twist $\\arccos(1/\\sqrt{5})$. With these values each child rests flat against a face of its parent, the five children together have exactly the parent's surface area, and the crown of the tree is a fractal of Hausdorff dimension exactly 2. Finally we ask whether the tree can grow on all twelve faces at once. A parity argument shows that at the artwork's proportions it cannot, but smaller scale factors admit certified clash-free all-faces trees.",
+          "categories": [
+            "math.MG",
+            "cs.CG",
+            "math.HO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "11 pages, 7 figures. Code and data: this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-25T01:15:55Z",
+          "updatedAt": "2026-10-25T01:15:55Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33975v1",
+            "observedAt": "2026-10-27T07:25:30.051014+00:00",
+            "contentHash": "254458a5767c213dab96699e930f947958c6251a442f4469dd8c70103e1890e9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.844303+00:00",
+            "contentHash": "085e5a4d909b0b61c9f263d6e24a73c8e14db052fbcb33e8695e17f7a276a5dd"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "分形构造与计算机辅助验证",
+          "workSummary": "从正十二面体生成的树形作品出发，作者恢复其缩放约 0.4346、绕边扭转 45° 的原始参数，改写为带凝聚项的迭代函数系统，并用计算机辅助论证排除除父子外的十二面体重叠。另一组缩放 1/√5、扭角 arccos(1/√5) 参数使子体贴合父面，五个子体总表面积等于父体，树冠 Hausdorff 维数恰为二。",
+          "techniques": [
+            "带凝聚项的迭代函数系统",
+            "正十二面体轴的勾股恒等式",
+            "计算机辅助碰撞认证",
+            "全十二面生长的奇偶障碍"
+          ],
+          "breakthrough": "区分艺术作品参数与精确勾股参数，提供无碰撞认证及二维分形树冠；还说明作品比例下无法同时沿全部十二面生长，而更小比例可实现认证无碰撞。",
+          "limitations": "原作品参数与精确 1/√5 参数是两组不同构造，不能混为一谈；原构造仅排除非父子重叠。分形维数和贴面结论针对摘要指定参数，非所有十二面体树。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:25:30.051014+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33975v1",
+            "contentHash": "254458a5767c213dab96699e930f947958c6251a442f4469dd8c70103e1890e9",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。11 页 PDF 的文本提取完整、页数匹配、无短文本页，现有全文与元数据披露检索无命中；额外点写 A.I. 及拆行模型名检索也未发现作者披露。当前未观察到披露，不等同于确认未使用 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fa0e8800bfdb43826c651b90c8d99127322b4e1aceee9f74e7be8724e9541db1"
+          },
+          "priorityScore": 25,
+          "priorityReason": "偏计算几何与数学展示，对几何分析和曲率流的直接帮助有限。",
+          "lowPriorityReason": "偏计算几何与数学展示，对几何分析和曲率流的直接帮助有限。"
+        },
+        "analysisBasis": {
+          "abstract": "The Pythagoras tree of A. E. Bosman (1942) is drawn with squares in the plane and, in the three-dimensional versions we know of, with cubes. This article documents a tree built instead from regular dodecahedra: each dodecahedron carries five smaller copies, one on each edge of a single pentagonal \"crown\" face, scaled by $g \\approx 0.4346$ and twisted by $45^\\circ$ about the edge. The construction first existed only as a pair of rendered images and two undocumented C++ programs. We recover its exact parameters from the original Blender scene, reformulate it as an iterated function system with condensation, and prove with a short computer-assisted argument that it never collides with itself: two of its dodecahedra overlap only when one is the parent of the other. A Pythagorean identity for the six face axes of the dodecahedron singles out the scale $1/\\sqrt{5}$ and the twist $\\arccos(1/\\sqrt{5})$. With these values each child rests flat against a face of its parent, the five children together have exactly the parent's surface area, and the crown of the tree is a fractal of Hausdorff dimension exactly 2. Finally we ask whether the tree can grow on all twelve faces at once. A parity argument shows that at the artwork's proportions it cannot, but smaller scale factors admit certified clash-free all-faces trees.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

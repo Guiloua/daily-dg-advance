@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34289",
+  "slug": "2610.34289",
+  "latest": {
+    "arxivId": "2610.34289",
+    "metadata": {
+      "title": "Remarks on the Brascamp--Lieb inequality",
+      "authors": [
+        "Dario Cordero-Erausquin",
+        "Galyna V. Livshyts",
+        "Liran Rotem"
+      ],
+      "abstract": "We prove several variants of the Brascamp--Lieb inequality which are adapted to additional symmetries, weights, and non-Euclidean radial structures. First, an improved Brascamp--Lieb inequality for even functions yields a strengthened Prékopa--Leindler theorem for even strongly log-concave functions. We also record a Legendre-transform proof of a generalized log-Sobolev inequality for log-concave functions. Further results include a Brascamp--Lieb inequality with a concave weight, an unconditional second-order Poincaré inequality, a rotation-trick improvement for arbitrary even log-concave measures, and a Poincaré-type inequality associated with smooth norms.",
+      "categories": [
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "primaryCategory": "math.FA",
+      "comment": "42 pages, the majority of the paper written before spring 2026",
+      "version": 1,
+      "submittedAt": "2026-10-25T13:41:38Z",
+      "updatedAt": "2026-10-25T13:41:38Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.849394+00:00",
+        "contentHash": "e2a560fbe223b7aa355f84ea4c5f9bbb2267de93f4d3855579faf113edc88910"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "函数不等式的对称与加权改进",
+      "workSummary": "证明适应对称性、权和非 Euclidean 径向结构的 Brascamp–Lieb 变体：偶函数改进推出偶强对数凹函数的加强 Prékopa–Leindler 定理；用 Legendre 变换证明对数凹函数广义 log-Sobolev 不等式；另得凹权 Brascamp–Lieb、无条件对称二阶 Poincaré、偶对数凹测度的旋转技巧改进及光滑范数相关 Poincaré 型估计。",
+      "techniques": [
+        "Brascamp–Lieb 与 Prékopa–Leindler",
+        "Legendre 变换",
+        "旋转技巧",
+        "对称和加权 Poincaré"
+      ],
+      "breakthrough": "系统展示对称及权结构如何增强经典函数不等式，提供可迁移的分析工具。",
+      "limitations": "各变体分别要求偶性、强对数凹性、无条件对称、凹权或范数光滑性，不能合并成任意测度下同时成立的增强结论；摘要未给出全部常数及等号条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者称主体数学内容与初稿历时数年由作者完成，例外是 Remarks 5.2、5.3；编辑时 ChatGPT-5.6 pro 用于查数学及排版错误、改善写作、补详论证，并提出第五节的潜在应用，由作者选入两条 remarks。标写作、证明展开、核验及应用探索；没有把主体定理的核心路线归于 AI，故不标核心 ideas。第 4、6、7 页的近期 AI 突破讨论和第 42 页 OpenAI 文献本身不构成本篇使用披露，阳性依据为第 9 页声明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34289v1 · PDF 第 9 页，AI use statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:28:10.454850+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34289v1",
+        "contentHash": "6f8884d663a2480be7a23a4544328b958709af284ed8a379cf4b2f678b279c75",
+        "pages": 42,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称主体数学内容与初稿历时数年由作者完成，例外是 Remarks 5.2、5.3；编辑时 ChatGPT-5.6 pro 用于查数学及排版错误、改善写作、补详论证，并提出第五节的潜在应用，由作者选入两条 remarks。标写作、证明展开、核验及应用探索；没有把主体定理的核心路线归于 AI，故不标核心 ideas。第 4、6、7 页的近期 AI 突破讨论和第 42 页 OpenAI 文献本身不构成本篇使用披露，阳性依据为第 9 页声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "53f8014d02028fb757963829953c4f1f3bb0e4bfcd896258ffa3a9c98540b744"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 73,
+      "priorityReason": "泛函不等式对几何分析有方法价值，可按具体应用选择章节。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove several variants of the Brascamp--Lieb inequality which are adapted to additional symmetries, weights, and non-Euclidean radial structures. First, an improved Brascamp--Lieb inequality for even functions yields a strengthened Prékopa--Leindler theorem for even strongly log-concave functions. We also record a Legendre-transform proof of a generalized log-Sobolev inequality for log-concave functions. Further results include a Brascamp--Lieb inequality with a concave weight, an unconditional second-order Poincaré inequality, a rotation-trick improvement for arbitrary even log-concave measures, and a Poincaré-type inequality associated with smooth norms.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34289",
+        "metadata": {
+          "title": "Remarks on the Brascamp--Lieb inequality",
+          "authors": [
+            "Dario Cordero-Erausquin",
+            "Galyna V. Livshyts",
+            "Liran Rotem"
+          ],
+          "abstract": "We prove several variants of the Brascamp--Lieb inequality which are adapted to additional symmetries, weights, and non-Euclidean radial structures. First, an improved Brascamp--Lieb inequality for even functions yields a strengthened Prékopa--Leindler theorem for even strongly log-concave functions. We also record a Legendre-transform proof of a generalized log-Sobolev inequality for log-concave functions. Further results include a Brascamp--Lieb inequality with a concave weight, an unconditional second-order Poincaré inequality, a rotation-trick improvement for arbitrary even log-concave measures, and a Poincaré-type inequality associated with smooth norms.",
+          "categories": [
+            "math.FA",
+            "math.MG",
+            "math.PR"
+          ],
+          "primaryCategory": "math.FA",
+          "comment": "42 pages, the majority of the paper written before spring 2026",
+          "version": 1,
+          "submittedAt": "2026-10-25T13:41:38Z",
+          "updatedAt": "2026-10-25T13:41:38Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.849394+00:00",
+            "contentHash": "e2a560fbe223b7aa355f84ea4c5f9bbb2267de93f4d3855579faf113edc88910"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "函数不等式的对称与加权改进",
+          "workSummary": "证明适应对称性、权和非 Euclidean 径向结构的 Brascamp–Lieb 变体：偶函数改进推出偶强对数凹函数的加强 Prékopa–Leindler 定理；用 Legendre 变换证明对数凹函数广义 log-Sobolev 不等式；另得凹权 Brascamp–Lieb、无条件对称二阶 Poincaré、偶对数凹测度的旋转技巧改进及光滑范数相关 Poincaré 型估计。",
+          "techniques": [
+            "Brascamp–Lieb 与 Prékopa–Leindler",
+            "Legendre 变换",
+            "旋转技巧",
+            "对称和加权 Poincaré"
+          ],
+          "breakthrough": "系统展示对称及权结构如何增强经典函数不等式，提供可迁移的分析工具。",
+          "limitations": "各变体分别要求偶性、强对数凹性、无条件对称、凹权或范数光滑性，不能合并成任意测度下同时成立的增强结论；摘要未给出全部常数及等号条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者称主体数学内容与初稿历时数年由作者完成，例外是 Remarks 5.2、5.3；编辑时 ChatGPT-5.6 pro 用于查数学及排版错误、改善写作、补详论证，并提出第五节的潜在应用，由作者选入两条 remarks。标写作、证明展开、核验及应用探索；没有把主体定理的核心路线归于 AI，故不标核心 ideas。第 4、6、7 页的近期 AI 突破讨论和第 42 页 OpenAI 文献本身不构成本篇使用披露，阳性依据为第 9 页声明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34289v1 · PDF 第 9 页，AI use statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:28:10.454850+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34289v1",
+            "contentHash": "6f8884d663a2480be7a23a4544328b958709af284ed8a379cf4b2f678b279c75",
+            "pages": 42,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者称主体数学内容与初稿历时数年由作者完成，例外是 Remarks 5.2、5.3；编辑时 ChatGPT-5.6 pro 用于查数学及排版错误、改善写作、补详论证，并提出第五节的潜在应用，由作者选入两条 remarks。标写作、证明展开、核验及应用探索；没有把主体定理的核心路线归于 AI，故不标核心 ideas。第 4、6、7 页的近期 AI 突破讨论和第 42 页 OpenAI 文献本身不构成本篇使用披露，阳性依据为第 9 页声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "53f8014d02028fb757963829953c4f1f3bb0e4bfcd896258ffa3a9c98540b744"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 73,
+          "priorityReason": "泛函不等式对几何分析有方法价值，可按具体应用选择章节。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove several variants of the Brascamp--Lieb inequality which are adapted to additional symmetries, weights, and non-Euclidean radial structures. First, an improved Brascamp--Lieb inequality for even functions yields a strengthened Prékopa--Leindler theorem for even strongly log-concave functions. We also record a Legendre-transform proof of a generalized log-Sobolev inequality for log-concave functions. Further results include a Brascamp--Lieb inequality with a concave weight, an unconditional second-order Poincaré inequality, a rotation-trick improvement for arbitrary even log-concave measures, and a Poincaré-type inequality associated with smooth norms.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

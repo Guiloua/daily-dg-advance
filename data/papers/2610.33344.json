@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33344",
+  "slug": "2610.33344",
+  "latest": {
+    "arxivId": "2610.33344",
+    "metadata": {
+      "title": "The Number of Polytope Trees and Beyond",
+      "authors": [
+        "Ali Aliev",
+        "Natalia Amburg"
+      ],
+      "abstract": "We study the symmetry-weighted enumeration of complexes formed by gluing copies of a regular polytope. For polytope trees and complexes obtained by attaching such trees to a fixed initial complex, we derive cut-and-join recurrences, differential equations for generating functions, explicit counting formulas, and asymptotic estimates. We then extend the method to complexes with cycles in their dual graphs, enumerating them by the numbers of polytopes and free facets. We derive recurrence relations and partial differential equations for the corresponding bivariate generating functions. In this setting, we obtain recurrences for connected configurations and explicit coefficient formulas for possibly disconnected configurations, both with and without a distinguished initial complex.",
+      "categories": [
+        "math.CO",
+        "math-ph",
+        "math.GT"
+      ],
+      "primaryCategory": "math.CO",
+      "comment": "54 pages, 13 figures",
+      "version": 1,
+      "submittedAt": "2026-10-23T22:29:39Z",
+      "updatedAt": "2026-10-23T22:29:39Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-27T07:16:02.941181+00:00",
+        "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33344v1",
+        "observedAt": "2026-10-27T07:22:29.494681+00:00",
+        "contentHash": "d23a2f71bfb6cf35bf8ceb474e4f1375ed17869c8d9b2a62a4d4fef4d7ce7b8b"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.701720+00:00",
+        "contentHash": "e7ebc7c02ca7d3c470cd9925cf27c904df2f54c5806232c0a3eadd7078a5ac7d"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "组合枚举工具",
+      "workSummary": "研究把正多胞体副本粘合形成的复形的对称加权计数。对多胞体树以及附着在固定初始复形上的树，作者给出 cut-and-join 递推、生成函数微分方程、显式计数及渐近估计；随后将方法扩展到对偶图有圈的复形，按多胞体数和自由面数建立二元生成函数。",
+      "techniques": [
+        "对称加权枚举与 cut-and-join 递推",
+        "单变量及二元生成函数的微分方程",
+        "连通构型递推与非连通构型系数公式"
+      ],
+      "breakthrough": "将树形粘合的可计算枚举框架延伸至含圈对偶图，并同时处理是否带固定初始复形及连通性条件。",
+      "limitations": "计数对象为特定粘合规则下的复形，不能直接当作流形或所有多胞体的计数。摘要仅对树及附树情形明确承诺渐近估计，含圈情形主要给递推和系数公式。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确主要想法在 2023–2024 年本科论文阶段形成，该阶段未使用 AI；自 2025 年起 AI 辅助计算、文献搜索和可读性、结构及英文，并协助将几乎全部工作形式化为 Lean 4，其中若干证明不同于文稿表述。应区分作者先有的核心想法与后续计算、写作及形式证明辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33344v1 · PDF 第 44 页第 8 节 Declaration of AI Usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:22:29.494681+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33344v1",
+        "contentHash": "d23a2f71bfb6cf35bf8ceb474e4f1375ed17869c8d9b2a62a4d4fef4d7ce7b8b",
+        "pages": 55,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确主要想法在 2023–2024 年本科论文阶段形成，该阶段未使用 AI；自 2025 年起 AI 辅助计算、文献搜索和可读性、结构及英文，并协助将几乎全部工作形式化为 Lean 4，其中若干证明不同于文稿表述。应区分作者先有的核心想法与后续计算、写作及形式证明辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "677442f38117ee30763c4222a9ed4c9e91ccbf811e9e160b7d78f13e9cef9531"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 31,
+      "priorityReason": "偏组合枚举和数学物理，几何分析应用在摘要中尚不明确。",
+      "lowPriorityReason": "偏组合枚举和数学物理，几何分析应用在摘要中尚不明确。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the symmetry-weighted enumeration of complexes formed by gluing copies of a regular polytope. For polytope trees and complexes obtained by attaching such trees to a fixed initial complex, we derive cut-and-join recurrences, differential equations for generating functions, explicit counting formulas, and asymptotic estimates. We then extend the method to complexes with cycles in their dual graphs, enumerating them by the numbers of polytopes and free facets. We derive recurrence relations and partial differential equations for the corresponding bivariate generating functions. In this setting, we obtain recurrences for connected configurations and explicit coefficient formulas for possibly disconnected configurations, both with and without a distinguished initial complex.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33344",
+        "metadata": {
+          "title": "The Number of Polytope Trees and Beyond",
+          "authors": [
+            "Ali Aliev",
+            "Natalia Amburg"
+          ],
+          "abstract": "We study the symmetry-weighted enumeration of complexes formed by gluing copies of a regular polytope. For polytope trees and complexes obtained by attaching such trees to a fixed initial complex, we derive cut-and-join recurrences, differential equations for generating functions, explicit counting formulas, and asymptotic estimates. We then extend the method to complexes with cycles in their dual graphs, enumerating them by the numbers of polytopes and free facets. We derive recurrence relations and partial differential equations for the corresponding bivariate generating functions. In this setting, we obtain recurrences for connected configurations and explicit coefficient formulas for possibly disconnected configurations, both with and without a distinguished initial complex.",
+          "categories": [
+            "math.CO",
+            "math-ph",
+            "math.GT"
+          ],
+          "primaryCategory": "math.CO",
+          "comment": "54 pages, 13 figures",
+          "version": 1,
+          "submittedAt": "2026-10-23T22:29:39Z",
+          "updatedAt": "2026-10-23T22:29:39Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-27T07:16:02.941181+00:00",
+            "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33344v1",
+            "observedAt": "2026-10-27T07:22:29.494681+00:00",
+            "contentHash": "d23a2f71bfb6cf35bf8ceb474e4f1375ed17869c8d9b2a62a4d4fef4d7ce7b8b"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.701720+00:00",
+            "contentHash": "e7ebc7c02ca7d3c470cd9925cf27c904df2f54c5806232c0a3eadd7078a5ac7d"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "组合枚举工具",
+          "workSummary": "研究把正多胞体副本粘合形成的复形的对称加权计数。对多胞体树以及附着在固定初始复形上的树，作者给出 cut-and-join 递推、生成函数微分方程、显式计数及渐近估计；随后将方法扩展到对偶图有圈的复形，按多胞体数和自由面数建立二元生成函数。",
+          "techniques": [
+            "对称加权枚举与 cut-and-join 递推",
+            "单变量及二元生成函数的微分方程",
+            "连通构型递推与非连通构型系数公式"
+          ],
+          "breakthrough": "将树形粘合的可计算枚举框架延伸至含圈对偶图，并同时处理是否带固定初始复形及连通性条件。",
+          "limitations": "计数对象为特定粘合规则下的复形，不能直接当作流形或所有多胞体的计数。摘要仅对树及附树情形明确承诺渐近估计，含圈情形主要给递推和系数公式。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确主要想法在 2023–2024 年本科论文阶段形成，该阶段未使用 AI；自 2025 年起 AI 辅助计算、文献搜索和可读性、结构及英文，并协助将几乎全部工作形式化为 Lean 4，其中若干证明不同于文稿表述。应区分作者先有的核心想法与后续计算、写作及形式证明辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33344v1 · PDF 第 44 页第 8 节 Declaration of AI Usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:22:29.494681+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33344v1",
+            "contentHash": "d23a2f71bfb6cf35bf8ceb474e4f1375ed17869c8d9b2a62a4d4fef4d7ce7b8b",
+            "pages": 55,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确主要想法在 2023–2024 年本科论文阶段形成，该阶段未使用 AI；自 2025 年起 AI 辅助计算、文献搜索和可读性、结构及英文，并协助将几乎全部工作形式化为 Lean 4，其中若干证明不同于文稿表述。应区分作者先有的核心想法与后续计算、写作及形式证明辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "677442f38117ee30763c4222a9ed4c9e91ccbf811e9e160b7d78f13e9cef9531"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 31,
+          "priorityReason": "偏组合枚举和数学物理，几何分析应用在摘要中尚不明确。",
+          "lowPriorityReason": "偏组合枚举和数学物理，几何分析应用在摘要中尚不明确。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the symmetry-weighted enumeration of complexes formed by gluing copies of a regular polytope. For polytope trees and complexes obtained by attaching such trees to a fixed initial complex, we derive cut-and-join recurrences, differential equations for generating functions, explicit counting formulas, and asymptotic estimates. We then extend the method to complexes with cycles in their dual graphs, enumerating them by the numbers of polytopes and free facets. We derive recurrence relations and partial differential equations for the corresponding bivariate generating functions. In this setting, we obtain recurrences for connected configurations and explicit coefficient formulas for possibly disconnected configurations, both with and without a distinguished initial complex.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

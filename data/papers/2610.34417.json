@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34417",
+  "slug": "2610.34417",
+  "latest": {
+    "arxivId": "2610.34417",
+    "metadata": {
+      "title": "Positive solutions of Yamabe-type equations with general potentials",
+      "authors": [
+        "Hongyu Chen",
+        "Li Ma"
+      ],
+      "abstract": "Let $(M^n,g)$ be a smooth closed connected Riemannian manifold of dimension $n\\ge3$, and let $\\psi\\in C^\\infty(M,\\mathbb R)$. We prove that the equation $$ -\\frac{4(n-1)}{n-2}\\Delta_g u+\\psi u=u^{\\frac{n+2}{n-2}} $$ has a smooth positive solution if and only if its linear part has positive first eigenvalue. In dimensions $n\\ge6$, the proof combines an energy estimate under exact local mass constraints with an intersection argument for finite cycles of atomic measures; dimensions $3\\le n\\le5$ follow from the theorem of Bahri and Brezis.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-10-25T16:16:30Z",
+      "updatedAt": "2026-10-25T16:16:30Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.851573+00:00",
+        "contentHash": "20a061006ca7db15793dd26e0a871107294911af65954379f5fa723f9a6a065b"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "临界椭圆方程的存在性等价判据",
+      "workSummary": "定理 1.1 声称：任意光滑闭连通 n≥3 黎曼流形及任意实值光滑势 ψ，方程 −a_n Δ_g u+ψu=u^((n+2)/(n−2)) 存在光滑正解，当且仅当 λ₁(−a_n Δ_g+ψ)>0，其中 a_n=4(n−1)/(n−2)，Δ_g=div_g∇_g。无需 ψ 逐点为正，也无额外同调非平凡、对称性或可定向假设；3≤n≤5 沿用 Bahri–Brezis，新增声称在 n≥6 的充分性。",
+      "techniques": [
+        "正 Nehari 变分空间、保持非负的下降流与整数泡能量量子化",
+        "ψ−R_g 为正区域内精确相等局部临界质量约束下的多泡能量下界",
+        "分片线性映射到 R^(n−1) 的纤维上的有限原子测度循环与模二交数",
+        "局部中心及权重选择器转移相对类、曲线长度控制下的测试循环能量同伦"
+      ],
+      "breakthrough": "作者意在解决 Bahri–Brezis 高维猜想的光滑势版本。重要困难是 ψ≥R_g 且不恒等时可能没有能量极小解：作者改求非极小的正临界点，组合精确局部质量约束的能量障碍与有限循环交数，在无解假设下制造相对同调矛盾。若 ψ−R_g 某点为负则单泡已低于首阈值；ψ≡R_g 则回到 Yamabe 定理。",
+      "limitations": "已补读 PDF 第 1–10、19–22 页的规范、主定理、变分与量子化输入、局部质量命题及最终存在性论证。范围为无边界紧流形和光滑实势；原 Bahri–Brezis 猜想允许有界势，本文不能视为解决其全部粗糙势版本。谱正性是算子强制性，不是 ψ>0；结论仅为存在性，不给唯一性、所有解紧性或极小值达到。高维结论仍是作者预印本主张，精确质量估计的完整证明、原子循环交数构造和全程能量同伦未逐步独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "独立 AI Assistance Statement 明确写明 AI 被用作辅助工具，但未说明模型、任务或贡献范围。只能确认存在使用披露，不应据此补写语言润色、证明、核心构思或核验等具体用途，因此 usage 留空。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34417v1 · PDF 第 22 页，AI Assistance Statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:29:43.985419+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34417v1",
+        "contentHash": "3fce3f3a6240deae8c84e813dc99ff6eaa39b490de1cb3d0af64300230436af7",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。独立 AI Assistance Statement 明确写明 AI 被用作辅助工具，但未说明模型、任务或贡献范围。只能确认存在使用披露，不应据此补写语言润色、证明、核心构思或核验等具体用途，因此 usage 留空。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ba2934a146bcb408f8015363f178da67374ec794ba618a450e7e91656f223ad9"
+      },
+      "aiUsage": [],
+      "priorityScore": 96,
+      "priorityReason": "一般势、任意闭流形及全维数的结论影响很大，列为最高核查优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(M^n,g)$ be a smooth closed connected Riemannian manifold of dimension $n\\ge3$, and let $\\psi\\in C^\\infty(M,\\mathbb R)$. We prove that the equation $$ -\\frac{4(n-1)}{n-2}\\Delta_g u+\\psi u=u^{\\frac{n+2}{n-2}} $$ has a smooth positive solution if and only if its linear part has positive first eigenvalue. In dimensions $n\\ge6$, the proof combines an energy estimate under exact local mass constraints with an intersection argument for finite cycles of atomic measures; dimensions $3\\le n\\le5$ follow from the theorem of Bahri and Brezis.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34417",
+        "metadata": {
+          "title": "Positive solutions of Yamabe-type equations with general potentials",
+          "authors": [
+            "Hongyu Chen",
+            "Li Ma"
+          ],
+          "abstract": "Let $(M^n,g)$ be a smooth closed connected Riemannian manifold of dimension $n\\ge3$, and let $\\psi\\in C^\\infty(M,\\mathbb R)$. We prove that the equation $$ -\\frac{4(n-1)}{n-2}\\Delta_g u+\\psi u=u^{\\frac{n+2}{n-2}} $$ has a smooth positive solution if and only if its linear part has positive first eigenvalue. In dimensions $n\\ge6$, the proof combines an energy estimate under exact local mass constraints with an intersection argument for finite cycles of atomic measures; dimensions $3\\le n\\le5$ follow from the theorem of Bahri and Brezis.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-10-25T16:16:30Z",
+          "updatedAt": "2026-10-25T16:16:30Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.851573+00:00",
+            "contentHash": "20a061006ca7db15793dd26e0a871107294911af65954379f5fa723f9a6a065b"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "临界椭圆方程的存在性等价判据",
+          "workSummary": "定理 1.1 声称：任意光滑闭连通 n≥3 黎曼流形及任意实值光滑势 ψ，方程 −a_n Δ_g u+ψu=u^((n+2)/(n−2)) 存在光滑正解，当且仅当 λ₁(−a_n Δ_g+ψ)>0，其中 a_n=4(n−1)/(n−2)，Δ_g=div_g∇_g。无需 ψ 逐点为正，也无额外同调非平凡、对称性或可定向假设；3≤n≤5 沿用 Bahri–Brezis，新增声称在 n≥6 的充分性。",
+          "techniques": [
+            "正 Nehari 变分空间、保持非负的下降流与整数泡能量量子化",
+            "ψ−R_g 为正区域内精确相等局部临界质量约束下的多泡能量下界",
+            "分片线性映射到 R^(n−1) 的纤维上的有限原子测度循环与模二交数",
+            "局部中心及权重选择器转移相对类、曲线长度控制下的测试循环能量同伦"
+          ],
+          "breakthrough": "作者意在解决 Bahri–Brezis 高维猜想的光滑势版本。重要困难是 ψ≥R_g 且不恒等时可能没有能量极小解：作者改求非极小的正临界点，组合精确局部质量约束的能量障碍与有限循环交数，在无解假设下制造相对同调矛盾。若 ψ−R_g 某点为负则单泡已低于首阈值；ψ≡R_g 则回到 Yamabe 定理。",
+          "limitations": "已补读 PDF 第 1–10、19–22 页的规范、主定理、变分与量子化输入、局部质量命题及最终存在性论证。范围为无边界紧流形和光滑实势；原 Bahri–Brezis 猜想允许有界势，本文不能视为解决其全部粗糙势版本。谱正性是算子强制性，不是 ψ>0；结论仅为存在性，不给唯一性、所有解紧性或极小值达到。高维结论仍是作者预印本主张，精确质量估计的完整证明、原子循环交数构造和全程能量同伦未逐步独立核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "独立 AI Assistance Statement 明确写明 AI 被用作辅助工具，但未说明模型、任务或贡献范围。只能确认存在使用披露，不应据此补写语言润色、证明、核心构思或核验等具体用途，因此 usage 留空。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34417v1 · PDF 第 22 页，AI Assistance Statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:29:43.985419+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34417v1",
+            "contentHash": "3fce3f3a6240deae8c84e813dc99ff6eaa39b490de1cb3d0af64300230436af7",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。独立 AI Assistance Statement 明确写明 AI 被用作辅助工具，但未说明模型、任务或贡献范围。只能确认存在使用披露，不应据此补写语言润色、证明、核心构思或核验等具体用途，因此 usage 留空。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ba2934a146bcb408f8015363f178da67374ec794ba618a450e7e91656f223ad9"
+          },
+          "aiUsage": [],
+          "priorityScore": 96,
+          "priorityReason": "一般势、任意闭流形及全维数的结论影响很大，列为最高核查优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(M^n,g)$ be a smooth closed connected Riemannian manifold of dimension $n\\ge3$, and let $\\psi\\in C^\\infty(M,\\mathbb R)$. We prove that the equation $$ -\\frac{4(n-1)}{n-2}\\Delta_g u+\\psi u=u^{\\frac{n+2}{n-2}} $$ has a smooth positive solution if and only if its linear part has positive first eigenvalue. In dimensions $n\\ge6$, the proof combines an energy estimate under exact local mass constraints with an intersection argument for finite cycles of atomic measures; dimensions $3\\le n\\le5$ follow from the theorem of Bahri and Brezis.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

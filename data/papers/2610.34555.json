@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34555",
+  "slug": "2610.34555",
+  "latest": {
+    "arxivId": "2610.34555",
+    "metadata": {
+      "title": "Existence of static axisymmetric solutions to the Einstein equations",
+      "authors": [
+        "Philippe G. LeFloch",
+        "Luc Rozoy"
+      ],
+      "abstract": "We construct smooth Riemannian metrics and scalar potentials that are invariant under a circle action and satisfy the static Einstein equations with positive cosmological constant. The underlying compact three-manifold is a ball with two disjoint open balls removed. The potential (or lapse function) is positive in the interior and vanishes at the boundary, consisting of three non-degenerate horizons. The areas of the two inner boundary components are controlled by two arbitrary parameters, namely the masses of the black holes, which are taken to be sufficiently small and comparable. Each inner horizon radius scales linearly with the individual mass parameters, while the separation of their reference centers scales as the cube root of the total mass. These two scales are assumed to be sufficiently small at different rates, whereas the cosmological length remains fixed. The main analytical challenge is to control the linearized equation and the nonlinear remainder simultaneously near the shrinking horizons, between the centers and in the outer region. Weighted Hölder estimates quantify the growth of the inverse and show that the error of an approximation joining Kottler collars to de Sitter space is small enough to close a contraction argument. Namely, we solve a reduced elliptic Einstein equation that is endowed with two obstruction tensors; varying the two axial positions removes their coefficients. The contracted Bianchi identity and an energy estimate for an auxiliary vector field (Killing field) introduced by the projection to vanish. Finally, for a fixed cosmological constant, the intrinsic metric of one of the two boundary components is sufficient to determine a static solution with simply connected interior and non-vanishing boundary gradient, up to isometry and multiplication of the potential by a positive constant.",
+      "categories": [
+        "gr-qc",
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "gr-qc",
+      "comment": "76 pages",
+      "version": 1,
+      "submittedAt": "2026-10-25T20:34:09Z",
+      "updatedAt": "2026-10-25T20:34:09Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:12.947070+00:00",
+        "contentHash": "11baeff96b8458ce86015ebce321f41772cfc5787251dd52a92bb919079e3e8d"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "正宇宙常数静态 Einstein 多视界构造",
+      "workSummary": "在闭三球去掉两个互不相交开球的紧三维流形上，构造圆作用不变、满足正宇宙常数静态 Einstein 方程的光滑度量与势；势内部为正，在三个非退化视界边界为零。两内视界由足够小且可比的质量参数控制，半径与各质量线性同阶，参考中心间距与总质量立方根同阶，宇宙长度固定。通过 Kottler 领圈与 de Sitter 空间拼接、加权 Hölder 逆估计和调节两轴向位置消除障碍，完成收缩论证；以 Bianchi 恒等式及辅助向量场能量估计返回完整方程。作者还称固定宇宙常数时，一个边界分量的内禀度量在单连通内部及边界梯度非零等条件下确定解，模等距和势的正常数倍。",
+      "techniques": [
+        "多尺度椭圆拼接",
+        "加权 Hölder 逆估计",
+        "有限维障碍消除",
+        "Bianchi 恒等式与边界唯一性"
+      ],
+      "breakthrough": "正势、光滑多视界存在及单边界内禀数据唯一性均为强结论，多尺度逆控制是核心。",
+      "limitations": "质量需足够小且可比，两小尺度满足不同速率要求，不能扩至任意质量或间距；边界唯一性的完整正则性、拓扑及边界假设需核对。摘要关于辅助向量场的一句语法残缺，应查原定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确说明本文全部图由 ChatGPT 6 协助生成；披露只覆盖图示制作，未声明数学构想、证明或检验由 AI 参与。依现有用途分类将图示制作记入写作并明确范围。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34555v1 · PDF 第 68 页，Acknowledgments 末尾",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:30:12.118709+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34555v1",
+        "contentHash": "e857216874b045f2c46ed1959fd4679bdc66ebc7acc64aea95a1ad4d45546871",
+        "pages": 76,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明本文全部图由 ChatGPT 6 协助生成；披露只覆盖图示制作，未声明数学构想、证明或检验由 AI 参与。依现有用途分类将图示制作记入写作并明确范围。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "444a54ba211f2b9048f756db78f9cc8706f40dd648c3aad823566ea995343280"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "几何 PDE 拼接技术价值高，多视界存在及边界唯一性均应优先审读。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct smooth Riemannian metrics and scalar potentials that are invariant under a circle action and satisfy the static Einstein equations with positive cosmological constant. The underlying compact three-manifold is a ball with two disjoint open balls removed. The potential (or lapse function) is positive in the interior and vanishes at the boundary, consisting of three non-degenerate horizons. The areas of the two inner boundary components are controlled by two arbitrary parameters, namely the masses of the black holes, which are taken to be sufficiently small and comparable. Each inner horizon radius scales linearly with the individual mass parameters, while the separation of their reference centers scales as the cube root of the total mass. These two scales are assumed to be sufficiently small at different rates, whereas the cosmological length remains fixed. The main analytical challenge is to control the linearized equation and the nonlinear remainder simultaneously near the shrinking horizons, between the centers and in the outer region. Weighted Hölder estimates quantify the growth of the inverse and show that the error of an approximation joining Kottler collars to de Sitter space is small enough to close a contraction argument. Namely, we solve a reduced elliptic Einstein equation that is endowed with two obstruction tensors; varying the two axial positions removes their coefficients. The contracted Bianchi identity and an energy estimate for an auxiliary vector field (Killing field) introduced by the projection to vanish. Finally, for a fixed cosmological constant, the intrinsic metric of one of the two boundary components is sufficient to determine a static solution with simply connected interior and non-vanishing boundary gradient, up to isometry and multiplication of the potential by a positive constant.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34555",
+        "metadata": {
+          "title": "Existence of static axisymmetric solutions to the Einstein equations",
+          "authors": [
+            "Philippe G. LeFloch",
+            "Luc Rozoy"
+          ],
+          "abstract": "We construct smooth Riemannian metrics and scalar potentials that are invariant under a circle action and satisfy the static Einstein equations with positive cosmological constant. The underlying compact three-manifold is a ball with two disjoint open balls removed. The potential (or lapse function) is positive in the interior and vanishes at the boundary, consisting of three non-degenerate horizons. The areas of the two inner boundary components are controlled by two arbitrary parameters, namely the masses of the black holes, which are taken to be sufficiently small and comparable. Each inner horizon radius scales linearly with the individual mass parameters, while the separation of their reference centers scales as the cube root of the total mass. These two scales are assumed to be sufficiently small at different rates, whereas the cosmological length remains fixed. The main analytical challenge is to control the linearized equation and the nonlinear remainder simultaneously near the shrinking horizons, between the centers and in the outer region. Weighted Hölder estimates quantify the growth of the inverse and show that the error of an approximation joining Kottler collars to de Sitter space is small enough to close a contraction argument. Namely, we solve a reduced elliptic Einstein equation that is endowed with two obstruction tensors; varying the two axial positions removes their coefficients. The contracted Bianchi identity and an energy estimate for an auxiliary vector field (Killing field) introduced by the projection to vanish. Finally, for a fixed cosmological constant, the intrinsic metric of one of the two boundary components is sufficient to determine a static solution with simply connected interior and non-vanishing boundary gradient, up to isometry and multiplication of the potential by a positive constant.",
+          "categories": [
+            "gr-qc",
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "gr-qc",
+          "comment": "76 pages",
+          "version": 1,
+          "submittedAt": "2026-10-25T20:34:09Z",
+          "updatedAt": "2026-10-25T20:34:09Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:12.947070+00:00",
+            "contentHash": "11baeff96b8458ce86015ebce321f41772cfc5787251dd52a92bb919079e3e8d"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "正宇宙常数静态 Einstein 多视界构造",
+          "workSummary": "在闭三球去掉两个互不相交开球的紧三维流形上，构造圆作用不变、满足正宇宙常数静态 Einstein 方程的光滑度量与势；势内部为正，在三个非退化视界边界为零。两内视界由足够小且可比的质量参数控制，半径与各质量线性同阶，参考中心间距与总质量立方根同阶，宇宙长度固定。通过 Kottler 领圈与 de Sitter 空间拼接、加权 Hölder 逆估计和调节两轴向位置消除障碍，完成收缩论证；以 Bianchi 恒等式及辅助向量场能量估计返回完整方程。作者还称固定宇宙常数时，一个边界分量的内禀度量在单连通内部及边界梯度非零等条件下确定解，模等距和势的正常数倍。",
+          "techniques": [
+            "多尺度椭圆拼接",
+            "加权 Hölder 逆估计",
+            "有限维障碍消除",
+            "Bianchi 恒等式与边界唯一性"
+          ],
+          "breakthrough": "正势、光滑多视界存在及单边界内禀数据唯一性均为强结论，多尺度逆控制是核心。",
+          "limitations": "质量需足够小且可比，两小尺度满足不同速率要求，不能扩至任意质量或间距；边界唯一性的完整正则性、拓扑及边界假设需核对。摘要关于辅助向量场的一句语法残缺，应查原定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确说明本文全部图由 ChatGPT 6 协助生成；披露只覆盖图示制作，未声明数学构想、证明或检验由 AI 参与。依现有用途分类将图示制作记入写作并明确范围。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34555v1 · PDF 第 68 页，Acknowledgments 末尾",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:30:12.118709+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34555v1",
+            "contentHash": "e857216874b045f2c46ed1959fd4679bdc66ebc7acc64aea95a1ad4d45546871",
+            "pages": 76,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说明本文全部图由 ChatGPT 6 协助生成；披露只覆盖图示制作，未声明数学构想、证明或检验由 AI 参与。依现有用途分类将图示制作记入写作并明确范围。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "444a54ba211f2b9048f756db78f9cc8706f40dd648c3aad823566ea995343280"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "几何 PDE 拼接技术价值高，多视界存在及边界唯一性均应优先审读。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct smooth Riemannian metrics and scalar potentials that are invariant under a circle action and satisfy the static Einstein equations with positive cosmological constant. The underlying compact three-manifold is a ball with two disjoint open balls removed. The potential (or lapse function) is positive in the interior and vanishes at the boundary, consisting of three non-degenerate horizons. The areas of the two inner boundary components are controlled by two arbitrary parameters, namely the masses of the black holes, which are taken to be sufficiently small and comparable. Each inner horizon radius scales linearly with the individual mass parameters, while the separation of their reference centers scales as the cube root of the total mass. These two scales are assumed to be sufficiently small at different rates, whereas the cosmological length remains fixed. The main analytical challenge is to control the linearized equation and the nonlinear remainder simultaneously near the shrinking horizons, between the centers and in the outer region. Weighted Hölder estimates quantify the growth of the inverse and show that the error of an approximation joining Kottler collars to de Sitter space is small enough to close a contraction argument. Namely, we solve a reduced elliptic Einstein equation that is endowed with two obstruction tensors; varying the two axial positions removes their coefficients. The contracted Bianchi identity and an energy estimate for an auxiliary vector field (Killing field) introduced by the projection to vanish. Finally, for a fixed cosmological constant, the intrinsic metric of one of the two boundary components is sufficient to determine a static solution with simply connected interior and non-vanishing boundary gradient, up to isometry and multiplication of the potential by a positive constant.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33943",
+  "slug": "2610.33943",
+  "latest": {
+    "arxivId": "2610.33943",
+    "metadata": {
+      "title": "Extrinsic Curvature Estimation by Closest Point Projection of Rays",
+      "authors": [
+        "Liangchen Liu",
+        "Yen-Hsi Richard Tsai"
+      ],
+      "abstract": "We propose a parametrization-free framework for estimating the second fundamental form and the principal curvatures of a submanifold of $\\mathbb{R}^d$. The method uses the closest point projections of a few short random rays and recovers the curvature from the curves that these projections induce on the submanifold, without coordinate charts or local fitting. We analyze the geometry of the induced curves and characterize when they are geodesics. For hypersurfaces, these results give two algorithms with error bounds: a least squares reconstruction of the second fundamental form from the curvatures of the induced curves, and a direct estimate of all principal curvatures from the eigenvalues of a $d\\times d$ matrix built from $d$ rays, which needs no normal information and costs $\\mathcal{O}(d^3)$ besides the projections. In higher codimension, we can also recover the second fundamental form one normal direction at a time. On point clouds, where the projection becomes a nearest neighbor query, we bound the additional error. Experiments confirm the predicted rates for hypersurfaces in up to $128$ dimensions, for surfaces of codimension up to $98$, and on point clouds, demonstrating the effectiveness of the proposed framework in practice.",
+      "categories": [
+        "math.DG",
+        "cs.CG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "45 pages, 9 figures",
+      "version": 1,
+      "submittedAt": "2026-10-24T23:15:25Z",
+      "updatedAt": "2026-10-24T23:15:25Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33943v1",
+        "observedAt": "2026-10-27T07:25:01.297877+00:00",
+        "contentHash": "e3a053d55174008b4f4818b19320fd5d1c6cedb107c2dc899fdcdd54ef796909"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.705652+00:00",
+        "contentHash": "59e900405a4dffddde4d4fd50af39af853ef0d1ae7146bac99ef24c57b7246d9"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "带误差界的曲率算法",
+      "workSummary": "作者通过少量短随机射线在欧氏子流形上的最近点投影，利用诱导曲线恢复第二基本形式和主曲率，无需局部坐标或拟合。对超曲面给出最小二乘重建，以及由 d 条射线组成的 d×d 矩阵特征值直接估计全部主曲率的算法；后者无需法向信息，投影外计算量为 O(d³)。",
+      "techniques": [
+        "最近点投影诱导曲线的几何",
+        "第二基本形式的最小二乘恢复",
+        "矩阵特征值主曲率估计",
+        "点云近邻投影的附加误差控制"
+      ],
+      "breakthrough": "把外在曲率估计转化为投影查询，在高余维还可逐法向恢复第二基本形式；实验包括最高 128 维超曲面和余维最高 98 的曲面。",
+      "limitations": "最近点投影需在适当局部可用，误差率及采样正则性条件摘要未展开；O(d³) 不含投影成本。高余维结果不等同于无需法向信息同时恢复完整法向值第二基本形式。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:25:01.297877+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33943v1",
+        "contentHash": "e3a053d55174008b4f4818b19320fd5d1c6cedb107c2dc899fdcdd54ef796909",
+        "pages": 45,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。45 页 PDF 提取完整、页数匹配、无短文本页；第 43 页 Artificial Intelligence 命中来自参考文献书系 Lecture Notes in Artificial Intelligence，不是作者使用披露。额外点写 A.I. 及拆行模型名检索未发现新披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8aa831ebc9e118e0493b630b855e89723b8c4d7c92bc636eeefd651bbbacb9b4"
+      },
+      "priorityScore": 64,
+      "priorityReason": "与曲率概念直接相关、数值几何价值较高，适合作为理论估计辅助工具关注。"
+    },
+    "analysisBasis": {
+      "abstract": "We propose a parametrization-free framework for estimating the second fundamental form and the principal curvatures of a submanifold of $\\mathbb{R}^d$. The method uses the closest point projections of a few short random rays and recovers the curvature from the curves that these projections induce on the submanifold, without coordinate charts or local fitting. We analyze the geometry of the induced curves and characterize when they are geodesics. For hypersurfaces, these results give two algorithms with error bounds: a least squares reconstruction of the second fundamental form from the curvatures of the induced curves, and a direct estimate of all principal curvatures from the eigenvalues of a $d\\times d$ matrix built from $d$ rays, which needs no normal information and costs $\\mathcal{O}(d^3)$ besides the projections. In higher codimension, we can also recover the second fundamental form one normal direction at a time. On point clouds, where the projection becomes a nearest neighbor query, we bound the additional error. Experiments confirm the predicted rates for hypersurfaces in up to $128$ dimensions, for surfaces of codimension up to $98$, and on point clouds, demonstrating the effectiveness of the proposed framework in practice.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33943",
+        "metadata": {
+          "title": "Extrinsic Curvature Estimation by Closest Point Projection of Rays",
+          "authors": [
+            "Liangchen Liu",
+            "Yen-Hsi Richard Tsai"
+          ],
+          "abstract": "We propose a parametrization-free framework for estimating the second fundamental form and the principal curvatures of a submanifold of $\\mathbb{R}^d$. The method uses the closest point projections of a few short random rays and recovers the curvature from the curves that these projections induce on the submanifold, without coordinate charts or local fitting. We analyze the geometry of the induced curves and characterize when they are geodesics. For hypersurfaces, these results give two algorithms with error bounds: a least squares reconstruction of the second fundamental form from the curvatures of the induced curves, and a direct estimate of all principal curvatures from the eigenvalues of a $d\\times d$ matrix built from $d$ rays, which needs no normal information and costs $\\mathcal{O}(d^3)$ besides the projections. In higher codimension, we can also recover the second fundamental form one normal direction at a time. On point clouds, where the projection becomes a nearest neighbor query, we bound the additional error. Experiments confirm the predicted rates for hypersurfaces in up to $128$ dimensions, for surfaces of codimension up to $98$, and on point clouds, demonstrating the effectiveness of the proposed framework in practice.",
+          "categories": [
+            "math.DG",
+            "cs.CG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "45 pages, 9 figures",
+          "version": 1,
+          "submittedAt": "2026-10-24T23:15:25Z",
+          "updatedAt": "2026-10-24T23:15:25Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33943v1",
+            "observedAt": "2026-10-27T07:25:01.297877+00:00",
+            "contentHash": "e3a053d55174008b4f4818b19320fd5d1c6cedb107c2dc899fdcdd54ef796909"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.705652+00:00",
+            "contentHash": "59e900405a4dffddde4d4fd50af39af853ef0d1ae7146bac99ef24c57b7246d9"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "带误差界的曲率算法",
+          "workSummary": "作者通过少量短随机射线在欧氏子流形上的最近点投影，利用诱导曲线恢复第二基本形式和主曲率，无需局部坐标或拟合。对超曲面给出最小二乘重建，以及由 d 条射线组成的 d×d 矩阵特征值直接估计全部主曲率的算法；后者无需法向信息，投影外计算量为 O(d³)。",
+          "techniques": [
+            "最近点投影诱导曲线的几何",
+            "第二基本形式的最小二乘恢复",
+            "矩阵特征值主曲率估计",
+            "点云近邻投影的附加误差控制"
+          ],
+          "breakthrough": "把外在曲率估计转化为投影查询，在高余维还可逐法向恢复第二基本形式；实验包括最高 128 维超曲面和余维最高 98 的曲面。",
+          "limitations": "最近点投影需在适当局部可用，误差率及采样正则性条件摘要未展开；O(d³) 不含投影成本。高余维结果不等同于无需法向信息同时恢复完整法向值第二基本形式。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:25:01.297877+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33943v1",
+            "contentHash": "e3a053d55174008b4f4818b19320fd5d1c6cedb107c2dc899fdcdd54ef796909",
+            "pages": 45,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。45 页 PDF 提取完整、页数匹配、无短文本页；第 43 页 Artificial Intelligence 命中来自参考文献书系 Lecture Notes in Artificial Intelligence，不是作者使用披露。额外点写 A.I. 及拆行模型名检索未发现新披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8aa831ebc9e118e0493b630b855e89723b8c4d7c92bc636eeefd651bbbacb9b4"
+          },
+          "priorityScore": 64,
+          "priorityReason": "与曲率概念直接相关、数值几何价值较高，适合作为理论估计辅助工具关注。"
+        },
+        "analysisBasis": {
+          "abstract": "We propose a parametrization-free framework for estimating the second fundamental form and the principal curvatures of a submanifold of $\\mathbb{R}^d$. The method uses the closest point projections of a few short random rays and recovers the curvature from the curves that these projections induce on the submanifold, without coordinate charts or local fitting. We analyze the geometry of the induced curves and characterize when they are geodesics. For hypersurfaces, these results give two algorithms with error bounds: a least squares reconstruction of the second fundamental form from the curvatures of the induced curves, and a direct estimate of all principal curvatures from the eigenvalues of a $d\\times d$ matrix built from $d$ rays, which needs no normal information and costs $\\mathcal{O}(d^3)$ besides the projections. In higher codimension, we can also recover the second fundamental form one normal direction at a time. On point clouds, where the projection becomes a nearest neighbor query, we bound the additional error. Experiments confirm the predicted rates for hypersurfaces in up to $128$ dimensions, for surfaces of codimension up to $98$, and on point clouds, demonstrating the effectiveness of the proposed framework in practice.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

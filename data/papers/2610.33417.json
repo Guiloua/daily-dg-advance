@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.33417",
+  "slug": "2610.33417",
+  "latest": {
+    "arxivId": "2610.33417",
+    "metadata": {
+      "title": "Volume of area-bounded PGL3-Hitchin moduli space",
+      "authors": [
+        "Qiongling Li",
+        "Beibei Liu",
+        "Weixu Su",
+        "Zhe Sun"
+      ],
+      "abstract": "For the $\\mathrm{PGL}_3$-Hitchin moduli space of unmarked convex $\\mathbb{RP}^2$ structures on the surface $S_{g,m}$ with fixed boundary data $\\mathbf L$ when $m>0$, we investigate the subset whose canonical Hilbert--Busemann area is bounded above by $t$. We show that the Goldman symplectic volume of this subset is at most $C_{g,m}(t+\\lambda^2)^{8g-8+3m}$, where $\\lambda$ is the largest total-root boundary length for $m>0$ and is set to $0$ for $m=0$. As a consequence, We obtain the explicit upper bound for the $e^{-s\\cdot\\mathrm{Area}}$-weighted volume.",
+      "categories": [
+        "math.DG",
+        "math-ph",
+        "math.GT"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "25 pages, 7 figures. This preprint supersedes the earlier preprint arXiv:2001.01295",
+      "version": 1,
+      "submittedAt": "2026-10-24T03:17:37Z",
+      "updatedAt": "2026-10-24T03:17:37Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-27T07:16:02.941181+00:00",
+        "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.33417v1",
+        "observedAt": "2026-10-27T07:22:49.217438+00:00",
+        "contentHash": "42f792f266e1dd1340c56873786fc478efd012107bbd5a414b82588bc598154e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:39:48.702159+00:00",
+        "contentHash": "e2e3f72130326a2778eb35314abab32a0e3f5079e35725cffadfdafd6d085d9f"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "模空间体积上界",
+      "workSummary": "对曲面 S_(g,m) 上无标记凸 RP^2 结构的 PGL_3-Hitchin 模空间，在有边界时固定边界数据 L，作者证明 Hilbert–Busemann 面积≤t 的部分，其 Goldman 辛体积至多为 C_(g,m)(t+λ²)^(8g−8+3m)；λ 为最大总根边界长度，无边界时置零。并推出 e^(−s·Area) 加权体积的显式上界。",
+      "techniques": [
+        "Hilbert–Busemann 面积截断",
+        "Goldman 辛体积估计",
+        "面积加权体积的积分控制"
+      ],
+      "breakthrough": "用几何面积控制更高 Teichmüller 模空间的体积增长，为面积 Gibbs 型积分提供定量可积性上界。",
+      "limitations": "这里只是多项式上界，摘要没有给出匹配下界、精确增长阶或渐近等价；有边界时必须保留固定边界数据及 λ² 项。曲面类型和 s 的允许范围须以正文定理为准。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明示命题 3.6、4.3 及其证明关键想法由作者基于几何洞见提出，再交 GPT-6 Astra 展开技术细节；所得证明由作者改进和独立验证。明确属于指定证明的技术补全，不应把命题或核心证明思路归于 AI。作者独立核查不等于 AI 自身做了独立验证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.33417v1 · PDF 第 23 页 Declaration of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:22:49.217438+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.33417v1",
+        "contentHash": "42f792f266e1dd1340c56873786fc478efd012107bbd5a414b82588bc598154e",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示命题 3.6、4.3 及其证明关键想法由作者基于几何洞见提出，再交 GPT-6 Astra 展开技术细节；所得证明由作者改进和独立验证。明确属于指定证明的技术补全，不应把命题或核心证明思路归于 AI。作者独立核查不等于 AI 自身做了独立验证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d502b8f5cf907b8ae1f8471af1236d32f59bb0eec989226c3ffe08f1f0051310"
+      },
+      "aiUsage": [
+        "proofs"
+      ],
+      "priorityScore": 66,
+      "priorityReason": "涉及凸射影度量和模空间几何，具有分析联系，但不是直接的曲率比较或流估计。"
+    },
+    "analysisBasis": {
+      "abstract": "For the $\\mathrm{PGL}_3$-Hitchin moduli space of unmarked convex $\\mathbb{RP}^2$ structures on the surface $S_{g,m}$ with fixed boundary data $\\mathbf L$ when $m>0$, we investigate the subset whose canonical Hilbert--Busemann area is bounded above by $t$. We show that the Goldman symplectic volume of this subset is at most $C_{g,m}(t+\\lambda^2)^{8g-8+3m}$, where $\\lambda$ is the largest total-root boundary length for $m>0$ and is set to $0$ for $m=0$. As a consequence, We obtain the explicit upper bound for the $e^{-s\\cdot\\mathrm{Area}}$-weighted volume.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.33417",
+        "metadata": {
+          "title": "Volume of area-bounded PGL3-Hitchin moduli space",
+          "authors": [
+            "Qiongling Li",
+            "Beibei Liu",
+            "Weixu Su",
+            "Zhe Sun"
+          ],
+          "abstract": "For the $\\mathrm{PGL}_3$-Hitchin moduli space of unmarked convex $\\mathbb{RP}^2$ structures on the surface $S_{g,m}$ with fixed boundary data $\\mathbf L$ when $m>0$, we investigate the subset whose canonical Hilbert--Busemann area is bounded above by $t$. We show that the Goldman symplectic volume of this subset is at most $C_{g,m}(t+\\lambda^2)^{8g-8+3m}$, where $\\lambda$ is the largest total-root boundary length for $m>0$ and is set to $0$ for $m=0$. As a consequence, We obtain the explicit upper bound for the $e^{-s\\cdot\\mathrm{Area}}$-weighted volume.",
+          "categories": [
+            "math.DG",
+            "math-ph",
+            "math.GT"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "25 pages, 7 figures. This preprint supersedes the earlier preprint arXiv:2001.01295",
+          "version": 1,
+          "submittedAt": "2026-10-24T03:17:37Z",
+          "updatedAt": "2026-10-24T03:17:37Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-27T07:16:02.941181+00:00",
+            "contentHash": "83080769e7abe473aaf9b8fa3e426ebf46126f866cbd137268480d5642ef48e8"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.33417v1",
+            "observedAt": "2026-10-27T07:22:49.217438+00:00",
+            "contentHash": "42f792f266e1dd1340c56873786fc478efd012107bbd5a414b82588bc598154e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:39:48.702159+00:00",
+            "contentHash": "e2e3f72130326a2778eb35314abab32a0e3f5079e35725cffadfdafd6d085d9f"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "模空间体积上界",
+          "workSummary": "对曲面 S_(g,m) 上无标记凸 RP^2 结构的 PGL_3-Hitchin 模空间，在有边界时固定边界数据 L，作者证明 Hilbert–Busemann 面积≤t 的部分，其 Goldman 辛体积至多为 C_(g,m)(t+λ²)^(8g−8+3m)；λ 为最大总根边界长度，无边界时置零。并推出 e^(−s·Area) 加权体积的显式上界。",
+          "techniques": [
+            "Hilbert–Busemann 面积截断",
+            "Goldman 辛体积估计",
+            "面积加权体积的积分控制"
+          ],
+          "breakthrough": "用几何面积控制更高 Teichmüller 模空间的体积增长，为面积 Gibbs 型积分提供定量可积性上界。",
+          "limitations": "这里只是多项式上界，摘要没有给出匹配下界、精确增长阶或渐近等价；有边界时必须保留固定边界数据及 λ² 项。曲面类型和 s 的允许范围须以正文定理为准。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明示命题 3.6、4.3 及其证明关键想法由作者基于几何洞见提出，再交 GPT-6 Astra 展开技术细节；所得证明由作者改进和独立验证。明确属于指定证明的技术补全，不应把命题或核心证明思路归于 AI。作者独立核查不等于 AI 自身做了独立验证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.33417v1 · PDF 第 23 页 Declaration of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:22:49.217438+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.33417v1",
+            "contentHash": "42f792f266e1dd1340c56873786fc478efd012107bbd5a414b82588bc598154e",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示命题 3.6、4.3 及其证明关键想法由作者基于几何洞见提出，再交 GPT-6 Astra 展开技术细节；所得证明由作者改进和独立验证。明确属于指定证明的技术补全，不应把命题或核心证明思路归于 AI。作者独立核查不等于 AI 自身做了独立验证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d502b8f5cf907b8ae1f8471af1236d32f59bb0eec989226c3ffe08f1f0051310"
+          },
+          "aiUsage": [
+            "proofs"
+          ],
+          "priorityScore": 66,
+          "priorityReason": "涉及凸射影度量和模空间几何，具有分析联系，但不是直接的曲率比较或流估计。"
+        },
+        "analysisBasis": {
+          "abstract": "For the $\\mathrm{PGL}_3$-Hitchin moduli space of unmarked convex $\\mathbb{RP}^2$ structures on the surface $S_{g,m}$ with fixed boundary data $\\mathbf L$ when $m>0$, we investigate the subset whose canonical Hilbert--Busemann area is bounded above by $t$. We show that the Goldman symplectic volume of this subset is at most $C_{g,m}(t+\\lambda^2)^{8g-8+3m}$, where $\\lambda$ is the largest total-root boundary length for $m>0$ and is set to $0$ for $m=0$. As a consequence, We obtain the explicit upper bound for the $e^{-s\\cdot\\mathrm{Area}}$-weighted volume.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34651",
+  "slug": "2610.34651",
+  "latest": {
+    "arxivId": "2610.34651",
+    "metadata": {
+      "title": "Approximating the Euclidean Ball by Polytopes: Surprising Rates in High Dimensions",
+      "authors": [
+        "Yegor Gorodzha",
+        "Steven Hoehner",
+        "Gil Kur"
+      ],
+      "abstract": "We determine the sharp dimensional dependence of the asymptotic approximation error for the Euclidean unit ball $B_2^d\\subset\\mathbb{R}^d$ by polytopes with a prescribed number of vertices in the relative symmetric difference metric. Specifically, we prove that $$\\lim_{N\\to\\infty}N^{2/(d-1)}\\inf_{P\\in P_d(N)}\\frac{\\operatorname{vol}_d(P\\triangle B_2^d)}{\\operatorname{vol}_d(B_2^d)}=\\Theta(d^{-1/2}),$$ where $P_d(N)$ consists of polytopes with at most $N$ vertices and no containment restriction. Equivalently, the classical Laguerre-Delone triangulation numbers satisfy $\\operatorname{ldel}_{d-1}=\\Theta(d^{-1/2})$. This improves the lower bound $\\Omega(d^{-1})$ of Böröczky (2000) and the upper bound $O(1)$ of Ludwig, Schütt and Werner (2006). In contrast, the corresponding asymptotic coefficient for approximation with a prescribed number of facets has order one, as shown by Kur (2020). We also establish non-asymptotic bounds showing that, for every fixed $\\varepsilon\\in(0,1)$, the ball admits an $\\varepsilon$-approximation with at most $\\exp(C(\\varepsilon)\\sqrt d)$ vertices, whereas approximating the hypercube to the same accuracy requires at least $\\exp(c(\\varepsilon)d)$ vertices. Consequently, the ball does not maximize the optimal relative approximation error among convex bodies, even up to an absolute multiplicative constant at the same vertex budget. Thus Macbeath's theorem (1951) on the extremality of the ball for inscribed approximation does not extend to polytopes in arbitrary position.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "72 pages",
+      "version": 1,
+      "submittedAt": "2026-10-26T00:29:19Z",
+      "updatedAt": "2026-10-26T00:29:19Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-27T07:15:50.970160+00:00",
+        "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:12.947831+00:00",
+        "contentHash": "2a5ad1df0009a86cf7051c5213b533ed16914a30c2dcf8b6b0d0d64aaad4b251"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "高维凸体逼近的尖锐维数阶",
+      "workSummary": "对位置自由、至多 N 顶点多面体逼近 Euclidean 球，在相对体积对称差下确定渐近系数：固定 d 后令 N→∞，将最优误差乘 N^{2/(d−1)} 所得极限为 Θ(d^{−1/2})，等价确定 Laguerre–Delone 数维数阶，改进 Ω(d^{−1}) 与 O(1)。另对固定 ε∈(0,1)，给出球以至多 exp(C(ε)√d) 顶点 ε 逼近的上界，而超立方体至少需 exp(c(ε)d) 顶点，故同预算下球不以绝对常数意义极大化所有凸体的最优误差。",
+      "techniques": [
+        "位置自由多面体逼近",
+        "相对对称差",
+        "Laguerre–Delone 常数",
+        "固定误差高维复杂度"
+      ],
+      "breakthrough": "揭示顶点预算与面数预算的渐近系数不同，并否定内接逼近中的球极值现象直接延伸到任意位置。",
+      "limitations": "Θ 描述先 N→∞ 后的系数维数阶，并非所有 d,N 的统一等价。exp(C(ε)√d) 仅是球所需顶点数的存在性上界，未给匹配下界；位置自由与相对对称差是必要语境。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确称第一作者使用 GPT-5.6、GPT-6 探索主渐近结果的下界论证及若干非渐近推广，初始思路来自这些交互，随后由作者简化发展；其余证明及与单纯形面多面体的联系由作者原创。另披露语言和表述协助。具体核心下界路线有明确思路归因，标 ideas、exploration、writing，不把全部证明归于模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34651v1 · PDF 第 21 页，Statement on the use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:30:27.103634+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34651v1",
+        "contentHash": "edba5fd05a2a505becaed1ea96abcb30a390e80b2fe4598af096531c8059458b",
+        "pages": 72,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确称第一作者使用 GPT-5.6、GPT-6 探索主渐近结果的下界论证及若干非渐近推广，初始思路来自这些交互，随后由作者简化发展；其余证明及与单纯形面多面体的联系由作者原创。另披露语言和表述协助。具体核心下界路线有明确思路归因，标 ideas、exploration、writing，不把全部证明归于模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e2a4ae69c2d9fb74e916a6e48400da9e5f32e73defd9aa16dd50abc911cc796e"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 82,
+      "priorityReason": "定量凸几何结果显著，阅读时须区分渐近系数、非渐近上界和最优复杂度。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the sharp dimensional dependence of the asymptotic approximation error for the Euclidean unit ball $B_2^d\\subset\\mathbb{R}^d$ by polytopes with a prescribed number of vertices in the relative symmetric difference metric. Specifically, we prove that $$\\lim_{N\\to\\infty}N^{2/(d-1)}\\inf_{P\\in P_d(N)}\\frac{\\operatorname{vol}_d(P\\triangle B_2^d)}{\\operatorname{vol}_d(B_2^d)}=\\Theta(d^{-1/2}),$$ where $P_d(N)$ consists of polytopes with at most $N$ vertices and no containment restriction. Equivalently, the classical Laguerre-Delone triangulation numbers satisfy $\\operatorname{ldel}_{d-1}=\\Theta(d^{-1/2})$. This improves the lower bound $\\Omega(d^{-1})$ of Böröczky (2000) and the upper bound $O(1)$ of Ludwig, Schütt and Werner (2006). In contrast, the corresponding asymptotic coefficient for approximation with a prescribed number of facets has order one, as shown by Kur (2020). We also establish non-asymptotic bounds showing that, for every fixed $\\varepsilon\\in(0,1)$, the ball admits an $\\varepsilon$-approximation with at most $\\exp(C(\\varepsilon)\\sqrt d)$ vertices, whereas approximating the hypercube to the same accuracy requires at least $\\exp(c(\\varepsilon)d)$ vertices. Consequently, the ball does not maximize the optimal relative approximation error among convex bodies, even up to an absolute multiplicative constant at the same vertex budget. Thus Macbeath's theorem (1951) on the extremality of the ball for inscribed approximation does not extend to polytopes in arbitrary position.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34651",
+        "metadata": {
+          "title": "Approximating the Euclidean Ball by Polytopes: Surprising Rates in High Dimensions",
+          "authors": [
+            "Yegor Gorodzha",
+            "Steven Hoehner",
+            "Gil Kur"
+          ],
+          "abstract": "We determine the sharp dimensional dependence of the asymptotic approximation error for the Euclidean unit ball $B_2^d\\subset\\mathbb{R}^d$ by polytopes with a prescribed number of vertices in the relative symmetric difference metric. Specifically, we prove that $$\\lim_{N\\to\\infty}N^{2/(d-1)}\\inf_{P\\in P_d(N)}\\frac{\\operatorname{vol}_d(P\\triangle B_2^d)}{\\operatorname{vol}_d(B_2^d)}=\\Theta(d^{-1/2}),$$ where $P_d(N)$ consists of polytopes with at most $N$ vertices and no containment restriction. Equivalently, the classical Laguerre-Delone triangulation numbers satisfy $\\operatorname{ldel}_{d-1}=\\Theta(d^{-1/2})$. This improves the lower bound $\\Omega(d^{-1})$ of Böröczky (2000) and the upper bound $O(1)$ of Ludwig, Schütt and Werner (2006). In contrast, the corresponding asymptotic coefficient for approximation with a prescribed number of facets has order one, as shown by Kur (2020). We also establish non-asymptotic bounds showing that, for every fixed $\\varepsilon\\in(0,1)$, the ball admits an $\\varepsilon$-approximation with at most $\\exp(C(\\varepsilon)\\sqrt d)$ vertices, whereas approximating the hypercube to the same accuracy requires at least $\\exp(c(\\varepsilon)d)$ vertices. Consequently, the ball does not maximize the optimal relative approximation error among convex bodies, even up to an absolute multiplicative constant at the same vertex budget. Thus Macbeath's theorem (1951) on the extremality of the ball for inscribed approximation does not extend to polytopes in arbitrary position.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "72 pages",
+          "version": 1,
+          "submittedAt": "2026-10-26T00:29:19Z",
+          "updatedAt": "2026-10-26T00:29:19Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-27T07:15:50.970160+00:00",
+            "contentHash": "dfcc929b6b9cfc0ce0fee41e40cc280b2cd62bbad0204a58b25f73a75ffbddca"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:12.947831+00:00",
+            "contentHash": "2a5ad1df0009a86cf7051c5213b533ed16914a30c2dcf8b6b0d0d64aaad4b251"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "高维凸体逼近的尖锐维数阶",
+          "workSummary": "对位置自由、至多 N 顶点多面体逼近 Euclidean 球，在相对体积对称差下确定渐近系数：固定 d 后令 N→∞，将最优误差乘 N^{2/(d−1)} 所得极限为 Θ(d^{−1/2})，等价确定 Laguerre–Delone 数维数阶，改进 Ω(d^{−1}) 与 O(1)。另对固定 ε∈(0,1)，给出球以至多 exp(C(ε)√d) 顶点 ε 逼近的上界，而超立方体至少需 exp(c(ε)d) 顶点，故同预算下球不以绝对常数意义极大化所有凸体的最优误差。",
+          "techniques": [
+            "位置自由多面体逼近",
+            "相对对称差",
+            "Laguerre–Delone 常数",
+            "固定误差高维复杂度"
+          ],
+          "breakthrough": "揭示顶点预算与面数预算的渐近系数不同，并否定内接逼近中的球极值现象直接延伸到任意位置。",
+          "limitations": "Θ 描述先 N→∞ 后的系数维数阶，并非所有 d,N 的统一等价。exp(C(ε)√d) 仅是球所需顶点数的存在性上界，未给匹配下界；位置自由与相对对称差是必要语境。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确称第一作者使用 GPT-5.6、GPT-6 探索主渐近结果的下界论证及若干非渐近推广，初始思路来自这些交互，随后由作者简化发展；其余证明及与单纯形面多面体的联系由作者原创。另披露语言和表述协助。具体核心下界路线有明确思路归因，标 ideas、exploration、writing，不把全部证明归于模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34651v1 · PDF 第 21 页，Statement on the use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:30:27.103634+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34651v1",
+            "contentHash": "edba5fd05a2a505becaed1ea96abcb30a390e80b2fe4598af096531c8059458b",
+            "pages": 72,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确称第一作者使用 GPT-5.6、GPT-6 探索主渐近结果的下界论证及若干非渐近推广，初始思路来自这些交互，随后由作者简化发展；其余证明及与单纯形面多面体的联系由作者原创。另披露语言和表述协助。具体核心下界路线有明确思路归因，标 ideas、exploration、writing，不把全部证明归于模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e2a4ae69c2d9fb74e916a6e48400da9e5f32e73defd9aa16dd50abc911cc796e"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 82,
+          "priorityReason": "定量凸几何结果显著，阅读时须区分渐近系数、非渐近上界和最优复杂度。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the sharp dimensional dependence of the asymptotic approximation error for the Euclidean unit ball $B_2^d\\subset\\mathbb{R}^d$ by polytopes with a prescribed number of vertices in the relative symmetric difference metric. Specifically, we prove that $$\\lim_{N\\to\\infty}N^{2/(d-1)}\\inf_{P\\in P_d(N)}\\frac{\\operatorname{vol}_d(P\\triangle B_2^d)}{\\operatorname{vol}_d(B_2^d)}=\\Theta(d^{-1/2}),$$ where $P_d(N)$ consists of polytopes with at most $N$ vertices and no containment restriction. Equivalently, the classical Laguerre-Delone triangulation numbers satisfy $\\operatorname{ldel}_{d-1}=\\Theta(d^{-1/2})$. This improves the lower bound $\\Omega(d^{-1})$ of Böröczky (2000) and the upper bound $O(1)$ of Ludwig, Schütt and Werner (2006). In contrast, the corresponding asymptotic coefficient for approximation with a prescribed number of facets has order one, as shown by Kur (2020). We also establish non-asymptotic bounds showing that, for every fixed $\\varepsilon\\in(0,1)$, the ball admits an $\\varepsilon$-approximation with at most $\\exp(C(\\varepsilon)\\sqrt d)$ vertices, whereas approximating the hypercube to the same accuracy requires at least $\\exp(c(\\varepsilon)d)$ vertices. Consequently, the ball does not maximize the optimal relative approximation error among convex bodies, even up to an absolute multiplicative constant at the same vertex budget. Thus Macbeath's theorem (1951) on the extremality of the ball for inscribed approximation does not extend to polytopes in arbitrary position.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35837",
+  "slug": "2610.35837",
+  "latest": {
+    "arxivId": "2610.35837",
+    "metadata": {
+      "title": "Nonabelian Higgs fields from minimal submanifolds",
+      "authors": [
+        "Marco Badran"
+      ],
+      "abstract": "We construct $\\mathrm{SU}(2)$ Yang-Mills-Higgs fields on a broad class of noncompact Riemannian manifolds, concentrating in the large-mass limit along prescribed nondegenerate minimal submanifolds of codimension three. The solutions have uniformly bounded rescaled energy. On closed manifolds with $b_1(M)=0$, adding a suitably scaled Higgs potential gives an analogous concentration result. Our construction completes one direction of the correspondence proposed by Parise, Pigati and Stern, realising prescribed minimal submanifolds of codimension three as concentration sets of $\\mathrm{SU}(2)$ Yang--Mills--Higgs fields.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "88 pages. All comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-26T17:52:48Z",
+      "updatedAt": "2026-10-26T17:52:48Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:36.289677+00:00",
+        "contentHash": "5152adaa96130782d633d7ff39d93ac5f478975299a16ef4ef44cd06255d6d28"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "极小子流形上的规范场集中构造",
+      "workSummary": "在一大类非紧 Riemann 流形上构造 SU(2) Yang–Mills–Higgs 场，使其在大质量极限沿预先指定的非退化、余维三极小子流形集中，并具有一致有界的重标度能量。在闭流形上，若 b₁(M)=0，加入适当缩放的 Higgs 势后得到类似集中结果。",
+      "techniques": [
+        "大质量极限下的规范场集中构造",
+        "非退化极小子流形作为集中集",
+        "缩放 Higgs 势处理闭流形情形"
+      ],
+      "breakthrough": "实现 Parise–Pigati–Stern 所提出对应的一个方向：把指定余维三极小子流形构造成 SU(2) Yang–Mills–Higgs 场的集中集。",
+      "limitations": "非退化性、余维三及非紧背景的具体几何条件不可省略；闭情形另需 b₁=0 和附加势。只是对应的构造方向，不能声称证明双向分类或所有集中集的刻画。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "AI usage statement 具体归因 ChatGPT-6 Astra 两项已采用的分析设计：第 5 节范数 (5.1)(5.2) 的 dyadic 结构，尤其跨尺度求和以处理临界 Poisson 源；第 9 节沿 Γ 的谱分解结合 resolvent 构造的伴随测试 (9.6)，逐模恢复约化方程系数。作者明确不主张首项想法的信用，且称引理 9.1、9.2 的证明主要由 ChatGPT 产生、作者稍作修改。因此标记核心思想与证明；一般论证组织也记写作辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35837v1 · PDF 第 87 页 AI usage statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:39:02.511901+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35837v1",
+        "contentHash": "6dfac9069f3e9be5b3787a4e2340903eeb4724f8b3b153305afad3d1c5d5bfd6",
+        "pages": 88,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI usage statement 具体归因 ChatGPT-6 Astra 两项已采用的分析设计：第 5 节范数 (5.1)(5.2) 的 dyadic 结构，尤其跨尺度求和以处理临界 Poisson 源；第 9 节沿 Γ 的谱分解结合 resolvent 构造的伴随测试 (9.6)，逐模恢复约化方程系数。作者明确不主张首项想法的信用，且称引理 9.1、9.2 的证明主要由 ChatGPT 产生、作者稍作修改。因此标记核心思想与证明；一般论证组织也记写作辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ae8f944a72f03b8b78f2842832cb311a6476b076d7e196217fdba94b24b417ff"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "规范 PDE 与极小子流形集中机制直接相连，属于几何分析主线，宜精读非退化条件和重标度能量的归一化。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct $\\mathrm{SU}(2)$ Yang-Mills-Higgs fields on a broad class of noncompact Riemannian manifolds, concentrating in the large-mass limit along prescribed nondegenerate minimal submanifolds of codimension three. The solutions have uniformly bounded rescaled energy. On closed manifolds with $b_1(M)=0$, adding a suitably scaled Higgs potential gives an analogous concentration result. Our construction completes one direction of the correspondence proposed by Parise, Pigati and Stern, realising prescribed minimal submanifolds of codimension three as concentration sets of $\\mathrm{SU}(2)$ Yang--Mills--Higgs fields.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35837",
+        "metadata": {
+          "title": "Nonabelian Higgs fields from minimal submanifolds",
+          "authors": [
+            "Marco Badran"
+          ],
+          "abstract": "We construct $\\mathrm{SU}(2)$ Yang-Mills-Higgs fields on a broad class of noncompact Riemannian manifolds, concentrating in the large-mass limit along prescribed nondegenerate minimal submanifolds of codimension three. The solutions have uniformly bounded rescaled energy. On closed manifolds with $b_1(M)=0$, adding a suitably scaled Higgs potential gives an analogous concentration result. Our construction completes one direction of the correspondence proposed by Parise, Pigati and Stern, realising prescribed minimal submanifolds of codimension three as concentration sets of $\\mathrm{SU}(2)$ Yang--Mills--Higgs fields.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "88 pages. All comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-26T17:52:48Z",
+          "updatedAt": "2026-10-26T17:52:48Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:36.289677+00:00",
+            "contentHash": "5152adaa96130782d633d7ff39d93ac5f478975299a16ef4ef44cd06255d6d28"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "极小子流形上的规范场集中构造",
+          "workSummary": "在一大类非紧 Riemann 流形上构造 SU(2) Yang–Mills–Higgs 场，使其在大质量极限沿预先指定的非退化、余维三极小子流形集中，并具有一致有界的重标度能量。在闭流形上，若 b₁(M)=0，加入适当缩放的 Higgs 势后得到类似集中结果。",
+          "techniques": [
+            "大质量极限下的规范场集中构造",
+            "非退化极小子流形作为集中集",
+            "缩放 Higgs 势处理闭流形情形"
+          ],
+          "breakthrough": "实现 Parise–Pigati–Stern 所提出对应的一个方向：把指定余维三极小子流形构造成 SU(2) Yang–Mills–Higgs 场的集中集。",
+          "limitations": "非退化性、余维三及非紧背景的具体几何条件不可省略；闭情形另需 b₁=0 和附加势。只是对应的构造方向，不能声称证明双向分类或所有集中集的刻画。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "AI usage statement 具体归因 ChatGPT-6 Astra 两项已采用的分析设计：第 5 节范数 (5.1)(5.2) 的 dyadic 结构，尤其跨尺度求和以处理临界 Poisson 源；第 9 节沿 Γ 的谱分解结合 resolvent 构造的伴随测试 (9.6)，逐模恢复约化方程系数。作者明确不主张首项想法的信用，且称引理 9.1、9.2 的证明主要由 ChatGPT 产生、作者稍作修改。因此标记核心思想与证明；一般论证组织也记写作辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35837v1 · PDF 第 87 页 AI usage statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:39:02.511901+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35837v1",
+            "contentHash": "6dfac9069f3e9be5b3787a4e2340903eeb4724f8b3b153305afad3d1c5d5bfd6",
+            "pages": 88,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI usage statement 具体归因 ChatGPT-6 Astra 两项已采用的分析设计：第 5 节范数 (5.1)(5.2) 的 dyadic 结构，尤其跨尺度求和以处理临界 Poisson 源；第 9 节沿 Γ 的谱分解结合 resolvent 构造的伴随测试 (9.6)，逐模恢复约化方程系数。作者明确不主张首项想法的信用，且称引理 9.1、9.2 的证明主要由 ChatGPT 产生、作者稍作修改。因此标记核心思想与证明；一般论证组织也记写作辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ae8f944a72f03b8b78f2842832cb311a6476b076d7e196217fdba94b24b417ff"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "规范 PDE 与极小子流形集中机制直接相连，属于几何分析主线，宜精读非退化条件和重标度能量的归一化。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct $\\mathrm{SU}(2)$ Yang-Mills-Higgs fields on a broad class of noncompact Riemannian manifolds, concentrating in the large-mass limit along prescribed nondegenerate minimal submanifolds of codimension three. The solutions have uniformly bounded rescaled energy. On closed manifolds with $b_1(M)=0$, adding a suitably scaled Higgs potential gives an analogous concentration result. Our construction completes one direction of the correspondence proposed by Parise, Pigati and Stern, realising prescribed minimal submanifolds of codimension three as concentration sets of $\\mathrm{SU}(2)$ Yang--Mills--Higgs fields.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

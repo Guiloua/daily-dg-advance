@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35809",
+  "slug": "2610.35809",
+  "latest": {
+    "arxivId": "2610.35809",
+    "metadata": {
+      "title": "Parabolic Rectifiable Reifenberg for Measures",
+      "authors": [
+        "Robert Koirala"
+      ],
+      "abstract": "We announce a structure theory for measures on $\\mathbb{R}^n\\times\\mathbb{R}$ equipped with the parabolic distance. Our results include a parabolic rectifiable Reifenberg theorem for arbitrary Radon measures, qualitative and quantitative characterizations of regular parabolic rectifiability by Jones square functions, and sharp results for $L^p$ beta numbers. The results hold in every parabolic dimension and extend the theories of Edelen--Naber--Valtorta, Azzam--Tolsa and David--Semmes to space-time. The stated theorems and corollaries, together with their proofs, are formalized in Lean~4 with Mathlib.",
+      "categories": [
+        "math.AP",
+        "math.CA",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "Comments are welcome. 15 pages, 7 figures, link to a github repository for formalization",
+      "version": 1,
+      "submittedAt": "2026-10-26T17:41:43Z",
+      "updatedAt": "2026-10-26T17:41:43Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:24.832867+00:00",
+        "contentHash": "ee60265525ab25ad92a650f3f77483ceeedb581084ab32abb729030bd0b1fe03"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "抛物度量下的可求长性理论公告",
+      "workSummary": "本文是抛物可求长测度理论的公告。对 dP=max{|x−y|,|t−s|^(1/2)} 下 Rⁿ×R 的局部 Radon 测度及整数维 1≤k≤n+2，定理 2.3 在弱 Jones 平方函数界下分解出水平图支撑部分、正则竖直图支撑部分与质量受控余项，并给内容及 packing 界。定理 3.1 在几乎处处上 k-密度正且有限的条件下，才将平方函数有限与正则抛物可求长性等价；定理 4.2 在 Ahlfors 正则类中给出 Carleson 能量与定量图覆盖的等价。",
+      "techniques": [
+        "适配抛物尺度的 neck 区域与多尺度投影拼接",
+        "水平模型时间差的二次控制及模型类型变化的内容收缩",
+        "抛物 Dorronsoro 型 Fourier 估计与正则图延拓",
+        "作者声明的 Lean 4/Mathlib 形式化及独立类型检查"
+      ],
+      "breakthrough": "同时处理水平与竖直平坦模型且不假设切模型的定量唯一性；正则竖直图要求半阶时间导数属于抛物 BMO，强于通常抛物 Lipschitz 图。Lᵖ β 数的两种能量具有互换的必要/充分范围，仅 p=2 给出完整刻画。",
+      "limitations": "已读 PDF 第 1–12 页及第 14 页参考文献中的在准备详稿条目。弱分解定理不保证各图支撑测度对 Hᴾᵏ 绝对连续，不能说任意 Radon 测度自动可求长；定性刻画需密度条件，定量刻画需 Ahlfors 正则。作者称形式化覆盖第 2–5 节所有定理、推论及例 3.3，例 2.6、2.7 和注 2.4 未形式化，第 1.2–1.3 节想法叙述非正式。第 6 节给出仓库、提交哈希、Mathlib-only 规格及无 sorry 审计的声明；本次仅核对论文说明，未下载或运行 Lean 仓库，未独立确认机器验证与自然语言规格一致。详尽传统证明稿仍在准备中。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "LLM usage 明确披露模型在作者指导下编写形式化的 Lean 代码及文档、查找文献并起草公告，作者负责数学、证明/形式化架构与草图、定义和陈述。按原文将模型编写形式证明代码记为 proofs 与 verification，另记文献和写作；不把作者提供的数学架构归因 AI。机器已检查的说法是作者报告，本次未运行仓库。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35809v1 · PDF 第 5 页 LLM usage；第 12 页第 6 节 Lean verification",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:38:08.963832+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35809v1",
+        "contentHash": "48c8ae6e89e2abd0775d558f2c8c536b05ad9fc53ab120d96244f3a7717c6192",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。LLM usage 明确披露模型在作者指导下编写形式化的 Lean 代码及文档、查找文献并起草公告，作者负责数学、证明/形式化架构与草图、定义和陈述。按原文将模型编写形式证明代码记为 proofs 与 verification，另记文献和写作；不把作者提供的数学架构归因 AI。机器已检查的说法是作者报告，本次未运行仓库。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "410a839432522cf2cc3ae5b4c01d6e8d78b5239be679060d048c150071ffaa8c"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 84,
+      "priorityReason": "抛物空间的测度分解与正则可求长性可能服务几何流奇点分析，正文条件比摘要精确；公告及形式化的广泛性值得关注，但代码和详细证明仍需独立审计。"
+    },
+    "analysisBasis": {
+      "abstract": "We announce a structure theory for measures on $\\mathbb{R}^n\\times\\mathbb{R}$ equipped with the parabolic distance. Our results include a parabolic rectifiable Reifenberg theorem for arbitrary Radon measures, qualitative and quantitative characterizations of regular parabolic rectifiability by Jones square functions, and sharp results for $L^p$ beta numbers. The results hold in every parabolic dimension and extend the theories of Edelen--Naber--Valtorta, Azzam--Tolsa and David--Semmes to space-time. The stated theorems and corollaries, together with their proofs, are formalized in Lean~4 with Mathlib.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35809",
+        "metadata": {
+          "title": "Parabolic Rectifiable Reifenberg for Measures",
+          "authors": [
+            "Robert Koirala"
+          ],
+          "abstract": "We announce a structure theory for measures on $\\mathbb{R}^n\\times\\mathbb{R}$ equipped with the parabolic distance. Our results include a parabolic rectifiable Reifenberg theorem for arbitrary Radon measures, qualitative and quantitative characterizations of regular parabolic rectifiability by Jones square functions, and sharp results for $L^p$ beta numbers. The results hold in every parabolic dimension and extend the theories of Edelen--Naber--Valtorta, Azzam--Tolsa and David--Semmes to space-time. The stated theorems and corollaries, together with their proofs, are formalized in Lean~4 with Mathlib.",
+          "categories": [
+            "math.AP",
+            "math.CA",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "Comments are welcome. 15 pages, 7 figures, link to a github repository for formalization",
+          "version": 1,
+          "submittedAt": "2026-10-26T17:41:43Z",
+          "updatedAt": "2026-10-26T17:41:43Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:24.832867+00:00",
+            "contentHash": "ee60265525ab25ad92a650f3f77483ceeedb581084ab32abb729030bd0b1fe03"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "抛物度量下的可求长性理论公告",
+          "workSummary": "本文是抛物可求长测度理论的公告。对 dP=max{|x−y|,|t−s|^(1/2)} 下 Rⁿ×R 的局部 Radon 测度及整数维 1≤k≤n+2，定理 2.3 在弱 Jones 平方函数界下分解出水平图支撑部分、正则竖直图支撑部分与质量受控余项，并给内容及 packing 界。定理 3.1 在几乎处处上 k-密度正且有限的条件下，才将平方函数有限与正则抛物可求长性等价；定理 4.2 在 Ahlfors 正则类中给出 Carleson 能量与定量图覆盖的等价。",
+          "techniques": [
+            "适配抛物尺度的 neck 区域与多尺度投影拼接",
+            "水平模型时间差的二次控制及模型类型变化的内容收缩",
+            "抛物 Dorronsoro 型 Fourier 估计与正则图延拓",
+            "作者声明的 Lean 4/Mathlib 形式化及独立类型检查"
+          ],
+          "breakthrough": "同时处理水平与竖直平坦模型且不假设切模型的定量唯一性；正则竖直图要求半阶时间导数属于抛物 BMO，强于通常抛物 Lipschitz 图。Lᵖ β 数的两种能量具有互换的必要/充分范围，仅 p=2 给出完整刻画。",
+          "limitations": "已读 PDF 第 1–12 页及第 14 页参考文献中的在准备详稿条目。弱分解定理不保证各图支撑测度对 Hᴾᵏ 绝对连续，不能说任意 Radon 测度自动可求长；定性刻画需密度条件，定量刻画需 Ahlfors 正则。作者称形式化覆盖第 2–5 节所有定理、推论及例 3.3，例 2.6、2.7 和注 2.4 未形式化，第 1.2–1.3 节想法叙述非正式。第 6 节给出仓库、提交哈希、Mathlib-only 规格及无 sorry 审计的声明；本次仅核对论文说明，未下载或运行 Lean 仓库，未独立确认机器验证与自然语言规格一致。详尽传统证明稿仍在准备中。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "LLM usage 明确披露模型在作者指导下编写形式化的 Lean 代码及文档、查找文献并起草公告，作者负责数学、证明/形式化架构与草图、定义和陈述。按原文将模型编写形式证明代码记为 proofs 与 verification，另记文献和写作；不把作者提供的数学架构归因 AI。机器已检查的说法是作者报告，本次未运行仓库。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35809v1 · PDF 第 5 页 LLM usage；第 12 页第 6 节 Lean verification",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:38:08.963832+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35809v1",
+            "contentHash": "48c8ae6e89e2abd0775d558f2c8c536b05ad9fc53ab120d96244f3a7717c6192",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。LLM usage 明确披露模型在作者指导下编写形式化的 Lean 代码及文档、查找文献并起草公告，作者负责数学、证明/形式化架构与草图、定义和陈述。按原文将模型编写形式证明代码记为 proofs 与 verification，另记文献和写作；不把作者提供的数学架构归因 AI。机器已检查的说法是作者报告，本次未运行仓库。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "410a839432522cf2cc3ae5b4c01d6e8d78b5239be679060d048c150071ffaa8c"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 84,
+          "priorityReason": "抛物空间的测度分解与正则可求长性可能服务几何流奇点分析，正文条件比摘要精确；公告及形式化的广泛性值得关注，但代码和详细证明仍需独立审计。"
+        },
+        "analysisBasis": {
+          "abstract": "We announce a structure theory for measures on $\\mathbb{R}^n\\times\\mathbb{R}$ equipped with the parabolic distance. Our results include a parabolic rectifiable Reifenberg theorem for arbitrary Radon measures, qualitative and quantitative characterizations of regular parabolic rectifiability by Jones square functions, and sharp results for $L^p$ beta numbers. The results hold in every parabolic dimension and extend the theories of Edelen--Naber--Valtorta, Azzam--Tolsa and David--Semmes to space-time. The stated theorems and corollaries, together with their proofs, are formalized in Lean~4 with Mathlib.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

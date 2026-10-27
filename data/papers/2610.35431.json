@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35431",
+  "slug": "2610.35431",
+  "latest": {
+    "arxivId": "2610.35431",
+    "metadata": {
+      "title": "Log-Concavity and Fundamental Gaps on Complex Projective Domains",
+      "authors": [
+        "Gunhee Cho"
+      ],
+      "abstract": "We prove quantitative log-concavity and fundamental-gap estimates for Dirichlet Schrödinger operators on complex projective domains. With holomorphic sectional curvature four, the boundary condition $\\mathrm{II}\\ge\\sqrt{44/5}\\,g$ suffices in every complex dimension under $\\operatorname{Hess} V\\ge2|\\nabla V|g$ and $\\operatorname{osc}V\\le4n$. It yields $\\operatorname{Hess}(-\\log\\phi_1)>g$ and $\\lambda_2-\\lambda_1>\\max\\{n+2+\\sqrt{n^2+5n+11},\\,2n+14/3\\}$. The main difficulty is to control the distinguished Hopf direction together with a transverse Hessian block whose dimension grows with $n$. We extend modified-Hessian first-contact arguments by retaining the Hopf term and using longitudinal and transverse rotational tests. A trace minimization reduces all gradient orientations to three extreme directions. A dimension-scaled logarithmic barrier then compares their contact costs with a single limiting profile. A radial spectral estimate supplies the required quadratic-in-dimension spectral threshold from a dimension-independent boundary curvature bound. For $n\\ge3$ these are, to our knowledge, the first log-concavity estimates for domains in $\\mathbb{CP}^n$ without symmetry assumptions. We also prove a sharp diameter bound and Hessian levels linear in $n$ under larger dimension-free curvature bounds.",
+      "categories": [
+        "math.AP",
+        "math.DG",
+        "math.SP"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "38 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-10-26T13:35:22Z",
+      "updatedAt": "2026-10-26T13:35:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:24.829187+00:00",
+        "contentHash": "0c44abab6fe9ab1b0448a7ef906d8e32c62ecefc96677464b23a5c19b021d897"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "复射影域的对数凹性与谱隙",
+      "workSummary": "在全纯截面曲率归一为 4 的复射影空间中，对 Dirichlet Schrödinger 算子，若 II≥√(44/5)g、Hess V≥2|∇V|g 且 osc V≤4n，则作者在各复维 n 给出 Hess(−log φ₁)>g 和 λ₂−λ₁>max{n+2+√(n²+5n+11),2n+14/3}。还证明尖锐直径界，并在更大的、与维数无关的边界曲率下获得随 n 线性增长的 Hessian 下界。",
+      "techniques": [
+        "保留 Hopf 方向的修正 Hessian 首次接触法",
+        "纵横旋转测试与迹最小化",
+        "随维数缩放的对数屏障",
+        "径向谱估计"
+      ],
+      "breakthrough": "作者称这给出了 n≥3 时无需对称性假设的首批复射影域对数凹性估计，核心是同时控制特殊 Hopf 方向和增长维数的横向 Hessian 块。",
+      "limitations": "常数依赖曲率归一化，并需全部势函数与边界条件；正文还应核验域及边界的正则性和 II 的符号约定。“首批”是作者的文献定位，谱隙结论是严格下界而非精确谱隙值。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "AI Disclosure 说明最终准备阶段使用 Claude (Anthropic) 对标量不等式作数值一致性检查，并改进文字与图片。数值曾提示更强界，但作者无法手工证明，明确表示论文不依赖该改进；故标记计算、核验与写作，不把未采用的数值提示记为已实现的核心数学思想或证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.35431v1 · PDF 第 4 页 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:35:34.256295+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35431v1",
+        "contentHash": "141696ba7808b67a2e1fcefb0d205ee55cefbae9ec0917cb296bbc887595f8c9",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 说明最终准备阶段使用 Claude (Anthropic) 对标量不等式作数值一致性检查，并改进文字与图片。数值曾提示更强界，但作者无法手工证明，明确表示论文不依赖该改进；故标记计算、核验与写作，不把未采用的数值提示记为已实现的核心数学思想或证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "335f0cda2dd2b8bc23eb4bcd38ebf7d7cc59b139b5fa70d0d82761503aca1214"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "将比较几何、矩阵最大值原理和基本谱隙定量估计结合，且有明确维数控制，属于本组重点。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove quantitative log-concavity and fundamental-gap estimates for Dirichlet Schrödinger operators on complex projective domains. With holomorphic sectional curvature four, the boundary condition $\\mathrm{II}\\ge\\sqrt{44/5}\\,g$ suffices in every complex dimension under $\\operatorname{Hess} V\\ge2|\\nabla V|g$ and $\\operatorname{osc}V\\le4n$. It yields $\\operatorname{Hess}(-\\log\\phi_1)>g$ and $\\lambda_2-\\lambda_1>\\max\\{n+2+\\sqrt{n^2+5n+11},\\,2n+14/3\\}$. The main difficulty is to control the distinguished Hopf direction together with a transverse Hessian block whose dimension grows with $n$. We extend modified-Hessian first-contact arguments by retaining the Hopf term and using longitudinal and transverse rotational tests. A trace minimization reduces all gradient orientations to three extreme directions. A dimension-scaled logarithmic barrier then compares their contact costs with a single limiting profile. A radial spectral estimate supplies the required quadratic-in-dimension spectral threshold from a dimension-independent boundary curvature bound. For $n\\ge3$ these are, to our knowledge, the first log-concavity estimates for domains in $\\mathbb{CP}^n$ without symmetry assumptions. We also prove a sharp diameter bound and Hessian levels linear in $n$ under larger dimension-free curvature bounds.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.35431",
+        "metadata": {
+          "title": "Log-Concavity and Fundamental Gaps on Complex Projective Domains",
+          "authors": [
+            "Gunhee Cho"
+          ],
+          "abstract": "We prove quantitative log-concavity and fundamental-gap estimates for Dirichlet Schrödinger operators on complex projective domains. With holomorphic sectional curvature four, the boundary condition $\\mathrm{II}\\ge\\sqrt{44/5}\\,g$ suffices in every complex dimension under $\\operatorname{Hess} V\\ge2|\\nabla V|g$ and $\\operatorname{osc}V\\le4n$. It yields $\\operatorname{Hess}(-\\log\\phi_1)>g$ and $\\lambda_2-\\lambda_1>\\max\\{n+2+\\sqrt{n^2+5n+11},\\,2n+14/3\\}$. The main difficulty is to control the distinguished Hopf direction together with a transverse Hessian block whose dimension grows with $n$. We extend modified-Hessian first-contact arguments by retaining the Hopf term and using longitudinal and transverse rotational tests. A trace minimization reduces all gradient orientations to three extreme directions. A dimension-scaled logarithmic barrier then compares their contact costs with a single limiting profile. A radial spectral estimate supplies the required quadratic-in-dimension spectral threshold from a dimension-independent boundary curvature bound. For $n\\ge3$ these are, to our knowledge, the first log-concavity estimates for domains in $\\mathbb{CP}^n$ without symmetry assumptions. We also prove a sharp diameter bound and Hessian levels linear in $n$ under larger dimension-free curvature bounds.",
+          "categories": [
+            "math.AP",
+            "math.DG",
+            "math.SP"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "38 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-10-26T13:35:22Z",
+          "updatedAt": "2026-10-26T13:35:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:24.829187+00:00",
+            "contentHash": "0c44abab6fe9ab1b0448a7ef906d8e32c62ecefc96677464b23a5c19b021d897"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "复射影域的对数凹性与谱隙",
+          "workSummary": "在全纯截面曲率归一为 4 的复射影空间中，对 Dirichlet Schrödinger 算子，若 II≥√(44/5)g、Hess V≥2|∇V|g 且 osc V≤4n，则作者在各复维 n 给出 Hess(−log φ₁)>g 和 λ₂−λ₁>max{n+2+√(n²+5n+11),2n+14/3}。还证明尖锐直径界，并在更大的、与维数无关的边界曲率下获得随 n 线性增长的 Hessian 下界。",
+          "techniques": [
+            "保留 Hopf 方向的修正 Hessian 首次接触法",
+            "纵横旋转测试与迹最小化",
+            "随维数缩放的对数屏障",
+            "径向谱估计"
+          ],
+          "breakthrough": "作者称这给出了 n≥3 时无需对称性假设的首批复射影域对数凹性估计，核心是同时控制特殊 Hopf 方向和增长维数的横向 Hessian 块。",
+          "limitations": "常数依赖曲率归一化，并需全部势函数与边界条件；正文还应核验域及边界的正则性和 II 的符号约定。“首批”是作者的文献定位，谱隙结论是严格下界而非精确谱隙值。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "AI Disclosure 说明最终准备阶段使用 Claude (Anthropic) 对标量不等式作数值一致性检查，并改进文字与图片。数值曾提示更强界，但作者无法手工证明，明确表示论文不依赖该改进；故标记计算、核验与写作，不把未采用的数值提示记为已实现的核心数学思想或证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.35431v1 · PDF 第 4 页 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:35:34.256295+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35431v1",
+            "contentHash": "141696ba7808b67a2e1fcefb0d205ee55cefbae9ec0917cb296bbc887595f8c9",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 说明最终准备阶段使用 Claude (Anthropic) 对标量不等式作数值一致性检查，并改进文字与图片。数值曾提示更强界，但作者无法手工证明，明确表示论文不依赖该改进；故标记计算、核验与写作，不把未采用的数值提示记为已实现的核心数学思想或证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "335f0cda2dd2b8bc23eb4bcd38ebf7d7cc59b139b5fa70d0d82761503aca1214"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "将比较几何、矩阵最大值原理和基本谱隙定量估计结合，且有明确维数控制，属于本组重点。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove quantitative log-concavity and fundamental-gap estimates for Dirichlet Schrödinger operators on complex projective domains. With holomorphic sectional curvature four, the boundary condition $\\mathrm{II}\\ge\\sqrt{44/5}\\,g$ suffices in every complex dimension under $\\operatorname{Hess} V\\ge2|\\nabla V|g$ and $\\operatorname{osc}V\\le4n$. It yields $\\operatorname{Hess}(-\\log\\phi_1)>g$ and $\\lambda_2-\\lambda_1>\\max\\{n+2+\\sqrt{n^2+5n+11},\\,2n+14/3\\}$. The main difficulty is to control the distinguished Hopf direction together with a transverse Hessian block whose dimension grows with $n$. We extend modified-Hessian first-contact arguments by retaining the Hopf term and using longitudinal and transverse rotational tests. A trace minimization reduces all gradient orientations to three extreme directions. A dimension-scaled logarithmic barrier then compares their contact costs with a single limiting profile. A radial spectral estimate supplies the required quadratic-in-dimension spectral threshold from a dimension-independent boundary curvature bound. For $n\\ge3$ these are, to our knowledge, the first log-concavity estimates for domains in $\\mathbb{CP}^n$ without symmetry assumptions. We also prove a sharp diameter bound and Hessian levels linear in $n$ under larger dimension-free curvature bounds.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

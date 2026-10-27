@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.34132",
+  "slug": "2610.34132",
+  "latest": {
+    "arxivId": "2610.34132",
+    "metadata": {
+      "title": "Refined analysis on finite-time singularities of almost-holomorphic harmonic map flow",
+      "authors": [
+        "Yihan He",
+        "Ze Li",
+        "Chong Song"
+      ],
+      "abstract": "Building on the work of Song--Waldron~\\cite{SongWaldron2024}, we establish stronger regularity and refined blow-up analysis results for almost-holomorphic harmonic map flow from a closed surface into a compact Kähler manifold with nonnegative holomorphic bisectional curvature. At each finite-time singularity, we improve the outer energy scale to $O((T-t)/\\sqrt{|\\ln(T-t)|})$. We also prove that both the stress-energy tensor and the tension field converge strongly in $L^2$ to those of the body map, by ruling out concentration of their $L^2$ energy near the singular points. Consequently, the body map belongs to $W^{2,2}$. Finally, an explicit gap theorem for the antiholomorphic energy of nonholomorphic harmonic spheres yields an explicit admissible threshold for the initial antiholomorphic energy under which these conclusions hold.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "Comments welcome",
+      "version": 1,
+      "submittedAt": "2026-10-25T08:01:52Z",
+      "updatedAt": "2026-10-25T08:01:52Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-27T07:15:37.123270+00:00",
+        "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.34132v1",
+        "observedAt": "2026-10-27T07:26:48.644509+00:00",
+        "contentHash": "fa473a25b62f96912f78a28ee7b844c1284524b7b5ddad90b8b1590a52b432f2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-27T07:40:00.847395+00:00",
+        "contentHash": "8c8cbc999d89779cfe29071c6da543eedf0d6c27833bcfc2d52d161e2402a8ea"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "奇点尺度与强收敛",
+      "workSummary": "闭曲面到紧 Kähler 靶、非负全纯双截曲率的调和映射流，在反全纯微分 Φ 统一逐点有界的假设 H 下，定理 1.1 将有限时奇点外能量尺度改进为 O((T−t)/√|ln(T−t)|)。定理 1.2 给出应力能张量及张力场沿完整时间变量的 L² 强收敛，推论 1.3 得到本体 W^(2,2) 正则性及能量的一侧一阶展开。",
+      "techniques": [
+        "近全纯调和映射流的精细爆破分析",
+        "奇点附近应力与张力 L² 能量不集中",
+        "非全纯调和二球的反全纯能量显式间隙定理"
+      ],
+      "breakthrough": "不仅给出更小的外尺度，还排除张力和应力的 L² 集中。若最大全纯截曲率 H*>0，推论 1.6 给出显式充分条件 E反全纯(u0)<4π/H*，由此推出 H 及上述奇点结论；能量阈值并不要求总能量小。",
+      "limitations": "补读 PDF 第 1–6 页，核对常设 H、主定理、显式间隙与推论。强收敛针对应力和张力，不能写成映射总能量不冒泡；W^(2,2) 不等于流可光滑穿过奇点。已核对结果及路线，未逐步复核后续泡区、颈区和 ancient 场刚性证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在 AI Declaration 明示 ChatGPT 作为研究辅助工具探索证明策略、检查计算并进行语言编辑。披露未将某个具体主估计、核心路线或完整证明归于模型，故标记探索、计算核查及写作辅助。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.34132v1 · PDF 第 6 页 AI Declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-27T07:26:48.644509+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.34132v1",
+        "contentHash": "fa473a25b62f96912f78a28ee7b844c1284524b7b5ddad90b8b1590a52b432f2",
+        "pages": 44,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 AI Declaration 明示 ChatGPT 作为研究辅助工具探索证明策略、检查计算并进行语言编辑。披露未将某个具体主估计、核心路线或完整证明归于模型，故标记探索、计算核查及写作辅助。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1533b5cc46b85f45fc5996e396e2012cb6996338dce45b5c67cbb4b8d8bf2f49"
+      },
+      "aiUsage": [
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "直接命中几何流、有限时奇点、能量集中和正则性，是今日优先精读对象。"
+    },
+    "analysisBasis": {
+      "abstract": "Building on the work of Song--Waldron~\\cite{SongWaldron2024}, we establish stronger regularity and refined blow-up analysis results for almost-holomorphic harmonic map flow from a closed surface into a compact Kähler manifold with nonnegative holomorphic bisectional curvature. At each finite-time singularity, we improve the outer energy scale to $O((T-t)/\\sqrt{|\\ln(T-t)|})$. We also prove that both the stress-energy tensor and the tension field converge strongly in $L^2$ to those of the body map, by ruling out concentration of their $L^2$ energy near the singular points. Consequently, the body map belongs to $W^{2,2}$. Finally, an explicit gap theorem for the antiholomorphic energy of nonholomorphic harmonic spheres yields an explicit admissible threshold for the initial antiholomorphic energy under which these conclusions hold.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "entry": {
+        "arxivId": "2610.34132",
+        "metadata": {
+          "title": "Refined analysis on finite-time singularities of almost-holomorphic harmonic map flow",
+          "authors": [
+            "Yihan He",
+            "Ze Li",
+            "Chong Song"
+          ],
+          "abstract": "Building on the work of Song--Waldron~\\cite{SongWaldron2024}, we establish stronger regularity and refined blow-up analysis results for almost-holomorphic harmonic map flow from a closed surface into a compact Kähler manifold with nonnegative holomorphic bisectional curvature. At each finite-time singularity, we improve the outer energy scale to $O((T-t)/\\sqrt{|\\ln(T-t)|})$. We also prove that both the stress-energy tensor and the tension field converge strongly in $L^2$ to those of the body map, by ruling out concentration of their $L^2$ energy near the singular points. Consequently, the body map belongs to $W^{2,2}$. Finally, an explicit gap theorem for the antiholomorphic energy of nonholomorphic harmonic spheres yields an explicit admissible threshold for the initial antiholomorphic energy under which these conclusions hold.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "Comments welcome",
+          "version": 1,
+          "submittedAt": "2026-10-25T08:01:52Z",
+          "updatedAt": "2026-10-25T08:01:52Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-27T07:15:37.123270+00:00",
+            "contentHash": "4012e3f84fbec1e80a65a5d779b4e7e723a11e992531687c49fe75579f5db3c2"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.34132v1",
+            "observedAt": "2026-10-27T07:26:48.644509+00:00",
+            "contentHash": "fa473a25b62f96912f78a28ee7b844c1284524b7b5ddad90b8b1590a52b432f2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-27T07:40:00.847395+00:00",
+            "contentHash": "8c8cbc999d89779cfe29071c6da543eedf0d6c27833bcfc2d52d161e2402a8ea"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "奇点尺度与强收敛",
+          "workSummary": "闭曲面到紧 Kähler 靶、非负全纯双截曲率的调和映射流，在反全纯微分 Φ 统一逐点有界的假设 H 下，定理 1.1 将有限时奇点外能量尺度改进为 O((T−t)/√|ln(T−t)|)。定理 1.2 给出应力能张量及张力场沿完整时间变量的 L² 强收敛，推论 1.3 得到本体 W^(2,2) 正则性及能量的一侧一阶展开。",
+          "techniques": [
+            "近全纯调和映射流的精细爆破分析",
+            "奇点附近应力与张力 L² 能量不集中",
+            "非全纯调和二球的反全纯能量显式间隙定理"
+          ],
+          "breakthrough": "不仅给出更小的外尺度，还排除张力和应力的 L² 集中。若最大全纯截曲率 H*>0，推论 1.6 给出显式充分条件 E反全纯(u0)<4π/H*，由此推出 H 及上述奇点结论；能量阈值并不要求总能量小。",
+          "limitations": "补读 PDF 第 1–6 页，核对常设 H、主定理、显式间隙与推论。强收敛针对应力和张力，不能写成映射总能量不冒泡；W^(2,2) 不等于流可光滑穿过奇点。已核对结果及路线，未逐步复核后续泡区、颈区和 ancient 场刚性证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在 AI Declaration 明示 ChatGPT 作为研究辅助工具探索证明策略、检查计算并进行语言编辑。披露未将某个具体主估计、核心路线或完整证明归于模型，故标记探索、计算核查及写作辅助。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.34132v1 · PDF 第 6 页 AI Declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-27T07:26:48.644509+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.34132v1",
+            "contentHash": "fa473a25b62f96912f78a28ee7b844c1284524b7b5ddad90b8b1590a52b432f2",
+            "pages": 44,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 AI Declaration 明示 ChatGPT 作为研究辅助工具探索证明策略、检查计算并进行语言编辑。披露未将某个具体主估计、核心路线或完整证明归于模型，故标记探索、计算核查及写作辅助。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1533b5cc46b85f45fc5996e396e2012cb6996338dce45b5c67cbb4b8d8bf2f49"
+          },
+          "aiUsage": [
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "直接命中几何流、有限时奇点、能量集中和正则性，是今日优先精读对象。"
+        },
+        "analysisBasis": {
+          "abstract": "Building on the work of Song--Waldron~\\cite{SongWaldron2024}, we establish stronger regularity and refined blow-up analysis results for almost-holomorphic harmonic map flow from a closed surface into a compact Kähler manifold with nonnegative holomorphic bisectional curvature. At each finite-time singularity, we improve the outer energy scale to $O((T-t)/\\sqrt{|\\ln(T-t)|})$. We also prove that both the stress-energy tensor and the tension field converge strongly in $L^2$ to those of the body map, by ruling out concentration of their $L^2$ energy near the singular points. Consequently, the body map belongs to $W^{2,2}$. Finally, an explicit gap theorem for the antiholomorphic energy of nonholomorphic harmonic spheres yields an explicit admissible threshold for the initial antiholomorphic energy under which these conclusions hold.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
