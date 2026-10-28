@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37560",
+  "slug": "2610.37560",
+  "latest": {
+    "arxivId": "2610.37560",
+    "metadata": {
+      "title": "Boundary Plateau Laws II",
+      "authors": [
+        "Camillo De Lellis",
+        "Federico Glaudo"
+      ],
+      "abstract": "Given a straight line $\\ell \\subset \\mathbb R^3$, we classify $2$-dimensional cones in $\\mathbb R^3$ which contain $\\ell$ and are Almgren minimizing with respect to $\\ell$. The main idea of this paper is due to an LLM, and the paper was written by an LLM, under the guidance of the authors.",
+      "categories": [
+        "math.AP",
+        "math-ph",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-10-27T17:08:05Z",
+      "updatedAt": "2026-10-27T17:08:05Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:44.221305+00:00",
+        "contentHash": "968743eec88a9e07688cb8ff9850eb04986d6bc350b7ec4e63c67617e8d2b4b4"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "边界 Plateau 极小锥分类的另一论证",
+      "workSummary": "正文定理 1.2 给出最终充要分类：R³ 中含过原点直线 ℓ 的 reduced 闭二维 Almgren 极小锥，旋转后恰为四类——以 ℓ 为边的半平面；凸夹角≥120°的两个半平面；沿 ℓ 以120°相交的三半平面；正四面体一维骨架的锥（ℓ 通过一对对边中点）。反过来四类均极小。该结论强于第一篇：立方体骨架锥与 thin fish 虽为第一篇必要候选，却在此被排除。",
+      "techniques": [
+        "球面凸等角面的 medial axis 替换",
+        "沿扇区内法向推移及对数 cutoff 局部化",
+        "半空间 relaxed competitor 逼近满足边界邻域固定的合法变形",
+        "排除四/五边等角面后对两对径固定点驻定网作归纳分类"
+      ],
+      "breakthrough": "核心凸面引理把120°等角球面四/五边形的锥推向 medial axis：要么直接减少面积，要么产生可进一步缩面积的四片以上半平面交线，从而用纯笔纸论证取代第一篇大部分计算机辅助排除，得到四族完整分类。",
+      "limitations": "已读 PDF 第 1–5 页定义、定理及证明路线，第 13–14 页最终网分类步骤。基本竞争者仍须 W∪Φ(W) 紧离 ℓ，不能误说允许任意逐点固定 ℓ 的 Lipschitz 变形；第 3 页半空间放宽命题需要额外恒等半空间及逆像条件，并以任意小面积误差逼近合法竞争者。reduced 条件排除 H² 零集附加物。本文不是所有非锥肥皂膜的边界正则性或切锥唯一性定理；人类实验可出现的其他驻定形态不能因此称全局 Almgren 极小。尚未逐步核验全部证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "本篇摘要自身明确说主要想法来自 LLM、论文由 LLM 在作者指导下撰写。结合第 2–5 页 Main idea/Relation with I，可定位具体核心为 Proposition 1.6 的球面凸面 medial-axis 竞争者及其在 Proposition 1.7 中排除四/五边面，从而完成四族分类。记 ideas、proofs、writing；人类作者提供的总体指导与来自第一篇的既有引理不能因此归为模型独创。此判断以本篇PDF为依据，并非仅由同题作者推断。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37560v1 · PDF 第 1 页摘要；第 2 页第 1.2 节及第 5 页第 1.4 节",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:16:43.804347+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37560v1",
+        "contentHash": "c34a5522d05dfc655da04c654ff7e5a417ec4eb767ed45eebd02540a028d092d",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。本篇摘要自身明确说主要想法来自 LLM、论文由 LLM 在作者指导下撰写。结合第 2–5 页 Main idea/Relation with I，可定位具体核心为 Proposition 1.6 的球面凸面 medial-axis 竞争者及其在 Proposition 1.7 中排除四/五边面，从而完成四族分类。记 ideas、proofs、writing；人类作者提供的总体指导与来自第一篇的既有引理不能因此归为模型独创。此判断以本篇PDF为依据，并非仅由同题作者推断。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c2be895f4224c481a4fc75c08f04030cc25847d6adf5f9bff048fab24c9298cc"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "用明确的medial-axis竞争者得到四族完整充要分类，并替代大部分计算机辅助排除，是边界几何测度论的重点结果。"
+    },
+    "analysisBasis": {
+      "abstract": "Given a straight line $\\ell \\subset \\mathbb R^3$, we classify $2$-dimensional cones in $\\mathbb R^3$ which contain $\\ell$ and are Almgren minimizing with respect to $\\ell$. The main idea of this paper is due to an LLM, and the paper was written by an LLM, under the guidance of the authors.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37560",
+        "metadata": {
+          "title": "Boundary Plateau Laws II",
+          "authors": [
+            "Camillo De Lellis",
+            "Federico Glaudo"
+          ],
+          "abstract": "Given a straight line $\\ell \\subset \\mathbb R^3$, we classify $2$-dimensional cones in $\\mathbb R^3$ which contain $\\ell$ and are Almgren minimizing with respect to $\\ell$. The main idea of this paper is due to an LLM, and the paper was written by an LLM, under the guidance of the authors.",
+          "categories": [
+            "math.AP",
+            "math-ph",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-10-27T17:08:05Z",
+          "updatedAt": "2026-10-27T17:08:05Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:44.221305+00:00",
+            "contentHash": "968743eec88a9e07688cb8ff9850eb04986d6bc350b7ec4e63c67617e8d2b4b4"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "边界 Plateau 极小锥分类的另一论证",
+          "workSummary": "正文定理 1.2 给出最终充要分类：R³ 中含过原点直线 ℓ 的 reduced 闭二维 Almgren 极小锥，旋转后恰为四类——以 ℓ 为边的半平面；凸夹角≥120°的两个半平面；沿 ℓ 以120°相交的三半平面；正四面体一维骨架的锥（ℓ 通过一对对边中点）。反过来四类均极小。该结论强于第一篇：立方体骨架锥与 thin fish 虽为第一篇必要候选，却在此被排除。",
+          "techniques": [
+            "球面凸等角面的 medial axis 替换",
+            "沿扇区内法向推移及对数 cutoff 局部化",
+            "半空间 relaxed competitor 逼近满足边界邻域固定的合法变形",
+            "排除四/五边等角面后对两对径固定点驻定网作归纳分类"
+          ],
+          "breakthrough": "核心凸面引理把120°等角球面四/五边形的锥推向 medial axis：要么直接减少面积，要么产生可进一步缩面积的四片以上半平面交线，从而用纯笔纸论证取代第一篇大部分计算机辅助排除，得到四族完整分类。",
+          "limitations": "已读 PDF 第 1–5 页定义、定理及证明路线，第 13–14 页最终网分类步骤。基本竞争者仍须 W∪Φ(W) 紧离 ℓ，不能误说允许任意逐点固定 ℓ 的 Lipschitz 变形；第 3 页半空间放宽命题需要额外恒等半空间及逆像条件，并以任意小面积误差逼近合法竞争者。reduced 条件排除 H² 零集附加物。本文不是所有非锥肥皂膜的边界正则性或切锥唯一性定理；人类实验可出现的其他驻定形态不能因此称全局 Almgren 极小。尚未逐步核验全部证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "本篇摘要自身明确说主要想法来自 LLM、论文由 LLM 在作者指导下撰写。结合第 2–5 页 Main idea/Relation with I，可定位具体核心为 Proposition 1.6 的球面凸面 medial-axis 竞争者及其在 Proposition 1.7 中排除四/五边面，从而完成四族分类。记 ideas、proofs、writing；人类作者提供的总体指导与来自第一篇的既有引理不能因此归为模型独创。此判断以本篇PDF为依据，并非仅由同题作者推断。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37560v1 · PDF 第 1 页摘要；第 2 页第 1.2 节及第 5 页第 1.4 节",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:16:43.804347+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37560v1",
+            "contentHash": "c34a5522d05dfc655da04c654ff7e5a417ec4eb767ed45eebd02540a028d092d",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。本篇摘要自身明确说主要想法来自 LLM、论文由 LLM 在作者指导下撰写。结合第 2–5 页 Main idea/Relation with I，可定位具体核心为 Proposition 1.6 的球面凸面 medial-axis 竞争者及其在 Proposition 1.7 中排除四/五边面，从而完成四族分类。记 ideas、proofs、writing；人类作者提供的总体指导与来自第一篇的既有引理不能因此归为模型独创。此判断以本篇PDF为依据，并非仅由同题作者推断。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c2be895f4224c481a4fc75c08f04030cc25847d6adf5f9bff048fab24c9298cc"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "用明确的medial-axis竞争者得到四族完整充要分类，并替代大部分计算机辅助排除，是边界几何测度论的重点结果。"
+        },
+        "analysisBasis": {
+          "abstract": "Given a straight line $\\ell \\subset \\mathbb R^3$, we classify $2$-dimensional cones in $\\mathbb R^3$ which contain $\\ell$ and are Almgren minimizing with respect to $\\ell$. The main idea of this paper is due to an LLM, and the paper was written by an LLM, under the guidance of the authors.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

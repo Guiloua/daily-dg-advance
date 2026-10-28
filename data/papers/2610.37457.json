@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37457",
+  "slug": "2610.37457",
+  "latest": {
+    "arxivId": "2610.37457",
+    "metadata": {
+      "title": "Bubble Tree Convergence for Minimisers of a Regularised Baby-Skyrme Model",
+      "authors": [
+        "Sebastian Woodward"
+      ],
+      "abstract": "We study degree $1$ minimisers $u: (\\Sigma,g) \\to S^2$ for a Baby-Skyrme model with a Sacks-Uhlenbeck regularisation term $E^{\\alpha}(u) = \\frac{1}{2} \\int_{\\Sigma} (1+\\vert \\nabla u \\vert^2)^{\\alpha+1} -1 dv_g$ and establish convergence of degree $1$ minimisers to a simple bubble tree as $\\alpha \\to 0$. We also obtain a new no-neck result for the classical Sacks-Uhlenbeck energy $E^{\\alpha}$.",
+      "categories": [
+        "math.AP",
+        "math-ph",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-10-27T15:57:39Z",
+      "updatedAt": "2026-10-27T15:57:39Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:44.218954+00:00",
+        "contentHash": "e03dfa2c533975db13000d61c6a9719b65c517fecf3ec98e2da6e25e467fbc11"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "正则化几何变分模型的泡树收敛",
+      "workSummary": "正文固定闭、定向、正亏格曲面：g 为双曲度量，或总面积一的平坦环面。对固定 Λ>0，模型是 Eᵅ_Λ=½∫[(1+|∇u|²)^(1+α)−1]+(Λ²/2)∫|u+e₃|²；定理 1.2 证明当 αₙ→0 时，其度数一极小化子形成一个标准球面泡，底图为常值 −e₃，并在固定局部圆盘上同时得到 Ẇ¹,² 与 L∞ 的单泡逼近、能量恒等式及无颈性；泡尺度 rₙ 满足 rₙ^αₙ→1。",
+      "techniques": [
+        "将带势项极小化子视为 Sacks–Uhlenbeck 能量的近临界点",
+        "小能量正则性与单泡集中",
+        "Hodge 分解、局部 Hardy 空间和 Lorentz 估计控制颈部",
+        "Pohozaev 恒等式导出 αₙ log rₙ→0"
+      ],
+      "breakthrough": "先建立带明确能量与梯度条件的近临界 Sacks–Uhlenbeck 映射无颈结果，再利用固定势项与极小性得到 Baby-Skyrme 极小化子的完整单泡图景；势项将常值底图选为 −e₃。",
+      "limitations": "已读 PDF 第 1–4 页主定理、模型和范围，第 9–10 页主定理归约及 Pohozaev 尺度论证，并检查第 5–8 页的步骤组织。定理 1.5 另要求光滑度数一映射、Eᵅⁿ→4π、L² 能量梯度趋零及 ‖(1+|∇uₙ|²)^αₙ−1‖C⁰→0，不适用于任意近临界序列。一般光滑背景度量的推广在注 1.1 中称需小修改，正式陈述采用常曲率背景；本篇是定性而非定量收敛速率，非任意度数泡树。尚未逐步核验全部证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "AI Declaration 明确限定生成式 AI 仅协助文献综述，尤其附录 A 所述闭曲面局部 Hardy 空间理论，并明确所有数学论证由作者独立完成。仅记 literature，不因出现 Hardy 空间或证明而误记 AI 数学构造。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37457v1 · PDF 第 4 页 AI Declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:15:42.654439+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37457v1",
+        "contentHash": "afa7e0acd3ec39890ba5d4df4602342299048480d4aa8d11a21ad528415b69c8",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Declaration 明确限定生成式 AI 仅协助文献综述，尤其附录 A 所述闭曲面局部 Hardy 空间理论，并明确所有数学论证由作者独立完成。仅记 literature，不因出现 Hardy 空间或证明而误记 AI 数学构造。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2a858be95a5781f48644f86a0ca0d27e395c946decb89a815e43fcf7e8bfb993"
+      },
+      "aiUsage": [
+        "literature"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "泡树、能量集中及无颈问题是几何 PDE 核心内容，需优先核对全文参数及极小化假设。"
+    },
+    "analysisBasis": {
+      "abstract": "We study degree $1$ minimisers $u: (\\Sigma,g) \\to S^2$ for a Baby-Skyrme model with a Sacks-Uhlenbeck regularisation term $E^{\\alpha}(u) = \\frac{1}{2} \\int_{\\Sigma} (1+\\vert \\nabla u \\vert^2)^{\\alpha+1} -1 dv_g$ and establish convergence of degree $1$ minimisers to a simple bubble tree as $\\alpha \\to 0$. We also obtain a new no-neck result for the classical Sacks-Uhlenbeck energy $E^{\\alpha}$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37457",
+        "metadata": {
+          "title": "Bubble Tree Convergence for Minimisers of a Regularised Baby-Skyrme Model",
+          "authors": [
+            "Sebastian Woodward"
+          ],
+          "abstract": "We study degree $1$ minimisers $u: (\\Sigma,g) \\to S^2$ for a Baby-Skyrme model with a Sacks-Uhlenbeck regularisation term $E^{\\alpha}(u) = \\frac{1}{2} \\int_{\\Sigma} (1+\\vert \\nabla u \\vert^2)^{\\alpha+1} -1 dv_g$ and establish convergence of degree $1$ minimisers to a simple bubble tree as $\\alpha \\to 0$. We also obtain a new no-neck result for the classical Sacks-Uhlenbeck energy $E^{\\alpha}$.",
+          "categories": [
+            "math.AP",
+            "math-ph",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-10-27T15:57:39Z",
+          "updatedAt": "2026-10-27T15:57:39Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:44.218954+00:00",
+            "contentHash": "e03dfa2c533975db13000d61c6a9719b65c517fecf3ec98e2da6e25e467fbc11"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "正则化几何变分模型的泡树收敛",
+          "workSummary": "正文固定闭、定向、正亏格曲面：g 为双曲度量，或总面积一的平坦环面。对固定 Λ>0，模型是 Eᵅ_Λ=½∫[(1+|∇u|²)^(1+α)−1]+(Λ²/2)∫|u+e₃|²；定理 1.2 证明当 αₙ→0 时，其度数一极小化子形成一个标准球面泡，底图为常值 −e₃，并在固定局部圆盘上同时得到 Ẇ¹,² 与 L∞ 的单泡逼近、能量恒等式及无颈性；泡尺度 rₙ 满足 rₙ^αₙ→1。",
+          "techniques": [
+            "将带势项极小化子视为 Sacks–Uhlenbeck 能量的近临界点",
+            "小能量正则性与单泡集中",
+            "Hodge 分解、局部 Hardy 空间和 Lorentz 估计控制颈部",
+            "Pohozaev 恒等式导出 αₙ log rₙ→0"
+          ],
+          "breakthrough": "先建立带明确能量与梯度条件的近临界 Sacks–Uhlenbeck 映射无颈结果，再利用固定势项与极小性得到 Baby-Skyrme 极小化子的完整单泡图景；势项将常值底图选为 −e₃。",
+          "limitations": "已读 PDF 第 1–4 页主定理、模型和范围，第 9–10 页主定理归约及 Pohozaev 尺度论证，并检查第 5–8 页的步骤组织。定理 1.5 另要求光滑度数一映射、Eᵅⁿ→4π、L² 能量梯度趋零及 ‖(1+|∇uₙ|²)^αₙ−1‖C⁰→0，不适用于任意近临界序列。一般光滑背景度量的推广在注 1.1 中称需小修改，正式陈述采用常曲率背景；本篇是定性而非定量收敛速率，非任意度数泡树。尚未逐步核验全部证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "AI Declaration 明确限定生成式 AI 仅协助文献综述，尤其附录 A 所述闭曲面局部 Hardy 空间理论，并明确所有数学论证由作者独立完成。仅记 literature，不因出现 Hardy 空间或证明而误记 AI 数学构造。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37457v1 · PDF 第 4 页 AI Declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:15:42.654439+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37457v1",
+            "contentHash": "afa7e0acd3ec39890ba5d4df4602342299048480d4aa8d11a21ad528415b69c8",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Declaration 明确限定生成式 AI 仅协助文献综述，尤其附录 A 所述闭曲面局部 Hardy 空间理论，并明确所有数学论证由作者独立完成。仅记 literature，不因出现 Hardy 空间或证明而误记 AI 数学构造。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2a858be95a5781f48644f86a0ca0d27e395c946decb89a815e43fcf7e8bfb993"
+          },
+          "aiUsage": [
+            "literature"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "泡树、能量集中及无颈问题是几何 PDE 核心内容，需优先核对全文参数及极小化假设。"
+        },
+        "analysisBasis": {
+          "abstract": "We study degree $1$ minimisers $u: (\\Sigma,g) \\to S^2$ for a Baby-Skyrme model with a Sacks-Uhlenbeck regularisation term $E^{\\alpha}(u) = \\frac{1}{2} \\int_{\\Sigma} (1+\\vert \\nabla u \\vert^2)^{\\alpha+1} -1 dv_g$ and establish convergence of degree $1$ minimisers to a simple bubble tree as $\\alpha \\to 0$. We also obtain a new no-neck result for the classical Sacks-Uhlenbeck energy $E^{\\alpha}$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.36091",
+  "slug": "2610.36091",
+  "latest": {
+    "arxivId": "2610.36091",
+    "metadata": {
+      "title": "Spectral $Γ_2$ inequalities for the $V$-Laplacian with evolving weighted measures",
+      "authors": [
+        "Ha Tuan Dung",
+        "Yi Li"
+      ],
+      "abstract": "In this paper, we establish spectral Bakry-Émery $\\Gamma_2$ criteria and their modified counterparts for the $V$-Laplacian on closed Riemannian manifolds equipped with evolving weighted measures. The estimates yield jointly optimized spectral bounds and sharp endpoint constants. When the measures evolve according to the Fokker-Planck equation, these estimates yield monotonicity formulas for the Fisher information associated with Shannon and Tsallis entropies, together with quantitative propagation of Poincaré, logarithmic Sobolev, and nonlinear interpolation inequalities. In the stationary reversible setting, our results specialize to the Witten Laplacian and recover the unweighted Cai-Wang estimates \\cite{Cai}.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-26T18:14:37Z",
+      "updatedAt": "2026-10-26T18:14:37Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.36091v1",
+        "observedAt": "2026-10-28T06:09:07.805742+00:00",
+        "contentHash": "3b1874468f596354ad60fbbc1077ac0bed51d4f55547a56de0021ae99277ddf6"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:21.050317+00:00",
+        "contentHash": "961c9a455165975431047d1a4561bc7bd3f115cf5416921ee5779964bbf17b36"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "谱曲率判据与熵耗散",
+      "workSummary": "在固定闭连通 n≥2 黎曼流形、任意光滑漂移 V 及光滑正概率密度 ρ_t 下，定理 1.1、1.4 给出固定时刻的加权 Γ₂ 及修正 Γ₂ 谱估计；所用 λ₁(t) 是相对于 μ_t 对称的 A_t=Δ+∇logρ_t·∇ 的谱隙，非一般非自伴 Δ_V 的特征值。常数还依赖密度梯度及相对漂移 W_t=V−∇logρ_t 的形变张量。",
+      "techniques": [
+        "把非对称漂移扩散拆为 μ_t-对称算子 A_t 与相对漂移 W_t",
+        "对谱隙和密度对数梯度作二变量联合优化",
+        "加权 Bochner 恒等式及相对漂移形变张量",
+        "正向 Fokker–Planck 密度与反向 Kolmogorov 解的对偶熵微分公式"
+      ],
+      "breakthrough": "固定时刻估计不要求密度满足演化方程；另令 ∂tρ=Δρ−div(ρV)、∂tu+Δ_Vu=0 并归一化终值后，定理 1.6 在 p∈(2(n−1)²/(2n²+1),2] 给出 Tsallis 熵 T''−2Λ_tT'≤0，p=1 回到 Shannon。推论 1.8 从已有初始插值常数得到任意有限时间的显式正传播常数，包含 Poincaré 和对数 Sobolev 情形。线性端点 s=0 和修正端点 s=2 的常数 ℓ_t 尖锐，形变张量为零时 ℓ_t=λ₁(t)。",
+      "limitations": "补读 PDF 第 1–8 页主定理、规范、参数区间和传播公式。联合优化只是在给定估计族中最优；Remark 1.3 明确未证明一般非线性不等式常数尖锐。ℓ_t 及一般优化常数未必为正，不能无条件声称 Fisher 信息按普通正向时间衰减；文中 u 是反向方程，必须保留时间方向或使用相应指数权单调量。固定时刻一般谱界并非仅由普通 Ricci 下界决定；未独立复核后续积分恒等式和优化证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:09:07.805742+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.36091v1",
+        "contentHash": "3b1874468f596354ad60fbbc1077ac0bed51d4f55547a56de0021ae99277ddf6",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。27页PDF提取完整、页数一致且无短文本页。第26页关键词命中来自参考文献作者X. Cai的小型大写排版C AI，而非人工智能工具或本作者声明。全文及补充点写、断行检索未见作者AI使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "cbc5aec29cfaa947eea873dd73c9e94c674d6a8bd0b3bdbb47a787b874d91b61"
+      },
+      "priorityScore": 94,
+      "priorityReason": "曲率维数方法、几何扩散、谱界和熵单调性高度契合用户方向，优先补读主定理。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we establish spectral Bakry-Émery $\\Gamma_2$ criteria and their modified counterparts for the $V$-Laplacian on closed Riemannian manifolds equipped with evolving weighted measures. The estimates yield jointly optimized spectral bounds and sharp endpoint constants. When the measures evolve according to the Fokker-Planck equation, these estimates yield monotonicity formulas for the Fisher information associated with Shannon and Tsallis entropies, together with quantitative propagation of Poincaré, logarithmic Sobolev, and nonlinear interpolation inequalities. In the stationary reversible setting, our results specialize to the Witten Laplacian and recover the unweighted Cai-Wang estimates \\cite{Cai}.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.36091",
+        "metadata": {
+          "title": "Spectral $Γ_2$ inequalities for the $V$-Laplacian with evolving weighted measures",
+          "authors": [
+            "Ha Tuan Dung",
+            "Yi Li"
+          ],
+          "abstract": "In this paper, we establish spectral Bakry-Émery $\\Gamma_2$ criteria and their modified counterparts for the $V$-Laplacian on closed Riemannian manifolds equipped with evolving weighted measures. The estimates yield jointly optimized spectral bounds and sharp endpoint constants. When the measures evolve according to the Fokker-Planck equation, these estimates yield monotonicity formulas for the Fisher information associated with Shannon and Tsallis entropies, together with quantitative propagation of Poincaré, logarithmic Sobolev, and nonlinear interpolation inequalities. In the stationary reversible setting, our results specialize to the Witten Laplacian and recover the unweighted Cai-Wang estimates \\cite{Cai}.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-26T18:14:37Z",
+          "updatedAt": "2026-10-26T18:14:37Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.36091v1",
+            "observedAt": "2026-10-28T06:09:07.805742+00:00",
+            "contentHash": "3b1874468f596354ad60fbbc1077ac0bed51d4f55547a56de0021ae99277ddf6"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:21.050317+00:00",
+            "contentHash": "961c9a455165975431047d1a4561bc7bd3f115cf5416921ee5779964bbf17b36"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "谱曲率判据与熵耗散",
+          "workSummary": "在固定闭连通 n≥2 黎曼流形、任意光滑漂移 V 及光滑正概率密度 ρ_t 下，定理 1.1、1.4 给出固定时刻的加权 Γ₂ 及修正 Γ₂ 谱估计；所用 λ₁(t) 是相对于 μ_t 对称的 A_t=Δ+∇logρ_t·∇ 的谱隙，非一般非自伴 Δ_V 的特征值。常数还依赖密度梯度及相对漂移 W_t=V−∇logρ_t 的形变张量。",
+          "techniques": [
+            "把非对称漂移扩散拆为 μ_t-对称算子 A_t 与相对漂移 W_t",
+            "对谱隙和密度对数梯度作二变量联合优化",
+            "加权 Bochner 恒等式及相对漂移形变张量",
+            "正向 Fokker–Planck 密度与反向 Kolmogorov 解的对偶熵微分公式"
+          ],
+          "breakthrough": "固定时刻估计不要求密度满足演化方程；另令 ∂tρ=Δρ−div(ρV)、∂tu+Δ_Vu=0 并归一化终值后，定理 1.6 在 p∈(2(n−1)²/(2n²+1),2] 给出 Tsallis 熵 T''−2Λ_tT'≤0，p=1 回到 Shannon。推论 1.8 从已有初始插值常数得到任意有限时间的显式正传播常数，包含 Poincaré 和对数 Sobolev 情形。线性端点 s=0 和修正端点 s=2 的常数 ℓ_t 尖锐，形变张量为零时 ℓ_t=λ₁(t)。",
+          "limitations": "补读 PDF 第 1–8 页主定理、规范、参数区间和传播公式。联合优化只是在给定估计族中最优；Remark 1.3 明确未证明一般非线性不等式常数尖锐。ℓ_t 及一般优化常数未必为正，不能无条件声称 Fisher 信息按普通正向时间衰减；文中 u 是反向方程，必须保留时间方向或使用相应指数权单调量。固定时刻一般谱界并非仅由普通 Ricci 下界决定；未独立复核后续积分恒等式和优化证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:09:07.805742+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.36091v1",
+            "contentHash": "3b1874468f596354ad60fbbc1077ac0bed51d4f55547a56de0021ae99277ddf6",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。27页PDF提取完整、页数一致且无短文本页。第26页关键词命中来自参考文献作者X. Cai的小型大写排版C AI，而非人工智能工具或本作者声明。全文及补充点写、断行检索未见作者AI使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "cbc5aec29cfaa947eea873dd73c9e94c674d6a8bd0b3bdbb47a787b874d91b61"
+          },
+          "priorityScore": 94,
+          "priorityReason": "曲率维数方法、几何扩散、谱界和熵单调性高度契合用户方向，优先补读主定理。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we establish spectral Bakry-Émery $\\Gamma_2$ criteria and their modified counterparts for the $V$-Laplacian on closed Riemannian manifolds equipped with evolving weighted measures. The estimates yield jointly optimized spectral bounds and sharp endpoint constants. When the measures evolve according to the Fokker-Planck equation, these estimates yield monotonicity formulas for the Fisher information associated with Shannon and Tsallis entropies, together with quantitative propagation of Poincaré, logarithmic Sobolev, and nonlinear interpolation inequalities. In the stationary reversible setting, our results specialize to the Witten Laplacian and recover the unweighted Cai-Wang estimates \\cite{Cai}.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

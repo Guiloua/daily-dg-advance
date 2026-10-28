@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37520",
+  "slug": "2610.37520",
+  "latest": {
+    "arxivId": "2610.37520",
+    "metadata": {
+      "title": "Statistical Uniformization of Surfaces by Heat-Kernel Fisher Information",
+      "authors": [
+        "Gunhee Cho",
+        "Hyun Chul Jang"
+      ],
+      "abstract": "A Brownian particle observed at time $t$ carries information about where it started. On a closed surface this makes the surface itself a statistical model, whose Fisher information pulls back to a heat-smoothed metric $h_t=2tJ_t$; its volume $V_t$ is a normalized Jeffreys volume, and $\\log(V_t/2t)$ is the model-dependent constant in Rissanen's minimum-description-length complexity. We ask whether maximizing this statistical size among metrics of fixed area in a conformal class recovers the uniformizing metric. First, $9(A-2\\pi\\chi t-V_t)/t^2$ converges to the curvature energy $\\int K^2\\,dA$ (the Calabi energy up to a topological constant), uniformly on classes of bounded geometry; hence, within a fixed-area conformal class of bounded geometry containing the uniformizer, approximate maximizers of $V_t$ converge to the constant-curvature metric (on the sphere, to the round metrics). Second, near every flat torus we prove a sharp finite-scale version: for small perturbations whose oscillations are resolved by the diffusion, $t|k|^2\\le\\theta<\\tau_*$, the flat-subtracted defect is comparable to $\\|\\Delta f\\|_2^2$, uniformly in the frequency cutoff and over noncollapsing lattices. The explicit threshold $\\tau_*=4.408\\ldots$ is optimal, and it is exactly the observation time at which the information about one curvature mode is maximal. Third, the flat structure is seen only at an exponential scale: the volume loss of a flat torus measures the ambiguity of winding and is comparable to $t^{-1/2}e^{-\\operatorname{sys}^2/(16t)}$, which selects the hexagonal lattice as $t\\to0$ but not at all times.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "49 pages, 6 figures",
+      "version": 1,
+      "submittedAt": "2026-10-27T16:42:17Z",
+      "updatedAt": "2026-10-27T16:42:17Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:44.219661+00:00",
+        "contentHash": "884a07e5baa5ee35acb5b63d937fefc99a67030004d357cbd3ccfe91f2b22f67"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "热核信息度量与曲面一致化",
+      "workSummary": "在闭曲面上由热核 Fisher 信息构造 h_t=2tJ_t 与体积 V_t，证明 9(A−2πχt−V_t)/t² 在有界几何类上一致趋于 ∫K²dA。因此在包含一致化度量、固定面积及有界几何的共形类中，V_t 的近似极大化子趋于常曲率度量（球面为圆度量族）。平坦环面附近另有频率限制 t|k|²≤θ<τ*=4.408… 下的有限尺度尖锐稳定性。",
+      "techniques": [
+        "热核 Fisher 度量的小时间展开",
+        "Calabi 曲率能量与固定面积共形变分",
+        "扩散可分辨频段的 Fourier 分析",
+        "环面绕行歧义的指数小估计"
+      ],
+      "breakthrough": "把统计体积最大化与曲率能量最小化相连；平坦环面的体积亏损与 t^(−1/2)exp(−sys²/(16t)) 同阶，在 t→0 时选择六角格，但不在所有时刻如此。",
+      "limitations": "一致化收敛依赖有界几何与固定面积、共形类控制；有限尺度界局限小扰动及可分辨频率，指数估计只是可比界，不是精确渐近系数，六角格选择也仅小时间。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Computational checks and preparation 明确披露 Claude (Anthropic) 用于证明审阅、数值检查与编辑，故记 verification、computation、writing。数值积分用于展示、格点比较及归一化检查，浮点结果不是区间证书；未归因新核心思想或证明生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37520v1 · PDF 第 47 页 Computational checks and preparation",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:15:55.227155+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37520v1",
+        "contentHash": "e779143b3fbc01ab487cd66fed46b72e84dccdc8c3d47a3963bb76b6079bd205",
+        "pages": 49,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Computational checks and preparation 明确披露 Claude (Anthropic) 用于证明审阅、数值检查与编辑，故记 verification、computation、writing。数值积分用于展示、格点比较及归一化检查，浮点结果不是区间证书；未归因新核心思想或证明生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4203fd239c06b00ed251bf284140581badb9af74b33cf752c8a5a7bbf6f74676"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 84,
+      "priorityReason": "热核、谱信息和曲率变分的连接较有新意，需注意各结论不同的尺度及紧性条件。"
+    },
+    "analysisBasis": {
+      "abstract": "A Brownian particle observed at time $t$ carries information about where it started. On a closed surface this makes the surface itself a statistical model, whose Fisher information pulls back to a heat-smoothed metric $h_t=2tJ_t$; its volume $V_t$ is a normalized Jeffreys volume, and $\\log(V_t/2t)$ is the model-dependent constant in Rissanen's minimum-description-length complexity. We ask whether maximizing this statistical size among metrics of fixed area in a conformal class recovers the uniformizing metric. First, $9(A-2\\pi\\chi t-V_t)/t^2$ converges to the curvature energy $\\int K^2\\,dA$ (the Calabi energy up to a topological constant), uniformly on classes of bounded geometry; hence, within a fixed-area conformal class of bounded geometry containing the uniformizer, approximate maximizers of $V_t$ converge to the constant-curvature metric (on the sphere, to the round metrics). Second, near every flat torus we prove a sharp finite-scale version: for small perturbations whose oscillations are resolved by the diffusion, $t|k|^2\\le\\theta<\\tau_*$, the flat-subtracted defect is comparable to $\\|\\Delta f\\|_2^2$, uniformly in the frequency cutoff and over noncollapsing lattices. The explicit threshold $\\tau_*=4.408\\ldots$ is optimal, and it is exactly the observation time at which the information about one curvature mode is maximal. Third, the flat structure is seen only at an exponential scale: the volume loss of a flat torus measures the ambiguity of winding and is comparable to $t^{-1/2}e^{-\\operatorname{sys}^2/(16t)}$, which selects the hexagonal lattice as $t\\to0$ but not at all times.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37520",
+        "metadata": {
+          "title": "Statistical Uniformization of Surfaces by Heat-Kernel Fisher Information",
+          "authors": [
+            "Gunhee Cho",
+            "Hyun Chul Jang"
+          ],
+          "abstract": "A Brownian particle observed at time $t$ carries information about where it started. On a closed surface this makes the surface itself a statistical model, whose Fisher information pulls back to a heat-smoothed metric $h_t=2tJ_t$; its volume $V_t$ is a normalized Jeffreys volume, and $\\log(V_t/2t)$ is the model-dependent constant in Rissanen's minimum-description-length complexity. We ask whether maximizing this statistical size among metrics of fixed area in a conformal class recovers the uniformizing metric. First, $9(A-2\\pi\\chi t-V_t)/t^2$ converges to the curvature energy $\\int K^2\\,dA$ (the Calabi energy up to a topological constant), uniformly on classes of bounded geometry; hence, within a fixed-area conformal class of bounded geometry containing the uniformizer, approximate maximizers of $V_t$ converge to the constant-curvature metric (on the sphere, to the round metrics). Second, near every flat torus we prove a sharp finite-scale version: for small perturbations whose oscillations are resolved by the diffusion, $t|k|^2\\le\\theta<\\tau_*$, the flat-subtracted defect is comparable to $\\|\\Delta f\\|_2^2$, uniformly in the frequency cutoff and over noncollapsing lattices. The explicit threshold $\\tau_*=4.408\\ldots$ is optimal, and it is exactly the observation time at which the information about one curvature mode is maximal. Third, the flat structure is seen only at an exponential scale: the volume loss of a flat torus measures the ambiguity of winding and is comparable to $t^{-1/2}e^{-\\operatorname{sys}^2/(16t)}$, which selects the hexagonal lattice as $t\\to0$ but not at all times.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "49 pages, 6 figures",
+          "version": 1,
+          "submittedAt": "2026-10-27T16:42:17Z",
+          "updatedAt": "2026-10-27T16:42:17Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:44.219661+00:00",
+            "contentHash": "884a07e5baa5ee35acb5b63d937fefc99a67030004d357cbd3ccfe91f2b22f67"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "热核信息度量与曲面一致化",
+          "workSummary": "在闭曲面上由热核 Fisher 信息构造 h_t=2tJ_t 与体积 V_t，证明 9(A−2πχt−V_t)/t² 在有界几何类上一致趋于 ∫K²dA。因此在包含一致化度量、固定面积及有界几何的共形类中，V_t 的近似极大化子趋于常曲率度量（球面为圆度量族）。平坦环面附近另有频率限制 t|k|²≤θ<τ*=4.408… 下的有限尺度尖锐稳定性。",
+          "techniques": [
+            "热核 Fisher 度量的小时间展开",
+            "Calabi 曲率能量与固定面积共形变分",
+            "扩散可分辨频段的 Fourier 分析",
+            "环面绕行歧义的指数小估计"
+          ],
+          "breakthrough": "把统计体积最大化与曲率能量最小化相连；平坦环面的体积亏损与 t^(−1/2)exp(−sys²/(16t)) 同阶，在 t→0 时选择六角格，但不在所有时刻如此。",
+          "limitations": "一致化收敛依赖有界几何与固定面积、共形类控制；有限尺度界局限小扰动及可分辨频率，指数估计只是可比界，不是精确渐近系数，六角格选择也仅小时间。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Computational checks and preparation 明确披露 Claude (Anthropic) 用于证明审阅、数值检查与编辑，故记 verification、computation、writing。数值积分用于展示、格点比较及归一化检查，浮点结果不是区间证书；未归因新核心思想或证明生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37520v1 · PDF 第 47 页 Computational checks and preparation",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:15:55.227155+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37520v1",
+            "contentHash": "e779143b3fbc01ab487cd66fed46b72e84dccdc8c3d47a3963bb76b6079bd205",
+            "pages": 49,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Computational checks and preparation 明确披露 Claude (Anthropic) 用于证明审阅、数值检查与编辑，故记 verification、computation、writing。数值积分用于展示、格点比较及归一化检查，浮点结果不是区间证书；未归因新核心思想或证明生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4203fd239c06b00ed251bf284140581badb9af74b33cf752c8a5a7bbf6f74676"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 84,
+          "priorityReason": "热核、谱信息和曲率变分的连接较有新意，需注意各结论不同的尺度及紧性条件。"
+        },
+        "analysisBasis": {
+          "abstract": "A Brownian particle observed at time $t$ carries information about where it started. On a closed surface this makes the surface itself a statistical model, whose Fisher information pulls back to a heat-smoothed metric $h_t=2tJ_t$; its volume $V_t$ is a normalized Jeffreys volume, and $\\log(V_t/2t)$ is the model-dependent constant in Rissanen's minimum-description-length complexity. We ask whether maximizing this statistical size among metrics of fixed area in a conformal class recovers the uniformizing metric. First, $9(A-2\\pi\\chi t-V_t)/t^2$ converges to the curvature energy $\\int K^2\\,dA$ (the Calabi energy up to a topological constant), uniformly on classes of bounded geometry; hence, within a fixed-area conformal class of bounded geometry containing the uniformizer, approximate maximizers of $V_t$ converge to the constant-curvature metric (on the sphere, to the round metrics). Second, near every flat torus we prove a sharp finite-scale version: for small perturbations whose oscillations are resolved by the diffusion, $t|k|^2\\le\\theta<\\tau_*$, the flat-subtracted defect is comparable to $\\|\\Delta f\\|_2^2$, uniformly in the frequency cutoff and over noncollapsing lattices. The explicit threshold $\\tau_*=4.408\\ldots$ is optimal, and it is exactly the observation time at which the information about one curvature mode is maximal. Third, the flat structure is seen only at an exponential scale: the volume loss of a flat torus measures the ambiguity of winding and is comparable to $t^{-1/2}e^{-\\operatorname{sys}^2/(16t)}$, which selects the hexagonal lattice as $t\\to0$ but not at all times.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

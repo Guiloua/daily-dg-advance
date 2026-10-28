@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37370",
+  "slug": "2610.37370",
+  "latest": {
+    "arxivId": "2610.37370",
+    "metadata": {
+      "title": "The Geometry of Manifold Learning: Singular foliations via Deep Learning models",
+      "authors": [
+        "Gabriele Novelli",
+        "Eliot Tron",
+        "Emanuele Latini",
+        "Rita Fioresi"
+      ],
+      "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
+      "categories": [
+        "math.DG",
+        "cs.LG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "18 pages, 4 figures, 2 appendix",
+      "version": 1,
+      "submittedAt": "2026-10-27T15:02:29Z",
+      "updatedAt": "2026-10-27T15:02:29Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:32.959746+00:00",
+        "contentHash": "41c725b4de962b9029915950ff04bba146570ac94955f69caed38947732f24ed"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "神经网络输入空间的奇异叶状结构",
+      "workSummary": "利用训练后神经网络的 Data Information Matrix（DIM，Fisher 信息矩阵的一种变体），研究由其列张成的分布所定义的输入空间几何。针对 ReLU 激活导致的非光滑性，作者引入仅在零测集上与原分布不同的光滑化版本，并证明该版本诱导奇异叶状结构。",
+      "techniques": [
+        "DIM 所张成的分布",
+        "ReLU 非光滑分布的光滑化",
+        "奇异叶状结构"
+      ],
+      "breakthrough": "为非光滑网络如何组织输入空间提供理论微分几何框架。",
+      "limitations": "结论属于修改后分布；零测集上的一致不等于原分布在所有点可积。摘要未给出网络结构、秩变化及光滑化的精确假设，也未证明网络自动恢复真实数据流形。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:14:42.902311+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37370",
+        "contentHash": "6c603ed63935d051d8e3d20d4746951126c7ff27a252b6b721141161c136ccfa",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际 PDF SHA-256 与本次记录一致，18 页完整提取且无短文本页。本文研究深度学习的几何，不能把研究对象当作作者使用生成式工具；第 12 页 Artificial Intelligence 为参考文献会议名称。标准及点写 AI、可断行模型名补充检索没有作者自身使用的披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "76fffe1aff3b16c1f5341de9479f7f675e1b2b766a4a0d2d5ae49c1476318318"
+      },
+      "priorityScore": 40,
+      "priorityReason": "以深度学习为研究对象的几何交叉理论，和曲率比较、几何 PDE 的主要阅读方向距离较远。",
+      "lowPriorityReason": "以深度学习为研究对象的几何交叉理论，和曲率比较、几何 PDE 的主要阅读方向距离较远。"
+    },
+    "analysisBasis": {
+      "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37370",
+        "metadata": {
+          "title": "The Geometry of Manifold Learning: Singular foliations via Deep Learning models",
+          "authors": [
+            "Gabriele Novelli",
+            "Eliot Tron",
+            "Emanuele Latini",
+            "Rita Fioresi"
+          ],
+          "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
+          "categories": [
+            "math.DG",
+            "cs.LG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "18 pages, 4 figures, 2 appendix",
+          "version": 1,
+          "submittedAt": "2026-10-27T15:02:29Z",
+          "updatedAt": "2026-10-27T15:02:29Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:32.959746+00:00",
+            "contentHash": "41c725b4de962b9029915950ff04bba146570ac94955f69caed38947732f24ed"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "神经网络输入空间的奇异叶状结构",
+          "workSummary": "利用训练后神经网络的 Data Information Matrix（DIM，Fisher 信息矩阵的一种变体），研究由其列张成的分布所定义的输入空间几何。针对 ReLU 激活导致的非光滑性，作者引入仅在零测集上与原分布不同的光滑化版本，并证明该版本诱导奇异叶状结构。",
+          "techniques": [
+            "DIM 所张成的分布",
+            "ReLU 非光滑分布的光滑化",
+            "奇异叶状结构"
+          ],
+          "breakthrough": "为非光滑网络如何组织输入空间提供理论微分几何框架。",
+          "limitations": "结论属于修改后分布；零测集上的一致不等于原分布在所有点可积。摘要未给出网络结构、秩变化及光滑化的精确假设，也未证明网络自动恢复真实数据流形。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:14:42.902311+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37370",
+            "contentHash": "6c603ed63935d051d8e3d20d4746951126c7ff27a252b6b721141161c136ccfa",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际 PDF SHA-256 与本次记录一致，18 页完整提取且无短文本页。本文研究深度学习的几何，不能把研究对象当作作者使用生成式工具；第 12 页 Artificial Intelligence 为参考文献会议名称。标准及点写 AI、可断行模型名补充检索没有作者自身使用的披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "76fffe1aff3b16c1f5341de9479f7f675e1b2b766a4a0d2d5ae49c1476318318"
+          },
+          "priorityScore": 40,
+          "priorityReason": "以深度学习为研究对象的几何交叉理论，和曲率比较、几何 PDE 的主要阅读方向距离较远。",
+          "lowPriorityReason": "以深度学习为研究对象的几何交叉理论，和曲率比较、几何 PDE 的主要阅读方向距离较远。"
+        },
+        "analysisBasis": {
+          "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

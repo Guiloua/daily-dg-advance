@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.36382",
+  "slug": "2610.36382",
+  "latest": {
+    "arxivId": "2610.36382",
+    "metadata": {
+      "title": "Shape optimization under minimal width and constant width constraints",
+      "authors": [
+        "Beniamin Bogosel"
+      ],
+      "abstract": "In this paper we study shape optimization problems for planar convex sets with prescribed minimal width or constant width. We prove that the Reuleaux triangle minimizes torsional rigidity among sets of constant width. We also show that the first Dirichlet-Laplace eigenvalue is maximized by the equilateral triangle under a minimal width constraint and by the Reuleaux triangle under a constant width constraint. The proofs use subsets consisting of a disk and three straight or circular caps. Reflection arguments reduce the study to equilateral configurations, which contain a polygon or a disk polygon depending on one parameter. The same cap constructions give a common proof of the known area, Cheeger and inner parallel area inequalities, and yield sharp bounds for all positive moments of the distance to the boundary. We also prove sharp inequalities for concentric disk intersections and decreasing radial integrals, and compare interaction energies for kernels close to a positive constant. This includes a nonempty interval of positive Riesz exponents. Finally, we investigate whether inclusion monotonicity and Minkowski concavity suffice to obtain these comparisons for other functionals.",
+      "categories": [
+        "math.OC",
+        "math.MG"
+      ],
+      "primaryCategory": "math.OC",
+      "version": 1,
+      "submittedAt": "2026-10-26T22:58:39Z",
+      "updatedAt": "2026-10-26T22:58:39Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-28T06:06:56.927608+00:00",
+        "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:21.054693+00:00",
+        "contentHash": "c802090f524823504c9399704f0edf5e5dc021a362cda895a658b33614c0e7db"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "形状谱优化与尖锐比较",
+      "workSummary": "研究规定最小宽度或常宽的平面凸集。作者证明常宽类中 Reuleaux 三角形极小化扭转刚度；固定最小宽度时等边三角形极大化首个 Dirichlet–Laplace 特征值，常宽时则由 Reuleaux 三角形极大化。利用圆盘加三个直或圆弧帽的子集与反射，将比较降到等边配置。",
+      "techniques": [
+        "圆盘与三帽构型",
+        "反射约化及单参数多边形/圆盘多边形",
+        "谱单调性和形状优化",
+        "边界距离矩及径向积分比较"
+      ],
+      "breakthrough": "统一既有面积、Cheeger 和内平行面积比较，并给出边界距离全部正阶矩的尖锐界；还研究近正常数核的交互能，包括一段非空正 Riesz 指数区间。",
+      "limitations": "两种宽度约束及各自极值形状不可混同。交互能结论仅对接近正常数的核及指定指数区间，不是所有 Riesz 核；包含单调性与 Minkowski 凹性是否足够的讨论仍是后续问题，非一般定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第48页明确称稿件准备中使用GPT 6 Astra和6.1 Sol，作者指导写作、验证结果并承担责任。未细分模型实际承担的工作，因此只确认使用，usage暂为空；不能从作者负责或验证结果推断AI验证证明、提出核心路线或完成计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.36382v1 · PDF 第48页 Acknowledgements 中 AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:11:19.169897+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.36382v1",
+        "contentHash": "f440fee43c0a2854cdecfbdb88781f6562f9dc94ea5a8f14f5de3892bab432b9",
+        "pages": 51,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第48页明确称稿件准备中使用GPT 6 Astra和6.1 Sol，作者指导写作、验证结果并承担责任。未细分模型实际承担的工作，因此只确认使用，usage暂为空；不能从作者负责或验证结果推断AI验证证明、提出核心路线或完成计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "9f26e2425af2aa5005e6bfc23341c5af708454d1cd398a3fff717007e40036fc"
+      },
+      "aiUsage": [],
+      "priorityScore": 82,
+      "priorityReason": "谱几何、椭圆 PDE 与尖锐凸几何比较交汇，和用户方向较相关。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper we study shape optimization problems for planar convex sets with prescribed minimal width or constant width. We prove that the Reuleaux triangle minimizes torsional rigidity among sets of constant width. We also show that the first Dirichlet-Laplace eigenvalue is maximized by the equilateral triangle under a minimal width constraint and by the Reuleaux triangle under a constant width constraint. The proofs use subsets consisting of a disk and three straight or circular caps. Reflection arguments reduce the study to equilateral configurations, which contain a polygon or a disk polygon depending on one parameter. The same cap constructions give a common proof of the known area, Cheeger and inner parallel area inequalities, and yield sharp bounds for all positive moments of the distance to the boundary. We also prove sharp inequalities for concentric disk intersections and decreasing radial integrals, and compare interaction energies for kernels close to a positive constant. This includes a nonempty interval of positive Riesz exponents. Finally, we investigate whether inclusion monotonicity and Minkowski concavity suffice to obtain these comparisons for other functionals.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.36382",
+        "metadata": {
+          "title": "Shape optimization under minimal width and constant width constraints",
+          "authors": [
+            "Beniamin Bogosel"
+          ],
+          "abstract": "In this paper we study shape optimization problems for planar convex sets with prescribed minimal width or constant width. We prove that the Reuleaux triangle minimizes torsional rigidity among sets of constant width. We also show that the first Dirichlet-Laplace eigenvalue is maximized by the equilateral triangle under a minimal width constraint and by the Reuleaux triangle under a constant width constraint. The proofs use subsets consisting of a disk and three straight or circular caps. Reflection arguments reduce the study to equilateral configurations, which contain a polygon or a disk polygon depending on one parameter. The same cap constructions give a common proof of the known area, Cheeger and inner parallel area inequalities, and yield sharp bounds for all positive moments of the distance to the boundary. We also prove sharp inequalities for concentric disk intersections and decreasing radial integrals, and compare interaction energies for kernels close to a positive constant. This includes a nonempty interval of positive Riesz exponents. Finally, we investigate whether inclusion monotonicity and Minkowski concavity suffice to obtain these comparisons for other functionals.",
+          "categories": [
+            "math.OC",
+            "math.MG"
+          ],
+          "primaryCategory": "math.OC",
+          "version": 1,
+          "submittedAt": "2026-10-26T22:58:39Z",
+          "updatedAt": "2026-10-26T22:58:39Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-28T06:06:56.927608+00:00",
+            "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:21.054693+00:00",
+            "contentHash": "c802090f524823504c9399704f0edf5e5dc021a362cda895a658b33614c0e7db"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "形状谱优化与尖锐比较",
+          "workSummary": "研究规定最小宽度或常宽的平面凸集。作者证明常宽类中 Reuleaux 三角形极小化扭转刚度；固定最小宽度时等边三角形极大化首个 Dirichlet–Laplace 特征值，常宽时则由 Reuleaux 三角形极大化。利用圆盘加三个直或圆弧帽的子集与反射，将比较降到等边配置。",
+          "techniques": [
+            "圆盘与三帽构型",
+            "反射约化及单参数多边形/圆盘多边形",
+            "谱单调性和形状优化",
+            "边界距离矩及径向积分比较"
+          ],
+          "breakthrough": "统一既有面积、Cheeger 和内平行面积比较，并给出边界距离全部正阶矩的尖锐界；还研究近正常数核的交互能，包括一段非空正 Riesz 指数区间。",
+          "limitations": "两种宽度约束及各自极值形状不可混同。交互能结论仅对接近正常数的核及指定指数区间，不是所有 Riesz 核；包含单调性与 Minkowski 凹性是否足够的讨论仍是后续问题，非一般定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第48页明确称稿件准备中使用GPT 6 Astra和6.1 Sol，作者指导写作、验证结果并承担责任。未细分模型实际承担的工作，因此只确认使用，usage暂为空；不能从作者负责或验证结果推断AI验证证明、提出核心路线或完成计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.36382v1 · PDF 第48页 Acknowledgements 中 AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:11:19.169897+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.36382v1",
+            "contentHash": "f440fee43c0a2854cdecfbdb88781f6562f9dc94ea5a8f14f5de3892bab432b9",
+            "pages": 51,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第48页明确称稿件准备中使用GPT 6 Astra和6.1 Sol，作者指导写作、验证结果并承担责任。未细分模型实际承担的工作，因此只确认使用，usage暂为空；不能从作者负责或验证结果推断AI验证证明、提出核心路线或完成计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "9f26e2425af2aa5005e6bfc23341c5af708454d1cd398a3fff717007e40036fc"
+          },
+          "aiUsage": [],
+          "priorityScore": 82,
+          "priorityReason": "谱几何、椭圆 PDE 与尖锐凸几何比较交汇，和用户方向较相关。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper we study shape optimization problems for planar convex sets with prescribed minimal width or constant width. We prove that the Reuleaux triangle minimizes torsional rigidity among sets of constant width. We also show that the first Dirichlet-Laplace eigenvalue is maximized by the equilateral triangle under a minimal width constraint and by the Reuleaux triangle under a constant width constraint. The proofs use subsets consisting of a disk and three straight or circular caps. Reflection arguments reduce the study to equilateral configurations, which contain a polygon or a disk polygon depending on one parameter. The same cap constructions give a common proof of the known area, Cheeger and inner parallel area inequalities, and yield sharp bounds for all positive moments of the distance to the boundary. We also prove sharp inequalities for concentric disk intersections and decreasing radial integrals, and compare interaction energies for kernels close to a positive constant. This includes a nonempty interval of positive Riesz exponents. Finally, we investigate whether inclusion monotonicity and Minkowski concavity suffice to obtain these comparisons for other functionals.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

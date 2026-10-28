@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37526",
+  "slug": "2610.37526",
+  "latest": {
+    "arxivId": "2610.37526",
+    "metadata": {
+      "title": "Fisher Completions and Statistical Regularization of Wrapped Gaussian Families",
+      "authors": [
+        "Gunhee Cho",
+        "Hyun Chul Jang"
+      ],
+      "abstract": "We determine the intrinsic Fisher completion of the full-covariance wrapped Gaussian family on a fixed torus and relate its geometry to uniform estimation. The completion is homeomorphic to the total-variation closure. Every added law is, in suitable integer torus coordinates, a product of a uniform law and a lower-dimensional wrapped Gaussian. All these densities are positive and real analytic, but in dimension at least two no added point has a compact neighborhood. Small balls remain contractible, and explicit minimizing geodesics pass through added points. In dimension at least two, every fixed Fisher neighborhood of an added point has a positive minimax risk at every sample size. For subfamilies with a common positive lower bound on the variance in every nonzero integer direction, we prove that compactness of the completed closure is equivalent to uniform consistency in either $L^1$ or completed-Fisher loss. Equivalently, the Fourier moments must decay uniformly over the subfamily. A fixed covariance floor guarantees this condition without an upper covariance bound and gives $L^1$ risk at most $C_{\\varepsilon,d}n^{-1/2}\\{\\log(n+1)\\}^{d/4}$. A common-phase example illustrates how partially uniform limits can retain relative-phase information while remaining uniformly estimable.",
+      "categories": [
+        "math.ST",
+        "math.DG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.ST",
+      "comment": "33 pages, 5 figures",
+      "version": 1,
+      "submittedAt": "2026-10-27T16:47:48Z",
+      "updatedAt": "2026-10-27T16:47:48Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-28T06:06:56.927608+00:00",
+        "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:44.220054+00:00",
+        "contentHash": "4ac1ceb4263e080a5dda3a4df2ba6e8afd68fa71a46383cd41ec53ee9b54f37e"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "缠绕 Gaussian 统计族的 Fisher 完备化",
+      "workSummary": "对固定环面上全协方差缠绕 Gaussian 族，确定内蕴 Fisher 完备化，证明其同胚于全变差闭包；新增分布在适当整数环面坐标下为均匀分布与低维缠绕 Gaussian 的乘积，密度均正且实解析。维数至少二时新增点无紧邻域，但小球可缩且有极短测地线通过新增点。",
+      "techniques": [
+        "Fisher 距离完备化",
+        "环面整数坐标与 Fourier 矩控制",
+        "局部非紧性及极短测地线",
+        "极小极大风险与一致估计"
+      ],
+      "breakthrough": "在每个非零整数方向方差有共同正下界的子族中，将完备闭包紧性与 L¹ 或完备 Fisher 损失下一致相合估计等价；固定协方差下界无需上界即可给出 L¹ 风险 C_{ε,d}n^(−1/2){log(n+1)}^(d/4) 的上界。",
+      "limitations": "紧性—估计等价有共同方差下界假设；维数至少二时，每个新增点的固定 Fisher 邻域在任意样本量有正 minimax 风险，不应理解为任意正则子族都不可估计。风险式是上界而非精确速率等价。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Use of generative AI 明确披露证明探索、起草修订、证明一致性检查、数值检查及图形和验证脚本代码、语言编辑。保守记探索、写作、核验、计算，未具体归因核心路线或已生成的数学证明。文中说明数值检查不是区间证书且任何证明不依赖它们。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37526v1 · PDF 第 30 页 Use of generative AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:16:07.564689+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37526v1",
+        "contentHash": "ce6df9eeb933b4cce06b277d5b08a571e83a8e3829ad931be0aba4442f698d6c",
+        "pages": 31,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of generative AI 明确披露证明探索、起草修订、证明一致性检查、数值检查及图形和验证脚本代码、语言编辑。保守记探索、写作、核验、计算，未具体归因核心路线或已生成的数学证明。文中说明数值检查不是区间证书且任何证明不依赖它们。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "db8495e16f789cbee1172d4e368c6a28bca6d1fda6de06a80edd3f7fa1cbdc72"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 59,
+      "priorityReason": "度量完备化的非局部紧性与统计可估计性交叉有趣，但偏信息几何与统计理论。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the intrinsic Fisher completion of the full-covariance wrapped Gaussian family on a fixed torus and relate its geometry to uniform estimation. The completion is homeomorphic to the total-variation closure. Every added law is, in suitable integer torus coordinates, a product of a uniform law and a lower-dimensional wrapped Gaussian. All these densities are positive and real analytic, but in dimension at least two no added point has a compact neighborhood. Small balls remain contractible, and explicit minimizing geodesics pass through added points. In dimension at least two, every fixed Fisher neighborhood of an added point has a positive minimax risk at every sample size. For subfamilies with a common positive lower bound on the variance in every nonzero integer direction, we prove that compactness of the completed closure is equivalent to uniform consistency in either $L^1$ or completed-Fisher loss. Equivalently, the Fourier moments must decay uniformly over the subfamily. A fixed covariance floor guarantees this condition without an upper covariance bound and gives $L^1$ risk at most $C_{\\varepsilon,d}n^{-1/2}\\{\\log(n+1)\\}^{d/4}$. A common-phase example illustrates how partially uniform limits can retain relative-phase information while remaining uniformly estimable.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37526",
+        "metadata": {
+          "title": "Fisher Completions and Statistical Regularization of Wrapped Gaussian Families",
+          "authors": [
+            "Gunhee Cho",
+            "Hyun Chul Jang"
+          ],
+          "abstract": "We determine the intrinsic Fisher completion of the full-covariance wrapped Gaussian family on a fixed torus and relate its geometry to uniform estimation. The completion is homeomorphic to the total-variation closure. Every added law is, in suitable integer torus coordinates, a product of a uniform law and a lower-dimensional wrapped Gaussian. All these densities are positive and real analytic, but in dimension at least two no added point has a compact neighborhood. Small balls remain contractible, and explicit minimizing geodesics pass through added points. In dimension at least two, every fixed Fisher neighborhood of an added point has a positive minimax risk at every sample size. For subfamilies with a common positive lower bound on the variance in every nonzero integer direction, we prove that compactness of the completed closure is equivalent to uniform consistency in either $L^1$ or completed-Fisher loss. Equivalently, the Fourier moments must decay uniformly over the subfamily. A fixed covariance floor guarantees this condition without an upper covariance bound and gives $L^1$ risk at most $C_{\\varepsilon,d}n^{-1/2}\\{\\log(n+1)\\}^{d/4}$. A common-phase example illustrates how partially uniform limits can retain relative-phase information while remaining uniformly estimable.",
+          "categories": [
+            "math.ST",
+            "math.DG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.ST",
+          "comment": "33 pages, 5 figures",
+          "version": 1,
+          "submittedAt": "2026-10-27T16:47:48Z",
+          "updatedAt": "2026-10-27T16:47:48Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-28T06:06:56.927608+00:00",
+            "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:44.220054+00:00",
+            "contentHash": "4ac1ceb4263e080a5dda3a4df2ba6e8afd68fa71a46383cd41ec53ee9b54f37e"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "缠绕 Gaussian 统计族的 Fisher 完备化",
+          "workSummary": "对固定环面上全协方差缠绕 Gaussian 族，确定内蕴 Fisher 完备化，证明其同胚于全变差闭包；新增分布在适当整数环面坐标下为均匀分布与低维缠绕 Gaussian 的乘积，密度均正且实解析。维数至少二时新增点无紧邻域，但小球可缩且有极短测地线通过新增点。",
+          "techniques": [
+            "Fisher 距离完备化",
+            "环面整数坐标与 Fourier 矩控制",
+            "局部非紧性及极短测地线",
+            "极小极大风险与一致估计"
+          ],
+          "breakthrough": "在每个非零整数方向方差有共同正下界的子族中，将完备闭包紧性与 L¹ 或完备 Fisher 损失下一致相合估计等价；固定协方差下界无需上界即可给出 L¹ 风险 C_{ε,d}n^(−1/2){log(n+1)}^(d/4) 的上界。",
+          "limitations": "紧性—估计等价有共同方差下界假设；维数至少二时，每个新增点的固定 Fisher 邻域在任意样本量有正 minimax 风险，不应理解为任意正则子族都不可估计。风险式是上界而非精确速率等价。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Use of generative AI 明确披露证明探索、起草修订、证明一致性检查、数值检查及图形和验证脚本代码、语言编辑。保守记探索、写作、核验、计算，未具体归因核心路线或已生成的数学证明。文中说明数值检查不是区间证书且任何证明不依赖它们。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37526v1 · PDF 第 30 页 Use of generative AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:16:07.564689+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37526v1",
+            "contentHash": "ce6df9eeb933b4cce06b277d5b08a571e83a8e3829ad931be0aba4442f698d6c",
+            "pages": 31,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of generative AI 明确披露证明探索、起草修订、证明一致性检查、数值检查及图形和验证脚本代码、语言编辑。保守记探索、写作、核验、计算，未具体归因核心路线或已生成的数学证明。文中说明数值检查不是区间证书且任何证明不依赖它们。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "db8495e16f789cbee1172d4e368c6a28bca6d1fda6de06a80edd3f7fa1cbdc72"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 59,
+          "priorityReason": "度量完备化的非局部紧性与统计可估计性交叉有趣，但偏信息几何与统计理论。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the intrinsic Fisher completion of the full-covariance wrapped Gaussian family on a fixed torus and relate its geometry to uniform estimation. The completion is homeomorphic to the total-variation closure. Every added law is, in suitable integer torus coordinates, a product of a uniform law and a lower-dimensional wrapped Gaussian. All these densities are positive and real analytic, but in dimension at least two no added point has a compact neighborhood. Small balls remain contractible, and explicit minimizing geodesics pass through added points. In dimension at least two, every fixed Fisher neighborhood of an added point has a positive minimax risk at every sample size. For subfamilies with a common positive lower bound on the variance in every nonzero integer direction, we prove that compactness of the completed closure is equivalent to uniform consistency in either $L^1$ or completed-Fisher loss. Equivalently, the Fourier moments must decay uniformly over the subfamily. A fixed covariance floor guarantees this condition without an upper covariance bound and gives $L^1$ risk at most $C_{\\varepsilon,d}n^{-1/2}\\{\\log(n+1)\\}^{d/4}$. A common-phase example illustrates how partially uniform limits can retain relative-phase information while remaining uniformly estimable.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

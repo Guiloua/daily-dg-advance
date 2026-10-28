@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37151",
+  "slug": "2610.37151",
+  "latest": {
+    "arxivId": "2610.37151",
+    "metadata": {
+      "title": "Rigidity of Constant-Scalar-Curvature Ricci Shrinkers with Totally Geodesic Focal Set",
+      "authors": [
+        "Fengjiang Li",
+        "Wenqi Li",
+        "Jianyu Ou",
+        "Yuanyuan Qu",
+        "Guoqiang Wu",
+        "Detang Zhou"
+      ],
+      "abstract": "Let $(M^n,g,f)$ be a complete connected shrinking gradient Ricci soliton with constant scalar curvature, satisfying \\[ \\Ric+\\nabla^2f=\\frac12g. \\] We prove that if the focal set of $f$ is totally geodesic, then $M$ is rigid. Equivalently, its universal cover is a product of a compact Einstein manifold and a Euclidean space.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-27T12:49:25Z",
+      "updatedAt": "2026-10-27T12:49:25Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:32.958386+00:00",
+        "contentHash": "ad183e2018bd1bb01a239f7965a02d9b770f8483d568bd48f0960f3ae7f9f3c5"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "常标量曲率 shrinker 的焦集刚性",
+      "workSummary": "已核对 Theorems 1.1–1.2 与 Corollary 1.1：完备连通梯度 shrinker 满足 Ric+Hess f=½g、标量曲率常数，归一化 |∇f|²=f 后，以最低集 M₋=f⁻¹(0) 为焦集。若 M₋ 全测地，则孤立子 rigid，万有覆盖等距于 Nᵏ×Rᵐ，其中 N 紧、单连通且 Ric_N=½g_N。新论证处理 R=k/2、k,m≥2，其余允许标量值由既有刚性结果补齐，允许任一乘积因子维数为零。作者先从孤立子恒等式和完备性建立焦集光滑、紧、连通，r=2√f 为到 M₋ 距离，法指数映射 νM₋→M 为微分同胚。",
+      "techniques": [
+        "等参势函数的全局焦集与无 cut locus 法坐标",
+        "Ricci 端同态的投影缺陷及精确平方恒等式",
+        "全测地性消去第一法向 jet",
+        "法球上的加权标量平衡与球谐二次型间隙",
+        "实解析延拓与 Ricci 常秩刚性"
+      ],
+      "breakthrough": "不另加 Ricci 符号、法联络平坦或法丛平凡条件，以几何焦集假设排除唯一不受高阶球面能量间隙控制的一阶模态，继而推出 (Ric♯)²=½Ric♯、全局常秩和乘积分裂。",
+      "limitations": "已读 PDF 第 1–9、19–22 页，核对主定理、焦集结构证明、投影缺陷、第一法向 jet、关键高阶间隙及解析延拓，未逐步验证第 6–8 节全部展开和积分估计。全测地 M₋ 是额外假设；本文未证明任意常标量曲率 shrinker 的焦集都全测地，也未完全解决 Cao 猜想。结论是万有覆盖的乘积/原空间为 rigid 商，不能直接把原空间写成未经商的全局乘积。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确使用 ChatGPT 进行语言编辑和探索性计算，全部数学论证与计算由作者独立核查。标 writing、exploration、computation；不把作者核验误记为 AI 验证，也没有具体核心路线来源的归因，故不标 ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37151v1 · PDF 第 22 页，Declaration of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:14:07.033177+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37151v1",
+        "contentHash": "c7a929990c2b866bc1746d5104adb5bc9b1f1c052ac7d6310b934c4676d81ddd",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 ChatGPT 进行语言编辑和探索性计算，全部数学论证与计算由作者独立核查。标 writing、exploration、computation；不把作者核验误记为 AI 验证，也没有具体核心路线来源的归因，故不标 ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "93f73cbbe1e840988a91460dd05d40d5ecef409021286d6430b12805efc410e0"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "Ricci 孤立子刚性核心方向，应优先读焦集管状几何如何推出曲率及分裂结论。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(M^n,g,f)$ be a complete connected shrinking gradient Ricci soliton with constant scalar curvature, satisfying \\[ \\Ric+\\nabla^2f=\\frac12g. \\] We prove that if the focal set of $f$ is totally geodesic, then $M$ is rigid. Equivalently, its universal cover is a product of a compact Einstein manifold and a Euclidean space.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37151",
+        "metadata": {
+          "title": "Rigidity of Constant-Scalar-Curvature Ricci Shrinkers with Totally Geodesic Focal Set",
+          "authors": [
+            "Fengjiang Li",
+            "Wenqi Li",
+            "Jianyu Ou",
+            "Yuanyuan Qu",
+            "Guoqiang Wu",
+            "Detang Zhou"
+          ],
+          "abstract": "Let $(M^n,g,f)$ be a complete connected shrinking gradient Ricci soliton with constant scalar curvature, satisfying \\[ \\Ric+\\nabla^2f=\\frac12g. \\] We prove that if the focal set of $f$ is totally geodesic, then $M$ is rigid. Equivalently, its universal cover is a product of a compact Einstein manifold and a Euclidean space.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-27T12:49:25Z",
+          "updatedAt": "2026-10-27T12:49:25Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:32.958386+00:00",
+            "contentHash": "ad183e2018bd1bb01a239f7965a02d9b770f8483d568bd48f0960f3ae7f9f3c5"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "常标量曲率 shrinker 的焦集刚性",
+          "workSummary": "已核对 Theorems 1.1–1.2 与 Corollary 1.1：完备连通梯度 shrinker 满足 Ric+Hess f=½g、标量曲率常数，归一化 |∇f|²=f 后，以最低集 M₋=f⁻¹(0) 为焦集。若 M₋ 全测地，则孤立子 rigid，万有覆盖等距于 Nᵏ×Rᵐ，其中 N 紧、单连通且 Ric_N=½g_N。新论证处理 R=k/2、k,m≥2，其余允许标量值由既有刚性结果补齐，允许任一乘积因子维数为零。作者先从孤立子恒等式和完备性建立焦集光滑、紧、连通，r=2√f 为到 M₋ 距离，法指数映射 νM₋→M 为微分同胚。",
+          "techniques": [
+            "等参势函数的全局焦集与无 cut locus 法坐标",
+            "Ricci 端同态的投影缺陷及精确平方恒等式",
+            "全测地性消去第一法向 jet",
+            "法球上的加权标量平衡与球谐二次型间隙",
+            "实解析延拓与 Ricci 常秩刚性"
+          ],
+          "breakthrough": "不另加 Ricci 符号、法联络平坦或法丛平凡条件，以几何焦集假设排除唯一不受高阶球面能量间隙控制的一阶模态，继而推出 (Ric♯)²=½Ric♯、全局常秩和乘积分裂。",
+          "limitations": "已读 PDF 第 1–9、19–22 页，核对主定理、焦集结构证明、投影缺陷、第一法向 jet、关键高阶间隙及解析延拓，未逐步验证第 6–8 节全部展开和积分估计。全测地 M₋ 是额外假设；本文未证明任意常标量曲率 shrinker 的焦集都全测地，也未完全解决 Cao 猜想。结论是万有覆盖的乘积/原空间为 rigid 商，不能直接把原空间写成未经商的全局乘积。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确使用 ChatGPT 进行语言编辑和探索性计算，全部数学论证与计算由作者独立核查。标 writing、exploration、computation；不把作者核验误记为 AI 验证，也没有具体核心路线来源的归因，故不标 ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37151v1 · PDF 第 22 页，Declaration of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:14:07.033177+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37151v1",
+            "contentHash": "c7a929990c2b866bc1746d5104adb5bc9b1f1c052ac7d6310b934c4676d81ddd",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 ChatGPT 进行语言编辑和探索性计算，全部数学论证与计算由作者独立核查。标 writing、exploration、computation；不把作者核验误记为 AI 验证，也没有具体核心路线来源的归因，故不标 ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "93f73cbbe1e840988a91460dd05d40d5ecef409021286d6430b12805efc410e0"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "Ricci 孤立子刚性核心方向，应优先读焦集管状几何如何推出曲率及分裂结论。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(M^n,g,f)$ be a complete connected shrinking gradient Ricci soliton with constant scalar curvature, satisfying \\[ \\Ric+\\nabla^2f=\\frac12g. \\] We prove that if the focal set of $f$ is totally geodesic, then $M$ is rigid. Equivalently, its universal cover is a product of a compact Einstein manifold and a Euclidean space.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

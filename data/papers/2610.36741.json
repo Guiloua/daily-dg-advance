@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.36741",
+  "slug": "2610.36741",
+  "latest": {
+    "arxivId": "2610.36741",
+    "metadata": {
+      "title": "The Costa surface with a free-boundary hole: an embedded exterior free-boundary minimal surface with three ends",
+      "authors": [
+        "Igor Kozyrev"
+      ],
+      "abstract": "An exterior free-boundary minimal surface is a properly immersed minimal surface outside the unit ball whose compact boundary lies on the unit sphere and meets it orthogonally. By Mazet and Mendes, in $\\mathbb{R}^3$ every such surface with one regular end is a catenoidal piece, and every stable one with parallel embedded regular ends is catenoidal. We construct connected embedded examples with three ends from the Costa surface $M$, placed so that its central saddle point is at the origin. For every sufficiently small $\\varepsilon>0$ we perturb $\\varepsilon^{-1}(M\\setminus B_\\varepsilon)$ into a properly embedded exterior free-boundary minimal surface of genus one with one boundary circle and three ends, two catenoidal and one planar. The construction is a small-hole perturbation. The only error of the initial surface is in the boundary condition. The symmetry group of the Costa surface removes all obstructions: at the hole it forbids the logarithmic and the tilting modes, and globally it kills the bounded Jacobi fields of the Costa surface, which is nondegenerate by Nayatani. In the conformal compactification the Jacobi operator is smooth also at the ends, so the linear analysis takes place on a compact torus with one small hole. The same construction applied to the Costa-Hoffman-Meeks surfaces gives such examples of every genus $k\\geq1$, of index at least $2k+3$. We also report numerical experiments with two independent implementations of the Costa surface. They confirm the period condition, the symmetries, the boundary error, the index and nullity of the Jacobi operator and the absence of an equivariant kernel. They also compute the free-boundary correction near the hole, which gives pictures of the surfaces.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "26 pages, 7 figures. Interactive 3D models: this https URL . The scripts for the numerical experiments are attached as ancillary files (anc/scripts)",
+      "version": 1,
+      "submittedAt": "2026-10-27T06:56:57Z",
+      "updatedAt": "2026-10-27T06:56:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:32.953944+00:00",
+        "contentHash": "16679440e3bf0295f82be76d689a1129bbdda3e60439da243ae6c033914c9935"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "外部自由边界三端极小曲面的构造",
+      "workSummary": "以中心鞍点位于原点的 Costa 曲面 M 为起点，对充分小 ε，将 ε⁻¹(M\\Bε) 小扰动为单位球外 properly embedded 自由边界极小曲面，亏格一、一个边界圆和三个端，其中两个 catenoidal、一个 planar。对 Costa–Hoffman–Meeks 曲面同法得到每个 k≥1 的例子，指标至少 2k+3。对称性排除孔口的对数及倾斜模态，并消除全局有界 Jacobi 障碍；共形紧化后在带小孔紧环面上完成线性分析。另报告两套独立数值实验及示意图。",
+      "techniques": [
+        "小孔自由边界扰动",
+        "Costa 对称群与 Jacobi 非退化性",
+        "共形紧化的椭圆分析",
+        "数值周期及核检验"
+      ],
+      "breakthrough": "突破单端或稳定情形的 catenoidal 刚性，构造有丰富拓扑的嵌入三端外部自由边界例子。",
+      "limitations": "要求 ε 充分小且采用特定对称的 Costa/CHM 输入；指标给下界而非精确值。数值实验确认多项计算现象，不应替代解析存在性和嵌入性证明，也不构成全部此类曲面的分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在详细披露中将 Costa 小孔构造本身明确归因于 Claude 模型提议，数值实验、图和初稿亦由模型完成；多轮独立 Claude 代理审计产生端估计、权、定义域、Gauss map 论证等实质修正，一位审计代理完成 Costa–Hoffman–Meeks 推广，另写 theta 级数与谱计算并做文献搜索。故具体核心构造 ideas、proofs、verification、computation、writing、literature 均有明确依据。作者称已自行检查全部陈述和证明，同时明确尚未经独立人类专家验证；这不等于本次审读已验证其数学结论。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.36741v1 · PDF 第 25 页，Tool and computational resource disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:12:19.040949+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.36741v1",
+        "contentHash": "0b269ace95b35389da3fa8c3c84f71b3d635acf111db6ca22ded0f4227fb8cea",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在详细披露中将 Costa 小孔构造本身明确归因于 Claude 模型提议，数值实验、图和初稿亦由模型完成；多轮独立 Claude 代理审计产生端估计、权、定义域、Gauss map 论证等实质修正，一位审计代理完成 Costa–Hoffman–Meeks 推广，另写 theta 级数与谱计算并做文献搜索。故具体核心构造 ideas、proofs、verification、computation、writing、literature 均有明确依据。作者称已自行检查全部陈述和证明，同时明确尚未经独立人类专家验证；这不等于本次审读已验证其数学结论。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2212105475ecc224dec78d0b73ebfa6c03b4993858e66850fdbe28951fee1d04"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "极小曲面、边界椭圆问题与对称消障联系紧密，适合优先阅读线性估计和自由边界修正。"
+    },
+    "analysisBasis": {
+      "abstract": "An exterior free-boundary minimal surface is a properly immersed minimal surface outside the unit ball whose compact boundary lies on the unit sphere and meets it orthogonally. By Mazet and Mendes, in $\\mathbb{R}^3$ every such surface with one regular end is a catenoidal piece, and every stable one with parallel embedded regular ends is catenoidal. We construct connected embedded examples with three ends from the Costa surface $M$, placed so that its central saddle point is at the origin. For every sufficiently small $\\varepsilon>0$ we perturb $\\varepsilon^{-1}(M\\setminus B_\\varepsilon)$ into a properly embedded exterior free-boundary minimal surface of genus one with one boundary circle and three ends, two catenoidal and one planar. The construction is a small-hole perturbation. The only error of the initial surface is in the boundary condition. The symmetry group of the Costa surface removes all obstructions: at the hole it forbids the logarithmic and the tilting modes, and globally it kills the bounded Jacobi fields of the Costa surface, which is nondegenerate by Nayatani. In the conformal compactification the Jacobi operator is smooth also at the ends, so the linear analysis takes place on a compact torus with one small hole. The same construction applied to the Costa-Hoffman-Meeks surfaces gives such examples of every genus $k\\geq1$, of index at least $2k+3$. We also report numerical experiments with two independent implementations of the Costa surface. They confirm the period condition, the symmetries, the boundary error, the index and nullity of the Jacobi operator and the absence of an equivariant kernel. They also compute the free-boundary correction near the hole, which gives pictures of the surfaces.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.36741",
+        "metadata": {
+          "title": "The Costa surface with a free-boundary hole: an embedded exterior free-boundary minimal surface with three ends",
+          "authors": [
+            "Igor Kozyrev"
+          ],
+          "abstract": "An exterior free-boundary minimal surface is a properly immersed minimal surface outside the unit ball whose compact boundary lies on the unit sphere and meets it orthogonally. By Mazet and Mendes, in $\\mathbb{R}^3$ every such surface with one regular end is a catenoidal piece, and every stable one with parallel embedded regular ends is catenoidal. We construct connected embedded examples with three ends from the Costa surface $M$, placed so that its central saddle point is at the origin. For every sufficiently small $\\varepsilon>0$ we perturb $\\varepsilon^{-1}(M\\setminus B_\\varepsilon)$ into a properly embedded exterior free-boundary minimal surface of genus one with one boundary circle and three ends, two catenoidal and one planar. The construction is a small-hole perturbation. The only error of the initial surface is in the boundary condition. The symmetry group of the Costa surface removes all obstructions: at the hole it forbids the logarithmic and the tilting modes, and globally it kills the bounded Jacobi fields of the Costa surface, which is nondegenerate by Nayatani. In the conformal compactification the Jacobi operator is smooth also at the ends, so the linear analysis takes place on a compact torus with one small hole. The same construction applied to the Costa-Hoffman-Meeks surfaces gives such examples of every genus $k\\geq1$, of index at least $2k+3$. We also report numerical experiments with two independent implementations of the Costa surface. They confirm the period condition, the symmetries, the boundary error, the index and nullity of the Jacobi operator and the absence of an equivariant kernel. They also compute the free-boundary correction near the hole, which gives pictures of the surfaces.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "26 pages, 7 figures. Interactive 3D models: this https URL . The scripts for the numerical experiments are attached as ancillary files (anc/scripts)",
+          "version": 1,
+          "submittedAt": "2026-10-27T06:56:57Z",
+          "updatedAt": "2026-10-27T06:56:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:32.953944+00:00",
+            "contentHash": "16679440e3bf0295f82be76d689a1129bbdda3e60439da243ae6c033914c9935"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "外部自由边界三端极小曲面的构造",
+          "workSummary": "以中心鞍点位于原点的 Costa 曲面 M 为起点，对充分小 ε，将 ε⁻¹(M\\Bε) 小扰动为单位球外 properly embedded 自由边界极小曲面，亏格一、一个边界圆和三个端，其中两个 catenoidal、一个 planar。对 Costa–Hoffman–Meeks 曲面同法得到每个 k≥1 的例子，指标至少 2k+3。对称性排除孔口的对数及倾斜模态，并消除全局有界 Jacobi 障碍；共形紧化后在带小孔紧环面上完成线性分析。另报告两套独立数值实验及示意图。",
+          "techniques": [
+            "小孔自由边界扰动",
+            "Costa 对称群与 Jacobi 非退化性",
+            "共形紧化的椭圆分析",
+            "数值周期及核检验"
+          ],
+          "breakthrough": "突破单端或稳定情形的 catenoidal 刚性，构造有丰富拓扑的嵌入三端外部自由边界例子。",
+          "limitations": "要求 ε 充分小且采用特定对称的 Costa/CHM 输入；指标给下界而非精确值。数值实验确认多项计算现象，不应替代解析存在性和嵌入性证明，也不构成全部此类曲面的分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在详细披露中将 Costa 小孔构造本身明确归因于 Claude 模型提议，数值实验、图和初稿亦由模型完成；多轮独立 Claude 代理审计产生端估计、权、定义域、Gauss map 论证等实质修正，一位审计代理完成 Costa–Hoffman–Meeks 推广，另写 theta 级数与谱计算并做文献搜索。故具体核心构造 ideas、proofs、verification、computation、writing、literature 均有明确依据。作者称已自行检查全部陈述和证明，同时明确尚未经独立人类专家验证；这不等于本次审读已验证其数学结论。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.36741v1 · PDF 第 25 页，Tool and computational resource disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:12:19.040949+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.36741v1",
+            "contentHash": "0b269ace95b35389da3fa8c3c84f71b3d635acf111db6ca22ded0f4227fb8cea",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在详细披露中将 Costa 小孔构造本身明确归因于 Claude 模型提议，数值实验、图和初稿亦由模型完成；多轮独立 Claude 代理审计产生端估计、权、定义域、Gauss map 论证等实质修正，一位审计代理完成 Costa–Hoffman–Meeks 推广，另写 theta 级数与谱计算并做文献搜索。故具体核心构造 ideas、proofs、verification、computation、writing、literature 均有明确依据。作者称已自行检查全部陈述和证明，同时明确尚未经独立人类专家验证；这不等于本次审读已验证其数学结论。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2212105475ecc224dec78d0b73ebfa6c03b4993858e66850fdbe28951fee1d04"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "极小曲面、边界椭圆问题与对称消障联系紧密，适合优先阅读线性估计和自由边界修正。"
+        },
+        "analysisBasis": {
+          "abstract": "An exterior free-boundary minimal surface is a properly immersed minimal surface outside the unit ball whose compact boundary lies on the unit sphere and meets it orthogonally. By Mazet and Mendes, in $\\mathbb{R}^3$ every such surface with one regular end is a catenoidal piece, and every stable one with parallel embedded regular ends is catenoidal. We construct connected embedded examples with three ends from the Costa surface $M$, placed so that its central saddle point is at the origin. For every sufficiently small $\\varepsilon>0$ we perturb $\\varepsilon^{-1}(M\\setminus B_\\varepsilon)$ into a properly embedded exterior free-boundary minimal surface of genus one with one boundary circle and three ends, two catenoidal and one planar. The construction is a small-hole perturbation. The only error of the initial surface is in the boundary condition. The symmetry group of the Costa surface removes all obstructions: at the hole it forbids the logarithmic and the tilting modes, and globally it kills the bounded Jacobi fields of the Costa surface, which is nondegenerate by Nayatani. In the conformal compactification the Jacobi operator is smooth also at the ends, so the linear analysis takes place on a compact torus with one small hole. The same construction applied to the Costa-Hoffman-Meeks surfaces gives such examples of every genus $k\\geq1$, of index at least $2k+3$. We also report numerical experiments with two independent implementations of the Costa surface. They confirm the period condition, the symmetries, the boundary error, the index and nullity of the Jacobi operator and the absence of an equivariant kernel. They also compute the free-boundary correction near the hole, which gives pictures of the surfaces.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

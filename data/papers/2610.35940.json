@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.35940",
+  "slug": "2610.35940",
+  "latest": {
+    "arxivId": "2610.35940",
+    "metadata": {
+      "title": "Rigidity and Affine Deformations of Foliations on Nilpotent and Solvable Contact Lie Algebras",
+      "authors": [
+        "Cheikh Khoule",
+        "Rafik Khalfi"
+      ],
+      "abstract": "Let g be a Lie algebra of dimension 2n+1, let beta be a contact form, and let alpha be a nonzero integrable 1-form. We study when the affine path alpha_t = (1-t)alpha + t beta consists of contact forms with the orientation determined by beta \\wedge (d beta)^n. We first establish an algebraic criterion: affine deformability is equivalent to the non-negativity of a scalar obtained from the interaction form Theta(alpha, beta) = alpha \\wedge (d beta)^n + n beta \\wedge d alpha \\wedge (d beta)^{n-1}. For unimodular Lie algebras this scalar is (n+1)alpha(Z_beta), where Z_beta is the Reeb vector. We also derive a formula involving the modular character tau(X) = tr(ad_X) in the non-unimodular case. On nilpotent contact Lie algebras, every integrable 1-form is closed; using the standard structural properties of nilpotent contact Lie algebras, this implies that every left-invariant foliation is an affine origin for every fixed contact form. An explicit three-dimensional example illustrates that the modular term can yield affine deformability even when alpha(Z_beta) = 0. We discuss the implications for left-invariant forms on Lie groups and compact quotients. We do not claim a general obstruction example in the non-unimodular case; establishing such an example requires a separate verified construction.",
+      "categories": [
+        "math.DG",
+        "math.RA"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "5 pages, amsart",
+      "version": 1,
+      "submittedAt": "2026-10-23T13:02:59Z",
+      "updatedAt": "2026-10-23T13:02:59Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-28T06:06:45.753460+00:00",
+        "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.35940v1",
+        "observedAt": "2026-10-28T06:08:43.884432+00:00",
+        "contentHash": "4f1371c5decd332f6ef2130ef907876006a3f4c67b1c04e0c21ece7c12b61fcb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:21.049045+00:00",
+        "contentHash": "18e77e5a0230f567f143bc846ea77f01abf475f4a1519c37354d169f22651ad7"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "代数判据与幂零情形",
+      "workSummary": "对 2n+1 维 Lie 代数上的接触形式 β 和非零可积一形式 α，作者研究仿射路径 (1−t)α+tβ 何时成为与 β 同向的接触形式。得到由相互作用顶形式决定标量的非负判据；幺模情形标量为 (n+1)α(Zβ)，非幺模情形另含模特征项。",
+      "techniques": [
+        "接触顶形式的代数展开",
+        "Reeb 向量与幺模性",
+        "模特征 τ(X)=tr(ad_X)",
+        "幂零接触 Lie 代数结构"
+      ],
+      "breakthrough": "在幂零接触 Lie 代数上，可积一形式皆闭，从而每个左不变叶状结构都可作为给定接触形式的仿射起点；三维例子说明模项可在 α(Zβ)=0 时仍允许变形。",
+      "limitations": "α 本身是可积形式，接触性应理解为从起点离开后的路径，不能把 t=0 也称为接触。作者明确未给出非幺模情形的一般障碍反例，不应替其声称这类反例已构造。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:08:43.884432+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.35940v1",
+        "contentHash": "4f1371c5decd332f6ef2130ef907876006a3f4c67b1c04e0c21ece7c12b61fcb",
+        "pages": 5,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。5页PDF提取完整、页数一致且无短文本页；全文及元数据检索未发现作者AI使用披露。补检点写A.I.及拆行模型名也未发现新证据；这不等于证明作者未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8e7b0c395014d75f6a901bac9ccf66449450c20851e91b1bb4fff13dbc099cf4"
+      },
+      "priorityScore": 47,
+      "priorityReason": "简洁的接触代数结果，偏结构与变形，对几何分析主线关联较弱。",
+      "lowPriorityReason": "简洁的接触代数结果，偏结构与变形，对几何分析主线关联较弱。"
+    },
+    "analysisBasis": {
+      "abstract": "Let g be a Lie algebra of dimension 2n+1, let beta be a contact form, and let alpha be a nonzero integrable 1-form. We study when the affine path alpha_t = (1-t)alpha + t beta consists of contact forms with the orientation determined by beta \\wedge (d beta)^n. We first establish an algebraic criterion: affine deformability is equivalent to the non-negativity of a scalar obtained from the interaction form Theta(alpha, beta) = alpha \\wedge (d beta)^n + n beta \\wedge d alpha \\wedge (d beta)^{n-1}. For unimodular Lie algebras this scalar is (n+1)alpha(Z_beta), where Z_beta is the Reeb vector. We also derive a formula involving the modular character tau(X) = tr(ad_X) in the non-unimodular case. On nilpotent contact Lie algebras, every integrable 1-form is closed; using the standard structural properties of nilpotent contact Lie algebras, this implies that every left-invariant foliation is an affine origin for every fixed contact form. An explicit three-dimensional example illustrates that the modular term can yield affine deformability even when alpha(Z_beta) = 0. We discuss the implications for left-invariant forms on Lie groups and compact quotients. We do not claim a general obstruction example in the non-unimodular case; establishing such an example requires a separate verified construction.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.35940",
+        "metadata": {
+          "title": "Rigidity and Affine Deformations of Foliations on Nilpotent and Solvable Contact Lie Algebras",
+          "authors": [
+            "Cheikh Khoule",
+            "Rafik Khalfi"
+          ],
+          "abstract": "Let g be a Lie algebra of dimension 2n+1, let beta be a contact form, and let alpha be a nonzero integrable 1-form. We study when the affine path alpha_t = (1-t)alpha + t beta consists of contact forms with the orientation determined by beta \\wedge (d beta)^n. We first establish an algebraic criterion: affine deformability is equivalent to the non-negativity of a scalar obtained from the interaction form Theta(alpha, beta) = alpha \\wedge (d beta)^n + n beta \\wedge d alpha \\wedge (d beta)^{n-1}. For unimodular Lie algebras this scalar is (n+1)alpha(Z_beta), where Z_beta is the Reeb vector. We also derive a formula involving the modular character tau(X) = tr(ad_X) in the non-unimodular case. On nilpotent contact Lie algebras, every integrable 1-form is closed; using the standard structural properties of nilpotent contact Lie algebras, this implies that every left-invariant foliation is an affine origin for every fixed contact form. An explicit three-dimensional example illustrates that the modular term can yield affine deformability even when alpha(Z_beta) = 0. We discuss the implications for left-invariant forms on Lie groups and compact quotients. We do not claim a general obstruction example in the non-unimodular case; establishing such an example requires a separate verified construction.",
+          "categories": [
+            "math.DG",
+            "math.RA"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "5 pages, amsart",
+          "version": 1,
+          "submittedAt": "2026-10-23T13:02:59Z",
+          "updatedAt": "2026-10-23T13:02:59Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-28T06:06:45.753460+00:00",
+            "contentHash": "179e27c150a3494da66342e412bb7ea8dd11a50ee76191cb5b5a9270c00ba1c9"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.35940v1",
+            "observedAt": "2026-10-28T06:08:43.884432+00:00",
+            "contentHash": "4f1371c5decd332f6ef2130ef907876006a3f4c67b1c04e0c21ece7c12b61fcb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:21.049045+00:00",
+            "contentHash": "18e77e5a0230f567f143bc846ea77f01abf475f4a1519c37354d169f22651ad7"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "代数判据与幂零情形",
+          "workSummary": "对 2n+1 维 Lie 代数上的接触形式 β 和非零可积一形式 α，作者研究仿射路径 (1−t)α+tβ 何时成为与 β 同向的接触形式。得到由相互作用顶形式决定标量的非负判据；幺模情形标量为 (n+1)α(Zβ)，非幺模情形另含模特征项。",
+          "techniques": [
+            "接触顶形式的代数展开",
+            "Reeb 向量与幺模性",
+            "模特征 τ(X)=tr(ad_X)",
+            "幂零接触 Lie 代数结构"
+          ],
+          "breakthrough": "在幂零接触 Lie 代数上，可积一形式皆闭，从而每个左不变叶状结构都可作为给定接触形式的仿射起点；三维例子说明模项可在 α(Zβ)=0 时仍允许变形。",
+          "limitations": "α 本身是可积形式，接触性应理解为从起点离开后的路径，不能把 t=0 也称为接触。作者明确未给出非幺模情形的一般障碍反例，不应替其声称这类反例已构造。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:08:43.884432+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.35940v1",
+            "contentHash": "4f1371c5decd332f6ef2130ef907876006a3f4c67b1c04e0c21ece7c12b61fcb",
+            "pages": 5,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。5页PDF提取完整、页数一致且无短文本页；全文及元数据检索未发现作者AI使用披露。补检点写A.I.及拆行模型名也未发现新证据；这不等于证明作者未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8e7b0c395014d75f6a901bac9ccf66449450c20851e91b1bb4fff13dbc099cf4"
+          },
+          "priorityScore": 47,
+          "priorityReason": "简洁的接触代数结果，偏结构与变形，对几何分析主线关联较弱。",
+          "lowPriorityReason": "简洁的接触代数结果，偏结构与变形，对几何分析主线关联较弱。"
+        },
+        "analysisBasis": {
+          "abstract": "Let g be a Lie algebra of dimension 2n+1, let beta be a contact form, and let alpha be a nonzero integrable 1-form. We study when the affine path alpha_t = (1-t)alpha + t beta consists of contact forms with the orientation determined by beta \\wedge (d beta)^n. We first establish an algebraic criterion: affine deformability is equivalent to the non-negativity of a scalar obtained from the interaction form Theta(alpha, beta) = alpha \\wedge (d beta)^n + n beta \\wedge d alpha \\wedge (d beta)^{n-1}. For unimodular Lie algebras this scalar is (n+1)alpha(Z_beta), where Z_beta is the Reeb vector. We also derive a formula involving the modular character tau(X) = tr(ad_X) in the non-unimodular case. On nilpotent contact Lie algebras, every integrable 1-form is closed; using the standard structural properties of nilpotent contact Lie algebras, this implies that every left-invariant foliation is an affine origin for every fixed contact form. An explicit three-dimensional example illustrates that the modular term can yield affine deformability even when alpha(Z_beta) = 0. We discuss the implications for left-invariant forms on Lie groups and compact quotients. We do not claim a general obstruction example in the non-unimodular case; establishing such an example requires a separate verified construction.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

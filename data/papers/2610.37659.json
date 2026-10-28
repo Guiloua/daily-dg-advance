@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37659",
+  "slug": "2610.37659",
+  "latest": {
+    "arxivId": "2610.37659",
+    "metadata": {
+      "title": "Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities",
+      "authors": [
+        "Cyril Letrouit",
+        "Tudor Manole"
+      ],
+      "abstract": "We prove a new functional inequality for uniformly log-concave measures, stronger than the Poincaré inequality. This new inequality bounds the variance of differences of convex functions and is motivated by the stability theory of optimal transport: for a fixed uniformly log-concave source measure, it provides a sharp stability bound for Brenier potentials with respect to variations of the target measure. Applying this inequality to Gaussian measures, we recover the fact that the Bures-Wasserstein distance between two positive semidefinite matrices is equivalent to the Frobenius distance between their square roots. Our proofs hinge upon linearization arguments for the Monge-Ampère equation governing the quadratic optimal transport problem.",
+      "categories": [
+        "math.FA",
+        "math.AP",
+        "math.MG",
+        "math.PR"
+      ],
+      "primaryCategory": "math.FA",
+      "version": 1,
+      "submittedAt": "2026-10-27T17:59:00Z",
+      "updatedAt": "2026-10-27T17:59:00Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-28T06:06:56.927608+00:00",
+        "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:44.222022+00:00",
+        "contentHash": "55949023345245142049675520ba5f7d188335e230f3b976b38ee89166d1a96f"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "最优输运势的尖锐稳定性与泛函不等式",
+      "workSummary": "正文定理 1.1：若源概率测度 ρ 为 κ-一致对数凹（κ>0），则对任意梯度属于 L²(ρ) 的凸函数 φ₀、φ₁，有 Varρ(φ₁−φ₀)≤κ⁻¹W₂²((∇φ₀)#ρ,(∇φ₁)#ρ)。因此固定源后，零均值 Brenier 势对所有有限二阶矩目标在 W₂→L²(ρ) 下为 κ^(−1/2)-Lipschitz，不要求目标有密度。它强于 Poincaré 不等式，标准 Gaussian 时两种最优常数同为1；普通对数凹情形可失效。另对 K⊂B(x₀,R) 上的对数凹源给出常数4R²的势稳定界。",
+      "techniques": [
+        "沿目标测度曲线线性化 Monge–Ampère 方程",
+        "对线性化算子建立与目标正则性无关的 H⁻¹→L² 强制性估计",
+        "拉回源域得到对称算子并使用推广 Bochner/Reilly 公式",
+        "逼近去掉光滑目标假设；方向 Poincaré 不等式构造反例"
+      ],
+      "breakthrough": "在一致对数凹源下达到最优线性势稳定性及Gaussian最优常数，并以对数凹反例严格区分新不等式与普通Poincaré控制。紧凸支撑结果还结合反向Poincaré给出紧目标上的 Brenier 映射 W₂^(1/3) 稳定性；Gaussian二次势恢复½H²≤B²≤H²的矩阵距离比较。",
+      "limitations": "已读 PDF 第 1–9 页定义、定理1.1–1.4及推论1.5/1.6、反例范围与证明路线。主结果是势的 L² 稳定而非输运映射的 Lipschitz 稳定；映射1/3界另要求紧凸支撑源、其凸势在K有限且目标共同紧支撑。对每个 d≥2 有光滑对数凹源 C_P有限但C_W=∞，不能删一致对数凹/紧支撑条件。矩阵式是距离平方的可比界，非等式。核对主陈述及形式推导，尚未逐步核验强制性估计、正则化附录及整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "Statement on AI use 明确分清阶段：Poincaré 联系、两条证明策略及关键条件 A(κ) 的提出来自作者前期人工工作，期间除寻找反例外未用 AI；随后作者用 AI 补齐证明，最主要是确立（均匀）对数凹假设下的 A(κ)，再自行简化改写扩展。故记 proofs 与探索，不将人工原始路线记 ideas；全文由作者撰写，不标 AI writing。第 4、6、25 页 OpenAI 文献属于外部结果引用，不能替代第 7 页的自身使用披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37659v1 · PDF 第 7 页 Statement on AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:17:07.744948+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37659v1",
+        "contentHash": "c4f97bf0ebb44095f49a17681f8392333a812d0613a8f6ea5156581c94020545",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Statement on AI use 明确分清阶段：Poincaré 联系、两条证明策略及关键条件 A(κ) 的提出来自作者前期人工工作，期间除寻找反例外未用 AI；随后作者用 AI 补齐证明，最主要是确立（均匀）对数凹假设下的 A(κ)，再自行简化改写扩展。故记 proofs 与探索，不将人工原始路线记 ideas；全文由作者撰写，不标 AI writing。第 4、6、25 页 OpenAI 文献属于外部结果引用，不能替代第 7 页的自身使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "17ed6448e195c319643eef90805339cc4f66905e227fcdf933a69168d97d1b46"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "最优输运、曲率型测度条件及 Monge–Ampère 线性化交汇，应重点核对精确稳定性范数及最优常数。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove a new functional inequality for uniformly log-concave measures, stronger than the Poincaré inequality. This new inequality bounds the variance of differences of convex functions and is motivated by the stability theory of optimal transport: for a fixed uniformly log-concave source measure, it provides a sharp stability bound for Brenier potentials with respect to variations of the target measure. Applying this inequality to Gaussian measures, we recover the fact that the Bures-Wasserstein distance between two positive semidefinite matrices is equivalent to the Frobenius distance between their square roots. Our proofs hinge upon linearization arguments for the Monge-Ampère equation governing the quadratic optimal transport problem.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.37659",
+        "metadata": {
+          "title": "Sharp Stability of Brenier Potentials and its Link to Poincaré Inequalities",
+          "authors": [
+            "Cyril Letrouit",
+            "Tudor Manole"
+          ],
+          "abstract": "We prove a new functional inequality for uniformly log-concave measures, stronger than the Poincaré inequality. This new inequality bounds the variance of differences of convex functions and is motivated by the stability theory of optimal transport: for a fixed uniformly log-concave source measure, it provides a sharp stability bound for Brenier potentials with respect to variations of the target measure. Applying this inequality to Gaussian measures, we recover the fact that the Bures-Wasserstein distance between two positive semidefinite matrices is equivalent to the Frobenius distance between their square roots. Our proofs hinge upon linearization arguments for the Monge-Ampère equation governing the quadratic optimal transport problem.",
+          "categories": [
+            "math.FA",
+            "math.AP",
+            "math.MG",
+            "math.PR"
+          ],
+          "primaryCategory": "math.FA",
+          "version": 1,
+          "submittedAt": "2026-10-27T17:59:00Z",
+          "updatedAt": "2026-10-27T17:59:00Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-28T06:06:56.927608+00:00",
+            "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:44.222022+00:00",
+            "contentHash": "55949023345245142049675520ba5f7d188335e230f3b976b38ee89166d1a96f"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "最优输运势的尖锐稳定性与泛函不等式",
+          "workSummary": "正文定理 1.1：若源概率测度 ρ 为 κ-一致对数凹（κ>0），则对任意梯度属于 L²(ρ) 的凸函数 φ₀、φ₁，有 Varρ(φ₁−φ₀)≤κ⁻¹W₂²((∇φ₀)#ρ,(∇φ₁)#ρ)。因此固定源后，零均值 Brenier 势对所有有限二阶矩目标在 W₂→L²(ρ) 下为 κ^(−1/2)-Lipschitz，不要求目标有密度。它强于 Poincaré 不等式，标准 Gaussian 时两种最优常数同为1；普通对数凹情形可失效。另对 K⊂B(x₀,R) 上的对数凹源给出常数4R²的势稳定界。",
+          "techniques": [
+            "沿目标测度曲线线性化 Monge–Ampère 方程",
+            "对线性化算子建立与目标正则性无关的 H⁻¹→L² 强制性估计",
+            "拉回源域得到对称算子并使用推广 Bochner/Reilly 公式",
+            "逼近去掉光滑目标假设；方向 Poincaré 不等式构造反例"
+          ],
+          "breakthrough": "在一致对数凹源下达到最优线性势稳定性及Gaussian最优常数，并以对数凹反例严格区分新不等式与普通Poincaré控制。紧凸支撑结果还结合反向Poincaré给出紧目标上的 Brenier 映射 W₂^(1/3) 稳定性；Gaussian二次势恢复½H²≤B²≤H²的矩阵距离比较。",
+          "limitations": "已读 PDF 第 1–9 页定义、定理1.1–1.4及推论1.5/1.6、反例范围与证明路线。主结果是势的 L² 稳定而非输运映射的 Lipschitz 稳定；映射1/3界另要求紧凸支撑源、其凸势在K有限且目标共同紧支撑。对每个 d≥2 有光滑对数凹源 C_P有限但C_W=∞，不能删一致对数凹/紧支撑条件。矩阵式是距离平方的可比界，非等式。核对主陈述及形式推导，尚未逐步核验强制性估计、正则化附录及整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "Statement on AI use 明确分清阶段：Poincaré 联系、两条证明策略及关键条件 A(κ) 的提出来自作者前期人工工作，期间除寻找反例外未用 AI；随后作者用 AI 补齐证明，最主要是确立（均匀）对数凹假设下的 A(κ)，再自行简化改写扩展。故记 proofs 与探索，不将人工原始路线记 ideas；全文由作者撰写，不标 AI writing。第 4、6、25 页 OpenAI 文献属于外部结果引用，不能替代第 7 页的自身使用披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37659v1 · PDF 第 7 页 Statement on AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:17:07.744948+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37659v1",
+            "contentHash": "c4f97bf0ebb44095f49a17681f8392333a812d0613a8f6ea5156581c94020545",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Statement on AI use 明确分清阶段：Poincaré 联系、两条证明策略及关键条件 A(κ) 的提出来自作者前期人工工作，期间除寻找反例外未用 AI；随后作者用 AI 补齐证明，最主要是确立（均匀）对数凹假设下的 A(κ)，再自行简化改写扩展。故记 proofs 与探索，不将人工原始路线记 ideas；全文由作者撰写，不标 AI writing。第 4、6、25 页 OpenAI 文献属于外部结果引用，不能替代第 7 页的自身使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "17ed6448e195c319643eef90805339cc4f66905e227fcdf933a69168d97d1b46"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "最优输运、曲率型测度条件及 Monge–Ampère 线性化交汇，应重点核对精确稳定性范数及最优常数。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove a new functional inequality for uniformly log-concave measures, stronger than the Poincaré inequality. This new inequality bounds the variance of differences of convex functions and is motivated by the stability theory of optimal transport: for a fixed uniformly log-concave source measure, it provides a sharp stability bound for Brenier potentials with respect to variations of the target measure. Applying this inequality to Gaussian measures, we recover the fact that the Bures-Wasserstein distance between two positive semidefinite matrices is equivalent to the Frobenius distance between their square roots. Our proofs hinge upon linearization arguments for the Monge-Ampère equation governing the quadratic optimal transport problem.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

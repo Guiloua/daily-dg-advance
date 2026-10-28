@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.36675",
+  "slug": "2610.36675",
+  "latest": {
+    "arxivId": "2610.36675",
+    "metadata": {
+      "title": "New upper bounds for average kissing numbers",
+      "authors": [
+        "Mark Bockhaus",
+        "Alexey Glazyrin"
+      ],
+      "abstract": "A packing of balls in Euclidean space is a set of balls with non-overlapping interiors. For a finite packing of balls, its average contact number is the average number of balls tangent to a ball in this packing, that is, twice the total number of tangencies divided by the number of balls. The average kissing number of the space is defined as the supremum of average contact numbers over all finite ball packings. In this paper, we present a new semidefinite programming approach to average kissing numbers and improve upon known upper bounds in all dimensions \\(3\\) through \\(30\\). In particular, we provide the first improvements to the upper bounds in dimensions \\(10\\) through \\(30\\) obtained from kissing numbers. We also fully solve the average kissing number problem in dimensions \\(8\\) and \\(24\\) by showing that the average kissing numbers coincide with the kissing numbers, 240 and 196560, respectively. These values are limits of average contact numbers of finite subpackings from the \\(E_8\\) and Leech lattices.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-10-27T05:44:08Z",
+      "updatedAt": "2026-10-27T05:44:08Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-28T06:06:56.927608+00:00",
+        "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:32.952259+00:00",
+        "contentHash": "b6e61099fcc624758f79e587aaddaa7ba6a6cd8f87ea1ce685045a987334c97a"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "平均接触数的半正定上界与精确值",
+      "workSummary": "引入半正定规划方法控制 Euclidean 空间任意有限球堆积的平均接触数上确界，改进 3 至 30 维已知上界，尤其首次改进 10 至 30 维由通常 kissing number 导出的界。证明 8、24 维平均 kissing number 分别精确为 240、196560，与通常 kissing number 相同；这些数作为 E₈ 和 Leech 格有限子堆积平均接触数的极限实现。",
+      "techniques": [
+        "球堆积接触图",
+        "半正定规划",
+        "平均 kissing number",
+        "E₈ 与 Leech 格有限截取"
+      ],
+      "breakthrough": "同时给出跨维数上界改进和两个特殊维度的精确解答。",
+      "limitations": "平均问题允许一般球堆积，不能误缩为等半径球；3–30 维多数结果仅为上界，精确值仅指 8、24 维。格子有限子堆积是极限逼近，不声称某个有限堆积直接达到上确界。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在第 14 页明确参数与权函数的试错搜索得到 AI 协助；第 19 页进一步披露 ChatGPT Sol 4.6、Claude Fable 5.1/Opus 5.5 经 Claude Code 编写、修改和运行 Julia/Python 半正定规划、舍入及验证程序，并辅助查文献与少量文字编辑。用途为 computation、verification、exploration、literature、writing；作者称主思想和结果由作者提出，参数试错不能直接推断核心证明路线由 AI 提出。第 20 页 OpenAI 文献引用本身不是自身使用披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.36675v1 · PDF 第 14 页 Section 6 开头；第 19 页 Statement on the use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:11:54.462725+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.36675v1",
+        "contentHash": "d8e336007be89f38299b3be849daf904285bce886125d6ce4456b3b7d219e94f",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第 14 页明确参数与权函数的试错搜索得到 AI 协助；第 19 页进一步披露 ChatGPT Sol 4.6、Claude Fable 5.1/Opus 5.5 经 Claude Code 编写、修改和运行 Julia/Python 半正定规划、舍入及验证程序，并辅助查文献与少量文字编辑。用途为 computation、verification、exploration、literature、writing；作者称主思想和结果由作者提出，参数试错不能直接推断核心证明路线由 AI 提出。第 20 页 OpenAI 文献引用本身不是自身使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6c778ecf528adda16ac9d8703746a78d1b8450b0eedf3c147721d132aa87363c"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "定量离散几何进展显著，但非曲率和几何 PDE 主线；宜核查 SDP 证书与极限下界。"
+    },
+    "analysisBasis": {
+      "abstract": "A packing of balls in Euclidean space is a set of balls with non-overlapping interiors. For a finite packing of balls, its average contact number is the average number of balls tangent to a ball in this packing, that is, twice the total number of tangencies divided by the number of balls. The average kissing number of the space is defined as the supremum of average contact numbers over all finite ball packings. In this paper, we present a new semidefinite programming approach to average kissing numbers and improve upon known upper bounds in all dimensions \\(3\\) through \\(30\\). In particular, we provide the first improvements to the upper bounds in dimensions \\(10\\) through \\(30\\) obtained from kissing numbers. We also fully solve the average kissing number problem in dimensions \\(8\\) and \\(24\\) by showing that the average kissing numbers coincide with the kissing numbers, 240 and 196560, respectively. These values are limits of average contact numbers of finite subpackings from the \\(E_8\\) and Leech lattices.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.36675",
+        "metadata": {
+          "title": "New upper bounds for average kissing numbers",
+          "authors": [
+            "Mark Bockhaus",
+            "Alexey Glazyrin"
+          ],
+          "abstract": "A packing of balls in Euclidean space is a set of balls with non-overlapping interiors. For a finite packing of balls, its average contact number is the average number of balls tangent to a ball in this packing, that is, twice the total number of tangencies divided by the number of balls. The average kissing number of the space is defined as the supremum of average contact numbers over all finite ball packings. In this paper, we present a new semidefinite programming approach to average kissing numbers and improve upon known upper bounds in all dimensions \\(3\\) through \\(30\\). In particular, we provide the first improvements to the upper bounds in dimensions \\(10\\) through \\(30\\) obtained from kissing numbers. We also fully solve the average kissing number problem in dimensions \\(8\\) and \\(24\\) by showing that the average kissing numbers coincide with the kissing numbers, 240 and 196560, respectively. These values are limits of average contact numbers of finite subpackings from the \\(E_8\\) and Leech lattices.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-10-27T05:44:08Z",
+          "updatedAt": "2026-10-27T05:44:08Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-28T06:06:56.927608+00:00",
+            "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:32.952259+00:00",
+            "contentHash": "b6e61099fcc624758f79e587aaddaa7ba6a6cd8f87ea1ce685045a987334c97a"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "平均接触数的半正定上界与精确值",
+          "workSummary": "引入半正定规划方法控制 Euclidean 空间任意有限球堆积的平均接触数上确界，改进 3 至 30 维已知上界，尤其首次改进 10 至 30 维由通常 kissing number 导出的界。证明 8、24 维平均 kissing number 分别精确为 240、196560，与通常 kissing number 相同；这些数作为 E₈ 和 Leech 格有限子堆积平均接触数的极限实现。",
+          "techniques": [
+            "球堆积接触图",
+            "半正定规划",
+            "平均 kissing number",
+            "E₈ 与 Leech 格有限截取"
+          ],
+          "breakthrough": "同时给出跨维数上界改进和两个特殊维度的精确解答。",
+          "limitations": "平均问题允许一般球堆积，不能误缩为等半径球；3–30 维多数结果仅为上界，精确值仅指 8、24 维。格子有限子堆积是极限逼近，不声称某个有限堆积直接达到上确界。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在第 14 页明确参数与权函数的试错搜索得到 AI 协助；第 19 页进一步披露 ChatGPT Sol 4.6、Claude Fable 5.1/Opus 5.5 经 Claude Code 编写、修改和运行 Julia/Python 半正定规划、舍入及验证程序，并辅助查文献与少量文字编辑。用途为 computation、verification、exploration、literature、writing；作者称主思想和结果由作者提出，参数试错不能直接推断核心证明路线由 AI 提出。第 20 页 OpenAI 文献引用本身不是自身使用披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.36675v1 · PDF 第 14 页 Section 6 开头；第 19 页 Statement on the use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:11:54.462725+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.36675v1",
+            "contentHash": "d8e336007be89f38299b3be849daf904285bce886125d6ce4456b3b7d219e94f",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第 14 页明确参数与权函数的试错搜索得到 AI 协助；第 19 页进一步披露 ChatGPT Sol 4.6、Claude Fable 5.1/Opus 5.5 经 Claude Code 编写、修改和运行 Julia/Python 半正定规划、舍入及验证程序，并辅助查文献与少量文字编辑。用途为 computation、verification、exploration、literature、writing；作者称主思想和结果由作者提出，参数试错不能直接推断核心证明路线由 AI 提出。第 20 页 OpenAI 文献引用本身不是自身使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6c778ecf528adda16ac9d8703746a78d1b8450b0eedf3c147721d132aa87363c"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "定量离散几何进展显著，但非曲率和几何 PDE 主线；宜核查 SDP 证书与极限下界。"
+        },
+        "analysisBasis": {
+          "abstract": "A packing of balls in Euclidean space is a set of balls with non-overlapping interiors. For a finite packing of balls, its average contact number is the average number of balls tangent to a ball in this packing, that is, twice the total number of tangencies divided by the number of balls. The average kissing number of the space is defined as the supremum of average contact numbers over all finite ball packings. In this paper, we present a new semidefinite programming approach to average kissing numbers and improve upon known upper bounds in all dimensions \\(3\\) through \\(30\\). In particular, we provide the first improvements to the upper bounds in dimensions \\(10\\) through \\(30\\) obtained from kissing numbers. We also fully solve the average kissing number problem in dimensions \\(8\\) and \\(24\\) by showing that the average kissing numbers coincide with the kissing numbers, 240 and 196560, respectively. These values are limits of average contact numbers of finite subpackings from the \\(E_8\\) and Leech lattices.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

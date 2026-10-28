@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.36238",
+  "slug": "2610.36238",
+  "latest": {
+    "arxivId": "2610.36238",
+    "metadata": {
+      "title": "An approximate inner ball condition characterizing $C^{1,α}$ convex bodies",
+      "authors": [
+        "Anthony R. Cappello"
+      ],
+      "abstract": "The main result of this paper uses an approximate inner ball condition to characterize $C^{1,\\alpha}$ convex bodies for $0<\\alpha\\leq 1$. In particular, we show that a convex body $K$ is of class $C^{1,\\alpha}$ if and only if there exist constants $C,\\varepsilon_0>0$ such that for every $0<\\varepsilon\\leq\\varepsilon_0$ and for every $x\\in\\partial K$ there exists $h^\\varepsilon(x)$ satisfying $B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha})\\subset K$ and $\\operatorname{dist}(x,B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha}))\\leq\\varepsilon.$ We then give a new proof of the regularity of the convex envelope by showing that $\\operatorname{conv}(f)\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ whenever $f\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ and $f$ satisfies the coercivity condition $f(x)\\to\\infty$ as $|x|\\to\\infty$. Finally, we use the approximate inner ball characterization of $C^{1,\\alpha}$ convex bodies to prove that the Minkowski sum of a $C^{1,\\alpha}$ convex body and a nonempty closed convex set is a $C^{1,\\alpha}$ convex domain.",
+      "categories": [
+        "math.MG",
+        "math.CA"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-10-26T20:13:48Z",
+      "updatedAt": "2026-10-26T20:13:48Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-28T06:06:56.927608+00:00",
+        "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-28T06:17:21.052238+00:00",
+        "contentHash": "34740846c232629302abfa3aaf6578d9ba39af6ef66ebff781fd693a9139f5b7"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "几何正则性等价判据",
+      "workSummary": "对 0<α≤1，作者以近似内球条件刻画 C^(1,α) 凸体：对每个边界点 x 及充分小 ε，有半径 C ε^((1−α)/(1+α)) 的内球，其与 x 的距离至多 ε。由此给出强制性 C^(1,α)_loc 函数之凸包络保持局部 C^(1,α) 正则性的新证明，并证明同正则凸体与非空闭凸集的 Minkowski 和仍为同正则凸域。",
+      "techniques": [
+        "近似内球与边界 Hölder 正则性",
+        "凸包络正则性",
+        "Minkowski 和的内球稳定性"
+      ],
+      "breakthrough": "用统一的尺度化内球条件同时解释凸包络和 Minkowski 加法的正则性保持；α=1 端点对应半径不随 ε 缩小的情形。",
+      "limitations": "常数 C、ε₀ 必须对所有边界点一致；不能把 C^(1,α) 简化为处处存在任意小内球。凸包络结论需要 f(x)→∞ 的强制性，Minkowski 和还允许结果为不有界凸域而非凸体。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明结果来自2021–2024年博士论文阶段，稿件准备中用ChatGPT辅助文献搜索、表述、格式及数学论证审查。只能据此标后期检索、写作与核查，不能把早期结果、核心想法或证明归于AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.36238v1 · PDF 第15页 Declaration of generative AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-28T06:10:07.682398+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.36238v1",
+        "contentHash": "338e12587a93ed28f1620c417ff1822a9f7ce5d018e97c02fd8953e57c7442b7",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明结果来自2021–2024年博士论文阶段，稿件准备中用ChatGPT辅助文献搜索、表述、格式及数学论证审查。只能据此标后期检索、写作与核查，不能把早期结果、核心想法或证明归于AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c40f91a46d4ef46fdf552fb34e07659aeea54c62fcc3ceb48c09db3affd48a8a"
+      },
+      "aiUsage": [
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 79,
+      "priorityReason": "几何正则性和障碍型分析的基础工具，可能服务于几何 PDE。"
+    },
+    "analysisBasis": {
+      "abstract": "The main result of this paper uses an approximate inner ball condition to characterize $C^{1,\\alpha}$ convex bodies for $0<\\alpha\\leq 1$. In particular, we show that a convex body $K$ is of class $C^{1,\\alpha}$ if and only if there exist constants $C,\\varepsilon_0>0$ such that for every $0<\\varepsilon\\leq\\varepsilon_0$ and for every $x\\in\\partial K$ there exists $h^\\varepsilon(x)$ satisfying $B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha})\\subset K$ and $\\operatorname{dist}(x,B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha}))\\leq\\varepsilon.$ We then give a new proof of the regularity of the convex envelope by showing that $\\operatorname{conv}(f)\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ whenever $f\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ and $f$ satisfies the coercivity condition $f(x)\\to\\infty$ as $|x|\\to\\infty$. Finally, we use the approximate inner ball characterization of $C^{1,\\alpha}$ convex bodies to prove that the Minkowski sum of a $C^{1,\\alpha}$ convex body and a nonempty closed convex set is a $C^{1,\\alpha}$ convex domain.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-28",
+      "entry": {
+        "arxivId": "2610.36238",
+        "metadata": {
+          "title": "An approximate inner ball condition characterizing $C^{1,α}$ convex bodies",
+          "authors": [
+            "Anthony R. Cappello"
+          ],
+          "abstract": "The main result of this paper uses an approximate inner ball condition to characterize $C^{1,\\alpha}$ convex bodies for $0<\\alpha\\leq 1$. In particular, we show that a convex body $K$ is of class $C^{1,\\alpha}$ if and only if there exist constants $C,\\varepsilon_0>0$ such that for every $0<\\varepsilon\\leq\\varepsilon_0$ and for every $x\\in\\partial K$ there exists $h^\\varepsilon(x)$ satisfying $B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha})\\subset K$ and $\\operatorname{dist}(x,B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha}))\\leq\\varepsilon.$ We then give a new proof of the regularity of the convex envelope by showing that $\\operatorname{conv}(f)\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ whenever $f\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ and $f$ satisfies the coercivity condition $f(x)\\to\\infty$ as $|x|\\to\\infty$. Finally, we use the approximate inner ball characterization of $C^{1,\\alpha}$ convex bodies to prove that the Minkowski sum of a $C^{1,\\alpha}$ convex body and a nonempty closed convex set is a $C^{1,\\alpha}$ convex domain.",
+          "categories": [
+            "math.MG",
+            "math.CA"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-10-26T20:13:48Z",
+          "updatedAt": "2026-10-26T20:13:48Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-28T06:06:56.927608+00:00",
+            "contentHash": "55c3dee0f261f9c97aa56581aabaa24ac2398e346e389d3d593f44410b17a2dc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-28T06:17:21.052238+00:00",
+            "contentHash": "34740846c232629302abfa3aaf6578d9ba39af6ef66ebff781fd693a9139f5b7"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "几何正则性等价判据",
+          "workSummary": "对 0<α≤1，作者以近似内球条件刻画 C^(1,α) 凸体：对每个边界点 x 及充分小 ε，有半径 C ε^((1−α)/(1+α)) 的内球，其与 x 的距离至多 ε。由此给出强制性 C^(1,α)_loc 函数之凸包络保持局部 C^(1,α) 正则性的新证明，并证明同正则凸体与非空闭凸集的 Minkowski 和仍为同正则凸域。",
+          "techniques": [
+            "近似内球与边界 Hölder 正则性",
+            "凸包络正则性",
+            "Minkowski 和的内球稳定性"
+          ],
+          "breakthrough": "用统一的尺度化内球条件同时解释凸包络和 Minkowski 加法的正则性保持；α=1 端点对应半径不随 ε 缩小的情形。",
+          "limitations": "常数 C、ε₀ 必须对所有边界点一致；不能把 C^(1,α) 简化为处处存在任意小内球。凸包络结论需要 f(x)→∞ 的强制性，Minkowski 和还允许结果为不有界凸域而非凸体。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明结果来自2021–2024年博士论文阶段，稿件准备中用ChatGPT辅助文献搜索、表述、格式及数学论证审查。只能据此标后期检索、写作与核查，不能把早期结果、核心想法或证明归于AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.36238v1 · PDF 第15页 Declaration of generative AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-28T06:10:07.682398+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.36238v1",
+            "contentHash": "338e12587a93ed28f1620c417ff1822a9f7ce5d018e97c02fd8953e57c7442b7",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明结果来自2021–2024年博士论文阶段，稿件准备中用ChatGPT辅助文献搜索、表述、格式及数学论证审查。只能据此标后期检索、写作与核查，不能把早期结果、核心想法或证明归于AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c40f91a46d4ef46fdf552fb34e07659aeea54c62fcc3ceb48c09db3affd48a8a"
+          },
+          "aiUsage": [
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 79,
+          "priorityReason": "几何正则性和障碍型分析的基础工具，可能服务于几何 PDE。"
+        },
+        "analysisBasis": {
+          "abstract": "The main result of this paper uses an approximate inner ball condition to characterize $C^{1,\\alpha}$ convex bodies for $0<\\alpha\\leq 1$. In particular, we show that a convex body $K$ is of class $C^{1,\\alpha}$ if and only if there exist constants $C,\\varepsilon_0>0$ such that for every $0<\\varepsilon\\leq\\varepsilon_0$ and for every $x\\in\\partial K$ there exists $h^\\varepsilon(x)$ satisfying $B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha})\\subset K$ and $\\operatorname{dist}(x,B(h^\\varepsilon(x), C\\varepsilon^\\frac{1-\\alpha}{1+\\alpha}))\\leq\\varepsilon.$ We then give a new proof of the regularity of the convex envelope by showing that $\\operatorname{conv}(f)\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ whenever $f\\in C^{1,\\alpha}_{\\rm loc}(\\mathbb{R}^n)$ and $f$ satisfies the coercivity condition $f(x)\\to\\infty$ as $|x|\\to\\infty$. Finally, we use the approximate inner ball characterization of $C^{1,\\alpha}$ convex bodies to prove that the Minkowski sum of a $C^{1,\\alpha}$ convex body and a nonempty closed convex set is a $C^{1,\\alpha}$ convex domain.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
