@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39935",
+  "slug": "2610.39935",
+  "latest": {
+    "arxivId": "2610.39935",
+    "metadata": {
+      "title": "A New Invariant for Doubly Periodic Solutions of the Sinh-Gordon Equation",
+      "authors": [
+        "Nicolas Hasse",
+        "Ross Ogilvie",
+        "Martin U. Schmidt"
+      ],
+      "abstract": "Spectral curves of constant mean curvature tori in Euclidean three-space are real hyperelliptic curves carrying two meromorphic differentials with integral periods. These transcendental period conditions are studied through Whitham deformations, which deform the curve while preserving the periods. We extend Whitham deformations to all real hyperelliptic curves of this type, by holding fixed the plane spanned by the periods, or this plane together with its complex structure. Under mild nondegeneracy conditions the resulting isoperiodic sets are manifolds of dimensions three and one, respectively. Along the one-dimensional isoperiodic sets, a generalization of the Willmore energy is a local parameter away from its critical points, to which the spectral curves of tori belong. Finally, using homology bases adapted to the branch points, we find discrete invariants of the isoperiodic sets of doubly periodic curves: a triple of integers and a refined conformal type.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-29T12:36:27Z",
+      "updatedAt": "2026-10-29T12:36:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.502527+00:00",
+        "contentHash": "6dc9742e800d84d38ecc53fa4e2f622201b063deb9f8de2c2bb08543753f3c60"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "CMC 环面谱曲线的等周期不变量",
+      "workSummary": "将 Whitham 变形推广到所述实超椭圆谱曲线：固定两个亚纯微分周期张成的平面，或同时固定该平面复结构。在非退化条件下，相应等周期集分别为三维和一维流形；一维族上推广 Willmore 能量在非临界点为局部参数，环面谱曲线属于其临界点。另给出整数三元组及精化共形类型的不变量。",
+      "techniques": [
+        "Whitham 等周期变形",
+        "实超椭圆曲线与亚纯周期",
+        "适配分支点的同调基"
+      ],
+      "breakthrough": "为双周期 sinh-Gordon 解及 CMC 环面谱曲线的变形空间增加离散与共形标记。",
+      "limitations": "等周期集的流形维数有非退化假设，Willmore 参数描述避开临界点；摘要未声称整数不变量完成整个 CMC 环面分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确说Claude(Anthropic)用于制图、检查和编辑，并具体归因第3节按整数三元组分类轨道的想法给模型；该分类对应本文核心离散不变量，故记ideas、verification、writing。另有Lean4形式化，但以路径积分的公理化描述为条件；仅凭该句不能额外认定形式化代码由AI完成或证明已独立无条件核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.39935v1 · PDF 第2页引言末段工具说明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:54:59.850235+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39935v1",
+        "contentHash": "cf331b1fd88a43e2bd5e0af2018a6a2db8a2bfb95bf443d1b3f5b1c985923719",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说Claude(Anthropic)用于制图、检查和编辑，并具体归因第3节按整数三元组分类轨道的想法给模型；该分类对应本文核心离散不变量，故记ideas、verification、writing。另有Lean4形式化，但以路径积分的公理化描述为条件；仅凭该句不能额外认定形式化代码由AI完成或证明已独立无条件核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2a08baef79ab55725afe483f41ddb3cf727482991a4bea6b5c4bf5f50edf27cc"
+      },
+      "aiUsage": [
+        "ideas",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 69,
+      "priorityReason": "与可积曲面、Willmore 几何及谱曲线有关，但偏特殊几何而非几何 PDE 的分析估计。"
+    },
+    "analysisBasis": {
+      "abstract": "Spectral curves of constant mean curvature tori in Euclidean three-space are real hyperelliptic curves carrying two meromorphic differentials with integral periods. These transcendental period conditions are studied through Whitham deformations, which deform the curve while preserving the periods. We extend Whitham deformations to all real hyperelliptic curves of this type, by holding fixed the plane spanned by the periods, or this plane together with its complex structure. Under mild nondegeneracy conditions the resulting isoperiodic sets are manifolds of dimensions three and one, respectively. Along the one-dimensional isoperiodic sets, a generalization of the Willmore energy is a local parameter away from its critical points, to which the spectral curves of tori belong. Finally, using homology bases adapted to the branch points, we find discrete invariants of the isoperiodic sets of doubly periodic curves: a triple of integers and a refined conformal type.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39935",
+        "metadata": {
+          "title": "A New Invariant for Doubly Periodic Solutions of the Sinh-Gordon Equation",
+          "authors": [
+            "Nicolas Hasse",
+            "Ross Ogilvie",
+            "Martin U. Schmidt"
+          ],
+          "abstract": "Spectral curves of constant mean curvature tori in Euclidean three-space are real hyperelliptic curves carrying two meromorphic differentials with integral periods. These transcendental period conditions are studied through Whitham deformations, which deform the curve while preserving the periods. We extend Whitham deformations to all real hyperelliptic curves of this type, by holding fixed the plane spanned by the periods, or this plane together with its complex structure. Under mild nondegeneracy conditions the resulting isoperiodic sets are manifolds of dimensions three and one, respectively. Along the one-dimensional isoperiodic sets, a generalization of the Willmore energy is a local parameter away from its critical points, to which the spectral curves of tori belong. Finally, using homology bases adapted to the branch points, we find discrete invariants of the isoperiodic sets of doubly periodic curves: a triple of integers and a refined conformal type.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-29T12:36:27Z",
+          "updatedAt": "2026-10-29T12:36:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.502527+00:00",
+            "contentHash": "6dc9742e800d84d38ecc53fa4e2f622201b063deb9f8de2c2bb08543753f3c60"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "CMC 环面谱曲线的等周期不变量",
+          "workSummary": "将 Whitham 变形推广到所述实超椭圆谱曲线：固定两个亚纯微分周期张成的平面，或同时固定该平面复结构。在非退化条件下，相应等周期集分别为三维和一维流形；一维族上推广 Willmore 能量在非临界点为局部参数，环面谱曲线属于其临界点。另给出整数三元组及精化共形类型的不变量。",
+          "techniques": [
+            "Whitham 等周期变形",
+            "实超椭圆曲线与亚纯周期",
+            "适配分支点的同调基"
+          ],
+          "breakthrough": "为双周期 sinh-Gordon 解及 CMC 环面谱曲线的变形空间增加离散与共形标记。",
+          "limitations": "等周期集的流形维数有非退化假设，Willmore 参数描述避开临界点；摘要未声称整数不变量完成整个 CMC 环面分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确说Claude(Anthropic)用于制图、检查和编辑，并具体归因第3节按整数三元组分类轨道的想法给模型；该分类对应本文核心离散不变量，故记ideas、verification、writing。另有Lean4形式化，但以路径积分的公理化描述为条件；仅凭该句不能额外认定形式化代码由AI完成或证明已独立无条件核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.39935v1 · PDF 第2页引言末段工具说明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:54:59.850235+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39935v1",
+            "contentHash": "cf331b1fd88a43e2bd5e0af2018a6a2db8a2bfb95bf443d1b3f5b1c985923719",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确说Claude(Anthropic)用于制图、检查和编辑，并具体归因第3节按整数三元组分类轨道的想法给模型；该分类对应本文核心离散不变量，故记ideas、verification、writing。另有Lean4形式化，但以路径积分的公理化描述为条件；仅凭该句不能额外认定形式化代码由AI完成或证明已独立无条件核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2a08baef79ab55725afe483f41ddb3cf727482991a4bea6b5c4bf5f50edf27cc"
+          },
+          "aiUsage": [
+            "ideas",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 69,
+          "priorityReason": "与可积曲面、Willmore 几何及谱曲线有关，但偏特殊几何而非几何 PDE 的分析估计。"
+        },
+        "analysisBasis": {
+          "abstract": "Spectral curves of constant mean curvature tori in Euclidean three-space are real hyperelliptic curves carrying two meromorphic differentials with integral periods. These transcendental period conditions are studied through Whitham deformations, which deform the curve while preserving the periods. We extend Whitham deformations to all real hyperelliptic curves of this type, by holding fixed the plane spanned by the periods, or this plane together with its complex structure. Under mild nondegeneracy conditions the resulting isoperiodic sets are manifolds of dimensions three and one, respectively. Along the one-dimensional isoperiodic sets, a generalization of the Willmore energy is a local parameter away from its critical points, to which the spectral curves of tori belong. Finally, using homology bases adapted to the branch points, we find discrete invariants of the isoperiodic sets of doubly periodic curves: a triple of integers and a refined conformal type.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

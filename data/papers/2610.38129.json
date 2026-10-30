@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38129",
+  "slug": "2610.38129",
+  "latest": {
+    "arxivId": "2610.38129",
+    "metadata": {
+      "title": "Graph-diameter criteria and sharp dissipation in discrete Wasserstein-Fisher geometry",
+      "authors": [
+        "Rubin Zhang",
+        "Ning Zhang"
+      ],
+      "abstract": "We study the probability simplex of a finite connected weighted graph with an Onsager operator combining logarithmic-mean transport and mass-conserving Fisher reaction. For every fixed positive reaction parameter, we prove that the entropy Hessian has a finite global lower bound if and only if the original transport graph has diameter at most two. Near a boundary probability, the corresponding criterion is that its positive support reaches every vertex in at most two steps. The proof controls all potential directions under arbitrary multiscale boundary degeneration. For graphs of diameter at most two, the optimal lower bound is Lipschitz on bounded parameter intervals, including the pure-transport endpoint. We also determine the largest instantaneous logarithmic-amplitude dissipation function depending only on the graph and the current amplitude, and construct two-level probabilities attaining it. Its positivity has the same two-step criterion. As consequences, we obtain graph-dependent entropy-decay estimates and exact projective contraction bounds without assuming nonnegative entropic curvature.",
+      "categories": [
+        "math.PR",
+        "math.DG"
+      ],
+      "primaryCategory": "math.PR",
+      "version": 1,
+      "submittedAt": "2026-10-28T01:07:10Z",
+      "updatedAt": "2026-10-28T01:07:10Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.38129v1",
+        "observedAt": "2026-10-30T06:44:33.951422+00:00",
+        "contentHash": "c394288f41e2a3b68552bd10d6e1f1ef3c13171586ee704d1158f9694db1cb1a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:35.128991+00:00",
+        "contentHash": "080af01a2e09a18c5996cf7d3c5fe32e7bf1b70ea9bf6b67e046074ae6528c58"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "离散熵曲率的直径充要判据",
+      "workSummary": "在有限连通加权图的概率单纯形上，采用对数均值运输加保质量 Fisher 反应的 Onsager 算子。作者证明对每个固定正反应参数，熵 Hessian 具有有限全局下界当且仅当原运输图直径≤2；边界概率附近的对应条件是正支撑能在至多两步到达所有顶点。",
+      "techniques": [
+        "离散 Wasserstein–Fisher Onsager 几何",
+        "概率边界的多尺度退化控制",
+        "熵 Hessian 下界的两步图判据",
+        "对数振幅的最优瞬时耗散"
+      ],
+      "breakthrough": "把连续概率几何中的边界曲率退化准确归结为图的两步连通性，并给出由两层概率达到的最优振幅耗散、熵衰减和投影收缩界，无需非负熵曲率。",
+      "limitations": "有限下界不等于非负曲率。全局充要性针对固定正反应参数；直径≤2时最优下界在有界参数区间含纯运输端点的Lipschitz性是另一结论，不能混写为零反应时也有相同充要判据。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明示ChatGPT辅助文献检索、数学推导的发展和检查，以及稿件起草编辑，故支持证明推导辅助、核查、检索和写作。没有把某个具体关键路线或反例归于模型，不标ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.38129v1 · PDF第20页 Acknowledgment of AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:44:33.951422+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38129v1",
+        "contentHash": "c394288f41e2a3b68552bd10d6e1f1ef3c13171586ee704d1158f9694db1cb1a",
+        "pages": 20,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示ChatGPT辅助文献检索、数学推导的发展和检查，以及稿件起草编辑，故支持证明推导辅助、核查、检索和写作。没有把某个具体关键路线或反例归于模型，不标ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dc2ae4d569527258650679b544b48c00715d84f72bf515ec5361a81e2e1e7cd1"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 85,
+      "priorityReason": "离散曲率维数、熵耗散与运输几何高度相关，是值得关注的非光滑分析进展。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the probability simplex of a finite connected weighted graph with an Onsager operator combining logarithmic-mean transport and mass-conserving Fisher reaction. For every fixed positive reaction parameter, we prove that the entropy Hessian has a finite global lower bound if and only if the original transport graph has diameter at most two. Near a boundary probability, the corresponding criterion is that its positive support reaches every vertex in at most two steps. The proof controls all potential directions under arbitrary multiscale boundary degeneration. For graphs of diameter at most two, the optimal lower bound is Lipschitz on bounded parameter intervals, including the pure-transport endpoint. We also determine the largest instantaneous logarithmic-amplitude dissipation function depending only on the graph and the current amplitude, and construct two-level probabilities attaining it. Its positivity has the same two-step criterion. As consequences, we obtain graph-dependent entropy-decay estimates and exact projective contraction bounds without assuming nonnegative entropic curvature.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38129",
+        "metadata": {
+          "title": "Graph-diameter criteria and sharp dissipation in discrete Wasserstein-Fisher geometry",
+          "authors": [
+            "Rubin Zhang",
+            "Ning Zhang"
+          ],
+          "abstract": "We study the probability simplex of a finite connected weighted graph with an Onsager operator combining logarithmic-mean transport and mass-conserving Fisher reaction. For every fixed positive reaction parameter, we prove that the entropy Hessian has a finite global lower bound if and only if the original transport graph has diameter at most two. Near a boundary probability, the corresponding criterion is that its positive support reaches every vertex in at most two steps. The proof controls all potential directions under arbitrary multiscale boundary degeneration. For graphs of diameter at most two, the optimal lower bound is Lipschitz on bounded parameter intervals, including the pure-transport endpoint. We also determine the largest instantaneous logarithmic-amplitude dissipation function depending only on the graph and the current amplitude, and construct two-level probabilities attaining it. Its positivity has the same two-step criterion. As consequences, we obtain graph-dependent entropy-decay estimates and exact projective contraction bounds without assuming nonnegative entropic curvature.",
+          "categories": [
+            "math.PR",
+            "math.DG"
+          ],
+          "primaryCategory": "math.PR",
+          "version": 1,
+          "submittedAt": "2026-10-28T01:07:10Z",
+          "updatedAt": "2026-10-28T01:07:10Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.38129v1",
+            "observedAt": "2026-10-30T06:44:33.951422+00:00",
+            "contentHash": "c394288f41e2a3b68552bd10d6e1f1ef3c13171586ee704d1158f9694db1cb1a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:35.128991+00:00",
+            "contentHash": "080af01a2e09a18c5996cf7d3c5fe32e7bf1b70ea9bf6b67e046074ae6528c58"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "离散熵曲率的直径充要判据",
+          "workSummary": "在有限连通加权图的概率单纯形上，采用对数均值运输加保质量 Fisher 反应的 Onsager 算子。作者证明对每个固定正反应参数，熵 Hessian 具有有限全局下界当且仅当原运输图直径≤2；边界概率附近的对应条件是正支撑能在至多两步到达所有顶点。",
+          "techniques": [
+            "离散 Wasserstein–Fisher Onsager 几何",
+            "概率边界的多尺度退化控制",
+            "熵 Hessian 下界的两步图判据",
+            "对数振幅的最优瞬时耗散"
+          ],
+          "breakthrough": "把连续概率几何中的边界曲率退化准确归结为图的两步连通性，并给出由两层概率达到的最优振幅耗散、熵衰减和投影收缩界，无需非负熵曲率。",
+          "limitations": "有限下界不等于非负曲率。全局充要性针对固定正反应参数；直径≤2时最优下界在有界参数区间含纯运输端点的Lipschitz性是另一结论，不能混写为零反应时也有相同充要判据。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明示ChatGPT辅助文献检索、数学推导的发展和检查，以及稿件起草编辑，故支持证明推导辅助、核查、检索和写作。没有把某个具体关键路线或反例归于模型，不标ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.38129v1 · PDF第20页 Acknowledgment of AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:44:33.951422+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38129v1",
+            "contentHash": "c394288f41e2a3b68552bd10d6e1f1ef3c13171586ee704d1158f9694db1cb1a",
+            "pages": 20,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明示ChatGPT辅助文献检索、数学推导的发展和检查，以及稿件起草编辑，故支持证明推导辅助、核查、检索和写作。没有把某个具体关键路线或反例归于模型，不标ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dc2ae4d569527258650679b544b48c00715d84f72bf515ec5361a81e2e1e7cd1"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 85,
+          "priorityReason": "离散曲率维数、熵耗散与运输几何高度相关，是值得关注的非光滑分析进展。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the probability simplex of a finite connected weighted graph with an Onsager operator combining logarithmic-mean transport and mass-conserving Fisher reaction. For every fixed positive reaction parameter, we prove that the entropy Hessian has a finite global lower bound if and only if the original transport graph has diameter at most two. Near a boundary probability, the corresponding criterion is that its positive support reaches every vertex in at most two steps. The proof controls all potential directions under arbitrary multiscale boundary degeneration. For graphs of diameter at most two, the optimal lower bound is Lipschitz on bounded parameter intervals, including the pure-transport endpoint. We also determine the largest instantaneous logarithmic-amplitude dissipation function depending only on the graph and the current amplitude, and construct two-level probabilities attaining it. Its positivity has the same two-step criterion. As consequences, we obtain graph-dependent entropy-decay estimates and exact projective contraction bounds without assuming nonnegative entropic curvature.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

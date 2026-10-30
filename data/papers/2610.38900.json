@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38900",
+  "slug": "2610.38900",
+  "latest": {
+    "arxivId": "2610.38900",
+    "metadata": {
+      "title": "Sharp dimension bounds for right-angled hyperbolic polytopes",
+      "authors": [
+        "Alexander Kolpakov"
+      ],
+      "abstract": "We determine the largest dimensions in which right-angled hyperbolic polytopes of finite volume can exist. The dimension is at most eight in general, and at most four when all vertices lie at infinity. Both bounds are attained, improving the previously known upper bounds of twelve and six. Our proofs use elementary properties of hyperbolic polytopes together with bounds for configurations of points on spheres.",
+      "categories": [
+        "math.GT",
+        "math.MG"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "6 pages; GitHub repository at this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-28T20:56:58Z",
+      "updatedAt": "2026-10-28T20:56:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-30T06:40:12.317184+00:00",
+        "contentHash": "4a7be26d92eef333503b35d9d4eb605e9476b3b99a1d593ab86021df76084e0e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:47.268766+00:00",
+        "contentHash": "91294c6b03ae731fd146146fdfb61fc8a074d9a0cb2bc932b8bcf49d29d938f7"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "直角双曲多面体的尖锐维数上界",
+      "workSummary": "作者确定有限体积直角双曲多面体可存在的最高维数：一般情形至多8维，若全部顶点均在无穷远则至多4维，且两界均能达到；改进先前12维及6维上界。证明结合双曲多面体初等性质与球面点配置的上界。",
+      "techniques": [
+        "直角双曲多面体的组合几何",
+        "球面点配置界",
+        "有限体积与理想顶点"
+      ],
+      "breakthrough": "将两个维数存在性范围收紧为可达到的精确上界。",
+      "limitations": "依赖有限体积和所有二面角为直角；4维结论额外要求全部顶点理想。不能推广为所有双曲多面体的维数限制，摘要也未声称分类达到上界的全部多面体。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确用 GPT-6-astra、GPT-6.1-sol 探索证明想法、加强结果、改善表述，并生成和审计附属 Python/Lean 4 代码。标 exploration、writing、computation、verification；没有具体把最终投影构造或球面三次式路线归于模型，故不标 ideas。正文同时说明 Lean 模块只验证显式几何及引用前提下的内部逻辑，不是全篇几何论证的无前提形式化；使用阳性依据是第6页披露而非普通 Lean 出现。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.38900v1 · PDF 第 6 页 Acknowledgments；第 5 页 Supplementary verification",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:48:12.693035+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38900v1",
+        "contentHash": "3498f19d42e009387cbbfa89adad6ff46559a2970ce0c792cd68818204b37fb2",
+        "pages": 6,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确用 GPT-6-astra、GPT-6.1-sol 探索证明想法、加强结果、改善表述，并生成和审计附属 Python/Lean 4 代码。标 exploration、writing、computation、verification；没有具体把最终投影构造或球面三次式路线归于模型，故不标 ideas。正文同时说明 Lean 模块只验证显式几何及引用前提下的内部逻辑，不是全篇几何论证的无前提形式化；使用阳性依据是第6页披露而非普通 Lean 出现。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "79da33f2eeaae2d3c0c354134883d2f68f193898a5f6bd3c32601491d5ca3ed1"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "双曲几何的重要尖锐结论，篇幅短，值得优先核验球面配置输入及等界例子。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the largest dimensions in which right-angled hyperbolic polytopes of finite volume can exist. The dimension is at most eight in general, and at most four when all vertices lie at infinity. Both bounds are attained, improving the previously known upper bounds of twelve and six. Our proofs use elementary properties of hyperbolic polytopes together with bounds for configurations of points on spheres.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38900",
+        "metadata": {
+          "title": "Sharp dimension bounds for right-angled hyperbolic polytopes",
+          "authors": [
+            "Alexander Kolpakov"
+          ],
+          "abstract": "We determine the largest dimensions in which right-angled hyperbolic polytopes of finite volume can exist. The dimension is at most eight in general, and at most four when all vertices lie at infinity. Both bounds are attained, improving the previously known upper bounds of twelve and six. Our proofs use elementary properties of hyperbolic polytopes together with bounds for configurations of points on spheres.",
+          "categories": [
+            "math.GT",
+            "math.MG"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "6 pages; GitHub repository at this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-28T20:56:58Z",
+          "updatedAt": "2026-10-28T20:56:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-30T06:40:12.317184+00:00",
+            "contentHash": "4a7be26d92eef333503b35d9d4eb605e9476b3b99a1d593ab86021df76084e0e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:47.268766+00:00",
+            "contentHash": "91294c6b03ae731fd146146fdfb61fc8a074d9a0cb2bc932b8bcf49d29d938f7"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "直角双曲多面体的尖锐维数上界",
+          "workSummary": "作者确定有限体积直角双曲多面体可存在的最高维数：一般情形至多8维，若全部顶点均在无穷远则至多4维，且两界均能达到；改进先前12维及6维上界。证明结合双曲多面体初等性质与球面点配置的上界。",
+          "techniques": [
+            "直角双曲多面体的组合几何",
+            "球面点配置界",
+            "有限体积与理想顶点"
+          ],
+          "breakthrough": "将两个维数存在性范围收紧为可达到的精确上界。",
+          "limitations": "依赖有限体积和所有二面角为直角；4维结论额外要求全部顶点理想。不能推广为所有双曲多面体的维数限制，摘要也未声称分类达到上界的全部多面体。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确用 GPT-6-astra、GPT-6.1-sol 探索证明想法、加强结果、改善表述，并生成和审计附属 Python/Lean 4 代码。标 exploration、writing、computation、verification；没有具体把最终投影构造或球面三次式路线归于模型，故不标 ideas。正文同时说明 Lean 模块只验证显式几何及引用前提下的内部逻辑，不是全篇几何论证的无前提形式化；使用阳性依据是第6页披露而非普通 Lean 出现。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.38900v1 · PDF 第 6 页 Acknowledgments；第 5 页 Supplementary verification",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:48:12.693035+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38900v1",
+            "contentHash": "3498f19d42e009387cbbfa89adad6ff46559a2970ce0c792cd68818204b37fb2",
+            "pages": 6,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确用 GPT-6-astra、GPT-6.1-sol 探索证明想法、加强结果、改善表述，并生成和审计附属 Python/Lean 4 代码。标 exploration、writing、computation、verification；没有具体把最终投影构造或球面三次式路线归于模型，故不标 ideas。正文同时说明 Lean 模块只验证显式几何及引用前提下的内部逻辑，不是全篇几何论证的无前提形式化；使用阳性依据是第6页披露而非普通 Lean 出现。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "79da33f2eeaae2d3c0c354134883d2f68f193898a5f6bd3c32601491d5ca3ed1"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "双曲几何的重要尖锐结论，篇幅短，值得优先核验球面配置输入及等界例子。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the largest dimensions in which right-angled hyperbolic polytopes of finite volume can exist. The dimension is at most eight in general, and at most four when all vertices lie at infinity. Both bounds are attained, improving the previously known upper bounds of twelve and six. Our proofs use elementary properties of hyperbolic polytopes together with bounds for configurations of points on spheres.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37985",
+  "slug": "2610.37985",
+  "latest": {
+    "arxivId": "2610.37985",
+    "metadata": {
+      "title": "Fisher Geometry of Circular Wrapped Normals: Completion and Curvature",
+      "authors": [
+        "Hyun Chul Jang",
+        "Juna Lee",
+        "Nathan Negera",
+        "Kalea Plotnick",
+        "Antony Wang"
+      ],
+      "abstract": "We determine the intrinsic Fisher geometry of the two-parameter circular wrapped normal family. Although its finite parameters form a cylinder, its metric completion is a disk: adjoining the uniform law extends the Fisher metric to a positive-definite real-analytic metric. The Gaussian curvature vanishes at the added point, is positive nearby, and tends to $-1/2$ as the underlying standard deviation tends to zero. We prove that the curvature has exactly one nonuniform zero radius and exactly one critical radius, the latter a nondegenerate positive maximum. Opposite points sufficiently close to uniformity are joined by a unique minimizing geodesic through the uniform law, so their intrinsic distance is not attained inside the nonuniform family. In contrast, identifying the means of real normal distributions modulo a period retains a complete hyperbolic cylinder with an infinitely distant cusp. Wrapping strictly decreases Fisher information in every nonzero tangent direction, while the information deficit and its fixed-order derivatives are exponentially small as the standard deviation tends to zero. The curvature theorem is proved by convergent series and explicit analytic remainder estimates; numerical figures serve only as illustrations.",
+      "categories": [
+        "math.DG",
+        "math.ST"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "19 pages, 2 figures",
+      "version": 1,
+      "submittedAt": "2026-10-27T21:28:50Z",
+      "updatedAt": "2026-10-27T21:28:50Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.37985v1",
+        "observedAt": "2026-10-30T06:43:43.767639+00:00",
+        "contentHash": "6b2ea09c691e6a7d5a5df1ce6809bac5f98b2e4def3e9d9fe75085f4fb3f507e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:35.126855+00:00",
+        "contentHash": "1ddcdddb0bd7c49b283535e27f26173292e0233e378b0fc291f25f1e5c3eb0fb"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "统计度量完备化与曲率分类",
+      "workSummary": "作者确定圆周 wrapped normal 二参数族的 Fisher 几何：有限参数形成圆柱，但添加均匀分布后度量完备化为圆盘，且 Fisher 度量实解析、正定地延拓。新增点曲率为零、附近正，标准差趋零时曲率趋 −1/2；非均匀处曲率恰有一个零半径及一个非退化正极大半径。",
+      "techniques": [
+        "Fisher 信息度量及内在完备化",
+        "收敛级数和显式解析余项估计",
+        "曲率零点与临界点唯一性",
+        "wrap 映射的信息损失"
+      ],
+      "breakthrough": "揭示 wrapping 与简单地将实正态均值模周期识别的商操作有不同内在几何：后者仍是完备双曲圆柱，前者近均匀的对径点最短路会穿过新增均匀分布。",
+      "limitations": "近均匀点的测地线结论有邻域条件；原非均匀族内距离可能只取下确界而不达到。数值图仅为示意，曲率定理依赖解析估计；不能将局部正曲率理解为全族非负曲率。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露ChatGPT及Codex用于证明探索、起草修订、代数验证代码及LaTeX准备；文稿后经审阅修改，证明计算亦被核查。对应探索、写作、核查及编程计算；并未明确将具体核心曲率定理或构造归于模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37985v1 · PDF第18页 Use of generative AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:43:43.767639+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37985v1",
+        "contentHash": "6b2ea09c691e6a7d5a5df1ce6809bac5f98b2e4def3e9d9fe75085f4fb3f507e",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露ChatGPT及Codex用于证明探索、起草修订、代数验证代码及LaTeX准备；文稿后经审阅修改，证明计算亦被核查。对应探索、写作、核查及编程计算；并未明确将具体核心曲率定理或构造归于模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d962d41e152f493152e507d78f7ac851172aec647cf058e4340fcead8fa6391e"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 66,
+      "priorityReason": "信息几何中的明确曲率和完备化分析，有比较几何联系但不属几何流主线。"
+    },
+    "analysisBasis": {
+      "abstract": "We determine the intrinsic Fisher geometry of the two-parameter circular wrapped normal family. Although its finite parameters form a cylinder, its metric completion is a disk: adjoining the uniform law extends the Fisher metric to a positive-definite real-analytic metric. The Gaussian curvature vanishes at the added point, is positive nearby, and tends to $-1/2$ as the underlying standard deviation tends to zero. We prove that the curvature has exactly one nonuniform zero radius and exactly one critical radius, the latter a nondegenerate positive maximum. Opposite points sufficiently close to uniformity are joined by a unique minimizing geodesic through the uniform law, so their intrinsic distance is not attained inside the nonuniform family. In contrast, identifying the means of real normal distributions modulo a period retains a complete hyperbolic cylinder with an infinitely distant cusp. Wrapping strictly decreases Fisher information in every nonzero tangent direction, while the information deficit and its fixed-order derivatives are exponentially small as the standard deviation tends to zero. The curvature theorem is proved by convergent series and explicit analytic remainder estimates; numerical figures serve only as illustrations.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.37985",
+        "metadata": {
+          "title": "Fisher Geometry of Circular Wrapped Normals: Completion and Curvature",
+          "authors": [
+            "Hyun Chul Jang",
+            "Juna Lee",
+            "Nathan Negera",
+            "Kalea Plotnick",
+            "Antony Wang"
+          ],
+          "abstract": "We determine the intrinsic Fisher geometry of the two-parameter circular wrapped normal family. Although its finite parameters form a cylinder, its metric completion is a disk: adjoining the uniform law extends the Fisher metric to a positive-definite real-analytic metric. The Gaussian curvature vanishes at the added point, is positive nearby, and tends to $-1/2$ as the underlying standard deviation tends to zero. We prove that the curvature has exactly one nonuniform zero radius and exactly one critical radius, the latter a nondegenerate positive maximum. Opposite points sufficiently close to uniformity are joined by a unique minimizing geodesic through the uniform law, so their intrinsic distance is not attained inside the nonuniform family. In contrast, identifying the means of real normal distributions modulo a period retains a complete hyperbolic cylinder with an infinitely distant cusp. Wrapping strictly decreases Fisher information in every nonzero tangent direction, while the information deficit and its fixed-order derivatives are exponentially small as the standard deviation tends to zero. The curvature theorem is proved by convergent series and explicit analytic remainder estimates; numerical figures serve only as illustrations.",
+          "categories": [
+            "math.DG",
+            "math.ST"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "19 pages, 2 figures",
+          "version": 1,
+          "submittedAt": "2026-10-27T21:28:50Z",
+          "updatedAt": "2026-10-27T21:28:50Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.37985v1",
+            "observedAt": "2026-10-30T06:43:43.767639+00:00",
+            "contentHash": "6b2ea09c691e6a7d5a5df1ce6809bac5f98b2e4def3e9d9fe75085f4fb3f507e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:35.126855+00:00",
+            "contentHash": "1ddcdddb0bd7c49b283535e27f26173292e0233e378b0fc291f25f1e5c3eb0fb"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "统计度量完备化与曲率分类",
+          "workSummary": "作者确定圆周 wrapped normal 二参数族的 Fisher 几何：有限参数形成圆柱，但添加均匀分布后度量完备化为圆盘，且 Fisher 度量实解析、正定地延拓。新增点曲率为零、附近正，标准差趋零时曲率趋 −1/2；非均匀处曲率恰有一个零半径及一个非退化正极大半径。",
+          "techniques": [
+            "Fisher 信息度量及内在完备化",
+            "收敛级数和显式解析余项估计",
+            "曲率零点与临界点唯一性",
+            "wrap 映射的信息损失"
+          ],
+          "breakthrough": "揭示 wrapping 与简单地将实正态均值模周期识别的商操作有不同内在几何：后者仍是完备双曲圆柱，前者近均匀的对径点最短路会穿过新增均匀分布。",
+          "limitations": "近均匀点的测地线结论有邻域条件；原非均匀族内距离可能只取下确界而不达到。数值图仅为示意，曲率定理依赖解析估计；不能将局部正曲率理解为全族非负曲率。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露ChatGPT及Codex用于证明探索、起草修订、代数验证代码及LaTeX准备；文稿后经审阅修改，证明计算亦被核查。对应探索、写作、核查及编程计算；并未明确将具体核心曲率定理或构造归于模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37985v1 · PDF第18页 Use of generative AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:43:43.767639+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37985v1",
+            "contentHash": "6b2ea09c691e6a7d5a5df1ce6809bac5f98b2e4def3e9d9fe75085f4fb3f507e",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露ChatGPT及Codex用于证明探索、起草修订、代数验证代码及LaTeX准备；文稿后经审阅修改，证明计算亦被核查。对应探索、写作、核查及编程计算；并未明确将具体核心曲率定理或构造归于模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d962d41e152f493152e507d78f7ac851172aec647cf058e4340fcead8fa6391e"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 66,
+          "priorityReason": "信息几何中的明确曲率和完备化分析，有比较几何联系但不属几何流主线。"
+        },
+        "analysisBasis": {
+          "abstract": "We determine the intrinsic Fisher geometry of the two-parameter circular wrapped normal family. Although its finite parameters form a cylinder, its metric completion is a disk: adjoining the uniform law extends the Fisher metric to a positive-definite real-analytic metric. The Gaussian curvature vanishes at the added point, is positive nearby, and tends to $-1/2$ as the underlying standard deviation tends to zero. We prove that the curvature has exactly one nonuniform zero radius and exactly one critical radius, the latter a nondegenerate positive maximum. Opposite points sufficiently close to uniformity are joined by a unique minimizing geodesic through the uniform law, so their intrinsic distance is not attained inside the nonuniform family. In contrast, identifying the means of real normal distributions modulo a period retains a complete hyperbolic cylinder with an infinitely distant cusp. Wrapping strictly decreases Fisher information in every nonzero tangent direction, while the information deficit and its fixed-order derivatives are exponentially small as the standard deviation tends to zero. The curvature theorem is proved by convergent series and explicit analytic remainder estimates; numerical figures serve only as illustrations.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

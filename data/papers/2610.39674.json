@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39674",
+  "slug": "2610.39674",
+  "latest": {
+    "arxivId": "2610.39674",
+    "metadata": {
+      "title": "Formalizing the Intrinsic Dimension of Objective Landscapes by a Generalized Notion of Co-dimension",
+      "authors": [
+        "Ernesto Araya",
+        "Gitta Kutyniok",
+        "Weilin Li",
+        "Johannes Maly",
+        "Manjot Singh"
+      ],
+      "abstract": "In this work, we formalize the concept of intrinsic dimension of objective landscapes introduced in Li et al. (2018), which measures the structural complexity of learning problems by training along randomly generated subspaces. We define the intrinsic dimension of a set $\\Theta\\subset\\mathbb{R}^p$ as the minimal dimension $d_{\\mathrm{int}}(\\Theta)$ such that a random plane of dimension $d_{\\mathrm{int}}(\\Theta)$ in $\\mathbb{R}^p$ intersects $\\Theta$ with probability one. We show that it is a generalized notion of co-dimension that depends on the global geometry of $\\Theta$. We study mathematical properties of the intrinsic dimension and develop techniques to estimate the intrinsic dimension of sets $\\Theta$ that arise in learning problems. More specifically, we derive upper and/or lower bounds where $\\Theta$ is the set of optimal parameters in student-teacher settings with shallow and deep ReLU networks, including finite and infinite sample cases, and with and without regularization. We discuss how our theory leads to novel types of generalization bounds, thereby showing that the intrinsic dimension is a measure of learning complexity. Our results connect techniques from seemingly different areas of machine learning research such as classification of symmetries of ReLU networks and stochastic geometry.",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.MG"
+      ],
+      "primaryCategory": "stat.ML",
+      "version": 1,
+      "submittedAt": "2026-10-29T09:22:28Z",
+      "updatedAt": "2026-10-29T09:22:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.716707+00:00",
+        "contentHash": "26f89fc372261be7abdb94ec1f10ccd49df92ef50aaa5dec1af56810b8615400"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "学习问题的随机几何复杂度",
+      "workSummary": "将目标景观的内在维数定义为随机 d 维平面几乎必然与最优参数集 Θ 相交所需的最小 d，并解释为依赖 Θ 全局几何的广义余维。在浅层、深层 ReLU 师生模型中，对有限或无限样本及有无正则化等情形推导上下界，讨论由此产生的泛化界。",
+      "techniques": [
+        "随机子空间与随机几何",
+        "ReLU 网络对称性分类",
+        "最优参数集的维数估计"
+      ],
+      "breakthrough": "把经验性子空间训练复杂度形式化，并连接网络参数对称性与全局交会概率。",
+      "limitations": "这里的内在维数是特定随机平面模型下的广义余维，不等同 Hausdorff 维数或局部流形维数；各模型的上下界与泛化假设须分别保留。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:53:53.605924+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39674v1",
+        "contentHash": "b2f95e2df36b8c7c65ae526cbbff593f621c85fe748648ca5caec2355cc0dd2b",
+        "pages": 61,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256匹配，61页完整提取，无短文本页。第1页GPT-3/large language models是研究背景举例，第34页AI Computing是资助项目，第57页是语言模型参考文献；这些均不是作者自身生成式工具使用披露。点写AI、断行/连字符模型名称与Danus补检无额外使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8baff56fe46433ce35180d5c1e52d9562fea59e93ab236a941ba00bf6b3d5f5a"
+      },
+      "priorityScore": 37,
+      "priorityReason": "主要面向学习理论的复杂度指标，和曲率比较、几何 PDE 的直接联系较弱。",
+      "lowPriorityReason": "主要面向学习理论的复杂度指标，和曲率比较、几何 PDE 的直接联系较弱。"
+    },
+    "analysisBasis": {
+      "abstract": "In this work, we formalize the concept of intrinsic dimension of objective landscapes introduced in Li et al. (2018), which measures the structural complexity of learning problems by training along randomly generated subspaces. We define the intrinsic dimension of a set $\\Theta\\subset\\mathbb{R}^p$ as the minimal dimension $d_{\\mathrm{int}}(\\Theta)$ such that a random plane of dimension $d_{\\mathrm{int}}(\\Theta)$ in $\\mathbb{R}^p$ intersects $\\Theta$ with probability one. We show that it is a generalized notion of co-dimension that depends on the global geometry of $\\Theta$. We study mathematical properties of the intrinsic dimension and develop techniques to estimate the intrinsic dimension of sets $\\Theta$ that arise in learning problems. More specifically, we derive upper and/or lower bounds where $\\Theta$ is the set of optimal parameters in student-teacher settings with shallow and deep ReLU networks, including finite and infinite sample cases, and with and without regularization. We discuss how our theory leads to novel types of generalization bounds, thereby showing that the intrinsic dimension is a measure of learning complexity. Our results connect techniques from seemingly different areas of machine learning research such as classification of symmetries of ReLU networks and stochastic geometry.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39674",
+        "metadata": {
+          "title": "Formalizing the Intrinsic Dimension of Objective Landscapes by a Generalized Notion of Co-dimension",
+          "authors": [
+            "Ernesto Araya",
+            "Gitta Kutyniok",
+            "Weilin Li",
+            "Johannes Maly",
+            "Manjot Singh"
+          ],
+          "abstract": "In this work, we formalize the concept of intrinsic dimension of objective landscapes introduced in Li et al. (2018), which measures the structural complexity of learning problems by training along randomly generated subspaces. We define the intrinsic dimension of a set $\\Theta\\subset\\mathbb{R}^p$ as the minimal dimension $d_{\\mathrm{int}}(\\Theta)$ such that a random plane of dimension $d_{\\mathrm{int}}(\\Theta)$ in $\\mathbb{R}^p$ intersects $\\Theta$ with probability one. We show that it is a generalized notion of co-dimension that depends on the global geometry of $\\Theta$. We study mathematical properties of the intrinsic dimension and develop techniques to estimate the intrinsic dimension of sets $\\Theta$ that arise in learning problems. More specifically, we derive upper and/or lower bounds where $\\Theta$ is the set of optimal parameters in student-teacher settings with shallow and deep ReLU networks, including finite and infinite sample cases, and with and without regularization. We discuss how our theory leads to novel types of generalization bounds, thereby showing that the intrinsic dimension is a measure of learning complexity. Our results connect techniques from seemingly different areas of machine learning research such as classification of symmetries of ReLU networks and stochastic geometry.",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.MG"
+          ],
+          "primaryCategory": "stat.ML",
+          "version": 1,
+          "submittedAt": "2026-10-29T09:22:28Z",
+          "updatedAt": "2026-10-29T09:22:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.716707+00:00",
+            "contentHash": "26f89fc372261be7abdb94ec1f10ccd49df92ef50aaa5dec1af56810b8615400"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "学习问题的随机几何复杂度",
+          "workSummary": "将目标景观的内在维数定义为随机 d 维平面几乎必然与最优参数集 Θ 相交所需的最小 d，并解释为依赖 Θ 全局几何的广义余维。在浅层、深层 ReLU 师生模型中，对有限或无限样本及有无正则化等情形推导上下界，讨论由此产生的泛化界。",
+          "techniques": [
+            "随机子空间与随机几何",
+            "ReLU 网络对称性分类",
+            "最优参数集的维数估计"
+          ],
+          "breakthrough": "把经验性子空间训练复杂度形式化，并连接网络参数对称性与全局交会概率。",
+          "limitations": "这里的内在维数是特定随机平面模型下的广义余维，不等同 Hausdorff 维数或局部流形维数；各模型的上下界与泛化假设须分别保留。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:53:53.605924+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39674v1",
+            "contentHash": "b2f95e2df36b8c7c65ae526cbbff593f621c85fe748648ca5caec2355cc0dd2b",
+            "pages": 61,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256匹配，61页完整提取，无短文本页。第1页GPT-3/large language models是研究背景举例，第34页AI Computing是资助项目，第57页是语言模型参考文献；这些均不是作者自身生成式工具使用披露。点写AI、断行/连字符模型名称与Danus补检无额外使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8baff56fe46433ce35180d5c1e52d9562fea59e93ab236a941ba00bf6b3d5f5a"
+          },
+          "priorityScore": 37,
+          "priorityReason": "主要面向学习理论的复杂度指标，和曲率比较、几何 PDE 的直接联系较弱。",
+          "lowPriorityReason": "主要面向学习理论的复杂度指标，和曲率比较、几何 PDE 的直接联系较弱。"
+        },
+        "analysisBasis": {
+          "abstract": "In this work, we formalize the concept of intrinsic dimension of objective landscapes introduced in Li et al. (2018), which measures the structural complexity of learning problems by training along randomly generated subspaces. We define the intrinsic dimension of a set $\\Theta\\subset\\mathbb{R}^p$ as the minimal dimension $d_{\\mathrm{int}}(\\Theta)$ such that a random plane of dimension $d_{\\mathrm{int}}(\\Theta)$ in $\\mathbb{R}^p$ intersects $\\Theta$ with probability one. We show that it is a generalized notion of co-dimension that depends on the global geometry of $\\Theta$. We study mathematical properties of the intrinsic dimension and develop techniques to estimate the intrinsic dimension of sets $\\Theta$ that arise in learning problems. More specifically, we derive upper and/or lower bounds where $\\Theta$ is the set of optimal parameters in student-teacher settings with shallow and deep ReLU networks, including finite and infinite sample cases, and with and without regularization. We discuss how our theory leads to novel types of generalization bounds, thereby showing that the intrinsic dimension is a measure of learning complexity. Our results connect techniques from seemingly different areas of machine learning research such as classification of symmetries of ReLU networks and stochastic geometry.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

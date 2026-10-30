@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38418",
+  "slug": "2610.38418",
+  "latest": {
+    "arxivId": "2610.38418",
+    "metadata": {
+      "title": "Backward Pseudolocality of $G_2$-Laplacian Flow",
+      "authors": [
+        "Weiyong He",
+        "Longhuan Yan"
+      ],
+      "abstract": "In this paper, we establish a new estimate on the time-derivative of pointed Nash entropy and use it to give a new proof of backward pseudolocality for Ricci flow. The proof does not rely on Bamler's compactness theorem and structure theory concerning limits of Ricci flows. Our methods also work for other reasonable geometric flows, like the $G_2$-Laplacian, at a scale depending on its deviation from Ricci flow and its scalar curvature.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-28T08:04:12Z",
+      "updatedAt": "2026-10-28T08:04:12Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:47.265756+00:00",
+        "contentHash": "b3748d7d5d929fcc20ecf4fb2ac5336077d00f023df54f853ba343a0a95cfeca"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "向后伪局部性的熵导数证明",
+      "workSummary": "定理1.1在紧七维G₂-Laplacian流上假设过去r²时段全空间|Tφ|²≤Λr^(−2)，且终时球B(x₀,t₀,r)满足体积≥αr⁷及|Rm|≤(αr)^(−2)，得到更小终时球和长(εr)²的回溯时段内|Rm|≤(εr)^(−2)，ε依赖Λ、α。推论1.2控制终时半径r/2球内各阶曲率导数，定理1.3在双侧时段挠率有界时给双侧伪局部性。",
+      "techniques": [
+        "固定回溯尺度的pointed Nash熵基点时间导数上界",
+        "热核加权Ricci能量I及Laplacian—热传播子的交换子",
+        "几乎静态流的截断函数与加权积分估计",
+        "沿worldline传播熵下界、ε正则性及尺度归纳"
+      ],
+      "breakthrough": "命题2.8在|E|有界、标量曲率有下界时以加权Ricci能量控制∂tN上界，允许向后传播Nash熵近零性。G₂中R=−|Tφ|²、|E|≤C|Tφ|²使挠率统一控制两类误差。附录B调整该论证，重证只用终时局部曲率和体积非塌缩的Ricci流向后伪局部性，无需另加全时空标量曲率界。",
+      "limitations": "补读PDF第1–6、9–12页。G₂结论仍需全空间过去时段挠率界及终时局部曲率、体积条件；不等于任意终时曲率界都可回推。命题2.8在仅标量下界时给单侧导数估计，绝对值控制需更强条件。避免Bamler极限紧性/结构理论不等于完全不用紧性：正文仍调用Laplacian流标准紧性及Shi型估计。未独立核验全部交换子、截断和尺度归纳证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第4页第1.7节明确GPT-6 Astra辅助文献搜索、证明策略探索、计算检查和表述改进；第2页也解释因使用LLM而与伴随论文分开。没有明确将某个核心熵导数估计或路线归于模型，不标ideas或完整证明生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.38418v1 · PDF第4页第1.7节 Usage of LLM；第2页分篇说明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:46:18.127642+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38418v1",
+        "contentHash": "2badbb149524f2aff41c921e4ba7e5be870063e8c7fb2a1aaf365a8a59a2ca80",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页第1.7节明确GPT-6 Astra辅助文献搜索、证明策略探索、计算检查和表述改进；第2页也解释因使用LLM而与伴随论文分开。没有明确将某个核心熵导数估计或路线归于模型，不标ideas或完整证明生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "478381e9f94ab58547753a9b7c630d6212b84bc3ce14117b2eef591dbc45ce55"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "直接涉及几何流局部正则性及熵方法，是今日优先精读对象。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we establish a new estimate on the time-derivative of pointed Nash entropy and use it to give a new proof of backward pseudolocality for Ricci flow. The proof does not rely on Bamler's compactness theorem and structure theory concerning limits of Ricci flows. Our methods also work for other reasonable geometric flows, like the $G_2$-Laplacian, at a scale depending on its deviation from Ricci flow and its scalar curvature.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38418",
+        "metadata": {
+          "title": "Backward Pseudolocality of $G_2$-Laplacian Flow",
+          "authors": [
+            "Weiyong He",
+            "Longhuan Yan"
+          ],
+          "abstract": "In this paper, we establish a new estimate on the time-derivative of pointed Nash entropy and use it to give a new proof of backward pseudolocality for Ricci flow. The proof does not rely on Bamler's compactness theorem and structure theory concerning limits of Ricci flows. Our methods also work for other reasonable geometric flows, like the $G_2$-Laplacian, at a scale depending on its deviation from Ricci flow and its scalar curvature.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-28T08:04:12Z",
+          "updatedAt": "2026-10-28T08:04:12Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:47.265756+00:00",
+            "contentHash": "b3748d7d5d929fcc20ecf4fb2ac5336077d00f023df54f853ba343a0a95cfeca"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "向后伪局部性的熵导数证明",
+          "workSummary": "定理1.1在紧七维G₂-Laplacian流上假设过去r²时段全空间|Tφ|²≤Λr^(−2)，且终时球B(x₀,t₀,r)满足体积≥αr⁷及|Rm|≤(αr)^(−2)，得到更小终时球和长(εr)²的回溯时段内|Rm|≤(εr)^(−2)，ε依赖Λ、α。推论1.2控制终时半径r/2球内各阶曲率导数，定理1.3在双侧时段挠率有界时给双侧伪局部性。",
+          "techniques": [
+            "固定回溯尺度的pointed Nash熵基点时间导数上界",
+            "热核加权Ricci能量I及Laplacian—热传播子的交换子",
+            "几乎静态流的截断函数与加权积分估计",
+            "沿worldline传播熵下界、ε正则性及尺度归纳"
+          ],
+          "breakthrough": "命题2.8在|E|有界、标量曲率有下界时以加权Ricci能量控制∂tN上界，允许向后传播Nash熵近零性。G₂中R=−|Tφ|²、|E|≤C|Tφ|²使挠率统一控制两类误差。附录B调整该论证，重证只用终时局部曲率和体积非塌缩的Ricci流向后伪局部性，无需另加全时空标量曲率界。",
+          "limitations": "补读PDF第1–6、9–12页。G₂结论仍需全空间过去时段挠率界及终时局部曲率、体积条件；不等于任意终时曲率界都可回推。命题2.8在仅标量下界时给单侧导数估计，绝对值控制需更强条件。避免Bamler极限紧性/结构理论不等于完全不用紧性：正文仍调用Laplacian流标准紧性及Shi型估计。未独立核验全部交换子、截断和尺度归纳证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第4页第1.7节明确GPT-6 Astra辅助文献搜索、证明策略探索、计算检查和表述改进；第2页也解释因使用LLM而与伴随论文分开。没有明确将某个核心熵导数估计或路线归于模型，不标ideas或完整证明生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.38418v1 · PDF第4页第1.7节 Usage of LLM；第2页分篇说明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:46:18.127642+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38418v1",
+            "contentHash": "2badbb149524f2aff41c921e4ba7e5be870063e8c7fb2a1aaf365a8a59a2ca80",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页第1.7节明确GPT-6 Astra辅助文献搜索、证明策略探索、计算检查和表述改进；第2页也解释因使用LLM而与伴随论文分开。没有明确将某个核心熵导数估计或路线归于模型，不标ideas或完整证明生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "478381e9f94ab58547753a9b7c630d6212b84bc3ce14117b2eef591dbc45ce55"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "直接涉及几何流局部正则性及熵方法，是今日优先精读对象。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we establish a new estimate on the time-derivative of pointed Nash entropy and use it to give a new proof of backward pseudolocality for Ricci flow. The proof does not rely on Bamler's compactness theorem and structure theory concerning limits of Ricci flows. Our methods also work for other reasonable geometric flows, like the $G_2$-Laplacian, at a scale depending on its deviation from Ricci flow and its scalar curvature.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

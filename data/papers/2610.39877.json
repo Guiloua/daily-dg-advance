@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39877",
+  "slug": "2610.39877",
+  "latest": {
+    "arxivId": "2610.39877",
+    "metadata": {
+      "title": "Planarity estimates and codimension reduction for ancient flows at the Andrews-Baker threshold",
+      "authors": [
+        "Francesco Ruatta"
+      ],
+      "abstract": "We derive an interior planarity estimate for space-time proper mean curvature flows of $n$-dimensional submanifolds of $\\mathbb R^{n+p}$, $n\\geq5$, that are uniformly quadratically pinched up to the Andrews-Baker threshold $\\frac{4}{3n}$. The estimate is parabolically scale-invariant and it requires neither curvature nor entropy bounds. The proof combines Naff's gradient estimates with a localization argument in the spirit of Ecker and Huisken. In dimensions five and six, Naff's estimates alone do not give the gradient terms a sign. We bound these terms from below with an argument we developed in a previous work. As a consequence, for $n\\geq5$, and by known results for $2\\leq n\\leq4$, every space-time proper ancient solution that is uniformly $\\frac{4}{3n}$-pinched is either a static affine $n$-plane or lies in a fixed affine $(n+1)$-dimensional subspace. This replaces the finite entropy and polynomial curvature growth assumptions of Lee, Naff and Zhu by space-time properness, and improves their pinching constant in dimensions two, five and six. For closed flows, we extend Lynch's planarity estimate to a larger range of exponents.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "13 pages. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-29T11:56:05Z",
+      "updatedAt": "2026-10-29T11:56:05Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.717919+00:00",
+        "contentHash": "53c2546ddf6d0633b5bc8e9789f608f66955ca08662cd71ddcc802970d385075"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "高余维平均曲率流的平面性与降余维",
+      "workSummary": "正文把“一致4/(3n)夹持”精确定义为存在固定ε₀>0使|B|²≤(4/(3n)−ε₀)|H|²，故阈值必须留严格统一余量。对n≥5、p≥1、0<ε₀<1/(3n)、0<σ≤1/6，若连通无边界MCF的外在抛物柱K₁紧且其中满足夹持，定理1.3给|B⊥|²≤C(n,ε₀,σ)R^(−2σ)|H|^(2−2σ)于K₁/₂。对n≥2的时空proper古代解，定理1.4推出静态仿射n平面，或H处处非零且整流位于固定仿射(n+1)平面；2≤n≤4非平凡分支进一步是收缩球族。",
+      "techniques": [
+        "Naff梯度估计及此前五、六维误差项的下界方法",
+        "对数微分把不定号梯度项转为可由cutoff控制的平方项",
+        "Ecker–Huisken型局部化与外在柱紧性",
+        "R→∞得到正交曲率分量消失，随后传播固定仿射子空间"
+      ],
+      "breakthrough": "无需先验曲率、熵或多项式曲率增长界即得到高余维局部平面性及古代流降余维，并使指数范围0<σ≤1/6独立于夹持余量。闭流还把既有σ≤1/30范围扩大至1/6。",
+      "limitations": "已读PDF第1–6页，第2页定理1.3的ε₀与σ范围已渲染目视核对。不得改成非严格|B|²≤4|H|²/(3n)或只逐点严格而无统一ε₀；内部新估计n≥5，低维结论结合既有紧致性/球分类。时空proper指(q,t)↦(x(q,t),t)为proper，强于仅逐时完备。闭流推论初值还要求|H|>0；所有条件均按正文，不宣称任意古代高余维流分类。未逐步核验全部演化不等式和后半篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "AI Disclosure 明确披露Claude Opus 5.5在引理6.1建议ρ中的指数权e^{−(t−t₀)}，从而产生−ρ项并完成与既有Ma定理结合的反证；另检查数学论证、改进语言表述。按有限具体证明辅助、核验与写作记录，未将主平面性估计的新梯度控制路线归为AI核心ideas；该指数权还明确指出已见于既有文献。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.39877v1 · PDF 第4页 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:54:47.443602+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39877v1",
+        "contentHash": "fb0863ee878f77af5dc93a09d0e7a8ea488e556c0f655796c0f8dce8f1bffc38",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确披露Claude Opus 5.5在引理6.1建议ρ中的指数权e^{−(t−t₀)}，从而产生−ρ项并完成与既有Ma定理结合的反证；另检查数学论证、改进语言表述。按有限具体证明辅助、核验与写作记录，未将主平面性估计的新梯度控制路线归为AI核心ideas；该指数权还明确指出已见于既有文献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f93306442116246f22d38a3102e01df1db722d709e6f0acfa030a0239ed76985"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "高余维曲率流、最优型夹持阈值与古代解降余维直接对应重点，应优先核对精确 pinching。"
+    },
+    "analysisBasis": {
+      "abstract": "We derive an interior planarity estimate for space-time proper mean curvature flows of $n$-dimensional submanifolds of $\\mathbb R^{n+p}$, $n\\geq5$, that are uniformly quadratically pinched up to the Andrews-Baker threshold $\\frac{4}{3n}$. The estimate is parabolically scale-invariant and it requires neither curvature nor entropy bounds. The proof combines Naff's gradient estimates with a localization argument in the spirit of Ecker and Huisken. In dimensions five and six, Naff's estimates alone do not give the gradient terms a sign. We bound these terms from below with an argument we developed in a previous work. As a consequence, for $n\\geq5$, and by known results for $2\\leq n\\leq4$, every space-time proper ancient solution that is uniformly $\\frac{4}{3n}$-pinched is either a static affine $n$-plane or lies in a fixed affine $(n+1)$-dimensional subspace. This replaces the finite entropy and polynomial curvature growth assumptions of Lee, Naff and Zhu by space-time properness, and improves their pinching constant in dimensions two, five and six. For closed flows, we extend Lynch's planarity estimate to a larger range of exponents.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39877",
+        "metadata": {
+          "title": "Planarity estimates and codimension reduction for ancient flows at the Andrews-Baker threshold",
+          "authors": [
+            "Francesco Ruatta"
+          ],
+          "abstract": "We derive an interior planarity estimate for space-time proper mean curvature flows of $n$-dimensional submanifolds of $\\mathbb R^{n+p}$, $n\\geq5$, that are uniformly quadratically pinched up to the Andrews-Baker threshold $\\frac{4}{3n}$. The estimate is parabolically scale-invariant and it requires neither curvature nor entropy bounds. The proof combines Naff's gradient estimates with a localization argument in the spirit of Ecker and Huisken. In dimensions five and six, Naff's estimates alone do not give the gradient terms a sign. We bound these terms from below with an argument we developed in a previous work. As a consequence, for $n\\geq5$, and by known results for $2\\leq n\\leq4$, every space-time proper ancient solution that is uniformly $\\frac{4}{3n}$-pinched is either a static affine $n$-plane or lies in a fixed affine $(n+1)$-dimensional subspace. This replaces the finite entropy and polynomial curvature growth assumptions of Lee, Naff and Zhu by space-time properness, and improves their pinching constant in dimensions two, five and six. For closed flows, we extend Lynch's planarity estimate to a larger range of exponents.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "13 pages. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-29T11:56:05Z",
+          "updatedAt": "2026-10-29T11:56:05Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.717919+00:00",
+            "contentHash": "53c2546ddf6d0633b5bc8e9789f608f66955ca08662cd71ddcc802970d385075"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "高余维平均曲率流的平面性与降余维",
+          "workSummary": "正文把“一致4/(3n)夹持”精确定义为存在固定ε₀>0使|B|²≤(4/(3n)−ε₀)|H|²，故阈值必须留严格统一余量。对n≥5、p≥1、0<ε₀<1/(3n)、0<σ≤1/6，若连通无边界MCF的外在抛物柱K₁紧且其中满足夹持，定理1.3给|B⊥|²≤C(n,ε₀,σ)R^(−2σ)|H|^(2−2σ)于K₁/₂。对n≥2的时空proper古代解，定理1.4推出静态仿射n平面，或H处处非零且整流位于固定仿射(n+1)平面；2≤n≤4非平凡分支进一步是收缩球族。",
+          "techniques": [
+            "Naff梯度估计及此前五、六维误差项的下界方法",
+            "对数微分把不定号梯度项转为可由cutoff控制的平方项",
+            "Ecker–Huisken型局部化与外在柱紧性",
+            "R→∞得到正交曲率分量消失，随后传播固定仿射子空间"
+          ],
+          "breakthrough": "无需先验曲率、熵或多项式曲率增长界即得到高余维局部平面性及古代流降余维，并使指数范围0<σ≤1/6独立于夹持余量。闭流还把既有σ≤1/30范围扩大至1/6。",
+          "limitations": "已读PDF第1–6页，第2页定理1.3的ε₀与σ范围已渲染目视核对。不得改成非严格|B|²≤4|H|²/(3n)或只逐点严格而无统一ε₀；内部新估计n≥5，低维结论结合既有紧致性/球分类。时空proper指(q,t)↦(x(q,t),t)为proper，强于仅逐时完备。闭流推论初值还要求|H|>0；所有条件均按正文，不宣称任意古代高余维流分类。未逐步核验全部演化不等式和后半篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "AI Disclosure 明确披露Claude Opus 5.5在引理6.1建议ρ中的指数权e^{−(t−t₀)}，从而产生−ρ项并完成与既有Ma定理结合的反证；另检查数学论证、改进语言表述。按有限具体证明辅助、核验与写作记录，未将主平面性估计的新梯度控制路线归为AI核心ideas；该指数权还明确指出已见于既有文献。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.39877v1 · PDF 第4页 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:54:47.443602+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39877v1",
+            "contentHash": "fb0863ee878f77af5dc93a09d0e7a8ea488e556c0f655796c0f8dce8f1bffc38",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。AI Disclosure 明确披露Claude Opus 5.5在引理6.1建议ρ中的指数权e^{−(t−t₀)}，从而产生−ρ项并完成与既有Ma定理结合的反证；另检查数学论证、改进语言表述。按有限具体证明辅助、核验与写作记录，未将主平面性估计的新梯度控制路线归为AI核心ideas；该指数权还明确指出已见于既有文献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f93306442116246f22d38a3102e01df1db722d709e6f0acfa030a0239ed76985"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "高余维曲率流、最优型夹持阈值与古代解降余维直接对应重点，应优先核对精确 pinching。"
+        },
+        "analysisBasis": {
+          "abstract": "We derive an interior planarity estimate for space-time proper mean curvature flows of $n$-dimensional submanifolds of $\\mathbb R^{n+p}$, $n\\geq5$, that are uniformly quadratically pinched up to the Andrews-Baker threshold $\\frac{4}{3n}$. The estimate is parabolically scale-invariant and it requires neither curvature nor entropy bounds. The proof combines Naff's gradient estimates with a localization argument in the spirit of Ecker and Huisken. In dimensions five and six, Naff's estimates alone do not give the gradient terms a sign. We bound these terms from below with an argument we developed in a previous work. As a consequence, for $n\\geq5$, and by known results for $2\\leq n\\leq4$, every space-time proper ancient solution that is uniformly $\\frac{4}{3n}$-pinched is either a static affine $n$-plane or lies in a fixed affine $(n+1)$-dimensional subspace. This replaces the finite entropy and polynomial curvature growth assumptions of Lee, Naff and Zhu by space-time properness, and improves their pinching constant in dimensions two, five and six. For closed flows, we extend Lynch's planarity estimate to a larger range of exponents.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

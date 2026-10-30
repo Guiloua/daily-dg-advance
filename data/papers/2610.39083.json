@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39083",
+  "slug": "2610.39083",
+  "latest": {
+    "arxivId": "2610.39083",
+    "metadata": {
+      "title": "The measure contraction property and rectifiability",
+      "authors": [
+        "Sean Li"
+      ],
+      "abstract": "We show that a metric measure space $(X,d,\\mathfrak{m})$ with finite upper $N$-density that satisfies $\\mathsf{MCP}(K,N)$ is $N$-rectifiable. This removes a unique tangent requirement from arXiv:2505.01151 .",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "Comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-29T00:24:04Z",
+      "updatedAt": "2026-10-29T00:24:04Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.711628+00:00",
+        "contentHash": "3cf1c9097bf3052820340e98c3ad25c24dcb4fa98b367cd9a15d3ef6778b56fc"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "MCP 与有限上密度推出可整流性",
+      "workSummary": "已核对 Theorem 1 及空间定义：N∈(1,∞)，(X,d,m) 完备可分，m 为局部有限 Borel 测度且支撑为 X；采用 Ohta 的 MCP(K,N)。若 limsup_{r→0}m(B(x,r))/rᴺ<∞ 对 m-几乎处处 x 成立，则 N 必为整数，且 m≪Hᴺ、除去 m-零集后 X 可由可数个定义于 Rᴺ 可测子集的 Lipschitz 像覆盖。Bishop–Gromov 自动提供正的下 N-密度，因此无需另外假设下密度，也无需唯一切空间。",
+      "techniques": [
+        "MCP 的 Bishop–Gromov 与局部倍增",
+        "Poincaré/可微空间的既有结构结果",
+        "Cheeger 图中距离函数的可微性",
+        "低维图近纤维点列",
+        "MCP 端点测度填充和集合论 limsup 矛盾"
+      ],
+      "breakthrough": "把对切 Carnot 群的分析替换为原空间上距离函数的 Cheeger 可微性，用固定尺度正测度终点集合排除低维可微图，从而移除唯一切空间假设并迫使参数 N 整数化。",
+      "limitations": "已阅读 PDF 第1–5页并核对完整定理及主要证明步骤，但未逐条核验所引用的 Poincaré、可微图维数与可整流判据，不能称已独立验证全证明。MCP 维数参数必须与密度指数相同；有限上密度是 m-几乎处处条件，并非任意 MCP 空间自动满足。结论为测度意义的可整流与绝对连续，不是拓扑流形或光滑性，也不推出 CD/RCD；未要求额外唯一切空间。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确低维 Cheeger 图与 MCP 测地线填满球相矛盾的直觉原已知道，但最终集合论 limsup 论证由 Claude Fable 5.1 提出；已定位为证明末尾获得正测度终点集并导出矛盾的关键步骤，故标 ideas、proofs。模型亦生成图、查错和改善表述，标 writing、verification；作者本人写文并核验，不把原有直觉归于模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.39083v1 · PDF 第 2 页 1.2 AI use disclosure；第 5 页 limsup 关键收尾",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:51:22.175437+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39083v1",
+        "contentHash": "c2337cf34e0098b27e00dc805ef596d973ea10a96588315e0e3b7ef544eba9d0",
+        "pages": 5,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确低维 Cheeger 图与 MCP 测地线填满球相矛盾的直觉原已知道，但最终集合论 limsup 论证由 Claude Fable 5.1 提出；已定位为证明末尾获得正测度终点集并导出矛盾的关键步骤，故标 ideas、proofs。模型亦生成图、查错和改善表述，标 writing、verification；作者本人写文并核验，不把原有直觉归于模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6dc7a4f0020f816ae2d5833108483604df8043fc07632f048f18264ec276b12c"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "当日度量测度几何重点，应优先核对密度假设和如何避开切空间唯一性。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that a metric measure space $(X,d,\\mathfrak{m})$ with finite upper $N$-density that satisfies $\\mathsf{MCP}(K,N)$ is $N$-rectifiable. This removes a unique tangent requirement from arXiv:2505.01151 .",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39083",
+        "metadata": {
+          "title": "The measure contraction property and rectifiability",
+          "authors": [
+            "Sean Li"
+          ],
+          "abstract": "We show that a metric measure space $(X,d,\\mathfrak{m})$ with finite upper $N$-density that satisfies $\\mathsf{MCP}(K,N)$ is $N$-rectifiable. This removes a unique tangent requirement from arXiv:2505.01151 .",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "Comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-29T00:24:04Z",
+          "updatedAt": "2026-10-29T00:24:04Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.711628+00:00",
+            "contentHash": "3cf1c9097bf3052820340e98c3ad25c24dcb4fa98b367cd9a15d3ef6778b56fc"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "MCP 与有限上密度推出可整流性",
+          "workSummary": "已核对 Theorem 1 及空间定义：N∈(1,∞)，(X,d,m) 完备可分，m 为局部有限 Borel 测度且支撑为 X；采用 Ohta 的 MCP(K,N)。若 limsup_{r→0}m(B(x,r))/rᴺ<∞ 对 m-几乎处处 x 成立，则 N 必为整数，且 m≪Hᴺ、除去 m-零集后 X 可由可数个定义于 Rᴺ 可测子集的 Lipschitz 像覆盖。Bishop–Gromov 自动提供正的下 N-密度，因此无需另外假设下密度，也无需唯一切空间。",
+          "techniques": [
+            "MCP 的 Bishop–Gromov 与局部倍增",
+            "Poincaré/可微空间的既有结构结果",
+            "Cheeger 图中距离函数的可微性",
+            "低维图近纤维点列",
+            "MCP 端点测度填充和集合论 limsup 矛盾"
+          ],
+          "breakthrough": "把对切 Carnot 群的分析替换为原空间上距离函数的 Cheeger 可微性，用固定尺度正测度终点集合排除低维可微图，从而移除唯一切空间假设并迫使参数 N 整数化。",
+          "limitations": "已阅读 PDF 第1–5页并核对完整定理及主要证明步骤，但未逐条核验所引用的 Poincaré、可微图维数与可整流判据，不能称已独立验证全证明。MCP 维数参数必须与密度指数相同；有限上密度是 m-几乎处处条件，并非任意 MCP 空间自动满足。结论为测度意义的可整流与绝对连续，不是拓扑流形或光滑性，也不推出 CD/RCD；未要求额外唯一切空间。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确低维 Cheeger 图与 MCP 测地线填满球相矛盾的直觉原已知道，但最终集合论 limsup 论证由 Claude Fable 5.1 提出；已定位为证明末尾获得正测度终点集并导出矛盾的关键步骤，故标 ideas、proofs。模型亦生成图、查错和改善表述，标 writing、verification；作者本人写文并核验，不把原有直觉归于模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.39083v1 · PDF 第 2 页 1.2 AI use disclosure；第 5 页 limsup 关键收尾",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:51:22.175437+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39083v1",
+            "contentHash": "c2337cf34e0098b27e00dc805ef596d973ea10a96588315e0e3b7ef544eba9d0",
+            "pages": 5,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确低维 Cheeger 图与 MCP 测地线填满球相矛盾的直觉原已知道，但最终集合论 limsup 论证由 Claude Fable 5.1 提出；已定位为证明末尾获得正测度终点集并导出矛盾的关键步骤，故标 ideas、proofs。模型亦生成图、查错和改善表述，标 writing、verification；作者本人写文并核验，不把原有直觉归于模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6dc7a4f0020f816ae2d5833108483604df8043fc07632f048f18264ec276b12c"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "当日度量测度几何重点，应优先核对密度假设和如何避开切空间唯一性。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that a metric measure space $(X,d,\\mathfrak{m})$ with finite upper $N$-density that satisfies $\\mathsf{MCP}(K,N)$ is $N$-rectifiable. This removes a unique tangent requirement from arXiv:2505.01151 .",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

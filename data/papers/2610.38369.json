@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38369",
+  "slug": "2610.38369",
+  "latest": {
+    "arxivId": "2610.38369",
+    "metadata": {
+      "title": "The 120-Cell Dissected by the Hyperplanes of Its Final Stellation: the golden ring Z[phi] as foundation, from Kramer's seven cells to 2,455,201 cells in 338 orbits",
+      "authors": [
+        "Miguel E. Pérez Ibarra",
+        "Jaziel Flores Rodríguez"
+      ],
+      "abstract": "The diagonals of a regular pentagon dissect it into eleven pieces and draw a pentagram; the dodecahedron dissected by the twelve face planes of its inner core gives Kramer's seven \"elementary cells\" of 1982. We define the stellation dissection of a golden regular polytope in any dimension as the dissection of the convex hull of its final regular stellation by the facet hyperplanes of the core, show that the core has phi^(-d) of the inradius of the hull for d = 2, 3, 4, and carry the dissection out for the first time on the 120-cell. The foundation is the arithmetic of the golden ring Z[phi], the ring of integers of Q(sqrt 5): vertices and hyperplanes live in Z[phi]^d, every orientation test is the exact sign of an element of Z[phi], decided with integers, and the pieces are named by sign vectors. We develop this foundation from scratch (conjugation, norm, units, the primes sqrt 5, 2, 3, the exact sign test, the lattice x -> (x, conj x), the vertex modules of the dodecahedron and the 120-cell, the icosian ring) and let it carry the geometry. The definition bifurcates in dimension four: the star cut at depth phi^(-4), a unit, has 2,455,201 cells in 338 orbits of H4; the hereditary cut at depth 1 - phi^(-4) = sqrt 5 / phi^2, a unit times the ramified prime, induces the three-dimensional dissection on every facet and has 8,161 cells in 8 orbits. New here: all vertices of the dodecahedral and of the hereditary dissection lie in the vertex module of the polytope being cut, whereas the star cut needs the denominators 2, 3 and 5; the seven kinds of pieces of the dodecahedron are exactly the I_h-orbits of sign vectors, with stellation layer equal to the number of plus signs. We catalogue the four-dimensional pieces and treat the circumscribed disc, ball and 4-ball. Every number quoted is recomputed exactly by a script whose output is reproduced in an appendix.",
+      "categories": [
+        "math.MG",
+        "cs.CG",
+        "math.NT"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "37 pages, 14 figures; catalogue of the 338 orbits and the output of the exact checks in the appendices",
+      "version": 1,
+      "submittedAt": "2026-10-28T07:08:06Z",
+      "updatedAt": "2026-10-28T07:08:06Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:35.130940+00:00",
+        "contentHash": "f077f40171d0f51ced200188894c8fef309bb41dfd86ca9049f96753d1bbce48"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "精确算术支撑的多胞体剖分",
+      "workSummary": "作者用黄金整数环Z[φ]精确描述顶点、超平面及方向符号，开展120-胞体星形剖分。四维有两种不同截法：深度φ^(−4)的star cut有2,455,201个胞、338个H₄轨道；深度1−φ^(−4)的hereditary cut有8,161个胞、8个轨道，并在各面诱导三维剖分。",
+      "techniques": [
+        "黄金整数环的精确符号判定",
+        "符号向量与H₄轨道枚举",
+        "顶点模及分母分析",
+        "可重算的精确脚本认证"
+      ],
+      "breakthrough": "给出详细四维胞分类，并区分遗传剖分顶点保留原顶点模、星形截法需引入2、3、5分母的算术差异。",
+      "limitations": "两种四维构造及其计数不能混合；内切半径比φ^(−d)在摘要明确验证的是d=2,3,4，不可泛推所有维数。数字由精确脚本重算仍需审查算法及实现。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:45:40.556754+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38369v1",
+        "contentHash": "5bb0f8594f91550ab5330e9f909c94817d1e509327a58f444a5267a12bc3f7f1",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。37页PDF完整提取、页数匹配、无短文本页；全文及元数据披露检索和A.I.、断行/连字符模型名、Danus补检无命中。精确脚本、计算验证或制图本身不是生成式AI使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "90f53ba8114d11eb90317f1b7b9ef072d6a4eac76907c2eb6dd3f55bc36e9100"
+      },
+      "priorityScore": 34,
+      "priorityReason": "主要是组合计算几何与代数数论，离用户几何分析方向较远。",
+      "lowPriorityReason": "主要是组合计算几何与代数数论，离用户几何分析方向较远。"
+    },
+    "analysisBasis": {
+      "abstract": "The diagonals of a regular pentagon dissect it into eleven pieces and draw a pentagram; the dodecahedron dissected by the twelve face planes of its inner core gives Kramer's seven \"elementary cells\" of 1982. We define the stellation dissection of a golden regular polytope in any dimension as the dissection of the convex hull of its final regular stellation by the facet hyperplanes of the core, show that the core has phi^(-d) of the inradius of the hull for d = 2, 3, 4, and carry the dissection out for the first time on the 120-cell. The foundation is the arithmetic of the golden ring Z[phi], the ring of integers of Q(sqrt 5): vertices and hyperplanes live in Z[phi]^d, every orientation test is the exact sign of an element of Z[phi], decided with integers, and the pieces are named by sign vectors. We develop this foundation from scratch (conjugation, norm, units, the primes sqrt 5, 2, 3, the exact sign test, the lattice x -> (x, conj x), the vertex modules of the dodecahedron and the 120-cell, the icosian ring) and let it carry the geometry. The definition bifurcates in dimension four: the star cut at depth phi^(-4), a unit, has 2,455,201 cells in 338 orbits of H4; the hereditary cut at depth 1 - phi^(-4) = sqrt 5 / phi^2, a unit times the ramified prime, induces the three-dimensional dissection on every facet and has 8,161 cells in 8 orbits. New here: all vertices of the dodecahedral and of the hereditary dissection lie in the vertex module of the polytope being cut, whereas the star cut needs the denominators 2, 3 and 5; the seven kinds of pieces of the dodecahedron are exactly the I_h-orbits of sign vectors, with stellation layer equal to the number of plus signs. We catalogue the four-dimensional pieces and treat the circumscribed disc, ball and 4-ball. Every number quoted is recomputed exactly by a script whose output is reproduced in an appendix.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38369",
+        "metadata": {
+          "title": "The 120-Cell Dissected by the Hyperplanes of Its Final Stellation: the golden ring Z[phi] as foundation, from Kramer's seven cells to 2,455,201 cells in 338 orbits",
+          "authors": [
+            "Miguel E. Pérez Ibarra",
+            "Jaziel Flores Rodríguez"
+          ],
+          "abstract": "The diagonals of a regular pentagon dissect it into eleven pieces and draw a pentagram; the dodecahedron dissected by the twelve face planes of its inner core gives Kramer's seven \"elementary cells\" of 1982. We define the stellation dissection of a golden regular polytope in any dimension as the dissection of the convex hull of its final regular stellation by the facet hyperplanes of the core, show that the core has phi^(-d) of the inradius of the hull for d = 2, 3, 4, and carry the dissection out for the first time on the 120-cell. The foundation is the arithmetic of the golden ring Z[phi], the ring of integers of Q(sqrt 5): vertices and hyperplanes live in Z[phi]^d, every orientation test is the exact sign of an element of Z[phi], decided with integers, and the pieces are named by sign vectors. We develop this foundation from scratch (conjugation, norm, units, the primes sqrt 5, 2, 3, the exact sign test, the lattice x -> (x, conj x), the vertex modules of the dodecahedron and the 120-cell, the icosian ring) and let it carry the geometry. The definition bifurcates in dimension four: the star cut at depth phi^(-4), a unit, has 2,455,201 cells in 338 orbits of H4; the hereditary cut at depth 1 - phi^(-4) = sqrt 5 / phi^2, a unit times the ramified prime, induces the three-dimensional dissection on every facet and has 8,161 cells in 8 orbits. New here: all vertices of the dodecahedral and of the hereditary dissection lie in the vertex module of the polytope being cut, whereas the star cut needs the denominators 2, 3 and 5; the seven kinds of pieces of the dodecahedron are exactly the I_h-orbits of sign vectors, with stellation layer equal to the number of plus signs. We catalogue the four-dimensional pieces and treat the circumscribed disc, ball and 4-ball. Every number quoted is recomputed exactly by a script whose output is reproduced in an appendix.",
+          "categories": [
+            "math.MG",
+            "cs.CG",
+            "math.NT"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "37 pages, 14 figures; catalogue of the 338 orbits and the output of the exact checks in the appendices",
+          "version": 1,
+          "submittedAt": "2026-10-28T07:08:06Z",
+          "updatedAt": "2026-10-28T07:08:06Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:35.130940+00:00",
+            "contentHash": "f077f40171d0f51ced200188894c8fef309bb41dfd86ca9049f96753d1bbce48"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "精确算术支撑的多胞体剖分",
+          "workSummary": "作者用黄金整数环Z[φ]精确描述顶点、超平面及方向符号，开展120-胞体星形剖分。四维有两种不同截法：深度φ^(−4)的star cut有2,455,201个胞、338个H₄轨道；深度1−φ^(−4)的hereditary cut有8,161个胞、8个轨道，并在各面诱导三维剖分。",
+          "techniques": [
+            "黄金整数环的精确符号判定",
+            "符号向量与H₄轨道枚举",
+            "顶点模及分母分析",
+            "可重算的精确脚本认证"
+          ],
+          "breakthrough": "给出详细四维胞分类，并区分遗传剖分顶点保留原顶点模、星形截法需引入2、3、5分母的算术差异。",
+          "limitations": "两种四维构造及其计数不能混合；内切半径比φ^(−d)在摘要明确验证的是d=2,3,4，不可泛推所有维数。数字由精确脚本重算仍需审查算法及实现。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:45:40.556754+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38369v1",
+            "contentHash": "5bb0f8594f91550ab5330e9f909c94817d1e509327a58f444a5267a12bc3f7f1",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。37页PDF完整提取、页数匹配、无短文本页；全文及元数据披露检索和A.I.、断行/连字符模型名、Danus补检无命中。精确脚本、计算验证或制图本身不是生成式AI使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "90f53ba8114d11eb90317f1b7b9ef072d6a4eac76907c2eb6dd3f55bc36e9100"
+          },
+          "priorityScore": 34,
+          "priorityReason": "主要是组合计算几何与代数数论，离用户几何分析方向较远。",
+          "lowPriorityReason": "主要是组合计算几何与代数数论，离用户几何分析方向较远。"
+        },
+        "analysisBasis": {
+          "abstract": "The diagonals of a regular pentagon dissect it into eleven pieces and draw a pentagram; the dodecahedron dissected by the twelve face planes of its inner core gives Kramer's seven \"elementary cells\" of 1982. We define the stellation dissection of a golden regular polytope in any dimension as the dissection of the convex hull of its final regular stellation by the facet hyperplanes of the core, show that the core has phi^(-d) of the inradius of the hull for d = 2, 3, 4, and carry the dissection out for the first time on the 120-cell. The foundation is the arithmetic of the golden ring Z[phi], the ring of integers of Q(sqrt 5): vertices and hyperplanes live in Z[phi]^d, every orientation test is the exact sign of an element of Z[phi], decided with integers, and the pieces are named by sign vectors. We develop this foundation from scratch (conjugation, norm, units, the primes sqrt 5, 2, 3, the exact sign test, the lattice x -> (x, conj x), the vertex modules of the dodecahedron and the 120-cell, the icosian ring) and let it carry the geometry. The definition bifurcates in dimension four: the star cut at depth phi^(-4), a unit, has 2,455,201 cells in 338 orbits of H4; the hereditary cut at depth 1 - phi^(-4) = sqrt 5 / phi^2, a unit times the ramified prime, induces the three-dimensional dissection on every facet and has 8,161 cells in 8 orbits. New here: all vertices of the dodecahedral and of the hereditary dissection lie in the vertex module of the polytope being cut, whereas the star cut needs the denominators 2, 3 and 5; the seven kinds of pieces of the dodecahedron are exactly the I_h-orbits of sign vectors, with stellation layer equal to the number of plus signs. We catalogue the four-dimensional pieces and treat the circumscribed disc, ball and 4-ball. Every number quoted is recomputed exactly by a script whose output is reproduced in an appendix.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

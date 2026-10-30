@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38905",
+  "slug": "2610.38905",
+  "latest": {
+    "arxivId": "2610.38905",
+    "metadata": {
+      "title": "Analysis of blowup masses in constant-coefficient Toda systems: W-invariants and Weyl orbits",
+      "authors": [
+        "Zhaohu Nie"
+      ],
+      "abstract": "We classify the local blowup masses of constant-coefficient Toda systems for all simple Lie algebras with one prescribed singular source, bounded component masses, and bounded boundary oscillations. We encode the source strengths and the blowup masses by two elements of the Cartan subalgebra: the grading element $p_\\mu$ and the mass element $q_\\sigma$. We show that $p_\\mu-q_\\sigma=wp_\\mu$ for some Weyl group element $w\\in W$. The proof uses the Drinfeld-Sokolov gauge and the resulting holomorphic $W$-invariants for Toda systems. Asymptotic analysis near the source and on a shrinking circle enclosing the total local mass gives two evaluations of the leading Laurent coefficients of the $W$-invariants, which agree by holomorphicity. This agreement enables us to conclude the above Weyl-orbit result. In particular, the quadratic constraint is the local Pohozaev identity. Only with the full set of $W$-invariants can we strengthen earlier orbit-plus-integer restrictions to an exact Weyl-orbit characterization in the constant-coefficient setting. Together with the author's explicit families in [Nie], this determines all attainable local mass vectors.",
+      "categories": [
+        "math.AP",
+        "math.DG",
+        "math.RT"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "18 pages, comments are welcome",
+      "version": 1,
+      "submittedAt": "2026-10-28T21:00:01Z",
+      "updatedAt": "2026-10-28T21:00:01Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:47.269079+00:00",
+        "contentHash": "940afe6ec255936236097d017b6ec3c0dee4def8f80200e94c99820710272c98"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "Toda 爆破质量的精确 Weyl 轨道分类",
+      "workSummary": "对所有简单 Lie 代数的常系数 Toda 系统，在单个指定奇异源、分量质量和边界振荡有界条件下，分类局部爆破质量。将源强与质量编码为 Cartan 子代数中的 p_μ、q_σ，证明 p_μ−q_σ=wp_μ，w 属 Weyl 群。利用 Drinfeld–Sokolov 规范及全套全纯 W 不变量，在源附近和包围总局部质量的缩圆上比较 Laurent 主系数；结合作者既有显式解族，确定所有可实现质量向量。",
+      "techniques": [
+        "Drinfeld–Sokolov 规范",
+        "全纯 W 不变量",
+        "Laurent 主项比较",
+        "Weyl 轨道与 Pohozaev 恒等式"
+      ],
+      "breakthrough": "从二次 Pohozaev 约束提升到全套不变量，消除此前轨道加整数的余量，得到精确可实现集合。",
+      "limitations": "常系数、单奇异源、质量与边界振荡界不可省略；不能直接移植到变系数或多源相互作用。可实现性还依赖所引用的作者显式族。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确用 ChatGPT 进行数学讨论、检查计算及编辑建议，记 exploration、verification、writing；没有将 Toda 的 W 不变量核心路线或具体定理构造归于模型，不标 ideas，也不把核查现有计算扩大为生成全部计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.38905v1 · PDF 第 5 页，Acknowledgment of AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:48:25.701393+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38905v1",
+        "contentHash": "10420234c90faf00543307971856f22d098d25922d9049cdcb545462548348ef",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确用 ChatGPT 进行数学讨论、检查计算及编辑建议，记 exploration、verification、writing；没有将 Toda 的 W 不变量核心路线或具体定理构造归于模型，不标 ideas，也不把核查现有计算扩大为生成全部计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dbd6268586c55e6a3fdb4711a85c436066b755634971cb4ee25d0896c545bee5"
+      },
+      "aiUsage": [
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 89,
+      "priorityReason": "几何方程爆破分析与表示论深度结合，适合优先研究高阶不变量如何补全质量分类。"
+    },
+    "analysisBasis": {
+      "abstract": "We classify the local blowup masses of constant-coefficient Toda systems for all simple Lie algebras with one prescribed singular source, bounded component masses, and bounded boundary oscillations. We encode the source strengths and the blowup masses by two elements of the Cartan subalgebra: the grading element $p_\\mu$ and the mass element $q_\\sigma$. We show that $p_\\mu-q_\\sigma=wp_\\mu$ for some Weyl group element $w\\in W$. The proof uses the Drinfeld-Sokolov gauge and the resulting holomorphic $W$-invariants for Toda systems. Asymptotic analysis near the source and on a shrinking circle enclosing the total local mass gives two evaluations of the leading Laurent coefficients of the $W$-invariants, which agree by holomorphicity. This agreement enables us to conclude the above Weyl-orbit result. In particular, the quadratic constraint is the local Pohozaev identity. Only with the full set of $W$-invariants can we strengthen earlier orbit-plus-integer restrictions to an exact Weyl-orbit characterization in the constant-coefficient setting. Together with the author's explicit families in [Nie], this determines all attainable local mass vectors.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38905",
+        "metadata": {
+          "title": "Analysis of blowup masses in constant-coefficient Toda systems: W-invariants and Weyl orbits",
+          "authors": [
+            "Zhaohu Nie"
+          ],
+          "abstract": "We classify the local blowup masses of constant-coefficient Toda systems for all simple Lie algebras with one prescribed singular source, bounded component masses, and bounded boundary oscillations. We encode the source strengths and the blowup masses by two elements of the Cartan subalgebra: the grading element $p_\\mu$ and the mass element $q_\\sigma$. We show that $p_\\mu-q_\\sigma=wp_\\mu$ for some Weyl group element $w\\in W$. The proof uses the Drinfeld-Sokolov gauge and the resulting holomorphic $W$-invariants for Toda systems. Asymptotic analysis near the source and on a shrinking circle enclosing the total local mass gives two evaluations of the leading Laurent coefficients of the $W$-invariants, which agree by holomorphicity. This agreement enables us to conclude the above Weyl-orbit result. In particular, the quadratic constraint is the local Pohozaev identity. Only with the full set of $W$-invariants can we strengthen earlier orbit-plus-integer restrictions to an exact Weyl-orbit characterization in the constant-coefficient setting. Together with the author's explicit families in [Nie], this determines all attainable local mass vectors.",
+          "categories": [
+            "math.AP",
+            "math.DG",
+            "math.RT"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "18 pages, comments are welcome",
+          "version": 1,
+          "submittedAt": "2026-10-28T21:00:01Z",
+          "updatedAt": "2026-10-28T21:00:01Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:47.269079+00:00",
+            "contentHash": "940afe6ec255936236097d017b6ec3c0dee4def8f80200e94c99820710272c98"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "Toda 爆破质量的精确 Weyl 轨道分类",
+          "workSummary": "对所有简单 Lie 代数的常系数 Toda 系统，在单个指定奇异源、分量质量和边界振荡有界条件下，分类局部爆破质量。将源强与质量编码为 Cartan 子代数中的 p_μ、q_σ，证明 p_μ−q_σ=wp_μ，w 属 Weyl 群。利用 Drinfeld–Sokolov 规范及全套全纯 W 不变量，在源附近和包围总局部质量的缩圆上比较 Laurent 主系数；结合作者既有显式解族，确定所有可实现质量向量。",
+          "techniques": [
+            "Drinfeld–Sokolov 规范",
+            "全纯 W 不变量",
+            "Laurent 主项比较",
+            "Weyl 轨道与 Pohozaev 恒等式"
+          ],
+          "breakthrough": "从二次 Pohozaev 约束提升到全套不变量，消除此前轨道加整数的余量，得到精确可实现集合。",
+          "limitations": "常系数、单奇异源、质量与边界振荡界不可省略；不能直接移植到变系数或多源相互作用。可实现性还依赖所引用的作者显式族。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确用 ChatGPT 进行数学讨论、检查计算及编辑建议，记 exploration、verification、writing；没有将 Toda 的 W 不变量核心路线或具体定理构造归于模型，不标 ideas，也不把核查现有计算扩大为生成全部计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.38905v1 · PDF 第 5 页，Acknowledgment of AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:48:25.701393+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38905v1",
+            "contentHash": "10420234c90faf00543307971856f22d098d25922d9049cdcb545462548348ef",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确用 ChatGPT 进行数学讨论、检查计算及编辑建议，记 exploration、verification、writing；没有将 Toda 的 W 不变量核心路线或具体定理构造归于模型，不标 ideas，也不把核查现有计算扩大为生成全部计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dbd6268586c55e6a3fdb4711a85c436066b755634971cb4ee25d0896c545bee5"
+          },
+          "aiUsage": [
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 89,
+          "priorityReason": "几何方程爆破分析与表示论深度结合，适合优先研究高阶不变量如何补全质量分类。"
+        },
+        "analysisBasis": {
+          "abstract": "We classify the local blowup masses of constant-coefficient Toda systems for all simple Lie algebras with one prescribed singular source, bounded component masses, and bounded boundary oscillations. We encode the source strengths and the blowup masses by two elements of the Cartan subalgebra: the grading element $p_\\mu$ and the mass element $q_\\sigma$. We show that $p_\\mu-q_\\sigma=wp_\\mu$ for some Weyl group element $w\\in W$. The proof uses the Drinfeld-Sokolov gauge and the resulting holomorphic $W$-invariants for Toda systems. Asymptotic analysis near the source and on a shrinking circle enclosing the total local mass gives two evaluations of the leading Laurent coefficients of the $W$-invariants, which agree by holomorphicity. This agreement enables us to conclude the above Weyl-orbit result. In particular, the quadratic constraint is the local Pohozaev identity. Only with the full set of $W$-invariants can we strengthen earlier orbit-plus-integer restrictions to an exact Weyl-orbit characterization in the constant-coefficient setting. Together with the author's explicit families in [Nie], this determines all attainable local mass vectors.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

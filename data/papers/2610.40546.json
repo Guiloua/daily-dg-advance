@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40546",
+  "slug": "2610.40546",
+  "latest": {
+    "arxivId": "2610.40546",
+    "metadata": {
+      "title": "Willmore inequalities beyond the injectivity radius",
+      "authors": [
+        "Philippe G. LeFloch"
+      ],
+      "abstract": "We generalize a method first introduced by Li, Yau, Simon, and Topping (for closed surfaces immersed in the flat Euclidean space), and we establish a global-in-nature estimate, with an explicit cut-locus contribution, on the Willmore energy of closed surfaces that are immersed in a complete Riemannian three-manifold and need not be embedded. Our estimate applies to ambient spaces whose sectional curvature is bounded above and whose injectivity radius may be finite. For positive upper curvature bounds, the global weighted estimates require an explicit radius restriction. The Willmore energy is bounded below by a functional involving the self-intersection number of the surface and the injectivity radius of the ambient space. Furthermore, by investigating in what sense our inequalities are optimal and realized by geodesic spheres in constant curvature spaces, we are led to introduce a weighted version of the Willmore functional, which is adapted to geodesic spheres in the model spaces and takes the sectional curvature of the ambient space into account. As a corollary, we obtain sufficient conditions for an immersed surface in a curved space to be embedded.",
+      "categories": [
+        "math.DG",
+        "gr-qc"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "20 pages",
+      "version": 1,
+      "submittedAt": "2026-10-29T17:37:43Z",
+      "updatedAt": "2026-10-29T17:37:43Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.508773+00:00",
+        "contentHash": "8fd290553119d30afc9ffd86effa215c93aed9c23c4da62d40af3f04a5e3392b"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "有限单射半径背景中的 Willmore 下界",
+      "workSummary": "正文研究完备三维环境中的闭、定向、光滑浸入曲面，H采用两主曲率平均值，W=∫H²。k(Σ)=max_p#φ⁻¹(p)是最大覆盖重数，不是所有自交点的总数。截面曲率非正时，建立含割迹长度的W≥4πk_p−4·Length(φ⁻¹(Cut_p))/inj(Σ;M)等下界，以及由缩放面积/长度误差给出的嵌入充分条件。若Sec≤K>0，整体正权重W_{K,p}=∫H²/sn′_K(r)需D=maxΣdist_p<τ_K=π/(2√K)；局部截断估计仅要求积分半径小于割迹距离与τ_K，不必先把整曲面放入该半径。",
+      "techniques": [
+        "径向向量场的第一变分和割迹BV跳跃散度公式",
+        "平方配方把重数、偏离球面、曲率与割迹贡献分解",
+        "Hessian上曲率比较及以单射半径截断的测试函数",
+        "空间形式径向函数sn_K与两种不同加权Willmore泛函"
+      ],
+      "breakthrough": "明确量化有限单射半径造成经典Euclid重数下界失效的修正：精确分解中非负割迹项以负号出现，而非额外正能量。额外含法向径向因子的修正加权泛函在空间形式测地球上取等号，提供与普通正加权能量不同的锐性描述。",
+      "limitations": "已读PDF第1–8页、13–19页定义、主定理及加权推广。积分均在参数曲面上逐层计数；inj(Σ;M)为浸入像上环境单射半径的下确界，并非整个非紧M的全局下确界。精确割迹分解需H¹(φ⁻¹Cut_p)<∞及文中BV/可积条件，若割迹长度无穷，相应下界只剩扩展实数的平凡式。K>0整体加权结论必须保留D<π/(2√K)，不能泛称任意大范围；正权重W_{K,p}和可有负值、在测地球取等号的修正泛函不是同一对象。嵌入判据为带对应误差/权重的充分条件，不是曲背景无条件W<8π。未逐行核验所有割迹测度论和比较证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "Note on AI use明确说ChatGPT6用于语言编辑、参考文献核验和制图，记writing、literature，不把书目核验误记数学证明核验。补充检索捕获原文Chat-换行GPT的连字符断行形式；未归因核心数学想法或证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40546v1 · PDF 第19页 Note on AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:59:39.540093+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40546v1",
+        "contentHash": "ef663fc7571a23ea1504a0d5ffedc054b5b71c75ebe994a859809a5f5f8d13ba",
+        "pages": 20,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Note on AI use明确说ChatGPT6用于语言编辑、参考文献核验和制图，记writing、literature，不把书目核验误记数学证明核验。补充检索捕获原文Chat-换行GPT的连字符断行形式；未归因核心数学想法或证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bf47f8d3fca72583e3300546e82a6afbbcd4dd984701fac9c8143ff6821445d2"
+      },
+      "aiUsage": [
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "曲面 Willmore 能量、割迹比较及嵌入判据结合，是本组几何分析重点。"
+    },
+    "analysisBasis": {
+      "abstract": "We generalize a method first introduced by Li, Yau, Simon, and Topping (for closed surfaces immersed in the flat Euclidean space), and we establish a global-in-nature estimate, with an explicit cut-locus contribution, on the Willmore energy of closed surfaces that are immersed in a complete Riemannian three-manifold and need not be embedded. Our estimate applies to ambient spaces whose sectional curvature is bounded above and whose injectivity radius may be finite. For positive upper curvature bounds, the global weighted estimates require an explicit radius restriction. The Willmore energy is bounded below by a functional involving the self-intersection number of the surface and the injectivity radius of the ambient space. Furthermore, by investigating in what sense our inequalities are optimal and realized by geodesic spheres in constant curvature spaces, we are led to introduce a weighted version of the Willmore functional, which is adapted to geodesic spheres in the model spaces and takes the sectional curvature of the ambient space into account. As a corollary, we obtain sufficient conditions for an immersed surface in a curved space to be embedded.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40546",
+        "metadata": {
+          "title": "Willmore inequalities beyond the injectivity radius",
+          "authors": [
+            "Philippe G. LeFloch"
+          ],
+          "abstract": "We generalize a method first introduced by Li, Yau, Simon, and Topping (for closed surfaces immersed in the flat Euclidean space), and we establish a global-in-nature estimate, with an explicit cut-locus contribution, on the Willmore energy of closed surfaces that are immersed in a complete Riemannian three-manifold and need not be embedded. Our estimate applies to ambient spaces whose sectional curvature is bounded above and whose injectivity radius may be finite. For positive upper curvature bounds, the global weighted estimates require an explicit radius restriction. The Willmore energy is bounded below by a functional involving the self-intersection number of the surface and the injectivity radius of the ambient space. Furthermore, by investigating in what sense our inequalities are optimal and realized by geodesic spheres in constant curvature spaces, we are led to introduce a weighted version of the Willmore functional, which is adapted to geodesic spheres in the model spaces and takes the sectional curvature of the ambient space into account. As a corollary, we obtain sufficient conditions for an immersed surface in a curved space to be embedded.",
+          "categories": [
+            "math.DG",
+            "gr-qc"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "20 pages",
+          "version": 1,
+          "submittedAt": "2026-10-29T17:37:43Z",
+          "updatedAt": "2026-10-29T17:37:43Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.508773+00:00",
+            "contentHash": "8fd290553119d30afc9ffd86effa215c93aed9c23c4da62d40af3f04a5e3392b"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "有限单射半径背景中的 Willmore 下界",
+          "workSummary": "正文研究完备三维环境中的闭、定向、光滑浸入曲面，H采用两主曲率平均值，W=∫H²。k(Σ)=max_p#φ⁻¹(p)是最大覆盖重数，不是所有自交点的总数。截面曲率非正时，建立含割迹长度的W≥4πk_p−4·Length(φ⁻¹(Cut_p))/inj(Σ;M)等下界，以及由缩放面积/长度误差给出的嵌入充分条件。若Sec≤K>0，整体正权重W_{K,p}=∫H²/sn′_K(r)需D=maxΣdist_p<τ_K=π/(2√K)；局部截断估计仅要求积分半径小于割迹距离与τ_K，不必先把整曲面放入该半径。",
+          "techniques": [
+            "径向向量场的第一变分和割迹BV跳跃散度公式",
+            "平方配方把重数、偏离球面、曲率与割迹贡献分解",
+            "Hessian上曲率比较及以单射半径截断的测试函数",
+            "空间形式径向函数sn_K与两种不同加权Willmore泛函"
+          ],
+          "breakthrough": "明确量化有限单射半径造成经典Euclid重数下界失效的修正：精确分解中非负割迹项以负号出现，而非额外正能量。额外含法向径向因子的修正加权泛函在空间形式测地球上取等号，提供与普通正加权能量不同的锐性描述。",
+          "limitations": "已读PDF第1–8页、13–19页定义、主定理及加权推广。积分均在参数曲面上逐层计数；inj(Σ;M)为浸入像上环境单射半径的下确界，并非整个非紧M的全局下确界。精确割迹分解需H¹(φ⁻¹Cut_p)<∞及文中BV/可积条件，若割迹长度无穷，相应下界只剩扩展实数的平凡式。K>0整体加权结论必须保留D<π/(2√K)，不能泛称任意大范围；正权重W_{K,p}和可有负值、在测地球取等号的修正泛函不是同一对象。嵌入判据为带对应误差/权重的充分条件，不是曲背景无条件W<8π。未逐行核验所有割迹测度论和比较证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "Note on AI use明确说ChatGPT6用于语言编辑、参考文献核验和制图，记writing、literature，不把书目核验误记数学证明核验。补充检索捕获原文Chat-换行GPT的连字符断行形式；未归因核心数学想法或证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40546v1 · PDF 第19页 Note on AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:59:39.540093+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40546v1",
+            "contentHash": "ef663fc7571a23ea1504a0d5ffedc054b5b71c75ebe994a859809a5f5f8d13ba",
+            "pages": 20,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Note on AI use明确说ChatGPT6用于语言编辑、参考文献核验和制图，记writing、literature，不把书目核验误记数学证明核验。补充检索捕获原文Chat-换行GPT的连字符断行形式；未归因核心数学想法或证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bf47f8d3fca72583e3300546e82a6afbbcd4dd984701fac9c8143ff6821445d2"
+          },
+          "aiUsage": [
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "曲面 Willmore 能量、割迹比较及嵌入判据结合，是本组几何分析重点。"
+        },
+        "analysisBasis": {
+          "abstract": "We generalize a method first introduced by Li, Yau, Simon, and Topping (for closed surfaces immersed in the flat Euclidean space), and we establish a global-in-nature estimate, with an explicit cut-locus contribution, on the Willmore energy of closed surfaces that are immersed in a complete Riemannian three-manifold and need not be embedded. Our estimate applies to ambient spaces whose sectional curvature is bounded above and whose injectivity radius may be finite. For positive upper curvature bounds, the global weighted estimates require an explicit radius restriction. The Willmore energy is bounded below by a functional involving the self-intersection number of the surface and the injectivity radius of the ambient space. Furthermore, by investigating in what sense our inequalities are optimal and realized by geodesic spheres in constant curvature spaces, we are led to introduce a weighted version of the Willmore functional, which is adapted to geodesic spheres in the model spaces and takes the sectional curvature of the ambient space into account. As a corollary, we obtain sufficient conditions for an immersed surface in a curved space to be embedded.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

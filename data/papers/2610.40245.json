@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40245",
+  "slug": "2610.40245",
+  "latest": {
+    "arxivId": "2610.40245",
+    "metadata": {
+      "title": "Skein reduction and stabilization for the odd Khovanov spectra of $T(2,m)\\sqcup T(2,n)$",
+      "authors": [
+        "Krishnendu Kar"
+      ],
+      "abstract": "For split links the even Khovanov spectrum is a smash product of the spectra of the pieces; the odd one is not. For $T(2,m)\\sqcup T(2,n)$ we show that the odd spectrum is, in each quantum grading, a wedge of spheres and copies of a suspension of $\\mathbb{CP}^{2}$. Using the skein cofiber sequence at the level of spectra, we prove that for fixed $q-m-n$ the number of these copies is determined by finitely many small links and stabilizes for large $m$ and $n$. The $\\mathbb{CP}^{2}$ summand of $T(2,3)\\sqcup T(2,3)$, due to Schütz and Rajapakse, persists in quantum grading $m+n+8$ for all $m,n\\ge3$. We conjecture that the number of copies of $\\mathbb{CP}^{2}$ equals the number of copies of $\\mathbb{RP}^{2}\\wedge\\mathbb{RP}^{2}$ in the even spectrum.",
+      "categories": [
+        "math.GT",
+        "math.AT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "37 pages, 6 figures, 2 tables",
+      "version": 1,
+      "submittedAt": "2026-10-29T15:16:15Z",
+      "updatedAt": "2026-10-29T15:16:15Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-10-30T06:40:12.317184+00:00",
+        "contentHash": "4a7be26d92eef333503b35d9d4eb605e9476b3b99a1d593ab86021df76084e0e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.506485+00:00",
+        "contentHash": "b18cec42d5e353704610bdb889c330af9200f4fdab0a80681e50ff1181820c5a"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "奇 Khovanov 谱的稳定楔和分解",
+      "workSummary": "对分裂链环 T(2,m)⊔T(2,n)，证明每个量子分次的奇 Khovanov 谱是球面与悬挂 CP² 的楔和；固定 q−m−n 时，CP² 项数量由有限小链环决定并在 m、n 足够大时稳定。已知双三叶结例的 CP² 项在 m,n≥3 的量子分次 m+n+8 持续存在。",
+      "techniques": [
+        "谱层面的 skein 余纤维序列",
+        "量子分次稳定性",
+        "有限小例归约"
+      ],
+      "breakthrough": "把奇谱不同于偶谱 smash product 的现象转为可控的稳定 CP² 成分。",
+      "limitations": "CP² 数量等于偶谱中 RP²∧RP² 数量在本文仍是猜想；已证明的稳定性有固定分次偏移和大参数条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Tool use明确披露Claude辅助LaTeX编辑排版、TikZ制图、参考文献查找核对、部分表述与证明检查；同时数学主思想、结果、证明由作者发展。记writing、literature、verification，不记ideas/proofs。Sq²秩由普通程序KnotJob计算，不能误归AI computation。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40245v1 · PDF 第36页 Tool use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:57:39.281529+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40245v1",
+        "contentHash": "6ca546ac643220951c63832dbb76b676e62f2deda366e3f71d9d6cd097df3b37",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool use明确披露Claude辅助LaTeX编辑排版、TikZ制图、参考文献查找核对、部分表述与证明检查；同时数学主思想、结果、证明由作者发展。记writing、literature、verification，不记ideas/proofs。Sq²秩由普通程序KnotJob计算，不能误归AI computation。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0dea2e9f1c97c3757ba7b297f33f81231d608f2d4d639dca52786ee6edacab1d"
+      },
+      "aiUsage": [
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 46,
+      "priorityReason": "低维同伦不变量的专题计算，与主要几何分析重点距离较远。",
+      "lowPriorityReason": "低维同伦不变量的专题计算，与主要几何分析重点距离较远。"
+    },
+    "analysisBasis": {
+      "abstract": "For split links the even Khovanov spectrum is a smash product of the spectra of the pieces; the odd one is not. For $T(2,m)\\sqcup T(2,n)$ we show that the odd spectrum is, in each quantum grading, a wedge of spheres and copies of a suspension of $\\mathbb{CP}^{2}$. Using the skein cofiber sequence at the level of spectra, we prove that for fixed $q-m-n$ the number of these copies is determined by finitely many small links and stabilizes for large $m$ and $n$. The $\\mathbb{CP}^{2}$ summand of $T(2,3)\\sqcup T(2,3)$, due to Schütz and Rajapakse, persists in quantum grading $m+n+8$ for all $m,n\\ge3$. We conjecture that the number of copies of $\\mathbb{CP}^{2}$ equals the number of copies of $\\mathbb{RP}^{2}\\wedge\\mathbb{RP}^{2}$ in the even spectrum.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40245",
+        "metadata": {
+          "title": "Skein reduction and stabilization for the odd Khovanov spectra of $T(2,m)\\sqcup T(2,n)$",
+          "authors": [
+            "Krishnendu Kar"
+          ],
+          "abstract": "For split links the even Khovanov spectrum is a smash product of the spectra of the pieces; the odd one is not. For $T(2,m)\\sqcup T(2,n)$ we show that the odd spectrum is, in each quantum grading, a wedge of spheres and copies of a suspension of $\\mathbb{CP}^{2}$. Using the skein cofiber sequence at the level of spectra, we prove that for fixed $q-m-n$ the number of these copies is determined by finitely many small links and stabilizes for large $m$ and $n$. The $\\mathbb{CP}^{2}$ summand of $T(2,3)\\sqcup T(2,3)$, due to Schütz and Rajapakse, persists in quantum grading $m+n+8$ for all $m,n\\ge3$. We conjecture that the number of copies of $\\mathbb{CP}^{2}$ equals the number of copies of $\\mathbb{RP}^{2}\\wedge\\mathbb{RP}^{2}$ in the even spectrum.",
+          "categories": [
+            "math.GT",
+            "math.AT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "37 pages, 6 figures, 2 tables",
+          "version": 1,
+          "submittedAt": "2026-10-29T15:16:15Z",
+          "updatedAt": "2026-10-29T15:16:15Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-10-30T06:40:12.317184+00:00",
+            "contentHash": "4a7be26d92eef333503b35d9d4eb605e9476b3b99a1d593ab86021df76084e0e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.506485+00:00",
+            "contentHash": "b18cec42d5e353704610bdb889c330af9200f4fdab0a80681e50ff1181820c5a"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "奇 Khovanov 谱的稳定楔和分解",
+          "workSummary": "对分裂链环 T(2,m)⊔T(2,n)，证明每个量子分次的奇 Khovanov 谱是球面与悬挂 CP² 的楔和；固定 q−m−n 时，CP² 项数量由有限小链环决定并在 m、n 足够大时稳定。已知双三叶结例的 CP² 项在 m,n≥3 的量子分次 m+n+8 持续存在。",
+          "techniques": [
+            "谱层面的 skein 余纤维序列",
+            "量子分次稳定性",
+            "有限小例归约"
+          ],
+          "breakthrough": "把奇谱不同于偶谱 smash product 的现象转为可控的稳定 CP² 成分。",
+          "limitations": "CP² 数量等于偶谱中 RP²∧RP² 数量在本文仍是猜想；已证明的稳定性有固定分次偏移和大参数条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Tool use明确披露Claude辅助LaTeX编辑排版、TikZ制图、参考文献查找核对、部分表述与证明检查；同时数学主思想、结果、证明由作者发展。记writing、literature、verification，不记ideas/proofs。Sq²秩由普通程序KnotJob计算，不能误归AI computation。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40245v1 · PDF 第36页 Tool use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:57:39.281529+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40245v1",
+            "contentHash": "6ca546ac643220951c63832dbb76b676e62f2deda366e3f71d9d6cd097df3b37",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Tool use明确披露Claude辅助LaTeX编辑排版、TikZ制图、参考文献查找核对、部分表述与证明检查；同时数学主思想、结果、证明由作者发展。记writing、literature、verification，不记ideas/proofs。Sq²秩由普通程序KnotJob计算，不能误归AI computation。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0dea2e9f1c97c3757ba7b297f33f81231d608f2d4d639dca52786ee6edacab1d"
+          },
+          "aiUsage": [
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 46,
+          "priorityReason": "低维同伦不变量的专题计算，与主要几何分析重点距离较远。",
+          "lowPriorityReason": "低维同伦不变量的专题计算，与主要几何分析重点距离较远。"
+        },
+        "analysisBasis": {
+          "abstract": "For split links the even Khovanov spectrum is a smash product of the spectra of the pieces; the odd one is not. For $T(2,m)\\sqcup T(2,n)$ we show that the odd spectrum is, in each quantum grading, a wedge of spheres and copies of a suspension of $\\mathbb{CP}^{2}$. Using the skein cofiber sequence at the level of spectra, we prove that for fixed $q-m-n$ the number of these copies is determined by finitely many small links and stabilizes for large $m$ and $n$. The $\\mathbb{CP}^{2}$ summand of $T(2,3)\\sqcup T(2,3)$, due to Schütz and Rajapakse, persists in quantum grading $m+n+8$ for all $m,n\\ge3$. We conjecture that the number of copies of $\\mathbb{CP}^{2}$ equals the number of copies of $\\mathbb{RP}^{2}\\wedge\\mathbb{RP}^{2}$ in the even spectrum.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40288",
+  "slug": "2610.40288",
+  "latest": {
+    "arxivId": "2610.40288",
+    "metadata": {
+      "title": "Levi-Civita's type theorem for projectively equivalent sub-Riemannian metrics on step 2 distributions",
+      "authors": [
+        "Christopher Sinkule",
+        "Igor Zelenko"
+      ],
+      "abstract": "This paper extends the classical results of Eisenhart (1923) and Levi-Civita (1896) on the classification of pairs of germs of Riemannian metrics with the same geodesics, either as parametrized curves (affine equivalence) or as unparametrized curves (projective equivalence), to sub-Riemannian metrics on arbitrary step 2 distributions: at every stable point in the projective case and at every point in the affine case. This extends the results of Zelenko (2004) for contact and even-contact distributions and the affine result of Lin and Zelenko (2024) for step 2 distributions with ad-surjective Tanaka symbols; our projective result covers the ad-surjective case as well. In the affine case, we prove that if a sub-Riemannian metric admits an affinely equivalent metric that is not constantly proportional to it, then locally it is a product of two sub-Riemannian metrics. In the projective case, we prove the 2019 conjecture of Jean, Maslovskaya, and Zelenko on generalized Levi-Civita pairs; in particular, the distribution admits a product structure, the squares of its components are involutive, and the restrictions of the two metrics to each leaf of the corresponding foliation are conformal to each other under the appropriate pullback. The proof is based on a new graph-theoretic formalism, in which compatible moving frames are represented by the vertices and edges of certain graphs. As a byproduct, we introduce a new discrete invariant of step 2 nilpotent graded Lie algebras, the characteristic tuple. The compatible graphs are used on the open dense set where this tuple is locally constant; the resulting bracket relations are identities between smooth tensors, so they extend by continuity across the points where the tuple jumps. Consequently, our classification holds without any assumption of local constancy of the characteristic tuple.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "81 pages, 1 table. Based on the PhD thesis of the first author, written under the supervision of the second author and defended at Texas A&M University in September 2026",
+      "version": 1,
+      "submittedAt": "2026-10-29T15:39:10Z",
+      "updatedAt": "2026-10-29T15:39:10Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.507095+00:00",
+        "contentHash": "dc3b96ecb4713e5109db2e83c579775ddf0dadb84a563fbcf82d06485f6ce26e"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "二步亚黎曼度量的射影等价分类",
+      "workSummary": "将 Eisenhart/Levi-Civita 同测地线度量分类推广至任意二步分布上的亚黎曼度量芽：仿射等价在每点成立，射影等价在每个稳定点成立。若有非恒比例的仿射等价度量，则局部具有亚黎曼乘积；射影情形证明 Jean–Maslovskaya–Zelenko 的 generalized Levi-Civita pairs 猜想，得到分布乘积、分量平方可积及叶上适当拉回后的共形关系。",
+      "techniques": [
+        "相容移动标架的图论形式",
+        "二步分次 Lie 代数的 characteristic tuple",
+        "稠密开集上的括号恒等式向跳变点连续延拓"
+      ],
+      "breakthrough": "去掉此前 ad-surjective Tanaka symbol 的限制，并说明无需假设新离散特征元组局部常值。",
+      "limitations": "分类是局部度量芽；射影情形仍限制稳定点，不能等同任意点或全局流形分类。非恒比例条件对乘积分裂必要。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Disclosure明确列出Claude Opus5.5、Claude Fable5.1及ChatGPT Astra6用于编辑与主定理多步骤证明完整性核验。模型具体建议去掉characteristic tuple常值假设（作者实施于10.1），并修正Lemma8.8增加项，从而决定Proposition8.12消元顺序；还辅助例子构造。这是明确核心假设改进和消元路线的有限ideas/论证修正，另记verification、proofs、writing，不把其余作者证明都归模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40288v1 · PDF 第9页第1.5节 Disclosure of the use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:58:14.559300+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40288v1",
+        "contentHash": "0bf0bd13e0bbee83be5707affd472355a01b91ea5eb7bdb98eaa1b004c074c2a",
+        "pages": 81,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Disclosure明确列出Claude Opus5.5、Claude Fable5.1及ChatGPT Astra6用于编辑与主定理多步骤证明完整性核验。模型具体建议去掉characteristic tuple常值假设（作者实施于10.1），并修正Lemma8.8增加项，从而决定Proposition8.12消元顺序；还辅助例子构造。这是明确核心假设改进和消元路线的有限ideas/论证修正，另记verification、proofs、writing，不把其余作者证明都归模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b7afa88b4eac2916b409edfc9703b9ff857f9ea5196298699ed3aef90c4e8114"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 87,
+      "priorityReason": "亚黎曼结构与测地线刚性的重要分类推进，值得特殊几何重点阅读。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper extends the classical results of Eisenhart (1923) and Levi-Civita (1896) on the classification of pairs of germs of Riemannian metrics with the same geodesics, either as parametrized curves (affine equivalence) or as unparametrized curves (projective equivalence), to sub-Riemannian metrics on arbitrary step 2 distributions: at every stable point in the projective case and at every point in the affine case. This extends the results of Zelenko (2004) for contact and even-contact distributions and the affine result of Lin and Zelenko (2024) for step 2 distributions with ad-surjective Tanaka symbols; our projective result covers the ad-surjective case as well. In the affine case, we prove that if a sub-Riemannian metric admits an affinely equivalent metric that is not constantly proportional to it, then locally it is a product of two sub-Riemannian metrics. In the projective case, we prove the 2019 conjecture of Jean, Maslovskaya, and Zelenko on generalized Levi-Civita pairs; in particular, the distribution admits a product structure, the squares of its components are involutive, and the restrictions of the two metrics to each leaf of the corresponding foliation are conformal to each other under the appropriate pullback. The proof is based on a new graph-theoretic formalism, in which compatible moving frames are represented by the vertices and edges of certain graphs. As a byproduct, we introduce a new discrete invariant of step 2 nilpotent graded Lie algebras, the characteristic tuple. The compatible graphs are used on the open dense set where this tuple is locally constant; the resulting bracket relations are identities between smooth tensors, so they extend by continuity across the points where the tuple jumps. Consequently, our classification holds without any assumption of local constancy of the characteristic tuple.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40288",
+        "metadata": {
+          "title": "Levi-Civita's type theorem for projectively equivalent sub-Riemannian metrics on step 2 distributions",
+          "authors": [
+            "Christopher Sinkule",
+            "Igor Zelenko"
+          ],
+          "abstract": "This paper extends the classical results of Eisenhart (1923) and Levi-Civita (1896) on the classification of pairs of germs of Riemannian metrics with the same geodesics, either as parametrized curves (affine equivalence) or as unparametrized curves (projective equivalence), to sub-Riemannian metrics on arbitrary step 2 distributions: at every stable point in the projective case and at every point in the affine case. This extends the results of Zelenko (2004) for contact and even-contact distributions and the affine result of Lin and Zelenko (2024) for step 2 distributions with ad-surjective Tanaka symbols; our projective result covers the ad-surjective case as well. In the affine case, we prove that if a sub-Riemannian metric admits an affinely equivalent metric that is not constantly proportional to it, then locally it is a product of two sub-Riemannian metrics. In the projective case, we prove the 2019 conjecture of Jean, Maslovskaya, and Zelenko on generalized Levi-Civita pairs; in particular, the distribution admits a product structure, the squares of its components are involutive, and the restrictions of the two metrics to each leaf of the corresponding foliation are conformal to each other under the appropriate pullback. The proof is based on a new graph-theoretic formalism, in which compatible moving frames are represented by the vertices and edges of certain graphs. As a byproduct, we introduce a new discrete invariant of step 2 nilpotent graded Lie algebras, the characteristic tuple. The compatible graphs are used on the open dense set where this tuple is locally constant; the resulting bracket relations are identities between smooth tensors, so they extend by continuity across the points where the tuple jumps. Consequently, our classification holds without any assumption of local constancy of the characteristic tuple.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "81 pages, 1 table. Based on the PhD thesis of the first author, written under the supervision of the second author and defended at Texas A&M University in September 2026",
+          "version": 1,
+          "submittedAt": "2026-10-29T15:39:10Z",
+          "updatedAt": "2026-10-29T15:39:10Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.507095+00:00",
+            "contentHash": "dc3b96ecb4713e5109db2e83c579775ddf0dadb84a563fbcf82d06485f6ce26e"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "二步亚黎曼度量的射影等价分类",
+          "workSummary": "将 Eisenhart/Levi-Civita 同测地线度量分类推广至任意二步分布上的亚黎曼度量芽：仿射等价在每点成立，射影等价在每个稳定点成立。若有非恒比例的仿射等价度量，则局部具有亚黎曼乘积；射影情形证明 Jean–Maslovskaya–Zelenko 的 generalized Levi-Civita pairs 猜想，得到分布乘积、分量平方可积及叶上适当拉回后的共形关系。",
+          "techniques": [
+            "相容移动标架的图论形式",
+            "二步分次 Lie 代数的 characteristic tuple",
+            "稠密开集上的括号恒等式向跳变点连续延拓"
+          ],
+          "breakthrough": "去掉此前 ad-surjective Tanaka symbol 的限制，并说明无需假设新离散特征元组局部常值。",
+          "limitations": "分类是局部度量芽；射影情形仍限制稳定点，不能等同任意点或全局流形分类。非恒比例条件对乘积分裂必要。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Disclosure明确列出Claude Opus5.5、Claude Fable5.1及ChatGPT Astra6用于编辑与主定理多步骤证明完整性核验。模型具体建议去掉characteristic tuple常值假设（作者实施于10.1），并修正Lemma8.8增加项，从而决定Proposition8.12消元顺序；还辅助例子构造。这是明确核心假设改进和消元路线的有限ideas/论证修正，另记verification、proofs、writing，不把其余作者证明都归模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40288v1 · PDF 第9页第1.5节 Disclosure of the use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:58:14.559300+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40288v1",
+            "contentHash": "0bf0bd13e0bbee83be5707affd472355a01b91ea5eb7bdb98eaa1b004c074c2a",
+            "pages": 81,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Disclosure明确列出Claude Opus5.5、Claude Fable5.1及ChatGPT Astra6用于编辑与主定理多步骤证明完整性核验。模型具体建议去掉characteristic tuple常值假设（作者实施于10.1），并修正Lemma8.8增加项，从而决定Proposition8.12消元顺序；还辅助例子构造。这是明确核心假设改进和消元路线的有限ideas/论证修正，另记verification、proofs、writing，不把其余作者证明都归模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b7afa88b4eac2916b409edfc9703b9ff857f9ea5196298699ed3aef90c4e8114"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 87,
+          "priorityReason": "亚黎曼结构与测地线刚性的重要分类推进，值得特殊几何重点阅读。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper extends the classical results of Eisenhart (1923) and Levi-Civita (1896) on the classification of pairs of germs of Riemannian metrics with the same geodesics, either as parametrized curves (affine equivalence) or as unparametrized curves (projective equivalence), to sub-Riemannian metrics on arbitrary step 2 distributions: at every stable point in the projective case and at every point in the affine case. This extends the results of Zelenko (2004) for contact and even-contact distributions and the affine result of Lin and Zelenko (2024) for step 2 distributions with ad-surjective Tanaka symbols; our projective result covers the ad-surjective case as well. In the affine case, we prove that if a sub-Riemannian metric admits an affinely equivalent metric that is not constantly proportional to it, then locally it is a product of two sub-Riemannian metrics. In the projective case, we prove the 2019 conjecture of Jean, Maslovskaya, and Zelenko on generalized Levi-Civita pairs; in particular, the distribution admits a product structure, the squares of its components are involutive, and the restrictions of the two metrics to each leaf of the corresponding foliation are conformal to each other under the appropriate pullback. The proof is based on a new graph-theoretic formalism, in which compatible moving frames are represented by the vertices and edges of certain graphs. As a byproduct, we introduce a new discrete invariant of step 2 nilpotent graded Lie algebras, the characteristic tuple. The compatible graphs are used on the open dense set where this tuple is locally constant; the resulting bracket relations are identities between smooth tensors, so they extend by continuity across the points where the tuple jumps. Consequently, our classification holds without any assumption of local constancy of the characteristic tuple.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

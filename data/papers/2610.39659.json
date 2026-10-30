@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39659",
+  "slug": "2610.39659",
+  "latest": {
+    "arxivId": "2610.39659",
+    "metadata": {
+      "title": "A new sharp Sobolev inequality between the $Q$-curvature and the scalar curvature on Euclidean space",
+      "authors": [
+        "Rupert L. Frank",
+        "Yuxin Ge",
+        "Guofang Wang",
+        "Wei Wei"
+      ],
+      "abstract": "We establish a sharp Sobolev-type inequality on $\\mathbb{R}^n$, $n\\geq 5$, that interpolates between the second-order energy and a weighted first-order term. Specifically, we determine the sharp constant $S_{4,2}$ in the inequality \\begin{equation*} \\int_{\\mathbb R^n} (\\Delta u)^2\\,dx \\ge S_{4,2} \\left(\\int_{\\mathbb{R}^n}|\\nabla u|^{2}|u|^{\\frac{4}{n-4}}\\,dx\\right)^{\\frac{n-4}{n-2}}, \\end{equation*} for any $u\\in\\dot H^2(\\mathbb{R}^n)$, and we classify the cases of equality. This solves the problem of minimizing the total $Q$-curvature of among metrics on the sphere, conformal to the standard metric, with fixed total scalar curvature.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-10-29T09:12:50Z",
+      "updatedAt": "2026-10-29T09:12:50Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.39659v1",
+        "observedAt": "2026-10-30T06:42:28.562078+00:00",
+        "contentHash": "952ad93d2b81c127b089a1374fc335aee7aee4f9fb36434c30f8ecefd92ab85e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.716239+00:00",
+        "contentHash": "b7d5adc4419db4b8be731ca05ee163a3bcb09d9f817375a8538a05b2c175a3a2"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "Q 曲率与标量曲率之间的尖锐 Sobolev 不等式",
+      "workSummary": "n≥5 时，对任意实值 u∈齐次H²(Rn)，确定尖锐常数使 ∫(Δu)²≥S4,2(∫|∇u|²|u|^(4/(n−4)))^((n−4)/(n−2))。所有等号函数为实常数倍的标准泡 (2λ/(λ²+|x−x0|²))^((n−4)/2)。球面对应结论在标准球的共形类中比较总Q曲率和总标量曲率，并去掉已有版本的点态 Rg>0 要求；等号为缩放的Möbius拉回圆度量。",
+      "techniques": [
+        "极小序列的集中紧性与平移/伸缩归一化",
+        "对称递减重排及Talenti定理",
+        "积分方程分类与Li–Zhu引理",
+        "替代ODE分类"
+      ],
+      "breakthrough": "得到新的二阶与加权一阶能量间尖锐比较和完整等号分类；球面结果不需点态正标量曲率，但仍在圆球共形类中，总标量曲率为正。",
+      "limitations": "已补读第1–3页主定理、等号和紧性路线，未逐步核验后续分类。n≥5及齐次H²空间不可省略；不声称对任意共形流形或其他高阶GJMS算子同样成立。尖锐常数的完整Γ函数表达见正文定理1.2。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确使用 ChatGPT 协助语言编辑和呈现，最终数学论证与证明由作者检查并撰写。仅标 writing，不将作者的证明或核验行为记为模型贡献。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.39659v1 · PDF 第 16 页，On the use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:42:28.562078+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39659v1",
+        "contentHash": "952ad93d2b81c127b089a1374fc335aee7aee4f9fb36434c30f8ecefd92ab85e",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 ChatGPT 协助语言编辑和呈现，最终数学论证与证明由作者检查并撰写。仅标 writing，不将作者的证明或核验行为记为模型贡献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0116c6ebc9ad572da108c83e5281b6d45b89c6946670b45d60195275c26c5aa4"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "尖锐几何不等式与共形变分直接相关，属于当日首读。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a sharp Sobolev-type inequality on $\\mathbb{R}^n$, $n\\geq 5$, that interpolates between the second-order energy and a weighted first-order term. Specifically, we determine the sharp constant $S_{4,2}$ in the inequality \\begin{equation*} \\int_{\\mathbb R^n} (\\Delta u)^2\\,dx \\ge S_{4,2} \\left(\\int_{\\mathbb{R}^n}|\\nabla u|^{2}|u|^{\\frac{4}{n-4}}\\,dx\\right)^{\\frac{n-4}{n-2}}, \\end{equation*} for any $u\\in\\dot H^2(\\mathbb{R}^n)$, and we classify the cases of equality. This solves the problem of minimizing the total $Q$-curvature of among metrics on the sphere, conformal to the standard metric, with fixed total scalar curvature.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39659",
+        "metadata": {
+          "title": "A new sharp Sobolev inequality between the $Q$-curvature and the scalar curvature on Euclidean space",
+          "authors": [
+            "Rupert L. Frank",
+            "Yuxin Ge",
+            "Guofang Wang",
+            "Wei Wei"
+          ],
+          "abstract": "We establish a sharp Sobolev-type inequality on $\\mathbb{R}^n$, $n\\geq 5$, that interpolates between the second-order energy and a weighted first-order term. Specifically, we determine the sharp constant $S_{4,2}$ in the inequality \\begin{equation*} \\int_{\\mathbb R^n} (\\Delta u)^2\\,dx \\ge S_{4,2} \\left(\\int_{\\mathbb{R}^n}|\\nabla u|^{2}|u|^{\\frac{4}{n-4}}\\,dx\\right)^{\\frac{n-4}{n-2}}, \\end{equation*} for any $u\\in\\dot H^2(\\mathbb{R}^n)$, and we classify the cases of equality. This solves the problem of minimizing the total $Q$-curvature of among metrics on the sphere, conformal to the standard metric, with fixed total scalar curvature.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-10-29T09:12:50Z",
+          "updatedAt": "2026-10-29T09:12:50Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.39659v1",
+            "observedAt": "2026-10-30T06:42:28.562078+00:00",
+            "contentHash": "952ad93d2b81c127b089a1374fc335aee7aee4f9fb36434c30f8ecefd92ab85e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.716239+00:00",
+            "contentHash": "b7d5adc4419db4b8be731ca05ee163a3bcb09d9f817375a8538a05b2c175a3a2"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "Q 曲率与标量曲率之间的尖锐 Sobolev 不等式",
+          "workSummary": "n≥5 时，对任意实值 u∈齐次H²(Rn)，确定尖锐常数使 ∫(Δu)²≥S4,2(∫|∇u|²|u|^(4/(n−4)))^((n−4)/(n−2))。所有等号函数为实常数倍的标准泡 (2λ/(λ²+|x−x0|²))^((n−4)/2)。球面对应结论在标准球的共形类中比较总Q曲率和总标量曲率，并去掉已有版本的点态 Rg>0 要求；等号为缩放的Möbius拉回圆度量。",
+          "techniques": [
+            "极小序列的集中紧性与平移/伸缩归一化",
+            "对称递减重排及Talenti定理",
+            "积分方程分类与Li–Zhu引理",
+            "替代ODE分类"
+          ],
+          "breakthrough": "得到新的二阶与加权一阶能量间尖锐比较和完整等号分类；球面结果不需点态正标量曲率，但仍在圆球共形类中，总标量曲率为正。",
+          "limitations": "已补读第1–3页主定理、等号和紧性路线，未逐步核验后续分类。n≥5及齐次H²空间不可省略；不声称对任意共形流形或其他高阶GJMS算子同样成立。尖锐常数的完整Γ函数表达见正文定理1.2。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确使用 ChatGPT 协助语言编辑和呈现，最终数学论证与证明由作者检查并撰写。仅标 writing，不将作者的证明或核验行为记为模型贡献。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.39659v1 · PDF 第 16 页，On the use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:42:28.562078+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39659v1",
+            "contentHash": "952ad93d2b81c127b089a1374fc335aee7aee4f9fb36434c30f8ecefd92ab85e",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 ChatGPT 协助语言编辑和呈现，最终数学论证与证明由作者检查并撰写。仅标 writing，不将作者的证明或核验行为记为模型贡献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0116c6ebc9ad572da108c83e5281b6d45b89c6946670b45d60195275c26c5aa4"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "尖锐几何不等式与共形变分直接相关，属于当日首读。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a sharp Sobolev-type inequality on $\\mathbb{R}^n$, $n\\geq 5$, that interpolates between the second-order energy and a weighted first-order term. Specifically, we determine the sharp constant $S_{4,2}$ in the inequality \\begin{equation*} \\int_{\\mathbb R^n} (\\Delta u)^2\\,dx \\ge S_{4,2} \\left(\\int_{\\mathbb{R}^n}|\\nabla u|^{2}|u|^{\\frac{4}{n-4}}\\,dx\\right)^{\\frac{n-4}{n-2}}, \\end{equation*} for any $u\\in\\dot H^2(\\mathbb{R}^n)$, and we classify the cases of equality. This solves the problem of minimizing the total $Q$-curvature of among metrics on the sphere, conformal to the standard metric, with fixed total scalar curvature.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

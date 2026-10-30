@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37886",
+  "slug": "2610.37886",
+  "latest": {
+    "arxivId": "2610.37886",
+    "metadata": {
+      "title": "An $L^2$ Ahlfors--Beurling inequality in every dimension",
+      "authors": [
+        "Guofang Wang",
+        "Mingwei Zhang"
+      ],
+      "abstract": "Let $\\Omega\\subset\\mathbb{R}^N$ ($N\\geq2$) be measurable with $0<|\\Omega|<\\infty$, and let $u_\\Omega$ be its logarithmic potential ($N=2$) or Newtonian potential ($N\\geq3$), normalized so that $\\Delta u_\\Omega=\\chi_\\Omega$. We prove the sharp inequality \\[ \\int_\\Omega|\\nabla u_\\Omega|^2\\,\\mathrm{d} x \\leq\\frac{1}{2N\\omega_{N-1}} \\iint_{\\Omega\\times\\Omega}\\frac{\\mathrm{d} x\\,\\mathrm{d} y}{|x-y|^{N-2}}, \\] where $\\omega_{N-1}=|\\mathbb{S}^{N-1}|$, with equality if and only if $\\Omega$ is a ball up to a null set. In dimension two this settles the $L^2$ Ahlfors--Beurling conjecture of Fleeman and Khavinson. For $N\\ge3$ it is equivalent to the scale-free bound that at most the fraction $(N-2)/(2N)$ of the total field energy lies inside $\\Omega$. We also obtain an explicit deficit identity, a sharp extension to bounded nonnegative densities, and consequences for torsional rigidity, Bergman analytic content, Brownian motion, and aggregation equations.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "29 pages",
+      "version": 1,
+      "submittedAt": "2026-10-27T19:26:28Z",
+      "updatedAt": "2026-10-27T19:26:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.37886v1",
+        "observedAt": "2026-10-30T06:43:31.290487+00:00",
+        "contentHash": "6818efe166197c434dc5090f947844e4d5ebae4b2150165de15497b50f59232e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:35.126542+00:00",
+        "contentHash": "f5485a60523dce9a68e188552ec7fd43d0755b1919ab0663656dac3733e3b026"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "尖锐势能不等式与刚性",
+      "workSummary": "对 R^N 中任意有限正测度可测集 Ω（N≥2），令其对数或 Newton 势满足 Δu_Ω=χ_Ω，作者证明 Ω 内梯度能量不超过核 |x−y|^(2−N) 双积分的 1/(2N|S^(N−1)|) 倍，等号当且仅当 Ω 在零测集意义下为球。N=2 时作者称由此解决 Fleeman–Khavinson 的 L² Ahlfors–Beurling 猜想。",
+      "techniques": [
+        "对数及 Newton 势的场能估计",
+        "显式亏损恒等式",
+        "球的等号刚性",
+        "有界非负密度推广"
+      ],
+      "breakthrough": "得到所有维数的同一尖锐形式；N≥3 时等价于内部场能至多占总场能的 (N−2)/(2N)，并联系扭转刚度、Bergman 解析含量、Brown 运动及聚集方程。",
+      "limitations": "必须保留势的 Δu=χ_Ω 规范及有限正体积；二维不能用高维总场能比例直接表述。猜想解决仍是预印本作者声称，密度推广的常数与等号条件未由摘要展开。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确Claude（Anthropic）帮助检查计算，并改善部分应用的表述，作者承担内容责任。仅标计算核查与写作，不推断其证明主不等式或核心构思；Anthropic在原文跨行写为An-thropic，已额外核验同一声明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.37886v1 · PDF第27页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:43:31.290487+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37886v1",
+        "contentHash": "6818efe166197c434dc5090f947844e4d5ebae4b2150165de15497b50f59232e",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确Claude（Anthropic）帮助检查计算，并改善部分应用的表述，作者承担内容责任。仅标计算核查与写作，不推断其证明主不等式或核心构思；Anthropic在原文跨行写为An-thropic，已额外核验同一声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e5a3cdb1985b7ede8941f8dbdcbf1cc330b1b9390db9014bc518dbc6e9bfe90d"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "尖锐几何分析不等式、势理论及等号刚性高度相关，值得优先阅读证明。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\Omega\\subset\\mathbb{R}^N$ ($N\\geq2$) be measurable with $0<|\\Omega|<\\infty$, and let $u_\\Omega$ be its logarithmic potential ($N=2$) or Newtonian potential ($N\\geq3$), normalized so that $\\Delta u_\\Omega=\\chi_\\Omega$. We prove the sharp inequality \\[ \\int_\\Omega|\\nabla u_\\Omega|^2\\,\\mathrm{d} x \\leq\\frac{1}{2N\\omega_{N-1}} \\iint_{\\Omega\\times\\Omega}\\frac{\\mathrm{d} x\\,\\mathrm{d} y}{|x-y|^{N-2}}, \\] where $\\omega_{N-1}=|\\mathbb{S}^{N-1}|$, with equality if and only if $\\Omega$ is a ball up to a null set. In dimension two this settles the $L^2$ Ahlfors--Beurling conjecture of Fleeman and Khavinson. For $N\\ge3$ it is equivalent to the scale-free bound that at most the fraction $(N-2)/(2N)$ of the total field energy lies inside $\\Omega$. We also obtain an explicit deficit identity, a sharp extension to bounded nonnegative densities, and consequences for torsional rigidity, Bergman analytic content, Brownian motion, and aggregation equations.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.37886",
+        "metadata": {
+          "title": "An $L^2$ Ahlfors--Beurling inequality in every dimension",
+          "authors": [
+            "Guofang Wang",
+            "Mingwei Zhang"
+          ],
+          "abstract": "Let $\\Omega\\subset\\mathbb{R}^N$ ($N\\geq2$) be measurable with $0<|\\Omega|<\\infty$, and let $u_\\Omega$ be its logarithmic potential ($N=2$) or Newtonian potential ($N\\geq3$), normalized so that $\\Delta u_\\Omega=\\chi_\\Omega$. We prove the sharp inequality \\[ \\int_\\Omega|\\nabla u_\\Omega|^2\\,\\mathrm{d} x \\leq\\frac{1}{2N\\omega_{N-1}} \\iint_{\\Omega\\times\\Omega}\\frac{\\mathrm{d} x\\,\\mathrm{d} y}{|x-y|^{N-2}}, \\] where $\\omega_{N-1}=|\\mathbb{S}^{N-1}|$, with equality if and only if $\\Omega$ is a ball up to a null set. In dimension two this settles the $L^2$ Ahlfors--Beurling conjecture of Fleeman and Khavinson. For $N\\ge3$ it is equivalent to the scale-free bound that at most the fraction $(N-2)/(2N)$ of the total field energy lies inside $\\Omega$. We also obtain an explicit deficit identity, a sharp extension to bounded nonnegative densities, and consequences for torsional rigidity, Bergman analytic content, Brownian motion, and aggregation equations.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "29 pages",
+          "version": 1,
+          "submittedAt": "2026-10-27T19:26:28Z",
+          "updatedAt": "2026-10-27T19:26:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.37886v1",
+            "observedAt": "2026-10-30T06:43:31.290487+00:00",
+            "contentHash": "6818efe166197c434dc5090f947844e4d5ebae4b2150165de15497b50f59232e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:35.126542+00:00",
+            "contentHash": "f5485a60523dce9a68e188552ec7fd43d0755b1919ab0663656dac3733e3b026"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "尖锐势能不等式与刚性",
+          "workSummary": "对 R^N 中任意有限正测度可测集 Ω（N≥2），令其对数或 Newton 势满足 Δu_Ω=χ_Ω，作者证明 Ω 内梯度能量不超过核 |x−y|^(2−N) 双积分的 1/(2N|S^(N−1)|) 倍，等号当且仅当 Ω 在零测集意义下为球。N=2 时作者称由此解决 Fleeman–Khavinson 的 L² Ahlfors–Beurling 猜想。",
+          "techniques": [
+            "对数及 Newton 势的场能估计",
+            "显式亏损恒等式",
+            "球的等号刚性",
+            "有界非负密度推广"
+          ],
+          "breakthrough": "得到所有维数的同一尖锐形式；N≥3 时等价于内部场能至多占总场能的 (N−2)/(2N)，并联系扭转刚度、Bergman 解析含量、Brown 运动及聚集方程。",
+          "limitations": "必须保留势的 Δu=χ_Ω 规范及有限正体积；二维不能用高维总场能比例直接表述。猜想解决仍是预印本作者声称，密度推广的常数与等号条件未由摘要展开。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确Claude（Anthropic）帮助检查计算，并改善部分应用的表述，作者承担内容责任。仅标计算核查与写作，不推断其证明主不等式或核心构思；Anthropic在原文跨行写为An-thropic，已额外核验同一声明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.37886v1 · PDF第27页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:43:31.290487+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37886v1",
+            "contentHash": "6818efe166197c434dc5090f947844e4d5ebae4b2150165de15497b50f59232e",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确Claude（Anthropic）帮助检查计算，并改善部分应用的表述，作者承担内容责任。仅标计算核查与写作，不推断其证明主不等式或核心构思；Anthropic在原文跨行写为An-thropic，已额外核验同一声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e5a3cdb1985b7ede8941f8dbdcbf1cc330b1b9390db9014bc518dbc6e9bfe90d"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "尖锐几何分析不等式、势理论及等号刚性高度相关，值得优先阅读证明。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\Omega\\subset\\mathbb{R}^N$ ($N\\geq2$) be measurable with $0<|\\Omega|<\\infty$, and let $u_\\Omega$ be its logarithmic potential ($N=2$) or Newtonian potential ($N\\geq3$), normalized so that $\\Delta u_\\Omega=\\chi_\\Omega$. We prove the sharp inequality \\[ \\int_\\Omega|\\nabla u_\\Omega|^2\\,\\mathrm{d} x \\leq\\frac{1}{2N\\omega_{N-1}} \\iint_{\\Omega\\times\\Omega}\\frac{\\mathrm{d} x\\,\\mathrm{d} y}{|x-y|^{N-2}}, \\] where $\\omega_{N-1}=|\\mathbb{S}^{N-1}|$, with equality if and only if $\\Omega$ is a ball up to a null set. In dimension two this settles the $L^2$ Ahlfors--Beurling conjecture of Fleeman and Khavinson. For $N\\ge3$ it is equivalent to the scale-free bound that at most the fraction $(N-2)/(2N)$ of the total field energy lies inside $\\Omega$. We also obtain an explicit deficit identity, a sharp extension to bounded nonnegative densities, and consequences for torsional rigidity, Bergman analytic content, Brownian motion, and aggregation equations.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

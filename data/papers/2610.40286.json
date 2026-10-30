@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40286",
+  "slug": "2610.40286",
+  "latest": {
+    "arxivId": "2610.40286",
+    "metadata": {
+      "title": "Gromov-Hausdorff versus Hausdorff distances for Euclidean submanifolds with positive reach",
+      "authors": [
+        "Prasanna Brahme",
+        "William Ott"
+      ],
+      "abstract": "This paper is about comparing the Gromov-Hausdorff distance between a pair of sets to the Hausdorff distance between the pair. Recent work on this problem has focused on two settings, Riemannian manifolds and metric graphs. Here, we focus on embedded submanifolds of Euclidean space endowed with the Euclidean metric. We prove that when $\\mathcal{M}\\subset\\mathbb{R}^n$ is a compact connected embedded submanifold without boundary, with positive reach, and $\\mathrm{A}\\subset\\mathcal{M}$ is a subset that is sufficiently dense in $\\mathcal{M}$ with respect to the reach, the Gromov-Hausdorff distance between $\\mathrm{A}$ and $\\mathcal{M}$ is bounded below by $1/2$ of the Hausdorff distance between them. We extend this result in two ways. First, we show that the factor $1/2$ can be improved using Jung's theorem. Second, we prove bounds on the Gromov-Hausdorff distance for pairs of subsets of $\\mathcal{M}$. When $\\mathbb{S}^{1}$ is equipped with the two-dimensional Euclidean metric, the Gromov-Hausdorff distance between $\\mathbb{S}^{1}$ and any sufficiently dense subset of $\\mathbb{S}^{1}$ can be expressed explicitly as a function of the Hausdorff distance between the two. We use interleavings between geometric simplicial complexes, nerve lemmas, properties of reach and the nearest-point projection map, and the fundamental class to produce the inequalities for general $\\mathcal{M}$. We use the Borsuk-Ulam theorem for $\\mathcal{M}=\\mathbb{S}^1\\subset \\mathbb{R}^2$.",
+      "categories": [
+        "math.MG",
+        "math.AT"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "32 pages, 9 figures",
+      "version": 1,
+      "submittedAt": "2026-10-29T15:36:41Z",
+      "updatedAt": "2026-10-29T15:36:41Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.506794+00:00",
+        "contentHash": "b78d15b168b49da8a25396d2720fa33b84f4310b7c7c5ce3e5867478a6036211"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "正 reach 子流形的 GH 与 Hausdorff 距离比较",
+      "workSummary": "对紧、连通、无边界且正 reach 的 Euclid 嵌入子流形 M，以及相对 reach 足够稠密的 A⊂M，证明 d_GH(A,M)≥½d_H(A,M)，其中度量均为环境 Euclid 距离。利用 Jung 定理改善常数，并扩展到 M 的两个子集；对 Euclid 弦距离圆周给出稠密子集情形的显式关系。",
+      "techniques": [
+        "几何单纯复形的 interleaving 与 nerve 引理",
+        "reach 和最近点投影",
+        "基本类及圆周 Borsuk–Ulam"
+      ],
+      "breakthrough": "在同一嵌入流形内的稠密采样类中，将通常难比较的内在度量空间 GH 距离与环境 Hausdorff 误差定量联系。",
+      "limitations": "不是任意两嵌入子流形的普遍比较；必须保留 A⊂M、稠密尺度、正 reach 及弦距离，不能换成测地距离。一般下界也不是精确等式。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:57:52.663740+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40286v1",
+        "contentHash": "bdb9731759d4065f3e7200568dcc47cab62a858ea62a35a28a4f12db918f40d9",
+        "pages": 32,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256匹配，32页提取完整且无短文本页。标准与补充Claude命中是第32页参考文献作者Jean-Claude Hausmann姓名，非AI工具使用；点写AI、断行/连字符模型名及Danus补检未见作者自述使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "55298a609c4ccb1691eae1fb39ef3abe986407ed0fb6f3f1efbb41446fc483ca"
+      },
+      "priorityScore": 79,
+      "priorityReason": "度量几何、拓扑采样和 GH 估计相交，适合相关次重点。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper is about comparing the Gromov-Hausdorff distance between a pair of sets to the Hausdorff distance between the pair. Recent work on this problem has focused on two settings, Riemannian manifolds and metric graphs. Here, we focus on embedded submanifolds of Euclidean space endowed with the Euclidean metric. We prove that when $\\mathcal{M}\\subset\\mathbb{R}^n$ is a compact connected embedded submanifold without boundary, with positive reach, and $\\mathrm{A}\\subset\\mathcal{M}$ is a subset that is sufficiently dense in $\\mathcal{M}$ with respect to the reach, the Gromov-Hausdorff distance between $\\mathrm{A}$ and $\\mathcal{M}$ is bounded below by $1/2$ of the Hausdorff distance between them. We extend this result in two ways. First, we show that the factor $1/2$ can be improved using Jung's theorem. Second, we prove bounds on the Gromov-Hausdorff distance for pairs of subsets of $\\mathcal{M}$. When $\\mathbb{S}^{1}$ is equipped with the two-dimensional Euclidean metric, the Gromov-Hausdorff distance between $\\mathbb{S}^{1}$ and any sufficiently dense subset of $\\mathbb{S}^{1}$ can be expressed explicitly as a function of the Hausdorff distance between the two. We use interleavings between geometric simplicial complexes, nerve lemmas, properties of reach and the nearest-point projection map, and the fundamental class to produce the inequalities for general $\\mathcal{M}$. We use the Borsuk-Ulam theorem for $\\mathcal{M}=\\mathbb{S}^1\\subset \\mathbb{R}^2$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40286",
+        "metadata": {
+          "title": "Gromov-Hausdorff versus Hausdorff distances for Euclidean submanifolds with positive reach",
+          "authors": [
+            "Prasanna Brahme",
+            "William Ott"
+          ],
+          "abstract": "This paper is about comparing the Gromov-Hausdorff distance between a pair of sets to the Hausdorff distance between the pair. Recent work on this problem has focused on two settings, Riemannian manifolds and metric graphs. Here, we focus on embedded submanifolds of Euclidean space endowed with the Euclidean metric. We prove that when $\\mathcal{M}\\subset\\mathbb{R}^n$ is a compact connected embedded submanifold without boundary, with positive reach, and $\\mathrm{A}\\subset\\mathcal{M}$ is a subset that is sufficiently dense in $\\mathcal{M}$ with respect to the reach, the Gromov-Hausdorff distance between $\\mathrm{A}$ and $\\mathcal{M}$ is bounded below by $1/2$ of the Hausdorff distance between them. We extend this result in two ways. First, we show that the factor $1/2$ can be improved using Jung's theorem. Second, we prove bounds on the Gromov-Hausdorff distance for pairs of subsets of $\\mathcal{M}$. When $\\mathbb{S}^{1}$ is equipped with the two-dimensional Euclidean metric, the Gromov-Hausdorff distance between $\\mathbb{S}^{1}$ and any sufficiently dense subset of $\\mathbb{S}^{1}$ can be expressed explicitly as a function of the Hausdorff distance between the two. We use interleavings between geometric simplicial complexes, nerve lemmas, properties of reach and the nearest-point projection map, and the fundamental class to produce the inequalities for general $\\mathcal{M}$. We use the Borsuk-Ulam theorem for $\\mathcal{M}=\\mathbb{S}^1\\subset \\mathbb{R}^2$.",
+          "categories": [
+            "math.MG",
+            "math.AT"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "32 pages, 9 figures",
+          "version": 1,
+          "submittedAt": "2026-10-29T15:36:41Z",
+          "updatedAt": "2026-10-29T15:36:41Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.506794+00:00",
+            "contentHash": "b78d15b168b49da8a25396d2720fa33b84f4310b7c7c5ce3e5867478a6036211"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "正 reach 子流形的 GH 与 Hausdorff 距离比较",
+          "workSummary": "对紧、连通、无边界且正 reach 的 Euclid 嵌入子流形 M，以及相对 reach 足够稠密的 A⊂M，证明 d_GH(A,M)≥½d_H(A,M)，其中度量均为环境 Euclid 距离。利用 Jung 定理改善常数，并扩展到 M 的两个子集；对 Euclid 弦距离圆周给出稠密子集情形的显式关系。",
+          "techniques": [
+            "几何单纯复形的 interleaving 与 nerve 引理",
+            "reach 和最近点投影",
+            "基本类及圆周 Borsuk–Ulam"
+          ],
+          "breakthrough": "在同一嵌入流形内的稠密采样类中，将通常难比较的内在度量空间 GH 距离与环境 Hausdorff 误差定量联系。",
+          "limitations": "不是任意两嵌入子流形的普遍比较；必须保留 A⊂M、稠密尺度、正 reach 及弦距离，不能换成测地距离。一般下界也不是精确等式。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:57:52.663740+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40286v1",
+            "contentHash": "bdb9731759d4065f3e7200568dcc47cab62a858ea62a35a28a4f12db918f40d9",
+            "pages": 32,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256匹配，32页提取完整且无短文本页。标准与补充Claude命中是第32页参考文献作者Jean-Claude Hausmann姓名，非AI工具使用；点写AI、断行/连字符模型名及Danus补检未见作者自述使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "55298a609c4ccb1691eae1fb39ef3abe986407ed0fb6f3f1efbb41446fc483ca"
+          },
+          "priorityScore": 79,
+          "priorityReason": "度量几何、拓扑采样和 GH 估计相交，适合相关次重点。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper is about comparing the Gromov-Hausdorff distance between a pair of sets to the Hausdorff distance between the pair. Recent work on this problem has focused on two settings, Riemannian manifolds and metric graphs. Here, we focus on embedded submanifolds of Euclidean space endowed with the Euclidean metric. We prove that when $\\mathcal{M}\\subset\\mathbb{R}^n$ is a compact connected embedded submanifold without boundary, with positive reach, and $\\mathrm{A}\\subset\\mathcal{M}$ is a subset that is sufficiently dense in $\\mathcal{M}$ with respect to the reach, the Gromov-Hausdorff distance between $\\mathrm{A}$ and $\\mathcal{M}$ is bounded below by $1/2$ of the Hausdorff distance between them. We extend this result in two ways. First, we show that the factor $1/2$ can be improved using Jung's theorem. Second, we prove bounds on the Gromov-Hausdorff distance for pairs of subsets of $\\mathcal{M}$. When $\\mathbb{S}^{1}$ is equipped with the two-dimensional Euclidean metric, the Gromov-Hausdorff distance between $\\mathbb{S}^{1}$ and any sufficiently dense subset of $\\mathbb{S}^{1}$ can be expressed explicitly as a function of the Hausdorff distance between the two. We use interleavings between geometric simplicial complexes, nerve lemmas, properties of reach and the nearest-point projection map, and the fundamental class to produce the inequalities for general $\\mathcal{M}$. We use the Borsuk-Ulam theorem for $\\mathcal{M}=\\mathbb{S}^1\\subset \\mathbb{R}^2$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

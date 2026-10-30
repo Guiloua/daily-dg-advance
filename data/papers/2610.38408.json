@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.38408",
+  "slug": "2610.38408",
+  "latest": {
+    "arxivId": "2610.38408",
+    "metadata": {
+      "title": "Pseudolocality of $G_2$-Laplacian Flow",
+      "authors": [
+        "Weiyong He",
+        "Longhuan Yan"
+      ],
+      "abstract": "In this paper, we give a new proof of Perelman's pseudolocality theorem for Ricci flow, which does not rely on Perelman's Harnack-type inequality. The key step is an estimate relating initial local $\\mu$-entropy to pointed Nash entropy at later spacetime points. The argument also works for other reasonable geometric flows, like the $G_2$-Laplacian flow, at a scale depending on its deviation from Ricci flow and its scalar curvature lower bound. As a consequence, we can also prove the quantitative rigidity results concerning pointed Nash entropy due to Hein-Naber and Bamler for such geometric flows. In the appendix, we also show that the other results in Bamler's work ( arXiv:2008.07093 ), when suitably modified, remain valid for Laplacian flow with bounded torsion. These include log-Sobolev/Poincaré inequality for conjugate heat kernel measure, heat kernel estimates, and dependence of the pointed Nash entropy on its basepoint.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-28T07:53:33Z",
+      "updatedAt": "2026-10-28T07:53:33Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:47.265219+00:00",
+        "contentHash": "86c44b87bf78fe022b5ddaf261ee6c61e9e3f23165f20e9e7481dae0a9b1f2a1"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "伪局部性与热核熵方法",
+      "workSummary": "紧七维流形上的闭G₂结构Laplacian流，若整个时段挠率平方≤Λ，定理2.13在T≤δΛ^(−1)及所有0<t≤T的初始局部μ(B_(g(0))(x₀,δ^(−1)√t),g(0),t)≥−δ下，给出时刻t的球B_(g(t))(x₀,α^(−1)√t)内|Rm|≤α/t，且相应小球近欧氏体积下界和注入半径下界；δ依赖预设α。",
+      "techniques": [
+        "初始局部μ熵到后续pointed Nash熵的比较定理2.2",
+        "共轭热核质量集中与截断积分",
+        "适配E=∂tg+2Ric误差的point-picking",
+        "pointed Nash熵近零的定量刚性与ε正则性"
+      ],
+      "breakthrough": "定理3.6还给出：若r≤δΛ^(−1/2)且N_(x,t)(r²)≥−δ，则在指定双侧抛物邻域中|Rm|≤εr^(−2)，并有近欧氏体积及注入半径控制。关键是以Nash熵刚性替代缺少的有效局部μ单调性；一般流推广要求Shi型估计及紧性工具，尺度由sup|E|和标量曲率下界控制。",
+      "limitations": "补读PDF第1–5、7、10、12、14、16页。挠率界是全空间时段假设，局部μ条件是整段尺度族，不能改写为一个任意终时局部曲率界。一般几何流需相应结构及误差控制；该结果并未证明仅有界挠率即可延拓所有有限时奇点。标准光滑紧性仍用于证明，所省去的是Perelman Harnack型不等式；未逐步验证热核、point-picking和附录的全部估计。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:46:05.453160+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.38408v1",
+        "contentHash": "50fbb36f5e7f59f5aae63231fab17fb50f2595dab3f80f9f6f49517f8ba6d403",
+        "pages": 45,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页第1.6节明确本论文完成于2024年12月且准备过程未使用AI；随后的AI帮助说法明确指另行分出的向后伪局部性伴随论文，不是本篇使用。45页PDF完整提取、页数匹配、无短文本页，补检无新增本篇正向披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f57a6974b33de040d64f14c8f864ffc3460c1efeb73ab189c47a1419caae415a"
+      },
+      "priorityScore": 98,
+      "priorityReason": "伪局部性、熵刚性及特殊几何流与用户方向高度契合，优先正文核查。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we give a new proof of Perelman's pseudolocality theorem for Ricci flow, which does not rely on Perelman's Harnack-type inequality. The key step is an estimate relating initial local $\\mu$-entropy to pointed Nash entropy at later spacetime points. The argument also works for other reasonable geometric flows, like the $G_2$-Laplacian flow, at a scale depending on its deviation from Ricci flow and its scalar curvature lower bound. As a consequence, we can also prove the quantitative rigidity results concerning pointed Nash entropy due to Hein-Naber and Bamler for such geometric flows. In the appendix, we also show that the other results in Bamler's work ( arXiv:2008.07093 ), when suitably modified, remain valid for Laplacian flow with bounded torsion. These include log-Sobolev/Poincaré inequality for conjugate heat kernel measure, heat kernel estimates, and dependence of the pointed Nash entropy on its basepoint.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.38408",
+        "metadata": {
+          "title": "Pseudolocality of $G_2$-Laplacian Flow",
+          "authors": [
+            "Weiyong He",
+            "Longhuan Yan"
+          ],
+          "abstract": "In this paper, we give a new proof of Perelman's pseudolocality theorem for Ricci flow, which does not rely on Perelman's Harnack-type inequality. The key step is an estimate relating initial local $\\mu$-entropy to pointed Nash entropy at later spacetime points. The argument also works for other reasonable geometric flows, like the $G_2$-Laplacian flow, at a scale depending on its deviation from Ricci flow and its scalar curvature lower bound. As a consequence, we can also prove the quantitative rigidity results concerning pointed Nash entropy due to Hein-Naber and Bamler for such geometric flows. In the appendix, we also show that the other results in Bamler's work ( arXiv:2008.07093 ), when suitably modified, remain valid for Laplacian flow with bounded torsion. These include log-Sobolev/Poincaré inequality for conjugate heat kernel measure, heat kernel estimates, and dependence of the pointed Nash entropy on its basepoint.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-28T07:53:33Z",
+          "updatedAt": "2026-10-28T07:53:33Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:47.265219+00:00",
+            "contentHash": "86c44b87bf78fe022b5ddaf261ee6c61e9e3f23165f20e9e7481dae0a9b1f2a1"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "伪局部性与热核熵方法",
+          "workSummary": "紧七维流形上的闭G₂结构Laplacian流，若整个时段挠率平方≤Λ，定理2.13在T≤δΛ^(−1)及所有0<t≤T的初始局部μ(B_(g(0))(x₀,δ^(−1)√t),g(0),t)≥−δ下，给出时刻t的球B_(g(t))(x₀,α^(−1)√t)内|Rm|≤α/t，且相应小球近欧氏体积下界和注入半径下界；δ依赖预设α。",
+          "techniques": [
+            "初始局部μ熵到后续pointed Nash熵的比较定理2.2",
+            "共轭热核质量集中与截断积分",
+            "适配E=∂tg+2Ric误差的point-picking",
+            "pointed Nash熵近零的定量刚性与ε正则性"
+          ],
+          "breakthrough": "定理3.6还给出：若r≤δΛ^(−1/2)且N_(x,t)(r²)≥−δ，则在指定双侧抛物邻域中|Rm|≤εr^(−2)，并有近欧氏体积及注入半径控制。关键是以Nash熵刚性替代缺少的有效局部μ单调性；一般流推广要求Shi型估计及紧性工具，尺度由sup|E|和标量曲率下界控制。",
+          "limitations": "补读PDF第1–5、7、10、12、14、16页。挠率界是全空间时段假设，局部μ条件是整段尺度族，不能改写为一个任意终时局部曲率界。一般几何流需相应结构及误差控制；该结果并未证明仅有界挠率即可延拓所有有限时奇点。标准光滑紧性仍用于证明，所省去的是Perelman Harnack型不等式；未逐步验证热核、point-picking和附录的全部估计。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:46:05.453160+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.38408v1",
+            "contentHash": "50fbb36f5e7f59f5aae63231fab17fb50f2595dab3f80f9f6f49517f8ba6d403",
+            "pages": 45,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页第1.6节明确本论文完成于2024年12月且准备过程未使用AI；随后的AI帮助说法明确指另行分出的向后伪局部性伴随论文，不是本篇使用。45页PDF完整提取、页数匹配、无短文本页，补检无新增本篇正向披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f57a6974b33de040d64f14c8f864ffc3460c1efeb73ab189c47a1419caae415a"
+          },
+          "priorityScore": 98,
+          "priorityReason": "伪局部性、熵刚性及特殊几何流与用户方向高度契合，优先正文核查。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we give a new proof of Perelman's pseudolocality theorem for Ricci flow, which does not rely on Perelman's Harnack-type inequality. The key step is an estimate relating initial local $\\mu$-entropy to pointed Nash entropy at later spacetime points. The argument also works for other reasonable geometric flows, like the $G_2$-Laplacian flow, at a scale depending on its deviation from Ricci flow and its scalar curvature lower bound. As a consequence, we can also prove the quantitative rigidity results concerning pointed Nash entropy due to Hein-Naber and Bamler for such geometric flows. In the appendix, we also show that the other results in Bamler's work ( arXiv:2008.07093 ), when suitably modified, remain valid for Laplacian flow with bounded torsion. These include log-Sobolev/Poincaré inequality for conjugate heat kernel measure, heat kernel estimates, and dependence of the pointed Nash entropy on its basepoint.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39078",
+  "slug": "2610.39078",
+  "latest": {
+    "arxivId": "2610.39078",
+    "metadata": {
+      "title": "Borsuk number in four dimensions is at most seven",
+      "authors": [
+        "Andrii Arman",
+        "Andriy Bondarenko",
+        "Andriy Prymak",
+        "Danylo Radchenko"
+      ],
+      "abstract": "We prove that every bounded set of diameter one in four-dimensional Euclidean space can be covered by seven balls of diameter strictly smaller than $0.9999$. In particular, the Borsuk number satisfies $b_4\\le7$. The proof combines geometric arguments based on contact points of the circumball with an exact finite computation. For small and large circumradius, the covering centres are constructed analytically. In the remaining range, a suitable triangle of contact points reduces the problem to a four-parameter family of ball polytopes. The parameter cube is subdivided into 23494 boxes. For each parameter box, candidate centres are found by nonlinear optimization, and the resulting covering is verified using exact rational interval arithmetic and paraboloid lifting.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-10-29T00:14:17Z",
+      "updatedAt": "2026-10-29T00:14:17Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.711095+00:00",
+        "contentHash": "954d52bcf7ce8706e29a44618089c3d3fbe9e9bb618cdb960f2cf4886f765500"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "四维 Borsuk 数的解析及精确计算上界",
+      "workSummary": "证明任意直径一的四维 Euclidean 有界集可被七个直径严格小于0.9999的球覆盖，从而 b₄≤7。小、大外接半径范围解析构造覆盖中心，中间范围以外接球接触点三角形降为四参数球多面体族，划分23494个参数盒，以非线性优化寻找候选中心，再用精确有理区间算术及抛物面提升验证。",
+      "techniques": [
+        "外接球接触点几何",
+        "四参数有限分盒",
+        "非线性候选搜索",
+        "精确有理区间验证与抛物面提升"
+      ],
+      "breakthrough": "用可认证有限计算加强四维小直径覆盖界，且有显式直径余量。",
+      "limitations": "仅给 b₄ 的上界7，不声称其精确值为7或等于下界；数值优化负责找候选，严格性依赖后续精确认证，不能将二者混同。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明早期较弱界版本仅以模型辅助编码；其后与 ChatGPT Astra 探索纯解析论证，直接导向按外接半径分情况的策略，并大幅缩小球多面体覆盖搜索空间，属于具体核心路线来源，故标 ideas、exploration。另明确用于编码与编辑，标 computation、writing；最终数学与验证器由作者检查，不误记模型验证。第13页 OpenAI 的九维反例及 Lean 文献只是引用，不是自身使用披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.39078v1 · PDF 第 13 页，History of the work and AI use disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:51:06.327082+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39078v1",
+        "contentHash": "2cc5a65ae9ca6b3a0485c8d1f30c2a78e2718f8d78d382e178a38df5306195b8",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明早期较弱界版本仅以模型辅助编码；其后与 ChatGPT Astra 探索纯解析论证，直接导向按外接半径分情况的策略，并大幅缩小球多面体覆盖搜索空间，属于具体核心路线来源，故标 ideas、exploration。另明确用于编码与编辑，标 computation、writing；最终数学与验证器由作者检查，不误记模型验证。第13页 OpenAI 的九维反例及 Lean 文献只是引用，不是自身使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "cc89529128759c5e2f089c74ea986cbd78c9146ab0bf6bba453c2a2b991f7c88"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 88,
+      "priorityReason": "重要定量凸几何进展，值得核查有限证书和连续参数覆盖的完整性。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that every bounded set of diameter one in four-dimensional Euclidean space can be covered by seven balls of diameter strictly smaller than $0.9999$. In particular, the Borsuk number satisfies $b_4\\le7$. The proof combines geometric arguments based on contact points of the circumball with an exact finite computation. For small and large circumradius, the covering centres are constructed analytically. In the remaining range, a suitable triangle of contact points reduces the problem to a four-parameter family of ball polytopes. The parameter cube is subdivided into 23494 boxes. For each parameter box, candidate centres are found by nonlinear optimization, and the resulting covering is verified using exact rational interval arithmetic and paraboloid lifting.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39078",
+        "metadata": {
+          "title": "Borsuk number in four dimensions is at most seven",
+          "authors": [
+            "Andrii Arman",
+            "Andriy Bondarenko",
+            "Andriy Prymak",
+            "Danylo Radchenko"
+          ],
+          "abstract": "We prove that every bounded set of diameter one in four-dimensional Euclidean space can be covered by seven balls of diameter strictly smaller than $0.9999$. In particular, the Borsuk number satisfies $b_4\\le7$. The proof combines geometric arguments based on contact points of the circumball with an exact finite computation. For small and large circumradius, the covering centres are constructed analytically. In the remaining range, a suitable triangle of contact points reduces the problem to a four-parameter family of ball polytopes. The parameter cube is subdivided into 23494 boxes. For each parameter box, candidate centres are found by nonlinear optimization, and the resulting covering is verified using exact rational interval arithmetic and paraboloid lifting.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-10-29T00:14:17Z",
+          "updatedAt": "2026-10-29T00:14:17Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.711095+00:00",
+            "contentHash": "954d52bcf7ce8706e29a44618089c3d3fbe9e9bb618cdb960f2cf4886f765500"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "四维 Borsuk 数的解析及精确计算上界",
+          "workSummary": "证明任意直径一的四维 Euclidean 有界集可被七个直径严格小于0.9999的球覆盖，从而 b₄≤7。小、大外接半径范围解析构造覆盖中心，中间范围以外接球接触点三角形降为四参数球多面体族，划分23494个参数盒，以非线性优化寻找候选中心，再用精确有理区间算术及抛物面提升验证。",
+          "techniques": [
+            "外接球接触点几何",
+            "四参数有限分盒",
+            "非线性候选搜索",
+            "精确有理区间验证与抛物面提升"
+          ],
+          "breakthrough": "用可认证有限计算加强四维小直径覆盖界，且有显式直径余量。",
+          "limitations": "仅给 b₄ 的上界7，不声称其精确值为7或等于下界；数值优化负责找候选，严格性依赖后续精确认证，不能将二者混同。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明早期较弱界版本仅以模型辅助编码；其后与 ChatGPT Astra 探索纯解析论证，直接导向按外接半径分情况的策略，并大幅缩小球多面体覆盖搜索空间，属于具体核心路线来源，故标 ideas、exploration。另明确用于编码与编辑，标 computation、writing；最终数学与验证器由作者检查，不误记模型验证。第13页 OpenAI 的九维反例及 Lean 文献只是引用，不是自身使用披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.39078v1 · PDF 第 13 页，History of the work and AI use disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:51:06.327082+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39078v1",
+            "contentHash": "2cc5a65ae9ca6b3a0485c8d1f30c2a78e2718f8d78d382e178a38df5306195b8",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明早期较弱界版本仅以模型辅助编码；其后与 ChatGPT Astra 探索纯解析论证，直接导向按外接半径分情况的策略，并大幅缩小球多面体覆盖搜索空间，属于具体核心路线来源，故标 ideas、exploration。另明确用于编码与编辑，标 computation、writing；最终数学与验证器由作者检查，不误记模型验证。第13页 OpenAI 的九维反例及 Lean 文献只是引用，不是自身使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "cc89529128759c5e2f089c74ea986cbd78c9146ab0bf6bba453c2a2b991f7c88"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 88,
+          "priorityReason": "重要定量凸几何进展，值得核查有限证书和连续参数覆盖的完整性。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that every bounded set of diameter one in four-dimensional Euclidean space can be covered by seven balls of diameter strictly smaller than $0.9999$. In particular, the Borsuk number satisfies $b_4\\le7$. The proof combines geometric arguments based on contact points of the circumball with an exact finite computation. For small and large circumradius, the covering centres are constructed analytically. In the remaining range, a suitable triangle of contact points reduces the problem to a four-parameter family of ball polytopes. The parameter cube is subdivided into 23494 boxes. For each parameter box, candidate centres are found by nonlinear optimization, and the resulting covering is verified using exact rational interval arithmetic and paraboloid lifting.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

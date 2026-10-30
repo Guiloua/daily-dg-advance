@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.39644",
+  "slug": "2610.39644",
+  "latest": {
+    "arxivId": "2610.39644",
+    "metadata": {
+      "title": "Lipschitz regularity of Sobolev maps from $\\mathrm{RCD}(K,N)$ spaces to $\\mathrm{CAT}(0)$ spaces",
+      "authors": [
+        "Bang-Xian Han",
+        "Zeyu Wang"
+      ],
+      "abstract": "We establish a quantitative criterion for local Lipschitz regularity of Sobolev maps in the sense of Korevaar and Schoen from finite-dimensional \\(\\RCD(K,N)\\) spaces into complete \\(\\CAT(0)\\) spaces, without assuming harmonicity. We quantify the failure of local energy minimality by the harmonic replacement potential, a dyadic sum of the square roots of normalized energy gaps between a map and its harmonic replacements. We prove that this potential, together with an averaged energy term, controls the minimal weak upper gradient pointwise, with constants depending only on the curvature-dimension bounds and the scale. In particular, local boundedness of the replacement potential implies that the map admits a locally Lipschitz representative.",
+      "categories": [
+        "math.AP",
+        "math.DG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-10-29T09:01:56Z",
+      "updatedAt": "2026-10-29T09:01:56Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:59.715767+00:00",
+        "contentHash": "d38468135968f46864f1213229229250006774064dc1cdd024c200569f3094cb"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "非调和 Sobolev 映射的调和替换势正则判据",
+      "workSummary": "已核对 Definition1.1、Theorem1.2：源为满支撑 RCD(K,N)、1<N<∞，目标为完备 CAT(0)。在有界开集Ω内取 B₈R(o)⊂⊂Ω、X\\B₁₆R(o)非空，对 u∈KS¹,²(Ω,Y)，令 h_B 是同 Sobolev 边界值的唯一调和替换，P_Ru(x)=Σ_{j≥0}√((E(u;B₂⁻ʲR(x))−E(h_B;B₂⁻ʲR(x)))/m(B₂⁻ʲR(x)))。正文证明对m-几乎处处 x∈B_R(o)，最小2弱上梯度 |du|(x)≤C(N,K₋R²)[均方能量密度项 𝓔₂R(u;o)+P_Ru(x)]。若 P_R 在 B_R 上一致有界，则 B_{R/2}(o) 上存在定量 Lipschitz 代表；有界本质振荡时平均能量项还可替换为 osc/R。",
+      "techniques": [
+        "CAT(0) 中点凸性与调和替换能量差",
+        "共同源标架中 Hilbert 半范数的球面四阶矩比较",
+        "调和替换算子范数的 Bochner 不等式",
+        "X×R³ 上厚 Green 带概率平均",
+        "稀疏 dyadic 尺度迭代与 Lebesgue 点恢复",
+        "度量 Sobolev-to-Lipschitz"
+      ],
+      "breakthrough": "以可度量的调和替换能量差替代方程或张力场，定量控制非能量极小 Sobolev 映射的弱上梯度，且适用于塌缩 RCD 源与一般完备 CAT(0) 目标。",
+      "limitations": "已读 PDF 第2–6、13–19页并渲染第4页核对势与常数，未逐步验证第4节 Green 核/平均测度构造及全部外部正则性输入。势局部有界是充分而非必要条件：正文例子u(x)=|x|为1-Lipschitz但在原点P_R=∞。上梯度界仅几乎处处，Lipschitz 代表结论在缩半球上；能量密度按 Hilbert–Schmidt 范数定义，不能直接与算子范数/最小弱上梯度等同。有限KS¹,²能量及L²在所用域上要求、Sobolev边界值和尺度条件均需保留，不是任意 Sobolev 映射自动 Lipschitz。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:53:33.798787+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.39644v1",
+        "contentHash": "3d68dd203616929c1fdf29c470e68a80cb520597005ed258e173ea27f1741445",
+        "pages": 30,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 全 30 页文本提取完整、页数一致且无短文本页，原检索及补充点写/断行模型名检索未观察到作者使用生成式 AI 的披露；实际 PDF SHA-256 匹配记录。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bb04b06d73670fa7e3b689872bc749d93bbd508c02676487624139b47ffad745"
+      },
+      "priorityScore": 98,
+      "priorityReason": "当日奇异空间几何分析重点，应优先核对归一化能量差和 dyadic 求和的精确尺度。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a quantitative criterion for local Lipschitz regularity of Sobolev maps in the sense of Korevaar and Schoen from finite-dimensional \\(\\RCD(K,N)\\) spaces into complete \\(\\CAT(0)\\) spaces, without assuming harmonicity. We quantify the failure of local energy minimality by the harmonic replacement potential, a dyadic sum of the square roots of normalized energy gaps between a map and its harmonic replacements. We prove that this potential, together with an averaged energy term, controls the minimal weak upper gradient pointwise, with constants depending only on the curvature-dimension bounds and the scale. In particular, local boundedness of the replacement potential implies that the map admits a locally Lipschitz representative.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.39644",
+        "metadata": {
+          "title": "Lipschitz regularity of Sobolev maps from $\\mathrm{RCD}(K,N)$ spaces to $\\mathrm{CAT}(0)$ spaces",
+          "authors": [
+            "Bang-Xian Han",
+            "Zeyu Wang"
+          ],
+          "abstract": "We establish a quantitative criterion for local Lipschitz regularity of Sobolev maps in the sense of Korevaar and Schoen from finite-dimensional \\(\\RCD(K,N)\\) spaces into complete \\(\\CAT(0)\\) spaces, without assuming harmonicity. We quantify the failure of local energy minimality by the harmonic replacement potential, a dyadic sum of the square roots of normalized energy gaps between a map and its harmonic replacements. We prove that this potential, together with an averaged energy term, controls the minimal weak upper gradient pointwise, with constants depending only on the curvature-dimension bounds and the scale. In particular, local boundedness of the replacement potential implies that the map admits a locally Lipschitz representative.",
+          "categories": [
+            "math.AP",
+            "math.DG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-10-29T09:01:56Z",
+          "updatedAt": "2026-10-29T09:01:56Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:59.715767+00:00",
+            "contentHash": "d38468135968f46864f1213229229250006774064dc1cdd024c200569f3094cb"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "非调和 Sobolev 映射的调和替换势正则判据",
+          "workSummary": "已核对 Definition1.1、Theorem1.2：源为满支撑 RCD(K,N)、1<N<∞，目标为完备 CAT(0)。在有界开集Ω内取 B₈R(o)⊂⊂Ω、X\\B₁₆R(o)非空，对 u∈KS¹,²(Ω,Y)，令 h_B 是同 Sobolev 边界值的唯一调和替换，P_Ru(x)=Σ_{j≥0}√((E(u;B₂⁻ʲR(x))−E(h_B;B₂⁻ʲR(x)))/m(B₂⁻ʲR(x)))。正文证明对m-几乎处处 x∈B_R(o)，最小2弱上梯度 |du|(x)≤C(N,K₋R²)[均方能量密度项 𝓔₂R(u;o)+P_Ru(x)]。若 P_R 在 B_R 上一致有界，则 B_{R/2}(o) 上存在定量 Lipschitz 代表；有界本质振荡时平均能量项还可替换为 osc/R。",
+          "techniques": [
+            "CAT(0) 中点凸性与调和替换能量差",
+            "共同源标架中 Hilbert 半范数的球面四阶矩比较",
+            "调和替换算子范数的 Bochner 不等式",
+            "X×R³ 上厚 Green 带概率平均",
+            "稀疏 dyadic 尺度迭代与 Lebesgue 点恢复",
+            "度量 Sobolev-to-Lipschitz"
+          ],
+          "breakthrough": "以可度量的调和替换能量差替代方程或张力场，定量控制非能量极小 Sobolev 映射的弱上梯度，且适用于塌缩 RCD 源与一般完备 CAT(0) 目标。",
+          "limitations": "已读 PDF 第2–6、13–19页并渲染第4页核对势与常数，未逐步验证第4节 Green 核/平均测度构造及全部外部正则性输入。势局部有界是充分而非必要条件：正文例子u(x)=|x|为1-Lipschitz但在原点P_R=∞。上梯度界仅几乎处处，Lipschitz 代表结论在缩半球上；能量密度按 Hilbert–Schmidt 范数定义，不能直接与算子范数/最小弱上梯度等同。有限KS¹,²能量及L²在所用域上要求、Sobolev边界值和尺度条件均需保留，不是任意 Sobolev 映射自动 Lipschitz。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:53:33.798787+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.39644v1",
+            "contentHash": "3d68dd203616929c1fdf29c470e68a80cb520597005ed258e173ea27f1741445",
+            "pages": 30,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 全 30 页文本提取完整、页数一致且无短文本页，原检索及补充点写/断行模型名检索未观察到作者使用生成式 AI 的披露；实际 PDF SHA-256 匹配记录。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bb04b06d73670fa7e3b689872bc749d93bbd508c02676487624139b47ffad745"
+          },
+          "priorityScore": 98,
+          "priorityReason": "当日奇异空间几何分析重点，应优先核对归一化能量差和 dyadic 求和的精确尺度。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a quantitative criterion for local Lipschitz regularity of Sobolev maps in the sense of Korevaar and Schoen from finite-dimensional \\(\\RCD(K,N)\\) spaces into complete \\(\\CAT(0)\\) spaces, without assuming harmonicity. We quantify the failure of local energy minimality by the harmonic replacement potential, a dyadic sum of the square roots of normalized energy gaps between a map and its harmonic replacements. We prove that this potential, together with an averaged energy term, controls the minimal weak upper gradient pointwise, with constants depending only on the curvature-dimension bounds and the scale. In particular, local boundedness of the replacement potential implies that the map admits a locally Lipschitz representative.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

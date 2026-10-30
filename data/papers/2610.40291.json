@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40291",
+  "slug": "2610.40291",
+  "latest": {
+    "arxivId": "2610.40291",
+    "metadata": {
+      "title": "A complete solution to the reverse isoperimetric problem for $λ$-convex bodies",
+      "authors": [
+        "Kostiantyn Drach",
+        "Kateryna Tatarko"
+      ],
+      "abstract": "For a given $\\lambda > 0$, a convex body in $\\mathbb{R}^n$ is called $\\lambda$-convex if it is the intersection of balls of radius $1/\\lambda$. We show that among all $\\lambda$-convex bodies in $\\mathbb R^n$ of a given surface area, volume is minimized by the $\\lambda$-convex lens, that is, the intersection of two balls of radius $1/\\lambda$. This confirms a conjecture of Borisenko in all dimensions $n \\geq 2$. Moreover, we extend this reverse isoperimetric inequality to all model spaces of constant curvature in arbitrary dimension and arbitrary $\\lambda > 0$.",
+      "categories": [
+        "math.MG",
+        "math.DG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "24 pages, 3 figures",
+      "version": 1,
+      "submittedAt": "2026-10-29T15:41:08Z",
+      "updatedAt": "2026-10-29T15:41:08Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.507425+00:00",
+        "contentHash": "2bae404df3e7d9e683b7309fb25f4508d603cd01d19b7a9cc202ada2b629c842"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "λ-凸体反等周问题的透镜极值",
+      "workSummary": "正文主定理确实覆盖所有n≥2和λ>0：在完整单连通常曲率模型Mⁿ(c)中，紧且有非空内部的λ-凸体K与λ-凸透镜L若边界(n−1)维面积相同，则|K|≥|L|，等号当且仅当K本身为λ-凸透镜。Euclid中L是两半径1/λ球的交；一般模型以恒定法曲率λ的全脐支撑超曲面所围λ-ball定义，双曲时还包括horoball和equidistant region，不能一概称两有限半径测地球的交。",
+      "techniques": [
+        "既有反内切半径不等式及其等号刚性",
+        "内切球接触方向上的球面Voronoi比较",
+        "截断对径点距离函数以匹配表面积",
+        "径向角比较与面积/体积密度比的单调性",
+        "λ-凸多面体逼近及双曲equidistant阈值的单独处理"
+      ],
+      "breakthrough": "以同一截断比较机制把透镜反等周极值扩展到任意维及全部曲率符号，并由内切半径严格单调性控制一般非光滑凸体的等号。",
+      "limitations": "已读PDF第1–7页、12–22页定义、主定理、等号归约和空间形式推广。模型是完整单连通空间，非任意常曲率商；K必须紧且有非空内部，表面积比较在对应可实现的λ-凸体类中。透镜定义允许两生成λ-ball重合为球。若c<0且0<λ<√(−c)，紧透镜内切半径严格小于r_λ=arctanh(λ/√(−c))/√(−c)，一般K的半径可越过该值，正文另作比较而非删去该参数区间。球面支撑λ-ball的测地半径小于半球半径。等号为透镜的断言来自正文主定理和第13、22页，非仅标题推断。未逐行核验所有密度单调性和引用的反内切半径定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "本篇AI assistance明确披露ChatGPT用于探索性讨论、文稿准备及编辑，故记exploration、writing，未指明具体核心构造或证明贡献，不推断ideas/proofs。相邻致谢中Deniz Hamdy的LLM辅助方案是他人独立研究，作者明确未核验，不能当本篇自身模型贡献。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40291v1 · PDF 第22页 AI assistance及相邻致谢排误",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:58:27.966140+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40291v1",
+        "contentHash": "60d13c49266c00096dff94127a2b60b3fb6065961885102bf7622dc8318245ec",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。本篇AI assistance明确披露ChatGPT用于探索性讨论、文稿准备及编辑，故记exploration、writing，未指明具体核心构造或证明贡献，不推断ideas/proofs。相邻致谢中Deniz Hamdy的LLM辅助方案是他人独立研究，作者明确未核验，不能当本篇自身模型贡献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7853e2e24240fd8885b201b371f72b7c6fae72fed926eed902ebeec94875e7e7"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "尖锐凸几何不等式与曲率比较主线高度贴合，是本组首要正文核验对象。"
+    },
+    "analysisBasis": {
+      "abstract": "For a given $\\lambda > 0$, a convex body in $\\mathbb{R}^n$ is called $\\lambda$-convex if it is the intersection of balls of radius $1/\\lambda$. We show that among all $\\lambda$-convex bodies in $\\mathbb R^n$ of a given surface area, volume is minimized by the $\\lambda$-convex lens, that is, the intersection of two balls of radius $1/\\lambda$. This confirms a conjecture of Borisenko in all dimensions $n \\geq 2$. Moreover, we extend this reverse isoperimetric inequality to all model spaces of constant curvature in arbitrary dimension and arbitrary $\\lambda > 0$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40291",
+        "metadata": {
+          "title": "A complete solution to the reverse isoperimetric problem for $λ$-convex bodies",
+          "authors": [
+            "Kostiantyn Drach",
+            "Kateryna Tatarko"
+          ],
+          "abstract": "For a given $\\lambda > 0$, a convex body in $\\mathbb{R}^n$ is called $\\lambda$-convex if it is the intersection of balls of radius $1/\\lambda$. We show that among all $\\lambda$-convex bodies in $\\mathbb R^n$ of a given surface area, volume is minimized by the $\\lambda$-convex lens, that is, the intersection of two balls of radius $1/\\lambda$. This confirms a conjecture of Borisenko in all dimensions $n \\geq 2$. Moreover, we extend this reverse isoperimetric inequality to all model spaces of constant curvature in arbitrary dimension and arbitrary $\\lambda > 0$.",
+          "categories": [
+            "math.MG",
+            "math.DG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "24 pages, 3 figures",
+          "version": 1,
+          "submittedAt": "2026-10-29T15:41:08Z",
+          "updatedAt": "2026-10-29T15:41:08Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.507425+00:00",
+            "contentHash": "2bae404df3e7d9e683b7309fb25f4508d603cd01d19b7a9cc202ada2b629c842"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "λ-凸体反等周问题的透镜极值",
+          "workSummary": "正文主定理确实覆盖所有n≥2和λ>0：在完整单连通常曲率模型Mⁿ(c)中，紧且有非空内部的λ-凸体K与λ-凸透镜L若边界(n−1)维面积相同，则|K|≥|L|，等号当且仅当K本身为λ-凸透镜。Euclid中L是两半径1/λ球的交；一般模型以恒定法曲率λ的全脐支撑超曲面所围λ-ball定义，双曲时还包括horoball和equidistant region，不能一概称两有限半径测地球的交。",
+          "techniques": [
+            "既有反内切半径不等式及其等号刚性",
+            "内切球接触方向上的球面Voronoi比较",
+            "截断对径点距离函数以匹配表面积",
+            "径向角比较与面积/体积密度比的单调性",
+            "λ-凸多面体逼近及双曲equidistant阈值的单独处理"
+          ],
+          "breakthrough": "以同一截断比较机制把透镜反等周极值扩展到任意维及全部曲率符号，并由内切半径严格单调性控制一般非光滑凸体的等号。",
+          "limitations": "已读PDF第1–7页、12–22页定义、主定理、等号归约和空间形式推广。模型是完整单连通空间，非任意常曲率商；K必须紧且有非空内部，表面积比较在对应可实现的λ-凸体类中。透镜定义允许两生成λ-ball重合为球。若c<0且0<λ<√(−c)，紧透镜内切半径严格小于r_λ=arctanh(λ/√(−c))/√(−c)，一般K的半径可越过该值，正文另作比较而非删去该参数区间。球面支撑λ-ball的测地半径小于半球半径。等号为透镜的断言来自正文主定理和第13、22页，非仅标题推断。未逐行核验所有密度单调性和引用的反内切半径定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "本篇AI assistance明确披露ChatGPT用于探索性讨论、文稿准备及编辑，故记exploration、writing，未指明具体核心构造或证明贡献，不推断ideas/proofs。相邻致谢中Deniz Hamdy的LLM辅助方案是他人独立研究，作者明确未核验，不能当本篇自身模型贡献。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40291v1 · PDF 第22页 AI assistance及相邻致谢排误",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:58:27.966140+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40291v1",
+            "contentHash": "60d13c49266c00096dff94127a2b60b3fb6065961885102bf7622dc8318245ec",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。本篇AI assistance明确披露ChatGPT用于探索性讨论、文稿准备及编辑，故记exploration、writing，未指明具体核心构造或证明贡献，不推断ideas/proofs。相邻致谢中Deniz Hamdy的LLM辅助方案是他人独立研究，作者明确未核验，不能当本篇自身模型贡献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7853e2e24240fd8885b201b371f72b7c6fae72fed926eed902ebeec94875e7e7"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "尖锐凸几何不等式与曲率比较主线高度贴合，是本组首要正文核验对象。"
+        },
+        "analysisBasis": {
+          "abstract": "For a given $\\lambda > 0$, a convex body in $\\mathbb{R}^n$ is called $\\lambda$-convex if it is the intersection of balls of radius $1/\\lambda$. We show that among all $\\lambda$-convex bodies in $\\mathbb R^n$ of a given surface area, volume is minimized by the $\\lambda$-convex lens, that is, the intersection of two balls of radius $1/\\lambda$. This confirms a conjecture of Borisenko in all dimensions $n \\geq 2$. Moreover, we extend this reverse isoperimetric inequality to all model spaces of constant curvature in arbitrary dimension and arbitrary $\\lambda > 0$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

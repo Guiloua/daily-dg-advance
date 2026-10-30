@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.37884",
+  "slug": "2610.37884",
+  "latest": {
+    "arxivId": "2610.37884",
+    "metadata": {
+      "title": "Sobolev Inequalities Relating Rough Riemannian Metrics to their Distance Functions",
+      "authors": [
+        "Brian Allen",
+        "Lisa Naples"
+      ],
+      "abstract": "In previous papers, the first named author and E. Bryden explored Sobolev like inequalities relating the norm of a Riemmanian metric $g_1$, in terms of a background Riemannian metric $g_0$, in order to estimate the distance function $d_{g_1}$. Although $|g_1|_{g_0}$ is not the gradient of the distance function $d_{g_1}$, it was shown that a Morrey and Sobolev inequalities hold in their appropriate domains. In this paper we see that these results can be extended to the case where $g_1$ is a Rough Riemannian metric, something roughly analogous to an $L^{\\infty}$ metric. We show that the proof of the Morrey and Sobolev inequality go through, with appropriate adjustments, as well as convergence results. We also adapt previous examples from the literature to the rough Riemannian metric case which show the hypotheses from the main theorems are necessary.",
+      "categories": [
+        "math.DG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "16 pages, 1 figure, comments welcome",
+      "version": 1,
+      "submittedAt": "2026-10-27T19:24:15Z",
+      "updatedAt": "2026-10-27T19:24:15Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-10-30T06:40:00.144993+00:00",
+        "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.37884v1",
+        "observedAt": "2026-10-30T06:43:18.840696+00:00",
+        "contentHash": "e7eca84290bab0af5fe8bb935dd8fdbc8021d1fc120d95a6ece8d8cb57db0719"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:01:35.126193+00:00",
+        "contentHash": "b8a8e131e89f8713b42dbeb16b2cf1bec6ddd7a17403d5f777564db90bdccad3"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "粗糙度量的距离控制与收敛",
+      "workSummary": "在光滑闭连通定向 m 维流形及固定光滑背景 g₀ 上，定理1.1将 rough 度量 g 的 L^(p/2) 范数平方根控制其距离在 M×M 上的 L^q 范数，q<mp/(m−p)、p<m；p>m 时，定理1.2给出 d_g(x,y)≤C d_(g₀)(x,y)^(1−m/p)。rough 指可测对称张量在局部几乎处处与欧氏度量双边可比；距离按梯度几乎处处≤1的Lipschitz函数差的上确界定义。",
+      "techniques": [
+        "背景最短测地线及Jacobi场构造的对称曲线族",
+        "rough度量的对偶距离定义与函数沿曲线族的积分",
+        "Riesz型势核 d_(g₀)^(1−m) 的积分控制",
+        "势的例外集Hausdorff维数估计与子列选择"
+      ],
+      "breakthrough": "定理1.4在 g_j≥(1−1/j)g₀ 且 g_j→g₀ 于 L^(p/2)、1≤p≤m 下给出子列距离在满测集 U×U 上逐点收敛，例外集维数≤m−p；去掉任意小背景体积后，还可在 U_ε×U_ε 上一致收敛。高可积性Morrey控制另提供距离函数的Hölder紧性。这把连续度量时的分析—距离估计推进到rough正则性。",
+      "limitations": "补读PDF第1–8、12–13页定义、主定理及证明路线。背景g₀仍要求光滑；距离不能直接用可随零测集代表改变的任意曲线长度下确界替代。收敛结论需要度量下界及子列，不是全流形上整序列一致收敛；Morrey紧性也不自动给光滑或非退化黎曼极限。未独立复核全部沿曲线的几乎处处论证、例子和势估计。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:43:18.840696+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.37884v1",
+        "contentHash": "e7eca84290bab0af5fe8bb935dd8fdbc8021d1fc120d95a6ece8d8cb57db0719",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页AI Use Statement明确称本文准备过程中完全未使用AI。16页PDF完整提取、页数匹配且无短文本页，补检无新增正向使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d2eb4d6cf87731552f86e55fbafa1d4ba10dd0372eedd434deae8cf354d160c4"
+      },
+      "priorityScore": 93,
+      "priorityReason": "直接涉及粗糙度量、距离比较及收敛，是用户方向的重要工具性进展。"
+    },
+    "analysisBasis": {
+      "abstract": "In previous papers, the first named author and E. Bryden explored Sobolev like inequalities relating the norm of a Riemmanian metric $g_1$, in terms of a background Riemannian metric $g_0$, in order to estimate the distance function $d_{g_1}$. Although $|g_1|_{g_0}$ is not the gradient of the distance function $d_{g_1}$, it was shown that a Morrey and Sobolev inequalities hold in their appropriate domains. In this paper we see that these results can be extended to the case where $g_1$ is a Rough Riemannian metric, something roughly analogous to an $L^{\\infty}$ metric. We show that the proof of the Morrey and Sobolev inequality go through, with appropriate adjustments, as well as convergence results. We also adapt previous examples from the literature to the rough Riemannian metric case which show the hypotheses from the main theorems are necessary.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.37884",
+        "metadata": {
+          "title": "Sobolev Inequalities Relating Rough Riemannian Metrics to their Distance Functions",
+          "authors": [
+            "Brian Allen",
+            "Lisa Naples"
+          ],
+          "abstract": "In previous papers, the first named author and E. Bryden explored Sobolev like inequalities relating the norm of a Riemmanian metric $g_1$, in terms of a background Riemannian metric $g_0$, in order to estimate the distance function $d_{g_1}$. Although $|g_1|_{g_0}$ is not the gradient of the distance function $d_{g_1}$, it was shown that a Morrey and Sobolev inequalities hold in their appropriate domains. In this paper we see that these results can be extended to the case where $g_1$ is a Rough Riemannian metric, something roughly analogous to an $L^{\\infty}$ metric. We show that the proof of the Morrey and Sobolev inequality go through, with appropriate adjustments, as well as convergence results. We also adapt previous examples from the literature to the rough Riemannian metric case which show the hypotheses from the main theorems are necessary.",
+          "categories": [
+            "math.DG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "16 pages, 1 figure, comments welcome",
+          "version": 1,
+          "submittedAt": "2026-10-27T19:24:15Z",
+          "updatedAt": "2026-10-27T19:24:15Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-10-30T06:40:00.144993+00:00",
+            "contentHash": "da1d2ee2d5343cef4146a7a0b631cdb2e7509cf35f15c12cba9183958e0c6d8a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.37884v1",
+            "observedAt": "2026-10-30T06:43:18.840696+00:00",
+            "contentHash": "e7eca84290bab0af5fe8bb935dd8fdbc8021d1fc120d95a6ece8d8cb57db0719"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:01:35.126193+00:00",
+            "contentHash": "b8a8e131e89f8713b42dbeb16b2cf1bec6ddd7a17403d5f777564db90bdccad3"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "粗糙度量的距离控制与收敛",
+          "workSummary": "在光滑闭连通定向 m 维流形及固定光滑背景 g₀ 上，定理1.1将 rough 度量 g 的 L^(p/2) 范数平方根控制其距离在 M×M 上的 L^q 范数，q<mp/(m−p)、p<m；p>m 时，定理1.2给出 d_g(x,y)≤C d_(g₀)(x,y)^(1−m/p)。rough 指可测对称张量在局部几乎处处与欧氏度量双边可比；距离按梯度几乎处处≤1的Lipschitz函数差的上确界定义。",
+          "techniques": [
+            "背景最短测地线及Jacobi场构造的对称曲线族",
+            "rough度量的对偶距离定义与函数沿曲线族的积分",
+            "Riesz型势核 d_(g₀)^(1−m) 的积分控制",
+            "势的例外集Hausdorff维数估计与子列选择"
+          ],
+          "breakthrough": "定理1.4在 g_j≥(1−1/j)g₀ 且 g_j→g₀ 于 L^(p/2)、1≤p≤m 下给出子列距离在满测集 U×U 上逐点收敛，例外集维数≤m−p；去掉任意小背景体积后，还可在 U_ε×U_ε 上一致收敛。高可积性Morrey控制另提供距离函数的Hölder紧性。这把连续度量时的分析—距离估计推进到rough正则性。",
+          "limitations": "补读PDF第1–8、12–13页定义、主定理及证明路线。背景g₀仍要求光滑；距离不能直接用可随零测集代表改变的任意曲线长度下确界替代。收敛结论需要度量下界及子列，不是全流形上整序列一致收敛；Morrey紧性也不自动给光滑或非退化黎曼极限。未独立复核全部沿曲线的几乎处处论证、例子和势估计。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:43:18.840696+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.37884v1",
+            "contentHash": "e7eca84290bab0af5fe8bb935dd8fdbc8021d1fc120d95a6ece8d8cb57db0719",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页AI Use Statement明确称本文准备过程中完全未使用AI。16页PDF完整提取、页数匹配且无短文本页，补检无新增正向使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d2eb4d6cf87731552f86e55fbafa1d4ba10dd0372eedd434deae8cf354d160c4"
+          },
+          "priorityScore": 93,
+          "priorityReason": "直接涉及粗糙度量、距离比较及收敛，是用户方向的重要工具性进展。"
+        },
+        "analysisBasis": {
+          "abstract": "In previous papers, the first named author and E. Bryden explored Sobolev like inequalities relating the norm of a Riemmanian metric $g_1$, in terms of a background Riemannian metric $g_0$, in order to estimate the distance function $d_{g_1}$. Although $|g_1|_{g_0}$ is not the gradient of the distance function $d_{g_1}$, it was shown that a Morrey and Sobolev inequalities hold in their appropriate domains. In this paper we see that these results can be extended to the case where $g_1$ is a Rough Riemannian metric, something roughly analogous to an $L^{\\infty}$ metric. We show that the proof of the Morrey and Sobolev inequality go through, with appropriate adjustments, as well as convergence results. We also adapt previous examples from the literature to the rough Riemannian metric case which show the hypotheses from the main theorems are necessary.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

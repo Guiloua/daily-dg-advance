@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40087",
+  "slug": "2610.40087",
+  "latest": {
+    "arxivId": "2610.40087",
+    "metadata": {
+      "title": "Alexandrov--Fenchel inequalities for weighted curvature integrals in space forms",
+      "authors": [
+        "Botong Xu"
+      ],
+      "abstract": "We establish two types of Alexandrov--Fenchel inequalities for the weighted curvature integrals of static convex domains in space forms. The first type consists of a complete family of inequalities involving three weighted curvature integrals, with the second Minkowski type inequality of Xia [Calc. Var. Partial Differential Equations 55 (2016), Art. 96] and the weighted almost Schur lemma of Li and Xia [J. Differential Geom. 113 (2019), pp. 493--518] as special cases. The second type consists of a complete family of inequalities involving two weighted curvature integrals, confirming a conjectured geometric inequality by Hu and Li [Trans. Amer. Math. Soc. 375 (2022), pp. 5587--5615]. The key novelty lies in observing that, via the orthogonal projection map, the weighted curvature integrals for domains in space forms admit a natural interpretation in terms of mixed volumes of Euclidean convex bodies, thus reducing the problem to the classical Alexandrov--Fenchel inequalities in convex geometry.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "34 pages. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-29T13:57:42Z",
+      "updatedAt": "2026-10-29T13:57:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-10-30T06:39:46.675528+00:00",
+        "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-10-30T07:02:11.505100+00:00",
+        "contentHash": "6acc7cf625a62031442aa9156a450e43ddcb2e1c58b501872f7e938a6263b170"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "空间形式中加权曲率积分不等式",
+      "workSummary": "对空间形式中的 static convex 域，建立涉及三个及两个加权曲率积分的两类完整 Alexandrov–Fenchel 不等式族，包含既有第二 Minkowski 型不等式与加权 almost Schur 引理，并确认 Hu–Li 提出的几何不等式猜想。",
+      "techniques": [
+        "正交投影将空间形式曲率积分转为 Euclid 混合体积",
+        "经典 Alexandrov–Fenchel 不等式"
+      ],
+      "breakthrough": "通过混合体积解释把曲空间的加权几何不等式统一约化为经典凸几何。",
+      "limitations": "需保留static convex类及相应权重定义，不能推广到任意凸域；两类不等式的曲率适用范围不同。另局部核对PDF第6页证明路线，该页明确附录A说明第二类主定理Theorem5在球面S^{n+1}中无对应类比，故不能把两类都表述为在所有空间形式同样成立。其余指标、半径及等号范围尚未核验；当前整体数学解读仍以摘要为主，只补读路线/AI披露页，未审读完整主定理或证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "点写A.I.披露明确说GPT-5.6 Sol提出加权体积的Steiner型公式并附证明，作者将其整理为Proposition29的双曲空间ε=0特例、独立核验。该特定公式使作者回想既有正交投影工作并成为本研究起点，故记有限具体ideas和proofs；主要结果及证明由作者完成。GPT-6 Astra另用于成稿审阅润色，记writing，不将人工主证明都归AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40087v1 · PDF 第6–7页 On the use of artificial intelligence (A.I.)",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-10-30T06:56:38.469930+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40087v1",
+        "contentHash": "3b750ee0759a9209f4a878cea89705a72dfaf1c6c70bcc1b3bced678fffe7feb",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。点写A.I.披露明确说GPT-5.6 Sol提出加权体积的Steiner型公式并附证明，作者将其整理为Proposition29的双曲空间ε=0特例、独立核验。该特定公式使作者回想既有正交投影工作并成为本研究起点，故记有限具体ideas和proofs；主要结果及证明由作者完成。GPT-6 Astra另用于成稿审阅润色，记writing，不将人工主证明都归AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b34c8dc545f3e07d0eef9cefaa12dba65c5dfc22077bbc8acaca434f062f7c39"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "曲率积分、比较几何与尖锐不等式结合，方法的几何简化值得重点阅读。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish two types of Alexandrov--Fenchel inequalities for the weighted curvature integrals of static convex domains in space forms. The first type consists of a complete family of inequalities involving three weighted curvature integrals, with the second Minkowski type inequality of Xia [Calc. Var. Partial Differential Equations 55 (2016), Art. 96] and the weighted almost Schur lemma of Li and Xia [J. Differential Geom. 113 (2019), pp. 493--518] as special cases. The second type consists of a complete family of inequalities involving two weighted curvature integrals, confirming a conjectured geometric inequality by Hu and Li [Trans. Amer. Math. Soc. 375 (2022), pp. 5587--5615]. The key novelty lies in observing that, via the orthogonal projection map, the weighted curvature integrals for domains in space forms admit a natural interpretation in terms of mixed volumes of Euclidean convex bodies, thus reducing the problem to the classical Alexandrov--Fenchel inequalities in convex geometry.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-10-30",
+      "entry": {
+        "arxivId": "2610.40087",
+        "metadata": {
+          "title": "Alexandrov--Fenchel inequalities for weighted curvature integrals in space forms",
+          "authors": [
+            "Botong Xu"
+          ],
+          "abstract": "We establish two types of Alexandrov--Fenchel inequalities for the weighted curvature integrals of static convex domains in space forms. The first type consists of a complete family of inequalities involving three weighted curvature integrals, with the second Minkowski type inequality of Xia [Calc. Var. Partial Differential Equations 55 (2016), Art. 96] and the weighted almost Schur lemma of Li and Xia [J. Differential Geom. 113 (2019), pp. 493--518] as special cases. The second type consists of a complete family of inequalities involving two weighted curvature integrals, confirming a conjectured geometric inequality by Hu and Li [Trans. Amer. Math. Soc. 375 (2022), pp. 5587--5615]. The key novelty lies in observing that, via the orthogonal projection map, the weighted curvature integrals for domains in space forms admit a natural interpretation in terms of mixed volumes of Euclidean convex bodies, thus reducing the problem to the classical Alexandrov--Fenchel inequalities in convex geometry.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "34 pages. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-29T13:57:42Z",
+          "updatedAt": "2026-10-29T13:57:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-10-30T06:39:46.675528+00:00",
+            "contentHash": "2945bded042ae0822f1bccab5ef63888cddf9a674c2c28e7dc19445a7a77d926"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-10-30T07:02:11.505100+00:00",
+            "contentHash": "6acc7cf625a62031442aa9156a450e43ddcb2e1c58b501872f7e938a6263b170"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "空间形式中加权曲率积分不等式",
+          "workSummary": "对空间形式中的 static convex 域，建立涉及三个及两个加权曲率积分的两类完整 Alexandrov–Fenchel 不等式族，包含既有第二 Minkowski 型不等式与加权 almost Schur 引理，并确认 Hu–Li 提出的几何不等式猜想。",
+          "techniques": [
+            "正交投影将空间形式曲率积分转为 Euclid 混合体积",
+            "经典 Alexandrov–Fenchel 不等式"
+          ],
+          "breakthrough": "通过混合体积解释把曲空间的加权几何不等式统一约化为经典凸几何。",
+          "limitations": "需保留static convex类及相应权重定义，不能推广到任意凸域；两类不等式的曲率适用范围不同。另局部核对PDF第6页证明路线，该页明确附录A说明第二类主定理Theorem5在球面S^{n+1}中无对应类比，故不能把两类都表述为在所有空间形式同样成立。其余指标、半径及等号范围尚未核验；当前整体数学解读仍以摘要为主，只补读路线/AI披露页，未审读完整主定理或证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "点写A.I.披露明确说GPT-5.6 Sol提出加权体积的Steiner型公式并附证明，作者将其整理为Proposition29的双曲空间ε=0特例、独立核验。该特定公式使作者回想既有正交投影工作并成为本研究起点，故记有限具体ideas和proofs；主要结果及证明由作者完成。GPT-6 Astra另用于成稿审阅润色，记writing，不将人工主证明都归AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40087v1 · PDF 第6–7页 On the use of artificial intelligence (A.I.)",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-10-30T06:56:38.469930+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40087v1",
+            "contentHash": "3b750ee0759a9209f4a878cea89705a72dfaf1c6c70bcc1b3bced678fffe7feb",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。点写A.I.披露明确说GPT-5.6 Sol提出加权体积的Steiner型公式并附证明，作者将其整理为Proposition29的双曲空间ε=0特例、独立核验。该特定公式使作者回想既有正交投影工作并成为本研究起点，故记有限具体ideas和proofs；主要结果及证明由作者完成。GPT-6 Astra另用于成稿审阅润色，记writing，不将人工主证明都归AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b34c8dc545f3e07d0eef9cefaa12dba65c5dfc22077bbc8acaca434f062f7c39"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "曲率积分、比较几何与尖锐不等式结合，方法的几何简化值得重点阅读。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish two types of Alexandrov--Fenchel inequalities for the weighted curvature integrals of static convex domains in space forms. The first type consists of a complete family of inequalities involving three weighted curvature integrals, with the second Minkowski type inequality of Xia [Calc. Var. Partial Differential Equations 55 (2016), Art. 96] and the weighted almost Schur lemma of Li and Xia [J. Differential Geom. 113 (2019), pp. 493--518] as special cases. The second type consists of a complete family of inequalities involving two weighted curvature integrals, confirming a conjectured geometric inequality by Hu and Li [Trans. Amer. Math. Soc. 375 (2022), pp. 5587--5615]. The key novelty lies in observing that, via the orthogonal projection map, the weighted curvature integrals for domains in space forms admit a natural interpretation in terms of mixed volumes of Euclidean convex bodies, thus reducing the problem to the classical Alexandrov--Fenchel inequalities in convex geometry.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
