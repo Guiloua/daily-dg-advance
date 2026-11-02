@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.42077",
+  "slug": "2610.42077",
+  "latest": {
+    "arxivId": "2610.42077",
+    "metadata": {
+      "title": "Polynomial-Time Algorithms for Links",
+      "authors": [
+        "Thiago de Paiva",
+        "Yi Liu"
+      ],
+      "abstract": "Every link in the \\(3\\)-sphere admits a generalised \\(T\\)-link presentation. In this paper, we give an explicit polynomial-time algorithm which, given a signed Artin braid word and the number of strands, computes such a presentation. Combining this construction with Yamada--Vogel braiding gives a polynomial-time conversion from arbitrary oriented combinatorial link diagrams to generalised \\(T\\)-link parameters. We prove polynomial bounds on the number of strands and crossings in the resulting braid. As an application, we prove that a link property or a link invariant is computable in polynomial time from diagrams if and only if the corresponding problem is solvable in polynomial time from generalised \\(T\\)-link parameters, with parameter input measured by the total number of strands and crossings in the corresponding braid diagram. Whenever a classification criterion or an explicit invariant formula is available in these parameters, it can be applied to the original link by substituting the parameters obtained from the diagram. A polynomial-time test or evaluation then gives a polynomial-time procedure on diagrams. We also establish the corresponding transfer for approximating real-valued invariants to prescribed accuracy.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "30 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T17:32:10Z",
+      "updatedAt": "2026-10-30T17:32:10Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-02T08:42:04.398340+00:00",
+        "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.950535+00:00",
+        "contentHash": "5b2fc4b6f83e929cd26f16d6156841882c99a15646f3686e971c56ae2ef77075"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "链环表示的多项式时间转换",
+      "workSummary": "给定有符号 Artin 辫词及股数，显式多项式时间算法将其转换为 generalized T-link 参数；结合 Yamada–Vogel braiding，可从任意定向组合链环图进行转换，并控制所得股数与交叉数的多项式增长。由此在对应辫图总股数及交叉数作为参数输入规模时，图表示和该参数表示之间的性质判定、不变量计算及指定精度近似具有多项式时间可迁移性。",
+      "techniques": [
+        "Artin 辫与 generalized T-link 转换",
+        "Yamada–Vogel braiding",
+        "输出规模多项式控制",
+        "不变量算法与精度的复杂度迁移"
+      ],
+      "breakthrough": "排除该表示转换本身的超多项式开销，使参数形式的有效判据可以传回普通链环图。",
+      "limitations": "并未给出所有结/链环问题的多项式时间算法：迁移结论要求参数端已有多项式判据或计算；输入规模按展开辫图的股数和交叉数衡量，不能擅自改为紧凑二进制整数参数长度。实值近似还需给定精度约定。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第29页明确披露大语言模型协助代数计算、显式参数变换、中间步骤组织核查、构造及其证明的改进、时间/存储/表示大小界核验、计算检验准备与稿件起草修改。相同声明明确研究问题、主要思想及一般方法由作者提出，故标写作、论证、核验及计算，不标ideas，也不臆定模型品牌。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.42077v1 · PDF 第29页，“Acknowledgements and use of AI tools”",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:49:34.217424+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.42077v1",
+        "contentHash": "dd7c59dc479880ed03a391f3d18e830b8807f319a550087544eae644c5865d70",
+        "pages": 30,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第29页明确披露大语言模型协助代数计算、显式参数变换、中间步骤组织核查、构造及其证明的改进、时间/存储/表示大小界核验、计算检验准备与稿件起草修改。相同声明明确研究问题、主要思想及一般方法由作者提出，故标写作、论证、核验及计算，不标ideas，也不臆定模型品牌。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6067f5671709a834e711f7b188c999535b6be25f4230528a1c0c2d3d1d183aef"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 68,
+      "priorityReason": "链环算法复杂度的通用转换工具有价值，需对输入编码和条件式应用保持清楚。"
+    },
+    "analysisBasis": {
+      "abstract": "Every link in the \\(3\\)-sphere admits a generalised \\(T\\)-link presentation. In this paper, we give an explicit polynomial-time algorithm which, given a signed Artin braid word and the number of strands, computes such a presentation. Combining this construction with Yamada--Vogel braiding gives a polynomial-time conversion from arbitrary oriented combinatorial link diagrams to generalised \\(T\\)-link parameters. We prove polynomial bounds on the number of strands and crossings in the resulting braid. As an application, we prove that a link property or a link invariant is computable in polynomial time from diagrams if and only if the corresponding problem is solvable in polynomial time from generalised \\(T\\)-link parameters, with parameter input measured by the total number of strands and crossings in the corresponding braid diagram. Whenever a classification criterion or an explicit invariant formula is available in these parameters, it can be applied to the original link by substituting the parameters obtained from the diagram. A polynomial-time test or evaluation then gives a polynomial-time procedure on diagrams. We also establish the corresponding transfer for approximating real-valued invariants to prescribed accuracy.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.42077",
+        "metadata": {
+          "title": "Polynomial-Time Algorithms for Links",
+          "authors": [
+            "Thiago de Paiva",
+            "Yi Liu"
+          ],
+          "abstract": "Every link in the \\(3\\)-sphere admits a generalised \\(T\\)-link presentation. In this paper, we give an explicit polynomial-time algorithm which, given a signed Artin braid word and the number of strands, computes such a presentation. Combining this construction with Yamada--Vogel braiding gives a polynomial-time conversion from arbitrary oriented combinatorial link diagrams to generalised \\(T\\)-link parameters. We prove polynomial bounds on the number of strands and crossings in the resulting braid. As an application, we prove that a link property or a link invariant is computable in polynomial time from diagrams if and only if the corresponding problem is solvable in polynomial time from generalised \\(T\\)-link parameters, with parameter input measured by the total number of strands and crossings in the corresponding braid diagram. Whenever a classification criterion or an explicit invariant formula is available in these parameters, it can be applied to the original link by substituting the parameters obtained from the diagram. A polynomial-time test or evaluation then gives a polynomial-time procedure on diagrams. We also establish the corresponding transfer for approximating real-valued invariants to prescribed accuracy.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "30 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T17:32:10Z",
+          "updatedAt": "2026-10-30T17:32:10Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-02T08:42:04.398340+00:00",
+            "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.950535+00:00",
+            "contentHash": "5b2fc4b6f83e929cd26f16d6156841882c99a15646f3686e971c56ae2ef77075"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "链环表示的多项式时间转换",
+          "workSummary": "给定有符号 Artin 辫词及股数，显式多项式时间算法将其转换为 generalized T-link 参数；结合 Yamada–Vogel braiding，可从任意定向组合链环图进行转换，并控制所得股数与交叉数的多项式增长。由此在对应辫图总股数及交叉数作为参数输入规模时，图表示和该参数表示之间的性质判定、不变量计算及指定精度近似具有多项式时间可迁移性。",
+          "techniques": [
+            "Artin 辫与 generalized T-link 转换",
+            "Yamada–Vogel braiding",
+            "输出规模多项式控制",
+            "不变量算法与精度的复杂度迁移"
+          ],
+          "breakthrough": "排除该表示转换本身的超多项式开销，使参数形式的有效判据可以传回普通链环图。",
+          "limitations": "并未给出所有结/链环问题的多项式时间算法：迁移结论要求参数端已有多项式判据或计算；输入规模按展开辫图的股数和交叉数衡量，不能擅自改为紧凑二进制整数参数长度。实值近似还需给定精度约定。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第29页明确披露大语言模型协助代数计算、显式参数变换、中间步骤组织核查、构造及其证明的改进、时间/存储/表示大小界核验、计算检验准备与稿件起草修改。相同声明明确研究问题、主要思想及一般方法由作者提出，故标写作、论证、核验及计算，不标ideas，也不臆定模型品牌。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.42077v1 · PDF 第29页，“Acknowledgements and use of AI tools”",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:49:34.217424+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.42077v1",
+            "contentHash": "dd7c59dc479880ed03a391f3d18e830b8807f319a550087544eae644c5865d70",
+            "pages": 30,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第29页明确披露大语言模型协助代数计算、显式参数变换、中间步骤组织核查、构造及其证明的改进、时间/存储/表示大小界核验、计算检验准备与稿件起草修改。相同声明明确研究问题、主要思想及一般方法由作者提出，故标写作、论证、核验及计算，不标ideas，也不臆定模型品牌。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6067f5671709a834e711f7b188c999535b6be25f4230528a1c0c2d3d1d183aef"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 68,
+          "priorityReason": "链环算法复杂度的通用转换工具有价值，需对输入编码和条件式应用保持清楚。"
+        },
+        "analysisBasis": {
+          "abstract": "Every link in the \\(3\\)-sphere admits a generalised \\(T\\)-link presentation. In this paper, we give an explicit polynomial-time algorithm which, given a signed Artin braid word and the number of strands, computes such a presentation. Combining this construction with Yamada--Vogel braiding gives a polynomial-time conversion from arbitrary oriented combinatorial link diagrams to generalised \\(T\\)-link parameters. We prove polynomial bounds on the number of strands and crossings in the resulting braid. As an application, we prove that a link property or a link invariant is computable in polynomial time from diagrams if and only if the corresponding problem is solvable in polynomial time from generalised \\(T\\)-link parameters, with parameter input measured by the total number of strands and crossings in the corresponding braid diagram. Whenever a classification criterion or an explicit invariant formula is available in these parameters, it can be applied to the original link by substituting the parameters obtained from the diagram. A polynomial-time test or evaluation then gives a polynomial-time procedure on diagrams. We also establish the corresponding transfer for approximating real-valued invariants to prescribed accuracy.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

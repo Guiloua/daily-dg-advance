@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41237",
+  "slug": "2610.41237",
+  "latest": {
+    "arxivId": "2610.41237",
+    "metadata": {
+      "title": "Odd-Degree Rigidity and a Numerical Characterization of Complete Flag Varieties",
+      "authors": [
+        "Kiwamu Watanabe"
+      ],
+      "abstract": "Let $F=G/B$ be the complete flag variety of a connected semisimple complex linear algebraic group. We prove that if a smooth Fano variety $X$ has the same dimension and Picard number as $F$, then the existence of a continuous map $X\\to F$ of odd topological degree implies $X$ is isomorphic to $F$. In particular, a smooth Fano variety homotopy equivalent to $F$ is isomorphic to $F$. The algebraic input is a numerical characterization of complete flags: a positive-dimensional smooth Fano variety $X$ is a complete flag variety if and only if its pseudoindex $\\iota_X$ is at least two and ${\\rm ker}({\\rm Sym}^2N^1(X)_{\\mathbb R}\\to N^2(X)_{\\mathbb R})$ contains a positive-definite quadratic form. The pseudoindex condition can equivalently be replaced by the divisibility of $-K_X$ by two in ${\\rm Pic}(X)$. The key observation is that a single definite quadratic relation excludes surfaces in every fiber of any elementary contraction; standard contraction theorems then yield smooth ${\\mathbb P}^1$-fibrations and the characterization of complete flags applies. For the odd-degree theorem, Poincaré duality and a mod-two Wu-class argument show that the anticanonical class is divisible by two; comparison of the integral coroot lattices then identifies the flag. Most proofs were developed through extensive discussions with OpenAI's ChatGPT (GPT-5.6 Sol and GPT-6), based on mathematical directions supplied by the author and arguments suggested by ChatGPT; see the AI Disclosure.",
+      "categories": [
+        "math.AG",
+        "math.AT",
+        "math.CV",
+        "math.DG",
+        "math.RT"
+      ],
+      "primaryCategory": "math.AG",
+      "comment": "17 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T04:23:21Z",
+      "updatedAt": "2026-10-30T04:23:21Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-02T08:41:40.732932+00:00",
+        "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.397107+00:00",
+        "contentHash": "05c5a3874dca7dd2db66f387dade6405eec5808901c94c3bd5e1a71a37ee786b"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "数值刻画与拓扑刚性",
+      "workSummary": "在复数域上，完全旗 F=G/B 的 G 连通半单。Theorem1.1：光滑 Fano 簇 X 若与 F 同复维、同 Picard 数，存在任意连续奇拓扑次数映射 X→F 即得 X≅F；映射本身不必代数，也不声称该连续映射就是同构。Theorem1.2：正维光滑 Fano X 为完全旗，当且仅当伪指标ι_X≥2且 ker(Sym²N¹(X)_R→N²(X)_R) 含正定二次型；也等价于把ι_X条件替换为 −K_X∈2Pic(X)，保留同一正定核条件。正定性是对曲线数值空间 N₁(X)_R 上的二次型而言，不能误写为每个交数均为正。",
+      "techniques": [
+        "正定二次关系在收缩纤维曲面上给0>0矛盾，迫纤维维数≤1",
+        "极端射线长度≥2配合收缩定理得到光滑P¹纤维化，再调用既有完全旗识别",
+        "奇次数与Poincaré对偶给Picard格奇指数嵌入；Wu公式和Steenrod自然性导出w₂(X)=0",
+        "上交数多项式的Weyl分解恢复余根直线与反射配置",
+        "整余根格模二剩余类计数区分B_m/C_m，排除仅有理超平面配置无法分辨的类型"
+      ],
+      "breakthrough": "给出单个正定数值关系驱动的完全旗识别，进一步把奇次数连续映射变成复代数簇类型的刚性。",
+      "limitations": "已读 PDF 第1–16页相关定义、Theorems1.1/1.2、收缩与奇次数路线及余根格步骤，渲染第2页核对三个等价条件；未独立验证整篇证明及引用的收缩/旗识别定理。奇次数包括负奇数；同维、相同Picard数与光滑Fano都须保留。伪指标≥2与−K二可除不在任意Fano上无条件等价，只在本刻画与正定关系合取时可替换。该结论不声称 f 必为同构：P¹ 的三次自映射即反例；有限代数映射同构推论额外排除P¹因子。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "摘要和第15–16页披露大多数证明经与 GPT-5.6 Sol/GPT-6 长期讨论形成，模型建议中间命题、证明路径和数学论证，并协助审查修订证明、文献检索、核查参考文献及稿件准备。原始 mixed-intersection 与 Dynkin 图恢复的问题明确源于作者先前研究；披露未把某一个具体核心构造或步骤单独归因模型，保守记 proofs/exploration 等，不据泛称路径建议标 ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41237v1 · PDF 第 1 页摘要与第 15–16 页 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:46:56.981819+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41237v1",
+        "contentHash": "5ac5f60ef5e6b2ea1345acecff9b0b4afa00c42117fd5957de64bec9f286f41a",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。摘要和第15–16页披露大多数证明经与 GPT-5.6 Sol/GPT-6 长期讨论形成，模型建议中间命题、证明路径和数学论证，并协助审查修订证明、文献检索、核查参考文献及稿件准备。原始 mixed-intersection 与 Dynkin 图恢复的问题明确源于作者先前研究；披露未把某一个具体核心构造或步骤单独归因模型，保守记 proofs/exploration 等，不据泛称路径建议标 ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ca92a8e84e31b17a448b9acd3dba4b82fd1e5c1d575ed49d75c4e1c5147eb2d5"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 88,
+      "priorityReason": "Fano 刚性与几何拓扑紧密交叉，数值到几何的关键步骤值得正文审查。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $F=G/B$ be the complete flag variety of a connected semisimple complex linear algebraic group. We prove that if a smooth Fano variety $X$ has the same dimension and Picard number as $F$, then the existence of a continuous map $X\\to F$ of odd topological degree implies $X$ is isomorphic to $F$. In particular, a smooth Fano variety homotopy equivalent to $F$ is isomorphic to $F$. The algebraic input is a numerical characterization of complete flags: a positive-dimensional smooth Fano variety $X$ is a complete flag variety if and only if its pseudoindex $\\iota_X$ is at least two and ${\\rm ker}({\\rm Sym}^2N^1(X)_{\\mathbb R}\\to N^2(X)_{\\mathbb R})$ contains a positive-definite quadratic form. The pseudoindex condition can equivalently be replaced by the divisibility of $-K_X$ by two in ${\\rm Pic}(X)$. The key observation is that a single definite quadratic relation excludes surfaces in every fiber of any elementary contraction; standard contraction theorems then yield smooth ${\\mathbb P}^1$-fibrations and the characterization of complete flags applies. For the odd-degree theorem, Poincaré duality and a mod-two Wu-class argument show that the anticanonical class is divisible by two; comparison of the integral coroot lattices then identifies the flag. Most proofs were developed through extensive discussions with OpenAI's ChatGPT (GPT-5.6 Sol and GPT-6), based on mathematical directions supplied by the author and arguments suggested by ChatGPT; see the AI Disclosure.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41237",
+        "metadata": {
+          "title": "Odd-Degree Rigidity and a Numerical Characterization of Complete Flag Varieties",
+          "authors": [
+            "Kiwamu Watanabe"
+          ],
+          "abstract": "Let $F=G/B$ be the complete flag variety of a connected semisimple complex linear algebraic group. We prove that if a smooth Fano variety $X$ has the same dimension and Picard number as $F$, then the existence of a continuous map $X\\to F$ of odd topological degree implies $X$ is isomorphic to $F$. In particular, a smooth Fano variety homotopy equivalent to $F$ is isomorphic to $F$. The algebraic input is a numerical characterization of complete flags: a positive-dimensional smooth Fano variety $X$ is a complete flag variety if and only if its pseudoindex $\\iota_X$ is at least two and ${\\rm ker}({\\rm Sym}^2N^1(X)_{\\mathbb R}\\to N^2(X)_{\\mathbb R})$ contains a positive-definite quadratic form. The pseudoindex condition can equivalently be replaced by the divisibility of $-K_X$ by two in ${\\rm Pic}(X)$. The key observation is that a single definite quadratic relation excludes surfaces in every fiber of any elementary contraction; standard contraction theorems then yield smooth ${\\mathbb P}^1$-fibrations and the characterization of complete flags applies. For the odd-degree theorem, Poincaré duality and a mod-two Wu-class argument show that the anticanonical class is divisible by two; comparison of the integral coroot lattices then identifies the flag. Most proofs were developed through extensive discussions with OpenAI's ChatGPT (GPT-5.6 Sol and GPT-6), based on mathematical directions supplied by the author and arguments suggested by ChatGPT; see the AI Disclosure.",
+          "categories": [
+            "math.AG",
+            "math.AT",
+            "math.CV",
+            "math.DG",
+            "math.RT"
+          ],
+          "primaryCategory": "math.AG",
+          "comment": "17 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T04:23:21Z",
+          "updatedAt": "2026-10-30T04:23:21Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-02T08:41:40.732932+00:00",
+            "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.397107+00:00",
+            "contentHash": "05c5a3874dca7dd2db66f387dade6405eec5808901c94c3bd5e1a71a37ee786b"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "数值刻画与拓扑刚性",
+          "workSummary": "在复数域上，完全旗 F=G/B 的 G 连通半单。Theorem1.1：光滑 Fano 簇 X 若与 F 同复维、同 Picard 数，存在任意连续奇拓扑次数映射 X→F 即得 X≅F；映射本身不必代数，也不声称该连续映射就是同构。Theorem1.2：正维光滑 Fano X 为完全旗，当且仅当伪指标ι_X≥2且 ker(Sym²N¹(X)_R→N²(X)_R) 含正定二次型；也等价于把ι_X条件替换为 −K_X∈2Pic(X)，保留同一正定核条件。正定性是对曲线数值空间 N₁(X)_R 上的二次型而言，不能误写为每个交数均为正。",
+          "techniques": [
+            "正定二次关系在收缩纤维曲面上给0>0矛盾，迫纤维维数≤1",
+            "极端射线长度≥2配合收缩定理得到光滑P¹纤维化，再调用既有完全旗识别",
+            "奇次数与Poincaré对偶给Picard格奇指数嵌入；Wu公式和Steenrod自然性导出w₂(X)=0",
+            "上交数多项式的Weyl分解恢复余根直线与反射配置",
+            "整余根格模二剩余类计数区分B_m/C_m，排除仅有理超平面配置无法分辨的类型"
+          ],
+          "breakthrough": "给出单个正定数值关系驱动的完全旗识别，进一步把奇次数连续映射变成复代数簇类型的刚性。",
+          "limitations": "已读 PDF 第1–16页相关定义、Theorems1.1/1.2、收缩与奇次数路线及余根格步骤，渲染第2页核对三个等价条件；未独立验证整篇证明及引用的收缩/旗识别定理。奇次数包括负奇数；同维、相同Picard数与光滑Fano都须保留。伪指标≥2与−K二可除不在任意Fano上无条件等价，只在本刻画与正定关系合取时可替换。该结论不声称 f 必为同构：P¹ 的三次自映射即反例；有限代数映射同构推论额外排除P¹因子。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "摘要和第15–16页披露大多数证明经与 GPT-5.6 Sol/GPT-6 长期讨论形成，模型建议中间命题、证明路径和数学论证，并协助审查修订证明、文献检索、核查参考文献及稿件准备。原始 mixed-intersection 与 Dynkin 图恢复的问题明确源于作者先前研究；披露未把某一个具体核心构造或步骤单独归因模型，保守记 proofs/exploration 等，不据泛称路径建议标 ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41237v1 · PDF 第 1 页摘要与第 15–16 页 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:46:56.981819+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41237v1",
+            "contentHash": "5ac5f60ef5e6b2ea1345acecff9b0b4afa00c42117fd5957de64bec9f286f41a",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。摘要和第15–16页披露大多数证明经与 GPT-5.6 Sol/GPT-6 长期讨论形成，模型建议中间命题、证明路径和数学论证，并协助审查修订证明、文献检索、核查参考文献及稿件准备。原始 mixed-intersection 与 Dynkin 图恢复的问题明确源于作者先前研究；披露未把某一个具体核心构造或步骤单独归因模型，保守记 proofs/exploration 等，不据泛称路径建议标 ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ca92a8e84e31b17a448b9acd3dba4b82fd1e5c1d575ed49d75c4e1c5147eb2d5"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 88,
+          "priorityReason": "Fano 刚性与几何拓扑紧密交叉，数值到几何的关键步骤值得正文审查。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $F=G/B$ be the complete flag variety of a connected semisimple complex linear algebraic group. We prove that if a smooth Fano variety $X$ has the same dimension and Picard number as $F$, then the existence of a continuous map $X\\to F$ of odd topological degree implies $X$ is isomorphic to $F$. In particular, a smooth Fano variety homotopy equivalent to $F$ is isomorphic to $F$. The algebraic input is a numerical characterization of complete flags: a positive-dimensional smooth Fano variety $X$ is a complete flag variety if and only if its pseudoindex $\\iota_X$ is at least two and ${\\rm ker}({\\rm Sym}^2N^1(X)_{\\mathbb R}\\to N^2(X)_{\\mathbb R})$ contains a positive-definite quadratic form. The pseudoindex condition can equivalently be replaced by the divisibility of $-K_X$ by two in ${\\rm Pic}(X)$. The key observation is that a single definite quadratic relation excludes surfaces in every fiber of any elementary contraction; standard contraction theorems then yield smooth ${\\mathbb P}^1$-fibrations and the characterization of complete flags applies. For the odd-degree theorem, Poincaré duality and a mod-two Wu-class argument show that the anticanonical class is divisible by two; comparison of the integral coroot lattices then identifies the flag. Most proofs were developed through extensive discussions with OpenAI's ChatGPT (GPT-5.6 Sol and GPT-6), based on mathematical directions supplied by the author and arguments suggested by ChatGPT; see the AI Disclosure.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

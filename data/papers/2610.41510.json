@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41510",
+  "slug": "2610.41510",
+  "latest": {
+    "arxivId": "2610.41510",
+    "metadata": {
+      "title": "Intersections of fractal sets with rectifiable curves",
+      "authors": [
+        "Oleg Ivrii",
+        "Truong Vu"
+      ],
+      "abstract": "Let $K \\subset\\mathbb{R}^d$, $d\\ge2$, be a connected compact set and $\\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\\int_0^1\\frac{dt}{\\phi(t)}<\\infty$, then there exists a rectifiable curve $\\gamma\\subset\\mathbb{R}^d$ such that $\\mathcal H^\\phi(K \\cap\\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\\gamma$ such that $\\textrm{ this http URL }(K \\cap\\gamma)\\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\\int_0^1\\frac{dt}{\\phi(t)}=\\infty$, then $\\mathcal H^\\phi(K \\cap\\gamma)=0$ for every rectifiable curve $\\gamma$ and $\\textrm{ this http URL }(K \\cap\\gamma)<1$ for every chord-arc curve $\\gamma$.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "15 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T10:01:24Z",
+      "updatedAt": "2026-10-30T10:01:24Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-02T08:41:52.705887+00:00",
+        "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.947431+00:00",
+        "contentHash": "ecac351ddcb61f13f1afe167fce762b87c754851c9780369a14387f680a3cb5b"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "分形交集的积分阈值",
+      "workSummary": "PDF恢复摘要损坏量为 Hausdorff维数。d≥2、φ(t)=tL(t) 为规范函数且 L 非增。Theorem1.1：若紧集 K 线上一致多孔（UPL）且 ∫₀¹dt/φ(t)=∞，则对每条可求长γ有 H^φ(K∩γ)=0；反之对任意至少含两点的连通紧 K，积分收敛时存在可求长γ使 H^φ(K∩γ)>0。Theorem1.2：任意紧UPL集与每条弦弧曲线交集的 Hausdorff维数<1，此项不需积分条件或K连通；任意非退化连通紧K及每个0<s<1均存在弦弧γ使 dim_H(K∩γ)>s（正文强于摘要的≥s）。UPL指存在η>0，每个非退化线段I中都有x使B(x,η|I|)避开K。",
+      "techniques": [
+        "连通紧集的递归子立方选择与规范质量分配",
+        "覆盖数积分有限推出可求长包络曲线",
+        "Hausdorff与Assouad维数同为log_N(N−1)的Cantor子集加弦弧包络定理",
+        "UPL与弱切不含线段、细管覆盖数指数<1的等价刻画",
+        "旅行商β数控制及dyadic能量递推；局部Carleson能量推出Assouad维数<1"
+      ],
+      "breakthrough": "精确区分可求长交集的规范测度积分阈值和弦弧交集的严格降维，并能在每个非退化连续统中找到维数任意接近1的弦弧交集。",
+      "limitations": "已读 PDF 第1–15页的定理、构造、UPL覆盖与能量路线，渲染第3页核对损坏的维数量及严格不等式；未独立验证整篇证明和旅行商/弦弧包络的外部引用。正向存在性必须排除单点紧集。积分发散的零测度方向要求UPL，积分收敛的正测度方向要求非退化连通性，二者并非无条件对所有紧集的等价。dim_H<1是对每条弦弧曲线分别的严格界，不宣称对所有弦弧常数存在统一远离1的间隙；不能由每个s<1的存在性推出某一弦弧交集维数恰为1。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41510v1 · PDF 第 15 页 Use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:47:41.343068+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41510v1",
+        "contentHash": "4e184ade9b16237e86207272e7d2d32dcb00daec47107ba01aa1bc32ce93da95",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "37271b9097ddb4d68333b90b8387ca5e61489be984697ce5a373183f648a3085"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "度量测度几何和可求长性的重要阈值问题，需正文恢复损坏公式。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $K \\subset\\mathbb{R}^d$, $d\\ge2$, be a connected compact set and $\\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\\int_0^1\\frac{dt}{\\phi(t)}<\\infty$, then there exists a rectifiable curve $\\gamma\\subset\\mathbb{R}^d$ such that $\\mathcal H^\\phi(K \\cap\\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\\gamma$ such that $\\textrm{ this http URL }(K \\cap\\gamma)\\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\\int_0^1\\frac{dt}{\\phi(t)}=\\infty$, then $\\mathcal H^\\phi(K \\cap\\gamma)=0$ for every rectifiable curve $\\gamma$ and $\\textrm{ this http URL }(K \\cap\\gamma)<1$ for every chord-arc curve $\\gamma$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41510",
+        "metadata": {
+          "title": "Intersections of fractal sets with rectifiable curves",
+          "authors": [
+            "Oleg Ivrii",
+            "Truong Vu"
+          ],
+          "abstract": "Let $K \\subset\\mathbb{R}^d$, $d\\ge2$, be a connected compact set and $\\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\\int_0^1\\frac{dt}{\\phi(t)}<\\infty$, then there exists a rectifiable curve $\\gamma\\subset\\mathbb{R}^d$ such that $\\mathcal H^\\phi(K \\cap\\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\\gamma$ such that $\\textrm{ this http URL }(K \\cap\\gamma)\\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\\int_0^1\\frac{dt}{\\phi(t)}=\\infty$, then $\\mathcal H^\\phi(K \\cap\\gamma)=0$ for every rectifiable curve $\\gamma$ and $\\textrm{ this http URL }(K \\cap\\gamma)<1$ for every chord-arc curve $\\gamma$.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "15 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T10:01:24Z",
+          "updatedAt": "2026-10-30T10:01:24Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-02T08:41:52.705887+00:00",
+            "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.947431+00:00",
+            "contentHash": "ecac351ddcb61f13f1afe167fce762b87c754851c9780369a14387f680a3cb5b"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "分形交集的积分阈值",
+          "workSummary": "PDF恢复摘要损坏量为 Hausdorff维数。d≥2、φ(t)=tL(t) 为规范函数且 L 非增。Theorem1.1：若紧集 K 线上一致多孔（UPL）且 ∫₀¹dt/φ(t)=∞，则对每条可求长γ有 H^φ(K∩γ)=0；反之对任意至少含两点的连通紧 K，积分收敛时存在可求长γ使 H^φ(K∩γ)>0。Theorem1.2：任意紧UPL集与每条弦弧曲线交集的 Hausdorff维数<1，此项不需积分条件或K连通；任意非退化连通紧K及每个0<s<1均存在弦弧γ使 dim_H(K∩γ)>s（正文强于摘要的≥s）。UPL指存在η>0，每个非退化线段I中都有x使B(x,η|I|)避开K。",
+          "techniques": [
+            "连通紧集的递归子立方选择与规范质量分配",
+            "覆盖数积分有限推出可求长包络曲线",
+            "Hausdorff与Assouad维数同为log_N(N−1)的Cantor子集加弦弧包络定理",
+            "UPL与弱切不含线段、细管覆盖数指数<1的等价刻画",
+            "旅行商β数控制及dyadic能量递推；局部Carleson能量推出Assouad维数<1"
+          ],
+          "breakthrough": "精确区分可求长交集的规范测度积分阈值和弦弧交集的严格降维，并能在每个非退化连续统中找到维数任意接近1的弦弧交集。",
+          "limitations": "已读 PDF 第1–15页的定理、构造、UPL覆盖与能量路线，渲染第3页核对损坏的维数量及严格不等式；未独立验证整篇证明和旅行商/弦弧包络的外部引用。正向存在性必须排除单点紧集。积分发散的零测度方向要求UPL，积分收敛的正测度方向要求非退化连通性，二者并非无条件对所有紧集的等价。dim_H<1是对每条弦弧曲线分别的严格界，不宣称对所有弦弧常数存在统一远离1的间隙；不能由每个s<1的存在性推出某一弦弧交集维数恰为1。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41510v1 · PDF 第 15 页 Use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:47:41.343068+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41510v1",
+            "contentHash": "4e184ade9b16237e86207272e7d2d32dcb00daec47107ba01aa1bc32ce93da95",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "37271b9097ddb4d68333b90b8387ca5e61489be984697ce5a373183f648a3085"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "度量测度几何和可求长性的重要阈值问题，需正文恢复损坏公式。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $K \\subset\\mathbb{R}^d$, $d\\ge2$, be a connected compact set and $\\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\\int_0^1\\frac{dt}{\\phi(t)}<\\infty$, then there exists a rectifiable curve $\\gamma\\subset\\mathbb{R}^d$ such that $\\mathcal H^\\phi(K \\cap\\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\\gamma$ such that $\\textrm{ this http URL }(K \\cap\\gamma)\\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\\int_0^1\\frac{dt}{\\phi(t)}=\\infty$, then $\\mathcal H^\\phi(K \\cap\\gamma)=0$ for every rectifiable curve $\\gamma$ and $\\textrm{ this http URL }(K \\cap\\gamma)<1$ for every chord-arc curve $\\gamma$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

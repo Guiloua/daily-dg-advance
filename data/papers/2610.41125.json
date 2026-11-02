@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41125",
+  "slug": "2610.41125",
+  "latest": {
+    "arxivId": "2610.41125",
+    "metadata": {
+      "title": "Bounds for lattice points in terms of volume and successive minima",
+      "authors": [
+        "Jun Wang",
+        "Fei Xue"
+      ],
+      "abstract": "We prove, in every dimension, the upper bound conjectured by Betke, Henk and Wills for the lattice-point enumerator in terms of volume and successive minima. For every convex body $K\\subset R^n$ and full-rank lattice $\\Lambda$, we establish $$ \\#(K\\cap\\Lambda)\\le\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda}\\prod_{i=1}^n\\left(1+\\frac{i\\lambda_i}{2}\\right), $$ where $\\lambda_i$ are the successive minima of $(K-K)/2$ with respect to $\\Lambda$. Equality holds precisely for lattice translates of positive integral dilates of unimodular simplices. We also prove $$ \\#(\\mathrm{int}K\\cap\\Lambda)\\ge\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda} \\left(1-\\frac{n}{4}\\sum_{i=1}^{n-1}\\lambda_i-\\frac{n}{2}\\lambda_n\\right), $$ which implies the lower estimate with factor $1-\\frac{1}{2}\\sum_{i=1}^n i\\lambda_i$. In dimension two we prove the lower bound with factor $(1-\\lambda_1/2)(1-\\lambda_2)$ when $\\lambda_2\\le1$. We also observe that a conjectured product lower bound for origin-symmetric bodies fails in dimension three. The proofs combine geometric compression, lattice-cell counts in coordinate sections, and an elementary coefficient comparison.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "18 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-10-30T01:29:22Z",
+      "updatedAt": "2026-10-30T01:29:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-02T08:41:52.705887+00:00",
+        "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.395981+00:00",
+        "contentHash": "058f806023c6c6e94d6940940c569747770dea523f47e6ded087c340a22d6b68"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "尖锐不等式与等号分类",
+      "workSummary": "对非空内部的n维凸体K和满秩格Λ，作者声称证明含体积的Betke–Henk–Wills上界：格点数不超过vol(K)/detΛ乘以各(1+iλ_i/2)的乘积，λ_i为(K−K)/2的逐次极小值。等号当且仅当K是一个格向量平移的、正整数倍的幺模单纯形。另给出一般维内部格点数的线性下界和平面λ₂≤1时的乘积下界。",
+      "techniques": [
+        "向反阻塞体归约与保体积的对角压缩",
+        "坐标截面中的格胞计数",
+        "有序系数比较及等号分析"
+      ],
+      "breakthrough": "将带体积的上界从已有二维情形推广到任意维，并完全刻画等号；内部计数的线性项系数也得到尖锐性例子。还指出原点对称体的另一个乘积下界在三维存在反例。",
+      "limitations": "解决的是文中(1.3)这一含体积上界，不是仍在n≥4开放的纯逐次极小值乘积取整型离散Minkowski猜想(1.2)；一般维下界也未被提升为全部猜想乘积下界。幺模性相对于给定格，等号平移必须属于该格，倍数必须为正整数。已读第1–3页主结果和路线，未独立验证后续压缩构造与系数证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:46:17.652246+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41125v1",
+        "contentHash": "3883f2217742277a70f5a9efa1d0a82e508c8aaaea3aa778761bc0b81520d2b7",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。已检索完整 18 页文本及点写 AI、跨行模型名、Danus，核对首页及末尾正文、参考文献，未观察到作者自用生成式 AI 的正面披露。这不等于确认未用 AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7ab469fa9f55394216ebe4a785752a7fa387eed1ca6f240f5d226e5ccb257501"
+      },
+      "priorityScore": 74,
+      "priorityReason": "尖锐几何不等式值得关注，但主要属于数的几何而非黎曼比较几何。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove, in every dimension, the upper bound conjectured by Betke, Henk and Wills for the lattice-point enumerator in terms of volume and successive minima. For every convex body $K\\subset R^n$ and full-rank lattice $\\Lambda$, we establish $$ \\#(K\\cap\\Lambda)\\le\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda}\\prod_{i=1}^n\\left(1+\\frac{i\\lambda_i}{2}\\right), $$ where $\\lambda_i$ are the successive minima of $(K-K)/2$ with respect to $\\Lambda$. Equality holds precisely for lattice translates of positive integral dilates of unimodular simplices. We also prove $$ \\#(\\mathrm{int}K\\cap\\Lambda)\\ge\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda} \\left(1-\\frac{n}{4}\\sum_{i=1}^{n-1}\\lambda_i-\\frac{n}{2}\\lambda_n\\right), $$ which implies the lower estimate with factor $1-\\frac{1}{2}\\sum_{i=1}^n i\\lambda_i$. In dimension two we prove the lower bound with factor $(1-\\lambda_1/2)(1-\\lambda_2)$ when $\\lambda_2\\le1$. We also observe that a conjectured product lower bound for origin-symmetric bodies fails in dimension three. The proofs combine geometric compression, lattice-cell counts in coordinate sections, and an elementary coefficient comparison.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41125",
+        "metadata": {
+          "title": "Bounds for lattice points in terms of volume and successive minima",
+          "authors": [
+            "Jun Wang",
+            "Fei Xue"
+          ],
+          "abstract": "We prove, in every dimension, the upper bound conjectured by Betke, Henk and Wills for the lattice-point enumerator in terms of volume and successive minima. For every convex body $K\\subset R^n$ and full-rank lattice $\\Lambda$, we establish $$ \\#(K\\cap\\Lambda)\\le\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda}\\prod_{i=1}^n\\left(1+\\frac{i\\lambda_i}{2}\\right), $$ where $\\lambda_i$ are the successive minima of $(K-K)/2$ with respect to $\\Lambda$. Equality holds precisely for lattice translates of positive integral dilates of unimodular simplices. We also prove $$ \\#(\\mathrm{int}K\\cap\\Lambda)\\ge\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda} \\left(1-\\frac{n}{4}\\sum_{i=1}^{n-1}\\lambda_i-\\frac{n}{2}\\lambda_n\\right), $$ which implies the lower estimate with factor $1-\\frac{1}{2}\\sum_{i=1}^n i\\lambda_i$. In dimension two we prove the lower bound with factor $(1-\\lambda_1/2)(1-\\lambda_2)$ when $\\lambda_2\\le1$. We also observe that a conjectured product lower bound for origin-symmetric bodies fails in dimension three. The proofs combine geometric compression, lattice-cell counts in coordinate sections, and an elementary coefficient comparison.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "18 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-10-30T01:29:22Z",
+          "updatedAt": "2026-10-30T01:29:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-02T08:41:52.705887+00:00",
+            "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.395981+00:00",
+            "contentHash": "058f806023c6c6e94d6940940c569747770dea523f47e6ded087c340a22d6b68"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "尖锐不等式与等号分类",
+          "workSummary": "对非空内部的n维凸体K和满秩格Λ，作者声称证明含体积的Betke–Henk–Wills上界：格点数不超过vol(K)/detΛ乘以各(1+iλ_i/2)的乘积，λ_i为(K−K)/2的逐次极小值。等号当且仅当K是一个格向量平移的、正整数倍的幺模单纯形。另给出一般维内部格点数的线性下界和平面λ₂≤1时的乘积下界。",
+          "techniques": [
+            "向反阻塞体归约与保体积的对角压缩",
+            "坐标截面中的格胞计数",
+            "有序系数比较及等号分析"
+          ],
+          "breakthrough": "将带体积的上界从已有二维情形推广到任意维，并完全刻画等号；内部计数的线性项系数也得到尖锐性例子。还指出原点对称体的另一个乘积下界在三维存在反例。",
+          "limitations": "解决的是文中(1.3)这一含体积上界，不是仍在n≥4开放的纯逐次极小值乘积取整型离散Minkowski猜想(1.2)；一般维下界也未被提升为全部猜想乘积下界。幺模性相对于给定格，等号平移必须属于该格，倍数必须为正整数。已读第1–3页主结果和路线，未独立验证后续压缩构造与系数证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:46:17.652246+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41125v1",
+            "contentHash": "3883f2217742277a70f5a9efa1d0a82e508c8aaaea3aa778761bc0b81520d2b7",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。已检索完整 18 页文本及点写 AI、跨行模型名、Danus，核对首页及末尾正文、参考文献，未观察到作者自用生成式 AI 的正面披露。这不等于确认未用 AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7ab469fa9f55394216ebe4a785752a7fa387eed1ca6f240f5d226e5ccb257501"
+          },
+          "priorityScore": 74,
+          "priorityReason": "尖锐几何不等式值得关注，但主要属于数的几何而非黎曼比较几何。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove, in every dimension, the upper bound conjectured by Betke, Henk and Wills for the lattice-point enumerator in terms of volume and successive minima. For every convex body $K\\subset R^n$ and full-rank lattice $\\Lambda$, we establish $$ \\#(K\\cap\\Lambda)\\le\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda}\\prod_{i=1}^n\\left(1+\\frac{i\\lambda_i}{2}\\right), $$ where $\\lambda_i$ are the successive minima of $(K-K)/2$ with respect to $\\Lambda$. Equality holds precisely for lattice translates of positive integral dilates of unimodular simplices. We also prove $$ \\#(\\mathrm{int}K\\cap\\Lambda)\\ge\\frac{\\mathrm{vol}_n(K)}{\\det\\Lambda} \\left(1-\\frac{n}{4}\\sum_{i=1}^{n-1}\\lambda_i-\\frac{n}{2}\\lambda_n\\right), $$ which implies the lower estimate with factor $1-\\frac{1}{2}\\sum_{i=1}^n i\\lambda_i$. In dimension two we prove the lower bound with factor $(1-\\lambda_1/2)(1-\\lambda_2)$ when $\\lambda_2\\le1$. We also observe that a conjectured product lower bound for origin-symmetric bodies fails in dimension three. The proofs combine geometric compression, lattice-cell counts in coordinate sections, and an elementary coefficient comparison.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

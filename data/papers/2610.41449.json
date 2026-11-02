@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41449",
+  "slug": "2610.41449",
+  "latest": {
+    "arxivId": "2610.41449",
+    "metadata": {
+      "title": "The regular set of Ricci limit spaces",
+      "authors": [
+        "Tianyin Ren"
+      ],
+      "abstract": "Let $(X,d,p)$ be a nontrivial pointed Gromov--Hausdorff limit of complete connected Riemannian $n$-manifolds satisfying $\\operatorname{Ric}\\geq-(n-1)g$. For $1\\leq j\\leq n$, set \\[ \\mathcal{R}_j(X) = \\bigl\\{x\\in X:\\text{ every tangent cone at } x \\text{ is isometric to } \\mathbb{R}^j\\bigr\\}, \\qquad \\mathcal{R}(X)=\\bigsqcup_{j=1}^n\\mathcal{R}_j(X). \\] We prove that there is a unique $k$ such that $\\mathcal{R}(X)=\\mathcal{R}_k(X)$, answering the pointwise regular-dimension question originating in Cheeger and Colding's work~\\cite[p408]{CC97}. We construct a volume-corrected heat entropy on RCD space and identify the distributional logarithmic-density defect $\\operatorname{tr}(\\operatorname{Hess} f)-\\Delta f$ by Green-volume regularization.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "31 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T08:51:53Z",
+      "updatedAt": "2026-10-30T08:51:53Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-02T08:41:40.732932+00:00",
+        "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.398118+00:00",
+        "contentHash": "b5b894821aabbef25611e4c1b0a949d9a40d59fbdd8ac36635a283e533ed2a6d"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Ricci 极限空间正则维数刚性",
+      "workSummary": "对非平凡、由完整连通n维流形在一致Ricci下界下取得的尖点GH极限，作者声称所有强正则点的维数逐点一致：存在唯一k使非空正则集R(X)=R_k(X)。这里强j正则要求每一个切锥均为欧氏R^j，目标是排除零测集上可能残留的其他正则维数。",
+      "techniques": [
+        "以本征k维体积密度的负对数修正热核W熵，通过Green核超水平体积正则化、局部转置估计和Hessian迹与测度Laplacian的分布缺陷恒等式，比较例外点与随时间选取的普通正则中心。"
+      ],
+      "breakthrough": "结论针对所有强正则点，超过已有的几乎处处本质维数恒定结果；核心分析输入另在完整连通、满支撑且测度在有界集有限的有限维RCD空间上陈述对数密度局部L²性和方向性分布恒等式。",
+      "limitations": "主结论针对文中的Ricci极限空间，不能仅凭它宣布任意RCD空间都逐点正则维数一致；只存在一个欧氏切锥不足以满足这里的强正则定义。正则维数k不必等于整个空间的Hausdorff维数，文中也不把对数密度直接断言为具有完整Sobolev梯度。已核对第1–4页定义、主定理及路线，未独立验证后续Green正则化和熵估计证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "致谢明确作者使用 ChatGPT/OpenAI 探索证明策略、核查计算、改进语言。未指明某一核心路线或构造由 AI 首次提出，故记 exploration 而非 ideas，也不把核查计算写成模型完成证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41449v1 · PDF 第 30 页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:43:47.888923+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41449v1",
+        "contentHash": "470686c770ffff6f17f50ca463a852274560d8823e5c23b5a1db5c7468cc508e",
+        "pages": 31,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确作者使用 ChatGPT/OpenAI 探索证明策略、核查计算、改进语言。未指明某一核心路线或构造由 AI 首次提出，故记 exploration 而非 ideas，也不把核查计算写成模型完成证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "aa8427db5a666ed0b7c53fe3cdcc36d030fcb62aabb57f8bc4bd72224fb6052d"
+      },
+      "aiUsage": [
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 99,
+      "priorityReason": "Ricci 下界极限几何的核心维数问题，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $(X,d,p)$ be a nontrivial pointed Gromov--Hausdorff limit of complete connected Riemannian $n$-manifolds satisfying $\\operatorname{Ric}\\geq-(n-1)g$. For $1\\leq j\\leq n$, set \\[ \\mathcal{R}_j(X) = \\bigl\\{x\\in X:\\text{ every tangent cone at } x \\text{ is isometric to } \\mathbb{R}^j\\bigr\\}, \\qquad \\mathcal{R}(X)=\\bigsqcup_{j=1}^n\\mathcal{R}_j(X). \\] We prove that there is a unique $k$ such that $\\mathcal{R}(X)=\\mathcal{R}_k(X)$, answering the pointwise regular-dimension question originating in Cheeger and Colding's work~\\cite[p408]{CC97}. We construct a volume-corrected heat entropy on RCD space and identify the distributional logarithmic-density defect $\\operatorname{tr}(\\operatorname{Hess} f)-\\Delta f$ by Green-volume regularization.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41449",
+        "metadata": {
+          "title": "The regular set of Ricci limit spaces",
+          "authors": [
+            "Tianyin Ren"
+          ],
+          "abstract": "Let $(X,d,p)$ be a nontrivial pointed Gromov--Hausdorff limit of complete connected Riemannian $n$-manifolds satisfying $\\operatorname{Ric}\\geq-(n-1)g$. For $1\\leq j\\leq n$, set \\[ \\mathcal{R}_j(X) = \\bigl\\{x\\in X:\\text{ every tangent cone at } x \\text{ is isometric to } \\mathbb{R}^j\\bigr\\}, \\qquad \\mathcal{R}(X)=\\bigsqcup_{j=1}^n\\mathcal{R}_j(X). \\] We prove that there is a unique $k$ such that $\\mathcal{R}(X)=\\mathcal{R}_k(X)$, answering the pointwise regular-dimension question originating in Cheeger and Colding's work~\\cite[p408]{CC97}. We construct a volume-corrected heat entropy on RCD space and identify the distributional logarithmic-density defect $\\operatorname{tr}(\\operatorname{Hess} f)-\\Delta f$ by Green-volume regularization.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "31 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T08:51:53Z",
+          "updatedAt": "2026-10-30T08:51:53Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-02T08:41:40.732932+00:00",
+            "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.398118+00:00",
+            "contentHash": "b5b894821aabbef25611e4c1b0a949d9a40d59fbdd8ac36635a283e533ed2a6d"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Ricci 极限空间正则维数刚性",
+          "workSummary": "对非平凡、由完整连通n维流形在一致Ricci下界下取得的尖点GH极限，作者声称所有强正则点的维数逐点一致：存在唯一k使非空正则集R(X)=R_k(X)。这里强j正则要求每一个切锥均为欧氏R^j，目标是排除零测集上可能残留的其他正则维数。",
+          "techniques": [
+            "以本征k维体积密度的负对数修正热核W熵，通过Green核超水平体积正则化、局部转置估计和Hessian迹与测度Laplacian的分布缺陷恒等式，比较例外点与随时间选取的普通正则中心。"
+          ],
+          "breakthrough": "结论针对所有强正则点，超过已有的几乎处处本质维数恒定结果；核心分析输入另在完整连通、满支撑且测度在有界集有限的有限维RCD空间上陈述对数密度局部L²性和方向性分布恒等式。",
+          "limitations": "主结论针对文中的Ricci极限空间，不能仅凭它宣布任意RCD空间都逐点正则维数一致；只存在一个欧氏切锥不足以满足这里的强正则定义。正则维数k不必等于整个空间的Hausdorff维数，文中也不把对数密度直接断言为具有完整Sobolev梯度。已核对第1–4页定义、主定理及路线，未独立验证后续Green正则化和熵估计证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "致谢明确作者使用 ChatGPT/OpenAI 探索证明策略、核查计算、改进语言。未指明某一核心路线或构造由 AI 首次提出，故记 exploration 而非 ideas，也不把核查计算写成模型完成证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41449v1 · PDF 第 30 页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:43:47.888923+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41449v1",
+            "contentHash": "470686c770ffff6f17f50ca463a852274560d8823e5c23b5a1db5c7468cc508e",
+            "pages": 31,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确作者使用 ChatGPT/OpenAI 探索证明策略、核查计算、改进语言。未指明某一核心路线或构造由 AI 首次提出，故记 exploration 而非 ideas，也不把核查计算写成模型完成证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "aa8427db5a666ed0b7c53fe3cdcc36d030fcb62aabb57f8bc4bd72224fb6052d"
+          },
+          "aiUsage": [
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 99,
+          "priorityReason": "Ricci 下界极限几何的核心维数问题，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $(X,d,p)$ be a nontrivial pointed Gromov--Hausdorff limit of complete connected Riemannian $n$-manifolds satisfying $\\operatorname{Ric}\\geq-(n-1)g$. For $1\\leq j\\leq n$, set \\[ \\mathcal{R}_j(X) = \\bigl\\{x\\in X:\\text{ every tangent cone at } x \\text{ is isometric to } \\mathbb{R}^j\\bigr\\}, \\qquad \\mathcal{R}(X)=\\bigsqcup_{j=1}^n\\mathcal{R}_j(X). \\] We prove that there is a unique $k$ such that $\\mathcal{R}(X)=\\mathcal{R}_k(X)$, answering the pointwise regular-dimension question originating in Cheeger and Colding's work~\\cite[p408]{CC97}. We construct a volume-corrected heat entropy on RCD space and identify the distributional logarithmic-density defect $\\operatorname{tr}(\\operatorname{Hess} f)-\\Delta f$ by Green-volume regularization.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

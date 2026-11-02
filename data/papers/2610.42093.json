@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.42093",
+  "slug": "2610.42093",
+  "latest": {
+    "arxivId": "2610.42093",
+    "metadata": {
+      "title": "Mean curvature bounds for CMC foliations of manifolds with sectional curvature bounded below",
+      "authors": [
+        "José Edson Sampaio",
+        "Euripedes Carvalho da Silva"
+      ],
+      "abstract": "Let $M^{n+1}$ be a complete Riemannian manifold with $\\sec_M\\ge-K_0$, $K_0\\ge0$, and let $\\mathfrak{F}$ be a codimension one foliation of $M$ by hypersurfaces of constant mean curvature, the constant depending on the leaf. We prove that the mean curvature of every leaf satisfies $|H|\\le(n+1)\\sqrt{K_0}$. In particular, the mean curvature of the leaves of a CMC foliation of a complete manifold with $|\\sec_M|\\le1$ is bounded by $n+1$, which answers positively a conjecture of Meeks III, Pérez, and Ros.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "36 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T17:38:42Z",
+      "updatedAt": "2026-10-30T17:38:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-02T08:41:40.732932+00:00",
+        "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.951135+00:00",
+        "contentHash": "85b9215af89526ceaa9ed5ed64c9c540a1cfaa58938c1fe52b0d200e1bac5835"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "完备流形CMC叶状结构的平均曲率普适界",
+      "workSummary": "Theorem A考虑完备连通M^(n+1)、n≥1、sec_M≥−K0（K0≥0）及由连通超曲面组成的光滑余维一CMC叶状结构，叶间常数可变。作者使用平均主曲率惯例div N=−nH，证明每叶|H|≤(n+1)√K0；横向不可定向情形通过至多二重Riemann覆盖处理。因而非负截面曲率时全部叶极小；|sec|≤1时得到n+1的维数界，回答Meeks–Pérez–Ros关于存在某个维数常数的猜想。",
+      "techniques": [
+        "以H截断幂构造具有非负散度的流场",
+        "将法向加速度项换为截断函数的叶向Hessian迹",
+        "Calabi支撑意义Hessian比较及局部正则化",
+        "截断积分不等式的阶乘迭代与强制指数增长",
+        "Bishop–Gromov体积增长比较及取无穷远极限"
+      ],
+      "breakthrough": "仅凭截面曲率下界和完备性，在全部维数获得叶平均曲率的显式统一控制，不需曲率双侧界或全局注入半径下界。证明把H超阈值区域导出的积分指数增长与Ricci下界允许的体积增长冲突，并令远处Hessian界趋于√K0，产生(n+1)√K0。",
+      "limitations": "已读PDF第1—10、12—14及21—26页的主定理、H惯例、正则化陈述、关键散度恒等式和收尾路线，并渲染第2—3页公式。H为主曲率平均数，非迹；若改用trace A需相应乘n。论文解决的是Conjecture 1.1的某个维数常数界，不是第2页更强的Conjecture 1.2（|sec|≤1时|H|≤1），也不宣称n+1为最优或提供等号分类。非紧主定理用截面下界的Hessian比较，不能仅因部分步骤用Ricci下界便擅自弱化假设。未逐行核验完整迭代证明及附录正则化证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第35页致谢明确披露Claude、Gemini及ChatGPT用于精炼论证、定位参考文献及起草修改稿件，并声明作者独立核验所有AI建议。精炼论证支持proofs用途，但未将具体新构造或核心路线归因AI，不记ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.42093v1 · PDF 第35页，References之前Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:50:01.201972+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.42093v1",
+        "contentHash": "ce1b6a24aa030fe74baa41f611da18002da9f1743f4a83eae0bb646f82adfcf2",
+        "pages": 36,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第35页致谢明确披露Claude、Gemini及ChatGPT用于精炼论证、定位参考文献及起草修改稿件，并声明作者独立核验所有AI建议。精炼论证支持proofs用途，但未将具体新构造或核心路线归因AI，不记ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "39ea33eedfd5fb4bd7bf2905fd6a5de70248872f9da7c3b2449859c50f0b20b5"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "叶状结构、曲率比较和完整环境的全局估计直接对应重点，应优先精读主定理及平均曲率归一化。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $M^{n+1}$ be a complete Riemannian manifold with $\\sec_M\\ge-K_0$, $K_0\\ge0$, and let $\\mathfrak{F}$ be a codimension one foliation of $M$ by hypersurfaces of constant mean curvature, the constant depending on the leaf. We prove that the mean curvature of every leaf satisfies $|H|\\le(n+1)\\sqrt{K_0}$. In particular, the mean curvature of the leaves of a CMC foliation of a complete manifold with $|\\sec_M|\\le1$ is bounded by $n+1$, which answers positively a conjecture of Meeks III, Pérez, and Ros.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.42093",
+        "metadata": {
+          "title": "Mean curvature bounds for CMC foliations of manifolds with sectional curvature bounded below",
+          "authors": [
+            "José Edson Sampaio",
+            "Euripedes Carvalho da Silva"
+          ],
+          "abstract": "Let $M^{n+1}$ be a complete Riemannian manifold with $\\sec_M\\ge-K_0$, $K_0\\ge0$, and let $\\mathfrak{F}$ be a codimension one foliation of $M$ by hypersurfaces of constant mean curvature, the constant depending on the leaf. We prove that the mean curvature of every leaf satisfies $|H|\\le(n+1)\\sqrt{K_0}$. In particular, the mean curvature of the leaves of a CMC foliation of a complete manifold with $|\\sec_M|\\le1$ is bounded by $n+1$, which answers positively a conjecture of Meeks III, Pérez, and Ros.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "36 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T17:38:42Z",
+          "updatedAt": "2026-10-30T17:38:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-02T08:41:40.732932+00:00",
+            "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.951135+00:00",
+            "contentHash": "85b9215af89526ceaa9ed5ed64c9c540a1cfaa58938c1fe52b0d200e1bac5835"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "完备流形CMC叶状结构的平均曲率普适界",
+          "workSummary": "Theorem A考虑完备连通M^(n+1)、n≥1、sec_M≥−K0（K0≥0）及由连通超曲面组成的光滑余维一CMC叶状结构，叶间常数可变。作者使用平均主曲率惯例div N=−nH，证明每叶|H|≤(n+1)√K0；横向不可定向情形通过至多二重Riemann覆盖处理。因而非负截面曲率时全部叶极小；|sec|≤1时得到n+1的维数界，回答Meeks–Pérez–Ros关于存在某个维数常数的猜想。",
+          "techniques": [
+            "以H截断幂构造具有非负散度的流场",
+            "将法向加速度项换为截断函数的叶向Hessian迹",
+            "Calabi支撑意义Hessian比较及局部正则化",
+            "截断积分不等式的阶乘迭代与强制指数增长",
+            "Bishop–Gromov体积增长比较及取无穷远极限"
+          ],
+          "breakthrough": "仅凭截面曲率下界和完备性，在全部维数获得叶平均曲率的显式统一控制，不需曲率双侧界或全局注入半径下界。证明把H超阈值区域导出的积分指数增长与Ricci下界允许的体积增长冲突，并令远处Hessian界趋于√K0，产生(n+1)√K0。",
+          "limitations": "已读PDF第1—10、12—14及21—26页的主定理、H惯例、正则化陈述、关键散度恒等式和收尾路线，并渲染第2—3页公式。H为主曲率平均数，非迹；若改用trace A需相应乘n。论文解决的是Conjecture 1.1的某个维数常数界，不是第2页更强的Conjecture 1.2（|sec|≤1时|H|≤1），也不宣称n+1为最优或提供等号分类。非紧主定理用截面下界的Hessian比较，不能仅因部分步骤用Ricci下界便擅自弱化假设。未逐行核验完整迭代证明及附录正则化证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第35页致谢明确披露Claude、Gemini及ChatGPT用于精炼论证、定位参考文献及起草修改稿件，并声明作者独立核验所有AI建议。精炼论证支持proofs用途，但未将具体新构造或核心路线归因AI，不记ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.42093v1 · PDF 第35页，References之前Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:50:01.201972+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.42093v1",
+            "contentHash": "ce1b6a24aa030fe74baa41f611da18002da9f1743f4a83eae0bb646f82adfcf2",
+            "pages": 36,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第35页致谢明确披露Claude、Gemini及ChatGPT用于精炼论证、定位参考文献及起草修改稿件，并声明作者独立核验所有AI建议。精炼论证支持proofs用途，但未将具体新构造或核心路线归因AI，不记ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "39ea33eedfd5fb4bd7bf2905fd6a5de70248872f9da7c3b2449859c50f0b20b5"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "叶状结构、曲率比较和完整环境的全局估计直接对应重点，应优先精读主定理及平均曲率归一化。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $M^{n+1}$ be a complete Riemannian manifold with $\\sec_M\\ge-K_0$, $K_0\\ge0$, and let $\\mathfrak{F}$ be a codimension one foliation of $M$ by hypersurfaces of constant mean curvature, the constant depending on the leaf. We prove that the mean curvature of every leaf satisfies $|H|\\le(n+1)\\sqrt{K_0}$. In particular, the mean curvature of the leaves of a CMC foliation of a complete manifold with $|\\sec_M|\\le1$ is bounded by $n+1$, which answers positively a conjecture of Meeks III, Pérez, and Ros.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

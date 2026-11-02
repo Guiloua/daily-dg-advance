@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40703",
+  "slug": "2610.40703",
+  "latest": {
+    "arxivId": "2610.40703",
+    "metadata": {
+      "title": "The Hibi--Li (2016) conjecture is fully resolved",
+      "authors": [
+        "Dave Goel"
+      ],
+      "abstract": "Hibi and Li conjectured that the order polytope $\\mathcal{O}(P)$ of a finite poset $P$ has at most as many faces of each dimension as its chain polytope $\\mathcal{C}(P)$, and that equality in some dimension $k$ with $1\\leq k\\leq|P|-1$ forces the two polytopes to be unimodularly equivalent. Fourier proved the inequality in a 2026 preprint. Let $X$ be the five-element poset in which an element lies above two incomparable elements and below two other incomparable elements. Building on Fourier's proof, we show that if an $n$-element poset contains $X$ as an induced subposet, then, for every $k$ with $2\\leq k\\leq n-1$, its chain polytope has at least $\\binom{n-3}{k-2}$ more $k$-dimensional faces than its order polytope, and that for every $n\\geq5$ some $n$-element poset containing $X$ attains all these bounds at once. Since Hibi and Li showed that $\\mathcal{O}(P)$ and $\\mathcal{C}(P)$ are unimodularly equivalent exactly when $P$ does not contain $X$, this proves the equality statement for these $k$. For $k=1$ the equality statement is false: $\\mathcal{O}(X)$ and $\\mathcal{C}(X)$ have equally many edges (Hibi, Li, Sahara and Shikama) but are not unimodularly equivalent. With Fourier's inequality, these results settle the conjecture. Every result is formally verified in Lean 4, with only published results and two results of Fourier's preprint as axioms.",
+      "categories": [
+        "math.CO",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CO",
+      "comment": "15 pages, 2 figures, 1 table. Lean 4 proof: this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-28T20:30:27Z",
+      "updatedAt": "2026-10-28T20:30:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-02T08:41:52.705887+00:00",
+        "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.390414+00:00",
+        "contentHash": "3455600cd0dc7922502d812c8d7b70266b0d8043b18e5198b6549c3f36dc10da"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "面数差的尖锐下界与猜想分支厘清",
+      "workSummary": "作者在Fourier已证明的面数不等式基础上，研究有限偏序集的order与chain多胞体等号问题。若n元偏序集含指定五元X为诱导子偏序，则对2≤k≤n−1，chain多胞体比order多胞体至少多C(n−3,k−2)个k维面；每个n≥5均有例子同时达到所有这些下界。",
+      "techniques": [
+        "诱导五元偏序X的结构判别",
+        "多胞体逐维面数差估计",
+        "基于Fourier预印本的组合证明",
+        "Lean4形式化"
+      ],
+      "breakthrough": "结合Hibi–Li的幺模等价判别，确立k≥2时等号迫使幺模等价；k=1的原等号断言则因X本身等边数但不等价而为假。所谓解决包含证明正确部分并指出错误分支，不是原猜想全部成立。",
+      "limitations": "面数不等式归于Fourier而非本文首次证明；尖锐正差只针对含X及给定k范围。Lean验证仍把已发表结果和Fourier预印本两结果作为公理，不能写成完全无外部假设的验证；Lean本身也不是AI使用披露。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者第15页明确称工作压倒性主要由Claude和ChatGPT完成、作者监督并承担责任，因此有明确AI使用披露。声明没有逐项说明模型承担研究路线、证明、代码、检索还是写作；不能仅从广泛表述推断某个具体核心想法或把Lean形式化本身作AI证据，usage暂不细分。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40703v1 · PDF第15页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:44:00.106815+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40703v1",
+        "contentHash": "b53cabcb2db0b8d9b30442b1b46cea59ac4290b97f1960fc5fc7553b01bb3807",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者第15页明确称工作压倒性主要由Claude和ChatGPT完成、作者监督并承担责任，因此有明确AI使用披露。声明没有逐项说明模型承担研究路线、证明、代码、检索还是写作；不能仅从广泛表述推断某个具体核心想法或把Lean形式化本身作AI证据，usage暂不细分。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4c2aa87a81115543af1fc93c8ccafb91517279ecfa30094b1de2f98286241d01"
+      },
+      "aiUsage": [],
+      "priorityScore": 55,
+      "priorityReason": "尖锐凸多胞体组合结果较完整，但与曲率比较和几何流的直接联系有限。"
+    },
+    "analysisBasis": {
+      "abstract": "Hibi and Li conjectured that the order polytope $\\mathcal{O}(P)$ of a finite poset $P$ has at most as many faces of each dimension as its chain polytope $\\mathcal{C}(P)$, and that equality in some dimension $k$ with $1\\leq k\\leq|P|-1$ forces the two polytopes to be unimodularly equivalent. Fourier proved the inequality in a 2026 preprint. Let $X$ be the five-element poset in which an element lies above two incomparable elements and below two other incomparable elements. Building on Fourier's proof, we show that if an $n$-element poset contains $X$ as an induced subposet, then, for every $k$ with $2\\leq k\\leq n-1$, its chain polytope has at least $\\binom{n-3}{k-2}$ more $k$-dimensional faces than its order polytope, and that for every $n\\geq5$ some $n$-element poset containing $X$ attains all these bounds at once. Since Hibi and Li showed that $\\mathcal{O}(P)$ and $\\mathcal{C}(P)$ are unimodularly equivalent exactly when $P$ does not contain $X$, this proves the equality statement for these $k$. For $k=1$ the equality statement is false: $\\mathcal{O}(X)$ and $\\mathcal{C}(X)$ have equally many edges (Hibi, Li, Sahara and Shikama) but are not unimodularly equivalent. With Fourier's inequality, these results settle the conjecture. Every result is formally verified in Lean 4, with only published results and two results of Fourier's preprint as axioms.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.40703",
+        "metadata": {
+          "title": "The Hibi--Li (2016) conjecture is fully resolved",
+          "authors": [
+            "Dave Goel"
+          ],
+          "abstract": "Hibi and Li conjectured that the order polytope $\\mathcal{O}(P)$ of a finite poset $P$ has at most as many faces of each dimension as its chain polytope $\\mathcal{C}(P)$, and that equality in some dimension $k$ with $1\\leq k\\leq|P|-1$ forces the two polytopes to be unimodularly equivalent. Fourier proved the inequality in a 2026 preprint. Let $X$ be the five-element poset in which an element lies above two incomparable elements and below two other incomparable elements. Building on Fourier's proof, we show that if an $n$-element poset contains $X$ as an induced subposet, then, for every $k$ with $2\\leq k\\leq n-1$, its chain polytope has at least $\\binom{n-3}{k-2}$ more $k$-dimensional faces than its order polytope, and that for every $n\\geq5$ some $n$-element poset containing $X$ attains all these bounds at once. Since Hibi and Li showed that $\\mathcal{O}(P)$ and $\\mathcal{C}(P)$ are unimodularly equivalent exactly when $P$ does not contain $X$, this proves the equality statement for these $k$. For $k=1$ the equality statement is false: $\\mathcal{O}(X)$ and $\\mathcal{C}(X)$ have equally many edges (Hibi, Li, Sahara and Shikama) but are not unimodularly equivalent. With Fourier's inequality, these results settle the conjecture. Every result is formally verified in Lean 4, with only published results and two results of Fourier's preprint as axioms.",
+          "categories": [
+            "math.CO",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CO",
+          "comment": "15 pages, 2 figures, 1 table. Lean 4 proof: this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-28T20:30:27Z",
+          "updatedAt": "2026-10-28T20:30:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-02T08:41:52.705887+00:00",
+            "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.390414+00:00",
+            "contentHash": "3455600cd0dc7922502d812c8d7b70266b0d8043b18e5198b6549c3f36dc10da"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "面数差的尖锐下界与猜想分支厘清",
+          "workSummary": "作者在Fourier已证明的面数不等式基础上，研究有限偏序集的order与chain多胞体等号问题。若n元偏序集含指定五元X为诱导子偏序，则对2≤k≤n−1，chain多胞体比order多胞体至少多C(n−3,k−2)个k维面；每个n≥5均有例子同时达到所有这些下界。",
+          "techniques": [
+            "诱导五元偏序X的结构判别",
+            "多胞体逐维面数差估计",
+            "基于Fourier预印本的组合证明",
+            "Lean4形式化"
+          ],
+          "breakthrough": "结合Hibi–Li的幺模等价判别，确立k≥2时等号迫使幺模等价；k=1的原等号断言则因X本身等边数但不等价而为假。所谓解决包含证明正确部分并指出错误分支，不是原猜想全部成立。",
+          "limitations": "面数不等式归于Fourier而非本文首次证明；尖锐正差只针对含X及给定k范围。Lean验证仍把已发表结果和Fourier预印本两结果作为公理，不能写成完全无外部假设的验证；Lean本身也不是AI使用披露。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者第15页明确称工作压倒性主要由Claude和ChatGPT完成、作者监督并承担责任，因此有明确AI使用披露。声明没有逐项说明模型承担研究路线、证明、代码、检索还是写作；不能仅从广泛表述推断某个具体核心想法或把Lean形式化本身作AI证据，usage暂不细分。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40703v1 · PDF第15页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:44:00.106815+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40703v1",
+            "contentHash": "b53cabcb2db0b8d9b30442b1b46cea59ac4290b97f1960fc5fc7553b01bb3807",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者第15页明确称工作压倒性主要由Claude和ChatGPT完成、作者监督并承担责任，因此有明确AI使用披露。声明没有逐项说明模型承担研究路线、证明、代码、检索还是写作；不能仅从广泛表述推断某个具体核心想法或把Lean形式化本身作AI证据，usage暂不细分。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4c2aa87a81115543af1fc93c8ccafb91517279ecfa30094b1de2f98286241d01"
+          },
+          "aiUsage": [],
+          "priorityScore": 55,
+          "priorityReason": "尖锐凸多胞体组合结果较完整，但与曲率比较和几何流的直接联系有限。"
+        },
+        "analysisBasis": {
+          "abstract": "Hibi and Li conjectured that the order polytope $\\mathcal{O}(P)$ of a finite poset $P$ has at most as many faces of each dimension as its chain polytope $\\mathcal{C}(P)$, and that equality in some dimension $k$ with $1\\leq k\\leq|P|-1$ forces the two polytopes to be unimodularly equivalent. Fourier proved the inequality in a 2026 preprint. Let $X$ be the five-element poset in which an element lies above two incomparable elements and below two other incomparable elements. Building on Fourier's proof, we show that if an $n$-element poset contains $X$ as an induced subposet, then, for every $k$ with $2\\leq k\\leq n-1$, its chain polytope has at least $\\binom{n-3}{k-2}$ more $k$-dimensional faces than its order polytope, and that for every $n\\geq5$ some $n$-element poset containing $X$ attains all these bounds at once. Since Hibi and Li showed that $\\mathcal{O}(P)$ and $\\mathcal{C}(P)$ are unimodularly equivalent exactly when $P$ does not contain $X$, this proves the equality statement for these $k$. For $k=1$ the equality statement is false: $\\mathcal{O}(X)$ and $\\mathcal{C}(X)$ have equally many edges (Hibi, Li, Sahara and Shikama) but are not unimodularly equivalent. With Fourier's inequality, these results settle the conjecture. Every result is formally verified in Lean 4, with only published results and two results of Fourier's preprint as axioms.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

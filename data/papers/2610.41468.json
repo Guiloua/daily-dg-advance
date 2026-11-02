@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41468",
+  "slug": "2610.41468",
+  "latest": {
+    "arxivId": "2610.41468",
+    "metadata": {
+      "title": "A local-to-global fixed point theorem for $\\CAT(0)$ spaces with a uniform elliptic gap",
+      "authors": [
+        "Jeroen Schillewaert"
+      ],
+      "abstract": "A finitely generated group acting locally elliptically on a complete \\CAT(0) space of finite geometric dimension fixes a point if distances to elliptic fixed sets are uniformly controlled by displacements. For arbitrary groups, the same hypothesis gives a fixed point in the space or its visual boundary. The proof combines a first-moment random-walk displacement estimate with Izeki's zero-drift theorem. For finite-rank $\\R$-buildings whose Euclidean metric factor has finite linear image, we obtain an all-type local-to-global theorem, including the nondiscrete $\\widetilde G_2$ case, with an explicit gap and without metric completeness; the linear-image restriction can be removed from the fixed-point conclusion when the Euclidean factor has dimension at most three. A tangent-cone criterion characterizes the gap and yields a cubical bound with optimal asymptotic growth $d/\\pi$ in dimension $d$. For Hadamard manifolds, the gap is equivalent to uniformly bounded finite stabilizers in the isometry image, with stabilizer bounds of optimal polynomial growth in the gap constant.",
+      "categories": [
+        "math.GR",
+        "math.GT",
+        "math.MG"
+      ],
+      "primaryCategory": "math.GR",
+      "version": 1,
+      "submittedAt": "2026-10-30T09:18:19Z",
+      "updatedAt": "2026-10-30T09:18:19Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-02T08:42:04.398340+00:00",
+        "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.946850+00:00",
+        "contentHash": "45d37aaaff71bd8a21e2e1b84af74299fc0e1729ccccc8dd4ddbacb51c91a816"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "固定点准则与定量局部到整体定理",
+      "workSummary": "对有限生成群在完备有限几何维 CAT(0) 空间上的局部椭圆作用，若位移一致控制到椭圆固定点集的距离，则有整体固定点；任意群在同条件下得到空间内或视觉边界上的固定点。对于有限秩 R-building，在欧氏度量因子的线性像有限时给出不要求度量完备的全类型局部到整体结论，包括非离散 G̃₂ 类型；欧氏因子维数至多三时可在固定点结论中去掉线性像限制。还给出切锥间隙判据、立方情形渐近最优 d/π 界，以及 Hadamard 流形中与等距像有限稳定子一致有界的等价关系和最优多项式增长。",
+      "techniques": [
+        "随机游走位移的一阶矩估计",
+        "Izeki 零漂移定理",
+        "切锥中的椭圆间隙",
+        "建筑、立方空间及 Hadamard 流形的定量分析"
+      ],
+      "breakthrough": "用统一椭圆间隙把逐元素/局部固定点性质提升为全群结论，并在建筑和流形背景给出可量化准则。",
+      "limitations": "一般 CAT(0) 结论需完备和有限几何维；建筑的不完备推广具有额外因子假设。任意群的结论可能只在视觉边界固定。d/π 是维数增长的最优渐近而非所有维数的精确常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "致谢说明 OpenAI Astra6.0 协助审查及修订数学论证和表述、准备引言与参考文献。支持证明修订、验证与文字用途；参考文献编排不自动推断文献搜索。作者自己核验修订 AI 辅助内容，不能误作模型承担全部验证，亦无具体核心思想归因。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41468v1 · PDF 第 30 页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:47:28.217185+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41468v1",
+        "contentHash": "23b1a917c8a7178e1f96ceba3fad5e9f3d2e8db1922ec46aae4df2dd1130e00c",
+        "pages": 31,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢说明 OpenAI Astra6.0 协助审查及修订数学论证和表述、准备引言与参考文献。支持证明修订、验证与文字用途；参考文献编排不自动推断文献搜索。作者自己核验修订 AI 辅助内容，不能误作模型承担全部验证，亦无具体核心思想归因。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6e93b5868d2a84f2c5488a92aef56d870bcce1bb4198b72d28b8de1394d76422"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 86,
+      "priorityReason": "非正曲率度量几何与群作用的定量结论，和比较几何方向相关。"
+    },
+    "analysisBasis": {
+      "abstract": "A finitely generated group acting locally elliptically on a complete \\CAT(0) space of finite geometric dimension fixes a point if distances to elliptic fixed sets are uniformly controlled by displacements. For arbitrary groups, the same hypothesis gives a fixed point in the space or its visual boundary. The proof combines a first-moment random-walk displacement estimate with Izeki's zero-drift theorem. For finite-rank $\\R$-buildings whose Euclidean metric factor has finite linear image, we obtain an all-type local-to-global theorem, including the nondiscrete $\\widetilde G_2$ case, with an explicit gap and without metric completeness; the linear-image restriction can be removed from the fixed-point conclusion when the Euclidean factor has dimension at most three. A tangent-cone criterion characterizes the gap and yields a cubical bound with optimal asymptotic growth $d/\\pi$ in dimension $d$. For Hadamard manifolds, the gap is equivalent to uniformly bounded finite stabilizers in the isometry image, with stabilizer bounds of optimal polynomial growth in the gap constant.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41468",
+        "metadata": {
+          "title": "A local-to-global fixed point theorem for $\\CAT(0)$ spaces with a uniform elliptic gap",
+          "authors": [
+            "Jeroen Schillewaert"
+          ],
+          "abstract": "A finitely generated group acting locally elliptically on a complete \\CAT(0) space of finite geometric dimension fixes a point if distances to elliptic fixed sets are uniformly controlled by displacements. For arbitrary groups, the same hypothesis gives a fixed point in the space or its visual boundary. The proof combines a first-moment random-walk displacement estimate with Izeki's zero-drift theorem. For finite-rank $\\R$-buildings whose Euclidean metric factor has finite linear image, we obtain an all-type local-to-global theorem, including the nondiscrete $\\widetilde G_2$ case, with an explicit gap and without metric completeness; the linear-image restriction can be removed from the fixed-point conclusion when the Euclidean factor has dimension at most three. A tangent-cone criterion characterizes the gap and yields a cubical bound with optimal asymptotic growth $d/\\pi$ in dimension $d$. For Hadamard manifolds, the gap is equivalent to uniformly bounded finite stabilizers in the isometry image, with stabilizer bounds of optimal polynomial growth in the gap constant.",
+          "categories": [
+            "math.GR",
+            "math.GT",
+            "math.MG"
+          ],
+          "primaryCategory": "math.GR",
+          "version": 1,
+          "submittedAt": "2026-10-30T09:18:19Z",
+          "updatedAt": "2026-10-30T09:18:19Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-02T08:42:04.398340+00:00",
+            "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.946850+00:00",
+            "contentHash": "45d37aaaff71bd8a21e2e1b84af74299fc0e1729ccccc8dd4ddbacb51c91a816"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "固定点准则与定量局部到整体定理",
+          "workSummary": "对有限生成群在完备有限几何维 CAT(0) 空间上的局部椭圆作用，若位移一致控制到椭圆固定点集的距离，则有整体固定点；任意群在同条件下得到空间内或视觉边界上的固定点。对于有限秩 R-building，在欧氏度量因子的线性像有限时给出不要求度量完备的全类型局部到整体结论，包括非离散 G̃₂ 类型；欧氏因子维数至多三时可在固定点结论中去掉线性像限制。还给出切锥间隙判据、立方情形渐近最优 d/π 界，以及 Hadamard 流形中与等距像有限稳定子一致有界的等价关系和最优多项式增长。",
+          "techniques": [
+            "随机游走位移的一阶矩估计",
+            "Izeki 零漂移定理",
+            "切锥中的椭圆间隙",
+            "建筑、立方空间及 Hadamard 流形的定量分析"
+          ],
+          "breakthrough": "用统一椭圆间隙把逐元素/局部固定点性质提升为全群结论，并在建筑和流形背景给出可量化准则。",
+          "limitations": "一般 CAT(0) 结论需完备和有限几何维；建筑的不完备推广具有额外因子假设。任意群的结论可能只在视觉边界固定。d/π 是维数增长的最优渐近而非所有维数的精确常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "致谢说明 OpenAI Astra6.0 协助审查及修订数学论证和表述、准备引言与参考文献。支持证明修订、验证与文字用途；参考文献编排不自动推断文献搜索。作者自己核验修订 AI 辅助内容，不能误作模型承担全部验证，亦无具体核心思想归因。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41468v1 · PDF 第 30 页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:47:28.217185+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41468v1",
+            "contentHash": "23b1a917c8a7178e1f96ceba3fad5e9f3d2e8db1922ec46aae4df2dd1130e00c",
+            "pages": 31,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢说明 OpenAI Astra6.0 协助审查及修订数学论证和表述、准备引言与参考文献。支持证明修订、验证与文字用途；参考文献编排不自动推断文献搜索。作者自己核验修订 AI 辅助内容，不能误作模型承担全部验证，亦无具体核心思想归因。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6e93b5868d2a84f2c5488a92aef56d870bcce1bb4198b72d28b8de1394d76422"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 86,
+          "priorityReason": "非正曲率度量几何与群作用的定量结论，和比较几何方向相关。"
+        },
+        "analysisBasis": {
+          "abstract": "A finitely generated group acting locally elliptically on a complete \\CAT(0) space of finite geometric dimension fixes a point if distances to elliptic fixed sets are uniformly controlled by displacements. For arbitrary groups, the same hypothesis gives a fixed point in the space or its visual boundary. The proof combines a first-moment random-walk displacement estimate with Izeki's zero-drift theorem. For finite-rank $\\R$-buildings whose Euclidean metric factor has finite linear image, we obtain an all-type local-to-global theorem, including the nondiscrete $\\widetilde G_2$ case, with an explicit gap and without metric completeness; the linear-image restriction can be removed from the fixed-point conclusion when the Euclidean factor has dimension at most three. A tangent-cone criterion characterizes the gap and yields a cubical bound with optimal asymptotic growth $d/\\pi$ in dimension $d$. For Hadamard manifolds, the gap is equivalent to uniformly bounded finite stabilizers in the isometry image, with stabilizer bounds of optimal polynomial growth in the gap constant.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

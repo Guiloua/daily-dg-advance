@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41233",
+  "slug": "2610.41233",
+  "latest": {
+    "arxivId": "2610.41233",
+    "metadata": {
+      "title": "Orientations for skein-valued curve counting",
+      "authors": [
+        "Brett Parker"
+      ],
+      "abstract": "Ekholm and Shende's skeins-on-branes formalism provides invariant counts of holomorphic curves with boundary on a Maslov zero Lagrangian within a Calabi-Yau 3-fold. This paper proves the orientation relations required for worldsheet skein relations to cancel codimension-one boundary strata. However, standard Cauchy-Riemann Fredholm orientations reveal an unexpected sign puzzle: the orientation relation at a curve with a hyperbolic boundary crossing depends on whether the crossing lies on distinct boundary components or the same component. This domain-dependent sign contradicts the uniform crossing relations of the HOMFLYPT skein algebra. We show that this discrepancy is resolved by passing to an anti-holomorphic orientation convention. We establish all required orientation comparisons in the general setting of an oriented Lagrangian submanifold of a 6-dimensional symplectic manifold.",
+      "categories": [
+        "math.SG",
+        "hep-th",
+        "math.GT"
+      ],
+      "primaryCategory": "math.SG",
+      "comment": "73 pages, 25 figures",
+      "version": 1,
+      "submittedAt": "2026-10-30T04:17:01Z",
+      "updatedAt": "2026-10-30T04:17:01Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-02T08:42:04.398340+00:00",
+        "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.396804+00:00",
+        "contentHash": "37727acbed704e93352ac4c6129d50a7d688ac615269c83d4f131e497dcf84b5"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "定向约定修正与相容性证明",
+      "workSummary": "针对 Calabi–Yau 三维流形中 Maslov 零 Lagrangian 边界的全纯曲线计数，证明 worldsheet skein 关系消去余维一边界层所需的定向比较。标准 Cauchy–Riemann Fredholm 定向在双曲边界交叉处产生依赖于交叉点属于同一还是不同边界分支的符号，与 HOMFLYPT skein 代数的统一交叉关系不符；作者通过反全纯定向约定解决该符号问题，并在六维辛流形的有向 Lagrangian 一般设置中建立所需比较。",
+      "techniques": [
+        "Cauchy–Riemann Fredholm 定向",
+        "余维一退化边界的定向比较",
+        "反全纯定向约定与 skein 关系"
+      ],
+      "breakthrough": "识别并修正曲线计数与标准 skein 符号之间依赖定义域边界配置的障碍。",
+      "limitations": "定向比较的一般背景不等于在任意六维辛流形中自动得到全部不变量；摘要不提供紧化、横截性等计数构造的全套条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "首页明确 ChatGPT、Gemini、Claude 用于起草编辑、检索文献和找出修复大量符号错误。第57页 Remark7.3 将第7.3.1节所用 bounding chain 的具体代数构造署名“by ChatGPT”，随后给出子流形方程与无内部交点论证，构成明确的具体构造归因，支持 ideas、proofs；第64页称推广到有界 Fredholm 复形的行列式约定经 ChatGPT 咨询形成。第41页关于模型能力的泛论本身不是独立使用证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41233v1 · PDF 第 1 页脚注、第 57 页 Remark 7.3、第 64 页附录 A 开头；第 41 页为能力泛论",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:46:44.986195+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41233v1",
+        "contentHash": "112601c0811cb7186eb63d25b197f007dc76bf8f25f2fdfc5b25c787f99946f0",
+        "pages": 73,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。首页明确 ChatGPT、Gemini、Claude 用于起草编辑、检索文献和找出修复大量符号错误。第57页 Remark7.3 将第7.3.1节所用 bounding chain 的具体代数构造署名“by ChatGPT”，随后给出子流形方程与无内部交点论证，构成明确的具体构造归因，支持 ideas、proofs；第64页称推广到有界 Fredholm 复形的行列式约定经 ChatGPT 咨询形成。第41页关于模型能力的泛论本身不是独立使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "06ad408a228b89408a5a18e81c6b87a8586c59da9145c6adac239cd982a879c6"
+      },
+      "aiUsage": [
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 69,
+      "priorityReason": "辛几何中全纯曲线的基础技术，对几何分析方法有交叉意义。"
+    },
+    "analysisBasis": {
+      "abstract": "Ekholm and Shende's skeins-on-branes formalism provides invariant counts of holomorphic curves with boundary on a Maslov zero Lagrangian within a Calabi-Yau 3-fold. This paper proves the orientation relations required for worldsheet skein relations to cancel codimension-one boundary strata. However, standard Cauchy-Riemann Fredholm orientations reveal an unexpected sign puzzle: the orientation relation at a curve with a hyperbolic boundary crossing depends on whether the crossing lies on distinct boundary components or the same component. This domain-dependent sign contradicts the uniform crossing relations of the HOMFLYPT skein algebra. We show that this discrepancy is resolved by passing to an anti-holomorphic orientation convention. We establish all required orientation comparisons in the general setting of an oriented Lagrangian submanifold of a 6-dimensional symplectic manifold.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41233",
+        "metadata": {
+          "title": "Orientations for skein-valued curve counting",
+          "authors": [
+            "Brett Parker"
+          ],
+          "abstract": "Ekholm and Shende's skeins-on-branes formalism provides invariant counts of holomorphic curves with boundary on a Maslov zero Lagrangian within a Calabi-Yau 3-fold. This paper proves the orientation relations required for worldsheet skein relations to cancel codimension-one boundary strata. However, standard Cauchy-Riemann Fredholm orientations reveal an unexpected sign puzzle: the orientation relation at a curve with a hyperbolic boundary crossing depends on whether the crossing lies on distinct boundary components or the same component. This domain-dependent sign contradicts the uniform crossing relations of the HOMFLYPT skein algebra. We show that this discrepancy is resolved by passing to an anti-holomorphic orientation convention. We establish all required orientation comparisons in the general setting of an oriented Lagrangian submanifold of a 6-dimensional symplectic manifold.",
+          "categories": [
+            "math.SG",
+            "hep-th",
+            "math.GT"
+          ],
+          "primaryCategory": "math.SG",
+          "comment": "73 pages, 25 figures",
+          "version": 1,
+          "submittedAt": "2026-10-30T04:17:01Z",
+          "updatedAt": "2026-10-30T04:17:01Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-02T08:42:04.398340+00:00",
+            "contentHash": "f78396175c748d17f0031c3a7c6cf46db3cbfe9a2304dc79876c6115ba8fd028"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.396804+00:00",
+            "contentHash": "37727acbed704e93352ac4c6129d50a7d688ac615269c83d4f131e497dcf84b5"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "定向约定修正与相容性证明",
+          "workSummary": "针对 Calabi–Yau 三维流形中 Maslov 零 Lagrangian 边界的全纯曲线计数，证明 worldsheet skein 关系消去余维一边界层所需的定向比较。标准 Cauchy–Riemann Fredholm 定向在双曲边界交叉处产生依赖于交叉点属于同一还是不同边界分支的符号，与 HOMFLYPT skein 代数的统一交叉关系不符；作者通过反全纯定向约定解决该符号问题，并在六维辛流形的有向 Lagrangian 一般设置中建立所需比较。",
+          "techniques": [
+            "Cauchy–Riemann Fredholm 定向",
+            "余维一退化边界的定向比较",
+            "反全纯定向约定与 skein 关系"
+          ],
+          "breakthrough": "识别并修正曲线计数与标准 skein 符号之间依赖定义域边界配置的障碍。",
+          "limitations": "定向比较的一般背景不等于在任意六维辛流形中自动得到全部不变量；摘要不提供紧化、横截性等计数构造的全套条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "首页明确 ChatGPT、Gemini、Claude 用于起草编辑、检索文献和找出修复大量符号错误。第57页 Remark7.3 将第7.3.1节所用 bounding chain 的具体代数构造署名“by ChatGPT”，随后给出子流形方程与无内部交点论证，构成明确的具体构造归因，支持 ideas、proofs；第64页称推广到有界 Fredholm 复形的行列式约定经 ChatGPT 咨询形成。第41页关于模型能力的泛论本身不是独立使用证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41233v1 · PDF 第 1 页脚注、第 57 页 Remark 7.3、第 64 页附录 A 开头；第 41 页为能力泛论",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:46:44.986195+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41233v1",
+            "contentHash": "112601c0811cb7186eb63d25b197f007dc76bf8f25f2fdfc5b25c787f99946f0",
+            "pages": 73,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。首页明确 ChatGPT、Gemini、Claude 用于起草编辑、检索文献和找出修复大量符号错误。第57页 Remark7.3 将第7.3.1节所用 bounding chain 的具体代数构造署名“by ChatGPT”，随后给出子流形方程与无内部交点论证，构成明确的具体构造归因，支持 ideas、proofs；第64页称推广到有界 Fredholm 复形的行列式约定经 ChatGPT 咨询形成。第41页关于模型能力的泛论本身不是独立使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "06ad408a228b89408a5a18e81c6b87a8586c59da9145c6adac239cd982a879c6"
+          },
+          "aiUsage": [
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 69,
+          "priorityReason": "辛几何中全纯曲线的基础技术，对几何分析方法有交叉意义。"
+        },
+        "analysisBasis": {
+          "abstract": "Ekholm and Shende's skeins-on-branes formalism provides invariant counts of holomorphic curves with boundary on a Maslov zero Lagrangian within a Calabi-Yau 3-fold. This paper proves the orientation relations required for worldsheet skein relations to cancel codimension-one boundary strata. However, standard Cauchy-Riemann Fredholm orientations reveal an unexpected sign puzzle: the orientation relation at a curve with a hyperbolic boundary crossing depends on whether the crossing lies on distinct boundary components or the same component. This domain-dependent sign contradicts the uniform crossing relations of the HOMFLYPT skein algebra. We show that this discrepancy is resolved by passing to an anti-holomorphic orientation convention. We establish all required orientation comparisons in the general setting of an oriented Lagrangian submanifold of a 6-dimensional symplectic manifold.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

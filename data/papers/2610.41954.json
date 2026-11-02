@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41954",
+  "slug": "2610.41954",
+  "latest": {
+    "arxivId": "2610.41954",
+    "metadata": {
+      "title": "The metric Zariski multiplicity conjecture in dimension 4",
+      "authors": [
+        "José Edson Sampaio"
+      ],
+      "abstract": "Recently, OpenAI announced a counterexample to the Zariski multiplicity conjecture in dimension 4. Here, we prove that the metric Zariski multiplicity conjecture is true in dimension 4. More precisely, let $f,g\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C},0)$ be germs of reduced holomorphic functions, and let $\\varphi\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C}^n,0)$ be a bi-Lipschitz homeomorphism such that $\\varphi(V(f))=V(g)$. We prove that if every irreducible component of the tangent cone of $V(f)$ at the origin has a singular locus of dimension at most two, then $V(f)$ and $V(g)$ have the same multiplicity at the origin. In particular, the multiplicity of complex analytic hypersurface singularities in $\\mathbb{C}^n$, $n\\leq 4$, is an embedded bi-Lipschitz invariant; the cases $n=2$ and $n=3$ were known. This extends a previous result of the author for tangent cones whose components have singular loci of dimension at most one. We also prove that two irreducible homogeneous hypersurfaces whose singular loci have dimension at most two, and which are mapped onto each other by a homeomorphism of $\\mathbb{C}^n$ fixing the origin, have the same degree.",
+      "categories": [
+        "math.AG",
+        "math.CV",
+        "math.MG"
+      ],
+      "primaryCategory": "math.AG",
+      "comment": "This article firstly appeared on ResearchGate on October 25th, 2026. 26 pages",
+      "version": 1,
+      "submittedAt": "2026-10-30T16:08:06Z",
+      "updatedAt": "2026-10-30T16:08:06Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-02T08:41:52.705887+00:00",
+        "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.949052+00:00",
+        "contentHash": "cccc84243f94753914dcffb34bf92edf87cf6e61acc95dad9bc9c2af1174bc00"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "度量 Zariski 重数的低维不变性",
+      "workSummary": "对约化全纯函数芽 f、g，若环境 bi-Lipschitz 同胚将 V(f) 映到 V(g)，且 V(f) 切锥的每个不可约分支之奇异集复维至多二，则原点重数相同。特别，环境 Cⁿ 中 n≤4 的复解析超曲面重数为嵌入 bi-Lipschitz 不变量；另对奇异集维数至多二的不可约齐次超曲面证明环境拓扑等价保持次数。",
+      "techniques": [
+        "复超曲面切锥与不可约分支",
+        "嵌入 bi-Lipschitz 几何",
+        "齐次超曲面的次数与环境拓扑"
+      ],
+      "breakthrough": "把此前切锥分支奇异集维数至多一的结果推进一维，并得到 C⁴ 情形的度量重数不变性。",
+      "limitations": "n≤4 指环境复维，不能读成任意内在四维奇点；高维主结论仍需切锥分支奇异集限制。摘要开头 OpenAI 的其他工作是外部背景，不是作者自身 AI 使用披露，也不替代本篇条件核验。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第23页致谢明确披露作者用Claude及Gemini精炼论证、定位参考文献并起草和修改稿件，且称已独立核验AI建议。第1—2、25页OpenAI则是他人Zariski反例工作及其引用，不能作为本作者使用OpenAI或让AI提出核心思想的证据；正面判定依据是第23页自己的使用声明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41954v1 · PDF 第23页，References之前Acknowledgments；第1—2、25页为外部工作背景",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:48:34.790758+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41954v1",
+        "contentHash": "d97fa285b997de6dff55b21b0ab60570e915066170628fb4fa42814ab3484270",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23页致谢明确披露作者用Claude及Gemini精炼论证、定位参考文献并起草和修改稿件，且称已独立核验AI建议。第1—2、25页OpenAI则是他人Zariski反例工作及其引用，不能作为本作者使用OpenAI或让AI提出核心思想的证据；正面判定依据是第23页自己的使用声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5dd5711d471f6f80ede0a72e938f6a4ad3787ef41cf0ce64f86d3bab83684e2b"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 84,
+      "priorityReason": "奇异空间的 bi-Lipschitz 几何与重数刚性高度相关，是本组度量几何重点。"
+    },
+    "analysisBasis": {
+      "abstract": "Recently, OpenAI announced a counterexample to the Zariski multiplicity conjecture in dimension 4. Here, we prove that the metric Zariski multiplicity conjecture is true in dimension 4. More precisely, let $f,g\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C},0)$ be germs of reduced holomorphic functions, and let $\\varphi\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C}^n,0)$ be a bi-Lipschitz homeomorphism such that $\\varphi(V(f))=V(g)$. We prove that if every irreducible component of the tangent cone of $V(f)$ at the origin has a singular locus of dimension at most two, then $V(f)$ and $V(g)$ have the same multiplicity at the origin. In particular, the multiplicity of complex analytic hypersurface singularities in $\\mathbb{C}^n$, $n\\leq 4$, is an embedded bi-Lipschitz invariant; the cases $n=2$ and $n=3$ were known. This extends a previous result of the author for tangent cones whose components have singular loci of dimension at most one. We also prove that two irreducible homogeneous hypersurfaces whose singular loci have dimension at most two, and which are mapped onto each other by a homeomorphism of $\\mathbb{C}^n$ fixing the origin, have the same degree.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41954",
+        "metadata": {
+          "title": "The metric Zariski multiplicity conjecture in dimension 4",
+          "authors": [
+            "José Edson Sampaio"
+          ],
+          "abstract": "Recently, OpenAI announced a counterexample to the Zariski multiplicity conjecture in dimension 4. Here, we prove that the metric Zariski multiplicity conjecture is true in dimension 4. More precisely, let $f,g\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C},0)$ be germs of reduced holomorphic functions, and let $\\varphi\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C}^n,0)$ be a bi-Lipschitz homeomorphism such that $\\varphi(V(f))=V(g)$. We prove that if every irreducible component of the tangent cone of $V(f)$ at the origin has a singular locus of dimension at most two, then $V(f)$ and $V(g)$ have the same multiplicity at the origin. In particular, the multiplicity of complex analytic hypersurface singularities in $\\mathbb{C}^n$, $n\\leq 4$, is an embedded bi-Lipschitz invariant; the cases $n=2$ and $n=3$ were known. This extends a previous result of the author for tangent cones whose components have singular loci of dimension at most one. We also prove that two irreducible homogeneous hypersurfaces whose singular loci have dimension at most two, and which are mapped onto each other by a homeomorphism of $\\mathbb{C}^n$ fixing the origin, have the same degree.",
+          "categories": [
+            "math.AG",
+            "math.CV",
+            "math.MG"
+          ],
+          "primaryCategory": "math.AG",
+          "comment": "This article firstly appeared on ResearchGate on October 25th, 2026. 26 pages",
+          "version": 1,
+          "submittedAt": "2026-10-30T16:08:06Z",
+          "updatedAt": "2026-10-30T16:08:06Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-02T08:41:52.705887+00:00",
+            "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.949052+00:00",
+            "contentHash": "cccc84243f94753914dcffb34bf92edf87cf6e61acc95dad9bc9c2af1174bc00"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "度量 Zariski 重数的低维不变性",
+          "workSummary": "对约化全纯函数芽 f、g，若环境 bi-Lipschitz 同胚将 V(f) 映到 V(g)，且 V(f) 切锥的每个不可约分支之奇异集复维至多二，则原点重数相同。特别，环境 Cⁿ 中 n≤4 的复解析超曲面重数为嵌入 bi-Lipschitz 不变量；另对奇异集维数至多二的不可约齐次超曲面证明环境拓扑等价保持次数。",
+          "techniques": [
+            "复超曲面切锥与不可约分支",
+            "嵌入 bi-Lipschitz 几何",
+            "齐次超曲面的次数与环境拓扑"
+          ],
+          "breakthrough": "把此前切锥分支奇异集维数至多一的结果推进一维，并得到 C⁴ 情形的度量重数不变性。",
+          "limitations": "n≤4 指环境复维，不能读成任意内在四维奇点；高维主结论仍需切锥分支奇异集限制。摘要开头 OpenAI 的其他工作是外部背景，不是作者自身 AI 使用披露，也不替代本篇条件核验。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第23页致谢明确披露作者用Claude及Gemini精炼论证、定位参考文献并起草和修改稿件，且称已独立核验AI建议。第1—2、25页OpenAI则是他人Zariski反例工作及其引用，不能作为本作者使用OpenAI或让AI提出核心思想的证据；正面判定依据是第23页自己的使用声明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41954v1 · PDF 第23页，References之前Acknowledgments；第1—2、25页为外部工作背景",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:48:34.790758+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41954v1",
+            "contentHash": "d97fa285b997de6dff55b21b0ab60570e915066170628fb4fa42814ab3484270",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23页致谢明确披露作者用Claude及Gemini精炼论证、定位参考文献并起草和修改稿件，且称已独立核验AI建议。第1—2、25页OpenAI则是他人Zariski反例工作及其引用，不能作为本作者使用OpenAI或让AI提出核心思想的证据；正面判定依据是第23页自己的使用声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5dd5711d471f6f80ede0a72e938f6a4ad3787ef41cf0ce64f86d3bab83684e2b"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 84,
+          "priorityReason": "奇异空间的 bi-Lipschitz 几何与重数刚性高度相关，是本组度量几何重点。"
+        },
+        "analysisBasis": {
+          "abstract": "Recently, OpenAI announced a counterexample to the Zariski multiplicity conjecture in dimension 4. Here, we prove that the metric Zariski multiplicity conjecture is true in dimension 4. More precisely, let $f,g\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C},0)$ be germs of reduced holomorphic functions, and let $\\varphi\\colon(\\mathbb{C}^n,0)\\to(\\mathbb{C}^n,0)$ be a bi-Lipschitz homeomorphism such that $\\varphi(V(f))=V(g)$. We prove that if every irreducible component of the tangent cone of $V(f)$ at the origin has a singular locus of dimension at most two, then $V(f)$ and $V(g)$ have the same multiplicity at the origin. In particular, the multiplicity of complex analytic hypersurface singularities in $\\mathbb{C}^n$, $n\\leq 4$, is an embedded bi-Lipschitz invariant; the cases $n=2$ and $n=3$ were known. This extends a previous result of the author for tangent cones whose components have singular loci of dimension at most one. We also prove that two irreducible homogeneous hypersurfaces whose singular loci have dimension at most two, and which are mapped onto each other by a homeomorphism of $\\mathbb{C}^n$ fixing the origin, have the same degree.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

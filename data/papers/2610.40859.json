@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.40859",
+  "slug": "2610.40859",
+  "latest": {
+    "arxivId": "2610.40859",
+    "metadata": {
+      "title": "Generic properties of the Laplace spectrum and eigenfunctions",
+      "authors": [
+        "Oliver Fürst",
+        "Eva-Maria Hekkelman",
+        "Malte Leimbach"
+      ],
+      "abstract": "We prove that the spectrum of the Laplace--Beltrami operator on compact Riemannian manifolds without boundary is generically linearly independent over $\\mathbb{Q}$. Furthermore, we prove that pointwise products of eigenfunctions generically are linearly independent. The proof is based on conformal perturbations of the metric. The result implies in particular that generically the truncation of the continuous functions on $M$ by spectral projections of the Laplace operator is given by symmetric matrices.",
+      "categories": [
+        "math.SP",
+        "math.AP",
+        "math.DG",
+        "math.OA"
+      ],
+      "primaryCategory": "math.SP",
+      "comment": "22 pages",
+      "version": 1,
+      "submittedAt": "2026-10-29T18:37:29Z",
+      "updatedAt": "2026-10-29T18:37:29Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-02T08:41:40.732932+00:00",
+        "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.392202+00:00",
+        "contentHash": "e77a63bdc4e4304dda7cbe699b21ed2ff41bf3c84f9b6112ddd8067c1b98e603"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "Laplace谱与本征函数乘积的一般性",
+      "workSummary": "主定理适用于连通、光滑、紧无边界且维数d≥2的流形：在全体光滑度量的C∞ Fréchet拓扑中，非零Laplace谱Q线性无关及正特征值对应本征函数的全部有限单项式线性无关构成residual性质；并且在每一个固定共形类中仍为residual。正文还给出所有非零特征值有理幂组成集合的Q线性无关性，比摘要的普通非共振更强。",
+      "techniques": [
+        "C∞度量空间和每一共形类中的Baire一般性",
+        "共形解析扰动及本征函数Gram矩阵",
+        "将平方关系的扰动公式视为有限秩伪微分算子并比较齐次符号",
+        "由平方独立到谱和非共振，再到全部单项式独立的链式约化"
+      ],
+      "breakthrough": "不仅控制两两乘积，还排除正特征值对应本征函数间任何有限多项式关系。推论2在实本征函数基下给PΛ C(M;C) PΛ=Sym_N(C)，其中PΛ是√Δ的谱截断，Sym_N指复对称矩阵空间；一般截断由此出现与高度对称例子不同的算子空间及度量行为。",
+      "limitations": "补读PDF第1–5、9–10页，并渲染核对第2页主定理和第3页矩阵公式。零特征值排除在谱无关结论外，单项式按正特征值对应本征函数多重指标取值，常数另作约定。generic是C∞拓扑的残余集，非对所有度量或未指定随机分布的概率一断言。Sym_N(C)不是全体矩阵或乘法封闭的C*代数；所述截断问题不应扩张为所有谱重构方案均失效。未逐项独立复核符号计算及整个稠密性论证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第5页明确将把扰动公式(3)作为伪微分算子分析的关键证明路线归于AI，并称模型辅助计算第3节部分符号，故ideas和computation有具体证据。Claude Opus4.8/5还帮助了解genericity与扰动文献，Opus5.5用于校对和小幅符号改进；作者明确否认除这些修正外由AI实际撰写正文和证明，不应扩大为完整证明由AI生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.40859v1 · PDF第5页 AI usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:44:36.953927+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.40859v1",
+        "contentHash": "7bbdaa4875bb833b047978629f5c52b022caf48c9410674028e5b68770112283",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确将把扰动公式(3)作为伪微分算子分析的关键证明路线归于AI，并称模型辅助计算第3节部分符号，故ideas和computation有具体证据。Claude Opus4.8/5还帮助了解genericity与扰动文献，Opus5.5用于校对和小幅符号改进；作者明确否认除这些修正外由AI实际撰写正文和证明，不应扩大为完整证明由AI生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7e96b691947142821929d729e78a4d3c223817ce9ebd2f055321279e6eaa1831"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "谱几何与几何扰动方法直接相关，值得补读准确参数空间和截断结论。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that the spectrum of the Laplace--Beltrami operator on compact Riemannian manifolds without boundary is generically linearly independent over $\\mathbb{Q}$. Furthermore, we prove that pointwise products of eigenfunctions generically are linearly independent. The proof is based on conformal perturbations of the metric. The result implies in particular that generically the truncation of the continuous functions on $M$ by spectral projections of the Laplace operator is given by symmetric matrices.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.40859",
+        "metadata": {
+          "title": "Generic properties of the Laplace spectrum and eigenfunctions",
+          "authors": [
+            "Oliver Fürst",
+            "Eva-Maria Hekkelman",
+            "Malte Leimbach"
+          ],
+          "abstract": "We prove that the spectrum of the Laplace--Beltrami operator on compact Riemannian manifolds without boundary is generically linearly independent over $\\mathbb{Q}$. Furthermore, we prove that pointwise products of eigenfunctions generically are linearly independent. The proof is based on conformal perturbations of the metric. The result implies in particular that generically the truncation of the continuous functions on $M$ by spectral projections of the Laplace operator is given by symmetric matrices.",
+          "categories": [
+            "math.SP",
+            "math.AP",
+            "math.DG",
+            "math.OA"
+          ],
+          "primaryCategory": "math.SP",
+          "comment": "22 pages",
+          "version": 1,
+          "submittedAt": "2026-10-29T18:37:29Z",
+          "updatedAt": "2026-10-29T18:37:29Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-02T08:41:40.732932+00:00",
+            "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.392202+00:00",
+            "contentHash": "e77a63bdc4e4304dda7cbe699b21ed2ff41bf3c84f9b6112ddd8067c1b98e603"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "Laplace谱与本征函数乘积的一般性",
+          "workSummary": "主定理适用于连通、光滑、紧无边界且维数d≥2的流形：在全体光滑度量的C∞ Fréchet拓扑中，非零Laplace谱Q线性无关及正特征值对应本征函数的全部有限单项式线性无关构成residual性质；并且在每一个固定共形类中仍为residual。正文还给出所有非零特征值有理幂组成集合的Q线性无关性，比摘要的普通非共振更强。",
+          "techniques": [
+            "C∞度量空间和每一共形类中的Baire一般性",
+            "共形解析扰动及本征函数Gram矩阵",
+            "将平方关系的扰动公式视为有限秩伪微分算子并比较齐次符号",
+            "由平方独立到谱和非共振，再到全部单项式独立的链式约化"
+          ],
+          "breakthrough": "不仅控制两两乘积，还排除正特征值对应本征函数间任何有限多项式关系。推论2在实本征函数基下给PΛ C(M;C) PΛ=Sym_N(C)，其中PΛ是√Δ的谱截断，Sym_N指复对称矩阵空间；一般截断由此出现与高度对称例子不同的算子空间及度量行为。",
+          "limitations": "补读PDF第1–5、9–10页，并渲染核对第2页主定理和第3页矩阵公式。零特征值排除在谱无关结论外，单项式按正特征值对应本征函数多重指标取值，常数另作约定。generic是C∞拓扑的残余集，非对所有度量或未指定随机分布的概率一断言。Sym_N(C)不是全体矩阵或乘法封闭的C*代数；所述截断问题不应扩张为所有谱重构方案均失效。未逐项独立复核符号计算及整个稠密性论证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第5页明确将把扰动公式(3)作为伪微分算子分析的关键证明路线归于AI，并称模型辅助计算第3节部分符号，故ideas和computation有具体证据。Claude Opus4.8/5还帮助了解genericity与扰动文献，Opus5.5用于校对和小幅符号改进；作者明确否认除这些修正外由AI实际撰写正文和证明，不应扩大为完整证明由AI生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.40859v1 · PDF第5页 AI usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:44:36.953927+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.40859v1",
+            "contentHash": "7bbdaa4875bb833b047978629f5c52b022caf48c9410674028e5b68770112283",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确将把扰动公式(3)作为伪微分算子分析的关键证明路线归于AI，并称模型辅助计算第3节部分符号，故ideas和computation有具体证据。Claude Opus4.8/5还帮助了解genericity与扰动文献，Opus5.5用于校对和小幅符号改进；作者明确否认除这些修正外由AI实际撰写正文和证明，不应扩大为完整证明由AI生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7e96b691947142821929d729e78a4d3c223817ce9ebd2f055321279e6eaa1831"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "谱几何与几何扰动方法直接相关，值得补读准确参数空间和截断结论。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that the spectrum of the Laplace--Beltrami operator on compact Riemannian manifolds without boundary is generically linearly independent over $\\mathbb{Q}$. Furthermore, we prove that pointwise products of eigenfunctions generically are linearly independent. The proof is based on conformal perturbations of the metric. The result implies in particular that generically the truncation of the continuous functions on $M$ by spectral projections of the Laplace operator is given by symmetric matrices.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

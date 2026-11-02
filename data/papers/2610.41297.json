@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41297",
+  "slug": "2610.41297",
+  "latest": {
+    "arxivId": "2610.41297",
+    "metadata": {
+      "title": "Rigidity in sharp eigenvalue estimates for differential forms",
+      "authors": [
+        "Tsz-Kiu Aaron Chow",
+        "James Koh",
+        "Sen Yuk Wu"
+      ],
+      "abstract": "For $1\\leq p\\leq n/2$, we derive sharp eigenvalue estimates for the Hodge Laplacian on differential $p$-forms under the curvature condition introduced by Petersen and Wink, and study their equality cases. Equality recovers the stronger curvature operator lower bound and, in the closed case, leaves only round or Sasakian metrics on the universal cover. For manifolds with boundary, weak $p$-convexity of the boundary makes the unit hemisphere the only equality case for the absolute boundary problem.",
+      "categories": [
+        "math.DG",
+        "math.SP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "13 pages, comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-30T05:58:35Z",
+      "updatedAt": "2026-10-30T05:58:35Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-02T08:41:40.732932+00:00",
+        "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:33.397419+00:00",
+        "contentHash": "2c7742a42ae0c0c61a03f9ba4a3a297a350897c2830a5ca006a06151d75d2227"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "尖锐谱估计及等号刚性",
+      "workSummary": "设 n≥3、1≤p≤n/2 为整数，曲率算子以单位球为 R=Id，特征值 μ₁≤⋯≤μ_{n(n−1)/2}，逐点假设 ∑_{j=1}^{n−p}μ_j≥n−p。闭连通 M 的 Hodge p形式第一特征值 λ₁^(p)≥p(n−p+1)；等号反推 R≥Id。p=1 时 M 本身等距单位球；p≥2 时万有覆盖微分同胚 S^n，并等距单位圆球或非圆 Sasakian 流形，非圆分支仅可能 n 奇且 p 偶。若 M 紧连通且非空光滑边界，以外法向ν定义 A(X,Y)=〈∇_Xν,Y〉，最小p个主曲率和≥0，则绝对边界谱仍有同一下界，等号当且仅当 M 等距单位半球。",
+      "techniques": [
+        "Petersen–Wink 曲率项估计与微分形式积分Bochner公式",
+        "梯度分解为twistor、d与d*分量，等号得到共形Killing形式",
+        "相邻次数再用Bochner恒等式得到特殊Killing耦合系统并恢复R≥Id",
+        "特殊Killing形式与度量锥平行形式的分类",
+        "边界等号推出A≥0，以锥平行形式核分布及Reilly/Neumann刚性得到半球"
+      ],
+      "breakthrough": "在较弱的最小 n−p 个曲率算子特征值和条件下取得尖锐Gallot–Meyer谱界，并说明等号如何恢复完整曲率算子下界；边界条件排除闭情形的非圆分支。",
+      "limitations": "已读 PDF 第1–13页，重点主定理第1–3页、恢复曲率下界第5–9页和边界路线第10–12页；渲染第2页核对常数、维数次数范围、边界符号和等号。未独立核验所有证明及特殊Killing形式/边界刚性外部定理。闭情形p≥2给必要分类，不能说任意Sasakian度量均实现等号；万有覆盖微分同胚球不表示原流形就是球。绝对本征形式需 ι_νω=ι_νdω=0，变分域先规定首个条件，后者由自然边界方程产生；不涵盖任意相对边界谱。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:47:14.806909+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41297v1",
+        "contentHash": "223738666415b1df9ad8090aca3e89afd2cb47df9f19b1de944d60efe477470e",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。完整 13 页正文、参考文献及附加点写/跨行模型名/Danus 检索未见作者自用 AI 正面披露；数学术语 Killing、twistor 及文献人名不构成 AI 证据。未见披露不等于证明没有使用。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bf8548599bed23da061fed80bc215827e5cc0e13669436d5136b5947e5ef395c"
+      },
+      "priorityScore": 95,
+      "priorityReason": "曲率比较、谱几何和等号刚性高度符合本站重点，优先核对公式与边界符号。"
+    },
+    "analysisBasis": {
+      "abstract": "For $1\\leq p\\leq n/2$, we derive sharp eigenvalue estimates for the Hodge Laplacian on differential $p$-forms under the curvature condition introduced by Petersen and Wink, and study their equality cases. Equality recovers the stronger curvature operator lower bound and, in the closed case, leaves only round or Sasakian metrics on the universal cover. For manifolds with boundary, weak $p$-convexity of the boundary makes the unit hemisphere the only equality case for the absolute boundary problem.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41297",
+        "metadata": {
+          "title": "Rigidity in sharp eigenvalue estimates for differential forms",
+          "authors": [
+            "Tsz-Kiu Aaron Chow",
+            "James Koh",
+            "Sen Yuk Wu"
+          ],
+          "abstract": "For $1\\leq p\\leq n/2$, we derive sharp eigenvalue estimates for the Hodge Laplacian on differential $p$-forms under the curvature condition introduced by Petersen and Wink, and study their equality cases. Equality recovers the stronger curvature operator lower bound and, in the closed case, leaves only round or Sasakian metrics on the universal cover. For manifolds with boundary, weak $p$-convexity of the boundary makes the unit hemisphere the only equality case for the absolute boundary problem.",
+          "categories": [
+            "math.DG",
+            "math.SP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "13 pages, comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-30T05:58:35Z",
+          "updatedAt": "2026-10-30T05:58:35Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-02T08:41:40.732932+00:00",
+            "contentHash": "6a56b06b9908c08e5d3c8df10e0a6cb5bdfc7fdfb383de4767d6a3b77a4f93fb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:33.397419+00:00",
+            "contentHash": "2c7742a42ae0c0c61a03f9ba4a3a297a350897c2830a5ca006a06151d75d2227"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "尖锐谱估计及等号刚性",
+          "workSummary": "设 n≥3、1≤p≤n/2 为整数，曲率算子以单位球为 R=Id，特征值 μ₁≤⋯≤μ_{n(n−1)/2}，逐点假设 ∑_{j=1}^{n−p}μ_j≥n−p。闭连通 M 的 Hodge p形式第一特征值 λ₁^(p)≥p(n−p+1)；等号反推 R≥Id。p=1 时 M 本身等距单位球；p≥2 时万有覆盖微分同胚 S^n，并等距单位圆球或非圆 Sasakian 流形，非圆分支仅可能 n 奇且 p 偶。若 M 紧连通且非空光滑边界，以外法向ν定义 A(X,Y)=〈∇_Xν,Y〉，最小p个主曲率和≥0，则绝对边界谱仍有同一下界，等号当且仅当 M 等距单位半球。",
+          "techniques": [
+            "Petersen–Wink 曲率项估计与微分形式积分Bochner公式",
+            "梯度分解为twistor、d与d*分量，等号得到共形Killing形式",
+            "相邻次数再用Bochner恒等式得到特殊Killing耦合系统并恢复R≥Id",
+            "特殊Killing形式与度量锥平行形式的分类",
+            "边界等号推出A≥0，以锥平行形式核分布及Reilly/Neumann刚性得到半球"
+          ],
+          "breakthrough": "在较弱的最小 n−p 个曲率算子特征值和条件下取得尖锐Gallot–Meyer谱界，并说明等号如何恢复完整曲率算子下界；边界条件排除闭情形的非圆分支。",
+          "limitations": "已读 PDF 第1–13页，重点主定理第1–3页、恢复曲率下界第5–9页和边界路线第10–12页；渲染第2页核对常数、维数次数范围、边界符号和等号。未独立核验所有证明及特殊Killing形式/边界刚性外部定理。闭情形p≥2给必要分类，不能说任意Sasakian度量均实现等号；万有覆盖微分同胚球不表示原流形就是球。绝对本征形式需 ι_νω=ι_νdω=0，变分域先规定首个条件，后者由自然边界方程产生；不涵盖任意相对边界谱。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:47:14.806909+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41297v1",
+            "contentHash": "223738666415b1df9ad8090aca3e89afd2cb47df9f19b1de944d60efe477470e",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。完整 13 页正文、参考文献及附加点写/跨行模型名/Danus 检索未见作者自用 AI 正面披露；数学术语 Killing、twistor 及文献人名不构成 AI 证据。未见披露不等于证明没有使用。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bf8548599bed23da061fed80bc215827e5cc0e13669436d5136b5947e5ef395c"
+          },
+          "priorityScore": 95,
+          "priorityReason": "曲率比较、谱几何和等号刚性高度符合本站重点，优先核对公式与边界符号。"
+        },
+        "analysisBasis": {
+          "abstract": "For $1\\leq p\\leq n/2$, we derive sharp eigenvalue estimates for the Hodge Laplacian on differential $p$-forms under the curvature condition introduced by Petersen and Wink, and study their equality cases. Equality recovers the stronger curvature operator lower bound and, in the closed case, leaves only round or Sasakian metrics on the universal cover. For manifolds with boundary, weak $p$-convexity of the boundary makes the unit hemisphere the only equality case for the absolute boundary problem.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

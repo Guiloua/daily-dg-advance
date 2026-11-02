@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2610.41945",
+  "slug": "2610.41945",
+  "latest": {
+    "arxivId": "2610.41945",
+    "metadata": {
+      "title": "Optimal Average Distortion for Non-Expansive Embeddings of Euclidean Metrics into the Line: With applications to cut-matching games and vertex expansion",
+      "authors": [
+        "Jack Spalding-Jamieson"
+      ],
+      "abstract": "We show that any $n$-point Euclidean metric admits a non-expansive embedding into the line with average distortion at most $O\\left(\\sqrt{\\frac{\\log n}{\\log\\log n}}\\right)$, matching a known lower bound. We also present two applications of this result. First, we give a cut-player strategy with an optimal spectral guarantee for the undirected cut-matching game. Second, we give an improved spectral approximation for vertex expansion in high-degree graphs.",
+      "categories": [
+        "cs.DS",
+        "cs.CG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.DS",
+      "version": 1,
+      "submittedAt": "2026-10-30T16:03:57Z",
+      "updatedAt": "2026-10-30T16:03:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-02T08:41:52.705887+00:00",
+        "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-02T08:50:44.948699+00:00",
+        "contentHash": "692912793195845865886c61bda109bfa581e26b1a16465c8295b8d90cc022fa"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Euclid 有限度量到直线的最优平均畸变",
+      "workSummary": "证明任意 n 点 Euclid 度量可非扩张地映到直线，平均畸变至多为 O(√(log n/log log n))，与已知下界匹配。由此给无向 cut-matching game 的 cut-player 一个谱保证最优的策略，并改进高次图的顶点扩张谱近似。",
+      "techniques": [
+        "有限 Euclid 度量的非扩张映射",
+        "平均畸变与匹配下界",
+        "cut-matching game 与图谱扩张"
+      ],
+      "breakthrough": "在平均畸变尺度上达到最优阶，并把度量嵌入工具转化为图算法保证。",
+      "limitations": "平均畸变控制不等于每对距离的 bi-Lipschitz 控制，也不意味着映射必单射；最优是渐近阶，摘要未给常数和小 n 约定。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第1页AI Disclosure直接把本项工作的关键技术思想归因GPT-6 Astra，并把部分简化归因Claude Opus 5.5，明确说呈现文字由作者自行完成。此为关键技术思想的正面归因，支持ideas及技术论证简化；声明没有逐项说明第3页随机投影、匹配和最优输运对偶路线中哪些步骤来自哪个模型，不能扩大成全部正文由AI撰写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2610.41945v1 · PDF 第1页，摘要之后“AI Disclosure”；第3页证明路线用于理解声明对象",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-02T08:48:22.002099+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2610.41945v1",
+        "contentHash": "2b2af4099ecd90b0a1cb0126ddd0b73b3cd285552f549614af25e36d66f0e2ff",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页AI Disclosure直接把本项工作的关键技术思想归因GPT-6 Astra，并把部分简化归因Claude Opus 5.5，明确说呈现文字由作者自行完成。此为关键技术思想的正面归因，支持ideas及技术论证简化；声明没有逐项说明第3页随机投影、匹配和最优输运对偶路线中哪些步骤来自哪个模型，不能扩大成全部正文由AI撰写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e3f96ddf6f616fd57859577475859cd3c49ae67d16f61fd55f5d8a5cf55a1cf9"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs"
+      ],
+      "priorityScore": 67,
+      "priorityReason": "度量嵌入与图谱算法的重要交叉，但与曲率比较及几何 PDE 的直接联系较弱。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that any $n$-point Euclidean metric admits a non-expansive embedding into the line with average distortion at most $O\\left(\\sqrt{\\frac{\\log n}{\\log\\log n}}\\right)$, matching a known lower bound. We also present two applications of this result. First, we give a cut-player strategy with an optimal spectral guarantee for the undirected cut-matching game. Second, we give an improved spectral approximation for vertex expansion in high-degree graphs.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-02",
+      "entry": {
+        "arxivId": "2610.41945",
+        "metadata": {
+          "title": "Optimal Average Distortion for Non-Expansive Embeddings of Euclidean Metrics into the Line: With applications to cut-matching games and vertex expansion",
+          "authors": [
+            "Jack Spalding-Jamieson"
+          ],
+          "abstract": "We show that any $n$-point Euclidean metric admits a non-expansive embedding into the line with average distortion at most $O\\left(\\sqrt{\\frac{\\log n}{\\log\\log n}}\\right)$, matching a known lower bound. We also present two applications of this result. First, we give a cut-player strategy with an optimal spectral guarantee for the undirected cut-matching game. Second, we give an improved spectral approximation for vertex expansion in high-degree graphs.",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.DS",
+          "version": 1,
+          "submittedAt": "2026-10-30T16:03:57Z",
+          "updatedAt": "2026-10-30T16:03:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-02T08:41:52.705887+00:00",
+            "contentHash": "242b39df5840b4edda41279126cce2f7554af47bfe156065ea76a68e98677772"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-02T08:50:44.948699+00:00",
+            "contentHash": "692912793195845865886c61bda109bfa581e26b1a16465c8295b8d90cc022fa"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Euclid 有限度量到直线的最优平均畸变",
+          "workSummary": "证明任意 n 点 Euclid 度量可非扩张地映到直线，平均畸变至多为 O(√(log n/log log n))，与已知下界匹配。由此给无向 cut-matching game 的 cut-player 一个谱保证最优的策略，并改进高次图的顶点扩张谱近似。",
+          "techniques": [
+            "有限 Euclid 度量的非扩张映射",
+            "平均畸变与匹配下界",
+            "cut-matching game 与图谱扩张"
+          ],
+          "breakthrough": "在平均畸变尺度上达到最优阶，并把度量嵌入工具转化为图算法保证。",
+          "limitations": "平均畸变控制不等于每对距离的 bi-Lipschitz 控制，也不意味着映射必单射；最优是渐近阶，摘要未给常数和小 n 约定。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第1页AI Disclosure直接把本项工作的关键技术思想归因GPT-6 Astra，并把部分简化归因Claude Opus 5.5，明确说呈现文字由作者自行完成。此为关键技术思想的正面归因，支持ideas及技术论证简化；声明没有逐项说明第3页随机投影、匹配和最优输运对偶路线中哪些步骤来自哪个模型，不能扩大成全部正文由AI撰写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2610.41945v1 · PDF 第1页，摘要之后“AI Disclosure”；第3页证明路线用于理解声明对象",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-02T08:48:22.002099+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2610.41945v1",
+            "contentHash": "2b2af4099ecd90b0a1cb0126ddd0b73b3cd285552f549614af25e36d66f0e2ff",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页AI Disclosure直接把本项工作的关键技术思想归因GPT-6 Astra，并把部分简化归因Claude Opus 5.5，明确说呈现文字由作者自行完成。此为关键技术思想的正面归因，支持ideas及技术论证简化；声明没有逐项说明第3页随机投影、匹配和最优输运对偶路线中哪些步骤来自哪个模型，不能扩大成全部正文由AI撰写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e3f96ddf6f616fd57859577475859cd3c49ae67d16f61fd55f5d8a5cf55a1cf9"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs"
+          ],
+          "priorityScore": 67,
+          "priorityReason": "度量嵌入与图谱算法的重要交叉，但与曲率比较及几何 PDE 的直接联系较弱。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that any $n$-point Euclidean metric admits a non-expansive embedding into the line with average distortion at most $O\\left(\\sqrt{\\frac{\\log n}{\\log\\log n}}\\right)$, matching a known lower bound. We also present two applications of this result. First, we give a cut-player strategy with an optimal spectral guarantee for the undirected cut-matching game. Second, we give an improved spectral approximation for vertex expansion in high-degree graphs.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
