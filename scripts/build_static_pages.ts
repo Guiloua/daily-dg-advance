@@ -17,6 +17,7 @@ import {
   formatUpdateTime,
   writeStaticAssets,
   validateBuiltLinks,
+  archivedDates,
 } from './static-presentation';
 export { formatUpdateTime } from './static-presentation';
 import {
@@ -24,6 +25,8 @@ import {
   arxivSlug,
   renderPaperMarkdown,
   renderDailyMarkdown,
+  renderArchiveMarkdown,
+  sortReports,
   type StaticDayV1,
   type StaticMirrorManifestV1,
   type StaticPaperV1,
@@ -85,9 +88,14 @@ function priorityLabel(report: PaperReport): string {
   return '低阅读优先级';
 }
 
-function renderPaperCard(report: PaperReport, basePath: string): string {
+function renderPaperCard(
+  report: PaperReport,
+  basePath: string,
+  showDate = false,
+): string {
   return `<article class="paper" data-paper data-ai="${report.aiStatus}" data-topic="${escapeHtml(report.topic)}" data-priority="${report.priorityTier}">
   <div class="paper-meta"><span>${escapeHtml(report.categories.join(' · '))}</span><span>${report.priorityScore} · ${priorityLabel(report)}</span></div>
+  ${showDate ? `<p class="paper-date">公告日：<a href="${pathUrl(basePath, `daily/${report.announcementDate}/`)}">${report.announcementDate}</a></p>` : ''}
   <p class="progress">${escapeHtml(report.progressType)}</p>
   <h4><a href="${paperUrl(basePath, report.arxivId)}">${renderMathText(report.title)}</a></h4>
   <p class="authors">${escapeHtml(report.authors.join(' · '))}</p>
@@ -103,23 +111,27 @@ function renderPaperCard(report: PaperReport, basePath: string): string {
 </article>`;
 }
 
-function renderInteractiveReports(day: StaticDayV1, basePath: string): string {
+function renderInteractiveReports(
+  reports: PaperReport[],
+  basePath: string,
+  allDates = false,
+): string {
   const groups = ['no_disclosure_observed', 'explicit']
     .map((aiStatus) => {
-      const reports = day.reports.filter(
-        (report) => report.aiStatus === aiStatus,
-      );
-      if (!reports.length) return '';
+      const selected = reports.filter((report) => report.aiStatus === aiStatus);
+      if (!selected.length) return '';
       const topics = TOPICS.map((topic) => {
-        const topicReports = reports.filter((report) => report.topic === topic);
+        const topicReports = selected.filter(
+          (report) => report.topic === topic,
+        );
         if (!topicReports.length) return '';
         return `<section class="topic-group" data-group data-ai="${aiStatus}" data-topic="${escapeHtml(topic)}">
           <div class="topic-heading"><h3>${escapeHtml(topic)}</h3><span data-group-count>${topicReports.length}</span></div>
-          ${topicReports.map((report) => renderPaperCard(report, basePath)).join('\n')}
+          ${topicReports.map((report) => renderPaperCard(report, basePath, allDates)).join('\n')}
         </section>`;
       }).join('\n');
       return `<section class="ai-group" data-ai-group="${aiStatus}">
-        <h2>${aiStatus === 'explicit' ? '明确披露 AI 协作' : '未见 AI 协作声明'}</h2>
+        <h2>${allDates ? (aiStatus === 'explicit' ? '披露 AI' : '未见 AI 披露') : aiStatus === 'explicit' ? '明确披露 AI 协作' : '未见 AI 协作声明'}</h2>
         ${topics}
       </section>`;
     })
@@ -128,14 +140,14 @@ function renderInteractiveReports(day: StaticDayV1, basePath: string): string {
 }
 
 function renderControls(
-  day: StaticDayV1,
+  selected: string,
   manifest: StaticMirrorManifestV1,
 ): string {
   return `<form class="filters" data-filters>
-    <label><span>公告日</span><select name="date" data-date>${manifest.days
+    <label><span>公告日</span><select name="date" data-date><option value="all"${selected === 'all' ? ' selected' : ''}>所有日期</option>${manifest.days
       .map(
         (entry) =>
-          `<option value="${entry.announcementDate}"${entry.announcementDate === day.announcementDate ? ' selected' : ''}>${entry.announcementDate}</option>`,
+          `<option value="${entry.announcementDate}"${entry.announcementDate === selected ? ' selected' : ''}>${entry.announcementDate}</option>`,
       )
       .join('')}</select></label>
     <label class="search"><span>搜索</span><input name="q" type="search" placeholder="题目、作者或摘要" autocomplete="off"></label>
@@ -153,7 +165,7 @@ function renderDayPage(
 ): string {
   const body = `<div class="page-head"><p class="eyebrow">${day.announcementDate}</p><h1>今日值得读什么</h1><p>完整收录 ${day.coverage.publishedCount} / ${day.coverage.expectedCount} · 明确披露 AI 协作 ${day.aiDisclosureCount} 篇</p><p>更新时间：${formatUpdateTime(day.lastUpdated)}</p></div>
   ${renderOverview(day.overview, aiUsageSummary(day.reports.map((report) => ({ arxivId: report.arxivId, title: report.title, analysis: report }))), basePath)}
-  <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${renderControls(day, manifest)}<div data-report-list>${renderInteractiveReports(day, basePath)}</div></section>
+  <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${renderControls(day.announcementDate, manifest)}<div data-report-list>${renderInteractiveReports(day.reports, basePath)}</div></section>
   <section class="trend"><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>
   <p><a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}">查看原始 Markdown</a> · <a href="${pathUrl(basePath, `daily/${day.announcementDate}.md`)}" download>下载 Markdown</a></p>`;
   return layout({
@@ -256,13 +268,31 @@ export async function buildStaticPages(args: Args): Promise<{
   const volume = await readJson<StaticVolumeV1>(
     join(args.content, 'data/volume.json'),
   );
-  const days = await Promise.all(
-    manifest.days.map((entry) =>
-      readJson<StaticDayV1>(
-        join(args.content, `data/daily/${entry.announcementDate}.json`),
-      ),
-    ),
+  const dates = await archivedDates(
+    args.content,
+    manifest.days.map((entry) => entry.announcementDate),
   );
+  const days = await Promise.all(
+    dates.map(async (date) => {
+      const day = await readJson<StaticDayV1>(
+        join(args.content, `data/daily/${date}.json`),
+      );
+      if (day.announcementDate !== date)
+        throw new Error('Archive date mismatch');
+      return day;
+    }),
+  );
+  const archiveManifest: StaticMirrorManifestV1 = {
+    ...manifest,
+    days: days.map((day) => ({
+      announcementDate: day.announcementDate,
+      expectedCount: day.coverage.expectedCount,
+      publishedCount: day.coverage.publishedCount,
+      aiDisclosureCount: day.aiDisclosureCount,
+      complete: day.coverage.complete,
+      lastUpdated: day.lastUpdated,
+    })),
+  };
   const paperFiles = (await readdir(join(args.content, 'data/papers'))).filter(
     (name) => name.endsWith('.json'),
   );
@@ -271,7 +301,7 @@ export async function buildStaticPages(args: Args): Promise<{
       readJson<StaticPaperV1>(join(args.content, 'data/papers', name)),
     ),
   );
-  validateContent(manifest, days, volume, papers);
+  validateContent(archiveManifest, days, volume, papers);
 
   await rm(args.out, { recursive: true, force: true });
   await mkdir(join(args.out, 'assets/katex'), { recursive: true });
@@ -294,7 +324,7 @@ export async function buildStaticPages(args: Args): Promise<{
   for (const day of days) {
     const markdownPath = `daily/${day.announcementDate}.md`;
     await writeFile(join(args.out, markdownPath), renderDailyMarkdown(day));
-    const html = renderDayPage(day, manifest, assets, args.basePath);
+    const html = renderDayPage(day, archiveManifest, assets, args.basePath);
     await writePage(
       join(args.out, `daily/${day.announcementDate}/index.html`),
       html,
@@ -319,10 +349,23 @@ export async function buildStaticPages(args: Args): Promise<{
       }),
     );
   }
-  const archiveMarkdown = await readFile(
-    join(args.content, 'archive.md'),
-    'utf8',
+  const allReports = sortReports(papers.map((paper) => paper.latest));
+  const explicit = allReports.filter(
+    (report) => report.aiStatus === 'explicit',
+  ).length;
+  await writePage(
+    join(args.out, 'all/index.html'),
+    layout({
+      title: '所有日期 · 几何前沿日报',
+      description:
+        '建站以来的全部几何学文章，按 AI 披露状态、主题与阅读优先级分类',
+      body: `<div class="page-head"><p class="eyebrow">All dates</p><h1>所有日期</h1><p>${days.at(-1)!.announcementDate} 至 ${days[0].announcementDate} · ${days.length} 个公告日 · ${allReports.length} 篇文章（同一论文仅展示最新收录记录）</p><p>披露 AI ${explicit} 篇 · 未见 AI 披露 ${allReports.length - explicit} 篇</p></div>
+      <section class="reports"><div class="section-head"><h2>全部文章</h2><p>按主题与阅读优先级排列</p></div>${renderControls('all', archiveManifest)}<div data-report-list>${renderInteractiveReports(allReports, args.basePath, true)}</div></section>`,
+      basePath: args.basePath,
+      assets,
+    }),
   );
+  const archiveMarkdown = renderArchiveMarkdown(archiveManifest);
   const archiveHtml = markdownToHtml(archiveMarkdown).replace(
     /href="daily\/(\d{4}-\d{2}-\d{2})\.md"/g,
     (_match, date: string) =>
