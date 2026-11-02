@@ -61,9 +61,35 @@ export function layout(options: {
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 <link rel="stylesheet" href="${pathUrl(basePath, assets.css)}"><link rel="stylesheet" href="${pathUrl(basePath, 'assets/katex/katex.min.css')}"></head>
-<body data-base-path="${escapeHtml(basePath)}"><header class="site-header"><div><a class="brand" href="${pathUrl(basePath)}"><i>G.</i><span>几何前沿日报</span></a><nav><a href="${pathUrl(basePath, 'archive/')}">日期归档</a><a href="https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site/">实时站点</a></nav></div></header>
+<body data-base-path="${escapeHtml(basePath)}"><header class="site-header"><div><a class="brand" href="${pathUrl(basePath)}"><i>G.</i><span>几何前沿日报</span></a><nav><a href="${pathUrl(basePath, 'all/')}">所有日期</a><a href="${pathUrl(basePath, 'archive/')}">日期归档</a><a href="https://geometry-arxiv-daily-jch.zychern672259.chatgpt.site/">实时站点</a></nav></div></header>
 <main>${body}</main><footer>静态只读镜像 · 自动生成的阅读指南，关键结论请回查原论文。</footer>
 <script src="${pathUrl(basePath, assets.js)}" defer></script></body></html>`;
+}
+
+// Old snapshots remain on disk even when a rolling manifest stops listing them.
+export async function archivedDates(
+  content: string,
+  listed: string[],
+): Promise<string[]> {
+  if (listed.some((date) => !/^\d{4}-\d{2}-\d{2}$/.test(date)))
+    throw new Error('Invalid archive date');
+  let files: string[];
+  try {
+    files = await readdir(join(content, 'data/daily'));
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+    files = [];
+  }
+  return [
+    ...new Set([
+      ...listed,
+      ...files
+        .filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/.test(name))
+        .map((name) => name.slice(0, -5)),
+    ]),
+  ]
+    .sort()
+    .reverse();
 }
 
 export function formatUpdateTime(value: string): string {

@@ -38,7 +38,7 @@
 - `daily-content` 与 `main` 无关历史，只允许 Markdown、JSON 和说明文件。该分支禁止强推和删除，不要求 PR。
 - `Geometry Pages` 工作流始终从受保护 `main` 读取可信生成器，并确认请求 SHA 属于 `daily-content` 历史后才检出内容。静态资源不使用外部 CDN，也不调用 Sites API。
 - Pages 失败不影响在线 Sites 或上一版 Pages。下一次日报会从 Sites 公开接口补齐遗漏日期。需要恢复旧镜像时，在 Actions 手动运行 `Geometry Pages`，输入目标 `daily-content` 的 40 位完整提交 SHA。
-- Pages 验收地址是 <https://guiloua.github.io/daily-dg-advance/>；应检查首页、归档、论文详情、查询参数筛选、26／104 周切换，以及返回实时站点的入口。
+- Pages 验收地址是 <https://guiloua.github.io/daily-dg-advance/>；应检查首页、“所有日期”的完整历史文章和 AI 披露分组、日期归档、论文详情、查询参数筛选、26／104 周切换，以及返回实时站点的入口。“所有日期”从全部历史日快照恢复索引，刷新最近十个完整公告日时不删除旧日期。
 
 ## 回滚
 

@@ -113,6 +113,7 @@ jobs:
         run: |
           npx tsx tests/static-mirror.test.ts
           npx tsx tests/progressive-layout.test.ts
+          npx tsx tests/all-dates.test.ts
       - name: Check trusted mirror source for secrets
         run: node scripts/check_secrets.mjs lib/static-mirror.ts scripts/sync_static_mirror.ts scripts/build_static_pages.ts scripts/progressive_static.ts scripts/static-presentation.ts static-mirror
 

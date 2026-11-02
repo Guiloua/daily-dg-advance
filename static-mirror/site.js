@@ -69,7 +69,11 @@
     form.addEventListener('input', applyFilters);
     form.addEventListener('change', (event) => {
       if (event.target.matches('[data-date]')) {
-        location.href = `${basePath}/daily/${event.target.value}/${location.search}`;
+        const destination =
+          event.target.value === 'all'
+            ? 'all/'
+            : `daily/${event.target.value}/`;
+        location.href = `${basePath}/${destination}${location.search}`;
         return;
       }
       applyFilters();
@@ -80,7 +84,7 @@
   const chart = document.querySelector('[data-chart]');
   const toggle = document.querySelector('[data-trend-toggle]');
   const visibleSeries = { dg: true, mg: true, gt: true };
-  document.querySelectorAll('.trend-legend span').forEach(span => {
+  document.querySelectorAll('.trend-legend span').forEach((span) => {
     const key = span.className;
     const button = document.createElement('button');
     button.type = 'button';

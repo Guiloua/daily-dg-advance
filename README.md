@@ -31,7 +31,7 @@ npm run dev
 4. 自动化分析清单内全部论文并生成 `ReportBatchV2`。服务端要求分析报告与清单并集完全一致，同时校验三个分类计数、低优先级理由与明确 AI 协作证据。
 5. `scripts/publish_payload.py --endpoint report-v2` 原子发布完整批次；缺少任何论文时整批拒绝，成功游标不会推进。
 6. `scripts/backfill_volume.py` 按官方公告事件重建滚动 24 个月趋势；网页只展示 DG、MG、GT 三条分类线。
-7. 完整批次核对成功后，`scripts/publish_static_mirror.sh` 生成最近十个完整公告日的 Markdown/JSON 与两年趋势，快进推送到无关历史的 `daily-content` 分支，并以精确内容 SHA 触发 GitHub Pages。镜像失败不回滚已成功写入的 D1，但会让日报任务失败并通知。
+7. 完整批次核对成功后，`scripts/publish_static_mirror.sh` 刷新最近十个完整公告日的 Markdown/JSON 与两年趋势，保留全部历史公告并补齐缺失日期，快进推送到无关历史的 `daily-content` 分支，并以精确内容 SHA 触发 GitHub Pages。顶部“所有日期”入口按“披露 AI”和“未见 AI 披露”汇总建站以来的文章，同一论文展示最新收录记录，可继续按主题、优先级及 AI 核查状态筛选。镜像失败不回滚已成功写入的 D1，但会让日报任务失败并通知。
 
 公开只读接口为 `/api/volume?range=6m|2y`、`/api/reports` 与 `/api/health`。趋势接口把公告日数据按自然周汇总，只返回截至周五的完整周；默认范围为最近 26 周。受保护写入接口为 `/api/ingest/v2` 与 `/api/ingest/volume-history`；`/api/ingest/v1` 仅为兼容旧发布工具而保留。
 

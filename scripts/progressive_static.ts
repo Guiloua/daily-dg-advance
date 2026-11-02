@@ -25,6 +25,7 @@ import {
   formatUpdateTime,
   writeStaticAssets,
   validateBuiltLinks,
+  archivedDates,
 } from './static-presentation';
 import { readJson } from '../lib/read-request';
 import {
@@ -143,10 +144,14 @@ export async function syncProgressive(args: {
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
   }
-  for (const day of existing?.days ?? []) {
+  for (const date of await archivedDates(
+    args.output,
+    (existing?.days ?? []).map((day) => day.announcementDate),
+  )) {
     const normalized = normalize(
-      await read(join(args.output, `data/daily/${day.announcementDate}.json`)),
+      await read(join(args.output, `data/daily/${date}.json`)),
     );
+    if (normalized.date !== date) throw new Error('Archive date mismatch');
     selected.set(normalized.date, normalized);
   }
   if (args.batch) {
@@ -229,10 +234,9 @@ export async function syncProgressive(args: {
   points = points
     .filter((p) => !missingWeeks.has(week(p.announcementDate)))
     .sort((a, b) => a.announcementDate.localeCompare(b.announcementDate));
-  let retainedComplete = 0;
-  const days = [...selected.values()]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .filter((d) => !d.coverage.complete || retainedComplete++ < args.days);
+  const days = [...selected.values()].sort((a, b) =>
+    b.date.localeCompare(a.date),
+  );
   if (
     !days.length ||
     (args.requiredDate && !days.some((d) => d.date === args.requiredDate))
@@ -315,7 +319,12 @@ function priority(entry: ProgressiveEntry): PriorityTier | 'pending' {
         : 'low';
 }
 
-function card(entry: ProgressiveEntry, base: string, detail = false) {
+function card(
+  entry: ProgressiveEntry,
+  base: string,
+  detail = false,
+  announcementDate?: string,
+) {
   const m = entry.metadata,
     a = entry.analysis;
   const url = `${base}/papers/${arxivSlug(entry.arxivId)}/`;
@@ -327,6 +336,7 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
   };
   return `<article class="paper" data-paper data-ai="${disclosureStatus(entry)}" data-topic="${esc(a?.topic ?? 'pending')}" data-priority="${priority(entry)}">
     <div class="paper-meta"><span>${esc(m.categories?.join(' · ') ?? '分类待补齐')}</span><span>${a ? a.priorityScore + ' · ' : ''}${labels[priority(entry)]}</span></div>
+    ${announcementDate ? `<p class="paper-date">公告日：<a href="${base}/daily/${announcementDate}/">${announcementDate}</a></p>` : ''}
     <p class="progress">${esc(a?.progressType ?? '待解读')}</p>
     <h4><a href="${url}">${renderMathText(m.title ?? entry.arxivId)}</a></h4>
     <p class="authors">${esc(m.authors?.join(' · ') ?? '作者待补齐')}</p>
@@ -334,7 +344,10 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
       a
         ? '<dl>' +
           [
-            ['AI 使用说明', a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : ''],
+            [
+              'AI 使用说明',
+              a.aiStatus === 'explicit' ? (a.aiEvidence ?? '') : '',
+            ],
             ['完成的工作', a.workSummary],
             ['技术', a.techniques.join(' · ')],
             ['可能的突破', a.breakthrough],
@@ -362,39 +375,68 @@ function card(entry: ProgressiveEntry, base: string, detail = false) {
   </article>`;
 }
 
-function groupedCards(feed: ProgressiveFeed, base: string) {
+function groupedCards(
+  entries: ProgressiveEntry[],
+  base: string,
+  dates?: Map<string, string>,
+) {
   const labels = {
     no_disclosure_observed: '全文检索未见 AI 协作披露',
     explicit: '明确披露 AI 协作',
     unknown: 'AI 披露待完成核查',
   };
   return (
-    (['no_disclosure_observed', 'explicit', 'unknown'] as const)
+    (dates
+      ? (['no_disclosure_observed', 'explicit'] as const)
+      : (['no_disclosure_observed', 'explicit', 'unknown'] as const)
+    )
       .map((ai) => {
-        const entries = feed.entries.filter((e) => disclosureStatus(e) === ai);
-        if (!entries.length) return '';
+        const selected = entries.filter((e) =>
+          dates && ai === 'no_disclosure_observed'
+            ? disclosureStatus(e) !== 'explicit'
+            : disclosureStatus(e) === ai,
+        );
+        if (!selected.length) return '';
         const groups = [...TOPICS, 'pending']
           .map((topic) => {
-            const papers = entries
+            const papers = selected
               .filter((e) => (e.analysis?.topic ?? 'pending') === topic)
               .sort(
                 (a, b) =>
                   (b.analysis?.priorityScore ?? -1) -
                     (a.analysis?.priorityScore ?? -1) ||
+                  (dates
+                    ? dates.get(b.arxivId)!.localeCompare(dates.get(a.arxivId)!)
+                    : 0) ||
                   a.arxivId.localeCompare(b.arxivId),
               );
             if (!papers.length) return '';
             return `<section class="topic-group" data-group data-ai="${ai}" data-topic="${esc(topic)}">
         <div class="topic-heading"><h3>${topic === 'pending' ? '待解读' : esc(topic)}</h3><span data-group-count>${papers.length}</span></div>
-        ${papers.map((e) => card(e, base)).join('\n')}
+        ${papers.map((e) => card(e, base, false, dates?.get(e.arxivId))).join('\n')}
       </section>`;
           })
           .join('\n');
-        return `<section class="ai-group" data-ai-group="${ai}"><h2>${labels[ai]}</h2>${groups}</section>`;
+        const label = dates
+          ? ai === 'explicit'
+            ? '披露 AI'
+            : '未见 AI 披露'
+          : labels[ai];
+        return `<section class="ai-group" data-ai-group="${ai}"><h2>${label}</h2>${groups}</section>`;
       })
       .join('\n') +
     '<p class="empty" data-empty hidden>当前筛选条件下没有论文。</p>'
   );
+}
+
+function renderControls(days: ProgressiveFeed[], selected = 'all') {
+  return `<form data-filters class="filters">
+      <label><span>公告日</span><select name="date" data-date><option value="all"${selected === 'all' ? ' selected' : ''}>所有日期</option>${days.map((d) => `<option value="${d.date}"${d.date === selected ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label>
+      <label class="search"><span>搜索</span><input name="q" type="search" placeholder="题目、作者或摘要" autocomplete="off"></label>
+      <label><span>主题</span><select name="topic"><option value="all">全部主题</option>${TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}<option value="pending">待解读</option></select></label>
+      <label><span>AI 状态</span><select name="ai"><option value="all">全部</option><option value="no_disclosure_observed">全文检索未见披露</option><option value="explicit">明确披露</option><option value="unknown">待完成核查</option></select></label>
+      <label><span>优先级</span><select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label>
+    </form>`;
 }
 
 function metadataStatus(feed: ProgressiveFeed) {
@@ -456,12 +498,18 @@ export async function buildProgressivePages(args: {
     manifest.days.some((d) => !/^\d{4}-\d{2}-\d{2}$/.test(d.announcementDate))
   )
     throw new Error('Invalid archive date');
+  const dates = await archivedDates(
+    args.content,
+    manifest.days.map((d) => d.announcementDate),
+  );
   const days = await Promise.all(
-    manifest.days.map((d) =>
-      read<ProgressiveFeed>(
-        join(args.content, `data/daily/${d.announcementDate}.json`),
-      ),
-    ),
+    dates.map(async (date) => {
+      const feed = normalize(
+        await read(join(args.content, `data/daily/${date}.json`)),
+      );
+      if (feed.date !== date) throw new Error('Archive date mismatch');
+      return feed;
+    }),
   );
   days.forEach(validate);
   if (manifest.latestDate !== days[0].date)
@@ -492,18 +540,12 @@ export async function buildProgressivePages(args: {
       assets,
     });
   const papers = new Map<string, ProgressiveEntry>();
+  const paperDates = new Map<string, string>();
   for (const feed of days) {
-    const controls = `<form data-filters class="filters">
-      <label><span>公告日</span><select name="date" data-date>${days.map((d) => `<option value="${d.date}"${d.date === feed.date ? ' selected' : ''}>${d.date}</option>`).join('')}</select></label>
-      <label class="search"><span>搜索</span><input name="q" type="search" placeholder="题目、作者或摘要" autocomplete="off"></label>
-      <label><span>主题</span><select name="topic"><option value="all">全部主题</option>${TOPICS.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}<option value="pending">待解读</option></select></label>
-      <label><span>AI 状态</span><select name="ai"><option value="all">全部</option><option value="no_disclosure_observed">全文检索未见披露</option><option value="explicit">明确披露</option><option value="unknown">待完成核查</option></select></label>
-      <label><span>优先级</span><select name="priority"><option value="all">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="pending">待解读</option></select></label>
-    </form>`;
     const body = `<div class="page-head"><p class="eyebrow">${feed.date}</p><h1>今日值得读什么</h1><p>${coverageLabel(feed)}</p><p>${disclosureSummary(feed)}</p><p>更新时间：${formatUpdateTime(feed.lastUpdated)}</p></div>
       ${metadataStatus(feed)}
       ${dailyOverview(feed, base)}
-      <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${controls}<div data-report-list>${groupedCards(feed, base)}</div></section>
+      <section class="reports"><div class="section-head"><h2>全部论文</h2><p>按主题与阅读优先级排列</p></div>${renderControls(days, feed.date)}<div data-report-list>${groupedCards(feed.entries, base)}</div></section>
       <p class="markdown-links"><a href="${base}/daily/${feed.date}.md">查看原始 Markdown</a> · <a href="${base}/daily/${feed.date}.md" download>下载 Markdown</a></p>
       <section class="trend" data-trend><div class="section-head"><div><p class="eyebrow">Publication pulse</p><h2>每周发文趋势</h2></div><button type="button" data-trend-toggle>展开至 2 年</button></div><p>仅统计 math.DG、math.MG、math.GT 的 New submissions 与 Cross-lists；修订不计入。仅显示清单完整的周。</p><div class="trend-legend"><span class="dg">math.DG</span><span class="mg">math.MG</span><span class="gt">math.GT</span></div><div class="chart" data-chart></div></section>`;
     const output = page('几何前沿日报 · ' + feed.date, body);
@@ -512,13 +554,31 @@ export async function buildProgressivePages(args: {
     if (feed.date === manifest.latestDate)
       await write(join(args.out, 'index.html'), output);
     for (const entry of feed.entries)
-      if (!papers.has(entry.arxivId)) papers.set(entry.arxivId, entry);
+      if (!papers.has(entry.arxivId)) {
+        papers.set(entry.arxivId, entry);
+        paperDates.set(entry.arxivId, feed.date);
+      }
   }
   for (const entry of papers.values())
     await write(
       join(args.out, `papers/${arxivSlug(entry.arxivId)}/index.html`),
       page(entry.metadata.title ?? entry.arxivId, card(entry, base, true)),
     );
+  const entries = [...papers.values()];
+  const explicit = entries.filter(
+    (e) => disclosureStatus(e) === 'explicit',
+  ).length;
+  const pending = entries.filter(
+    (e) => disclosureStatus(e) === 'unknown',
+  ).length;
+  await write(
+    join(args.out, 'all/index.html'),
+    page(
+      '所有日期 · 几何前沿日报',
+      `<div class="page-head"><p class="eyebrow">All dates</p><h1>所有日期</h1><p>${days.at(-1)!.date} 至 ${days[0].date} · ${days.length} 个公告日 · ${entries.length} 篇文章（同一论文仅展示最新收录记录）</p><p>披露 AI ${explicit} 篇 · 未见 AI 披露 ${entries.length - explicit} 篇${pending ? `，其中 ${pending} 篇待完成核查` : ''}</p></div>
+      <section class="reports"><div class="section-head"><h2>全部文章</h2><p>按主题与阅读优先级排列</p></div>${renderControls(days)}<div data-report-list>${groupedCards(entries, base, paperDates)}</div></section>`,
+    ),
+  );
   await write(
     join(args.out, 'archive/index.html'),
     page(
