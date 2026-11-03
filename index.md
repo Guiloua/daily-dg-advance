@@ -362,15 +362,15 @@ A finitely generated group acting locally elliptically on a complete \CAT(0) spa
 
 Oleg Ivrii、Truong Vu
 
-PDF恢复摘要损坏量为 Hausdorff维数。d≥2、φ(t)=tL(t) 为规范函数且 L 非增。Theorem1.1：若紧集 K 线上一致多孔（UPL）且 ∫₀¹dt/φ(t)=∞，则对每条可求长γ有 H^φ(K∩γ)=0；反之对任意至少含两点的连通紧 K，积分收敛时存在可求长γ使 H^φ(K∩γ)>0。Theorem1.2：任意紧UPL集与每条弦弧曲线交集的 Hausdorff维数<1，此项不需积分条件或K连通；任意非退化连通紧K及每个0<s<1均存在弦弧γ使 dim_H(K∩γ)>s（正文强于摘要的≥s）。UPL指存在η>0，每个非退化线段I中都有x使B(x,η|I|)避开K。
+交集大小以Hausdorff维数和规范Hausdorff测度刻画。d≥2、φ(t)=tL(t) 为规范函数且 L 非增。Theorem1.1：若紧集 K 线上一致多孔（UPL）且 ∫₀¹dt/φ(t)=∞，则对每条可求长γ有 H^φ(K∩γ)=0；反之对任意至少含两点的连通紧 K，积分收敛时存在可求长γ使 H^φ(K∩γ)>0。Theorem1.2：任意紧UPL集与每条弦弧曲线交集的 Hausdorff维数<1，此项不需积分条件或K连通；任意非退化连通紧K及每个0<s<1均存在弦弧γ使 dim_H(K∩γ)>s（正文强于摘要的≥s）。UPL指存在η>0，每个非退化线段I中都有x使B(x,η|I|)避开K。
 
-Let $K \subset\mathbb{R}^d$, $d\ge2$, be a connected compact set and $\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\int_0^1\frac{dt}{\phi(t)}<\infty$, then there exists a rectifiable curve $\gamma\subset\mathbb{R}^d$ such that $\mathcal H^\phi(K \cap\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\gamma$ such that $\textrm{ this http URL }(K \cap\gamma)\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\int_0^1\frac{dt}{\phi(t)}=\infty$, then $\mathcal H^\phi(K \cap\gamma)=0$ for every rectifiable curve $\gamma$ and $\textrm{ this http URL }(K \cap\gamma)<1$ for every chord-arc curve $\gamma$.
+Let $K \subset\mathbb{R}^d$, $d\ge2$, be a connected compact set and $\phi(t)=tL(t)$ be a gauge function with $L$ non-increasing. We study intersections of $K$ with rectifiable curves and chord-arc curves. We show that if $\int_0^1\frac{dt}{\phi(t)}<\infty$, then there exists a rectifiable curve $\gamma\subset\mathbb{R}^d$ such that $\mathcal{H}^\phi(K \cap\gamma)>0$. Moreover, for every $0<s<1$, there exists a chord-arc curve $\gamma$ such that $\textrm{H$.$dim}(K \cap\gamma)\ge s$. Conversely, we show that if $K$ is uniformly porous on lines and $\int_0^1\frac{dt}{\phi(t)}=\infty$, then $\mathcal{H}^\phi(K \cap\gamma)=0$ for every rectifiable curve $\gamma$ and $\textrm{H$.$dim}(K \cap\gamma)<1$ for every chord-arc curve $\gamma$.
 
-明确披露 AI 协作：Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。
+明确披露 AI 协作：第15页Use of AI明确：Theorems 1.1和1.2的证明借助Claude Fable 5获得，GPT-6.1 Sol用于语言和呈现润色；作者自行核查证明并简化文字。记录proofs及writing，不把作者核查计为AI验证，也不推断未明确归因的核心想法。此次重检同一v1的全部15页并核对该段及补检命中。
 
-来源：https://arxiv.org/pdf/2610.41510v1 · PDF 第 15 页 Use of AI
+来源：https://arxiv.org/pdf/2610.41510v1 · PDF第15页 Use of AI
 
-核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Use of AI 明确 Theorems1.1与1.2的证明借助 Claude Fable5 获得，GPT-6.1Sol 润色语言与呈现。证明经作者核查和简化；未披露某个具体核心想法由模型提出，故记 proofs/writing，不自动添加 ideas 或把作者核查记为AI验证。
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第15页Use of AI明确：Theorems 1.1和1.2的证明借助Claude Fable 5获得，GPT-6.1 Sol用于语言和呈现润色；作者自行核查证明并简化文字。记录proofs及writing，不把作者核查计为AI验证，也不推断未明确归因的核心想法。此次重检同一v1的全部15页并核对该段及补检命中。
 
 来源：https://arxiv.org/pdf/2610.41510v1
 
