@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00736",
+  "slug": "2611.00736",
+  "latest": {
+    "arxivId": "2611.00736",
+    "metadata": {
+      "title": "On the Local Regularity of Homogeneous Complex Monge-Ampère Equations",
+      "authors": [
+        "Qi Yao"
+      ],
+      "abstract": "We establish a local higher regularity theorem for the homogeneous complex Monge-Ampere equation on $X\\times D$, where $X$ is a complete, possibly noncompact Kahler manifold and $D\\subset\\mathbb C$ is the unit disc. For a bounded weak solution given by the Perron envelope, we prove higher regularity on a smaller spatial domain when the smooth boundary data are locally small. The geometric hypotheses require uniformly convex local Kahler potentials and a local barrier threshold sufficiently large relative to the global $L^\\infty$ bound of the solution. We also obtain quantitative local Holder estimates. The proof combines a perturbative construction of local holomorphic disc foliations with a construction of global subsolutions using convexity and barriers. A key analytic difficulty is the loss of Holder regularity in the construction of holomorphic disc families, which we address using BMO estimates and Nash-Moser-Zehnder theorems. Comparison along the discs identifies the local smooth solution by holomorphic discs foliation with the global weak solution. We apply the theorem and its proof to compact Kahler manifolds and to ALE, ALF, and asymptotically complex hyperbolic (ACH) ends. Under the stated geometric and decay assumptions, we obtain higher regularity of each prescribed order sufficiently far out, together with weighted Holder estimates preserving the boundary decay.",
+      "categories": [
+        "math.DG",
+        "math.AP",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "57 pages. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-31T08:31:04Z",
+      "updatedAt": "2026-10-31T08:31:04Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:27.282558+00:00",
+        "contentHash": "ac6264d17d0e650c56887647847f9568a70279b26f4a081b7d8ce792925d171f"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "HCMA弱解的局部高正则性",
+      "workSummary": "定理A针对完备Kähler流形X与单位圆盘D：先假设存在连续有界、Bedford–Taylor意义的Perron包络弱解Φ，||Φ||∞≤M。对V紧含于U，要求一致全纯球坐标、空间margin≥R₀、局部势的实Euclidean Hessian≥λI，且λR₀²≥16M；固定k≥1、0<β<α<1，若边界Ψ在U×∂D的C^(k+3,α)范数足够小，则正文称Φ在V×D局部光滑，并给||Φ||_(k,β)≤C||Ψ||_(k+1,α)。",
+      "techniques": [
+        "局部全纯圆盘叶状结构与Riemann–Hilbert边值问题",
+        "Hilbert变换的BMO估计及任意小Hölder指数损失",
+        "Nash–Moser–Zehnder迭代和局部唯一性粘合",
+        "实凸势支持与屏障生成全局次解，再以Perron比较识别Φ"
+      ],
+      "breakthrough": "局部小性之外仍保留全局解界与屏障门槛，而不要求全局M小。在ALE端，g/J全阶衰减和边界D_X^j∂θ^ℓΨ=O(r^(−γ−j))使足够远处有加权C^(k,β)估计；ALF应用限Kähler曲面并需固定非零纤维长度及几何导数控制，使用提升上的大球；ACH应用限所述严格伪凸有界域及全阶模型/边界衰减。",
+      "limitations": "补读PDF第1–5、45–51页，渲染核对第3–4页。此为圆盘Dirichlet局部正则定理，不可直接替换成环域两端点弱测地线空间正性定理；也未无条件证明所有非紧边界数据都有所需弱解。局部势要求实凸而不仅Levi正，且λR₀²门槛不可省略。端部定量估计的cutoff依赖预设阶、M及高阶边界范数，不能声称统一保所有阶的同一远端估计。未逐步独立验证迭代、提升和屏障比较证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第5页明确数学想法、结果、证明和初稿独立完成，AI仅在最终修订中协助编辑及查找可能错误。记写作与有限核查，不归因核心HCMA路线；致谢中的Claude LeBrun是人名，不能作为模型证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00736v1 · PDF第5页 Declaration of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:38:00.918548+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00736v1",
+        "contentHash": "0adcf50fa811e5145f9e8e7fc41b9aa52b7a20949c0cd4302a7391659cb186fe",
+        "pages": 57,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确数学想法、结果、证明和初稿独立完成，AI仅在最终修订中协助编辑及查找可能错误。记写作与有限核查，不归因核心HCMA路线；致谢中的Claude LeBrun是人名，不能作为模型证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "591ae84f00db06ea3c128d595597955a6bae4a26fc8559654f820fa825acee5a"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "复几何退化PDE、弱解正则及非紧端分析直接相关，优先补读。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a local higher regularity theorem for the homogeneous complex Monge-Ampere equation on $X\\times D$, where $X$ is a complete, possibly noncompact Kahler manifold and $D\\subset\\mathbb C$ is the unit disc. For a bounded weak solution given by the Perron envelope, we prove higher regularity on a smaller spatial domain when the smooth boundary data are locally small. The geometric hypotheses require uniformly convex local Kahler potentials and a local barrier threshold sufficiently large relative to the global $L^\\infty$ bound of the solution. We also obtain quantitative local Holder estimates. The proof combines a perturbative construction of local holomorphic disc foliations with a construction of global subsolutions using convexity and barriers. A key analytic difficulty is the loss of Holder regularity in the construction of holomorphic disc families, which we address using BMO estimates and Nash-Moser-Zehnder theorems. Comparison along the discs identifies the local smooth solution by holomorphic discs foliation with the global weak solution. We apply the theorem and its proof to compact Kahler manifolds and to ALE, ALF, and asymptotically complex hyperbolic (ACH) ends. Under the stated geometric and decay assumptions, we obtain higher regularity of each prescribed order sufficiently far out, together with weighted Holder estimates preserving the boundary decay.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00736",
+        "metadata": {
+          "title": "On the Local Regularity of Homogeneous Complex Monge-Ampère Equations",
+          "authors": [
+            "Qi Yao"
+          ],
+          "abstract": "We establish a local higher regularity theorem for the homogeneous complex Monge-Ampere equation on $X\\times D$, where $X$ is a complete, possibly noncompact Kahler manifold and $D\\subset\\mathbb C$ is the unit disc. For a bounded weak solution given by the Perron envelope, we prove higher regularity on a smaller spatial domain when the smooth boundary data are locally small. The geometric hypotheses require uniformly convex local Kahler potentials and a local barrier threshold sufficiently large relative to the global $L^\\infty$ bound of the solution. We also obtain quantitative local Holder estimates. The proof combines a perturbative construction of local holomorphic disc foliations with a construction of global subsolutions using convexity and barriers. A key analytic difficulty is the loss of Holder regularity in the construction of holomorphic disc families, which we address using BMO estimates and Nash-Moser-Zehnder theorems. Comparison along the discs identifies the local smooth solution by holomorphic discs foliation with the global weak solution. We apply the theorem and its proof to compact Kahler manifolds and to ALE, ALF, and asymptotically complex hyperbolic (ACH) ends. Under the stated geometric and decay assumptions, we obtain higher regularity of each prescribed order sufficiently far out, together with weighted Holder estimates preserving the boundary decay.",
+          "categories": [
+            "math.DG",
+            "math.AP",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "57 pages. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-31T08:31:04Z",
+          "updatedAt": "2026-10-31T08:31:04Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:27.282558+00:00",
+            "contentHash": "ac6264d17d0e650c56887647847f9568a70279b26f4a081b7d8ce792925d171f"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "HCMA弱解的局部高正则性",
+          "workSummary": "定理A针对完备Kähler流形X与单位圆盘D：先假设存在连续有界、Bedford–Taylor意义的Perron包络弱解Φ，||Φ||∞≤M。对V紧含于U，要求一致全纯球坐标、空间margin≥R₀、局部势的实Euclidean Hessian≥λI，且λR₀²≥16M；固定k≥1、0<β<α<1，若边界Ψ在U×∂D的C^(k+3,α)范数足够小，则正文称Φ在V×D局部光滑，并给||Φ||_(k,β)≤C||Ψ||_(k+1,α)。",
+          "techniques": [
+            "局部全纯圆盘叶状结构与Riemann–Hilbert边值问题",
+            "Hilbert变换的BMO估计及任意小Hölder指数损失",
+            "Nash–Moser–Zehnder迭代和局部唯一性粘合",
+            "实凸势支持与屏障生成全局次解，再以Perron比较识别Φ"
+          ],
+          "breakthrough": "局部小性之外仍保留全局解界与屏障门槛，而不要求全局M小。在ALE端，g/J全阶衰减和边界D_X^j∂θ^ℓΨ=O(r^(−γ−j))使足够远处有加权C^(k,β)估计；ALF应用限Kähler曲面并需固定非零纤维长度及几何导数控制，使用提升上的大球；ACH应用限所述严格伪凸有界域及全阶模型/边界衰减。",
+          "limitations": "补读PDF第1–5、45–51页，渲染核对第3–4页。此为圆盘Dirichlet局部正则定理，不可直接替换成环域两端点弱测地线空间正性定理；也未无条件证明所有非紧边界数据都有所需弱解。局部势要求实凸而不仅Levi正，且λR₀²门槛不可省略。端部定量估计的cutoff依赖预设阶、M及高阶边界范数，不能声称统一保所有阶的同一远端估计。未逐步独立验证迭代、提升和屏障比较证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第5页明确数学想法、结果、证明和初稿独立完成，AI仅在最终修订中协助编辑及查找可能错误。记写作与有限核查，不归因核心HCMA路线；致谢中的Claude LeBrun是人名，不能作为模型证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00736v1 · PDF第5页 Declaration of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:38:00.918548+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00736v1",
+            "contentHash": "0adcf50fa811e5145f9e8e7fc41b9aa52b7a20949c0cd4302a7391659cb186fe",
+            "pages": 57,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确数学想法、结果、证明和初稿独立完成，AI仅在最终修订中协助编辑及查找可能错误。记写作与有限核查，不归因核心HCMA路线；致谢中的Claude LeBrun是人名，不能作为模型证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "591ae84f00db06ea3c128d595597955a6bae4a26fc8559654f820fa825acee5a"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "复几何退化PDE、弱解正则及非紧端分析直接相关，优先补读。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a local higher regularity theorem for the homogeneous complex Monge-Ampere equation on $X\\times D$, where $X$ is a complete, possibly noncompact Kahler manifold and $D\\subset\\mathbb C$ is the unit disc. For a bounded weak solution given by the Perron envelope, we prove higher regularity on a smaller spatial domain when the smooth boundary data are locally small. The geometric hypotheses require uniformly convex local Kahler potentials and a local barrier threshold sufficiently large relative to the global $L^\\infty$ bound of the solution. We also obtain quantitative local Holder estimates. The proof combines a perturbative construction of local holomorphic disc foliations with a construction of global subsolutions using convexity and barriers. A key analytic difficulty is the loss of Holder regularity in the construction of holomorphic disc families, which we address using BMO estimates and Nash-Moser-Zehnder theorems. Comparison along the discs identifies the local smooth solution by holomorphic discs foliation with the global weak solution. We apply the theorem and its proof to compact Kahler manifolds and to ALE, ALF, and asymptotically complex hyperbolic (ACH) ends. Under the stated geometric and decay assumptions, we obtain higher regularity of each prescribed order sufficiently far out, together with weighted Holder estimates preserving the boundary decay.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

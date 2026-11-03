@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03278",
+  "slug": "2611.03278",
+  "latest": {
+    "arxivId": "2611.03278",
+    "metadata": {
+      "title": "On a Class of Non-Local Elliptic-Transport Systems in Score-Guided Probability Flow on $SE(3)$: Score-Singularity Resolution, Space-Time ADN Shift, and Markov Mean-Field Games",
+      "authors": [
+        "Pilhwa Lee"
+      ],
+      "abstract": "We establish mathematical foundations for optimal spatiotemporal vector fields governing continuous score-guided probability flows over bounded submanifolds $M \\subset SE(3)$ on the Special Euclidean group $SE(3) \\cong \\mathbb{R}^3 \\times SO(3)$. Modeling dynamic density evolution via a score-perturbed Lie-algebraic continuity equation under zero-flux boundary conditions, we resolve the non-local score drift singularity $s(g,t) = \\nabla_{SE(3)} \\log \\rho(g,t)$ as $\\rho \\rightarrow 0^+$ via weighted parabolic flux dissipation bounds. Using left-invariant exponential group mollifiers, we derive boundary-preserving DiPerna--Lions commutator estimates tracking structure constants $\\{c_{ij}^k\\}$. Second, interpreting the optimality system as a 7D space-time elliptic operator $L_{7D} = -\\Delta_{SE(3)} - \\partial_t^2$ with zero-order corner compatibility on $\\partial M \\times \\{0,T\\}$, we establish Agmon--Douglis--Nirenberg $W_p^2(Q_T)$ shift estimates tracking Lie algebra constants, boundary geometry $\\|\\partial M\\|_{C^2}$, and Ricci curvature $\\|Ric_{SE(3)}\\|_{L^\\infty}$, yielding a full $C^\\infty(\\overline{Q}_T)$ Schauder bootstrap expansion. Third, we extend this system to non-cooperative Markov Mean-Field Games (MFGs) on $SE(3)$, establishing score-guided Nash equilibria via Schauder--Tychonoff fixed points. Crucially, the constant diagonal Ricci curvature $Ric_{SE(3)} = \\mathrm{diag}(0,0,0,1/2,1/2,1/2)$ from $SO(3)$ induces a sharp Bochner--Weitzenböck spectral gap boost $\\lambda_1(-\\Delta_{SE(3)}) \\ge \\lambda_1(-\\Delta_{\\mathbb{R}^3}) + 1/2 > 0$. This positive rotational curvature enhances the Lie-algebraic Poincaré coercivity constant, demonstrating that intrinsic group curvature stabilizes score-guided flows against dispersion and expands the critical Nash uniqueness horizon $T_{SE(3)}^*$ beyond flat Euclidean limits.",
+      "categories": [
+        "math.AP",
+        "math.DG",
+        "math.OC",
+        "math.PR",
+        "stat.ML"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "20 pages",
+      "version": 1,
+      "submittedAt": "2026-11-02T15:21:53Z",
+      "updatedAt": "2026-11-02T15:21:53Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:14.617936+00:00",
+        "contentHash": "f3aa66fc77d9cfd5083e86fc0b4ec81ec239f9427f2b5af91879a798d12fc56b"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "SE(3)上的score导引椭圆输运系统",
+      "workSummary": "作者在SE(3)有界子域零通量边界上研究score扰动连续性方程，主张以加权耗散处理ρ→0的logρ漂移奇性，建立保边界交换子、时空椭圆ADN移位估计及光滑bootstrap，并经固定点得到Markov平均场Nash均衡。还声称旋转正Ricci产生谱隙提升和更长唯一性时间。",
+      "techniques": [
+        "Lie群mollifier与DiPerna–Lions交换子",
+        "ADN时空椭圆估计",
+        "Schauder–Tychonoff固定点",
+        "Bochner–Weitzenböck公式"
+      ],
+      "breakthrough": "尝试把群几何、奇异score漂移与平均场系统统一。",
+      "limitations": "摘要中的普遍谱隙相加公式及由角点零阶相容推全边界C∞提升均需严格检查域、边界条件和高阶相容；不能仅由SO(3)正Ricci即认定任意子域函数的标量谱隙加1/2。当前按作者主张记录而非已独立确认。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第18页Acknowledgments明确作者自行构想模型、理论框架及证明策略，Google Gemini仅辅助LaTeX排版、稿件组织和语言修订，故只记writing。其他命中是score-based生成建模研究主题、未来方向及参考文献，不是额外自身模型使用或AI提出数学思想的证据；作者自验证明亦不等于AI核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03278v1 · PDF 第18页Acknowledgments；第1、17、19—20页其他命中为研究背景/引用",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:41:48.373581+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03278v1",
+        "contentHash": "cdea94fcba46312deb73661048b564191493c8b818bee1e47710472e82c569ee",
+        "pages": 20,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第18页Acknowledgments明确作者自行构想模型、理论框架及证明策略，Google Gemini仅辅助LaTeX排版、稿件组织和语言修订，故只记writing。其他命中是score-based生成建模研究主题、未来方向及参考文献，不是额外自身模型使用或AI提出数学思想的证据；作者自验证明亦不等于AI核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a917df71e2365b5713dc9eaf75d27033844270f0c292f9f157e10ceb4c9ca804"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 57,
+      "priorityReason": "方向交叉较多且关键强结论需核验，低于直接几何流论文优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish mathematical foundations for optimal spatiotemporal vector fields governing continuous score-guided probability flows over bounded submanifolds $M \\subset SE(3)$ on the Special Euclidean group $SE(3) \\cong \\mathbb{R}^3 \\times SO(3)$. Modeling dynamic density evolution via a score-perturbed Lie-algebraic continuity equation under zero-flux boundary conditions, we resolve the non-local score drift singularity $s(g,t) = \\nabla_{SE(3)} \\log \\rho(g,t)$ as $\\rho \\rightarrow 0^+$ via weighted parabolic flux dissipation bounds. Using left-invariant exponential group mollifiers, we derive boundary-preserving DiPerna--Lions commutator estimates tracking structure constants $\\{c_{ij}^k\\}$. Second, interpreting the optimality system as a 7D space-time elliptic operator $L_{7D} = -\\Delta_{SE(3)} - \\partial_t^2$ with zero-order corner compatibility on $\\partial M \\times \\{0,T\\}$, we establish Agmon--Douglis--Nirenberg $W_p^2(Q_T)$ shift estimates tracking Lie algebra constants, boundary geometry $\\|\\partial M\\|_{C^2}$, and Ricci curvature $\\|Ric_{SE(3)}\\|_{L^\\infty}$, yielding a full $C^\\infty(\\overline{Q}_T)$ Schauder bootstrap expansion. Third, we extend this system to non-cooperative Markov Mean-Field Games (MFGs) on $SE(3)$, establishing score-guided Nash equilibria via Schauder--Tychonoff fixed points. Crucially, the constant diagonal Ricci curvature $Ric_{SE(3)} = \\mathrm{diag}(0,0,0,1/2,1/2,1/2)$ from $SO(3)$ induces a sharp Bochner--Weitzenböck spectral gap boost $\\lambda_1(-\\Delta_{SE(3)}) \\ge \\lambda_1(-\\Delta_{\\mathbb{R}^3}) + 1/2 > 0$. This positive rotational curvature enhances the Lie-algebraic Poincaré coercivity constant, demonstrating that intrinsic group curvature stabilizes score-guided flows against dispersion and expands the critical Nash uniqueness horizon $T_{SE(3)}^*$ beyond flat Euclidean limits.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.03278",
+        "metadata": {
+          "title": "On a Class of Non-Local Elliptic-Transport Systems in Score-Guided Probability Flow on $SE(3)$: Score-Singularity Resolution, Space-Time ADN Shift, and Markov Mean-Field Games",
+          "authors": [
+            "Pilhwa Lee"
+          ],
+          "abstract": "We establish mathematical foundations for optimal spatiotemporal vector fields governing continuous score-guided probability flows over bounded submanifolds $M \\subset SE(3)$ on the Special Euclidean group $SE(3) \\cong \\mathbb{R}^3 \\times SO(3)$. Modeling dynamic density evolution via a score-perturbed Lie-algebraic continuity equation under zero-flux boundary conditions, we resolve the non-local score drift singularity $s(g,t) = \\nabla_{SE(3)} \\log \\rho(g,t)$ as $\\rho \\rightarrow 0^+$ via weighted parabolic flux dissipation bounds. Using left-invariant exponential group mollifiers, we derive boundary-preserving DiPerna--Lions commutator estimates tracking structure constants $\\{c_{ij}^k\\}$. Second, interpreting the optimality system as a 7D space-time elliptic operator $L_{7D} = -\\Delta_{SE(3)} - \\partial_t^2$ with zero-order corner compatibility on $\\partial M \\times \\{0,T\\}$, we establish Agmon--Douglis--Nirenberg $W_p^2(Q_T)$ shift estimates tracking Lie algebra constants, boundary geometry $\\|\\partial M\\|_{C^2}$, and Ricci curvature $\\|Ric_{SE(3)}\\|_{L^\\infty}$, yielding a full $C^\\infty(\\overline{Q}_T)$ Schauder bootstrap expansion. Third, we extend this system to non-cooperative Markov Mean-Field Games (MFGs) on $SE(3)$, establishing score-guided Nash equilibria via Schauder--Tychonoff fixed points. Crucially, the constant diagonal Ricci curvature $Ric_{SE(3)} = \\mathrm{diag}(0,0,0,1/2,1/2,1/2)$ from $SO(3)$ induces a sharp Bochner--Weitzenböck spectral gap boost $\\lambda_1(-\\Delta_{SE(3)}) \\ge \\lambda_1(-\\Delta_{\\mathbb{R}^3}) + 1/2 > 0$. This positive rotational curvature enhances the Lie-algebraic Poincaré coercivity constant, demonstrating that intrinsic group curvature stabilizes score-guided flows against dispersion and expands the critical Nash uniqueness horizon $T_{SE(3)}^*$ beyond flat Euclidean limits.",
+          "categories": [
+            "math.AP",
+            "math.DG",
+            "math.OC",
+            "math.PR",
+            "stat.ML"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "20 pages",
+          "version": 1,
+          "submittedAt": "2026-11-02T15:21:53Z",
+          "updatedAt": "2026-11-02T15:21:53Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:14.617936+00:00",
+            "contentHash": "f3aa66fc77d9cfd5083e86fc0b4ec81ec239f9427f2b5af91879a798d12fc56b"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "SE(3)上的score导引椭圆输运系统",
+          "workSummary": "作者在SE(3)有界子域零通量边界上研究score扰动连续性方程，主张以加权耗散处理ρ→0的logρ漂移奇性，建立保边界交换子、时空椭圆ADN移位估计及光滑bootstrap，并经固定点得到Markov平均场Nash均衡。还声称旋转正Ricci产生谱隙提升和更长唯一性时间。",
+          "techniques": [
+            "Lie群mollifier与DiPerna–Lions交换子",
+            "ADN时空椭圆估计",
+            "Schauder–Tychonoff固定点",
+            "Bochner–Weitzenböck公式"
+          ],
+          "breakthrough": "尝试把群几何、奇异score漂移与平均场系统统一。",
+          "limitations": "摘要中的普遍谱隙相加公式及由角点零阶相容推全边界C∞提升均需严格检查域、边界条件和高阶相容；不能仅由SO(3)正Ricci即认定任意子域函数的标量谱隙加1/2。当前按作者主张记录而非已独立确认。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第18页Acknowledgments明确作者自行构想模型、理论框架及证明策略，Google Gemini仅辅助LaTeX排版、稿件组织和语言修订，故只记writing。其他命中是score-based生成建模研究主题、未来方向及参考文献，不是额外自身模型使用或AI提出数学思想的证据；作者自验证明亦不等于AI核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03278v1 · PDF 第18页Acknowledgments；第1、17、19—20页其他命中为研究背景/引用",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:41:48.373581+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03278v1",
+            "contentHash": "cdea94fcba46312deb73661048b564191493c8b818bee1e47710472e82c569ee",
+            "pages": 20,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第18页Acknowledgments明确作者自行构想模型、理论框架及证明策略，Google Gemini仅辅助LaTeX排版、稿件组织和语言修订，故只记writing。其他命中是score-based生成建模研究主题、未来方向及参考文献，不是额外自身模型使用或AI提出数学思想的证据；作者自验证明亦不等于AI核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a917df71e2365b5713dc9eaf75d27033844270f0c292f9f157e10ceb4c9ca804"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 57,
+          "priorityReason": "方向交叉较多且关键强结论需核验，低于直接几何流论文优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish mathematical foundations for optimal spatiotemporal vector fields governing continuous score-guided probability flows over bounded submanifolds $M \\subset SE(3)$ on the Special Euclidean group $SE(3) \\cong \\mathbb{R}^3 \\times SO(3)$. Modeling dynamic density evolution via a score-perturbed Lie-algebraic continuity equation under zero-flux boundary conditions, we resolve the non-local score drift singularity $s(g,t) = \\nabla_{SE(3)} \\log \\rho(g,t)$ as $\\rho \\rightarrow 0^+$ via weighted parabolic flux dissipation bounds. Using left-invariant exponential group mollifiers, we derive boundary-preserving DiPerna--Lions commutator estimates tracking structure constants $\\{c_{ij}^k\\}$. Second, interpreting the optimality system as a 7D space-time elliptic operator $L_{7D} = -\\Delta_{SE(3)} - \\partial_t^2$ with zero-order corner compatibility on $\\partial M \\times \\{0,T\\}$, we establish Agmon--Douglis--Nirenberg $W_p^2(Q_T)$ shift estimates tracking Lie algebra constants, boundary geometry $\\|\\partial M\\|_{C^2}$, and Ricci curvature $\\|Ric_{SE(3)}\\|_{L^\\infty}$, yielding a full $C^\\infty(\\overline{Q}_T)$ Schauder bootstrap expansion. Third, we extend this system to non-cooperative Markov Mean-Field Games (MFGs) on $SE(3)$, establishing score-guided Nash equilibria via Schauder--Tychonoff fixed points. Crucially, the constant diagonal Ricci curvature $Ric_{SE(3)} = \\mathrm{diag}(0,0,0,1/2,1/2,1/2)$ from $SO(3)$ induces a sharp Bochner--Weitzenböck spectral gap boost $\\lambda_1(-\\Delta_{SE(3)}) \\ge \\lambda_1(-\\Delta_{\\mathbb{R}^3}) + 1/2 > 0$. This positive rotational curvature enhances the Lie-algebraic Poincaré coercivity constant, demonstrating that intrinsic group curvature stabilizes score-guided flows against dispersion and expands the critical Nash uniqueness horizon $T_{SE(3)}^*$ beyond flat Euclidean limits.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

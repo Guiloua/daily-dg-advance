@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00977",
+  "slug": "2611.00977",
+  "latest": {
+    "arxivId": "2611.00977",
+    "metadata": {
+      "title": "There is only one transitive Anosov flow (in dimension 3, with orientable foliations, up to bicontact padding and Goodman surgeries)",
+      "authors": [
+        "Thomas Barthelmé",
+        "Federico Salmoiraghi",
+        "Chi Cheuk Tsang"
+      ],
+      "abstract": "We introduce a new surgical operation on Anosov flows, which we call bicontact padding surgery. The operation is defined using the machinery of strongly adapted bicontact structures, and involves inserting a 'padding' layer where one of the contact structures rotates many times around the Reeb flow of the other. We show that every skew Anosov flow with orientable stable and unstable foliations can be transformed into a finite cover of a geodesic flow using bicontact padding surgery and Goodman surgery. Together with previous results, this implies that every transitive Anosov flow with orientable stable and unstable foliations can be transformed into a suspension flow using bicontact padding surgery and Goodman surgery. This gives some progress towards the Christy-Fried-Ghys conjecture, which predicts that the same statement is true using only Goodman surgery.",
+      "categories": [
+        "math.DS",
+        "math.GT",
+        "math.SG"
+      ],
+      "primaryCategory": "math.DS",
+      "comment": "70 pages, 18 figures",
+      "version": 1,
+      "submittedAt": "2026-10-31T14:20:19Z",
+      "updatedAt": "2026-10-31T14:20:19Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-03T11:24:43.683587+00:00",
+        "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:38.823262+00:00",
+        "contentHash": "fc8f8c75fcd1dbec36e0c7fd326172cf6ec04abe683e30f9ecb4ac3653a8b1d7"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "允许新手术的Anosov流变换",
+      "workSummary": "作者定义bicontact padding手术，借强适配双接触结构插入旋转多次的层；证明稳定/不稳定叶可定向的skew Anosov流经此及Goodman手术可变为测地流有限覆盖，结合旧结果使该类传递三维Anosov流变为悬挂流。",
+      "techniques": [
+        "strongly adapted bicontact结构",
+        "padding层手术",
+        "Goodman手术",
+        "测地流覆盖与悬挂模型"
+      ],
+      "breakthrough": "在扩大允许手术集合后统一变换传递Anosov流，为Christy–Fried–Ghys猜想提供进展。",
+      "limitations": "标题的只有一种仅指指定手术等价，非通常共轭或轨道等价。原猜想只许Goodman手术，本文新增padding不可删除；叶可定向及三维条件须保留。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第10–11页§1.7明确：LLM校读发现边界轨道标准化构造有误，ChatGPT-6 Astra随后提出不同修复路线，成为命题5.1；作者重写证明但保留关键思想，并在第41–42页署给模型，因此有具体ideas和proofs归因。AI也用于查错及追索变分逆问题文献。作者说明部分思想可能来自既有文献、自己对该领域尚不够熟悉，邀请核实新颖性；其余论文构思归作者，不能扩成整篇AI原创。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00977v1 · PDF第10–11页 §1.7；第41–42页命题5.1及证明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:42:00.856064+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00977v1",
+        "contentHash": "b398a717aefb36df778bec92849b0dbfc75b37eebcd23a90996190e8dd79f8ce",
+        "pages": 70,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10–11页§1.7明确：LLM校读发现边界轨道标准化构造有误，ChatGPT-6 Astra随后提出不同修复路线，成为命题5.1；作者重写证明但保留关键思想，并在第41–42页署给模型，因此有具体ideas和proofs归因。AI也用于查错及追索变分逆问题文献。作者说明部分思想可能来自既有文献、自己对该领域尚不够熟悉，邀请核实新颖性；其余论文构思归作者，不能扩成整篇AI原创。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b19300884356aa3d8d2fca0864e2f9628e6dca885368bd97a585d8d7c675b107"
+      },
+      "aiUsage": [
+        "ideas",
+        "literature",
+        "proofs",
+        "verification"
+      ],
+      "priorityScore": 62,
+      "priorityReason": "负曲率动力学和接触几何相关，但主要偏手术拓扑。"
+    },
+    "analysisBasis": {
+      "abstract": "We introduce a new surgical operation on Anosov flows, which we call bicontact padding surgery. The operation is defined using the machinery of strongly adapted bicontact structures, and involves inserting a 'padding' layer where one of the contact structures rotates many times around the Reeb flow of the other. We show that every skew Anosov flow with orientable stable and unstable foliations can be transformed into a finite cover of a geodesic flow using bicontact padding surgery and Goodman surgery. Together with previous results, this implies that every transitive Anosov flow with orientable stable and unstable foliations can be transformed into a suspension flow using bicontact padding surgery and Goodman surgery. This gives some progress towards the Christy-Fried-Ghys conjecture, which predicts that the same statement is true using only Goodman surgery.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00977",
+        "metadata": {
+          "title": "There is only one transitive Anosov flow (in dimension 3, with orientable foliations, up to bicontact padding and Goodman surgeries)",
+          "authors": [
+            "Thomas Barthelmé",
+            "Federico Salmoiraghi",
+            "Chi Cheuk Tsang"
+          ],
+          "abstract": "We introduce a new surgical operation on Anosov flows, which we call bicontact padding surgery. The operation is defined using the machinery of strongly adapted bicontact structures, and involves inserting a 'padding' layer where one of the contact structures rotates many times around the Reeb flow of the other. We show that every skew Anosov flow with orientable stable and unstable foliations can be transformed into a finite cover of a geodesic flow using bicontact padding surgery and Goodman surgery. Together with previous results, this implies that every transitive Anosov flow with orientable stable and unstable foliations can be transformed into a suspension flow using bicontact padding surgery and Goodman surgery. This gives some progress towards the Christy-Fried-Ghys conjecture, which predicts that the same statement is true using only Goodman surgery.",
+          "categories": [
+            "math.DS",
+            "math.GT",
+            "math.SG"
+          ],
+          "primaryCategory": "math.DS",
+          "comment": "70 pages, 18 figures",
+          "version": 1,
+          "submittedAt": "2026-10-31T14:20:19Z",
+          "updatedAt": "2026-10-31T14:20:19Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-03T11:24:43.683587+00:00",
+            "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:38.823262+00:00",
+            "contentHash": "fc8f8c75fcd1dbec36e0c7fd326172cf6ec04abe683e30f9ecb4ac3653a8b1d7"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "允许新手术的Anosov流变换",
+          "workSummary": "作者定义bicontact padding手术，借强适配双接触结构插入旋转多次的层；证明稳定/不稳定叶可定向的skew Anosov流经此及Goodman手术可变为测地流有限覆盖，结合旧结果使该类传递三维Anosov流变为悬挂流。",
+          "techniques": [
+            "strongly adapted bicontact结构",
+            "padding层手术",
+            "Goodman手术",
+            "测地流覆盖与悬挂模型"
+          ],
+          "breakthrough": "在扩大允许手术集合后统一变换传递Anosov流，为Christy–Fried–Ghys猜想提供进展。",
+          "limitations": "标题的只有一种仅指指定手术等价，非通常共轭或轨道等价。原猜想只许Goodman手术，本文新增padding不可删除；叶可定向及三维条件须保留。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第10–11页§1.7明确：LLM校读发现边界轨道标准化构造有误，ChatGPT-6 Astra随后提出不同修复路线，成为命题5.1；作者重写证明但保留关键思想，并在第41–42页署给模型，因此有具体ideas和proofs归因。AI也用于查错及追索变分逆问题文献。作者说明部分思想可能来自既有文献、自己对该领域尚不够熟悉，邀请核实新颖性；其余论文构思归作者，不能扩成整篇AI原创。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00977v1 · PDF第10–11页 §1.7；第41–42页命题5.1及证明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:42:00.856064+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00977v1",
+            "contentHash": "b398a717aefb36df778bec92849b0dbfc75b37eebcd23a90996190e8dd79f8ce",
+            "pages": 70,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10–11页§1.7明确：LLM校读发现边界轨道标准化构造有误，ChatGPT-6 Astra随后提出不同修复路线，成为命题5.1；作者重写证明但保留关键思想，并在第41–42页署给模型，因此有具体ideas和proofs归因。AI也用于查错及追索变分逆问题文献。作者说明部分思想可能来自既有文献、自己对该领域尚不够熟悉，邀请核实新颖性；其余论文构思归作者，不能扩成整篇AI原创。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b19300884356aa3d8d2fca0864e2f9628e6dca885368bd97a585d8d7c675b107"
+          },
+          "aiUsage": [
+            "ideas",
+            "literature",
+            "proofs",
+            "verification"
+          ],
+          "priorityScore": 62,
+          "priorityReason": "负曲率动力学和接触几何相关，但主要偏手术拓扑。"
+        },
+        "analysisBasis": {
+          "abstract": "We introduce a new surgical operation on Anosov flows, which we call bicontact padding surgery. The operation is defined using the machinery of strongly adapted bicontact structures, and involves inserting a 'padding' layer where one of the contact structures rotates many times around the Reeb flow of the other. We show that every skew Anosov flow with orientable stable and unstable foliations can be transformed into a finite cover of a geodesic flow using bicontact padding surgery and Goodman surgery. Together with previous results, this implies that every transitive Anosov flow with orientable stable and unstable foliations can be transformed into a suspension flow using bicontact padding surgery and Goodman surgery. This gives some progress towards the Christy-Fried-Ghys conjecture, which predicts that the same statement is true using only Goodman surgery.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

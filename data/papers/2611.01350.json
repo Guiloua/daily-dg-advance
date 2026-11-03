@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01350",
+  "slug": "2611.01350",
+  "latest": {
+    "arxivId": "2611.01350",
+    "metadata": {
+      "title": "Lehmer's number is not an orientable stretch factor in genus six",
+      "authors": [
+        "Lizi Guo"
+      ],
+      "abstract": "Let $\\lambda_L \\approx 1.17628$ be Lehmer's number. We prove that no pseudo-Anosov homeomorphism of a closed orientable surface of genus six with orientable invariant foliations has stretch factor $\\lambda_L$. This gives a negative answer to a question of Lanneau and Thiffeault on the minimal stretch factor in even genus. As a consequence, the minimal stretch factor $\\delta_6^{+}$ of such maps is the largest root of $x^{12}-x^{9}-x^{7}+x^{6}-x^{5}-x^{3}+1$, approximately $1.20189$. The proof combines the Lefschetz method of Lanneau and Thiffeault, the standardly embedded train tracks of Hironaka and Tsang, an elementary analysis of the transition digraph, and an obstruction from periodic conjugacy classes in the fundamental group.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "22 pages, 10 figures. Code at this https URL",
+      "version": 1,
+      "submittedAt": "2026-10-31T23:36:48Z",
+      "updatedAt": "2026-10-31T23:36:48Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-03T11:24:43.683587+00:00",
+        "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.01350v1",
+        "observedAt": "2026-11-03T11:28:36.222689+00:00",
+        "contentHash": "5c99cb0af72c956cd5ea75741b0d530230e45a282c3a1305a3f17361ae641538"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:38.826643+00:00",
+        "contentHash": "deb4dd5f28288f0bcfdd3de160c52b48d566b2f51f07cece20bd4215149c41de"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "反例排除与最小值确定",
+      "workSummary": "证明闭可定向亏格六曲面上、具有可定向不变叶状结构的伪Anosov同胚，不可能以Lehmer数约1.17628为伸缩因子，否定Lanneau–Thiffeault关于偶亏格最小伸缩因子的一个问题。相应最小值δ₆⁺是x¹²−x⁹−x⁷+x⁶−x⁵−x³+1的最大实根，约1.20189。",
+      "techniques": [
+        "Lefschetz方法",
+        "标准嵌入火车轨及转移有向图",
+        "基本群中周期共轭类障碍"
+      ],
+      "breakthrough": "排除一个低熵候选并确定所述亏格六可定向叶状结构类的最小伸缩因子。",
+      "limitations": "亏格六、闭曲面和不变叶状结构可定向均须保留；不是所有伪Anosov映射或所有偶亏格的统一最小值结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确三项核心思路（Hironaka–Tsang火车轨、周期共轭类障碍、亏格五几何实现）均属作者；GPT-6Astra按迭代讨论完成转移图组合计算及代码，ClaudeOpus5.5起草稿件。计算与论证由作者验证，不能将作者验证记为AI验证或将辅助计算写为核心ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01350v1 · PDF第3页 AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:28:36.222689+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01350v1",
+        "contentHash": "5c99cb0af72c956cd5ea75741b0d530230e45a282c3a1305a3f17361ae641538",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确三项核心思路（Hironaka–Tsang火车轨、周期共轭类障碍、亏格五几何实现）均属作者；GPT-6Astra按迭代讨论完成转移图组合计算及代码，ClaudeOpus5.5起草稿件。计算与论证由作者验证，不能将作者验证记为AI验证或将辅助计算写为核心ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e45cf1368537e8ba0e378aff0c42dec5390f8f0338455c89f9ca907e683656d0"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 67,
+      "priorityReason": "低维动力学与曲面拓扑的重要最小化问题，非主要曲率分析方向。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $\\lambda_L \\approx 1.17628$ be Lehmer's number. We prove that no pseudo-Anosov homeomorphism of a closed orientable surface of genus six with orientable invariant foliations has stretch factor $\\lambda_L$. This gives a negative answer to a question of Lanneau and Thiffeault on the minimal stretch factor in even genus. As a consequence, the minimal stretch factor $\\delta_6^{+}$ of such maps is the largest root of $x^{12}-x^{9}-x^{7}+x^{6}-x^{5}-x^{3}+1$, approximately $1.20189$. The proof combines the Lefschetz method of Lanneau and Thiffeault, the standardly embedded train tracks of Hironaka and Tsang, an elementary analysis of the transition digraph, and an obstruction from periodic conjugacy classes in the fundamental group.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01350",
+        "metadata": {
+          "title": "Lehmer's number is not an orientable stretch factor in genus six",
+          "authors": [
+            "Lizi Guo"
+          ],
+          "abstract": "Let $\\lambda_L \\approx 1.17628$ be Lehmer's number. We prove that no pseudo-Anosov homeomorphism of a closed orientable surface of genus six with orientable invariant foliations has stretch factor $\\lambda_L$. This gives a negative answer to a question of Lanneau and Thiffeault on the minimal stretch factor in even genus. As a consequence, the minimal stretch factor $\\delta_6^{+}$ of such maps is the largest root of $x^{12}-x^{9}-x^{7}+x^{6}-x^{5}-x^{3}+1$, approximately $1.20189$. The proof combines the Lefschetz method of Lanneau and Thiffeault, the standardly embedded train tracks of Hironaka and Tsang, an elementary analysis of the transition digraph, and an obstruction from periodic conjugacy classes in the fundamental group.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "22 pages, 10 figures. Code at this https URL",
+          "version": 1,
+          "submittedAt": "2026-10-31T23:36:48Z",
+          "updatedAt": "2026-10-31T23:36:48Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-03T11:24:43.683587+00:00",
+            "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.01350v1",
+            "observedAt": "2026-11-03T11:28:36.222689+00:00",
+            "contentHash": "5c99cb0af72c956cd5ea75741b0d530230e45a282c3a1305a3f17361ae641538"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:38.826643+00:00",
+            "contentHash": "deb4dd5f28288f0bcfdd3de160c52b48d566b2f51f07cece20bd4215149c41de"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "反例排除与最小值确定",
+          "workSummary": "证明闭可定向亏格六曲面上、具有可定向不变叶状结构的伪Anosov同胚，不可能以Lehmer数约1.17628为伸缩因子，否定Lanneau–Thiffeault关于偶亏格最小伸缩因子的一个问题。相应最小值δ₆⁺是x¹²−x⁹−x⁷+x⁶−x⁵−x³+1的最大实根，约1.20189。",
+          "techniques": [
+            "Lefschetz方法",
+            "标准嵌入火车轨及转移有向图",
+            "基本群中周期共轭类障碍"
+          ],
+          "breakthrough": "排除一个低熵候选并确定所述亏格六可定向叶状结构类的最小伸缩因子。",
+          "limitations": "亏格六、闭曲面和不变叶状结构可定向均须保留；不是所有伪Anosov映射或所有偶亏格的统一最小值结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确三项核心思路（Hironaka–Tsang火车轨、周期共轭类障碍、亏格五几何实现）均属作者；GPT-6Astra按迭代讨论完成转移图组合计算及代码，ClaudeOpus5.5起草稿件。计算与论证由作者验证，不能将作者验证记为AI验证或将辅助计算写为核心ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01350v1 · PDF第3页 AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:28:36.222689+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01350v1",
+            "contentHash": "5c99cb0af72c956cd5ea75741b0d530230e45a282c3a1305a3f17361ae641538",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确三项核心思路（Hironaka–Tsang火车轨、周期共轭类障碍、亏格五几何实现）均属作者；GPT-6Astra按迭代讨论完成转移图组合计算及代码，ClaudeOpus5.5起草稿件。计算与论证由作者验证，不能将作者验证记为AI验证或将辅助计算写为核心ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e45cf1368537e8ba0e378aff0c42dec5390f8f0338455c89f9ca907e683656d0"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 67,
+          "priorityReason": "低维动力学与曲面拓扑的重要最小化问题，非主要曲率分析方向。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $\\lambda_L \\approx 1.17628$ be Lehmer's number. We prove that no pseudo-Anosov homeomorphism of a closed orientable surface of genus six with orientable invariant foliations has stretch factor $\\lambda_L$. This gives a negative answer to a question of Lanneau and Thiffeault on the minimal stretch factor in even genus. As a consequence, the minimal stretch factor $\\delta_6^{+}$ of such maps is the largest root of $x^{12}-x^{9}-x^{7}+x^{6}-x^{5}-x^{3}+1$, approximately $1.20189$. The proof combines the Lefschetz method of Lanneau and Thiffeault, the standardly embedded train tracks of Hironaka and Tsang, an elementary analysis of the transition digraph, and an obstruction from periodic conjugacy classes in the fundamental group.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

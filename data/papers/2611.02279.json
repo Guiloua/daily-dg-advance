@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02279",
+  "slug": "2611.02279",
+  "latest": {
+    "arxivId": "2611.02279",
+    "metadata": {
+      "title": "An affine reverse Faber-Krahn inequality via information decay",
+      "authors": [
+        "Matthew J. Colbrook",
+        "George Stepaniants"
+      ],
+      "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^n$ admits $S\\in\\mathrm{SL}_n(\\mathbb{R})$ such that $\\lambda_1(SK)|K|^{2/n}\\le Cn$, where $C$ is universal. For origin-symmetric bodies of volume one, the bound holds in maximal Gaussian measure position. The main step is the spectral estimate \\[ \\lambda_1(D)\\le C(P)\\bigl(n+\\sqrt{n I(\\nu\\mid\\gamma_n)}\\bigr) \\] for an even isotropic log-concave probability measure $\\nu$ supported on a symmetric convex body $D$, with Poincaré constant at most $P$ and finite relative Fisher information. A second-order Stein estimate and an information jump under convolution give entropy decay faster than $m^{-1}$ for normalised sums. Their supports control the Gaussian measure of dilates, and a Brownian bridge expansion gives the spectral estimate. A Gaussian-weighted ground state supplies a measure whose Fisher information is bounded in terms of $\\lambda_1(K)$. The square-root dependence then gives the bound of order $n$.",
+      "categories": [
+        "math.SP",
+        "math.FA",
+        "math.MG"
+      ],
+      "primaryCategory": "math.SP",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-11-01T23:06:22Z",
+      "updatedAt": "2026-11-01T23:06:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.02279v1",
+        "observedAt": "2026-11-03T11:28:12.276376+00:00",
+        "contentHash": "39ee23f760b4a7078cecae10b4c611c5910b4c3d059336c1dcc2ab03196689bb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:03.029406+00:00",
+        "contentHash": "016297e5a7fcf7dd667f226834c78dff22438cc95b10ed5580eaa687b8505d47"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "仿射逆Faber–Krahn谱界",
+      "workSummary": "每个凸体K经某个保体积线性变换S后，首特征值满足λ1(SK)|K|^(2/n)≤Cn，C为普适常数；对称体积一凸体可取最大Gaussian测度位置。核心是偶对称、各向同性、log-concave且Poincaré常数受控的支撑测度，以相对Fisher信息的平方根控制谱。",
+      "techniques": [
+        "二阶Stein估计",
+        "卷积信息跃迁与熵衰减",
+        "Brownian bridge谱展开",
+        "Gaussian加权基态"
+      ],
+      "breakthrough": "将谱上界压到维数线性阶，并把信息论衰减与凸体的仿射谱几何联结。",
+      "limitations": "结论允许选取SL_n变换，不能当作任意原位置均有同一界；中间谱估计需要对称、各向同性、有限Fisher信息及Poincaré常数控制。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第15页声明作者在发展证明时与ChatGPT 6互动并进行指导，随后自行撰文；写成后还用该模型对倒数第二稿作轻微语言编辑。“in this stage only”限制后期语言编辑阶段，不应抹去此前证明发展用途。未明确把具体核心思想归因模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02279v1 · PDF 第15页，References之前AI declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:28:12.276376+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02279v1",
+        "contentHash": "39ee23f760b4a7078cecae10b4c611c5910b4c3d059336c1dcc2ab03196689bb",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第15页声明作者在发展证明时与ChatGPT 6互动并进行指导，随后自行撰文；写成后还用该模型对倒数第二稿作轻微语言编辑。“in this stage only”限制后期语言编辑阶段，不应抹去此前证明发展用途。未明确把具体核心思想归因模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ab7bbbddc42e73f79f82303b6dcbba0e028021b45d76043519c52a1fc7d0841b"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 88,
+      "priorityReason": "谱比较与凸几何核心进展，线性维数尺度值得重点阅读。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^n$ admits $S\\in\\mathrm{SL}_n(\\mathbb{R})$ such that $\\lambda_1(SK)|K|^{2/n}\\le Cn$, where $C$ is universal. For origin-symmetric bodies of volume one, the bound holds in maximal Gaussian measure position. The main step is the spectral estimate \\[ \\lambda_1(D)\\le C(P)\\bigl(n+\\sqrt{n I(\\nu\\mid\\gamma_n)}\\bigr) \\] for an even isotropic log-concave probability measure $\\nu$ supported on a symmetric convex body $D$, with Poincaré constant at most $P$ and finite relative Fisher information. A second-order Stein estimate and an information jump under convolution give entropy decay faster than $m^{-1}$ for normalised sums. Their supports control the Gaussian measure of dilates, and a Brownian bridge expansion gives the spectral estimate. A Gaussian-weighted ground state supplies a measure whose Fisher information is bounded in terms of $\\lambda_1(K)$. The square-root dependence then gives the bound of order $n$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02279",
+        "metadata": {
+          "title": "An affine reverse Faber-Krahn inequality via information decay",
+          "authors": [
+            "Matthew J. Colbrook",
+            "George Stepaniants"
+          ],
+          "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^n$ admits $S\\in\\mathrm{SL}_n(\\mathbb{R})$ such that $\\lambda_1(SK)|K|^{2/n}\\le Cn$, where $C$ is universal. For origin-symmetric bodies of volume one, the bound holds in maximal Gaussian measure position. The main step is the spectral estimate \\[ \\lambda_1(D)\\le C(P)\\bigl(n+\\sqrt{n I(\\nu\\mid\\gamma_n)}\\bigr) \\] for an even isotropic log-concave probability measure $\\nu$ supported on a symmetric convex body $D$, with Poincaré constant at most $P$ and finite relative Fisher information. A second-order Stein estimate and an information jump under convolution give entropy decay faster than $m^{-1}$ for normalised sums. Their supports control the Gaussian measure of dilates, and a Brownian bridge expansion gives the spectral estimate. A Gaussian-weighted ground state supplies a measure whose Fisher information is bounded in terms of $\\lambda_1(K)$. The square-root dependence then gives the bound of order $n$.",
+          "categories": [
+            "math.SP",
+            "math.FA",
+            "math.MG"
+          ],
+          "primaryCategory": "math.SP",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-11-01T23:06:22Z",
+          "updatedAt": "2026-11-01T23:06:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.02279v1",
+            "observedAt": "2026-11-03T11:28:12.276376+00:00",
+            "contentHash": "39ee23f760b4a7078cecae10b4c611c5910b4c3d059336c1dcc2ab03196689bb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:03.029406+00:00",
+            "contentHash": "016297e5a7fcf7dd667f226834c78dff22438cc95b10ed5580eaa687b8505d47"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "仿射逆Faber–Krahn谱界",
+          "workSummary": "每个凸体K经某个保体积线性变换S后，首特征值满足λ1(SK)|K|^(2/n)≤Cn，C为普适常数；对称体积一凸体可取最大Gaussian测度位置。核心是偶对称、各向同性、log-concave且Poincaré常数受控的支撑测度，以相对Fisher信息的平方根控制谱。",
+          "techniques": [
+            "二阶Stein估计",
+            "卷积信息跃迁与熵衰减",
+            "Brownian bridge谱展开",
+            "Gaussian加权基态"
+          ],
+          "breakthrough": "将谱上界压到维数线性阶，并把信息论衰减与凸体的仿射谱几何联结。",
+          "limitations": "结论允许选取SL_n变换，不能当作任意原位置均有同一界；中间谱估计需要对称、各向同性、有限Fisher信息及Poincaré常数控制。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第15页声明作者在发展证明时与ChatGPT 6互动并进行指导，随后自行撰文；写成后还用该模型对倒数第二稿作轻微语言编辑。“in this stage only”限制后期语言编辑阶段，不应抹去此前证明发展用途。未明确把具体核心思想归因模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02279v1 · PDF 第15页，References之前AI declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:28:12.276376+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02279v1",
+            "contentHash": "39ee23f760b4a7078cecae10b4c611c5910b4c3d059336c1dcc2ab03196689bb",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第15页声明作者在发展证明时与ChatGPT 6互动并进行指导，随后自行撰文；写成后还用该模型对倒数第二稿作轻微语言编辑。“in this stage only”限制后期语言编辑阶段，不应抹去此前证明发展用途。未明确把具体核心思想归因模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ab7bbbddc42e73f79f82303b6dcbba0e028021b45d76043519c52a1fc7d0841b"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 88,
+          "priorityReason": "谱比较与凸几何核心进展，线性维数尺度值得重点阅读。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that every convex body $K\\subset\\mathbb{R}^n$ admits $S\\in\\mathrm{SL}_n(\\mathbb{R})$ such that $\\lambda_1(SK)|K|^{2/n}\\le Cn$, where $C$ is universal. For origin-symmetric bodies of volume one, the bound holds in maximal Gaussian measure position. The main step is the spectral estimate \\[ \\lambda_1(D)\\le C(P)\\bigl(n+\\sqrt{n I(\\nu\\mid\\gamma_n)}\\bigr) \\] for an even isotropic log-concave probability measure $\\nu$ supported on a symmetric convex body $D$, with Poincaré constant at most $P$ and finite relative Fisher information. A second-order Stein estimate and an information jump under convolution give entropy decay faster than $m^{-1}$ for normalised sums. Their supports control the Gaussian measure of dilates, and a Brownian bridge expansion gives the spectral estimate. A Gaussian-weighted ground state supplies a measure whose Fisher information is bounded in terms of $\\lambda_1(K)$. The square-root dependence then gives the bound of order $n$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

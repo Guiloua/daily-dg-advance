@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00744",
+  "slug": "2611.00744",
+  "latest": {
+    "arxivId": "2611.00744",
+    "metadata": {
+      "title": "Spatial degeneracy along weak geodesics in the space of Kähler potentials",
+      "authors": [
+        "Xia Xiao",
+        "Qi Yao"
+      ],
+      "abstract": "We study spatial Hessian degeneracy along weak Kähler geodesics. We construct examples in three settings: (1) On every compact Kähler manifold, the spatial form degenerates on a nonempty open set during an interior time interval, although both endpoints are smooth and strictly Kähler. (2) On ALE Kähler manifolds with a holomorphic quotient end and a decaying potential to the Euclidean metric, spatial degeneracy occurs on open regions arbitrarily far along an unbounded horn. (3) For cone and Poincaré endpoint metrics along a smooth divisor, normal spatial degeneracy occurs on open sets approaching the divisor. Both cone endpoints retain the prescribed angle. The first construction answers negatively the spatial-positivity question recorded in Darvas's survey. The ALE and divisor constructions show that weak geodesics need not preserve the asymptotic behavior of the endpoint metrics.",
+      "categories": [
+        "math.DG",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "38 pages, 3 figures. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-10-31T08:47:26Z",
+      "updatedAt": "2026-10-31T08:47:26Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:38.820613+00:00",
+        "contentHash": "67574c347dcdf9f47044edf9fe0772d9fe05581b7faad6236c86c9e44cecb054"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "弱Kähler测地线的空间正性反例",
+      "workSummary": "定理A在任意紧Kähler n≥1流形和任意非空开集O内构造同一对光滑严格Kähler端点，势可非负且紧支撑于O；对每个0<δ<1/2，有Uδ紧含于O，使环域弱测地线在Uδ×[δ,1−δ]邻域光滑、时间不变而空间形式秩恰n−1。定理B在全纯商ALE端、背景差具有全阶衰减势时构造统一等价端点，同一端点对在任意远区域出现含t=1/2的退化时间窗；Euclidean端点可为Schwartz函数。",
+      "techniques": [
+        "预设空间退化的rooftop包络",
+        "边界接触点与调和测度强制测地线等于包络",
+        "沿全纯曲线比较及坐标球粘合",
+        "远端horn及除子模型中的全阶端点衰减构造"
+      ],
+      "breakthrough": "否定两光滑严格Kähler端点必保持统一空间正下界的猜测，且反例的退化区本身可光滑；紧情形全局仍C¹,¹。定理C对光滑除子及给定锥角构造锥背景与端点，法向秩损失可使总中间势跨除子光滑、丢失锥奇性；定理D构造Poincaré背景和比所有s^(−N)更快衰减端点，靠近除子的开集仍法向退化。",
+      "limitations": "补读PDF第1–5页，渲染核对第2–4页。存在反例不是所有端点都退化；ALE要求全纯商端及背景势全阶衰减，远端时间窗可随位置变化。锥与Poincaré定理构造适当背景，非任意已给奇异度量皆有同一结论；锥端点对和背景可依δ，区别于紧情形同一端点对适用于所有δ。空间秩损失非通常正则性损失；锥总势光滑也不等于其相对锥势光滑。与00736的圆盘正则性设置不同，不可互相替代。未独立验证全部包络构造和非紧比较唯一性。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第5页明确P¹和C上初版反例由LLM提出，作者再以这些具体原型发展一般框架并证明本文结果，因此核心反例来源支持ideas。另有语言编辑，但不能把作者后续完整框架或全部证明归于模型。第37页Claude LeBrun为文献作者姓名。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00744v1 · PDF第5页 Declaration of AI assistance；第37页姓名命中排除",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:38:37.674273+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00744v1",
+        "contentHash": "6830d0a9b133f72eeeb8fdc9d2ef7f208da1e172eab0b82599deb251a49bdf8a",
+        "pages": 38,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确P¹和C上初版反例由LLM提出，作者再以这些具体原型发展一般框架并证明本文结果，因此核心反例来源支持ideas。另有语言编辑，但不能把作者后续完整框架或全部证明归于模型。第37页Claude LeBrun为文献作者姓名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2143e411bb0a7446459adde3475109495e71e7c21512041d8a1071bfbd7a7309"
+      },
+      "aiUsage": [
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "直接触及Kähler势空间与退化HCMA，与前篇局部正则性形成值得核查的条件边界。"
+    },
+    "analysisBasis": {
+      "abstract": "We study spatial Hessian degeneracy along weak Kähler geodesics. We construct examples in three settings: (1) On every compact Kähler manifold, the spatial form degenerates on a nonempty open set during an interior time interval, although both endpoints are smooth and strictly Kähler. (2) On ALE Kähler manifolds with a holomorphic quotient end and a decaying potential to the Euclidean metric, spatial degeneracy occurs on open regions arbitrarily far along an unbounded horn. (3) For cone and Poincaré endpoint metrics along a smooth divisor, normal spatial degeneracy occurs on open sets approaching the divisor. Both cone endpoints retain the prescribed angle. The first construction answers negatively the spatial-positivity question recorded in Darvas's survey. The ALE and divisor constructions show that weak geodesics need not preserve the asymptotic behavior of the endpoint metrics.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00744",
+        "metadata": {
+          "title": "Spatial degeneracy along weak geodesics in the space of Kähler potentials",
+          "authors": [
+            "Xia Xiao",
+            "Qi Yao"
+          ],
+          "abstract": "We study spatial Hessian degeneracy along weak Kähler geodesics. We construct examples in three settings: (1) On every compact Kähler manifold, the spatial form degenerates on a nonempty open set during an interior time interval, although both endpoints are smooth and strictly Kähler. (2) On ALE Kähler manifolds with a holomorphic quotient end and a decaying potential to the Euclidean metric, spatial degeneracy occurs on open regions arbitrarily far along an unbounded horn. (3) For cone and Poincaré endpoint metrics along a smooth divisor, normal spatial degeneracy occurs on open sets approaching the divisor. Both cone endpoints retain the prescribed angle. The first construction answers negatively the spatial-positivity question recorded in Darvas's survey. The ALE and divisor constructions show that weak geodesics need not preserve the asymptotic behavior of the endpoint metrics.",
+          "categories": [
+            "math.DG",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "38 pages, 3 figures. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-10-31T08:47:26Z",
+          "updatedAt": "2026-10-31T08:47:26Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:38.820613+00:00",
+            "contentHash": "67574c347dcdf9f47044edf9fe0772d9fe05581b7faad6236c86c9e44cecb054"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "弱Kähler测地线的空间正性反例",
+          "workSummary": "定理A在任意紧Kähler n≥1流形和任意非空开集O内构造同一对光滑严格Kähler端点，势可非负且紧支撑于O；对每个0<δ<1/2，有Uδ紧含于O，使环域弱测地线在Uδ×[δ,1−δ]邻域光滑、时间不变而空间形式秩恰n−1。定理B在全纯商ALE端、背景差具有全阶衰减势时构造统一等价端点，同一端点对在任意远区域出现含t=1/2的退化时间窗；Euclidean端点可为Schwartz函数。",
+          "techniques": [
+            "预设空间退化的rooftop包络",
+            "边界接触点与调和测度强制测地线等于包络",
+            "沿全纯曲线比较及坐标球粘合",
+            "远端horn及除子模型中的全阶端点衰减构造"
+          ],
+          "breakthrough": "否定两光滑严格Kähler端点必保持统一空间正下界的猜测，且反例的退化区本身可光滑；紧情形全局仍C¹,¹。定理C对光滑除子及给定锥角构造锥背景与端点，法向秩损失可使总中间势跨除子光滑、丢失锥奇性；定理D构造Poincaré背景和比所有s^(−N)更快衰减端点，靠近除子的开集仍法向退化。",
+          "limitations": "补读PDF第1–5页，渲染核对第2–4页。存在反例不是所有端点都退化；ALE要求全纯商端及背景势全阶衰减，远端时间窗可随位置变化。锥与Poincaré定理构造适当背景，非任意已给奇异度量皆有同一结论；锥端点对和背景可依δ，区别于紧情形同一端点对适用于所有δ。空间秩损失非通常正则性损失；锥总势光滑也不等于其相对锥势光滑。与00736的圆盘正则性设置不同，不可互相替代。未独立验证全部包络构造和非紧比较唯一性。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第5页明确P¹和C上初版反例由LLM提出，作者再以这些具体原型发展一般框架并证明本文结果，因此核心反例来源支持ideas。另有语言编辑，但不能把作者后续完整框架或全部证明归于模型。第37页Claude LeBrun为文献作者姓名。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00744v1 · PDF第5页 Declaration of AI assistance；第37页姓名命中排除",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:38:37.674273+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00744v1",
+            "contentHash": "6830d0a9b133f72eeeb8fdc9d2ef7f208da1e172eab0b82599deb251a49bdf8a",
+            "pages": 38,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确P¹和C上初版反例由LLM提出，作者再以这些具体原型发展一般框架并证明本文结果，因此核心反例来源支持ideas。另有语言编辑，但不能把作者后续完整框架或全部证明归于模型。第37页Claude LeBrun为文献作者姓名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2143e411bb0a7446459adde3475109495e71e7c21512041d8a1071bfbd7a7309"
+          },
+          "aiUsage": [
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "直接触及Kähler势空间与退化HCMA，与前篇局部正则性形成值得核查的条件边界。"
+        },
+        "analysisBasis": {
+          "abstract": "We study spatial Hessian degeneracy along weak Kähler geodesics. We construct examples in three settings: (1) On every compact Kähler manifold, the spatial form degenerates on a nonempty open set during an interior time interval, although both endpoints are smooth and strictly Kähler. (2) On ALE Kähler manifolds with a holomorphic quotient end and a decaying potential to the Euclidean metric, spatial degeneracy occurs on open regions arbitrarily far along an unbounded horn. (3) For cone and Poincaré endpoint metrics along a smooth divisor, normal spatial degeneracy occurs on open sets approaching the divisor. Both cone endpoints retain the prescribed angle. The first construction answers negatively the spatial-positivity question recorded in Darvas's survey. The ALE and divisor constructions show that weak geodesics need not preserve the asymptotic behavior of the endpoint metrics.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01895",
+  "slug": "2611.01895",
+  "latest": {
+    "arxivId": "2611.01895",
+    "metadata": {
+      "title": "Optimal asymptotic bounds for design curves on manifolds",
+      "authors": [
+        "Martin Ehler"
+      ],
+      "abstract": "A spherical $t$-design is a finite set of points on the $d$-dimensional unit sphere such that averaging any polynomial of degree at most $t$ over these points gives its exact spherical average. We study the corresponding notion for curves, where point averages are replaced by normalized arclength integration. For fixed $d\\ge 2$, the length of such curves is known to be bounded below by a positive multiple of $t^{d-1}$ as $t\\to\\infty$. We show that this asymptotic order is attained: for every $d\\ge 2$, there exists a constant $C_d>0$ such that, for every positive integer $t$ and every prescribed length $L\\ge C_dt^{d-1}$, there is a simple spherical $t$-design curve of length $L$. This establishes the analogue for curves of the theorem of Bondarenko, Radchenko, and Viazovska, which resolved the Korevaar-Meyers conjecture for spherical design points. More generally, we prove the corresponding result on closed, connected Riemannian manifolds of dimension $d\\ge 2$, where eigenfunctions of the Laplace-Beltrami operator substitute for polynomials. The proof combines a geometric construction of curves with continuously adjustable local lengths and an application of Brouwer's degree theorem.",
+      "categories": [
+        "math.MG",
+        "math.CO",
+        "math.NA"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-11-01T13:38:44Z",
+      "updatedAt": "2026-11-01T13:38:44Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.333707+00:00",
+        "contentHash": "9aec094838b60580e6062fc043d56434f5af98779ce93e2c36483ebe38c81fc6"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "设计曲线的最优渐近长度阶",
+      "workSummary": "对固定d≥2、每个正整数t，存在C_d，使每个指定L≥C_dt^{d−1}都可由长度恰L的简单球面t-design曲线实现，其归一化弧长积分对次数≤t多项式精确等于球面平均。这达到已知长度下界的渐近阶，并推广到闭连通d维黎曼流形，以Laplace–Beltrami本征函数取代多项式。",
+      "techniques": [
+        "局部长度可连续调节的曲线构造",
+        "Brouwer度理论",
+        "球面多项式及谱设计"
+      ],
+      "breakthrough": "在无自交曲线类实现最优长度增长阶，并允许阈值以上任意指定长度。",
+      "limitations": "阶最优不等于C_d最优；维数需≥2且一般流形闭连通。摘要未给一般谱设计的频率—长度精确对应，不能直接照搬球面t指数解释。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "致谢明确ChatGPT/GPT-6Astra在作者指定的证明策略内，辅助发展和讨论若干选定证明步骤并作语言编辑。支持proofs、exploration、writing；未具体将核心策略或构造首次归给模型，且策略明确由作者指定，不标ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01895v1 · PDF第35页Acknowledgement of AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:37:36.315922+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01895v1",
+        "contentHash": "0573eac54357c56c627c66cf622b7b1858d59633e5b9e8aeccc20bafe1a7b725",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确ChatGPT/GPT-6Astra在作者指定的证明策略内，辅助发展和讨论若干选定证明步骤并作语言编辑。支持proofs、exploration、writing；未具体将核心策略或构造首次归给模型，且策略明确由作者指定，不标ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "21144d07c3a87a578de2f2d40e9433b73511d07798a57bcc617d7164c6cfce00"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 84,
+      "priorityReason": "谱几何、积分求积和几何构造的有效交叉。"
+    },
+    "analysisBasis": {
+      "abstract": "A spherical $t$-design is a finite set of points on the $d$-dimensional unit sphere such that averaging any polynomial of degree at most $t$ over these points gives its exact spherical average. We study the corresponding notion for curves, where point averages are replaced by normalized arclength integration. For fixed $d\\ge 2$, the length of such curves is known to be bounded below by a positive multiple of $t^{d-1}$ as $t\\to\\infty$. We show that this asymptotic order is attained: for every $d\\ge 2$, there exists a constant $C_d>0$ such that, for every positive integer $t$ and every prescribed length $L\\ge C_dt^{d-1}$, there is a simple spherical $t$-design curve of length $L$. This establishes the analogue for curves of the theorem of Bondarenko, Radchenko, and Viazovska, which resolved the Korevaar-Meyers conjecture for spherical design points. More generally, we prove the corresponding result on closed, connected Riemannian manifolds of dimension $d\\ge 2$, where eigenfunctions of the Laplace-Beltrami operator substitute for polynomials. The proof combines a geometric construction of curves with continuously adjustable local lengths and an application of Brouwer's degree theorem.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01895",
+        "metadata": {
+          "title": "Optimal asymptotic bounds for design curves on manifolds",
+          "authors": [
+            "Martin Ehler"
+          ],
+          "abstract": "A spherical $t$-design is a finite set of points on the $d$-dimensional unit sphere such that averaging any polynomial of degree at most $t$ over these points gives its exact spherical average. We study the corresponding notion for curves, where point averages are replaced by normalized arclength integration. For fixed $d\\ge 2$, the length of such curves is known to be bounded below by a positive multiple of $t^{d-1}$ as $t\\to\\infty$. We show that this asymptotic order is attained: for every $d\\ge 2$, there exists a constant $C_d>0$ such that, for every positive integer $t$ and every prescribed length $L\\ge C_dt^{d-1}$, there is a simple spherical $t$-design curve of length $L$. This establishes the analogue for curves of the theorem of Bondarenko, Radchenko, and Viazovska, which resolved the Korevaar-Meyers conjecture for spherical design points. More generally, we prove the corresponding result on closed, connected Riemannian manifolds of dimension $d\\ge 2$, where eigenfunctions of the Laplace-Beltrami operator substitute for polynomials. The proof combines a geometric construction of curves with continuously adjustable local lengths and an application of Brouwer's degree theorem.",
+          "categories": [
+            "math.MG",
+            "math.CO",
+            "math.NA"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-11-01T13:38:44Z",
+          "updatedAt": "2026-11-01T13:38:44Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.333707+00:00",
+            "contentHash": "9aec094838b60580e6062fc043d56434f5af98779ce93e2c36483ebe38c81fc6"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "设计曲线的最优渐近长度阶",
+          "workSummary": "对固定d≥2、每个正整数t，存在C_d，使每个指定L≥C_dt^{d−1}都可由长度恰L的简单球面t-design曲线实现，其归一化弧长积分对次数≤t多项式精确等于球面平均。这达到已知长度下界的渐近阶，并推广到闭连通d维黎曼流形，以Laplace–Beltrami本征函数取代多项式。",
+          "techniques": [
+            "局部长度可连续调节的曲线构造",
+            "Brouwer度理论",
+            "球面多项式及谱设计"
+          ],
+          "breakthrough": "在无自交曲线类实现最优长度增长阶，并允许阈值以上任意指定长度。",
+          "limitations": "阶最优不等于C_d最优；维数需≥2且一般流形闭连通。摘要未给一般谱设计的频率—长度精确对应，不能直接照搬球面t指数解释。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "致谢明确ChatGPT/GPT-6Astra在作者指定的证明策略内，辅助发展和讨论若干选定证明步骤并作语言编辑。支持proofs、exploration、writing；未具体将核心策略或构造首次归给模型，且策略明确由作者指定，不标ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01895v1 · PDF第35页Acknowledgement of AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:37:36.315922+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01895v1",
+            "contentHash": "0573eac54357c56c627c66cf622b7b1858d59633e5b9e8aeccc20bafe1a7b725",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。致谢明确ChatGPT/GPT-6Astra在作者指定的证明策略内，辅助发展和讨论若干选定证明步骤并作语言编辑。支持proofs、exploration、writing；未具体将核心策略或构造首次归给模型，且策略明确由作者指定，不标ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "21144d07c3a87a578de2f2d40e9433b73511d07798a57bcc617d7164c6cfce00"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 84,
+          "priorityReason": "谱几何、积分求积和几何构造的有效交叉。"
+        },
+        "analysisBasis": {
+          "abstract": "A spherical $t$-design is a finite set of points on the $d$-dimensional unit sphere such that averaging any polynomial of degree at most $t$ over these points gives its exact spherical average. We study the corresponding notion for curves, where point averages are replaced by normalized arclength integration. For fixed $d\\ge 2$, the length of such curves is known to be bounded below by a positive multiple of $t^{d-1}$ as $t\\to\\infty$. We show that this asymptotic order is attained: for every $d\\ge 2$, there exists a constant $C_d>0$ such that, for every positive integer $t$ and every prescribed length $L\\ge C_dt^{d-1}$, there is a simple spherical $t$-design curve of length $L$. This establishes the analogue for curves of the theorem of Bondarenko, Radchenko, and Viazovska, which resolved the Korevaar-Meyers conjecture for spherical design points. More generally, we prove the corresponding result on closed, connected Riemannian manifolds of dimension $d\\ge 2$, where eigenfunctions of the Laplace-Beltrami operator substitute for polynomials. The proof combines a geometric construction of curves with continuously adjustable local lengths and an application of Brouwer's degree theorem.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00479",
+  "slug": "2611.00479",
+  "latest": {
+    "arxivId": "2611.00479",
+    "metadata": {
+      "title": "A Note on the NP-Hardness on Quadratic Optimization over Doubly Stochastic Matrices and the Gromov-Wasserstein Problem",
+      "authors": [
+        "Yong Sheng Soh"
+      ],
+      "abstract": "The Gromov-Wasserstein problem is an extension of the regular optimal transport problem that is adapted for pairs of distributions residing in incomparable spaces. Broadly speaking, given a pair of metric measure spaces, the Gromov-Wasserstein problem seeks couplings between these spaces that minimize the distortion between the metric evaluations. In this note we record the fact that the Gromov-Wasserstein distance between finite metric spaces is NP-Hard to compute. Our argument relies on a reduction from the Hamiltonian Cycle Problem, and it builds on ideas in Vayer's thesis and Ryner et. al's work that draw connections between the 2-Gromov-Wasserstein and the Quadratic Assignment Problem. During the preparation of this manuscript we learned of the appearance of Breitung et. al's work, whose result essentially supersedes ours. We hope this note serves as a useful companion whose proof is, hopefully, more elementary and easier to understand.",
+      "categories": [
+        "math.OC",
+        "math.MG"
+      ],
+      "primaryCategory": "math.OC",
+      "comment": "12 pages",
+      "version": 1,
+      "submittedAt": "2026-10-31T00:11:39Z",
+      "updatedAt": "2026-10-31T00:11:39Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:27.280238+00:00",
+        "contentHash": "24461acb73bae04854e93bb3720228949dccc83cb954fd82cfc7f6bad70e7d19"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "有限GW距离计算的复杂性说明",
+      "workSummary": "作者从Hamilton圈问题约化，记录有限度量空间Gromov–Wasserstein距离计算为NP-hard，建立与二次分配和双随机矩阵优化的联系；证明沿用Vayer及Ryner等的思路。作者承认同期Breitung等更强结果实质涵盖本文，希望提供较初等的补充证明。",
+      "techniques": [
+        "Hamilton圈问题约化",
+        "二次分配问题",
+        "双随机矩阵上的二次优化",
+        "有限度量测度空间耦合"
+      ],
+      "breakthrough": "价值在较容易理解的复杂性证明和已知联系整理，而非宣称唯一或最强NP-hardness结果。",
+      "limitations": "最坏情形计算困难不等于每个实例都难，也不自动排除所有近似算法；摘要未给近似难度和输入规范。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第9页明确Hamilton圈问题到GW问题的约化是在Claude Opus5 Max协助下发现。作者本来要求模型找TSP到GW的约化，模型返回Hamilton圈约化，构成本篇复杂性证明的具体核心构造，可标ideas及proofs。第2页AI应用介绍及第10页AI会议书目只是题材/引用，不能独立作为使用证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00479v1 · PDF第9页第5节 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:34:36.455329+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00479v1",
+        "contentHash": "d47679ce242df173bd7dbe6256c758341ec4baeb298a996943d5f84460f5af89",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第9页明确Hamilton圈问题到GW问题的约化是在Claude Opus5 Max协助下发现。作者本来要求模型找TSP到GW的约化，模型返回Hamilton圈约化，构成本篇复杂性证明的具体核心构造，可标ideas及proofs。第2页AI应用介绍及第10页AI会议书目只是题材/引用，不能独立作为使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bf9f017b38c61867840a4211df3451509c0f22f1c90ac9ec9a2cb051725337c9"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs"
+      ],
+      "priorityScore": 56,
+      "priorityReason": "GW距离是度量测度几何工具，其计算边界值得了解。"
+    },
+    "analysisBasis": {
+      "abstract": "The Gromov-Wasserstein problem is an extension of the regular optimal transport problem that is adapted for pairs of distributions residing in incomparable spaces. Broadly speaking, given a pair of metric measure spaces, the Gromov-Wasserstein problem seeks couplings between these spaces that minimize the distortion between the metric evaluations. In this note we record the fact that the Gromov-Wasserstein distance between finite metric spaces is NP-Hard to compute. Our argument relies on a reduction from the Hamiltonian Cycle Problem, and it builds on ideas in Vayer's thesis and Ryner et. al's work that draw connections between the 2-Gromov-Wasserstein and the Quadratic Assignment Problem. During the preparation of this manuscript we learned of the appearance of Breitung et. al's work, whose result essentially supersedes ours. We hope this note serves as a useful companion whose proof is, hopefully, more elementary and easier to understand.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00479",
+        "metadata": {
+          "title": "A Note on the NP-Hardness on Quadratic Optimization over Doubly Stochastic Matrices and the Gromov-Wasserstein Problem",
+          "authors": [
+            "Yong Sheng Soh"
+          ],
+          "abstract": "The Gromov-Wasserstein problem is an extension of the regular optimal transport problem that is adapted for pairs of distributions residing in incomparable spaces. Broadly speaking, given a pair of metric measure spaces, the Gromov-Wasserstein problem seeks couplings between these spaces that minimize the distortion between the metric evaluations. In this note we record the fact that the Gromov-Wasserstein distance between finite metric spaces is NP-Hard to compute. Our argument relies on a reduction from the Hamiltonian Cycle Problem, and it builds on ideas in Vayer's thesis and Ryner et. al's work that draw connections between the 2-Gromov-Wasserstein and the Quadratic Assignment Problem. During the preparation of this manuscript we learned of the appearance of Breitung et. al's work, whose result essentially supersedes ours. We hope this note serves as a useful companion whose proof is, hopefully, more elementary and easier to understand.",
+          "categories": [
+            "math.OC",
+            "math.MG"
+          ],
+          "primaryCategory": "math.OC",
+          "comment": "12 pages",
+          "version": 1,
+          "submittedAt": "2026-10-31T00:11:39Z",
+          "updatedAt": "2026-10-31T00:11:39Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:27.280238+00:00",
+            "contentHash": "24461acb73bae04854e93bb3720228949dccc83cb954fd82cfc7f6bad70e7d19"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "有限GW距离计算的复杂性说明",
+          "workSummary": "作者从Hamilton圈问题约化，记录有限度量空间Gromov–Wasserstein距离计算为NP-hard，建立与二次分配和双随机矩阵优化的联系；证明沿用Vayer及Ryner等的思路。作者承认同期Breitung等更强结果实质涵盖本文，希望提供较初等的补充证明。",
+          "techniques": [
+            "Hamilton圈问题约化",
+            "二次分配问题",
+            "双随机矩阵上的二次优化",
+            "有限度量测度空间耦合"
+          ],
+          "breakthrough": "价值在较容易理解的复杂性证明和已知联系整理，而非宣称唯一或最强NP-hardness结果。",
+          "limitations": "最坏情形计算困难不等于每个实例都难，也不自动排除所有近似算法；摘要未给近似难度和输入规范。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第9页明确Hamilton圈问题到GW问题的约化是在Claude Opus5 Max协助下发现。作者本来要求模型找TSP到GW的约化，模型返回Hamilton圈约化，构成本篇复杂性证明的具体核心构造，可标ideas及proofs。第2页AI应用介绍及第10页AI会议书目只是题材/引用，不能独立作为使用证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00479v1 · PDF第9页第5节 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:34:36.455329+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00479v1",
+            "contentHash": "d47679ce242df173bd7dbe6256c758341ec4baeb298a996943d5f84460f5af89",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第9页明确Hamilton圈问题到GW问题的约化是在Claude Opus5 Max协助下发现。作者本来要求模型找TSP到GW的约化，模型返回Hamilton圈约化，构成本篇复杂性证明的具体核心构造，可标ideas及proofs。第2页AI应用介绍及第10页AI会议书目只是题材/引用，不能独立作为使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bf9f017b38c61867840a4211df3451509c0f22f1c90ac9ec9a2cb051725337c9"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs"
+          ],
+          "priorityScore": 56,
+          "priorityReason": "GW距离是度量测度几何工具，其计算边界值得了解。"
+        },
+        "analysisBasis": {
+          "abstract": "The Gromov-Wasserstein problem is an extension of the regular optimal transport problem that is adapted for pairs of distributions residing in incomparable spaces. Broadly speaking, given a pair of metric measure spaces, the Gromov-Wasserstein problem seeks couplings between these spaces that minimize the distortion between the metric evaluations. In this note we record the fact that the Gromov-Wasserstein distance between finite metric spaces is NP-Hard to compute. Our argument relies on a reduction from the Hamiltonian Cycle Problem, and it builds on ideas in Vayer's thesis and Ryner et. al's work that draw connections between the 2-Gromov-Wasserstein and the Quadratic Assignment Problem. During the preparation of this manuscript we learned of the appearance of Breitung et. al's work, whose result essentially supersedes ours. We hope this note serves as a useful companion whose proof is, hopefully, more elementary and easier to understand.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

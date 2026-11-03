@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01610",
+  "slug": "2611.01610",
+  "latest": {
+    "arxivId": "2611.01610",
+    "metadata": {
+      "title": "Logarithmic Sobolev and exponential inequalities for submanifolds in Cartan--Hadamard manifolds",
+      "authors": [
+        "Hongyu Chen",
+        "Li Ma"
+      ],
+      "abstract": "We establish a logarithmic Sobolev inequality for complete $C^{1,1}$ immersed submanifolds of dimension $m\\ge2$ in Cartan--Hadamard manifolds with sectional curvature at most $-b^2$. The inequality retains the Euclidean sharp constant after subtraction of $(m-1)^2b^2$ from the Fisher and mean-curvature energy; this coefficient is maximal for a lower bound uniform over $b\\ge0$. For immersed surfaces, we prove both a finite-domain critical exponential inequality and a global Ruf-type inequality with a positive $L^2$ term. Both have potential $|H|^2-b^2$, exponent $16\\pi$ and an absolute multiplicative constant, and follow from one geometric heat-kernel comparison. The exponent and curvature coefficient are optimal. We classify Gaussian equality in the logarithmic inequality and geometric equality in the higher-dimensional Nash consequence. All inequality constants are independent of the codimension.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-11-01T05:54:17Z",
+      "updatedAt": "2026-11-01T05:54:17Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.329909+00:00",
+        "contentHash": "4a7f23bb386ff96edcf9f28e6d02414dec9bd66aa834ef2e3db200e1986893f8"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "尖锐函数不等式及等号分类",
+      "workSummary": "固定余维k≥1，环境M光滑完备单连通、Sec≤−b²（b≥0）；源Σ无边界、诱导长度度量完备，允许不连通、C^{1,1}浸入、自交与非适当性，积分按源计重数，H=tr II为未取平均的向量。Theorem1.1：m≥2，f∈W_loc^{1,1}且f>0 a.e.、∫f=1，Fisher、∫|H|²f和绝对熵有限；0≤β≤(m−1)²时，∫[|∇f|²/f−f log f+(|H|²−βb²)f]≥m+(m/2)log(4π)。等号恰为b=0、源单叶等距全测地嵌入Euclidean m平面、f为尺度τ=1的归一化Gaussian；齐次形式允许任意τ>0，环境本身不必平坦。m=2时，源相对紧光滑域U、v∈W₀^{1,2}(U)且∫[4|∇v|²+(|H|²−b²)v²]≤1，推出∫_U exp(16πv²)≤C|U|；若源紧可取整个Σ及W^{1,2}。全局版需任意λ>0、v∈W^{1,2}、Hv∈L²及能量添加λv²，结论λ∫_Σ[exp(16πv²)−1]≤C。C独立几何、余维、b、U、λ；16π源自梯度系数4。",
+      "techniques": [
+        "引用[OAI26]超曲面尖锐幂Sobolev并以完整法向量平方推广固定任意余维",
+        "产品极限给无曲率修正的对数不等式",
+        "近极小密度二次变分的加权Poincaré、径向中心化、Hessian/Rauch及Hardy控制",
+        "二维径向热核上解给A=−4Δ+|H|²−b²的K_A(t,x,x)≤1/(16πt)",
+        "源单叶初始质量、Friedrichs型与Dirichlet穷竭，谱重排给有限域和全局临界端点",
+        "高维Nash等号由球面单叶和Jacobi比较恢复所围全测地模型球"
+      ],
+      "breakthrough": "在任意固定余维保留Euclidean对数常数，同时加入对b≥0统一有效的最大曲率扣除(m−1)²b²；同一热核比较导出二维有限域和全局临界指数估计。高维Nash在变化子流形类中的最佳系数1/(m²|S^m|^{2/m})与等号模型也被识别。",
+      "limitations": "已读PDF第1–7、15–17、20–25、30–36页的主定理、等号、热核和尖锐性路线，渲染第3–4页核对全部能量归一化；未逐步独立核验整篇证明及[OAI26]等外部输入。[OAI26]为所引OpenAI预印本，本文幂Sobolev输入及余维推广依赖其方法，本次未另取原文核验。对数曲率系数最大指跨b≥0统一下界，不能声称固定每个b>0的最佳下界已求出。二维全局需λ>0及指数减一，不能仅穷竭有限域而删除L²项。二维乘法常数最优值和等号未确定。高维Nash的曲率参数范围为0≤β≤m²，等号要求(m²−β)b²=0、仅一源分量上测试函数常数且单叶映到全测地(m+1)维曲率−b²球的边界；二维Nash常数未宣称最优，不混作固定Euclidean域上的经典Nash常数。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第36页AI Assistance Statement明确AI is used as an assistive tool，确认本篇自用，但未说明模型或具体用途，因此不臆断ideas/proofs等标签。第2、5–7页和参考文献中的OpenAI[OAI26]是外部数学输入引用，不因引用自动当作本篇模型使用或核心思想归因。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01610v1 · PDF第36页AI Assistance Statement；第2、5–7页及末尾参考文献为外部来源",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:32:38.312584+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01610v1",
+        "contentHash": "cedc8335765614202d0dafefc1be1ccb1de106cdf973101f4452bf5a4b6169a6",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第36页AI Assistance Statement明确AI is used as an assistive tool，确认本篇自用，但未说明模型或具体用途，因此不臆断ideas/proofs等标签。第2、5–7页和参考文献中的OpenAI[OAI26]是外部数学输入引用，不因引用自动当作本篇模型使用或核心思想归因。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a0089c743881d97dbe812de2f840e819564059e66a66e642a2cf184a91c9d6db"
+      },
+      "priorityScore": 97,
+      "priorityReason": "尖锐分析不等式、负曲率比较与子流形几何的核心交叉。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a logarithmic Sobolev inequality for complete $C^{1,1}$ immersed submanifolds of dimension $m\\ge2$ in Cartan--Hadamard manifolds with sectional curvature at most $-b^2$. The inequality retains the Euclidean sharp constant after subtraction of $(m-1)^2b^2$ from the Fisher and mean-curvature energy; this coefficient is maximal for a lower bound uniform over $b\\ge0$. For immersed surfaces, we prove both a finite-domain critical exponential inequality and a global Ruf-type inequality with a positive $L^2$ term. Both have potential $|H|^2-b^2$, exponent $16\\pi$ and an absolute multiplicative constant, and follow from one geometric heat-kernel comparison. The exponent and curvature coefficient are optimal. We classify Gaussian equality in the logarithmic inequality and geometric equality in the higher-dimensional Nash consequence. All inequality constants are independent of the codimension.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01610",
+        "metadata": {
+          "title": "Logarithmic Sobolev and exponential inequalities for submanifolds in Cartan--Hadamard manifolds",
+          "authors": [
+            "Hongyu Chen",
+            "Li Ma"
+          ],
+          "abstract": "We establish a logarithmic Sobolev inequality for complete $C^{1,1}$ immersed submanifolds of dimension $m\\ge2$ in Cartan--Hadamard manifolds with sectional curvature at most $-b^2$. The inequality retains the Euclidean sharp constant after subtraction of $(m-1)^2b^2$ from the Fisher and mean-curvature energy; this coefficient is maximal for a lower bound uniform over $b\\ge0$. For immersed surfaces, we prove both a finite-domain critical exponential inequality and a global Ruf-type inequality with a positive $L^2$ term. Both have potential $|H|^2-b^2$, exponent $16\\pi$ and an absolute multiplicative constant, and follow from one geometric heat-kernel comparison. The exponent and curvature coefficient are optimal. We classify Gaussian equality in the logarithmic inequality and geometric equality in the higher-dimensional Nash consequence. All inequality constants are independent of the codimension.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-11-01T05:54:17Z",
+          "updatedAt": "2026-11-01T05:54:17Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.329909+00:00",
+            "contentHash": "4a7f23bb386ff96edcf9f28e6d02414dec9bd66aa834ef2e3db200e1986893f8"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "尖锐函数不等式及等号分类",
+          "workSummary": "固定余维k≥1，环境M光滑完备单连通、Sec≤−b²（b≥0）；源Σ无边界、诱导长度度量完备，允许不连通、C^{1,1}浸入、自交与非适当性，积分按源计重数，H=tr II为未取平均的向量。Theorem1.1：m≥2，f∈W_loc^{1,1}且f>0 a.e.、∫f=1，Fisher、∫|H|²f和绝对熵有限；0≤β≤(m−1)²时，∫[|∇f|²/f−f log f+(|H|²−βb²)f]≥m+(m/2)log(4π)。等号恰为b=0、源单叶等距全测地嵌入Euclidean m平面、f为尺度τ=1的归一化Gaussian；齐次形式允许任意τ>0，环境本身不必平坦。m=2时，源相对紧光滑域U、v∈W₀^{1,2}(U)且∫[4|∇v|²+(|H|²−b²)v²]≤1，推出∫_U exp(16πv²)≤C|U|；若源紧可取整个Σ及W^{1,2}。全局版需任意λ>0、v∈W^{1,2}、Hv∈L²及能量添加λv²，结论λ∫_Σ[exp(16πv²)−1]≤C。C独立几何、余维、b、U、λ；16π源自梯度系数4。",
+          "techniques": [
+            "引用[OAI26]超曲面尖锐幂Sobolev并以完整法向量平方推广固定任意余维",
+            "产品极限给无曲率修正的对数不等式",
+            "近极小密度二次变分的加权Poincaré、径向中心化、Hessian/Rauch及Hardy控制",
+            "二维径向热核上解给A=−4Δ+|H|²−b²的K_A(t,x,x)≤1/(16πt)",
+            "源单叶初始质量、Friedrichs型与Dirichlet穷竭，谱重排给有限域和全局临界端点",
+            "高维Nash等号由球面单叶和Jacobi比较恢复所围全测地模型球"
+          ],
+          "breakthrough": "在任意固定余维保留Euclidean对数常数，同时加入对b≥0统一有效的最大曲率扣除(m−1)²b²；同一热核比较导出二维有限域和全局临界指数估计。高维Nash在变化子流形类中的最佳系数1/(m²|S^m|^{2/m})与等号模型也被识别。",
+          "limitations": "已读PDF第1–7、15–17、20–25、30–36页的主定理、等号、热核和尖锐性路线，渲染第3–4页核对全部能量归一化；未逐步独立核验整篇证明及[OAI26]等外部输入。[OAI26]为所引OpenAI预印本，本文幂Sobolev输入及余维推广依赖其方法，本次未另取原文核验。对数曲率系数最大指跨b≥0统一下界，不能声称固定每个b>0的最佳下界已求出。二维全局需λ>0及指数减一，不能仅穷竭有限域而删除L²项。二维乘法常数最优值和等号未确定。高维Nash的曲率参数范围为0≤β≤m²，等号要求(m²−β)b²=0、仅一源分量上测试函数常数且单叶映到全测地(m+1)维曲率−b²球的边界；二维Nash常数未宣称最优，不混作固定Euclidean域上的经典Nash常数。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第36页AI Assistance Statement明确AI is used as an assistive tool，确认本篇自用，但未说明模型或具体用途，因此不臆断ideas/proofs等标签。第2、5–7页和参考文献中的OpenAI[OAI26]是外部数学输入引用，不因引用自动当作本篇模型使用或核心思想归因。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01610v1 · PDF第36页AI Assistance Statement；第2、5–7页及末尾参考文献为外部来源",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:32:38.312584+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01610v1",
+            "contentHash": "cedc8335765614202d0dafefc1be1ccb1de106cdf973101f4452bf5a4b6169a6",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第36页AI Assistance Statement明确AI is used as an assistive tool，确认本篇自用，但未说明模型或具体用途，因此不臆断ideas/proofs等标签。第2、5–7页和参考文献中的OpenAI[OAI26]是外部数学输入引用，不因引用自动当作本篇模型使用或核心思想归因。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a0089c743881d97dbe812de2f840e819564059e66a66e642a2cf184a91c9d6db"
+          },
+          "priorityScore": 97,
+          "priorityReason": "尖锐分析不等式、负曲率比较与子流形几何的核心交叉。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a logarithmic Sobolev inequality for complete $C^{1,1}$ immersed submanifolds of dimension $m\\ge2$ in Cartan--Hadamard manifolds with sectional curvature at most $-b^2$. The inequality retains the Euclidean sharp constant after subtraction of $(m-1)^2b^2$ from the Fisher and mean-curvature energy; this coefficient is maximal for a lower bound uniform over $b\\ge0$. For immersed surfaces, we prove both a finite-domain critical exponential inequality and a global Ruf-type inequality with a positive $L^2$ term. Both have potential $|H|^2-b^2$, exponent $16\\pi$ and an absolute multiplicative constant, and follow from one geometric heat-kernel comparison. The exponent and curvature coefficient are optimal. We classify Gaussian equality in the logarithmic inequality and geometric equality in the higher-dimensional Nash consequence. All inequality constants are independent of the codimension.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

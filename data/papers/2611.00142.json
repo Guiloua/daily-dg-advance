@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00142",
+  "slug": "2611.00142",
+  "latest": {
+    "arxivId": "2611.00142",
+    "metadata": {
+      "title": "Erratum to \"Linear representations of 3-manifold groups over rings\"",
+      "authors": [
+        "Montek Singh Gill"
+      ],
+      "abstract": "The fundamental groups of compact $3$-manifolds are known to be residually finite. Feng Luo conjectured that a stronger statement is true, by allowing only finite groups of the form $\\mathrm{PGL}_2(R),$ where $R$ is a finite commutative ring with identity. In a prior paper, \"Linear representations of $3$-manifold groups over rings\", we, together with two co-authors, gave an equivalent formulation of Luo's conjecture via faithful representations, investigated variants of the conjecture where the target group is of type $\\mathrm{SL}_2, \\mathrm{GL}_2, \\mathrm{PSL}_2$, or $\\mathrm{PGL}_2$ as in the original conjecture, and claimed to provide a $3$-manifold group which violated all four variants of the conjecture. We have discovered a flaw in the work, such that the existing proof is valid only for $\\mathrm{SL}_2$ and $\\mathrm{GL}_2$. Here, we provide a modified argument for the $\\mathrm{PSL}_2$ and $\\mathrm{PGL}_2$ cases.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "6 pages, including code; the final result remains exactly the same as in the original paper, only the argument changes. Erratum to arXiv:1703.06609",
+      "version": 1,
+      "submittedAt": "2026-10-29T19:49:34Z",
+      "updatedAt": "2026-10-29T19:49:34Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-03T11:24:43.683587+00:00",
+        "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.00142v1",
+        "observedAt": "2026-11-03T11:29:35.179787+00:00",
+        "contentHash": "43076c9fd155b4adbb5bfcf94d75cffaf7a1d4bbba71042f5719958533f11b79"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:27.276540+00:00",
+        "contentHash": "a96a9dea87c8db7471eda48794859720f5dcb1352b0fbf9b48d432a12eee8a0a"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "群表示反例证明的勘误",
+      "workSummary": "原论文声称一个三维流形群同时否定SL₂、GL₂、PSL₂、PGL₂版本的Luo猜想，现发现原证明仅对前两者有效。本文补给PSL₂与PGL₂的修正论证，使最终反例结论保持不变。",
+      "techniques": [
+        "有限交换环上的二维线性表示",
+        "射影线性群的修正反例论证",
+        "原证明缺口定位"
+      ],
+      "breakthrough": "修复射影群两种情形的论证，而非撤回最终结论；明确区分原证明仍有效和需补救的分支。",
+      "limitations": "应按勘误更新引用，不能把旧PSL₂/PGL₂论证继续作为有效证明，也不能误写为原反例结论已被否定。具体环和计算论证需正文核查。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第6页Tool Use明确使用Google Gemini4 Argon帮助提高SageMath代码效率；SageMath承担ideal membership检验。AI贡献只披露代码优化，不应把Gröbner计算本身或文献中的模型名扩大成AI设计修正数学论证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00142v1 · PDF第6页 Tool Use；第4页模型引用作关联核对",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:29:35.179787+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00142v1",
+        "contentHash": "43076c9fd155b4adbb5bfcf94d75cffaf7a1d4bbba71042f5719958533f11b79",
+        "pages": 6,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页Tool Use明确使用Google Gemini4 Argon帮助提高SageMath代码效率；SageMath承担ideal membership检验。AI贡献只披露代码优化，不应把Gröbner计算本身或文献中的模型名扩大成AI设计修正数学论证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "977c8ae8f0fd7a6038b25f2eccc0c17b1fb480c06be98686b9b7f6605868a856"
+      },
+      "aiUsage": [
+        "computation"
+      ],
+      "priorityScore": 43,
+      "priorityReason": "主要是三维群的表示论修订，与几何分析联系较弱。",
+      "lowPriorityReason": "主要是三维群的表示论修订，与几何分析联系较弱。"
+    },
+    "analysisBasis": {
+      "abstract": "The fundamental groups of compact $3$-manifolds are known to be residually finite. Feng Luo conjectured that a stronger statement is true, by allowing only finite groups of the form $\\mathrm{PGL}_2(R),$ where $R$ is a finite commutative ring with identity. In a prior paper, \"Linear representations of $3$-manifold groups over rings\", we, together with two co-authors, gave an equivalent formulation of Luo's conjecture via faithful representations, investigated variants of the conjecture where the target group is of type $\\mathrm{SL}_2, \\mathrm{GL}_2, \\mathrm{PSL}_2$, or $\\mathrm{PGL}_2$ as in the original conjecture, and claimed to provide a $3$-manifold group which violated all four variants of the conjecture. We have discovered a flaw in the work, such that the existing proof is valid only for $\\mathrm{SL}_2$ and $\\mathrm{GL}_2$. Here, we provide a modified argument for the $\\mathrm{PSL}_2$ and $\\mathrm{PGL}_2$ cases.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00142",
+        "metadata": {
+          "title": "Erratum to \"Linear representations of 3-manifold groups over rings\"",
+          "authors": [
+            "Montek Singh Gill"
+          ],
+          "abstract": "The fundamental groups of compact $3$-manifolds are known to be residually finite. Feng Luo conjectured that a stronger statement is true, by allowing only finite groups of the form $\\mathrm{PGL}_2(R),$ where $R$ is a finite commutative ring with identity. In a prior paper, \"Linear representations of $3$-manifold groups over rings\", we, together with two co-authors, gave an equivalent formulation of Luo's conjecture via faithful representations, investigated variants of the conjecture where the target group is of type $\\mathrm{SL}_2, \\mathrm{GL}_2, \\mathrm{PSL}_2$, or $\\mathrm{PGL}_2$ as in the original conjecture, and claimed to provide a $3$-manifold group which violated all four variants of the conjecture. We have discovered a flaw in the work, such that the existing proof is valid only for $\\mathrm{SL}_2$ and $\\mathrm{GL}_2$. Here, we provide a modified argument for the $\\mathrm{PSL}_2$ and $\\mathrm{PGL}_2$ cases.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "6 pages, including code; the final result remains exactly the same as in the original paper, only the argument changes. Erratum to arXiv:1703.06609",
+          "version": 1,
+          "submittedAt": "2026-10-29T19:49:34Z",
+          "updatedAt": "2026-10-29T19:49:34Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-03T11:24:43.683587+00:00",
+            "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.00142v1",
+            "observedAt": "2026-11-03T11:29:35.179787+00:00",
+            "contentHash": "43076c9fd155b4adbb5bfcf94d75cffaf7a1d4bbba71042f5719958533f11b79"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:27.276540+00:00",
+            "contentHash": "a96a9dea87c8db7471eda48794859720f5dcb1352b0fbf9b48d432a12eee8a0a"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "群表示反例证明的勘误",
+          "workSummary": "原论文声称一个三维流形群同时否定SL₂、GL₂、PSL₂、PGL₂版本的Luo猜想，现发现原证明仅对前两者有效。本文补给PSL₂与PGL₂的修正论证，使最终反例结论保持不变。",
+          "techniques": [
+            "有限交换环上的二维线性表示",
+            "射影线性群的修正反例论证",
+            "原证明缺口定位"
+          ],
+          "breakthrough": "修复射影群两种情形的论证，而非撤回最终结论；明确区分原证明仍有效和需补救的分支。",
+          "limitations": "应按勘误更新引用，不能把旧PSL₂/PGL₂论证继续作为有效证明，也不能误写为原反例结论已被否定。具体环和计算论证需正文核查。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第6页Tool Use明确使用Google Gemini4 Argon帮助提高SageMath代码效率；SageMath承担ideal membership检验。AI贡献只披露代码优化，不应把Gröbner计算本身或文献中的模型名扩大成AI设计修正数学论证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00142v1 · PDF第6页 Tool Use；第4页模型引用作关联核对",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:29:35.179787+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00142v1",
+            "contentHash": "43076c9fd155b4adbb5bfcf94d75cffaf7a1d4bbba71042f5719958533f11b79",
+            "pages": 6,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页Tool Use明确使用Google Gemini4 Argon帮助提高SageMath代码效率；SageMath承担ideal membership检验。AI贡献只披露代码优化，不应把Gröbner计算本身或文献中的模型名扩大成AI设计修正数学论证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "977c8ae8f0fd7a6038b25f2eccc0c17b1fb480c06be98686b9b7f6605868a856"
+          },
+          "aiUsage": [
+            "computation"
+          ],
+          "priorityScore": 43,
+          "priorityReason": "主要是三维群的表示论修订，与几何分析联系较弱。",
+          "lowPriorityReason": "主要是三维群的表示论修订，与几何分析联系较弱。"
+        },
+        "analysisBasis": {
+          "abstract": "The fundamental groups of compact $3$-manifolds are known to be residually finite. Feng Luo conjectured that a stronger statement is true, by allowing only finite groups of the form $\\mathrm{PGL}_2(R),$ where $R$ is a finite commutative ring with identity. In a prior paper, \"Linear representations of $3$-manifold groups over rings\", we, together with two co-authors, gave an equivalent formulation of Luo's conjecture via faithful representations, investigated variants of the conjecture where the target group is of type $\\mathrm{SL}_2, \\mathrm{GL}_2, \\mathrm{PSL}_2$, or $\\mathrm{PGL}_2$ as in the original conjecture, and claimed to provide a $3$-manifold group which violated all four variants of the conjecture. We have discovered a flaw in the work, such that the existing proof is valid only for $\\mathrm{SL}_2$ and $\\mathrm{GL}_2$. Here, we provide a modified argument for the $\\mathrm{PSL}_2$ and $\\mathrm{PGL}_2$ cases.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

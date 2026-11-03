@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02422",
+  "slug": "2611.02422",
+  "latest": {
+    "arxivId": "2611.02422",
+    "metadata": {
+      "title": "On the dichotomy of $p$-walk dimensions on metric measure spaces II",
+      "authors": [
+        "Meng Yang"
+      ],
+      "abstract": "On a volume doubling metric measure space endowed with a family of $p$-energies such that the Poincaré inequality and the capacity upper bound with $p$-walk dimension $\\beta_p$ hold, for $p$ in an open interval $I\\subseteq(1,+\\infty)$, we prove the following dichotomy: either $\\beta_p=p$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p}{p}$ takes values in $(1,+\\infty)$ and is strictly decreasing on $I$. Moreover, if the metric measure space is $d_h$-Ahlfors regular, we prove the following dichotomy: either $\\beta_p=d_h+p-1$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p-d_h}{p-1}$ takes values in $(-\\infty,1)$ and is strictly increasing on $I$.",
+      "categories": [
+        "math.MG",
+        "math.FA"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "32 pages, AI statement included",
+      "version": 1,
+      "submittedAt": "2026-11-02T02:49:47Z",
+      "updatedAt": "2026-11-02T02:49:47Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.02422v1",
+        "observedAt": "2026-11-03T11:29:59.418261+00:00",
+        "contentHash": "30710500dec406c9cc704f219d6ee76ba098896eddf4ff7ac4af085d5b736e89"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:03.031790+00:00",
+        "contentHash": "97e41ffd1198607949b7e76042dc56d1d73ecad319ba60b96eabdfff361569a1"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "p-walk维数的严格二分",
+      "workSummary": "在体积倍增空间的一族p-能量满足相应Poincaré及容量上界时，对开区间I⊂(1,∞)有：或βp=p处处成立，或βp/p>1且严格递减。若另有dh-Ahlfors正则，则或βp=dh+p−1处处成立，或(βp−dh)/(p−1)<1且严格递增。",
+      "techniques": [
+        "p-能量与容量",
+        "Poincaré不等式",
+        "倍增及Ahlfors正则结构"
+      ],
+      "breakthrough": "把walk维数随p变化的单调性强化为含刚性等号分支的二分。",
+      "limitations": "两项二分依赖不同层次假设；第二项需要Ahlfors正则，不能仅凭倍增推出；结论只在给定开区间内。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第30页AI statement把§7的tangent current具体思想明确归因于2026年8月GPT-5.6 Sol的建议，并说明作者随后简化成Proposition7.7的初等表述，支持ideas。GPT-6 Astra仅用于终稿校对、英文润色和TikZ绘图，记writing；不把后期语言工具作用扩大成全部证明生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02422v1 · PDF 第30页，AI statement，涉及§7与Proposition7.7",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:29:59.418261+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02422v1",
+        "contentHash": "30710500dec406c9cc704f219d6ee76ba098896eddf4ff7ac4af085d5b736e89",
+        "pages": 32,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第30页AI statement把§7的tangent current具体思想明确归因于2026年8月GPT-5.6 Sol的建议，并说明作者随后简化成Proposition7.7的初等表述，支持ideas。GPT-6 Astra仅用于终稿校对、英文润色和TikZ绘图，记writing；不把后期语言工具作用扩大成全部证明生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "af2743828b9b75589577dda59b52c380ec811b260483311048c6ea5e2e6fff07"
+      },
+      "aiUsage": [
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 86,
+      "priorityReason": "度量测度分析与分形扩散尺度的结构定理，优先级较高。"
+    },
+    "analysisBasis": {
+      "abstract": "On a volume doubling metric measure space endowed with a family of $p$-energies such that the Poincaré inequality and the capacity upper bound with $p$-walk dimension $\\beta_p$ hold, for $p$ in an open interval $I\\subseteq(1,+\\infty)$, we prove the following dichotomy: either $\\beta_p=p$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p}{p}$ takes values in $(1,+\\infty)$ and is strictly decreasing on $I$. Moreover, if the metric measure space is $d_h$-Ahlfors regular, we prove the following dichotomy: either $\\beta_p=d_h+p-1$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p-d_h}{p-1}$ takes values in $(-\\infty,1)$ and is strictly increasing on $I$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02422",
+        "metadata": {
+          "title": "On the dichotomy of $p$-walk dimensions on metric measure spaces II",
+          "authors": [
+            "Meng Yang"
+          ],
+          "abstract": "On a volume doubling metric measure space endowed with a family of $p$-energies such that the Poincaré inequality and the capacity upper bound with $p$-walk dimension $\\beta_p$ hold, for $p$ in an open interval $I\\subseteq(1,+\\infty)$, we prove the following dichotomy: either $\\beta_p=p$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p}{p}$ takes values in $(1,+\\infty)$ and is strictly decreasing on $I$. Moreover, if the metric measure space is $d_h$-Ahlfors regular, we prove the following dichotomy: either $\\beta_p=d_h+p-1$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p-d_h}{p-1}$ takes values in $(-\\infty,1)$ and is strictly increasing on $I$.",
+          "categories": [
+            "math.MG",
+            "math.FA"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "32 pages, AI statement included",
+          "version": 1,
+          "submittedAt": "2026-11-02T02:49:47Z",
+          "updatedAt": "2026-11-02T02:49:47Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.02422v1",
+            "observedAt": "2026-11-03T11:29:59.418261+00:00",
+            "contentHash": "30710500dec406c9cc704f219d6ee76ba098896eddf4ff7ac4af085d5b736e89"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:03.031790+00:00",
+            "contentHash": "97e41ffd1198607949b7e76042dc56d1d73ecad319ba60b96eabdfff361569a1"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "p-walk维数的严格二分",
+          "workSummary": "在体积倍增空间的一族p-能量满足相应Poincaré及容量上界时，对开区间I⊂(1,∞)有：或βp=p处处成立，或βp/p>1且严格递减。若另有dh-Ahlfors正则，则或βp=dh+p−1处处成立，或(βp−dh)/(p−1)<1且严格递增。",
+          "techniques": [
+            "p-能量与容量",
+            "Poincaré不等式",
+            "倍增及Ahlfors正则结构"
+          ],
+          "breakthrough": "把walk维数随p变化的单调性强化为含刚性等号分支的二分。",
+          "limitations": "两项二分依赖不同层次假设；第二项需要Ahlfors正则，不能仅凭倍增推出；结论只在给定开区间内。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第30页AI statement把§7的tangent current具体思想明确归因于2026年8月GPT-5.6 Sol的建议，并说明作者随后简化成Proposition7.7的初等表述，支持ideas。GPT-6 Astra仅用于终稿校对、英文润色和TikZ绘图，记writing；不把后期语言工具作用扩大成全部证明生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02422v1 · PDF 第30页，AI statement，涉及§7与Proposition7.7",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:29:59.418261+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02422v1",
+            "contentHash": "30710500dec406c9cc704f219d6ee76ba098896eddf4ff7ac4af085d5b736e89",
+            "pages": 32,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第30页AI statement把§7的tangent current具体思想明确归因于2026年8月GPT-5.6 Sol的建议，并说明作者随后简化成Proposition7.7的初等表述，支持ideas。GPT-6 Astra仅用于终稿校对、英文润色和TikZ绘图，记writing；不把后期语言工具作用扩大成全部证明生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "af2743828b9b75589577dda59b52c380ec811b260483311048c6ea5e2e6fff07"
+          },
+          "aiUsage": [
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 86,
+          "priorityReason": "度量测度分析与分形扩散尺度的结构定理，优先级较高。"
+        },
+        "analysisBasis": {
+          "abstract": "On a volume doubling metric measure space endowed with a family of $p$-energies such that the Poincaré inequality and the capacity upper bound with $p$-walk dimension $\\beta_p$ hold, for $p$ in an open interval $I\\subseteq(1,+\\infty)$, we prove the following dichotomy: either $\\beta_p=p$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p}{p}$ takes values in $(1,+\\infty)$ and is strictly decreasing on $I$. Moreover, if the metric measure space is $d_h$-Ahlfors regular, we prove the following dichotomy: either $\\beta_p=d_h+p-1$ for all $p\\in I$, or the function $p\\mapsto \\frac{\\beta_p-d_h}{p-1}$ takes values in $(-\\infty,1)$ and is strictly increasing on $I$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

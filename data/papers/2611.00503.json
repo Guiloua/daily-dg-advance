@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00503",
+  "slug": "2611.00503",
+  "latest": {
+    "arxivId": "2611.00503",
+    "metadata": {
+      "title": "The Continuum Limit of the Deep Linear Network",
+      "authors": [
+        "Catherine Eva Pfaff",
+        "Karen Uhlenbeck"
+      ],
+      "abstract": "The Deep Linear Network (DLN) is a simple version of a Multilayer Perceptron (MLP) in which the activation function is the identity and the bias vector is the zero vector. We examine the behavior of the model when the number of weight matrices, which is finite in the original model, goes to infinity. We show that a plausible continuum limit is a dimensionally reduced version of the Yang-Mills equation on the torus, revealing an unexpected geometric interpretation of infinite-depth DLNs. While we do not prove this rigorously, it is a very pretty calculation. It also gives some insight into several features of the construction. We note that the choices of boundary conditions on the ends of the discrete series survive better in the continuum limit. Also, the regularizing functional which uses the moment map survives nicely in the continuum limit, whereas the regularizing functional using the size of approximating terms has no sensible limit. This surely is useful information for the choices we make in the finite-dimensional theory, and might also be useful in the more complicated MLP setting.",
+      "categories": [
+        "math.DG",
+        "cs.LG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-10-31T00:48:39Z",
+      "updatedAt": "2026-10-31T00:48:39Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:27.280693+00:00",
+        "contentHash": "02c869ae4621583b9f2a35a2c5fde1878255960daf712cd277da02cd658aa52b"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "深线性网络的形式连续极限",
+      "workSummary": "作者对零偏置、恒等激活的深线性网络令层数趋无穷，形式计算得到环面Yang–Mills方程的降维版本。文中明确未给严格收敛证明；计算表明端点边界条件及moment-map正则项可良好保留，而按近似项大小构造的另一正则项没有合理极限。",
+      "techniques": [
+        "深线性网络的形式连续极限",
+        "Yang–Mills降维",
+        "moment map正则化比较"
+      ],
+      "breakthrough": "提供无限深线性网络的几何解释及选择离散正则项的启发。",
+      "limitations": "不能写成已证明DLN严格收敛到Yang–Mills；向含非线性激活的一般MLP应用仍是启发。研究AI模型本身不等于生成式AI协作披露。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第6页致谢明确ChatGPT参与revision过程，支持稿件修订；网络/机器学习研究题材本身不是证据，也没有将形式Yang–Mills连续极限计算或核心想法归于模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00503v1 · PDF第6页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:35:12.337767+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00503v1",
+        "contentHash": "02f8c658ca773f3ec5196b2d1dbdba62037c49fa00611e2bc892125f00808cc2",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页致谢明确ChatGPT参与revision过程，支持稿件修订；网络/机器学习研究题材本身不是证据，也没有将形式Yang–Mills连续极限计算或核心想法归于模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b479f954005c5dea729698a38044f8077182314f0ccaa81ba45e4ab27470d599"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 38,
+      "priorityReason": "几何规范理论交叉有趣，但当前为非严格形式计算，相关性较间接。",
+      "lowPriorityReason": "几何规范理论交叉有趣，但当前为非严格形式计算，相关性较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "The Deep Linear Network (DLN) is a simple version of a Multilayer Perceptron (MLP) in which the activation function is the identity and the bias vector is the zero vector. We examine the behavior of the model when the number of weight matrices, which is finite in the original model, goes to infinity. We show that a plausible continuum limit is a dimensionally reduced version of the Yang-Mills equation on the torus, revealing an unexpected geometric interpretation of infinite-depth DLNs. While we do not prove this rigorously, it is a very pretty calculation. It also gives some insight into several features of the construction. We note that the choices of boundary conditions on the ends of the discrete series survive better in the continuum limit. Also, the regularizing functional which uses the moment map survives nicely in the continuum limit, whereas the regularizing functional using the size of approximating terms has no sensible limit. This surely is useful information for the choices we make in the finite-dimensional theory, and might also be useful in the more complicated MLP setting.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00503",
+        "metadata": {
+          "title": "The Continuum Limit of the Deep Linear Network",
+          "authors": [
+            "Catherine Eva Pfaff",
+            "Karen Uhlenbeck"
+          ],
+          "abstract": "The Deep Linear Network (DLN) is a simple version of a Multilayer Perceptron (MLP) in which the activation function is the identity and the bias vector is the zero vector. We examine the behavior of the model when the number of weight matrices, which is finite in the original model, goes to infinity. We show that a plausible continuum limit is a dimensionally reduced version of the Yang-Mills equation on the torus, revealing an unexpected geometric interpretation of infinite-depth DLNs. While we do not prove this rigorously, it is a very pretty calculation. It also gives some insight into several features of the construction. We note that the choices of boundary conditions on the ends of the discrete series survive better in the continuum limit. Also, the regularizing functional which uses the moment map survives nicely in the continuum limit, whereas the regularizing functional using the size of approximating terms has no sensible limit. This surely is useful information for the choices we make in the finite-dimensional theory, and might also be useful in the more complicated MLP setting.",
+          "categories": [
+            "math.DG",
+            "cs.LG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-10-31T00:48:39Z",
+          "updatedAt": "2026-10-31T00:48:39Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:27.280693+00:00",
+            "contentHash": "02c869ae4621583b9f2a35a2c5fde1878255960daf712cd277da02cd658aa52b"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "深线性网络的形式连续极限",
+          "workSummary": "作者对零偏置、恒等激活的深线性网络令层数趋无穷，形式计算得到环面Yang–Mills方程的降维版本。文中明确未给严格收敛证明；计算表明端点边界条件及moment-map正则项可良好保留，而按近似项大小构造的另一正则项没有合理极限。",
+          "techniques": [
+            "深线性网络的形式连续极限",
+            "Yang–Mills降维",
+            "moment map正则化比较"
+          ],
+          "breakthrough": "提供无限深线性网络的几何解释及选择离散正则项的启发。",
+          "limitations": "不能写成已证明DLN严格收敛到Yang–Mills；向含非线性激活的一般MLP应用仍是启发。研究AI模型本身不等于生成式AI协作披露。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第6页致谢明确ChatGPT参与revision过程，支持稿件修订；网络/机器学习研究题材本身不是证据，也没有将形式Yang–Mills连续极限计算或核心想法归于模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00503v1 · PDF第6页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:35:12.337767+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00503v1",
+            "contentHash": "02f8c658ca773f3ec5196b2d1dbdba62037c49fa00611e2bc892125f00808cc2",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页致谢明确ChatGPT参与revision过程，支持稿件修订；网络/机器学习研究题材本身不是证据，也没有将形式Yang–Mills连续极限计算或核心想法归于模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b479f954005c5dea729698a38044f8077182314f0ccaa81ba45e4ab27470d599"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 38,
+          "priorityReason": "几何规范理论交叉有趣，但当前为非严格形式计算，相关性较间接。",
+          "lowPriorityReason": "几何规范理论交叉有趣，但当前为非严格形式计算，相关性较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "The Deep Linear Network (DLN) is a simple version of a Multilayer Perceptron (MLP) in which the activation function is the identity and the bias vector is the zero vector. We examine the behavior of the model when the number of weight matrices, which is finite in the original model, goes to infinity. We show that a plausible continuum limit is a dimensionally reduced version of the Yang-Mills equation on the torus, revealing an unexpected geometric interpretation of infinite-depth DLNs. While we do not prove this rigorously, it is a very pretty calculation. It also gives some insight into several features of the construction. We note that the choices of boundary conditions on the ends of the discrete series survive better in the continuum limit. Also, the regularizing functional which uses the moment map survives nicely in the continuum limit, whereas the regularizing functional using the size of approximating terms has no sensible limit. This surely is useful information for the choices we make in the finite-dimensional theory, and might also be useful in the more complicated MLP setting.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

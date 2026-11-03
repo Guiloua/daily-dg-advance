@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01882",
+  "slug": "2611.01882",
+  "latest": {
+    "arxivId": "2611.01882",
+    "metadata": {
+      "title": "Convergence of the Calabi flow on Kähler surfaces with bounded Sobolev constants",
+      "authors": [
+        "Haozhao Li",
+        "Bing Wang",
+        "Kai Zheng"
+      ],
+      "abstract": "We study global Calabi flows $g(t)$ on compact Kähler surfaces with a uniform Sobolev constant. For any sequence $t_j\\to\\infty$, set $g_j(t):=g(t_j+t)$. After passing to a subsequence, these flows converge to an eternal Calabi flow on a compact extremal Kähler orbifold surface. The convergence holds in the spacetime $\\hat C^\\infty$-Cheeger--Gromov topology: it is uniform in the Gromov--Hausdorff sense on compact time intervals and smooth away from the orbifold singularities, using comparisons fixed in time.",
+      "categories": [
+        "math.DG",
+        "math.GT"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-01T13:22:49Z",
+      "updatedAt": "2026-11-01T13:22:49Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-03T11:24:43.683587+00:00",
+        "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.01882v1",
+        "observedAt": "2026-11-03T11:26:46.440555+00:00",
+        "contentHash": "333acca77ce2059aa860b7fe99b81fdef92a980666a04948d91c34fb49d86b87"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.333336+00:00",
+        "contentHash": "2d6d5bce7b736bd452bfaf8827253b4ee7f0480de154465201d78d5f610db284"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "Calabi流的轨道紧性与极值轨形极限",
+      "workSummary": "在固定紧连通复曲面及实Kähler类上，假设光滑Calabi流已存在于[0,∞)且Sobolev常数统一有界。对任意t_j→∞，时间平移g(t_j+τ)可抽取同一子列，在紧时间区间上以时空Ĉ∞–Cheeger–Gromov意义收敛到紧Kähler轨形上的永恒极值Calabi流；奇点为有限孤立商点，GH收敛在时间上统一，正则区比较映射与时间无关。",
+      "techniques": [
+        "以固定复结构和Kähler周期得到null标量平坦ALE缩放模型",
+        "构造时空典范半径、局部反向和晚时段双向伪局部性",
+        "结合Calabi耗散、泡树与能量不丢失证明测度及Calabi泛函的时间统一收敛"
+      ],
+      "breakthrough": "在不预先假设极值度量存在的情况下给出晚时段时空轨形紧性；极限切片由全纯自同构拉回而彼此等距，且Calabi能量保持到极限。固定类的null条件排除类似Burns度量的正则点上隐藏曲率集中。",
+      "limitations": "本文主定理以全局存在和统一Sobolev界为假设；不能把本篇直接写成任意初值长期存在。结论是每个时间序列可抽子列，不单独保证所有子列极限唯一、光滑或cscK；无全纯向量场时才有相应静止cscK结论。双向伪局部性也限于文中几何界与小能量降条件。已读第1–6页主定理和路线，未逐项核验89页证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确使用ChatGPT协助准备论文，但未细分为文字、证明、计算或核心路线等用途；正面使用成立，保留用途未说明，不据泛称辅助臆断ideas或proofs。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01882v1 · PDF第7页 On the usage of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:26:46.440555+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01882v1",
+        "contentHash": "333acca77ce2059aa860b7fe99b81fdef92a980666a04948d91c34fb49d86b87",
+        "pages": 89,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用ChatGPT协助准备论文，但未细分为文字、证明、计算或核心路线等用途；正面使用成立，保留用途未说明，不据泛称辅助臆断ideas或proofs。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f3cab4144a90a8522595649d685f366e52cc742a4d4747bd67c367b78923888a"
+      },
+      "priorityScore": 99,
+      "priorityReason": "四阶几何流的长时紧性与退化，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "We study global Calabi flows $g(t)$ on compact Kähler surfaces with a uniform Sobolev constant. For any sequence $t_j\\to\\infty$, set $g_j(t):=g(t_j+t)$. After passing to a subsequence, these flows converge to an eternal Calabi flow on a compact extremal Kähler orbifold surface. The convergence holds in the spacetime $\\hat C^\\infty$-Cheeger--Gromov topology: it is uniform in the Gromov--Hausdorff sense on compact time intervals and smooth away from the orbifold singularities, using comparisons fixed in time.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01882",
+        "metadata": {
+          "title": "Convergence of the Calabi flow on Kähler surfaces with bounded Sobolev constants",
+          "authors": [
+            "Haozhao Li",
+            "Bing Wang",
+            "Kai Zheng"
+          ],
+          "abstract": "We study global Calabi flows $g(t)$ on compact Kähler surfaces with a uniform Sobolev constant. For any sequence $t_j\\to\\infty$, set $g_j(t):=g(t_j+t)$. After passing to a subsequence, these flows converge to an eternal Calabi flow on a compact extremal Kähler orbifold surface. The convergence holds in the spacetime $\\hat C^\\infty$-Cheeger--Gromov topology: it is uniform in the Gromov--Hausdorff sense on compact time intervals and smooth away from the orbifold singularities, using comparisons fixed in time.",
+          "categories": [
+            "math.DG",
+            "math.GT"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-01T13:22:49Z",
+          "updatedAt": "2026-11-01T13:22:49Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-03T11:24:43.683587+00:00",
+            "contentHash": "cd0f0ccf32f220a08a01b1352b465d200c444882efb543786aba27e59fdf0a1f"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.01882v1",
+            "observedAt": "2026-11-03T11:26:46.440555+00:00",
+            "contentHash": "333acca77ce2059aa860b7fe99b81fdef92a980666a04948d91c34fb49d86b87"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.333336+00:00",
+            "contentHash": "2d6d5bce7b736bd452bfaf8827253b4ee7f0480de154465201d78d5f610db284"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "Calabi流的轨道紧性与极值轨形极限",
+          "workSummary": "在固定紧连通复曲面及实Kähler类上，假设光滑Calabi流已存在于[0,∞)且Sobolev常数统一有界。对任意t_j→∞，时间平移g(t_j+τ)可抽取同一子列，在紧时间区间上以时空Ĉ∞–Cheeger–Gromov意义收敛到紧Kähler轨形上的永恒极值Calabi流；奇点为有限孤立商点，GH收敛在时间上统一，正则区比较映射与时间无关。",
+          "techniques": [
+            "以固定复结构和Kähler周期得到null标量平坦ALE缩放模型",
+            "构造时空典范半径、局部反向和晚时段双向伪局部性",
+            "结合Calabi耗散、泡树与能量不丢失证明测度及Calabi泛函的时间统一收敛"
+          ],
+          "breakthrough": "在不预先假设极值度量存在的情况下给出晚时段时空轨形紧性；极限切片由全纯自同构拉回而彼此等距，且Calabi能量保持到极限。固定类的null条件排除类似Burns度量的正则点上隐藏曲率集中。",
+          "limitations": "本文主定理以全局存在和统一Sobolev界为假设；不能把本篇直接写成任意初值长期存在。结论是每个时间序列可抽子列，不单独保证所有子列极限唯一、光滑或cscK；无全纯向量场时才有相应静止cscK结论。双向伪局部性也限于文中几何界与小能量降条件。已读第1–6页主定理和路线，未逐项核验89页证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确使用ChatGPT协助准备论文，但未细分为文字、证明、计算或核心路线等用途；正面使用成立，保留用途未说明，不据泛称辅助臆断ideas或proofs。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01882v1 · PDF第7页 On the usage of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:26:46.440555+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01882v1",
+            "contentHash": "333acca77ce2059aa860b7fe99b81fdef92a980666a04948d91c34fb49d86b87",
+            "pages": 89,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用ChatGPT协助准备论文，但未细分为文字、证明、计算或核心路线等用途；正面使用成立，保留用途未说明，不据泛称辅助臆断ideas或proofs。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f3cab4144a90a8522595649d685f366e52cc742a4d4747bd67c367b78923888a"
+          },
+          "priorityScore": 99,
+          "priorityReason": "四阶几何流的长时紧性与退化，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "We study global Calabi flows $g(t)$ on compact Kähler surfaces with a uniform Sobolev constant. For any sequence $t_j\\to\\infty$, set $g_j(t):=g(t_j+t)$. After passing to a subsequence, these flows converge to an eternal Calabi flow on a compact extremal Kähler orbifold surface. The convergence holds in the spacetime $\\hat C^\\infty$-Cheeger--Gromov topology: it is uniform in the Gromov--Hausdorff sense on compact time intervals and smooth away from the orbifold singularities, using comparisons fixed in time.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

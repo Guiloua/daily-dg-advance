@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01623",
+  "slug": "2611.01623",
+  "latest": {
+    "arxivId": "2611.01623",
+    "metadata": {
+      "title": "Chern scalar curvature and finite-time singularities of the conformal Chern--Calabi flow",
+      "authors": [
+        "Hongyu Chen",
+        "Li Ma",
+        "Li Sheng"
+      ],
+      "abstract": "On every unit-volume flat complex three-torus, we construct a solution of the volume-preserving conformal Chern--Calabi flow with a finite-time Chern Type-I singularity at any prescribed point. The full spatial supremum has an exact asymptotic coefficient, and prescribed rescalings converge to a complete nonflat radial shrinking solution. The positive part of Chern scalar curvature can remain arbitrarily small throughout the flow, as can each prescribed subcritical spatial curvature norm. We determine the punctured terminal metric, its one-point completion and unique nonflat tangent cone, and the terminal energy asymptotics. We also exclude Chern Type-II under a logarithmically improved critical weak $L^3$ bound on Chern scalar curvature, and prove a separate scale-invariant integral criterion involving first Chern--Ricci curvature. The constructed singular solutions satisfy both criteria.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-11-01T06:17:21Z",
+      "updatedAt": "2026-11-01T06:17:21Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.330391+00:00",
+        "contentHash": "3931cb61ebc83824d211137018414a3c905b49e15acd79bac2c5b0be7023e41d"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "有限时奇点构造与排除准则",
+      "workSummary": "固定任意单位体积平坦复三维环面及任意p，考虑ω_f=e^fω₀、f_t=6L_f*R_f−R_f²+E(t)、E=∫R_f²dμ_f，体积恒1且E′=−∫f_t²dμ_f。存在光滑初值在有限最大时刻Θ形成唯一奇点p，e^{f(t,p)}→0、R_f(t,p)→−∞，而punctured区域光滑收敛。此处Chern Type-I定义为sup_{t<Θ}√(Θ−t)||R_f(t)||∞有限。选定径向profile F、h=ΔF(0)>0后，√(Θ−t)||R_f||∞→sup_{R⁶}|R_F|∈(0,∞)，点p的带符号极限为−3h；二者不混同。任意t_i↑Θ在文中指定的holomorphic affine缩放Φ_i(y)=p+(T−s_i)^b y下，重标度度量以完整序列在紧时空集光滑趋于完备非平坦径向收缩解。对每个预定1≤p₀<3及ε、τ*>0可令Θ<τ*、全时R_f<ε，并使R_f、第一Chern–Ricci和全Chern张量的演化L^{p₀}范数之和<ε。终端完备化加一点，紧度量GH收敛且该点唯一非平坦切锥为dρ²+((k+2)²/4)ρ²g_{S⁵}，k>0为所选profile参数。",
+      "techniques": [
+        "径向profile的解析匹配与加权线性谱分析，非数值shooting",
+        "有限维不稳定方向选择与重标度核/物理环带/外部的耦合估计",
+        "Newton势控制外部负Laplacian，从而正标量曲率小",
+        "局部仿射抛物柱与保体积时间归一化精确比较",
+        "静态共形梯度估计加首个曲率最大点过去邻域正则性",
+        "终端环带渐近给锥唯一性、临界范数及能量极限"
+      ],
+      "breakthrough": "构造全时小正标量曲率及任意指定次临界范数仍发生Type-I奇点的例子，并给全空间曲率率、指定缩放极限和终端锥。Theorem1.3：末端sup_t||R_f[log(e+√(T−t)|R_f|)]^{1/3}||_{L^{3,∞}}有限排除Type-II；更一般任意非减、局部有界、趋∞的h满足sup_{t,λ}λ³h(√(T−t)λ)μ_t{|R_f|>λ}<∞同样有效。Theorem1.5独立要求末端dyadic窗口sup_{0<s<s₀}∫_{T−2s}^{T−s}||Ric^{Ch}||_{L⁹}³dt有限，给Type-I及Ric^{Ch}的Type-I上界。构造满足两准则，而strong L³标量曲率积分仍按[108π³k³/(k+2)]log(1/(Θ−t))+O(1)发散。",
+      "limitations": "已读PDF第1–7、17–20、23–30、45页，渲染第3–4、25页核对四阶缩放、次临界指数、临界权和L⁹积分条件；未独立核验整篇证明，尤其Appendix A径向profile解析匹配、Appendix B加权谱与有限维选择闭合。该流采用6L_f*R_f−R_f²+E的系数，作者指出与先前SM26一般维公式的相对系数不同，不能笼统互换其流。Type-I/II在本文以Chern标量曲率定义，非任意Riemann曲率Type-I。重标度收敛为指定仿射映射下全序列，未声称任意规范的所有切流唯一。两个准则只排Type-II，构造本身满足准则且仍奇异；普通弱L³有界、仅标量上界或L∞平方dyadic窗口是否足够不能由此推出，后者明确仍开放。p₀为每次构造指定的指数，不能改称一个固定初值同时任意小于所有p<3的统一ε界。终端能量有限正值并无点质量，区别于非紧收缩模型的全空间平方能量（发散）。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第45页AI Assistance Statement明确AI用于协助本研究，但没有模型名称或具体使用方式，故确认使用而不推断ideas、proofs、writing等细分类。补检第17页Astra字母串来自“A straight affine segment”的跨词拼接，非模型名或额外披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01623v1 · PDF第45页AI Assistance Statement；第17页补检为普通几何文字",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:33:13.995156+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01623v1",
+        "contentHash": "a1c9feff96808342fde10575bef73c41363d3857f2f491209e543b11b91b65cf",
+        "pages": 46,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第45页AI Assistance Statement明确AI用于协助本研究，但没有模型名称或具体使用方式，故确认使用而不推断ideas、proofs、writing等细分类。补检第17页Astra字母串来自“A straight affine segment”的跨词拼接，非模型名或额外披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d1e97086d96c0945b996659b0981736d33a1d4a9b2d8b8990904ee866f9e5b9d"
+      },
+      "priorityScore": 98,
+      "priorityReason": "几何流奇点与临界正则性的重要构造，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "On every unit-volume flat complex three-torus, we construct a solution of the volume-preserving conformal Chern--Calabi flow with a finite-time Chern Type-I singularity at any prescribed point. The full spatial supremum has an exact asymptotic coefficient, and prescribed rescalings converge to a complete nonflat radial shrinking solution. The positive part of Chern scalar curvature can remain arbitrarily small throughout the flow, as can each prescribed subcritical spatial curvature norm. We determine the punctured terminal metric, its one-point completion and unique nonflat tangent cone, and the terminal energy asymptotics. We also exclude Chern Type-II under a logarithmically improved critical weak $L^3$ bound on Chern scalar curvature, and prove a separate scale-invariant integral criterion involving first Chern--Ricci curvature. The constructed singular solutions satisfy both criteria.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01623",
+        "metadata": {
+          "title": "Chern scalar curvature and finite-time singularities of the conformal Chern--Calabi flow",
+          "authors": [
+            "Hongyu Chen",
+            "Li Ma",
+            "Li Sheng"
+          ],
+          "abstract": "On every unit-volume flat complex three-torus, we construct a solution of the volume-preserving conformal Chern--Calabi flow with a finite-time Chern Type-I singularity at any prescribed point. The full spatial supremum has an exact asymptotic coefficient, and prescribed rescalings converge to a complete nonflat radial shrinking solution. The positive part of Chern scalar curvature can remain arbitrarily small throughout the flow, as can each prescribed subcritical spatial curvature norm. We determine the punctured terminal metric, its one-point completion and unique nonflat tangent cone, and the terminal energy asymptotics. We also exclude Chern Type-II under a logarithmically improved critical weak $L^3$ bound on Chern scalar curvature, and prove a separate scale-invariant integral criterion involving first Chern--Ricci curvature. The constructed singular solutions satisfy both criteria.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-11-01T06:17:21Z",
+          "updatedAt": "2026-11-01T06:17:21Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.330391+00:00",
+            "contentHash": "3931cb61ebc83824d211137018414a3c905b49e15acd79bac2c5b0be7023e41d"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "有限时奇点构造与排除准则",
+          "workSummary": "固定任意单位体积平坦复三维环面及任意p，考虑ω_f=e^fω₀、f_t=6L_f*R_f−R_f²+E(t)、E=∫R_f²dμ_f，体积恒1且E′=−∫f_t²dμ_f。存在光滑初值在有限最大时刻Θ形成唯一奇点p，e^{f(t,p)}→0、R_f(t,p)→−∞，而punctured区域光滑收敛。此处Chern Type-I定义为sup_{t<Θ}√(Θ−t)||R_f(t)||∞有限。选定径向profile F、h=ΔF(0)>0后，√(Θ−t)||R_f||∞→sup_{R⁶}|R_F|∈(0,∞)，点p的带符号极限为−3h；二者不混同。任意t_i↑Θ在文中指定的holomorphic affine缩放Φ_i(y)=p+(T−s_i)^b y下，重标度度量以完整序列在紧时空集光滑趋于完备非平坦径向收缩解。对每个预定1≤p₀<3及ε、τ*>0可令Θ<τ*、全时R_f<ε，并使R_f、第一Chern–Ricci和全Chern张量的演化L^{p₀}范数之和<ε。终端完备化加一点，紧度量GH收敛且该点唯一非平坦切锥为dρ²+((k+2)²/4)ρ²g_{S⁵}，k>0为所选profile参数。",
+          "techniques": [
+            "径向profile的解析匹配与加权线性谱分析，非数值shooting",
+            "有限维不稳定方向选择与重标度核/物理环带/外部的耦合估计",
+            "Newton势控制外部负Laplacian，从而正标量曲率小",
+            "局部仿射抛物柱与保体积时间归一化精确比较",
+            "静态共形梯度估计加首个曲率最大点过去邻域正则性",
+            "终端环带渐近给锥唯一性、临界范数及能量极限"
+          ],
+          "breakthrough": "构造全时小正标量曲率及任意指定次临界范数仍发生Type-I奇点的例子，并给全空间曲率率、指定缩放极限和终端锥。Theorem1.3：末端sup_t||R_f[log(e+√(T−t)|R_f|)]^{1/3}||_{L^{3,∞}}有限排除Type-II；更一般任意非减、局部有界、趋∞的h满足sup_{t,λ}λ³h(√(T−t)λ)μ_t{|R_f|>λ}<∞同样有效。Theorem1.5独立要求末端dyadic窗口sup_{0<s<s₀}∫_{T−2s}^{T−s}||Ric^{Ch}||_{L⁹}³dt有限，给Type-I及Ric^{Ch}的Type-I上界。构造满足两准则，而strong L³标量曲率积分仍按[108π³k³/(k+2)]log(1/(Θ−t))+O(1)发散。",
+          "limitations": "已读PDF第1–7、17–20、23–30、45页，渲染第3–4、25页核对四阶缩放、次临界指数、临界权和L⁹积分条件；未独立核验整篇证明，尤其Appendix A径向profile解析匹配、Appendix B加权谱与有限维选择闭合。该流采用6L_f*R_f−R_f²+E的系数，作者指出与先前SM26一般维公式的相对系数不同，不能笼统互换其流。Type-I/II在本文以Chern标量曲率定义，非任意Riemann曲率Type-I。重标度收敛为指定仿射映射下全序列，未声称任意规范的所有切流唯一。两个准则只排Type-II，构造本身满足准则且仍奇异；普通弱L³有界、仅标量上界或L∞平方dyadic窗口是否足够不能由此推出，后者明确仍开放。p₀为每次构造指定的指数，不能改称一个固定初值同时任意小于所有p<3的统一ε界。终端能量有限正值并无点质量，区别于非紧收缩模型的全空间平方能量（发散）。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第45页AI Assistance Statement明确AI用于协助本研究，但没有模型名称或具体使用方式，故确认使用而不推断ideas、proofs、writing等细分类。补检第17页Astra字母串来自“A straight affine segment”的跨词拼接，非模型名或额外披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01623v1 · PDF第45页AI Assistance Statement；第17页补检为普通几何文字",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:33:13.995156+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01623v1",
+            "contentHash": "a1c9feff96808342fde10575bef73c41363d3857f2f491209e543b11b91b65cf",
+            "pages": 46,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第45页AI Assistance Statement明确AI用于协助本研究，但没有模型名称或具体使用方式，故确认使用而不推断ideas、proofs、writing等细分类。补检第17页Astra字母串来自“A straight affine segment”的跨词拼接，非模型名或额外披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d1e97086d96c0945b996659b0981736d33a1d4a9b2d8b8990904ee866f9e5b9d"
+          },
+          "priorityScore": 98,
+          "priorityReason": "几何流奇点与临界正则性的重要构造，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "On every unit-volume flat complex three-torus, we construct a solution of the volume-preserving conformal Chern--Calabi flow with a finite-time Chern Type-I singularity at any prescribed point. The full spatial supremum has an exact asymptotic coefficient, and prescribed rescalings converge to a complete nonflat radial shrinking solution. The positive part of Chern scalar curvature can remain arbitrarily small throughout the flow, as can each prescribed subcritical spatial curvature norm. We determine the punctured terminal metric, its one-point completion and unique nonflat tangent cone, and the terminal energy asymptotics. We also exclude Chern Type-II under a logarithmically improved critical weak $L^3$ bound on Chern scalar curvature, and prove a separate scale-invariant integral criterion involving first Chern--Ricci curvature. The constructed singular solutions satisfy both criteria.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

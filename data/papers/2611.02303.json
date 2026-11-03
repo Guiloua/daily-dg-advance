@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02303",
+  "slug": "2611.02303",
+  "latest": {
+    "arxivId": "2611.02303",
+    "metadata": {
+      "title": "Uniqueness of self-shrinking ends asymptotic to a cylindrical cone",
+      "authors": [
+        "Yile Liu"
+      ],
+      "abstract": "Let $C^m \\subset \\mathbb{R}^{m+n}$ be a regular embedded cone, where $n\\geq 1$, and let $k\\geq 1$. We prove that two smooth, connected, properly embedded self-shrinking ends whose blow-downs converge locally smoothly to the same cylindrical cone $C\\times\\mathbb{R}^k$ away from the axis $\\{0\\}\\times\\mathbb{R}^k$ must coincide. As a consequence, we obtain a rigidity result for complete self-shrinkers asymptotic to cylindrical cones. The proof uses Gaussian decay estimates and a sectorial Carleman estimate to establish backward uniqueness.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-01T23:50:26Z",
+      "updatedAt": "2026-11-01T23:50:26Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.02303v1",
+        "observedAt": "2026-11-03T11:27:10.851830+00:00",
+        "contentHash": "e8d2edc32877779ed39da673f12a7e91c9a3f74ab947f83711ff94f33e6f2e0b"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:03.030099+00:00",
+        "contentHash": "f396463d6ad6ab6d6ebd5920c938f1649f52fe3e9c2a8f793999d62f2cb6edb6"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "圆柱锥渐近自收缩端的唯一性",
+      "workSummary": "设C为具有光滑连通闭嵌入link的正则锥、k≥1。作者证明：在同一球外的两个光滑、连通、properly embedded自收缩端，若缩小尺度后在轴{0}×R^k之外局部光滑趋向同一柱锥C×R^k，则两端重合。结论适用于任意余维；余维一陈述还采用双侧性。若另有完整自收缩子M₂渐近C，则相应完整M₁渐近C×R^k时等于M₂×R^k。",
+      "techniques": [
+        "在远离奇异轴的固定扇区上写法丛截面/正规图方程",
+        "Gaussian衰减估计与扇区型Carleman不等式",
+        "将自相似重标度差值转化为反向唯一性问题"
+      ],
+      "breakthrough": "把正则锥端的唯一性推进到具有整条奇异轴的柱锥，处理任意余维法丛方程及扇区边界没有可用边值条件的困难。",
+      "limitations": "必须是文中轴外局部光滑的渐近条件、连通且properly embedded的自收缩端；不能降格为仅有测度或弱锥极限。柱锥C×R^k不同于平移意义下渐近的圆自收缩柱，不能据此宣称解决全部圆柱端分类。完整乘积结论另假设基底完整自收缩子存在。已读第1–3页主定理和路线，未逐项验证高余维Carleman估计。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第5页明确披露将未具名LLM作为起草辅助，用于探索Carleman权函数可能选择。可记录探索与起草；声明未指认最终权函数或核心思想由模型提出，不升格ideas，也不推断模型品牌。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02303v1 · PDF 第5页，AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:27:10.851830+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02303v1",
+        "contentHash": "e8d2edc32877779ed39da673f12a7e91c9a3f74ab947f83711ff94f33e6f2e0b",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确披露将未具名LLM作为起草辅助，用于探索Carleman权函数可能选择。可记录探索与起草；声明未指认最终权函数或核心思想由模型提出，不升格ideas，也不推断模型品牌。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fbc815622292c06608f0f9a1e2c108bc7946a2221d567fc959e40f1bee87f539"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "直接关联平均曲率流奇点模型与非紧几何刚性，优先读主定理。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $C^m \\subset \\mathbb{R}^{m+n}$ be a regular embedded cone, where $n\\geq 1$, and let $k\\geq 1$. We prove that two smooth, connected, properly embedded self-shrinking ends whose blow-downs converge locally smoothly to the same cylindrical cone $C\\times\\mathbb{R}^k$ away from the axis $\\{0\\}\\times\\mathbb{R}^k$ must coincide. As a consequence, we obtain a rigidity result for complete self-shrinkers asymptotic to cylindrical cones. The proof uses Gaussian decay estimates and a sectorial Carleman estimate to establish backward uniqueness.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02303",
+        "metadata": {
+          "title": "Uniqueness of self-shrinking ends asymptotic to a cylindrical cone",
+          "authors": [
+            "Yile Liu"
+          ],
+          "abstract": "Let $C^m \\subset \\mathbb{R}^{m+n}$ be a regular embedded cone, where $n\\geq 1$, and let $k\\geq 1$. We prove that two smooth, connected, properly embedded self-shrinking ends whose blow-downs converge locally smoothly to the same cylindrical cone $C\\times\\mathbb{R}^k$ away from the axis $\\{0\\}\\times\\mathbb{R}^k$ must coincide. As a consequence, we obtain a rigidity result for complete self-shrinkers asymptotic to cylindrical cones. The proof uses Gaussian decay estimates and a sectorial Carleman estimate to establish backward uniqueness.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-01T23:50:26Z",
+          "updatedAt": "2026-11-01T23:50:26Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.02303v1",
+            "observedAt": "2026-11-03T11:27:10.851830+00:00",
+            "contentHash": "e8d2edc32877779ed39da673f12a7e91c9a3f74ab947f83711ff94f33e6f2e0b"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:03.030099+00:00",
+            "contentHash": "f396463d6ad6ab6d6ebd5920c938f1649f52fe3e9c2a8f793999d62f2cb6edb6"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "圆柱锥渐近自收缩端的唯一性",
+          "workSummary": "设C为具有光滑连通闭嵌入link的正则锥、k≥1。作者证明：在同一球外的两个光滑、连通、properly embedded自收缩端，若缩小尺度后在轴{0}×R^k之外局部光滑趋向同一柱锥C×R^k，则两端重合。结论适用于任意余维；余维一陈述还采用双侧性。若另有完整自收缩子M₂渐近C，则相应完整M₁渐近C×R^k时等于M₂×R^k。",
+          "techniques": [
+            "在远离奇异轴的固定扇区上写法丛截面/正规图方程",
+            "Gaussian衰减估计与扇区型Carleman不等式",
+            "将自相似重标度差值转化为反向唯一性问题"
+          ],
+          "breakthrough": "把正则锥端的唯一性推进到具有整条奇异轴的柱锥，处理任意余维法丛方程及扇区边界没有可用边值条件的困难。",
+          "limitations": "必须是文中轴外局部光滑的渐近条件、连通且properly embedded的自收缩端；不能降格为仅有测度或弱锥极限。柱锥C×R^k不同于平移意义下渐近的圆自收缩柱，不能据此宣称解决全部圆柱端分类。完整乘积结论另假设基底完整自收缩子存在。已读第1–3页主定理和路线，未逐项验证高余维Carleman估计。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第5页明确披露将未具名LLM作为起草辅助，用于探索Carleman权函数可能选择。可记录探索与起草；声明未指认最终权函数或核心思想由模型提出，不升格ideas，也不推断模型品牌。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02303v1 · PDF 第5页，AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:27:10.851830+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02303v1",
+            "contentHash": "e8d2edc32877779ed39da673f12a7e91c9a3f74ab947f83711ff94f33e6f2e0b",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页明确披露将未具名LLM作为起草辅助，用于探索Carleman权函数可能选择。可记录探索与起草；声明未指认最终权函数或核心思想由模型提出，不升格ideas，也不推断模型品牌。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fbc815622292c06608f0f9a1e2c108bc7946a2221d567fc959e40f1bee87f539"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "直接关联平均曲率流奇点模型与非紧几何刚性，优先读主定理。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $C^m \\subset \\mathbb{R}^{m+n}$ be a regular embedded cone, where $n\\geq 1$, and let $k\\geq 1$. We prove that two smooth, connected, properly embedded self-shrinking ends whose blow-downs converge locally smoothly to the same cylindrical cone $C\\times\\mathbb{R}^k$ away from the axis $\\{0\\}\\times\\mathbb{R}^k$ must coincide. As a consequence, we obtain a rigidity result for complete self-shrinkers asymptotic to cylindrical cones. The proof uses Gaussian decay estimates and a sectorial Carleman estimate to establish backward uniqueness.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

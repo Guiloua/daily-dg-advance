@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03619",
+  "slug": "2611.03619",
+  "latest": {
+    "arxivId": "2611.03619",
+    "metadata": {
+      "title": "Inferring geometric structure from eigenfunction triple products",
+      "authors": [
+        "Josef Greilhuber",
+        "Romain Speciel"
+      ],
+      "abstract": "This article presents two converses to well-known observations regarding products of eigenfunctions of the Laplacian on a closed Riemannian manifold $(M,g)$. First, if $(M,g)$ is real-analytic, the coefficients in the eigenfunction expansion of a product of eigenfunctions decay exponentially. We show that such exponential decay in fact implies that $g$ is real-analytic. Second, it is clear that if $(M,g)$ is flat, there exists an eigenbasis for which the product of any two of its elements lies in the span of at most $N = N(M,g)$ elements. We prove that any manifold with such an eigenbasis must be flat. We then construct metrics on $\\mathbb{S}^7$ that share an eigenbasis with the standard metric yet are not locally homogeneous, from which we deduce that homogeneity cannot be characterized solely in terms of the multiplicative structure of eigenfunctions.",
+      "categories": [
+        "math.SP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.SP",
+      "version": 1,
+      "submittedAt": "2026-11-02T18:51:11Z",
+      "updatedAt": "2026-11-02T18:51:11Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:14.621114+00:00",
+        "contentHash": "e269d541dfae1f29a78d04864546286aa45354ae0046868bd1f5eea6d7206af1"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "从特征函数三重积反推解析性和平坦性",
+      "workSummary": "在闭黎曼流形上，证明特征函数乘积展开系数的指数衰减反过来蕴涵度量实解析；若存在一组特征基，其任意两元素之积都落在至多统一N个基元素张成空间，则流形平坦。又构造与标准S⁷共享特征基但非局部齐性的度量，说明单靠特征函数乘法结构不能刻画齐性。",
+      "techniques": [
+        "特征函数乘积谱展开",
+        "指数衰减与解析正则性",
+        "统一稀疏乘法与平坦刚性",
+        "S⁷共享特征基反例"
+      ],
+      "breakthrough": "给出两种乘积结构的几何逆定理，同时明确齐性识别的障碍。",
+      "limitations": "平坦性要求存在单一基且统一有限N控制所有两两乘积；共享特征基并不等于共享特征值或等谱，不能如此扩大反例。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第3—4页详细区分早期人类进展（含TheoremB部分结果及Proposition3.2）和后期AI贡献。ChatGPT5.6Sol/6Astra被明确归因于Proposition3.1证明、§5证明的主要思想及Theorem2.3反例族，支持ideas及proofs；作者称模型建议证明正确但复杂，自己大幅简化、另找论证并全文撰写，这不等于本轮独立认证模型证明。末期ChatGPT/Claude仅作轻微编辑，记writing且保留全文human-written声明；未把早期人类路线归给AI。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03619v1 · PDF 第3页§1.4 Acknowledgments及第4页续文；第5页Theorem2.3用于辨认反例对象",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:45:53.348168+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03619v1",
+        "contentHash": "b77d9feeafdf4ac1576e9f0f07b190b4aeade50dff1c785dde6b1dfe14079dfd",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3—4页详细区分早期人类进展（含TheoremB部分结果及Proposition3.2）和后期AI贡献。ChatGPT5.6Sol/6Astra被明确归因于Proposition3.1证明、§5证明的主要思想及Theorem2.3反例族，支持ideas及proofs；作者称模型建议证明正确但复杂，自己大幅简化、另找论证并全文撰写，这不等于本轮独立认证模型证明。末期ChatGPT/Claude仅作轻微编辑，记writing且保留全文human-written声明；未把早期人类路线归给AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a0a2e1d15d41581a5c235c255389f027f74b69e2be34bd27ad611b9788640f27"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "谱数据如何编码几何结构的直接逆问题成果。"
+    },
+    "analysisBasis": {
+      "abstract": "This article presents two converses to well-known observations regarding products of eigenfunctions of the Laplacian on a closed Riemannian manifold $(M,g)$. First, if $(M,g)$ is real-analytic, the coefficients in the eigenfunction expansion of a product of eigenfunctions decay exponentially. We show that such exponential decay in fact implies that $g$ is real-analytic. Second, it is clear that if $(M,g)$ is flat, there exists an eigenbasis for which the product of any two of its elements lies in the span of at most $N = N(M,g)$ elements. We prove that any manifold with such an eigenbasis must be flat. We then construct metrics on $\\mathbb{S}^7$ that share an eigenbasis with the standard metric yet are not locally homogeneous, from which we deduce that homogeneity cannot be characterized solely in terms of the multiplicative structure of eigenfunctions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.03619",
+        "metadata": {
+          "title": "Inferring geometric structure from eigenfunction triple products",
+          "authors": [
+            "Josef Greilhuber",
+            "Romain Speciel"
+          ],
+          "abstract": "This article presents two converses to well-known observations regarding products of eigenfunctions of the Laplacian on a closed Riemannian manifold $(M,g)$. First, if $(M,g)$ is real-analytic, the coefficients in the eigenfunction expansion of a product of eigenfunctions decay exponentially. We show that such exponential decay in fact implies that $g$ is real-analytic. Second, it is clear that if $(M,g)$ is flat, there exists an eigenbasis for which the product of any two of its elements lies in the span of at most $N = N(M,g)$ elements. We prove that any manifold with such an eigenbasis must be flat. We then construct metrics on $\\mathbb{S}^7$ that share an eigenbasis with the standard metric yet are not locally homogeneous, from which we deduce that homogeneity cannot be characterized solely in terms of the multiplicative structure of eigenfunctions.",
+          "categories": [
+            "math.SP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.SP",
+          "version": 1,
+          "submittedAt": "2026-11-02T18:51:11Z",
+          "updatedAt": "2026-11-02T18:51:11Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:14.621114+00:00",
+            "contentHash": "e269d541dfae1f29a78d04864546286aa45354ae0046868bd1f5eea6d7206af1"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "从特征函数三重积反推解析性和平坦性",
+          "workSummary": "在闭黎曼流形上，证明特征函数乘积展开系数的指数衰减反过来蕴涵度量实解析；若存在一组特征基，其任意两元素之积都落在至多统一N个基元素张成空间，则流形平坦。又构造与标准S⁷共享特征基但非局部齐性的度量，说明单靠特征函数乘法结构不能刻画齐性。",
+          "techniques": [
+            "特征函数乘积谱展开",
+            "指数衰减与解析正则性",
+            "统一稀疏乘法与平坦刚性",
+            "S⁷共享特征基反例"
+          ],
+          "breakthrough": "给出两种乘积结构的几何逆定理，同时明确齐性识别的障碍。",
+          "limitations": "平坦性要求存在单一基且统一有限N控制所有两两乘积；共享特征基并不等于共享特征值或等谱，不能如此扩大反例。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第3—4页详细区分早期人类进展（含TheoremB部分结果及Proposition3.2）和后期AI贡献。ChatGPT5.6Sol/6Astra被明确归因于Proposition3.1证明、§5证明的主要思想及Theorem2.3反例族，支持ideas及proofs；作者称模型建议证明正确但复杂，自己大幅简化、另找论证并全文撰写，这不等于本轮独立认证模型证明。末期ChatGPT/Claude仅作轻微编辑，记writing且保留全文human-written声明；未把早期人类路线归给AI。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03619v1 · PDF 第3页§1.4 Acknowledgments及第4页续文；第5页Theorem2.3用于辨认反例对象",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:45:53.348168+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03619v1",
+            "contentHash": "b77d9feeafdf4ac1576e9f0f07b190b4aeade50dff1c785dde6b1dfe14079dfd",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3—4页详细区分早期人类进展（含TheoremB部分结果及Proposition3.2）和后期AI贡献。ChatGPT5.6Sol/6Astra被明确归因于Proposition3.1证明、§5证明的主要思想及Theorem2.3反例族，支持ideas及proofs；作者称模型建议证明正确但复杂，自己大幅简化、另找论证并全文撰写，这不等于本轮独立认证模型证明。末期ChatGPT/Claude仅作轻微编辑，记writing且保留全文human-written声明；未把早期人类路线归给AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a0a2e1d15d41581a5c235c255389f027f74b69e2be34bd27ad611b9788640f27"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "谱数据如何编码几何结构的直接逆问题成果。"
+        },
+        "analysisBasis": {
+          "abstract": "This article presents two converses to well-known observations regarding products of eigenfunctions of the Laplacian on a closed Riemannian manifold $(M,g)$. First, if $(M,g)$ is real-analytic, the coefficients in the eigenfunction expansion of a product of eigenfunctions decay exponentially. We show that such exponential decay in fact implies that $g$ is real-analytic. Second, it is clear that if $(M,g)$ is flat, there exists an eigenbasis for which the product of any two of its elements lies in the span of at most $N = N(M,g)$ elements. We prove that any manifold with such an eigenbasis must be flat. We then construct metrics on $\\mathbb{S}^7$ that share an eigenbasis with the standard metric yet are not locally homogeneous, from which we deduce that homogeneity cannot be characterized solely in terms of the multiplicative structure of eigenfunctions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

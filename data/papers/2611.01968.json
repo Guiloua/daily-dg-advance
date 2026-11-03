@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01968",
+  "slug": "2611.01968",
+  "latest": {
+    "arxivId": "2611.01968",
+    "metadata": {
+      "title": "Calabi flow on polarized Kähler surfaces",
+      "authors": [
+        "Haozhao Li",
+        "Bing Wang",
+        "Kai Zheng"
+      ],
+      "abstract": "We study global smooth Calabi flows on polarized Kähler surfaces $(M,L)$, assuming uniformly bounded Sobolev constants and the algebraic conditions $\\chi(\\mathcal O_M)=1$ and $c_1(M)\\cdot c_1(L)>0$. Using the orbifold compactness theorem, we prove a uniform Bergman estimate, construct a normal test configuration for each geometric limit, and establish uniqueness of the extremal orbifold limit up to polarized holomorphic isometry. K-polystability then identifies the limit with the original surface and gives a constant scalar curvature Kähler metric. We also prove finite-group equivariant versions of these results. Independently of the flow, we obtain a uniform Bergman lower bound for polarized cscK surfaces with bounded volume and Sobolev constants and $|S|\\leq1$. We illustrate the hypotheses with nonstationary flows near a product cscK metric on $\\mathbb P^1\\times\\mathbb P^1$ and near Calabi's non-cscK extremal metric on the first Hirzebruch surface. Their controlled-cone energy inequalities follow from elementary calculations and continuity.",
+      "categories": [
+        "math.DG",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-01T15:05:57Z",
+      "updatedAt": "2026-11-01T15:05:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.01968v1",
+        "observedAt": "2026-11-03T11:26:58.694340+00:00",
+        "contentHash": "d863a93d7ec3c2ede86fd75df5bb013d622fc407a5b9892aca917d82a37a301c"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.334962+00:00",
+        "contentHash": "f3b11bea5fce77711ae4b0928e1908cbeb20999d01f7ef2225af94914aee6f6e"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "极值轨形极限唯一性与稳定性识别",
+      "workSummary": "对极化Kähler曲面(M,L)，假设光滑Calabi流全局存在、Sobolev常数统一有界，且χ(O_M)=1、c₁(M)·c₁(L)>0。作者证明固定幂次的统一Bergman上下界，并将每个几何极限实现为正规相对丰沛测试构形的中心纤维；同一条流的极值轨形极限在极化全纯等距意义下唯一，整流在相应商几何拓扑与GH意义收敛。",
+      "techniques": [
+        "完整截面空间的共同幂次嵌入、Hilbert多项式及Bergman下界",
+        "用Gram矩阵的有限维渐近动力与对易退化构造测试构形",
+        "结合固定轨形极值唯一性、约化稳定子与Donaldson–Futaki符号识别极限"
+      ],
+      "breakthrough": "在前篇子列轨形紧性的基础上，以附加极化和数值条件取得固定流的几何极限唯一性。K-半稳定使极限为cscK轨形；K-多稳定进一步使极限光滑并与原极化曲面同构，从而得到原类中的cscK度量。",
+      "limitations": "须同时保留全局流、统一Sobolev界及两条数值条件，不能表述为仅凭K-多稳定就已证明任意Calabi流收敛。K-半稳定仍允许奇异轨形极限；唯一性针对同一固定流，不涉及不同初始度量、泡树或测试构形唯一性。正则区拉回映射可依赖子列，不是固定坐标下的全局光滑收敛。已读第1–5页主定理和路线，未独立复核45页证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确ChatGPT作为论文发展过程的辅助工具，未披露具体辅助方式或核心论证归因；正面使用成立，但不从一般development措辞推断ideas、proofs或其他细分用途。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01968v1 · PDF第5页 On the usage of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:26:58.694340+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01968v1",
+        "contentHash": "d863a93d7ec3c2ede86fd75df5bb013d622fc407a5b9892aca917d82a37a301c",
+        "pages": 45,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确ChatGPT作为论文发展过程的辅助工具，未披露具体辅助方式或核心论证归因；正面使用成立，但不从一般development措辞推断ideas、proofs或其他细分用途。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "db811fa4e7570ff0e99daba6eb837d7384992b264c3fff01b266041ebebebd50"
+      },
+      "priorityScore": 99,
+      "priorityReason": "Calabi流、代数稳定性和奇异极限的核心交叉，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "We study global smooth Calabi flows on polarized Kähler surfaces $(M,L)$, assuming uniformly bounded Sobolev constants and the algebraic conditions $\\chi(\\mathcal O_M)=1$ and $c_1(M)\\cdot c_1(L)>0$. Using the orbifold compactness theorem, we prove a uniform Bergman estimate, construct a normal test configuration for each geometric limit, and establish uniqueness of the extremal orbifold limit up to polarized holomorphic isometry. K-polystability then identifies the limit with the original surface and gives a constant scalar curvature Kähler metric. We also prove finite-group equivariant versions of these results. Independently of the flow, we obtain a uniform Bergman lower bound for polarized cscK surfaces with bounded volume and Sobolev constants and $|S|\\leq1$. We illustrate the hypotheses with nonstationary flows near a product cscK metric on $\\mathbb P^1\\times\\mathbb P^1$ and near Calabi's non-cscK extremal metric on the first Hirzebruch surface. Their controlled-cone energy inequalities follow from elementary calculations and continuity.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01968",
+        "metadata": {
+          "title": "Calabi flow on polarized Kähler surfaces",
+          "authors": [
+            "Haozhao Li",
+            "Bing Wang",
+            "Kai Zheng"
+          ],
+          "abstract": "We study global smooth Calabi flows on polarized Kähler surfaces $(M,L)$, assuming uniformly bounded Sobolev constants and the algebraic conditions $\\chi(\\mathcal O_M)=1$ and $c_1(M)\\cdot c_1(L)>0$. Using the orbifold compactness theorem, we prove a uniform Bergman estimate, construct a normal test configuration for each geometric limit, and establish uniqueness of the extremal orbifold limit up to polarized holomorphic isometry. K-polystability then identifies the limit with the original surface and gives a constant scalar curvature Kähler metric. We also prove finite-group equivariant versions of these results. Independently of the flow, we obtain a uniform Bergman lower bound for polarized cscK surfaces with bounded volume and Sobolev constants and $|S|\\leq1$. We illustrate the hypotheses with nonstationary flows near a product cscK metric on $\\mathbb P^1\\times\\mathbb P^1$ and near Calabi's non-cscK extremal metric on the first Hirzebruch surface. Their controlled-cone energy inequalities follow from elementary calculations and continuity.",
+          "categories": [
+            "math.DG",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-01T15:05:57Z",
+          "updatedAt": "2026-11-01T15:05:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.01968v1",
+            "observedAt": "2026-11-03T11:26:58.694340+00:00",
+            "contentHash": "d863a93d7ec3c2ede86fd75df5bb013d622fc407a5b9892aca917d82a37a301c"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.334962+00:00",
+            "contentHash": "f3b11bea5fce77711ae4b0928e1908cbeb20999d01f7ef2225af94914aee6f6e"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "极值轨形极限唯一性与稳定性识别",
+          "workSummary": "对极化Kähler曲面(M,L)，假设光滑Calabi流全局存在、Sobolev常数统一有界，且χ(O_M)=1、c₁(M)·c₁(L)>0。作者证明固定幂次的统一Bergman上下界，并将每个几何极限实现为正规相对丰沛测试构形的中心纤维；同一条流的极值轨形极限在极化全纯等距意义下唯一，整流在相应商几何拓扑与GH意义收敛。",
+          "techniques": [
+            "完整截面空间的共同幂次嵌入、Hilbert多项式及Bergman下界",
+            "用Gram矩阵的有限维渐近动力与对易退化构造测试构形",
+            "结合固定轨形极值唯一性、约化稳定子与Donaldson–Futaki符号识别极限"
+          ],
+          "breakthrough": "在前篇子列轨形紧性的基础上，以附加极化和数值条件取得固定流的几何极限唯一性。K-半稳定使极限为cscK轨形；K-多稳定进一步使极限光滑并与原极化曲面同构，从而得到原类中的cscK度量。",
+          "limitations": "须同时保留全局流、统一Sobolev界及两条数值条件，不能表述为仅凭K-多稳定就已证明任意Calabi流收敛。K-半稳定仍允许奇异轨形极限；唯一性针对同一固定流，不涉及不同初始度量、泡树或测试构形唯一性。正则区拉回映射可依赖子列，不是固定坐标下的全局光滑收敛。已读第1–5页主定理和路线，未独立复核45页证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确ChatGPT作为论文发展过程的辅助工具，未披露具体辅助方式或核心论证归因；正面使用成立，但不从一般development措辞推断ideas、proofs或其他细分用途。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01968v1 · PDF第5页 On the usage of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:26:58.694340+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01968v1",
+            "contentHash": "d863a93d7ec3c2ede86fd75df5bb013d622fc407a5b9892aca917d82a37a301c",
+            "pages": 45,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确ChatGPT作为论文发展过程的辅助工具，未披露具体辅助方式或核心论证归因；正面使用成立，但不从一般development措辞推断ideas、proofs或其他细分用途。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "db811fa4e7570ff0e99daba6eb837d7384992b264c3fff01b266041ebebebd50"
+          },
+          "priorityScore": 99,
+          "priorityReason": "Calabi流、代数稳定性和奇异极限的核心交叉，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "We study global smooth Calabi flows on polarized Kähler surfaces $(M,L)$, assuming uniformly bounded Sobolev constants and the algebraic conditions $\\chi(\\mathcal O_M)=1$ and $c_1(M)\\cdot c_1(L)>0$. Using the orbifold compactness theorem, we prove a uniform Bergman estimate, construct a normal test configuration for each geometric limit, and establish uniqueness of the extremal orbifold limit up to polarized holomorphic isometry. K-polystability then identifies the limit with the original surface and gives a constant scalar curvature Kähler metric. We also prove finite-group equivariant versions of these results. Independently of the flow, we obtain a uniform Bergman lower bound for polarized cscK surfaces with bounded volume and Sobolev constants and $|S|\\leq1$. We illustrate the hypotheses with nonstationary flows near a product cscK metric on $\\mathbb P^1\\times\\mathbb P^1$ and near Calabi's non-cscK extremal metric on the first Hirzebruch surface. Their controlled-cone energy inequalities follow from elementary calculations and continuity.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

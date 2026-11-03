@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01906",
+  "slug": "2611.01906",
+  "latest": {
+    "arxivId": "2611.01906",
+    "metadata": {
+      "title": "Improved lower bounds for the kissing number in dimensions 49 to 61",
+      "authors": [
+        "Dmitry Kamenetsky"
+      ],
+      "abstract": "We give explicit kissing configurations in R^d for every d = 49, ..., 61. The lower bound is improved over the best previously published value in all thirteen dimensions, by margins from 232 to 159,220 points and by 506,461 points in total. The configurations are obtained from the antipodal block lift of Yang et al. applied to the 52,416,000-point minimal shell of the extremal even unimodular lattice P_48p, using a class of 7,193 minimal lines and, in each dimension, a kissing configuration of R^k (k <= 15) with the largest available number of antipodal pairs. Two ingredients are new. The published class of 7,077 lines is grown to 7,193 by local search in three stages, as a sequence of exchanges between candidate lines and class lines; and the point count, which equals 52,416,000 + 2S + 2t with t the number of antipodal pairs and S the size of the union of t isometric images of the class, is maximised as a maximum-coverage problem by greedy search with iterated local search over pools of 4,000 automorphic images, reaching 92-100% of the trivial bound 7,193t. All results are verified in exact integer arithmetic, and the certificates are distributed with the code. Code and data: this https URL",
+      "categories": [
+        "math.MG",
+        "cs.IT",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "9 pages, 4 tables, 1 figure. Code, data and exact certificates: this https URL",
+      "version": 1,
+      "submittedAt": "2026-11-01T13:49:22Z",
+      "updatedAt": "2026-11-01T13:49:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.334045+00:00",
+        "contentHash": "8491af8b11cad015ad9b3251d4ff43f0fcaa2ecef244d0791b28669610f8896b"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "显式构造与精确证书下界",
+      "workSummary": "在49至61维全部十三个维数给显式接吻配置，超过此前发表下界232至159220点、合计506461点。以48维极端偶幺模格P_48p的52416000点最小壳作反向成对块提升，将最小线类从7077经局部搜索扩充至7193，再将t个等距像并集最大化为最大覆盖问题；点数为52416000+2S+2t，覆盖达平凡界7193t的92–100%。结果以精确整数运算验证并提供证书。",
+      "techniques": [
+        "格最小壳与反向成对块提升",
+        "交换式局部搜索",
+        "贪心最大覆盖及迭代局部搜索",
+        "精确整数证书"
+      ],
+      "breakthrough": "在一整段维数改进已知构造下界，并使数值搜索产物可用精确证书核验。",
+      "limitations": "只有下界而非接吻数精确值；92–100%相对于所述覆盖平凡界，不是距全局最优接吻数的比例。摘要所述证书尚未本地运行核验。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Contribution statement明确作者提出问题、总体方法与具体实验并审查结果；Arena.ai Agent Mode编写并执行研究代码、搜索和数值实验，包括最大覆盖、两类线搜索、精确验证程序、已发表下界比较及稿件准备。是实际执行披露，不只是模型访问资助；支持计算、验证与文字，不把作者给定总体路线标成AI ideas。作者另检查验证代码与证书，不混同双方核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01906v1 · PDF第9页Contribution statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:38:12.493944+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01906v1",
+        "contentHash": "c86c4ab23b1a3d13b6f0e30cb801588f9c4fc2580d2b153e978235fad1a3670e",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Contribution statement明确作者提出问题、总体方法与具体实验并审查结果；Arena.ai Agent Mode编写并执行研究代码、搜索和数值实验，包括最大覆盖、两类线搜索、精确验证程序、已发表下界比较及稿件准备。是实际执行披露，不只是模型访问资助；支持计算、验证与文字，不把作者给定总体路线标成AI ideas。作者另检查验证代码与证书，不混同双方核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "de727030fc4dde51113ac63c1f11a8631ddb644b2d6003f2bac7046ed1e6cbb5"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 56,
+      "priorityReason": "离散几何与计算构造，和连续几何分析关系有限。"
+    },
+    "analysisBasis": {
+      "abstract": "We give explicit kissing configurations in R^d for every d = 49, ..., 61. The lower bound is improved over the best previously published value in all thirteen dimensions, by margins from 232 to 159,220 points and by 506,461 points in total. The configurations are obtained from the antipodal block lift of Yang et al. applied to the 52,416,000-point minimal shell of the extremal even unimodular lattice P_48p, using a class of 7,193 minimal lines and, in each dimension, a kissing configuration of R^k (k <= 15) with the largest available number of antipodal pairs. Two ingredients are new. The published class of 7,077 lines is grown to 7,193 by local search in three stages, as a sequence of exchanges between candidate lines and class lines; and the point count, which equals 52,416,000 + 2S + 2t with t the number of antipodal pairs and S the size of the union of t isometric images of the class, is maximised as a maximum-coverage problem by greedy search with iterated local search over pools of 4,000 automorphic images, reaching 92-100% of the trivial bound 7,193t. All results are verified in exact integer arithmetic, and the certificates are distributed with the code. Code and data: this https URL",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01906",
+        "metadata": {
+          "title": "Improved lower bounds for the kissing number in dimensions 49 to 61",
+          "authors": [
+            "Dmitry Kamenetsky"
+          ],
+          "abstract": "We give explicit kissing configurations in R^d for every d = 49, ..., 61. The lower bound is improved over the best previously published value in all thirteen dimensions, by margins from 232 to 159,220 points and by 506,461 points in total. The configurations are obtained from the antipodal block lift of Yang et al. applied to the 52,416,000-point minimal shell of the extremal even unimodular lattice P_48p, using a class of 7,193 minimal lines and, in each dimension, a kissing configuration of R^k (k <= 15) with the largest available number of antipodal pairs. Two ingredients are new. The published class of 7,077 lines is grown to 7,193 by local search in three stages, as a sequence of exchanges between candidate lines and class lines; and the point count, which equals 52,416,000 + 2S + 2t with t the number of antipodal pairs and S the size of the union of t isometric images of the class, is maximised as a maximum-coverage problem by greedy search with iterated local search over pools of 4,000 automorphic images, reaching 92-100% of the trivial bound 7,193t. All results are verified in exact integer arithmetic, and the certificates are distributed with the code. Code and data: this https URL",
+          "categories": [
+            "math.MG",
+            "cs.IT",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "9 pages, 4 tables, 1 figure. Code, data and exact certificates: this https URL",
+          "version": 1,
+          "submittedAt": "2026-11-01T13:49:22Z",
+          "updatedAt": "2026-11-01T13:49:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.334045+00:00",
+            "contentHash": "8491af8b11cad015ad9b3251d4ff43f0fcaa2ecef244d0791b28669610f8896b"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "显式构造与精确证书下界",
+          "workSummary": "在49至61维全部十三个维数给显式接吻配置，超过此前发表下界232至159220点、合计506461点。以48维极端偶幺模格P_48p的52416000点最小壳作反向成对块提升，将最小线类从7077经局部搜索扩充至7193，再将t个等距像并集最大化为最大覆盖问题；点数为52416000+2S+2t，覆盖达平凡界7193t的92–100%。结果以精确整数运算验证并提供证书。",
+          "techniques": [
+            "格最小壳与反向成对块提升",
+            "交换式局部搜索",
+            "贪心最大覆盖及迭代局部搜索",
+            "精确整数证书"
+          ],
+          "breakthrough": "在一整段维数改进已知构造下界，并使数值搜索产物可用精确证书核验。",
+          "limitations": "只有下界而非接吻数精确值；92–100%相对于所述覆盖平凡界，不是距全局最优接吻数的比例。摘要所述证书尚未本地运行核验。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Contribution statement明确作者提出问题、总体方法与具体实验并审查结果；Arena.ai Agent Mode编写并执行研究代码、搜索和数值实验，包括最大覆盖、两类线搜索、精确验证程序、已发表下界比较及稿件准备。是实际执行披露，不只是模型访问资助；支持计算、验证与文字，不把作者给定总体路线标成AI ideas。作者另检查验证代码与证书，不混同双方核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01906v1 · PDF第9页Contribution statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:38:12.493944+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01906v1",
+            "contentHash": "c86c4ab23b1a3d13b6f0e30cb801588f9c4fc2580d2b153e978235fad1a3670e",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Contribution statement明确作者提出问题、总体方法与具体实验并审查结果；Arena.ai Agent Mode编写并执行研究代码、搜索和数值实验，包括最大覆盖、两类线搜索、精确验证程序、已发表下界比较及稿件准备。是实际执行披露，不只是模型访问资助；支持计算、验证与文字，不把作者给定总体路线标成AI ideas。作者另检查验证代码与证书，不混同双方核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "de727030fc4dde51113ac63c1f11a8631ddb644b2d6003f2bac7046ed1e6cbb5"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 56,
+          "priorityReason": "离散几何与计算构造，和连续几何分析关系有限。"
+        },
+        "analysisBasis": {
+          "abstract": "We give explicit kissing configurations in R^d for every d = 49, ..., 61. The lower bound is improved over the best previously published value in all thirteen dimensions, by margins from 232 to 159,220 points and by 506,461 points in total. The configurations are obtained from the antipodal block lift of Yang et al. applied to the 52,416,000-point minimal shell of the extremal even unimodular lattice P_48p, using a class of 7,193 minimal lines and, in each dimension, a kissing configuration of R^k (k <= 15) with the largest available number of antipodal pairs. Two ingredients are new. The published class of 7,077 lines is grown to 7,193 by local search in three stages, as a sequence of exchanges between candidate lines and class lines; and the point count, which equals 52,416,000 + 2S + 2t with t the number of antipodal pairs and S the size of the union of t isometric images of the class, is maximised as a maximum-coverage problem by greedy search with iterated local search over pools of 4,000 automorphic images, reaching 92-100% of the trivial bound 7,193t. All results are verified in exact integer arithmetic, and the certificates are distributed with the code. Code and data: this https URL",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

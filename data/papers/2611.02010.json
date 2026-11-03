@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02010",
+  "slug": "2611.02010",
+  "latest": {
+    "arxivId": "2611.02010",
+    "metadata": {
+      "title": "Volume Doubling and Geometric Inequalities on Graphs with Bakry-Émery Curvature",
+      "authors": [
+        "Yanlong Ding",
+        "Shiping Liu",
+        "Chiyu Zhou"
+      ],
+      "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $\\epsilon>0$ and whose reversible measure satisfies $m_-\\le m(x)\\le\\kappa m_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we further prove volume doubling property: let $K_-:=\\max\\{-K,0\\}$ $$ \\mathrm{Vol}(B(o,2R))\\le C_0\\exp\\!\\bigl(C_1\\sqrt{K_-}\\,R\\bigr) \\mathrm{Vol}(B(o,R)),\\qquad R>0, $$ where $C_0,C_1$ depend only on $\\epsilon,\\kappa$. If $d$ is the maximum combinatorial degree of the support graph, we further prove under $\\mathrm{CD}(0,\\infty)$ the sharp volume growth bound $\\mathrm{Vol}(B(o,R))\\le m_-CR^{\\lfloor d/2\\rfloor}$ for all $o$ and $R\\geq 1$.",
+      "categories": [
+        "math.PR",
+        "math.CO",
+        "math.DG"
+      ],
+      "primaryCategory": "math.PR",
+      "comment": "40 pages, 2 figures",
+      "version": 1,
+      "submittedAt": "2026-11-01T15:52:27Z",
+      "updatedAt": "2026-11-01T15:52:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:50.335618+00:00",
+        "contentHash": "18157645e2700074db51eb06c5d84b8eb4e562e4ad107dfc6b8e491515f14de0"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "图曲率下的Harnack与体积增长",
+      "workSummary": "V至多可数，P不可约、对正测度m可逆、行和1，允许自环p(x,x)>0；L=P−I，连续时间半群P_t=e^{tL}。所有非零非对角p(x,y)≥ε>0，m_-≤m(x)≤κm_-，因此支撑简单图的最大组合度d≤⌊ε^{-1}⌋，dist为组合距离、Vol为m加权计数。CD(K,∞)指逐点Γ₂(f)≥KΓ(f)。Theorem1.3在全t>0、x,y上给相对熵D(p_t(x,·)||p_t(y,·))≤C_LH dist(x,y)²/I_K(t)，I_K=(e^{2Kt}−1)/(2K)、K=0时I₀=t，C_LH仅依ε；等价于有界且inf f>0的Wang对数Harnack。Theorem1.1给R>0的Vol B(o,2R)≤C₀exp(C₁√K_-R)Vol B(o,R)，常数仅依ε,κ。CD(0,∞)时Theorem1.2给所有R≥1的Vol B(o,R)≤m_-C(ε,κ)R^{⌊d/2⌋}，有限及无限图均可。指数尖锐：偶度2n取Z^n、奇度2n+1取Z^n□K₂的对称加权可逆随机游走。",
+      "techniques": [
+        "Poisson均匀化、路径插入和离散指数余项给对数Harnack",
+        "修改热方程u_s=Lu+Γu及时间加权平均控制热流空间散布",
+        "相对熵传递为局部倍增、Poincaré和抛物Harnack",
+        "正调和Liouville与在根点归零的恒Γ调和函数空间",
+        "对易相位扭曲算子给谱嵌入的有限对称增量，迫每维至少两邻点",
+        "恒Γ空间维数界及局部紧性投影压低热核熵的log t系数"
+      ],
+      "breakthrough": "在经典无限维Bakry–Émery条件下，给任意曲率下界的带曲率尺度倍增，并在非负曲率时把一般多项式增长改进到由最大组合度决定的尖锐⌊d/2⌋指数；路线不依赖图上Li–Yau估计。",
+      "limitations": "已读PDF第1–7、16–17、26–29、35页的假设、主定理、倍增步骤、恒Γ维数及尖锐例子，渲染第3页核对I_K、指数和常数依赖；未逐步独立核验整篇证明，尤其熵修正、局部正则性及投影估计的所有闭合步骤。不能去掉概率一致下界或可逆测度两侧比较；这是L=P−I的归一化链条件，不直接等同任意非归一化图Laplacian。K<0只给随R指数修正倍增；⌊d/2⌋是最优增长指数而非每图都达到该阶或C最佳。恒Γ调和函数维数界先规定f(o)=0以去掉常数方向，不能说全部含常数空间维数仍≤⌊d/2⌋。本文未给所有等号图分类，不能把Z^n及Z^n□K₂例子当作完整刚性分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第4页明确使用生成式AI探索和细化熵方法、热半群技巧及调和函数论证；可记探索和数学论证辅助，但未把某个具体核心构造/路线首次归给模型，不标ideas。作者独立验证所有论证与计算是作者责任说明，不转成AI verification/computation。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02010v1 · PDF第4页Use of artificial intelligence",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:41:00.112700+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02010v1",
+        "contentHash": "1707e30e50e55f0ea34853d2d1209e3c421ec3871340a0a01c35680d20634330",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页明确使用生成式AI探索和细化熵方法、热半群技巧及调和函数论证；可记探索和数学论证辅助，但未把某个具体核心构造/路线首次归给模型，不标ideas。作者独立验证所有论证与计算是作者责任说明，不转成AI verification/computation。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b9892976cc56640785cfe20f2509fd39aa3dd79c2d6ff47ff5697e42560ec6c9"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "离散曲率比较、热核与体积增长直接符合重点。"
+    },
+    "analysisBasis": {
+      "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $\\epsilon>0$ and whose reversible measure satisfies $m_-\\le m(x)\\le\\kappa m_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we further prove volume doubling property: let $K_-:=\\max\\{-K,0\\}$ $$ \\mathrm{Vol}(B(o,2R))\\le C_0\\exp\\!\\bigl(C_1\\sqrt{K_-}\\,R\\bigr) \\mathrm{Vol}(B(o,R)),\\qquad R>0, $$ where $C_0,C_1$ depend only on $\\epsilon,\\kappa$. If $d$ is the maximum combinatorial degree of the support graph, we further prove under $\\mathrm{CD}(0,\\infty)$ the sharp volume growth bound $\\mathrm{Vol}(B(o,R))\\le m_-CR^{\\lfloor d/2\\rfloor}$ for all $o$ and $R\\geq 1$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02010",
+        "metadata": {
+          "title": "Volume Doubling and Geometric Inequalities on Graphs with Bakry-Émery Curvature",
+          "authors": [
+            "Yanlong Ding",
+            "Shiping Liu",
+            "Chiyu Zhou"
+          ],
+          "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $\\epsilon>0$ and whose reversible measure satisfies $m_-\\le m(x)\\le\\kappa m_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we further prove volume doubling property: let $K_-:=\\max\\{-K,0\\}$ $$ \\mathrm{Vol}(B(o,2R))\\le C_0\\exp\\!\\bigl(C_1\\sqrt{K_-}\\,R\\bigr) \\mathrm{Vol}(B(o,R)),\\qquad R>0, $$ where $C_0,C_1$ depend only on $\\epsilon,\\kappa$. If $d$ is the maximum combinatorial degree of the support graph, we further prove under $\\mathrm{CD}(0,\\infty)$ the sharp volume growth bound $\\mathrm{Vol}(B(o,R))\\le m_-CR^{\\lfloor d/2\\rfloor}$ for all $o$ and $R\\geq 1$.",
+          "categories": [
+            "math.PR",
+            "math.CO",
+            "math.DG"
+          ],
+          "primaryCategory": "math.PR",
+          "comment": "40 pages, 2 figures",
+          "version": 1,
+          "submittedAt": "2026-11-01T15:52:27Z",
+          "updatedAt": "2026-11-01T15:52:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:50.335618+00:00",
+            "contentHash": "18157645e2700074db51eb06c5d84b8eb4e562e4ad107dfc6b8e491515f14de0"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "图曲率下的Harnack与体积增长",
+          "workSummary": "V至多可数，P不可约、对正测度m可逆、行和1，允许自环p(x,x)>0；L=P−I，连续时间半群P_t=e^{tL}。所有非零非对角p(x,y)≥ε>0，m_-≤m(x)≤κm_-，因此支撑简单图的最大组合度d≤⌊ε^{-1}⌋，dist为组合距离、Vol为m加权计数。CD(K,∞)指逐点Γ₂(f)≥KΓ(f)。Theorem1.3在全t>0、x,y上给相对熵D(p_t(x,·)||p_t(y,·))≤C_LH dist(x,y)²/I_K(t)，I_K=(e^{2Kt}−1)/(2K)、K=0时I₀=t，C_LH仅依ε；等价于有界且inf f>0的Wang对数Harnack。Theorem1.1给R>0的Vol B(o,2R)≤C₀exp(C₁√K_-R)Vol B(o,R)，常数仅依ε,κ。CD(0,∞)时Theorem1.2给所有R≥1的Vol B(o,R)≤m_-C(ε,κ)R^{⌊d/2⌋}，有限及无限图均可。指数尖锐：偶度2n取Z^n、奇度2n+1取Z^n□K₂的对称加权可逆随机游走。",
+          "techniques": [
+            "Poisson均匀化、路径插入和离散指数余项给对数Harnack",
+            "修改热方程u_s=Lu+Γu及时间加权平均控制热流空间散布",
+            "相对熵传递为局部倍增、Poincaré和抛物Harnack",
+            "正调和Liouville与在根点归零的恒Γ调和函数空间",
+            "对易相位扭曲算子给谱嵌入的有限对称增量，迫每维至少两邻点",
+            "恒Γ空间维数界及局部紧性投影压低热核熵的log t系数"
+          ],
+          "breakthrough": "在经典无限维Bakry–Émery条件下，给任意曲率下界的带曲率尺度倍增，并在非负曲率时把一般多项式增长改进到由最大组合度决定的尖锐⌊d/2⌋指数；路线不依赖图上Li–Yau估计。",
+          "limitations": "已读PDF第1–7、16–17、26–29、35页的假设、主定理、倍增步骤、恒Γ维数及尖锐例子，渲染第3页核对I_K、指数和常数依赖；未逐步独立核验整篇证明，尤其熵修正、局部正则性及投影估计的所有闭合步骤。不能去掉概率一致下界或可逆测度两侧比较；这是L=P−I的归一化链条件，不直接等同任意非归一化图Laplacian。K<0只给随R指数修正倍增；⌊d/2⌋是最优增长指数而非每图都达到该阶或C最佳。恒Γ调和函数维数界先规定f(o)=0以去掉常数方向，不能说全部含常数空间维数仍≤⌊d/2⌋。本文未给所有等号图分类，不能把Z^n及Z^n□K₂例子当作完整刚性分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第4页明确使用生成式AI探索和细化熵方法、热半群技巧及调和函数论证；可记探索和数学论证辅助，但未把某个具体核心构造/路线首次归给模型，不标ideas。作者独立验证所有论证与计算是作者责任说明，不转成AI verification/computation。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02010v1 · PDF第4页Use of artificial intelligence",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:41:00.112700+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02010v1",
+            "contentHash": "1707e30e50e55f0ea34853d2d1209e3c421ec3871340a0a01c35680d20634330",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页明确使用生成式AI探索和细化熵方法、热半群技巧及调和函数论证；可记探索和数学论证辅助，但未把某个具体核心构造/路线首次归给模型，不标ideas。作者独立验证所有论证与计算是作者责任说明，不转成AI verification/computation。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b9892976cc56640785cfe20f2509fd39aa3dd79c2d6ff47ff5697e42560ec6c9"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "离散曲率比较、热核与体积增长直接符合重点。"
+        },
+        "analysisBasis": {
+          "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $\\epsilon>0$ and whose reversible measure satisfies $m_-\\le m(x)\\le\\kappa m_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we further prove volume doubling property: let $K_-:=\\max\\{-K,0\\}$ $$ \\mathrm{Vol}(B(o,2R))\\le C_0\\exp\\!\\bigl(C_1\\sqrt{K_-}\\,R\\bigr) \\mathrm{Vol}(B(o,R)),\\qquad R>0, $$ where $C_0,C_1$ depend only on $\\epsilon,\\kappa$. If $d$ is the maximum combinatorial degree of the support graph, we further prove under $\\mathrm{CD}(0,\\infty)$ the sharp volume growth bound $\\mathrm{Vol}(B(o,R))\\le m_-CR^{\\lfloor d/2\\rfloor}$ for all $o$ and $R\\geq 1$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02718",
+  "slug": "2611.02718",
+  "latest": {
+    "arxivId": "2611.02718",
+    "metadata": {
+      "title": "A counterexample to Lee's conjecture on pseudo-Einstein structures",
+      "authors": [
+        "Dong Yuxin",
+        "Wang Haohao"
+      ],
+      "abstract": "In 1988, J.~M.~Lee conjectured that a compact strictly pseudoconvex CR manifold admits a pseudo-Einstein contact form if and only if the real first Chern class of its holomorphic tangent bundle vanishes. The necessity of this condition was proved by Lee. We show that the condition is not sufficient: in every real dimension $2n+1\\ge 5$ there is a compact connected strictly pseudoconvex CR manifold $M$ with $c_1(\\Tone)=0$ in $H^2(M;\\Z)$ which admits no pseudo-Einstein contact form. The examples are boundaries of small strictly pseudoconvex neighborhoods of a section $D\\cong B$ with negative normal bundle in a $\\PP^1$-bundle $\\PP(E_e)\\to B$, where $B=C^n$ is a power of a curve of genus two and $E_e$ is a non-split extension of $\\cO_B$ by an ample line bundle $L$ with $K_B\\cong L^2$. More generally, if $K_B\\cong L^m$, such a boundary admits a pseudo-Einstein contact form if and only if $(m-1)e=0$, where $e\\in H^1(B,L)$ is the extension class; the obstruction is detected on the first infinitesimal neighborhood of $D$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-02T08:11:08Z",
+      "updatedAt": "2026-11-02T08:11:08Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:03.033470+00:00",
+        "contentHash": "742c996d31a63ff22ae60fad8bc0632fe40f6a800af6a418ba3529cc22ad9eeb"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "Lee伪Einstein猜想的高维反例及扩张类判据",
+      "workSummary": "Theorem A在每个实维2n+1≥5给出紧连通、可定向的严格拟凸可积CR流形，整系数c1(T^(1,0)M)=0却无pseudo-Einstein接触形式；伪Einstein指Ricci为其迹除以n乘Levi型，不要求标量曲率常数。Theorem B/6.1更一般地取光滑连通射影底B、dim_C B=n≥2、ample线丛L及扩张0→L→E_e→O_B→0，且K_B≅L^m；P(E_e)取一维商惯例，负法丛截面D的充分小严格拟凸邻域边界M_ε存在伪Einstein形式，当且仅当(m−1)e=0，即m=1或扩张分裂。",
+      "techniques": [
+        "CR canonical丛的边界collar酉平坦必要条件",
+        "商型P¹丛与一阶无穷小邻域的扩张类",
+        "Remmert收缩至正常Stein空间及亚纯Hartogs延拓",
+        "Gysin序列的酉holonomy下降",
+        "genus2 theta特征线丛的Künneth计算"
+      ],
+      "breakthrough": "令B=C^n，C为genus2曲线、p为Weierstrass点、S=O_C(p)，取L=S外积，得K_B=L²及H¹(B,L)≅C^n；非零e使边界整Chern类为零而collar canonical丛不可能酉平坦。Theorem C还给固定光滑流形的CR结构光滑变形：中心可解而任意充分小非零参数不可解。",
+      "limitations": "已读PDF第1—14页相关主定理、构造和障碍链条，渲染第2页核对扩张方向及(m−1)e公式；未独立逐证认证全文或所引Hartogs/Lee定理。反例限n≥2，不解决三维，PDF14页明确三维需替换Lee局部理论。充要判据只适用于列明的P¹丛小邻域边界；自然填充含紧除子D而非Stein，不能当作Stein域边界反例。变形族改变环境复结构，不反驳固定环境内超曲面稳定性。第13—14页明确仍未决定较弱Q-flat猜想；第13页把障碍类与(m−1)α_U直接识别仍仅作期望。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:32:50.037090+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02718v1",
+        "contentHash": "ada233cb82e22097a7470f7226396aa7cdeb3a75415065ab80c940ac6b902339",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共15页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8b88e92c8aae3ed1b2f53a244829ecc18e07dc8885d93f473949db4319df99c0"
+      },
+      "priorityScore": 97,
+      "priorityReason": "对长期CR存在猜想给出强反例，最高优先正文核验。"
+    },
+    "analysisBasis": {
+      "abstract": "In 1988, J.~M.~Lee conjectured that a compact strictly pseudoconvex CR manifold admits a pseudo-Einstein contact form if and only if the real first Chern class of its holomorphic tangent bundle vanishes. The necessity of this condition was proved by Lee. We show that the condition is not sufficient: in every real dimension $2n+1\\ge 5$ there is a compact connected strictly pseudoconvex CR manifold $M$ with $c_1(\\Tone)=0$ in $H^2(M;\\Z)$ which admits no pseudo-Einstein contact form. The examples are boundaries of small strictly pseudoconvex neighborhoods of a section $D\\cong B$ with negative normal bundle in a $\\PP^1$-bundle $\\PP(E_e)\\to B$, where $B=C^n$ is a power of a curve of genus two and $E_e$ is a non-split extension of $\\cO_B$ by an ample line bundle $L$ with $K_B\\cong L^2$. More generally, if $K_B\\cong L^m$, such a boundary admits a pseudo-Einstein contact form if and only if $(m-1)e=0$, where $e\\in H^1(B,L)$ is the extension class; the obstruction is detected on the first infinitesimal neighborhood of $D$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02718",
+        "metadata": {
+          "title": "A counterexample to Lee's conjecture on pseudo-Einstein structures",
+          "authors": [
+            "Dong Yuxin",
+            "Wang Haohao"
+          ],
+          "abstract": "In 1988, J.~M.~Lee conjectured that a compact strictly pseudoconvex CR manifold admits a pseudo-Einstein contact form if and only if the real first Chern class of its holomorphic tangent bundle vanishes. The necessity of this condition was proved by Lee. We show that the condition is not sufficient: in every real dimension $2n+1\\ge 5$ there is a compact connected strictly pseudoconvex CR manifold $M$ with $c_1(\\Tone)=0$ in $H^2(M;\\Z)$ which admits no pseudo-Einstein contact form. The examples are boundaries of small strictly pseudoconvex neighborhoods of a section $D\\cong B$ with negative normal bundle in a $\\PP^1$-bundle $\\PP(E_e)\\to B$, where $B=C^n$ is a power of a curve of genus two and $E_e$ is a non-split extension of $\\cO_B$ by an ample line bundle $L$ with $K_B\\cong L^2$. More generally, if $K_B\\cong L^m$, such a boundary admits a pseudo-Einstein contact form if and only if $(m-1)e=0$, where $e\\in H^1(B,L)$ is the extension class; the obstruction is detected on the first infinitesimal neighborhood of $D$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-02T08:11:08Z",
+          "updatedAt": "2026-11-02T08:11:08Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:03.033470+00:00",
+            "contentHash": "742c996d31a63ff22ae60fad8bc0632fe40f6a800af6a418ba3529cc22ad9eeb"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "Lee伪Einstein猜想的高维反例及扩张类判据",
+          "workSummary": "Theorem A在每个实维2n+1≥5给出紧连通、可定向的严格拟凸可积CR流形，整系数c1(T^(1,0)M)=0却无pseudo-Einstein接触形式；伪Einstein指Ricci为其迹除以n乘Levi型，不要求标量曲率常数。Theorem B/6.1更一般地取光滑连通射影底B、dim_C B=n≥2、ample线丛L及扩张0→L→E_e→O_B→0，且K_B≅L^m；P(E_e)取一维商惯例，负法丛截面D的充分小严格拟凸邻域边界M_ε存在伪Einstein形式，当且仅当(m−1)e=0，即m=1或扩张分裂。",
+          "techniques": [
+            "CR canonical丛的边界collar酉平坦必要条件",
+            "商型P¹丛与一阶无穷小邻域的扩张类",
+            "Remmert收缩至正常Stein空间及亚纯Hartogs延拓",
+            "Gysin序列的酉holonomy下降",
+            "genus2 theta特征线丛的Künneth计算"
+          ],
+          "breakthrough": "令B=C^n，C为genus2曲线、p为Weierstrass点、S=O_C(p)，取L=S外积，得K_B=L²及H¹(B,L)≅C^n；非零e使边界整Chern类为零而collar canonical丛不可能酉平坦。Theorem C还给固定光滑流形的CR结构光滑变形：中心可解而任意充分小非零参数不可解。",
+          "limitations": "已读PDF第1—14页相关主定理、构造和障碍链条，渲染第2页核对扩张方向及(m−1)e公式；未独立逐证认证全文或所引Hartogs/Lee定理。反例限n≥2，不解决三维，PDF14页明确三维需替换Lee局部理论。充要判据只适用于列明的P¹丛小邻域边界；自然填充含紧除子D而非Stein，不能当作Stein域边界反例。变形族改变环境复结构，不反驳固定环境内超曲面稳定性。第13—14页明确仍未决定较弱Q-flat猜想；第13页把障碍类与(m−1)α_U直接识别仍仅作期望。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:32:50.037090+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02718v1",
+            "contentHash": "ada233cb82e22097a7470f7226396aa7cdeb3a75415065ab80c940ac6b902339",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共15页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8b88e92c8aae3ed1b2f53a244829ecc18e07dc8885d93f473949db4319df99c0"
+          },
+          "priorityScore": 97,
+          "priorityReason": "对长期CR存在猜想给出强反例，最高优先正文核验。"
+        },
+        "analysisBasis": {
+          "abstract": "In 1988, J.~M.~Lee conjectured that a compact strictly pseudoconvex CR manifold admits a pseudo-Einstein contact form if and only if the real first Chern class of its holomorphic tangent bundle vanishes. The necessity of this condition was proved by Lee. We show that the condition is not sufficient: in every real dimension $2n+1\\ge 5$ there is a compact connected strictly pseudoconvex CR manifold $M$ with $c_1(\\Tone)=0$ in $H^2(M;\\Z)$ which admits no pseudo-Einstein contact form. The examples are boundaries of small strictly pseudoconvex neighborhoods of a section $D\\cong B$ with negative normal bundle in a $\\PP^1$-bundle $\\PP(E_e)\\to B$, where $B=C^n$ is a power of a curve of genus two and $E_e$ is a non-split extension of $\\cO_B$ by an ample line bundle $L$ with $K_B\\cong L^2$. More generally, if $K_B\\cong L^m$, such a boundary admits a pseudo-Einstein contact form if and only if $(m-1)e=0$, where $e\\in H^1(B,L)$ is the extension class; the obstruction is detected on the first infinitesimal neighborhood of $D$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

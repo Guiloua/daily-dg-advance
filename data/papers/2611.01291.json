@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01291",
+  "slug": "2611.01291",
+  "latest": {
+    "arxivId": "2611.01291",
+    "metadata": {
+      "title": "Contact multiplicity and a sharp six-map bound for collinear self-similar dendrites",
+      "authors": [
+        "Bernat Espigule"
+      ],
+      "abstract": "Let $K\\subset\\mathbb{C}$ be the attractor of $n\\ge2$ similarities $z\\mapsto\\lambda z+b_k$, $0<|\\lambda|<1$, whose fixed points are evenly spaced on a line, and suppose that $K$ does not lie in a line. We prove that $K$ can be a dendrite only if $n\\le6$, and that such dendrites exist for every $2\\le n\\le6$; no separation or finite-intersection hypothesis is imposed. Hence, for $n\\ge7$, every connected $K$ of this kind has interior points or separates the plane. Neighboring pieces of $K$ meet in similar copies of a single contact set. In a dendrite exactly one first-level piece meets this set, whereas for $n\\ge7$ at least $n-\\lceil2\\sqrt{n-1}\\rceil\\ge2$ do, a bound attained by explicit quadratic parameters. The proof combines a planar translation obstruction for replicated contact arcs with an estimate based on Jensen's formula. After normalizing to $z\\mapsto t+z/c$, $t\\in\\{-n+1,-n+3,\\ldots,n-1\\}$, the connectedness locus is the closure, outside the unit disk, of the roots of monic integer polynomials of height at most $n-1$. The same estimate shows that, for $n\\ge7$, every such polynomial with a non-real root $c$ satisfying $|c|^2\\ge\\lceil2\\sqrt{n-1}\\rceil+1$ has subleading coefficient of absolute value at most $\\lceil2\\sqrt{n-1}\\rceil$, and that this bound is sharp. Accordingly, for $n\\ge7$, at every non-real boundary point $c$ of the locus with $|c|>1$, each expansion $c=\\sum_{j\\ge0}d_jc^{-j}$ with integer digits $|d_j|\\le n-1$ has $|d_0|\\le\\lceil2\\sqrt{n-1}\\rceil$.",
+      "categories": [
+        "math.DS",
+        "math.MG",
+        "math.NT"
+      ],
+      "primaryCategory": "math.DS",
+      "comment": "20 pages, 5 figures. Ancillary files: exact-arithmetic verifier, figure programs and parameter-grid data",
+      "version": 1,
+      "submittedAt": "2026-10-31T21:46:06Z",
+      "updatedAt": "2026-10-31T21:46:06Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.01291v1",
+        "observedAt": "2026-11-03T11:27:59.691339+00:00",
+        "contentHash": "3cfaed632bc26aeb045c4f3a33e71f8c8d4a4d1701cfd46df794aaa75ff880b1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:38.826190+00:00",
+        "contentHash": "4ef0273d3fa4474579becb76ac32d8f702a6271a50bb9852306deb57516f9128"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "尖锐阈值与接触重数",
+      "workSummary": "设平面自相似吸引子由 n≥2 个相同复收缩系数 λ 的相似映射生成，固定点在线上等距，0<|λ|<1，且吸引子不包含于直线。证明其为树状连续统必须 n≤6，并对每个2≤n≤6给出例子；无需分离或有限交假设。n≥7时连通吸引子必有内点或分离平面。相邻块共享一个接触集的相似副本：树状情形仅一个一级块接触该集，n≥7则至少 n−⌈2√(n−1)⌉≥2个，且显式二次参数实现下界。归一化后还刻画连通参数域为单位圆外高度≤n−1的首一整系数多项式根的闭包，并给出非实根及边界数字展开的尖锐次首系数限制。 所述非实根条件下，次首系数绝对值≤⌈2√(n−1)⌉；相应边界展开的|d₀|也≤⌈2√(n−1)⌉。",
+      "techniques": [
+        "复制接触弧的平面平移障碍",
+        "Jensen公式估计",
+        "整系数多项式根与复进制展开"
+      ],
+      "breakthrough": "以不要求分离的接触重数机制得到精确六映射阈值，并连接连通参数域与整数多项式系数。",
+      "limitations": "系数结论针对n≥7：非实根c须|c|²≥⌈2√(n−1)⌉+1才限制次首系数；边界展开c=∑d_j c^(−j)的首位限制需c非实、|c|>1及|d_j|≤n−1。不能推为任意自相似系统的六映射限制。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确ChatGPT辅助第3、4、6节证明发展及核查、验证与可视化代码、起草修订；Claude核查证明计算参考文献、起草包括Corollary1.3及Remark4.2的文字并制图。证明辅助有具体章节但未把某个核心思想首次归给模型，故不标ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01291v1 · PDF第19页 Use of artificial intelligence",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:27:59.691339+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01291v1",
+        "contentHash": "3cfaed632bc26aeb045c4f3a33e71f8c8d4a4d1701cfd46df794aaa75ff880b1",
+        "pages": 20,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确ChatGPT辅助第3、4、6节证明发展及核查、验证与可视化代码、起草修订；Claude核查证明计算参考文献、起草包括Corollary1.3及Remark4.2的文字并制图。证明辅助有具体章节但未把某个核心思想首次归给模型，故不标ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4a6266af37319b41480756a4c3d3ef7a76461dbb2de06f40cdf61f6b36ac0cd1"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 75,
+      "priorityReason": "分形与度量几何的尖锐分类，和几何分析主线有一定距离。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $K\\subset\\mathbb{C}$ be the attractor of $n\\ge2$ similarities $z\\mapsto\\lambda z+b_k$, $0<|\\lambda|<1$, whose fixed points are evenly spaced on a line, and suppose that $K$ does not lie in a line. We prove that $K$ can be a dendrite only if $n\\le6$, and that such dendrites exist for every $2\\le n\\le6$; no separation or finite-intersection hypothesis is imposed. Hence, for $n\\ge7$, every connected $K$ of this kind has interior points or separates the plane. Neighboring pieces of $K$ meet in similar copies of a single contact set. In a dendrite exactly one first-level piece meets this set, whereas for $n\\ge7$ at least $n-\\lceil2\\sqrt{n-1}\\rceil\\ge2$ do, a bound attained by explicit quadratic parameters. The proof combines a planar translation obstruction for replicated contact arcs with an estimate based on Jensen's formula. After normalizing to $z\\mapsto t+z/c$, $t\\in\\{-n+1,-n+3,\\ldots,n-1\\}$, the connectedness locus is the closure, outside the unit disk, of the roots of monic integer polynomials of height at most $n-1$. The same estimate shows that, for $n\\ge7$, every such polynomial with a non-real root $c$ satisfying $|c|^2\\ge\\lceil2\\sqrt{n-1}\\rceil+1$ has subleading coefficient of absolute value at most $\\lceil2\\sqrt{n-1}\\rceil$, and that this bound is sharp. Accordingly, for $n\\ge7$, at every non-real boundary point $c$ of the locus with $|c|>1$, each expansion $c=\\sum_{j\\ge0}d_jc^{-j}$ with integer digits $|d_j|\\le n-1$ has $|d_0|\\le\\lceil2\\sqrt{n-1}\\rceil$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01291",
+        "metadata": {
+          "title": "Contact multiplicity and a sharp six-map bound for collinear self-similar dendrites",
+          "authors": [
+            "Bernat Espigule"
+          ],
+          "abstract": "Let $K\\subset\\mathbb{C}$ be the attractor of $n\\ge2$ similarities $z\\mapsto\\lambda z+b_k$, $0<|\\lambda|<1$, whose fixed points are evenly spaced on a line, and suppose that $K$ does not lie in a line. We prove that $K$ can be a dendrite only if $n\\le6$, and that such dendrites exist for every $2\\le n\\le6$; no separation or finite-intersection hypothesis is imposed. Hence, for $n\\ge7$, every connected $K$ of this kind has interior points or separates the plane. Neighboring pieces of $K$ meet in similar copies of a single contact set. In a dendrite exactly one first-level piece meets this set, whereas for $n\\ge7$ at least $n-\\lceil2\\sqrt{n-1}\\rceil\\ge2$ do, a bound attained by explicit quadratic parameters. The proof combines a planar translation obstruction for replicated contact arcs with an estimate based on Jensen's formula. After normalizing to $z\\mapsto t+z/c$, $t\\in\\{-n+1,-n+3,\\ldots,n-1\\}$, the connectedness locus is the closure, outside the unit disk, of the roots of monic integer polynomials of height at most $n-1$. The same estimate shows that, for $n\\ge7$, every such polynomial with a non-real root $c$ satisfying $|c|^2\\ge\\lceil2\\sqrt{n-1}\\rceil+1$ has subleading coefficient of absolute value at most $\\lceil2\\sqrt{n-1}\\rceil$, and that this bound is sharp. Accordingly, for $n\\ge7$, at every non-real boundary point $c$ of the locus with $|c|>1$, each expansion $c=\\sum_{j\\ge0}d_jc^{-j}$ with integer digits $|d_j|\\le n-1$ has $|d_0|\\le\\lceil2\\sqrt{n-1}\\rceil$.",
+          "categories": [
+            "math.DS",
+            "math.MG",
+            "math.NT"
+          ],
+          "primaryCategory": "math.DS",
+          "comment": "20 pages, 5 figures. Ancillary files: exact-arithmetic verifier, figure programs and parameter-grid data",
+          "version": 1,
+          "submittedAt": "2026-10-31T21:46:06Z",
+          "updatedAt": "2026-10-31T21:46:06Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.01291v1",
+            "observedAt": "2026-11-03T11:27:59.691339+00:00",
+            "contentHash": "3cfaed632bc26aeb045c4f3a33e71f8c8d4a4d1701cfd46df794aaa75ff880b1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:38.826190+00:00",
+            "contentHash": "4ef0273d3fa4474579becb76ac32d8f702a6271a50bb9852306deb57516f9128"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "尖锐阈值与接触重数",
+          "workSummary": "设平面自相似吸引子由 n≥2 个相同复收缩系数 λ 的相似映射生成，固定点在线上等距，0<|λ|<1，且吸引子不包含于直线。证明其为树状连续统必须 n≤6，并对每个2≤n≤6给出例子；无需分离或有限交假设。n≥7时连通吸引子必有内点或分离平面。相邻块共享一个接触集的相似副本：树状情形仅一个一级块接触该集，n≥7则至少 n−⌈2√(n−1)⌉≥2个，且显式二次参数实现下界。归一化后还刻画连通参数域为单位圆外高度≤n−1的首一整系数多项式根的闭包，并给出非实根及边界数字展开的尖锐次首系数限制。 所述非实根条件下，次首系数绝对值≤⌈2√(n−1)⌉；相应边界展开的|d₀|也≤⌈2√(n−1)⌉。",
+          "techniques": [
+            "复制接触弧的平面平移障碍",
+            "Jensen公式估计",
+            "整系数多项式根与复进制展开"
+          ],
+          "breakthrough": "以不要求分离的接触重数机制得到精确六映射阈值，并连接连通参数域与整数多项式系数。",
+          "limitations": "系数结论针对n≥7：非实根c须|c|²≥⌈2√(n−1)⌉+1才限制次首系数；边界展开c=∑d_j c^(−j)的首位限制需c非实、|c|>1及|d_j|≤n−1。不能推为任意自相似系统的六映射限制。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确ChatGPT辅助第3、4、6节证明发展及核查、验证与可视化代码、起草修订；Claude核查证明计算参考文献、起草包括Corollary1.3及Remark4.2的文字并制图。证明辅助有具体章节但未把某个核心思想首次归给模型，故不标ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01291v1 · PDF第19页 Use of artificial intelligence",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:27:59.691339+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01291v1",
+            "contentHash": "3cfaed632bc26aeb045c4f3a33e71f8c8d4a4d1701cfd46df794aaa75ff880b1",
+            "pages": 20,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确ChatGPT辅助第3、4、6节证明发展及核查、验证与可视化代码、起草修订；Claude核查证明计算参考文献、起草包括Corollary1.3及Remark4.2的文字并制图。证明辅助有具体章节但未把某个核心思想首次归给模型，故不标ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4a6266af37319b41480756a4c3d3ef7a76461dbb2de06f40cdf61f6b36ac0cd1"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 75,
+          "priorityReason": "分形与度量几何的尖锐分类，和几何分析主线有一定距离。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $K\\subset\\mathbb{C}$ be the attractor of $n\\ge2$ similarities $z\\mapsto\\lambda z+b_k$, $0<|\\lambda|<1$, whose fixed points are evenly spaced on a line, and suppose that $K$ does not lie in a line. We prove that $K$ can be a dendrite only if $n\\le6$, and that such dendrites exist for every $2\\le n\\le6$; no separation or finite-intersection hypothesis is imposed. Hence, for $n\\ge7$, every connected $K$ of this kind has interior points or separates the plane. Neighboring pieces of $K$ meet in similar copies of a single contact set. In a dendrite exactly one first-level piece meets this set, whereas for $n\\ge7$ at least $n-\\lceil2\\sqrt{n-1}\\rceil\\ge2$ do, a bound attained by explicit quadratic parameters. The proof combines a planar translation obstruction for replicated contact arcs with an estimate based on Jensen's formula. After normalizing to $z\\mapsto t+z/c$, $t\\in\\{-n+1,-n+3,\\ldots,n-1\\}$, the connectedness locus is the closure, outside the unit disk, of the roots of monic integer polynomials of height at most $n-1$. The same estimate shows that, for $n\\ge7$, every such polynomial with a non-real root $c$ satisfying $|c|^2\\ge\\lceil2\\sqrt{n-1}\\rceil+1$ has subleading coefficient of absolute value at most $\\lceil2\\sqrt{n-1}\\rceil$, and that this bound is sharp. Accordingly, for $n\\ge7$, at every non-real boundary point $c$ of the locus with $|c|>1$, each expansion $c=\\sum_{j\\ge0}d_jc^{-j}$ with integer digits $|d_j|\\le n-1$ has $|d_0|\\le\\lceil2\\sqrt{n-1}\\rceil$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

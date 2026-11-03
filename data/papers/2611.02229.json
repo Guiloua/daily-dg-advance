@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02229",
+  "slug": "2611.02229",
+  "latest": {
+    "arxivId": "2611.02229",
+    "metadata": {
+      "title": "Generalized Quasi-Symmetric Nets: A Constructive Approach to the Equimodular Elliptic Type and to Flexible $m \\times n$ Nets",
+      "authors": [
+        "Abdukhomid Nurmatov",
+        "Florian Rist",
+        "Jonathan Klein",
+        "Dominik L. Michels"
+      ],
+      "abstract": "Quadrilateral meshes that flex with rigid planar faces are of interest to transformable architecture, rigid-foldable origami, and mechanical metamaterials. Their building blocks are flexible $3 \\times 3$ nets, that is, Kokotsakis polyhedra with a quadrangular base, classified by Izmestiev. We study one of his types, the equimodular elliptic type, defined by three conditions on the flat angles, the third of them through Jacobi elliptic functions. We turn these conditions into equivalent algebraic ones, free of elliptic functions, which lead to the generalized quasi-symmetric nets (GQS-nets), polyhedra of this type that include the known elliptic quasi-symmetric nets. For every polyhedron of this type, we give a flexible polyhedron with the same flat angles and its flexion in closed form. From the simplest GQS-nets, we assemble arbitrarily large flexible $m \\times n$ nets. Examples include nets that, at one position, form letters; further nets in the supplementary materials form digits or, seen along their rows, approximately follow the side silhouettes of a bunny and a fish. Unlike numerically computed mechanisms, these nets are exactly flexible. As an application, we design three such nets as transportable arch halls of 80 mm sandwich panels, which fold to fit through the door of a standard container or into the well of a low-bed semi-trailer, and we check them numerically under snow load and build a 1:20 model of one. Supplementary Mathematica notebooks verify the symbolic computations, a Python tool constructs the nets and checks them numerically, including for self-intersections, and further scripts recheck the halls.",
+      "categories": [
+        "math.MG",
+        "math.CV",
+        "math.DG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "49 pages (41 + 8 pages of supplementary materials), 11 figures, 5 tables. Code, Mathematica notebooks, data, print files of the 1:20 model, and a video: this https URL",
+      "version": 1,
+      "submittedAt": "2026-11-01T21:43:26Z",
+      "updatedAt": "2026-11-01T21:43:26Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:03.027809+00:00",
+        "contentHash": "518805eaf8fff4c1479237e69631d697fca0876d6f0671c6dc86fc735ea8d627"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "精确可挠网格的代数构造",
+      "workSummary": "针对Izmestiev所分Kokotsakis四边形底多面体的等模椭圆类型，将含Jacobi椭圆函数的三组平面角条件转为等价纯代数条件，得到含已知椭圆准对称网格的GQS网格。对该类型每个多面体给同平面角可挠模型及闭式挠曲，再拼接为任意大m×n精确可挠网格。应用设计可折叠拱厅，并数值检查雪载、制作1:20模型，配符号及数值检验材料。",
+      "techniques": [
+        "Kokotsakis多面体的等模椭圆类型",
+        "椭圆函数条件的代数化",
+        "闭式挠曲与网格拼接",
+        "符号核查及工程数值模型"
+      ],
+      "breakthrough": "从特定分类型导出可扩展的精确机构，避免只靠数值求解近似可挠。",
+      "limitations": "覆盖特定等模椭圆类型，不是所有可挠四边网格分类；数学精确可挠与雪载结构性能数值检验不同，摘要不保证所有运动均无自交或工程安全。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "Declarations明确Claude Opus5/5.5、Fable5/5.1用于文献搜索、逐源核查引用、文字改进、检查作者证明、核查修订和编写附录代码、Blender图渲染、物理模型及打印装配设计、补充视频制作；视频旁白由Gemini3.8Flash TTS生成。支持literature/verification/writing/computation；未把核心GQS代数条件或网格构造思想归给模型，不因物理模型设计或proof checking推断ideas/proofs。第40页“A. I. Bobenko”为参考文献作者姓名，非点写AI披露；第1、3、37页Astra为as transportable等跨词误报。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02229v1 · PDF第38页Declarations；第40页参考文献姓名及第1、3、37页误报",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:45:05.413351+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02229v1",
+        "contentHash": "629faab1c556154c6149dccf4b1ac939824bb01ec4cc45d874aba7c466c1bc71",
+        "pages": 49,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Declarations明确Claude Opus5/5.5、Fable5/5.1用于文献搜索、逐源核查引用、文字改进、检查作者证明、核查修订和编写附录代码、Blender图渲染、物理模型及打印装配设计、补充视频制作；视频旁白由Gemini3.8Flash TTS生成。支持literature/verification/writing/computation；未把核心GQS代数条件或网格构造思想归给模型，不因物理模型设计或proof checking推断ideas/proofs。第40页“A. I. Bobenko”为参考文献作者姓名，非点写AI披露；第1、3、37页Astra为as transportable等跨词误报。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "503311951f6aa1191d33e939f7a4f5f6ed1a986d14a52ba2a6dddf3abfd0a687"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 65,
+      "priorityReason": "离散微分几何和机构构造，偏应用方向。"
+    },
+    "analysisBasis": {
+      "abstract": "Quadrilateral meshes that flex with rigid planar faces are of interest to transformable architecture, rigid-foldable origami, and mechanical metamaterials. Their building blocks are flexible $3 \\times 3$ nets, that is, Kokotsakis polyhedra with a quadrangular base, classified by Izmestiev. We study one of his types, the equimodular elliptic type, defined by three conditions on the flat angles, the third of them through Jacobi elliptic functions. We turn these conditions into equivalent algebraic ones, free of elliptic functions, which lead to the generalized quasi-symmetric nets (GQS-nets), polyhedra of this type that include the known elliptic quasi-symmetric nets. For every polyhedron of this type, we give a flexible polyhedron with the same flat angles and its flexion in closed form. From the simplest GQS-nets, we assemble arbitrarily large flexible $m \\times n$ nets. Examples include nets that, at one position, form letters; further nets in the supplementary materials form digits or, seen along their rows, approximately follow the side silhouettes of a bunny and a fish. Unlike numerically computed mechanisms, these nets are exactly flexible. As an application, we design three such nets as transportable arch halls of 80 mm sandwich panels, which fold to fit through the door of a standard container or into the well of a low-bed semi-trailer, and we check them numerically under snow load and build a 1:20 model of one. Supplementary Mathematica notebooks verify the symbolic computations, a Python tool constructs the nets and checks them numerically, including for self-intersections, and further scripts recheck the halls.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02229",
+        "metadata": {
+          "title": "Generalized Quasi-Symmetric Nets: A Constructive Approach to the Equimodular Elliptic Type and to Flexible $m \\times n$ Nets",
+          "authors": [
+            "Abdukhomid Nurmatov",
+            "Florian Rist",
+            "Jonathan Klein",
+            "Dominik L. Michels"
+          ],
+          "abstract": "Quadrilateral meshes that flex with rigid planar faces are of interest to transformable architecture, rigid-foldable origami, and mechanical metamaterials. Their building blocks are flexible $3 \\times 3$ nets, that is, Kokotsakis polyhedra with a quadrangular base, classified by Izmestiev. We study one of his types, the equimodular elliptic type, defined by three conditions on the flat angles, the third of them through Jacobi elliptic functions. We turn these conditions into equivalent algebraic ones, free of elliptic functions, which lead to the generalized quasi-symmetric nets (GQS-nets), polyhedra of this type that include the known elliptic quasi-symmetric nets. For every polyhedron of this type, we give a flexible polyhedron with the same flat angles and its flexion in closed form. From the simplest GQS-nets, we assemble arbitrarily large flexible $m \\times n$ nets. Examples include nets that, at one position, form letters; further nets in the supplementary materials form digits or, seen along their rows, approximately follow the side silhouettes of a bunny and a fish. Unlike numerically computed mechanisms, these nets are exactly flexible. As an application, we design three such nets as transportable arch halls of 80 mm sandwich panels, which fold to fit through the door of a standard container or into the well of a low-bed semi-trailer, and we check them numerically under snow load and build a 1:20 model of one. Supplementary Mathematica notebooks verify the symbolic computations, a Python tool constructs the nets and checks them numerically, including for self-intersections, and further scripts recheck the halls.",
+          "categories": [
+            "math.MG",
+            "math.CV",
+            "math.DG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "49 pages (41 + 8 pages of supplementary materials), 11 figures, 5 tables. Code, Mathematica notebooks, data, print files of the 1:20 model, and a video: this https URL",
+          "version": 1,
+          "submittedAt": "2026-11-01T21:43:26Z",
+          "updatedAt": "2026-11-01T21:43:26Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:03.027809+00:00",
+            "contentHash": "518805eaf8fff4c1479237e69631d697fca0876d6f0671c6dc86fc735ea8d627"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "精确可挠网格的代数构造",
+          "workSummary": "针对Izmestiev所分Kokotsakis四边形底多面体的等模椭圆类型，将含Jacobi椭圆函数的三组平面角条件转为等价纯代数条件，得到含已知椭圆准对称网格的GQS网格。对该类型每个多面体给同平面角可挠模型及闭式挠曲，再拼接为任意大m×n精确可挠网格。应用设计可折叠拱厅，并数值检查雪载、制作1:20模型，配符号及数值检验材料。",
+          "techniques": [
+            "Kokotsakis多面体的等模椭圆类型",
+            "椭圆函数条件的代数化",
+            "闭式挠曲与网格拼接",
+            "符号核查及工程数值模型"
+          ],
+          "breakthrough": "从特定分类型导出可扩展的精确机构，避免只靠数值求解近似可挠。",
+          "limitations": "覆盖特定等模椭圆类型，不是所有可挠四边网格分类；数学精确可挠与雪载结构性能数值检验不同，摘要不保证所有运动均无自交或工程安全。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "Declarations明确Claude Opus5/5.5、Fable5/5.1用于文献搜索、逐源核查引用、文字改进、检查作者证明、核查修订和编写附录代码、Blender图渲染、物理模型及打印装配设计、补充视频制作；视频旁白由Gemini3.8Flash TTS生成。支持literature/verification/writing/computation；未把核心GQS代数条件或网格构造思想归给模型，不因物理模型设计或proof checking推断ideas/proofs。第40页“A. I. Bobenko”为参考文献作者姓名，非点写AI披露；第1、3、37页Astra为as transportable等跨词误报。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02229v1 · PDF第38页Declarations；第40页参考文献姓名及第1、3、37页误报",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:45:05.413351+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02229v1",
+            "contentHash": "629faab1c556154c6149dccf4b1ac939824bb01ec4cc45d874aba7c466c1bc71",
+            "pages": 49,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。Declarations明确Claude Opus5/5.5、Fable5/5.1用于文献搜索、逐源核查引用、文字改进、检查作者证明、核查修订和编写附录代码、Blender图渲染、物理模型及打印装配设计、补充视频制作；视频旁白由Gemini3.8Flash TTS生成。支持literature/verification/writing/computation；未把核心GQS代数条件或网格构造思想归给模型，不因物理模型设计或proof checking推断ideas/proofs。第40页“A. I. Bobenko”为参考文献作者姓名，非点写AI披露；第1、3、37页Astra为as transportable等跨词误报。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "503311951f6aa1191d33e939f7a4f5f6ed1a986d14a52ba2a6dddf3abfd0a687"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 65,
+          "priorityReason": "离散微分几何和机构构造，偏应用方向。"
+        },
+        "analysisBasis": {
+          "abstract": "Quadrilateral meshes that flex with rigid planar faces are of interest to transformable architecture, rigid-foldable origami, and mechanical metamaterials. Their building blocks are flexible $3 \\times 3$ nets, that is, Kokotsakis polyhedra with a quadrangular base, classified by Izmestiev. We study one of his types, the equimodular elliptic type, defined by three conditions on the flat angles, the third of them through Jacobi elliptic functions. We turn these conditions into equivalent algebraic ones, free of elliptic functions, which lead to the generalized quasi-symmetric nets (GQS-nets), polyhedra of this type that include the known elliptic quasi-symmetric nets. For every polyhedron of this type, we give a flexible polyhedron with the same flat angles and its flexion in closed form. From the simplest GQS-nets, we assemble arbitrarily large flexible $m \\times n$ nets. Examples include nets that, at one position, form letters; further nets in the supplementary materials form digits or, seen along their rows, approximately follow the side silhouettes of a bunny and a fish. Unlike numerically computed mechanisms, these nets are exactly flexible. As an application, we design three such nets as transportable arch halls of 80 mm sandwich panels, which fold to fit through the door of a standard container or into the well of a low-bed semi-trailer, and we check them numerically under snow load and build a 1:20 model of one. Supplementary Mathematica notebooks verify the symbolic computations, a Python tool constructs the nets and checks them numerically, including for self-intersections, and further scripts recheck the halls.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

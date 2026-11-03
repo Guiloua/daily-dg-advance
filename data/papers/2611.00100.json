@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.00100",
+  "slug": "2611.00100",
+  "latest": {
+    "arxivId": "2611.00100",
+    "metadata": {
+      "title": "The optimal four-dimensional lattice quantizer and bounds from Voronoi facets",
+      "authors": [
+        "Tianle Liu"
+      ],
+      "abstract": "We prove that the root lattice $D_4$ uniquely minimizes the normalized second moment among four-dimensional lattices, up to similarity. The computer-assisted proof combines the classification of secondary cones with integration over Voronoi cells and weighted sums of squares. In dimensions at least two, comparison with circular cones gives a lower bound in terms of the number of Voronoi facets, improving the sphere bound and recovering the hexagonal value in dimension two. We prove Ajjanagadde's circular-cone concavity conjecture and deduce the lattice case of his conjectured quantization bound.",
+      "categories": [
+        "math.MG",
+        "cs.IT",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-10-26T13:19:51Z",
+      "updatedAt": "2026-10-26T13:19:51Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-03T11:24:32.163589+00:00",
+        "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.00100v1",
+        "observedAt": "2026-11-03T11:27:47.003185+00:00",
+        "contentHash": "518f817a45a614cf4fdefb0672f41143f6ca4f1c61a7f1f48a2f5ea214ca0150"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:27.274310+00:00",
+        "contentHash": "fde9b7d5fd8df238361eab1dada3d26d6bb56d18250cea0fdc7ba522b7586c67"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "格点量化的尖锐最优性",
+      "workSummary": "定理A/2.1对四维满秩格给G(L)≥13/(120√2)，等号当且仅当L与D₄相似；G按Voronoi胞的二阶矩除以d·covol(L)^(1+2/d)归一化。定理B对d≥2、有m个Voronoi面的满秩格给G(L)≥m^(−2/d)g_d(A_d/m)≥f_d^(−2/d)g_d(A_d/f_d)，A_d=|S^(d−1)|、f_d=2(2^d−1)。",
+      "techniques": [
+        "四维三个满维secondary cone及正定闭包覆盖",
+        "Voronoi积分转为行列式和五次齐次多项式",
+        "六个单项式加权平方和恒等式与一变量比较",
+        "面锥的圆锥比较及g_d(ω)^(−d/2)严格凹性"
+      ],
+      "breakthrough": "正文将D₄的既有局部极小性推进为全部四维格中的全局唯一最优，并在两个非主锥各识别唯一等号射线、都代表D₄。一般面数下界严格强于球界，二维达到六角格值，但在四维连D₄也严格不达圆锥比较界；真正四维尖锐结论来自面之间关系。Ajjanagadde结论须区分严格圆锥凹性、面锥比较的格适用情形与量化界的格版本。",
+      "limitations": "补读PDF第1–4页并渲染核对第1–2页规范、定理及公式。范围仅满秩格，不是所有非格量化器、有限码本或学习系统的实际最优性；有限码本另有截断及各向异性损失问题。计算机辅助部分依赖完整平方和证书，本文仅核对正文路线，未访问外部仓库、未执行或独立复算全部证书。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第12页AI assistance明确生成式AI用于讨论研究想法、协助验证代码及稿件准备；第3页LLM量化介绍和参考文献不是作者协作的独立证据。泛指研究讨论未将D₄最优性某个具体核心路线归于模型，故不推断ideas；验证代码支持计算及核查，稿件辅助记写作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.00100v1 · PDF第12页 AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:27:47.003185+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.00100v1",
+        "contentHash": "518f817a45a614cf4fdefb0672f41143f6ca4f1c61a7f1f48a2f5ea214ca0150",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第12页AI assistance明确生成式AI用于讨论研究想法、协助验证代码及稿件准备；第3页LLM量化介绍和参考文献不是作者协作的独立证据。泛指研究讨论未将D₄最优性某个具体核心路线归于模型，故不推断ideas；验证代码支持计算及核查，稿件辅助记写作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "afe6f98120d3e8bd121e202d3cc1470d756d0393bb7a75004c2776530ca762de"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 88,
+      "priorityReason": "尖锐凸几何与二阶矩优化的重要结果，值得核对认证和等号。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that the root lattice $D_4$ uniquely minimizes the normalized second moment among four-dimensional lattices, up to similarity. The computer-assisted proof combines the classification of secondary cones with integration over Voronoi cells and weighted sums of squares. In dimensions at least two, comparison with circular cones gives a lower bound in terms of the number of Voronoi facets, improving the sphere bound and recovering the hexagonal value in dimension two. We prove Ajjanagadde's circular-cone concavity conjecture and deduce the lattice case of his conjectured quantization bound.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.00100",
+        "metadata": {
+          "title": "The optimal four-dimensional lattice quantizer and bounds from Voronoi facets",
+          "authors": [
+            "Tianle Liu"
+          ],
+          "abstract": "We prove that the root lattice $D_4$ uniquely minimizes the normalized second moment among four-dimensional lattices, up to similarity. The computer-assisted proof combines the classification of secondary cones with integration over Voronoi cells and weighted sums of squares. In dimensions at least two, comparison with circular cones gives a lower bound in terms of the number of Voronoi facets, improving the sphere bound and recovering the hexagonal value in dimension two. We prove Ajjanagadde's circular-cone concavity conjecture and deduce the lattice case of his conjectured quantization bound.",
+          "categories": [
+            "math.MG",
+            "cs.IT",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-10-26T13:19:51Z",
+          "updatedAt": "2026-10-26T13:19:51Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-03T11:24:32.163589+00:00",
+            "contentHash": "f3a9608e55acc871d45f177de6e86cb1064ec65964b35a78ff40bfec3ddae5e1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.00100v1",
+            "observedAt": "2026-11-03T11:27:47.003185+00:00",
+            "contentHash": "518f817a45a614cf4fdefb0672f41143f6ca4f1c61a7f1f48a2f5ea214ca0150"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:27.274310+00:00",
+            "contentHash": "fde9b7d5fd8df238361eab1dada3d26d6bb56d18250cea0fdc7ba522b7586c67"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "格点量化的尖锐最优性",
+          "workSummary": "定理A/2.1对四维满秩格给G(L)≥13/(120√2)，等号当且仅当L与D₄相似；G按Voronoi胞的二阶矩除以d·covol(L)^(1+2/d)归一化。定理B对d≥2、有m个Voronoi面的满秩格给G(L)≥m^(−2/d)g_d(A_d/m)≥f_d^(−2/d)g_d(A_d/f_d)，A_d=|S^(d−1)|、f_d=2(2^d−1)。",
+          "techniques": [
+            "四维三个满维secondary cone及正定闭包覆盖",
+            "Voronoi积分转为行列式和五次齐次多项式",
+            "六个单项式加权平方和恒等式与一变量比较",
+            "面锥的圆锥比较及g_d(ω)^(−d/2)严格凹性"
+          ],
+          "breakthrough": "正文将D₄的既有局部极小性推进为全部四维格中的全局唯一最优，并在两个非主锥各识别唯一等号射线、都代表D₄。一般面数下界严格强于球界，二维达到六角格值，但在四维连D₄也严格不达圆锥比较界；真正四维尖锐结论来自面之间关系。Ajjanagadde结论须区分严格圆锥凹性、面锥比较的格适用情形与量化界的格版本。",
+          "limitations": "补读PDF第1–4页并渲染核对第1–2页规范、定理及公式。范围仅满秩格，不是所有非格量化器、有限码本或学习系统的实际最优性；有限码本另有截断及各向异性损失问题。计算机辅助部分依赖完整平方和证书，本文仅核对正文路线，未访问外部仓库、未执行或独立复算全部证书。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第12页AI assistance明确生成式AI用于讨论研究想法、协助验证代码及稿件准备；第3页LLM量化介绍和参考文献不是作者协作的独立证据。泛指研究讨论未将D₄最优性某个具体核心路线归于模型，故不推断ideas；验证代码支持计算及核查，稿件辅助记写作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.00100v1 · PDF第12页 AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:27:47.003185+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.00100v1",
+            "contentHash": "518f817a45a614cf4fdefb0672f41143f6ca4f1c61a7f1f48a2f5ea214ca0150",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第12页AI assistance明确生成式AI用于讨论研究想法、协助验证代码及稿件准备；第3页LLM量化介绍和参考文献不是作者协作的独立证据。泛指研究讨论未将D₄最优性某个具体核心路线归于模型，故不推断ideas；验证代码支持计算及核查，稿件辅助记写作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "afe6f98120d3e8bd121e202d3cc1470d756d0393bb7a75004c2776530ca762de"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 88,
+          "priorityReason": "尖锐凸几何与二阶矩优化的重要结果，值得核对认证和等号。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that the root lattice $D_4$ uniquely minimizes the normalized second moment among four-dimensional lattices, up to similarity. The computer-assisted proof combines the classification of secondary cones with integration over Voronoi cells and weighted sums of squares. In dimensions at least two, comparison with circular cones gives a lower bound in terms of the number of Voronoi facets, improving the sphere bound and recovering the hexagonal value in dimension two. We prove Ajjanagadde's circular-cone concavity conjecture and deduce the lattice case of his conjectured quantization bound.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

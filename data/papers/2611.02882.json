@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.02882",
+  "slug": "2611.02882",
+  "latest": {
+    "arxivId": "2611.02882",
+    "metadata": {
+      "title": "A Reilly approach to weighted curvature integral inequalities in hyperbolic space",
+      "authors": [
+        "Shengguang Bi",
+        "Yingxiang Hu"
+      ],
+      "abstract": "We establish a polarized weighted Reilly identity and an exact deficit decomposition for weighted curvature integrals $I_j=\\int_\\Sigma VE_j~\\mathrm{d}\\mu$ in hyperbolic space, where $V=\\cosh r$ and $E_j$ is the normalized $j$th mean curvature. For compact domains with smooth connected boundary, these yield $I_k^2\\geq I_{k-1}I_{k+1}$ under intrinsic sub-staticity at $k=1$ and static convexity with $\\kappa\\in\\Gamma_k\\cap\\overline{\\Gamma}_{k+1}$ for $2\\leq k\\leq n-1$, with equality precisely for geodesic balls. Under $h\\geq0$ and $Vh-V_\\nu g\\geq0$, log-concavity and a Euclidean mixed-volume representation recover the centered-ball comparisons conjectured by Hu and Li \\cite[Conjecture~1.1]{HuLi}, allowing the weight center to lie outside the domain. Equality in these comparisons holds precisely for balls centered at the weight center.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "25 pages. All comments are welcome",
+      "version": 1,
+      "submittedAt": "2026-11-02T10:18:04Z",
+      "updatedAt": "2026-11-02T10:18:04Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:47:14.613324+00:00",
+        "contentHash": "4247acbbdc79654f8090dbb2a38db27067dfede810bb109d900e86f3ee9804ce"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "双曲加权曲率积分的Reilly缺陷分解",
+      "workSummary": "建立V=cosh r、I_j=∫ΣVE_j的极化加权Reilly恒等式与精确缺陷分解。在光滑连通边界紧域上，k=1需内蕴sub-static，2≤k≤n−1需static convex及κ∈Γ_k∩闭Γ_(k+1)，得I_k²≥I_(k−1)I_(k+1)，等号恰为测地球；更强h≥0、Vh−Vνg≥0条件恢复Hu–Li中心球比较，允许权中心在域外。",
+      "techniques": [
+        "极化加权Reilly恒等式",
+        "精确缺陷分解",
+        "混合体积与log凹性"
+      ],
+      "breakthrough": "把曲率积分不等式、刚性等号及可外置权中心的中心球比较统一起来。",
+      "limitations": "两类比较的等号不同：前者测地球，中心球比较须以权中心为中心；各k的sub-static、static convex和曲率锥条件不可混用。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第23页AI disclosure明确作者在论文发展中使用AI工具，特别辅助主定理的几何解释。该作用属于解释性探索；声明未把某个具体核心构造、证明路线或定理思想归因AI，也未说明计算、核验或写作角色，故仅记exploration而不升ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.02882v1 · PDF 第23页，References之前AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:35:35.878934+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.02882v1",
+        "contentHash": "82f19919d32c6f9da4822836692e743ff1424ba743cd30de9e6b28ba187a68b0",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23页AI disclosure明确作者在论文发展中使用AI工具，特别辅助主定理的几何解释。该作用属于解释性探索；声明未把某个具体核心构造、证明路线或定理思想归因AI，也未说明计算、核验或写作角色，故仅记exploration而不升ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ac7ef4fd056803cb8ec194b77edf7275693d7cf48a61a3193b450f95fa0e7f3b"
+      },
+      "aiUsage": [
+        "exploration"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "比较几何及曲率积分刚性强相关，优先读条件与缺陷公式。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a polarized weighted Reilly identity and an exact deficit decomposition for weighted curvature integrals $I_j=\\int_\\Sigma VE_j~\\mathrm{d}\\mu$ in hyperbolic space, where $V=\\cosh r$ and $E_j$ is the normalized $j$th mean curvature. For compact domains with smooth connected boundary, these yield $I_k^2\\geq I_{k-1}I_{k+1}$ under intrinsic sub-staticity at $k=1$ and static convexity with $\\kappa\\in\\Gamma_k\\cap\\overline{\\Gamma}_{k+1}$ for $2\\leq k\\leq n-1$, with equality precisely for geodesic balls. Under $h\\geq0$ and $Vh-V_\\nu g\\geq0$, log-concavity and a Euclidean mixed-volume representation recover the centered-ball comparisons conjectured by Hu and Li \\cite[Conjecture~1.1]{HuLi}, allowing the weight center to lie outside the domain. Equality in these comparisons holds precisely for balls centered at the weight center.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.02882",
+        "metadata": {
+          "title": "A Reilly approach to weighted curvature integral inequalities in hyperbolic space",
+          "authors": [
+            "Shengguang Bi",
+            "Yingxiang Hu"
+          ],
+          "abstract": "We establish a polarized weighted Reilly identity and an exact deficit decomposition for weighted curvature integrals $I_j=\\int_\\Sigma VE_j~\\mathrm{d}\\mu$ in hyperbolic space, where $V=\\cosh r$ and $E_j$ is the normalized $j$th mean curvature. For compact domains with smooth connected boundary, these yield $I_k^2\\geq I_{k-1}I_{k+1}$ under intrinsic sub-staticity at $k=1$ and static convexity with $\\kappa\\in\\Gamma_k\\cap\\overline{\\Gamma}_{k+1}$ for $2\\leq k\\leq n-1$, with equality precisely for geodesic balls. Under $h\\geq0$ and $Vh-V_\\nu g\\geq0$, log-concavity and a Euclidean mixed-volume representation recover the centered-ball comparisons conjectured by Hu and Li \\cite[Conjecture~1.1]{HuLi}, allowing the weight center to lie outside the domain. Equality in these comparisons holds precisely for balls centered at the weight center.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "25 pages. All comments are welcome",
+          "version": 1,
+          "submittedAt": "2026-11-02T10:18:04Z",
+          "updatedAt": "2026-11-02T10:18:04Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:47:14.613324+00:00",
+            "contentHash": "4247acbbdc79654f8090dbb2a38db27067dfede810bb109d900e86f3ee9804ce"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "双曲加权曲率积分的Reilly缺陷分解",
+          "workSummary": "建立V=cosh r、I_j=∫ΣVE_j的极化加权Reilly恒等式与精确缺陷分解。在光滑连通边界紧域上，k=1需内蕴sub-static，2≤k≤n−1需static convex及κ∈Γ_k∩闭Γ_(k+1)，得I_k²≥I_(k−1)I_(k+1)，等号恰为测地球；更强h≥0、Vh−Vνg≥0条件恢复Hu–Li中心球比较，允许权中心在域外。",
+          "techniques": [
+            "极化加权Reilly恒等式",
+            "精确缺陷分解",
+            "混合体积与log凹性"
+          ],
+          "breakthrough": "把曲率积分不等式、刚性等号及可外置权中心的中心球比较统一起来。",
+          "limitations": "两类比较的等号不同：前者测地球，中心球比较须以权中心为中心；各k的sub-static、static convex和曲率锥条件不可混用。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第23页AI disclosure明确作者在论文发展中使用AI工具，特别辅助主定理的几何解释。该作用属于解释性探索；声明未把某个具体核心构造、证明路线或定理思想归因AI，也未说明计算、核验或写作角色，故仅记exploration而不升ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.02882v1 · PDF 第23页，References之前AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:35:35.878934+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.02882v1",
+            "contentHash": "82f19919d32c6f9da4822836692e743ff1424ba743cd30de9e6b28ba187a68b0",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23页AI disclosure明确作者在论文发展中使用AI工具，特别辅助主定理的几何解释。该作用属于解释性探索；声明未把某个具体核心构造、证明路线或定理思想归因AI，也未说明计算、核验或写作角色，故仅记exploration而不升ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ac7ef4fd056803cb8ec194b77edf7275693d7cf48a61a3193b450f95fa0e7f3b"
+          },
+          "aiUsage": [
+            "exploration"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "比较几何及曲率积分刚性强相关，优先读条件与缺陷公式。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a polarized weighted Reilly identity and an exact deficit decomposition for weighted curvature integrals $I_j=\\int_\\Sigma VE_j~\\mathrm{d}\\mu$ in hyperbolic space, where $V=\\cosh r$ and $E_j$ is the normalized $j$th mean curvature. For compact domains with smooth connected boundary, these yield $I_k^2\\geq I_{k-1}I_{k+1}$ under intrinsic sub-staticity at $k=1$ and static convexity with $\\kappa\\in\\Gamma_k\\cap\\overline{\\Gamma}_{k+1}$ for $2\\leq k\\leq n-1$, with equality precisely for geodesic balls. Under $h\\geq0$ and $Vh-V_\\nu g\\geq0$, log-concavity and a Euclidean mixed-volume representation recover the centered-ball comparisons conjectured by Hu and Li \\cite[Conjecture~1.1]{HuLi}, allowing the weight center to lie outside the domain. Equality in these comparisons holds precisely for balls centered at the weight center.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

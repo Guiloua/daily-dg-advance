@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.01423",
+  "slug": "2611.01423",
+  "latest": {
+    "arxivId": "2611.01423",
+    "metadata": {
+      "title": "The classification of Fano contact manifolds revisited",
+      "authors": [
+        "Baohua Fu"
+      ],
+      "abstract": "We present an account of the classification of Fano contact manifolds based on the proof of OpenAI and the solution of LeBrun-Salamon conjecture by Hu, Liu and Wan. The proof combines their constructions with earlier results on contact lines, with some simplifications.",
+      "categories": [
+        "math.AG",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AG",
+      "comment": "This paper grew out from my attemps to understand [OpenAI] and [HLW] through extensive discussions with ChatGPT. My contribution is mainly editorial: the rewriting, reformulation and reorganization of claims and proofs; the explanation and illustration of the proof via adjoint varieties (which is the essential part of my contribution in this paper); attributions of previous works etc",
+      "version": 1,
+      "submittedAt": "2026-11-01T02:04:04Z",
+      "updatedAt": "2026-11-01T02:04:04Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-03T11:24:20.188653+00:00",
+        "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.01423v1",
+        "observedAt": "2026-11-03T11:29:47.555367+00:00",
+        "contentHash": "4575890996a3ecc05b98cf2c2684773d7903fffcbaac7b53f3fa54ffb49aeebc"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-03T11:46:38.827506+00:00",
+        "contentHash": "3050cdcb1a307db90cd33551e47a65b384748b2783dba36559b0e6877f9ff891"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "分类证明的整理与简化",
+      "workSummary": "正文Theorem1.1以[OAI]标注：光滑连通复射影Fano接触流形（接触线丛L=TX/F、−K_X≅L^{⊗(n+1)}）为某复单Lie代数的伴随簇，最终同构保持接触结构与L。不额外假设自同构群约化、维数上界或Kähler–Einstein度量。先引用既有结果排出(P^{2n+1},O(2))与(P(T*P^{n+1}),O(1,1))两类，分别为C_{n+1}、A_{n+1}伴随簇，再处理Pic(X)=Z[L]。本文依据OpenAI稿件及Hu–Liu–Wan构造重组、简化：接触直线合成twistor conic，无标记稳定映射的普遍曲线纤维平方上构造两点截面η̃，经节点处极点抵消、两点评价双有理性，得到η∈H⁰(X×X,L⊠TX)。对角线二阶项[η]₂,x(v)=θ_x(v)⊗v迫使全局向量场生成TX，继而齐性与伴随簇分类。",
+      "techniques": [
+        "接触直线的分裂型及Legendrian切向簇",
+        "两个适当接触直线之并的余法丛H⁰消失及平滑化",
+        "无标记稳定映射的普遍曲线纤维平方控制边界",
+        "相对圆锥uv=δ模型及θ(de(v₀))被δ整除的极点抵消",
+        "Hwang有限像下降及双零向量场给两点twistor conic唯一",
+        "对角线二阶符号给TX全局生成与齐性"
+      ],
+      "breakthrough": "在已有分类方案内突出伴随簇模型，用L⊠TX本身的下降与二阶符号替代原方案的标量对称和三阶项计算；主要贡献按作者说明为证明重组、解释与归因。",
+      "limitations": "已读PDF第1–16页，渲染第6页核对Picard约化及两个已知伴随簇模型，第14页核对η下降和二阶符号；未逐步独立核验整篇证明及接触直线、稳定映射、齐性分类等外部输入。OpenAI[OAI]在第16页列为2026年9月23日manuscript，Hu–Liu–Wan为所引预印本，本次未获取和独验外部原始证明；不能称为已独立确认重大分类或LeBrun–Salamon猜想。一般射影接触流形还可能为光滑射影Y的P(T*Y)，不能将Fano结论无条件套到所有射影接触流形。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第2页致谢明确作者通过与ChatGPT大量讨论理解[OAI]和[HLW]，本文主要做重写、重述、重组、伴随簇解释及文献归因。可记探索与文字整理；第1页OpenAI证明和第16页[OAI]参考文献本身是外部引用，不能据此自动把本文核心ideas或证明全部归于作者自用模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.01423v1 · PDF第2页Acknowledgements；第1、16页为外部来源引用",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-03T11:29:47.555367+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.01423v1",
+        "contentHash": "4575890996a3ecc05b98cf2c2684773d7903fffcbaac7b53f3fa54ffb49aeebc",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页致谢明确作者通过与ChatGPT大量讨论理解[OAI]和[HLW]，本文主要做重写、重述、重组、伴随簇解释及文献归因。可记探索与文字整理；第1页OpenAI证明和第16页[OAI]参考文献本身是外部引用，不能据此自动把本文核心ideas或证明全部归于作者自用模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1d1ef21f410cfca628f208a6af6ebed4b6a372cf915f439376b87ff48b4fc47a"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "Fano接触分类及正四元数Kähler相关刚性是特殊几何的重要问题，优先核查范围与依赖。"
+    },
+    "analysisBasis": {
+      "abstract": "We present an account of the classification of Fano contact manifolds based on the proof of OpenAI and the solution of LeBrun-Salamon conjecture by Hu, Liu and Wan. The proof combines their constructions with earlier results on contact lines, with some simplifications.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "entry": {
+        "arxivId": "2611.01423",
+        "metadata": {
+          "title": "The classification of Fano contact manifolds revisited",
+          "authors": [
+            "Baohua Fu"
+          ],
+          "abstract": "We present an account of the classification of Fano contact manifolds based on the proof of OpenAI and the solution of LeBrun-Salamon conjecture by Hu, Liu and Wan. The proof combines their constructions with earlier results on contact lines, with some simplifications.",
+          "categories": [
+            "math.AG",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AG",
+          "comment": "This paper grew out from my attemps to understand [OpenAI] and [HLW] through extensive discussions with ChatGPT. My contribution is mainly editorial: the rewriting, reformulation and reorganization of claims and proofs; the explanation and illustration of the proof via adjoint varieties (which is the essential part of my contribution in this paper); attributions of previous works etc",
+          "version": 1,
+          "submittedAt": "2026-11-01T02:04:04Z",
+          "updatedAt": "2026-11-01T02:04:04Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-03T11:24:20.188653+00:00",
+            "contentHash": "87a53ae13e5b544901fd6c570133cb9558e31a567a6246ab0e5abc5256b31314"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.01423v1",
+            "observedAt": "2026-11-03T11:29:47.555367+00:00",
+            "contentHash": "4575890996a3ecc05b98cf2c2684773d7903fffcbaac7b53f3fa54ffb49aeebc"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-03T11:46:38.827506+00:00",
+            "contentHash": "3050cdcb1a307db90cd33551e47a65b384748b2783dba36559b0e6877f9ff891"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "分类证明的整理与简化",
+          "workSummary": "正文Theorem1.1以[OAI]标注：光滑连通复射影Fano接触流形（接触线丛L=TX/F、−K_X≅L^{⊗(n+1)}）为某复单Lie代数的伴随簇，最终同构保持接触结构与L。不额外假设自同构群约化、维数上界或Kähler–Einstein度量。先引用既有结果排出(P^{2n+1},O(2))与(P(T*P^{n+1}),O(1,1))两类，分别为C_{n+1}、A_{n+1}伴随簇，再处理Pic(X)=Z[L]。本文依据OpenAI稿件及Hu–Liu–Wan构造重组、简化：接触直线合成twistor conic，无标记稳定映射的普遍曲线纤维平方上构造两点截面η̃，经节点处极点抵消、两点评价双有理性，得到η∈H⁰(X×X,L⊠TX)。对角线二阶项[η]₂,x(v)=θ_x(v)⊗v迫使全局向量场生成TX，继而齐性与伴随簇分类。",
+          "techniques": [
+            "接触直线的分裂型及Legendrian切向簇",
+            "两个适当接触直线之并的余法丛H⁰消失及平滑化",
+            "无标记稳定映射的普遍曲线纤维平方控制边界",
+            "相对圆锥uv=δ模型及θ(de(v₀))被δ整除的极点抵消",
+            "Hwang有限像下降及双零向量场给两点twistor conic唯一",
+            "对角线二阶符号给TX全局生成与齐性"
+          ],
+          "breakthrough": "在已有分类方案内突出伴随簇模型，用L⊠TX本身的下降与二阶符号替代原方案的标量对称和三阶项计算；主要贡献按作者说明为证明重组、解释与归因。",
+          "limitations": "已读PDF第1–16页，渲染第6页核对Picard约化及两个已知伴随簇模型，第14页核对η下降和二阶符号；未逐步独立核验整篇证明及接触直线、稳定映射、齐性分类等外部输入。OpenAI[OAI]在第16页列为2026年9月23日manuscript，Hu–Liu–Wan为所引预印本，本次未获取和独验外部原始证明；不能称为已独立确认重大分类或LeBrun–Salamon猜想。一般射影接触流形还可能为光滑射影Y的P(T*Y)，不能将Fano结论无条件套到所有射影接触流形。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第2页致谢明确作者通过与ChatGPT大量讨论理解[OAI]和[HLW]，本文主要做重写、重述、重组、伴随簇解释及文献归因。可记探索与文字整理；第1页OpenAI证明和第16页[OAI]参考文献本身是外部引用，不能据此自动把本文核心ideas或证明全部归于作者自用模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.01423v1 · PDF第2页Acknowledgements；第1、16页为外部来源引用",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-03T11:29:47.555367+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.01423v1",
+            "contentHash": "4575890996a3ecc05b98cf2c2684773d7903fffcbaac7b53f3fa54ffb49aeebc",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页致谢明确作者通过与ChatGPT大量讨论理解[OAI]和[HLW]，本文主要做重写、重述、重组、伴随簇解释及文献归因。可记探索与文字整理；第1页OpenAI证明和第16页[OAI]参考文献本身是外部引用，不能据此自动把本文核心ideas或证明全部归于作者自用模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1d1ef21f410cfca628f208a6af6ebed4b6a372cf915f439376b87ff48b4fc47a"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "Fano接触分类及正四元数Kähler相关刚性是特殊几何的重要问题，优先核查范围与依赖。"
+        },
+        "analysisBasis": {
+          "abstract": "We present an account of the classification of Fano contact manifolds based on the proof of OpenAI and the solution of LeBrun-Salamon conjecture by Hu, Liu and Wan. The proof combines their constructions with earlier results on contact lines, with some simplifications.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
