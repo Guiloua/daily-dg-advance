@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03855",
+  "slug": "2611.03855",
+  "latest": {
+    "arxivId": "2611.03855",
+    "metadata": {
+      "title": "A surface-group action on real-hyperbolic space with no Cannon--Thurston map",
+      "authors": [
+        "Bruno Dular"
+      ],
+      "abstract": "We present discrete, faithful and purely loxodromic representations of a closed surface group of genus 431, and of a free group, into the group of isometries of a finite-dimensional real-hyperbolic space for which no Cannon--Thurston map exists. The construction combines three ingredients: the small-cancellation strategy employed by Baker--Riley to construct a subgroup of an ambient hyperbolic group with no Cannon--Thurston map, the realization of these groups by octagon complexes, and a theorem of Desgroseilliers--Haglund that supplies a convex cocompact faithful representation of the ambient hyperbolic group on a real-hyperbolic space. These examples admit ray Cannon--Thurston maps, as defined by Halder, Mahan Mj and Sardar.",
+      "categories": [
+        "math.GT",
+        "math.GR"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "26 pages, 8 figures. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-02T19:23:41Z",
+      "updatedAt": "2026-11-02T19:23:41Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-04T06:43:36.156234+00:00",
+        "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.936691+00:00",
+        "contentHash": "f804cc91fa65f5f0a5abea51643ae2f2561fe41f69db5ef54040c4a54916e9f7"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "实双曲空间作用的边界延拓反例",
+      "workSummary": "定理1.1给亏格431闭定向曲面群在某有限维实双曲空间的离散忠实纯loxodromic表示，非平凡元平移长度有统一正下界。证明构造的hₙd⁺在源边界趋于b⁺，目标中的端点像趋于ρ(b)⁻，从而排除连续Cannon–Thurston延拓。同一环境还给出秩287自由群反例。",
+      "techniques": [
+        "Baker–Riley型迭代HNN扩张与小消去词",
+        "沿拟凸自由子群合并曲面群",
+        "简单无三角形顶点链的八边形复形",
+        "Desgroseilliers–Haglund凸余紧环境表示",
+        "端点不连续性及射线落点判据"
+      ],
+      "breakthrough": "定理1.3将反例扩展到每个g≥431，同一个无挠双曲环境群可凸余紧地表示到固定H^(q*)，限制在各嵌入曲面群后有统一正平移长度下界且无连续边界延拓。命题1.4仍给这些曲面表示射线Cannon–Thurston映射。",
+      "limitations": "环境群的凸余紧性与曲面子群限制表示的非凸余紧性须分别理解。正文给q₀、q*的存在，未指定数值或证明亏格与维数最小。射线极限给边界点像，其连续性由(1.1)排除。未独立核验小消去词表、粘合图和所有链条件。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第1页脚注及第4–5页§1.4明确将反例构造、具体组合词和粘合方式归于 GPT-6 Astra。并行模型最初得到亏格10811的构造与证明，经后续提示降低亏格得到现版本。作者据此撰写论文并逐步检查。GPT-6.1 Sol 将作者手绘草图转换为TikZ代码。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03855v1 · PDF第1页脚注、第4–5页 §1.4 Description of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:56:49.905601+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03855v1",
+        "contentHash": "39d28267a8ec56c0ac17b796345129ef1da708fb1aef75fa3b3f4f0271d79a3d",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页脚注及第4–5页§1.4明确将反例构造、具体组合词和粘合方式归于 GPT-6 Astra。并行模型最初得到亏格10811的构造与证明，经后续提示降低亏格得到现版本。作者据此撰写论文并逐步检查。GPT-6.1 Sol 将作者手绘草图转换为TikZ代码。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fcbc1188f2e26c1ac8d842cc364f69a5fd0ee819c1fdaa02112761a3cfb57658"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "直接关联负曲率群作用和无穷远边界，优先核对反例的环境及传递机制。"
+    },
+    "analysisBasis": {
+      "abstract": "We present discrete, faithful and purely loxodromic representations of a closed surface group of genus 431, and of a free group, into the group of isometries of a finite-dimensional real-hyperbolic space for which no Cannon--Thurston map exists. The construction combines three ingredients: the small-cancellation strategy employed by Baker--Riley to construct a subgroup of an ambient hyperbolic group with no Cannon--Thurston map, the realization of these groups by octagon complexes, and a theorem of Desgroseilliers--Haglund that supplies a convex cocompact faithful representation of the ambient hyperbolic group on a real-hyperbolic space. These examples admit ray Cannon--Thurston maps, as defined by Halder, Mahan Mj and Sardar.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03855",
+        "metadata": {
+          "title": "A surface-group action on real-hyperbolic space with no Cannon--Thurston map",
+          "authors": [
+            "Bruno Dular"
+          ],
+          "abstract": "We present discrete, faithful and purely loxodromic representations of a closed surface group of genus 431, and of a free group, into the group of isometries of a finite-dimensional real-hyperbolic space for which no Cannon--Thurston map exists. The construction combines three ingredients: the small-cancellation strategy employed by Baker--Riley to construct a subgroup of an ambient hyperbolic group with no Cannon--Thurston map, the realization of these groups by octagon complexes, and a theorem of Desgroseilliers--Haglund that supplies a convex cocompact faithful representation of the ambient hyperbolic group on a real-hyperbolic space. These examples admit ray Cannon--Thurston maps, as defined by Halder, Mahan Mj and Sardar.",
+          "categories": [
+            "math.GT",
+            "math.GR"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "26 pages, 8 figures. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-02T19:23:41Z",
+          "updatedAt": "2026-11-02T19:23:41Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-04T06:43:36.156234+00:00",
+            "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.936691+00:00",
+            "contentHash": "f804cc91fa65f5f0a5abea51643ae2f2561fe41f69db5ef54040c4a54916e9f7"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "实双曲空间作用的边界延拓反例",
+          "workSummary": "定理1.1给亏格431闭定向曲面群在某有限维实双曲空间的离散忠实纯loxodromic表示，非平凡元平移长度有统一正下界。证明构造的hₙd⁺在源边界趋于b⁺，目标中的端点像趋于ρ(b)⁻，从而排除连续Cannon–Thurston延拓。同一环境还给出秩287自由群反例。",
+          "techniques": [
+            "Baker–Riley型迭代HNN扩张与小消去词",
+            "沿拟凸自由子群合并曲面群",
+            "简单无三角形顶点链的八边形复形",
+            "Desgroseilliers–Haglund凸余紧环境表示",
+            "端点不连续性及射线落点判据"
+          ],
+          "breakthrough": "定理1.3将反例扩展到每个g≥431，同一个无挠双曲环境群可凸余紧地表示到固定H^(q*)，限制在各嵌入曲面群后有统一正平移长度下界且无连续边界延拓。命题1.4仍给这些曲面表示射线Cannon–Thurston映射。",
+          "limitations": "环境群的凸余紧性与曲面子群限制表示的非凸余紧性须分别理解。正文给q₀、q*的存在，未指定数值或证明亏格与维数最小。射线极限给边界点像，其连续性由(1.1)排除。未独立核验小消去词表、粘合图和所有链条件。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第1页脚注及第4–5页§1.4明确将反例构造、具体组合词和粘合方式归于 GPT-6 Astra。并行模型最初得到亏格10811的构造与证明，经后续提示降低亏格得到现版本。作者据此撰写论文并逐步检查。GPT-6.1 Sol 将作者手绘草图转换为TikZ代码。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03855v1 · PDF第1页脚注、第4–5页 §1.4 Description of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:56:49.905601+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03855v1",
+            "contentHash": "39d28267a8ec56c0ac17b796345129ef1da708fb1aef75fa3b3f4f0271d79a3d",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页脚注及第4–5页§1.4明确将反例构造、具体组合词和粘合方式归于 GPT-6 Astra。并行模型最初得到亏格10811的构造与证明，经后续提示降低亏格得到现版本。作者据此撰写论文并逐步检查。GPT-6.1 Sol 将作者手绘草图转换为TikZ代码。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fcbc1188f2e26c1ac8d842cc364f69a5fd0ee819c1fdaa02112761a3cfb57658"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "直接关联负曲率群作用和无穷远边界，优先核对反例的环境及传递机制。"
+        },
+        "analysisBasis": {
+          "abstract": "We present discrete, faithful and purely loxodromic representations of a closed surface group of genus 431, and of a free group, into the group of isometries of a finite-dimensional real-hyperbolic space for which no Cannon--Thurston map exists. The construction combines three ingredients: the small-cancellation strategy employed by Baker--Riley to construct a subgroup of an ambient hyperbolic group with no Cannon--Thurston map, the realization of these groups by octagon complexes, and a theorem of Desgroseilliers--Haglund that supplies a convex cocompact faithful representation of the ambient hyperbolic group on a real-hyperbolic space. These examples admit ray Cannon--Thurston maps, as defined by Halder, Mahan Mj and Sardar.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

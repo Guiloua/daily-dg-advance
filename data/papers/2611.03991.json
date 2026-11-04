@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03991",
+  "slug": "2611.03991",
+  "latest": {
+    "arxivId": "2611.03991",
+    "metadata": {
+      "title": "Balance in Inequality: Testing the Physical Equilibrium, Precession, and Structural Stability of Magic Gems",
+      "authors": [
+        "Kyle Elliott Mathewson"
+      ],
+      "abstract": "A magic square exemplifies balance in inequality: its $n^2$ entries $\\{1,\\dots,n^2\\}$ are distinct, yet every row, column, and main diagonal sums to $\\mu_n=n(n^2+1)/2$. Lifting centred grid cells into $\\mathbb{R}^3$ as radial vectors $\\mathbf{p}_{ij}(\\lambda)=(x_j,y_i,\\lambda z_{ij})$ and taking their convex hull---the Magic Gem $\\mathcal{G}_\\lambda(S)$---asks: when does line-sum equality suffice for equilibrium in 3D, and when a nonlinear realization breaks balance, how can an opposing inequality restore it? We test this across all $880$ order-$4$ magic squares in four regimes. For radial spokes from $O$, natural lengths balance identically, while unit spokes break equilibrium on all $832$ non-associative squares in 3D and on all squares in 2D, where the ring-radius ratio $r_2/r_1=\\sqrt{5}$ bounds the resultant below by the Pell convergent $9/4\\approx\\sqrt{5}$. By length--weight duality, balance is restored via tip weights $\\mathbf{w}^*>\\mathbf{0}$ on $S^2$ or power-law spoke scaling ($r^{\\alpha^*}$ in 2D and $(\\mathbf{V}_3)_z=0$ in 3D). In 3D rotation, equal point masses make every semi-magic square an axisymmetric top with spherical-top transition $\\lambda_{\\mathrm{iso}}=(n^2+1)^{-1/2}$, whereas entry masses $m_{ij}=s_{ij}$ expose the quadrupole $Q_{xy}=\\sum z_{ij}x_jy_i$, triggering $180^\\circ$ Dzhanibekov flips on $824$ squares. Passing to the uniform solid hull $\\mathcal{G}_0(S)$ shifts the centroid off $O$ on $829$ squares; re-engaging the opposing core $\\mathcal{G}_1(S)$ restores balance via two-density inclusions, nested wireframes, or the $K_{n^2}$ strut network, while all $880$ hulls unfold into non-overlapping nets with $f_0-1$ glue tabs. Finally, $\\lambda=1/5$ stabilizes $74.5\\%$ of facets on a table, and alternating $\\mathcal{G}_\\lambda(S)$ with its mirror twin $\\mathcal{G}_\\lambda(r^2\\overline{S})=-\\mathcal{G}_\\lambda(S)$ locks chiral blocks into a vertical tower.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "23 pages, 7 figures, 5 tables. Ancillary files include exact rational verification script (anc/verify_paper_c.py) and complete order-4 census archive (anc/results_paper_c.json). Interactive 3D visual essay and STL/papercraft studio at this https URL and this https URL",
+      "version": 1,
+      "submittedAt": "2026-11-02T21:31:09Z",
+      "updatedAt": "2026-11-02T21:31:09Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-04T06:43:24.618032+00:00",
+        "contentHash": "f31afe7675ef899605ec961df0ece2fbd8421fb8397e3d30dbe07dc135854124"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.936888+00:00",
+        "contentHash": "4afb7b7998ac607533bda53d51be43f2327d31b7b7691e535444054df0a23345"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "四阶幻方凸包的平衡与动力学",
+      "workSummary": "以幻方居中网格和数值高度生成三维凸包。对 880 个四阶幻方，作者比较辐条的静力平衡、离散质量的转动、均匀实心凸包的重心与桌面支撑稳定性。",
+      "techniques": [
+        "幻方的行列和约束",
+        "辐条归一化及正权配平",
+        "惯性张量和四极矩",
+        "凸包展开与支撑面统计"
+      ],
+      "breakthrough": "自然长度辐条恒平衡，单位化可破坏平衡，正权重或幂律缩放可恢复。作者报告条目质量下 824 个例子发生翻转，均匀凸包中 829 个例子重心偏移，并给出展开和配重构造。",
+      "limitations": "这些计数依赖四阶全集与特定质量、缩放和动力学设置。更高阶、实验鲁棒性及一般凸包的表现需分别分析。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第21–22页致谢明确 ChatGPT、Claude、Gemini 辅助符号核查、验证脚本、交互模拟器原型及文稿校订。作者核验公式、证明与计算证书。第6页补检所连读的 O 和 d_in 是图2中两个独立的几何标签，已渲染核对。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03991v1 · PDF第21–22页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:57:41.151457+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03991v1",
+        "contentHash": "11f7f9b6212d66bc44dd85b4ec49a4ac19133c7bfd9b54f995690d8c8974a0f9",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第21–22页致谢明确 ChatGPT、Claude、Gemini 辅助符号核查、验证脚本、交互模拟器原型及文稿校订。作者核验公式、证明与计算证书。第6页补检所连读的 O 和 d_in 是图2中两个独立的几何标签，已渲染核对。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "43f5534f0184eabcb6a00711ed06be020f76822997c677c38b490a686b289afd"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 39,
+      "priorityReason": "以有限算例和物理建模为主，和曲率或几何 PDE 的关联有限。",
+      "lowPriorityReason": "以有限算例和物理建模为主，和曲率或几何 PDE 的关联有限。"
+    },
+    "analysisBasis": {
+      "abstract": "A magic square exemplifies balance in inequality: its $n^2$ entries $\\{1,\\dots,n^2\\}$ are distinct, yet every row, column, and main diagonal sums to $\\mu_n=n(n^2+1)/2$. Lifting centred grid cells into $\\mathbb{R}^3$ as radial vectors $\\mathbf{p}_{ij}(\\lambda)=(x_j,y_i,\\lambda z_{ij})$ and taking their convex hull---the Magic Gem $\\mathcal{G}_\\lambda(S)$---asks: when does line-sum equality suffice for equilibrium in 3D, and when a nonlinear realization breaks balance, how can an opposing inequality restore it? We test this across all $880$ order-$4$ magic squares in four regimes. For radial spokes from $O$, natural lengths balance identically, while unit spokes break equilibrium on all $832$ non-associative squares in 3D and on all squares in 2D, where the ring-radius ratio $r_2/r_1=\\sqrt{5}$ bounds the resultant below by the Pell convergent $9/4\\approx\\sqrt{5}$. By length--weight duality, balance is restored via tip weights $\\mathbf{w}^*>\\mathbf{0}$ on $S^2$ or power-law spoke scaling ($r^{\\alpha^*}$ in 2D and $(\\mathbf{V}_3)_z=0$ in 3D). In 3D rotation, equal point masses make every semi-magic square an axisymmetric top with spherical-top transition $\\lambda_{\\mathrm{iso}}=(n^2+1)^{-1/2}$, whereas entry masses $m_{ij}=s_{ij}$ expose the quadrupole $Q_{xy}=\\sum z_{ij}x_jy_i$, triggering $180^\\circ$ Dzhanibekov flips on $824$ squares. Passing to the uniform solid hull $\\mathcal{G}_0(S)$ shifts the centroid off $O$ on $829$ squares; re-engaging the opposing core $\\mathcal{G}_1(S)$ restores balance via two-density inclusions, nested wireframes, or the $K_{n^2}$ strut network, while all $880$ hulls unfold into non-overlapping nets with $f_0-1$ glue tabs. Finally, $\\lambda=1/5$ stabilizes $74.5\\%$ of facets on a table, and alternating $\\mathcal{G}_\\lambda(S)$ with its mirror twin $\\mathcal{G}_\\lambda(r^2\\overline{S})=-\\mathcal{G}_\\lambda(S)$ locks chiral blocks into a vertical tower.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03991",
+        "metadata": {
+          "title": "Balance in Inequality: Testing the Physical Equilibrium, Precession, and Structural Stability of Magic Gems",
+          "authors": [
+            "Kyle Elliott Mathewson"
+          ],
+          "abstract": "A magic square exemplifies balance in inequality: its $n^2$ entries $\\{1,\\dots,n^2\\}$ are distinct, yet every row, column, and main diagonal sums to $\\mu_n=n(n^2+1)/2$. Lifting centred grid cells into $\\mathbb{R}^3$ as radial vectors $\\mathbf{p}_{ij}(\\lambda)=(x_j,y_i,\\lambda z_{ij})$ and taking their convex hull---the Magic Gem $\\mathcal{G}_\\lambda(S)$---asks: when does line-sum equality suffice for equilibrium in 3D, and when a nonlinear realization breaks balance, how can an opposing inequality restore it? We test this across all $880$ order-$4$ magic squares in four regimes. For radial spokes from $O$, natural lengths balance identically, while unit spokes break equilibrium on all $832$ non-associative squares in 3D and on all squares in 2D, where the ring-radius ratio $r_2/r_1=\\sqrt{5}$ bounds the resultant below by the Pell convergent $9/4\\approx\\sqrt{5}$. By length--weight duality, balance is restored via tip weights $\\mathbf{w}^*>\\mathbf{0}$ on $S^2$ or power-law spoke scaling ($r^{\\alpha^*}$ in 2D and $(\\mathbf{V}_3)_z=0$ in 3D). In 3D rotation, equal point masses make every semi-magic square an axisymmetric top with spherical-top transition $\\lambda_{\\mathrm{iso}}=(n^2+1)^{-1/2}$, whereas entry masses $m_{ij}=s_{ij}$ expose the quadrupole $Q_{xy}=\\sum z_{ij}x_jy_i$, triggering $180^\\circ$ Dzhanibekov flips on $824$ squares. Passing to the uniform solid hull $\\mathcal{G}_0(S)$ shifts the centroid off $O$ on $829$ squares; re-engaging the opposing core $\\mathcal{G}_1(S)$ restores balance via two-density inclusions, nested wireframes, or the $K_{n^2}$ strut network, while all $880$ hulls unfold into non-overlapping nets with $f_0-1$ glue tabs. Finally, $\\lambda=1/5$ stabilizes $74.5\\%$ of facets on a table, and alternating $\\mathcal{G}_\\lambda(S)$ with its mirror twin $\\mathcal{G}_\\lambda(r^2\\overline{S})=-\\mathcal{G}_\\lambda(S)$ locks chiral blocks into a vertical tower.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "23 pages, 7 figures, 5 tables. Ancillary files include exact rational verification script (anc/verify_paper_c.py) and complete order-4 census archive (anc/results_paper_c.json). Interactive 3D visual essay and STL/papercraft studio at this https URL and this https URL",
+          "version": 1,
+          "submittedAt": "2026-11-02T21:31:09Z",
+          "updatedAt": "2026-11-02T21:31:09Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-04T06:43:24.618032+00:00",
+            "contentHash": "f31afe7675ef899605ec961df0ece2fbd8421fb8397e3d30dbe07dc135854124"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.936888+00:00",
+            "contentHash": "4afb7b7998ac607533bda53d51be43f2327d31b7b7691e535444054df0a23345"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "四阶幻方凸包的平衡与动力学",
+          "workSummary": "以幻方居中网格和数值高度生成三维凸包。对 880 个四阶幻方，作者比较辐条的静力平衡、离散质量的转动、均匀实心凸包的重心与桌面支撑稳定性。",
+          "techniques": [
+            "幻方的行列和约束",
+            "辐条归一化及正权配平",
+            "惯性张量和四极矩",
+            "凸包展开与支撑面统计"
+          ],
+          "breakthrough": "自然长度辐条恒平衡，单位化可破坏平衡，正权重或幂律缩放可恢复。作者报告条目质量下 824 个例子发生翻转，均匀凸包中 829 个例子重心偏移，并给出展开和配重构造。",
+          "limitations": "这些计数依赖四阶全集与特定质量、缩放和动力学设置。更高阶、实验鲁棒性及一般凸包的表现需分别分析。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第21–22页致谢明确 ChatGPT、Claude、Gemini 辅助符号核查、验证脚本、交互模拟器原型及文稿校订。作者核验公式、证明与计算证书。第6页补检所连读的 O 和 d_in 是图2中两个独立的几何标签，已渲染核对。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03991v1 · PDF第21–22页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:57:41.151457+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03991v1",
+            "contentHash": "11f7f9b6212d66bc44dd85b4ec49a4ac19133c7bfd9b54f995690d8c8974a0f9",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第21–22页致谢明确 ChatGPT、Claude、Gemini 辅助符号核查、验证脚本、交互模拟器原型及文稿校订。作者核验公式、证明与计算证书。第6页补检所连读的 O 和 d_in 是图2中两个独立的几何标签，已渲染核对。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "43f5534f0184eabcb6a00711ed06be020f76822997c677c38b490a686b289afd"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 39,
+          "priorityReason": "以有限算例和物理建模为主，和曲率或几何 PDE 的关联有限。",
+          "lowPriorityReason": "以有限算例和物理建模为主，和曲率或几何 PDE 的关联有限。"
+        },
+        "analysisBasis": {
+          "abstract": "A magic square exemplifies balance in inequality: its $n^2$ entries $\\{1,\\dots,n^2\\}$ are distinct, yet every row, column, and main diagonal sums to $\\mu_n=n(n^2+1)/2$. Lifting centred grid cells into $\\mathbb{R}^3$ as radial vectors $\\mathbf{p}_{ij}(\\lambda)=(x_j,y_i,\\lambda z_{ij})$ and taking their convex hull---the Magic Gem $\\mathcal{G}_\\lambda(S)$---asks: when does line-sum equality suffice for equilibrium in 3D, and when a nonlinear realization breaks balance, how can an opposing inequality restore it? We test this across all $880$ order-$4$ magic squares in four regimes. For radial spokes from $O$, natural lengths balance identically, while unit spokes break equilibrium on all $832$ non-associative squares in 3D and on all squares in 2D, where the ring-radius ratio $r_2/r_1=\\sqrt{5}$ bounds the resultant below by the Pell convergent $9/4\\approx\\sqrt{5}$. By length--weight duality, balance is restored via tip weights $\\mathbf{w}^*>\\mathbf{0}$ on $S^2$ or power-law spoke scaling ($r^{\\alpha^*}$ in 2D and $(\\mathbf{V}_3)_z=0$ in 3D). In 3D rotation, equal point masses make every semi-magic square an axisymmetric top with spherical-top transition $\\lambda_{\\mathrm{iso}}=(n^2+1)^{-1/2}$, whereas entry masses $m_{ij}=s_{ij}$ expose the quadrupole $Q_{xy}=\\sum z_{ij}x_jy_i$, triggering $180^\\circ$ Dzhanibekov flips on $824$ squares. Passing to the uniform solid hull $\\mathcal{G}_0(S)$ shifts the centroid off $O$ on $829$ squares; re-engaging the opposing core $\\mathcal{G}_1(S)$ restores balance via two-density inclusions, nested wireframes, or the $K_{n^2}$ strut network, while all $880$ hulls unfold into non-overlapping nets with $f_0-1$ glue tabs. Finally, $\\lambda=1/5$ stabilizes $74.5\\%$ of facets on a table, and alternating $\\mathcal{G}_\\lambda(S)$ with its mirror twin $\\mathcal{G}_\\lambda(r^2\\overline{S})=-\\mathcal{G}_\\lambda(S)$ locks chiral blocks into a vertical tower.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

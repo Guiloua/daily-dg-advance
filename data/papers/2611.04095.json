@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.04095",
+  "slug": "2611.04095",
+  "latest": {
+    "arxivId": "2611.04095",
+    "metadata": {
+      "title": "Universal bounds for decompositions of PL manifolds",
+      "authors": [
+        "Rustam Sadykov"
+      ],
+      "abstract": "The geometric dimension of a nonempty compact PL manifold $N$ is the smallest nonnegative integer $d$ for which $N$ admits a handle decomposition with all handles of index at most $d$. A PL filling of a compact PL manifold is a decomposition into compact codimension $0$ PL submanifolds, called sectors, with pairwise disjoint interiors and intersections described by standard local models. We advance Singhof's program of simplifying the sectors of a filling and their intersections. Specifically, for integers $m, \\ell\\ge 1$ and nonnegative integers $a_1\\le\\cdots\\le a_\\ell$, we prove that every closed PL $m$-manifold admits a filling into $\\ell$ sectors whose nonempty $r$-fold intersections have geometric dimension at most $a_r$ for each $1\\le r\\le \\ell$ if and only if \\[ a_{\\lambda_1}+\\cdots+a_{\\lambda_q}\\ge m-\\ell+1 \\] for every partition $\\lambda_1+\\cdots+\\lambda_q=\\ell$ into positive integers. Under the same inequalities, any prescribed $\\ell$-sector filling of the boundary of a compact PL $m$-manifold extends to a filling with the corresponding relative handle index bounds. Necessity follows from the cup-product obstructions of Courte, Moussard, Ren, and Zhou. To prove sufficiency, we develop compatible handle trades that simplify intersections in increasing order of depth. For nondecreasing tuples of nonnegative integers, our theorem resolves the PL classification problem posed by Courte, Moussard, Ren, and Zhou. In particular, we obtain the bound $(2,2,4)$ for $3$-sector fillings in dimension $6$ and improve the $5$-sector bound $(1,2,3,3,4)$ of Rubinstein and Tillmann to $(1,2,2,3,4)$ in dimension $8$.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "29 pages",
+      "version": 1,
+      "submittedAt": "2026-11-03T00:11:27Z",
+      "updatedAt": "2026-11-03T00:11:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-04T06:43:36.156234+00:00",
+        "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.937259+00:00",
+        "contentHash": "b9e662143bdcb3c4ba324b030cafe1c79a218353f9a9879b716ef372dd9197ed"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "PL分解的充要条件",
+      "workSummary": "对整数m,ℓ≥1和非降非负整数列a₁,…,a_ℓ，给出每个闭PL m流形均能分为ℓ个扇区、且每个非空r重交的几何维数≤a_r的充要条件：对ℓ的每个正整数分拆λ₁+⋯+λ_q=ℓ，均有∑a_{λ_i}≥m−ℓ+1。相同不等式还保证紧PL流形边界上给定的ℓ扇区分解可延拓，并控制相对把手指标。",
+      "techniques": [
+        "杯积障碍",
+        "兼容把手交换",
+        "按交深递增化简"
+      ],
+      "breakthrough": "解决所述非降指标列的PL分类问题，得到六维三扇区(2,2,4)及八维五扇区(1,2,2,3,4)。",
+      "limitations": "几何维数指可实现的最高把手指标的最小值。充要性针对所有闭PL m流形的统一保证，具体单个流形可能有更强界。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露用ChatGPT辅助修改表述、发展并审查数学论证、查找参考文献和制图。披露没有将某个核心构造具体归给模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.04095v1 · PDF 第28页 Tool use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:48:35.167314+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.04095v1",
+        "contentHash": "a39385be5db921c85bae3fccf7cc665d57882ecc4de0f22ea932d021ceb2f19f",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露用ChatGPT辅助修改表述、发展并审查数学论证、查找参考文献和制图。披露没有将某个核心构造具体归给模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e2025beff513d170d95543161c7f32a4a2dce4391d6aa576ba9fa66747c82a89"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 81,
+      "priorityReason": "扇区分解的精确全局条件对高维几何拓扑有用。"
+    },
+    "analysisBasis": {
+      "abstract": "The geometric dimension of a nonempty compact PL manifold $N$ is the smallest nonnegative integer $d$ for which $N$ admits a handle decomposition with all handles of index at most $d$. A PL filling of a compact PL manifold is a decomposition into compact codimension $0$ PL submanifolds, called sectors, with pairwise disjoint interiors and intersections described by standard local models. We advance Singhof's program of simplifying the sectors of a filling and their intersections. Specifically, for integers $m, \\ell\\ge 1$ and nonnegative integers $a_1\\le\\cdots\\le a_\\ell$, we prove that every closed PL $m$-manifold admits a filling into $\\ell$ sectors whose nonempty $r$-fold intersections have geometric dimension at most $a_r$ for each $1\\le r\\le \\ell$ if and only if \\[ a_{\\lambda_1}+\\cdots+a_{\\lambda_q}\\ge m-\\ell+1 \\] for every partition $\\lambda_1+\\cdots+\\lambda_q=\\ell$ into positive integers. Under the same inequalities, any prescribed $\\ell$-sector filling of the boundary of a compact PL $m$-manifold extends to a filling with the corresponding relative handle index bounds. Necessity follows from the cup-product obstructions of Courte, Moussard, Ren, and Zhou. To prove sufficiency, we develop compatible handle trades that simplify intersections in increasing order of depth. For nondecreasing tuples of nonnegative integers, our theorem resolves the PL classification problem posed by Courte, Moussard, Ren, and Zhou. In particular, we obtain the bound $(2,2,4)$ for $3$-sector fillings in dimension $6$ and improve the $5$-sector bound $(1,2,3,3,4)$ of Rubinstein and Tillmann to $(1,2,2,3,4)$ in dimension $8$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.04095",
+        "metadata": {
+          "title": "Universal bounds for decompositions of PL manifolds",
+          "authors": [
+            "Rustam Sadykov"
+          ],
+          "abstract": "The geometric dimension of a nonempty compact PL manifold $N$ is the smallest nonnegative integer $d$ for which $N$ admits a handle decomposition with all handles of index at most $d$. A PL filling of a compact PL manifold is a decomposition into compact codimension $0$ PL submanifolds, called sectors, with pairwise disjoint interiors and intersections described by standard local models. We advance Singhof's program of simplifying the sectors of a filling and their intersections. Specifically, for integers $m, \\ell\\ge 1$ and nonnegative integers $a_1\\le\\cdots\\le a_\\ell$, we prove that every closed PL $m$-manifold admits a filling into $\\ell$ sectors whose nonempty $r$-fold intersections have geometric dimension at most $a_r$ for each $1\\le r\\le \\ell$ if and only if \\[ a_{\\lambda_1}+\\cdots+a_{\\lambda_q}\\ge m-\\ell+1 \\] for every partition $\\lambda_1+\\cdots+\\lambda_q=\\ell$ into positive integers. Under the same inequalities, any prescribed $\\ell$-sector filling of the boundary of a compact PL $m$-manifold extends to a filling with the corresponding relative handle index bounds. Necessity follows from the cup-product obstructions of Courte, Moussard, Ren, and Zhou. To prove sufficiency, we develop compatible handle trades that simplify intersections in increasing order of depth. For nondecreasing tuples of nonnegative integers, our theorem resolves the PL classification problem posed by Courte, Moussard, Ren, and Zhou. In particular, we obtain the bound $(2,2,4)$ for $3$-sector fillings in dimension $6$ and improve the $5$-sector bound $(1,2,3,3,4)$ of Rubinstein and Tillmann to $(1,2,2,3,4)$ in dimension $8$.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "29 pages",
+          "version": 1,
+          "submittedAt": "2026-11-03T00:11:27Z",
+          "updatedAt": "2026-11-03T00:11:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-04T06:43:36.156234+00:00",
+            "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.937259+00:00",
+            "contentHash": "b9e662143bdcb3c4ba324b030cafe1c79a218353f9a9879b716ef372dd9197ed"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "PL分解的充要条件",
+          "workSummary": "对整数m,ℓ≥1和非降非负整数列a₁,…,a_ℓ，给出每个闭PL m流形均能分为ℓ个扇区、且每个非空r重交的几何维数≤a_r的充要条件：对ℓ的每个正整数分拆λ₁+⋯+λ_q=ℓ，均有∑a_{λ_i}≥m−ℓ+1。相同不等式还保证紧PL流形边界上给定的ℓ扇区分解可延拓，并控制相对把手指标。",
+          "techniques": [
+            "杯积障碍",
+            "兼容把手交换",
+            "按交深递增化简"
+          ],
+          "breakthrough": "解决所述非降指标列的PL分类问题，得到六维三扇区(2,2,4)及八维五扇区(1,2,2,3,4)。",
+          "limitations": "几何维数指可实现的最高把手指标的最小值。充要性针对所有闭PL m流形的统一保证，具体单个流形可能有更强界。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露用ChatGPT辅助修改表述、发展并审查数学论证、查找参考文献和制图。披露没有将某个核心构造具体归给模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.04095v1 · PDF 第28页 Tool use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:48:35.167314+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.04095v1",
+            "contentHash": "a39385be5db921c85bae3fccf7cc665d57882ecc4de0f22ea932d021ceb2f19f",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露用ChatGPT辅助修改表述、发展并审查数学论证、查找参考文献和制图。披露没有将某个核心构造具体归给模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e2025beff513d170d95543161c7f32a4a2dce4391d6aa576ba9fa66747c82a89"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 81,
+          "priorityReason": "扇区分解的精确全局条件对高维几何拓扑有用。"
+        },
+        "analysisBasis": {
+          "abstract": "The geometric dimension of a nonempty compact PL manifold $N$ is the smallest nonnegative integer $d$ for which $N$ admits a handle decomposition with all handles of index at most $d$. A PL filling of a compact PL manifold is a decomposition into compact codimension $0$ PL submanifolds, called sectors, with pairwise disjoint interiors and intersections described by standard local models. We advance Singhof's program of simplifying the sectors of a filling and their intersections. Specifically, for integers $m, \\ell\\ge 1$ and nonnegative integers $a_1\\le\\cdots\\le a_\\ell$, we prove that every closed PL $m$-manifold admits a filling into $\\ell$ sectors whose nonempty $r$-fold intersections have geometric dimension at most $a_r$ for each $1\\le r\\le \\ell$ if and only if \\[ a_{\\lambda_1}+\\cdots+a_{\\lambda_q}\\ge m-\\ell+1 \\] for every partition $\\lambda_1+\\cdots+\\lambda_q=\\ell$ into positive integers. Under the same inequalities, any prescribed $\\ell$-sector filling of the boundary of a compact PL $m$-manifold extends to a filling with the corresponding relative handle index bounds. Necessity follows from the cup-product obstructions of Courte, Moussard, Ren, and Zhou. To prove sufficiency, we develop compatible handle trades that simplify intersections in increasing order of depth. For nondecreasing tuples of nonnegative integers, our theorem resolves the PL classification problem posed by Courte, Moussard, Ren, and Zhou. In particular, we obtain the bound $(2,2,4)$ for $3$-sector fillings in dimension $6$ and improve the $5$-sector bound $(1,2,3,3,4)$ of Rubinstein and Tillmann to $(1,2,2,3,4)$ in dimension $8$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

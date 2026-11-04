@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.05177",
+  "slug": "2611.05177",
+  "latest": {
+    "arxivId": "2611.05177",
+    "metadata": {
+      "title": "A Smooth Shioda-Tate Isomorphism for Elliptically Fibered 4-Manifolds",
+      "authors": [
+        "Maria Morariu"
+      ],
+      "abstract": "This paper studies a subgroup of the mapping class group of an elliptically fibered $4$-manifold $\\pi: M\\to B$, inspired by number theory. The smooth Mordell-Weil group $\\mathrm{MW}(\\pi)$ is the group of isotopy classes of smooth sections of $\\pi$. We construct a smooth analog of the Shioda-Tate isomorphism, identifying $\\mathrm{MW(\\pi)}$ with the quotient of $H^2(M;\\mathbb{Z})$ by the trivial lattice of $\\pi$. This shows that $\\mathrm{MW}(\\pi)$ can be computed explicitly from $H^2(M;\\mathbb{Z})$. As an application, we show that the natural inclusion of the holomorphic Mordell-Weil group into the smooth one is an isomorphism if and only if $M$ is a rational elliptic surface. As another application, we show that $\\mathrm{MW}(\\pi)$ satisfies a strong version of Nielsen realization: any torsion element of $\\mathrm{MW}(\\pi)$ is represented by a holomorphic translation of $M$ of the same order.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "28 pages, 9 figures, 2 tables",
+      "version": 1,
+      "submittedAt": "2026-11-03T16:40:22Z",
+      "updatedAt": "2026-11-03T16:40:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-04T06:43:36.156234+00:00",
+        "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:23.066931+00:00",
+        "contentHash": "8f5cad77fdfdf9c64c65fca1f4d020f9ac1bff0da3c3bcd08a45a13207056398"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "椭圆纤维四维流形的光滑Shioda–Tate同构",
+      "workSummary": "对闭底曲线上的椭圆纤维化，固定零截面σ₀。作者建立光滑截面同痕类群与H²(M;Z)/Triv(π)的自然同构，映射取截面与零截面的Poincaré对偶之差。在相应全纯情形，自然包含为同构恰对应有理椭圆曲面。挠元可由同阶全纯平移代表。",
+      "techniques": [
+        "截面同痕与Mordell–Weil群",
+        "整上同调与平凡格",
+        "Nielsen实现与全纯平移"
+      ],
+      "breakthrough": "把光滑截面群计算转为整上同调商，并给其有限阶元素的实现。",
+      "limitations": "主同构要求闭底曲线和固定零截面。挠元实现是该截面群的陈述。解读依据摘要及正文第1页的主同构，未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 Gemini Pro 3.1 和 Claude Opus 5.5 用于制作插图，GPT-5.6 Terra 用于核查证明及检索文献。例5.6的 Inose 曲面 Mordell–Weil 群计算在与 GPT-6.1 Sol 对话中完成。数学计算的披露具体限于该例。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.05177v1 · PDF 第4页，Computational Resource Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:55:46.594274+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.05177v1",
+        "contentHash": "d6c852290baa34323ebdf4337c356b3b167351f0ee008410c94a8de76ce12f05",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Gemini Pro 3.1 和 Claude Opus 5.5 用于制作插图，GPT-5.6 Terra 用于核查证明及检索文献。例5.6的 Inose 曲面 Mordell–Weil 群计算在与 GPT-6.1 Sol 对话中完成。数学计算的披露具体限于该例。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ef8bba0bfd5b76ee2e940c76b81736af42b09de9e8083fd170a8673d9c3ee6da"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 77,
+      "priorityReason": "四维纤维化的可计算分类工具，适合低维几何拓扑读者。"
+    },
+    "analysisBasis": {
+      "abstract": "This paper studies a subgroup of the mapping class group of an elliptically fibered $4$-manifold $\\pi: M\\to B$, inspired by number theory. The smooth Mordell-Weil group $\\mathrm{MW}(\\pi)$ is the group of isotopy classes of smooth sections of $\\pi$. We construct a smooth analog of the Shioda-Tate isomorphism, identifying $\\mathrm{MW(\\pi)}$ with the quotient of $H^2(M;\\mathbb{Z})$ by the trivial lattice of $\\pi$. This shows that $\\mathrm{MW}(\\pi)$ can be computed explicitly from $H^2(M;\\mathbb{Z})$. As an application, we show that the natural inclusion of the holomorphic Mordell-Weil group into the smooth one is an isomorphism if and only if $M$ is a rational elliptic surface. As another application, we show that $\\mathrm{MW}(\\pi)$ satisfies a strong version of Nielsen realization: any torsion element of $\\mathrm{MW}(\\pi)$ is represented by a holomorphic translation of $M$ of the same order.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.05177",
+        "metadata": {
+          "title": "A Smooth Shioda-Tate Isomorphism for Elliptically Fibered 4-Manifolds",
+          "authors": [
+            "Maria Morariu"
+          ],
+          "abstract": "This paper studies a subgroup of the mapping class group of an elliptically fibered $4$-manifold $\\pi: M\\to B$, inspired by number theory. The smooth Mordell-Weil group $\\mathrm{MW}(\\pi)$ is the group of isotopy classes of smooth sections of $\\pi$. We construct a smooth analog of the Shioda-Tate isomorphism, identifying $\\mathrm{MW(\\pi)}$ with the quotient of $H^2(M;\\mathbb{Z})$ by the trivial lattice of $\\pi$. This shows that $\\mathrm{MW}(\\pi)$ can be computed explicitly from $H^2(M;\\mathbb{Z})$. As an application, we show that the natural inclusion of the holomorphic Mordell-Weil group into the smooth one is an isomorphism if and only if $M$ is a rational elliptic surface. As another application, we show that $\\mathrm{MW}(\\pi)$ satisfies a strong version of Nielsen realization: any torsion element of $\\mathrm{MW}(\\pi)$ is represented by a holomorphic translation of $M$ of the same order.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "28 pages, 9 figures, 2 tables",
+          "version": 1,
+          "submittedAt": "2026-11-03T16:40:22Z",
+          "updatedAt": "2026-11-03T16:40:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-04T06:43:36.156234+00:00",
+            "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:23.066931+00:00",
+            "contentHash": "8f5cad77fdfdf9c64c65fca1f4d020f9ac1bff0da3c3bcd08a45a13207056398"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "椭圆纤维四维流形的光滑Shioda–Tate同构",
+          "workSummary": "对闭底曲线上的椭圆纤维化，固定零截面σ₀。作者建立光滑截面同痕类群与H²(M;Z)/Triv(π)的自然同构，映射取截面与零截面的Poincaré对偶之差。在相应全纯情形，自然包含为同构恰对应有理椭圆曲面。挠元可由同阶全纯平移代表。",
+          "techniques": [
+            "截面同痕与Mordell–Weil群",
+            "整上同调与平凡格",
+            "Nielsen实现与全纯平移"
+          ],
+          "breakthrough": "把光滑截面群计算转为整上同调商，并给其有限阶元素的实现。",
+          "limitations": "主同构要求闭底曲线和固定零截面。挠元实现是该截面群的陈述。解读依据摘要及正文第1页的主同构，未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 Gemini Pro 3.1 和 Claude Opus 5.5 用于制作插图，GPT-5.6 Terra 用于核查证明及检索文献。例5.6的 Inose 曲面 Mordell–Weil 群计算在与 GPT-6.1 Sol 对话中完成。数学计算的披露具体限于该例。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.05177v1 · PDF 第4页，Computational Resource Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:55:46.594274+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.05177v1",
+            "contentHash": "d6c852290baa34323ebdf4337c356b3b167351f0ee008410c94a8de76ce12f05",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 Gemini Pro 3.1 和 Claude Opus 5.5 用于制作插图，GPT-5.6 Terra 用于核查证明及检索文献。例5.6的 Inose 曲面 Mordell–Weil 群计算在与 GPT-6.1 Sol 对话中完成。数学计算的披露具体限于该例。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ef8bba0bfd5b76ee2e940c76b81736af42b09de9e8083fd170a8673d9c3ee6da"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 77,
+          "priorityReason": "四维纤维化的可计算分类工具，适合低维几何拓扑读者。"
+        },
+        "analysisBasis": {
+          "abstract": "This paper studies a subgroup of the mapping class group of an elliptically fibered $4$-manifold $\\pi: M\\to B$, inspired by number theory. The smooth Mordell-Weil group $\\mathrm{MW}(\\pi)$ is the group of isotopy classes of smooth sections of $\\pi$. We construct a smooth analog of the Shioda-Tate isomorphism, identifying $\\mathrm{MW(\\pi)}$ with the quotient of $H^2(M;\\mathbb{Z})$ by the trivial lattice of $\\pi$. This shows that $\\mathrm{MW}(\\pi)$ can be computed explicitly from $H^2(M;\\mathbb{Z})$. As an application, we show that the natural inclusion of the holomorphic Mordell-Weil group into the smooth one is an isomorphism if and only if $M$ is a rational elliptic surface. As another application, we show that $\\mathrm{MW}(\\pi)$ satisfies a strong version of Nielsen realization: any torsion element of $\\mathrm{MW}(\\pi)$ is represented by a holomorphic translation of $M$ of the same order.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

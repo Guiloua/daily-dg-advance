@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03675",
+  "slug": "2611.03675",
+  "latest": {
+    "arxivId": "2611.03675",
+    "metadata": {
+      "title": "Learning Directional Randers Geometry for Latent-Space Exploration",
+      "authors": [
+        "Théau Blanchard",
+        "Stéphanie Allassonnière"
+      ],
+      "abstract": "Deep neural networks extract powerful latent representations from images, enabling fast and efficient downstream analysis. However, these latent spaces lack explicit geometric structure, leading to possibly poor interpolation fidelity and misleading extrapolation. Latent interpolation techniques assume symmetric transition costs which are often not the case for real world data. Their symmetric nature cannot capture directional processes, such as disease progression, where certain transitions are impossible (e.g. tumor growth dynamics or cognitive improvement in Alzheimer's disease). Although Riemannian metrics extend Euclidean geometry by incorporating curvature, they remain symmetric. We show that understanding asymmetry and not curvature alone directly addresses these problems. To do so we propose a new Finsler-Randers metric learning framework. It incorporates direction-dependent distances, thus enabling the computation of trajectories respecting monotonic sequential constraints. We demonstrate its potential for interpolation and extrapolation on controlled cross-sectional datasets.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SP",
+        "math.DG",
+        "q-bio.QM"
+      ],
+      "primaryCategory": "cs.LG",
+      "version": 1,
+      "submittedAt": "2026-10-19T09:50:07Z",
+      "updatedAt": "2026-10-19T09:50:07Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-04T06:43:13.091706+00:00",
+        "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.934733+00:00",
+        "contentHash": "e0f6b4527e8e30f39211686edbe27bca2030ea0ecb453932bf13c40aab07aa82"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "潜空间方向性Randers度量学习",
+      "workSummary": "用 Finsler–Randers 度量为图像潜空间引入方向依赖的转移代价，构造可遵守单调序约束的轨迹，并在受控横断面数据上演示插值和外推。",
+      "techniques": [
+        "神经网络图像潜表示",
+        "Randers 度量学习",
+        "非对称路径代价",
+        "横断面数据上的轨迹实验"
+      ],
+      "breakthrough": "把不可逆序列的方向要求直接放入度量模型，为比较黎曼和 Finsler 插值提供实验实例。",
+      "limitations": "演示依赖受控横断面数据和所给顺序约束，纵向病程、因果方向和实际临床外推仍需独立验证。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第10页 AI USE STATEMENT 明确将生成式AI用于研究反馈、编辑代码、总结及寻找文献、改善稿件可读性和整理参考文献。作者明确说明概念框架未由生成式AI开发。第10–12页会议名称和机器学习引文按研究题材处理。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03675 · PDF第10页 AI USE STATEMENT",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:51:24.434193+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03675",
+        "contentHash": "7be3f87b12aca935fb7bf6ae31d28f0e7e4e59683e059842ac4d36468b8e62be",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页 AI USE STATEMENT 明确将生成式AI用于研究反馈、编辑代码、总结及寻找文献、改善稿件可读性和整理参考文献。作者明确说明概念框架未由生成式AI开发。第10–12页会议名称和机器学习引文按研究题材处理。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "78c7d27fa0af4810e8544766f05c8a2143e286717b0d746eb137244ea79a234f"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 54,
+      "priorityReason": "与 Finsler 非可逆几何有关，主要贡献在建模与实验。"
+    },
+    "analysisBasis": {
+      "abstract": "Deep neural networks extract powerful latent representations from images, enabling fast and efficient downstream analysis. However, these latent spaces lack explicit geometric structure, leading to possibly poor interpolation fidelity and misleading extrapolation. Latent interpolation techniques assume symmetric transition costs which are often not the case for real world data. Their symmetric nature cannot capture directional processes, such as disease progression, where certain transitions are impossible (e.g. tumor growth dynamics or cognitive improvement in Alzheimer's disease). Although Riemannian metrics extend Euclidean geometry by incorporating curvature, they remain symmetric. We show that understanding asymmetry and not curvature alone directly addresses these problems. To do so we propose a new Finsler-Randers metric learning framework. It incorporates direction-dependent distances, thus enabling the computation of trajectories respecting monotonic sequential constraints. We demonstrate its potential for interpolation and extrapolation on controlled cross-sectional datasets.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03675",
+        "metadata": {
+          "title": "Learning Directional Randers Geometry for Latent-Space Exploration",
+          "authors": [
+            "Théau Blanchard",
+            "Stéphanie Allassonnière"
+          ],
+          "abstract": "Deep neural networks extract powerful latent representations from images, enabling fast and efficient downstream analysis. However, these latent spaces lack explicit geometric structure, leading to possibly poor interpolation fidelity and misleading extrapolation. Latent interpolation techniques assume symmetric transition costs which are often not the case for real world data. Their symmetric nature cannot capture directional processes, such as disease progression, where certain transitions are impossible (e.g. tumor growth dynamics or cognitive improvement in Alzheimer's disease). Although Riemannian metrics extend Euclidean geometry by incorporating curvature, they remain symmetric. We show that understanding asymmetry and not curvature alone directly addresses these problems. To do so we propose a new Finsler-Randers metric learning framework. It incorporates direction-dependent distances, thus enabling the computation of trajectories respecting monotonic sequential constraints. We demonstrate its potential for interpolation and extrapolation on controlled cross-sectional datasets.",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "eess.SP",
+            "math.DG",
+            "q-bio.QM"
+          ],
+          "primaryCategory": "cs.LG",
+          "version": 1,
+          "submittedAt": "2026-10-19T09:50:07Z",
+          "updatedAt": "2026-10-19T09:50:07Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-04T06:43:13.091706+00:00",
+            "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.934733+00:00",
+            "contentHash": "e0f6b4527e8e30f39211686edbe27bca2030ea0ecb453932bf13c40aab07aa82"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "潜空间方向性Randers度量学习",
+          "workSummary": "用 Finsler–Randers 度量为图像潜空间引入方向依赖的转移代价，构造可遵守单调序约束的轨迹，并在受控横断面数据上演示插值和外推。",
+          "techniques": [
+            "神经网络图像潜表示",
+            "Randers 度量学习",
+            "非对称路径代价",
+            "横断面数据上的轨迹实验"
+          ],
+          "breakthrough": "把不可逆序列的方向要求直接放入度量模型，为比较黎曼和 Finsler 插值提供实验实例。",
+          "limitations": "演示依赖受控横断面数据和所给顺序约束，纵向病程、因果方向和实际临床外推仍需独立验证。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第10页 AI USE STATEMENT 明确将生成式AI用于研究反馈、编辑代码、总结及寻找文献、改善稿件可读性和整理参考文献。作者明确说明概念框架未由生成式AI开发。第10–12页会议名称和机器学习引文按研究题材处理。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03675 · PDF第10页 AI USE STATEMENT",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:51:24.434193+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03675",
+            "contentHash": "7be3f87b12aca935fb7bf6ae31d28f0e7e4e59683e059842ac4d36468b8e62be",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页 AI USE STATEMENT 明确将生成式AI用于研究反馈、编辑代码、总结及寻找文献、改善稿件可读性和整理参考文献。作者明确说明概念框架未由生成式AI开发。第10–12页会议名称和机器学习引文按研究题材处理。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "78c7d27fa0af4810e8544766f05c8a2143e286717b0d746eb137244ea79a234f"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 54,
+          "priorityReason": "与 Finsler 非可逆几何有关，主要贡献在建模与实验。"
+        },
+        "analysisBasis": {
+          "abstract": "Deep neural networks extract powerful latent representations from images, enabling fast and efficient downstream analysis. However, these latent spaces lack explicit geometric structure, leading to possibly poor interpolation fidelity and misleading extrapolation. Latent interpolation techniques assume symmetric transition costs which are often not the case for real world data. Their symmetric nature cannot capture directional processes, such as disease progression, where certain transitions are impossible (e.g. tumor growth dynamics or cognitive improvement in Alzheimer's disease). Although Riemannian metrics extend Euclidean geometry by incorporating curvature, they remain symmetric. We show that understanding asymmetry and not curvature alone directly addresses these problems. To do so we propose a new Finsler-Randers metric learning framework. It incorporates direction-dependent distances, thus enabling the computation of trajectories respecting monotonic sequential constraints. We demonstrate its potential for interpolation and extrapolation on controlled cross-sectional datasets.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

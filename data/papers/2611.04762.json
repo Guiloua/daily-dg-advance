@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.04762",
+  "slug": "2611.04762",
+  "latest": {
+    "arxivId": "2611.04762",
+    "metadata": {
+      "title": "Unbounded total mean curvature with prescribed boundary metric",
+      "authors": [
+        "Zhixin Wang"
+      ],
+      "abstract": "Bär has shown that a fixed boundary metric and a scalar-curvature lower bound do not generally bound total mean curvature from above. We extend this unboundedness to every smooth compact connected manifold of dimension $n\\ge3$ with nonempty boundary and every prescribed boundary metric, using scalar-flat metrics. While Bär's examples use warped products, our construction uses a nonzero cubic variation of total mean curvature near a flat product, followed by localization and conformal correction. We also construct arbitrarily $C^k$-small perturbations of the flat torical half-cylinder with nonnegative scalar curvature, unchanged boundary metric, an exact product end, and positive total boundary mean curvature.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-03T12:09:44Z",
+      "updatedAt": "2026-11-03T12:09:44Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-04T06:43:13.091706+00:00",
+        "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:23.062554+00:00",
+        "contentHash": "cc8b62d681959907ff0f1fc447d305ae6e5e9f6eb1bb501fdf57a3dfebfb64fa"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "给定边界度量下总平均曲率无上界",
+      "workSummary": "定理1.2对任意光滑紧致连通 n 维流形 Ω（n≥3、边界非空）及任意给定光滑边界度量 γ，在固定 Ω 上构造光滑标量平坦度量 g_N，切向限制恰为 γ，而总平均曲率 F(g_N)=∫∂Ω H_g_N dσ_γ 趋于正无穷。H 取外法向第二基本形式的迹。定理1.3在标准平坦环面半柱上对任意整数 k≥2 和 ε>0，构造与平坦乘积度量在全半柱 C^k 范数内相差小于 ε 的光滑度量。该度量具有非负标量曲率，诱导原边界度量，边界 H 变号而积分为正，并在充分远处精确恢复平坦乘积。",
+      "techniques": [
+        "平坦环面带的一、二阶变分消失与非零三阶总平均曲率项",
+        "半柱末端截断与引理4.1的统一参数族",
+        "边界局部高频缩放与薄层负标量曲率控制",
+        "共形 Laplace 算子的 Dirichlet 校正与薄层能量估计"
+      ],
+      "breakthrough": "平坦环面模型以三阶项产生正的总平均曲率，随后把扰动缩放到任意给定填充的边界局部，使校正前 F(g_N)≥aN−C（a>0），且负标量曲率至多 CN 并集中在 A/N 厚的边界层。用边值为 1 的正共形因子消去标量曲率，保持 γ，且总平均曲率最多损失与 N 无关的常数。",
+      "limitations": "审读 PDF 第1–16页并渲染复核第2、15页。总平均曲率是所有边界分量上带符号的积分，紧致填充定理未施加 H 的点态非负性或统一下界。半柱例子的 H 明确变号，末端恢复乘积的位置可随扰动改变。分节审读覆盖主要估计和构造，未独立核验全篇证明或所引延拓、刚性定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者声明使用 ChatGPT 协助修订文稿、检索文献以及发展引理3.4和4.1的证明。两引理分别处理环面半柱恢复乘积远端和构造具有统一控制的参数族。作者复核了 AI 辅助材料并承担全文责任。声明只说明这些证明获得协助，未将具体首创构造或证明路线归给模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.04762v1 · PDF 第16页 Declaration of AI use。引理3.4见第9页起，引理4.1见第11–13页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:57:55.874655+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.04762v1",
+        "contentHash": "cb2b5e7b78ee448d34cee4e401cf891926723b71636226022f0807326e8953dc",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明使用 ChatGPT 协助修订文稿、检索文献以及发展引理3.4和4.1的证明。两引理分别处理环面半柱恢复乘积远端和构造具有统一控制的参数族。作者复核了 AI 辅助材料并承担全文责任。声明只说明这些证明获得协助，未将具体首创构造或证明路线归给模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3a8db3acd43f7b5de7f2ac91e261dcc369a7660f6bde72121961fc34d740d548"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "直接关系标量曲率填充与边界比较。"
+    },
+    "analysisBasis": {
+      "abstract": "Bär has shown that a fixed boundary metric and a scalar-curvature lower bound do not generally bound total mean curvature from above. We extend this unboundedness to every smooth compact connected manifold of dimension $n\\ge3$ with nonempty boundary and every prescribed boundary metric, using scalar-flat metrics. While Bär's examples use warped products, our construction uses a nonzero cubic variation of total mean curvature near a flat product, followed by localization and conformal correction. We also construct arbitrarily $C^k$-small perturbations of the flat torical half-cylinder with nonnegative scalar curvature, unchanged boundary metric, an exact product end, and positive total boundary mean curvature.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.04762",
+        "metadata": {
+          "title": "Unbounded total mean curvature with prescribed boundary metric",
+          "authors": [
+            "Zhixin Wang"
+          ],
+          "abstract": "Bär has shown that a fixed boundary metric and a scalar-curvature lower bound do not generally bound total mean curvature from above. We extend this unboundedness to every smooth compact connected manifold of dimension $n\\ge3$ with nonempty boundary and every prescribed boundary metric, using scalar-flat metrics. While Bär's examples use warped products, our construction uses a nonzero cubic variation of total mean curvature near a flat product, followed by localization and conformal correction. We also construct arbitrarily $C^k$-small perturbations of the flat torical half-cylinder with nonnegative scalar curvature, unchanged boundary metric, an exact product end, and positive total boundary mean curvature.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-03T12:09:44Z",
+          "updatedAt": "2026-11-03T12:09:44Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-04T06:43:13.091706+00:00",
+            "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:23.062554+00:00",
+            "contentHash": "cc8b62d681959907ff0f1fc447d305ae6e5e9f6eb1bb501fdf57a3dfebfb64fa"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "给定边界度量下总平均曲率无上界",
+          "workSummary": "定理1.2对任意光滑紧致连通 n 维流形 Ω（n≥3、边界非空）及任意给定光滑边界度量 γ，在固定 Ω 上构造光滑标量平坦度量 g_N，切向限制恰为 γ，而总平均曲率 F(g_N)=∫∂Ω H_g_N dσ_γ 趋于正无穷。H 取外法向第二基本形式的迹。定理1.3在标准平坦环面半柱上对任意整数 k≥2 和 ε>0，构造与平坦乘积度量在全半柱 C^k 范数内相差小于 ε 的光滑度量。该度量具有非负标量曲率，诱导原边界度量，边界 H 变号而积分为正，并在充分远处精确恢复平坦乘积。",
+          "techniques": [
+            "平坦环面带的一、二阶变分消失与非零三阶总平均曲率项",
+            "半柱末端截断与引理4.1的统一参数族",
+            "边界局部高频缩放与薄层负标量曲率控制",
+            "共形 Laplace 算子的 Dirichlet 校正与薄层能量估计"
+          ],
+          "breakthrough": "平坦环面模型以三阶项产生正的总平均曲率，随后把扰动缩放到任意给定填充的边界局部，使校正前 F(g_N)≥aN−C（a>0），且负标量曲率至多 CN 并集中在 A/N 厚的边界层。用边值为 1 的正共形因子消去标量曲率，保持 γ，且总平均曲率最多损失与 N 无关的常数。",
+          "limitations": "审读 PDF 第1–16页并渲染复核第2、15页。总平均曲率是所有边界分量上带符号的积分，紧致填充定理未施加 H 的点态非负性或统一下界。半柱例子的 H 明确变号，末端恢复乘积的位置可随扰动改变。分节审读覆盖主要估计和构造，未独立核验全篇证明或所引延拓、刚性定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者声明使用 ChatGPT 协助修订文稿、检索文献以及发展引理3.4和4.1的证明。两引理分别处理环面半柱恢复乘积远端和构造具有统一控制的参数族。作者复核了 AI 辅助材料并承担全文责任。声明只说明这些证明获得协助，未将具体首创构造或证明路线归给模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.04762v1 · PDF 第16页 Declaration of AI use。引理3.4见第9页起，引理4.1见第11–13页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:57:55.874655+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.04762v1",
+            "contentHash": "cb2b5e7b78ee448d34cee4e401cf891926723b71636226022f0807326e8953dc",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明使用 ChatGPT 协助修订文稿、检索文献以及发展引理3.4和4.1的证明。两引理分别处理环面半柱恢复乘积远端和构造具有统一控制的参数族。作者复核了 AI 辅助材料并承担全文责任。声明只说明这些证明获得协助，未将具体首创构造或证明路线归给模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3a8db3acd43f7b5de7f2ac91e261dcc369a7660f6bde72121961fc34d740d548"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "直接关系标量曲率填充与边界比较。"
+        },
+        "analysisBasis": {
+          "abstract": "Bär has shown that a fixed boundary metric and a scalar-curvature lower bound do not generally bound total mean curvature from above. We extend this unboundedness to every smooth compact connected manifold of dimension $n\\ge3$ with nonempty boundary and every prescribed boundary metric, using scalar-flat metrics. While Bär's examples use warped products, our construction uses a nonzero cubic variation of total mean curvature near a flat product, followed by localization and conformal correction. We also construct arbitrarily $C^k$-small perturbations of the flat torical half-cylinder with nonnegative scalar curvature, unchanged boundary metric, an exact product end, and positive total boundary mean curvature.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

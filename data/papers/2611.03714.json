@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03714",
+  "slug": "2611.03714",
+  "latest": {
+    "arxivId": "2611.03714",
+    "metadata": {
+      "title": "Grid triples, link cobordisms in $\\CPbar$ and the computation of Heegaard-Floer TQFT",
+      "authors": [
+        "Roohallah Mahkam"
+      ],
+      "abstract": "We give a combinatorial description of the Heegaard--Floer link-cobordism maps associated with pointed triple grid diagrams in the complement of three $4$-balls in complex projective plane with reverse orientation. Every contributing index-zero holomorphic triangle decomposes into Euclidean triangular sheets. We characterize the compatible collections of sheets that contribute by an explicit geometric separation criterion, expressed as a lattice-point test, and prove that each has mod-\\(2\\) count one. Individual sheets may wrap around the torus in the unblocked theory, whereas they are embedded in the blocked theory. In each fixed \\(\\SpinC\\) structure, the map is determined by a finite enumeration. A difference number computed from the triangular regions determines the \\(\\SpinC\\) structure of a Whitney triangle. Together with the topology of the associated surface, this gives an explicit formula for the absolute bigrading of each summand of the cobordism map. After basepoint reduction, the formula determines the Laurent monomial representing any nonzero map on the rank-one torsion-free two-variable knot Floer modules, yielding vanishing and ideal-containment criteria. We apply the construction to an affine family of grid links \\(K(n;p,s)\\), obtaining explicit cobordisms involving infinite families of torus knots and links, together with closed formulas for the bigradings of their distinguished grid states.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "version": 1,
+      "submittedAt": "2026-10-31T13:35:38Z",
+      "updatedAt": "2026-10-31T13:35:38Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-04T06:43:36.156234+00:00",
+        "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.935417+00:00",
+        "contentHash": "2344460e173808a9fc51ba6f7271318c74b088499593ed3f700b42b32fa5bc4d"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "网格三元组的结配边Floer映射",
+      "workSummary": "对大小n的带标记三重网格和分裂复结构，定理1.1/4.2把每个有贡献的指数零类分解成n张欧氏三角薄片。给定相容提升Aᵢ+λᵢT，命题4.4要求每对差三角形Aᵢ−Aⱼ+(λᵢ−λⱼ)T避开(nℤ)²；通过该测试的类依引理4.3恰有一个正则代表，模2计数为1。",
+      "techniques": [
+        "Sarkar 指数公式与与胖对角线相交的正性",
+        "对称积提升至有序构型覆盖及平面全纯参数化",
+        "差三角形格点测试与固定Spinᶜ有限枚举",
+        "差数δ和配边曲面的绝对双分次",
+        "F₂[u,v]无挠商局部化与单项式理想"
+      ],
+      "breakthrough": "固定角点和Spinᶜ时，分离测试限制所有带符号边长之差，δ固定其和，得到有限枚举。对 centrally marked appropriate 网格，c=⟨c₁(t),H⟩=−δ/n，未约化双变量映射的两分次均为(3−2n−c²)/4。三条边界链环均为结时，z基点作用约化后的非零无挠映射在分式域上乘一个由分次确定的Laurent单项式，并推出理想包含。",
+      "limitations": "计数用模2，构造依赖指定三重网格与分裂模型。单张薄片在unblocked中可以绕环面，blocked中为空且嵌入。固定Spinᶜ有限性不保证不加完备化的全Spinᶜ求和。Laurent单项式公式以约化映射非零为前提，不能反向推出非零。未独立复核延拓、正则性及整个证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第27页明确说明 GPT-6 建议以现有定理4.2证明替换作者较长的证明，第4.3节的具体薄片分离准则产生于与GPT-6讨论，另辅助稿件润色、校读并发现先前双分次计算错误。第4页致谢的写作帮助另来自具名导师。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03714v1 · PDF第27页 §6 Tool Use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:54:26.032659+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03714v1",
+        "contentHash": "9f1c109a6eace30776af3cb52b94a7a55e4cc669c49b71837162db874524cb8e",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第27页明确说明 GPT-6 建议以现有定理4.2证明替换作者较长的证明，第4.3节的具体薄片分离准则产生于与GPT-6讨论，另辅助稿件润色、校读并发现先前双分次计算错误。第4页致谢的写作帮助另来自具名导师。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "eb3bca385613ff6b2829862c7e6b06d1474aef2a538b0826023e25a38ac722ef"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 82,
+      "priorityReason": "几何判据把全纯曲线计数变为有限格点问题，值得核对定理与算法条件。"
+    },
+    "analysisBasis": {
+      "abstract": "We give a combinatorial description of the Heegaard--Floer link-cobordism maps associated with pointed triple grid diagrams in the complement of three $4$-balls in complex projective plane with reverse orientation. Every contributing index-zero holomorphic triangle decomposes into Euclidean triangular sheets. We characterize the compatible collections of sheets that contribute by an explicit geometric separation criterion, expressed as a lattice-point test, and prove that each has mod-\\(2\\) count one. Individual sheets may wrap around the torus in the unblocked theory, whereas they are embedded in the blocked theory. In each fixed \\(\\SpinC\\) structure, the map is determined by a finite enumeration. A difference number computed from the triangular regions determines the \\(\\SpinC\\) structure of a Whitney triangle. Together with the topology of the associated surface, this gives an explicit formula for the absolute bigrading of each summand of the cobordism map. After basepoint reduction, the formula determines the Laurent monomial representing any nonzero map on the rank-one torsion-free two-variable knot Floer modules, yielding vanishing and ideal-containment criteria. We apply the construction to an affine family of grid links \\(K(n;p,s)\\), obtaining explicit cobordisms involving infinite families of torus knots and links, together with closed formulas for the bigradings of their distinguished grid states.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03714",
+        "metadata": {
+          "title": "Grid triples, link cobordisms in $\\CPbar$ and the computation of Heegaard-Floer TQFT",
+          "authors": [
+            "Roohallah Mahkam"
+          ],
+          "abstract": "We give a combinatorial description of the Heegaard--Floer link-cobordism maps associated with pointed triple grid diagrams in the complement of three $4$-balls in complex projective plane with reverse orientation. Every contributing index-zero holomorphic triangle decomposes into Euclidean triangular sheets. We characterize the compatible collections of sheets that contribute by an explicit geometric separation criterion, expressed as a lattice-point test, and prove that each has mod-\\(2\\) count one. Individual sheets may wrap around the torus in the unblocked theory, whereas they are embedded in the blocked theory. In each fixed \\(\\SpinC\\) structure, the map is determined by a finite enumeration. A difference number computed from the triangular regions determines the \\(\\SpinC\\) structure of a Whitney triangle. Together with the topology of the associated surface, this gives an explicit formula for the absolute bigrading of each summand of the cobordism map. After basepoint reduction, the formula determines the Laurent monomial representing any nonzero map on the rank-one torsion-free two-variable knot Floer modules, yielding vanishing and ideal-containment criteria. We apply the construction to an affine family of grid links \\(K(n;p,s)\\), obtaining explicit cobordisms involving infinite families of torus knots and links, together with closed formulas for the bigradings of their distinguished grid states.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "version": 1,
+          "submittedAt": "2026-10-31T13:35:38Z",
+          "updatedAt": "2026-10-31T13:35:38Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-04T06:43:36.156234+00:00",
+            "contentHash": "7169e47ce23750554ee835812a9eaeda825c73a1f63307c5d32bf29e54a995cb"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.935417+00:00",
+            "contentHash": "2344460e173808a9fc51ba6f7271318c74b088499593ed3f700b42b32fa5bc4d"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "网格三元组的结配边Floer映射",
+          "workSummary": "对大小n的带标记三重网格和分裂复结构，定理1.1/4.2把每个有贡献的指数零类分解成n张欧氏三角薄片。给定相容提升Aᵢ+λᵢT，命题4.4要求每对差三角形Aᵢ−Aⱼ+(λᵢ−λⱼ)T避开(nℤ)²；通过该测试的类依引理4.3恰有一个正则代表，模2计数为1。",
+          "techniques": [
+            "Sarkar 指数公式与与胖对角线相交的正性",
+            "对称积提升至有序构型覆盖及平面全纯参数化",
+            "差三角形格点测试与固定Spinᶜ有限枚举",
+            "差数δ和配边曲面的绝对双分次",
+            "F₂[u,v]无挠商局部化与单项式理想"
+          ],
+          "breakthrough": "固定角点和Spinᶜ时，分离测试限制所有带符号边长之差，δ固定其和，得到有限枚举。对 centrally marked appropriate 网格，c=⟨c₁(t),H⟩=−δ/n，未约化双变量映射的两分次均为(3−2n−c²)/4。三条边界链环均为结时，z基点作用约化后的非零无挠映射在分式域上乘一个由分次确定的Laurent单项式，并推出理想包含。",
+          "limitations": "计数用模2，构造依赖指定三重网格与分裂模型。单张薄片在unblocked中可以绕环面，blocked中为空且嵌入。固定Spinᶜ有限性不保证不加完备化的全Spinᶜ求和。Laurent单项式公式以约化映射非零为前提，不能反向推出非零。未独立复核延拓、正则性及整个证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第27页明确说明 GPT-6 建议以现有定理4.2证明替换作者较长的证明，第4.3节的具体薄片分离准则产生于与GPT-6讨论，另辅助稿件润色、校读并发现先前双分次计算错误。第4页致谢的写作帮助另来自具名导师。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03714v1 · PDF第27页 §6 Tool Use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:54:26.032659+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03714v1",
+            "contentHash": "9f1c109a6eace30776af3cb52b94a7a55e4cc669c49b71837162db874524cb8e",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第27页明确说明 GPT-6 建议以现有定理4.2证明替换作者较长的证明，第4.3节的具体薄片分离准则产生于与GPT-6讨论，另辅助稿件润色、校读并发现先前双分次计算错误。第4页致谢的写作帮助另来自具名导师。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "eb3bca385613ff6b2829862c7e6b06d1474aef2a538b0826023e25a38ac722ef"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 82,
+          "priorityReason": "几何判据把全纯曲线计数变为有限格点问题，值得核对定理与算法条件。"
+        },
+        "analysisBasis": {
+          "abstract": "We give a combinatorial description of the Heegaard--Floer link-cobordism maps associated with pointed triple grid diagrams in the complement of three $4$-balls in complex projective plane with reverse orientation. Every contributing index-zero holomorphic triangle decomposes into Euclidean triangular sheets. We characterize the compatible collections of sheets that contribute by an explicit geometric separation criterion, expressed as a lattice-point test, and prove that each has mod-\\(2\\) count one. Individual sheets may wrap around the torus in the unblocked theory, whereas they are embedded in the blocked theory. In each fixed \\(\\SpinC\\) structure, the map is determined by a finite enumeration. A difference number computed from the triangular regions determines the \\(\\SpinC\\) structure of a Whitney triangle. Together with the topology of the associated surface, this gives an explicit formula for the absolute bigrading of each summand of the cobordism map. After basepoint reduction, the formula determines the Laurent monomial representing any nonzero map on the rank-one torsion-free two-variable knot Floer modules, yielding vanishing and ideal-containment criteria. We apply the construction to an affine family of grid links \\(K(n;p,s)\\), obtaining explicit cobordisms involving infinite families of torus knots and links, together with closed formulas for the bigradings of their distinguished grid states.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

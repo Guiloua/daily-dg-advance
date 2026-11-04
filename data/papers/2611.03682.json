@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03682",
+  "slug": "2611.03682",
+  "latest": {
+    "arxivId": "2611.03682",
+    "metadata": {
+      "title": "New lower bounds for kissing numbers in dimensions 32-35 and 37-39",
+      "authors": [
+        "Qihong Lin"
+      ],
+      "abstract": "We show that the kissing numbers in dimensions 32, 33, 34, 35, 37, 38 and 39 are at least 352320, 370240, 390980, 415308, 499816, 605322 and 768916, improving the previous bounds 347584, 364736, 384836, 409676, 498024, 591900 and 763668. Except in dimension 38, the configurations are those of Edel, Rains and Sloane with new binary constant-weight codes of weight 8 and minimum distance 8 in the middle layer; each additional word adds 128 points. In dimension 38 we add 6855 antipodal pairs of vectors of the second shell of the Leech lattice to the empty equator of Kravatskiy's 591612-point configuration, where 144 pairs were known; this is an independent set problem in a regular graph of degree 11178 on 8386560 vertices. The codes and lines were found by local search, and all configurations were checked pair by pair in exact integer arithmetic.",
+      "categories": [
+        "math.MG",
+        "cs.DM",
+        "cs.IT",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "8 pages. Certificates and verification programs: this https URL (doi: https://doi.org/10.5281/zenodo.23527725 ) and this https URL (doi: https://doi.org/10.5281/zenodo.23554808 )",
+      "version": 1,
+      "submittedAt": "2026-10-22T07:08:51Z",
+      "updatedAt": "2026-10-22T07:08:51Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-04T06:43:24.618032+00:00",
+        "contentHash": "f31afe7675ef899605ec961df0ece2fbd8421fb8397e3d30dbe07dc135854124"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.934900+00:00",
+        "contentHash": "50d298b1ea25c3a69af23a7195b638b1eab854cfc34259caaf1fe9370b9a66dd"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "七个维数的接吻数下界",
+      "workSummary": "将 32、33、34、35、37、38、39 维的接吻数下界依次提高为 352320、370240、390980、415308、499816、605322、768916。",
+      "techniques": [
+        "Edel–Rains–Sloane 构型",
+        "重量与最小距离均为 8 的二元恒重码",
+        "Leech 格第二层和对踵对",
+        "独立集局部搜索与精确整数验算"
+      ],
+      "breakthrough": "38 维用 Leech 格第二层在已有构型的空赤道增加 6855 个对踵对。其余维数通过新中层码提高下界，每多一个码字加入 128 个点。",
+      "limitations": "给出构造性下界，精确两两验算负责验证可行性，局部搜索的最优性及实际接吻数仍未确定。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第7页说明 Claude Opus 5.5 经 Claude Code 提出并实现 ruin-and-recreate 循环、候选池和赤道线局部搜索，运行搜索，发现并证明引理5，检查既有论证、编写验算程序、核对文献及先前纪录、准备数据与撰写初稿。跨码长传播由作者提出并由模型自动化。作者选题、定维、指挥计算并审核。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03682v1 · PDF第7页 Use of artificial intelligence",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:52:41.793772+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03682v1",
+        "contentHash": "a0464399523057c5659e9ca6dd5d068fdaba1de48b166a9c3a27be1073f0107f",
+        "pages": 8,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页说明 Claude Opus 5.5 经 Claude Code 提出并实现 ruin-and-recreate 循环、候选池和赤道线局部搜索，运行搜索，发现并证明引理5，检查既有论证、编写验算程序、核对文献及先前纪录、准备数据与撰写初稿。跨码长传播由作者提出并由模型自动化。作者选题、定维、指挥计算并审核。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b98657c097561d4cf784797c8bdc90f98d0460a65e0ce863b73a0e48d35b8629"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 65,
+      "priorityReason": "是清晰的高维离散几何纪录，可读其构造和证书。"
+    },
+    "analysisBasis": {
+      "abstract": "We show that the kissing numbers in dimensions 32, 33, 34, 35, 37, 38 and 39 are at least 352320, 370240, 390980, 415308, 499816, 605322 and 768916, improving the previous bounds 347584, 364736, 384836, 409676, 498024, 591900 and 763668. Except in dimension 38, the configurations are those of Edel, Rains and Sloane with new binary constant-weight codes of weight 8 and minimum distance 8 in the middle layer; each additional word adds 128 points. In dimension 38 we add 6855 antipodal pairs of vectors of the second shell of the Leech lattice to the empty equator of Kravatskiy's 591612-point configuration, where 144 pairs were known; this is an independent set problem in a regular graph of degree 11178 on 8386560 vertices. The codes and lines were found by local search, and all configurations were checked pair by pair in exact integer arithmetic.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03682",
+        "metadata": {
+          "title": "New lower bounds for kissing numbers in dimensions 32-35 and 37-39",
+          "authors": [
+            "Qihong Lin"
+          ],
+          "abstract": "We show that the kissing numbers in dimensions 32, 33, 34, 35, 37, 38 and 39 are at least 352320, 370240, 390980, 415308, 499816, 605322 and 768916, improving the previous bounds 347584, 364736, 384836, 409676, 498024, 591900 and 763668. Except in dimension 38, the configurations are those of Edel, Rains and Sloane with new binary constant-weight codes of weight 8 and minimum distance 8 in the middle layer; each additional word adds 128 points. In dimension 38 we add 6855 antipodal pairs of vectors of the second shell of the Leech lattice to the empty equator of Kravatskiy's 591612-point configuration, where 144 pairs were known; this is an independent set problem in a regular graph of degree 11178 on 8386560 vertices. The codes and lines were found by local search, and all configurations were checked pair by pair in exact integer arithmetic.",
+          "categories": [
+            "math.MG",
+            "cs.DM",
+            "cs.IT",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "8 pages. Certificates and verification programs: this https URL (doi: https://doi.org/10.5281/zenodo.23527725 ) and this https URL (doi: https://doi.org/10.5281/zenodo.23554808 )",
+          "version": 1,
+          "submittedAt": "2026-10-22T07:08:51Z",
+          "updatedAt": "2026-10-22T07:08:51Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-04T06:43:24.618032+00:00",
+            "contentHash": "f31afe7675ef899605ec961df0ece2fbd8421fb8397e3d30dbe07dc135854124"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.934900+00:00",
+            "contentHash": "50d298b1ea25c3a69af23a7195b638b1eab854cfc34259caaf1fe9370b9a66dd"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "七个维数的接吻数下界",
+          "workSummary": "将 32、33、34、35、37、38、39 维的接吻数下界依次提高为 352320、370240、390980、415308、499816、605322、768916。",
+          "techniques": [
+            "Edel–Rains–Sloane 构型",
+            "重量与最小距离均为 8 的二元恒重码",
+            "Leech 格第二层和对踵对",
+            "独立集局部搜索与精确整数验算"
+          ],
+          "breakthrough": "38 维用 Leech 格第二层在已有构型的空赤道增加 6855 个对踵对。其余维数通过新中层码提高下界，每多一个码字加入 128 个点。",
+          "limitations": "给出构造性下界，精确两两验算负责验证可行性，局部搜索的最优性及实际接吻数仍未确定。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第7页说明 Claude Opus 5.5 经 Claude Code 提出并实现 ruin-and-recreate 循环、候选池和赤道线局部搜索，运行搜索，发现并证明引理5，检查既有论证、编写验算程序、核对文献及先前纪录、准备数据与撰写初稿。跨码长传播由作者提出并由模型自动化。作者选题、定维、指挥计算并审核。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03682v1 · PDF第7页 Use of artificial intelligence",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:52:41.793772+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03682v1",
+            "contentHash": "a0464399523057c5659e9ca6dd5d068fdaba1de48b166a9c3a27be1073f0107f",
+            "pages": 8,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页说明 Claude Opus 5.5 经 Claude Code 提出并实现 ruin-and-recreate 循环、候选池和赤道线局部搜索，运行搜索，发现并证明引理5，检查既有论证、编写验算程序、核对文献及先前纪录、准备数据与撰写初稿。跨码长传播由作者提出并由模型自动化。作者选题、定维、指挥计算并审核。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b98657c097561d4cf784797c8bdc90f98d0460a65e0ce863b73a0e48d35b8629"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 65,
+          "priorityReason": "是清晰的高维离散几何纪录，可读其构造和证书。"
+        },
+        "analysisBasis": {
+          "abstract": "We show that the kissing numbers in dimensions 32, 33, 34, 35, 37, 38 and 39 are at least 352320, 370240, 390980, 415308, 499816, 605322 and 768916, improving the previous bounds 347584, 364736, 384836, 409676, 498024, 591900 and 763668. Except in dimension 38, the configurations are those of Edel, Rains and Sloane with new binary constant-weight codes of weight 8 and minimum distance 8 in the middle layer; each additional word adds 128 points. In dimension 38 we add 6855 antipodal pairs of vectors of the second shell of the Leech lattice to the empty equator of Kravatskiy's 591612-point configuration, where 144 pairs were known; this is an independent set problem in a regular graph of degree 11178 on 8386560 vertices. The codes and lines were found by local search, and all configurations were checked pair by pair in exact integer arithmetic.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.03736",
+  "slug": "2611.03736",
+  "latest": {
+    "arxivId": "2611.03736",
+    "metadata": {
+      "title": "Uniqueness of scalar-flat ALE Kähler metrics",
+      "authors": [
+        "Qi Yao"
+      ],
+      "abstract": "We study uniqueness of scalar-flat Kähler metrics in a fixed Kähler class on an asymptotically locally Euclidean (ALE) Kähler manifold, assuming only differentiated $o(1)$ decay to a fixed Euclidean metric on the end. In complex dimension $n\\geq2$, under suitable polynomial decay of the reference metric, we prove that the relative Mabuchi functional is finite, continuous, and convex along weak geodesics whose endpoint potentials satisfy $u=O(r^{-\\gamma})$, $\\gamma>2n-4$, together with the corresponding derivative estimates. Combining this convexity with the analysis of the Lichnerowicz operator in weighted spaces, we obtain uniqueness by a perturbation argument. Decay improvement and comparison of the asymptotic charts produce a global potential with the required decay for the difference of the two cohomologous scalar-flat Kähler forms. The argument also extends to asymptotically conical Kähler metrics approaching a fixed Ricci-flat Kähler cone under prescribed decay assumptions.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "71 pages, 1 figure. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-01T17:08:47Z",
+      "updatedAt": "2026-11-01T17:08:47Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-04T06:43:13.091706+00:00",
+        "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.03736v1",
+        "observedAt": "2026-11-04T06:45:04.435753+00:00",
+        "contentHash": "c24b06f294b81dfee9b623b2970940bf58e40bc9bb5aced8c191cb173dc38341"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:06.935900+00:00",
+        "contentHash": "c7cf087d4f6372a6bd0b447e59dbad21ed495c11a962cac1be06b95c1860537d"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "唯一性定理",
+      "workSummary": "研究同一 Kähler 类中标量平坦 ALE Kähler 度量在固定欧氏无穷远模型下的唯一性，并讨论固定 Ricci 平坦锥的 AC 情形。",
+      "techniques": [
+        "相对 Mabuchi 泛函与弱测地线",
+        "加权 Lichnerowicz 算子",
+        "衰减提升和无穷远坐标比较"
+      ],
+      "breakthrough": "相对熵去除无限背景体积。作者用扩张紧集上的截断端点逼近，把紧集上的体积密度收敛与无穷远熵损失分别控制，证明相对 Mabuchi 泛函连续且凸；结合加权 Lichnerowicz 方程及局部严格凸性得同类唯一性。",
+      "limitations": "Theorem C 要求共同 ALE 坐标下衰减指数 δ>n−1；Corollary D 借 ALE 衰减提升降至逐导数 o(1)。AC 的 Corollary E 固定同一 Ricci 平坦锥及端识别，仍要求 δ>n−1。补读主定理及论证路线，未独立验证整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者将核心数学思想和定理表述归于自己。AI 帮助发现弱测地线 Hessian 衰减路线的障碍，并辅助发展和检查证明细节及润色。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.03736v1 · PDF 第6页 AI assistance 声明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:45:04.435753+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.03736v1",
+        "contentHash": "c24b06f294b81dfee9b623b2970940bf58e40bc9bb5aced8c191cb173dc38341",
+        "pages": 71,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将核心数学思想和定理表述归于自己。AI 帮助发现弱测地线 Hessian 衰减路线的障碍，并辅助发展和检查证明细节及润色。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b897f14d4d7522420be49f37bacb334003c3762c3f3148137e723891c8cc95a2"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "非紧典范度量的低衰减唯一性。"
+    },
+    "analysisBasis": {
+      "abstract": "We study uniqueness of scalar-flat Kähler metrics in a fixed Kähler class on an asymptotically locally Euclidean (ALE) Kähler manifold, assuming only differentiated $o(1)$ decay to a fixed Euclidean metric on the end. In complex dimension $n\\geq2$, under suitable polynomial decay of the reference metric, we prove that the relative Mabuchi functional is finite, continuous, and convex along weak geodesics whose endpoint potentials satisfy $u=O(r^{-\\gamma})$, $\\gamma>2n-4$, together with the corresponding derivative estimates. Combining this convexity with the analysis of the Lichnerowicz operator in weighted spaces, we obtain uniqueness by a perturbation argument. Decay improvement and comparison of the asymptotic charts produce a global potential with the required decay for the difference of the two cohomologous scalar-flat Kähler forms. The argument also extends to asymptotically conical Kähler metrics approaching a fixed Ricci-flat Kähler cone under prescribed decay assumptions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.03736",
+        "metadata": {
+          "title": "Uniqueness of scalar-flat ALE Kähler metrics",
+          "authors": [
+            "Qi Yao"
+          ],
+          "abstract": "We study uniqueness of scalar-flat Kähler metrics in a fixed Kähler class on an asymptotically locally Euclidean (ALE) Kähler manifold, assuming only differentiated $o(1)$ decay to a fixed Euclidean metric on the end. In complex dimension $n\\geq2$, under suitable polynomial decay of the reference metric, we prove that the relative Mabuchi functional is finite, continuous, and convex along weak geodesics whose endpoint potentials satisfy $u=O(r^{-\\gamma})$, $\\gamma>2n-4$, together with the corresponding derivative estimates. Combining this convexity with the analysis of the Lichnerowicz operator in weighted spaces, we obtain uniqueness by a perturbation argument. Decay improvement and comparison of the asymptotic charts produce a global potential with the required decay for the difference of the two cohomologous scalar-flat Kähler forms. The argument also extends to asymptotically conical Kähler metrics approaching a fixed Ricci-flat Kähler cone under prescribed decay assumptions.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "71 pages, 1 figure. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-01T17:08:47Z",
+          "updatedAt": "2026-11-01T17:08:47Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-04T06:43:13.091706+00:00",
+            "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.03736v1",
+            "observedAt": "2026-11-04T06:45:04.435753+00:00",
+            "contentHash": "c24b06f294b81dfee9b623b2970940bf58e40bc9bb5aced8c191cb173dc38341"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:06.935900+00:00",
+            "contentHash": "c7cf087d4f6372a6bd0b447e59dbad21ed495c11a962cac1be06b95c1860537d"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "唯一性定理",
+          "workSummary": "研究同一 Kähler 类中标量平坦 ALE Kähler 度量在固定欧氏无穷远模型下的唯一性，并讨论固定 Ricci 平坦锥的 AC 情形。",
+          "techniques": [
+            "相对 Mabuchi 泛函与弱测地线",
+            "加权 Lichnerowicz 算子",
+            "衰减提升和无穷远坐标比较"
+          ],
+          "breakthrough": "相对熵去除无限背景体积。作者用扩张紧集上的截断端点逼近，把紧集上的体积密度收敛与无穷远熵损失分别控制，证明相对 Mabuchi 泛函连续且凸；结合加权 Lichnerowicz 方程及局部严格凸性得同类唯一性。",
+          "limitations": "Theorem C 要求共同 ALE 坐标下衰减指数 δ>n−1；Corollary D 借 ALE 衰减提升降至逐导数 o(1)。AC 的 Corollary E 固定同一 Ricci 平坦锥及端识别，仍要求 δ>n−1。补读主定理及论证路线，未独立验证整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者将核心数学思想和定理表述归于自己。AI 帮助发现弱测地线 Hessian 衰减路线的障碍，并辅助发展和检查证明细节及润色。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.03736v1 · PDF 第6页 AI assistance 声明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:45:04.435753+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.03736v1",
+            "contentHash": "c24b06f294b81dfee9b623b2970940bf58e40bc9bb5aced8c191cb173dc38341",
+            "pages": 71,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将核心数学思想和定理表述归于自己。AI 帮助发现弱测地线 Hessian 衰减路线的障碍，并辅助发展和检查证明细节及润色。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b897f14d4d7522420be49f37bacb334003c3762c3f3148137e723891c8cc95a2"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "非紧典范度量的低衰减唯一性。"
+        },
+        "analysisBasis": {
+          "abstract": "We study uniqueness of scalar-flat Kähler metrics in a fixed Kähler class on an asymptotically locally Euclidean (ALE) Kähler manifold, assuming only differentiated $o(1)$ decay to a fixed Euclidean metric on the end. In complex dimension $n\\geq2$, under suitable polynomial decay of the reference metric, we prove that the relative Mabuchi functional is finite, continuous, and convex along weak geodesics whose endpoint potentials satisfy $u=O(r^{-\\gamma})$, $\\gamma>2n-4$, together with the corresponding derivative estimates. Combining this convexity with the analysis of the Lichnerowicz operator in weighted spaces, we obtain uniqueness by a perturbation argument. Decay improvement and comparison of the asymptotic charts produce a global potential with the required decay for the difference of the two cohomologous scalar-flat Kähler forms. The argument also extends to asymptotically conical Kähler metrics approaching a fixed Ricci-flat Kähler cone under prescribed decay assumptions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

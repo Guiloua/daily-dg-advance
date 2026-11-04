@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.05032",
+  "slug": "2611.05032",
+  "latest": {
+    "arxivId": "2611.05032",
+    "metadata": {
+      "title": "Curvature Estimates and Prescribed Curvature Problems for Sum Hessian Equations on Star-Shaped Hypersurfaces",
+      "authors": [
+        "Dongjing Ma",
+        "Peihe Wang",
+        "Hua Zhu"
+      ],
+      "abstract": "Let $M$ be a closed star-shaped hypersurface in $\\mathbb{R}^{n+1}$ and let $\\eta=Hg-h$ be the first Newton transformation of its second fundamental form. For a fixed constant $\\alpha>0$ and $2\\le k\\le n-1$, we study the prescribed sum Hessian curvature equation \\[ \\sigma_k(\\lambda(\\eta))+\\alpha\\sigma_{k-1}(\\lambda(\\eta))=f(X,\\nu). \\] Under the natural admissibility condition \\[ \\lambda(\\eta)\\in\\Gamma_{k-1}\\cap \\{\\lambda:\\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda)>0\\}, \\] we establish a global curvature estimate for closed star-shaped solutions with a general positive right-hand side depending on the position vector and the unit normal. A key point is that the sum Hessian operator is nonhomogeneous; the resulting lower-order term in the maximum-principle calculation is controlled by a partial curvature estimate. We also use the augmented-variable identity \\[ \\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda) =\\sigma_k(\\lambda_1,\\ldots,\\lambda_n,\\alpha) \\] to recover the relevant ellipticity and concavity properties. As an application of the a priori estimates, we prove existence and uniqueness for the corresponding prescribed curvature problem under suitable spherical barrier and radial monotonicity assumptions.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "version": 1,
+      "submittedAt": "2026-11-03T15:06:42Z",
+      "updatedAt": "2026-11-03T15:06:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-04T06:43:13.091706+00:00",
+        "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-04T07:00:23.064534+00:00",
+        "contentHash": "6a85e0149fc96741087547f82ed997b3e12a05ea04e90ca23569e5917515d7d9"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "非齐次Newton变换和Hessian方程的全局曲率估计",
+      "workSummary": "定理1.1设闭星形超曲面M⊂R^(n+1)，2≤k≤n−1，α>0，η=Hg−h且H取主曲率之和。令S=σ_k+ασ_(k−1)。若η谱在Γ_(k−1)且S>0，并满足S(λη)=f(X,ν)，其中f在单位法丛邻域正且C²，则全部主曲率绝对值有界，常数依赖n、k、α、M的C¹几何、inf f及f的C²范数。",
+      "techniques": [
+        "增广谱变量的Gårding锥与S^(1/k)凹性",
+        "支撑函数与最大主曲率的最大值原理",
+        "部分曲率估计及非齐次Euler余项吸收",
+        "球障碍、连续性方法及Evans–Krylov/Schauder估计"
+      ],
+      "breakthrough": "增广向量(λη,α)将可容许域识别为高一维Γ_k的切片。最大值原理中以部分曲率控制吸收R_α。定理1.2进一步设0<r₁<1<r₂和正C²的f，内球要求f(X,X/|X|)≥Φ_α(r₁)，外球反向，Φ_α(r)=S((n−1)/r,…,(n−1)/r)。对固定x、ν∈S^n要求∂ρ[ρ^k f(ρx,ν)]≤0。由此在闭环域中得到唯一C^(3,β)的星形可容许解，0<β<1。",
+      "limitations": "全局曲率估计允许一般正右端，求解定理另需球障碍和径向单调性。适用范围为α>0、2≤k≤n−1，端点k=n的部分曲率步骤需另外处理。已核正文定理、增广结构、部分曲率估计陈述及连续性与唯一性路线，并渲染第4页核对障碍及导数条件。未逐行验证全部微分估计。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-04T06:51:01.283505+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.05032v1",
+        "contentHash": "f6303f6a03170057b333a70df4b91bf37d3c9bf0bf1285e65bcf9cfe93e48dfd",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共23页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "83305244213ad646ab528badb56c23dee0ef33d76967a176024365d6bcde1c01"
+      },
+      "priorityScore": 93,
+      "priorityReason": "全局曲率估计和非线性椭圆方程直接相关，优先读定理及数据范围。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $M$ be a closed star-shaped hypersurface in $\\mathbb{R}^{n+1}$ and let $\\eta=Hg-h$ be the first Newton transformation of its second fundamental form. For a fixed constant $\\alpha>0$ and $2\\le k\\le n-1$, we study the prescribed sum Hessian curvature equation \\[ \\sigma_k(\\lambda(\\eta))+\\alpha\\sigma_{k-1}(\\lambda(\\eta))=f(X,\\nu). \\] Under the natural admissibility condition \\[ \\lambda(\\eta)\\in\\Gamma_{k-1}\\cap \\{\\lambda:\\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda)>0\\}, \\] we establish a global curvature estimate for closed star-shaped solutions with a general positive right-hand side depending on the position vector and the unit normal. A key point is that the sum Hessian operator is nonhomogeneous; the resulting lower-order term in the maximum-principle calculation is controlled by a partial curvature estimate. We also use the augmented-variable identity \\[ \\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda) =\\sigma_k(\\lambda_1,\\ldots,\\lambda_n,\\alpha) \\] to recover the relevant ellipticity and concavity properties. As an application of the a priori estimates, we prove existence and uniqueness for the corresponding prescribed curvature problem under suitable spherical barrier and radial monotonicity assumptions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-04",
+      "entry": {
+        "arxivId": "2611.05032",
+        "metadata": {
+          "title": "Curvature Estimates and Prescribed Curvature Problems for Sum Hessian Equations on Star-Shaped Hypersurfaces",
+          "authors": [
+            "Dongjing Ma",
+            "Peihe Wang",
+            "Hua Zhu"
+          ],
+          "abstract": "Let $M$ be a closed star-shaped hypersurface in $\\mathbb{R}^{n+1}$ and let $\\eta=Hg-h$ be the first Newton transformation of its second fundamental form. For a fixed constant $\\alpha>0$ and $2\\le k\\le n-1$, we study the prescribed sum Hessian curvature equation \\[ \\sigma_k(\\lambda(\\eta))+\\alpha\\sigma_{k-1}(\\lambda(\\eta))=f(X,\\nu). \\] Under the natural admissibility condition \\[ \\lambda(\\eta)\\in\\Gamma_{k-1}\\cap \\{\\lambda:\\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda)>0\\}, \\] we establish a global curvature estimate for closed star-shaped solutions with a general positive right-hand side depending on the position vector and the unit normal. A key point is that the sum Hessian operator is nonhomogeneous; the resulting lower-order term in the maximum-principle calculation is controlled by a partial curvature estimate. We also use the augmented-variable identity \\[ \\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda) =\\sigma_k(\\lambda_1,\\ldots,\\lambda_n,\\alpha) \\] to recover the relevant ellipticity and concavity properties. As an application of the a priori estimates, we prove existence and uniqueness for the corresponding prescribed curvature problem under suitable spherical barrier and radial monotonicity assumptions.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "version": 1,
+          "submittedAt": "2026-11-03T15:06:42Z",
+          "updatedAt": "2026-11-03T15:06:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-04T06:43:13.091706+00:00",
+            "contentHash": "316506eb6bc55ea117df4458f06cc72c265207c3116d37716875898bb2b38789"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-04T07:00:23.064534+00:00",
+            "contentHash": "6a85e0149fc96741087547f82ed997b3e12a05ea04e90ca23569e5917515d7d9"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "非齐次Newton变换和Hessian方程的全局曲率估计",
+          "workSummary": "定理1.1设闭星形超曲面M⊂R^(n+1)，2≤k≤n−1，α>0，η=Hg−h且H取主曲率之和。令S=σ_k+ασ_(k−1)。若η谱在Γ_(k−1)且S>0，并满足S(λη)=f(X,ν)，其中f在单位法丛邻域正且C²，则全部主曲率绝对值有界，常数依赖n、k、α、M的C¹几何、inf f及f的C²范数。",
+          "techniques": [
+            "增广谱变量的Gårding锥与S^(1/k)凹性",
+            "支撑函数与最大主曲率的最大值原理",
+            "部分曲率估计及非齐次Euler余项吸收",
+            "球障碍、连续性方法及Evans–Krylov/Schauder估计"
+          ],
+          "breakthrough": "增广向量(λη,α)将可容许域识别为高一维Γ_k的切片。最大值原理中以部分曲率控制吸收R_α。定理1.2进一步设0<r₁<1<r₂和正C²的f，内球要求f(X,X/|X|)≥Φ_α(r₁)，外球反向，Φ_α(r)=S((n−1)/r,…,(n−1)/r)。对固定x、ν∈S^n要求∂ρ[ρ^k f(ρx,ν)]≤0。由此在闭环域中得到唯一C^(3,β)的星形可容许解，0<β<1。",
+          "limitations": "全局曲率估计允许一般正右端，求解定理另需球障碍和径向单调性。适用范围为α>0、2≤k≤n−1，端点k=n的部分曲率步骤需另外处理。已核正文定理、增广结构、部分曲率估计陈述及连续性与唯一性路线，并渲染第4页核对障碍及导数条件。未逐行验证全部微分估计。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-04T06:51:01.283505+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.05032v1",
+            "contentHash": "f6303f6a03170057b333a70df4b91bf37d3c9bf0bf1285e65bcf9cfe93e48dfd",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共23页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "83305244213ad646ab528badb56c23dee0ef33d76967a176024365d6bcde1c01"
+          },
+          "priorityScore": 93,
+          "priorityReason": "全局曲率估计和非线性椭圆方程直接相关，优先读定理及数据范围。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $M$ be a closed star-shaped hypersurface in $\\mathbb{R}^{n+1}$ and let $\\eta=Hg-h$ be the first Newton transformation of its second fundamental form. For a fixed constant $\\alpha>0$ and $2\\le k\\le n-1$, we study the prescribed sum Hessian curvature equation \\[ \\sigma_k(\\lambda(\\eta))+\\alpha\\sigma_{k-1}(\\lambda(\\eta))=f(X,\\nu). \\] Under the natural admissibility condition \\[ \\lambda(\\eta)\\in\\Gamma_{k-1}\\cap \\{\\lambda:\\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda)>0\\}, \\] we establish a global curvature estimate for closed star-shaped solutions with a general positive right-hand side depending on the position vector and the unit normal. A key point is that the sum Hessian operator is nonhomogeneous; the resulting lower-order term in the maximum-principle calculation is controlled by a partial curvature estimate. We also use the augmented-variable identity \\[ \\sigma_k(\\lambda)+\\alpha\\sigma_{k-1}(\\lambda) =\\sigma_k(\\lambda_1,\\ldots,\\lambda_n,\\alpha) \\] to recover the relevant ellipticity and concavity properties. As an application of the a priori estimates, we prove existence and uniqueness for the corresponding prescribed curvature problem under suitable spherical barrier and radial monotonicity assumptions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
