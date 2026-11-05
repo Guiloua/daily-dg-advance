@@ -16,28 +16,49 @@
       ],
       "primaryCategory": "math.GT",
       "comment": "11 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-04T16:05:16Z",
+      "updatedAt": "2026-11-04T16:05:16Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-11-05T06:24:48.129844+00:00",
         "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:50.696944+00:00",
+        "contentHash": "38a0a54f9bf202472cc1e6df0336f5aea6944cab6fe9dac4508b351149ab335d"
       }
     ],
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
-      "progressType": "三维识别问题的无条件coNP结论",
-      "workSummary": "本文解释近期quasi-Riemann假设相关进展如何去掉三维拓扑若干coNP结果中的广义Riemann假设条件，包括作者所称首个无条件的三球面识别属于coNP的证明。",
+      "progressType": "以Dedekind quasi-RH替代GRH的三维coNP证书",
+      "workSummary": "定理1.3在Hypothesis1.2下证明平凡结、三球面、torus结、双曲结识别以及cusped三维流形双曲性属于coNP。该假设要求存在对全部数域统一的ε>0，使Dedekind ζ在Re(s)>1−ε无零。第2–3页援引Cureton–Thorner所沟通的ε=1/32 Lean形式化证明，据此解释无条件化，同时因尚不清楚是否有人类理解该外部证明，作者全文继续明确保留Hypothesis1.2。",
       "techniques": [
-        "三维识别的有限域证书",
-        "quasi-Riemann型零点控制",
-        "有效数论与复杂性类别"
+        "复代数表示簇及Rabinowitsch非交换条件",
+        "有效Chebotarev与素理想计数",
+        "判别式及多项式系数界",
+        "有限域非交换表示的多项式长度证书"
       ],
-      "breakthrough": "将原需GRH的若干三维判定复杂性结论转为无条件形式。",
-      "limitations": "coNP提供否定实例的多项式可核验证书，摘要未声称确定性多项式时间算法；所依赖新数论定理的范围与证明状态需正文逐项核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
+      "breakthrough": "定理2.1在该quasi-RH下给不可约f∈Z[x]存在有根模p的素数，p由次数d及log||f||的多项式控制，足以代替旧GRH输入。定理2.2把复非交换表示转为有限域表示，素数位长为群表示长度的多项式。定理2.3给指定双曲三维流形、非平凡结补及非三球面整同调球的正则非交换覆盖，次数至多exp(poly(三角剖分四面体数))。",
+      "limitations": "外部Dedekind quasi-RH形式化证明及有效数论输入未在本轮独立认证，正文自身将主定理条件化表述，应保留此依赖和作者第3页说明。需要ε对全部数域统一。复杂性结论为coNP证书，不给确定性多项式时间识别。已读第1—10页相关定理、证书路线和素数计数推导，渲染第2页；未逐项验证所引规范理论、表示簇约化或Lean材料。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:30:33.581393+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06705v1",
+        "contentHash": "b9ea5b61f0aa19c0bbd4a292350b6a72480f7f9521231be60cf264e40b0bad5e",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页作者明确声明写作本文期间未使用生成式AI。OpenAI、Lean及quasi-RH相关命中是外部数论工作、形式化证明的背景及引用。全文补检未见作者自身使用的正面披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "84ebf7734ce00a3ec975edf98039214d8bb49c522911bab892ca437ebca68a7d"
+      },
       "priorityScore": 88,
       "priorityReason": "几何拓扑与数论复杂性的强结论，需重点核对外部定理依赖。"
     },
@@ -63,28 +84,49 @@
           ],
           "primaryCategory": "math.GT",
           "comment": "11 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-04T16:05:16Z",
+          "updatedAt": "2026-11-04T16:05:16Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-11-05T06:24:48.129844+00:00",
             "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:50.696944+00:00",
+            "contentHash": "38a0a54f9bf202472cc1e6df0336f5aea6944cab6fe9dac4508b351149ab335d"
           }
         ],
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
-          "progressType": "三维识别问题的无条件coNP结论",
-          "workSummary": "本文解释近期quasi-Riemann假设相关进展如何去掉三维拓扑若干coNP结果中的广义Riemann假设条件，包括作者所称首个无条件的三球面识别属于coNP的证明。",
+          "progressType": "以Dedekind quasi-RH替代GRH的三维coNP证书",
+          "workSummary": "定理1.3在Hypothesis1.2下证明平凡结、三球面、torus结、双曲结识别以及cusped三维流形双曲性属于coNP。该假设要求存在对全部数域统一的ε>0，使Dedekind ζ在Re(s)>1−ε无零。第2–3页援引Cureton–Thorner所沟通的ε=1/32 Lean形式化证明，据此解释无条件化，同时因尚不清楚是否有人类理解该外部证明，作者全文继续明确保留Hypothesis1.2。",
           "techniques": [
-            "三维识别的有限域证书",
-            "quasi-Riemann型零点控制",
-            "有效数论与复杂性类别"
+            "复代数表示簇及Rabinowitsch非交换条件",
+            "有效Chebotarev与素理想计数",
+            "判别式及多项式系数界",
+            "有限域非交换表示的多项式长度证书"
           ],
-          "breakthrough": "将原需GRH的若干三维判定复杂性结论转为无条件形式。",
-          "limitations": "coNP提供否定实例的多项式可核验证书，摘要未声称确定性多项式时间算法；所依赖新数论定理的范围与证明状态需正文逐项核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
+          "breakthrough": "定理2.1在该quasi-RH下给不可约f∈Z[x]存在有根模p的素数，p由次数d及log||f||的多项式控制，足以代替旧GRH输入。定理2.2把复非交换表示转为有限域表示，素数位长为群表示长度的多项式。定理2.3给指定双曲三维流形、非平凡结补及非三球面整同调球的正则非交换覆盖，次数至多exp(poly(三角剖分四面体数))。",
+          "limitations": "外部Dedekind quasi-RH形式化证明及有效数论输入未在本轮独立认证，正文自身将主定理条件化表述，应保留此依赖和作者第3页说明。需要ε对全部数域统一。复杂性结论为coNP证书，不给确定性多项式时间识别。已读第1—10页相关定理、证书路线和素数计数推导，渲染第2页；未逐项验证所引规范理论、表示簇约化或Lean材料。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:30:33.581393+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06705v1",
+            "contentHash": "b9ea5b61f0aa19c0bbd4a292350b6a72480f7f9521231be60cf264e40b0bad5e",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页作者明确声明写作本文期间未使用生成式AI。OpenAI、Lean及quasi-RH相关命中是外部数论工作、形式化证明的背景及引用。全文补检未见作者自身使用的正面披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "84ebf7734ce00a3ec975edf98039214d8bb49c522911bab892ca437ebca68a7d"
+          },
           "priorityScore": 88,
           "priorityReason": "几何拓扑与数论复杂性的强结论，需重点核对外部定理依赖。"
         },

@@ -18,30 +18,56 @@
       ],
       "primaryCategory": "math.DG",
       "comment": "65 pages,including a declaration of AI use, comments are very welcome",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-04T11:51:15Z",
+      "updatedAt": "2026-11-04T11:51:15Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.DG/new",
         "observedAt": "2026-11-05T06:24:24.952688+00:00",
         "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.066467+00:00",
+        "contentHash": "4b7b57d9ed5d02c2003d724c6333c86c7cd3a1b9a48c1befee2d5bbbfaa9322d"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "谱不等式等号与刚性",
-      "workSummary": "研究有限面积双曲曲面上、具有非扩张尖点单值性的半单局部系统，分析 Lyapunov 谱与 Harder–Narasimhan 斜率不等式的等号情形，并给出单值群的非晶格性与横截性的二择关系。作者推广 Filip 的假设 A、B，以得到若干达到等号的极化 Hodge 结构变分，并作为应用恢复 C-32 在 Sp(6,R) 中的薄群性质。此外定义称为平均 Cartan 谱的上界，证明其支配 Lyapunov 谱并研究刚性。",
+      "workSummary": "在有限面积双曲曲面上，半单局部系统的尖点单值性须所有特征值模为1。作者用调和测度的 Poincaré–Lelong 质量刻画 Lyapunov 指数与归一化抛物度数的差，零质量使调和测度支撑避开评价零因子，并导出非晶格性或横截性的二择结论。对 Hodge 数为(m−1,1,1,n−1)、m≥n≥2的权3极化复变分，在 Φ^(2,1) 延拓为过滤线丛同构时得到前m个 Lyapunov 指数和等于2 pardeg(F²)/deg K(D)，且单值群非晶格。权4实变分的相应推广在 n=1 取等，在 n>1 且 Zariski 稠密时严格。平均 Cartan 谱 C 支配 λ，若 Higgs 场逐点幂零，λ=C 等价于调和映射全测地。",
       "techniques": [
-        "Lyapunov 谱与 Harder–Narasimhan 斜率比较",
-        "半单局部系统及非扩张尖点单值性",
-        "极化 Hodge 结构变分的等号条件",
-        "平均 Cartan 谱及刚性",
-        "单值群薄性应用"
+        "驯顺调和度量与尖点估计",
+        "Brownian运动和测地流 Lyapunov 谱一致性",
+        "调和测度与正则化 Poincaré–Lelong 质量",
+        "旗流形横截性及 Hermitian 对称域分类",
+        "Higgs 分量同构、Morse 函数与不变各向同性子空间",
+        "Cartan 投影有限时比较、超可加间隙与等号刚性"
       ],
-      "breakthrough": "把谱比较中的等号与单值群几何、Hodge 条件相联系，并提出支配 Lyapunov 谱的平均 Cartan 上界。",
-      "limitations": "需保留半单性、有限面积和非扩张尖点条件。摘要未列二择关系、推广假设及刚性结论的精确形式，不能将其解释成任意局部系统的统一薄性判别。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "在非紧有限面积情形把谱间隙解释为非负解析质量，并以其支撑障碍联系单值群。权3与权4推广对等号和严格不等号给出不同条件。C-32 的应用恢复 Sp(6,R) 中薄性并给出曲率−4归一化下前三个 Lyapunov 指数和7/6。平均 Cartan 上界的完整等号首先迫使每条测地线的平行标架中 du 落于固定闭 Weyl 室；加上幂零性后得到全测地及一致化因子乘紧因子的表示分解。",
+      "limitations": "核对 PDF 第1–8、18–19、21–22、26–29、34–35、42–43、47–55、57–59页，渲染第5、6、58页。双曲曲率归一化为−4。谱上界为 Weyl 支配序，即基本权坐标或适当部分和比较；完整上界等号等价于全测地还需 Higgs 场逐点幂零。非晶格性推出薄性还需包含于算术晶格且 Zariski 稠密。正交推广在 n>1 且 Zariski 稠密时出现严格下界，故不能笼统把薄性等同于 Lyapunov–HN 等号。该文为65页，未逐页审读全部证明，外引定理及群计算未独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06388v1 · PDF 第7–8页 Declaration of AI use，错误命中另在第7、61、63页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:31:54.222751+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06388v1",
+        "contentHash": "ade0bce2532c2bd6e18c68bd6bd0ee1dfef3b802effad5ce0c9dbdf259c6d1d9",
+        "pages": 65,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fe0a341aede6343367ca95613bd647cad8e762a653b58b7e0a9801b810755def"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 84,
       "priorityReason": "与双曲曲面上的谱、Hodge 几何及刚性直接相关，优先核对等号条件与平均 Cartan 界。"
     },
@@ -69,30 +95,56 @@
           ],
           "primaryCategory": "math.DG",
           "comment": "65 pages,including a declaration of AI use, comments are very welcome",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-04T11:51:15Z",
+          "updatedAt": "2026-11-04T11:51:15Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.DG/new",
             "observedAt": "2026-11-05T06:24:24.952688+00:00",
             "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.066467+00:00",
+            "contentHash": "4b7b57d9ed5d02c2003d724c6333c86c7cd3a1b9a48c1befee2d5bbbfaa9322d"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "谱不等式等号与刚性",
-          "workSummary": "研究有限面积双曲曲面上、具有非扩张尖点单值性的半单局部系统，分析 Lyapunov 谱与 Harder–Narasimhan 斜率不等式的等号情形，并给出单值群的非晶格性与横截性的二择关系。作者推广 Filip 的假设 A、B，以得到若干达到等号的极化 Hodge 结构变分，并作为应用恢复 C-32 在 Sp(6,R) 中的薄群性质。此外定义称为平均 Cartan 谱的上界，证明其支配 Lyapunov 谱并研究刚性。",
+          "workSummary": "在有限面积双曲曲面上，半单局部系统的尖点单值性须所有特征值模为1。作者用调和测度的 Poincaré–Lelong 质量刻画 Lyapunov 指数与归一化抛物度数的差，零质量使调和测度支撑避开评价零因子，并导出非晶格性或横截性的二择结论。对 Hodge 数为(m−1,1,1,n−1)、m≥n≥2的权3极化复变分，在 Φ^(2,1) 延拓为过滤线丛同构时得到前m个 Lyapunov 指数和等于2 pardeg(F²)/deg K(D)，且单值群非晶格。权4实变分的相应推广在 n=1 取等，在 n>1 且 Zariski 稠密时严格。平均 Cartan 谱 C 支配 λ，若 Higgs 场逐点幂零，λ=C 等价于调和映射全测地。",
           "techniques": [
-            "Lyapunov 谱与 Harder–Narasimhan 斜率比较",
-            "半单局部系统及非扩张尖点单值性",
-            "极化 Hodge 结构变分的等号条件",
-            "平均 Cartan 谱及刚性",
-            "单值群薄性应用"
+            "驯顺调和度量与尖点估计",
+            "Brownian运动和测地流 Lyapunov 谱一致性",
+            "调和测度与正则化 Poincaré–Lelong 质量",
+            "旗流形横截性及 Hermitian 对称域分类",
+            "Higgs 分量同构、Morse 函数与不变各向同性子空间",
+            "Cartan 投影有限时比较、超可加间隙与等号刚性"
           ],
-          "breakthrough": "把谱比较中的等号与单值群几何、Hodge 条件相联系，并提出支配 Lyapunov 谱的平均 Cartan 上界。",
-          "limitations": "需保留半单性、有限面积和非扩张尖点条件。摘要未列二择关系、推广假设及刚性结论的精确形式，不能将其解释成任意局部系统的统一薄性判别。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "在非紧有限面积情形把谱间隙解释为非负解析质量，并以其支撑障碍联系单值群。权3与权4推广对等号和严格不等号给出不同条件。C-32 的应用恢复 Sp(6,R) 中薄性并给出曲率−4归一化下前三个 Lyapunov 指数和7/6。平均 Cartan 上界的完整等号首先迫使每条测地线的平行标架中 du 落于固定闭 Weyl 室；加上幂零性后得到全测地及一致化因子乘紧因子的表示分解。",
+          "limitations": "核对 PDF 第1–8、18–19、21–22、26–29、34–35、42–43、47–55、57–59页，渲染第5、6、58页。双曲曲率归一化为−4。谱上界为 Weyl 支配序，即基本权坐标或适当部分和比较；完整上界等号等价于全测地还需 Higgs 场逐点幂零。非晶格性推出薄性还需包含于算术晶格且 Zariski 稠密。正交推广在 n>1 且 Zariski 稠密时出现严格下界，故不能笼统把薄性等同于 Lyapunov–HN 等号。该文为65页，未逐页审读全部证明，外引定理及群计算未独立核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06388v1 · PDF 第7–8页 Declaration of AI use，错误命中另在第7、61、63页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:31:54.222751+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06388v1",
+            "contentHash": "ade0bce2532c2bd6e18c68bd6bd0ee1dfef3b802effad5ce0c9dbdf259c6d1d9",
+            "pages": 65,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fe0a341aede6343367ca95613bd647cad8e762a653b58b7e0a9801b810755def"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 84,
           "priorityReason": "与双曲曲面上的谱、Hodge 几何及刚性直接相关，优先核对等号条件与平均 Cartan 界。"
         },

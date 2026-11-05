@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "date": "2026-11-05",
-  "revision": 2,
-  "contentHash": "dc16909d4c7dd75598de6c01b1de182a8419f663f9938aae2389c764ca55d55b",
-  "lastUpdated": "2026-11-05T06:27:46.189Z",
+  "revision": 3,
+  "contentHash": "1cbc92de5d53145e8a1ca3b3f8a26bc944aea137666ac96db248b4a5f24ed552",
+  "lastUpdated": "2026-11-05T06:38:31.612Z",
   "categories": [
     {
       "category": "mathDg",
@@ -132,7 +132,9 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "44 pages,3 figures",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-10-31T09:08:52Z",
+        "updatedAt": "2026-10-31T09:08:52Z"
       },
       "sources": [
         {
@@ -144,22 +146,30 @@
           "url": "https://arxiv.org/pdf/2611.05416v1",
           "observedAt": "2026-11-05T06:26:57.463095+00:00",
           "contentHash": "80ecee6b51a9c2775fcf1daf8dc2f32a43eff8073bf6d7fdc50000bbab2fd8b6"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.057439+00:00",
+          "contentHash": "52387caa8c5e69bc4f016e3887265a0674ac1ee91914f39e3efd585d6e149c04"
         }
       ],
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "拟双曲Gromov边界与一致性的刻画",
-        "workSummary": "作者构造适当测地度量空间中的可求长连通开集，使其拟双曲度量为Gromov双曲，视觉边界与原度量边界自然双Lipschitz对应，但开集仍非一致域。随后在附加假设下给一致性同Gromov双曲及自然闭包映射相对拟对称性的等价刻画。",
+        "workSummary": "定理1.2以紧测地梳状树Y和X=Y\\{o,a}给反例，拟双曲空间(X,k)为0-双曲树，两个Gromov边界点与度量边界自然双Lipschitz对应，但X不一致。定理1.3对局部紧、可求长连通、不完备X刻画有界一致性，需局部定量拟凸、diam X≤C dist(w,∂X)、(X,k)双曲且以w为基点BoS-visual，以及整个Gromov闭包至完备化自然映射的相对拟对称性。",
         "techniques": [
-          "拟双曲度量与视觉边界",
-          "有界及无界空间的一致化",
-          "相对拟对称自然映射",
-          "一致完美边界与Teichmüller位移性质"
+          "以长度度量赋予梳状树并比较齿长与边界距离",
+          "拟双曲度量k与Ibragimov双曲化度量h的粗拟等距比较",
+          "BoS/BuSc视觉性质与相对拟对称映射",
+          "有界共形密度和无界Busemann一致化",
+          "Teichmüller位移性质"
         ],
-        "breakthrough": "反例回答2008年问题，说明仅边界的良好度量对应仍可能不足。正向刻画进一步控制整个Gromov闭包至度量完备化的映射，并联系边界一致完美性和位移性质。",
-        "limitations": "正向结论所需的度量空间条件、相对拟对称性涉及的集合及位移性质的量词，需逐一定理核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "定理1.4给无界版本，保留局部拟凸，以某无穷远点的roughly starlike及Busemann视觉度量下去掉该点的闭包相对拟对称性替代有界条件。定理1.5/1.6在边界一致完美时以边界幂拟对称及位移性质刻画一致性，有界情形另需diam X≤ν diam∂X。所有结果给参数相互依赖的定量控制。",
+        "limitations": "相对拟对称控制涉及闭包中以边界点为首点或另两点均在边界的三元组，不能省略成单独边界拟对称。位移性质考察从(X,h)到(X,k)的粗拟等距自映射且边界为恒等，对所有控制常数要求k(x,f(x))统一有界。无界边界一致完美性在球面化的一点扩充上理解。仅核对主定理、反例与路线，未复核全部一致化估计。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
         "aiReview": {
           "status": "full_text_searched",
           "checkedAt": "2026-11-05T06:26:57.463095+00:00",
@@ -167,7 +177,7 @@
           "sourceUrl": "https://arxiv.org/pdf/2611.05416v1",
           "contentHash": "80ecee6b51a9c2775fcf1daf8dc2f32a43eff8073bf6d7fdc50000bbab2fd8b6",
           "pages": 44,
-          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。44页PDF提取完整，全文关键词候选、致谢/工具声明位置及点写AI、拆行模型名和Danus补检未观察到作者使用生成式AI的披露。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "dcd8a83c88406b6c68643e38b8b15759e9f53984f7040bc63ad696eca0c4dd1f"
         },
@@ -193,29 +203,55 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "15 pages, 1 table",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-02T05:59:22Z",
+        "updatedAt": "2026-11-02T05:59:22Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.058679+00:00",
+          "contentHash": "43738265524da713067791213d60c2e0970285f66764e143a0f2cbff0800d827"
         }
       ],
       "analysis": {
         "topic": "交叉方向与基础工具",
         "progressType": "九至二十二维等腰点集的极值与唯一性",
-        "workSummary": "研究任意三点组成等腰三角形的有限欧氏点集。作者给9≤d≤21时最大点数为C(d+1,2)+1，22维为276，并分类相应极值构型。",
+        "workSummary": "定理1.1断言9≤d≤21时iso(d)=C(d+1,2)+1，相似意义下唯一为正单纯形棱中点加重心；22维为276，唯一为McLaughlin球面构型加球心。等腰定义容许退化三角形。定理1.2在10≤d≤22且点数严格超过C(d,2)+3时给两距离或球面两距离加球心的结构，阈值可达到；九维的结构门槛为严格超过45。",
         "techniques": [
-          "Blokhuis正交两距离分解",
-          "无彩虹三角形边着色的Gallai定理",
-          "欧氏及球面两距离点集的已知极值",
-          "九维情形的八维大两距离点集分析"
+          "无彩虹三角形的Gallai着色引理",
+          "Blokhuis分解与各部分方向空间正交",
+          "已知欧氏/球面两距离最大集及等号分类",
+          "八维大两距离集的短距离图与九维增点矛盾"
         ],
-        "breakthrough": "9至21维极值构型是正单纯形棱中点与中心，22维是McLaughlin构型加中心。10至22维超过C(d,2)+3的点集有两距离或球面两距离加中心的结构，该阈值可达到。23维得到iso(23)=max{g(23),278}及278至575的界。",
-        "limitations": "唯一性按欧氏相似意义理解，仍需正文确认。23维结论保留未知两距离极值g(23)，未给出其精确值。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "分解的维数配分上界直接处理10至22维，但九维只给47。§5排除以至少44点的八维两距离集结尾的非平凡分解，得到iso(9)=46及唯一性。定理1.3将23维归约为iso(23)=max{g(23),278}，据所引两距离界给278≤iso(23)≤575。",
+        "limitations": "新唯一性定理中单纯形结论的范围为9≤d≤21，摘要中较宽的d≤21措辞须按正文定理阅读。证明关键依赖文献[5]的两距离极值、分类和根系结果及球面界，本次未重新审读外部文献。23维的g(23)仍未知，等式为归约结论。未独立核验整个组合枚举与所有证明。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.05421v1 · PDF第13页 Acknowledgements",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:27:32.867680+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05421v1",
+          "contentHash": "f0f54f42731a7879d4dc67ca795aa2e04daf9fd5914c61071db8931bd2dc7c08",
+          "pages": 15,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "118218f68e63a86b98261ac553075d5ee470cc503dcd760cff14450fc26e0e39"
+        },
+        "aiUsage": [
+          "computation",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 78,
         "priorityReason": "有限维极值和等号结构完整，适合阅读分解法与边界维数论证。"
       },
@@ -237,13 +273,20 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "12 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-03T06:16:55Z",
+        "updatedAt": "2026-11-03T06:16:55Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.059386+00:00",
+          "contentHash": "354bfb67a24ce19d97d8f488bd23962519b25afb467e4146b0d6fb5c5b44e4b7"
         }
       ],
       "analysis": {
@@ -259,6 +302,19 @@
         "limitations": "对数系数和图的局部有限度条件属于结论的重要部分，摘要未给常数。不能从任意log n上界直接推出维数1。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:28:10.532055+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05429v1",
+          "contentHash": "3dc9edd1bd85c05c8d2af72400896e2b81a104d8e9fb76565ed74e429c0de4d5",
+          "pages": 12,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。12页PDF提取完整，全文关键词、声明位置和额外点写/拆行模型名检索未观察到生成式AI实际用途披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "574b3d483969da4a2623057cf88aaa61f50481dbb2614adbf18b46ee821dc86f"
+        },
         "priorityScore": 83,
         "priorityReason": "连接双曲几何、覆盖维数和拟树性质，与比较几何主题密切。"
       },
@@ -282,29 +338,50 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "10 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-03T19:10:57Z",
+        "updatedAt": "2026-11-03T19:10:57Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.060103+00:00",
+          "contentHash": "2a3ec79cca56a27de21cd884e0fea9f12b58c27ba504dabff77c361e67e6b496"
         }
       ],
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
         "progressType": "有界bicombing空间中Lipschitz球面的欧氏填充界",
-        "workSummary": "对具有有界bicombing的度量空间，作者证明单位n球面的Lipschitz映射满足同伦型欧氏等周不等式，适用例子包括CAT(0)空间及赋范线性空间。",
+        "workSummary": "定理1.2对任意有L-bounded bicombing的度量空间X与n≥1，给每个Lipschitz f:Sⁿ→X的Lipschitz球填充f̄:Dⁿ⁺¹→X，参数化Hausdorff体积满足Vol(f̄)≤C(n,L)Vol(f)^((n+1)/n)。定理1.3给相同阶的奇异Lipschitz链不等式。定理1.4在n≥2时把既有链填充c转成体积≤Vol(c)+ε的映射填充，ε任意正。",
         "techniques": [
-          "奇异Lipschitz链的欧氏等周界",
-          "有界bicombing",
-          "链填充向映射填充的转换",
-          "近乎不增加体积的同伦构造"
+          "有界bicombing的径向Lipschitz收缩",
+          "链的有限单纯复形几何实现",
+          "边界扫过复形且几乎处处重数至多1",
+          "低维骨架锥化和Hurewicz定理",
+          "在X×Rⁿ⁺¹作小扰动以处理非单射边界"
         ],
-        "breakthrough": "先改进链级填充不等式，再将一个链填充转成体积至多增加任意小误差的Lipschitz球面映射填充，从而把同调型界提升至同伦型界。",
-        "limitations": "填充维数、体积规范、bicombing的常数和空间完备性条件需对照正文。体积控制与延拓映射的Lipschitz常数控制是不同问题。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "将CAT(0)空间中已知二维球面结果扩展至所有n≥1及更一般的bicombing空间。几何链扫掠负责填充体积，低维锥化部分不贡献最高维体积；一般边界通过积空间的微小单射扰动获得ε误差。该bicombing定义包括CAT(0)、赋范空间及Busemann NPC空间，并在双Lipschitz变换下保持。",
+        "limitations": "主定理未要求X完备，常数仅依赖n和bicombing控制L。结论给填充体积，未声称同一表达式控制填充的Lipschitz常数。第9页定理4.3将M写为n维，却仍印指数(n+1)/n，和∂M为n−1维的尺度不匹配，推广须核对维数标记。仅补读所列定理及路线，未逐步核验全部论证。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:28:47.761964+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05513v1",
+          "contentHash": "2cb30ceae3464fd6f6eca717cf2028065454cb2d6bd9a6a842a0b770c9d57be6",
+          "pages": 10,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页声明未用生成式AI产生思想或写作。10页PDF提取完整，全文及补检未观察到其他实际用途的正向披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "be47e3f1940587404aba739d70a2125293dac2b1f4ef0d3c5df5c327420197d5"
+        },
         "priorityScore": 91,
         "priorityReason": "直接涉及CAT(0)与一般度量空间的等周填充，优先核对链到映射转换的条件。"
       },
@@ -327,28 +404,54 @@
         ],
         "primaryCategory": "math.CO",
         "comment": "16 pages, 4 figures",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-03T21:19:45Z",
+        "updatedAt": "2026-11-03T21:19:45Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.060642+00:00",
+          "contentHash": "b09285f03b42a2b14bdd710d2d086ecd68e0663d643c7682f9d1ace194b9dce7"
         }
       ],
       "analysis": {
         "topic": "交叉方向与基础工具",
         "progressType": "三维直径图删一点后的三着色声称",
-        "workSummary": "对R³中有限点集，以达到集合直径的点对连边。作者证明删去至多一个点即可使直径图三着色，从而回答Brass关于有限删点数的猜想。",
+        "workSummary": "定理2对每个有限S⊂R³，删至多一个点后，原直径图在剩余顶点上的诱导子图可三着色。若原图需四色，引理2给唯一的4-critical直径子图，删其任一顶点即可。定理1对任意正整数m构造S，使每个diam U<diam S的子集满足|U|<(|S|−m)/2。",
         "techniques": [
-          "三维直径图的几何约束",
-          "删点三着色",
-          "较小直径子集的极端构造"
+          "三维4-critical直径图与Reuleaux球多面体的对应",
+          "在指定顶点附近取任意小一块的四块覆盖",
+          "射影平面非二部四边形剖分及直径图几何实现",
+          "twisted grid的行缺额与独立集计数"
         ],
-        "breakthrough": "删点数可统一取1。另回答Dol’nikov问题，对任意正整数m构造有限S，使每个直径严格较小的子集的点数都小于(|S|−m)/2。",
-        "limitations": "Brass结论的范围为d=3、k=3。独立集上界构造的点数随m变化，全文论证仍需核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "删一点界通过Reuleaux覆盖先排除两个不同4-critical顶点集，并由临界性推出三着色。Dol’nikov反例用奇数L>m的网格G_L，其顶点数L(2L+1)、独立数恰为L²，结合所引几何实现定理得到严格小于半数减任意固定偏差的较小直径子集界。",
+        "limitations": "Brass结论范围为三维三着色，依赖所引2025年Reuleaux多面体结果。Dol’nikov构造的几何实现采用文献[8]定理1.8，作者第10页说明该工作在审稿且预计修订，当前未提供所有L的独立坐标验证。本文补读主证明路线，未独立审读外部输入或逐项复核全部计数，强猜想结论按作者论文声称记录。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.05631v1 · PDF第14页 §6 Declaration of AI usage",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:29:23.101786+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05631v1",
+          "contentHash": "4a3fcf167fe871861c1d455adfd0dfcec26d4ae262b6e60968e03a417f32ba9d",
+          "pages": 16,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "45f35d058f072851ab1d4015ee23fb166c89c7c65502a5ae8ce97b633d1fc32f"
+        },
+        "aiUsage": [
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 86,
         "priorityReason": "涉及Borsuk型直径划分和三维图几何，结论强，优先核对核心定理及极端构造。"
       },
@@ -374,13 +477,20 @@
         ],
         "primaryCategory": "math.GR",
         "comment": "21 pages, 5 figures, comments welcome!",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T00:08:09Z",
+        "updatedAt": "2026-11-04T00:08:09Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.061197+00:00",
+          "contentHash": "8b39d2cc9d1c867a8a7f3c9fca618ea327786d42450954d2128206b6ee9a4b57"
         }
       ],
       "analysis": {
@@ -397,6 +507,19 @@
         "limitations": "复形结论依赖near-flat intervals或tame等条件，普适上界的具体数值及群作用转换需核对。建筑附录结论只称有限。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:30:01.349408+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05763v1",
+          "contentHash": "9d2a5d0c368dfdd7cb1dfc0ec1c5baa9d261484f3cf434657b38c15847f5eeab",
+          "pages": 21,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页致谢为具名人士讨论及基金支持。21页PDF完整提取，全文工具/披露检索和额外拆行模型名、点写AI及Danus补检未观察到生成式AI实际使用声明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f1c80d379f9c64045a3ed6e25fcb0eccdf5baaf357f45178625684e164cdba80"
+        },
         "priorityScore": 82,
         "priorityReason": "对非正曲率离散模型的定量维数有直接意义。"
       },
@@ -419,13 +542,20 @@
         ],
         "primaryCategory": "math.GT",
         "comment": "20 pages; GitHub repository at this https URL",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T01:05:23Z",
+        "updatedAt": "2026-11-04T01:05:23Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.061761+00:00",
+          "contentHash": "a13323376bf53a5590dba510cb8642d2a73d7a02ff5cedeba2a938361ff80fe9"
         }
       ],
       "analysis": {
@@ -441,7 +571,26 @@
         "breakthrough": "由迹域非全实推出三个格非伪算术，进而取无挠保向有限指标子群，得到可定向非紧有限体积双曲四流形。",
         "limitations": "Lean部分验证根式恒等式与数域阻碍，对格与流形的推论明确以几何及文献输入为假设。需区分计算认证和这些外部输入。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "第19页致谢明确OpenAI Codex协助恢复并审核精确计算、探索二次型下降判据、改进表述，以及生成和审核Python、PARI/GP、Lean 4代码。用途记计算、核查、探索和写作。探索判据的表述没有将某一核心思想明确归于模型，未标ideas；普通Lean形式化及外部定理假设本身不作为AI证据。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.05795v1 · PDF第19页 Acknowledgments",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:30:50.823850+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05795v1",
+          "contentHash": "14b1b92b0ca22f84194bcc5391ad1e6631774d175fed269a3d42d3893e71c8fc",
+          "pages": 20,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页致谢明确OpenAI Codex协助恢复并审核精确计算、探索二次型下降判据、改进表述，以及生成和审核Python、PARI/GP、Lean 4代码。用途记计算、核查、探索和写作。探索判据的表述没有将某一核心思想明确归于模型，未标ideas；普通Lean形式化及外部定理假设本身不作为AI证据。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "55ebecc2b7d09cfcd1fa014908d60934a37fe06dec2d536242a08f63eebae6a3"
+        },
+        "aiUsage": [
+          "computation",
+          "exploration",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 90,
         "priorityReason": "双曲四流形的算术性阻碍明确，值得阅读几何构造和形式化范围。"
       },
@@ -465,7 +614,9 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "18 pages, any comments are welcome",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T03:30:38Z",
+        "updatedAt": "2026-11-04T03:30:38Z"
       },
       "sources": [
         {
@@ -477,6 +628,11 @@
           "url": "https://arxiv.org/pdf/2611.05891v1",
           "observedAt": "2026-11-05T06:25:28.050954+00:00",
           "contentHash": "df947a294c4e26364cfbe53946afe9f9c50b75020c2e2be111475877ebfb8598"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.062261+00:00",
+          "contentHash": "31af42031808cf81e423580fc6612c9a2b99312c7e0f870ffef874ec6e3807b0"
         }
       ],
       "analysis": {
@@ -484,12 +640,13 @@
         "progressType": "尖锐刚性定理",
         "workSummary": "在 Calabi 度量完备假设下研究仿射极大型 Monge–Ampère 方程的 Bernstein 刚性。",
         "techniques": [
-          "Calabi 几何",
-          "行列式幂方程与凸函数估计"
+          "规范化 Hessian 映射到双曲平面",
+          "谱曲率不等式与 Castillon 定理",
+          "Calabi 调和行列式幂及 Legendre 对偶"
         ],
-        "breakthrough": "二维中指数 a 位于闭区间 [−2/3,−1/3] 外时，光滑严格凸解必为二次多项式；在所有维数构造闭区间内的非二次完备例。",
-        "limitations": "二维的刚性范围与反例相配，高维构造本身不确定高维的全部刚性范围。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "二维将规范化 Hessian 视作双曲平面映射，得到曲率谱不等式；完备性与抛物性迫使行列式恒定。显式势函数和 Legendre 对偶构成覆盖闭区间 [−2/3,−1/3] 的非二次完备解，和区间外刚性相配。",
+        "limitations": "二维刚性依赖二维工具。高维给出 [−n/(n+1),−1/(n+1)] 中反例，不确定全部高维刚性范围。补读主结果及路线，未独立核验整篇证明。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露 AI 仅协助常规起草与计算，作者负责定理1.2和1.3的正确性。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.05891v1 · PDF 第16页 AI assistance statement",
@@ -530,13 +687,20 @@
           "math.MG"
         ],
         "primaryCategory": "math.MG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T04:52:39Z",
+        "updatedAt": "2026-11-04T04:52:39Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.062774+00:00",
+          "contentHash": "125cbac9890bb0fa5e15082e243f53066ef6d5cea21db063c4a51f1811105328"
         }
       ],
       "analysis": {
@@ -553,6 +717,19 @@
         "limitations": "收敛、维数及指标公式依赖ω的具体条件与度量、测度归一化，摘要未给其完整表述。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:31:33.406368+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.05960v1",
+          "contentHash": "920c2cb96aceda2286e01f2444ba974020dcf4b78dd19380bc20c692ed95a10f",
+          "pages": 21,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。21页PDF完整提取，全文工具/披露检索以及点写AI、任意拆行模型名和Danus补检未观察到作者使用生成式AI的声明。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "3ae61900f883b9874f62c2e950db5c650b5cca56f745895744446873bf74724a"
+        },
         "priorityScore": 75,
         "priorityReason": "与极限度量测度空间和分形维数有关，需按具体模型判断可迁移性。"
       },
@@ -578,7 +755,9 @@
           "math.GT"
         ],
         "primaryCategory": "math.AG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T07:20:23Z",
+        "updatedAt": "2026-11-04T07:20:23Z"
       },
       "sources": [
         {
@@ -590,6 +769,11 @@
           "url": "https://arxiv.org/pdf/2611.06077v1",
           "observedAt": "2026-11-05T06:27:09.247539+00:00",
           "contentHash": "e7a28035c1f195bc0f0edee5c63568a12a9a2465419baa5dcd369f3087c2d8c8"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.063163+00:00",
+          "contentHash": "f7c2d89e37c098c4f254cf8abdd1eefd3c5a7b51dea42a72a4f316024b5e6fe6"
         }
       ],
       "analysis": {
@@ -642,13 +826,20 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "24 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T07:30:59Z",
+        "updatedAt": "2026-11-04T07:30:59Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-11-05T06:24:24.952688+00:00",
           "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.063483+00:00",
+          "contentHash": "155c589a0522edc282ae2ceacf75467194121ea930511f2077f58a21def7d13c"
         }
       ],
       "analysis": {
@@ -664,7 +855,26 @@
         "breakthrough": "将迭代变换的显式 Gauss 公式与端部嵌入性、重数及部分完备有限全曲率族联系起来。",
         "limitations": "端部判别限于原曲面正则无脐点，参数须互异非零；完备有限全曲率结论对应悬链面中的适当参数，不能推广到任意迭代变换。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露使用 ChatGPT 和 Claude 协助组织表述、检查计算、探索例子引出的观察并发展若干性质的证明，且作者独立检查所有计算与论证。按披露记录写作、核验、探索和证明协助，声明未具体将核心构造或证明路线归给模型。第5页 Astra 命中来自 a straight line，第22页 A. I. 是 Bobenko 的名字首字母。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06086v1 · PDF 第24页 Use of generative artificial intelligence，全文及补检共24页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:27:46.281365+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06086v1",
+          "contentHash": "0915e05332a847283f70cc96a5547fb6b2f2928a28f5b1464e3cdd942f69d4f3",
+          "pages": 24,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT 和 Claude 协助组织表述、检查计算、探索例子引出的观察并发展若干性质的证明，且作者独立检查所有计算与论证。按披露记录写作、核验、探索和证明协助，声明未具体将核心构造或证明路线归给模型。第5页 Astra 命中来自 a straight line，第22页 A. I. 是 Bobenko 的名字首字母。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "bd5becf7c2623297d7e8d2c0cff69ad41185c7f1861b332da5a9cbc40d75df18"
+        },
+        "aiUsage": [
+          "exploration",
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 79,
         "priorityReason": "直接涉及极小曲面、Gauss 映射和端部几何，可优先跟踪显式构造。"
       },
@@ -686,13 +896,20 @@
           "math.PR"
         ],
         "primaryCategory": "math.MG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T08:31:26Z",
+        "updatedAt": "2026-11-04T08:31:26Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.064070+00:00",
+          "contentHash": "0a8ba4dcc8de13f982a85396507c377a07143fd1dd52876de92fa73ee69485c8"
         }
       ],
       "analysis": {
@@ -706,9 +923,25 @@
           "形式对偶的整除障碍"
         ],
         "breakthrough": "在明确的周期、复杂度和二元性约束下给出尖锐最优及等号结论，并用整除性排除普通等权周期形式对偶。",
-        "limitations": "摘要明确限定比较对象为当前纪录晶格的对偶，未证明超过所有晶格；各最优性结论有相应配置类别限制，未主张任意周期配置的全局最优。 当前数学解读依据摘要，尚未逐步审读证明。",
+        "limitations": "摘要明确限定比较对象为当前纪录晶格的对偶，未证明超过所有晶格；各最优性结论有相应配置类别限制，未主张任意周期配置的全局最优。 当前数学解读依据摘要，尚未逐步审读证明。 正文第8页另自称仍待作者最终批准的 GPT 6-Astra 辅助草稿，并提示应用的发表优先权有待专家比对，Hadamard 阵列本身为经典构造。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "正文自称使用 GPT 6-Astra 的 AI 辅助草稿，且仍需作者最终批准，属于明确自身使用披露。具体证明或核心思想归因未说明。另段讨论 OpenAI 的二维能量论文及未来 AI 形式证明，分别为他人工作和开放问题。致谢的免费 SuperGrok、Claude Max 订阅只证明获得访问资助，未说明这两个模型实际参与本稿。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06148v1 · PDF 第8页结语及 Acknowledgments，全文和拆行补检共8页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:28:24.274973+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06148v1",
+          "contentHash": "f385bd39605095ca9b7301ce485c344a04ddc3b605db5d86a1768927bc1b8dd4",
+          "pages": 8,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。正文自称使用 GPT 6-Astra 的 AI 辅助草稿，且仍需作者最终批准，属于明确自身使用披露。具体证明或核心思想归因未说明。另段讨论 OpenAI 的二维能量论文及未来 AI 形式证明，分别为他人工作和开放问题。致谢的免费 SuperGrok、Claude Max 订阅只证明获得访问资助，未说明这两个模型实际参与本稿。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "ae714962d765c9339e5577f5e350d2e41341625236525573e80f86275a479404"
+        },
+        "aiUsage": [
+          "writing"
+        ],
         "priorityScore": 70,
         "priorityReason": "与周期离散几何和尖锐界相关，关注其等号分类及受限最优性的边界。"
       },
@@ -732,7 +965,9 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "27 pages, comments welcome",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T09:57:45Z",
+        "updatedAt": "2026-11-04T09:57:45Z"
       },
       "sources": [
         {
@@ -744,6 +979,11 @@
           "url": "https://arxiv.org/pdf/2611.06248v1",
           "observedAt": "2026-11-05T06:25:40.044727+00:00",
           "contentHash": "e8aa4c4382fad999ee6fa0d947dfc756ced79700ea91a1916b006a9777b95c5d"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.064420+00:00",
+          "contentHash": "64eeaa2389066bfc8adfa7eb0ad7bd1b566462cacc95964298d00ccc3bf0f042"
         }
       ],
       "analysis": {
@@ -751,11 +991,13 @@
         "progressType": "奇异性构造",
         "workSummary": "在每个 n≥3 的维数给出平均曲率保持一致有界的拉格朗日平均曲率流颈缩奇异性。",
         "techniques": [
-          "拉格朗日角的加权估计与颈缩尺度分析"
+          "Lawlor 颈内尺度与两平面锥中间尺度",
+          "古老热方程的 Liouville 定理",
+          "拉格朗日角加权估计及内点梯度界"
         ],
-        "breakthrough": "在特定结构假设下，用外层角度控制小尺度平均曲率，应用到已有构造得有限时间和无限时间奇异性。",
-        "limitations": "估计采用奇异性形成的结构假设，实例来源于伴随论文和此前构造的子类。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "在内外尺度分离、内尺度极限为重数一 Lawlor 颈及中间尺度极限为横截两平面锥的假设下，将外环域拉格朗日角的加权界传至内部平均曲率。有限时 Cⁿ 颈缩与无限时平坦环面例分别满足这些条件。",
+        "limitations": "结构假设需要零 Maslov、适当浸入及所有相应序列的子列极限控制；有界平均曲率结论用于文中验证过的颈缩族。切流唯一性在导言仅作进一步路线讨论。补读所列定理，未核验伴随构造或整篇证明。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "AI 在稿件最后阶段改善表述和统一记号。作者明确数学思想及伴随论文的思想由作者发展。第2页及参考文献的 OpenAI 外部研究引述不另计作者协作。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.06248v1 · PDF 第5页 Statement on AI use",
@@ -795,27 +1037,55 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "11 pages, 31 references",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T10:20:41Z",
+        "updatedAt": "2026-11-04T10:20:41Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.064730+00:00",
+          "contentHash": "516a16d09c1988cb04b710f57c7502bb1b1afd8f508ece3210357edb18fd621f"
         }
       ],
       "analysis": {
         "topic": "曲率与比较几何",
         "progressType": "唯一性定理",
-        "workSummary": "作者以近期关于平面六角晶格普适最优性的证明为基础，进一步声称在欧氏运动意义下，六角晶格是唯一具有该普适最优性质的周期配置。",
+        "workSummary": "以文献[23]的平面六角晶格高斯能量最优性为基础，定理1.2对密度1的周期配置 C 声称更强的唯一性，任一 α>0 下高斯能量与六角晶格相等即推出两者欧氏全等。若所有 α 均取等，另给只用能量大参数衰减和最密周期圆堆积唯一性的较简证明。推论1.5将唯一性扩展到非零、平方距离完全单调且六角晶格能量有限的势。",
         "techniques": [
-          "六角晶格普适最优性的既有证明",
-          "周期配置的唯一性分析"
+          "高斯能量对数衰减恢复最小点间距",
+          "最密周期圆堆积的等号分类",
+          "Poisson 求和与线性规划能量差的非负分解",
+          "引用辅助函数认证余量建立短距离严格正性",
+          "Bernstein–Widder 正测度表示与 Tonelli 定理"
         ],
-        "breakthrough": "将近期普适最优性结果推进到周期配置类中的唯一性。",
-        "limitations": "摘要未列势函数类别、归一化方式或唯一性论证所依赖的先前定理。结论应保留周期性范围，并待正文核对先前结果依赖和等号条件。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "单参数等号的路线使用[23]的特定径向 Schwartz 辅助函数，在 0<|x|<sqrt(2/sqrt(3)) 证明高斯势与辅助函数之差严格为正。文中从外部认证误差界提取 0.000888 的正余量，由能量差的非负项逐项为零排除过短距离，再应用周期圆堆积刚性。",
+        "limitations": "核对 PDF 第1–11页并渲染第2、8页。唯一性只对密度固定的周期点配置成立；非零完全单调势还需六角晶格的能量有限。单参数刚性依赖文献[23]的辅助函数构造及计算机认证正余量，本次未核验该外部预印本或其证书，亦未独立验证全篇证明。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06278v1 · PDF 第4页第1.3节 Disclosure on the usage of AI tools；其他命中在第1、3、10页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:28:59.616833+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06278v1",
+          "contentHash": "853cedbf4650d44d81c7c2fd315ed4f9a8ce52536235a3bc08236a70dff990d4",
+          "pages": 11,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "47d3c94331c67bddc2c3405765b4d458dbbed12f84dbc413c03059e085337138"
+        },
+        "aiUsage": [
+          "computation",
+          "literature",
+          "proofs"
+        ],
         "priorityScore": 86,
         "priorityReason": "平面能量最优化的唯一性属于尖锐几何不等式的重要问题，需优先核对主定理与依赖。"
       },
@@ -837,13 +1107,20 @@
           "math.GT"
         ],
         "primaryCategory": "math.KT",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T10:34:33Z",
+        "updatedAt": "2026-11-04T10:34:33Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.065158+00:00",
+          "contentHash": "7f74699b561d13fc2cfa864cc38d4308ff89b5ff56a5c14a76ed901a5142f809"
         }
       ],
       "analysis": {
@@ -859,7 +1136,26 @@
         "breakthrough": "通过改进完美形式和面轨道的计数，改善 K 理论挠的上界及其判别式依赖。",
         "limitations": "属于上界的渐近阶改进，摘要未给精确指数、适用的 K 群次数及常数，不能据此视为挠增长的渐近公式。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者说明原数学论证完成后使用 ChatGPT 改善英文及讨论所得上界。模型随后建议作者此前未知的 Solomon 恒等式，用于引理2.4计数有限指标子模，从而替换有界基论证，并在 F≠Q 时进一步减少判别式指数中的 d log n 因子及指数因子之指数中的 log n 因子。该明确归因的改进支持 ideas、literature 和 proofs，英文编辑支持 writing。作者特别指出这一建议未改进有理数域情形的界，原始方法先由作者完成。第10页 Astra 命中来自 a straightforward。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06300v1 · PDF 第18页 Usage of LLM Tools，引理2.4在第9–10页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:29:34.703286+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06300v1",
+          "contentHash": "92b92ff53a76f4a8e77348fbb0e4fc4bf07e2ba23108d4fc7c10ac6eca7d48e1",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明原数学论证完成后使用 ChatGPT 改善英文及讨论所得上界。模型随后建议作者此前未知的 Solomon 恒等式，用于引理2.4计数有限指标子模，从而替换有界基论证，并在 F≠Q 时进一步减少判别式指数中的 d log n 因子及指数因子之指数中的 log n 因子。该明确归因的改进支持 ideas、literature 和 proofs，英文编辑支持 writing。作者特别指出这一建议未改进有理数域情形的界，原始方法先由作者完成。第10页 Astra 命中来自 a straightforward。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "5d18cc9734862c16055795c106ed6201813e6d1bd88e285f5883de6868524920"
+        },
+        "aiUsage": [
+          "ideas",
+          "literature",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 47,
         "priorityReason": "主体为算术群与代数 K 理论，虽使用 Voronoi 几何，和本页曲率及几何分析主线距离较远。",
         "lowPriorityReason": "主体为算术群与代数 K 理论，虽使用 Voronoi 几何，和本页曲率及几何分析主线距离较远。"
@@ -884,13 +1180,20 @@
         ],
         "primaryCategory": "math.AG",
         "comment": "Comments very welcome!!",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T11:01:30Z",
+        "updatedAt": "2026-11-04T11:01:30Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.065497+00:00",
+          "contentHash": "5bcb8c450dc9667a5b400a143cc21ebb2b345b799458514ce03cce02f66f0600"
         }
       ],
       "analysis": {
@@ -906,7 +1209,25 @@
         "breakthrough": "将经典 Euler 示性数差公式推广到一般环境簇，并在零纤维之外光滑纯维的条件下代数化。",
         "limitations": "代数公式需要零纤维之外光滑且纯维；摘要未完整列出纤维、临界点及局部贡献定义的技术假设，不能据此断言适用于任意退化情形。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者明确披露使用基于 AI 的语言模型协助检查和起草部分论证、文本编辑及格式处理，并承担全文责任。记录证明、核验与写作用途，声明未具体归因核心思想。补检多处 Astra 字符序列来自 a stratum、a stratified、a stratification 等分层几何术语。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06340v1 · PDF 第24页 Use of AI tools，全文及补检共26页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:30:19.459662+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06340v1",
+          "contentHash": "4a7c8fbd59ad1a784e44e243a42d1d4e00cba70d4cf0b5037973e94ad595360e",
+          "pages": 26,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露使用基于 AI 的语言模型协助检查和起草部分论证、文本编辑及格式处理，并承担全文责任。记录证明、核验与写作用途，声明未具体归因核心思想。补检多处 Astra 字符序列来自 a stratum、a stratified、a stratification 等分层几何术语。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "132739f24bdb303977fb379ffcfe1f48bd8a1f248d8408415b78d95f18a4dbc2"
+        },
+        "aiUsage": [
+          "proofs",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 63,
         "priorityReason": "与奇点拓扑和局部到整体公式相关，可关注其可计算性及环境奇点范围。"
       },
@@ -929,27 +1250,55 @@
         ],
         "primaryCategory": "math.GT",
         "comment": "19 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T11:18:50Z",
+        "updatedAt": "2026-11-04T11:18:50Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.065999+00:00",
+          "contentHash": "a8cda05aada18e481a331a4156c177eb27dbe46f3e02a4e68d6c5c1fb5c1adf9"
         }
       ],
       "analysis": {
         "topic": "几何拓扑、低维流形与结",
         "progressType": "猜想反例",
-        "workSummary": "作者声称构造亏格3情形的 Putman–Wieland 猜想反例，并讨论其推论。摘要未展开覆盖、固定特征或群作用的具体构造。",
+        "workSummary": "作者的定理1.1构造闭亏格3曲面的81重连通非分歧覆盖，覆盖曲面亏格163，并得到在覆盖子群的映射类稳定子群下具有有限轨道的本原整一维上同调类。推论1.2给出带一个标记点映射类群的有限指标子群满射到 Z。定理1.3进一步构造 Π3 到 SL(81,C) 的代数表示族 R_t，由同一个 Mod3 的有限指标子群固定所有特征，每个表示半单，并在有限多个单位根之外不可约；迹 tr R_t([a1,a2])=9(t+t^(−1)+1)^2。t=2 时迹为441/4，作者据此否定相应秩81、亏格3的固定特征有限性和整性预言。",
         "techniques": [
-          "亏格3的 Putman–Wieland 猜想反例构造",
-          "固定特征与相关推论"
+          "27维有限 Heisenberg 系数表示与非零 Eisenstein 整余循环",
+          "八个映射类生成元的显式交织算子及有限正规化子",
+          "81重覆盖上的取系数再取域迹构造本原整类",
+          "指数化秩1特征与诱导单项式表示",
+          "Jordan 定理与有限像固定特征的逐秩等价性"
         ],
-        "breakthrough": "若正文构造与验证成立，将给出该猜想在亏格3中的否定实例。",
-        "limitations": "摘要极简，无法据此确定覆盖次数、特征所用系数、固定性范围及推论的精确假设，均须正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "通过有限 Heisenberg 群的显式余循环和有限正规化子得到同一个有限指标映射类子群，实际固定整上同调类。指数化并诱导将该类转成具有非恒定迹的固定表示曲线，同时保留一般不可约性、平凡行列式和单位根参数的有限像。",
+        "limitations": "核对 PDF 第1–17页，渲染第3–4页。作者的反例针对闭亏格3曲面，虚满射到整数群的推论针对带一个标记点的 Mod(3,1)。固定族由同一个有限指标子群固定，泛不可约的例外只要求为有限多个单位根。命题5.2的等价性涉及每个秩中的有限像固定特征；此处不扩张到整个任意固定特征集合。此次未独立核验全部生成元与附录的矩阵恒等式、外引定理或全篇证明。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06357v1 · PDF 第6页 Acknowledgements and use of AI，局部反例与整体构造关系另见第5页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:31:09.239961+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06357v1",
+          "contentHash": "5534b704f53d141dda4eb0134b9045ae2771e6a7057c4345e64f1a6f70ff2237",
+          "pages": 19,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "338cdfd03b639500a309ddef6133688a7e69c7b42ca0a55c36364d448f15298c"
+        },
+        "aiUsage": [
+          "exploration",
+          "ideas",
+          "writing"
+        ],
         "priorityScore": 79,
         "priorityReason": "涉及曲面覆盖与映射类群作用的重要反例，应优先核对实际反例和有限轨道条件。"
       },
@@ -974,30 +1323,56 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "65 pages,including a declaration of AI use, comments are very welcome",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T11:51:15Z",
+        "updatedAt": "2026-11-04T11:51:15Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-11-05T06:24:24.952688+00:00",
           "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.066467+00:00",
+          "contentHash": "4b7b57d9ed5d02c2003d724c6333c86c7cd3a1b9a48c1befee2d5bbbfaa9322d"
         }
       ],
       "analysis": {
         "topic": "几何分析、几何 PDE 与几何流",
         "progressType": "谱不等式等号与刚性",
-        "workSummary": "研究有限面积双曲曲面上、具有非扩张尖点单值性的半单局部系统，分析 Lyapunov 谱与 Harder–Narasimhan 斜率不等式的等号情形，并给出单值群的非晶格性与横截性的二择关系。作者推广 Filip 的假设 A、B，以得到若干达到等号的极化 Hodge 结构变分，并作为应用恢复 C-32 在 Sp(6,R) 中的薄群性质。此外定义称为平均 Cartan 谱的上界，证明其支配 Lyapunov 谱并研究刚性。",
+        "workSummary": "在有限面积双曲曲面上，半单局部系统的尖点单值性须所有特征值模为1。作者用调和测度的 Poincaré–Lelong 质量刻画 Lyapunov 指数与归一化抛物度数的差，零质量使调和测度支撑避开评价零因子，并导出非晶格性或横截性的二择结论。对 Hodge 数为(m−1,1,1,n−1)、m≥n≥2的权3极化复变分，在 Φ^(2,1) 延拓为过滤线丛同构时得到前m个 Lyapunov 指数和等于2 pardeg(F²)/deg K(D)，且单值群非晶格。权4实变分的相应推广在 n=1 取等，在 n>1 且 Zariski 稠密时严格。平均 Cartan 谱 C 支配 λ，若 Higgs 场逐点幂零，λ=C 等价于调和映射全测地。",
         "techniques": [
-          "Lyapunov 谱与 Harder–Narasimhan 斜率比较",
-          "半单局部系统及非扩张尖点单值性",
-          "极化 Hodge 结构变分的等号条件",
-          "平均 Cartan 谱及刚性",
-          "单值群薄性应用"
+          "驯顺调和度量与尖点估计",
+          "Brownian运动和测地流 Lyapunov 谱一致性",
+          "调和测度与正则化 Poincaré–Lelong 质量",
+          "旗流形横截性及 Hermitian 对称域分类",
+          "Higgs 分量同构、Morse 函数与不变各向同性子空间",
+          "Cartan 投影有限时比较、超可加间隙与等号刚性"
         ],
-        "breakthrough": "把谱比较中的等号与单值群几何、Hodge 条件相联系，并提出支配 Lyapunov 谱的平均 Cartan 上界。",
-        "limitations": "需保留半单性、有限面积和非扩张尖点条件。摘要未列二择关系、推广假设及刚性结论的精确形式，不能将其解释成任意局部系统的统一薄性判别。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "在非紧有限面积情形把谱间隙解释为非负解析质量，并以其支撑障碍联系单值群。权3与权4推广对等号和严格不等号给出不同条件。C-32 的应用恢复 Sp(6,R) 中薄性并给出曲率−4归一化下前三个 Lyapunov 指数和7/6。平均 Cartan 上界的完整等号首先迫使每条测地线的平行标架中 du 落于固定闭 Weyl 室；加上幂零性后得到全测地及一致化因子乘紧因子的表示分解。",
+        "limitations": "核对 PDF 第1–8、18–19、21–22、26–29、34–35、42–43、47–55、57–59页，渲染第5、6、58页。双曲曲率归一化为−4。谱上界为 Weyl 支配序，即基本权坐标或适当部分和比较；完整上界等号等价于全测地还需 Higgs 场逐点幂零。非晶格性推出薄性还需包含于算术晶格且 Zariski 稠密。正交推广在 n>1 且 Zariski 稠密时出现严格下界，故不能笼统把薄性等同于 Lyapunov–HN 等号。该文为65页，未逐页审读全部证明，外引定理及群计算未独立核验。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06388v1 · PDF 第7–8页 Declaration of AI use，错误命中另在第7、61、63页。",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:31:54.222751+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06388v1",
+          "contentHash": "ade0bce2532c2bd6e18c68bd6bd0ee1dfef3b802effad5ce0c9dbdf259c6d1d9",
+          "pages": 65,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将定理3.4、3.7及第6节的想法，以及尚需算术性假设的早期定理4.1，明确归因于2026年7月与 ChatGPT 5.5 Plus 的迭代引导式交流，支持 ideas。ChatGPT 6 Astra 协助完成定理4.5的证明和改善语言，支持 proofs 与 writing。作者随后修正完善并独立核查全文，同时承认3.4、3.7在 Daniel–Deroin 的工作中已几乎证明，平均 Cartan 谱比较亦有 Ruelle 等经典先例。这些先例限制新颖性判断。第63页 Claude 是文献作者 Sabbah 的名字，第7、61页若干 GPT 字符来自 BCGPT23 文献标签。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "fe0a341aede6343367ca95613bd647cad8e762a653b58b7e0a9801b810755def"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 84,
         "priorityReason": "与双曲曲面上的谱、Hodge 几何及刚性直接相关，优先核对等号条件与平均 Cartan 界。"
       },
@@ -1019,7 +1394,9 @@
           "math.DG"
         ],
         "primaryCategory": "math.DG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T12:06:55Z",
+        "updatedAt": "2026-11-04T12:06:55Z"
       },
       "sources": [
         {
@@ -1031,6 +1408,11 @@
           "url": "https://arxiv.org/pdf/2611.06406v1",
           "observedAt": "2026-11-05T06:25:55.979842+00:00",
           "contentHash": "8289f17cdadfdcc294888975f44ecd3c93c5152c007a3ad809a5bc3e62c06b42"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.066948+00:00",
+          "contentHash": "511b21a86189667878384240a0d249db7af698526253fd979b73d821f20088d2"
         }
       ],
       "analysis": {
@@ -1040,9 +1422,9 @@
         "techniques": [
           "Reilly 型公式与广义次静态条件"
         ],
-        "breakthrough": "在广义次静态流形建立尖锐积分不等式，并研究带密度欧氏空间的等号刚性。",
-        "limitations": "Alexandrov 结论的替代证明针对既有定理，推广依赖广义次静态条件。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "用变系数有效维数 N 和加权次静态 Ricci 张量建立 Heintze–Karcher 积分不等式。反高斯密度 e^{|x|²/4} 是特例，闭连通嵌入的常加权平均曲率超曲面被迫为以原点为中心的球。",
+        "limitations": "一般不等式要求有界域、Hφ>0、V>0 及张量条件；带密度欧氏空间的等号分类采用更强的各向同性张量界和光滑正延拓条件。该文重证既有反高斯 Alexandrov 定理，补读主结果，未独立核验全证。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
         "aiEvidence": null,
         "aiEvidenceSource": null,
@@ -1079,7 +1461,9 @@
           "math.DG"
         ],
         "primaryCategory": "math.DG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T12:43:02Z",
+        "updatedAt": "2026-11-04T12:43:02Z"
       },
       "sources": [
         {
@@ -1091,6 +1475,11 @@
           "url": "https://arxiv.org/pdf/2611.06440v1",
           "observedAt": "2026-11-05T06:27:21.107701+00:00",
           "contentHash": "a77b8baf975236bd597875d79c684e127f6271d00a488393c52a9c46901b9d69"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:39.067338+00:00",
+          "contentHash": "cf0bfa8c0324069485f4b86f1b12916af17ad9b3a93b3659ed3ecdf146f2999c"
         }
       ],
       "analysis": {
@@ -1106,6 +1495,8 @@
         "limitations": "维数与表示形式限定为文中C²/C³设置，摘要未给计数公式及所需有限性条件。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
         "aiReview": {
           "status": "full_text_searched",
           "checkedAt": "2026-11-05T06:27:21.107701+00:00",
@@ -1113,7 +1504,7 @@
           "sourceUrl": "https://arxiv.org/pdf/2611.06440v1",
           "contentHash": "a77b8baf975236bd597875d79c684e127f6271d00a488393c52a9c46901b9d69",
           "pages": 29,
-          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。",
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共29页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
           "ruleVersion": "ai-disclosure-search-v4",
           "metadataHash": "0203adfaebded91ef6c408c0d3a3e63b548d6b73bb182cb972c61d40d1e9fb00"
         },
@@ -1138,13 +1529,20 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "12 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T14:04:13Z",
+        "updatedAt": "2026-11-04T14:04:13Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-11-05T06:24:24.952688+00:00",
           "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.683908+00:00",
+          "contentHash": "9e9ff8a73a7f258087f134306398cb63587c9d5c492c0e157c8d50de35b080eb"
         }
       ],
       "analysis": {
@@ -1160,6 +1558,19 @@
         "limitations": "势场与Reeb场共线、para-Kenmotsu及特定相关度量都是前提；结论只适用于该设置。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:27:57.998205+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06535v1",
+          "contentHash": "f0bc748f3332a10be193addbce11b3fee3325148f5e2c05c523011bc0e91427b",
+          "pages": 12,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共12页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "0f1b808b4200f7ccb01c43b88450422e01df78509d3e8d33bba1398acc8cd8e1"
+        },
         "priorityScore": 59,
         "priorityReason": "有Ricci soliton内容，结构范围较专门。"
       },
@@ -1184,7 +1595,9 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "64 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T14:16:32Z",
+        "updatedAt": "2026-11-04T14:16:32Z"
       },
       "sources": [
         {
@@ -1196,6 +1609,11 @@
           "url": "https://arxiv.org/pdf/2611.06551v1",
           "observedAt": "2026-11-05T06:26:07.942535+00:00",
           "contentHash": "3e3b3c9846aa1f1b655a69a6e03347a71ee9a57875bb78d0e817c97d5cbb2af3"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.689660+00:00",
+          "contentHash": "25e4c5a6c50c14c357bf5d508d47ecf612cbb35e3128f982cd37534be29368fb"
         }
       ],
       "analysis": {
@@ -1207,9 +1625,9 @@
           "York 分解",
           "Pohozaev 二次型及球面总曲率泛函 Hessian"
         ],
-        "breakthrough": "假设相应 GJMS 算子可逆、Green 函数正及正质量条件，结合有限维矩阵正定性确定尖锐紧性范围，并对照伴随论文的高维非紧构造。",
-        "limitations": "此处曲率阶数用 2N 表示，需 n>2N。尖锐性使用文中列明的已有及伴随论文构造，并有算子和质量假设。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "Theorem 1.1 给出正解的统一正上下界及任意有限阶 Cᵐ 紧性。维数上界依次为 N=1 时24；N=2,3 时2N+20；N=4,5 时2N+19；N=6–8 时2N+18；N=9–17 时2N+17；N≥18 时2N+16。",
+        "limitations": "要求闭连通流形、n>2N、GJMS 算子可逆及正 Green 函数。正质量只须在 Weyl 张量相应阶导数消失的潜在爆破点集 Z 上成立。高阶非紧例与环境 Hessian 公式依赖伴随论文，补读本文主结果及方法，未独立验证这些外部依赖或全证。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者独立提出 TT 方向二阶变分及环境度量路线，随后用 OpenAI Codex 辅助代数计算、环境递推和多项式系数选择，编写精确算术核查程序，改进表述、记号及证明细节并补充一致性检查。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.06551v1 · PDF 第8页 AI assistance",
@@ -1253,28 +1671,53 @@
         ],
         "primaryCategory": "math.SG",
         "comment": "21 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T14:34:06Z",
+        "updatedAt": "2026-11-04T14:34:06Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.690822+00:00",
+          "contentHash": "3ab7260a079215b6472f24f9225a7bbce3e09fa9f5c2444b70fb4721a5718997"
         }
       ],
       "analysis": {
         "topic": "几何拓扑、低维流形与结",
-        "progressType": "基点环空间Floer理论约束Lagrangian基本群",
-        "workSummary": "通过基点环空间上的Floer理论，作者推广Fukaya–Irie定理并给标准辛C^n中Lagrangian子流形的拓扑限制。特别地，偶维闭spin非球面流形的非平凡连通和不能Lagrangian嵌入C^n。",
+        "progressType": "基点环Floer曲率项与Lagrangian基本群限制",
+        "workSummary": "定理1.1设闭、可定向、spin的Lagrangian L⊂标准C^n，实系数基点环空间同调H_*(Ω_*L;R)仅集中在偶次。则存在β∈π₁L，其辛能量E(β)>0、Maslov指数μ(β)>0，且β的中心化子在π₁L中为有限指数。推论1.3排除偶维、闭、可定向、spin且同伦等价于闭aspherical流形非平凡连通和的L在C^n中的Lagrangian嵌入。",
         "techniques": [
-          "基点环空间上的Floer理论",
-          "Floer obstructedness",
-          "Lagrangian基本群约束"
+          "基点环Pontryagin代数的filtered curved A∞变形",
+          "同调扰动引理及Hamiltonian可位移性",
+          "偶次同调导致m₁=0、可位移算子迫使m₀≠0",
+          "最低能量曲率项与有限共轭类",
+          "连通和的普遍覆盖同调及自由积中心化子"
         ],
-        "breakthrough": "利用Floer理论的受阻性而非仅无阻情形提取基本群限制，给出连通和嵌入障碍。",
-        "limitations": "连通和结果的偶维、闭、spin、aspherical及非平凡条件均需保留，不能扩大到所有连通和或任意辛背景。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "m₀与m₂的A∞关系在最低能量层给出有限个曲线类受π₁共轭置换，推出有限指数中心化子。该论证把Floer受阻性用于拓扑限制，并由连通和的基点环同调及自由积共轭类性质导出障碍。",
+        "limitations": "μ>0的定理一般没有μ=2的结论，后者在aspherical情形可恢复。有限指数中心化子允许有限非单点共轭类。第4页明确m₀≠0与几何uniruledness的等价、所用superpotential的不变性尚未建立。已读主定理、证明路线、§3及所依赖的同调扰动陈述，并渲染第1页。未逐步认证全部Floer构造或附录树展开，部分链级结构依赖作者先前Li26。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者在文末披露免费版本LLM仅用于文献检索，并声明其未参与本文发展或写作。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06574v1 · PDF 第19页，LLM usage",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:28:36.317137+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06574v1",
+          "contentHash": "81cbee775884b31c90c9b93d52c439a26f0fbce97da473a4ce6fbdbd494530a9",
+          "pages": 21,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在文末披露免费版本LLM仅用于文献检索，并声明其未参与本文发展或写作。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "f110d58384aa51c61cba4c188b08b148346a92906b9d5af861df5c594db5a90c"
+        },
+        "aiUsage": [
+          "literature"
+        ],
         "priorityScore": 87,
         "priorityReason": "辛拓扑的基本群障碍，值得补读精确主定理。"
       },
@@ -1299,13 +1742,20 @@
           "math.DG"
         ],
         "primaryCategory": "math.AG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T15:07:31Z",
+        "updatedAt": "2026-11-04T15:07:31Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.DG/new",
           "observedAt": "2026-11-05T06:24:24.952688+00:00",
           "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.691705+00:00",
+          "contentHash": "8f2e83e2bd29a45a9511f5077a3afd0cf216be049c1849df965e9466ae14bba1"
         }
       ],
       "analysis": {
@@ -1319,9 +1769,27 @@
           "逆亏格系数的多项式结构"
         ],
         "breakthrough": "确定此前待定的普适振幅并量化边界长度允许随亏格增长的范围。",
-        "limitations": "固定descendant次数、长度和o(√g)等范围应保留；√g尺度存在障碍。固定亏格下体积除n!对标记数n的多项式性按作者结论记录，精确归一化需正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
+        "limitations": "固定descendant次数、通常固定标记数、长度和o(√g)等范围应保留；√g尺度存在障碍。PDF第5页定理4的多项式性条件为固定g≥2。精确体积归一化需进一步核对。当前解读依据摘要及披露页相关陈述，未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者披露GPT-6 Astra作为文献搜索、校对及数学论证检查的辅助工具。声明没有对具体核心思想作模型归因。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06621v1 · PDF 第5页，Disclosure of AI assistance",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:29:11.396773+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06621v1",
+          "contentHash": "0b329f162d97ef63fbc90bdb725bbd7fbd4459011dd8b30a4157a3c27ba8352c",
+          "pages": 43,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露GPT-6 Astra作为文献搜索、校对及数学论证检查的辅助工具。声明没有对具体核心思想作模型归因。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "8f53725c577088aaf05ca1350db0063ee2a28f5d1e81a9c7ae9a8f3b1435c3b7"
+        },
+        "aiUsage": [
+          "literature",
+          "verification",
+          "writing"
+        ],
         "priorityScore": 81,
         "priorityReason": "模空间体积渐近与精确递归相关度高。"
       },
@@ -1343,7 +1811,9 @@
           "math.DG"
         ],
         "primaryCategory": "math.DG",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T15:47:25Z",
+        "updatedAt": "2026-11-04T15:47:25Z"
       },
       "sources": [
         {
@@ -1355,6 +1825,11 @@
           "url": "https://arxiv.org/pdf/2611.06678v1",
           "observedAt": "2026-11-05T06:26:21.526132+00:00",
           "contentHash": "918f63d180a4debae0bcb8adc289f9da4e4b739115d62f32364a200a5f94ab0a"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.695653+00:00",
+          "contentHash": "21142064809e425028f81d6f10bf483da32364901301ddfb03f60bfd419fff90"
         }
       ],
       "analysis": {
@@ -1365,9 +1840,9 @@
           "熵泛函",
           "共形度量构造与体积归一化 Ricci 流"
         ],
-        "breakthrough": "二维在面积归一化后有接近性；维数至少三有等体积、统一双 Lipschitz 共形反例。三维另给熵超过圆柱阈值时的流动力学收敛。",
-        "limitations": "GH 结论、维数和归一化条件分别适用；动力学结论针对三维及特定熵阈值。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "在余维二全测地球面的收缩管邻域内作固定幅度共形缩短，用双对数截断和临界 Hardy 界控制熵损失，保留固定距离畸变。二维面积4π且 ν 趋于圆球值时则得到球面拓扑及 GH 收敛。三维 ν 超过圆柱值可保证归一化流指数收敛。",
+        "limitations": "GH 比较需固定体积尺度。反例是 n≥3 的光滑等体积、统一双 Lipschitz 共形度量。动力学定理只在三维给出相应熵阈值结论。补读主定理及路线，未独立核验整篇证明。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者披露公开 LLM 用于校对、文献检索和简化部分估计，特别是定理1.2的证明。作者审查并修订所采纳建议，主思路及数学路线归于作者。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.06678v1 · PDF 第5页 AI disclosure statement",
@@ -1409,13 +1884,20 @@
         ],
         "primaryCategory": "math.MG",
         "comment": "7 pages, 9 figures",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T15:59:13Z",
+        "updatedAt": "2026-11-04T15:59:13Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.696289+00:00",
+          "contentHash": "522464bc0f3dd5f068c25747a35a7c5585970648d26b114ea2f7694429800efd"
         }
       ],
       "analysis": {
@@ -1428,10 +1910,26 @@
           "临界点及值的排序",
           "实验计算"
         ],
-        "breakthrough": "为七次多项式的临界几何与代数数据提供可比较的编码框架。",
-        "limitations": "摘要明确为实验工作，未宣称全部编码可实现性或完整分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+        "breakthrough": "结合大量计算建立几何与代数编码表，并给出一条由Supplement1证明的编码约束定理3.1。",
+        "limitations": "整体研究包含实验编码表与二维参数切片，也有定理3.1的证明；摘要未宣称全部编码关系的完整分类。依据摘要及第4页结果陈述补充，未逐步核验Supplement1。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "第4页称定理3.1的推理由AI协助，并将证明放在Supplement1。全文模型名补检未见更具体角色归因，按该定理的证明辅助记录。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06695v1 · PDF 第4页，Theorem3.1之前",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:29:46.393558+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06695v1",
+          "contentHash": "0add533947c099aa713a7b3f59af1b509509e552e6064dc8c121129f4352fc16",
+          "pages": 7,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页称定理3.1的推理由AI协助，并将证明放在Supplement1。全文模型名补检未见更具体角色归因，按该定理的证明辅助记录。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "47ef23b0b9420f0dcf51fcd5479c6f2059fe6d054c1ebf34954786832741ce83"
+        },
+        "aiUsage": [
+          "proofs"
+        ],
         "priorityScore": 46,
         "priorityReason": "多项式可视几何的专门实验问题，距比较几何和几何分析主线较远。",
         "lowPriorityReason": "多项式可视几何的专门实验问题，距比较几何和几何分析主线较远。"
@@ -1455,28 +1953,49 @@
         ],
         "primaryCategory": "math.GT",
         "comment": "11 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T16:05:16Z",
+        "updatedAt": "2026-11-04T16:05:16Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.696944+00:00",
+          "contentHash": "38a0a54f9bf202472cc1e6df0336f5aea6944cab6fe9dac4508b351149ab335d"
         }
       ],
       "analysis": {
         "topic": "几何拓扑、低维流形与结",
-        "progressType": "三维识别问题的无条件coNP结论",
-        "workSummary": "本文解释近期quasi-Riemann假设相关进展如何去掉三维拓扑若干coNP结果中的广义Riemann假设条件，包括作者所称首个无条件的三球面识别属于coNP的证明。",
+        "progressType": "以Dedekind quasi-RH替代GRH的三维coNP证书",
+        "workSummary": "定理1.3在Hypothesis1.2下证明平凡结、三球面、torus结、双曲结识别以及cusped三维流形双曲性属于coNP。该假设要求存在对全部数域统一的ε>0，使Dedekind ζ在Re(s)>1−ε无零。第2–3页援引Cureton–Thorner所沟通的ε=1/32 Lean形式化证明，据此解释无条件化，同时因尚不清楚是否有人类理解该外部证明，作者全文继续明确保留Hypothesis1.2。",
         "techniques": [
-          "三维识别的有限域证书",
-          "quasi-Riemann型零点控制",
-          "有效数论与复杂性类别"
+          "复代数表示簇及Rabinowitsch非交换条件",
+          "有效Chebotarev与素理想计数",
+          "判别式及多项式系数界",
+          "有限域非交换表示的多项式长度证书"
         ],
-        "breakthrough": "将原需GRH的若干三维判定复杂性结论转为无条件形式。",
-        "limitations": "coNP提供否定实例的多项式可核验证书，摘要未声称确定性多项式时间算法；所依赖新数论定理的范围与证明状态需正文逐项核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "定理2.1在该quasi-RH下给不可约f∈Z[x]存在有根模p的素数，p由次数d及log||f||的多项式控制，足以代替旧GRH输入。定理2.2把复非交换表示转为有限域表示，素数位长为群表示长度的多项式。定理2.3给指定双曲三维流形、非平凡结补及非三球面整同调球的正则非交换覆盖，次数至多exp(poly(三角剖分四面体数))。",
+        "limitations": "外部Dedekind quasi-RH形式化证明及有效数论输入未在本轮独立认证，正文自身将主定理条件化表述，应保留此依赖和作者第3页说明。需要ε对全部数域统一。复杂性结论为coNP证书，不给确定性多项式时间识别。已读第1—10页相关定理、证书路线和素数计数推导，渲染第2页；未逐项验证所引规范理论、表示簇约化或Lean材料。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "no_disclosure_observed",
+        "aiEvidence": null,
+        "aiEvidenceSource": null,
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:30:33.581393+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06705v1",
+          "contentHash": "b9ea5b61f0aa19c0bbd4a292350b6a72480f7f9521231be60cf264e40b0bad5e",
+          "pages": 11,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页作者明确声明写作本文期间未使用生成式AI。OpenAI、Lean及quasi-RH相关命中是外部数论工作、形式化证明的背景及引用。全文补检未见作者自身使用的正面披露。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "84ebf7734ce00a3ec975edf98039214d8bb49c522911bab892ca437ebca68a7d"
+        },
         "priorityScore": 88,
         "priorityReason": "几何拓扑与数论复杂性的强结论，需重点核对外部定理依赖。"
       },
@@ -1500,13 +2019,21 @@
           "math.QA"
         ],
         "primaryCategory": "math.GT",
-        "comment": "34 pages, comments welcome!"
+        "comment": "34 pages, comments welcome!",
+        "version": 1,
+        "submittedAt": "2026-11-04T16:07:27Z",
+        "updatedAt": "2026-11-04T16:07:27Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.GT/new",
           "observedAt": "2026-11-05T06:24:48.129844+00:00",
           "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.697710+00:00",
+          "contentHash": "f0c63cfc172912bc4f0f54e365044ac9f6c44cc5bdf06a9cce97051378d138f9"
         }
       ],
       "analysis": {
@@ -1522,13 +2049,31 @@
         "breakthrough": "在范畴层面统一并推广若干三维拓扑不变量之间的手术关系。",
         "limitations": "需要unimodular chromatic范畴及指定着色；主手术关系对中心生成元着色链的条件应保留。 当前数学解读依据摘要，尚未逐步审读证明。",
         "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06708 · PDF 第33页，AI Disclosure",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:31:21.062249+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06708",
+          "contentHash": "92cc2f7b29825bc59ac2bccaf0e4ba0875d8fd4639b7aa2577f9ece30ff57c52",
+          "pages": 34,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "fa28b73ee20e32ddac425eb1a3c87474c2f86962861fab9b6c87ec0667014e06"
+        },
+        "aiUsage": [
+          "ideas",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 67,
         "priorityReason": "三维量子拓扑工具，主要面向范畴和不变量研究。"
       },
       "analysisBasis": {
         "abstract": "We give invariants of pairs $(M,\\Gamma)$ consisting of a closed connected oriented three-manifold and an oriented framed ribbon graph embedded in $M$ colored by a the Drinfeld center of a unimodular chromatic category $\\mathcal C$. This invariant generalizes the chromatic spherical and renormalized Reshetikhin-Turaev invariants of three-manifolds. We use Heegaard-Graph diagrams which represent the pair $(M,\\Gamma)$ and use the data of a unimodular chromatic category and objects of the Drinfeld center to construct the invariant. We define a ribbon graph associated to embedded framed links to obtain an invariant of pairs $(M,L)$. We show that if $L$ is the empty link, then the invariant recovers the chromatic spherical invariant, and if $M$ is the three-sphere, then the invariant recovers the renormalized Reshetikhin-Turaev invariant from the Drinfeld center. The relationship is proven by recovering a chromatic structure for the center induced by that from $\\mathcal C$. The main theorem of the paper demonstrates that if the graph is a link $L$ colored by a generator in the Drinfeld center, then we recover the chromatic spherical invariant of the surgery manifold $M(L)$, contributing to a proof of the relationship between the chromatic spherical and renormalized Reshetikhin-Turaev invariants for unimodular chromatic categories, generalizing a recent result for unimodular Hopf algebras by Reina. To this end, we give a Heegaard diagram for $M(L)$ coming from the Heegaard-Link diagram representing the pair $(M,L)$.",
-        "version": null
+        "version": 1
       }
     },
     {
@@ -1545,7 +2090,9 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "27 pages",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T16:43:46Z",
+        "updatedAt": "2026-11-04T16:43:46Z"
       },
       "sources": [
         {
@@ -1557,6 +2104,11 @@
           "url": "https://arxiv.org/pdf/2611.06766v1",
           "observedAt": "2026-11-05T06:26:33.281719+00:00",
           "contentHash": "0bdf1df4c01a96a884be799ce25a31aff1690c7dc4173c64b3664152843ee4f9"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.698448+00:00",
+          "contentHash": "83f876f7d8d9f5efec4d3b5113e0e8808c92be0a4c74d4c6ab91d3a5af59a8e6"
         }
       ],
       "analysis": {
@@ -1567,9 +2119,9 @@
           "旋量曲率缺陷",
           "二向量核维数估计与平行旋量延拓"
         ],
-        "breakthrough": "n≥4 时共同解空间复维超过旋量丛秩的一半足够，超 Kähler 例说明临界值尖锐；解析数据另有 Ricci 平坦环境延拓证明。",
-        "limitations": "三维 Heisenberg 例有最多共同解仍不满足欧氏 Gauss 方程。解析环境延拓方法依赖解析范畴。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "将 Gauss 与 Codazzi 缺陷合并为一个实二向量，估计其共同旋量核；7、11、15维例外还用曲率对称性与 Bianchi 恒等式排除。共同解复维大于 2^{⌊n/2⌋−1} 时给局部欧氏超曲面实现，而恰等一半的解析反例在每个 n≥4 存在。",
+        "limitations": "解必须对应同一对称场 W。阈值针对一般 W，特殊常数倍恒等场可用更低阈值。三维 Heisenberg 例即使具有全部共同解仍失败。补读主结果，未独立核验例外维数代数和整篇证明。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "LLM 用于探索证明策略、推导与检查公式、检查论证缺口及改善表述，并实质参与光滑阈值定理中7、11、15维例外情形的论证发展。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.06766v1 · PDF 第26页 AI use",
@@ -1615,7 +2167,9 @@
         ],
         "primaryCategory": "math.DG",
         "comment": "30 pages, comments welcome!",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T17:26:38Z",
+        "updatedAt": "2026-11-04T17:26:38Z"
       },
       "sources": [
         {
@@ -1627,6 +2181,11 @@
           "url": "https://arxiv.org/pdf/2611.06814v1",
           "observedAt": "2026-11-05T06:26:45.438155+00:00",
           "contentHash": "8703ddd01ce136758ecef33074309a76b8817d14ec6af252efa3668cccfa1dfe"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.698996+00:00",
+          "contentHash": "d9e2350aafdd6003feb91fc103c1a68dbb8130b566c7b1d33c1d705dffbaf551"
         }
       ],
       "analysis": {
@@ -1637,9 +2196,9 @@
           "缩放不变曲率界",
           "距离函数极限与初始奇异集控制"
         ],
-        "breakthrough": "当距离函数趋于同一初始距离且曲率满足规定控制时得到唯一性；紧情形对奇异集大小施限后可用较弱条件。",
-        "limitations": "需要非负截面曲率、规定的曲率控制及同一个等距意义下的初始距离。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
+        "breakthrough": "对全时段非负截面曲率且 |Rm|≤α/t 的完备流，任何初始距离等距映射都成为同时拉回全部时刻度量的光滑微分同胚。方法以普通热流平滑初始映射，再构造调和映射热流，借局部 Lipschitz 界和体积比较迫使等距。",
+        "limitations": "非负截面曲率是全时段条件。紧情形的放宽定理仍需奇异集的初始 n维 Hausdorff 测度为零、正则部有限体积与光滑初值、接近奇异集的 PIC₂ 条件、距离一致收敛及曲率界。补读主结果及路线，未独立核验整篇证明。",
+        "analysisDepth": "full_text_sections",
         "aiStatus": "explicit",
         "aiEvidence": "作者说明紧情形孤立锥奇点的初版完整证明来自作者。LLM 提出标准热流平滑初始等距映射的思路及度量锥情形策略；非紧情形利用 Busemann 函数热演化构造加权体积的思路归于作者。",
         "aiEvidenceSource": "https://arxiv.org/pdf/2611.06814v1 · PDF 第4页 AI disclosure",
@@ -1684,29 +2243,56 @@
         ],
         "primaryCategory": "math.PR",
         "comment": "47 pages, 9 figures. Includes a six-page technical overview explaining the main ideas and proof techniques",
-        "version": 1
+        "version": 1,
+        "submittedAt": "2026-11-04T18:02:57Z",
+        "updatedAt": "2026-11-04T18:02:57Z"
       },
       "sources": [
         {
           "url": "https://arxiv.org/list/math.MG/new",
           "observedAt": "2026-11-05T06:24:36.559441+00:00",
           "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+        },
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "observedAt": "2026-11-05T06:36:50.699486+00:00",
+          "contentHash": "e98ebd36fef9962694d1aa719bde9d144484c00920fbe6dff8504637f03c07b6"
         }
       ],
       "analysis": {
         "topic": "度量测度几何、极限与奇异空间",
-        "progressType": "随机点集匹配的典型双Lipschitz畸变",
-        "workSummary": "对[0,1]均匀测度的两份独立n点样本，作者证明以高概率，其最佳匹配畸变为n^(2/3)，相差至多多对数因子。下界平衡小间隙被迫扩张与远离恒等/反射的大位移障碍，上界先匹配约n^(−4/3)以下小间隙，再经多尺度振荡延拓成全双射。",
+        "progressType": "两独立区间随机样本的最优乘法畸变主幂次",
+        "workSummary": "设X、Y为[0,1]上两份独立的n个iid均匀点样本，取诱导Euclidean度量。双射f的dist(f)=Lip(f)Lip(f^(-1))，c(X,Y)为所有双射的最小值。定理1.1给普适C>0，以概率1−o(1)满足n^(2/3)/(log n)^C≤c(X,Y)≤n^(2/3)(log n)^C。该畸变对两份度量独立缩放均不变。",
         "techniques": [
-          "随机间隙的尺度估计",
-          "恒等及反射附近的畸变障碍",
-          "双向小间隙部分匹配",
-          "多尺度振荡延拓"
+          "均匀间隙的独立指数变量表示",
+          "最小间隙与恒等/反射附近的窗口障碍",
+          "等距网格置换的位移—畸变界",
+          "tiny间隙模式的局部配对",
+          "分块重排和多尺度振荡延拓"
         ],
-        "breakthrough": "确定最简单连续度量测度空间中两独立随机样本最优匹配畸变的主幂次。",
-        "limitations": "结果针对区间均匀样本和独立性，畸变的乘法约定需正文核对；上下界保留多对数误差及高概率量词。 当前数学解读依据摘要，尚未逐步审读证明。",
-        "analysisDepth": "abstract",
-        "aiStatus": "no_disclosure_observed",
+        "breakthrough": "下界中，小位移匹配的双向扩张产生约(n/T)²的畸变下界，大位移通过置换畸变产生约T的下界，在T约n^(2/3)平衡。上界以多对数修正后的n^(−4/3) tiny间隙阈值建立部分匹配，再延拓至两个方向Lipschitz常数均为n^(1/3)乘多对数的双射。附录B证明对每n≥3，E[c(X,Y)]=∞。",
+        "limitations": "典型阶为n→∞的高概率陈述，保留多对数因子。适用背景是区间均匀独立样本，两方向常数的乘积与单向Lipschitz常数应按定义区分。已核第2页定义及定理、指数模型和下界平衡、上界构造纲要/关键命题及附录B，渲染第2页；未逐行检查§6全部模式概率与振荡拼接，也未验证附录A的完整组合论证明。",
+        "analysisDepth": "full_text_sections",
+        "aiStatus": "explicit",
+        "aiEvidence": "作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+        "aiEvidenceSource": "https://arxiv.org/pdf/2611.06845v1 · PDF 第4页，Use of AI",
+        "aiReview": {
+          "status": "full_text_searched",
+          "checkedAt": "2026-11-05T06:36:27.712219+00:00",
+          "version": 1,
+          "sourceUrl": "https://arxiv.org/pdf/2611.06845v1",
+          "contentHash": "4aefcc86868fe17ecdd698750b052be008d7b5826c0bbbb191dbe0f4cd1ef28b",
+          "pages": 47,
+          "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+          "ruleVersion": "ai-disclosure-search-v4",
+          "metadataHash": "29e60fab9c7f28dbb62941a0ac145beb67a6e25e7ac8d5066599e31b9550293e"
+        },
+        "aiUsage": [
+          "computation",
+          "ideas",
+          "proofs",
+          "writing"
+        ],
         "priorityScore": 89,
         "priorityReason": "度量几何与概率匹配的定量现象，值得读主定理和畸变定义。"
       },
@@ -1721,9 +2307,9 @@
     "confirmedCount": 31,
     "publishedCount": 31,
     "analyzedCount": 31,
-    "metadataCount": 0,
+    "metadataCount": 31,
     "listingsComplete": true,
-    "complete": false
+    "complete": true
   },
   "listingConflicts": []
 }

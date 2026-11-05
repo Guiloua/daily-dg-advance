@@ -16,29 +16,55 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "15 pages, 1 table",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-02T05:59:22Z",
+      "updatedAt": "2026-11-02T05:59:22Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-11-05T06:24:36.559441+00:00",
         "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.058679+00:00",
+        "contentHash": "43738265524da713067791213d60c2e0970285f66764e143a0f2cbff0800d827"
       }
     ],
     "analysis": {
       "topic": "交叉方向与基础工具",
       "progressType": "九至二十二维等腰点集的极值与唯一性",
-      "workSummary": "研究任意三点组成等腰三角形的有限欧氏点集。作者给9≤d≤21时最大点数为C(d+1,2)+1，22维为276，并分类相应极值构型。",
+      "workSummary": "定理1.1断言9≤d≤21时iso(d)=C(d+1,2)+1，相似意义下唯一为正单纯形棱中点加重心；22维为276，唯一为McLaughlin球面构型加球心。等腰定义容许退化三角形。定理1.2在10≤d≤22且点数严格超过C(d,2)+3时给两距离或球面两距离加球心的结构，阈值可达到；九维的结构门槛为严格超过45。",
       "techniques": [
-        "Blokhuis正交两距离分解",
-        "无彩虹三角形边着色的Gallai定理",
-        "欧氏及球面两距离点集的已知极值",
-        "九维情形的八维大两距离点集分析"
+        "无彩虹三角形的Gallai着色引理",
+        "Blokhuis分解与各部分方向空间正交",
+        "已知欧氏/球面两距离最大集及等号分类",
+        "八维大两距离集的短距离图与九维增点矛盾"
       ],
-      "breakthrough": "9至21维极值构型是正单纯形棱中点与中心，22维是McLaughlin构型加中心。10至22维超过C(d,2)+3的点集有两距离或球面两距离加中心的结构，该阈值可达到。23维得到iso(23)=max{g(23),278}及278至575的界。",
-      "limitations": "唯一性按欧氏相似意义理解，仍需正文确认。23维结论保留未知两距离极值g(23)，未给出其精确值。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "分解的维数配分上界直接处理10至22维，但九维只给47。§5排除以至少44点的八维两距离集结尾的非平凡分解，得到iso(9)=46及唯一性。定理1.3将23维归约为iso(23)=max{g(23),278}，据所引两距离界给278≤iso(23)≤575。",
+      "limitations": "新唯一性定理中单纯形结论的范围为9≤d≤21，摘要中较宽的d≤21措辞须按正文定理阅读。证明关键依赖文献[5]的两距离极值、分类和根系结果及球面界，本次未重新审读外部文献。23维的g(23)仍未知，等式为归约结论。未独立核验整个组合枚举与所有证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.05421v1 · PDF第13页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:27:32.867680+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.05421v1",
+        "contentHash": "f0f54f42731a7879d4dc67ca795aa2e04daf9fd5914c61071db8931bd2dc7c08",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "118218f68e63a86b98261ac553075d5ee470cc503dcd760cff14450fc26e0e39"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 78,
       "priorityReason": "有限维极值和等号结构完整，适合阅读分解法与边界维数论证。"
     },
@@ -64,29 +90,55 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "15 pages, 1 table",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-02T05:59:22Z",
+          "updatedAt": "2026-11-02T05:59:22Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-11-05T06:24:36.559441+00:00",
             "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.058679+00:00",
+            "contentHash": "43738265524da713067791213d60c2e0970285f66764e143a0f2cbff0800d827"
           }
         ],
         "analysis": {
           "topic": "交叉方向与基础工具",
           "progressType": "九至二十二维等腰点集的极值与唯一性",
-          "workSummary": "研究任意三点组成等腰三角形的有限欧氏点集。作者给9≤d≤21时最大点数为C(d+1,2)+1，22维为276，并分类相应极值构型。",
+          "workSummary": "定理1.1断言9≤d≤21时iso(d)=C(d+1,2)+1，相似意义下唯一为正单纯形棱中点加重心；22维为276，唯一为McLaughlin球面构型加球心。等腰定义容许退化三角形。定理1.2在10≤d≤22且点数严格超过C(d,2)+3时给两距离或球面两距离加球心的结构，阈值可达到；九维的结构门槛为严格超过45。",
           "techniques": [
-            "Blokhuis正交两距离分解",
-            "无彩虹三角形边着色的Gallai定理",
-            "欧氏及球面两距离点集的已知极值",
-            "九维情形的八维大两距离点集分析"
+            "无彩虹三角形的Gallai着色引理",
+            "Blokhuis分解与各部分方向空间正交",
+            "已知欧氏/球面两距离最大集及等号分类",
+            "八维大两距离集的短距离图与九维增点矛盾"
           ],
-          "breakthrough": "9至21维极值构型是正单纯形棱中点与中心，22维是McLaughlin构型加中心。10至22维超过C(d,2)+3的点集有两距离或球面两距离加中心的结构，该阈值可达到。23维得到iso(23)=max{g(23),278}及278至575的界。",
-          "limitations": "唯一性按欧氏相似意义理解，仍需正文确认。23维结论保留未知两距离极值g(23)，未给出其精确值。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "分解的维数配分上界直接处理10至22维，但九维只给47。§5排除以至少44点的八维两距离集结尾的非平凡分解，得到iso(9)=46及唯一性。定理1.3将23维归约为iso(23)=max{g(23),278}，据所引两距离界给278≤iso(23)≤575。",
+          "limitations": "新唯一性定理中单纯形结论的范围为9≤d≤21，摘要中较宽的d≤21措辞须按正文定理阅读。证明关键依赖文献[5]的两距离极值、分类和根系结果及球面界，本次未重新审读外部文献。23维的g(23)仍未知，等式为归约结论。未独立核验整个组合枚举与所有证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.05421v1 · PDF第13页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:27:32.867680+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.05421v1",
+            "contentHash": "f0f54f42731a7879d4dc67ca795aa2e04daf9fd5914c61071db8931bd2dc7c08",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页致谢明确Claude用于发展和检查论证、计算及准备稿件，作者核验并负责。论证用途记proofs和verification，未将某一具体核心路线归于模型，因而不标ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "118218f68e63a86b98261ac553075d5ee470cc503dcd760cff14450fc26e0e39"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 78,
           "priorityReason": "有限维极值和等号结构完整，适合阅读分解法与边界维数论证。"
         },

@@ -20,29 +20,56 @@
       ],
       "primaryCategory": "math.PR",
       "comment": "47 pages, 9 figures. Includes a six-page technical overview explaining the main ideas and proof techniques",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-04T18:02:57Z",
+      "updatedAt": "2026-11-04T18:02:57Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-11-05T06:24:36.559441+00:00",
         "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:50.699486+00:00",
+        "contentHash": "e98ebd36fef9962694d1aa719bde9d144484c00920fbe6dff8504637f03c07b6"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
-      "progressType": "随机点集匹配的典型双Lipschitz畸变",
-      "workSummary": "对[0,1]均匀测度的两份独立n点样本，作者证明以高概率，其最佳匹配畸变为n^(2/3)，相差至多多对数因子。下界平衡小间隙被迫扩张与远离恒等/反射的大位移障碍，上界先匹配约n^(−4/3)以下小间隙，再经多尺度振荡延拓成全双射。",
+      "progressType": "两独立区间随机样本的最优乘法畸变主幂次",
+      "workSummary": "设X、Y为[0,1]上两份独立的n个iid均匀点样本，取诱导Euclidean度量。双射f的dist(f)=Lip(f)Lip(f^(-1))，c(X,Y)为所有双射的最小值。定理1.1给普适C>0，以概率1−o(1)满足n^(2/3)/(log n)^C≤c(X,Y)≤n^(2/3)(log n)^C。该畸变对两份度量独立缩放均不变。",
       "techniques": [
-        "随机间隙的尺度估计",
-        "恒等及反射附近的畸变障碍",
-        "双向小间隙部分匹配",
-        "多尺度振荡延拓"
+        "均匀间隙的独立指数变量表示",
+        "最小间隙与恒等/反射附近的窗口障碍",
+        "等距网格置换的位移—畸变界",
+        "tiny间隙模式的局部配对",
+        "分块重排和多尺度振荡延拓"
       ],
-      "breakthrough": "确定最简单连续度量测度空间中两独立随机样本最优匹配畸变的主幂次。",
-      "limitations": "结果针对区间均匀样本和独立性，畸变的乘法约定需正文核对；上下界保留多对数误差及高概率量词。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "下界中，小位移匹配的双向扩张产生约(n/T)²的畸变下界，大位移通过置换畸变产生约T的下界，在T约n^(2/3)平衡。上界以多对数修正后的n^(−4/3) tiny间隙阈值建立部分匹配，再延拓至两个方向Lipschitz常数均为n^(1/3)乘多对数的双射。附录B证明对每n≥3，E[c(X,Y)]=∞。",
+      "limitations": "典型阶为n→∞的高概率陈述，保留多对数因子。适用背景是区间均匀独立样本，两方向常数的乘积与单向Lipschitz常数应按定义区分。已核第2页定义及定理、指数模型和下界平衡、上界构造纲要/关键命题及附录B，渲染第2页；未逐行检查§6全部模式概率与振荡拼接，也未验证附录A的完整组合论证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06845v1 · PDF 第4页，Use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:36:27.712219+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06845v1",
+        "contentHash": "4aefcc86868fe17ecdd698750b052be008d7b5826c0bbbb191dbe0f4cd1ef28b",
+        "pages": 47,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "29e60fab9c7f28dbb62941a0ac145beb67a6e25e7ac8d5066599e31b9550293e"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 89,
       "priorityReason": "度量几何与概率匹配的定量现象，值得读主定理和畸变定义。"
     },
@@ -72,29 +99,56 @@
           ],
           "primaryCategory": "math.PR",
           "comment": "47 pages, 9 figures. Includes a six-page technical overview explaining the main ideas and proof techniques",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-04T18:02:57Z",
+          "updatedAt": "2026-11-04T18:02:57Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-11-05T06:24:36.559441+00:00",
             "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:50.699486+00:00",
+            "contentHash": "e98ebd36fef9962694d1aa719bde9d144484c00920fbe6dff8504637f03c07b6"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
-          "progressType": "随机点集匹配的典型双Lipschitz畸变",
-          "workSummary": "对[0,1]均匀测度的两份独立n点样本，作者证明以高概率，其最佳匹配畸变为n^(2/3)，相差至多多对数因子。下界平衡小间隙被迫扩张与远离恒等/反射的大位移障碍，上界先匹配约n^(−4/3)以下小间隙，再经多尺度振荡延拓成全双射。",
+          "progressType": "两独立区间随机样本的最优乘法畸变主幂次",
+          "workSummary": "设X、Y为[0,1]上两份独立的n个iid均匀点样本，取诱导Euclidean度量。双射f的dist(f)=Lip(f)Lip(f^(-1))，c(X,Y)为所有双射的最小值。定理1.1给普适C>0，以概率1−o(1)满足n^(2/3)/(log n)^C≤c(X,Y)≤n^(2/3)(log n)^C。该畸变对两份度量独立缩放均不变。",
           "techniques": [
-            "随机间隙的尺度估计",
-            "恒等及反射附近的畸变障碍",
-            "双向小间隙部分匹配",
-            "多尺度振荡延拓"
+            "均匀间隙的独立指数变量表示",
+            "最小间隙与恒等/反射附近的窗口障碍",
+            "等距网格置换的位移—畸变界",
+            "tiny间隙模式的局部配对",
+            "分块重排和多尺度振荡延拓"
           ],
-          "breakthrough": "确定最简单连续度量测度空间中两独立随机样本最优匹配畸变的主幂次。",
-          "limitations": "结果针对区间均匀样本和独立性，畸变的乘法约定需正文核对；上下界保留多对数误差及高概率量词。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "下界中，小位移匹配的双向扩张产生约(n/T)²的畸变下界，大位移通过置换畸变产生约T的下界，在T约n^(2/3)平衡。上界以多对数修正后的n^(−4/3) tiny间隙阈值建立部分匹配，再延拓至两个方向Lipschitz常数均为n^(1/3)乘多对数的双射。附录B证明对每n≥3，E[c(X,Y)]=∞。",
+          "limitations": "典型阶为n→∞的高概率陈述，保留多对数因子。适用背景是区间均匀独立样本，两方向常数的乘积与单向Lipschitz常数应按定义区分。已核第2页定义及定理、指数模型和下界平衡、上界构造纲要/关键命题及附录B，渲染第2页；未逐行检查§6全部模式概率与振荡拼接，也未验证附录A的完整组合论证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06845v1 · PDF 第4页，Use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:36:27.712219+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06845v1",
+            "contentHash": "4aefcc86868fe17ecdd698750b052be008d7b5826c0bbbb191dbe0f4cd1ef28b",
+            "pages": 47,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者先发展主定理策略，ChatGPT-6具体建议改用Prop2.3的指数表示以利用间隙独立性、简化Prop6.5，并辅助选择把上界精化到多对数误差的参数。模型还给出附录A的woven permutations定义和证明，其中LemmaA.6给定理4.1一个较短证明，正文保留作者原证明。模型亦广泛辅助写作及制图。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "29e60fab9c7f28dbb62941a0ac145beb67a6e25e7ac8d5066599e31b9550293e"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 89,
           "priorityReason": "度量几何与概率匹配的定量现象，值得读主定理和畸变定义。"
         },

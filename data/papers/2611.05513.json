@@ -17,29 +17,50 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "10 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-03T19:10:57Z",
+      "updatedAt": "2026-11-03T19:10:57Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-11-05T06:24:36.559441+00:00",
         "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.060103+00:00",
+        "contentHash": "2a3ec79cca56a27de21cd884e0fea9f12b58c27ba504dabff77c361e67e6b496"
       }
     ],
     "analysis": {
       "topic": "度量测度几何、极限与奇异空间",
       "progressType": "有界bicombing空间中Lipschitz球面的欧氏填充界",
-      "workSummary": "对具有有界bicombing的度量空间，作者证明单位n球面的Lipschitz映射满足同伦型欧氏等周不等式，适用例子包括CAT(0)空间及赋范线性空间。",
+      "workSummary": "定理1.2对任意有L-bounded bicombing的度量空间X与n≥1，给每个Lipschitz f:Sⁿ→X的Lipschitz球填充f̄:Dⁿ⁺¹→X，参数化Hausdorff体积满足Vol(f̄)≤C(n,L)Vol(f)^((n+1)/n)。定理1.3给相同阶的奇异Lipschitz链不等式。定理1.4在n≥2时把既有链填充c转成体积≤Vol(c)+ε的映射填充，ε任意正。",
       "techniques": [
-        "奇异Lipschitz链的欧氏等周界",
-        "有界bicombing",
-        "链填充向映射填充的转换",
-        "近乎不增加体积的同伦构造"
+        "有界bicombing的径向Lipschitz收缩",
+        "链的有限单纯复形几何实现",
+        "边界扫过复形且几乎处处重数至多1",
+        "低维骨架锥化和Hurewicz定理",
+        "在X×Rⁿ⁺¹作小扰动以处理非单射边界"
       ],
-      "breakthrough": "先改进链级填充不等式，再将一个链填充转成体积至多增加任意小误差的Lipschitz球面映射填充，从而把同调型界提升至同伦型界。",
-      "limitations": "填充维数、体积规范、bicombing的常数和空间完备性条件需对照正文。体积控制与延拓映射的Lipschitz常数控制是不同问题。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
+      "breakthrough": "将CAT(0)空间中已知二维球面结果扩展至所有n≥1及更一般的bicombing空间。几何链扫掠负责填充体积，低维锥化部分不贡献最高维体积；一般边界通过积空间的微小单射扰动获得ε误差。该bicombing定义包括CAT(0)、赋范空间及Busemann NPC空间，并在双Lipschitz变换下保持。",
+      "limitations": "主定理未要求X完备，常数仅依赖n和bicombing控制L。结论给填充体积，未声称同一表达式控制填充的Lipschitz常数。第9页定理4.3将M写为n维，却仍印指数(n+1)/n，和∂M为n−1维的尺度不匹配，推广须核对维数标记。仅补读所列定理及路线，未逐步核验全部论证。",
+      "analysisDepth": "full_text_sections",
       "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:28:47.761964+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.05513v1",
+        "contentHash": "2cb30ceae3464fd6f6eca717cf2028065454cb2d6bd9a6a842a0b770c9d57be6",
+        "pages": 10,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页声明未用生成式AI产生思想或写作。10页PDF提取完整，全文及补检未观察到其他实际用途的正向披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "be47e3f1940587404aba739d70a2125293dac2b1f4ef0d3c5df5c327420197d5"
+      },
       "priorityScore": 91,
       "priorityReason": "直接涉及CAT(0)与一般度量空间的等周填充，优先核对链到映射转换的条件。"
     },
@@ -66,29 +87,50 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "10 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-03T19:10:57Z",
+          "updatedAt": "2026-11-03T19:10:57Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-11-05T06:24:36.559441+00:00",
             "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.060103+00:00",
+            "contentHash": "2a3ec79cca56a27de21cd884e0fea9f12b58c27ba504dabff77c361e67e6b496"
           }
         ],
         "analysis": {
           "topic": "度量测度几何、极限与奇异空间",
           "progressType": "有界bicombing空间中Lipschitz球面的欧氏填充界",
-          "workSummary": "对具有有界bicombing的度量空间，作者证明单位n球面的Lipschitz映射满足同伦型欧氏等周不等式，适用例子包括CAT(0)空间及赋范线性空间。",
+          "workSummary": "定理1.2对任意有L-bounded bicombing的度量空间X与n≥1，给每个Lipschitz f:Sⁿ→X的Lipschitz球填充f̄:Dⁿ⁺¹→X，参数化Hausdorff体积满足Vol(f̄)≤C(n,L)Vol(f)^((n+1)/n)。定理1.3给相同阶的奇异Lipschitz链不等式。定理1.4在n≥2时把既有链填充c转成体积≤Vol(c)+ε的映射填充，ε任意正。",
           "techniques": [
-            "奇异Lipschitz链的欧氏等周界",
-            "有界bicombing",
-            "链填充向映射填充的转换",
-            "近乎不增加体积的同伦构造"
+            "有界bicombing的径向Lipschitz收缩",
+            "链的有限单纯复形几何实现",
+            "边界扫过复形且几乎处处重数至多1",
+            "低维骨架锥化和Hurewicz定理",
+            "在X×Rⁿ⁺¹作小扰动以处理非单射边界"
           ],
-          "breakthrough": "先改进链级填充不等式，再将一个链填充转成体积至多增加任意小误差的Lipschitz球面映射填充，从而把同调型界提升至同伦型界。",
-          "limitations": "填充维数、体积规范、bicombing的常数和空间完备性条件需对照正文。体积控制与延拓映射的Lipschitz常数控制是不同问题。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
+          "breakthrough": "将CAT(0)空间中已知二维球面结果扩展至所有n≥1及更一般的bicombing空间。几何链扫掠负责填充体积，低维锥化部分不贡献最高维体积；一般边界通过积空间的微小单射扰动获得ε误差。该bicombing定义包括CAT(0)、赋范空间及Busemann NPC空间，并在双Lipschitz变换下保持。",
+          "limitations": "主定理未要求X完备，常数仅依赖n和bicombing控制L。结论给填充体积，未声称同一表达式控制填充的Lipschitz常数。第9页定理4.3将M写为n维，却仍印指数(n+1)/n，和∂M为n−1维的尺度不匹配，推广须核对维数标记。仅补读所列定理及路线，未逐步核验全部论证。",
+          "analysisDepth": "full_text_sections",
           "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:28:47.761964+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.05513v1",
+            "contentHash": "2cb30ceae3464fd6f6eca717cf2028065454cb2d6bd9a6a842a0b770c9d57be6",
+            "pages": 10,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页声明未用生成式AI产生思想或写作。10页PDF提取完整，全文及补检未观察到其他实际用途的正向披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "be47e3f1940587404aba739d70a2125293dac2b1f4ef0d3c5df5c327420197d5"
+          },
           "priorityScore": 91,
           "priorityReason": "直接涉及CAT(0)与一般度量空间的等周填充，优先核对链到映射转换的条件。"
         },

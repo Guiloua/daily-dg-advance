@@ -17,13 +17,21 @@
         "math.QA"
       ],
       "primaryCategory": "math.GT",
-      "comment": "34 pages, comments welcome!"
+      "comment": "34 pages, comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-04T16:07:27Z",
+      "updatedAt": "2026-11-04T16:07:27Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-11-05T06:24:48.129844+00:00",
         "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:50.697710+00:00",
+        "contentHash": "f0c63cfc172912bc4f0f54e365044ac9f6c44cc5bdf06a9cce97051378d138f9"
       }
     ],
     "analysis": {
@@ -39,13 +47,31 @@
       "breakthrough": "在范畴层面统一并推广若干三维拓扑不变量之间的手术关系。",
       "limitations": "需要unimodular chromatic范畴及指定着色；主手术关系对中心生成元着色链的条件应保留。 当前数学解读依据摘要，尚未逐步审读证明。",
       "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06708 · PDF 第33页，AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:31:21.062249+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06708",
+        "contentHash": "92cc2f7b29825bc59ac2bccaf0e4ba0875d8fd4639b7aa2577f9ece30ff57c52",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fa28b73ee20e32ddac425eb1a3c87474c2f86962861fab9b6c87ec0667014e06"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 67,
       "priorityReason": "三维量子拓扑工具，主要面向范畴和不变量研究。"
     },
     "analysisBasis": {
       "abstract": "We give invariants of pairs $(M,\\Gamma)$ consisting of a closed connected oriented three-manifold and an oriented framed ribbon graph embedded in $M$ colored by a the Drinfeld center of a unimodular chromatic category $\\mathcal C$. This invariant generalizes the chromatic spherical and renormalized Reshetikhin-Turaev invariants of three-manifolds. We use Heegaard-Graph diagrams which represent the pair $(M,\\Gamma)$ and use the data of a unimodular chromatic category and objects of the Drinfeld center to construct the invariant. We define a ribbon graph associated to embedded framed links to obtain an invariant of pairs $(M,L)$. We show that if $L$ is the empty link, then the invariant recovers the chromatic spherical invariant, and if $M$ is the three-sphere, then the invariant recovers the renormalized Reshetikhin-Turaev invariant from the Drinfeld center. The relationship is proven by recovering a chromatic structure for the center induced by that from $\\mathcal C$. The main theorem of the paper demonstrates that if the graph is a link $L$ colored by a generator in the Drinfeld center, then we recover the chromatic spherical invariant of the surgery manifold $M(L)$, contributing to a proof of the relationship between the chromatic spherical and renormalized Reshetikhin-Turaev invariants for unimodular chromatic categories, generalizing a recent result for unimodular Hopf algebras by Reina. To this end, we give a Heegaard diagram for $M(L)$ coming from the Heegaard-Link diagram representing the pair $(M,L)$.",
-      "version": null
+      "version": 1
     }
   },
   "history": [
@@ -66,13 +92,21 @@
             "math.QA"
           ],
           "primaryCategory": "math.GT",
-          "comment": "34 pages, comments welcome!"
+          "comment": "34 pages, comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-04T16:07:27Z",
+          "updatedAt": "2026-11-04T16:07:27Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-11-05T06:24:48.129844+00:00",
             "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:50.697710+00:00",
+            "contentHash": "f0c63cfc172912bc4f0f54e365044ac9f6c44cc5bdf06a9cce97051378d138f9"
           }
         ],
         "analysis": {
@@ -88,13 +122,31 @@
           "breakthrough": "在范畴层面统一并推广若干三维拓扑不变量之间的手术关系。",
           "limitations": "需要unimodular chromatic范畴及指定着色；主手术关系对中心生成元着色链的条件应保留。 当前数学解读依据摘要，尚未逐步审读证明。",
           "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06708 · PDF 第33页，AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:31:21.062249+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06708",
+            "contentHash": "92cc2f7b29825bc59ac2bccaf0e4ba0875d8fd4639b7aa2577f9ece30ff57c52",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者提出全部定理陈述，定理3.1和3.2的部分证明由作者初拟后借助ChatGPT6 Astra完成。中心的modified trace证明中，模型提出使用自然同构ν:L→R和module category论证。定理3.3中借中心的cutting morphism改写原cutting morphism的具体想法也明确归于该模型。ChatGPT与Claude5.5 Opus另用于校对，作者自行核验和重写论证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fa28b73ee20e32ddac425eb1a3c87474c2f86962861fab9b6c87ec0667014e06"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 67,
           "priorityReason": "三维量子拓扑工具，主要面向范畴和不变量研究。"
         },
         "analysisBasis": {
           "abstract": "We give invariants of pairs $(M,\\Gamma)$ consisting of a closed connected oriented three-manifold and an oriented framed ribbon graph embedded in $M$ colored by a the Drinfeld center of a unimodular chromatic category $\\mathcal C$. This invariant generalizes the chromatic spherical and renormalized Reshetikhin-Turaev invariants of three-manifolds. We use Heegaard-Graph diagrams which represent the pair $(M,\\Gamma)$ and use the data of a unimodular chromatic category and objects of the Drinfeld center to construct the invariant. We define a ribbon graph associated to embedded framed links to obtain an invariant of pairs $(M,L)$. We show that if $L$ is the empty link, then the invariant recovers the chromatic spherical invariant, and if $M$ is the three-sphere, then the invariant recovers the renormalized Reshetikhin-Turaev invariant from the Drinfeld center. The relationship is proven by recovering a chromatic structure for the center induced by that from $\\mathcal C$. The main theorem of the paper demonstrates that if the graph is a link $L$ colored by a generator in the Drinfeld center, then we recover the chromatic spherical invariant of the surgery manifold $M(L)$, contributing to a proof of the relationship between the chromatic spherical and renormalized Reshetikhin-Turaev invariants for unimodular chromatic categories, generalizing a recent result for unimodular Hopf algebras by Reina. To this end, we give a Heegaard diagram for $M(L)$ coming from the Heegaard-Link diagram representing the pair $(M,L)$.",
-          "version": null
+          "version": 1
         }
       }
     }

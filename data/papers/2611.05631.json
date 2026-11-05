@@ -16,28 +16,54 @@
       ],
       "primaryCategory": "math.CO",
       "comment": "16 pages, 4 figures",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-03T21:19:45Z",
+      "updatedAt": "2026-11-03T21:19:45Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-11-05T06:24:36.559441+00:00",
         "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.060642+00:00",
+        "contentHash": "b09285f03b42a2b14bdd710d2d086ecd68e0663d643c7682f9d1ace194b9dce7"
       }
     ],
     "analysis": {
       "topic": "交叉方向与基础工具",
       "progressType": "三维直径图删一点后的三着色声称",
-      "workSummary": "对R³中有限点集，以达到集合直径的点对连边。作者证明删去至多一个点即可使直径图三着色，从而回答Brass关于有限删点数的猜想。",
+      "workSummary": "定理2对每个有限S⊂R³，删至多一个点后，原直径图在剩余顶点上的诱导子图可三着色。若原图需四色，引理2给唯一的4-critical直径子图，删其任一顶点即可。定理1对任意正整数m构造S，使每个diam U<diam S的子集满足|U|<(|S|−m)/2。",
       "techniques": [
-        "三维直径图的几何约束",
-        "删点三着色",
-        "较小直径子集的极端构造"
+        "三维4-critical直径图与Reuleaux球多面体的对应",
+        "在指定顶点附近取任意小一块的四块覆盖",
+        "射影平面非二部四边形剖分及直径图几何实现",
+        "twisted grid的行缺额与独立集计数"
       ],
-      "breakthrough": "删点数可统一取1。另回答Dol’nikov问题，对任意正整数m构造有限S，使每个直径严格较小的子集的点数都小于(|S|−m)/2。",
-      "limitations": "Brass结论的范围为d=3、k=3。独立集上界构造的点数随m变化，全文论证仍需核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "删一点界通过Reuleaux覆盖先排除两个不同4-critical顶点集，并由临界性推出三着色。Dol’nikov反例用奇数L>m的网格G_L，其顶点数L(2L+1)、独立数恰为L²，结合所引几何实现定理得到严格小于半数减任意固定偏差的较小直径子集界。",
+      "limitations": "Brass结论范围为三维三着色，依赖所引2025年Reuleaux多面体结果。Dol’nikov构造的几何实现采用文献[8]定理1.8，作者第10页说明该工作在审稿且预计修订，当前未提供所有L的独立坐标验证。本文补读主证明路线，未独立审读外部输入或逐项复核全部计数，强猜想结论按作者论文声称记录。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.05631v1 · PDF第14页 §6 Declaration of AI usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:29:23.101786+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.05631v1",
+        "contentHash": "4a3fcf167fe871861c1d455adfd0dfcec26d4ae262b6e60968e03a417f32ba9d",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "45f35d058f072851ab1d4015ee23fb166c89c7c65502a5ae8ce97b633d1fc32f"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
       "priorityScore": 86,
       "priorityReason": "涉及Borsuk型直径划分和三维图几何，结论强，优先核对核心定理及极端构造。"
     },
@@ -63,28 +89,54 @@
           ],
           "primaryCategory": "math.CO",
           "comment": "16 pages, 4 figures",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-03T21:19:45Z",
+          "updatedAt": "2026-11-03T21:19:45Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-11-05T06:24:36.559441+00:00",
             "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.060642+00:00",
+            "contentHash": "b09285f03b42a2b14bdd710d2d086ecd68e0663d643c7682f9d1ace194b9dce7"
           }
         ],
         "analysis": {
           "topic": "交叉方向与基础工具",
           "progressType": "三维直径图删一点后的三着色声称",
-          "workSummary": "对R³中有限点集，以达到集合直径的点对连边。作者证明删去至多一个点即可使直径图三着色，从而回答Brass关于有限删点数的猜想。",
+          "workSummary": "定理2对每个有限S⊂R³，删至多一个点后，原直径图在剩余顶点上的诱导子图可三着色。若原图需四色，引理2给唯一的4-critical直径子图，删其任一顶点即可。定理1对任意正整数m构造S，使每个diam U<diam S的子集满足|U|<(|S|−m)/2。",
           "techniques": [
-            "三维直径图的几何约束",
-            "删点三着色",
-            "较小直径子集的极端构造"
+            "三维4-critical直径图与Reuleaux球多面体的对应",
+            "在指定顶点附近取任意小一块的四块覆盖",
+            "射影平面非二部四边形剖分及直径图几何实现",
+            "twisted grid的行缺额与独立集计数"
           ],
-          "breakthrough": "删点数可统一取1。另回答Dol’nikov问题，对任意正整数m构造有限S，使每个直径严格较小的子集的点数都小于(|S|−m)/2。",
-          "limitations": "Brass结论的范围为d=3、k=3。独立集上界构造的点数随m变化，全文论证仍需核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "删一点界通过Reuleaux覆盖先排除两个不同4-critical顶点集，并由临界性推出三着色。Dol’nikov反例用奇数L>m的网格G_L，其顶点数L(2L+1)、独立数恰为L²，结合所引几何实现定理得到严格小于半数减任意固定偏差的较小直径子集界。",
+          "limitations": "Brass结论范围为三维三着色，依赖所引2025年Reuleaux多面体结果。Dol’nikov构造的几何实现采用文献[8]定理1.8，作者第10页说明该工作在审稿且预计修订，当前未提供所有L的独立坐标验证。本文补读主证明路线，未独立审读外部输入或逐项复核全部计数，强猜想结论按作者论文声称记录。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.05631v1 · PDF第14页 §6 Declaration of AI usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:29:23.101786+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.05631v1",
+            "contentHash": "4a3fcf167fe871861c1d455adfd0dfcec26d4ae262b6e60968e03a417f32ba9d",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第14页表格明确写作、查错和图片使用AI，研究问题、总路线及证明发展归作者。同段又明确AI帮助简化引理1的证明并建议圆柱网格使计数更清楚，故记局部proofs并保留表格的归属限定。没有将整体构造或主路线推归模型。第3、16页OpenAI/GPT引文属于他人结果。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "45f35d058f072851ab1d4015ee23fb166c89c7c65502a5ae8ce97b633d1fc32f"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
           "priorityScore": 86,
           "priorityReason": "涉及Borsuk型直径划分和三维图几何，结论强，优先核对核心定理及极端构造。"
         },

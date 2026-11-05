@@ -16,27 +16,55 @@
       ],
       "primaryCategory": "math.MG",
       "comment": "11 pages, 31 references",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-04T10:20:41Z",
+      "updatedAt": "2026-11-04T10:20:41Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.MG/new",
         "observedAt": "2026-11-05T06:24:36.559441+00:00",
         "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.064730+00:00",
+        "contentHash": "516a16d09c1988cb04b710f57c7502bb1b1afd8f508ece3210357edb18fd621f"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "唯一性定理",
-      "workSummary": "作者以近期关于平面六角晶格普适最优性的证明为基础，进一步声称在欧氏运动意义下，六角晶格是唯一具有该普适最优性质的周期配置。",
+      "workSummary": "以文献[23]的平面六角晶格高斯能量最优性为基础，定理1.2对密度1的周期配置 C 声称更强的唯一性，任一 α>0 下高斯能量与六角晶格相等即推出两者欧氏全等。若所有 α 均取等，另给只用能量大参数衰减和最密周期圆堆积唯一性的较简证明。推论1.5将唯一性扩展到非零、平方距离完全单调且六角晶格能量有限的势。",
       "techniques": [
-        "六角晶格普适最优性的既有证明",
-        "周期配置的唯一性分析"
+        "高斯能量对数衰减恢复最小点间距",
+        "最密周期圆堆积的等号分类",
+        "Poisson 求和与线性规划能量差的非负分解",
+        "引用辅助函数认证余量建立短距离严格正性",
+        "Bernstein–Widder 正测度表示与 Tonelli 定理"
       ],
-      "breakthrough": "将近期普适最优性结果推进到周期配置类中的唯一性。",
-      "limitations": "摘要未列势函数类别、归一化方式或唯一性论证所依赖的先前定理。结论应保留周期性范围，并待正文核对先前结果依赖和等号条件。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "单参数等号的路线使用[23]的特定径向 Schwartz 辅助函数，在 0<|x|<sqrt(2/sqrt(3)) 证明高斯势与辅助函数之差严格为正。文中从外部认证误差界提取 0.000888 的正余量，由能量差的非负项逐项为零排除过短距离，再应用周期圆堆积刚性。",
+      "limitations": "核对 PDF 第1–11页并渲染第2、8页。唯一性只对密度固定的周期点配置成立；非零完全单调势还需六角晶格的能量有限。单参数刚性依赖文献[23]的辅助函数构造及计算机认证正余量，本次未核验该外部预印本或其证书，亦未独立验证全篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06278v1 · PDF 第4页第1.3节 Disclosure on the usage of AI tools；其他命中在第1、3、10页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:28:59.616833+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06278v1",
+        "contentHash": "853cedbf4650d44d81c7c2fd315ed4f9a8ce52536235a3bc08236a70dff990d4",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "47d3c94331c67bddc2c3405765b4d458dbbed12f84dbc413c03059e085337138"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "proofs"
+      ],
       "priorityScore": 86,
       "priorityReason": "平面能量最优化的唯一性属于尖锐几何不等式的重要问题，需优先核对主定理与依赖。"
     },
@@ -62,27 +90,55 @@
           ],
           "primaryCategory": "math.MG",
           "comment": "11 pages, 31 references",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-04T10:20:41Z",
+          "updatedAt": "2026-11-04T10:20:41Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.MG/new",
             "observedAt": "2026-11-05T06:24:36.559441+00:00",
             "contentHash": "9de0b298995bb74168b7d4cb091a65383429e00bfbab9978d8491bd8e22ecb3f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.064730+00:00",
+            "contentHash": "516a16d09c1988cb04b710f57c7502bb1b1afd8f508ece3210357edb18fd621f"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "唯一性定理",
-          "workSummary": "作者以近期关于平面六角晶格普适最优性的证明为基础，进一步声称在欧氏运动意义下，六角晶格是唯一具有该普适最优性质的周期配置。",
+          "workSummary": "以文献[23]的平面六角晶格高斯能量最优性为基础，定理1.2对密度1的周期配置 C 声称更强的唯一性，任一 α>0 下高斯能量与六角晶格相等即推出两者欧氏全等。若所有 α 均取等，另给只用能量大参数衰减和最密周期圆堆积唯一性的较简证明。推论1.5将唯一性扩展到非零、平方距离完全单调且六角晶格能量有限的势。",
           "techniques": [
-            "六角晶格普适最优性的既有证明",
-            "周期配置的唯一性分析"
+            "高斯能量对数衰减恢复最小点间距",
+            "最密周期圆堆积的等号分类",
+            "Poisson 求和与线性规划能量差的非负分解",
+            "引用辅助函数认证余量建立短距离严格正性",
+            "Bernstein–Widder 正测度表示与 Tonelli 定理"
           ],
-          "breakthrough": "将近期普适最优性结果推进到周期配置类中的唯一性。",
-          "limitations": "摘要未列势函数类别、归一化方式或唯一性论证所依赖的先前定理。结论应保留周期性范围，并待正文核对先前结果依赖和等号条件。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "单参数等号的路线使用[23]的特定径向 Schwartz 辅助函数，在 0<|x|<sqrt(2/sqrt(3)) 证明高斯势与辅助函数之差严格为正。文中从外部认证误差界提取 0.000888 的正余量，由能量差的非负项逐项为零排除过短距离，再应用周期圆堆积刚性。",
+          "limitations": "核对 PDF 第1–11页并渲染第2、8页。唯一性只对密度固定的周期点配置成立；非零完全单调势还需六角晶格的能量有限。单参数刚性依赖文献[23]的辅助函数构造及计算机认证正余量，本次未核验该外部预印本或其证书，亦未独立验证全篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06278v1 · PDF 第4页第1.3节 Disclosure on the usage of AI tools；其他命中在第1、3、10页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:28:59.616833+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06278v1",
+            "contentHash": "853cedbf4650d44d81c7c2fd315ed4f9a8ce52536235a3bc08236a70dff990d4",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露使用 ChatGPT-6 Astra 和基于 GPT-5.6 Sol 的 Copilot 作为交互式数学、计算助手，具体用于识别文献[23]中证明定理1.2(B)所需的辅助结果。问题提出、论证评估和结果选取由作者完成，最终论断经作者复核改写验证。记录文献定位、证明及计算协助，未据此将核心证明思想归给模型。其余 OpenAI 命中属于文献[23]或相关工作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "47d3c94331c67bddc2c3405765b4d458dbbed12f84dbc413c03059e085337138"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "proofs"
+          ],
           "priorityScore": 86,
           "priorityReason": "平面能量最优化的唯一性属于尖锐几何不等式的重要问题，需优先核对主定理与依赖。"
         },

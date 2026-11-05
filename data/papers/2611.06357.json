@@ -16,27 +16,55 @@
       ],
       "primaryCategory": "math.GT",
       "comment": "19 pages",
-      "version": 1
+      "version": 1,
+      "submittedAt": "2026-11-04T11:18:50Z",
+      "updatedAt": "2026-11-04T11:18:50Z"
     },
     "sources": [
       {
         "url": "https://arxiv.org/list/math.GT/new",
         "observedAt": "2026-11-05T06:24:48.129844+00:00",
         "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-05T06:36:39.065999+00:00",
+        "contentHash": "a8cda05aada18e481a331a4156c177eb27dbe46f3e02a4e68d6c5c1fb5c1adf9"
       }
     ],
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
       "progressType": "猜想反例",
-      "workSummary": "作者声称构造亏格3情形的 Putman–Wieland 猜想反例，并讨论其推论。摘要未展开覆盖、固定特征或群作用的具体构造。",
+      "workSummary": "作者的定理1.1构造闭亏格3曲面的81重连通非分歧覆盖，覆盖曲面亏格163，并得到在覆盖子群的映射类稳定子群下具有有限轨道的本原整一维上同调类。推论1.2给出带一个标记点映射类群的有限指标子群满射到 Z。定理1.3进一步构造 Π3 到 SL(81,C) 的代数表示族 R_t，由同一个 Mod3 的有限指标子群固定所有特征，每个表示半单，并在有限多个单位根之外不可约；迹 tr R_t([a1,a2])=9(t+t^(−1)+1)^2。t=2 时迹为441/4，作者据此否定相应秩81、亏格3的固定特征有限性和整性预言。",
       "techniques": [
-        "亏格3的 Putman–Wieland 猜想反例构造",
-        "固定特征与相关推论"
+        "27维有限 Heisenberg 系数表示与非零 Eisenstein 整余循环",
+        "八个映射类生成元的显式交织算子及有限正规化子",
+        "81重覆盖上的取系数再取域迹构造本原整类",
+        "指数化秩1特征与诱导单项式表示",
+        "Jordan 定理与有限像固定特征的逐秩等价性"
       ],
-      "breakthrough": "若正文构造与验证成立，将给出该猜想在亏格3中的否定实例。",
-      "limitations": "摘要极简，无法据此确定覆盖次数、特征所用系数、固定性范围及推论的精确假设，均须正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "通过有限 Heisenberg 群的显式余循环和有限正规化子得到同一个有限指标映射类子群，实际固定整上同调类。指数化并诱导将该类转成具有非恒定迹的固定表示曲线，同时保留一般不可约性、平凡行列式和单位根参数的有限像。",
+      "limitations": "核对 PDF 第1–17页，渲染第3–4页。作者的反例针对闭亏格3曲面，虚满射到整数群的推论针对带一个标记点的 Mod(3,1)。固定族由同一个有限指标子群固定，泛不可约的例外只要求为有限多个单位根。命题5.2的等价性涉及每个秩中的有限像固定特征；此处不扩张到整个任意固定特征集合。此次未独立核验全部生成元与附录的矩阵恒等式、外引定理或全篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06357v1 · PDF 第6页 Acknowledgements and use of AI，局部反例与整体构造关系另见第5页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:31:09.239961+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06357v1",
+        "contentHash": "5534b704f53d141dda4eb0134b9045ae2771e6a7057c4345e64f1a6f70ff2237",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "338cdfd03b639500a309ddef6133688a7e69c7b42ca0a55c36364d448f15298c"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "writing"
+      ],
       "priorityScore": 79,
       "priorityReason": "涉及曲面覆盖与映射类群作用的重要反例，应优先核对实际反例和有限轨道条件。"
     },
@@ -62,27 +90,55 @@
           ],
           "primaryCategory": "math.GT",
           "comment": "19 pages",
-          "version": 1
+          "version": 1,
+          "submittedAt": "2026-11-04T11:18:50Z",
+          "updatedAt": "2026-11-04T11:18:50Z"
         },
         "sources": [
           {
             "url": "https://arxiv.org/list/math.GT/new",
             "observedAt": "2026-11-05T06:24:48.129844+00:00",
             "contentHash": "716c4a362956e439672e7c58e04f0f06c9357638fc0982d1aa720aa808fa34d9"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-05T06:36:39.065999+00:00",
+            "contentHash": "a8cda05aada18e481a331a4156c177eb27dbe46f3e02a4e68d6c5c1fb5c1adf9"
           }
         ],
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
           "progressType": "猜想反例",
-          "workSummary": "作者声称构造亏格3情形的 Putman–Wieland 猜想反例，并讨论其推论。摘要未展开覆盖、固定特征或群作用的具体构造。",
+          "workSummary": "作者的定理1.1构造闭亏格3曲面的81重连通非分歧覆盖，覆盖曲面亏格163，并得到在覆盖子群的映射类稳定子群下具有有限轨道的本原整一维上同调类。推论1.2给出带一个标记点映射类群的有限指标子群满射到 Z。定理1.3进一步构造 Π3 到 SL(81,C) 的代数表示族 R_t，由同一个 Mod3 的有限指标子群固定所有特征，每个表示半单，并在有限多个单位根之外不可约；迹 tr R_t([a1,a2])=9(t+t^(−1)+1)^2。t=2 时迹为441/4，作者据此否定相应秩81、亏格3的固定特征有限性和整性预言。",
           "techniques": [
-            "亏格3的 Putman–Wieland 猜想反例构造",
-            "固定特征与相关推论"
+            "27维有限 Heisenberg 系数表示与非零 Eisenstein 整余循环",
+            "八个映射类生成元的显式交织算子及有限正规化子",
+            "81重覆盖上的取系数再取域迹构造本原整类",
+            "指数化秩1特征与诱导单项式表示",
+            "Jordan 定理与有限像固定特征的逐秩等价性"
           ],
-          "breakthrough": "若正文构造与验证成立，将给出该猜想在亏格3中的否定实例。",
-          "limitations": "摘要极简，无法据此确定覆盖次数、特征所用系数、固定性范围及推论的精确假设，均须正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "通过有限 Heisenberg 群的显式余循环和有限正规化子得到同一个有限指标映射类子群，实际固定整上同调类。指数化并诱导将该类转成具有非恒定迹的固定表示曲线，同时保留一般不可约性、平凡行列式和单位根参数的有限像。",
+          "limitations": "核对 PDF 第1–17页，渲染第3–4页。作者的反例针对闭亏格3曲面，虚满射到整数群的推论针对带一个标记点的 Mod(3,1)。固定族由同一个有限指标子群固定，泛不可约的例外只要求为有限多个单位根。命题5.2的等价性涉及每个秩中的有限像固定特征；此处不扩张到整个任意固定特征集合。此次未独立核验全部生成元与附录的矩阵恒等式、外引定理或全篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06357v1 · PDF 第6页 Acknowledgements and use of AI，局部反例与整体构造关系另见第5页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:31:09.239961+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06357v1",
+            "contentHash": "5534b704f53d141dda4eb0134b9045ae2771e6a7057c4345e64f1a6f70ff2237",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露项目始于向 AI 助手询问局部问题，并明确说明本文的亏格3整体反例源自这些交流期间的局部反例。将这个具体的局部反例到整体构造的形成过程记录为 ideas 与 exploration，同时记录文稿准备 writing。这里的思想归因指作者所述的人机交流中的共同发展过程，声明未称由模型单独首创，也未指明所用模型。局部问题由导师提出、固定特征有限性问题由另一位学者介绍，均保留人的贡献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "338cdfd03b639500a309ddef6133688a7e69c7b42ca0a55c36364d448f15298c"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "writing"
+          ],
           "priorityScore": 79,
           "priorityReason": "涉及曲面覆盖与映射类群作用的重要反例，应优先核对实际反例和有限轨道条件。"
         },
