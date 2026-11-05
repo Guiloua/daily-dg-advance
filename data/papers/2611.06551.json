@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.06551",
+  "slug": "2611.06551",
+  "latest": {
+    "arxivId": "2611.06551",
+    "metadata": {
+      "title": "An ambient metric framework for sharp compactness of the constant $Q_{2N}$-curvature problem",
+      "authors": [
+        "Liuwei Gong",
+        "Seunghyeok Kim",
+        "Juncheng Wei"
+      ],
+      "abstract": "We develop a geometric method for studying $C^{2N}$-compactness of positive solutions to the constant $Q_{2N}$-curvature equation on closed Riemannian $n$-manifolds, for every integer $N\\ge1$ and every dimension $n>2N$. Assuming the GJMS operator is invertible, its Green function is positive, and the positive mass condition holds, we establish sharp dimension ranges for the compactness of the set of all positive solutions with prescribed positive constant $Q_{2N}$-curvature. The largest dimension for compactness is $24$ for $N=1$ ([21]), $2N+20$ for $N=2,3$ ([11]), $2N+19$ for $N=4,5$, $2N+18$ for $N=6,7,8$, $2N+17$ for $9\\le N\\le17$, and $2N+16$ for all $N\\ge18$. The constructions in [4,5,33,11] for $N=1,2,3$ and in the companion paper [12] for $N\\ge4$ give noncompact examples in every dimension exceeding the corresponding compactness bound. We show that these $L^{\\infty}$-unbounded examples can be chosen to satisfy the same operator and mass hypotheses, proving sharpness within this class. Our method relates the Pohozaev quadratic forms to the Hessian $D^2\\mathscr{F}(g_c)$, where $\\mathscr{F}$ is the volume-normalized total $Q_{2N}$-curvature functional and $g_c$ is the standard round metric on $\\mathbb{S}^n$. The ambient metric argument of [12] supplies an explicit formula for $D^2\\mathscr{F}(g_c)$ on transverse-traceless tensors. The York decomposition projects metric perturbations onto this space. The scalar--vector--tensor decomposition represents the Pohozaev quadratic forms by explicit finite-dimensional matrices. We prove that these matrices are positive definite throughout the stated dimension range, a crucial step in establishing compactness.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "64 pages",
+      "version": 1
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-05T06:24:24.952688+00:00",
+        "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.06551v1",
+        "observedAt": "2026-11-05T06:26:07.942535+00:00",
+        "contentHash": "3e3b3c9846aa1f1b655a69a6e03347a71ee9a57875bb78d0e817c97d5cbb2af3"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "尖锐紧性范围",
+      "workSummary": "对闭 n 维流形的常数 Q₂N 曲率方程，建立正解集的紧性维数上界，并确定它随曲率阶数的变化。",
+      "techniques": [
+        "环境度量",
+        "York 分解",
+        "Pohozaev 二次型及球面总曲率泛函 Hessian"
+      ],
+      "breakthrough": "假设相应 GJMS 算子可逆、Green 函数正及正质量条件，结合有限维矩阵正定性确定尖锐紧性范围，并对照伴随论文的高维非紧构造。",
+      "limitations": "此处曲率阶数用 2N 表示，需 n>2N。尖锐性使用文中列明的已有及伴随论文构造，并有算子和质量假设。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者独立提出 TT 方向二阶变分及环境度量路线，随后用 OpenAI Codex 辅助代数计算、环境递推和多项式系数选择，编写精确算术核查程序，改进表述、记号及证明细节并补充一致性检查。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.06551v1 · PDF 第8页 AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-05T06:26:07.942535+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06551v1",
+        "contentHash": "3e3b3c9846aa1f1b655a69a6e03347a71ee9a57875bb78d0e817c97d5cbb2af3",
+        "pages": 64,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者独立提出 TT 方向二阶变分及环境度量路线，随后用 OpenAI Codex 辅助代数计算、环境递推和多项式系数选择，编写精确算术核查程序，改进表述、记号及证明细节并补充一致性检查。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fde94d9b1f5776aea972d5692276bf6386412f38d62b530b18700012350a0271"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "统一所有阶数的高阶共形方程紧性及临界维数机制。"
+    },
+    "analysisBasis": {
+      "abstract": "We develop a geometric method for studying $C^{2N}$-compactness of positive solutions to the constant $Q_{2N}$-curvature equation on closed Riemannian $n$-manifolds, for every integer $N\\ge1$ and every dimension $n>2N$. Assuming the GJMS operator is invertible, its Green function is positive, and the positive mass condition holds, we establish sharp dimension ranges for the compactness of the set of all positive solutions with prescribed positive constant $Q_{2N}$-curvature. The largest dimension for compactness is $24$ for $N=1$ ([21]), $2N+20$ for $N=2,3$ ([11]), $2N+19$ for $N=4,5$, $2N+18$ for $N=6,7,8$, $2N+17$ for $9\\le N\\le17$, and $2N+16$ for all $N\\ge18$. The constructions in [4,5,33,11] for $N=1,2,3$ and in the companion paper [12] for $N\\ge4$ give noncompact examples in every dimension exceeding the corresponding compactness bound. We show that these $L^{\\infty}$-unbounded examples can be chosen to satisfy the same operator and mass hypotheses, proving sharpness within this class. Our method relates the Pohozaev quadratic forms to the Hessian $D^2\\mathscr{F}(g_c)$, where $\\mathscr{F}$ is the volume-normalized total $Q_{2N}$-curvature functional and $g_c$ is the standard round metric on $\\mathbb{S}^n$. The ambient metric argument of [12] supplies an explicit formula for $D^2\\mathscr{F}(g_c)$ on transverse-traceless tensors. The York decomposition projects metric perturbations onto this space. The scalar--vector--tensor decomposition represents the Pohozaev quadratic forms by explicit finite-dimensional matrices. We prove that these matrices are positive definite throughout the stated dimension range, a crucial step in establishing compactness.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-05",
+      "entry": {
+        "arxivId": "2611.06551",
+        "metadata": {
+          "title": "An ambient metric framework for sharp compactness of the constant $Q_{2N}$-curvature problem",
+          "authors": [
+            "Liuwei Gong",
+            "Seunghyeok Kim",
+            "Juncheng Wei"
+          ],
+          "abstract": "We develop a geometric method for studying $C^{2N}$-compactness of positive solutions to the constant $Q_{2N}$-curvature equation on closed Riemannian $n$-manifolds, for every integer $N\\ge1$ and every dimension $n>2N$. Assuming the GJMS operator is invertible, its Green function is positive, and the positive mass condition holds, we establish sharp dimension ranges for the compactness of the set of all positive solutions with prescribed positive constant $Q_{2N}$-curvature. The largest dimension for compactness is $24$ for $N=1$ ([21]), $2N+20$ for $N=2,3$ ([11]), $2N+19$ for $N=4,5$, $2N+18$ for $N=6,7,8$, $2N+17$ for $9\\le N\\le17$, and $2N+16$ for all $N\\ge18$. The constructions in [4,5,33,11] for $N=1,2,3$ and in the companion paper [12] for $N\\ge4$ give noncompact examples in every dimension exceeding the corresponding compactness bound. We show that these $L^{\\infty}$-unbounded examples can be chosen to satisfy the same operator and mass hypotheses, proving sharpness within this class. Our method relates the Pohozaev quadratic forms to the Hessian $D^2\\mathscr{F}(g_c)$, where $\\mathscr{F}$ is the volume-normalized total $Q_{2N}$-curvature functional and $g_c$ is the standard round metric on $\\mathbb{S}^n$. The ambient metric argument of [12] supplies an explicit formula for $D^2\\mathscr{F}(g_c)$ on transverse-traceless tensors. The York decomposition projects metric perturbations onto this space. The scalar--vector--tensor decomposition represents the Pohozaev quadratic forms by explicit finite-dimensional matrices. We prove that these matrices are positive definite throughout the stated dimension range, a crucial step in establishing compactness.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "64 pages",
+          "version": 1
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-05T06:24:24.952688+00:00",
+            "contentHash": "0f7328039be16b3c4525816609802dc812c8fc57003db78c2a8ee1d8cdc2eb5b"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.06551v1",
+            "observedAt": "2026-11-05T06:26:07.942535+00:00",
+            "contentHash": "3e3b3c9846aa1f1b655a69a6e03347a71ee9a57875bb78d0e817c97d5cbb2af3"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "尖锐紧性范围",
+          "workSummary": "对闭 n 维流形的常数 Q₂N 曲率方程，建立正解集的紧性维数上界，并确定它随曲率阶数的变化。",
+          "techniques": [
+            "环境度量",
+            "York 分解",
+            "Pohozaev 二次型及球面总曲率泛函 Hessian"
+          ],
+          "breakthrough": "假设相应 GJMS 算子可逆、Green 函数正及正质量条件，结合有限维矩阵正定性确定尖锐紧性范围，并对照伴随论文的高维非紧构造。",
+          "limitations": "此处曲率阶数用 2N 表示，需 n>2N。尖锐性使用文中列明的已有及伴随论文构造，并有算子和质量假设。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者独立提出 TT 方向二阶变分及环境度量路线，随后用 OpenAI Codex 辅助代数计算、环境递推和多项式系数选择，编写精确算术核查程序，改进表述、记号及证明细节并补充一致性检查。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.06551v1 · PDF 第8页 AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-05T06:26:07.942535+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06551v1",
+            "contentHash": "3e3b3c9846aa1f1b655a69a6e03347a71ee9a57875bb78d0e817c97d5cbb2af3",
+            "pages": 64,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者独立提出 TT 方向二阶变分及环境度量路线，随后用 OpenAI Codex 辅助代数计算、环境递推和多项式系数选择，编写精确算术核查程序，改进表述、记号及证明细节并补充一致性检查。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fde94d9b1f5776aea972d5692276bf6386412f38d62b530b18700012350a0271"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "统一所有阶数的高阶共形方程紧性及临界维数机制。"
+        },
+        "analysisBasis": {
+          "abstract": "We develop a geometric method for studying $C^{2N}$-compactness of positive solutions to the constant $Q_{2N}$-curvature equation on closed Riemannian $n$-manifolds, for every integer $N\\ge1$ and every dimension $n>2N$. Assuming the GJMS operator is invertible, its Green function is positive, and the positive mass condition holds, we establish sharp dimension ranges for the compactness of the set of all positive solutions with prescribed positive constant $Q_{2N}$-curvature. The largest dimension for compactness is $24$ for $N=1$ ([21]), $2N+20$ for $N=2,3$ ([11]), $2N+19$ for $N=4,5$, $2N+18$ for $N=6,7,8$, $2N+17$ for $9\\le N\\le17$, and $2N+16$ for all $N\\ge18$. The constructions in [4,5,33,11] for $N=1,2,3$ and in the companion paper [12] for $N\\ge4$ give noncompact examples in every dimension exceeding the corresponding compactness bound. We show that these $L^{\\infty}$-unbounded examples can be chosen to satisfy the same operator and mass hypotheses, proving sharpness within this class. Our method relates the Pohozaev quadratic forms to the Hessian $D^2\\mathscr{F}(g_c)$, where $\\mathscr{F}$ is the volume-normalized total $Q_{2N}$-curvature functional and $g_c$ is the standard round metric on $\\mathbb{S}^n$. The ambient metric argument of [12] supplies an explicit formula for $D^2\\mathscr{F}(g_c)$ on transverse-traceless tensors. The York decomposition projects metric perturbations onto this space. The scalar--vector--tensor decomposition represents the Pohozaev quadratic forms by explicit finite-dimensional matrices. We prove that these matrices are positive definite throughout the stated dimension range, a crucial step in establishing compactness.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
