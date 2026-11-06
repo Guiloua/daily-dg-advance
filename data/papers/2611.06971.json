@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.06971",
+  "slug": "2611.06971",
+  "latest": {
+    "arxivId": "2611.06971",
+    "metadata": {
+      "title": "Classification of real Lie algebras of dimension five",
+      "authors": [
+        "Mehdi Nadjafikhah"
+      ],
+      "abstract": "We summarize a coordinate-free classification of five-dimensional real Lie algebras up to isomorphism. Rather than solving the overdetermined quadratic Jacobi system modulo $\\mathrm{GL}(5,\\mathbb{R})$, the method uses Levi--Malcev theory and nilradical stratification. In the non-solvable case, the Levi factor is three-dimensional, $\\mathfrak{so}(3)$ or $\\mathfrak{sl}(2,\\mathbb{R})$, acting on a two-dimensional radical; this yields exactly five classes, including the indecomposable $\\mathfrak{sl}(2,\\mathbb{R})\\ltimes\\mathbb{R}^2$. In the solvable case, Schur's bound on commutative subalgebras of $\\mathfrak{gl}(2,\\mathbb{R})$ implies $\\dim\\mathfrak{n}\\in\\{3,4,5\\}$, eliminating one- and two-dimensional nilradicals. The nilpotent case $\\dim\\mathfrak{n}=5$ has nine classes: three decomposable and six indecomposable, including $\\mathfrak{h}_5$ and two filiform algebras. For $\\dim\\mathfrak{n}=4$, classification reduces to normal forms of outer derivations for $\\mathbb{R}^4$, $\\mathfrak{h}_3\\oplus\\mathbb{R}$, and $\\mathfrak{n}_4$ under automorphism and scaling. For $\\dim\\mathfrak{n}=3$, it uses two-dimensional abelian subalgebras of $\\mathrm{OutDer}(\\mathfrak{n})$ containing no nonzero nilpotent operators. The work also computes minimal faithful representation dimensions $\\mu(\\mathfrak{g})$, gives a dictionary with classical tables, and designs a deterministic identification algorithm.",
+      "categories": [
+        "math.RT",
+        "math.DG"
+      ],
+      "primaryCategory": "math.RT",
+      "version": 1,
+      "submittedAt": "2026-11-04T12:43:26Z",
+      "updatedAt": "2026-11-04T12:43:26Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:54:57.673047+00:00",
+        "contentHash": "021e7dbb036bc88d598d9619ee33ddb9691fe93346da87c915d079a921e02c16"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "五维实Lie代数分类的结构化整理",
+      "workSummary": "用Levi–Malcev分解及幂零根基分层总结五维实Lie代数的同构分类，避免直接求解模GL(5,R)的Jacobi方程组。",
+      "techniques": [
+        "Levi因子及二维根基表示",
+        "幂零根基的维数分层",
+        "外导子模自同构和缩放的正规形",
+        "经典表对应与识别算法"
+      ],
+      "breakthrough": "非可解部分列五类，幂零部分列九类；其余按根基维数3或4归约。另计算最小忠实表示维数并设计确定性识别算法。",
+      "limitations": "主体是既有分类的结构化表述，算法、参数同构去重及最小表示维数的证明需正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:46:37.117749+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.06971v1",
+        "contentHash": "4eed47ee30ae71f8fe2ebd316df2f153d3394e28c7b2a91b9dfe99bd582362e0",
+        "pages": 25,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。25页PDF提取完整，全文工具披露、声明位置及点写AI、任意拆行模型名和Danus补检未观察到生成式AI使用披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ecb2ee18311fc147af28cfd5fd9e5eea2dbbe006397a3794bc74e5084b874c78"
+      },
+      "priorityScore": 54,
+      "priorityReason": "可作齐性几何计算的基础工具，和当前曲率比较主题的直接联系有限。"
+    },
+    "analysisBasis": {
+      "abstract": "We summarize a coordinate-free classification of five-dimensional real Lie algebras up to isomorphism. Rather than solving the overdetermined quadratic Jacobi system modulo $\\mathrm{GL}(5,\\mathbb{R})$, the method uses Levi--Malcev theory and nilradical stratification. In the non-solvable case, the Levi factor is three-dimensional, $\\mathfrak{so}(3)$ or $\\mathfrak{sl}(2,\\mathbb{R})$, acting on a two-dimensional radical; this yields exactly five classes, including the indecomposable $\\mathfrak{sl}(2,\\mathbb{R})\\ltimes\\mathbb{R}^2$. In the solvable case, Schur's bound on commutative subalgebras of $\\mathfrak{gl}(2,\\mathbb{R})$ implies $\\dim\\mathfrak{n}\\in\\{3,4,5\\}$, eliminating one- and two-dimensional nilradicals. The nilpotent case $\\dim\\mathfrak{n}=5$ has nine classes: three decomposable and six indecomposable, including $\\mathfrak{h}_5$ and two filiform algebras. For $\\dim\\mathfrak{n}=4$, classification reduces to normal forms of outer derivations for $\\mathbb{R}^4$, $\\mathfrak{h}_3\\oplus\\mathbb{R}$, and $\\mathfrak{n}_4$ under automorphism and scaling. For $\\dim\\mathfrak{n}=3$, it uses two-dimensional abelian subalgebras of $\\mathrm{OutDer}(\\mathfrak{n})$ containing no nonzero nilpotent operators. The work also computes minimal faithful representation dimensions $\\mu(\\mathfrak{g})$, gives a dictionary with classical tables, and designs a deterministic identification algorithm.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.06971",
+        "metadata": {
+          "title": "Classification of real Lie algebras of dimension five",
+          "authors": [
+            "Mehdi Nadjafikhah"
+          ],
+          "abstract": "We summarize a coordinate-free classification of five-dimensional real Lie algebras up to isomorphism. Rather than solving the overdetermined quadratic Jacobi system modulo $\\mathrm{GL}(5,\\mathbb{R})$, the method uses Levi--Malcev theory and nilradical stratification. In the non-solvable case, the Levi factor is three-dimensional, $\\mathfrak{so}(3)$ or $\\mathfrak{sl}(2,\\mathbb{R})$, acting on a two-dimensional radical; this yields exactly five classes, including the indecomposable $\\mathfrak{sl}(2,\\mathbb{R})\\ltimes\\mathbb{R}^2$. In the solvable case, Schur's bound on commutative subalgebras of $\\mathfrak{gl}(2,\\mathbb{R})$ implies $\\dim\\mathfrak{n}\\in\\{3,4,5\\}$, eliminating one- and two-dimensional nilradicals. The nilpotent case $\\dim\\mathfrak{n}=5$ has nine classes: three decomposable and six indecomposable, including $\\mathfrak{h}_5$ and two filiform algebras. For $\\dim\\mathfrak{n}=4$, classification reduces to normal forms of outer derivations for $\\mathbb{R}^4$, $\\mathfrak{h}_3\\oplus\\mathbb{R}$, and $\\mathfrak{n}_4$ under automorphism and scaling. For $\\dim\\mathfrak{n}=3$, it uses two-dimensional abelian subalgebras of $\\mathrm{OutDer}(\\mathfrak{n})$ containing no nonzero nilpotent operators. The work also computes minimal faithful representation dimensions $\\mu(\\mathfrak{g})$, gives a dictionary with classical tables, and designs a deterministic identification algorithm.",
+          "categories": [
+            "math.RT",
+            "math.DG"
+          ],
+          "primaryCategory": "math.RT",
+          "version": 1,
+          "submittedAt": "2026-11-04T12:43:26Z",
+          "updatedAt": "2026-11-04T12:43:26Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:54:57.673047+00:00",
+            "contentHash": "021e7dbb036bc88d598d9619ee33ddb9691fe93346da87c915d079a921e02c16"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "五维实Lie代数分类的结构化整理",
+          "workSummary": "用Levi–Malcev分解及幂零根基分层总结五维实Lie代数的同构分类，避免直接求解模GL(5,R)的Jacobi方程组。",
+          "techniques": [
+            "Levi因子及二维根基表示",
+            "幂零根基的维数分层",
+            "外导子模自同构和缩放的正规形",
+            "经典表对应与识别算法"
+          ],
+          "breakthrough": "非可解部分列五类，幂零部分列九类；其余按根基维数3或4归约。另计算最小忠实表示维数并设计确定性识别算法。",
+          "limitations": "主体是既有分类的结构化表述，算法、参数同构去重及最小表示维数的证明需正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:46:37.117749+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.06971v1",
+            "contentHash": "4eed47ee30ae71f8fe2ebd316df2f153d3394e28c7b2a91b9dfe99bd582362e0",
+            "pages": 25,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。25页PDF提取完整，全文工具披露、声明位置及点写AI、任意拆行模型名和Danus补检未观察到生成式AI使用披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ecb2ee18311fc147af28cfd5fd9e5eea2dbbe006397a3794bc74e5084b874c78"
+          },
+          "priorityScore": 54,
+          "priorityReason": "可作齐性几何计算的基础工具，和当前曲率比较主题的直接联系有限。"
+        },
+        "analysisBasis": {
+          "abstract": "We summarize a coordinate-free classification of five-dimensional real Lie algebras up to isomorphism. Rather than solving the overdetermined quadratic Jacobi system modulo $\\mathrm{GL}(5,\\mathbb{R})$, the method uses Levi--Malcev theory and nilradical stratification. In the non-solvable case, the Levi factor is three-dimensional, $\\mathfrak{so}(3)$ or $\\mathfrak{sl}(2,\\mathbb{R})$, acting on a two-dimensional radical; this yields exactly five classes, including the indecomposable $\\mathfrak{sl}(2,\\mathbb{R})\\ltimes\\mathbb{R}^2$. In the solvable case, Schur's bound on commutative subalgebras of $\\mathfrak{gl}(2,\\mathbb{R})$ implies $\\dim\\mathfrak{n}\\in\\{3,4,5\\}$, eliminating one- and two-dimensional nilradicals. The nilpotent case $\\dim\\mathfrak{n}=5$ has nine classes: three decomposable and six indecomposable, including $\\mathfrak{h}_5$ and two filiform algebras. For $\\dim\\mathfrak{n}=4$, classification reduces to normal forms of outer derivations for $\\mathbb{R}^4$, $\\mathfrak{h}_3\\oplus\\mathbb{R}$, and $\\mathfrak{n}_4$ under automorphism and scaling. For $\\dim\\mathfrak{n}=3$, it uses two-dimensional abelian subalgebras of $\\mathrm{OutDer}(\\mathfrak{n})$ containing no nonzero nilpotent operators. The work also computes minimal faithful representation dimensions $\\mu(\\mathfrak{g})$, gives a dictionary with classical tables, and designs a deterministic identification algorithm.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

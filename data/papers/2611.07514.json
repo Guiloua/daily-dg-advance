@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.07514",
+  "slug": "2611.07514",
+  "latest": {
+    "arxivId": "2611.07514",
+    "metadata": {
+      "title": "Using Transformers to Generate 3-Manifold Triangulations",
+      "authors": [
+        "Daniel Bruwel",
+        "Ashvni Narayanan",
+        "Jonathan Spreer"
+      ],
+      "abstract": "Using dehydration signatures as an encoding, we train GPT-2-style transformers to generate triangulations of 3-dimensional manifolds. Our main runs each use approximately 3 exaFLOPs, spanning a 200 million parameter model trained on 60 million sphere triangulations to an 11 million parameter model trained on 1.1 billion sphere triangulations. The optimal model has 10 blocks, width 640 and generates dehydration signatures of closed manifolds of various topological types at a rate of 6.9%, 82% of which are spheres. To investigate how our method scales, we use the technique of IsoFLOP curves on 15-tetrahedron triangulations of the 3-sphere, over a compute range of 6 to 3000 petaFLOPs, and observe neural scaling behaviour. We extract a parameter scaling exponent of $\\alpha = 0.49$ ($[0.48, 0.50]$ stat, $\\pm 0.02$ syst), and an optimal ratio of 234 tokens per parameter for training. In addition, we present a number of smaller experiments, including evidence that transformers are able to learn to count degree-one edges near-perfectly, but get progressively worse when counting edges with higher degrees.",
+      "categories": [
+        "math.GT",
+        "cs.LG"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "21 pages + 3 pages appendix, 7 figures, 10 tables",
+      "version": 1,
+      "submittedAt": "2026-11-05T06:20:50Z",
+      "updatedAt": "2026-11-05T06:20:50Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-06T05:40:46.233409+00:00",
+        "contentHash": "c35a3908bad7b26f2874f45dc857ee8add2c1de817f197aa5e46309698e87777"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:54:57.678912+00:00",
+        "contentHash": "46a9882708320ffc8e9646e1d5c0b77c0e3bf54441998ce3215e88d116fe547e"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "机器学习实验与拓扑数据生成",
+      "workSummary": "用脱水签名编码三维流形三角剖分，训练 GPT-2 风格 Transformer 生成剖分。主要训练各约3 exaFLOPs，覆盖2亿参数配6000万球面剖分至1100万参数配11亿剖分。最佳模型有10层、宽640，生成闭三维流形签名的比例为6.9%，其中82%为球面。对15个四面体的三维球面剖分，在6至3000 petaFLOPs预算下观察缩放行为，参数缩放指数估计0.49，统计区间[0.48,0.50]及系统误差±0.02，最优训练比约每参数234个token。另有低度数边计数实验。",
+      "techniques": [
+        "脱水签名编码",
+        "GPT-2风格Transformer训练",
+        "IsoFLOP曲线与缩放指数拟合",
+        "边度数计数实验"
+      ],
+      "breakthrough": "给出生成三维流形剖分的实验有效率及计算预算下的经验缩放关系。",
+      "limitations": "有效生成率与球面占比均来自特定模型和训练分布；缩放结论为实验拟合，边度数越高计数越差。研究对象含语言模型，作者是否另用AI辅助写作须独立查证。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在专门披露中说明使用网页版 ChatGPT 6.0 和 Claude Opus 5.5 校对、编写部分 TikZ 代码及辅助少量编码任务。正文中的 GPT-2 模型是研究方法，参考文献中的大语言模型及 OpenAI 是外部工作；本篇的明确辅助使用以第3页声明为依据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.07514v1 · PDF 第3页 AI disclosure statement，全文与拆行补检共24页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:43:56.863555+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.07514v1",
+        "contentHash": "59b5e1ceeb96777f2a443e35e19fbcddf8fe01ad6f05d81e5bd85c7a8359ca1b",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在专门披露中说明使用网页版 ChatGPT 6.0 和 Claude Opus 5.5 校对、编写部分 TikZ 代码及辅助少量编码任务。正文中的 GPT-2 模型是研究方法，参考文献中的大语言模型及 OpenAI 是外部工作；本篇的明确辅助使用以第3页声明为依据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0a0977a7f06505e4c3abd325ff8bda4a4194a3c39df59a3cdf24b258ef6c2eb3"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 49,
+      "priorityReason": "主体为机器学习生成实验，与曲率、比较及几何PDE主线较远。",
+      "lowPriorityReason": "主体为机器学习生成实验，与曲率、比较及几何PDE主线较远。"
+    },
+    "analysisBasis": {
+      "abstract": "Using dehydration signatures as an encoding, we train GPT-2-style transformers to generate triangulations of 3-dimensional manifolds. Our main runs each use approximately 3 exaFLOPs, spanning a 200 million parameter model trained on 60 million sphere triangulations to an 11 million parameter model trained on 1.1 billion sphere triangulations. The optimal model has 10 blocks, width 640 and generates dehydration signatures of closed manifolds of various topological types at a rate of 6.9%, 82% of which are spheres. To investigate how our method scales, we use the technique of IsoFLOP curves on 15-tetrahedron triangulations of the 3-sphere, over a compute range of 6 to 3000 petaFLOPs, and observe neural scaling behaviour. We extract a parameter scaling exponent of $\\alpha = 0.49$ ($[0.48, 0.50]$ stat, $\\pm 0.02$ syst), and an optimal ratio of 234 tokens per parameter for training. In addition, we present a number of smaller experiments, including evidence that transformers are able to learn to count degree-one edges near-perfectly, but get progressively worse when counting edges with higher degrees.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.07514",
+        "metadata": {
+          "title": "Using Transformers to Generate 3-Manifold Triangulations",
+          "authors": [
+            "Daniel Bruwel",
+            "Ashvni Narayanan",
+            "Jonathan Spreer"
+          ],
+          "abstract": "Using dehydration signatures as an encoding, we train GPT-2-style transformers to generate triangulations of 3-dimensional manifolds. Our main runs each use approximately 3 exaFLOPs, spanning a 200 million parameter model trained on 60 million sphere triangulations to an 11 million parameter model trained on 1.1 billion sphere triangulations. The optimal model has 10 blocks, width 640 and generates dehydration signatures of closed manifolds of various topological types at a rate of 6.9%, 82% of which are spheres. To investigate how our method scales, we use the technique of IsoFLOP curves on 15-tetrahedron triangulations of the 3-sphere, over a compute range of 6 to 3000 petaFLOPs, and observe neural scaling behaviour. We extract a parameter scaling exponent of $\\alpha = 0.49$ ($[0.48, 0.50]$ stat, $\\pm 0.02$ syst), and an optimal ratio of 234 tokens per parameter for training. In addition, we present a number of smaller experiments, including evidence that transformers are able to learn to count degree-one edges near-perfectly, but get progressively worse when counting edges with higher degrees.",
+          "categories": [
+            "math.GT",
+            "cs.LG"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "21 pages + 3 pages appendix, 7 figures, 10 tables",
+          "version": 1,
+          "submittedAt": "2026-11-05T06:20:50Z",
+          "updatedAt": "2026-11-05T06:20:50Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-06T05:40:46.233409+00:00",
+            "contentHash": "c35a3908bad7b26f2874f45dc857ee8add2c1de817f197aa5e46309698e87777"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:54:57.678912+00:00",
+            "contentHash": "46a9882708320ffc8e9646e1d5c0b77c0e3bf54441998ce3215e88d116fe547e"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "机器学习实验与拓扑数据生成",
+          "workSummary": "用脱水签名编码三维流形三角剖分，训练 GPT-2 风格 Transformer 生成剖分。主要训练各约3 exaFLOPs，覆盖2亿参数配6000万球面剖分至1100万参数配11亿剖分。最佳模型有10层、宽640，生成闭三维流形签名的比例为6.9%，其中82%为球面。对15个四面体的三维球面剖分，在6至3000 petaFLOPs预算下观察缩放行为，参数缩放指数估计0.49，统计区间[0.48,0.50]及系统误差±0.02，最优训练比约每参数234个token。另有低度数边计数实验。",
+          "techniques": [
+            "脱水签名编码",
+            "GPT-2风格Transformer训练",
+            "IsoFLOP曲线与缩放指数拟合",
+            "边度数计数实验"
+          ],
+          "breakthrough": "给出生成三维流形剖分的实验有效率及计算预算下的经验缩放关系。",
+          "limitations": "有效生成率与球面占比均来自特定模型和训练分布；缩放结论为实验拟合，边度数越高计数越差。研究对象含语言模型，作者是否另用AI辅助写作须独立查证。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在专门披露中说明使用网页版 ChatGPT 6.0 和 Claude Opus 5.5 校对、编写部分 TikZ 代码及辅助少量编码任务。正文中的 GPT-2 模型是研究方法，参考文献中的大语言模型及 OpenAI 是外部工作；本篇的明确辅助使用以第3页声明为依据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.07514v1 · PDF 第3页 AI disclosure statement，全文与拆行补检共24页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:43:56.863555+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.07514v1",
+            "contentHash": "59b5e1ceeb96777f2a443e35e19fbcddf8fe01ad6f05d81e5bd85c7a8359ca1b",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在专门披露中说明使用网页版 ChatGPT 6.0 和 Claude Opus 5.5 校对、编写部分 TikZ 代码及辅助少量编码任务。正文中的 GPT-2 模型是研究方法，参考文献中的大语言模型及 OpenAI 是外部工作；本篇的明确辅助使用以第3页声明为依据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0a0977a7f06505e4c3abd325ff8bda4a4194a3c39df59a3cdf24b258ef6c2eb3"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 49,
+          "priorityReason": "主体为机器学习生成实验，与曲率、比较及几何PDE主线较远。",
+          "lowPriorityReason": "主体为机器学习生成实验，与曲率、比较及几何PDE主线较远。"
+        },
+        "analysisBasis": {
+          "abstract": "Using dehydration signatures as an encoding, we train GPT-2-style transformers to generate triangulations of 3-dimensional manifolds. Our main runs each use approximately 3 exaFLOPs, spanning a 200 million parameter model trained on 60 million sphere triangulations to an 11 million parameter model trained on 1.1 billion sphere triangulations. The optimal model has 10 blocks, width 640 and generates dehydration signatures of closed manifolds of various topological types at a rate of 6.9%, 82% of which are spheres. To investigate how our method scales, we use the technique of IsoFLOP curves on 15-tetrahedron triangulations of the 3-sphere, over a compute range of 6 to 3000 petaFLOPs, and observe neural scaling behaviour. We extract a parameter scaling exponent of $\\alpha = 0.49$ ($[0.48, 0.50]$ stat, $\\pm 0.02$ syst), and an optimal ratio of 234 tokens per parameter for training. In addition, we present a number of smaller experiments, including evidence that transformers are able to learn to count degree-one edges near-perfectly, but get progressively worse when counting edges with higher degrees.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

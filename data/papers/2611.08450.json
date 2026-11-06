@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08450",
+  "slug": "2611.08450",
+  "latest": {
+    "arxivId": "2611.08450",
+    "metadata": {
+      "title": "Improved Index and Intersection bounds for Min-Max Geodesics",
+      "authors": [
+        "Lorenzo Sarnataro",
+        "Douglas Stryker",
+        "Jared Marx-Kuo"
+      ],
+      "abstract": "In this note, we show that the sum of the Morse index and number of intersections of min-max geodesics achieving the p-widths of a closed surface are bounded above by $p$, improving a result from our previous work. A key idea is that deformations coming from vertex desingularization and eigenfunctions of the Jacobi operator on geodesics are sufficiently independent.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-05T18:44:58Z",
+      "updatedAt": "2026-11-05T18:44:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:20.351999+00:00",
+        "contentHash": "23c094324d9bfbdc655a0b85380903e3813aaff809ead145e0c104660524bd21"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "曲面p-width的指标与交点联合估计",
+      "workSummary": "定理1.2对任意闭黎曼曲面及每个p，选择一组闭浸入测地线σₚ,ₗ和正整数mₚ,ₗ，使ωₚ=Σmₚ,ₗ length(σₚ,ₗ)，并满足Σ ind(σₚ,ₗ)+Σᵥ binom(ord(v),2)≤p。这里ord(v)数不计重数的相交光滑测地线支数；高阶交点按二项式计数，不只是顶点个数。证明在一般度量的二阶交点处，利用Allen–Cahn过渡尺度的整解产生局部负方向，使其与测地线Jacobi负方向的混合二次变分仅为O(ε¹ᐟ²)，从而将两类不稳定性合并计入同一指标预算。",
+      "techniques": [
+        "Allen–Cahn对长度泛函的正则化",
+        "sine–Gordon势的整有限指标解及吹起",
+        "交点附近局部负变分与Jacobi方向",
+        "混合二次变分O(ε¹ᐟ²)估计",
+        "一般度量逼近、紧性及下半连续性"
+      ],
+      "breakthrough": "将此前两个各自≤p的测地线指标和交点复杂度估计合为总和≤p；一般度量的二阶交点每个贡献额外负方向，再通过度量极限获得任意闭曲面的带高阶交点权重结论。",
+      "limitations": "定理量词是存在满足联合估计的p-width实现集合，不能扩大为任意长度恰为ωₚ的测地线集合。长度乘正整数重数，显示的指标和及ord计数均不额外乘该重数；一般交点项为binom(ord(v),2)，只有二阶交点才等于点数。引言还述适用于能量一致有界、指标≤p的Allen–Cahn解之极限，但技术引理3.3首先要求sine–Gordon势及仅二阶交点。已读PDF第1–8页并渲染第2、8页核对主公式和负定估计；这是定理、路线及关键引理审读，未独立复核所有引用与整篇证明。外部依赖包括Chodosh–Mantoulidis的p-width实现与吹起、Liu–Wei的整sine–Gordon解分类、Tonegawa等稳定正则性，以及作者2024年前作的一般度量交点结构、紧性和下半连续性。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:53:43.279732+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08450v1",
+        "contentHash": "5b1b01907be4b94afc849a8d49b6df46bb1070a4fad62dafaac6bc461a3d50b0",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第2页1.2 AI Statement 明确表示制作本研究时未使用AI。其余全文标准候选及点写、拆行模型名称补检未发现作者自身使用的正面声明；否定句中的AI不构成使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7a9295e864d6b77da2c9c2e8d0a6e1764842f25a29581956fb324a54153e8d09"
+      },
+      "priorityScore": 96,
+      "priorityReason": "min–max几何分析的重要精化，优先核对定理量词。"
+    },
+    "analysisBasis": {
+      "abstract": "In this note, we show that the sum of the Morse index and number of intersections of min-max geodesics achieving the p-widths of a closed surface are bounded above by $p$, improving a result from our previous work. A key idea is that deformations coming from vertex desingularization and eigenfunctions of the Jacobi operator on geodesics are sufficiently independent.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08450",
+        "metadata": {
+          "title": "Improved Index and Intersection bounds for Min-Max Geodesics",
+          "authors": [
+            "Lorenzo Sarnataro",
+            "Douglas Stryker",
+            "Jared Marx-Kuo"
+          ],
+          "abstract": "In this note, we show that the sum of the Morse index and number of intersections of min-max geodesics achieving the p-widths of a closed surface are bounded above by $p$, improving a result from our previous work. A key idea is that deformations coming from vertex desingularization and eigenfunctions of the Jacobi operator on geodesics are sufficiently independent.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-05T18:44:58Z",
+          "updatedAt": "2026-11-05T18:44:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:20.351999+00:00",
+            "contentHash": "23c094324d9bfbdc655a0b85380903e3813aaff809ead145e0c104660524bd21"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "曲面p-width的指标与交点联合估计",
+          "workSummary": "定理1.2对任意闭黎曼曲面及每个p，选择一组闭浸入测地线σₚ,ₗ和正整数mₚ,ₗ，使ωₚ=Σmₚ,ₗ length(σₚ,ₗ)，并满足Σ ind(σₚ,ₗ)+Σᵥ binom(ord(v),2)≤p。这里ord(v)数不计重数的相交光滑测地线支数；高阶交点按二项式计数，不只是顶点个数。证明在一般度量的二阶交点处，利用Allen–Cahn过渡尺度的整解产生局部负方向，使其与测地线Jacobi负方向的混合二次变分仅为O(ε¹ᐟ²)，从而将两类不稳定性合并计入同一指标预算。",
+          "techniques": [
+            "Allen–Cahn对长度泛函的正则化",
+            "sine–Gordon势的整有限指标解及吹起",
+            "交点附近局部负变分与Jacobi方向",
+            "混合二次变分O(ε¹ᐟ²)估计",
+            "一般度量逼近、紧性及下半连续性"
+          ],
+          "breakthrough": "将此前两个各自≤p的测地线指标和交点复杂度估计合为总和≤p；一般度量的二阶交点每个贡献额外负方向，再通过度量极限获得任意闭曲面的带高阶交点权重结论。",
+          "limitations": "定理量词是存在满足联合估计的p-width实现集合，不能扩大为任意长度恰为ωₚ的测地线集合。长度乘正整数重数，显示的指标和及ord计数均不额外乘该重数；一般交点项为binom(ord(v),2)，只有二阶交点才等于点数。引言还述适用于能量一致有界、指标≤p的Allen–Cahn解之极限，但技术引理3.3首先要求sine–Gordon势及仅二阶交点。已读PDF第1–8页并渲染第2、8页核对主公式和负定估计；这是定理、路线及关键引理审读，未独立复核所有引用与整篇证明。外部依赖包括Chodosh–Mantoulidis的p-width实现与吹起、Liu–Wei的整sine–Gordon解分类、Tonegawa等稳定正则性，以及作者2024年前作的一般度量交点结构、紧性和下半连续性。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:53:43.279732+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08450v1",
+            "contentHash": "5b1b01907be4b94afc849a8d49b6df46bb1070a4fad62dafaac6bc461a3d50b0",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第2页1.2 AI Statement 明确表示制作本研究时未使用AI。其余全文标准候选及点写、拆行模型名称补检未发现作者自身使用的正面声明；否定句中的AI不构成使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7a9295e864d6b77da2c9c2e8d0a6e1764842f25a29581956fb324a54153e8d09"
+          },
+          "priorityScore": 96,
+          "priorityReason": "min–max几何分析的重要精化，优先核对定理量词。"
+        },
+        "analysisBasis": {
+          "abstract": "In this note, we show that the sum of the Morse index and number of intersections of min-max geodesics achieving the p-widths of a closed surface are bounded above by $p$, improving a result from our previous work. A key idea is that deformations coming from vertex desingularization and eigenfunctions of the Jacobi operator on geodesics are sufficiently independent.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

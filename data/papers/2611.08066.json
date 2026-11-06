@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08066",
+  "slug": "2611.08066",
+  "latest": {
+    "arxivId": "2611.08066",
+    "metadata": {
+      "title": "Biharmonic surfaces with flat normal bundle in the four-dimensional sphere",
+      "authors": [
+        "Ştefan Andronic",
+        "Stefano Montaldo",
+        "Cezar Oniciuc",
+        "Antonio Sanna"
+      ],
+      "abstract": "We prove that a proper biharmonic surface with flat normal bundle in the four-dimensional unit sphere $\\mathbb S^4$ lies minimally in a small hypersphere of radius $1/\\sqrt{2}$. Since the surfaces with constant mean curvature and those with parallel normalized mean curvature vector field are already understood, the core of the paper is the non-existence of biharmonic surfaces with flat normal bundle in $\\mathbb S^4$ whose mean curvature is not constant and whose normalized mean curvature vector field is not parallel. We first show, adapting an argument of Fu, Hong and Yang, that the gradient of the mean curvature is a principal direction. Then the problem reduces to a first order system of ordinary differential equations with a constraint, and we show that this system has no admissible solutions by an elimination argument.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T14:18:57Z",
+      "updatedAt": "2026-11-05T14:18:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:09.015263+00:00",
+        "contentHash": "6f2077edae71f4288bd677ba493b8f6c3e91a151c6ed3485ae687eb9ce807e15"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "单位S⁴中平坦法丛proper双调和曲面的局部分类",
+      "workSummary": "定理1.1针对光滑连通等距浸入φ:M²→单位S⁴。若φ为proper双调和且法丛平坦，则其像在小超球S³(2)中极小，S³(2)的截面曲率为2、半径为1/√2。反向构造也满足条件，且此结论无需完备或紧性。关键是先证明f=|H|恒定，再调用Balmuş–Oniciuc的CMC分类。",
+      "techniques": [
+        "平坦法丛下可同时对角化的形状算子",
+        "平均曲率梯度主方向与Fu–Hong–Yang论证",
+        "局部单变量化及带约束ODE",
+        "归一化多项式向量场、resultant和gcd消元",
+        "PNMC分支的直接非存在性证明"
+      ],
+      "breakthrough": "本文去掉先前W-surface及3f²+K−ε非零的附加假设。非CMC、非PNMC分支经dτ/ds=f和e=1/f²变换为六变量多项式ODE及约束C=0。由C及其前五次导数产生消元方程，证明解集投影到e坐标仅为有限集，连续性迫使f恒定，完成矛盾。",
+      "limitations": "结论保留二维、平坦法丛及单位S⁴环境条件。proper表示双调和且非极小。主方向步骤和ODE化适用于一般四维space form，S⁴分类的最终一步另用已知CMC定理。已读第1—6、9—15页并渲染第2、12页核对归一化及主定理；作者称数千项resultant由精确符号运算得到，本轮未独立重算全部长多项式或认证消元恒等式。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露Claude Opus5.5用于检查计算、建议表述改进及编辑稿件；数学陈述与证明由作者推导并核验。只按披露角色记录，未将大型消元构造的核心思想归给模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08066v1 · PDF 第4页，Use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:44:13.930167+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08066v1",
+        "contentHash": "c40b767cfa338405c43a3ede18ff10c53ffe3b77015091202b9c98da313dac5d",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露Claude Opus5.5用于检查计算、建议表述改进及编辑稿件；数学陈述与证明由作者推导并核验。只按披露角色记录，未将大型消元构造的核心思想归给模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f4d177d58a16cdd5b2c69a39c188e08ef9148824f2ad8c3addd8dee76e8acccd"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "几何PDE分类与曲率方程直接相关，优先核对消元与局部假设。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that a proper biharmonic surface with flat normal bundle in the four-dimensional unit sphere $\\mathbb S^4$ lies minimally in a small hypersphere of radius $1/\\sqrt{2}$. Since the surfaces with constant mean curvature and those with parallel normalized mean curvature vector field are already understood, the core of the paper is the non-existence of biharmonic surfaces with flat normal bundle in $\\mathbb S^4$ whose mean curvature is not constant and whose normalized mean curvature vector field is not parallel. We first show, adapting an argument of Fu, Hong and Yang, that the gradient of the mean curvature is a principal direction. Then the problem reduces to a first order system of ordinary differential equations with a constraint, and we show that this system has no admissible solutions by an elimination argument.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08066",
+        "metadata": {
+          "title": "Biharmonic surfaces with flat normal bundle in the four-dimensional sphere",
+          "authors": [
+            "Ştefan Andronic",
+            "Stefano Montaldo",
+            "Cezar Oniciuc",
+            "Antonio Sanna"
+          ],
+          "abstract": "We prove that a proper biharmonic surface with flat normal bundle in the four-dimensional unit sphere $\\mathbb S^4$ lies minimally in a small hypersphere of radius $1/\\sqrt{2}$. Since the surfaces with constant mean curvature and those with parallel normalized mean curvature vector field are already understood, the core of the paper is the non-existence of biharmonic surfaces with flat normal bundle in $\\mathbb S^4$ whose mean curvature is not constant and whose normalized mean curvature vector field is not parallel. We first show, adapting an argument of Fu, Hong and Yang, that the gradient of the mean curvature is a principal direction. Then the problem reduces to a first order system of ordinary differential equations with a constraint, and we show that this system has no admissible solutions by an elimination argument.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T14:18:57Z",
+          "updatedAt": "2026-11-05T14:18:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:09.015263+00:00",
+            "contentHash": "6f2077edae71f4288bd677ba493b8f6c3e91a151c6ed3485ae687eb9ce807e15"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "单位S⁴中平坦法丛proper双调和曲面的局部分类",
+          "workSummary": "定理1.1针对光滑连通等距浸入φ:M²→单位S⁴。若φ为proper双调和且法丛平坦，则其像在小超球S³(2)中极小，S³(2)的截面曲率为2、半径为1/√2。反向构造也满足条件，且此结论无需完备或紧性。关键是先证明f=|H|恒定，再调用Balmuş–Oniciuc的CMC分类。",
+          "techniques": [
+            "平坦法丛下可同时对角化的形状算子",
+            "平均曲率梯度主方向与Fu–Hong–Yang论证",
+            "局部单变量化及带约束ODE",
+            "归一化多项式向量场、resultant和gcd消元",
+            "PNMC分支的直接非存在性证明"
+          ],
+          "breakthrough": "本文去掉先前W-surface及3f²+K−ε非零的附加假设。非CMC、非PNMC分支经dτ/ds=f和e=1/f²变换为六变量多项式ODE及约束C=0。由C及其前五次导数产生消元方程，证明解集投影到e坐标仅为有限集，连续性迫使f恒定，完成矛盾。",
+          "limitations": "结论保留二维、平坦法丛及单位S⁴环境条件。proper表示双调和且非极小。主方向步骤和ODE化适用于一般四维space form，S⁴分类的最终一步另用已知CMC定理。已读第1—6、9—15页并渲染第2、12页核对归一化及主定理；作者称数千项resultant由精确符号运算得到，本轮未独立重算全部长多项式或认证消元恒等式。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露Claude Opus5.5用于检查计算、建议表述改进及编辑稿件；数学陈述与证明由作者推导并核验。只按披露角色记录，未将大型消元构造的核心思想归给模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08066v1 · PDF 第4页，Use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:44:13.930167+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08066v1",
+            "contentHash": "c40b767cfa338405c43a3ede18ff10c53ffe3b77015091202b9c98da313dac5d",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露Claude Opus5.5用于检查计算、建议表述改进及编辑稿件；数学陈述与证明由作者推导并核验。只按披露角色记录，未将大型消元构造的核心思想归给模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f4d177d58a16cdd5b2c69a39c188e08ef9148824f2ad8c3addd8dee76e8acccd"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "几何PDE分类与曲率方程直接相关，优先核对消元与局部假设。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that a proper biharmonic surface with flat normal bundle in the four-dimensional unit sphere $\\mathbb S^4$ lies minimally in a small hypersphere of radius $1/\\sqrt{2}$. Since the surfaces with constant mean curvature and those with parallel normalized mean curvature vector field are already understood, the core of the paper is the non-existence of biharmonic surfaces with flat normal bundle in $\\mathbb S^4$ whose mean curvature is not constant and whose normalized mean curvature vector field is not parallel. We first show, adapting an argument of Fu, Hong and Yang, that the gradient of the mean curvature is a principal direction. Then the problem reduces to a first order system of ordinary differential equations with a constraint, and we show that this system has no admissible solutions by an elimination argument.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

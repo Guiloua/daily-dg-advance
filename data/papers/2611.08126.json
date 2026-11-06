@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08126",
+  "slug": "2611.08126",
+  "latest": {
+    "arxivId": "2611.08126",
+    "metadata": {
+      "title": "The first gap for minimal submanifolds in spheres",
+      "authors": [
+        "Jianquan Ge",
+        "Kai Jia",
+        "Fagui Li"
+      ],
+      "abstract": "Let $f:M^n\\to\\Sn^{n+q}(1)$ be a minimal immersion of a closed connected manifold with $n\\ge3$ and $q\\ge2$, and let $S$ be the squared length of its second fundamental form. We prove an integral inequality that gives $\\max_M S\\ge n$ if the immersion is not totally geodesic. If $n\\ne4$ or $q=2$, equality $\\max_M S=n$ holds if and only if the immersion is a Clifford minimal hypersurface; if $n=4$ and $q\\ge3$, equality holds if and only if the immersion is a Clifford minimal hypersurface or the standard minimal embedding of $\\mathbb{CP}^2$ in $\\Sn^7(1)$. Both classifications are understood up to an ambient isometry, a totally geodesic inclusion, and a finite covering. We construct the integral inequalities using polynomial weights and divergence identities. The required algebraic estimates are proved by sums of squared tensor norms.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "34 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T14:56:47Z",
+      "updatedAt": "2026-11-05T14:56:47Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08126v1",
+        "observedAt": "2026-11-06T05:42:09.995927+00:00",
+        "contentHash": "723673b99e48a3f5fec54c328f25ead68bd9d02cc199e4bd868cfa89b848593c"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:09.015653+00:00",
+        "contentHash": "4ae3c786d7ae6e166d83c7a895b1d25cbd6306909871f1ae843189b96e7c62a7"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "间隙与等号分类",
+      "workSummary": "对闭连通 n≥3 维球面极小浸入，研究第二基本形式模平方 S 的第一个间隙和边界分类。",
+      "techniques": [
+        "带多项式权的积分不等式",
+        "散度恒等式",
+        "张量范数平方和代数估计"
+      ],
+      "breakthrough": "构造正权 W 与散度修正，使 (S−n)W 的积分由张量范数平方和控制。n≥4及(n,q)=(3,2)用四次权，n=3且q≥3用六次权S³。等号先迫使第二基本形式平行，再分类为 Clifford 或四维 CP² 模型。",
+      "limitations": "条件为闭连通极小浸入、n≥3、q≥2，CP² 例的全纯截面曲率规范为4/3。三维高余维证书在附录C和电子补充材料中，补读主结果与设计，未重算精确有理 SOS 证书或独立核验全证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者自己确定平方和方法、正交群对称降维、张量空间及搜索设计和等号分类。AI 协助表示分解中的张量投影与收缩计算、发展核查代码及英文写作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08126v1 · PDF 第31页 AI Assistance Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:42:09.995927+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08126v1",
+        "contentHash": "723673b99e48a3f5fec54c328f25ead68bd9d02cc199e4bd868cfa89b848593c",
+        "pages": 33,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者自己确定平方和方法、正交群对称降维、张量空间及搜索设计和等号分类。AI 协助表示分解中的张量投影与收缩计算、发展核查代码及英文写作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "33fd38ed91b6fe1c6bcf132dd68ab6c1830ba6bb0f17765f05011ac00e6e9ee1"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "高余维球面极小子流形的尖锐曲率间隙及等号结构。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $f:M^n\\to\\Sn^{n+q}(1)$ be a minimal immersion of a closed connected manifold with $n\\ge3$ and $q\\ge2$, and let $S$ be the squared length of its second fundamental form. We prove an integral inequality that gives $\\max_M S\\ge n$ if the immersion is not totally geodesic. If $n\\ne4$ or $q=2$, equality $\\max_M S=n$ holds if and only if the immersion is a Clifford minimal hypersurface; if $n=4$ and $q\\ge3$, equality holds if and only if the immersion is a Clifford minimal hypersurface or the standard minimal embedding of $\\mathbb{CP}^2$ in $\\Sn^7(1)$. Both classifications are understood up to an ambient isometry, a totally geodesic inclusion, and a finite covering. We construct the integral inequalities using polynomial weights and divergence identities. The required algebraic estimates are proved by sums of squared tensor norms.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08126",
+        "metadata": {
+          "title": "The first gap for minimal submanifolds in spheres",
+          "authors": [
+            "Jianquan Ge",
+            "Kai Jia",
+            "Fagui Li"
+          ],
+          "abstract": "Let $f:M^n\\to\\Sn^{n+q}(1)$ be a minimal immersion of a closed connected manifold with $n\\ge3$ and $q\\ge2$, and let $S$ be the squared length of its second fundamental form. We prove an integral inequality that gives $\\max_M S\\ge n$ if the immersion is not totally geodesic. If $n\\ne4$ or $q=2$, equality $\\max_M S=n$ holds if and only if the immersion is a Clifford minimal hypersurface; if $n=4$ and $q\\ge3$, equality holds if and only if the immersion is a Clifford minimal hypersurface or the standard minimal embedding of $\\mathbb{CP}^2$ in $\\Sn^7(1)$. Both classifications are understood up to an ambient isometry, a totally geodesic inclusion, and a finite covering. We construct the integral inequalities using polynomial weights and divergence identities. The required algebraic estimates are proved by sums of squared tensor norms.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "34 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T14:56:47Z",
+          "updatedAt": "2026-11-05T14:56:47Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.08126v1",
+            "observedAt": "2026-11-06T05:42:09.995927+00:00",
+            "contentHash": "723673b99e48a3f5fec54c328f25ead68bd9d02cc199e4bd868cfa89b848593c"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:09.015653+00:00",
+            "contentHash": "4ae3c786d7ae6e166d83c7a895b1d25cbd6306909871f1ae843189b96e7c62a7"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "间隙与等号分类",
+          "workSummary": "对闭连通 n≥3 维球面极小浸入，研究第二基本形式模平方 S 的第一个间隙和边界分类。",
+          "techniques": [
+            "带多项式权的积分不等式",
+            "散度恒等式",
+            "张量范数平方和代数估计"
+          ],
+          "breakthrough": "构造正权 W 与散度修正，使 (S−n)W 的积分由张量范数平方和控制。n≥4及(n,q)=(3,2)用四次权，n=3且q≥3用六次权S³。等号先迫使第二基本形式平行，再分类为 Clifford 或四维 CP² 模型。",
+          "limitations": "条件为闭连通极小浸入、n≥3、q≥2，CP² 例的全纯截面曲率规范为4/3。三维高余维证书在附录C和电子补充材料中，补读主结果与设计，未重算精确有理 SOS 证书或独立核验全证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者自己确定平方和方法、正交群对称降维、张量空间及搜索设计和等号分类。AI 协助表示分解中的张量投影与收缩计算、发展核查代码及英文写作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08126v1 · PDF 第31页 AI Assistance Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:42:09.995927+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08126v1",
+            "contentHash": "723673b99e48a3f5fec54c328f25ead68bd9d02cc199e4bd868cfa89b848593c",
+            "pages": 33,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者自己确定平方和方法、正交群对称降维、张量空间及搜索设计和等号分类。AI 协助表示分解中的张量投影与收缩计算、发展核查代码及英文写作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "33fd38ed91b6fe1c6bcf132dd68ab6c1830ba6bb0f17765f05011ac00e6e9ee1"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "高余维球面极小子流形的尖锐曲率间隙及等号结构。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $f:M^n\\to\\Sn^{n+q}(1)$ be a minimal immersion of a closed connected manifold with $n\\ge3$ and $q\\ge2$, and let $S$ be the squared length of its second fundamental form. We prove an integral inequality that gives $\\max_M S\\ge n$ if the immersion is not totally geodesic. If $n\\ne4$ or $q=2$, equality $\\max_M S=n$ holds if and only if the immersion is a Clifford minimal hypersurface; if $n=4$ and $q\\ge3$, equality holds if and only if the immersion is a Clifford minimal hypersurface or the standard minimal embedding of $\\mathbb{CP}^2$ in $\\Sn^7(1)$. Both classifications are understood up to an ambient isometry, a totally geodesic inclusion, and a finite covering. We construct the integral inequalities using polynomial weights and divergence identities. The required algebraic estimates are proved by sums of squared tensor norms.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

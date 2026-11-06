@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08415",
+  "slug": "2611.08415",
+  "latest": {
+    "arxivId": "2611.08415",
+    "metadata": {
+      "title": "Shades and Convexity of Hypersurfaces",
+      "authors": [
+        "Mohammad Ghomi"
+      ],
+      "abstract": "Let $f\\colon M^n\\to\\mathbf{R}^{n+1}$, $n\\geq2$, be a smooth immersion of a closed oriented manifold, with Gauss map $\\nu\\colon M\\to\\mathbf{S}^n$. For each unit vector $u$, the shade $S_u\\subset M$ is the set of points where $\\nu$ makes an acute angle with $u$. We show that $f$ is a convex embedding if and only if every shade is contractible. More generally, if every shade is $k$-connected, then $f$ is a convex embedding provided that $n\\leq 2k+1$, or $n=2k+2$ and $H_{k+1}(M;\\mathbf{Z})=0$. On the other hand, for every $n\\geq 2k+3$ there is a nonconvex embedding $f\\colon\\mathbf{S}^n\\to\\mathbf{R}^{n+1}$ all of whose shades are $k$-connected. These results give sharp answers to a question of H. Wente in all dimensions.",
+      "categories": [
+        "math.DG",
+        "math.AT"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "7 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T18:18:14Z",
+      "updatedAt": "2026-11-05T18:18:14Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:20.350377+00:00",
+        "contentHash": "a3dd028da725c75ea3c66ad72b6e545c190100ca5c38f25e434d04d73da14d62"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "由Gauss映射shade拓扑刻画超曲面凸性",
+      "workSummary": "对n≥2的闭定向流形在R^(n+1)中的光滑浸入，shade为法向与给定u成锐角的点集。作者证明每个shade可缩当且仅当为凸嵌入。更一般，全部shade k连通时，n≤2k+1或n=2k+2且H_(k+1)(M;Z)=0可推出凸性。n≥2k+3则有非凸嵌入球面仍满足该连通性。",
+      "techniques": [
+        "Gauss映射半球原像",
+        "shade连通性",
+        "凸嵌入判据",
+        "高维非凸反例"
+      ],
+      "breakthrough": "以shade的拓扑信息给凸性的维数门槛，并在高维构造锐利反例。",
+      "limitations": "k连通条件的边界维数另需整同调消失，不能删去该附加条件；可缩判据要求所有方向的shade。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第7页致谢明确称Claude（Anthropic）及ChatGPT（OpenAI）用于准备、编辑稿件，作者核验全部AI辅助内容并承担最终责任。可支持稿件写作/编辑用途；未明确将某项核心思想、证明生成或核验任务归给模型，不能仅因作者核验而标记AI验证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08415v1 · PDF 第7页 Acknowledgement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:51:34.450169+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08415v1",
+        "contentHash": "cc338edf798a826cbad359ec1f6816ea837f903b35481322d89cfe9f42eedf56",
+        "pages": 7,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第7页致谢明确称Claude（Anthropic）及ChatGPT（OpenAI）用于准备、编辑稿件，作者核验全部AI辅助内容并承担最终责任。可支持稿件写作/编辑用途；未明确将某项核心思想、证明生成或核验任务归给模型，不能仅因作者核验而标记AI验证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6f1bb9115d2bb7f6ee963d86ecf78ae6f6cdabdc18e866c982eff2d9c9341348"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "凸几何、微分拓扑与Gauss映射直接结合。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $f\\colon M^n\\to\\mathbf{R}^{n+1}$, $n\\geq2$, be a smooth immersion of a closed oriented manifold, with Gauss map $\\nu\\colon M\\to\\mathbf{S}^n$. For each unit vector $u$, the shade $S_u\\subset M$ is the set of points where $\\nu$ makes an acute angle with $u$. We show that $f$ is a convex embedding if and only if every shade is contractible. More generally, if every shade is $k$-connected, then $f$ is a convex embedding provided that $n\\leq 2k+1$, or $n=2k+2$ and $H_{k+1}(M;\\mathbf{Z})=0$. On the other hand, for every $n\\geq 2k+3$ there is a nonconvex embedding $f\\colon\\mathbf{S}^n\\to\\mathbf{R}^{n+1}$ all of whose shades are $k$-connected. These results give sharp answers to a question of H. Wente in all dimensions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08415",
+        "metadata": {
+          "title": "Shades and Convexity of Hypersurfaces",
+          "authors": [
+            "Mohammad Ghomi"
+          ],
+          "abstract": "Let $f\\colon M^n\\to\\mathbf{R}^{n+1}$, $n\\geq2$, be a smooth immersion of a closed oriented manifold, with Gauss map $\\nu\\colon M\\to\\mathbf{S}^n$. For each unit vector $u$, the shade $S_u\\subset M$ is the set of points where $\\nu$ makes an acute angle with $u$. We show that $f$ is a convex embedding if and only if every shade is contractible. More generally, if every shade is $k$-connected, then $f$ is a convex embedding provided that $n\\leq 2k+1$, or $n=2k+2$ and $H_{k+1}(M;\\mathbf{Z})=0$. On the other hand, for every $n\\geq 2k+3$ there is a nonconvex embedding $f\\colon\\mathbf{S}^n\\to\\mathbf{R}^{n+1}$ all of whose shades are $k$-connected. These results give sharp answers to a question of H. Wente in all dimensions.",
+          "categories": [
+            "math.DG",
+            "math.AT"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "7 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T18:18:14Z",
+          "updatedAt": "2026-11-05T18:18:14Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:20.350377+00:00",
+            "contentHash": "a3dd028da725c75ea3c66ad72b6e545c190100ca5c38f25e434d04d73da14d62"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "由Gauss映射shade拓扑刻画超曲面凸性",
+          "workSummary": "对n≥2的闭定向流形在R^(n+1)中的光滑浸入，shade为法向与给定u成锐角的点集。作者证明每个shade可缩当且仅当为凸嵌入。更一般，全部shade k连通时，n≤2k+1或n=2k+2且H_(k+1)(M;Z)=0可推出凸性。n≥2k+3则有非凸嵌入球面仍满足该连通性。",
+          "techniques": [
+            "Gauss映射半球原像",
+            "shade连通性",
+            "凸嵌入判据",
+            "高维非凸反例"
+          ],
+          "breakthrough": "以shade的拓扑信息给凸性的维数门槛，并在高维构造锐利反例。",
+          "limitations": "k连通条件的边界维数另需整同调消失，不能删去该附加条件；可缩判据要求所有方向的shade。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第7页致谢明确称Claude（Anthropic）及ChatGPT（OpenAI）用于准备、编辑稿件，作者核验全部AI辅助内容并承担最终责任。可支持稿件写作/编辑用途；未明确将某项核心思想、证明生成或核验任务归给模型，不能仅因作者核验而标记AI验证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08415v1 · PDF 第7页 Acknowledgement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:51:34.450169+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08415v1",
+            "contentHash": "cc338edf798a826cbad359ec1f6816ea837f903b35481322d89cfe9f42eedf56",
+            "pages": 7,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第7页致谢明确称Claude（Anthropic）及ChatGPT（OpenAI）用于准备、编辑稿件，作者核验全部AI辅助内容并承担最终责任。可支持稿件写作/编辑用途；未明确将某项核心思想、证明生成或核验任务归给模型，不能仅因作者核验而标记AI验证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6f1bb9115d2bb7f6ee963d86ecf78ae6f6cdabdc18e866c982eff2d9c9341348"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "凸几何、微分拓扑与Gauss映射直接结合。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $f\\colon M^n\\to\\mathbf{R}^{n+1}$, $n\\geq2$, be a smooth immersion of a closed oriented manifold, with Gauss map $\\nu\\colon M\\to\\mathbf{S}^n$. For each unit vector $u$, the shade $S_u\\subset M$ is the set of points where $\\nu$ makes an acute angle with $u$. We show that $f$ is a convex embedding if and only if every shade is contractible. More generally, if every shade is $k$-connected, then $f$ is a convex embedding provided that $n\\leq 2k+1$, or $n=2k+2$ and $H_{k+1}(M;\\mathbf{Z})=0$. On the other hand, for every $n\\geq 2k+3$ there is a nonconvex embedding $f\\colon\\mathbf{S}^n\\to\\mathbf{R}^{n+1}$ all of whose shades are $k$-connected. These results give sharp answers to a question of H. Wente in all dimensions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

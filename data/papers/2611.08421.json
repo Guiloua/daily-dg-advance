@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08421",
+  "slug": "2611.08421",
+  "latest": {
+    "arxivId": "2611.08421",
+    "metadata": {
+      "title": "Data-driven discovery of intrinsic Lie point symmetries of differential equation systems",
+      "authors": [
+        "Ilker Gurcan",
+        "Kadir Ustun",
+        "Ramazan Gokberk Cinbis"
+      ],
+      "abstract": "Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.",
+      "categories": [
+        "cs.LG",
+        "math.DG",
+        "math.DS",
+        "math.GR",
+        "math.NA"
+      ],
+      "primaryCategory": "cs.LG",
+      "comment": "63 pages, 10 figures. Code and data availability statements are included in the manuscript",
+      "version": 1,
+      "submittedAt": "2026-11-05T18:19:28Z",
+      "updatedAt": "2026-11-05T18:19:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-06T05:40:23.175151+00:00",
+        "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:20.351130+00:00",
+        "contentHash": "fa5a1271e73cdf69eed273457de40a3c4c89e8fee6c7b40773fd55972b9e2e07"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "从数据发现Lie点对称生成元",
+      "workSummary": "把微分方程的内蕴Lie点对称发现表为采样jet数据上的算子问题，以prolongation、逐步子空间限制和系数线性化的固定非线性字典筛选生成元，并用秩稳定预检诊断字典细化下不稳定的表示代数。控制基准上恢复已知11维表示对称代数及数值Lie括号，并测试域外逼近。",
+      "techniques": [
+        "采样determining算子",
+        "jet prolongation",
+        "字典线性系数训练",
+        "秩稳定与Lie括号核验"
+      ],
+      "breakthrough": "演示无需闭式方程即可由精确或近似系统数据恢复表示的连续对称结构。",
+      "limitations": "结论以控制基准的数值恢复为主，恢复的完整性限所表示字典中的11维代数；未给一般数据或噪声情形的完备识别定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:53:07.839177+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08421v1",
+        "contentHash": "ee3a5a408d9dbe560f3bbac961b2414d2d441ef8007fa30964b34f6dc6bd8fa4",
+        "pages": 63,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。标准命中第1、42页是ROMER Robotics and AI Center作者机构名，第38页是对流式生成建模等未来研究用途的讨论，均不构成作者使用生成式助手的披露。全文补检与第39页致谢、数据和代码声明核查未见此类声明；研究数据驱动对称发现及神经网络本身不等于披露生成式AI辅助研究。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ca707f542bbf09b3796917b1985fe89d8966336d8b5c7508390f8a47ce9b57f5"
+      },
+      "priorityScore": 55,
+      "priorityReason": "计算几何与科学机器学习交叉，优先级低于本轮严格几何定理。"
+    },
+    "analysisBasis": {
+      "abstract": "Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08421",
+        "metadata": {
+          "title": "Data-driven discovery of intrinsic Lie point symmetries of differential equation systems",
+          "authors": [
+            "Ilker Gurcan",
+            "Kadir Ustun",
+            "Ramazan Gokberk Cinbis"
+          ],
+          "abstract": "Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.",
+          "categories": [
+            "cs.LG",
+            "math.DG",
+            "math.DS",
+            "math.GR",
+            "math.NA"
+          ],
+          "primaryCategory": "cs.LG",
+          "comment": "63 pages, 10 figures. Code and data availability statements are included in the manuscript",
+          "version": 1,
+          "submittedAt": "2026-11-05T18:19:28Z",
+          "updatedAt": "2026-11-05T18:19:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-06T05:40:23.175151+00:00",
+            "contentHash": "14710b7c6bb98190a048d3e586b4174aa2b4d9c9a693f23310f4ec857f9dfd9e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:20.351130+00:00",
+            "contentHash": "fa5a1271e73cdf69eed273457de40a3c4c89e8fee6c7b40773fd55972b9e2e07"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "从数据发现Lie点对称生成元",
+          "workSummary": "把微分方程的内蕴Lie点对称发现表为采样jet数据上的算子问题，以prolongation、逐步子空间限制和系数线性化的固定非线性字典筛选生成元，并用秩稳定预检诊断字典细化下不稳定的表示代数。控制基准上恢复已知11维表示对称代数及数值Lie括号，并测试域外逼近。",
+          "techniques": [
+            "采样determining算子",
+            "jet prolongation",
+            "字典线性系数训练",
+            "秩稳定与Lie括号核验"
+          ],
+          "breakthrough": "演示无需闭式方程即可由精确或近似系统数据恢复表示的连续对称结构。",
+          "limitations": "结论以控制基准的数值恢复为主，恢复的完整性限所表示字典中的11维代数；未给一般数据或噪声情形的完备识别定理。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:53:07.839177+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08421v1",
+            "contentHash": "ee3a5a408d9dbe560f3bbac961b2414d2d441ef8007fa30964b34f6dc6bd8fa4",
+            "pages": 63,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。标准命中第1、42页是ROMER Robotics and AI Center作者机构名，第38页是对流式生成建模等未来研究用途的讨论，均不构成作者使用生成式助手的披露。全文补检与第39页致谢、数据和代码声明核查未见此类声明；研究数据驱动对称发现及神经网络本身不等于披露生成式AI辅助研究。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ca707f542bbf09b3796917b1985fe89d8966336d8b5c7508390f8a47ce9b57f5"
+          },
+          "priorityScore": 55,
+          "priorityReason": "计算几何与科学机器学习交叉，优先级低于本轮严格几何定理。"
+        },
+        "analysisBasis": {
+          "abstract": "Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

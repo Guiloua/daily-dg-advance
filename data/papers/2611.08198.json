@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08198",
+  "slug": "2611.08198",
+  "latest": {
+    "arxivId": "2611.08198",
+    "metadata": {
+      "title": "A diameter-one set in $\\mathbb{R}^5$ that cannot be covered by six diameter-one balls",
+      "authors": [
+        "A. Arman",
+        "A. Bondarenko",
+        "A. Prymak",
+        "D. Radchenko"
+      ],
+      "abstract": "We construct a compact set of diameter $1$ in $\\mathbb{R}^5$ which cannot be covered by six Euclidean balls of diameter $1$. Its convex hull is a full-dimensional convex body satisfying the same property. Moreover, a finite subset of diameter $1$ cannot be covered by six closed balls even when their radius is increased to $0.50001$. The compact set is the quadratic image of the unit sphere in the space of symmetric $3\\times3$ matrices of trace zero. A hypothetical cover leads to twelve spherical ellipses covering ${\\mathbb S}^2$ and arranged in six antipodal pairs. Using Euler's formula, we replace them by twelve pentagonal regions contained in the ellipses. An area estimate then gives a contradiction.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "14 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T15:52:42Z",
+      "updatedAt": "2026-11-05T15:52:42Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-06T05:40:34.849006+00:00",
+        "contentHash": "beb1aa589cd5ecb20be5657d66d032353c36325958dfe044118bffcd33948821"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:55:09.016449+00:00",
+        "contentHash": "2cbaa6f187945287eeae04e9f886df748cac706843d3c1150bdf61006d97c708"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "反例构造",
+      "workSummary": "在带Frobenius度量的五维无迹实对称3×3矩阵空间中，作者取 p(u)=(uuᵀ−I/3)/√2（u∈S²），得到直径恰为1的紧Veronese曲面V。定理1证明V及其满维凸包均不能由六个闭半径1/2球覆盖，因而Grünbaum球覆盖常数g₅≥7；推论2还给出直径1的有限子集，六个闭半径0.50001球仍不能覆盖。证明将球截面的逆像包入六对对跖球面椭圆，通过Euler计数构造十二个五点球面凸包，再用每个面积严格小于π/3推出矛盾。",
+      "techniques": [
+        "秩一投影与Veronese嵌入",
+        "球截面的特征值估计及球心投影坐标",
+        "球面椭圆与五点凸包面积上界",
+        "Euler示性数及对跖覆盖的相交结构",
+        "带严格半径余量的有限网逼近"
+      ],
+      "breakthrough": "将n+1个等直径球覆盖的断言降至五维即不成立，并以显式半径余量导出有限反例。正文另给基于RP²六顶点神经的替代拓扑路线，并证明该例可分成六个直径至多2√2/3的集合，清楚分开球覆盖与Borsuk划分。",
+      "limitations": "本结论针对欧氏球覆盖，不能读成五维Borsuk猜想反例；命题7反而给V的六块严格小直径划分。g₅≥7是下界，并未确定g₅精确值。有限F通过足够细的δ网存在性构造，并非列出最小基数配置。已读PDF第1–13页的定理、面积估计、Euler路线、替代路线与有限网论证，并渲染第2、11、12页核对归一化与R²=1/4+τd−d²/2（τ=1/√6，d=1/40000）；未独立逐行验证全篇或重算所有不等式。替代拓扑路线调用Hatcher神经定理及Govc等六顶点复形分类，初等Euler路线不依赖该分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第13页 AI use disclosure 明确说明本文反例由生成式AI工具发现，足以归因核心反例的发现；作者随后核验证明并修订展示以包含初等与拓扑两条路线。未披露模型，也未逐项归因证明步骤，故不推断AI撰写证明或独立验证。第1页及参考文献中的OpenAI九维Borsuk反例是外部工作，另行排除。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08198v1 · PDF 第13页 AI use disclosure；第1页引言、第14页外部OpenAI文献对照",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:48:02.911731+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08198v1",
+        "contentHash": "a4a51633290c25c4fd79275cfd555a5d3ae529b239966f69d62eae718ea23d2b",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第13页 AI use disclosure 明确说明本文反例由生成式AI工具发现，足以归因核心反例的发现；作者随后核验证明并修订展示以包含初等与拓扑两条路线。未披露模型，也未逐项归因证明步骤，故不推断AI撰写证明或独立验证。第1页及参考文献中的OpenAI九维Borsuk反例是外部工作，另行排除。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2dec5ac966c8d9c29179e2fed4a53410408cf3091e2c01da41f203150ed9a721"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "凸几何覆盖的显式反例，优先核验面积论证和有限化。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct a compact set of diameter $1$ in $\\mathbb{R}^5$ which cannot be covered by six Euclidean balls of diameter $1$. Its convex hull is a full-dimensional convex body satisfying the same property. Moreover, a finite subset of diameter $1$ cannot be covered by six closed balls even when their radius is increased to $0.50001$. The compact set is the quadratic image of the unit sphere in the space of symmetric $3\\times3$ matrices of trace zero. A hypothetical cover leads to twelve spherical ellipses covering ${\\mathbb S}^2$ and arranged in six antipodal pairs. Using Euler's formula, we replace them by twelve pentagonal regions contained in the ellipses. An area estimate then gives a contradiction.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.08198",
+        "metadata": {
+          "title": "A diameter-one set in $\\mathbb{R}^5$ that cannot be covered by six diameter-one balls",
+          "authors": [
+            "A. Arman",
+            "A. Bondarenko",
+            "A. Prymak",
+            "D. Radchenko"
+          ],
+          "abstract": "We construct a compact set of diameter $1$ in $\\mathbb{R}^5$ which cannot be covered by six Euclidean balls of diameter $1$. Its convex hull is a full-dimensional convex body satisfying the same property. Moreover, a finite subset of diameter $1$ cannot be covered by six closed balls even when their radius is increased to $0.50001$. The compact set is the quadratic image of the unit sphere in the space of symmetric $3\\times3$ matrices of trace zero. A hypothetical cover leads to twelve spherical ellipses covering ${\\mathbb S}^2$ and arranged in six antipodal pairs. Using Euler's formula, we replace them by twelve pentagonal regions contained in the ellipses. An area estimate then gives a contradiction.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "14 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T15:52:42Z",
+          "updatedAt": "2026-11-05T15:52:42Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-06T05:40:34.849006+00:00",
+            "contentHash": "beb1aa589cd5ecb20be5657d66d032353c36325958dfe044118bffcd33948821"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:55:09.016449+00:00",
+            "contentHash": "2cbaa6f187945287eeae04e9f886df748cac706843d3c1150bdf61006d97c708"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "反例构造",
+          "workSummary": "在带Frobenius度量的五维无迹实对称3×3矩阵空间中，作者取 p(u)=(uuᵀ−I/3)/√2（u∈S²），得到直径恰为1的紧Veronese曲面V。定理1证明V及其满维凸包均不能由六个闭半径1/2球覆盖，因而Grünbaum球覆盖常数g₅≥7；推论2还给出直径1的有限子集，六个闭半径0.50001球仍不能覆盖。证明将球截面的逆像包入六对对跖球面椭圆，通过Euler计数构造十二个五点球面凸包，再用每个面积严格小于π/3推出矛盾。",
+          "techniques": [
+            "秩一投影与Veronese嵌入",
+            "球截面的特征值估计及球心投影坐标",
+            "球面椭圆与五点凸包面积上界",
+            "Euler示性数及对跖覆盖的相交结构",
+            "带严格半径余量的有限网逼近"
+          ],
+          "breakthrough": "将n+1个等直径球覆盖的断言降至五维即不成立，并以显式半径余量导出有限反例。正文另给基于RP²六顶点神经的替代拓扑路线，并证明该例可分成六个直径至多2√2/3的集合，清楚分开球覆盖与Borsuk划分。",
+          "limitations": "本结论针对欧氏球覆盖，不能读成五维Borsuk猜想反例；命题7反而给V的六块严格小直径划分。g₅≥7是下界，并未确定g₅精确值。有限F通过足够细的δ网存在性构造，并非列出最小基数配置。已读PDF第1–13页的定理、面积估计、Euler路线、替代路线与有限网论证，并渲染第2、11、12页核对归一化与R²=1/4+τd−d²/2（τ=1/√6，d=1/40000）；未独立逐行验证全篇或重算所有不等式。替代拓扑路线调用Hatcher神经定理及Govc等六顶点复形分类，初等Euler路线不依赖该分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第13页 AI use disclosure 明确说明本文反例由生成式AI工具发现，足以归因核心反例的发现；作者随后核验证明并修订展示以包含初等与拓扑两条路线。未披露模型，也未逐项归因证明步骤，故不推断AI撰写证明或独立验证。第1页及参考文献中的OpenAI九维Borsuk反例是外部工作，另行排除。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08198v1 · PDF 第13页 AI use disclosure；第1页引言、第14页外部OpenAI文献对照",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:48:02.911731+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08198v1",
+            "contentHash": "a4a51633290c25c4fd79275cfd555a5d3ae529b239966f69d62eae718ea23d2b",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第13页 AI use disclosure 明确说明本文反例由生成式AI工具发现，足以归因核心反例的发现；作者随后核验证明并修订展示以包含初等与拓扑两条路线。未披露模型，也未逐项归因证明步骤，故不推断AI撰写证明或独立验证。第1页及参考文献中的OpenAI九维Borsuk反例是外部工作，另行排除。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2dec5ac966c8d9c29179e2fed4a53410408cf3091e2c01da41f203150ed9a721"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "凸几何覆盖的显式反例，优先核验面积论证和有限化。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct a compact set of diameter $1$ in $\\mathbb{R}^5$ which cannot be covered by six Euclidean balls of diameter $1$. Its convex hull is a full-dimensional convex body satisfying the same property. Moreover, a finite subset of diameter $1$ cannot be covered by six closed balls even when their radius is increased to $0.50001$. The compact set is the quadratic image of the unit sphere in the space of symmetric $3\\times3$ matrices of trace zero. A hypothetical cover leads to twelve spherical ellipses covering ${\\mathbb S}^2$ and arranged in six antipodal pairs. Using Euler's formula, we replace them by twelve pentagonal regions contained in the ellipses. An area estimate then gives a contradiction.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

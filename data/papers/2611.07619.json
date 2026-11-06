@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.07619",
+  "slug": "2611.07619",
+  "latest": {
+    "arxivId": "2611.07619",
+    "metadata": {
+      "title": "The dimension-free threshold for maximal sections of $\\ell_p$",
+      "authors": [
+        "Silouanos Brazitikos",
+        "Alexandros Eskenazis"
+      ],
+      "abstract": "We prove the existence of a sharp threshold $p_0 \\approx 26.265\\ldots$, such that for every $n\\in\\mathbb{N}$ and $p\\geq p_0$, the volume maximizing section of the unit ball of $\\ell_p^n$ is the section with Ball's hyperplane $(\\frac{e_1+e_2}{\\sqrt{2}})^\\perp$, whereas for $p\\in(2,p_0)$ the asymptotic maximizer as the ambient dimension $n\\to\\infty$ is the hyperplane orthogonal to the diagonal vector $\\frac{e_1+\\cdots+e_n}{\\sqrt{n}}$.",
+      "categories": [
+        "math.MG",
+        "math.FA"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-11-05T08:03:34Z",
+      "updatedAt": "2026-11-05T08:03:34Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-06T05:40:34.849006+00:00",
+        "contentHash": "beb1aa589cd5ecb20be5657d66d032353c36325958dfe044118bffcd33948821"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-06T05:54:57.679407+00:00",
+        "contentHash": "018a04c535bd7a8ea809ddb2a0e36a2db24b199f13c9e00c5a2847f411d3118e"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "尖锐阈值与渐近最优",
+      "workSummary": "作者确定ℓp球中心超平面截面体积的维数无关尖锐界。归一化A(n,p,a)=vol(B_p^n∩a⊥)/vol(B_p^(n−1))对p>2不超过max{2^(1/2−1/p),sqrt(6Γ(1+1/p)^3/(πΓ(1+3/p)))}。在指定阈值p₀≈26.265以上由Ball法向量(e₁+e₂)/√2实现第一项；2<p<p₀时第二项是所有维数的统一上界，由高维对角截面渐近达到。阈值满足2^(2/p)Γ(1/p)^3=πp²Γ(3/p)。",
+      "techniques": [
+        "截面体积的卷积密度、Fourier与负矩表示",
+        "Ball–Haagerup积分函数的多项式包络及带亏损项上界",
+        "Brascamp–Lieb与最优Hausdorff–Young不等式",
+        "系数向量对称化、Gaussian替换及近极值归纳"
+      ],
+      "breakthrough": "对Ball–Haagerup函数证明全p≥2、u≥2的端点控制，去掉早先p范围与远离偶整数等限制。再针对法向量最大分量大于1/√2的情形，按p范围及余下系数集中程度组合概率表示、对称化、定量Gaussian近似和归纳，从先前极大的充分p下界推进到尖锐阈值。",
+      "limitations": "审读 PDF 第1–7、10、12、20–23、32页，渲染第2、6页。2<p<p₀的界经截面体积归一化后在维数趋于无穷时由对角截面达到，未给固定维数所有最大截面或完整等号分类。第2页称方程(4)在(1,∞)有唯一根，但代入p=2同样满足，故本解读只采用作者指定的大根p₀≈26.265。证明依赖既有截面表示、Brascamp–Lieb、最优Hausdorff–Young等结果，本文技术引理及数值表未独立全面复验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露广泛使用生成式AI绘制一元函数来测试猜想、数值计算级数积分和特殊函数，并说明一维不等式(61)、(82)的证明由AI生成，完稿后还用AI校对拼写语法。整体数学推理、表述及文献研究归于作者，未把核心思想归给模型。第31页Astra命中来自a straightforward。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.07619v1 · PDF 第32页 Disclosure on AI use；(61)见第10页，(82)见第12页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-06T05:45:08.612593+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.07619v1",
+        "contentHash": "ca30ca488540357fd3c04fdcbb53875de7f9f368881d0a957ec3dfc79ed796ba",
+        "pages": 34,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露广泛使用生成式AI绘制一元函数来测试猜想、数值计算级数积分和特殊函数，并说明一维不等式(61)、(82)的证明由AI生成，完稿后还用AI校对拼写语法。整体数学推理、表述及文献研究归于作者，未把核心思想归给模型。第31页Astra命中来自a straightforward。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "637391806129952e8ed68fa5735c855c6579ddf4397dd1081065f7a767ade279"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "尖锐截面不等式及维数无关极值，与比较几何和凸几何主线高度相关。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove the existence of a sharp threshold $p_0 \\approx 26.265\\ldots$, such that for every $n\\in\\mathbb{N}$ and $p\\geq p_0$, the volume maximizing section of the unit ball of $\\ell_p^n$ is the section with Ball's hyperplane $(\\frac{e_1+e_2}{\\sqrt{2}})^\\perp$, whereas for $p\\in(2,p_0)$ the asymptotic maximizer as the ambient dimension $n\\to\\infty$ is the hyperplane orthogonal to the diagonal vector $\\frac{e_1+\\cdots+e_n}{\\sqrt{n}}$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-06",
+      "entry": {
+        "arxivId": "2611.07619",
+        "metadata": {
+          "title": "The dimension-free threshold for maximal sections of $\\ell_p$",
+          "authors": [
+            "Silouanos Brazitikos",
+            "Alexandros Eskenazis"
+          ],
+          "abstract": "We prove the existence of a sharp threshold $p_0 \\approx 26.265\\ldots$, such that for every $n\\in\\mathbb{N}$ and $p\\geq p_0$, the volume maximizing section of the unit ball of $\\ell_p^n$ is the section with Ball's hyperplane $(\\frac{e_1+e_2}{\\sqrt{2}})^\\perp$, whereas for $p\\in(2,p_0)$ the asymptotic maximizer as the ambient dimension $n\\to\\infty$ is the hyperplane orthogonal to the diagonal vector $\\frac{e_1+\\cdots+e_n}{\\sqrt{n}}$.",
+          "categories": [
+            "math.MG",
+            "math.FA"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-11-05T08:03:34Z",
+          "updatedAt": "2026-11-05T08:03:34Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-06T05:40:34.849006+00:00",
+            "contentHash": "beb1aa589cd5ecb20be5657d66d032353c36325958dfe044118bffcd33948821"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-06T05:54:57.679407+00:00",
+            "contentHash": "018a04c535bd7a8ea809ddb2a0e36a2db24b199f13c9e00c5a2847f411d3118e"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "尖锐阈值与渐近最优",
+          "workSummary": "作者确定ℓp球中心超平面截面体积的维数无关尖锐界。归一化A(n,p,a)=vol(B_p^n∩a⊥)/vol(B_p^(n−1))对p>2不超过max{2^(1/2−1/p),sqrt(6Γ(1+1/p)^3/(πΓ(1+3/p)))}。在指定阈值p₀≈26.265以上由Ball法向量(e₁+e₂)/√2实现第一项；2<p<p₀时第二项是所有维数的统一上界，由高维对角截面渐近达到。阈值满足2^(2/p)Γ(1/p)^3=πp²Γ(3/p)。",
+          "techniques": [
+            "截面体积的卷积密度、Fourier与负矩表示",
+            "Ball–Haagerup积分函数的多项式包络及带亏损项上界",
+            "Brascamp–Lieb与最优Hausdorff–Young不等式",
+            "系数向量对称化、Gaussian替换及近极值归纳"
+          ],
+          "breakthrough": "对Ball–Haagerup函数证明全p≥2、u≥2的端点控制，去掉早先p范围与远离偶整数等限制。再针对法向量最大分量大于1/√2的情形，按p范围及余下系数集中程度组合概率表示、对称化、定量Gaussian近似和归纳，从先前极大的充分p下界推进到尖锐阈值。",
+          "limitations": "审读 PDF 第1–7、10、12、20–23、32页，渲染第2、6页。2<p<p₀的界经截面体积归一化后在维数趋于无穷时由对角截面达到，未给固定维数所有最大截面或完整等号分类。第2页称方程(4)在(1,∞)有唯一根，但代入p=2同样满足，故本解读只采用作者指定的大根p₀≈26.265。证明依赖既有截面表示、Brascamp–Lieb、最优Hausdorff–Young等结果，本文技术引理及数值表未独立全面复验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露广泛使用生成式AI绘制一元函数来测试猜想、数值计算级数积分和特殊函数，并说明一维不等式(61)、(82)的证明由AI生成，完稿后还用AI校对拼写语法。整体数学推理、表述及文献研究归于作者，未把核心思想归给模型。第31页Astra命中来自a straightforward。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.07619v1 · PDF 第32页 Disclosure on AI use；(61)见第10页，(82)见第12页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-06T05:45:08.612593+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.07619v1",
+            "contentHash": "ca30ca488540357fd3c04fdcbb53875de7f9f368881d0a957ec3dfc79ed796ba",
+            "pages": 34,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露广泛使用生成式AI绘制一元函数来测试猜想、数值计算级数积分和特殊函数，并说明一维不等式(61)、(82)的证明由AI生成，完稿后还用AI校对拼写语法。整体数学推理、表述及文献研究归于作者，未把核心思想归给模型。第31页Astra命中来自a straightforward。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "637391806129952e8ed68fa5735c855c6579ddf4397dd1081065f7a767ade279"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "尖锐截面不等式及维数无关极值，与比较几何和凸几何主线高度相关。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove the existence of a sharp threshold $p_0 \\approx 26.265\\ldots$, such that for every $n\\in\\mathbb{N}$ and $p\\geq p_0$, the volume maximizing section of the unit ball of $\\ell_p^n$ is the section with Ball's hyperplane $(\\frac{e_1+e_2}{\\sqrt{2}})^\\perp$, whereas for $p\\in(2,p_0)$ the asymptotic maximizer as the ambient dimension $n\\to\\infty$ is the hyperplane orthogonal to the diagonal vector $\\frac{e_1+\\cdots+e_n}{\\sqrt{n}}$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
