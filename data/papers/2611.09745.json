@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09745",
+  "slug": "2611.09745",
+  "latest": {
+    "arxivId": "2611.09745",
+    "metadata": {
+      "title": "Multiscale Closing Index (MCI) for measuring structural similarity between 2D point sets",
+      "authors": [
+        "Nicolò Zava",
+        "Angel Franco-Alvarez",
+        "Samy Blusseau",
+        "Santiago Velasco-Forero",
+        "Maria-Jose Jimenez"
+      ],
+      "abstract": "We introduce Multi-scale Closing Index (MCI), a new dissimilarity measure for evaluating the alignment of two 2D point sets. MCI is bounded between 0 and 1 and is based on multiscale mathematical morphology operations, with smaller values indicating greater structural agreement. The measure was motivated by the need to assess the quality of registration between point sets representing cell populations in biological images. To evaluate its behaviour under controlled conditions, we generated synthetic point clouds from Perlin-noise-based spatial structures, following established approaches for simulating biologically plausible spatial organization. We assessed MCI between those point clouds and different transformed versions, obtained by local perturbation, point removal, translation, rotation and addition of impulsive noise. Across these experiments, the dissimilarity MCI increased gradually and consistently with perturbation severity, while showing a clear discontinuity between clouds originating from the same underlying spatial structure and point clouds generated from different structures. We further compared MCI with commonly used point-set distances, including Hausdorff-based measures and Sliced Wasserstein distance. These experiments show the ability of MCI to capture structural agreement and quantify deviations between point sets, highlighting its potential as a complementary metric for evaluating two-dimensional point-set registration.",
+      "categories": [
+        "math.MG",
+        "cs.CG",
+        "cs.CV"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-11-06T17:16:58Z",
+      "updatedAt": "2026-11-06T17:16:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-09T06:15:21.626490+00:00",
+        "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:30.354536+00:00",
+        "contentHash": "dd8b43b82165998a84506f2f235c0633a49ef706842db380e60726fbee4beca1"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "二维点集配准的多尺度closing差异指标",
+      "workSummary": "作者提出取值0到1的Multiscale Closing Index，以多尺度数学形态学衡量二维点集的结构差异，数值越小表示配准越好。以Perlin噪声生成的模拟生物空间结构点云测试局部扰动、删点、平移、旋转和脉冲噪声，并与Hausdorff类及Sliced Wasserstein距离比较。",
+      "techniques": [
+        "多尺度数学形态学closing",
+        "合成点云扰动实验",
+        "点集配准评估",
+        "Hausdorff及Sliced Wasserstein比较"
+      ],
+      "breakthrough": "实验中指标随扰动强度稳定增长，并能区分同一底层结构与不同结构产生的点云，提供补充配准评价工具。",
+      "limitations": "主要证据来自合成数据实验，不能据此宣称真实生物影像上的普遍优越性。正文第9页明确在某些半径范围内不同点集可有零指标，故MCI不保证正定性，不应称为满足全部度量公理的距离。当前解读结合摘要及第9页限制/AI声明，未逐步审读方法证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第9页AI disclosure列明生成式AI用于写作可读性、文献检索补全和压缩稿件；Claude Opus 5.5 medium effort另用于实验复现测试、代码调试、README制作/校对和依赖版本兼容。作者明确方法原始思想完全自行形成，且未用AI生成数据或编写主流程/实验代码，故只记writing/literature/verification/computation，不扩大为核心ideas或主要实验由AI生成。PR[AI]RIE资助名称另属非使用证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.09745v1 · PDF 第9页 AI disclosure 及其前致谢",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:27:18.809955+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09745v1",
+        "contentHash": "60b2f39577d34a2aa2a8b34f92706da38c18731c0a65f629d75000a6cfd68fa1",
+        "pages": 10,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第9页AI disclosure列明生成式AI用于写作可读性、文献检索补全和压缩稿件；Claude Opus 5.5 medium effort另用于实验复现测试、代码调试、README制作/校对和依赖版本兼容。作者明确方法原始思想完全自行形成，且未用AI生成数据或编写主流程/实验代码，故只记writing/literature/verification/computation，不扩大为核心ideas或主要实验由AI生成。PR[AI]RIE资助名称另属非使用证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f8b939b229a44fbeb7c0b874924f708fcd2229d46b5e83399e5beee7c986b691"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 45,
+      "priorityReason": "应用点云相似度与计算机视觉为主，本轮几何分析重点较低。",
+      "lowPriorityReason": "应用点云相似度与计算机视觉为主，本轮几何分析重点较低。"
+    },
+    "analysisBasis": {
+      "abstract": "We introduce Multi-scale Closing Index (MCI), a new dissimilarity measure for evaluating the alignment of two 2D point sets. MCI is bounded between 0 and 1 and is based on multiscale mathematical morphology operations, with smaller values indicating greater structural agreement. The measure was motivated by the need to assess the quality of registration between point sets representing cell populations in biological images. To evaluate its behaviour under controlled conditions, we generated synthetic point clouds from Perlin-noise-based spatial structures, following established approaches for simulating biologically plausible spatial organization. We assessed MCI between those point clouds and different transformed versions, obtained by local perturbation, point removal, translation, rotation and addition of impulsive noise. Across these experiments, the dissimilarity MCI increased gradually and consistently with perturbation severity, while showing a clear discontinuity between clouds originating from the same underlying spatial structure and point clouds generated from different structures. We further compared MCI with commonly used point-set distances, including Hausdorff-based measures and Sliced Wasserstein distance. These experiments show the ability of MCI to capture structural agreement and quantify deviations between point sets, highlighting its potential as a complementary metric for evaluating two-dimensional point-set registration.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09745",
+        "metadata": {
+          "title": "Multiscale Closing Index (MCI) for measuring structural similarity between 2D point sets",
+          "authors": [
+            "Nicolò Zava",
+            "Angel Franco-Alvarez",
+            "Samy Blusseau",
+            "Santiago Velasco-Forero",
+            "Maria-Jose Jimenez"
+          ],
+          "abstract": "We introduce Multi-scale Closing Index (MCI), a new dissimilarity measure for evaluating the alignment of two 2D point sets. MCI is bounded between 0 and 1 and is based on multiscale mathematical morphology operations, with smaller values indicating greater structural agreement. The measure was motivated by the need to assess the quality of registration between point sets representing cell populations in biological images. To evaluate its behaviour under controlled conditions, we generated synthetic point clouds from Perlin-noise-based spatial structures, following established approaches for simulating biologically plausible spatial organization. We assessed MCI between those point clouds and different transformed versions, obtained by local perturbation, point removal, translation, rotation and addition of impulsive noise. Across these experiments, the dissimilarity MCI increased gradually and consistently with perturbation severity, while showing a clear discontinuity between clouds originating from the same underlying spatial structure and point clouds generated from different structures. We further compared MCI with commonly used point-set distances, including Hausdorff-based measures and Sliced Wasserstein distance. These experiments show the ability of MCI to capture structural agreement and quantify deviations between point sets, highlighting its potential as a complementary metric for evaluating two-dimensional point-set registration.",
+          "categories": [
+            "math.MG",
+            "cs.CG",
+            "cs.CV"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-11-06T17:16:58Z",
+          "updatedAt": "2026-11-06T17:16:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-09T06:15:21.626490+00:00",
+            "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:30.354536+00:00",
+            "contentHash": "dd8b43b82165998a84506f2f235c0633a49ef706842db380e60726fbee4beca1"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "二维点集配准的多尺度closing差异指标",
+          "workSummary": "作者提出取值0到1的Multiscale Closing Index，以多尺度数学形态学衡量二维点集的结构差异，数值越小表示配准越好。以Perlin噪声生成的模拟生物空间结构点云测试局部扰动、删点、平移、旋转和脉冲噪声，并与Hausdorff类及Sliced Wasserstein距离比较。",
+          "techniques": [
+            "多尺度数学形态学closing",
+            "合成点云扰动实验",
+            "点集配准评估",
+            "Hausdorff及Sliced Wasserstein比较"
+          ],
+          "breakthrough": "实验中指标随扰动强度稳定增长，并能区分同一底层结构与不同结构产生的点云，提供补充配准评价工具。",
+          "limitations": "主要证据来自合成数据实验，不能据此宣称真实生物影像上的普遍优越性。正文第9页明确在某些半径范围内不同点集可有零指标，故MCI不保证正定性，不应称为满足全部度量公理的距离。当前解读结合摘要及第9页限制/AI声明，未逐步审读方法证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第9页AI disclosure列明生成式AI用于写作可读性、文献检索补全和压缩稿件；Claude Opus 5.5 medium effort另用于实验复现测试、代码调试、README制作/校对和依赖版本兼容。作者明确方法原始思想完全自行形成，且未用AI生成数据或编写主流程/实验代码，故只记writing/literature/verification/computation，不扩大为核心ideas或主要实验由AI生成。PR[AI]RIE资助名称另属非使用证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.09745v1 · PDF 第9页 AI disclosure 及其前致谢",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:27:18.809955+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09745v1",
+            "contentHash": "60b2f39577d34a2aa2a8b34f92706da38c18731c0a65f629d75000a6cfd68fa1",
+            "pages": 10,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第9页AI disclosure列明生成式AI用于写作可读性、文献检索补全和压缩稿件；Claude Opus 5.5 medium effort另用于实验复现测试、代码调试、README制作/校对和依赖版本兼容。作者明确方法原始思想完全自行形成，且未用AI生成数据或编写主流程/实验代码，故只记writing/literature/verification/computation，不扩大为核心ideas或主要实验由AI生成。PR[AI]RIE资助名称另属非使用证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f8b939b229a44fbeb7c0b874924f708fcd2229d46b5e83399e5beee7c986b691"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 45,
+          "priorityReason": "应用点云相似度与计算机视觉为主，本轮几何分析重点较低。",
+          "lowPriorityReason": "应用点云相似度与计算机视觉为主，本轮几何分析重点较低。"
+        },
+        "analysisBasis": {
+          "abstract": "We introduce Multi-scale Closing Index (MCI), a new dissimilarity measure for evaluating the alignment of two 2D point sets. MCI is bounded between 0 and 1 and is based on multiscale mathematical morphology operations, with smaller values indicating greater structural agreement. The measure was motivated by the need to assess the quality of registration between point sets representing cell populations in biological images. To evaluate its behaviour under controlled conditions, we generated synthetic point clouds from Perlin-noise-based spatial structures, following established approaches for simulating biologically plausible spatial organization. We assessed MCI between those point clouds and different transformed versions, obtained by local perturbation, point removal, translation, rotation and addition of impulsive noise. Across these experiments, the dissimilarity MCI increased gradually and consistently with perturbation severity, while showing a clear discontinuity between clouds originating from the same underlying spatial structure and point clouds generated from different structures. We further compared MCI with commonly used point-set distances, including Hausdorff-based measures and Sliced Wasserstein distance. These experiments show the ability of MCI to capture structural agreement and quantify deviations between point sets, highlighting its potential as a complementary metric for evaluating two-dimensional point-set registration.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

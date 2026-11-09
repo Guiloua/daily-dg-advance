@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09824",
+  "slug": "2611.09824",
+  "latest": {
+    "arxivId": "2611.09824",
+    "metadata": {
+      "title": "Neutral Ricci spectra of homogeneous Riemannian four-manifolds",
+      "authors": [
+        "Andrzej Derdzinski",
+        "JeongHyeong Park"
+      ],
+      "abstract": "It is shown that every quadruple of real numbers with two positive and two negative entries is the Ricci spectrum of some left-invariant Riemannian metric on a Lie group of dimension four. Consequently, for eight out of the fifteen possible Ricci signatures of four-dimensional homogeneous Riemannian manifolds, one can determine precisely which spectra in each given signature actually occur. We also describe the Ricci spectra realized by left-invariant metrics on a certain class of 2-step solvable Lie groups of all dimensions $n>2$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "12 pages",
+      "version": 1,
+      "submittedAt": "2026-11-06T18:11:18Z",
+      "updatedAt": "2026-11-06T18:11:18Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-09T06:15:09.311921+00:00",
+        "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:30.355244+00:00",
+        "contentHash": "dc3a1bee2ce1a9edf5234091dfd1cd276af85b72f4917b991956425a199a4c8b"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "四维中性Ricci谱的完全实现及almost-abelian谱判据",
+      "workSummary": "命题4.3证明任意含两个严格正值、两个严格负值的无序实四元组（允许重复），都可由某四维Lie群上的左不变正定黎曼度量实现为Ricci谱。作者将正负特征值配对，用复参数和连续性引理构造Lie括号，使Ricci矩阵一个2×2块具有指定配对的迹和行列式，另两特征值也等于指定值。定理A结合既有齐性分类，完整给出八种Ricci符号的允许谱；定理B对任意n≥3、具有余维一阿贝尔理想的Lie代数，给左不变Ricci谱的三个充要代数条件。",
+      "techniques": [
+        "左不变Levi-Civita联络与Ricci块矩阵",
+        "复平方根参数及连续性配谱",
+        "对称/斜对称算子的交换子",
+        "tr S与tr S²的谱不等式",
+        "齐性四流形与三维Ricci谱分类"
+      ],
+      "breakthrough": "中性符号(++−−)下四个非零特征值之间没有额外大小限制，均可实现。对于余维一阿贝尔理想模型，Ricci在补方向为−tr S²，在理想上为[A,S]−(tr S)S；这个线性代数化给所有维数该类群的必要且充分谱条件。",
+      "limitations": "neutral指Ricci谱有两正两负，环境度量始终正定；结论为某个依赖所给谱的Lie群上的存在性，不保证固定Lie群、紧齐性空间或紧商。定理A只处理15种符号中的8种；全正谱必须成两对相等的正值，(++00)必须为{ν,ν,0,0}，其余七种不由本定理完整回答。定理B限具有余维一阿贝尔理想的almost-abelian群，不是所有2-step solvable群，更不是全部齐性n流形；中性实现的命题4.3与该受限判据是不同结果。具体充要条件须允许重新排序：全相等且非正，或λ1<0=Σj≥2λj，或(Σj≥2λj²)/(Σj≥2λj)≤λ1<(Σj≥2λj)/(n−1)<0，最后一类其余λj不全相等。已读PDF第1–12页，渲染第2、7–9页核对主定理、复共轭符号、Ricci矩阵及半开区间端点；未独立逐行复核全部Jacobi恒等式/谱构造与附录证明。外部依赖包括Bérard Bergery四维齐性结构、Kowalski–Nikčević三维谱定理，以及Chen/Kremlev–Nikonorov排除Lie群(++00)的结果。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:28:35.981976+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09824v1",
+        "contentHash": "be984051091ceea6155067696dde43b97bfded1c9e53fc68b69cd072cb87856d",
+        "pages": 12,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共12页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "c5d574e521c9f97b4f161cdb612006bcfbebfe9e7fb7fd751c4690c7dc2f0b8f"
+      },
+      "priorityScore": 93,
+      "priorityReason": "Ricci曲率谱实现直接关系曲率几何，优先核验维数、严格符号及构造范围。"
+    },
+    "analysisBasis": {
+      "abstract": "It is shown that every quadruple of real numbers with two positive and two negative entries is the Ricci spectrum of some left-invariant Riemannian metric on a Lie group of dimension four. Consequently, for eight out of the fifteen possible Ricci signatures of four-dimensional homogeneous Riemannian manifolds, one can determine precisely which spectra in each given signature actually occur. We also describe the Ricci spectra realized by left-invariant metrics on a certain class of 2-step solvable Lie groups of all dimensions $n>2$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09824",
+        "metadata": {
+          "title": "Neutral Ricci spectra of homogeneous Riemannian four-manifolds",
+          "authors": [
+            "Andrzej Derdzinski",
+            "JeongHyeong Park"
+          ],
+          "abstract": "It is shown that every quadruple of real numbers with two positive and two negative entries is the Ricci spectrum of some left-invariant Riemannian metric on a Lie group of dimension four. Consequently, for eight out of the fifteen possible Ricci signatures of four-dimensional homogeneous Riemannian manifolds, one can determine precisely which spectra in each given signature actually occur. We also describe the Ricci spectra realized by left-invariant metrics on a certain class of 2-step solvable Lie groups of all dimensions $n>2$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "12 pages",
+          "version": 1,
+          "submittedAt": "2026-11-06T18:11:18Z",
+          "updatedAt": "2026-11-06T18:11:18Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-09T06:15:09.311921+00:00",
+            "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:30.355244+00:00",
+            "contentHash": "dc3a1bee2ce1a9edf5234091dfd1cd276af85b72f4917b991956425a199a4c8b"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "四维中性Ricci谱的完全实现及almost-abelian谱判据",
+          "workSummary": "命题4.3证明任意含两个严格正值、两个严格负值的无序实四元组（允许重复），都可由某四维Lie群上的左不变正定黎曼度量实现为Ricci谱。作者将正负特征值配对，用复参数和连续性引理构造Lie括号，使Ricci矩阵一个2×2块具有指定配对的迹和行列式，另两特征值也等于指定值。定理A结合既有齐性分类，完整给出八种Ricci符号的允许谱；定理B对任意n≥3、具有余维一阿贝尔理想的Lie代数，给左不变Ricci谱的三个充要代数条件。",
+          "techniques": [
+            "左不变Levi-Civita联络与Ricci块矩阵",
+            "复平方根参数及连续性配谱",
+            "对称/斜对称算子的交换子",
+            "tr S与tr S²的谱不等式",
+            "齐性四流形与三维Ricci谱分类"
+          ],
+          "breakthrough": "中性符号(++−−)下四个非零特征值之间没有额外大小限制，均可实现。对于余维一阿贝尔理想模型，Ricci在补方向为−tr S²，在理想上为[A,S]−(tr S)S；这个线性代数化给所有维数该类群的必要且充分谱条件。",
+          "limitations": "neutral指Ricci谱有两正两负，环境度量始终正定；结论为某个依赖所给谱的Lie群上的存在性，不保证固定Lie群、紧齐性空间或紧商。定理A只处理15种符号中的8种；全正谱必须成两对相等的正值，(++00)必须为{ν,ν,0,0}，其余七种不由本定理完整回答。定理B限具有余维一阿贝尔理想的almost-abelian群，不是所有2-step solvable群，更不是全部齐性n流形；中性实现的命题4.3与该受限判据是不同结果。具体充要条件须允许重新排序：全相等且非正，或λ1<0=Σj≥2λj，或(Σj≥2λj²)/(Σj≥2λj)≤λ1<(Σj≥2λj)/(n−1)<0，最后一类其余λj不全相等。已读PDF第1–12页，渲染第2、7–9页核对主定理、复共轭符号、Ricci矩阵及半开区间端点；未独立逐行复核全部Jacobi恒等式/谱构造与附录证明。外部依赖包括Bérard Bergery四维齐性结构、Kowalski–Nikčević三维谱定理，以及Chen/Kremlev–Nikonorov排除Lie群(++00)的结果。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:28:35.981976+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09824v1",
+            "contentHash": "be984051091ceea6155067696dde43b97bfded1c9e53fc68b69cd072cb87856d",
+            "pages": 12,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共12页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "c5d574e521c9f97b4f161cdb612006bcfbebfe9e7fb7fd751c4690c7dc2f0b8f"
+          },
+          "priorityScore": 93,
+          "priorityReason": "Ricci曲率谱实现直接关系曲率几何，优先核验维数、严格符号及构造范围。"
+        },
+        "analysisBasis": {
+          "abstract": "It is shown that every quadruple of real numbers with two positive and two negative entries is the Ricci spectrum of some left-invariant Riemannian metric on a Lie group of dimension four. Consequently, for eight out of the fifteen possible Ricci signatures of four-dimensional homogeneous Riemannian manifolds, one can determine precisely which spectra in each given signature actually occur. We also describe the Ricci spectra realized by left-invariant metrics on a certain class of 2-step solvable Lie groups of all dimensions $n>2$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

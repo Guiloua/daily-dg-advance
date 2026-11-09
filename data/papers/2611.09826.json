@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09826",
+  "slug": "2611.09826",
+  "latest": {
+    "arxivId": "2611.09826",
+    "metadata": {
+      "title": "Radial reductions of variable exponent Laplacian equations on warped products with compact symmetry",
+      "authors": [
+        "Jose Luis Diaz Palencia",
+        "Daniel J. Pons",
+        "Enrique G. Reyes"
+      ],
+      "abstract": "We study nonlinear elliptic equations of variable exponent type, \\[ -\\Delta_{q(x)}u+|u|^{q(x)-2}u=f(x,u), \\] on non-compact Riemannian manifolds with symmetry. We consider complete warped products \\[ M=\\mathcal R\\times_\\phi Y,\\qquad g_\\phi=dr^2\\oplus\\phi(r)^2g_Y, \\] where $\\mathcal R$ is a non-compact interval, possibly with boundary, and $Y$ is a compact homogeneous manifold. We establish sufficient conditions on the warping function ensuring a Ricci lower bound, a uniform non-collapsing volume condition, and the orbit-growth hypothesis of the abstract existence theorem proved in \\cite{JFA}. We also obtain comparison bounds for the admissible warping functions. We analyze the corresponding radial equations for the admissible exponential and linear models $\\phi(r)=e^{ar}$ and $\\phi(r)=ar$, with $r\\geq r_0>0$. For a constant diffusion exponent $q=k$, we consider explicit decaying profiles $u=\\phi^{-\\sigma}$, which belong to $L_1^k(M)$ provided $\\sigma k>\\dim Y$ in the exponential case and $\\sigma k>\\dim Y+1$ in the linear case. Under additional explicit parameter restrictions, these profiles solve a resonant equation with a positive bounded coefficient, a construction distinct from the superlinear regime of the abstract existence theorem. Finally, we establish logarithmic reductions for constant and variable radial exponents, and justify the passage from radial identities to weak formulations against arbitrary compactly supported interior test functions.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-06T18:14:08Z",
+      "updatedAt": "2026-11-06T18:14:08Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-09T06:15:09.311921+00:00",
+        "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:30.355595+00:00",
+        "contentHash": "d7542f180d27f22f70eda9460783d51bacae4c15ca9b814ade7d7dfae9271c65"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "具紧对称的warped product变指数椭圆方程径向化",
+      "workSummary": "在完备非紧warped product R×φY上研究变指数方程−Δq(x)u+|u|^(q(x)−2)u=f(x,u)，其中Y为紧齐性流形。作者给出φ保证Ricci下界、一致体积非塌缩及轨道增长的充分条件，以适用已有抽象存在定理，并分析φ=e^(ar)、φ=ar（r≥r0>0）的径向方程。常指数q=k下，φ^(−σ)在指数/线性模型分别于σk>dimY及σk>dimY+1时属于L₁ᵏ。",
+      "techniques": [
+        "warped product曲率与轨道体积",
+        "变指数Laplacian的径向约化",
+        "显式衰减profile",
+        "对数变换",
+        "径向恒等式到一般内点测试函数的弱形式"
+      ],
+      "breakthrough": "把几何条件与抽象存在机制连接，并在额外显式参数条件下构造正有界系数的共振方程profile，澄清径向弱解解释。",
+      "limitations": "显式共振profile与抽象存在定理的超线性范围不同；可积条件、模型定义域和额外参数约束须保留。弱形式允许任意紧支撑内点测试函数，不自动包含边界条件或全局边界正则性。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第27页致谢明确称AI工具只用于改善稿件语言和组织，且最终数学论证与证明完全由作者撰写。记录writing；没有具体模型信息，也不据此推断ideas、proofs或AI验证。前面的无实证数据声明不影响此项稿件辅助披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.09826v1 · PDF 第27页 Acknowledgments，Declarations之后",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:29:25.621419+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09826v1",
+        "contentHash": "9f73d8b321254a2f0b93d9e6272a2019b49763cf991d9b408a87bb67c3703553",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第27页致谢明确称AI工具只用于改善稿件语言和组织，且最终数学论证与证明完全由作者撰写。记录writing；没有具体模型信息，也不据此推断ideas、proofs或AI验证。前面的无实证数据声明不影响此项稿件辅助披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a5eff7b664550db14bfc722e08be68a9758caa2a60de96303cc776d3fe6088cc"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 85,
+      "priorityReason": "非紧流形椭圆PDE与几何条件相联，注意存在性引用及模型边界。"
+    },
+    "analysisBasis": {
+      "abstract": "We study nonlinear elliptic equations of variable exponent type, \\[ -\\Delta_{q(x)}u+|u|^{q(x)-2}u=f(x,u), \\] on non-compact Riemannian manifolds with symmetry. We consider complete warped products \\[ M=\\mathcal R\\times_\\phi Y,\\qquad g_\\phi=dr^2\\oplus\\phi(r)^2g_Y, \\] where $\\mathcal R$ is a non-compact interval, possibly with boundary, and $Y$ is a compact homogeneous manifold. We establish sufficient conditions on the warping function ensuring a Ricci lower bound, a uniform non-collapsing volume condition, and the orbit-growth hypothesis of the abstract existence theorem proved in \\cite{JFA}. We also obtain comparison bounds for the admissible warping functions. We analyze the corresponding radial equations for the admissible exponential and linear models $\\phi(r)=e^{ar}$ and $\\phi(r)=ar$, with $r\\geq r_0>0$. For a constant diffusion exponent $q=k$, we consider explicit decaying profiles $u=\\phi^{-\\sigma}$, which belong to $L_1^k(M)$ provided $\\sigma k>\\dim Y$ in the exponential case and $\\sigma k>\\dim Y+1$ in the linear case. Under additional explicit parameter restrictions, these profiles solve a resonant equation with a positive bounded coefficient, a construction distinct from the superlinear regime of the abstract existence theorem. Finally, we establish logarithmic reductions for constant and variable radial exponents, and justify the passage from radial identities to weak formulations against arbitrary compactly supported interior test functions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09826",
+        "metadata": {
+          "title": "Radial reductions of variable exponent Laplacian equations on warped products with compact symmetry",
+          "authors": [
+            "Jose Luis Diaz Palencia",
+            "Daniel J. Pons",
+            "Enrique G. Reyes"
+          ],
+          "abstract": "We study nonlinear elliptic equations of variable exponent type, \\[ -\\Delta_{q(x)}u+|u|^{q(x)-2}u=f(x,u), \\] on non-compact Riemannian manifolds with symmetry. We consider complete warped products \\[ M=\\mathcal R\\times_\\phi Y,\\qquad g_\\phi=dr^2\\oplus\\phi(r)^2g_Y, \\] where $\\mathcal R$ is a non-compact interval, possibly with boundary, and $Y$ is a compact homogeneous manifold. We establish sufficient conditions on the warping function ensuring a Ricci lower bound, a uniform non-collapsing volume condition, and the orbit-growth hypothesis of the abstract existence theorem proved in \\cite{JFA}. We also obtain comparison bounds for the admissible warping functions. We analyze the corresponding radial equations for the admissible exponential and linear models $\\phi(r)=e^{ar}$ and $\\phi(r)=ar$, with $r\\geq r_0>0$. For a constant diffusion exponent $q=k$, we consider explicit decaying profiles $u=\\phi^{-\\sigma}$, which belong to $L_1^k(M)$ provided $\\sigma k>\\dim Y$ in the exponential case and $\\sigma k>\\dim Y+1$ in the linear case. Under additional explicit parameter restrictions, these profiles solve a resonant equation with a positive bounded coefficient, a construction distinct from the superlinear regime of the abstract existence theorem. Finally, we establish logarithmic reductions for constant and variable radial exponents, and justify the passage from radial identities to weak formulations against arbitrary compactly supported interior test functions.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-06T18:14:08Z",
+          "updatedAt": "2026-11-06T18:14:08Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-09T06:15:09.311921+00:00",
+            "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:30.355595+00:00",
+            "contentHash": "d7542f180d27f22f70eda9460783d51bacae4c15ca9b814ade7d7dfae9271c65"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "具紧对称的warped product变指数椭圆方程径向化",
+          "workSummary": "在完备非紧warped product R×φY上研究变指数方程−Δq(x)u+|u|^(q(x)−2)u=f(x,u)，其中Y为紧齐性流形。作者给出φ保证Ricci下界、一致体积非塌缩及轨道增长的充分条件，以适用已有抽象存在定理，并分析φ=e^(ar)、φ=ar（r≥r0>0）的径向方程。常指数q=k下，φ^(−σ)在指数/线性模型分别于σk>dimY及σk>dimY+1时属于L₁ᵏ。",
+          "techniques": [
+            "warped product曲率与轨道体积",
+            "变指数Laplacian的径向约化",
+            "显式衰减profile",
+            "对数变换",
+            "径向恒等式到一般内点测试函数的弱形式"
+          ],
+          "breakthrough": "把几何条件与抽象存在机制连接，并在额外显式参数条件下构造正有界系数的共振方程profile，澄清径向弱解解释。",
+          "limitations": "显式共振profile与抽象存在定理的超线性范围不同；可积条件、模型定义域和额外参数约束须保留。弱形式允许任意紧支撑内点测试函数，不自动包含边界条件或全局边界正则性。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第27页致谢明确称AI工具只用于改善稿件语言和组织，且最终数学论证与证明完全由作者撰写。记录writing；没有具体模型信息，也不据此推断ideas、proofs或AI验证。前面的无实证数据声明不影响此项稿件辅助披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.09826v1 · PDF 第27页 Acknowledgments，Declarations之后",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:29:25.621419+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09826v1",
+            "contentHash": "9f73d8b321254a2f0b93d9e6272a2019b49763cf991d9b408a87bb67c3703553",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第27页致谢明确称AI工具只用于改善稿件语言和组织，且最终数学论证与证明完全由作者撰写。记录writing；没有具体模型信息，也不据此推断ideas、proofs或AI验证。前面的无实证数据声明不影响此项稿件辅助披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a5eff7b664550db14bfc722e08be68a9758caa2a60de96303cc776d3fe6088cc"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 85,
+          "priorityReason": "非紧流形椭圆PDE与几何条件相联，注意存在性引用及模型边界。"
+        },
+        "analysisBasis": {
+          "abstract": "We study nonlinear elliptic equations of variable exponent type, \\[ -\\Delta_{q(x)}u+|u|^{q(x)-2}u=f(x,u), \\] on non-compact Riemannian manifolds with symmetry. We consider complete warped products \\[ M=\\mathcal R\\times_\\phi Y,\\qquad g_\\phi=dr^2\\oplus\\phi(r)^2g_Y, \\] where $\\mathcal R$ is a non-compact interval, possibly with boundary, and $Y$ is a compact homogeneous manifold. We establish sufficient conditions on the warping function ensuring a Ricci lower bound, a uniform non-collapsing volume condition, and the orbit-growth hypothesis of the abstract existence theorem proved in \\cite{JFA}. We also obtain comparison bounds for the admissible warping functions. We analyze the corresponding radial equations for the admissible exponential and linear models $\\phi(r)=e^{ar}$ and $\\phi(r)=ar$, with $r\\geq r_0>0$. For a constant diffusion exponent $q=k$, we consider explicit decaying profiles $u=\\phi^{-\\sigma}$, which belong to $L_1^k(M)$ provided $\\sigma k>\\dim Y$ in the exponential case and $\\sigma k>\\dim Y+1$ in the linear case. Under additional explicit parameter restrictions, these profiles solve a resonant equation with a positive bounded coefficient, a construction distinct from the superlinear regime of the abstract existence theorem. Finally, we establish logarithmic reductions for constant and variable radial exponents, and justify the passage from radial identities to weak formulations against arbitrary compactly supported interior test functions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

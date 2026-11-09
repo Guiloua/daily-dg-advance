@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09443",
+  "slug": "2611.09443",
+  "latest": {
+    "arxivId": "2611.09443",
+    "metadata": {
+      "title": "Sharp isoperimetry in groups of polynomial growth",
+      "authors": [
+        "Mayukh Mukherjee"
+      ],
+      "abstract": "We study weighted edge boundary and outer vertex boundary on Cayley graphs of polynomial growth of degree $Q>1$. For every finite symmetric generating set, we prove that each exact isoperimetric profile satisfies $I(n)=c n^{(Q-1)/Q}+O(n^{(Q-1)/Q-\\beta})$, where $\\beta=1/(8Q^2)$. We identify the leading constant with the isoperimetric constant of a horizontal perimeter on the limiting Carnot group, after accounting for the counting density. Its integrand is a norm with polyhedral unit ball, determined by a convex minimization with one real variable for each coset of a torsion-free nilpotent subgroup. For every asymptotically minimizing sequence, we translate its vertex sets so that the characteristic functions of the associated rescaled regions are precompact in $L^1$. The limiting regions minimize continuum perimeter at fixed volume. The exact-cardinality estimate requires no regularity assumption on these regions. For virtually abelian groups, we prove a quantitative stability estimate using a discrete approximation to the Euclidean Wulff body. The relative symmetric difference from a translate is bounded by the square root of the sum of the relative boundary deficit and a cardinality error. We also characterize when bounded additive changes of Cayley metric preserve the leading vertex constant. Failure occurs already in rank two; we construct pairs with the same measured asymptotic cone whose leading constants have an unbounded ratio as the rank grows.",
+      "categories": [
+        "math.MG",
+        "math.AP",
+        "math.GR"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "28 pages, split off from arXiv:2509.22260v1 . Comments most welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-06T13:16:26Z",
+      "updatedAt": "2026-11-06T13:16:26Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-09T06:15:21.626490+00:00",
+        "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.09443v1",
+        "observedAt": "2026-11-09T06:24:28.055402+00:00",
+        "contentHash": "3105f591c766dd52216cb293d145b5d82573e3ab133e741ced62630125cedd43"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:30.353129+00:00",
+        "contentHash": "1f20c05ee28d4cc6f7bdc16d43cc67234b51c712d048a22aa12b73fd5bdef65b"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "多项式增长群的精确等周渐近与定量形状稳定性",
+      "workSummary": "对无限有限生成群Γ、有限对称生成集S（不含单位元）、正对称边权，以及增长次数Q>1，定理A同时给加权出边边界与外顶点边界的精确基数轮廓I(n)=cφ n^α+O(n^(α−β))，α=(Q−1)/Q、β=1/(8Q²)。选指数M的无挠幂零正规子群并以其covolume为1归一化Haar测度μ，计数密度为Mμ；有限陪集cell极小化确定晶体范数φ，主常数是cφ=M^(−α) inf Pφ(E)/μ(E)^α。所有渐近极小序列适当左平移及n^(−1/Q)缩放后各陪集的示性函数在L¹预紧，极限共享同一等周区域且Mμ(E)=1。",
+      "techniques": [
+        "有限陪集变量的凸cell极小化",
+        "加权边/外顶点边界的各向异性水平周长",
+        "逐陪集强L¹的Γ收敛与BV紧性",
+        "图分割、严格凹性及质量集中",
+        "双侧卷积平滑与精确基数次可加修补",
+        "欧氏定量Wulff不等式"
+      ],
+      "breakthrough": "把离散精确基数等周问题与极限Carnot群的周长问题相连，并给无需连续极小区域正则性的幂次误差。定理B给一般有限体积周长集合的恢复序列；virtually abelian的定理C给相对对称差≤C(δφ(A)+n^(−1/(2d)))^(1/2)。顶点主常数还可区分具有同一测度渐近锥的生成数据。",
+      "limitations": "晶体范数由有限维凸问题确定，但一般Carnot群的最优等周常数仍由连续变分问题定义，未普遍算出数值或分类极小区域；例如Heisenberg正文只给上下界及受限类极小性。定理C只限virtually abelian且自由阿贝尔子群秩d≥2；Wn是形状比较集合，基数允许n+O(n^((d−1)/d))，不保证本身边界渐近最优。第8节加法有界Cayley距离扰动的全部保持判据限virtually abelian，并等价于有限共轭作用包含于{I,−I}。已读PDF第1–6、15–19、21–22、25、27页，渲染第2–4、19页核对陪集求和而非平均、M^(−α)密度系数及稳定性和误差指数；未独立逐行验证整篇、cell下界/恢复序列全部细节或外部结果。外部依赖包括Gromov虚幂零结构、幂零渐近锥与水平BV工具，以及Figalli–Maggi–Pratelli定量Wulff不等式。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:24:28.055402+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09443v1",
+        "contentHash": "3105f591c766dd52216cb293d145b5d82573e3ab133e741ced62630125cedd43",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共28页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "51490a4760cab47c8ee745325f0de17fb009b47090ee7123bd3430514788df4c"
+      },
+      "priorityScore": 96,
+      "priorityReason": "离散到连续等周理论、Carnot极限及定量误差直接相关，优先正文核对权重和常数归一化。"
+    },
+    "analysisBasis": {
+      "abstract": "We study weighted edge boundary and outer vertex boundary on Cayley graphs of polynomial growth of degree $Q>1$. For every finite symmetric generating set, we prove that each exact isoperimetric profile satisfies $I(n)=c n^{(Q-1)/Q}+O(n^{(Q-1)/Q-\\beta})$, where $\\beta=1/(8Q^2)$. We identify the leading constant with the isoperimetric constant of a horizontal perimeter on the limiting Carnot group, after accounting for the counting density. Its integrand is a norm with polyhedral unit ball, determined by a convex minimization with one real variable for each coset of a torsion-free nilpotent subgroup. For every asymptotically minimizing sequence, we translate its vertex sets so that the characteristic functions of the associated rescaled regions are precompact in $L^1$. The limiting regions minimize continuum perimeter at fixed volume. The exact-cardinality estimate requires no regularity assumption on these regions. For virtually abelian groups, we prove a quantitative stability estimate using a discrete approximation to the Euclidean Wulff body. The relative symmetric difference from a translate is bounded by the square root of the sum of the relative boundary deficit and a cardinality error. We also characterize when bounded additive changes of Cayley metric preserve the leading vertex constant. Failure occurs already in rank two; we construct pairs with the same measured asymptotic cone whose leading constants have an unbounded ratio as the rank grows.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09443",
+        "metadata": {
+          "title": "Sharp isoperimetry in groups of polynomial growth",
+          "authors": [
+            "Mayukh Mukherjee"
+          ],
+          "abstract": "We study weighted edge boundary and outer vertex boundary on Cayley graphs of polynomial growth of degree $Q>1$. For every finite symmetric generating set, we prove that each exact isoperimetric profile satisfies $I(n)=c n^{(Q-1)/Q}+O(n^{(Q-1)/Q-\\beta})$, where $\\beta=1/(8Q^2)$. We identify the leading constant with the isoperimetric constant of a horizontal perimeter on the limiting Carnot group, after accounting for the counting density. Its integrand is a norm with polyhedral unit ball, determined by a convex minimization with one real variable for each coset of a torsion-free nilpotent subgroup. For every asymptotically minimizing sequence, we translate its vertex sets so that the characteristic functions of the associated rescaled regions are precompact in $L^1$. The limiting regions minimize continuum perimeter at fixed volume. The exact-cardinality estimate requires no regularity assumption on these regions. For virtually abelian groups, we prove a quantitative stability estimate using a discrete approximation to the Euclidean Wulff body. The relative symmetric difference from a translate is bounded by the square root of the sum of the relative boundary deficit and a cardinality error. We also characterize when bounded additive changes of Cayley metric preserve the leading vertex constant. Failure occurs already in rank two; we construct pairs with the same measured asymptotic cone whose leading constants have an unbounded ratio as the rank grows.",
+          "categories": [
+            "math.MG",
+            "math.AP",
+            "math.GR"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "28 pages, split off from arXiv:2509.22260v1 . Comments most welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-06T13:16:26Z",
+          "updatedAt": "2026-11-06T13:16:26Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-09T06:15:21.626490+00:00",
+            "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.09443v1",
+            "observedAt": "2026-11-09T06:24:28.055402+00:00",
+            "contentHash": "3105f591c766dd52216cb293d145b5d82573e3ab133e741ced62630125cedd43"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:30.353129+00:00",
+            "contentHash": "1f20c05ee28d4cc6f7bdc16d43cc67234b51c712d048a22aa12b73fd5bdef65b"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "多项式增长群的精确等周渐近与定量形状稳定性",
+          "workSummary": "对无限有限生成群Γ、有限对称生成集S（不含单位元）、正对称边权，以及增长次数Q>1，定理A同时给加权出边边界与外顶点边界的精确基数轮廓I(n)=cφ n^α+O(n^(α−β))，α=(Q−1)/Q、β=1/(8Q²)。选指数M的无挠幂零正规子群并以其covolume为1归一化Haar测度μ，计数密度为Mμ；有限陪集cell极小化确定晶体范数φ，主常数是cφ=M^(−α) inf Pφ(E)/μ(E)^α。所有渐近极小序列适当左平移及n^(−1/Q)缩放后各陪集的示性函数在L¹预紧，极限共享同一等周区域且Mμ(E)=1。",
+          "techniques": [
+            "有限陪集变量的凸cell极小化",
+            "加权边/外顶点边界的各向异性水平周长",
+            "逐陪集强L¹的Γ收敛与BV紧性",
+            "图分割、严格凹性及质量集中",
+            "双侧卷积平滑与精确基数次可加修补",
+            "欧氏定量Wulff不等式"
+          ],
+          "breakthrough": "把离散精确基数等周问题与极限Carnot群的周长问题相连，并给无需连续极小区域正则性的幂次误差。定理B给一般有限体积周长集合的恢复序列；virtually abelian的定理C给相对对称差≤C(δφ(A)+n^(−1/(2d)))^(1/2)。顶点主常数还可区分具有同一测度渐近锥的生成数据。",
+          "limitations": "晶体范数由有限维凸问题确定，但一般Carnot群的最优等周常数仍由连续变分问题定义，未普遍算出数值或分类极小区域；例如Heisenberg正文只给上下界及受限类极小性。定理C只限virtually abelian且自由阿贝尔子群秩d≥2；Wn是形状比较集合，基数允许n+O(n^((d−1)/d))，不保证本身边界渐近最优。第8节加法有界Cayley距离扰动的全部保持判据限virtually abelian，并等价于有限共轭作用包含于{I,−I}。已读PDF第1–6、15–19、21–22、25、27页，渲染第2–4、19页核对陪集求和而非平均、M^(−α)密度系数及稳定性和误差指数；未独立逐行验证整篇、cell下界/恢复序列全部细节或外部结果。外部依赖包括Gromov虚幂零结构、幂零渐近锥与水平BV工具，以及Figalli–Maggi–Pratelli定量Wulff不等式。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:24:28.055402+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09443v1",
+            "contentHash": "3105f591c766dd52216cb293d145b5d82573e3ab133e741ced62630125cedd43",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。实际PDF SHA-256与本次记录一致；共28页，页数一致、文本完整提取、无短文本页。标准与点写A.I./A. I.、断行/连字符模型名称（含Danus）和AI用语补检未观察到作者自身使用披露；无披露不等同未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "51490a4760cab47c8ee745325f0de17fb009b47090ee7123bd3430514788df4c"
+          },
+          "priorityScore": 96,
+          "priorityReason": "离散到连续等周理论、Carnot极限及定量误差直接相关，优先正文核对权重和常数归一化。"
+        },
+        "analysisBasis": {
+          "abstract": "We study weighted edge boundary and outer vertex boundary on Cayley graphs of polynomial growth of degree $Q>1$. For every finite symmetric generating set, we prove that each exact isoperimetric profile satisfies $I(n)=c n^{(Q-1)/Q}+O(n^{(Q-1)/Q-\\beta})$, where $\\beta=1/(8Q^2)$. We identify the leading constant with the isoperimetric constant of a horizontal perimeter on the limiting Carnot group, after accounting for the counting density. Its integrand is a norm with polyhedral unit ball, determined by a convex minimization with one real variable for each coset of a torsion-free nilpotent subgroup. For every asymptotically minimizing sequence, we translate its vertex sets so that the characteristic functions of the associated rescaled regions are precompact in $L^1$. The limiting regions minimize continuum perimeter at fixed volume. The exact-cardinality estimate requires no regularity assumption on these regions. For virtually abelian groups, we prove a quantitative stability estimate using a discrete approximation to the Euclidean Wulff body. The relative symmetric difference from a translate is bounded by the square root of the sum of the relative boundary deficit and a cardinality error. We also characterize when bounded additive changes of Cayley metric preserve the leading vertex constant. Failure occurs already in rank two; we construct pairs with the same measured asymptotic cone whose leading constants have an unbounded ratio as the rank grows.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

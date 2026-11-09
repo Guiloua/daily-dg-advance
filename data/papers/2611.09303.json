@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09303",
+  "slug": "2611.09303",
+  "latest": {
+    "arxivId": "2611.09303",
+    "metadata": {
+      "title": "Natural potentials for TT tensors, divergence-free symmetric tensors and linearised relativistic initial data",
+      "authors": [
+        "Erwann Delay"
+      ],
+      "abstract": "Let $N$ be a natural tensor which vanishes at a metric $g\\_0$. By diffeomorphism invariance, $DN(g\\_0)^*$ takes values in divergence-free symmetric $2$-tensors, and in TT tensors if moreover $DN(g\\_0)$ kills conformal directions. Such operators are local potentials, which we call machines: they produce smooth compactly supported tensors with the required property and, on closed manifolds, all of them up to a finite-dimensional space when their symbol is injective. On Einstein manifolds of every dimension, the linearised Bach tensor gives the operator $P$ of an earlier paper, which factorises on TT tensors into the massless and partially massless spin-$2$ operators; we also construct machines on Bach-flat, conformally flat and Ricci-parallel metrics. Replacing the diffeomorphisms of $M$ by those of the vacuum development, we obtain potentials, with a Fredholm property, for the linearised Einstein constraint equations on arbitrary spacelike hypersurfaces of Minkowski, de Sitter and anti-de Sitter spacetimes.",
+      "categories": [
+        "math.DG",
+        "gr-qc",
+        "math-ph"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-06T10:55:50Z",
+      "updatedAt": "2026-11-06T10:55:50Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-09T06:15:09.311921+00:00",
+        "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:30.352337+00:00",
+        "contentHash": "3fef0e2fa5a8fce1019389a874406bf198c4246ab5e913b747fed26abc7db548"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "自然势算子",
+      "workSummary": "将自然张量N在背景g₀处为零、且线性化消去Lie导数的性质转成局部势算子P_N=DN(g₀)*，其像为无散度对称张量；若线性化还消去fg₀，则像为TT。闭无边界流形上，当σ(DN)在TT符号上单射，TT分解为Im P_N与有限维障碍空间。Einstein背景Ric=λg、n≥3时，作者把既有4阶算子P识别为−2(n−2)DB，在TT上P=(Δ_L−2λ)(Δ_L−nλ/(n−1))。并构造Bach-flat、共形平坦及Ricci平行背景的相应机器。对局部Minkowski、de Sitter或anti-de Sitter常曲率时空内任意空间型超曲面，Gauss与Codazzi张量经辛伴随原理给出线性化真空约束的势算子，闭超曲面上有有限余维性质。",
+      "techniques": [
+        "自然性与无穷小对称的形式伴随恒等式",
+        "TT符号单射性和辅助自伴椭圆算子",
+        "在势层面截断以保持散度与迹约束",
+        "线性化Bach张量与移位Lichnerowicz因子分解",
+        "Weyl张量及Ricci平行背景的高阶兼容算子",
+        "真空演化Hamilton恒等式和Gauss–Codazzi数据的辛伴随"
+      ],
+      "breakthrough": "以同一自然性原则统一TT、无散度与线性化约束势算子。主要具体结果包括在所有n≥3的Einstein背景识别线性化Bach算子与既有P的关系、在Ricci平行背景构造无同号限制的5阶TT机器，以及将常曲率时空约束势从时间对称切片扩展到任意空间型切片。",
+      "limitations": "审读PDF第1–17、20、23、33–35、38页，渲染第7、11、34页。维数n≥3，TT符号单射性针对DN限制到TT_ξ。有限维障碍分解要求紧致无边界；非紧逼近需有界几何、算子系数控制和Sobolev势，第8页加权满射猜测明确未证明。一般Bach-flat背景在n≠4时还需Cotton张量为零。Ricci平行情形4阶机器的符号充分性有同号条件，5阶构造无需此条件。线性化约束的有限余维结论同样要求闭空间超曲面，不等于非线性约束的完整求解。依赖作者既有P算子、Berger–Ebin椭圆理论及真空演化Hamilton恒等式，本次未独立核验全部符号计算、混阶缩放论证或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在专门AI usage statement说明Claude（Anthropic）用于计算和写作本文的英文版本，支持computation和writing。声明未具体归因核心构造、证明路线或证明生成。第2页命中为该声明的目录条目。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.09303 · PDF 第38页AI usage statement；第2页目录指向该节，全文40页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:29:03.712988+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09303",
+        "contentHash": "1fe792a24aa9c0091babb3a5d8049ac5d78e6b84892d54aedfba046005f8f513",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在专门AI usage statement说明Claude（Anthropic）用于计算和写作本文的英文版本，支持computation和writing。声明未具体归因核心构造、证明路线或证明生成。第2页命中为该声明的目录条目。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "07da9dd94e4c2638d33cc60c0cc6b76b5b6173181f7b8d2a38de4ce541b75bce"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 88,
+      "priorityReason": "把几何不变性系统转化为可用于局部构造的张量势。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $N$ be a natural tensor which vanishes at a metric $g\\_0$. By diffeomorphism invariance, $DN(g\\_0)^*$ takes values in divergence-free symmetric $2$-tensors, and in TT tensors if moreover $DN(g\\_0)$ kills conformal directions. Such operators are local potentials, which we call machines: they produce smooth compactly supported tensors with the required property and, on closed manifolds, all of them up to a finite-dimensional space when their symbol is injective. On Einstein manifolds of every dimension, the linearised Bach tensor gives the operator $P$ of an earlier paper, which factorises on TT tensors into the massless and partially massless spin-$2$ operators; we also construct machines on Bach-flat, conformally flat and Ricci-parallel metrics. Replacing the diffeomorphisms of $M$ by those of the vacuum development, we obtain potentials, with a Fredholm property, for the linearised Einstein constraint equations on arbitrary spacelike hypersurfaces of Minkowski, de Sitter and anti-de Sitter spacetimes.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09303",
+        "metadata": {
+          "title": "Natural potentials for TT tensors, divergence-free symmetric tensors and linearised relativistic initial data",
+          "authors": [
+            "Erwann Delay"
+          ],
+          "abstract": "Let $N$ be a natural tensor which vanishes at a metric $g\\_0$. By diffeomorphism invariance, $DN(g\\_0)^*$ takes values in divergence-free symmetric $2$-tensors, and in TT tensors if moreover $DN(g\\_0)$ kills conformal directions. Such operators are local potentials, which we call machines: they produce smooth compactly supported tensors with the required property and, on closed manifolds, all of them up to a finite-dimensional space when their symbol is injective. On Einstein manifolds of every dimension, the linearised Bach tensor gives the operator $P$ of an earlier paper, which factorises on TT tensors into the massless and partially massless spin-$2$ operators; we also construct machines on Bach-flat, conformally flat and Ricci-parallel metrics. Replacing the diffeomorphisms of $M$ by those of the vacuum development, we obtain potentials, with a Fredholm property, for the linearised Einstein constraint equations on arbitrary spacelike hypersurfaces of Minkowski, de Sitter and anti-de Sitter spacetimes.",
+          "categories": [
+            "math.DG",
+            "gr-qc",
+            "math-ph"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-06T10:55:50Z",
+          "updatedAt": "2026-11-06T10:55:50Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-09T06:15:09.311921+00:00",
+            "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:30.352337+00:00",
+            "contentHash": "3fef0e2fa5a8fce1019389a874406bf198c4246ab5e913b747fed26abc7db548"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "自然势算子",
+          "workSummary": "将自然张量N在背景g₀处为零、且线性化消去Lie导数的性质转成局部势算子P_N=DN(g₀)*，其像为无散度对称张量；若线性化还消去fg₀，则像为TT。闭无边界流形上，当σ(DN)在TT符号上单射，TT分解为Im P_N与有限维障碍空间。Einstein背景Ric=λg、n≥3时，作者把既有4阶算子P识别为−2(n−2)DB，在TT上P=(Δ_L−2λ)(Δ_L−nλ/(n−1))。并构造Bach-flat、共形平坦及Ricci平行背景的相应机器。对局部Minkowski、de Sitter或anti-de Sitter常曲率时空内任意空间型超曲面，Gauss与Codazzi张量经辛伴随原理给出线性化真空约束的势算子，闭超曲面上有有限余维性质。",
+          "techniques": [
+            "自然性与无穷小对称的形式伴随恒等式",
+            "TT符号单射性和辅助自伴椭圆算子",
+            "在势层面截断以保持散度与迹约束",
+            "线性化Bach张量与移位Lichnerowicz因子分解",
+            "Weyl张量及Ricci平行背景的高阶兼容算子",
+            "真空演化Hamilton恒等式和Gauss–Codazzi数据的辛伴随"
+          ],
+          "breakthrough": "以同一自然性原则统一TT、无散度与线性化约束势算子。主要具体结果包括在所有n≥3的Einstein背景识别线性化Bach算子与既有P的关系、在Ricci平行背景构造无同号限制的5阶TT机器，以及将常曲率时空约束势从时间对称切片扩展到任意空间型切片。",
+          "limitations": "审读PDF第1–17、20、23、33–35、38页，渲染第7、11、34页。维数n≥3，TT符号单射性针对DN限制到TT_ξ。有限维障碍分解要求紧致无边界；非紧逼近需有界几何、算子系数控制和Sobolev势，第8页加权满射猜测明确未证明。一般Bach-flat背景在n≠4时还需Cotton张量为零。Ricci平行情形4阶机器的符号充分性有同号条件，5阶构造无需此条件。线性化约束的有限余维结论同样要求闭空间超曲面，不等于非线性约束的完整求解。依赖作者既有P算子、Berger–Ebin椭圆理论及真空演化Hamilton恒等式，本次未独立核验全部符号计算、混阶缩放论证或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在专门AI usage statement说明Claude（Anthropic）用于计算和写作本文的英文版本，支持computation和writing。声明未具体归因核心构造、证明路线或证明生成。第2页命中为该声明的目录条目。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.09303 · PDF 第38页AI usage statement；第2页目录指向该节，全文40页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:29:03.712988+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09303",
+            "contentHash": "1fe792a24aa9c0091babb3a5d8049ac5d78e6b84892d54aedfba046005f8f513",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在专门AI usage statement说明Claude（Anthropic）用于计算和写作本文的英文版本，支持computation和writing。声明未具体归因核心构造、证明路线或证明生成。第2页命中为该声明的目录条目。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "07da9dd94e4c2638d33cc60c0cc6b76b5b6173181f7b8d2a38de4ce541b75bce"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 88,
+          "priorityReason": "把几何不变性系统转化为可用于局部构造的张量势。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $N$ be a natural tensor which vanishes at a metric $g\\_0$. By diffeomorphism invariance, $DN(g\\_0)^*$ takes values in divergence-free symmetric $2$-tensors, and in TT tensors if moreover $DN(g\\_0)$ kills conformal directions. Such operators are local potentials, which we call machines: they produce smooth compactly supported tensors with the required property and, on closed manifolds, all of them up to a finite-dimensional space when their symbol is injective. On Einstein manifolds of every dimension, the linearised Bach tensor gives the operator $P$ of an earlier paper, which factorises on TT tensors into the massless and partially massless spin-$2$ operators; we also construct machines on Bach-flat, conformally flat and Ricci-parallel metrics. Replacing the diffeomorphisms of $M$ by those of the vacuum development, we obtain potentials, with a Fredholm property, for the linearised Einstein constraint equations on arbitrary spacelike hypersurfaces of Minkowski, de Sitter and anti-de Sitter spacetimes.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

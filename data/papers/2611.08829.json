@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08829",
+  "slug": "2611.08829",
+  "latest": {
+    "arxivId": "2611.08829",
+    "metadata": {
+      "title": "An improved isodiametric inequality for convex surfaces",
+      "authors": [
+        "Matěj Stehlík"
+      ],
+      "abstract": "Alexandrov conjectured that every closed convex surface of area $A$ and intrinsic diameter $D$ satisfies $A/D^2\\leq\\pi/2$. Using an averaging argument over the curvature measure, we prove that every closed convex surface satisfies $A/D^2\\leq2\\pi/3$, improving the best previously known bound.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-06T00:33:28Z",
+      "updatedAt": "2026-11-06T00:33:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-09T06:15:09.311921+00:00",
+        "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08829v1",
+        "observedAt": "2026-11-09T06:25:31.382216+00:00",
+        "contentHash": "83a55cdf321ae8ec81fec76883ccb05d1f41f22dba5ada78e7a8b220ad98a3a6"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:17.532643+00:00",
+        "contentHash": "39a71c9cef5a01b595840f3ed6e231661e18dc792e42206e8dcc0eda67c5f33f"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "不等式改进",
+      "workSummary": "作者对所有闭凸曲面证明A/D²≤2π/3，其中D是内蕴直径，闭凸曲面含平面紧凸域双覆盖这一退化模型。对应光滑定理要求曲面同胚于二球面、Gauss曲率非负，并给出严格界A/D²<2π/3。第5页另将同一方法推广到非负曲率且正Euler示性数的光滑闭曲面，得到A/D²≤π(1−χ/6)，实射影平面情形为5π/6。",
+      "techniques": [
+        "Fiala–Hartman测地圆长积分不等式",
+        "Gauss–Bonnet总曲率与Bishop–Gromov球面积比较",
+        "固定直径尺度曲率势的Fubini与层饼平均化",
+        "由直径校正到选点离心半径的L² Minkowski估计",
+        "光滑凸体逼近与内蕴直径收敛"
+      ],
+      "breakthrough": "先平均固定尺度D下的曲率势P_D(p)=∫K(q)(D−d(p,q))²dA(q)，得到某点P_D(p)≥(2π/3)D²，再在该点校正到离心半径R_p。此顺序避开直接平均可变R_p时的不可分离项，经单变量下降估计取得新常数。光滑情形用正曲率点的小球面积展开排除等号。",
+      "limitations": "审读PDF第1–6页并渲染第1、4页。直径为曲面内蕴直径。一般闭凸曲面包括凸体边界与平面凸域的双覆盖，结论为≤2π/3；光滑非负Gauss曲率二球面为严格小于。该改进未达到Alexandrov猜想π/2，未给出2π/3的尖锐性或一般等号分类。一般凸面逼近依赖Schneider光滑化、面积连续性及Alexandrov内蕴距离收敛，本次未独立核验这些外部定理或完整证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确将核心平均化思想归于自己在最大度数6平面三角剖分背景下独立提出。Claude协助将论证转译到光滑曲面并写出证明，记录proofs和writing；原思想的明确人类归属予以保留。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08829v1 · PDF 第6页Use of AI，全文共6页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:25:31.382216+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08829v1",
+        "contentHash": "83a55cdf321ae8ec81fec76883ccb05d1f41f22dba5ada78e7a8b220ad98a3a6",
+        "pages": 6,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将核心平均化思想归于自己在最大度数6平面三角剖分背景下独立提出。Claude协助将论证转译到光滑曲面并写出证明，记录proofs和writing；原思想的明确人类归属予以保留。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4a24da77784b233fd898396c5bd34d5f45b82c6944641c09f2695d2dea542a4b"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 90,
+      "priorityReason": "推进凸曲面面积与直径的尖锐比较问题。"
+    },
+    "analysisBasis": {
+      "abstract": "Alexandrov conjectured that every closed convex surface of area $A$ and intrinsic diameter $D$ satisfies $A/D^2\\leq\\pi/2$. Using an averaging argument over the curvature measure, we prove that every closed convex surface satisfies $A/D^2\\leq2\\pi/3$, improving the best previously known bound.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.08829",
+        "metadata": {
+          "title": "An improved isodiametric inequality for convex surfaces",
+          "authors": [
+            "Matěj Stehlík"
+          ],
+          "abstract": "Alexandrov conjectured that every closed convex surface of area $A$ and intrinsic diameter $D$ satisfies $A/D^2\\leq\\pi/2$. Using an averaging argument over the curvature measure, we prove that every closed convex surface satisfies $A/D^2\\leq2\\pi/3$, improving the best previously known bound.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-06T00:33:28Z",
+          "updatedAt": "2026-11-06T00:33:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-09T06:15:09.311921+00:00",
+            "contentHash": "d03183c897353f63db09b407a0f0ca1bb69df1edbcdddd7214e8d7287df28714"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.08829v1",
+            "observedAt": "2026-11-09T06:25:31.382216+00:00",
+            "contentHash": "83a55cdf321ae8ec81fec76883ccb05d1f41f22dba5ada78e7a8b220ad98a3a6"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:17.532643+00:00",
+            "contentHash": "39a71c9cef5a01b595840f3ed6e231661e18dc792e42206e8dcc0eda67c5f33f"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "不等式改进",
+          "workSummary": "作者对所有闭凸曲面证明A/D²≤2π/3，其中D是内蕴直径，闭凸曲面含平面紧凸域双覆盖这一退化模型。对应光滑定理要求曲面同胚于二球面、Gauss曲率非负，并给出严格界A/D²<2π/3。第5页另将同一方法推广到非负曲率且正Euler示性数的光滑闭曲面，得到A/D²≤π(1−χ/6)，实射影平面情形为5π/6。",
+          "techniques": [
+            "Fiala–Hartman测地圆长积分不等式",
+            "Gauss–Bonnet总曲率与Bishop–Gromov球面积比较",
+            "固定直径尺度曲率势的Fubini与层饼平均化",
+            "由直径校正到选点离心半径的L² Minkowski估计",
+            "光滑凸体逼近与内蕴直径收敛"
+          ],
+          "breakthrough": "先平均固定尺度D下的曲率势P_D(p)=∫K(q)(D−d(p,q))²dA(q)，得到某点P_D(p)≥(2π/3)D²，再在该点校正到离心半径R_p。此顺序避开直接平均可变R_p时的不可分离项，经单变量下降估计取得新常数。光滑情形用正曲率点的小球面积展开排除等号。",
+          "limitations": "审读PDF第1–6页并渲染第1、4页。直径为曲面内蕴直径。一般闭凸曲面包括凸体边界与平面凸域的双覆盖，结论为≤2π/3；光滑非负Gauss曲率二球面为严格小于。该改进未达到Alexandrov猜想π/2，未给出2π/3的尖锐性或一般等号分类。一般凸面逼近依赖Schneider光滑化、面积连续性及Alexandrov内蕴距离收敛，本次未独立核验这些外部定理或完整证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确将核心平均化思想归于自己在最大度数6平面三角剖分背景下独立提出。Claude协助将论证转译到光滑曲面并写出证明，记录proofs和writing；原思想的明确人类归属予以保留。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08829v1 · PDF 第6页Use of AI，全文共6页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:25:31.382216+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08829v1",
+            "contentHash": "83a55cdf321ae8ec81fec76883ccb05d1f41f22dba5ada78e7a8b220ad98a3a6",
+            "pages": 6,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确将核心平均化思想归于自己在最大度数6平面三角剖分背景下独立提出。Claude协助将论证转译到光滑曲面并写出证明，记录proofs和writing；原思想的明确人类归属予以保留。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4a24da77784b233fd898396c5bd34d5f45b82c6944641c09f2695d2dea542a4b"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 90,
+          "priorityReason": "推进凸曲面面积与直径的尖锐比较问题。"
+        },
+        "analysisBasis": {
+          "abstract": "Alexandrov conjectured that every closed convex surface of area $A$ and intrinsic diameter $D$ satisfies $A/D^2\\leq\\pi/2$. Using an averaging argument over the curvature measure, we prove that every closed convex surface satisfies $A/D^2\\leq2\\pi/3$, improving the best previously known bound.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

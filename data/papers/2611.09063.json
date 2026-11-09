@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09063",
+  "slug": "2611.09063",
+  "latest": {
+    "arxivId": "2611.09063",
+    "metadata": {
+      "title": "Cable Knot Counterexamples to the All-Knot Volume Conjecture",
+      "authors": [
+        "Haibin Hang"
+      ],
+      "abstract": "Let $E$ be the figure-eight knot and let $V$ be the hyperbolic volume of its exterior. We study the reduced colored Jones polynomial at $q=e^{2\\pi i/N}$ for the $(p,w)$-cable of the connected sum of $d\\ge 2$ copies of $E$, where $w\\ge 2$ and $p,w$ are coprime. The normalized logarithmic growth rate converges to the JSJ volume $dV$ along colors coprime to $2w$, and its upper limit along colors sharing a divisor with $w$ is at most $V$. Thus the $(1,2)$-cable of $E\\#E$ violates the full-sequence volume limit for knots. The $(1,3)$-cable of the same companion shows that convergence can fail even along all odd colors. The separation comes from the multiples of $N$ in the exact cabling sum and a uniform first-derivative estimate for the other companion colors.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "5 pages",
+      "version": 1,
+      "submittedAt": "2026-11-06T06:42:49Z",
+      "updatedAt": "2026-11-06T06:42:49Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-09T06:15:32.933096+00:00",
+        "contentHash": "89facf66105c792d1cbcadef17001be86e5aba1d8d3d144a9e8cb328aa755e8c"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:17.533562+00:00",
+        "contentHash": "69591d876e0cdbefd42689f8dc4daaea736554bd23d88e3cbea4ff718605c84c"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "反例",
+      "workSummary": "令E为八字结、V为其外部双曲体积，对d≥2、w≥2、gcd(p,w)=1的卫星结L=C_(p,w)(E#…#E)，作者证明其JSJ体积为dV。按零框架reduced彩色Jones的标准归一化，增长率R_N在gcd(N,2w)=1的颜色子列收敛到dV，而在gcd(N,w)>1的子列limsup≤V，全颜色limsup仍为dV。因此C_(1,2)(E#E)的全整数极限不存在，C_(1,3)(E#E)沿全部奇数颜色的极限也不存在。",
+      "techniques": [
+        "Habiro–Lê八字结彩色Jones乘积展开",
+        "正Temperley–Lieb迹给出的非倍数颜色值界",
+        "伴随颜色的一阶导数统一估计",
+        "精确Morton缆结求和及单位根处可去奇点",
+        "JSJ分解与伴随颜色的同余算术"
+      ],
+      "breakthrough": "将缆结求和中的伴随颜色n_k=1+2wk分成N的倍数与非倍数。gcd(N,2w)=1时充分大N恰有一个倍数项，产生T_N^d；gcd(N,w)>1时倍数项全部消失。非倍数余项以O(N^(2d+3)T_N)控制，由d≥2实现两个指数增长尺度的分离。",
+      "limitations": "审读PDF第1–5页，渲染第2、4页。固定d≥2、w≥2且gcd(p,w)=1；J_N取零框架reduced归一化、unknot值1，R_N=(2π/N)log|J_N(K;e^(2πi/N))|且log0=−∞。共享w因子的颜色只得到limsup≤V，不是极限等于V。反例针对卫星结的全颜色All-Knot版本；全文上极限仍等于JSJ体积。推导依赖Habiro–Lê公式、Morton缆结公式、正Temperley–Lieb迹及八字结体积渐近，本次未独立核验外部公式约定与全部量子表示计算。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在致谢说明OpenAI Codex协助发展和检查论证并准备文稿，支持proofs、verification和writing。没有明确将具体核心构造归给模型。第3页AI是代数式A乘I的一部分，Astra补检来自has trace，均属数学表达。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.09063v1 · PDF 第5页Acknowledgment，第3页误命中语境，全文5页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:26:55.343852+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09063v1",
+        "contentHash": "47cefe2052b9cdaca42ed7ffcf8eba007ed9f00f2ab71661abffe3db253a5ee2",
+        "pages": 5,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在致谢说明OpenAI Codex协助发展和检查论证并准备文稿，支持proofs、verification和writing。没有明确将具体核心构造归给模型。第3页AI是代数式A乘I的一部分，Astra补检来自has trace，均属数学表达。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "84b7f1ab7e0b0b8c5c0fe010b3d94d73cf6030b57bb81e6055cb8b5b7f821ed3"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "揭示拓扑非双曲结的全序列体积极限可因色数整除关系失效。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $E$ be the figure-eight knot and let $V$ be the hyperbolic volume of its exterior. We study the reduced colored Jones polynomial at $q=e^{2\\pi i/N}$ for the $(p,w)$-cable of the connected sum of $d\\ge 2$ copies of $E$, where $w\\ge 2$ and $p,w$ are coprime. The normalized logarithmic growth rate converges to the JSJ volume $dV$ along colors coprime to $2w$, and its upper limit along colors sharing a divisor with $w$ is at most $V$. Thus the $(1,2)$-cable of $E\\#E$ violates the full-sequence volume limit for knots. The $(1,3)$-cable of the same companion shows that convergence can fail even along all odd colors. The separation comes from the multiples of $N$ in the exact cabling sum and a uniform first-derivative estimate for the other companion colors.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09063",
+        "metadata": {
+          "title": "Cable Knot Counterexamples to the All-Knot Volume Conjecture",
+          "authors": [
+            "Haibin Hang"
+          ],
+          "abstract": "Let $E$ be the figure-eight knot and let $V$ be the hyperbolic volume of its exterior. We study the reduced colored Jones polynomial at $q=e^{2\\pi i/N}$ for the $(p,w)$-cable of the connected sum of $d\\ge 2$ copies of $E$, where $w\\ge 2$ and $p,w$ are coprime. The normalized logarithmic growth rate converges to the JSJ volume $dV$ along colors coprime to $2w$, and its upper limit along colors sharing a divisor with $w$ is at most $V$. Thus the $(1,2)$-cable of $E\\#E$ violates the full-sequence volume limit for knots. The $(1,3)$-cable of the same companion shows that convergence can fail even along all odd colors. The separation comes from the multiples of $N$ in the exact cabling sum and a uniform first-derivative estimate for the other companion colors.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "5 pages",
+          "version": 1,
+          "submittedAt": "2026-11-06T06:42:49Z",
+          "updatedAt": "2026-11-06T06:42:49Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-09T06:15:32.933096+00:00",
+            "contentHash": "89facf66105c792d1cbcadef17001be86e5aba1d8d3d144a9e8cb328aa755e8c"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:17.533562+00:00",
+            "contentHash": "69591d876e0cdbefd42689f8dc4daaea736554bd23d88e3cbea4ff718605c84c"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "反例",
+          "workSummary": "令E为八字结、V为其外部双曲体积，对d≥2、w≥2、gcd(p,w)=1的卫星结L=C_(p,w)(E#…#E)，作者证明其JSJ体积为dV。按零框架reduced彩色Jones的标准归一化，增长率R_N在gcd(N,2w)=1的颜色子列收敛到dV，而在gcd(N,w)>1的子列limsup≤V，全颜色limsup仍为dV。因此C_(1,2)(E#E)的全整数极限不存在，C_(1,3)(E#E)沿全部奇数颜色的极限也不存在。",
+          "techniques": [
+            "Habiro–Lê八字结彩色Jones乘积展开",
+            "正Temperley–Lieb迹给出的非倍数颜色值界",
+            "伴随颜色的一阶导数统一估计",
+            "精确Morton缆结求和及单位根处可去奇点",
+            "JSJ分解与伴随颜色的同余算术"
+          ],
+          "breakthrough": "将缆结求和中的伴随颜色n_k=1+2wk分成N的倍数与非倍数。gcd(N,2w)=1时充分大N恰有一个倍数项，产生T_N^d；gcd(N,w)>1时倍数项全部消失。非倍数余项以O(N^(2d+3)T_N)控制，由d≥2实现两个指数增长尺度的分离。",
+          "limitations": "审读PDF第1–5页，渲染第2、4页。固定d≥2、w≥2且gcd(p,w)=1；J_N取零框架reduced归一化、unknot值1，R_N=(2π/N)log|J_N(K;e^(2πi/N))|且log0=−∞。共享w因子的颜色只得到limsup≤V，不是极限等于V。反例针对卫星结的全颜色All-Knot版本；全文上极限仍等于JSJ体积。推导依赖Habiro–Lê公式、Morton缆结公式、正Temperley–Lieb迹及八字结体积渐近，本次未独立核验外部公式约定与全部量子表示计算。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在致谢说明OpenAI Codex协助发展和检查论证并准备文稿，支持proofs、verification和writing。没有明确将具体核心构造归给模型。第3页AI是代数式A乘I的一部分，Astra补检来自has trace，均属数学表达。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.09063v1 · PDF 第5页Acknowledgment，第3页误命中语境，全文5页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:26:55.343852+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09063v1",
+            "contentHash": "47cefe2052b9cdaca42ed7ffcf8eba007ed9f00f2ab71661abffe3db253a5ee2",
+            "pages": 5,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在致谢说明OpenAI Codex协助发展和检查论证并准备文稿，支持proofs、verification和writing。没有明确将具体核心构造归给模型。第3页AI是代数式A乘I的一部分，Astra补检来自has trace，均属数学表达。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "84b7f1ab7e0b0b8c5c0fe010b3d94d73cf6030b57bb81e6055cb8b5b7f821ed3"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "揭示拓扑非双曲结的全序列体积极限可因色数整除关系失效。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $E$ be the figure-eight knot and let $V$ be the hyperbolic volume of its exterior. We study the reduced colored Jones polynomial at $q=e^{2\\pi i/N}$ for the $(p,w)$-cable of the connected sum of $d\\ge 2$ copies of $E$, where $w\\ge 2$ and $p,w$ are coprime. The normalized logarithmic growth rate converges to the JSJ volume $dV$ along colors coprime to $2w$, and its upper limit along colors sharing a divisor with $w$ is at most $V$. Thus the $(1,2)$-cable of $E\\#E$ violates the full-sequence volume limit for knots. The $(1,3)$-cable of the same companion shows that convergence can fail even along all odd colors. The separation comes from the multiples of $N$ in the exact cabling sum and a uniform first-derivative estimate for the other companion colors.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

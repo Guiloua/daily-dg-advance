@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.09166",
+  "slug": "2611.09166",
+  "latest": {
+    "arxivId": "2611.09166",
+    "metadata": {
+      "title": "Separating Measures by Hyperplanes",
+      "authors": [
+        "José Correa",
+        "Svenja M. Griesbach",
+        "Elfarouk Harb",
+        "Felix Hommelsheim",
+        "Reda Jlibene",
+        "Vasilis Livanos",
+        "Eilon Solan"
+      ],
+      "abstract": "Given red and blue points in $\\mathbb{R}^d$, connect every red point to every blue point and weigh each segment by its length under a fixed norm. What fraction of the total weight can always be captured by a single affine hyperplane separating the segments' endpoints? We study this question for finite point configurations in affine general position and, more generally, for pairs of probability measures. For dimension one, we show that choosing the best of three thresholds determined by the means of the two distributions captures at least one third of the total red-blue distance. We also give a matching upper bound. Embedding the line construction to higher dimensions shows that the guarantee of $1/3$ cannot be improved for arbitrary measures. Thus, we pivot to the family of measures whose atoms are in affine general position and whose non-atomic part places zero mass on all hyperplanes. Crucially, we establish that the worst-case guarantee is identical for finite configurations in affine general position and several natural classes of probability measures, thereby unifying the discrete and continuous formulations of the problem. For this family of measures and for higher dimensions, we extend our guarantee of $1/3$ for all norms. Our proofs combine the ham-sandwich theorem with a novel coupling argument and, in the planar case, an integral representation of norms. We also show that the optimal guarantee improves as the dimension grows, giving a lower bound of $1/2-\\operatorname{O}\\left(1/\\sqrt{d}\\right)$ as well as an asymptotically matching upper bound of $1/2$ for every $d$. For the Euclidean distance, we refine the lower bounds to $8/(8+5\\pi)$ and $1/2-\\operatorname{O}\\left(1/d\\right)$ and, for $d=2$, the upper bound to $5/11$. We also derive dimension-dependent guarantees for finite point configurations, including perfect separation of $n$ points of each color when $d\\geq2n-1$.",
+      "categories": [
+        "cs.CG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.CG",
+      "comment": "58 pages, 5 figures",
+      "version": 1,
+      "submittedAt": "2026-11-06T08:47:01Z",
+      "updatedAt": "2026-11-06T08:47:01Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-09T06:15:21.626490+00:00",
+        "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:17.533856+00:00",
+        "contentHash": "629c01b5f728d7f707f904d0fd20992e676761d030903505f29cffe2e146f00b"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "离散与连续统一界",
+      "workSummary": "研究一张仿射超平面能分隔多少按任意范数距离加权的红蓝点对。",
+      "techniques": [
+        "ham-sandwich定理",
+        "耦合论证",
+        "平面范数的积分表示"
+      ],
+      "breakthrough": "一维最优保证为1/3；在一般位置及相应测度类中推广任意范数的1/3界，并给出随维数逼近1/2的改进及欧氏专门估计。",
+      "limitations": "高维改进需相应一般位置或测度不集中于超平面的条件，任意测度有1/3上界障碍。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明问题于2024年提出，定理1.2和1.4证明由作者独立完成；定理1.1早期证明来自Claude Code(Opus4.6)，最终稿采用作者后来另得的更简证明。3.2、3.3先有作者较弱保证，再用GPT5.6 Sol和GPT6 Astra得到当前较简证明；3.4和第5节的证明由GPT6 Astra在对话后发展，原1/3与1/2界在平面不尖锐的观察由作者指出。按明确内容记录proofs，未把证明生成泛化为模型提出具体核心构造或全文写作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.09166v1 · PDF 第56页AI Disclosure Statement，全文及型号拆行补检共58页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:27:42.946477+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.09166v1",
+        "contentHash": "cfc75ff1f7d56a4dbafbe5586979c75bdb01539bf31705b77974b188d616640b",
+        "pages": 58,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明问题于2024年提出，定理1.2和1.4证明由作者独立完成；定理1.1早期证明来自Claude Code(Opus4.6)，最终稿采用作者后来另得的更简证明。3.2、3.3先有作者较弱保证，再用GPT5.6 Sol和GPT6 Astra得到当前较简证明；3.4和第5节的证明由GPT6 Astra在对话后发展，原1/3与1/2界在平面不尖锐的观察由作者指出。按明确内容记录proofs，未把证明生成泛化为模型提出具体核心构造或全文写作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ce78e78a49f1633529347629feae351ac1f10016edb0ed2a4bbd9e79c8c154fd"
+      },
+      "aiUsage": [
+        "proofs"
+      ],
+      "priorityScore": 76,
+      "priorityReason": "把有限点集和概率测度的最坏情形分隔保证连接起来。"
+    },
+    "analysisBasis": {
+      "abstract": "Given red and blue points in $\\mathbb{R}^d$, connect every red point to every blue point and weigh each segment by its length under a fixed norm. What fraction of the total weight can always be captured by a single affine hyperplane separating the segments' endpoints? We study this question for finite point configurations in affine general position and, more generally, for pairs of probability measures. For dimension one, we show that choosing the best of three thresholds determined by the means of the two distributions captures at least one third of the total red-blue distance. We also give a matching upper bound. Embedding the line construction to higher dimensions shows that the guarantee of $1/3$ cannot be improved for arbitrary measures. Thus, we pivot to the family of measures whose atoms are in affine general position and whose non-atomic part places zero mass on all hyperplanes. Crucially, we establish that the worst-case guarantee is identical for finite configurations in affine general position and several natural classes of probability measures, thereby unifying the discrete and continuous formulations of the problem. For this family of measures and for higher dimensions, we extend our guarantee of $1/3$ for all norms. Our proofs combine the ham-sandwich theorem with a novel coupling argument and, in the planar case, an integral representation of norms. We also show that the optimal guarantee improves as the dimension grows, giving a lower bound of $1/2-\\operatorname{O}\\left(1/\\sqrt{d}\\right)$ as well as an asymptotically matching upper bound of $1/2$ for every $d$. For the Euclidean distance, we refine the lower bounds to $8/(8+5\\pi)$ and $1/2-\\operatorname{O}\\left(1/d\\right)$ and, for $d=2$, the upper bound to $5/11$. We also derive dimension-dependent guarantees for finite point configurations, including perfect separation of $n$ points of each color when $d\\geq2n-1$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.09166",
+        "metadata": {
+          "title": "Separating Measures by Hyperplanes",
+          "authors": [
+            "José Correa",
+            "Svenja M. Griesbach",
+            "Elfarouk Harb",
+            "Felix Hommelsheim",
+            "Reda Jlibene",
+            "Vasilis Livanos",
+            "Eilon Solan"
+          ],
+          "abstract": "Given red and blue points in $\\mathbb{R}^d$, connect every red point to every blue point and weigh each segment by its length under a fixed norm. What fraction of the total weight can always be captured by a single affine hyperplane separating the segments' endpoints? We study this question for finite point configurations in affine general position and, more generally, for pairs of probability measures. For dimension one, we show that choosing the best of three thresholds determined by the means of the two distributions captures at least one third of the total red-blue distance. We also give a matching upper bound. Embedding the line construction to higher dimensions shows that the guarantee of $1/3$ cannot be improved for arbitrary measures. Thus, we pivot to the family of measures whose atoms are in affine general position and whose non-atomic part places zero mass on all hyperplanes. Crucially, we establish that the worst-case guarantee is identical for finite configurations in affine general position and several natural classes of probability measures, thereby unifying the discrete and continuous formulations of the problem. For this family of measures and for higher dimensions, we extend our guarantee of $1/3$ for all norms. Our proofs combine the ham-sandwich theorem with a novel coupling argument and, in the planar case, an integral representation of norms. We also show that the optimal guarantee improves as the dimension grows, giving a lower bound of $1/2-\\operatorname{O}\\left(1/\\sqrt{d}\\right)$ as well as an asymptotically matching upper bound of $1/2$ for every $d$. For the Euclidean distance, we refine the lower bounds to $8/(8+5\\pi)$ and $1/2-\\operatorname{O}\\left(1/d\\right)$ and, for $d=2$, the upper bound to $5/11$. We also derive dimension-dependent guarantees for finite point configurations, including perfect separation of $n$ points of each color when $d\\geq2n-1$.",
+          "categories": [
+            "cs.CG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.CG",
+          "comment": "58 pages, 5 figures",
+          "version": 1,
+          "submittedAt": "2026-11-06T08:47:01Z",
+          "updatedAt": "2026-11-06T08:47:01Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-09T06:15:21.626490+00:00",
+            "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:17.533856+00:00",
+            "contentHash": "629c01b5f728d7f707f904d0fd20992e676761d030903505f29cffe2e146f00b"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "离散与连续统一界",
+          "workSummary": "研究一张仿射超平面能分隔多少按任意范数距离加权的红蓝点对。",
+          "techniques": [
+            "ham-sandwich定理",
+            "耦合论证",
+            "平面范数的积分表示"
+          ],
+          "breakthrough": "一维最优保证为1/3；在一般位置及相应测度类中推广任意范数的1/3界，并给出随维数逼近1/2的改进及欧氏专门估计。",
+          "limitations": "高维改进需相应一般位置或测度不集中于超平面的条件，任意测度有1/3上界障碍。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明问题于2024年提出，定理1.2和1.4证明由作者独立完成；定理1.1早期证明来自Claude Code(Opus4.6)，最终稿采用作者后来另得的更简证明。3.2、3.3先有作者较弱保证，再用GPT5.6 Sol和GPT6 Astra得到当前较简证明；3.4和第5节的证明由GPT6 Astra在对话后发展，原1/3与1/2界在平面不尖锐的观察由作者指出。按明确内容记录proofs，未把证明生成泛化为模型提出具体核心构造或全文写作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.09166v1 · PDF 第56页AI Disclosure Statement，全文及型号拆行补检共58页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:27:42.946477+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.09166v1",
+            "contentHash": "cfc75ff1f7d56a4dbafbe5586979c75bdb01539bf31705b77974b188d616640b",
+            "pages": 58,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明问题于2024年提出，定理1.2和1.4证明由作者独立完成；定理1.1早期证明来自Claude Code(Opus4.6)，最终稿采用作者后来另得的更简证明。3.2、3.3先有作者较弱保证，再用GPT5.6 Sol和GPT6 Astra得到当前较简证明；3.4和第5节的证明由GPT6 Astra在对话后发展，原1/3与1/2界在平面不尖锐的观察由作者指出。按明确内容记录proofs，未把证明生成泛化为模型提出具体核心构造或全文写作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ce78e78a49f1633529347629feae351ac1f10016edb0ed2a4bbd9e79c8c154fd"
+          },
+          "aiUsage": [
+            "proofs"
+          ],
+          "priorityScore": 76,
+          "priorityReason": "把有限点集和概率测度的最坏情形分隔保证连接起来。"
+        },
+        "analysisBasis": {
+          "abstract": "Given red and blue points in $\\mathbb{R}^d$, connect every red point to every blue point and weigh each segment by its length under a fixed norm. What fraction of the total weight can always be captured by a single affine hyperplane separating the segments' endpoints? We study this question for finite point configurations in affine general position and, more generally, for pairs of probability measures. For dimension one, we show that choosing the best of three thresholds determined by the means of the two distributions captures at least one third of the total red-blue distance. We also give a matching upper bound. Embedding the line construction to higher dimensions shows that the guarantee of $1/3$ cannot be improved for arbitrary measures. Thus, we pivot to the family of measures whose atoms are in affine general position and whose non-atomic part places zero mass on all hyperplanes. Crucially, we establish that the worst-case guarantee is identical for finite configurations in affine general position and several natural classes of probability measures, thereby unifying the discrete and continuous formulations of the problem. For this family of measures and for higher dimensions, we extend our guarantee of $1/3$ for all norms. Our proofs combine the ham-sandwich theorem with a novel coupling argument and, in the planar case, an integral representation of norms. We also show that the optimal guarantee improves as the dimension grows, giving a lower bound of $1/2-\\operatorname{O}\\left(1/\\sqrt{d}\\right)$ as well as an asymptotically matching upper bound of $1/2$ for every $d$. For the Euclidean distance, we refine the lower bounds to $8/(8+5\\pi)$ and $1/2-\\operatorname{O}\\left(1/d\\right)$ and, for $d=2$, the upper bound to $5/11$. We also derive dimension-dependent guarantees for finite point configurations, including perfect separation of $n$ points of each color when $d\\geq2n-1$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08653",
+  "slug": "2611.08653",
+  "latest": {
+    "arxivId": "2611.08653",
+    "metadata": {
+      "title": "Fractional Fefferman--Stein inequalities on infinite rooted $k$-ary trees",
+      "authors": [
+        "Gonzalo Ibañez-Firnkorn",
+        "Jorgelina Recchi"
+      ],
+      "abstract": "We study weighted endpoint estimates for the centered fractional maximal operator on the infinite rooted $k$-ary tree, $T$. Our first result is a Fefferman--Stein type estimate \\[ w\\bigl(\\{M_\\alpha f>\\lambda\\}\\bigr) \\lesssim_{\\alpha,s} \\frac1\\lambda\\sum_{x\\in T}|f(x)|M_{\\alpha,s}w(x), \\qquad s>1, \\] with a constant independent of the branching parameter $k$. Although the proof is inspired by the non-fractional argument of Ombrosi, Rivera-Ríos and Safe in \\cite{ORRS}, the fractional normalization introduces a genuinely new scale interaction. At radius $r$, one must renormalize the function by $k^{r\\alpha}$ while keeping the dyadic cutoff at $k^r$; this leads to a new summation mechanism involving simultaneously $k^{r\\alpha}$ and $k^{r(1-\\alpha)}$. We then study sharpness and the geometry of admissible weights. We construct counterexamples showing that the estimate cannot in general be reduced to $s=1$ for any $0<\\alpha<1$. In the subcritical range $0<\\alpha<1/2$, we characterize power-type radial weights satisfying the natural fractional $A_1$ condition and prove that the failure persists after any fixed finite number of iterations of $M_\\alpha$. We also prove that $M_\\alpha w\\lesssim w$ is necessary for the corresponding weighted weak type estimate but is not sufficient in the subcritical range. Finally, we identify a phase transition: for $1/2\\le\\alpha<1$ no nonzero global weight can satisfy $M_\\alpha w\\lesssim w$.",
+      "categories": [
+        "math.CA",
+        "math.CO",
+        "math.FA",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CA",
+      "comment": "19 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T19:59:50Z",
+      "updatedAt": "2026-11-05T19:59:50Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-09T06:15:21.626490+00:00",
+        "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08653v1",
+        "observedAt": "2026-11-09T06:25:55.397975+00:00",
+        "contentHash": "57354425e4f032af8454f3a1625877757c5ebd12236c257f5d993c19e9ee01ab"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:17.529377+00:00",
+        "contentHash": "200e4d580b6fc4c5d140f26386845a447ecd5878be70000a58248a9d4769a4d2"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "无限正则根树上的分数阶端点估计",
+      "workSummary": "对无限根k叉树的中心分数阶极大算子，作者证明s>1的Fefferman–Stein弱型估计，常数与分叉参数k无关。",
+      "techniques": [
+        "树球体积及分数阶归一化",
+        "双尺度分层求和",
+        "径向幂权与分数阶A₁条件",
+        "端点反例与迭代极大算子"
+      ],
+      "breakthrough": "给出s=1失败反例；在0<α<1/2刻画相应径向幂权，失败在任意固定次数迭代后仍存在。α≥1/2时不存在满足M_αw≲w的非零全局权。",
+      "limitations": "需保留0<α<1与s>1；必要权条件在次临界区间仍不充分。所用树上分数阶极大规范需对照正文。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第19页披露ChatGPT用于语言编辑和校读，并建议在第3节Fefferman–Stein失败例中考虑子树，构成具体反例方向的idea。作者说明数学结果、论证和证明由自己建立，未标模型证明或核验。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08653v1 · PDF第19页 AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:25:55.397975+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08653v1",
+        "contentHash": "57354425e4f032af8454f3a1625877757c5ebd12236c257f5d993c19e9ee01ab",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页披露ChatGPT用于语言编辑和校读，并建议在第3节Fefferman–Stein失败例中考虑子树，构成具体反例方向的idea。作者说明数学结果、论证和证明由自己建立，未标模型证明或核验。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7e61185f105a45c67e4b0db502c0b329bbccdb87184cd0e0115301345972489f"
+      },
+      "aiUsage": [
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 71,
+      "priorityReason": "非倍增离散几何上的分析估计，主要贡献在调和分析。"
+    },
+    "analysisBasis": {
+      "abstract": "We study weighted endpoint estimates for the centered fractional maximal operator on the infinite rooted $k$-ary tree, $T$. Our first result is a Fefferman--Stein type estimate \\[ w\\bigl(\\{M_\\alpha f>\\lambda\\}\\bigr) \\lesssim_{\\alpha,s} \\frac1\\lambda\\sum_{x\\in T}|f(x)|M_{\\alpha,s}w(x), \\qquad s>1, \\] with a constant independent of the branching parameter $k$. Although the proof is inspired by the non-fractional argument of Ombrosi, Rivera-Ríos and Safe in \\cite{ORRS}, the fractional normalization introduces a genuinely new scale interaction. At radius $r$, one must renormalize the function by $k^{r\\alpha}$ while keeping the dyadic cutoff at $k^r$; this leads to a new summation mechanism involving simultaneously $k^{r\\alpha}$ and $k^{r(1-\\alpha)}$. We then study sharpness and the geometry of admissible weights. We construct counterexamples showing that the estimate cannot in general be reduced to $s=1$ for any $0<\\alpha<1$. In the subcritical range $0<\\alpha<1/2$, we characterize power-type radial weights satisfying the natural fractional $A_1$ condition and prove that the failure persists after any fixed finite number of iterations of $M_\\alpha$. We also prove that $M_\\alpha w\\lesssim w$ is necessary for the corresponding weighted weak type estimate but is not sufficient in the subcritical range. Finally, we identify a phase transition: for $1/2\\le\\alpha<1$ no nonzero global weight can satisfy $M_\\alpha w\\lesssim w$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.08653",
+        "metadata": {
+          "title": "Fractional Fefferman--Stein inequalities on infinite rooted $k$-ary trees",
+          "authors": [
+            "Gonzalo Ibañez-Firnkorn",
+            "Jorgelina Recchi"
+          ],
+          "abstract": "We study weighted endpoint estimates for the centered fractional maximal operator on the infinite rooted $k$-ary tree, $T$. Our first result is a Fefferman--Stein type estimate \\[ w\\bigl(\\{M_\\alpha f>\\lambda\\}\\bigr) \\lesssim_{\\alpha,s} \\frac1\\lambda\\sum_{x\\in T}|f(x)|M_{\\alpha,s}w(x), \\qquad s>1, \\] with a constant independent of the branching parameter $k$. Although the proof is inspired by the non-fractional argument of Ombrosi, Rivera-Ríos and Safe in \\cite{ORRS}, the fractional normalization introduces a genuinely new scale interaction. At radius $r$, one must renormalize the function by $k^{r\\alpha}$ while keeping the dyadic cutoff at $k^r$; this leads to a new summation mechanism involving simultaneously $k^{r\\alpha}$ and $k^{r(1-\\alpha)}$. We then study sharpness and the geometry of admissible weights. We construct counterexamples showing that the estimate cannot in general be reduced to $s=1$ for any $0<\\alpha<1$. In the subcritical range $0<\\alpha<1/2$, we characterize power-type radial weights satisfying the natural fractional $A_1$ condition and prove that the failure persists after any fixed finite number of iterations of $M_\\alpha$. We also prove that $M_\\alpha w\\lesssim w$ is necessary for the corresponding weighted weak type estimate but is not sufficient in the subcritical range. Finally, we identify a phase transition: for $1/2\\le\\alpha<1$ no nonzero global weight can satisfy $M_\\alpha w\\lesssim w$.",
+          "categories": [
+            "math.CA",
+            "math.CO",
+            "math.FA",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CA",
+          "comment": "19 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T19:59:50Z",
+          "updatedAt": "2026-11-05T19:59:50Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-09T06:15:21.626490+00:00",
+            "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.08653v1",
+            "observedAt": "2026-11-09T06:25:55.397975+00:00",
+            "contentHash": "57354425e4f032af8454f3a1625877757c5ebd12236c257f5d993c19e9ee01ab"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:17.529377+00:00",
+            "contentHash": "200e4d580b6fc4c5d140f26386845a447ecd5878be70000a58248a9d4769a4d2"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "无限正则根树上的分数阶端点估计",
+          "workSummary": "对无限根k叉树的中心分数阶极大算子，作者证明s>1的Fefferman–Stein弱型估计，常数与分叉参数k无关。",
+          "techniques": [
+            "树球体积及分数阶归一化",
+            "双尺度分层求和",
+            "径向幂权与分数阶A₁条件",
+            "端点反例与迭代极大算子"
+          ],
+          "breakthrough": "给出s=1失败反例；在0<α<1/2刻画相应径向幂权，失败在任意固定次数迭代后仍存在。α≥1/2时不存在满足M_αw≲w的非零全局权。",
+          "limitations": "需保留0<α<1与s>1；必要权条件在次临界区间仍不充分。所用树上分数阶极大规范需对照正文。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第19页披露ChatGPT用于语言编辑和校读，并建议在第3节Fefferman–Stein失败例中考虑子树，构成具体反例方向的idea。作者说明数学结果、论证和证明由自己建立，未标模型证明或核验。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08653v1 · PDF第19页 AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:25:55.397975+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08653v1",
+            "contentHash": "57354425e4f032af8454f3a1625877757c5ebd12236c257f5d993c19e9ee01ab",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页披露ChatGPT用于语言编辑和校读，并建议在第3节Fefferman–Stein失败例中考虑子树，构成具体反例方向的idea。作者说明数学结果、论证和证明由自己建立，未标模型证明或核验。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7e61185f105a45c67e4b0db502c0b329bbccdb87184cd0e0115301345972489f"
+          },
+          "aiUsage": [
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 71,
+          "priorityReason": "非倍增离散几何上的分析估计，主要贡献在调和分析。"
+        },
+        "analysisBasis": {
+          "abstract": "We study weighted endpoint estimates for the centered fractional maximal operator on the infinite rooted $k$-ary tree, $T$. Our first result is a Fefferman--Stein type estimate \\[ w\\bigl(\\{M_\\alpha f>\\lambda\\}\\bigr) \\lesssim_{\\alpha,s} \\frac1\\lambda\\sum_{x\\in T}|f(x)|M_{\\alpha,s}w(x), \\qquad s>1, \\] with a constant independent of the branching parameter $k$. Although the proof is inspired by the non-fractional argument of Ombrosi, Rivera-Ríos and Safe in \\cite{ORRS}, the fractional normalization introduces a genuinely new scale interaction. At radius $r$, one must renormalize the function by $k^{r\\alpha}$ while keeping the dyadic cutoff at $k^r$; this leads to a new summation mechanism involving simultaneously $k^{r\\alpha}$ and $k^{r(1-\\alpha)}$. We then study sharpness and the geometry of admissible weights. We construct counterexamples showing that the estimate cannot in general be reduced to $s=1$ for any $0<\\alpha<1$. In the subcritical range $0<\\alpha<1/2$, we characterize power-type radial weights satisfying the natural fractional $A_1$ condition and prove that the failure persists after any fixed finite number of iterations of $M_\\alpha$. We also prove that $M_\\alpha w\\lesssim w$ is necessary for the corresponding weighted weak type estimate but is not sufficient in the subcritical range. Finally, we identify a phase transition: for $1/2\\le\\alpha<1$ no nonzero global weight can satisfy $M_\\alpha w\\lesssim w$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.08546",
+  "slug": "2611.08546",
+  "latest": {
+    "arxivId": "2611.08546",
+    "metadata": {
+      "title": "Bourgain's Theorem for a Union of Euclidean Metric Spaces",
+      "authors": [
+        "Dimitar Chakarov",
+        "Sepideh Mahabadi",
+        "Yury Makarychev",
+        "Ali Vakilian"
+      ],
+      "abstract": "We study the distortion of embedding a union of $k$ Euclidean sets into Euclidean space. We show that a union of $k$ Euclidean sets can be embedded with distortion at most $O(k^{1.128} \\log k)$, independent of the number of points. This is an exponential improvement over the previous best known upper bound of $2^{O(k)}$ obtained by iterating the result of Makarychev and Makarychev (2016) for the special case $k = 2$. Surprisingly, with the additional assumption that each Euclidean set remains Euclidean when we adjoin any other two points, we can obtain an asymptotically tight distortion of $O(\\log k)$, thus, providing a generalization of Bourgain's Theorem (1985). Along the way, we also show that the distortion of the union can be upper bounded by $O(\\log k)$ times the maximum of the Lipschitz extension constants of individual Euclidean sets.",
+      "categories": [
+        "cs.DS",
+        "cs.CG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.DS",
+      "comment": "33 pages",
+      "version": 1,
+      "submittedAt": "2026-11-05T07:19:55Z",
+      "updatedAt": "2026-11-05T07:19:55Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-09T06:15:21.626490+00:00",
+        "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08546v1",
+        "observedAt": "2026-11-09T06:25:19.228592+00:00",
+        "contentHash": "ab6e292f040bf76e6fd9c75a1d5fab27757493d4df8717a055a30caf55562a72"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-09T06:30:17.528287+00:00",
+        "contentHash": "ba32bea5760c2f7241e6a2510c2b95306f6dc730ec88207d06ead209730bbb4c"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "欧氏子空间并的嵌入失真界",
+      "workSummary": "设度量空间X=∪_(i=1)^k U_i，各U_i以诱导度量等距嵌入ℓ₂。定理1.2给c₂(X)=O(k^1.128 log k)，k=2时改进至c₂(X)<3.997。若每个U_i加入X中任意一点仍等距欧氏，则定理1.3给O(k^.895 log k)；加入任意两点仍欧氏时，定理1.1给渐近尖锐的O(log k)。",
+      "techniques": [
+        "全空间1-Lipschitz的terminal嵌入",
+        "Bourgain式抽样组合最近子集映射",
+        "Kirszbraun定理与子集到X的Lipschitz延拓常数",
+        "二次能量的Euclidean metric sparsifier对偶",
+        "加回集合顺序的平均与1+η/r乘积控制"
+      ],
+      "breakthrough": "定理1.4将e_max=max_i e(U_i)与失真联系为e_max≤c₂(X)≤O(e_max log(k+1))，这里e(U_i)是所有到ℓ₂的Lipschitz映射从U_i延至X的最小统一放大系数。有限集上的延拓界由度量稀疏化推出，再经可分性及紧致性推广。两种构造的指数分别为η₀=1.1275…、η₁=.8941…，给出所述略取整上界。",
+      "limitations": "一般欧氏并及一点扩充情形的多项式上界未证最优，当前失真下界仍是Ω(log k)。延拓常数的Ω(√log k)及Ω((log k)^(1/4))下界不直接给同阶失真最优性。目标为ℓ₂，任意无限空间情形未给统一有限维目标界。依赖所引Kirszbraun、双侧嵌入与紧致性结果，本次仅核对主结果和路线，未逐式复核稀疏化对偶及指数优化。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第28页明确区分作者独立完成的二点强欧氏定理1.1，以及向GPT-6 Astra提供其证明后由模型获得的定理1.2/1.3结果，构成具体主要结果与证明路线的归因，记ideas和proofs。作者显著重写表述，并独立发现Lipschitz延拓和度量稀疏化联系，不能扩大为全部结果均由AI产生。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.08546v1 · PDF第28页 Generative AI Statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-09T06:25:19.228592+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.08546v1",
+        "contentHash": "ab6e292f040bf76e6fd9c75a1d5fab27757493d4df8717a055a30caf55562a72",
+        "pages": 33,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第28页明确区分作者独立完成的二点强欧氏定理1.1，以及向GPT-6 Astra提供其证明后由模型获得的定理1.2/1.3结果，构成具体主要结果与证明路线的归因，记ideas和proofs。作者显著重写表述，并独立发现Lipschitz延拓和度量稀疏化联系，不能扩大为全部结果均由AI产生。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5ca3d5bf113a98886e1c16454beae463982f2357e33b5820b47c554bc98b949a"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "度量嵌入与局部结构如何控制整体几何，是本组重点。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the distortion of embedding a union of $k$ Euclidean sets into Euclidean space. We show that a union of $k$ Euclidean sets can be embedded with distortion at most $O(k^{1.128} \\log k)$, independent of the number of points. This is an exponential improvement over the previous best known upper bound of $2^{O(k)}$ obtained by iterating the result of Makarychev and Makarychev (2016) for the special case $k = 2$. Surprisingly, with the additional assumption that each Euclidean set remains Euclidean when we adjoin any other two points, we can obtain an asymptotically tight distortion of $O(\\log k)$, thus, providing a generalization of Bourgain's Theorem (1985). Along the way, we also show that the distortion of the union can be upper bounded by $O(\\log k)$ times the maximum of the Lipschitz extension constants of individual Euclidean sets.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-09",
+      "entry": {
+        "arxivId": "2611.08546",
+        "metadata": {
+          "title": "Bourgain's Theorem for a Union of Euclidean Metric Spaces",
+          "authors": [
+            "Dimitar Chakarov",
+            "Sepideh Mahabadi",
+            "Yury Makarychev",
+            "Ali Vakilian"
+          ],
+          "abstract": "We study the distortion of embedding a union of $k$ Euclidean sets into Euclidean space. We show that a union of $k$ Euclidean sets can be embedded with distortion at most $O(k^{1.128} \\log k)$, independent of the number of points. This is an exponential improvement over the previous best known upper bound of $2^{O(k)}$ obtained by iterating the result of Makarychev and Makarychev (2016) for the special case $k = 2$. Surprisingly, with the additional assumption that each Euclidean set remains Euclidean when we adjoin any other two points, we can obtain an asymptotically tight distortion of $O(\\log k)$, thus, providing a generalization of Bourgain's Theorem (1985). Along the way, we also show that the distortion of the union can be upper bounded by $O(\\log k)$ times the maximum of the Lipschitz extension constants of individual Euclidean sets.",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.DS",
+          "comment": "33 pages",
+          "version": 1,
+          "submittedAt": "2026-11-05T07:19:55Z",
+          "updatedAt": "2026-11-05T07:19:55Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-09T06:15:21.626490+00:00",
+            "contentHash": "5896a396dd5635bbb015e80f709fcd80e1990f0e064423d53697ee7dcdd564ca"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.08546v1",
+            "observedAt": "2026-11-09T06:25:19.228592+00:00",
+            "contentHash": "ab6e292f040bf76e6fd9c75a1d5fab27757493d4df8717a055a30caf55562a72"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-09T06:30:17.528287+00:00",
+            "contentHash": "ba32bea5760c2f7241e6a2510c2b95306f6dc730ec88207d06ead209730bbb4c"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "欧氏子空间并的嵌入失真界",
+          "workSummary": "设度量空间X=∪_(i=1)^k U_i，各U_i以诱导度量等距嵌入ℓ₂。定理1.2给c₂(X)=O(k^1.128 log k)，k=2时改进至c₂(X)<3.997。若每个U_i加入X中任意一点仍等距欧氏，则定理1.3给O(k^.895 log k)；加入任意两点仍欧氏时，定理1.1给渐近尖锐的O(log k)。",
+          "techniques": [
+            "全空间1-Lipschitz的terminal嵌入",
+            "Bourgain式抽样组合最近子集映射",
+            "Kirszbraun定理与子集到X的Lipschitz延拓常数",
+            "二次能量的Euclidean metric sparsifier对偶",
+            "加回集合顺序的平均与1+η/r乘积控制"
+          ],
+          "breakthrough": "定理1.4将e_max=max_i e(U_i)与失真联系为e_max≤c₂(X)≤O(e_max log(k+1))，这里e(U_i)是所有到ℓ₂的Lipschitz映射从U_i延至X的最小统一放大系数。有限集上的延拓界由度量稀疏化推出，再经可分性及紧致性推广。两种构造的指数分别为η₀=1.1275…、η₁=.8941…，给出所述略取整上界。",
+          "limitations": "一般欧氏并及一点扩充情形的多项式上界未证最优，当前失真下界仍是Ω(log k)。延拓常数的Ω(√log k)及Ω((log k)^(1/4))下界不直接给同阶失真最优性。目标为ℓ₂，任意无限空间情形未给统一有限维目标界。依赖所引Kirszbraun、双侧嵌入与紧致性结果，本次仅核对主结果和路线，未逐式复核稀疏化对偶及指数优化。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第28页明确区分作者独立完成的二点强欧氏定理1.1，以及向GPT-6 Astra提供其证明后由模型获得的定理1.2/1.3结果，构成具体主要结果与证明路线的归因，记ideas和proofs。作者显著重写表述，并独立发现Lipschitz延拓和度量稀疏化联系，不能扩大为全部结果均由AI产生。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.08546v1 · PDF第28页 Generative AI Statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-09T06:25:19.228592+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.08546v1",
+            "contentHash": "ab6e292f040bf76e6fd9c75a1d5fab27757493d4df8717a055a30caf55562a72",
+            "pages": 33,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第28页明确区分作者独立完成的二点强欧氏定理1.1，以及向GPT-6 Astra提供其证明后由模型获得的定理1.2/1.3结果，构成具体主要结果与证明路线的归因，记ideas和proofs。作者显著重写表述，并独立发现Lipschitz延拓和度量稀疏化联系，不能扩大为全部结果均由AI产生。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5ca3d5bf113a98886e1c16454beae463982f2357e33b5820b47c554bc98b949a"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "度量嵌入与局部结构如何控制整体几何，是本组重点。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the distortion of embedding a union of $k$ Euclidean sets into Euclidean space. We show that a union of $k$ Euclidean sets can be embedded with distortion at most $O(k^{1.128} \\log k)$, independent of the number of points. This is an exponential improvement over the previous best known upper bound of $2^{O(k)}$ obtained by iterating the result of Makarychev and Makarychev (2016) for the special case $k = 2$. Surprisingly, with the additional assumption that each Euclidean set remains Euclidean when we adjoin any other two points, we can obtain an asymptotically tight distortion of $O(\\log k)$, thus, providing a generalization of Bourgain's Theorem (1985). Along the way, we also show that the distortion of the union can be upper bounded by $O(\\log k)$ times the maximum of the Lipschitz extension constants of individual Euclidean sets.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
