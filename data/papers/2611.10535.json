@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10535",
+  "slug": "2611.10535",
+  "latest": {
+    "arxivId": "2611.10535",
+    "metadata": {
+      "title": "Positive sectional curvature on all smooth 13-spheres",
+      "authors": [
+        "Zhiqi Chen",
+        "Shaoqiang Deng",
+        "Junna Ni"
+      ],
+      "abstract": "Every smooth homotopy $13$-sphere admits a Riemannian metric of strictly positive sectional curvature. We construct a special $S^3$--$S^3$ bundle over $S^{13}$ whose star quotient represents the nonzero class $\\pm\\alpha_1\\beta_1\\in\\Theta_{13}\\cong\\mathbb Z/3$. The defining equivariant map factors through the Blakers--Massey map by a smooth Hopf construction representing an unstable $J$-generator. This factorisation retains the prescribed base representation and makes Schultz's plumbing composition formula applicable; a normal-invariant computation in smoothing theory then identifies the smooth structure. On the quotient we implement the compatible-disk strategy with complete curvature estimates on arbitrary two-planes, matching boundary metrics, and a strictly positive sum of outward second fundamental forms. A direct smoothing argument completes the metric construction. Orientation reversal gives the remaining nonzero class in $\\Theta_{13}$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-07T07:08:45Z",
+      "updatedAt": "2026-11-07T07:08:45Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.10535v1",
+        "observedAt": "2026-11-10T11:31:04.039451+00:00",
+        "contentHash": "1465d83b50c66378da978d93e7df9c3b4880564e06122fcfea997e88d22a078b"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.020715+00:00",
+        "contentHash": "bc380ab4dde750da96e93004073b05c2ac170f702ac1ec3f9645ba4e0ae1ad2c"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "正曲率构造",
+      "workSummary": "作者声称以保持基底表示的等变 Hopf–Blakers–Massey 因子分解构造特殊 S³–S³ 束，其星商代表 Θ₁₃≅Z/3 的非零类 ±α₁β₁；对两块商盘构造正曲率度量并严格拼接，反向定向覆盖另一个非零类，从而得到全部光滑同伦13球面的正截面曲率。",
+      "techniques": [
+        "等变拉回 Gromoll–Meyer 束及不稳定 J 像",
+        "Schultz plumbing 复合公式与平滑理论的法不变量",
+        "任意二平面曲率估计、可变纤维半径和 O’Neill 公式",
+        "匹配商边界度量、严格第二基本形式条件及直接平滑"
+      ],
+      "breakthrough": "同时处理几何正曲率构造与具体光滑结构识别；边界度量在实际粘合映射下相同，外向第二基本形式之和严格正，是作者完成光滑拼接的关键。",
+      "limitations": "已读PDF第1–2、22–23页，未独立验证完整曲率估计和拓扑识别。作者明确 Lean 4 文件只覆盖选定有限维恒等式/标量不等式，并未形式化曲率、延拓、商、平滑与拓扑步骤，不能称主定理已获形式化验证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT/Codex 与 Claude 用于数学探索和检查、起草修订、参考文献核查及验证代码准备。该页另明确 Lean 4 仅验证部分有限维恒等式和标量不等式，未形式化曲率公式、光滑延拓、商构造、平滑及拓扑识别，不构成主定理 A/B 的形式化证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10535v1 · PDF 第23页 Acknowledgements / Verification",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:31:04.039451+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10535v1",
+        "contentHash": "1465d83b50c66378da978d93e7df9c3b4880564e06122fcfea997e88d22a078b",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT/Codex 与 Claude 用于数学探索和检查、起草修订、参考文献核查及验证代码准备。该页另明确 Lean 4 仅验证部分有限维恒等式和标量不等式，未形式化曲率公式、光滑延拓、商构造、平滑及拓扑识别，不构成主定理 A/B 的形式化证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e6e7eafab74bd770912232f3b43b362ef237a35341418a1e330781210eb93297"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 99,
+      "priorityReason": "异种13球面全部承载正截面曲率的重大构造主张。"
+    },
+    "analysisBasis": {
+      "abstract": "Every smooth homotopy $13$-sphere admits a Riemannian metric of strictly positive sectional curvature. We construct a special $S^3$--$S^3$ bundle over $S^{13}$ whose star quotient represents the nonzero class $\\pm\\alpha_1\\beta_1\\in\\Theta_{13}\\cong\\mathbb Z/3$. The defining equivariant map factors through the Blakers--Massey map by a smooth Hopf construction representing an unstable $J$-generator. This factorisation retains the prescribed base representation and makes Schultz's plumbing composition formula applicable; a normal-invariant computation in smoothing theory then identifies the smooth structure. On the quotient we implement the compatible-disk strategy with complete curvature estimates on arbitrary two-planes, matching boundary metrics, and a strictly positive sum of outward second fundamental forms. A direct smoothing argument completes the metric construction. Orientation reversal gives the remaining nonzero class in $\\Theta_{13}$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10535",
+        "metadata": {
+          "title": "Positive sectional curvature on all smooth 13-spheres",
+          "authors": [
+            "Zhiqi Chen",
+            "Shaoqiang Deng",
+            "Junna Ni"
+          ],
+          "abstract": "Every smooth homotopy $13$-sphere admits a Riemannian metric of strictly positive sectional curvature. We construct a special $S^3$--$S^3$ bundle over $S^{13}$ whose star quotient represents the nonzero class $\\pm\\alpha_1\\beta_1\\in\\Theta_{13}\\cong\\mathbb Z/3$. The defining equivariant map factors through the Blakers--Massey map by a smooth Hopf construction representing an unstable $J$-generator. This factorisation retains the prescribed base representation and makes Schultz's plumbing composition formula applicable; a normal-invariant computation in smoothing theory then identifies the smooth structure. On the quotient we implement the compatible-disk strategy with complete curvature estimates on arbitrary two-planes, matching boundary metrics, and a strictly positive sum of outward second fundamental forms. A direct smoothing argument completes the metric construction. Orientation reversal gives the remaining nonzero class in $\\Theta_{13}$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-07T07:08:45Z",
+          "updatedAt": "2026-11-07T07:08:45Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.10535v1",
+            "observedAt": "2026-11-10T11:31:04.039451+00:00",
+            "contentHash": "1465d83b50c66378da978d93e7df9c3b4880564e06122fcfea997e88d22a078b"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.020715+00:00",
+            "contentHash": "bc380ab4dde750da96e93004073b05c2ac170f702ac1ec3f9645ba4e0ae1ad2c"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "正曲率构造",
+          "workSummary": "作者声称以保持基底表示的等变 Hopf–Blakers–Massey 因子分解构造特殊 S³–S³ 束，其星商代表 Θ₁₃≅Z/3 的非零类 ±α₁β₁；对两块商盘构造正曲率度量并严格拼接，反向定向覆盖另一个非零类，从而得到全部光滑同伦13球面的正截面曲率。",
+          "techniques": [
+            "等变拉回 Gromoll–Meyer 束及不稳定 J 像",
+            "Schultz plumbing 复合公式与平滑理论的法不变量",
+            "任意二平面曲率估计、可变纤维半径和 O’Neill 公式",
+            "匹配商边界度量、严格第二基本形式条件及直接平滑"
+          ],
+          "breakthrough": "同时处理几何正曲率构造与具体光滑结构识别；边界度量在实际粘合映射下相同，外向第二基本形式之和严格正，是作者完成光滑拼接的关键。",
+          "limitations": "已读PDF第1–2、22–23页，未独立验证完整曲率估计和拓扑识别。作者明确 Lean 4 文件只覆盖选定有限维恒等式/标量不等式，并未形式化曲率、延拓、商、平滑与拓扑步骤，不能称主定理已获形式化验证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT/Codex 与 Claude 用于数学探索和检查、起草修订、参考文献核查及验证代码准备。该页另明确 Lean 4 仅验证部分有限维恒等式和标量不等式，未形式化曲率公式、光滑延拓、商构造、平滑及拓扑识别，不构成主定理 A/B 的形式化证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10535v1 · PDF 第23页 Acknowledgements / Verification",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:31:04.039451+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10535v1",
+            "contentHash": "1465d83b50c66378da978d93e7df9c3b4880564e06122fcfea997e88d22a078b",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT/Codex 与 Claude 用于数学探索和检查、起草修订、参考文献核查及验证代码准备。该页另明确 Lean 4 仅验证部分有限维恒等式和标量不等式，未形式化曲率公式、光滑延拓、商构造、平滑及拓扑识别，不构成主定理 A/B 的形式化证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e6e7eafab74bd770912232f3b43b362ef237a35341418a1e330781210eb93297"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 99,
+          "priorityReason": "异种13球面全部承载正截面曲率的重大构造主张。"
+        },
+        "analysisBasis": {
+          "abstract": "Every smooth homotopy $13$-sphere admits a Riemannian metric of strictly positive sectional curvature. We construct a special $S^3$--$S^3$ bundle over $S^{13}$ whose star quotient represents the nonzero class $\\pm\\alpha_1\\beta_1\\in\\Theta_{13}\\cong\\mathbb Z/3$. The defining equivariant map factors through the Blakers--Massey map by a smooth Hopf construction representing an unstable $J$-generator. This factorisation retains the prescribed base representation and makes Schultz's plumbing composition formula applicable; a normal-invariant computation in smoothing theory then identifies the smooth structure. On the quotient we implement the compatible-disk strategy with complete curvature estimates on arbitrary two-planes, matching boundary metrics, and a strictly positive sum of outward second fundamental forms. A direct smoothing argument completes the metric construction. Orientation reversal gives the remaining nonzero class in $\\Theta_{13}$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

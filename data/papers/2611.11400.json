@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11400",
+  "slug": "2611.11400",
+  "latest": {
+    "arxivId": "2611.11400",
+    "metadata": {
+      "title": "Global Classification of the Flat Singular Escobar-Yamabe Equation",
+      "authors": [
+        "Felipe G. Bogo"
+      ],
+      "abstract": "In every dimension $n\\geq3$, we classify positive solutions of the flat Escobar--Yamabe equation on the Euclidean half-space with a possible isolated boundary singularity at the origin. Solutions with a removable singularity are boundary bubbles. Up to dilation, the nonremovable solutions are the cylindrical solution and a family of periodic Delaunay solutions uniquely parametrized by the necksize $\\epsilon \\in (0,1)$, the minimum of the normalized boundary trace. In each fundamental period $T_\\epsilon$, the trace has exactly two critical points, a nondegenerate minimum and a nondegenerate maximum. The period and the solution centered at the trace minimum and rescaled to period one depend smoothly on $\\epsilon$. As $\\epsilon \\to 0$, $T_\\epsilon = \\frac{4}{n-2}\\log(1/\\epsilon)+O(1)$. As $\\epsilon \\to 1$, the solutions converge to the cylindrical solution and their periods tend to that of its linearized oscillation. We use uniqueness in the odd and even classes for linear Robin equations to obtain reflection symmetry and continuation in the necksize.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-08T14:11:22Z",
+      "updatedAt": "2026-11-08T14:11:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:01.279176+00:00",
+        "contentHash": "40b7848b97321fe74cf4c62b7a398ac6f65f3d46dd646ab20877d48013f284c8"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "奇异边值方程全局分类",
+      "workSummary": "作者声称对n≥3的欧氏半空间平坦Escobar–Yamabe方程正解，在原点可能有孤立边界奇点时完成分类。可去奇点对应边界bubble，不可去情形在伸缩后为柱状解或由颈径ε∈(0,1)唯一参数化的周期Delaunay族。每周期恰有非退化极小和极大两个临界点，并给平滑依赖及两端周期渐近。",
+      "techniques": [
+        "线性Robin方程奇偶唯一性",
+        "反射对称",
+        "颈径连续延拓",
+        "Delaunay周期渐近"
+      ],
+      "breakthrough": "将非可去正解的参数唯一性、周期结构和参数极限纳入同一分类。",
+      "limitations": "完整结论依赖具体方程与奇点类；ε→0的周期为4/(n−2)log(1/ε)+O(1)，并非无误差的精确公式。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第7页明确作者在使用AI之前已识别命题3.1的必要性；GPT-Sol 6帮助找到该命题的证明方法，并用于修订稿件。第14页命题3.1涉及反射对称、初始迹唯一性及奇偶Jacobi场唯一性，为分类路线关键工具，对这一具体方法贡献记ideas、proofs，修稿记writing；不将需求识别、选题或整体先验路线归给AI。作者独立核查并承担责任，未据此推断模型验证用途。其他候选来自has trace、as translations、All mathematical等文字拼接。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.11400v1 · PDF 第7页Statement on the use of AI，第14页命题3.1；全文77页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:42:03.617211+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11400v1",
+        "contentHash": "e569a338c59edc2a677a31c684bc141fd654ef26201c07c179249a9e4f0a4441",
+        "pages": 77,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页明确作者在使用AI之前已识别命题3.1的必要性；GPT-Sol 6帮助找到该命题的证明方法，并用于修订稿件。第14页命题3.1涉及反射对称、初始迹唯一性及奇偶Jacobi场唯一性，为分类路线关键工具，对这一具体方法贡献记ideas、proofs，修稿记writing；不将需求识别、选题或整体先验路线归给AI。作者独立核查并承担责任，未据此推断模型验证用途。其他候选来自has trace、as translations、All mathematical等文字拼接。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a36b247afc765b3de413bc0d4d17a04f60c9a535f3a0fad37053bd8c410c91ae"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 90,
+      "priorityReason": "直接涉及边界Yamabe几何PDE及奇异解刚性。"
+    },
+    "analysisBasis": {
+      "abstract": "In every dimension $n\\geq3$, we classify positive solutions of the flat Escobar--Yamabe equation on the Euclidean half-space with a possible isolated boundary singularity at the origin. Solutions with a removable singularity are boundary bubbles. Up to dilation, the nonremovable solutions are the cylindrical solution and a family of periodic Delaunay solutions uniquely parametrized by the necksize $\\epsilon \\in (0,1)$, the minimum of the normalized boundary trace. In each fundamental period $T_\\epsilon$, the trace has exactly two critical points, a nondegenerate minimum and a nondegenerate maximum. The period and the solution centered at the trace minimum and rescaled to period one depend smoothly on $\\epsilon$. As $\\epsilon \\to 0$, $T_\\epsilon = \\frac{4}{n-2}\\log(1/\\epsilon)+O(1)$. As $\\epsilon \\to 1$, the solutions converge to the cylindrical solution and their periods tend to that of its linearized oscillation. We use uniqueness in the odd and even classes for linear Robin equations to obtain reflection symmetry and continuation in the necksize.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11400",
+        "metadata": {
+          "title": "Global Classification of the Flat Singular Escobar-Yamabe Equation",
+          "authors": [
+            "Felipe G. Bogo"
+          ],
+          "abstract": "In every dimension $n\\geq3$, we classify positive solutions of the flat Escobar--Yamabe equation on the Euclidean half-space with a possible isolated boundary singularity at the origin. Solutions with a removable singularity are boundary bubbles. Up to dilation, the nonremovable solutions are the cylindrical solution and a family of periodic Delaunay solutions uniquely parametrized by the necksize $\\epsilon \\in (0,1)$, the minimum of the normalized boundary trace. In each fundamental period $T_\\epsilon$, the trace has exactly two critical points, a nondegenerate minimum and a nondegenerate maximum. The period and the solution centered at the trace minimum and rescaled to period one depend smoothly on $\\epsilon$. As $\\epsilon \\to 0$, $T_\\epsilon = \\frac{4}{n-2}\\log(1/\\epsilon)+O(1)$. As $\\epsilon \\to 1$, the solutions converge to the cylindrical solution and their periods tend to that of its linearized oscillation. We use uniqueness in the odd and even classes for linear Robin equations to obtain reflection symmetry and continuation in the necksize.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-08T14:11:22Z",
+          "updatedAt": "2026-11-08T14:11:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:01.279176+00:00",
+            "contentHash": "40b7848b97321fe74cf4c62b7a398ac6f65f3d46dd646ab20877d48013f284c8"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "奇异边值方程全局分类",
+          "workSummary": "作者声称对n≥3的欧氏半空间平坦Escobar–Yamabe方程正解，在原点可能有孤立边界奇点时完成分类。可去奇点对应边界bubble，不可去情形在伸缩后为柱状解或由颈径ε∈(0,1)唯一参数化的周期Delaunay族。每周期恰有非退化极小和极大两个临界点，并给平滑依赖及两端周期渐近。",
+          "techniques": [
+            "线性Robin方程奇偶唯一性",
+            "反射对称",
+            "颈径连续延拓",
+            "Delaunay周期渐近"
+          ],
+          "breakthrough": "将非可去正解的参数唯一性、周期结构和参数极限纳入同一分类。",
+          "limitations": "完整结论依赖具体方程与奇点类；ε→0的周期为4/(n−2)log(1/ε)+O(1)，并非无误差的精确公式。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第7页明确作者在使用AI之前已识别命题3.1的必要性；GPT-Sol 6帮助找到该命题的证明方法，并用于修订稿件。第14页命题3.1涉及反射对称、初始迹唯一性及奇偶Jacobi场唯一性，为分类路线关键工具，对这一具体方法贡献记ideas、proofs，修稿记writing；不将需求识别、选题或整体先验路线归给AI。作者独立核查并承担责任，未据此推断模型验证用途。其他候选来自has trace、as translations、All mathematical等文字拼接。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.11400v1 · PDF 第7页Statement on the use of AI，第14页命题3.1；全文77页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:42:03.617211+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11400v1",
+            "contentHash": "e569a338c59edc2a677a31c684bc141fd654ef26201c07c179249a9e4f0a4441",
+            "pages": 77,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页明确作者在使用AI之前已识别命题3.1的必要性；GPT-Sol 6帮助找到该命题的证明方法，并用于修订稿件。第14页命题3.1涉及反射对称、初始迹唯一性及奇偶Jacobi场唯一性，为分类路线关键工具，对这一具体方法贡献记ideas、proofs，修稿记writing；不将需求识别、选题或整体先验路线归给AI。作者独立核查并承担责任，未据此推断模型验证用途。其他候选来自has trace、as translations、All mathematical等文字拼接。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a36b247afc765b3de413bc0d4d17a04f60c9a535f3a0fad37053bd8c410c91ae"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 90,
+          "priorityReason": "直接涉及边界Yamabe几何PDE及奇异解刚性。"
+        },
+        "analysisBasis": {
+          "abstract": "In every dimension $n\\geq3$, we classify positive solutions of the flat Escobar--Yamabe equation on the Euclidean half-space with a possible isolated boundary singularity at the origin. Solutions with a removable singularity are boundary bubbles. Up to dilation, the nonremovable solutions are the cylindrical solution and a family of periodic Delaunay solutions uniquely parametrized by the necksize $\\epsilon \\in (0,1)$, the minimum of the normalized boundary trace. In each fundamental period $T_\\epsilon$, the trace has exactly two critical points, a nondegenerate minimum and a nondegenerate maximum. The period and the solution centered at the trace minimum and rescaled to period one depend smoothly on $\\epsilon$. As $\\epsilon \\to 0$, $T_\\epsilon = \\frac{4}{n-2}\\log(1/\\epsilon)+O(1)$. As $\\epsilon \\to 1$, the solutions converge to the cylindrical solution and their periods tend to that of its linearized oscillation. We use uniqueness in the odd and even classes for linear Robin equations to obtain reflection symmetry and continuation in the necksize.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

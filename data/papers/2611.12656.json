@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12656",
+  "slug": "2611.12656",
+  "latest": {
+    "arxivId": "2611.12656",
+    "metadata": {
+      "title": "On Continuum Theories in a Locally Conformal Setting",
+      "authors": [
+        "Begüm Ateşli",
+        "Oğul Esen",
+        "Miroslav Grmela",
+        "Michal Pavelka"
+      ],
+      "abstract": "We study continuum and kinetic dynamics on locally conformally symplectic (LCS) and locally conformally cosymplectic (LCCos) manifolds. The main geometric tool is the Lichnerowicz-de Rham differential, which allows local geometric data that are compatible only up to conformal rescaling to glue into global structures. In the LCS setting, we analyze the locally conformal Vlasov equation from the viewpoint of continuity. Its source term does not represent particle creation or annihilation: it measures the mismatch between the ordinary phase-space volume and the conformally weighted volume determined by the Lee form. Absorbing this weight into the density yields a source-free continuity equation. We also compute the entropy production of the transported density, and illustrate the framework through a thermostatted ensemble, an LCS-driven Vlasov model with a momentum-dependent gyroscopic force, and their combination. We then propose a new definition of LCCos manifolds in which the defining one-form and two-form carry the same conformal weight. Unlike the usual convention, this allows local cosymplectic Hamiltonian systems to glue directly into global LCCos Hamiltonian dynamics, and it normalizes the evolution vector field by the conformal unit rather than by the ordinary unit. We develop the corresponding Hamiltonian, evolution and continuum dynamics, and illustrate them with a time-dependent mass example exhibiting transport in the distinguished time direction, momentum-space drift, and conformal source terms.",
+      "categories": [
+        "math.DG",
+        "math-ph"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-09T16:25:23Z",
+      "updatedAt": "2026-11-09T16:25:23Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:25.995025+00:00",
+        "contentHash": "3235d70dc6416f28dadc02d892fdcc7f820444cc6dc23ead430c003bd5157f1c"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "局部共形辛与余辛几何中的连续介质动力学",
+      "workSummary": "用Lichnerowicz–de Rham微分把仅在共形重标度下相容的局部数据拼成全局结构。LCS Vlasov方程的源项解释为普通体积与Lee形式决定的加权体积失配，吸收入密度后成为无源连续方程；另计算熵生成并给恒温系综、陀螺力模型。再提出一、二形式同权的LCCos新约定，以直接拼接局部Hamilton系统。",
+      "techniques": [
+        "Lichnerowicz–de Rham微分",
+        "Lee形式与加权体积",
+        "局部共形Vlasov连续方程",
+        "同权LCCos Hamilton动力学"
+      ],
+      "breakthrough": "澄清共形源项不必表示粒子生成/湮灭，并给新LCCos规范下的演化与连续介质框架。",
+      "limitations": "LCCos定义不同于通常约定，应明确是新定义；物理例是几何模型说明，不应读成一般热力学验证或普适粒子源结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第56页Declaration说明ChatGPT和Claude用于语言/编辑建议，并辅助交叉检查部分代数计算；这些计算全部由作者独立推导核验。记writing/verification，不把代数核查推成核心思想或证明生成，也不据此认定模型完成主要数值计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.12656v1 · PDF 第56页 Declaration of generative AI and AI-assisted technologies",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:50:37.293806+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12656v1",
+        "contentHash": "5f11b2cec41e40642d3a1849b2efa6e1bec70fcb689bf0548dcc4e488285fd83",
+        "pages": 66,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第56页Declaration说明ChatGPT和Claude用于语言/编辑建议，并辅助交叉检查部分代数计算；这些计算全部由作者独立推导核验。记writing/verification，不把代数核查推成核心思想或证明生成，也不据此认定模型完成主要数值计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "90cd82ba62ecafdec72e93b3571b85ac24609c9d1da8224bf3f6123a9f92fd0c"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 68,
+      "priorityReason": "辛几何与数学物理交叉，曲率和分析主线较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "We study continuum and kinetic dynamics on locally conformally symplectic (LCS) and locally conformally cosymplectic (LCCos) manifolds. The main geometric tool is the Lichnerowicz-de Rham differential, which allows local geometric data that are compatible only up to conformal rescaling to glue into global structures. In the LCS setting, we analyze the locally conformal Vlasov equation from the viewpoint of continuity. Its source term does not represent particle creation or annihilation: it measures the mismatch between the ordinary phase-space volume and the conformally weighted volume determined by the Lee form. Absorbing this weight into the density yields a source-free continuity equation. We also compute the entropy production of the transported density, and illustrate the framework through a thermostatted ensemble, an LCS-driven Vlasov model with a momentum-dependent gyroscopic force, and their combination. We then propose a new definition of LCCos manifolds in which the defining one-form and two-form carry the same conformal weight. Unlike the usual convention, this allows local cosymplectic Hamiltonian systems to glue directly into global LCCos Hamiltonian dynamics, and it normalizes the evolution vector field by the conformal unit rather than by the ordinary unit. We develop the corresponding Hamiltonian, evolution and continuum dynamics, and illustrate them with a time-dependent mass example exhibiting transport in the distinguished time direction, momentum-space drift, and conformal source terms.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12656",
+        "metadata": {
+          "title": "On Continuum Theories in a Locally Conformal Setting",
+          "authors": [
+            "Begüm Ateşli",
+            "Oğul Esen",
+            "Miroslav Grmela",
+            "Michal Pavelka"
+          ],
+          "abstract": "We study continuum and kinetic dynamics on locally conformally symplectic (LCS) and locally conformally cosymplectic (LCCos) manifolds. The main geometric tool is the Lichnerowicz-de Rham differential, which allows local geometric data that are compatible only up to conformal rescaling to glue into global structures. In the LCS setting, we analyze the locally conformal Vlasov equation from the viewpoint of continuity. Its source term does not represent particle creation or annihilation: it measures the mismatch between the ordinary phase-space volume and the conformally weighted volume determined by the Lee form. Absorbing this weight into the density yields a source-free continuity equation. We also compute the entropy production of the transported density, and illustrate the framework through a thermostatted ensemble, an LCS-driven Vlasov model with a momentum-dependent gyroscopic force, and their combination. We then propose a new definition of LCCos manifolds in which the defining one-form and two-form carry the same conformal weight. Unlike the usual convention, this allows local cosymplectic Hamiltonian systems to glue directly into global LCCos Hamiltonian dynamics, and it normalizes the evolution vector field by the conformal unit rather than by the ordinary unit. We develop the corresponding Hamiltonian, evolution and continuum dynamics, and illustrate them with a time-dependent mass example exhibiting transport in the distinguished time direction, momentum-space drift, and conformal source terms.",
+          "categories": [
+            "math.DG",
+            "math-ph"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-09T16:25:23Z",
+          "updatedAt": "2026-11-09T16:25:23Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:25.995025+00:00",
+            "contentHash": "3235d70dc6416f28dadc02d892fdcc7f820444cc6dc23ead430c003bd5157f1c"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "局部共形辛与余辛几何中的连续介质动力学",
+          "workSummary": "用Lichnerowicz–de Rham微分把仅在共形重标度下相容的局部数据拼成全局结构。LCS Vlasov方程的源项解释为普通体积与Lee形式决定的加权体积失配，吸收入密度后成为无源连续方程；另计算熵生成并给恒温系综、陀螺力模型。再提出一、二形式同权的LCCos新约定，以直接拼接局部Hamilton系统。",
+          "techniques": [
+            "Lichnerowicz–de Rham微分",
+            "Lee形式与加权体积",
+            "局部共形Vlasov连续方程",
+            "同权LCCos Hamilton动力学"
+          ],
+          "breakthrough": "澄清共形源项不必表示粒子生成/湮灭，并给新LCCos规范下的演化与连续介质框架。",
+          "limitations": "LCCos定义不同于通常约定，应明确是新定义；物理例是几何模型说明，不应读成一般热力学验证或普适粒子源结论。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第56页Declaration说明ChatGPT和Claude用于语言/编辑建议，并辅助交叉检查部分代数计算；这些计算全部由作者独立推导核验。记writing/verification，不把代数核查推成核心思想或证明生成，也不据此认定模型完成主要数值计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.12656v1 · PDF 第56页 Declaration of generative AI and AI-assisted technologies",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:50:37.293806+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12656v1",
+            "contentHash": "5f11b2cec41e40642d3a1849b2efa6e1bec70fcb689bf0548dcc4e488285fd83",
+            "pages": 66,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第56页Declaration说明ChatGPT和Claude用于语言/编辑建议，并辅助交叉检查部分代数计算；这些计算全部由作者独立推导核验。记writing/verification，不把代数核查推成核心思想或证明生成，也不据此认定模型完成主要数值计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "90cd82ba62ecafdec72e93b3571b85ac24609c9d1da8224bf3f6123a9f92fd0c"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 68,
+          "priorityReason": "辛几何与数学物理交叉，曲率和分析主线较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "We study continuum and kinetic dynamics on locally conformally symplectic (LCS) and locally conformally cosymplectic (LCCos) manifolds. The main geometric tool is the Lichnerowicz-de Rham differential, which allows local geometric data that are compatible only up to conformal rescaling to glue into global structures. In the LCS setting, we analyze the locally conformal Vlasov equation from the viewpoint of continuity. Its source term does not represent particle creation or annihilation: it measures the mismatch between the ordinary phase-space volume and the conformally weighted volume determined by the Lee form. Absorbing this weight into the density yields a source-free continuity equation. We also compute the entropy production of the transported density, and illustrate the framework through a thermostatted ensemble, an LCS-driven Vlasov model with a momentum-dependent gyroscopic force, and their combination. We then propose a new definition of LCCos manifolds in which the defining one-form and two-form carry the same conformal weight. Unlike the usual convention, this allows local cosymplectic Hamiltonian systems to glue directly into global LCCos Hamiltonian dynamics, and it normalizes the evolution vector field by the conformal unit rather than by the ordinary unit. We develop the corresponding Hamiltonian, evolution and continuum dynamics, and illustrate them with a time-dependent mass example exhibiting transport in the distinguished time direction, momentum-space drift, and conformal source terms.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

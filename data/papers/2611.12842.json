@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12842",
+  "slug": "2611.12842",
+  "latest": {
+    "arxivId": "2611.12842",
+    "metadata": {
+      "title": "Delaunay Asymptotics for the Singular Escobar-Yamabe Equation",
+      "authors": [
+        "Felipe G. Bogo"
+      ],
+      "abstract": "In dimensions $n\\geq3$, we prove that near an isolated boundary singularity a positive solution of the Escobar--Yamabe equation for a smooth metric approaches a fixed periodic Delaunay solution or the cylindrical solution if its trace lies between positive multiples of $|\\overline x|^{-(n-2)/2}$, where $\\overline x$ is the tangential Fermi coordinate. The relative error decays at a positive power rate, with weighted estimates through two derivatives in Fermi coordinates. The necksize is unique, and the translation parameter is unique modulo the least positive period in the periodic case. The Hamiltonian smoothly parametrizes the periodic family modulo translation. We classify Jacobi fields of polynomial growth at both ends without assuming symmetry. Translation and energy differentiation generate these fields along periodic solutions, and two oscillatory fields generate them along the cylindrical solution. We also exhibit a first-order obstruction to improving these asymptotics by boundary-preserving conformal deformations of the flat models.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-09T18:38:58Z",
+      "updatedAt": "2026-11-09T18:38:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:37.233911+00:00",
+        "contentHash": "3514fe685d97bf64da95799fd09dfc4258f088bd4336b736d8a66f36d2810617"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "奇异Escobar–Yamabe方程的Delaunay渐近",
+      "workSummary": "n≥3时，光滑度量下Escobar–Yamabe方程正解若边界迹在孤立奇点附近受|x̄|^(−(n−2)/2)的正倍数上下夹住，则在Fermi坐标中渐近某个固定周期Delaunay解或柱解，具有正幂衰减相对误差及至二阶加权估计。颈参数唯一，周期情形平移参数模最小正周期唯一。",
+      "techniques": [
+        "边界Fermi坐标",
+        "Delaunay周期解与Hamiltonian参数",
+        "二阶加权渐近估计",
+        "非对称Jacobi场分类",
+        "保边界共形形变障碍"
+      ],
+      "breakthrough": "在不假设对称时分类两端多项式增长Jacobi场，并给改进平坦模型渐近的一级障碍。",
+      "limitations": "渐近定理须保留正解、孤立边界奇点、光滑度量和临界阶双侧迹控制，不能推广到任意奇异解；周期/柱解Jacobi场机制不同。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF 第8页“Statement on the use of AI”明确：作者在使用AI之前已识别伴随论文[3]命题3.1的需要；数学部分仅用GPT-Sol 6辅助该命题的计算，本文亦调用这一命题。另用模型修改稿件。作者声明全部数学陈述、证明与引用均由其独立检查、最终稿由其写定修订。因此记录计算与文字辅助，不将前置构思归因AI，也不扩大为本文证明由AI生成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.12842v1 · PDF 第8页，Statement on the use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:56:59.711001+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12842v1",
+        "contentHash": "f02b3c1aa432bca7b1a73cb48efd239d200dfbf146042c39569974060ced12aa",
+        "pages": 73,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第8页“Statement on the use of AI”明确：作者在使用AI之前已识别伴随论文[3]命题3.1的需要；数学部分仅用GPT-Sol 6辅助该命题的计算，本文亦调用这一命题。另用模型修改稿件。作者声明全部数学陈述、证明与引用均由其独立检查、最终稿由其写定修订。因此记录计算与文字辅助，不将前置构思归因AI，也不扩大为本文证明由AI生成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "56324f9e5bdc40c0deebc08da552935b874296bea48c88fe7c48ba2b7ad06208"
+      },
+      "aiUsage": [
+        "computation",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "临界边界几何PDE的精细渐近和唯一性结果。"
+    },
+    "analysisBasis": {
+      "abstract": "In dimensions $n\\geq3$, we prove that near an isolated boundary singularity a positive solution of the Escobar--Yamabe equation for a smooth metric approaches a fixed periodic Delaunay solution or the cylindrical solution if its trace lies between positive multiples of $|\\overline x|^{-(n-2)/2}$, where $\\overline x$ is the tangential Fermi coordinate. The relative error decays at a positive power rate, with weighted estimates through two derivatives in Fermi coordinates. The necksize is unique, and the translation parameter is unique modulo the least positive period in the periodic case. The Hamiltonian smoothly parametrizes the periodic family modulo translation. We classify Jacobi fields of polynomial growth at both ends without assuming symmetry. Translation and energy differentiation generate these fields along periodic solutions, and two oscillatory fields generate them along the cylindrical solution. We also exhibit a first-order obstruction to improving these asymptotics by boundary-preserving conformal deformations of the flat models.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12842",
+        "metadata": {
+          "title": "Delaunay Asymptotics for the Singular Escobar-Yamabe Equation",
+          "authors": [
+            "Felipe G. Bogo"
+          ],
+          "abstract": "In dimensions $n\\geq3$, we prove that near an isolated boundary singularity a positive solution of the Escobar--Yamabe equation for a smooth metric approaches a fixed periodic Delaunay solution or the cylindrical solution if its trace lies between positive multiples of $|\\overline x|^{-(n-2)/2}$, where $\\overline x$ is the tangential Fermi coordinate. The relative error decays at a positive power rate, with weighted estimates through two derivatives in Fermi coordinates. The necksize is unique, and the translation parameter is unique modulo the least positive period in the periodic case. The Hamiltonian smoothly parametrizes the periodic family modulo translation. We classify Jacobi fields of polynomial growth at both ends without assuming symmetry. Translation and energy differentiation generate these fields along periodic solutions, and two oscillatory fields generate them along the cylindrical solution. We also exhibit a first-order obstruction to improving these asymptotics by boundary-preserving conformal deformations of the flat models.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-09T18:38:58Z",
+          "updatedAt": "2026-11-09T18:38:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:37.233911+00:00",
+            "contentHash": "3514fe685d97bf64da95799fd09dfc4258f088bd4336b736d8a66f36d2810617"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "奇异Escobar–Yamabe方程的Delaunay渐近",
+          "workSummary": "n≥3时，光滑度量下Escobar–Yamabe方程正解若边界迹在孤立奇点附近受|x̄|^(−(n−2)/2)的正倍数上下夹住，则在Fermi坐标中渐近某个固定周期Delaunay解或柱解，具有正幂衰减相对误差及至二阶加权估计。颈参数唯一，周期情形平移参数模最小正周期唯一。",
+          "techniques": [
+            "边界Fermi坐标",
+            "Delaunay周期解与Hamiltonian参数",
+            "二阶加权渐近估计",
+            "非对称Jacobi场分类",
+            "保边界共形形变障碍"
+          ],
+          "breakthrough": "在不假设对称时分类两端多项式增长Jacobi场，并给改进平坦模型渐近的一级障碍。",
+          "limitations": "渐近定理须保留正解、孤立边界奇点、光滑度量和临界阶双侧迹控制，不能推广到任意奇异解；周期/柱解Jacobi场机制不同。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF 第8页“Statement on the use of AI”明确：作者在使用AI之前已识别伴随论文[3]命题3.1的需要；数学部分仅用GPT-Sol 6辅助该命题的计算，本文亦调用这一命题。另用模型修改稿件。作者声明全部数学陈述、证明与引用均由其独立检查、最终稿由其写定修订。因此记录计算与文字辅助，不将前置构思归因AI，也不扩大为本文证明由AI生成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.12842v1 · PDF 第8页，Statement on the use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:56:59.711001+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12842v1",
+            "contentHash": "f02b3c1aa432bca7b1a73cb48efd239d200dfbf146042c39569974060ced12aa",
+            "pages": 73,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第8页“Statement on the use of AI”明确：作者在使用AI之前已识别伴随论文[3]命题3.1的需要；数学部分仅用GPT-Sol 6辅助该命题的计算，本文亦调用这一命题。另用模型修改稿件。作者声明全部数学陈述、证明与引用均由其独立检查、最终稿由其写定修订。因此记录计算与文字辅助，不将前置构思归因AI，也不扩大为本文证明由AI生成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "56324f9e5bdc40c0deebc08da552935b874296bea48c88fe7c48ba2b7ad06208"
+          },
+          "aiUsage": [
+            "computation",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "临界边界几何PDE的精细渐近和唯一性结果。"
+        },
+        "analysisBasis": {
+          "abstract": "In dimensions $n\\geq3$, we prove that near an isolated boundary singularity a positive solution of the Escobar--Yamabe equation for a smooth metric approaches a fixed periodic Delaunay solution or the cylindrical solution if its trace lies between positive multiples of $|\\overline x|^{-(n-2)/2}$, where $\\overline x$ is the tangential Fermi coordinate. The relative error decays at a positive power rate, with weighted estimates through two derivatives in Fermi coordinates. The necksize is unique, and the translation parameter is unique modulo the least positive period in the periodic case. The Hamiltonian smoothly parametrizes the periodic family modulo translation. We classify Jacobi fields of polynomial growth at both ends without assuming symmetry. Translation and energy differentiation generate these fields along periodic solutions, and two oscillatory fields generate them along the cylindrical solution. We also exhibit a first-order obstruction to improving these asymptotics by boundary-preserving conformal deformations of the flat models.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

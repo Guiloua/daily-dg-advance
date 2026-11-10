@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12800",
+  "slug": "2611.12800",
+  "latest": {
+    "arxivId": "2611.12800",
+    "metadata": {
+      "title": "A geometric Kähler--Ricci flow proof of the Calabi--Yau theorem",
+      "authors": [
+        "Bennett Chow",
+        "Yuan Liao"
+      ],
+      "abstract": "We give a geometric proof that every Kähler class on a compact Kähler manifold with vanishing real first Chern class contains a unique Ricci-flat metric, and that the Kähler--Ricci flow converges smoothly to this metric. The fixed Kähler class and the bounded logarithmic volume density control the mean pairwise distance. Chow's scalar-curvature decay makes available, at a fixed spatial scale and all sufficiently late times, the relative-volume comparison of Jian--Song, derived from Bamler's pointed Nash entropy estimates. This comparison upgrades the mean-distance bound to a diameter bound without an absolute lower bound for entropy. A restarted heat-gradient estimate then gives exponential decay of the Ricci potential. A parabolic Schwarz estimate and the interior estimates of Sherman--Weinkove yield smooth exponential convergence. The proof does not invoke the Calabi--Yau existence theorem or global estimates for a scalar complex Monge--Ampère equation.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-09T18:07:44Z",
+      "updatedAt": "2026-11-09T18:07:44Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.12800v1",
+        "observedAt": "2026-11-10T11:32:17.623397+00:00",
+        "contentHash": "5b0d020a015ee28e426ddfdb4ea8f30af270784ae760b2f8b3952ccd5b21111a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:37.232127+00:00",
+        "contentHash": "531e2588a7cb3e1bab80e826361584e13ca9ba9b531206e38deaf263f423a6e2"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "经典定理的几何流证明",
+      "workSummary": "对实第一 Chern 类为零的紧连通 Kähler 流形，作者重证每个 Kähler 类内 Ricci-flat 度量的唯一存在，并给出 Kähler–Ricci 流在固定流形上所有 Cᵏ 范数的指数收敛。其长期估计先由固定类与体积密度控制平均两点距离，再通过相对体积比较获得直径界，继而重启热方程梯度估计收缩 Ricci 势。",
+      "techniques": [
+        "固定背景 trace 积分与 segment inequality 的平均距离控制",
+        "标量曲率衰减和 pointed Nash entropy 因子的相对消去",
+        "固定尺度晚时体积集中到直径的反证",
+        "重启热梯度收缩、抛物 Schwarz 估计及 Sherman–Weinkove 张量估计"
+      ],
+      "breakthrough": "结论本身为 Calabi–Yau/Cao 经典定理，新增主张在证明组织：用平均距离、Chow 标量衰减和 Jian–Song/Bamler 相对体积比较替代预先的绝对熵下界，再恢复统一度量等价与张量高阶估计。",
+      "limitations": "已补读PDF第1–2、5–8页，未逐项核验全部引用定理的假设；不是新的 Calabi–Yau 存在结论。作者不调用 Calabi–Yau 存在定理或标量 Monge–Ampère 全局估计，但仍使用经典 Kähler 方法和既有 Ricci 流分析输入。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确披露核心数学结果及最终表述通过对 OpenAI 模型的迭代提示生成并完善，并声明已独立核查所有证明的数学正确性；该声明涉及核心数学贡献与表述，不能简化为纯语言润色。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.12800v1 · PDF 第8页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:32:17.623397+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12800v1",
+        "contentHash": "5b0d020a015ee28e426ddfdb4ea8f30af270784ae760b2f8b3952ccd5b21111a",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露核心数学结果及最终表述通过对 OpenAI 模型的迭代提示生成并完善，并声明已独立核查所有证明的数学正确性；该声明涉及核心数学贡献与表述，不能简化为纯语言润色。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "5e170618579b3d673eaea1246de5996b01dcb4aa52a41c93ab98ae53a29530de"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "为Calabi–Yau存在唯一性及流收敛提供替代几何证明。"
+    },
+    "analysisBasis": {
+      "abstract": "We give a geometric proof that every Kähler class on a compact Kähler manifold with vanishing real first Chern class contains a unique Ricci-flat metric, and that the Kähler--Ricci flow converges smoothly to this metric. The fixed Kähler class and the bounded logarithmic volume density control the mean pairwise distance. Chow's scalar-curvature decay makes available, at a fixed spatial scale and all sufficiently late times, the relative-volume comparison of Jian--Song, derived from Bamler's pointed Nash entropy estimates. This comparison upgrades the mean-distance bound to a diameter bound without an absolute lower bound for entropy. A restarted heat-gradient estimate then gives exponential decay of the Ricci potential. A parabolic Schwarz estimate and the interior estimates of Sherman--Weinkove yield smooth exponential convergence. The proof does not invoke the Calabi--Yau existence theorem or global estimates for a scalar complex Monge--Ampère equation.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12800",
+        "metadata": {
+          "title": "A geometric Kähler--Ricci flow proof of the Calabi--Yau theorem",
+          "authors": [
+            "Bennett Chow",
+            "Yuan Liao"
+          ],
+          "abstract": "We give a geometric proof that every Kähler class on a compact Kähler manifold with vanishing real first Chern class contains a unique Ricci-flat metric, and that the Kähler--Ricci flow converges smoothly to this metric. The fixed Kähler class and the bounded logarithmic volume density control the mean pairwise distance. Chow's scalar-curvature decay makes available, at a fixed spatial scale and all sufficiently late times, the relative-volume comparison of Jian--Song, derived from Bamler's pointed Nash entropy estimates. This comparison upgrades the mean-distance bound to a diameter bound without an absolute lower bound for entropy. A restarted heat-gradient estimate then gives exponential decay of the Ricci potential. A parabolic Schwarz estimate and the interior estimates of Sherman--Weinkove yield smooth exponential convergence. The proof does not invoke the Calabi--Yau existence theorem or global estimates for a scalar complex Monge--Ampère equation.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-09T18:07:44Z",
+          "updatedAt": "2026-11-09T18:07:44Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.12800v1",
+            "observedAt": "2026-11-10T11:32:17.623397+00:00",
+            "contentHash": "5b0d020a015ee28e426ddfdb4ea8f30af270784ae760b2f8b3952ccd5b21111a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:37.232127+00:00",
+            "contentHash": "531e2588a7cb3e1bab80e826361584e13ca9ba9b531206e38deaf263f423a6e2"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "经典定理的几何流证明",
+          "workSummary": "对实第一 Chern 类为零的紧连通 Kähler 流形，作者重证每个 Kähler 类内 Ricci-flat 度量的唯一存在，并给出 Kähler–Ricci 流在固定流形上所有 Cᵏ 范数的指数收敛。其长期估计先由固定类与体积密度控制平均两点距离，再通过相对体积比较获得直径界，继而重启热方程梯度估计收缩 Ricci 势。",
+          "techniques": [
+            "固定背景 trace 积分与 segment inequality 的平均距离控制",
+            "标量曲率衰减和 pointed Nash entropy 因子的相对消去",
+            "固定尺度晚时体积集中到直径的反证",
+            "重启热梯度收缩、抛物 Schwarz 估计及 Sherman–Weinkove 张量估计"
+          ],
+          "breakthrough": "结论本身为 Calabi–Yau/Cao 经典定理，新增主张在证明组织：用平均距离、Chow 标量衰减和 Jian–Song/Bamler 相对体积比较替代预先的绝对熵下界，再恢复统一度量等价与张量高阶估计。",
+          "limitations": "已补读PDF第1–2、5–8页，未逐项核验全部引用定理的假设；不是新的 Calabi–Yau 存在结论。作者不调用 Calabi–Yau 存在定理或标量 Monge–Ampère 全局估计，但仍使用经典 Kähler 方法和既有 Ricci 流分析输入。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确披露核心数学结果及最终表述通过对 OpenAI 模型的迭代提示生成并完善，并声明已独立核查所有证明的数学正确性；该声明涉及核心数学贡献与表述，不能简化为纯语言润色。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.12800v1 · PDF 第8页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:32:17.623397+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12800v1",
+            "contentHash": "5b0d020a015ee28e426ddfdb4ea8f30af270784ae760b2f8b3952ccd5b21111a",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确披露核心数学结果及最终表述通过对 OpenAI 模型的迭代提示生成并完善，并声明已独立核查所有证明的数学正确性；该声明涉及核心数学贡献与表述，不能简化为纯语言润色。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "5e170618579b3d673eaea1246de5996b01dcb4aa52a41c93ab98ae53a29530de"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "为Calabi–Yau存在唯一性及流收敛提供替代几何证明。"
+        },
+        "analysisBasis": {
+          "abstract": "We give a geometric proof that every Kähler class on a compact Kähler manifold with vanishing real first Chern class contains a unique Ricci-flat metric, and that the Kähler--Ricci flow converges smoothly to this metric. The fixed Kähler class and the bounded logarithmic volume density control the mean pairwise distance. Chow's scalar-curvature decay makes available, at a fixed spatial scale and all sufficiently late times, the relative-volume comparison of Jian--Song, derived from Bamler's pointed Nash entropy estimates. This comparison upgrades the mean-distance bound to a diameter bound without an absolute lower bound for entropy. A restarted heat-gradient estimate then gives exponential decay of the Ricci potential. A parabolic Schwarz estimate and the interior estimates of Sherman--Weinkove yield smooth exponential convergence. The proof does not invoke the Calabi--Yau existence theorem or global estimates for a scalar complex Monge--Ampère equation.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

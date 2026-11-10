@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10444",
+  "slug": "2611.10444",
+  "latest": {
+    "arxivId": "2611.10444",
+    "metadata": {
+      "title": "Uniqueness and stability of Appleton's solitons",
+      "authors": [
+        "Michael B. Law"
+      ],
+      "abstract": "We prove that Appleton's noncollapsed steady gradient Ricci solitons on complex line bundles over positive Kähler--Einstein manifolds are the unique such solitons arising from his metric ansatz. We then show that the four-dimensional examples on $O_{\\mathbb{CP}^1}(-k)$, $k \\geq 3$, are strictly linearly stable. By a result of Deruelle, this implies dynamical stability under the Ricci flow.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "56 pages. A Wolfram Mathematica notebook containing computational checks is included in the submission source",
+      "version": 1,
+      "submittedAt": "2026-11-07T03:44:05Z",
+      "updatedAt": "2026-11-07T03:44:05Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.10444v1",
+        "observedAt": "2026-11-10T11:30:49.141889+00:00",
+        "contentHash": "42d86ac6268c81e671be1819afa42596b49b9d9c0ca9a9a71f564abe6fe38740"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:37.643927+00:00",
+        "contentHash": "aebbaec995c3fa6acb2a4280f0c326ac2d24472ef21c0557a121647ff5367308"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "唯一性与稳定性",
+      "workSummary": "在固定正 Kähler–Einstein 基底及 Appleton 度量 ansatz 内，作者证明完备非塌缩稳态梯度 Ricci 孤立子在缩放和等距下唯一；对 O_CP¹(−k)、k≥3 的四维例子建立紧支撑对称二张量的加权严格线性稳定，并借 Deruelle 的结果推出规定 L²(e^f)/L∞ 邻域内的动态稳定。",
+      "techniques": [
+        "ODE 比较与变量替换处理固定 ansatz 内的唯一性",
+        "U(2) 表示分解与 (j,q) 扇区上的加权稳定能量",
+        "共形 Kähler 结构及 Naff–Ozuch Weitzenböck 公式",
+        "q=0 球谐张量展开、符号矩阵不等式与统一谱隙"
+      ],
+      "breakthrough": "主要新增价值在非 Kähler、截面曲率混合符号的 Appleton 例子的严格稳定；第3页同时说明唯一性部分已被其他近期工作独立解决。",
+      "limitations": "仅补读主结果、路线及第55页收束，未逐一核算全部 ODE 和 Mathematica 矩阵证书。唯一性受 ansatz 限制，严格稳定结论为四维 k≥3；动态稳定采用文中明确的加权 L² 和 L∞ 扰动条件。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 LLM 提出第2.3、2.4、3.1、5.4、5.5、6.4、6.5节的 ODE 论证和显式数值估计，人类大量参与整理证明；其他论证由人提出，LLM 辅助检查，并帮助编写调试 Mathematica 笔记本及校对。作者声明人工核验全部 AI 论证。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10444v1 · PDF 第4页 Statement on AI usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:30:49.141889+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10444v1",
+        "contentHash": "42d86ac6268c81e671be1819afa42596b49b9d9c0ca9a9a71f564abe6fe38740",
+        "pages": 56,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 提出第2.3、2.4、3.1、5.4、5.5、6.4、6.5节的 ODE 论证和显式数值估计，人类大量参与整理证明；其他论证由人提出，LLM 辅助检查，并帮助编写调试 Mathematica 笔记本及校对。作者声明人工核验全部 AI 论证。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "cfd1476eab6541a67510464b89a92a7e66871c55dc6412babba0e5212f35365e"
+      },
+      "aiUsage": [
+        "computation",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "补充近期稳态模型分类中的唯一性和演化稳定问题。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that Appleton's noncollapsed steady gradient Ricci solitons on complex line bundles over positive Kähler--Einstein manifolds are the unique such solitons arising from his metric ansatz. We then show that the four-dimensional examples on $O_{\\mathbb{CP}^1}(-k)$, $k \\geq 3$, are strictly linearly stable. By a result of Deruelle, this implies dynamical stability under the Ricci flow.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10444",
+        "metadata": {
+          "title": "Uniqueness and stability of Appleton's solitons",
+          "authors": [
+            "Michael B. Law"
+          ],
+          "abstract": "We prove that Appleton's noncollapsed steady gradient Ricci solitons on complex line bundles over positive Kähler--Einstein manifolds are the unique such solitons arising from his metric ansatz. We then show that the four-dimensional examples on $O_{\\mathbb{CP}^1}(-k)$, $k \\geq 3$, are strictly linearly stable. By a result of Deruelle, this implies dynamical stability under the Ricci flow.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "56 pages. A Wolfram Mathematica notebook containing computational checks is included in the submission source",
+          "version": 1,
+          "submittedAt": "2026-11-07T03:44:05Z",
+          "updatedAt": "2026-11-07T03:44:05Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.10444v1",
+            "observedAt": "2026-11-10T11:30:49.141889+00:00",
+            "contentHash": "42d86ac6268c81e671be1819afa42596b49b9d9c0ca9a9a71f564abe6fe38740"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:37.643927+00:00",
+            "contentHash": "aebbaec995c3fa6acb2a4280f0c326ac2d24472ef21c0557a121647ff5367308"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "唯一性与稳定性",
+          "workSummary": "在固定正 Kähler–Einstein 基底及 Appleton 度量 ansatz 内，作者证明完备非塌缩稳态梯度 Ricci 孤立子在缩放和等距下唯一；对 O_CP¹(−k)、k≥3 的四维例子建立紧支撑对称二张量的加权严格线性稳定，并借 Deruelle 的结果推出规定 L²(e^f)/L∞ 邻域内的动态稳定。",
+          "techniques": [
+            "ODE 比较与变量替换处理固定 ansatz 内的唯一性",
+            "U(2) 表示分解与 (j,q) 扇区上的加权稳定能量",
+            "共形 Kähler 结构及 Naff–Ozuch Weitzenböck 公式",
+            "q=0 球谐张量展开、符号矩阵不等式与统一谱隙"
+          ],
+          "breakthrough": "主要新增价值在非 Kähler、截面曲率混合符号的 Appleton 例子的严格稳定；第3页同时说明唯一性部分已被其他近期工作独立解决。",
+          "limitations": "仅补读主结果、路线及第55页收束，未逐一核算全部 ODE 和 Mathematica 矩阵证书。唯一性受 ansatz 限制，严格稳定结论为四维 k≥3；动态稳定采用文中明确的加权 L² 和 L∞ 扰动条件。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 LLM 提出第2.3、2.4、3.1、5.4、5.5、6.4、6.5节的 ODE 论证和显式数值估计，人类大量参与整理证明；其他论证由人提出，LLM 辅助检查，并帮助编写调试 Mathematica 笔记本及校对。作者声明人工核验全部 AI 论证。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10444v1 · PDF 第4页 Statement on AI usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:30:49.141889+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10444v1",
+            "contentHash": "42d86ac6268c81e671be1819afa42596b49b9d9c0ca9a9a71f564abe6fe38740",
+            "pages": 56,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 LLM 提出第2.3、2.4、3.1、5.4、5.5、6.4、6.5节的 ODE 论证和显式数值估计，人类大量参与整理证明；其他论证由人提出，LLM 辅助检查，并帮助编写调试 Mathematica 笔记本及校对。作者声明人工核验全部 AI 论证。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "cfd1476eab6541a67510464b89a92a7e66871c55dc6412babba0e5212f35365e"
+          },
+          "aiUsage": [
+            "computation",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "补充近期稳态模型分类中的唯一性和演化稳定问题。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that Appleton's noncollapsed steady gradient Ricci solitons on complex line bundles over positive Kähler--Einstein manifolds are the unique such solitons arising from his metric ansatz. We then show that the four-dimensional examples on $O_{\\mathbb{CP}^1}(-k)$, $k \\geq 3$, are strictly linearly stable. By a result of Deruelle, this implies dynamical stability under the Ricci flow.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

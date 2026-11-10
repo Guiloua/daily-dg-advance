@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10854",
+  "slug": "2611.10854",
+  "latest": {
+    "arxivId": "2611.10854",
+    "metadata": {
+      "title": "Controlled Riemannian rigidity",
+      "authors": [
+        "Alexandru Chirvasitu"
+      ],
+      "abstract": "Given a compact Lie group acting smoothly and freely on a compact connected manifold, we prove that the space of invariant Riemannian metrics whose symmetry group is precisely the group in question is open dense in that of all invariant metrics provided the orbit space is sufficiently large. This strengthens the author's prior results and recovers Ebin's to the effect that trivial-symmetry Riemannian metrics constitute an open dense set. In the process, the discussion also addresses a number of apparent gaps in said sources, pertaining to the rigidity results in question.",
+      "categories": [
+        "math.DG",
+        "math.FA",
+        "math.GN",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "9 pages + references",
+      "version": 1,
+      "submittedAt": "2026-11-07T17:05:28Z",
+      "updatedAt": "2026-11-07T17:05:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-10T11:29:03.673524+00:00",
+        "contentHash": "caa3fe13a34042edc43165e6745da1a7f37e274a434fb05b3a0573725ac00c96"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.024059+00:00",
+        "contentHash": "9ba046d8833bdf19623120f8739636f174b7a97ba0de0bdff257c79521a8bcb6"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "指定自由群作用的泛型等距群刚性",
+      "workSummary": "紧Lie群G在紧连通光滑流形M上自由光滑作用时，若e=dim(M/G)≥min(3,max(2,1+dimG))，则所有G不变光滑黎曼度量中满足全等距群Aut(g)=G的度量，在C∞ Fréchet拓扑下开且稠密。即dimG≤1要求e≥2，dimG≥2要求e≥3。",
+      "techniques": [
+        "Ebin等距群上半连续和垂直性开放",
+        "唯一极值轨道与极坐标角向扰动",
+        "主轨道作用的归纳式垂直性",
+        "不变度量的底度量/纤维度量/水平联络分解",
+        "固定点联络曲率的极大秩泛性",
+        "Ambrose–Singer holonomy思想及紧Lie代数生成"
+      ],
+      "breakthrough": "先在更一般的principal作用（全部轨道同一主类型）下证明垂直度量的开稠密性，逐分支余维门槛为2。再用水平联络曲率破除轨道内额外各向同性：在固定p处，曲率秩min(dimG,e(e−1)/2)的联络开且稠密。除改善作者先前维数限制外，文本明确补上先前结论遗漏的连通性条件及Claim4.7路线的缺口。",
+      "limitations": "全等距群恰为指定G的结论要求自由作用及M连通，不能把principal作用下仅保持各G轨道的垂直性直接等同全等距群为G；定理1.9的极大秩指固定点p，不宣称所有点同时满秩。上述门槛外无统一结论；对更弱正则性拓扑或非紧M未作推广。作者对旧文及Ebin论证呈现中的缺口作修补，这是本文论证的主张，非本次独立确认先前理论失效。本次补读主定理及扰动/联络路线，未独立验证全篇细节、Ebin切片、Whitney延拓和紧Lie代数生成等外部结果。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第2页致谢明确OpenAI GPT-6审计作者旧文[6]发现Claim 4.7缺口，成为本研究动机，并对本文作正确性技术审计。本文文字、证明策略和论证明确归作者本人。故记verification；发现旧文缺口不等于AI提出本文具体核心路线，不记ideas、proofs或writing。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10854v1 · PDF 第2页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:53:00.224917+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10854v1",
+        "contentHash": "dc444829414d8be1b368eaeebe378106f89493c4d72efedf34cfeb1b253de826",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页致谢明确OpenAI GPT-6审计作者旧文[6]发现Claim 4.7缺口，成为本研究动机，并对本文作正确性技术审计。本文文字、证明策略和论证明确归作者本人。故记verification；发现旧文缺口不等于AI提出本文具体核心路线，不记ideas、proofs或writing。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0dda0181c226c59dbb89a5782c1d89d5e832cd97c264db42f4a69f23f4004aa2"
+      },
+      "aiUsage": [
+        "verification"
+      ],
+      "priorityScore": 90,
+      "priorityReason": "泛型对称性与Riemannian刚性直接相关，优先正文审读。"
+    },
+    "analysisBasis": {
+      "abstract": "Given a compact Lie group acting smoothly and freely on a compact connected manifold, we prove that the space of invariant Riemannian metrics whose symmetry group is precisely the group in question is open dense in that of all invariant metrics provided the orbit space is sufficiently large. This strengthens the author's prior results and recovers Ebin's to the effect that trivial-symmetry Riemannian metrics constitute an open dense set. In the process, the discussion also addresses a number of apparent gaps in said sources, pertaining to the rigidity results in question.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10854",
+        "metadata": {
+          "title": "Controlled Riemannian rigidity",
+          "authors": [
+            "Alexandru Chirvasitu"
+          ],
+          "abstract": "Given a compact Lie group acting smoothly and freely on a compact connected manifold, we prove that the space of invariant Riemannian metrics whose symmetry group is precisely the group in question is open dense in that of all invariant metrics provided the orbit space is sufficiently large. This strengthens the author's prior results and recovers Ebin's to the effect that trivial-symmetry Riemannian metrics constitute an open dense set. In the process, the discussion also addresses a number of apparent gaps in said sources, pertaining to the rigidity results in question.",
+          "categories": [
+            "math.DG",
+            "math.FA",
+            "math.GN",
+            "math.MG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "9 pages + references",
+          "version": 1,
+          "submittedAt": "2026-11-07T17:05:28Z",
+          "updatedAt": "2026-11-07T17:05:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-10T11:29:03.673524+00:00",
+            "contentHash": "caa3fe13a34042edc43165e6745da1a7f37e274a434fb05b3a0573725ac00c96"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.024059+00:00",
+            "contentHash": "9ba046d8833bdf19623120f8739636f174b7a97ba0de0bdff257c79521a8bcb6"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "指定自由群作用的泛型等距群刚性",
+          "workSummary": "紧Lie群G在紧连通光滑流形M上自由光滑作用时，若e=dim(M/G)≥min(3,max(2,1+dimG))，则所有G不变光滑黎曼度量中满足全等距群Aut(g)=G的度量，在C∞ Fréchet拓扑下开且稠密。即dimG≤1要求e≥2，dimG≥2要求e≥3。",
+          "techniques": [
+            "Ebin等距群上半连续和垂直性开放",
+            "唯一极值轨道与极坐标角向扰动",
+            "主轨道作用的归纳式垂直性",
+            "不变度量的底度量/纤维度量/水平联络分解",
+            "固定点联络曲率的极大秩泛性",
+            "Ambrose–Singer holonomy思想及紧Lie代数生成"
+          ],
+          "breakthrough": "先在更一般的principal作用（全部轨道同一主类型）下证明垂直度量的开稠密性，逐分支余维门槛为2。再用水平联络曲率破除轨道内额外各向同性：在固定p处，曲率秩min(dimG,e(e−1)/2)的联络开且稠密。除改善作者先前维数限制外，文本明确补上先前结论遗漏的连通性条件及Claim4.7路线的缺口。",
+          "limitations": "全等距群恰为指定G的结论要求自由作用及M连通，不能把principal作用下仅保持各G轨道的垂直性直接等同全等距群为G；定理1.9的极大秩指固定点p，不宣称所有点同时满秩。上述门槛外无统一结论；对更弱正则性拓扑或非紧M未作推广。作者对旧文及Ebin论证呈现中的缺口作修补，这是本文论证的主张，非本次独立确认先前理论失效。本次补读主定理及扰动/联络路线，未独立验证全篇细节、Ebin切片、Whitney延拓和紧Lie代数生成等外部结果。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第2页致谢明确OpenAI GPT-6审计作者旧文[6]发现Claim 4.7缺口，成为本研究动机，并对本文作正确性技术审计。本文文字、证明策略和论证明确归作者本人。故记verification；发现旧文缺口不等于AI提出本文具体核心路线，不记ideas、proofs或writing。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10854v1 · PDF 第2页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:53:00.224917+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10854v1",
+            "contentHash": "dc444829414d8be1b368eaeebe378106f89493c4d72efedf34cfeb1b253de826",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页致谢明确OpenAI GPT-6审计作者旧文[6]发现Claim 4.7缺口，成为本研究动机，并对本文作正确性技术审计。本文文字、证明策略和论证明确归作者本人。故记verification；发现旧文缺口不等于AI提出本文具体核心路线，不记ideas、proofs或writing。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0dda0181c226c59dbb89a5782c1d89d5e832cd97c264db42f4a69f23f4004aa2"
+          },
+          "aiUsage": [
+            "verification"
+          ],
+          "priorityScore": 90,
+          "priorityReason": "泛型对称性与Riemannian刚性直接相关，优先正文审读。"
+        },
+        "analysisBasis": {
+          "abstract": "Given a compact Lie group acting smoothly and freely on a compact connected manifold, we prove that the space of invariant Riemannian metrics whose symmetry group is precisely the group in question is open dense in that of all invariant metrics provided the orbit space is sufficiently large. This strengthens the author's prior results and recovers Ebin's to the effect that trivial-symmetry Riemannian metrics constitute an open dense set. In the process, the discussion also addresses a number of apparent gaps in said sources, pertaining to the rigidity results in question.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

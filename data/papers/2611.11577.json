@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11577",
+  "slug": "2611.11577",
+  "latest": {
+    "arxivId": "2611.11577",
+    "metadata": {
+      "title": "No regular icosahedron has a rational point on every face: a proof checked in Lean",
+      "authors": [
+        "Mikhail Levit"
+      ],
+      "abstract": "We prove that no regular icosahedron in $\\mathbb{R}^3$ has a point with rational coordinates on each of its twenty closed faces, in every position, size and orientation, reflections included. This answers a question of I. Bogdanov on MathOverflow. A field automorphism of $\\mathbb{C}$ that sends $\\sqrt5$ to $-\\sqrt5$ reduces the problem to the following statement: for every complex orthogonal $3\\times3$ matrix $T$ some real linear combination of $\\mathrm{Re}\\,T$ and $\\mathrm{Im}\\,T$ separates ten intervals determined by the faces. We prove this statement by a computer-assisted case analysis over rational parametrizations of rotation frames, in which every inequality is an exact polynomial bound over $\\mathbb{Z}[\\varphi]$, $\\varphi=(1+\\sqrt5)/2$; no floating-point arithmetic and no Lipschitz estimates are used. The whole argument, including the $48$ certificates, is formalized in the Lean 4 proof assistant with Mathlib and checked by the Lean kernel; the main theorem depends only on the standard axioms. The mathematical argument and the formalization were produced by AI systems (OpenAI Codex and Anthropic Claude) under the direction of the author; see the statement at the end of the paper.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "8 pages. Lean 4 formalization: this https URL (doi: https://doi.org/10.5281/zenodo.24059256 ). The proof and the formalization were produced with AI systems; see the section \"Use of AI tools\"",
+      "version": 1,
+      "submittedAt": "2026-11-08T19:44:49Z",
+      "updatedAt": "2026-11-08T19:44:49Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-10T11:29:03.673524+00:00",
+        "contentHash": "caa3fe13a34042edc43165e6745da1a7f37e274a434fb05b3a0573725ac00c96"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:01.281255+00:00",
+        "contentHash": "cae7009d7ee2c00ee66df85712a0a25e70494417352ebb832b859370d209a766"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "精确计算辅助反例障碍",
+      "workSummary": "作者证明任意位置、大小、朝向及反射后的正二十面体，都不能在每个闭面上各含有一个有理坐标点。将√5变号的复数域自同构把问题化为复正交矩阵的区间分离，再以旋转标架有理参数化和Z[φ]上的精确多项式界完成分类。作者称全部论证及48个证书已在Lean4中由内核检查。",
+      "techniques": [
+        "数域自同构",
+        "复正交矩阵分离",
+        "精确多项式证书",
+        "Lean4形式化"
+      ],
+      "breakthrough": "对正二十面体所有刚性姿态给出统一有理点障碍并提供形式化证书。",
+      "limitations": "本解读尚未运行Lean或核验证书；内核检查与标准公理依赖是作者报告。数学论证及形式化由AI在作者指导下完成的披露需独立记录。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第1页摘要与第7页Use of AI tools均有自用披露：作者提出问题并指导核查；OpenAI Codex发展第2节代数归约及第3节分解，Anthropic Claude发展Lean形式化、可由kernel核查的证书、证书生成器及最终分解形式，并草拟正文。明确归因核心构造，记ideas、proofs、computation、writing。Lean kernel执行核查不等于模型独立验证，不另据此记verification；本次只核对论文披露，未运行外部Lean库。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.11577v1 · PDF 第1页摘要、第7页Use of AI tools；第2–3页核对核心归约/分解所指，全文8页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:46:39.075301+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11577v1",
+        "contentHash": "8bf400b754cdb3fa3d8b5c0251ea2a11bc29e700ddcb7a896cc9bf45c367a7a7",
+        "pages": 8,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页摘要与第7页Use of AI tools均有自用披露：作者提出问题并指导核查；OpenAI Codex发展第2节代数归约及第3节分解，Anthropic Claude发展Lean形式化、可由kernel核查的证书、证书生成器及最终分解形式，并草拟正文。明确归因核心构造，记ideas、proofs、computation、writing。Lean kernel执行核查不等于模型独立验证，不另据此记verification；本次只核对论文披露，未运行外部Lean库。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a211656c39a35331ce8c4ed804cca2e4f6973193214fe7442b5e993fb2aad4ab"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 70,
+      "priorityReason": "离散几何与精确验证相关，和曲率分析距离较远。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that no regular icosahedron in $\\mathbb{R}^3$ has a point with rational coordinates on each of its twenty closed faces, in every position, size and orientation, reflections included. This answers a question of I. Bogdanov on MathOverflow. A field automorphism of $\\mathbb{C}$ that sends $\\sqrt5$ to $-\\sqrt5$ reduces the problem to the following statement: for every complex orthogonal $3\\times3$ matrix $T$ some real linear combination of $\\mathrm{Re}\\,T$ and $\\mathrm{Im}\\,T$ separates ten intervals determined by the faces. We prove this statement by a computer-assisted case analysis over rational parametrizations of rotation frames, in which every inequality is an exact polynomial bound over $\\mathbb{Z}[\\varphi]$, $\\varphi=(1+\\sqrt5)/2$; no floating-point arithmetic and no Lipschitz estimates are used. The whole argument, including the $48$ certificates, is formalized in the Lean 4 proof assistant with Mathlib and checked by the Lean kernel; the main theorem depends only on the standard axioms. The mathematical argument and the formalization were produced by AI systems (OpenAI Codex and Anthropic Claude) under the direction of the author; see the statement at the end of the paper.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11577",
+        "metadata": {
+          "title": "No regular icosahedron has a rational point on every face: a proof checked in Lean",
+          "authors": [
+            "Mikhail Levit"
+          ],
+          "abstract": "We prove that no regular icosahedron in $\\mathbb{R}^3$ has a point with rational coordinates on each of its twenty closed faces, in every position, size and orientation, reflections included. This answers a question of I. Bogdanov on MathOverflow. A field automorphism of $\\mathbb{C}$ that sends $\\sqrt5$ to $-\\sqrt5$ reduces the problem to the following statement: for every complex orthogonal $3\\times3$ matrix $T$ some real linear combination of $\\mathrm{Re}\\,T$ and $\\mathrm{Im}\\,T$ separates ten intervals determined by the faces. We prove this statement by a computer-assisted case analysis over rational parametrizations of rotation frames, in which every inequality is an exact polynomial bound over $\\mathbb{Z}[\\varphi]$, $\\varphi=(1+\\sqrt5)/2$; no floating-point arithmetic and no Lipschitz estimates are used. The whole argument, including the $48$ certificates, is formalized in the Lean 4 proof assistant with Mathlib and checked by the Lean kernel; the main theorem depends only on the standard axioms. The mathematical argument and the formalization were produced by AI systems (OpenAI Codex and Anthropic Claude) under the direction of the author; see the statement at the end of the paper.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "8 pages. Lean 4 formalization: this https URL (doi: https://doi.org/10.5281/zenodo.24059256 ). The proof and the formalization were produced with AI systems; see the section \"Use of AI tools\"",
+          "version": 1,
+          "submittedAt": "2026-11-08T19:44:49Z",
+          "updatedAt": "2026-11-08T19:44:49Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-10T11:29:03.673524+00:00",
+            "contentHash": "caa3fe13a34042edc43165e6745da1a7f37e274a434fb05b3a0573725ac00c96"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:01.281255+00:00",
+            "contentHash": "cae7009d7ee2c00ee66df85712a0a25e70494417352ebb832b859370d209a766"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "精确计算辅助反例障碍",
+          "workSummary": "作者证明任意位置、大小、朝向及反射后的正二十面体，都不能在每个闭面上各含有一个有理坐标点。将√5变号的复数域自同构把问题化为复正交矩阵的区间分离，再以旋转标架有理参数化和Z[φ]上的精确多项式界完成分类。作者称全部论证及48个证书已在Lean4中由内核检查。",
+          "techniques": [
+            "数域自同构",
+            "复正交矩阵分离",
+            "精确多项式证书",
+            "Lean4形式化"
+          ],
+          "breakthrough": "对正二十面体所有刚性姿态给出统一有理点障碍并提供形式化证书。",
+          "limitations": "本解读尚未运行Lean或核验证书；内核检查与标准公理依赖是作者报告。数学论证及形式化由AI在作者指导下完成的披露需独立记录。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第1页摘要与第7页Use of AI tools均有自用披露：作者提出问题并指导核查；OpenAI Codex发展第2节代数归约及第3节分解，Anthropic Claude发展Lean形式化、可由kernel核查的证书、证书生成器及最终分解形式，并草拟正文。明确归因核心构造，记ideas、proofs、computation、writing。Lean kernel执行核查不等于模型独立验证，不另据此记verification；本次只核对论文披露，未运行外部Lean库。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.11577v1 · PDF 第1页摘要、第7页Use of AI tools；第2–3页核对核心归约/分解所指，全文8页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:46:39.075301+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11577v1",
+            "contentHash": "8bf400b754cdb3fa3d8b5c0251ea2a11bc29e700ddcb7a896cc9bf45c367a7a7",
+            "pages": 8,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第1页摘要与第7页Use of AI tools均有自用披露：作者提出问题并指导核查；OpenAI Codex发展第2节代数归约及第3节分解，Anthropic Claude发展Lean形式化、可由kernel核查的证书、证书生成器及最终分解形式，并草拟正文。明确归因核心构造，记ideas、proofs、computation、writing。Lean kernel执行核查不等于模型独立验证，不另据此记verification；本次只核对论文披露，未运行外部Lean库。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a211656c39a35331ce8c4ed804cca2e4f6973193214fe7442b5e993fb2aad4ab"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 70,
+          "priorityReason": "离散几何与精确验证相关，和曲率分析距离较远。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that no regular icosahedron in $\\mathbb{R}^3$ has a point with rational coordinates on each of its twenty closed faces, in every position, size and orientation, reflections included. This answers a question of I. Bogdanov on MathOverflow. A field automorphism of $\\mathbb{C}$ that sends $\\sqrt5$ to $-\\sqrt5$ reduces the problem to the following statement: for every complex orthogonal $3\\times3$ matrix $T$ some real linear combination of $\\mathrm{Re}\\,T$ and $\\mathrm{Im}\\,T$ separates ten intervals determined by the faces. We prove this statement by a computer-assisted case analysis over rational parametrizations of rotation frames, in which every inequality is an exact polynomial bound over $\\mathbb{Z}[\\varphi]$, $\\varphi=(1+\\sqrt5)/2$; no floating-point arithmetic and no Lipschitz estimates are used. The whole argument, including the $48$ certificates, is formalized in the Lean 4 proof assistant with Mathlib and checked by the Lean kernel; the main theorem depends only on the standard axioms. The mathematical argument and the formalization were produced by AI systems (OpenAI Codex and Anthropic Claude) under the direction of the author; see the statement at the end of the paper.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

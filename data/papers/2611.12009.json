@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12009",
+  "slug": "2611.12009",
+  "latest": {
+    "arxivId": "2611.12009",
+    "metadata": {
+      "title": "Integrable Measure Equivalence and Gromov's conjecture on nilpotent groups",
+      "authors": [
+        "Kajal Das"
+      ],
+      "abstract": "In this article we prove a well-known conjecture due to M. Gromov that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Quasi-isometric, then their Mal'cev Completions are isomorphic as Lie groups. We prove this result in more general set-up. We prove that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent, then the Mal'cev completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Equivalently, using Y. Shalom's result we prove that two infinite countable torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent if and only if $\\Gamma$ and $\\Lambda$ are quasi-isometric if and only if the Mal'cev Completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Moreover, we discuss some applications of our main theorem to lifting of quasi-isometric embedding from $\\Gamma$ to $\\Lambda$ to a homo-morphism between their Mal'cev completions, and betti numbers of nilpotent groups.",
+      "categories": [
+        "math.GR",
+        "math.DG",
+        "math.DS"
+      ],
+      "primaryCategory": "math.GR",
+      "comment": "27 pages",
+      "version": 1,
+      "submittedAt": "2026-11-09T07:49:13Z",
+      "updatedAt": "2026-11-09T07:49:13Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:12.644151+00:00",
+        "contentHash": "2d43d350999352e6e764071634fa2dadae39dcc73114a4bdcd175ff926c59ec9"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "幂零群IME与Malcev同构的强主张及待澄清证明环节",
+      "workSummary": "作者在定理1.1/1.2声称无限无挠幂零群的可积测度等价、拟等距及Malcev完备化Lie群同构等价；正式陈述写countable，但第3节及主证明第24页实际使用有限生成群。路线先从IME取得渐近锥的双Lipschitz对应，经有限商/box space构造distal coupling，再取最大equicontinuous因子，以Ellis包络构造同时含两群为余紧格点的局部紧幂零群，最后用Gleason–Yamabe及Malcev延拓比较完备化。",
+      "techniques": [
+        "可积测度等价与渐近锥",
+        "有限商及box space coupling",
+        "distal系统与equicontinuous因子",
+        "Ellis包络半群",
+        "Gleason–Yamabe与Malcev格点延拓"
+      ],
+      "breakthrough": "这是作者声称解决Gromov强拟等距刚性猜想的论文；本轮正文核查仅识别所用路线和可定位的逻辑问题，不能据此宣布该猜想已获确认。",
+      "limitations": "本轮可定位的关键问题是：第24页将固定∞的一点紧化作用仍称minimal，而非空X中{∞}为闭不变子集；第23页命题7.2仅由存在可数稠密子群推出E连通，该推理不足以应用随后连通群版Gleason–Yamabe。第25页由核同构推两个环境商同构的步骤另待解释。主定理写countable，而定义、第3节及第24页证明实际使用有限生成，不能扩大到任意可数无挠幂零群。因此主结论保持作者声称，不认定为已确认的Gromov猜想通用突破。已读PDF第1–4、8–9、19–27页，渲染第8、23–25页核对原文；未独立审计coupling构造全证或原始引用，也未证明主猜想本身为假。外部依赖包括Austin/Pansu/Shalom、有限Cayley图极限、Furstenberg/Glasner–Ellis理论、Gleason–Yamabe和Malcev理论。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:35:24.437238+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12009v1",
+        "contentHash": "23488c337499201124c3b3bdf6c95b2b24360fd9f6c2af7efa8d5b8fb0379c5b",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。标准与补充检索的A.I./A. I.命中均为数学家A. I. Mal’cev的姓名缩写（第2、6、27页），不是AI工具。第26页致谢为人类学者介绍文献与讨论；未见作者自身使用AI披露。无披露不等于未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3692a8c92ceae246048f599eec7a8364bd15781414adcfbd1376a63800740c8e"
+      },
+      "priorityScore": 82,
+      "priorityReason": "粗几何强主张值得审查，但正文已定位关键跳步，暂作研究线索，优先级低于本轮条件和路线已较清晰的几何分析结果。"
+    },
+    "analysisBasis": {
+      "abstract": "In this article we prove a well-known conjecture due to M. Gromov that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Quasi-isometric, then their Mal'cev Completions are isomorphic as Lie groups. We prove this result in more general set-up. We prove that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent, then the Mal'cev completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Equivalently, using Y. Shalom's result we prove that two infinite countable torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent if and only if $\\Gamma$ and $\\Lambda$ are quasi-isometric if and only if the Mal'cev Completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Moreover, we discuss some applications of our main theorem to lifting of quasi-isometric embedding from $\\Gamma$ to $\\Lambda$ to a homo-morphism between their Mal'cev completions, and betti numbers of nilpotent groups.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12009",
+        "metadata": {
+          "title": "Integrable Measure Equivalence and Gromov's conjecture on nilpotent groups",
+          "authors": [
+            "Kajal Das"
+          ],
+          "abstract": "In this article we prove a well-known conjecture due to M. Gromov that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Quasi-isometric, then their Mal'cev Completions are isomorphic as Lie groups. We prove this result in more general set-up. We prove that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent, then the Mal'cev completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Equivalently, using Y. Shalom's result we prove that two infinite countable torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent if and only if $\\Gamma$ and $\\Lambda$ are quasi-isometric if and only if the Mal'cev Completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Moreover, we discuss some applications of our main theorem to lifting of quasi-isometric embedding from $\\Gamma$ to $\\Lambda$ to a homo-morphism between their Mal'cev completions, and betti numbers of nilpotent groups.",
+          "categories": [
+            "math.GR",
+            "math.DG",
+            "math.DS"
+          ],
+          "primaryCategory": "math.GR",
+          "comment": "27 pages",
+          "version": 1,
+          "submittedAt": "2026-11-09T07:49:13Z",
+          "updatedAt": "2026-11-09T07:49:13Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:12.644151+00:00",
+            "contentHash": "2d43d350999352e6e764071634fa2dadae39dcc73114a4bdcd175ff926c59ec9"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "幂零群IME与Malcev同构的强主张及待澄清证明环节",
+          "workSummary": "作者在定理1.1/1.2声称无限无挠幂零群的可积测度等价、拟等距及Malcev完备化Lie群同构等价；正式陈述写countable，但第3节及主证明第24页实际使用有限生成群。路线先从IME取得渐近锥的双Lipschitz对应，经有限商/box space构造distal coupling，再取最大equicontinuous因子，以Ellis包络构造同时含两群为余紧格点的局部紧幂零群，最后用Gleason–Yamabe及Malcev延拓比较完备化。",
+          "techniques": [
+            "可积测度等价与渐近锥",
+            "有限商及box space coupling",
+            "distal系统与equicontinuous因子",
+            "Ellis包络半群",
+            "Gleason–Yamabe与Malcev格点延拓"
+          ],
+          "breakthrough": "这是作者声称解决Gromov强拟等距刚性猜想的论文；本轮正文核查仅识别所用路线和可定位的逻辑问题，不能据此宣布该猜想已获确认。",
+          "limitations": "本轮可定位的关键问题是：第24页将固定∞的一点紧化作用仍称minimal，而非空X中{∞}为闭不变子集；第23页命题7.2仅由存在可数稠密子群推出E连通，该推理不足以应用随后连通群版Gleason–Yamabe。第25页由核同构推两个环境商同构的步骤另待解释。主定理写countable，而定义、第3节及第24页证明实际使用有限生成，不能扩大到任意可数无挠幂零群。因此主结论保持作者声称，不认定为已确认的Gromov猜想通用突破。已读PDF第1–4、8–9、19–27页，渲染第8、23–25页核对原文；未独立审计coupling构造全证或原始引用，也未证明主猜想本身为假。外部依赖包括Austin/Pansu/Shalom、有限Cayley图极限、Furstenberg/Glasner–Ellis理论、Gleason–Yamabe和Malcev理论。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:35:24.437238+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12009v1",
+            "contentHash": "23488c337499201124c3b3bdf6c95b2b24360fd9f6c2af7efa8d5b8fb0379c5b",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。标准与补充检索的A.I./A. I.命中均为数学家A. I. Mal’cev的姓名缩写（第2、6、27页），不是AI工具。第26页致谢为人类学者介绍文献与讨论；未见作者自身使用AI披露。无披露不等于未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3692a8c92ceae246048f599eec7a8364bd15781414adcfbd1376a63800740c8e"
+          },
+          "priorityScore": 82,
+          "priorityReason": "粗几何强主张值得审查，但正文已定位关键跳步，暂作研究线索，优先级低于本轮条件和路线已较清晰的几何分析结果。"
+        },
+        "analysisBasis": {
+          "abstract": "In this article we prove a well-known conjecture due to M. Gromov that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Quasi-isometric, then their Mal'cev Completions are isomorphic as Lie groups. We prove this result in more general set-up. We prove that if two infinite finitely generated torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent, then the Mal'cev completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Equivalently, using Y. Shalom's result we prove that two infinite countable torsion free nilpotent groups $\\Gamma$ and $\\Lambda$ are Integrable Measure Equivalent if and only if $\\Gamma$ and $\\Lambda$ are quasi-isometric if and only if the Mal'cev Completions of $\\Gamma$ and $\\Lambda$ are isomorphic as Lie groups. Moreover, we discuss some applications of our main theorem to lifting of quasi-isometric embedding from $\\Gamma$ to $\\Lambda$ to a homo-morphism between their Mal'cev completions, and betti numbers of nilpotent groups.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

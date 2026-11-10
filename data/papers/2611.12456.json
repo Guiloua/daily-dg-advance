@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12456",
+  "slug": "2611.12456",
+  "latest": {
+    "arxivId": "2611.12456",
+    "metadata": {
+      "title": "The symmetric Gaussian isoperimetric problem in the plane",
+      "authors": [
+        "Emanuel Milman"
+      ],
+      "abstract": "We resolve the symmetric Gaussian isoperimetric conjecture in the plane: every minimizer of Gaussian perimeter among centrally symmetric sets of prescribed Gaussian measure is a centered ball, a symmetric strip, or the complement of one of these sets. A quadrant-reflection argument reduces the problem to unconditional sets. The planar structural results of Barchiesi, Cagnetti and Julin then leave only a noncircular strictly convex stationary oval. We exclude this oval by an explicit volume-preserving and perimeter-decreasing linear deformation, which geometrically corresponds to an \"unconditional squeezing\". More generally, without requiring any symmetry assumptions, we show that any noncircular closed embedded $\\lambda$-self-shrinker is always unstable via linear deformations. We also record a reduction to the unconditional case in dimension three, using an orthogonal equipartition theorem of Musin.",
+      "categories": [
+        "math.FA",
+        "math.DG"
+      ],
+      "primaryCategory": "math.FA",
+      "comment": "18 pages",
+      "version": 1,
+      "submittedAt": "2026-11-09T14:08:35Z",
+      "updatedAt": "2026-11-09T14:08:35Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:25.992640+00:00",
+        "contentHash": "ef1f068f1e67e16085c8357bf3dee4c96d61df504cce740e457d3bb852afe0f1"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "平面对称Gaussian等周问题的极小形状分类",
+      "workSummary": "作者解决平面中心对称Gaussian等周猜想：给定Gaussian测度的中心对称集合，Gaussian周长极小者只能是中心球、对称条带或其补集。先用象限反射化为unconditional集合，再结合Barchiesi–Cagnetti–Julin结构结果，只剩非圆严格凸驻定卵形，以保体积降周长线性形变排除。",
+      "techniques": [
+        "象限反射",
+        "unconditional squeezing",
+        "Gaussian周长驻定结构",
+        "保体积线性不稳定变分"
+      ],
+      "breakthrough": "不加对称假设时也证明非圆闭嵌入λ-self-shrinker在线性形变下不稳定；三维另用Musin正交等分定理归约到unconditional类。",
+      "limitations": "完整极小形状分类是在平面；三维只给归约，不等于解决三维猜想。驻定不等于极小，不稳定结论需保留闭、嵌入和非圆。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第3页AI Declaration详述贡献链：AI完成用Musin定理的三维归约；平面不稳定性最初尝试未果，作者提出线性形变后得到S<0充分条件，再由作者提示Poincaré不等式后，AI证明Key Inequality并完成论证；AI还起草初稿，作者修改完善并负责。确定记proofs/writing；线性形变与Poincaré核心路线明确是作者提出，不归给AI。三维扩展虽有具体证明贡献，声明未清楚单独归因其概念性路线发现，故不另推ideas。未具名模型。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.12456v1 · PDF 第3页 AI Declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:43:30.600523+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12456v1",
+        "contentHash": "4e1a1ff0f76509ad146d8683b82f3ccbd0701909c7ce4d68e8f42def88afedf9",
+        "pages": 18,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第3页AI Declaration详述贡献链：AI完成用Musin定理的三维归约；平面不稳定性最初尝试未果，作者提出线性形变后得到S<0充分条件，再由作者提示Poincaré不等式后，AI证明Key Inequality并完成论证；AI还起草初稿，作者修改完善并负责。确定记proofs/writing；线性形变与Poincaré核心路线明确是作者提出，不归给AI。三维扩展虽有具体证明贡献，声明未清楚单独归因其概念性路线发现，故不另推ideas。未具名模型。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2fbdba20343cfbd172be2faec82ccf8bd21a0f8e45d3d41ebd7b83bdccc14ae7"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "Gaussian等周与曲率流驻定曲线的关键分类结果。"
+    },
+    "analysisBasis": {
+      "abstract": "We resolve the symmetric Gaussian isoperimetric conjecture in the plane: every minimizer of Gaussian perimeter among centrally symmetric sets of prescribed Gaussian measure is a centered ball, a symmetric strip, or the complement of one of these sets. A quadrant-reflection argument reduces the problem to unconditional sets. The planar structural results of Barchiesi, Cagnetti and Julin then leave only a noncircular strictly convex stationary oval. We exclude this oval by an explicit volume-preserving and perimeter-decreasing linear deformation, which geometrically corresponds to an \"unconditional squeezing\". More generally, without requiring any symmetry assumptions, we show that any noncircular closed embedded $\\lambda$-self-shrinker is always unstable via linear deformations. We also record a reduction to the unconditional case in dimension three, using an orthogonal equipartition theorem of Musin.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12456",
+        "metadata": {
+          "title": "The symmetric Gaussian isoperimetric problem in the plane",
+          "authors": [
+            "Emanuel Milman"
+          ],
+          "abstract": "We resolve the symmetric Gaussian isoperimetric conjecture in the plane: every minimizer of Gaussian perimeter among centrally symmetric sets of prescribed Gaussian measure is a centered ball, a symmetric strip, or the complement of one of these sets. A quadrant-reflection argument reduces the problem to unconditional sets. The planar structural results of Barchiesi, Cagnetti and Julin then leave only a noncircular strictly convex stationary oval. We exclude this oval by an explicit volume-preserving and perimeter-decreasing linear deformation, which geometrically corresponds to an \"unconditional squeezing\". More generally, without requiring any symmetry assumptions, we show that any noncircular closed embedded $\\lambda$-self-shrinker is always unstable via linear deformations. We also record a reduction to the unconditional case in dimension three, using an orthogonal equipartition theorem of Musin.",
+          "categories": [
+            "math.FA",
+            "math.DG"
+          ],
+          "primaryCategory": "math.FA",
+          "comment": "18 pages",
+          "version": 1,
+          "submittedAt": "2026-11-09T14:08:35Z",
+          "updatedAt": "2026-11-09T14:08:35Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:25.992640+00:00",
+            "contentHash": "ef1f068f1e67e16085c8357bf3dee4c96d61df504cce740e457d3bb852afe0f1"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "平面对称Gaussian等周问题的极小形状分类",
+          "workSummary": "作者解决平面中心对称Gaussian等周猜想：给定Gaussian测度的中心对称集合，Gaussian周长极小者只能是中心球、对称条带或其补集。先用象限反射化为unconditional集合，再结合Barchiesi–Cagnetti–Julin结构结果，只剩非圆严格凸驻定卵形，以保体积降周长线性形变排除。",
+          "techniques": [
+            "象限反射",
+            "unconditional squeezing",
+            "Gaussian周长驻定结构",
+            "保体积线性不稳定变分"
+          ],
+          "breakthrough": "不加对称假设时也证明非圆闭嵌入λ-self-shrinker在线性形变下不稳定；三维另用Musin正交等分定理归约到unconditional类。",
+          "limitations": "完整极小形状分类是在平面；三维只给归约，不等于解决三维猜想。驻定不等于极小，不稳定结论需保留闭、嵌入和非圆。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第3页AI Declaration详述贡献链：AI完成用Musin定理的三维归约；平面不稳定性最初尝试未果，作者提出线性形变后得到S<0充分条件，再由作者提示Poincaré不等式后，AI证明Key Inequality并完成论证；AI还起草初稿，作者修改完善并负责。确定记proofs/writing；线性形变与Poincaré核心路线明确是作者提出，不归给AI。三维扩展虽有具体证明贡献，声明未清楚单独归因其概念性路线发现，故不另推ideas。未具名模型。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.12456v1 · PDF 第3页 AI Declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:43:30.600523+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12456v1",
+            "contentHash": "4e1a1ff0f76509ad146d8683b82f3ccbd0701909c7ce4d68e8f42def88afedf9",
+            "pages": 18,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第3页AI Declaration详述贡献链：AI完成用Musin定理的三维归约；平面不稳定性最初尝试未果，作者提出线性形变后得到S<0充分条件，再由作者提示Poincaré不等式后，AI证明Key Inequality并完成论证；AI还起草初稿，作者修改完善并负责。确定记proofs/writing；线性形变与Poincaré核心路线明确是作者提出，不归给AI。三维扩展虽有具体证明贡献，声明未清楚单独归因其概念性路线发现，故不另推ideas。未具名模型。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2fbdba20343cfbd172be2faec82ccf8bd21a0f8e45d3d41ebd7b83bdccc14ae7"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "Gaussian等周与曲率流驻定曲线的关键分类结果。"
+        },
+        "analysisBasis": {
+          "abstract": "We resolve the symmetric Gaussian isoperimetric conjecture in the plane: every minimizer of Gaussian perimeter among centrally symmetric sets of prescribed Gaussian measure is a centered ball, a symmetric strip, or the complement of one of these sets. A quadrant-reflection argument reduces the problem to unconditional sets. The planar structural results of Barchiesi, Cagnetti and Julin then leave only a noncircular strictly convex stationary oval. We exclude this oval by an explicit volume-preserving and perimeter-decreasing linear deformation, which geometrically corresponds to an \"unconditional squeezing\". More generally, without requiring any symmetry assumptions, we show that any noncircular closed embedded $\\lambda$-self-shrinker is always unstable via linear deformations. We also record a reduction to the unconditional case in dimension three, using an orthogonal equipartition theorem of Musin.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

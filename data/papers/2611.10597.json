@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10597",
+  "slug": "2611.10597",
+  "latest": {
+    "arxivId": "2611.10597",
+    "metadata": {
+      "title": "Curvature estimates for stable hypersurfaces of the Euler-Dierkes-Huisken functional",
+      "authors": [
+        "Hongbin Cui",
+        "Xiaowei Xu",
+        "Shoulan Yi"
+      ],
+      "abstract": "A hypersurface $\\Sigma \\subset\\mathbb{R}^{n+1}$ is called EDH-stable if it is a critical point of the Euler-Dierkes-Huisken functional $\\mathcal{E}_\\alpha(\\Sigma)=\\int_\\Sigma|x|^\\alpha\\, d\\mathcal{H}^n$ with nonnegative second variation, which was introduced by Dierkes and Huisken in \\cite{[DH-24]}. In this paper, we first establish a Bellettini-type $\\epsilon$-regularity theorem and use it, together with tangent cone analysis, to derive curvature estimates for EDH-stable hypersurfaces with $2\\leq n \\leq 6$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "All comments are welcom",
+      "version": 1,
+      "submittedAt": "2026-11-07T09:04:05Z",
+      "updatedAt": "2026-11-07T09:04:05Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.021496+00:00",
+        "contentHash": "a1b957b2f2ed6eef3ed160f6a46daf9f88a97c75290c604e27e5294b96bba9bd"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "EDH稳定超曲面的曲率估计",
+      "workSummary": "对E_α(Σ)=∫Σ|x|^αdHⁿ的光滑双侧稳定超曲面，证明2≤n≤6、任意实数α下的离原点局部曲率估计。主定理在8R≤|p₀|、Σ∩B₄R(p₀)无边界且浸入在闭B₄R上proper、并有归一化加权面积|p₀|^(−α)(4R)^(−n)∫|x|^αdHⁿ≤Λ时，给出sup_(Σ∩B_R)|A|≤C(n,α,Λ)/R。",
+      "techniques": [
+        "加权Simons不等式和精细Kato不等式",
+        "Bellettini型De Giorgi迭代及ε正则性",
+        "Allard积分varifold紧性",
+        "平面/经典锥/平面并的近似",
+        "对角吹起的迭代切锥稳定性",
+        "Federer降维与Simons稳定锥定理"
+      ],
+      "breakthrough": "把低维稳定极小超曲面的曲率控制推广到位置权重|x|^α的稳定proper浸入超曲面。ε正则性以λ=R/(|p|−2R)、归一化加权∫(|A|+(|p|−2R)^−1)²为小量；主曲率估计则以加权面积界代替曲率能量小量。推论还覆盖前三阶导数按尺度受控的一般光滑指数权重。",
+      "limitations": "仅2≤n≤6，且估计必须远离原点；α可任意实数，不限正值。主定理需双侧稳定、局部无边界、proper浸入及加权面积上界，不是无附加条件的全局Bernstein分类。作者明确原点附近ρ=αlog|x|的导数发散，本文锥近似不足以支持对应小能量论证；不宣称跨原点曲率界。依赖Allard紧性、Bellettini近似和Simons锥定理，本次未独立核验全部锥分析及外部定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第21页致谢明确作者在准备本文时使用ChatGPT帮助理解积分varifold理论，并由作者承担结果责任；这是背景理论讨论/探索的实际使用，未具体归因核心想法、证明或代码。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10597v1 · PDF 第21页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:46:19.674647+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10597v1",
+        "contentHash": "e03ba24e4cd84156f28c2d99f42bc3984d8e9f46d1a54e0f1109e4d86782d919",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第21页致谢明确作者在准备本文时使用ChatGPT帮助理解积分varifold理论，并由作者承担结果责任；这是背景理论讨论/探索的实际使用，未具体归因核心想法、证明或代码。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "53f4e54dbb01553fbfd315ce1b250c15fc9f2b690c8a7fa8ad1cc70e27004887"
+      },
+      "aiUsage": [
+        "exploration"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "曲率正则、稳定性及奇异锥的核心问题，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "A hypersurface $\\Sigma \\subset\\mathbb{R}^{n+1}$ is called EDH-stable if it is a critical point of the Euler-Dierkes-Huisken functional $\\mathcal{E}_\\alpha(\\Sigma)=\\int_\\Sigma|x|^\\alpha\\, d\\mathcal{H}^n$ with nonnegative second variation, which was introduced by Dierkes and Huisken in \\cite{[DH-24]}. In this paper, we first establish a Bellettini-type $\\epsilon$-regularity theorem and use it, together with tangent cone analysis, to derive curvature estimates for EDH-stable hypersurfaces with $2\\leq n \\leq 6$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10597",
+        "metadata": {
+          "title": "Curvature estimates for stable hypersurfaces of the Euler-Dierkes-Huisken functional",
+          "authors": [
+            "Hongbin Cui",
+            "Xiaowei Xu",
+            "Shoulan Yi"
+          ],
+          "abstract": "A hypersurface $\\Sigma \\subset\\mathbb{R}^{n+1}$ is called EDH-stable if it is a critical point of the Euler-Dierkes-Huisken functional $\\mathcal{E}_\\alpha(\\Sigma)=\\int_\\Sigma|x|^\\alpha\\, d\\mathcal{H}^n$ with nonnegative second variation, which was introduced by Dierkes and Huisken in \\cite{[DH-24]}. In this paper, we first establish a Bellettini-type $\\epsilon$-regularity theorem and use it, together with tangent cone analysis, to derive curvature estimates for EDH-stable hypersurfaces with $2\\leq n \\leq 6$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "All comments are welcom",
+          "version": 1,
+          "submittedAt": "2026-11-07T09:04:05Z",
+          "updatedAt": "2026-11-07T09:04:05Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.021496+00:00",
+            "contentHash": "a1b957b2f2ed6eef3ed160f6a46daf9f88a97c75290c604e27e5294b96bba9bd"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "EDH稳定超曲面的曲率估计",
+          "workSummary": "对E_α(Σ)=∫Σ|x|^αdHⁿ的光滑双侧稳定超曲面，证明2≤n≤6、任意实数α下的离原点局部曲率估计。主定理在8R≤|p₀|、Σ∩B₄R(p₀)无边界且浸入在闭B₄R上proper、并有归一化加权面积|p₀|^(−α)(4R)^(−n)∫|x|^αdHⁿ≤Λ时，给出sup_(Σ∩B_R)|A|≤C(n,α,Λ)/R。",
+          "techniques": [
+            "加权Simons不等式和精细Kato不等式",
+            "Bellettini型De Giorgi迭代及ε正则性",
+            "Allard积分varifold紧性",
+            "平面/经典锥/平面并的近似",
+            "对角吹起的迭代切锥稳定性",
+            "Federer降维与Simons稳定锥定理"
+          ],
+          "breakthrough": "把低维稳定极小超曲面的曲率控制推广到位置权重|x|^α的稳定proper浸入超曲面。ε正则性以λ=R/(|p|−2R)、归一化加权∫(|A|+(|p|−2R)^−1)²为小量；主曲率估计则以加权面积界代替曲率能量小量。推论还覆盖前三阶导数按尺度受控的一般光滑指数权重。",
+          "limitations": "仅2≤n≤6，且估计必须远离原点；α可任意实数，不限正值。主定理需双侧稳定、局部无边界、proper浸入及加权面积上界，不是无附加条件的全局Bernstein分类。作者明确原点附近ρ=αlog|x|的导数发散，本文锥近似不足以支持对应小能量论证；不宣称跨原点曲率界。依赖Allard紧性、Bellettini近似和Simons锥定理，本次未独立核验全部锥分析及外部定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第21页致谢明确作者在准备本文时使用ChatGPT帮助理解积分varifold理论，并由作者承担结果责任；这是背景理论讨论/探索的实际使用，未具体归因核心想法、证明或代码。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10597v1 · PDF 第21页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:46:19.674647+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10597v1",
+            "contentHash": "e03ba24e4cd84156f28c2d99f42bc3984d8e9f46d1a54e0f1109e4d86782d919",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第21页致谢明确作者在准备本文时使用ChatGPT帮助理解积分varifold理论，并由作者承担结果责任；这是背景理论讨论/探索的实际使用，未具体归因核心想法、证明或代码。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "53f4e54dbb01553fbfd315ce1b250c15fc9f2b690c8a7fa8ad1cc70e27004887"
+          },
+          "aiUsage": [
+            "exploration"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "曲率正则、稳定性及奇异锥的核心问题，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "A hypersurface $\\Sigma \\subset\\mathbb{R}^{n+1}$ is called EDH-stable if it is a critical point of the Euler-Dierkes-Huisken functional $\\mathcal{E}_\\alpha(\\Sigma)=\\int_\\Sigma|x|^\\alpha\\, d\\mathcal{H}^n$ with nonnegative second variation, which was introduced by Dierkes and Huisken in \\cite{[DH-24]}. In this paper, we first establish a Bellettini-type $\\epsilon$-regularity theorem and use it, together with tangent cone analysis, to derive curvature estimates for EDH-stable hypersurfaces with $2\\leq n \\leq 6$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

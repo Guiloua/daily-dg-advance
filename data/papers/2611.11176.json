@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11176",
+  "slug": "2611.11176",
+  "latest": {
+    "arxivId": "2611.11176",
+    "metadata": {
+      "title": "A second-order estimate linear in the gradient for complex Hessian equations",
+      "authors": [
+        "Liding Huang",
+        "Jiaogen Zhang",
+        "Xi Zhang"
+      ],
+      "abstract": "We use the maximum principle to prove a second-order estimate with linear dependence on the gradient for the nondegenerate complex Hessian equation on a compact Kähler manifold. The proof combines $C^0$ compactness and a refined concavity inequality with the use of nearby smooth admissible functions. A standard interpolation argument then yields the known uniform gradient and complex Hessian bounds.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "14 pages. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-08T06:37:31Z",
+      "updatedAt": "2026-11-08T06:37:31Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:01.276571+00:00",
+        "contentHash": "0d7abed12e22a24f53cb7f1bf250b694ee6d7016a62937804767fef358bc3c5d"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "先验估计改进",
+      "workSummary": "在紧Kähler流形(M,ω)上，复维n≥2且2≤k≤n，对归一化sup u=0的光滑可容许解σ_k(λ(ω⁻¹(ω+i∂∂̄u)))^(1/k)=h>0，若h≥H1、∥h∥C²≤H2及osc u≤U，证明最大特征值≤C(1+sup|∇u|²)^(1/2)，因而sup Δωu≤C(1+sup|∇u|)。C仅依赖(M,ω,n,k,H1,H2,U)。再由局部W²,q插值吸收梯度，恢复统一梯度及复Hessian界。",
+      "techniques": [
+        "最大特征值的最大值原理与关键三阶项",
+        "Guo–Song改进凹性下界及Dong–Zhang型代数不等式",
+        "邻近光滑可容许函数与C⁰解类有限覆盖",
+        "局部W²,q估计和Sobolev插值"
+      ],
+      "breakthrough": "新意是把经典二阶估计对梯度的二次依赖降为线性。辅助函数加入N(u−v−ε)²，其中v是C⁰邻近光滑解；利用解类C⁰预紧性选取有限个v，使常数独立于单个解，从而通过二阶估计闭合梯度界。最终梯度/Hessian有界性为已知结果的替代证明。",
+      "limitations": "审读PDF第1–5、12–13页，渲染核对第3页定理1.1、推论1.2及辅助函数。适用紧Kähler、复维n≥2、2≤k≤n的光滑Γ_k可容许解，常数依赖h正下界H1、C²上界H2与振幅界U，未声称对退化右端统一。Hermitian背景和退化密度在5.3节仅为开放延伸问题；控制的是复Hessian而非一般实Hessian。C⁰预紧性引用Dinew–Kołodziej及Chu–Liu，凹性技术依赖Guo–Song及Dong–Zhang，本次未独立核验外部文献或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第13页作者声明使用AI工具，特别是ChatGPT 6.1 Astra，探索证明策略并辅助计算，且核验修订所有采纳建议。记录exploration、proofs、computation；同段明确本次关键改进依赖Guo–Song的Hessian凹性技术，未把核心路线归因AI，不记ideas。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.11176v1 · PDF 第13页Use of AI，全文14页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:36:24.356431+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11176v1",
+        "contentHash": "37b9090be4ed3b56c7160c7dcebb5869fcd5a52a27ae0b4c923a77276d5b02b9",
+        "pages": 14,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页作者声明使用AI工具，特别是ChatGPT 6.1 Astra，探索证明策略并辅助计算，且核验修订所有采纳建议。记录exploration、proofs、computation；同段明确本次关键改进依赖Guo–Song的Hessian凹性技术，未把核心路线归因AI，不记ideas。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "637e1fdad89dac67599ecad9f11739c0a296f983ddd9ef4a4afaeee541dc49e5"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "proofs"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "直接属于复几何非线性PDE及关键先验估计。"
+    },
+    "analysisBasis": {
+      "abstract": "We use the maximum principle to prove a second-order estimate with linear dependence on the gradient for the nondegenerate complex Hessian equation on a compact Kähler manifold. The proof combines $C^0$ compactness and a refined concavity inequality with the use of nearby smooth admissible functions. A standard interpolation argument then yields the known uniform gradient and complex Hessian bounds.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11176",
+        "metadata": {
+          "title": "A second-order estimate linear in the gradient for complex Hessian equations",
+          "authors": [
+            "Liding Huang",
+            "Jiaogen Zhang",
+            "Xi Zhang"
+          ],
+          "abstract": "We use the maximum principle to prove a second-order estimate with linear dependence on the gradient for the nondegenerate complex Hessian equation on a compact Kähler manifold. The proof combines $C^0$ compactness and a refined concavity inequality with the use of nearby smooth admissible functions. A standard interpolation argument then yields the known uniform gradient and complex Hessian bounds.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "14 pages. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-08T06:37:31Z",
+          "updatedAt": "2026-11-08T06:37:31Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:01.276571+00:00",
+            "contentHash": "0d7abed12e22a24f53cb7f1bf250b694ee6d7016a62937804767fef358bc3c5d"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "先验估计改进",
+          "workSummary": "在紧Kähler流形(M,ω)上，复维n≥2且2≤k≤n，对归一化sup u=0的光滑可容许解σ_k(λ(ω⁻¹(ω+i∂∂̄u)))^(1/k)=h>0，若h≥H1、∥h∥C²≤H2及osc u≤U，证明最大特征值≤C(1+sup|∇u|²)^(1/2)，因而sup Δωu≤C(1+sup|∇u|)。C仅依赖(M,ω,n,k,H1,H2,U)。再由局部W²,q插值吸收梯度，恢复统一梯度及复Hessian界。",
+          "techniques": [
+            "最大特征值的最大值原理与关键三阶项",
+            "Guo–Song改进凹性下界及Dong–Zhang型代数不等式",
+            "邻近光滑可容许函数与C⁰解类有限覆盖",
+            "局部W²,q估计和Sobolev插值"
+          ],
+          "breakthrough": "新意是把经典二阶估计对梯度的二次依赖降为线性。辅助函数加入N(u−v−ε)²，其中v是C⁰邻近光滑解；利用解类C⁰预紧性选取有限个v，使常数独立于单个解，从而通过二阶估计闭合梯度界。最终梯度/Hessian有界性为已知结果的替代证明。",
+          "limitations": "审读PDF第1–5、12–13页，渲染核对第3页定理1.1、推论1.2及辅助函数。适用紧Kähler、复维n≥2、2≤k≤n的光滑Γ_k可容许解，常数依赖h正下界H1、C²上界H2与振幅界U，未声称对退化右端统一。Hermitian背景和退化密度在5.3节仅为开放延伸问题；控制的是复Hessian而非一般实Hessian。C⁰预紧性引用Dinew–Kołodziej及Chu–Liu，凹性技术依赖Guo–Song及Dong–Zhang，本次未独立核验外部文献或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第13页作者声明使用AI工具，特别是ChatGPT 6.1 Astra，探索证明策略并辅助计算，且核验修订所有采纳建议。记录exploration、proofs、computation；同段明确本次关键改进依赖Guo–Song的Hessian凹性技术，未把核心路线归因AI，不记ideas。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.11176v1 · PDF 第13页Use of AI，全文14页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:36:24.356431+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11176v1",
+            "contentHash": "37b9090be4ed3b56c7160c7dcebb5869fcd5a52a27ae0b4c923a77276d5b02b9",
+            "pages": 14,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页作者声明使用AI工具，特别是ChatGPT 6.1 Astra，探索证明策略并辅助计算，且核验修订所有采纳建议。记录exploration、proofs、computation；同段明确本次关键改进依赖Guo–Song的Hessian凹性技术，未把核心路线归因AI，不记ideas。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "637e1fdad89dac67599ecad9f11739c0a296f983ddd9ef4a4afaeee541dc49e5"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "proofs"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "直接属于复几何非线性PDE及关键先验估计。"
+        },
+        "analysisBasis": {
+          "abstract": "We use the maximum principle to prove a second-order estimate with linear dependence on the gradient for the nondegenerate complex Hessian equation on a compact Kähler manifold. The proof combines $C^0$ compactness and a refined concavity inequality with the use of nearby smooth admissible functions. A standard interpolation argument then yields the known uniform gradient and complex Hessian bounds.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

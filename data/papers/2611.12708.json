@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12708",
+  "slug": "2611.12708",
+  "latest": {
+    "arxivId": "2611.12708",
+    "metadata": {
+      "title": "The Szegő log-term and local rigidity of Kähler--Einstein polarizations of compact Hermitian symmetric spaces",
+      "authors": [
+        "Andrea Loi",
+        "Matteo Palmieri",
+        "Fabio Zuddas"
+      ],
+      "abstract": "We prove local rigidity of the vanishing Szegő log-term for integral Kähler--Einstein polarizations of a product of irreducible compact Hermitian symmetric spaces. Near the invariant metric, vanishing of the log-term forces the Kähler form to lie in its biholomorphic orbit. The argument combines the first variation of the Kempf distortion function with a central-positioning procedure, reducing rigidity to polynomiality of spectral multipliers of the Laplace operator and the Berezin transform. For integral Kähler--Einstein polarizations, a common-pole obstruction then rules out all infinitesimal deformations transverse to the automorphism orbit.",
+      "categories": [
+        "math.DG",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "27 pages. Comments are welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-09T17:01:40Z",
+      "updatedAt": "2026-11-09T17:01:40Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:25.995617+00:00",
+        "contentHash": "eaca3706f49cc0257318ddfcb55bf6fa387d76eb01b26c9a68053a7dee60af07"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "整Kähler–Einstein极化下Szegő log-term的C^(2n+4)局部刚性",
+      "workSummary": "令M=∏M_k为不可约紧Hermitian对称空间之积，复维n，各因子正Picard生成元L_k及不变度量h_k的genus为γ_k。设d=gcd(γ_k)、L_gcd=⊠L_k^(γ_k/d)，其不变曲率ω_gcd满足Ric_ω=dω。定理1.1断言存在ε(M)>0，使L_gcd上任意h=e^ψh_gcd若||ψ||_(C^(2n+4))<ε且圆丛Szegő对数项沿边界无限阶消失，则有全纯自同构f令f*Ric(h)=ω_gcd。邻近h本身不预设Kähler–Einstein；参考极化必须在c₁(M)射线上。正文将结论扩至每个固定正整数张量幂q，参考形式为qω_gcd。",
+      "techniques": [
+        "Kempf distortion函数的一阶变分",
+        "Lu–Tian渐近系数的Taylor与椭圆估计",
+        "定量central-positioning去除自同构方向",
+        "Peter–Weyl等型分解及Berezin谱",
+        "有理谱乘子的共同极点障碍"
+      ],
+      "breakthrough": "把Lu–Tian的CPⁿ局部刚性扩展到整Kähler–Einstein对称空间积。若刚性失败，规范化形变极限产生非零、零均值且正交第一Laplace特征空间的光滑函数，并要求其非零等型分量的变分谱乘子为多项式；共同极点−d证明多项式性只出现在常数和第一特征方向，得到矛盾。",
+      "limitations": "结论是固定整Kähler–Einstein极化上的局部C^(2n+4)刚性，不是一般Kähler类、任意乘积极化或全局log-term零集合的分类。logterm≡0按正文指沿圆丛边界无限阶消失；结论针对曲率形式的自同构轨道，不要求Hermitian线丛度量本身严格相等。张量幂扩展不提供对全部q统一的邻域常数。第24页CP¹×CP³的未按genus缩放乘积极化显示跨因子极点可抵消，因此极化条件不能删掉。已读PDF第1–7、10、13–17、20、23–26页，渲染第2、15、24–25页核对极化指数、邻域阶数、极点和主证明；未独立逐行复核全部变分余项/椭圆估计或所有因子的谱公式。外部依赖包括Lu–Tian的Szegő/TYZ变分框架、Matsushima自同构特征空间对应、Zhang的Berezin特征值公式、Hua多项式以及既有齐性正则量子化的log-term消失。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第26页Declaration说明思想、结果与证明均归作者，Claude和ChatGPT辅助检查论证的形式正确性以及改善呈现/语言；所有输出由作者批判审查核验。按明示用途记verification/writing，不推断AI提出ideas或生成证明，也不将这里的formal correctness写成Lean等机器形式化证明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.12708v1 · PDF 第26页 Declaration on the use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:52:43.090418+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12708v1",
+        "contentHash": "6d627831fd403b0858f258d07e71fd5b000be5ea14e53042cebb553f1cb2872f",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第26页Declaration说明思想、结果与证明均归作者，Claude和ChatGPT辅助检查论证的形式正确性以及改善呈现/语言；所有输出由作者批判审查核验。按明示用途记verification/writing，不推断AI提出ideas或生成证明，也不将这里的formal correctness写成Lean等机器形式化证明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "9b73e52bbafca3f9d93b38a44b406e2f61f3c74a6b3fc2e678093205f40d2ca8"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "复几何谱渐近与局部刚性相联，优先补读归一化及邻域条件。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove local rigidity of the vanishing Szegő log-term for integral Kähler--Einstein polarizations of a product of irreducible compact Hermitian symmetric spaces. Near the invariant metric, vanishing of the log-term forces the Kähler form to lie in its biholomorphic orbit. The argument combines the first variation of the Kempf distortion function with a central-positioning procedure, reducing rigidity to polynomiality of spectral multipliers of the Laplace operator and the Berezin transform. For integral Kähler--Einstein polarizations, a common-pole obstruction then rules out all infinitesimal deformations transverse to the automorphism orbit.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.12708",
+        "metadata": {
+          "title": "The Szegő log-term and local rigidity of Kähler--Einstein polarizations of compact Hermitian symmetric spaces",
+          "authors": [
+            "Andrea Loi",
+            "Matteo Palmieri",
+            "Fabio Zuddas"
+          ],
+          "abstract": "We prove local rigidity of the vanishing Szegő log-term for integral Kähler--Einstein polarizations of a product of irreducible compact Hermitian symmetric spaces. Near the invariant metric, vanishing of the log-term forces the Kähler form to lie in its biholomorphic orbit. The argument combines the first variation of the Kempf distortion function with a central-positioning procedure, reducing rigidity to polynomiality of spectral multipliers of the Laplace operator and the Berezin transform. For integral Kähler--Einstein polarizations, a common-pole obstruction then rules out all infinitesimal deformations transverse to the automorphism orbit.",
+          "categories": [
+            "math.DG",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "27 pages. Comments are welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-09T17:01:40Z",
+          "updatedAt": "2026-11-09T17:01:40Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:25.995617+00:00",
+            "contentHash": "eaca3706f49cc0257318ddfcb55bf6fa387d76eb01b26c9a68053a7dee60af07"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "整Kähler–Einstein极化下Szegő log-term的C^(2n+4)局部刚性",
+          "workSummary": "令M=∏M_k为不可约紧Hermitian对称空间之积，复维n，各因子正Picard生成元L_k及不变度量h_k的genus为γ_k。设d=gcd(γ_k)、L_gcd=⊠L_k^(γ_k/d)，其不变曲率ω_gcd满足Ric_ω=dω。定理1.1断言存在ε(M)>0，使L_gcd上任意h=e^ψh_gcd若||ψ||_(C^(2n+4))<ε且圆丛Szegő对数项沿边界无限阶消失，则有全纯自同构f令f*Ric(h)=ω_gcd。邻近h本身不预设Kähler–Einstein；参考极化必须在c₁(M)射线上。正文将结论扩至每个固定正整数张量幂q，参考形式为qω_gcd。",
+          "techniques": [
+            "Kempf distortion函数的一阶变分",
+            "Lu–Tian渐近系数的Taylor与椭圆估计",
+            "定量central-positioning去除自同构方向",
+            "Peter–Weyl等型分解及Berezin谱",
+            "有理谱乘子的共同极点障碍"
+          ],
+          "breakthrough": "把Lu–Tian的CPⁿ局部刚性扩展到整Kähler–Einstein对称空间积。若刚性失败，规范化形变极限产生非零、零均值且正交第一Laplace特征空间的光滑函数，并要求其非零等型分量的变分谱乘子为多项式；共同极点−d证明多项式性只出现在常数和第一特征方向，得到矛盾。",
+          "limitations": "结论是固定整Kähler–Einstein极化上的局部C^(2n+4)刚性，不是一般Kähler类、任意乘积极化或全局log-term零集合的分类。logterm≡0按正文指沿圆丛边界无限阶消失；结论针对曲率形式的自同构轨道，不要求Hermitian线丛度量本身严格相等。张量幂扩展不提供对全部q统一的邻域常数。第24页CP¹×CP³的未按genus缩放乘积极化显示跨因子极点可抵消，因此极化条件不能删掉。已读PDF第1–7、10、13–17、20、23–26页，渲染第2、15、24–25页核对极化指数、邻域阶数、极点和主证明；未独立逐行复核全部变分余项/椭圆估计或所有因子的谱公式。外部依赖包括Lu–Tian的Szegő/TYZ变分框架、Matsushima自同构特征空间对应、Zhang的Berezin特征值公式、Hua多项式以及既有齐性正则量子化的log-term消失。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第26页Declaration说明思想、结果与证明均归作者，Claude和ChatGPT辅助检查论证的形式正确性以及改善呈现/语言；所有输出由作者批判审查核验。按明示用途记verification/writing，不推断AI提出ideas或生成证明，也不将这里的formal correctness写成Lean等机器形式化证明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.12708v1 · PDF 第26页 Declaration on the use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:52:43.090418+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12708v1",
+            "contentHash": "6d627831fd403b0858f258d07e71fd5b000be5ea14e53042cebb553f1cb2872f",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第26页Declaration说明思想、结果与证明均归作者，Claude和ChatGPT辅助检查论证的形式正确性以及改善呈现/语言；所有输出由作者批判审查核验。按明示用途记verification/writing，不推断AI提出ideas或生成证明，也不将这里的formal correctness写成Lean等机器形式化证明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "9b73e52bbafca3f9d93b38a44b406e2f61f3c74a6b3fc2e678093205f40d2ca8"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "复几何谱渐近与局部刚性相联，优先补读归一化及邻域条件。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove local rigidity of the vanishing Szegő log-term for integral Kähler--Einstein polarizations of a product of irreducible compact Hermitian symmetric spaces. Near the invariant metric, vanishing of the log-term forces the Kähler form to lie in its biholomorphic orbit. The argument combines the first variation of the Kempf distortion function with a central-positioning procedure, reducing rigidity to polynomiality of spectral multipliers of the Laplace operator and the Berezin transform. For integral Kähler--Einstein polarizations, a common-pole obstruction then rules out all infinitesimal deformations transverse to the automorphism orbit.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

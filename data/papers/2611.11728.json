@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11728",
+  "slug": "2611.11728",
+  "latest": {
+    "arxivId": "2611.11728",
+    "metadata": {
+      "title": "Isoperimetric comparison for surfaces with nonnegative curvature and uniformly convex boundary",
+      "authors": [
+        "Chao Xia",
+        "Jincong Zheng"
+      ],
+      "abstract": "We establish a sharp relative isoperimetric comparison for compact surfaces with nonnegative Gaussian curvature and smooth nonempty boundary whose geodesic curvature is at least 1. We prove that the normalized relative isoperimetric profile for such a surface is bounded below by that of the Euclidean unit disk, with equality holding at some area fraction in (0,1) if and only if the surface is isometric to the unit disk. The proof uses a differential comparison argument for the isoperimetric profile, based on a suitable non-constant normal variation of isoperimetric curves inspired by the model geometry.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "11 pages, 1 figure",
+      "version": 1,
+      "submittedAt": "2026-11-09T00:57:12Z",
+      "updatedAt": "2026-11-09T00:57:12Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:12.640887+00:00",
+        "contentHash": "c52799acf45a6e20db8ae4757697007ad63fc2337607863adcb23d2ce78a1c69"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "尖锐相对等周比较",
+      "workSummary": "对紧连通Riemannian曲面M，假设边界光滑非空、Gauss曲率K≥0且边界测地曲率κ∂M≥1，令IM(a)为面积a的有限周长集的内部相对周长下确界，hM(t)=IM(t|M|)/|M|。作者证明所有t∈[0,1]有hM(t)≥hB²(t)，其中B²为Euclidean单位圆盘；某个内点t∈(0,1)取等当且仅当M等距于单位圆盘。",
+      "techniques": [
+        "相对等周剖面的光滑上支撑与二阶变分",
+        "由单位圆盘模型法向速度启发的非恒定测试函数u(k,L)",
+        "Robin边界条件、曲率控制及L Q̂(k,L)严格单调性",
+        "Gauss–Bonnet排除闭合界面和Heintze–Karcher面积及刚性"
+      ],
+      "breakthrough": "单位圆盘的自由边界等周弧随面积变化的法向速度不是常数，常速变分无法恢复尖锐模型。本文以积分为1、满足Robin边界条件的非恒定测试函数建立Q≤Q̂(k,L)，再在剖面差最小点由一阶变分匹配曲率、由面积界得L≤L0(k)，利用L Q̂随L严格递增比较模型二阶变分。等号迫使|M|=π，由Heintze–Karcher等号得到刚性。",
+      "limitations": "审读PDF第1–3、6–11页并渲染第8页二阶变分测试函数、Robin边界条件与单调量。定理为紧连通光滑曲面、光滑非空边界、K≥0与κ∂M≥1；归一化是hM(t)=IM(t|M|)/|M|，不是除以面积平方根，周长只计∂*E∩int M。只在某t∈(0,1)等号才有单位圆盘刚性，端点0、1自动等号无刚性。二维结果不能当作高维Ric≥0且II≥g问题已解决；正文将后者留待后续。等周区域存在正则性、连通性和上支撑性质以及Heintze–Karcher等号使用外部文献，本次未独立核验这些依赖或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第3页披露公开大语言模型建议测试函数uk,L、加速模型空间标准量计算并辅助核验计算。第7–10页确认该非恒定测试函数为尖锐二阶变分比较的关键构造，属于明确具体的核心方法贡献，记ideas、proofs、computation、verification。正文完全由作者撰写，不记writing；声明未命名具体模型，不猜品牌。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.11728v1 · PDF 第3页Disclosure on AI assistance；第7–10页核对测试函数在证明中的作用，全文11页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:54:54.831493+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11728v1",
+        "contentHash": "3f05d8437492f50bccabc61947d12df2910db7e2ba0625b88305c6b9c1b0e441",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页披露公开大语言模型建议测试函数uk,L、加速模型空间标准量计算并辅助核验计算。第7–10页确认该非恒定测试函数为尖锐二阶变分比较的关键构造，属于明确具体的核心方法贡献，记ideas、proofs、computation、verification。正文完全由作者撰写，不记writing；声明未命名具体模型，不猜品牌。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "13eb8f0180891072084274f9a7237c5b681124d67a8861753bfda7a8a0f2c7f7"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "verification"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "直接属于曲面比较与等周刚性，是优先正文审读对象。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish a sharp relative isoperimetric comparison for compact surfaces with nonnegative Gaussian curvature and smooth nonempty boundary whose geodesic curvature is at least 1. We prove that the normalized relative isoperimetric profile for such a surface is bounded below by that of the Euclidean unit disk, with equality holding at some area fraction in (0,1) if and only if the surface is isometric to the unit disk. The proof uses a differential comparison argument for the isoperimetric profile, based on a suitable non-constant normal variation of isoperimetric curves inspired by the model geometry.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11728",
+        "metadata": {
+          "title": "Isoperimetric comparison for surfaces with nonnegative curvature and uniformly convex boundary",
+          "authors": [
+            "Chao Xia",
+            "Jincong Zheng"
+          ],
+          "abstract": "We establish a sharp relative isoperimetric comparison for compact surfaces with nonnegative Gaussian curvature and smooth nonempty boundary whose geodesic curvature is at least 1. We prove that the normalized relative isoperimetric profile for such a surface is bounded below by that of the Euclidean unit disk, with equality holding at some area fraction in (0,1) if and only if the surface is isometric to the unit disk. The proof uses a differential comparison argument for the isoperimetric profile, based on a suitable non-constant normal variation of isoperimetric curves inspired by the model geometry.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "11 pages, 1 figure",
+          "version": 1,
+          "submittedAt": "2026-11-09T00:57:12Z",
+          "updatedAt": "2026-11-09T00:57:12Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:12.640887+00:00",
+            "contentHash": "c52799acf45a6e20db8ae4757697007ad63fc2337607863adcb23d2ce78a1c69"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "尖锐相对等周比较",
+          "workSummary": "对紧连通Riemannian曲面M，假设边界光滑非空、Gauss曲率K≥0且边界测地曲率κ∂M≥1，令IM(a)为面积a的有限周长集的内部相对周长下确界，hM(t)=IM(t|M|)/|M|。作者证明所有t∈[0,1]有hM(t)≥hB²(t)，其中B²为Euclidean单位圆盘；某个内点t∈(0,1)取等当且仅当M等距于单位圆盘。",
+          "techniques": [
+            "相对等周剖面的光滑上支撑与二阶变分",
+            "由单位圆盘模型法向速度启发的非恒定测试函数u(k,L)",
+            "Robin边界条件、曲率控制及L Q̂(k,L)严格单调性",
+            "Gauss–Bonnet排除闭合界面和Heintze–Karcher面积及刚性"
+          ],
+          "breakthrough": "单位圆盘的自由边界等周弧随面积变化的法向速度不是常数，常速变分无法恢复尖锐模型。本文以积分为1、满足Robin边界条件的非恒定测试函数建立Q≤Q̂(k,L)，再在剖面差最小点由一阶变分匹配曲率、由面积界得L≤L0(k)，利用L Q̂随L严格递增比较模型二阶变分。等号迫使|M|=π，由Heintze–Karcher等号得到刚性。",
+          "limitations": "审读PDF第1–3、6–11页并渲染第8页二阶变分测试函数、Robin边界条件与单调量。定理为紧连通光滑曲面、光滑非空边界、K≥0与κ∂M≥1；归一化是hM(t)=IM(t|M|)/|M|，不是除以面积平方根，周长只计∂*E∩int M。只在某t∈(0,1)等号才有单位圆盘刚性，端点0、1自动等号无刚性。二维结果不能当作高维Ric≥0且II≥g问题已解决；正文将后者留待后续。等周区域存在正则性、连通性和上支撑性质以及Heintze–Karcher等号使用外部文献，本次未独立核验这些依赖或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第3页披露公开大语言模型建议测试函数uk,L、加速模型空间标准量计算并辅助核验计算。第7–10页确认该非恒定测试函数为尖锐二阶变分比较的关键构造，属于明确具体的核心方法贡献，记ideas、proofs、computation、verification。正文完全由作者撰写，不记writing；声明未命名具体模型，不猜品牌。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.11728v1 · PDF 第3页Disclosure on AI assistance；第7–10页核对测试函数在证明中的作用，全文11页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:54:54.831493+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11728v1",
+            "contentHash": "3f05d8437492f50bccabc61947d12df2910db7e2ba0625b88305c6b9c1b0e441",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页披露公开大语言模型建议测试函数uk,L、加速模型空间标准量计算并辅助核验计算。第7–10页确认该非恒定测试函数为尖锐二阶变分比较的关键构造，属于明确具体的核心方法贡献，记ideas、proofs、computation、verification。正文完全由作者撰写，不记writing；声明未命名具体模型，不猜品牌。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "13eb8f0180891072084274f9a7237c5b681124d67a8861753bfda7a8a0f2c7f7"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "verification"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "直接属于曲面比较与等周刚性，是优先正文审读对象。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish a sharp relative isoperimetric comparison for compact surfaces with nonnegative Gaussian curvature and smooth nonempty boundary whose geodesic curvature is at least 1. We prove that the normalized relative isoperimetric profile for such a surface is bounded below by that of the Euclidean unit disk, with equality holding at some area fraction in (0,1) if and only if the surface is isometric to the unit disk. The proof uses a differential comparison argument for the isoperimetric profile, based on a suitable non-constant normal variation of isoperimetric curves inspired by the model geometry.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

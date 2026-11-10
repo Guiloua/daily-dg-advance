@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10885",
+  "slug": "2611.10885",
+  "latest": {
+    "arxivId": "2611.10885",
+    "metadata": {
+      "title": "The Gorsky-Oblomkov-Rasmussen conjecture over $\\mathbb{Q}$",
+      "authors": [
+        "Qiuyu Ren",
+        "Hongjian Yang"
+      ],
+      "abstract": "We prove a generation theorem for the homology of certain Koszul complexes which naturally arise as the $E^1$ pages of the stable Rasmussen spectral sequence of torus links. Combining this theorem with recent work of Ballinger, Gorsky, Hogancamp, and Wang, we compute the stable Khovanov-Rozansky $\\mathfrak{gl}_N$ homology of torus links and determine its Poincaré series, resolving conjectures of Gorsky, Oblomkov, and Rasmussen and their $\\mathfrak{gl}_N$ analogs, over $\\mathbb{Q}$. Using these results, we determine the Khovanov homology of $T(n,n-1)$ and $T(n,n)$ over $\\mathbb{Q}$, confirming conjectures of Shumakovitch and Turner and of the first author, which in turn allows us to compute the Khovanov skein lasagna module of $\\overline{\\mathbb{CP}^2}$ over $\\mathbb{Q}$.",
+      "categories": [
+        "math.GT",
+        "math.AC",
+        "math.QA"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "21 pages",
+      "version": 1,
+      "submittedAt": "2026-11-07T18:17:54Z",
+      "updatedAt": "2026-11-07T18:17:54Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-10T11:29:15.137276+00:00",
+        "contentHash": "32dc800660c794ba029c1506697f60d6151dd5ce8c016b660b8c9a4c08794aa8"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.025037+00:00",
+        "contentHash": "da59d2653b4c96d6360e59ab414628b08e66d7d5eaee1e029fa9606acc33c06b"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "有理系数下GOR猜想与稳定链环同调",
+      "workSummary": "作者证明相关Koszul复形同调的生成定理，结合近期结果计算环面链环稳定gl_N Khovanov–Rozansky同调及Poincaré级数。",
+      "techniques": [
+        "Koszul复形同调",
+        "稳定Rasmussen谱序列",
+        "环面链环同调",
+        "skein lasagna模"
+      ],
+      "breakthrough": "作者宣布在Q系数下解决GOR及gl_N类比猜想，并计算T(n,n−1)、T(n,n)的Khovanov同调，进一步计算反向CP²的相应lasagna模。",
+      "limitations": "系数域明确为Q，稳定极限及特定环面链环范围不可扩成整系数或任意结。AI披露语境补看第13页Remark3.3：正文给双分次向量空间同构及相伴分次代数，未直接确定原同调代数结构；n≤N+1的进一步代数同构只记为AI agent声称有证明，不能当成本文已证结论。第3页列出的AI生成Lean形式化未在本次运行核验。当前主数学解读仍依据摘要，未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第3页明确辅助族初始想法由作者提出、后主要由AI发展；AI找到并证明完成归纳所关键的恒等式(13)，进行第2.4节及附录A计算，并协助写作和编辑。因此具体归因的关键恒等式/归纳路线记ideas、proofs，另记computation、writing。作者核验并大幅简化证明。该页另称有AI生成的定理1.2/A.1/A.4 Lean 4形式化，本次未运行或独立检验。第13页Remark3.3仅说AI agent声称n≤N+1时有进一步代数同构证明，不能当作本文已证明或社区确认的结论。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10885v1 · PDF 第3页 AI disclosure/Lean formalization；第13页 Remark3.3",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:55:41.144118+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10885v1",
+        "contentHash": "bc5a719eca937d8e90662be28dae5b95eb10d1e5c09d63ecd93d69bea870c167",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页明确辅助族初始想法由作者提出、后主要由AI发展；AI找到并证明完成归纳所关键的恒等式(13)，进行第2.4节及附录A计算，并协助写作和编辑。因此具体归因的关键恒等式/归纳路线记ideas、proofs，另记computation、writing。作者核验并大幅简化证明。该页另称有AI生成的定理1.2/A.1/A.4 Lean 4形式化，本次未运行或独立检验。第13页Remark3.3仅说AI agent声称n≤N+1时有进一步代数同构证明，不能当作本文已证明或社区确认的结论。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "580f124e818f535435140388790211f2ddcf49dacb941fa2c9aead28d6768d53"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "重要低维同调计算，但偏离分析主线。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove a generation theorem for the homology of certain Koszul complexes which naturally arise as the $E^1$ pages of the stable Rasmussen spectral sequence of torus links. Combining this theorem with recent work of Ballinger, Gorsky, Hogancamp, and Wang, we compute the stable Khovanov-Rozansky $\\mathfrak{gl}_N$ homology of torus links and determine its Poincaré series, resolving conjectures of Gorsky, Oblomkov, and Rasmussen and their $\\mathfrak{gl}_N$ analogs, over $\\mathbb{Q}$. Using these results, we determine the Khovanov homology of $T(n,n-1)$ and $T(n,n)$ over $\\mathbb{Q}$, confirming conjectures of Shumakovitch and Turner and of the first author, which in turn allows us to compute the Khovanov skein lasagna module of $\\overline{\\mathbb{CP}^2}$ over $\\mathbb{Q}$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10885",
+        "metadata": {
+          "title": "The Gorsky-Oblomkov-Rasmussen conjecture over $\\mathbb{Q}$",
+          "authors": [
+            "Qiuyu Ren",
+            "Hongjian Yang"
+          ],
+          "abstract": "We prove a generation theorem for the homology of certain Koszul complexes which naturally arise as the $E^1$ pages of the stable Rasmussen spectral sequence of torus links. Combining this theorem with recent work of Ballinger, Gorsky, Hogancamp, and Wang, we compute the stable Khovanov-Rozansky $\\mathfrak{gl}_N$ homology of torus links and determine its Poincaré series, resolving conjectures of Gorsky, Oblomkov, and Rasmussen and their $\\mathfrak{gl}_N$ analogs, over $\\mathbb{Q}$. Using these results, we determine the Khovanov homology of $T(n,n-1)$ and $T(n,n)$ over $\\mathbb{Q}$, confirming conjectures of Shumakovitch and Turner and of the first author, which in turn allows us to compute the Khovanov skein lasagna module of $\\overline{\\mathbb{CP}^2}$ over $\\mathbb{Q}$.",
+          "categories": [
+            "math.GT",
+            "math.AC",
+            "math.QA"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "21 pages",
+          "version": 1,
+          "submittedAt": "2026-11-07T18:17:54Z",
+          "updatedAt": "2026-11-07T18:17:54Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-10T11:29:15.137276+00:00",
+            "contentHash": "32dc800660c794ba029c1506697f60d6151dd5ce8c016b660b8c9a4c08794aa8"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.025037+00:00",
+            "contentHash": "da59d2653b4c96d6360e59ab414628b08e66d7d5eaee1e029fa9606acc33c06b"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "有理系数下GOR猜想与稳定链环同调",
+          "workSummary": "作者证明相关Koszul复形同调的生成定理，结合近期结果计算环面链环稳定gl_N Khovanov–Rozansky同调及Poincaré级数。",
+          "techniques": [
+            "Koszul复形同调",
+            "稳定Rasmussen谱序列",
+            "环面链环同调",
+            "skein lasagna模"
+          ],
+          "breakthrough": "作者宣布在Q系数下解决GOR及gl_N类比猜想，并计算T(n,n−1)、T(n,n)的Khovanov同调，进一步计算反向CP²的相应lasagna模。",
+          "limitations": "系数域明确为Q，稳定极限及特定环面链环范围不可扩成整系数或任意结。AI披露语境补看第13页Remark3.3：正文给双分次向量空间同构及相伴分次代数，未直接确定原同调代数结构；n≤N+1的进一步代数同构只记为AI agent声称有证明，不能当成本文已证结论。第3页列出的AI生成Lean形式化未在本次运行核验。当前主数学解读仍依据摘要，未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第3页明确辅助族初始想法由作者提出、后主要由AI发展；AI找到并证明完成归纳所关键的恒等式(13)，进行第2.4节及附录A计算，并协助写作和编辑。因此具体归因的关键恒等式/归纳路线记ideas、proofs，另记computation、writing。作者核验并大幅简化证明。该页另称有AI生成的定理1.2/A.1/A.4 Lean 4形式化，本次未运行或独立检验。第13页Remark3.3仅说AI agent声称n≤N+1时有进一步代数同构证明，不能当作本文已证明或社区确认的结论。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10885v1 · PDF 第3页 AI disclosure/Lean formalization；第13页 Remark3.3",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:55:41.144118+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10885v1",
+            "contentHash": "bc5a719eca937d8e90662be28dae5b95eb10d1e5c09d63ecd93d69bea870c167",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页明确辅助族初始想法由作者提出、后主要由AI发展；AI找到并证明完成归纳所关键的恒等式(13)，进行第2.4节及附录A计算，并协助写作和编辑。因此具体归因的关键恒等式/归纳路线记ideas、proofs，另记computation、writing。作者核验并大幅简化证明。该页另称有AI生成的定理1.2/A.1/A.4 Lean 4形式化，本次未运行或独立检验。第13页Remark3.3仅说AI agent声称n≤N+1时有进一步代数同构证明，不能当作本文已证明或社区确认的结论。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "580f124e818f535435140388790211f2ddcf49dacb941fa2c9aead28d6768d53"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "重要低维同调计算，但偏离分析主线。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove a generation theorem for the homology of certain Koszul complexes which naturally arise as the $E^1$ pages of the stable Rasmussen spectral sequence of torus links. Combining this theorem with recent work of Ballinger, Gorsky, Hogancamp, and Wang, we compute the stable Khovanov-Rozansky $\\mathfrak{gl}_N$ homology of torus links and determine its Poincaré series, resolving conjectures of Gorsky, Oblomkov, and Rasmussen and their $\\mathfrak{gl}_N$ analogs, over $\\mathbb{Q}$. Using these results, we determine the Khovanov homology of $T(n,n-1)$ and $T(n,n)$ over $\\mathbb{Q}$, confirming conjectures of Shumakovitch and Turner and of the first author, which in turn allows us to compute the Khovanov skein lasagna module of $\\overline{\\mathbb{CP}^2}$ over $\\mathbb{Q}$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

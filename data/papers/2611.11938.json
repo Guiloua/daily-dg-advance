@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11938",
+  "slug": "2611.11938",
+  "latest": {
+    "arxivId": "2611.11938",
+    "metadata": {
+      "title": "Lower bound of the Calabi functional and non-Archimedean K-energy",
+      "authors": [
+        "Tomoyuki Hisamoto"
+      ],
+      "abstract": "We prove Donaldson's conjecture which describes the infimum of the Calabi functional by the normalized non-Archimedean K-energy. The proof makes use of proximal equation for the K-energy. To obtain approximate smooth solutions, a continuity path of prescribed scalar curvature equation is coupled with a version of Chen's $\\e$-subgeodesic. It does not require a global smooth solution to the Calabi flow.",
+      "categories": [
+        "math.DG",
+        "math.CV"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-09T06:08:22Z",
+      "updatedAt": "2026-11-09T06:08:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.11938v1",
+        "observedAt": "2026-11-10T11:33:29.765253+00:00",
+        "contentHash": "00a8bf61d329fe7600d8eaafd7d9d3ade88e862bdd0092a9ec29f52f2e6a0026"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:12.643241+00:00",
+        "contentHash": "30d804bc5ff37e3692a57bc26fa9801bd194a185053600bc4d2296348f3da569"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "K-unstable极化流形的Calabi最优下界等式",
+      "workSummary": "定理1.1对每个K-unstable光滑复射影极化流形(X,L)（L ample，复维n≥1），证明inf_H Cal(ωφ)=sup_TC[−M^NA(TC)/||TC||₂]；上确界遍历normal ample algebraic test configurations且中心化L²范数非零。这里Cal是[V⁻¹∫(S−S̄)²ωⁿ]^(1/2)，TC范数是概率Duistermaat–Heckman测度方差的平方根。分析部分定理8.1在任意紧Kähler类中把光滑Cal下确界等同E²中K能量descending slope下确界；再以保二阶矩的代数逼近得到主等式。",
+      "techniques": [
+        "E² CAT(0)空间中的K能量proximal算子",
+        "规定标量曲率与ε-subgeodesic耦合系统",
+        "端点C⁰和边界混合二阶导数估计",
+        "Leray–Schauder degree延拓",
+        "有限能量测地射线的代数逼近",
+        "高阶矩控制到中心化L²范数收敛"
+      ],
+      "breakthrough": "不用全局光滑Calabi流，先对固定τ、ε以连续参数s求光滑耦合解，再由能量比较令ε→0、τ→∞恢复下确界。另一关键是非Archimedean d₁和熵收敛本身不足以控制分母L²范数，作者补入高阶矩与d₂射线速度控制，以完成Donaldson原有单侧下界的反向不等式。",
+      "limitations": "主代数等式的正式范围是K-unstable光滑复射影极化流形；不能仅凭摘要写成全部K-semistable或非极化Kähler流形的同一TC公式。Cal采用平方根归一化，不能与通常平方Calabi能量混用；sup不证明达到max，亦不声称光滑极小者或全局Calabi流存在。连续路径中ε、τ先固定，椭圆常数可在ε→0时退化，最终靠能量比较取极限。已读PDF第1–4、9–11、25–30、38–41页，渲染第2、10、28、40页核对公式、归一化与量词；未独立逐行核验C⁰/混合导数估计、degree所需全部先验条件或代数二阶矩逼近全证。外部依赖包括Xia的E²斜率/射线等式、Chen/Chen–Cheng及Monge–Ampère Dirichlet估计、Darvas–Lu射线密度、Li最大射线理论、Trusiani Fujita逼近和Boucksom–Jonsson包络逼近。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第4页Acknowledgments and AI disclosure明确称ChatGPT-6 Astra广泛用于探索证明候选、核查计算/文献和辅助表述。作者自有起点是避免Calabi流、proximal方程及Trusiani逼近；而ε-geodesic耦合、Leray–Schauder degree论证及Boucksom–Jonsson包络逼近等关键路线由Astra建议，构成具体核心ideas归因。作者主导、核验数学与引用、补全细节并写最终稿。按实际范围记ideas/proofs/exploration/verification/literature/writing，不宣称AI独立证明或验证全篇。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.11938v1 · PDF 第4页 Acknowledgments and AI disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:33:29.765253+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11938v1",
+        "contentHash": "00a8bf61d329fe7600d8eaafd7d9d3ade88e862bdd0092a9ec29f52f2e6a0026",
+        "pages": 43,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第4页Acknowledgments and AI disclosure明确称ChatGPT-6 Astra广泛用于探索证明候选、核查计算/文献和辅助表述。作者自有起点是避免Calabi流、proximal方程及Trusiani逼近；而ε-geodesic耦合、Leray–Schauder degree论证及Boucksom–Jonsson包络逼近等关键路线由Astra建议，构成具体核心ideas归因。作者主导、核验数学与引用、补全细节并写最终稿。按实际范围记ideas/proofs/exploration/verification/literature/writing，不宣称AI独立证明或验证全篇。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "64fff75e02f6f945c55d54defb161c1dbf48e01298d83ccbb1cda62c5c1265af"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "Kähler几何与标量曲率变分核心问题，最高优先核验主定理与范数约定。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove Donaldson's conjecture which describes the infimum of the Calabi functional by the normalized non-Archimedean K-energy. The proof makes use of proximal equation for the K-energy. To obtain approximate smooth solutions, a continuity path of prescribed scalar curvature equation is coupled with a version of Chen's $\\e$-subgeodesic. It does not require a global smooth solution to the Calabi flow.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11938",
+        "metadata": {
+          "title": "Lower bound of the Calabi functional and non-Archimedean K-energy",
+          "authors": [
+            "Tomoyuki Hisamoto"
+          ],
+          "abstract": "We prove Donaldson's conjecture which describes the infimum of the Calabi functional by the normalized non-Archimedean K-energy. The proof makes use of proximal equation for the K-energy. To obtain approximate smooth solutions, a continuity path of prescribed scalar curvature equation is coupled with a version of Chen's $\\e$-subgeodesic. It does not require a global smooth solution to the Calabi flow.",
+          "categories": [
+            "math.DG",
+            "math.CV"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-09T06:08:22Z",
+          "updatedAt": "2026-11-09T06:08:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.11938v1",
+            "observedAt": "2026-11-10T11:33:29.765253+00:00",
+            "contentHash": "00a8bf61d329fe7600d8eaafd7d9d3ade88e862bdd0092a9ec29f52f2e6a0026"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:12.643241+00:00",
+            "contentHash": "30d804bc5ff37e3692a57bc26fa9801bd194a185053600bc4d2296348f3da569"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "K-unstable极化流形的Calabi最优下界等式",
+          "workSummary": "定理1.1对每个K-unstable光滑复射影极化流形(X,L)（L ample，复维n≥1），证明inf_H Cal(ωφ)=sup_TC[−M^NA(TC)/||TC||₂]；上确界遍历normal ample algebraic test configurations且中心化L²范数非零。这里Cal是[V⁻¹∫(S−S̄)²ωⁿ]^(1/2)，TC范数是概率Duistermaat–Heckman测度方差的平方根。分析部分定理8.1在任意紧Kähler类中把光滑Cal下确界等同E²中K能量descending slope下确界；再以保二阶矩的代数逼近得到主等式。",
+          "techniques": [
+            "E² CAT(0)空间中的K能量proximal算子",
+            "规定标量曲率与ε-subgeodesic耦合系统",
+            "端点C⁰和边界混合二阶导数估计",
+            "Leray–Schauder degree延拓",
+            "有限能量测地射线的代数逼近",
+            "高阶矩控制到中心化L²范数收敛"
+          ],
+          "breakthrough": "不用全局光滑Calabi流，先对固定τ、ε以连续参数s求光滑耦合解，再由能量比较令ε→0、τ→∞恢复下确界。另一关键是非Archimedean d₁和熵收敛本身不足以控制分母L²范数，作者补入高阶矩与d₂射线速度控制，以完成Donaldson原有单侧下界的反向不等式。",
+          "limitations": "主代数等式的正式范围是K-unstable光滑复射影极化流形；不能仅凭摘要写成全部K-semistable或非极化Kähler流形的同一TC公式。Cal采用平方根归一化，不能与通常平方Calabi能量混用；sup不证明达到max，亦不声称光滑极小者或全局Calabi流存在。连续路径中ε、τ先固定，椭圆常数可在ε→0时退化，最终靠能量比较取极限。已读PDF第1–4、9–11、25–30、38–41页，渲染第2、10、28、40页核对公式、归一化与量词；未独立逐行核验C⁰/混合导数估计、degree所需全部先验条件或代数二阶矩逼近全证。外部依赖包括Xia的E²斜率/射线等式、Chen/Chen–Cheng及Monge–Ampère Dirichlet估计、Darvas–Lu射线密度、Li最大射线理论、Trusiani Fujita逼近和Boucksom–Jonsson包络逼近。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第4页Acknowledgments and AI disclosure明确称ChatGPT-6 Astra广泛用于探索证明候选、核查计算/文献和辅助表述。作者自有起点是避免Calabi流、proximal方程及Trusiani逼近；而ε-geodesic耦合、Leray–Schauder degree论证及Boucksom–Jonsson包络逼近等关键路线由Astra建议，构成具体核心ideas归因。作者主导、核验数学与引用、补全细节并写最终稿。按实际范围记ideas/proofs/exploration/verification/literature/writing，不宣称AI独立证明或验证全篇。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.11938v1 · PDF 第4页 Acknowledgments and AI disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:33:29.765253+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11938v1",
+            "contentHash": "00a8bf61d329fe7600d8eaafd7d9d3ade88e862bdd0092a9ec29f52f2e6a0026",
+            "pages": 43,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第4页Acknowledgments and AI disclosure明确称ChatGPT-6 Astra广泛用于探索证明候选、核查计算/文献和辅助表述。作者自有起点是避免Calabi流、proximal方程及Trusiani逼近；而ε-geodesic耦合、Leray–Schauder degree论证及Boucksom–Jonsson包络逼近等关键路线由Astra建议，构成具体核心ideas归因。作者主导、核验数学与引用、补全细节并写最终稿。按实际范围记ideas/proofs/exploration/verification/literature/writing，不宣称AI独立证明或验证全篇。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "64fff75e02f6f945c55d54defb161c1dbf48e01298d83ccbb1cda62c5c1265af"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "Kähler几何与标量曲率变分核心问题，最高优先核验主定理与范数约定。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove Donaldson's conjecture which describes the infimum of the Calabi functional by the normalized non-Archimedean K-energy. The proof makes use of proximal equation for the K-energy. To obtain approximate smooth solutions, a continuity path of prescribed scalar curvature equation is coupled with a version of Chen's $\\e$-subgeodesic. It does not require a global smooth solution to the Calabi flow.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

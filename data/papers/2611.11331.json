@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.11331",
+  "slug": "2611.11331",
+  "latest": {
+    "arxivId": "2611.11331",
+    "metadata": {
+      "title": "Harmonic functions and comparsion geometry for noncompact 3-manifolds with nonnegative scalar curvature",
+      "authors": [
+        "Jiannan Chen",
+        "Haiping Fu"
+      ],
+      "abstract": "In this paper, we establish several sharp comparsion results for noncompact 3-manifolds with nonnegative scalar curvature and with a compact, connected boundary under a boundary mean curvature condition. Then we apply these gradient estimates to establish a Cohn-Vossen type bound for the average of the scalar curvature. This generalizes the work of Colding-Minicozzi \\cite{Cold4} and Oronzio \\cite{Oro2}.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-08T12:11:30Z",
+      "updatedAt": "2026-11-08T12:11:30Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:59:01.278577+00:00",
+        "contentHash": "8552aea8ff7981a85dcbd6a9b231f0a7d6a3edf50ad8259dcc3630f6ea2ea296"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "非紧三维比较与曲率平均界",
+      "workSummary": "作者对完备非紧单端三维流形(M,g)提出尖锐容量层集比较：边界Σ紧连通，标量曲率非负，H₂(M,Σ)=0；存在光滑调和函数u，Σ上u=0、无穷远u→1且|∇u|→0。记容量cΣ=(4π)⁻¹∫Σ|∇u|，若k∈(0,2]且存在|α|<1/(kcΣ)使H≤α(1−k²cΣ|∇u|)，则边界∫Σ|∇u|²≤4π/k²，容量层集归一化梯度积分≤4π，并有面积、体积比较。标量曲率满足t⁻¹∫_{cΣ/k}^t∫_{Στ}Rg≤48π。",
+      "techniques": [
+        "容量调和势及Schwarzschild参数化层集",
+        "Gauss–Bonnet拓扑控制与层集单调量",
+        "边界均曲率条件导出的初始控制",
+        "梯度积分增长反证及余面积公式"
+      ],
+      "breakthrough": "将此前极小边界的比较拓展到明确的参数化边界均曲率条件。梯度与面积比较若取等，作者给出与外部Schwarzschild空间(R³\\B_{r0},(1+m/(2|x|))⁴gEucl)等距的刚性，r0=cΣ/k、m=2r0(k−1)。无需在主定理中假定渐近平坦，但需势函数及其梯度衰减。",
+      "limitations": "审读PDF第1–6、14–17页，渲染第3–4页。必须保留单端、H₂(M,Σ)=0、给定调和容量势存在及|∇u|无穷远消失、边界不等式与参数范围。平均是容量层集参数t的积分归一化，非测地球体积平均。原文定理1.1(d)印√(|Σ|/(16π))≥cΣ，而第14页证明仅列|Σ|≥4πk²cΣ²，k<2时二者并非相同，常数需作者核对；不把该条当作已确认结论。体积等号刚性原文包含t0=cΣ/k，但此端点两边均为零，端点表述亦需核对。主定理未写可定向而被引命题2.1与3.1含可定向假设，适用范围需注意。H的方向约定本次未确认。单调性与刚性依赖Chen–Fu、Oronzio及Xia–Yin–Zhou，本次未独立核验外部定理或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:40:34.687659+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.11331v1",
+        "contentHash": "0a54aad23d3bc2fdd4459a3458e73cc5a5df03017b84405d9d4bc34aeaf5b134",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文模型名、AI披露与拆行补检仅有第1页Willmore-type跨空白产生llm的误匹配，不指代模型。已核对首页与第15页正文结束、第16–17页参考文献，未观察到作者自用AI披露；不等于断言未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d7454606649030fddc30d3aec9ae7621b47282e882430f505db84f0c63071a8a"
+      },
+      "priorityScore": 93,
+      "priorityReason": "直接属于标量曲率比较与调和函数几何分析。"
+    },
+    "analysisBasis": {
+      "abstract": "In this paper, we establish several sharp comparsion results for noncompact 3-manifolds with nonnegative scalar curvature and with a compact, connected boundary under a boundary mean curvature condition. Then we apply these gradient estimates to establish a Cohn-Vossen type bound for the average of the scalar curvature. This generalizes the work of Colding-Minicozzi \\cite{Cold4} and Oronzio \\cite{Oro2}.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.11331",
+        "metadata": {
+          "title": "Harmonic functions and comparsion geometry for noncompact 3-manifolds with nonnegative scalar curvature",
+          "authors": [
+            "Jiannan Chen",
+            "Haiping Fu"
+          ],
+          "abstract": "In this paper, we establish several sharp comparsion results for noncompact 3-manifolds with nonnegative scalar curvature and with a compact, connected boundary under a boundary mean curvature condition. Then we apply these gradient estimates to establish a Cohn-Vossen type bound for the average of the scalar curvature. This generalizes the work of Colding-Minicozzi \\cite{Cold4} and Oronzio \\cite{Oro2}.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-08T12:11:30Z",
+          "updatedAt": "2026-11-08T12:11:30Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:59:01.278577+00:00",
+            "contentHash": "8552aea8ff7981a85dcbd6a9b231f0a7d6a3edf50ad8259dcc3630f6ea2ea296"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "非紧三维比较与曲率平均界",
+          "workSummary": "作者对完备非紧单端三维流形(M,g)提出尖锐容量层集比较：边界Σ紧连通，标量曲率非负，H₂(M,Σ)=0；存在光滑调和函数u，Σ上u=0、无穷远u→1且|∇u|→0。记容量cΣ=(4π)⁻¹∫Σ|∇u|，若k∈(0,2]且存在|α|<1/(kcΣ)使H≤α(1−k²cΣ|∇u|)，则边界∫Σ|∇u|²≤4π/k²，容量层集归一化梯度积分≤4π，并有面积、体积比较。标量曲率满足t⁻¹∫_{cΣ/k}^t∫_{Στ}Rg≤48π。",
+          "techniques": [
+            "容量调和势及Schwarzschild参数化层集",
+            "Gauss–Bonnet拓扑控制与层集单调量",
+            "边界均曲率条件导出的初始控制",
+            "梯度积分增长反证及余面积公式"
+          ],
+          "breakthrough": "将此前极小边界的比较拓展到明确的参数化边界均曲率条件。梯度与面积比较若取等，作者给出与外部Schwarzschild空间(R³\\B_{r0},(1+m/(2|x|))⁴gEucl)等距的刚性，r0=cΣ/k、m=2r0(k−1)。无需在主定理中假定渐近平坦，但需势函数及其梯度衰减。",
+          "limitations": "审读PDF第1–6、14–17页，渲染第3–4页。必须保留单端、H₂(M,Σ)=0、给定调和容量势存在及|∇u|无穷远消失、边界不等式与参数范围。平均是容量层集参数t的积分归一化，非测地球体积平均。原文定理1.1(d)印√(|Σ|/(16π))≥cΣ，而第14页证明仅列|Σ|≥4πk²cΣ²，k<2时二者并非相同，常数需作者核对；不把该条当作已确认结论。体积等号刚性原文包含t0=cΣ/k，但此端点两边均为零，端点表述亦需核对。主定理未写可定向而被引命题2.1与3.1含可定向假设，适用范围需注意。H的方向约定本次未确认。单调性与刚性依赖Chen–Fu、Oronzio及Xia–Yin–Zhou，本次未独立核验外部定理或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:40:34.687659+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.11331v1",
+            "contentHash": "0a54aad23d3bc2fdd4459a3458e73cc5a5df03017b84405d9d4bc34aeaf5b134",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文模型名、AI披露与拆行补检仅有第1页Willmore-type跨空白产生llm的误匹配，不指代模型。已核对首页与第15页正文结束、第16–17页参考文献，未观察到作者自用AI披露；不等于断言未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d7454606649030fddc30d3aec9ae7621b47282e882430f505db84f0c63071a8a"
+          },
+          "priorityScore": 93,
+          "priorityReason": "直接属于标量曲率比较与调和函数几何分析。"
+        },
+        "analysisBasis": {
+          "abstract": "In this paper, we establish several sharp comparsion results for noncompact 3-manifolds with nonnegative scalar curvature and with a compact, connected boundary under a boundary mean curvature condition. Then we apply these gradient estimates to establish a Cohn-Vossen type bound for the average of the scalar curvature. This generalizes the work of Colding-Minicozzi \\cite{Cold4} and Oronzio \\cite{Oro2}.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

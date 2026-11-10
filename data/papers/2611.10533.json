@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10533",
+  "slug": "2611.10533",
+  "latest": {
+    "arxivId": "2611.10533",
+    "metadata": {
+      "title": "Local regularity and p-harmonic approximation for weak inverse mean curvature flow",
+      "authors": [
+        "Wei-Chun Chen",
+        "Chun-Kai Lien"
+      ],
+      "abstract": "We prove local Lipschitz regularity for locally bounded $BV$ solutions of the calibration equations for inverse mean curvature flow. We also approximate every prescribed variational weak flow locally by Moser's logarithmic transforms of positive $p$-harmonic functions. On a fixed smooth domain, with the trace of a calibrated Lipschitz solution prescribed, both the uniform error and the absolute difference of total variations are $O((p-1)^{1/3})$ as $p\\downarrow1$. In particular, the approximations converge strictly in $BV$.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "19 pages",
+      "version": 1,
+      "submittedAt": "2026-11-07T07:06:07Z",
+      "updatedAt": "2026-11-07T07:06:07Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.020134+00:00",
+        "contentHash": "52d8d7f791fd8c3578e673b0157cdf5c91b0d31d1a9a637f82c611cca9d621a3"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "弱逆平均曲率流的局部正则与p调和逼近",
+      "workSummary": "在无边界光滑n维黎曼流形（n≥2）的开集Ω上，若u∈BV_loc∩L∞_loc承认局部有界向量场ν，满足|ν|≤1以及divν=(ν,Du)=|Du|（测度意义、Anzellotti配对），则u有局部Lipschitz代表并是变分弱IMCF解；特别Du的整个奇异部分消失。对于光滑相对紧非空边界域G，取该校准解u∈W¹,∞(G)∩C(闭G)的边值，正p调和Dirichlet解v_p以exp(−u/(p−1))为迹，则u_p=−(p−1)log v_p整族逼近u。",
+      "techniques": [
+        "BV向量场校准及Anzellotti配对",
+        "正p调和函数的对数变换",
+        "指数扰动的无源散度通量比较",
+        "截断测试与BV Sobolev不等式",
+        "小测地球凸性和局部梯度紧性",
+        "固定Dirichlet迹下总变差双边估计"
+      ],
+      "breakthrough": "校准先前已排除BV跳跃部分，此处进一步排除Cantor部分并得到局部梯度界。固定G上1<p<2时，一致误差与两总变差之差的绝对值均≤C(p−1)^(1/3)，C依赖(G,g)、osc_G u和梯度上界，故得到整族一致及严格BV收敛，并可在每个内紧子域附近用精确p-IMCF解逼近。",
+      "limitations": "流形不要求完备，但要求光滑且无边界，论证为开集上的局部结论；定量逼近必须采用已校准解诱导的Dirichlet边值，任意迹不享有该结论。严格BV收敛不等于更高Lp梯度范数收敛。水平集演化的跳跃可由u的平台区表示，与此Lipschitz结论相容。依赖BV配对/迹理论、变分校准等价及p调和边界和内部梯度结果；本次读主定理与比较/逼近路线，未独立验证全部外部工具及全篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第3页AI Usage Statement明确：研究问题及背景文献由作者提供；在作者引导的迭代中ChatGPT 6.1 Sol贡献第三节比较估计的关键想法与证明策略，作者独立核验并大幅改写论证。因此将具体归因的比较估计路线记为ideas和proofs，不据此推断稿件文字由模型撰写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10533v1 · PDF 第3页 AI Usage Statement",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:44:36.872952+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10533v1",
+        "contentHash": "25a7d1e5aea9940d86b95d77b7fca802766862619d63227f76a66d752b5ed465",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页AI Usage Statement明确：研究问题及背景文献由作者提供；在作者引导的迭代中ChatGPT 6.1 Sol贡献第三节比较估计的关键想法与证明策略，作者独立核验并大幅改写论证。因此将具体归因的比较估计路线记为ideas和proofs，不据此推断稿件文字由模型撰写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7bb71dde4f8eb9f744bc3e0954d72b968a6c1da78279765c3d6d8a35f8033f6e"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "直接推进弱几何流的局部正则与近似，最高优先级。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove local Lipschitz regularity for locally bounded $BV$ solutions of the calibration equations for inverse mean curvature flow. We also approximate every prescribed variational weak flow locally by Moser's logarithmic transforms of positive $p$-harmonic functions. On a fixed smooth domain, with the trace of a calibrated Lipschitz solution prescribed, both the uniform error and the absolute difference of total variations are $O((p-1)^{1/3})$ as $p\\downarrow1$. In particular, the approximations converge strictly in $BV$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10533",
+        "metadata": {
+          "title": "Local regularity and p-harmonic approximation for weak inverse mean curvature flow",
+          "authors": [
+            "Wei-Chun Chen",
+            "Chun-Kai Lien"
+          ],
+          "abstract": "We prove local Lipschitz regularity for locally bounded $BV$ solutions of the calibration equations for inverse mean curvature flow. We also approximate every prescribed variational weak flow locally by Moser's logarithmic transforms of positive $p$-harmonic functions. On a fixed smooth domain, with the trace of a calibrated Lipschitz solution prescribed, both the uniform error and the absolute difference of total variations are $O((p-1)^{1/3})$ as $p\\downarrow1$. In particular, the approximations converge strictly in $BV$.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "19 pages",
+          "version": 1,
+          "submittedAt": "2026-11-07T07:06:07Z",
+          "updatedAt": "2026-11-07T07:06:07Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.020134+00:00",
+            "contentHash": "52d8d7f791fd8c3578e673b0157cdf5c91b0d31d1a9a637f82c611cca9d621a3"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "弱逆平均曲率流的局部正则与p调和逼近",
+          "workSummary": "在无边界光滑n维黎曼流形（n≥2）的开集Ω上，若u∈BV_loc∩L∞_loc承认局部有界向量场ν，满足|ν|≤1以及divν=(ν,Du)=|Du|（测度意义、Anzellotti配对），则u有局部Lipschitz代表并是变分弱IMCF解；特别Du的整个奇异部分消失。对于光滑相对紧非空边界域G，取该校准解u∈W¹,∞(G)∩C(闭G)的边值，正p调和Dirichlet解v_p以exp(−u/(p−1))为迹，则u_p=−(p−1)log v_p整族逼近u。",
+          "techniques": [
+            "BV向量场校准及Anzellotti配对",
+            "正p调和函数的对数变换",
+            "指数扰动的无源散度通量比较",
+            "截断测试与BV Sobolev不等式",
+            "小测地球凸性和局部梯度紧性",
+            "固定Dirichlet迹下总变差双边估计"
+          ],
+          "breakthrough": "校准先前已排除BV跳跃部分，此处进一步排除Cantor部分并得到局部梯度界。固定G上1<p<2时，一致误差与两总变差之差的绝对值均≤C(p−1)^(1/3)，C依赖(G,g)、osc_G u和梯度上界，故得到整族一致及严格BV收敛，并可在每个内紧子域附近用精确p-IMCF解逼近。",
+          "limitations": "流形不要求完备，但要求光滑且无边界，论证为开集上的局部结论；定量逼近必须采用已校准解诱导的Dirichlet边值，任意迹不享有该结论。严格BV收敛不等于更高Lp梯度范数收敛。水平集演化的跳跃可由u的平台区表示，与此Lipschitz结论相容。依赖BV配对/迹理论、变分校准等价及p调和边界和内部梯度结果；本次读主定理与比较/逼近路线，未独立验证全部外部工具及全篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第3页AI Usage Statement明确：研究问题及背景文献由作者提供；在作者引导的迭代中ChatGPT 6.1 Sol贡献第三节比较估计的关键想法与证明策略，作者独立核验并大幅改写论证。因此将具体归因的比较估计路线记为ideas和proofs，不据此推断稿件文字由模型撰写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10533v1 · PDF 第3页 AI Usage Statement",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:44:36.872952+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10533v1",
+            "contentHash": "25a7d1e5aea9940d86b95d77b7fca802766862619d63227f76a66d752b5ed465",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第3页AI Usage Statement明确：研究问题及背景文献由作者提供；在作者引导的迭代中ChatGPT 6.1 Sol贡献第三节比较估计的关键想法与证明策略，作者独立核验并大幅改写论证。因此将具体归因的比较估计路线记为ideas和proofs，不据此推断稿件文字由模型撰写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7bb71dde4f8eb9f744bc3e0954d72b968a6c1da78279765c3d6d8a35f8033f6e"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "直接推进弱几何流的局部正则与近似，最高优先级。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove local Lipschitz regularity for locally bounded $BV$ solutions of the calibration equations for inverse mean curvature flow. We also approximate every prescribed variational weak flow locally by Moser's logarithmic transforms of positive $p$-harmonic functions. On a fixed smooth domain, with the trace of a calibrated Lipschitz solution prescribed, both the uniform error and the absolute difference of total variations are $O((p-1)^{1/3})$ as $p\\downarrow1$. In particular, the approximations converge strictly in $BV$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.10968",
+  "slug": "2611.10968",
+  "latest": {
+    "arxivId": "2611.10968",
+    "metadata": {
+      "title": "Taylor Formulas for H-structures",
+      "authors": [
+        "Lucca Delboni",
+        "Henrique Sá Earp"
+      ],
+      "abstract": "We give a uniform second-order Taylor formula for tensorial Riemannian $H$-structures in Riemannian normal coordinates whose initial frame is $H$-adapted. For a defining multi-tensor $\\xi$ with intrinsic torsion $T$, the linear coefficient is $T_q\\diamond\\xi$, and the quadratic coefficient features the covariant derivative of $T$, its iterated diamond action, and curvature. The formula applies componentwise to tensors of arbitrary type and recovers the known $G_2$ and $\\operatorname{Spin}(7)$ expansions. We also give the almost Hermitian specialisation and prove that vanishing of the complete second-order torsion contribution forces the intrinsic torsion to vanish at the centre of the coordinates.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-07T21:15:31Z",
+      "updatedAt": "2026-11-07T21:15:31Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-10T11:28:52.040481+00:00",
+        "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.10968v1",
+        "observedAt": "2026-11-10T11:32:41.611869+00:00",
+        "contentHash": "c0bdc76cd4d5000c8a185bdffe845849b941ed3f6742c62def226f01820d86d3"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-10T11:58:49.026748+00:00",
+        "contentHash": "454ce0686f74c708f073141a97219d47aee404239d8f0e91b0e65126424f422f"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "统一局部展开",
+      "workSummary": "在初始标架适配H的黎曼正规坐标中，给出张量型黎曼H结构统一的二阶Taylor公式。定义多张量ξ的线性项为内蕴挠率T作用于ξ，二次项涉及∇T、迭代作用与曲率。公式逐分量适用于任意张量型，恢复G₂和Spin(7)情形，并给出几乎Hermitian特化。",
+      "techniques": [
+        "适配标架的正规坐标",
+        "内蕴挠率与张量作用",
+        "二阶曲率展开"
+      ],
+      "breakthrough": "统一多类特殊结构的二阶公式，并证明完整二阶挠率贡献消失迫使坐标中心挠率为零。",
+      "limitations": "结论是局部二阶展开；刚性要求完整二阶挠率贡献消失，不能从个别系数为零推出。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露ChatGPT用于LaTeX组织排版、语言编辑、记号与约定检查和数学一致性审查，具体还包括澄清挠率消失论证、区分坐标正规化与度量数据、发展Spin(7)部分的显式代数例子。记录writing、verification、proofs和exploration；声明未把主构造或核心思路明确归给模型。所述精确计算检查未具体说明由模型完成，不据此额外推断计算用途。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.10968v1 · PDF 第11页Declaration of generative AI and AI-assisted technologies in the manuscript preparation process，全文11页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-10T11:32:41.611869+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.10968v1",
+        "contentHash": "c0bdc76cd4d5000c8a185bdffe845849b941ed3f6742c62def226f01820d86d3",
+        "pages": 11,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露ChatGPT用于LaTeX组织排版、语言编辑、记号与约定检查和数学一致性审查，具体还包括澄清挠率消失论证、区分坐标正规化与度量数据、发展Spin(7)部分的显式代数例子。记录writing、verification、proofs和exploration；声明未把主构造或核心思路明确归给模型。所述精确计算检查未具体说明由模型完成，不据此额外推断计算用途。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "605b7cccf6bbcddf738f5b0792008039a583411a130ab6460b973eb1ab20ac70"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 78,
+      "priorityReason": "直接提供特殊几何结构的局部计算工具。"
+    },
+    "analysisBasis": {
+      "abstract": "We give a uniform second-order Taylor formula for tensorial Riemannian $H$-structures in Riemannian normal coordinates whose initial frame is $H$-adapted. For a defining multi-tensor $\\xi$ with intrinsic torsion $T$, the linear coefficient is $T_q\\diamond\\xi$, and the quadratic coefficient features the covariant derivative of $T$, its iterated diamond action, and curvature. The formula applies componentwise to tensors of arbitrary type and recovers the known $G_2$ and $\\operatorname{Spin}(7)$ expansions. We also give the almost Hermitian specialisation and prove that vanishing of the complete second-order torsion contribution forces the intrinsic torsion to vanish at the centre of the coordinates.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-10",
+      "entry": {
+        "arxivId": "2611.10968",
+        "metadata": {
+          "title": "Taylor Formulas for H-structures",
+          "authors": [
+            "Lucca Delboni",
+            "Henrique Sá Earp"
+          ],
+          "abstract": "We give a uniform second-order Taylor formula for tensorial Riemannian $H$-structures in Riemannian normal coordinates whose initial frame is $H$-adapted. For a defining multi-tensor $\\xi$ with intrinsic torsion $T$, the linear coefficient is $T_q\\diamond\\xi$, and the quadratic coefficient features the covariant derivative of $T$, its iterated diamond action, and curvature. The formula applies componentwise to tensors of arbitrary type and recovers the known $G_2$ and $\\operatorname{Spin}(7)$ expansions. We also give the almost Hermitian specialisation and prove that vanishing of the complete second-order torsion contribution forces the intrinsic torsion to vanish at the centre of the coordinates.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-07T21:15:31Z",
+          "updatedAt": "2026-11-07T21:15:31Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-10T11:28:52.040481+00:00",
+            "contentHash": "2670998990745f860f71d4a2535c8a79947b0120f1ef7594d4e40f900a6fa324"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.10968v1",
+            "observedAt": "2026-11-10T11:32:41.611869+00:00",
+            "contentHash": "c0bdc76cd4d5000c8a185bdffe845849b941ed3f6742c62def226f01820d86d3"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-10T11:58:49.026748+00:00",
+            "contentHash": "454ce0686f74c708f073141a97219d47aee404239d8f0e91b0e65126424f422f"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "统一局部展开",
+          "workSummary": "在初始标架适配H的黎曼正规坐标中，给出张量型黎曼H结构统一的二阶Taylor公式。定义多张量ξ的线性项为内蕴挠率T作用于ξ，二次项涉及∇T、迭代作用与曲率。公式逐分量适用于任意张量型，恢复G₂和Spin(7)情形，并给出几乎Hermitian特化。",
+          "techniques": [
+            "适配标架的正规坐标",
+            "内蕴挠率与张量作用",
+            "二阶曲率展开"
+          ],
+          "breakthrough": "统一多类特殊结构的二阶公式，并证明完整二阶挠率贡献消失迫使坐标中心挠率为零。",
+          "limitations": "结论是局部二阶展开；刚性要求完整二阶挠率贡献消失，不能从个别系数为零推出。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露ChatGPT用于LaTeX组织排版、语言编辑、记号与约定检查和数学一致性审查，具体还包括澄清挠率消失论证、区分坐标正规化与度量数据、发展Spin(7)部分的显式代数例子。记录writing、verification、proofs和exploration；声明未把主构造或核心思路明确归给模型。所述精确计算检查未具体说明由模型完成，不据此额外推断计算用途。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.10968v1 · PDF 第11页Declaration of generative AI and AI-assisted technologies in the manuscript preparation process，全文11页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-10T11:32:41.611869+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.10968v1",
+            "contentHash": "c0bdc76cd4d5000c8a185bdffe845849b941ed3f6742c62def226f01820d86d3",
+            "pages": 11,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露ChatGPT用于LaTeX组织排版、语言编辑、记号与约定检查和数学一致性审查，具体还包括澄清挠率消失论证、区分坐标正规化与度量数据、发展Spin(7)部分的显式代数例子。记录writing、verification、proofs和exploration；声明未把主构造或核心思路明确归给模型。所述精确计算检查未具体说明由模型完成，不据此额外推断计算用途。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "605b7cccf6bbcddf738f5b0792008039a583411a130ab6460b973eb1ab20ac70"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 78,
+          "priorityReason": "直接提供特殊几何结构的局部计算工具。"
+        },
+        "analysisBasis": {
+          "abstract": "We give a uniform second-order Taylor formula for tensorial Riemannian $H$-structures in Riemannian normal coordinates whose initial frame is $H$-adapted. For a defining multi-tensor $\\xi$ with intrinsic torsion $T$, the linear coefficient is $T_q\\diamond\\xi$, and the quadratic coefficient features the covariant derivative of $T$, its iterated diamond action, and curvature. The formula applies componentwise to tensors of arbitrary type and recovers the known $G_2$ and $\\operatorname{Spin}(7)$ expansions. We also give the almost Hermitian specialisation and prove that vanishing of the complete second-order torsion contribution forces the intrinsic torsion to vanish at the centre of the coordinates.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
