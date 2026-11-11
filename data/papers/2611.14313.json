@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14313",
+  "slug": "2611.14313",
+  "latest": {
+    "arxivId": "2611.14313",
+    "metadata": {
+      "title": "Rectifiable measures in Ahlfors regular spaces: endpoint constructions",
+      "authors": [
+        "Matthew Badger"
+      ],
+      "abstract": "A theorem of Balka and Keleti implies that on any complete separable metric space $\\mathbb{X}$, every locally finite Borel measure $\\mu$ of packing dimension strictly less than $m$ is \"Euclidean-like\" insofar as there exist Lipschitz maps $f_i:E_i\\subset\\mathbb{R}^m\\rightarrow\\mathbb{X}$ such that $\\mu(\\mathbb{X}\\setminus\\bigcup_1^\\infty f_i(E_i))=0$. An ongoing challenge in geometric measure theory is to understand when this property, called $m$-rectifiability, holds for measures of packing dimension $m$. Towards this goal, we prove that every complete Ahlfors $q$-regular metric space with $q\\geq m$ supports $m$-rectifiable doubling measures of packing dimension $m$. The proof of existence of such measures is new even when $\\mathbb{X}=\\mathbb{R}^n$ and $n>m$. More generally, on every complete Ahlfors $q$-regular metric space with $q>m-1$, we construct $m$-rectifiable, purely $(m-1)$-unrectifiable measures with any prescribed exact Hausdorff and packing dimensions $0\\leq s_H\\leq s_P\\leq q$ with $m-1\\leq s_P\\leq m$, which are doubling when $s_H>0$. This verifies a conjecture of Badger and Schul. The design of the measures relies on metric cubes with variable scaling, in which the ratio of consecutive side lengths tends to infinity but jumps only on a sparse set of generations, together with Badger and Schul's square packing construction of Lipschitz maps.",
+      "categories": [
+        "math.MG",
+        "math.CA"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "44 pages, 7 figures, 1 table, comments welcome",
+      "version": 1,
+      "submittedAt": "2026-11-10T16:42:51Z",
+      "updatedAt": "2026-11-10T16:42:51Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-11T10:36:07.774992+00:00",
+        "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.989304+00:00",
+        "contentHash": "a2ccea861b46920dbdf16421d169df661c5f01b4c2e0b24397805325cf7b211c"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "精确维数、倍增性与可求长性的端点构造",
+      "workSummary": "定理1.3对完备 Ahlfors q 正则空间、整数 m≥1、q>m−1 和 0≤s_H≤s_P≤q、m−1≤s_P≤m，构造全支撑 Radon 测度 μ。μ 几乎处处下、上局部维数分别为 s_H、s_P，亦即精确 Hausdorff、packing 维数。μ 由可数个 ℝᵐ 子集的 Lipschitz 像承载，且对任何 ℝᵐ⁻¹ 子集的 Lipschitz 像赋零质量。若 s_H>0，倍增常数可仅依赖 X 与 s_H。",
+      "techniques": [
+        "稀疏跳跃的 KRS 度量立方体",
+        "目标熵和鞅差强大数律",
+        "I 型中间层与 II 型过渡权重",
+        "Badger–Schul 方形填装",
+        "Azuma 界与 Borel–Cantelli"
+      ],
+      "breakthrough": "在接近环境维数时用稀疏尺度跳跃控制误差，使局部维数由目标熵 Cesàro 平均决定。上端 s_P=m 通过计数携带大部分质量的后代立方体，再用方形填装给 Lipschitz 参数化。下端 s_P=m−1 通过目标熵平均沿子列略高于阈值，使下 (m−1) 密度为零。由此完成 Badger–Schul 的端点猜想。",
+      "limitations": "第3页定理给指定测度的存在性，m=1 时纯零维不可求长指无原子。s_H=0 用单独的中心权重方案，定理的倍增性保证限于 s_H>0。Lipschitz 承载不附加对 Hausdorff 测度的绝对连续性。第4页 Heisenberg 例区分了这两种性质。本轮补读第3–7、13–14、21–22、26、31–34、37–40页，方形填装、立方体延拓和邻立方体质量比较的完整论证待逐步核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第7页追溯作者于2024年已提出变尺度立方体，并在2025年报告中阐明稀疏尺度跳跃及局部维数误差控制。2026年与 Claude Opus 5.5 的交流促成第5节 I 型中间层加一次 II 型过渡的权重构造，并促成引理7.2的下密度消失估计。后续用 Claude Opus 5.5、Claude Fable 5.2、GPT-6 Astra Pro 核对证明、建议修改及起草编辑文字和图形。作者主导并验证全部数学内容。第44页 Claude Tricot 为参考文献作者。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14313v1 · PDF 第7页，Development of the results and AI assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:42:03.659019+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14313v1",
+        "contentHash": "ee387973bceb05d2870723cb5bb86ffae5a2ad79c058096b593e5f3ea3f83a55",
+        "pages": 44,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页追溯作者于2024年已提出变尺度立方体，并在2025年报告中阐明稀疏尺度跳跃及局部维数误差控制。2026年与 Claude Opus 5.5 的交流促成第5节 I 型中间层加一次 II 型过渡的权重构造，并促成引理7.2的下密度消失估计。后续用 Claude Opus 5.5、Claude Fable 5.2、GPT-6 Astra Pro 核对证明、建议修改及起草编辑文字和图形。作者主导并验证全部数学内容。第44页 Claude Tricot 为参考文献作者。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3c8a3a9474d1ad342b1f8fbcd88aa3deaa99a7fff17824a8d38a6254e937c80f"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "完备 Ahlfors 正则空间上的端点构造，涵盖非整数精确维数。"
+    },
+    "analysisBasis": {
+      "abstract": "A theorem of Balka and Keleti implies that on any complete separable metric space $\\mathbb{X}$, every locally finite Borel measure $\\mu$ of packing dimension strictly less than $m$ is \"Euclidean-like\" insofar as there exist Lipschitz maps $f_i:E_i\\subset\\mathbb{R}^m\\rightarrow\\mathbb{X}$ such that $\\mu(\\mathbb{X}\\setminus\\bigcup_1^\\infty f_i(E_i))=0$. An ongoing challenge in geometric measure theory is to understand when this property, called $m$-rectifiability, holds for measures of packing dimension $m$. Towards this goal, we prove that every complete Ahlfors $q$-regular metric space with $q\\geq m$ supports $m$-rectifiable doubling measures of packing dimension $m$. The proof of existence of such measures is new even when $\\mathbb{X}=\\mathbb{R}^n$ and $n>m$. More generally, on every complete Ahlfors $q$-regular metric space with $q>m-1$, we construct $m$-rectifiable, purely $(m-1)$-unrectifiable measures with any prescribed exact Hausdorff and packing dimensions $0\\leq s_H\\leq s_P\\leq q$ with $m-1\\leq s_P\\leq m$, which are doubling when $s_H>0$. This verifies a conjecture of Badger and Schul. The design of the measures relies on metric cubes with variable scaling, in which the ratio of consecutive side lengths tends to infinity but jumps only on a sparse set of generations, together with Badger and Schul's square packing construction of Lipschitz maps.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14313",
+        "metadata": {
+          "title": "Rectifiable measures in Ahlfors regular spaces: endpoint constructions",
+          "authors": [
+            "Matthew Badger"
+          ],
+          "abstract": "A theorem of Balka and Keleti implies that on any complete separable metric space $\\mathbb{X}$, every locally finite Borel measure $\\mu$ of packing dimension strictly less than $m$ is \"Euclidean-like\" insofar as there exist Lipschitz maps $f_i:E_i\\subset\\mathbb{R}^m\\rightarrow\\mathbb{X}$ such that $\\mu(\\mathbb{X}\\setminus\\bigcup_1^\\infty f_i(E_i))=0$. An ongoing challenge in geometric measure theory is to understand when this property, called $m$-rectifiability, holds for measures of packing dimension $m$. Towards this goal, we prove that every complete Ahlfors $q$-regular metric space with $q\\geq m$ supports $m$-rectifiable doubling measures of packing dimension $m$. The proof of existence of such measures is new even when $\\mathbb{X}=\\mathbb{R}^n$ and $n>m$. More generally, on every complete Ahlfors $q$-regular metric space with $q>m-1$, we construct $m$-rectifiable, purely $(m-1)$-unrectifiable measures with any prescribed exact Hausdorff and packing dimensions $0\\leq s_H\\leq s_P\\leq q$ with $m-1\\leq s_P\\leq m$, which are doubling when $s_H>0$. This verifies a conjecture of Badger and Schul. The design of the measures relies on metric cubes with variable scaling, in which the ratio of consecutive side lengths tends to infinity but jumps only on a sparse set of generations, together with Badger and Schul's square packing construction of Lipschitz maps.",
+          "categories": [
+            "math.MG",
+            "math.CA"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "44 pages, 7 figures, 1 table, comments welcome",
+          "version": 1,
+          "submittedAt": "2026-11-10T16:42:51Z",
+          "updatedAt": "2026-11-10T16:42:51Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-11T10:36:07.774992+00:00",
+            "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.989304+00:00",
+            "contentHash": "a2ccea861b46920dbdf16421d169df661c5f01b4c2e0b24397805325cf7b211c"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "精确维数、倍增性与可求长性的端点构造",
+          "workSummary": "定理1.3对完备 Ahlfors q 正则空间、整数 m≥1、q>m−1 和 0≤s_H≤s_P≤q、m−1≤s_P≤m，构造全支撑 Radon 测度 μ。μ 几乎处处下、上局部维数分别为 s_H、s_P，亦即精确 Hausdorff、packing 维数。μ 由可数个 ℝᵐ 子集的 Lipschitz 像承载，且对任何 ℝᵐ⁻¹ 子集的 Lipschitz 像赋零质量。若 s_H>0，倍增常数可仅依赖 X 与 s_H。",
+          "techniques": [
+            "稀疏跳跃的 KRS 度量立方体",
+            "目标熵和鞅差强大数律",
+            "I 型中间层与 II 型过渡权重",
+            "Badger–Schul 方形填装",
+            "Azuma 界与 Borel–Cantelli"
+          ],
+          "breakthrough": "在接近环境维数时用稀疏尺度跳跃控制误差，使局部维数由目标熵 Cesàro 平均决定。上端 s_P=m 通过计数携带大部分质量的后代立方体，再用方形填装给 Lipschitz 参数化。下端 s_P=m−1 通过目标熵平均沿子列略高于阈值，使下 (m−1) 密度为零。由此完成 Badger–Schul 的端点猜想。",
+          "limitations": "第3页定理给指定测度的存在性，m=1 时纯零维不可求长指无原子。s_H=0 用单独的中心权重方案，定理的倍增性保证限于 s_H>0。Lipschitz 承载不附加对 Hausdorff 测度的绝对连续性。第4页 Heisenberg 例区分了这两种性质。本轮补读第3–7、13–14、21–22、26、31–34、37–40页，方形填装、立方体延拓和邻立方体质量比较的完整论证待逐步核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第7页追溯作者于2024年已提出变尺度立方体，并在2025年报告中阐明稀疏尺度跳跃及局部维数误差控制。2026年与 Claude Opus 5.5 的交流促成第5节 I 型中间层加一次 II 型过渡的权重构造，并促成引理7.2的下密度消失估计。后续用 Claude Opus 5.5、Claude Fable 5.2、GPT-6 Astra Pro 核对证明、建议修改及起草编辑文字和图形。作者主导并验证全部数学内容。第44页 Claude Tricot 为参考文献作者。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14313v1 · PDF 第7页，Development of the results and AI assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:42:03.659019+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14313v1",
+            "contentHash": "ee387973bceb05d2870723cb5bb86ffae5a2ad79c058096b593e5f3ea3f83a55",
+            "pages": 44,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页追溯作者于2024年已提出变尺度立方体，并在2025年报告中阐明稀疏尺度跳跃及局部维数误差控制。2026年与 Claude Opus 5.5 的交流促成第5节 I 型中间层加一次 II 型过渡的权重构造，并促成引理7.2的下密度消失估计。后续用 Claude Opus 5.5、Claude Fable 5.2、GPT-6 Astra Pro 核对证明、建议修改及起草编辑文字和图形。作者主导并验证全部数学内容。第44页 Claude Tricot 为参考文献作者。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3c8a3a9474d1ad342b1f8fbcd88aa3deaa99a7fff17824a8d38a6254e937c80f"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "完备 Ahlfors 正则空间上的端点构造，涵盖非整数精确维数。"
+        },
+        "analysisBasis": {
+          "abstract": "A theorem of Balka and Keleti implies that on any complete separable metric space $\\mathbb{X}$, every locally finite Borel measure $\\mu$ of packing dimension strictly less than $m$ is \"Euclidean-like\" insofar as there exist Lipschitz maps $f_i:E_i\\subset\\mathbb{R}^m\\rightarrow\\mathbb{X}$ such that $\\mu(\\mathbb{X}\\setminus\\bigcup_1^\\infty f_i(E_i))=0$. An ongoing challenge in geometric measure theory is to understand when this property, called $m$-rectifiability, holds for measures of packing dimension $m$. Towards this goal, we prove that every complete Ahlfors $q$-regular metric space with $q\\geq m$ supports $m$-rectifiable doubling measures of packing dimension $m$. The proof of existence of such measures is new even when $\\mathbb{X}=\\mathbb{R}^n$ and $n>m$. More generally, on every complete Ahlfors $q$-regular metric space with $q>m-1$, we construct $m$-rectifiable, purely $(m-1)$-unrectifiable measures with any prescribed exact Hausdorff and packing dimensions $0\\leq s_H\\leq s_P\\leq q$ with $m-1\\leq s_P\\leq m$, which are doubling when $s_H>0$. This verifies a conjecture of Badger and Schul. The design of the measures relies on metric cubes with variable scaling, in which the ratio of consecutive side lengths tends to infinity but jumps only on a sparse set of generations, together with Badger and Schul's square packing construction of Lipschitz maps.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.13535",
+  "slug": "2611.13535",
+  "latest": {
+    "arxivId": "2611.13535",
+    "metadata": {
+      "title": "Covering the Triangular Lattice with Non-Overlapping Unit Disks",
+      "authors": [
+        "Teeradej Kittipassorn",
+        "Nattawut Phetmak",
+        "Kirati Sriamorn"
+      ],
+      "abstract": "For $d>0$, let $\\mathcal{T}_d$ be the triangular lattice with minimum distance $d$. We study for which $d$ the set $\\mathcal{T}_d$ can be covered by closed unit disks with pairwise disjoint interiors, a question left open by Phetmak, Nuntasombat and Fakcharoenphol for $2-\\sqrt3\\le d<2/\\sqrt{37}$ and on several gaps between their constructions. Writing $\\mathcal{N}(d)$ for the largest number of points of $\\mathcal{T}_d$ in a closed unit disk, we show that $\\mathcal{T}_d$ cannot be covered whenever $\\mathcal{N}(d)<4/d^2$, and we determine this set of spacings exactly as a union of fifteen intervals; combined with their constructions, this shows that coverability is not monotone in $d$. At the right endpoints $d=2/\\sqrt k$ of these intervals the density bound is attained, and we show that such a spacing is coverable if and only if $k$ is the norm of an Eisenstein integer. We also give two new coverings, at $d=1/\\sqrt{13}$ and $d=2/\\sqrt{21}$, in which the disks form a hexagonal packing. Consequently, together with an earlier result of Okayama, Kiyomi and Uehara, the smallest coverable spacing $d_{\\min}$ exists and satisfies $2/\\sqrt{55}<d_{\\min}\\le1/\\sqrt{13}$, which answers a question of Phetmak, Nuntasombat and Fakcharoenphol.",
+      "categories": [
+        "math.CO",
+        "math.MG"
+      ],
+      "primaryCategory": "math.CO",
+      "comment": "29 pages, 7 figures, 5 tables. The ancillary file this http URL (Python 3 with SymPy, exact arithmetic) carries out all computations used in the proofs",
+      "version": 1,
+      "submittedAt": "2026-11-10T03:57:09Z",
+      "updatedAt": "2026-11-10T03:57:09Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-11T10:36:07.774992+00:00",
+        "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:41.691681+00:00",
+        "contentHash": "bbaa566f82e5108c84aa88a921a4248866b31626f111c869063a8e822143a417"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "不可覆盖区间与新构造",
+      "workSummary": "研究最小点距d的三角晶格能否由内部互不相交的闭单位圆盘覆盖。记N(d)为一个圆盘能包含的最大晶格点数，若N(d)<4/d²则不可覆盖，作者确定该严格不等式的解集恰为十五个区间。各右端点d=2/√k达到密度界，能覆盖当且仅当k是Eisenstein整数的范数。结合既有与新增覆盖，作者证明可覆盖性关于d非单调，最小可覆盖间距存在且满足2/√55<d_min≤1/√13。",
+      "techniques": [
+        "晶格点计数与密度必要条件",
+        "Eisenstein整数范数",
+        "圆盘的六角堆积构造"
+      ],
+      "breakthrough": "精确求出十五个密度排除区间，刻画其右端点的可覆盖性，并在d=1/√13与d=2/√21构造新的六角堆积覆盖。",
+      "limitations": "十五区间刻画的是严格密度障碍，其他间距还需考察覆盖条件。最小可覆盖间距给出上下界。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第25页作者披露Claude辅助计算机搜索、编写和检查验证程序，并辅助起草与编辑论文。记录computation、verification、writing，其中verification限于程序检查。证明与计算由作者复核。第18页Astra候选来自a straight line的字词拼接。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.13535v1 · PDF 第25页Declaration of generative AI use，全文29页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:39:36.176878+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.13535v1",
+        "contentHash": "4bbad2ff577b3e778d76f2276a2ff52409224f18c8f8e73f0a4598d547cf9c71",
+        "pages": 29,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第25页作者披露Claude辅助计算机搜索、编写和检查验证程序，并辅助起草与编辑论文。记录computation、verification、writing，其中verification限于程序检查。证明与计算由作者复核。第18页Astra候选来自a straight line的字词拼接。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "9e330554d26ac775983d6f6a957c97de719becaab1464acf0ea176190e8a31f2"
+      },
+      "aiUsage": [
+        "computation",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 68,
+      "priorityReason": "把离散几何覆盖、晶格计数及代数范数结合，端点等号结构明确。"
+    },
+    "analysisBasis": {
+      "abstract": "For $d>0$, let $\\mathcal{T}_d$ be the triangular lattice with minimum distance $d$. We study for which $d$ the set $\\mathcal{T}_d$ can be covered by closed unit disks with pairwise disjoint interiors, a question left open by Phetmak, Nuntasombat and Fakcharoenphol for $2-\\sqrt3\\le d<2/\\sqrt{37}$ and on several gaps between their constructions. Writing $\\mathcal{N}(d)$ for the largest number of points of $\\mathcal{T}_d$ in a closed unit disk, we show that $\\mathcal{T}_d$ cannot be covered whenever $\\mathcal{N}(d)<4/d^2$, and we determine this set of spacings exactly as a union of fifteen intervals; combined with their constructions, this shows that coverability is not monotone in $d$. At the right endpoints $d=2/\\sqrt k$ of these intervals the density bound is attained, and we show that such a spacing is coverable if and only if $k$ is the norm of an Eisenstein integer. We also give two new coverings, at $d=1/\\sqrt{13}$ and $d=2/\\sqrt{21}$, in which the disks form a hexagonal packing. Consequently, together with an earlier result of Okayama, Kiyomi and Uehara, the smallest coverable spacing $d_{\\min}$ exists and satisfies $2/\\sqrt{55}<d_{\\min}\\le1/\\sqrt{13}$, which answers a question of Phetmak, Nuntasombat and Fakcharoenphol.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.13535",
+        "metadata": {
+          "title": "Covering the Triangular Lattice with Non-Overlapping Unit Disks",
+          "authors": [
+            "Teeradej Kittipassorn",
+            "Nattawut Phetmak",
+            "Kirati Sriamorn"
+          ],
+          "abstract": "For $d>0$, let $\\mathcal{T}_d$ be the triangular lattice with minimum distance $d$. We study for which $d$ the set $\\mathcal{T}_d$ can be covered by closed unit disks with pairwise disjoint interiors, a question left open by Phetmak, Nuntasombat and Fakcharoenphol for $2-\\sqrt3\\le d<2/\\sqrt{37}$ and on several gaps between their constructions. Writing $\\mathcal{N}(d)$ for the largest number of points of $\\mathcal{T}_d$ in a closed unit disk, we show that $\\mathcal{T}_d$ cannot be covered whenever $\\mathcal{N}(d)<4/d^2$, and we determine this set of spacings exactly as a union of fifteen intervals; combined with their constructions, this shows that coverability is not monotone in $d$. At the right endpoints $d=2/\\sqrt k$ of these intervals the density bound is attained, and we show that such a spacing is coverable if and only if $k$ is the norm of an Eisenstein integer. We also give two new coverings, at $d=1/\\sqrt{13}$ and $d=2/\\sqrt{21}$, in which the disks form a hexagonal packing. Consequently, together with an earlier result of Okayama, Kiyomi and Uehara, the smallest coverable spacing $d_{\\min}$ exists and satisfies $2/\\sqrt{55}<d_{\\min}\\le1/\\sqrt{13}$, which answers a question of Phetmak, Nuntasombat and Fakcharoenphol.",
+          "categories": [
+            "math.CO",
+            "math.MG"
+          ],
+          "primaryCategory": "math.CO",
+          "comment": "29 pages, 7 figures, 5 tables. The ancillary file this http URL (Python 3 with SymPy, exact arithmetic) carries out all computations used in the proofs",
+          "version": 1,
+          "submittedAt": "2026-11-10T03:57:09Z",
+          "updatedAt": "2026-11-10T03:57:09Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-11T10:36:07.774992+00:00",
+            "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:41.691681+00:00",
+            "contentHash": "bbaa566f82e5108c84aa88a921a4248866b31626f111c869063a8e822143a417"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "不可覆盖区间与新构造",
+          "workSummary": "研究最小点距d的三角晶格能否由内部互不相交的闭单位圆盘覆盖。记N(d)为一个圆盘能包含的最大晶格点数，若N(d)<4/d²则不可覆盖，作者确定该严格不等式的解集恰为十五个区间。各右端点d=2/√k达到密度界，能覆盖当且仅当k是Eisenstein整数的范数。结合既有与新增覆盖，作者证明可覆盖性关于d非单调，最小可覆盖间距存在且满足2/√55<d_min≤1/√13。",
+          "techniques": [
+            "晶格点计数与密度必要条件",
+            "Eisenstein整数范数",
+            "圆盘的六角堆积构造"
+          ],
+          "breakthrough": "精确求出十五个密度排除区间，刻画其右端点的可覆盖性，并在d=1/√13与d=2/√21构造新的六角堆积覆盖。",
+          "limitations": "十五区间刻画的是严格密度障碍，其他间距还需考察覆盖条件。最小可覆盖间距给出上下界。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第25页作者披露Claude辅助计算机搜索、编写和检查验证程序，并辅助起草与编辑论文。记录computation、verification、writing，其中verification限于程序检查。证明与计算由作者复核。第18页Astra候选来自a straight line的字词拼接。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.13535v1 · PDF 第25页Declaration of generative AI use，全文29页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:39:36.176878+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.13535v1",
+            "contentHash": "4bbad2ff577b3e778d76f2276a2ff52409224f18c8f8e73f0a4598d547cf9c71",
+            "pages": 29,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第25页作者披露Claude辅助计算机搜索、编写和检查验证程序，并辅助起草与编辑论文。记录computation、verification、writing，其中verification限于程序检查。证明与计算由作者复核。第18页Astra候选来自a straight line的字词拼接。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "9e330554d26ac775983d6f6a957c97de719becaab1464acf0ea176190e8a31f2"
+          },
+          "aiUsage": [
+            "computation",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 68,
+          "priorityReason": "把离散几何覆盖、晶格计数及代数范数结合，端点等号结构明确。"
+        },
+        "analysisBasis": {
+          "abstract": "For $d>0$, let $\\mathcal{T}_d$ be the triangular lattice with minimum distance $d$. We study for which $d$ the set $\\mathcal{T}_d$ can be covered by closed unit disks with pairwise disjoint interiors, a question left open by Phetmak, Nuntasombat and Fakcharoenphol for $2-\\sqrt3\\le d<2/\\sqrt{37}$ and on several gaps between their constructions. Writing $\\mathcal{N}(d)$ for the largest number of points of $\\mathcal{T}_d$ in a closed unit disk, we show that $\\mathcal{T}_d$ cannot be covered whenever $\\mathcal{N}(d)<4/d^2$, and we determine this set of spacings exactly as a union of fifteen intervals; combined with their constructions, this shows that coverability is not monotone in $d$. At the right endpoints $d=2/\\sqrt k$ of these intervals the density bound is attained, and we show that such a spacing is coverable if and only if $k$ is the norm of an Eisenstein integer. We also give two new coverings, at $d=1/\\sqrt{13}$ and $d=2/\\sqrt{21}$, in which the disks form a hexagonal packing. Consequently, together with an earlier result of Okayama, Kiyomi and Uehara, the smallest coverable spacing $d_{\\min}$ exists and satisfies $2/\\sqrt{55}<d_{\\min}\\le1/\\sqrt{13}$, which answers a question of Phetmak, Nuntasombat and Fakcharoenphol.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

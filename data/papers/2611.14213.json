@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14213",
+  "slug": "2611.14213",
+  "latest": {
+    "arxivId": "2611.14213",
+    "metadata": {
+      "title": "$φ$-symmetric Sasakian Lie algebras",
+      "authors": [
+        "Adrián Andrada",
+        "Alberth J. Núñez Sullca"
+      ],
+      "abstract": "We study Sasakian Lie algebras with trivial centre for which the adjoint operator $\\mathrm{ad}_\\xi$ associated to the Reeb vector field $\\xi$ has two-dimensional image. Their structure is governed by a Kähler-exact Lie algebra $\\mathfrak{h}_1$ and a vector $H_0\\in\\mathfrak{h}_1$, and the cases $H_0=0$ and $H_0\\neq0$ are of a different nature. For $H_0=0$ we prove that the Sasakian structure is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric. For $H_0\\neq0$ and $\\mathfrak{h}_1$ solvable, we prove that it is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric and a natural two-form $\\rho_0$ on $\\mathfrak{h}_1$ determined by $H_0$ is parallel. The latter condition is equivalent to the vanishing of the mixed root spaces attached to the distinguished root selected by $H_0$ in the associated normal $j$-algebra. As a consequence, every Sasakian Lie algebra in this class of dimension at most seven is $\\varphi$-symmetric, which extends a result of Loiudice and Lotta in dimension five. This bound is sharp: in dimension nine we exhibit a Sasakian structure which is not $\\varphi$-symmetric, even though its Kähler base is locally symmetric.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "21 pages",
+      "version": 1,
+      "submittedAt": "2026-11-10T15:34:00Z",
+      "updatedAt": "2026-11-10T15:34:00Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-11T10:35:56.403928+00:00",
+        "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.14213v1",
+        "observedAt": "2026-11-11T10:39:11.996737+00:00",
+        "contentHash": "ebd6811d0e5928388b5dff91e798462da5a502cd0b5b5f550db60fd66ee739af"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.986980+00:00",
+        "contentHash": "14ce60fa54026b40580d66177f42f07eedeed53b79498ff7a6337be9bec53f1e"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "Sasakian 李代数的 φ 对称判据",
+      "workSummary": "研究中心平凡且 Reeb 元伴随算子像为二维的 Sasakian 李代数，以 Kähler-exact 李代数 h₁ 与向量 H₀ 编码。H₀=0 时，φ 对称等价于 h₁ 局部对称。H₀≠0 且 h₁ 可解时，还需 H₀ 决定的自然二形式 ρ₀ 平行，等价于相关 normal j-algebra 中指定混合根空间消失。",
+      "techniques": [
+        "Reeb 伴随算子分解",
+        "Kähler-exact 李代数",
+        "平行二形式",
+        "normal j-algebra 根空间"
+      ],
+      "breakthrough": "此类维数至多七的结构均为 φ 对称。九维例即使 Kähler 基局部对称仍失败，给出尖锐维数界。",
+      "limitations": "非零 H₀ 分支的充要判据保留 h₁ 可解假设。维数界属于中心平凡、伴随算子秩二的指定类别。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第2页 AI use 声明主要使用 OpenAI GPT-6 Astra 与 Anthropic Claude Fable 5.1，探索作者提出的研究方向、推导与核对公式、查找文献及检查论证缺口。作者称已核对全部数学论证、计算与引用，并主要自行撰写论文。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14213v1 · PDF 第2页，AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:39:11.996737+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14213v1",
+        "contentHash": "ebd6811d0e5928388b5dff91e798462da5a502cd0b5b5f550db60fd66ee739af",
+        "pages": 21,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页 AI use 声明主要使用 OpenAI GPT-6 Astra 与 Anthropic Claude Fable 5.1，探索作者提出的研究方向、推导与核对公式、查找文献及检查论证缺口。作者称已核对全部数学论证、计算与引用，并主要自行撰写论文。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e91434d5cd10f3791b6b8579796556af1508f313234147c63ac57ee3711d2e49"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "verification"
+      ],
+      "priorityScore": 81,
+      "priorityReason": "给出接触度量结构的曲率对称性判据及尖锐反例。"
+    },
+    "analysisBasis": {
+      "abstract": "We study Sasakian Lie algebras with trivial centre for which the adjoint operator $\\mathrm{ad}_\\xi$ associated to the Reeb vector field $\\xi$ has two-dimensional image. Their structure is governed by a Kähler-exact Lie algebra $\\mathfrak{h}_1$ and a vector $H_0\\in\\mathfrak{h}_1$, and the cases $H_0=0$ and $H_0\\neq0$ are of a different nature. For $H_0=0$ we prove that the Sasakian structure is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric. For $H_0\\neq0$ and $\\mathfrak{h}_1$ solvable, we prove that it is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric and a natural two-form $\\rho_0$ on $\\mathfrak{h}_1$ determined by $H_0$ is parallel. The latter condition is equivalent to the vanishing of the mixed root spaces attached to the distinguished root selected by $H_0$ in the associated normal $j$-algebra. As a consequence, every Sasakian Lie algebra in this class of dimension at most seven is $\\varphi$-symmetric, which extends a result of Loiudice and Lotta in dimension five. This bound is sharp: in dimension nine we exhibit a Sasakian structure which is not $\\varphi$-symmetric, even though its Kähler base is locally symmetric.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14213",
+        "metadata": {
+          "title": "$φ$-symmetric Sasakian Lie algebras",
+          "authors": [
+            "Adrián Andrada",
+            "Alberth J. Núñez Sullca"
+          ],
+          "abstract": "We study Sasakian Lie algebras with trivial centre for which the adjoint operator $\\mathrm{ad}_\\xi$ associated to the Reeb vector field $\\xi$ has two-dimensional image. Their structure is governed by a Kähler-exact Lie algebra $\\mathfrak{h}_1$ and a vector $H_0\\in\\mathfrak{h}_1$, and the cases $H_0=0$ and $H_0\\neq0$ are of a different nature. For $H_0=0$ we prove that the Sasakian structure is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric. For $H_0\\neq0$ and $\\mathfrak{h}_1$ solvable, we prove that it is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric and a natural two-form $\\rho_0$ on $\\mathfrak{h}_1$ determined by $H_0$ is parallel. The latter condition is equivalent to the vanishing of the mixed root spaces attached to the distinguished root selected by $H_0$ in the associated normal $j$-algebra. As a consequence, every Sasakian Lie algebra in this class of dimension at most seven is $\\varphi$-symmetric, which extends a result of Loiudice and Lotta in dimension five. This bound is sharp: in dimension nine we exhibit a Sasakian structure which is not $\\varphi$-symmetric, even though its Kähler base is locally symmetric.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "21 pages",
+          "version": 1,
+          "submittedAt": "2026-11-10T15:34:00Z",
+          "updatedAt": "2026-11-10T15:34:00Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-11T10:35:56.403928+00:00",
+            "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.14213v1",
+            "observedAt": "2026-11-11T10:39:11.996737+00:00",
+            "contentHash": "ebd6811d0e5928388b5dff91e798462da5a502cd0b5b5f550db60fd66ee739af"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.986980+00:00",
+            "contentHash": "14ce60fa54026b40580d66177f42f07eedeed53b79498ff7a6337be9bec53f1e"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "Sasakian 李代数的 φ 对称判据",
+          "workSummary": "研究中心平凡且 Reeb 元伴随算子像为二维的 Sasakian 李代数，以 Kähler-exact 李代数 h₁ 与向量 H₀ 编码。H₀=0 时，φ 对称等价于 h₁ 局部对称。H₀≠0 且 h₁ 可解时，还需 H₀ 决定的自然二形式 ρ₀ 平行，等价于相关 normal j-algebra 中指定混合根空间消失。",
+          "techniques": [
+            "Reeb 伴随算子分解",
+            "Kähler-exact 李代数",
+            "平行二形式",
+            "normal j-algebra 根空间"
+          ],
+          "breakthrough": "此类维数至多七的结构均为 φ 对称。九维例即使 Kähler 基局部对称仍失败，给出尖锐维数界。",
+          "limitations": "非零 H₀ 分支的充要判据保留 h₁ 可解假设。维数界属于中心平凡、伴随算子秩二的指定类别。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第2页 AI use 声明主要使用 OpenAI GPT-6 Astra 与 Anthropic Claude Fable 5.1，探索作者提出的研究方向、推导与核对公式、查找文献及检查论证缺口。作者称已核对全部数学论证、计算与引用，并主要自行撰写论文。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14213v1 · PDF 第2页，AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:39:11.996737+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14213v1",
+            "contentHash": "ebd6811d0e5928388b5dff91e798462da5a502cd0b5b5f550db60fd66ee739af",
+            "pages": 21,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第2页 AI use 声明主要使用 OpenAI GPT-6 Astra 与 Anthropic Claude Fable 5.1，探索作者提出的研究方向、推导与核对公式、查找文献及检查论证缺口。作者称已核对全部数学论证、计算与引用，并主要自行撰写论文。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e91434d5cd10f3791b6b8579796556af1508f313234147c63ac57ee3711d2e49"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "verification"
+          ],
+          "priorityScore": 81,
+          "priorityReason": "给出接触度量结构的曲率对称性判据及尖锐反例。"
+        },
+        "analysisBasis": {
+          "abstract": "We study Sasakian Lie algebras with trivial centre for which the adjoint operator $\\mathrm{ad}_\\xi$ associated to the Reeb vector field $\\xi$ has two-dimensional image. Their structure is governed by a Kähler-exact Lie algebra $\\mathfrak{h}_1$ and a vector $H_0\\in\\mathfrak{h}_1$, and the cases $H_0=0$ and $H_0\\neq0$ are of a different nature. For $H_0=0$ we prove that the Sasakian structure is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric. For $H_0\\neq0$ and $\\mathfrak{h}_1$ solvable, we prove that it is $\\varphi$-symmetric if and only if $\\mathfrak{h}_1$ is locally symmetric and a natural two-form $\\rho_0$ on $\\mathfrak{h}_1$ determined by $H_0$ is parallel. The latter condition is equivalent to the vanishing of the mixed root spaces attached to the distinguished root selected by $H_0$ in the associated normal $j$-algebra. As a consequence, every Sasakian Lie algebra in this class of dimension at most seven is $\\varphi$-symmetric, which extends a result of Loiudice and Lotta in dimension five. This bound is sharp: in dimension nine we exhibit a Sasakian structure which is not $\\varphi$-symmetric, even though its Kähler base is locally symmetric.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

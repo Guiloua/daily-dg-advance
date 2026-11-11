@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.13854",
+  "slug": "2611.13854",
+  "latest": {
+    "arxivId": "2611.13854",
+    "metadata": {
+      "title": "Morse index and bifurcation of Clifford hypersurfaces under Hopf squashing",
+      "authors": [
+        "Anna Siffert"
+      ],
+      "abstract": "Clifford hypersurfaces are products of two spheres embedded in a round sphere. We call them balanced when their radii are chosen so that the product is minimal in the round metric. We study how their Morse index and nullity change when the ambient metric is deformed along the fibers of a Hopf fibration. This deformation, called \\emph{Hopf squashing}, rescales the fiber metric by a parameter $t>0$ while leaving the horizontal metric unchanged. For the complex, quaternionic, and octonionic Hopf fibrations, we determine the index and nullity of balanced Clifford hypersurfaces throughout the fiber-shortening range and show that their Jacobi potential is independent of $t$. In the octonionic case we also determine the first positive Jacobi eigenvalue and its multiplicity. In the octonionic case, at $t=27$, a branch of nonhomogeneous minimal hypersurfaces bifurcates from the balanced Clifford hypersurface; its members have Morse index $1432$ and nullity $15$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-10T10:14:18Z",
+      "updatedAt": "2026-11-10T10:14:18Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-11T10:35:56.403928+00:00",
+        "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.13854v1",
+        "observedAt": "2026-11-11T10:37:25.384806+00:00",
+        "contentHash": "18f25927396502a9db6d13163ae3a4bf9101032c441477099375ba4fb5b11a46"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:41.693129+00:00",
+        "contentHash": "7e2dfb4cdd1f74455c3bcd99cc1646dc4daf187fedf836839ca3bcff91d1168c"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "Hopf 纤维缩放下的指数与分岔",
+      "workSummary": "平衡 Clifford 超曲面在相应复、四元数与八元数 Hopf 度量下对所有 t>0 保持极小，Jacobi 势恒为 2m。设纤维维数为 r、超曲面维数为 m，纤维缩短区间内指数在 t*=r/(m+r) 由 1 跃至 m+3。八元数的 S⁷×S⁷ 还给出首个正 Jacobi 特征值及重数，并在纤维延长参数 t=27 处得到局部非齐性分支。",
+      "techniques": [
+        "Hopf 典范变形与水平法向",
+        "第二基本形式项与法向 Ricci 项抵消",
+        "Jacobi 谱与表示分解",
+        "局部分岔及指数核算"
+      ],
+      "breakthrough": "在显式谱计算之外，八元数情形给出 t=27 附近的新局部极小超曲面分支，其充分小非零分支参数对应指数 1432 和零度 15。",
+      "limitations": "t 是纤维度量的倍率，长度倍率为 √t。缩短谱结论为 0<t≤1，t=27 属延长区间。零度在临界值与圆度量处另有公式。只核对主定理和谱/分岔范围。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 用于文字编辑、文献检索和数学计算的核查，相关内容由作者独立复核。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.13854v1 · PDF 第3页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:37:25.384806+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.13854v1",
+        "contentHash": "18f25927396502a9db6d13163ae3a4bf9101032c441477099375ba4fb5b11a46",
+        "pages": 27,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于文字编辑、文献检索和数学计算的核查，相关内容由作者独立复核。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "9a1ed8c9ebd47a7d86be84d0d6a129703d94a8f5ce9d13e9e8e738c6b5399405"
+      },
+      "aiUsage": [
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "对极小超曲面稳定性和分岔有直接价值。"
+    },
+    "analysisBasis": {
+      "abstract": "Clifford hypersurfaces are products of two spheres embedded in a round sphere. We call them balanced when their radii are chosen so that the product is minimal in the round metric. We study how their Morse index and nullity change when the ambient metric is deformed along the fibers of a Hopf fibration. This deformation, called \\emph{Hopf squashing}, rescales the fiber metric by a parameter $t>0$ while leaving the horizontal metric unchanged. For the complex, quaternionic, and octonionic Hopf fibrations, we determine the index and nullity of balanced Clifford hypersurfaces throughout the fiber-shortening range and show that their Jacobi potential is independent of $t$. In the octonionic case we also determine the first positive Jacobi eigenvalue and its multiplicity. In the octonionic case, at $t=27$, a branch of nonhomogeneous minimal hypersurfaces bifurcates from the balanced Clifford hypersurface; its members have Morse index $1432$ and nullity $15$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.13854",
+        "metadata": {
+          "title": "Morse index and bifurcation of Clifford hypersurfaces under Hopf squashing",
+          "authors": [
+            "Anna Siffert"
+          ],
+          "abstract": "Clifford hypersurfaces are products of two spheres embedded in a round sphere. We call them balanced when their radii are chosen so that the product is minimal in the round metric. We study how their Morse index and nullity change when the ambient metric is deformed along the fibers of a Hopf fibration. This deformation, called \\emph{Hopf squashing}, rescales the fiber metric by a parameter $t>0$ while leaving the horizontal metric unchanged. For the complex, quaternionic, and octonionic Hopf fibrations, we determine the index and nullity of balanced Clifford hypersurfaces throughout the fiber-shortening range and show that their Jacobi potential is independent of $t$. In the octonionic case we also determine the first positive Jacobi eigenvalue and its multiplicity. In the octonionic case, at $t=27$, a branch of nonhomogeneous minimal hypersurfaces bifurcates from the balanced Clifford hypersurface; its members have Morse index $1432$ and nullity $15$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-10T10:14:18Z",
+          "updatedAt": "2026-11-10T10:14:18Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-11T10:35:56.403928+00:00",
+            "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.13854v1",
+            "observedAt": "2026-11-11T10:37:25.384806+00:00",
+            "contentHash": "18f25927396502a9db6d13163ae3a4bf9101032c441477099375ba4fb5b11a46"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:41.693129+00:00",
+            "contentHash": "7e2dfb4cdd1f74455c3bcd99cc1646dc4daf187fedf836839ca3bcff91d1168c"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "Hopf 纤维缩放下的指数与分岔",
+          "workSummary": "平衡 Clifford 超曲面在相应复、四元数与八元数 Hopf 度量下对所有 t>0 保持极小，Jacobi 势恒为 2m。设纤维维数为 r、超曲面维数为 m，纤维缩短区间内指数在 t*=r/(m+r) 由 1 跃至 m+3。八元数的 S⁷×S⁷ 还给出首个正 Jacobi 特征值及重数，并在纤维延长参数 t=27 处得到局部非齐性分支。",
+          "techniques": [
+            "Hopf 典范变形与水平法向",
+            "第二基本形式项与法向 Ricci 项抵消",
+            "Jacobi 谱与表示分解",
+            "局部分岔及指数核算"
+          ],
+          "breakthrough": "在显式谱计算之外，八元数情形给出 t=27 附近的新局部极小超曲面分支，其充分小非零分支参数对应指数 1432 和零度 15。",
+          "limitations": "t 是纤维度量的倍率，长度倍率为 √t。缩短谱结论为 0<t≤1，t=27 属延长区间。零度在临界值与圆度量处另有公式。只核对主定理和谱/分岔范围。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 用于文字编辑、文献检索和数学计算的核查，相关内容由作者独立复核。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.13854v1 · PDF 第3页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:37:25.384806+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.13854v1",
+            "contentHash": "18f25927396502a9db6d13163ae3a4bf9101032c441477099375ba4fb5b11a46",
+            "pages": 27,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 用于文字编辑、文献检索和数学计算的核查，相关内容由作者独立复核。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "9a1ed8c9ebd47a7d86be84d0d6a129703d94a8f5ce9d13e9e8e738c6b5399405"
+          },
+          "aiUsage": [
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "对极小超曲面稳定性和分岔有直接价值。"
+        },
+        "analysisBasis": {
+          "abstract": "Clifford hypersurfaces are products of two spheres embedded in a round sphere. We call them balanced when their radii are chosen so that the product is minimal in the round metric. We study how their Morse index and nullity change when the ambient metric is deformed along the fibers of a Hopf fibration. This deformation, called \\emph{Hopf squashing}, rescales the fiber metric by a parameter $t>0$ while leaving the horizontal metric unchanged. For the complex, quaternionic, and octonionic Hopf fibrations, we determine the index and nullity of balanced Clifford hypersurfaces throughout the fiber-shortening range and show that their Jacobi potential is independent of $t$. In the octonionic case we also determine the first positive Jacobi eigenvalue and its multiplicity. In the octonionic case, at $t=27$, a branch of nonhomogeneous minimal hypersurfaces bifurcates from the balanced Clifford hypersurface; its members have Morse index $1432$ and nullity $15$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

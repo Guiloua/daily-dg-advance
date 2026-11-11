@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14137",
+  "slug": "2611.14137",
+  "latest": {
+    "arxivId": "2611.14137",
+    "metadata": {
+      "title": "Integrability of the horizontal mean curvature near characteristic points in the Heisenberg group",
+      "authors": [
+        "Andrea Pinamonti",
+        "Tommaso Rossi"
+      ],
+      "abstract": "We investigate the local integrability of the horizontal mean curvature near characteristic points of surfaces in the first Heisenberg group. We prove that, for every embedded surface of class $C^{2,\\alpha}$, with $\\alpha>0$, the horizontal mean curvature is locally integrable with respect to (any) Riemannian surface measure, without any assumption on the structure of the characteristic set. We further establish that the horizontal unit normal belongs to $BV_{\\mathrm{loc}}$ and characterize its $W^{1,1}_{\\mathrm{loc}}$ regularity in terms of the vanishing one-dimensional Hausdorff measure of the characteristic set. Finally, we answer an open question by Danielli, Garofalo and Nhieu by constructing a $C^2$ surface with a unique characteristic point whose horizontal mean curvature fails to be locally integrable, thus showing that the additional Hölder regularity cannot, in general, be replaced by $C^2$ regularity.",
+      "categories": [
+        "math.DG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-10T14:26:11Z",
+      "updatedAt": "2026-11-10T14:26:11Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-11T10:36:07.774992+00:00",
+        "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.984433+00:00",
+        "contentHash": "9d051f5fce5509fe037d960f496610c94978415b5af1de0032bbaac0324def1a"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "水平曲率可积性与临界反例",
+      "workSummary": "设S是第一Heisenberg群中的无边界嵌入C^{2,α}曲面，0<α≤1。水平平均曲率H关于任意光滑环境Riemannian度量诱导的面积测度局部可积，允许S非紧或不可定向。用局部定义函数选取的水平单位法向ν属于BV_loc，其分布导数的Cantor部分消失。ν在局部开集U上属于W^{1,1}_loc当且仅当H¹(C(S)∩U)=0。作者另给出C²图面，原点是其唯一特征点，且H关于任意该类面积测度都不局部可积。",
+      "techniques": [
+        "特征点附近的平面向量场正规形V=(u,b(u,v))",
+        "归一化场导数的局部L¹估计",
+        "BV分布导数的绝对连续与跳跃分解",
+        "快速振荡函数及对数积分发散"
+      ],
+      "breakthrough": "正规形将特征集写为{u=0,b(0,v)=0}，归一化场跨该集合的两侧极限相反，由此精确识别阻止W^{1,1}正则性的跳跃部分。正Hölder指数控制经典导数的局部积分，C²反例则以衰减而快速振荡的h保持唯一零点，使∫|h′(y)|log(r/h(y))dy发散。",
+      "limitations": "补读PDF第1–3、5–6、9–13页，渲染第2、11页。结论关于第一Heisenberg群的无边界嵌入曲面，使用光滑Riemannian度量诱导的面积和Hausdorff测度。水平单位法向用局部定义函数选取。反例区分C²与C^{2,α}的普遍结论，未给出C²图面的完整可积性判据。未逐式核验全部估计或独立验证完整证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第13页作者明确披露ChatGPT 6用于语言编辑、修订以及发展第7节反例。该节构造只有一个特征点且水平平均曲率不局部可积的C²图面，属于论文具体核心结果，记录ideas及writing。数学和参考文献由作者复核。该页llm候选来自all mathematical的拼接。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14137v1 · PDF 第13页AI statement，结合第11–12页§7反例核对，全文13页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:44:15.870493+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14137v1",
+        "contentHash": "03a206449dae05daa0b1e8f45cb0f9c6888d58f44b0d237797500433b31c3956",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页作者明确披露ChatGPT 6用于语言编辑、修订以及发展第7节反例。该节构造只有一个特征点且水平平均曲率不局部可积的C²图面，属于论文具体核心结果，记录ideas及writing。数学和参考文献由作者复核。该页llm候选来自all mathematical的拼接。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "ddb66f90845a9a176008d44d40372e180b97c8cdc36879fbca5dff386fc62d9a"
+      },
+      "aiUsage": [
+        "ideas",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "特征点附近的曲率奇性、BV与临界反例对亚黎曼几何分析直接相关。"
+    },
+    "analysisBasis": {
+      "abstract": "We investigate the local integrability of the horizontal mean curvature near characteristic points of surfaces in the first Heisenberg group. We prove that, for every embedded surface of class $C^{2,\\alpha}$, with $\\alpha>0$, the horizontal mean curvature is locally integrable with respect to (any) Riemannian surface measure, without any assumption on the structure of the characteristic set. We further establish that the horizontal unit normal belongs to $BV_{\\mathrm{loc}}$ and characterize its $W^{1,1}_{\\mathrm{loc}}$ regularity in terms of the vanishing one-dimensional Hausdorff measure of the characteristic set. Finally, we answer an open question by Danielli, Garofalo and Nhieu by constructing a $C^2$ surface with a unique characteristic point whose horizontal mean curvature fails to be locally integrable, thus showing that the additional Hölder regularity cannot, in general, be replaced by $C^2$ regularity.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14137",
+        "metadata": {
+          "title": "Integrability of the horizontal mean curvature near characteristic points in the Heisenberg group",
+          "authors": [
+            "Andrea Pinamonti",
+            "Tommaso Rossi"
+          ],
+          "abstract": "We investigate the local integrability of the horizontal mean curvature near characteristic points of surfaces in the first Heisenberg group. We prove that, for every embedded surface of class $C^{2,\\alpha}$, with $\\alpha>0$, the horizontal mean curvature is locally integrable with respect to (any) Riemannian surface measure, without any assumption on the structure of the characteristic set. We further establish that the horizontal unit normal belongs to $BV_{\\mathrm{loc}}$ and characterize its $W^{1,1}_{\\mathrm{loc}}$ regularity in terms of the vanishing one-dimensional Hausdorff measure of the characteristic set. Finally, we answer an open question by Danielli, Garofalo and Nhieu by constructing a $C^2$ surface with a unique characteristic point whose horizontal mean curvature fails to be locally integrable, thus showing that the additional Hölder regularity cannot, in general, be replaced by $C^2$ regularity.",
+          "categories": [
+            "math.DG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-10T14:26:11Z",
+          "updatedAt": "2026-11-10T14:26:11Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-11T10:36:07.774992+00:00",
+            "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.984433+00:00",
+            "contentHash": "9d051f5fce5509fe037d960f496610c94978415b5af1de0032bbaac0324def1a"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "水平曲率可积性与临界反例",
+          "workSummary": "设S是第一Heisenberg群中的无边界嵌入C^{2,α}曲面，0<α≤1。水平平均曲率H关于任意光滑环境Riemannian度量诱导的面积测度局部可积，允许S非紧或不可定向。用局部定义函数选取的水平单位法向ν属于BV_loc，其分布导数的Cantor部分消失。ν在局部开集U上属于W^{1,1}_loc当且仅当H¹(C(S)∩U)=0。作者另给出C²图面，原点是其唯一特征点，且H关于任意该类面积测度都不局部可积。",
+          "techniques": [
+            "特征点附近的平面向量场正规形V=(u,b(u,v))",
+            "归一化场导数的局部L¹估计",
+            "BV分布导数的绝对连续与跳跃分解",
+            "快速振荡函数及对数积分发散"
+          ],
+          "breakthrough": "正规形将特征集写为{u=0,b(0,v)=0}，归一化场跨该集合的两侧极限相反，由此精确识别阻止W^{1,1}正则性的跳跃部分。正Hölder指数控制经典导数的局部积分，C²反例则以衰减而快速振荡的h保持唯一零点，使∫|h′(y)|log(r/h(y))dy发散。",
+          "limitations": "补读PDF第1–3、5–6、9–13页，渲染第2、11页。结论关于第一Heisenberg群的无边界嵌入曲面，使用光滑Riemannian度量诱导的面积和Hausdorff测度。水平单位法向用局部定义函数选取。反例区分C²与C^{2,α}的普遍结论，未给出C²图面的完整可积性判据。未逐式核验全部估计或独立验证完整证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第13页作者明确披露ChatGPT 6用于语言编辑、修订以及发展第7节反例。该节构造只有一个特征点且水平平均曲率不局部可积的C²图面，属于论文具体核心结果，记录ideas及writing。数学和参考文献由作者复核。该页llm候选来自all mathematical的拼接。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14137v1 · PDF 第13页AI statement，结合第11–12页§7反例核对，全文13页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:44:15.870493+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14137v1",
+            "contentHash": "03a206449dae05daa0b1e8f45cb0f9c6888d58f44b0d237797500433b31c3956",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页作者明确披露ChatGPT 6用于语言编辑、修订以及发展第7节反例。该节构造只有一个特征点且水平平均曲率不局部可积的C²图面，属于论文具体核心结果，记录ideas及writing。数学和参考文献由作者复核。该页llm候选来自all mathematical的拼接。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "ddb66f90845a9a176008d44d40372e180b97c8cdc36879fbca5dff386fc62d9a"
+          },
+          "aiUsage": [
+            "ideas",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "特征点附近的曲率奇性、BV与临界反例对亚黎曼几何分析直接相关。"
+        },
+        "analysisBasis": {
+          "abstract": "We investigate the local integrability of the horizontal mean curvature near characteristic points of surfaces in the first Heisenberg group. We prove that, for every embedded surface of class $C^{2,\\alpha}$, with $\\alpha>0$, the horizontal mean curvature is locally integrable with respect to (any) Riemannian surface measure, without any assumption on the structure of the characteristic set. We further establish that the horizontal unit normal belongs to $BV_{\\mathrm{loc}}$ and characterize its $W^{1,1}_{\\mathrm{loc}}$ regularity in terms of the vanishing one-dimensional Hausdorff measure of the characteristic set. Finally, we answer an open question by Danielli, Garofalo and Nhieu by constructing a $C^2$ surface with a unique characteristic point whose horizontal mean curvature fails to be locally integrable, thus showing that the additional Hölder regularity cannot, in general, be replaced by $C^2$ regularity.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

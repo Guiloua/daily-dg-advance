@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14005",
+  "slug": "2611.14005",
+  "latest": {
+    "arxivId": "2611.14005",
+    "metadata": {
+      "title": "Singular points of envelopes and offsets: a transition from 2D to 3D",
+      "authors": [
+        "Thierry Dana-Picard",
+        "Arie Haenel",
+        "Daniel Tsirkin"
+      ],
+      "abstract": "We recall properties of the offsets of a (plane) kiss curve and their singularities, then we make a transition to 3D, considering the surface obtained by revolution of the kiss curve about one of its axes. When pos?sible, geometric constructions using automated methods are performed. This induces a need to focus on algebraic computations. Networking be?tween different kinds of software is of utmost importance, in order to use their respective strengths (dynamic geometry, dragging points, strong al?gebraic computations, etc.). A core difference between the 2D and 3D situations is that automated commands existing in 2D are not available in 3D. This makes the DGS less relevant in 3D than in 2D. In 3D, most of the work must be performed with the CAS. The singular points of a kiss curve in the plane are tacnodes (cusps) and crunodes (self-intersection). The singularities are not isolated anymore and cuspidal edges appear. In this setting, implicitization is a heavy endeavour and we need another technology, related to AI; we describe this briefly. The 2D activities have been proposed to in-service teachers learning towards an advanced degree.",
+      "categories": [
+        "math.DG",
+        "math.AG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-10T12:45:12Z",
+      "updatedAt": "2026-11-10T12:45:12Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-11T10:35:56.403928+00:00",
+        "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.983038+00:00",
+        "contentHash": "85f077ae29f42c1d7225963e9694eab65df6a27fd73b28a5f0be3f45a16fa236"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "平面偏移到旋转曲面案例",
+      "workSummary": "作者从平面kiss曲线的偏移与奇点出发，研究绕其一条轴旋转所得曲面上的对应问题。文章比较二维与三维的构造，讨论自交、尖点类型和出现的尖棱，并说明三维隐式化的计算困难，以及动态几何和计算机代数软件如何配合。摘要另提到一种与AI相关的技术用于应对隐式化，具体用法需见全文。",
+      "techniques": [
+        "偏移与包络几何",
+        "旋转曲面和奇异集分析",
+        "动态几何、计算机代数与隐式化"
+      ],
+      "breakthrough": "用一个可视化例子展示从孤立的平面奇点到三维尖棱等非孤立奇异现象的变化。",
+      "limitations": "研究聚焦kiss曲线和由它生成的旋转曲面，二维活动还用于教师进修。摘要没有给出一般包络奇点分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第10页脚注4明确说明作者与接入SymPy的Claude 4.5交互开发计算方法和实现脚本，系统提出简化参数消元的关键代换。该具体核心计算路线记录ideas及computation。第15页§5.1另披露试用多个系统计算包络和偏移，经反复调整后采用其中一个，记录exploration。第1–2页概述与第15–16页参考文献单独不能确定自用，Lastra是作者姓名。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14005v1 · PDF 第10页脚注4及第15页§5.1 Using AI，全文17页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:43:03.712450+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14005v1",
+        "contentHash": "95b0386ababfc2c514dc617a041dfe6937f94c8ac1bf0594da10fe6af10cfc2b",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页脚注4明确说明作者与接入SymPy的Claude 4.5交互开发计算方法和实现脚本，系统提出简化参数消元的关键代换。该具体核心计算路线记录ideas及computation。第15页§5.1另披露试用多个系统计算包络和偏移，经反复调整后采用其中一个，记录exploration。第1–2页概述与第15–16页参考文献单独不能确定自用，Lastra是作者姓名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "f9829f1736841d635f01222a0784684c3c7ae0c42c7c6a2562f00dbe07a971e0"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas"
+      ],
+      "priorityScore": 44,
+      "priorityReason": "作为几何构造和计算工具的案例有参考价值，与曲率比较或演化定理的关联较间接。",
+      "lowPriorityReason": "作为几何构造和计算工具的案例有参考价值，与曲率比较或演化定理的关联较间接。"
+    },
+    "analysisBasis": {
+      "abstract": "We recall properties of the offsets of a (plane) kiss curve and their singularities, then we make a transition to 3D, considering the surface obtained by revolution of the kiss curve about one of its axes. When pos?sible, geometric constructions using automated methods are performed. This induces a need to focus on algebraic computations. Networking be?tween different kinds of software is of utmost importance, in order to use their respective strengths (dynamic geometry, dragging points, strong al?gebraic computations, etc.). A core difference between the 2D and 3D situations is that automated commands existing in 2D are not available in 3D. This makes the DGS less relevant in 3D than in 2D. In 3D, most of the work must be performed with the CAS. The singular points of a kiss curve in the plane are tacnodes (cusps) and crunodes (self-intersection). The singularities are not isolated anymore and cuspidal edges appear. In this setting, implicitization is a heavy endeavour and we need another technology, related to AI; we describe this briefly. The 2D activities have been proposed to in-service teachers learning towards an advanced degree.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14005",
+        "metadata": {
+          "title": "Singular points of envelopes and offsets: a transition from 2D to 3D",
+          "authors": [
+            "Thierry Dana-Picard",
+            "Arie Haenel",
+            "Daniel Tsirkin"
+          ],
+          "abstract": "We recall properties of the offsets of a (plane) kiss curve and their singularities, then we make a transition to 3D, considering the surface obtained by revolution of the kiss curve about one of its axes. When pos?sible, geometric constructions using automated methods are performed. This induces a need to focus on algebraic computations. Networking be?tween different kinds of software is of utmost importance, in order to use their respective strengths (dynamic geometry, dragging points, strong al?gebraic computations, etc.). A core difference between the 2D and 3D situations is that automated commands existing in 2D are not available in 3D. This makes the DGS less relevant in 3D than in 2D. In 3D, most of the work must be performed with the CAS. The singular points of a kiss curve in the plane are tacnodes (cusps) and crunodes (self-intersection). The singularities are not isolated anymore and cuspidal edges appear. In this setting, implicitization is a heavy endeavour and we need another technology, related to AI; we describe this briefly. The 2D activities have been proposed to in-service teachers learning towards an advanced degree.",
+          "categories": [
+            "math.DG",
+            "math.AG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-10T12:45:12Z",
+          "updatedAt": "2026-11-10T12:45:12Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-11T10:35:56.403928+00:00",
+            "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.983038+00:00",
+            "contentHash": "85f077ae29f42c1d7225963e9694eab65df6a27fd73b28a5f0be3f45a16fa236"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "平面偏移到旋转曲面案例",
+          "workSummary": "作者从平面kiss曲线的偏移与奇点出发，研究绕其一条轴旋转所得曲面上的对应问题。文章比较二维与三维的构造，讨论自交、尖点类型和出现的尖棱，并说明三维隐式化的计算困难，以及动态几何和计算机代数软件如何配合。摘要另提到一种与AI相关的技术用于应对隐式化，具体用法需见全文。",
+          "techniques": [
+            "偏移与包络几何",
+            "旋转曲面和奇异集分析",
+            "动态几何、计算机代数与隐式化"
+          ],
+          "breakthrough": "用一个可视化例子展示从孤立的平面奇点到三维尖棱等非孤立奇异现象的变化。",
+          "limitations": "研究聚焦kiss曲线和由它生成的旋转曲面，二维活动还用于教师进修。摘要没有给出一般包络奇点分类。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第10页脚注4明确说明作者与接入SymPy的Claude 4.5交互开发计算方法和实现脚本，系统提出简化参数消元的关键代换。该具体核心计算路线记录ideas及computation。第15页§5.1另披露试用多个系统计算包络和偏移，经反复调整后采用其中一个，记录exploration。第1–2页概述与第15–16页参考文献单独不能确定自用，Lastra是作者姓名。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14005v1 · PDF 第10页脚注4及第15页§5.1 Using AI，全文17页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:43:03.712450+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14005v1",
+            "contentHash": "95b0386ababfc2c514dc617a041dfe6937f94c8ac1bf0594da10fe6af10cfc2b",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页脚注4明确说明作者与接入SymPy的Claude 4.5交互开发计算方法和实现脚本，系统提出简化参数消元的关键代换。该具体核心计算路线记录ideas及computation。第15页§5.1另披露试用多个系统计算包络和偏移，经反复调整后采用其中一个，记录exploration。第1–2页概述与第15–16页参考文献单独不能确定自用，Lastra是作者姓名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "f9829f1736841d635f01222a0784684c3c7ae0c42c7c6a2562f00dbe07a971e0"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas"
+          ],
+          "priorityScore": 44,
+          "priorityReason": "作为几何构造和计算工具的案例有参考价值，与曲率比较或演化定理的关联较间接。",
+          "lowPriorityReason": "作为几何构造和计算工具的案例有参考价值，与曲率比较或演化定理的关联较间接。"
+        },
+        "analysisBasis": {
+          "abstract": "We recall properties of the offsets of a (plane) kiss curve and their singularities, then we make a transition to 3D, considering the surface obtained by revolution of the kiss curve about one of its axes. When pos?sible, geometric constructions using automated methods are performed. This induces a need to focus on algebraic computations. Networking be?tween different kinds of software is of utmost importance, in order to use their respective strengths (dynamic geometry, dragging points, strong al?gebraic computations, etc.). A core difference between the 2D and 3D situations is that automated commands existing in 2D are not available in 3D. This makes the DGS less relevant in 3D than in 2D. In 3D, most of the work must be performed with the CAS. The singular points of a kiss curve in the plane are tacnodes (cusps) and crunodes (self-intersection). The singularities are not isolated anymore and cuspidal edges appear. In this setting, implicitization is a heavy endeavour and we need another technology, related to AI; we describe this briefly. The 2D activities have been proposed to in-service teachers learning towards an advanced degree.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14277",
+  "slug": "2611.14277",
+  "latest": {
+    "arxivId": "2611.14277",
+    "metadata": {
+      "title": "Thales's theorem in higher dimensions",
+      "authors": [
+        "Jan Pavlík"
+      ],
+      "abstract": "In the Euclidean plane, Thales's theorem is equivalent to the statement that a quadrilateral with two opposite right angles has a circumscribed circle. We generalize the latter to higher dimensions: a convex polytope with two distinguished vertices, the \\emph{poles}, such that the faces spanned by the two poles are perpendicular, is inscribed in the sphere whose diameter joins its poles. These \\emph{orthogonally bipolar} polytopes are exactly the bipolar polytopes of a companion paper that arise as cutouts by orthogonal projections. As an application we show that for a polytope $P$ and a point $B$, the balls with diameters $[V,B]$, $V$ a vertex of $P$, cover $P$, and that the power diagram of their boundary spheres refines this covering to a tiling. Further, we investigate the properties of orthogonally bipolar polytopes, their characterization, and their application to tilings: in dimension three, the cutouts of $P$ by the orthogonal projections of $B$ onto its faces tile $P$ by orthogonally bipolar polytopes exactly when every such projection lies in the relative interior of its face. Finally, we propose an interpretation of the topic in political science.",
+      "categories": [
+        "math.MG",
+        "math.CO"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "23 pages, 6 figures",
+      "version": 1,
+      "submittedAt": "2026-11-10T16:19:58Z",
+      "updatedAt": "2026-11-10T16:19:58Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-11T10:36:07.774992+00:00",
+        "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.988379+00:00",
+        "contentHash": "3a6833eb0a5d2de25a76346978ff693d01679ee2623d345dc98bfc25897cccfc"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "高维 Thales 定理与正交双极多胞形",
+      "workSummary": "在欧氏凸多胞形中选两个顶点作极点。满足论文的正交双极面条件时，多胞形内接于以极点连线为直径的球。对任意点 B，由各顶点 V 和 B 确定的直径球覆盖多胞形，其幂图将覆盖细化为铺砌。",
+      "techniques": [
+        "正交双极多胞形",
+        "正交投影切块",
+        "球幂图",
+        "凸多胞形铺砌"
+      ],
+      "breakthrough": "将平面直角四边形的共圆判据推广到指定高维凸多胞形，并给出三维投影切块产生正交双极铺砌的充要条件。",
+      "limitations": "三维铺砌充要条件要求 B 向各面作正交投影所得点均处于对应面的相对内部。第7–9页定义与定理指出，正交双极性包含面格结构与指定面垂直性，内接球的逆命题在三维已有反例。数学解读以摘要及上述陈述为依据。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第22页声明使用 Anthropic Claude 讨论及检查证明、查找文献、建议改写和重组、进行数值实验，并从精确几何数据生成图形 TikZ 代码。作者称核对了全部结果、证明、文献和图形。其他页的 O1、O3 是正交双极多胞形的条件编号。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14277v1 · PDF 第22页，Use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:40:39.043481+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14277v1",
+        "contentHash": "558dcdf03b3f3b4e8a924ec760301ed629690fb781dfe4fbc5d7b7dcf46b2fcd",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第22页声明使用 Anthropic Claude 讨论及检查证明、查找文献、建议改写和重组、进行数值实验，并从精确几何数据生成图形 TikZ 代码。作者称核对了全部结果、证明、文献和图形。其他页的 O1、O3 是正交双极多胞形的条件编号。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d18cc0e95e635a24f1830d181458c763caa31ec85c32fed60438a5a71e2078c6"
+      },
+      "aiUsage": [
+        "computation",
+        "literature",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 67,
+      "priorityReason": "欧氏凸几何中清晰的内接球判据和铺砌构造。"
+    },
+    "analysisBasis": {
+      "abstract": "In the Euclidean plane, Thales's theorem is equivalent to the statement that a quadrilateral with two opposite right angles has a circumscribed circle. We generalize the latter to higher dimensions: a convex polytope with two distinguished vertices, the \\emph{poles}, such that the faces spanned by the two poles are perpendicular, is inscribed in the sphere whose diameter joins its poles. These \\emph{orthogonally bipolar} polytopes are exactly the bipolar polytopes of a companion paper that arise as cutouts by orthogonal projections. As an application we show that for a polytope $P$ and a point $B$, the balls with diameters $[V,B]$, $V$ a vertex of $P$, cover $P$, and that the power diagram of their boundary spheres refines this covering to a tiling. Further, we investigate the properties of orthogonally bipolar polytopes, their characterization, and their application to tilings: in dimension three, the cutouts of $P$ by the orthogonal projections of $B$ onto its faces tile $P$ by orthogonally bipolar polytopes exactly when every such projection lies in the relative interior of its face. Finally, we propose an interpretation of the topic in political science.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14277",
+        "metadata": {
+          "title": "Thales's theorem in higher dimensions",
+          "authors": [
+            "Jan Pavlík"
+          ],
+          "abstract": "In the Euclidean plane, Thales's theorem is equivalent to the statement that a quadrilateral with two opposite right angles has a circumscribed circle. We generalize the latter to higher dimensions: a convex polytope with two distinguished vertices, the \\emph{poles}, such that the faces spanned by the two poles are perpendicular, is inscribed in the sphere whose diameter joins its poles. These \\emph{orthogonally bipolar} polytopes are exactly the bipolar polytopes of a companion paper that arise as cutouts by orthogonal projections. As an application we show that for a polytope $P$ and a point $B$, the balls with diameters $[V,B]$, $V$ a vertex of $P$, cover $P$, and that the power diagram of their boundary spheres refines this covering to a tiling. Further, we investigate the properties of orthogonally bipolar polytopes, their characterization, and their application to tilings: in dimension three, the cutouts of $P$ by the orthogonal projections of $B$ onto its faces tile $P$ by orthogonally bipolar polytopes exactly when every such projection lies in the relative interior of its face. Finally, we propose an interpretation of the topic in political science.",
+          "categories": [
+            "math.MG",
+            "math.CO"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "23 pages, 6 figures",
+          "version": 1,
+          "submittedAt": "2026-11-10T16:19:58Z",
+          "updatedAt": "2026-11-10T16:19:58Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-11T10:36:07.774992+00:00",
+            "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.988379+00:00",
+            "contentHash": "3a6833eb0a5d2de25a76346978ff693d01679ee2623d345dc98bfc25897cccfc"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "高维 Thales 定理与正交双极多胞形",
+          "workSummary": "在欧氏凸多胞形中选两个顶点作极点。满足论文的正交双极面条件时，多胞形内接于以极点连线为直径的球。对任意点 B，由各顶点 V 和 B 确定的直径球覆盖多胞形，其幂图将覆盖细化为铺砌。",
+          "techniques": [
+            "正交双极多胞形",
+            "正交投影切块",
+            "球幂图",
+            "凸多胞形铺砌"
+          ],
+          "breakthrough": "将平面直角四边形的共圆判据推广到指定高维凸多胞形，并给出三维投影切块产生正交双极铺砌的充要条件。",
+          "limitations": "三维铺砌充要条件要求 B 向各面作正交投影所得点均处于对应面的相对内部。第7–9页定义与定理指出，正交双极性包含面格结构与指定面垂直性，内接球的逆命题在三维已有反例。数学解读以摘要及上述陈述为依据。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第22页声明使用 Anthropic Claude 讨论及检查证明、查找文献、建议改写和重组、进行数值实验，并从精确几何数据生成图形 TikZ 代码。作者称核对了全部结果、证明、文献和图形。其他页的 O1、O3 是正交双极多胞形的条件编号。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14277v1 · PDF 第22页，Use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:40:39.043481+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14277v1",
+            "contentHash": "558dcdf03b3f3b4e8a924ec760301ed629690fb781dfe4fbc5d7b7dcf46b2fcd",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第22页声明使用 Anthropic Claude 讨论及检查证明、查找文献、建议改写和重组、进行数值实验，并从精确几何数据生成图形 TikZ 代码。作者称核对了全部结果、证明、文献和图形。其他页的 O1、O3 是正交双极多胞形的条件编号。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d18cc0e95e635a24f1830d181458c763caa31ec85c32fed60438a5a71e2078c6"
+          },
+          "aiUsage": [
+            "computation",
+            "literature",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 67,
+          "priorityReason": "欧氏凸几何中清晰的内接球判据和铺砌构造。"
+        },
+        "analysisBasis": {
+          "abstract": "In the Euclidean plane, Thales's theorem is equivalent to the statement that a quadrilateral with two opposite right angles has a circumscribed circle. We generalize the latter to higher dimensions: a convex polytope with two distinguished vertices, the \\emph{poles}, such that the faces spanned by the two poles are perpendicular, is inscribed in the sphere whose diameter joins its poles. These \\emph{orthogonally bipolar} polytopes are exactly the bipolar polytopes of a companion paper that arise as cutouts by orthogonal projections. As an application we show that for a polytope $P$ and a point $B$, the balls with diameters $[V,B]$, $V$ a vertex of $P$, cover $P$, and that the power diagram of their boundary spheres refines this covering to a tiling. Further, we investigate the properties of orthogonally bipolar polytopes, their characterization, and their application to tilings: in dimension three, the cutouts of $P$ by the orthogonal projections of $B$ onto its faces tile $P$ by orthogonally bipolar polytopes exactly when every such projection lies in the relative interior of its face. Finally, we propose an interpretation of the topic in political science.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

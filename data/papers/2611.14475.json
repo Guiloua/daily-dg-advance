@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14475",
+  "slug": "2611.14475",
+  "latest": {
+    "arxivId": "2611.14475",
+    "metadata": {
+      "title": "Explicit restricted isometries with $k=m^{2/3-o(1)}$",
+      "authors": [
+        "Christian Kümmerle",
+        "Dustin G. Mixon"
+      ],
+      "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $\\delta_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
+      "categories": [
+        "math.FA",
+        "cs.IT",
+        "math.CO",
+        "math.MG"
+      ],
+      "primaryCategory": "math.FA",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-11-10T18:37:57Z",
+      "updatedAt": "2026-11-10T18:37:57Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-11T10:36:07.774992+00:00",
+        "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.991397+00:00",
+        "contentHash": "b9018a861a9e640e97f043bb9abc7b21a00d6c2d73d50892a01dcbcdbed615f5"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "显式 RIP 达到 m^(2/3−o(1)) 稀疏阶",
+      "workSummary": "构造实 m×n 矩阵族，m→∞、m/n→0、RIP 常数 δ_k→0，稀疏阶 k=m^(2/3−o(1))。用 Gershgorin 圆盘定理和 flat RIP 将问题归约为强正则图的大顶点集选择，使其中任意小子集诱导边数受控，再应用 Zahl 的关联几何结果。",
+      "techniques": [
+        "Gershgorin 圆盘定理",
+        "flat RIP",
+        "强正则图",
+        "关联几何",
+        "Gram 矩阵逐项绝对值"
+      ],
+      "breakthrough": "仅使用 Gram 矩阵逐项绝对值仍超过通常所称 m^1/2 障碍。作者给出该类证明的 m^2/3 屏障，并分析本构造同阶限制。",
+      "limitations": "m^2/3 屏障针对论文限定的逐项绝对值证明方法与具体构造。结论采用指数损失 o(1) 的渐近稀疏阶。第13页报告 Lean 4 形式化覆盖定理、引理与命题，构造运行时间除外。数学解读依据摘要及该声明，形式化仓库和整篇证明待独立核验。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第13页将定理1中显式 RIP 矩阵构造的初始证明归于 GPT-6 Astra 一次生成。作者在消化证明及与 ChatGPT 的长讨论中提炼 Gershgorin–flat RIP 混合估计、识别 2/3 障碍并探索二距紧框架子框架。作者使用 ChatGPT 初稿，完全重写后再用 ChatGPT 与 Opus 5.5 获取反馈。Lean 4 形式化由 Opus 5.5 调度 GPT-6.1 Sol 与 GPT-6 Astra 代理完成，论文声称定理、引理与命题均机器检查，包括所用 Zahl 定理特例。构造运行时间不在形式化范围内。作者称核对全部主张、引文与计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14475v1 · PDF 第13页，AI and formalization declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:44:27.578872+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14475v1",
+        "contentHash": "6166f8eeacac986d6326d0b7e92396129ce9e52a426a0ec0b8b9f6ac12658942",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页将定理1中显式 RIP 矩阵构造的初始证明归于 GPT-6 Astra 一次生成。作者在消化证明及与 ChatGPT 的长讨论中提炼 Gershgorin–flat RIP 混合估计、识别 2/3 障碍并探索二距紧框架子框架。作者使用 ChatGPT 初稿，完全重写后再用 ChatGPT 与 Opus 5.5 获取反馈。Lean 4 形式化由 Opus 5.5 调度 GPT-6.1 Sol 与 GPT-6 Astra 代理完成，论文声称定理、引理与命题均机器检查，包括所用 Zahl 定理特例。构造运行时间不在形式化范围内。作者称核对全部主张、引文与计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "35e5fc0c5a9c0e460fa09d475d0057f0897325078790fce0a9d760e0c7bbea9f"
+      },
+      "aiUsage": [
+        "exploration",
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 75,
+      "priorityReason": "关联几何推进压缩感知的显式矩阵构造。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $\\delta_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14475",
+        "metadata": {
+          "title": "Explicit restricted isometries with $k=m^{2/3-o(1)}$",
+          "authors": [
+            "Christian Kümmerle",
+            "Dustin G. Mixon"
+          ],
+          "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $\\delta_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
+          "categories": [
+            "math.FA",
+            "cs.IT",
+            "math.CO",
+            "math.MG"
+          ],
+          "primaryCategory": "math.FA",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-11-10T18:37:57Z",
+          "updatedAt": "2026-11-10T18:37:57Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-11T10:36:07.774992+00:00",
+            "contentHash": "943e0fbecfd6b9ad4d78f34e08a4176a64280a44575f6f4e6dd206e522ed426e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.991397+00:00",
+            "contentHash": "b9018a861a9e640e97f043bb9abc7b21a00d6c2d73d50892a01dcbcdbed615f5"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "显式 RIP 达到 m^(2/3−o(1)) 稀疏阶",
+          "workSummary": "构造实 m×n 矩阵族，m→∞、m/n→0、RIP 常数 δ_k→0，稀疏阶 k=m^(2/3−o(1))。用 Gershgorin 圆盘定理和 flat RIP 将问题归约为强正则图的大顶点集选择，使其中任意小子集诱导边数受控，再应用 Zahl 的关联几何结果。",
+          "techniques": [
+            "Gershgorin 圆盘定理",
+            "flat RIP",
+            "强正则图",
+            "关联几何",
+            "Gram 矩阵逐项绝对值"
+          ],
+          "breakthrough": "仅使用 Gram 矩阵逐项绝对值仍超过通常所称 m^1/2 障碍。作者给出该类证明的 m^2/3 屏障，并分析本构造同阶限制。",
+          "limitations": "m^2/3 屏障针对论文限定的逐项绝对值证明方法与具体构造。结论采用指数损失 o(1) 的渐近稀疏阶。第13页报告 Lean 4 形式化覆盖定理、引理与命题，构造运行时间除外。数学解读依据摘要及该声明，形式化仓库和整篇证明待独立核验。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第13页将定理1中显式 RIP 矩阵构造的初始证明归于 GPT-6 Astra 一次生成。作者在消化证明及与 ChatGPT 的长讨论中提炼 Gershgorin–flat RIP 混合估计、识别 2/3 障碍并探索二距紧框架子框架。作者使用 ChatGPT 初稿，完全重写后再用 ChatGPT 与 Opus 5.5 获取反馈。Lean 4 形式化由 Opus 5.5 调度 GPT-6.1 Sol 与 GPT-6 Astra 代理完成，论文声称定理、引理与命题均机器检查，包括所用 Zahl 定理特例。构造运行时间不在形式化范围内。作者称核对全部主张、引文与计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14475v1 · PDF 第13页，AI and formalization declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:44:27.578872+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14475v1",
+            "contentHash": "6166f8eeacac986d6326d0b7e92396129ce9e52a426a0ec0b8b9f6ac12658942",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第13页将定理1中显式 RIP 矩阵构造的初始证明归于 GPT-6 Astra 一次生成。作者在消化证明及与 ChatGPT 的长讨论中提炼 Gershgorin–flat RIP 混合估计、识别 2/3 障碍并探索二距紧框架子框架。作者使用 ChatGPT 初稿，完全重写后再用 ChatGPT 与 Opus 5.5 获取反馈。Lean 4 形式化由 Opus 5.5 调度 GPT-6.1 Sol 与 GPT-6 Astra 代理完成，论文声称定理、引理与命题均机器检查，包括所用 Zahl 定理特例。构造运行时间不在形式化范围内。作者称核对全部主张、引文与计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "35e5fc0c5a9c0e460fa09d475d0057f0897325078790fce0a9d760e0c7bbea9f"
+          },
+          "aiUsage": [
+            "exploration",
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 75,
+          "priorityReason": "关联几何推进压缩感知的显式矩阵构造。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $\\delta_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14234",
+  "slug": "2611.14234",
+  "latest": {
+    "arxivId": "2611.14234",
+    "metadata": {
+      "title": "LLM-Assisted Advances in the Ropelength Problem",
+      "authors": [
+        "Alexander Klotz"
+      ],
+      "abstract": "This work summarizes some updates to the ropelength problem, concerning the shortest possible contour length of a unit-thickness knot, that were derived with the assistance of ChatGPT-5.6 Luna. The first of two main results is that the universal lower bound for a knot with crossing number C has been improved from $L\\geq1.105C^{3/4}$ to $L\\geq2.0996C^{3/4}$, achieved by further separating local and global terms in an optimization integral. The second main result is a bound relating ropelength to stick number (s), such that $L\\geq\\pi(s-1)$. This implies stronger lower bounds for the ropelengths of at least 41 torus knots, and a specific class of pretzel knots. Other results include an improved packing-based lower bound for T(Q,Q) links and an optimized standard parameterization for torus knots. There were many problems for which the LLM was unable to render assistance, for example in reducing the numerical coefficients or scalings of known universal upper bounds.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "48 pages, 5 figures",
+      "version": 1,
+      "submittedAt": "2026-11-10T15:46:21Z",
+      "updatedAt": "2026-11-10T15:46:21Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-11T10:36:19.228820+00:00",
+        "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.14234v1",
+        "observedAt": "2026-11-11T10:38:01.006061+00:00",
+        "contentHash": "d1cb042c6eb313f91749ada909c2ec2f3e476d8894c008b1015eacd66b16136a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.987367+00:00",
+        "contentHash": "c069472e03c6e58255986e290cc8dfd328551012852bfe38e884ea6cb849b3de"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "结绳长下界及模型辅助推导",
+      "workSummary": "作者报告单位厚度结的两条下界。第 2 节通过扣除局部管所占的远场环域体积，给出候选系数 2.0996 的 C³⁄⁴ 下界。第 3 节利用保持环境同痕的厚曲线多边形近似，推得非平凡结的绳长 L≥π(s−1)，其中 s 是棍数。",
+      "techniques": [
+        "Buck–Simon 拓扑不等式与远场分离",
+        "局部管与远场管体积的扣除",
+        "一元数值积分和极值估计",
+        "保持结型的厚曲线多边形近似"
+      ],
+      "breakthrough": "将已有厚曲线近似的边数上界与棍数定义相接，得到可用于环面结和特定 pretzel 结族的下界。作者还给出通用 Buck–Simon 型系数的候选改进。",
+      "limitations": "第 17 页明确交代远场分离与单位管堆积的假设，且 4.673424743… 来自数值积分和优化，尚缺覆盖全参数区间的认证。将其上舍入至 4.674 仍需证明这是全局上界。棍数下界依赖第 19 页引用的保结型多边形近似，交替环面结的推广在第 23 页仍未证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT-5.6 Luna 通过文献回顾发现把厚曲线多边形近似与棍数相连的想法，生成多项推导及大部分后续文字，并辅助制图、数值积分和 Python 复算。Microsoft Copilot 提供模拟评阅并指出数值认证问题。作者编辑模型草稿并记录未解决方向及误报。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14234v1 · PDF 第1–2、5、7–8、10、16–17、23、25、46、48页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:38:01.006061+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14234v1",
+        "contentHash": "d1cb042c6eb313f91749ada909c2ec2f3e476d8894c008b1015eacd66b16136a",
+        "pages": 48,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT-5.6 Luna 通过文献回顾发现把厚曲线多边形近似与棍数相连的想法，生成多项推导及大部分后续文字，并辅助制图、数值积分和 Python 复算。Microsoft Copilot 提供模拟评阅并指出数值认证问题。作者编辑模型草稿并记录未解决方向及误报。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "fa1cf9336124dca530cd32e5c6bef8af6da5ce7068790a294bab1c6149c528f8"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 77,
+      "priorityReason": "棍数关联有可检查的论证路线，通用下界的新数值系数仍需认证。"
+    },
+    "analysisBasis": {
+      "abstract": "This work summarizes some updates to the ropelength problem, concerning the shortest possible contour length of a unit-thickness knot, that were derived with the assistance of ChatGPT-5.6 Luna. The first of two main results is that the universal lower bound for a knot with crossing number C has been improved from $L\\geq1.105C^{3/4}$ to $L\\geq2.0996C^{3/4}$, achieved by further separating local and global terms in an optimization integral. The second main result is a bound relating ropelength to stick number (s), such that $L\\geq\\pi(s-1)$. This implies stronger lower bounds for the ropelengths of at least 41 torus knots, and a specific class of pretzel knots. Other results include an improved packing-based lower bound for T(Q,Q) links and an optimized standard parameterization for torus knots. There were many problems for which the LLM was unable to render assistance, for example in reducing the numerical coefficients or scalings of known universal upper bounds.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14234",
+        "metadata": {
+          "title": "LLM-Assisted Advances in the Ropelength Problem",
+          "authors": [
+            "Alexander Klotz"
+          ],
+          "abstract": "This work summarizes some updates to the ropelength problem, concerning the shortest possible contour length of a unit-thickness knot, that were derived with the assistance of ChatGPT-5.6 Luna. The first of two main results is that the universal lower bound for a knot with crossing number C has been improved from $L\\geq1.105C^{3/4}$ to $L\\geq2.0996C^{3/4}$, achieved by further separating local and global terms in an optimization integral. The second main result is a bound relating ropelength to stick number (s), such that $L\\geq\\pi(s-1)$. This implies stronger lower bounds for the ropelengths of at least 41 torus knots, and a specific class of pretzel knots. Other results include an improved packing-based lower bound for T(Q,Q) links and an optimized standard parameterization for torus knots. There were many problems for which the LLM was unable to render assistance, for example in reducing the numerical coefficients or scalings of known universal upper bounds.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "48 pages, 5 figures",
+          "version": 1,
+          "submittedAt": "2026-11-10T15:46:21Z",
+          "updatedAt": "2026-11-10T15:46:21Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-11T10:36:19.228820+00:00",
+            "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.14234v1",
+            "observedAt": "2026-11-11T10:38:01.006061+00:00",
+            "contentHash": "d1cb042c6eb313f91749ada909c2ec2f3e476d8894c008b1015eacd66b16136a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.987367+00:00",
+            "contentHash": "c069472e03c6e58255986e290cc8dfd328551012852bfe38e884ea6cb849b3de"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "结绳长下界及模型辅助推导",
+          "workSummary": "作者报告单位厚度结的两条下界。第 2 节通过扣除局部管所占的远场环域体积，给出候选系数 2.0996 的 C³⁄⁴ 下界。第 3 节利用保持环境同痕的厚曲线多边形近似，推得非平凡结的绳长 L≥π(s−1)，其中 s 是棍数。",
+          "techniques": [
+            "Buck–Simon 拓扑不等式与远场分离",
+            "局部管与远场管体积的扣除",
+            "一元数值积分和极值估计",
+            "保持结型的厚曲线多边形近似"
+          ],
+          "breakthrough": "将已有厚曲线近似的边数上界与棍数定义相接，得到可用于环面结和特定 pretzel 结族的下界。作者还给出通用 Buck–Simon 型系数的候选改进。",
+          "limitations": "第 17 页明确交代远场分离与单位管堆积的假设，且 4.673424743… 来自数值积分和优化，尚缺覆盖全参数区间的认证。将其上舍入至 4.674 仍需证明这是全局上界。棍数下界依赖第 19 页引用的保结型多边形近似，交替环面结的推广在第 23 页仍未证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT-5.6 Luna 通过文献回顾发现把厚曲线多边形近似与棍数相连的想法，生成多项推导及大部分后续文字，并辅助制图、数值积分和 Python 复算。Microsoft Copilot 提供模拟评阅并指出数值认证问题。作者编辑模型草稿并记录未解决方向及误报。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14234v1 · PDF 第1–2、5、7–8、10、16–17、23、25、46、48页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:38:01.006061+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14234v1",
+            "contentHash": "d1cb042c6eb313f91749ada909c2ec2f3e476d8894c008b1015eacd66b16136a",
+            "pages": 48,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT-5.6 Luna 通过文献回顾发现把厚曲线多边形近似与棍数相连的想法，生成多项推导及大部分后续文字，并辅助制图、数值积分和 Python 复算。Microsoft Copilot 提供模拟评阅并指出数值认证问题。作者编辑模型草稿并记录未解决方向及误报。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "fa1cf9336124dca530cd32e5c6bef8af6da5ce7068790a294bab1c6149c528f8"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 77,
+          "priorityReason": "棍数关联有可检查的论证路线，通用下界的新数值系数仍需认证。"
+        },
+        "analysisBasis": {
+          "abstract": "This work summarizes some updates to the ropelength problem, concerning the shortest possible contour length of a unit-thickness knot, that were derived with the assistance of ChatGPT-5.6 Luna. The first of two main results is that the universal lower bound for a knot with crossing number C has been improved from $L\\geq1.105C^{3/4}$ to $L\\geq2.0996C^{3/4}$, achieved by further separating local and global terms in an optimization integral. The second main result is a bound relating ropelength to stick number (s), such that $L\\geq\\pi(s-1)$. This implies stronger lower bounds for the ropelengths of at least 41 torus knots, and a specific class of pretzel knots. Other results include an improved packing-based lower bound for T(Q,Q) links and an optimized standard parameterization for torus knots. There were many problems for which the LLM was unable to render assistance, for example in reducing the numerical coefficients or scalings of known universal upper bounds.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

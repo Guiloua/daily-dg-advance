@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.14302",
+  "slug": "2611.14302",
+  "latest": {
+    "arxivId": "2611.14302",
+    "metadata": {
+      "title": "Anosov representations from cyclic Higgs bundles",
+      "authors": [
+        "Samuel Bronstein",
+        "Colin Davalo",
+        "Qiongling Li"
+      ],
+      "abstract": "For every complex simple Lie group G (not of type $E_8$) we construct the minimal Slodowy slice, which is a half-dimensional slice in the character variety of a closed surface group into G, containing the composition of Fuchsian representations with the minimal representation of $\\mathfrak{sl}_2$ in G and invariant under the mapping class group action. This slice is defined via cyclic Higgs bundles, and we show that when G is not of type $E_8$, the corresponding representations are Anosov, so in particular discrete and faithful, and dominate some Fuchsian representation. For each of these Higgs bundles, we consider the equivariant harmonic map to the symmetric space, and we show it is an embedding and a quasi-isometric embedding with regard to the induced metric. From the cyclicity of these Higgs bundles we are also able to construct an auxiliary harmonic map to a pseudoriemannian symmetric space $G/G^\\sigma$ which is also an embedding. Our techniques also apply to harmonic Higgs bundles over the unit disk satisfying a certain completeness condition. These techniques also apply to two other families of cyclic Higgs bundles.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "77 pages, comments welcome",
+      "version": 1,
+      "submittedAt": "2026-11-10T16:35:22Z",
+      "updatedAt": "2026-11-10T16:35:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-11T10:36:19.228820+00:00",
+        "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:53.988825+00:00",
+        "contentHash": "062edf9ac4f1d9eca18c977b203a046da0c69a7c9f78bfa8b376c56ff61fd6c9"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "循环 Higgs 丛的最小 Slodowy 切片与 Anosov 表示",
+      "workSummary": "对中心有限、E₈ 型以外的复单李群 G 和属至少二的闭定向曲面，使用多稳定循环 Higgs 丛构造最小 sl₂ 三元组的受限 Slodowy 切片，随复结构变化所得切片在光滑点半维且在映射类群作用下不变。所得表示对指定抛物子群 Anosov，因而离散忠实，并在指定基本权的 Jordan 长度谱上支配同一复结构的 Fuchsian 表示。",
+      "techniques": [
+        "循环 Higgs 丛",
+        "最小 Slodowy 切片",
+        "非阿贝尔 Hodge 对应",
+        "等变调和映射",
+        "拟黎曼对称空间"
+      ],
+      "breakthrough": "证明相关等变调和映射是嵌入，且相对于诱导度量是拟等距嵌入。循环性还给出到 G/G^σ 的辅助调和嵌入。",
+      "limitations": "主陈述要求受限切片内的多稳定 Higgs 丛，排除 E₈。指定抛物型别随 G 而变。圆盘版本对调和 Higgs 丛另加完备性条件。数学解读以摘要和第3–5页主陈述为依据。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第9页 AI usage 声明将附录 B 的可平行化 sl₂ 三元组分类结果归于 AI 工具，另用工具辅助修补命题5.19、5.25、4.11、4.13的证明缺口、为附录 A 查文献及编辑排版。作者称控制表示的 filled hyperboloids 想法由其本人在与 AI 讨论文献时获得，相关写作及结果验证由作者完成。第43页 minimax 为奇异值刻画。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.14302v1 · PDF 第9页，AI usage，目录见第1页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:41:24.336023+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.14302v1",
+        "contentHash": "596f944f9c9ea964f16fd9b6c7012f64690b64ff048cadc272c2ee36822aa993",
+        "pages": 77,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第9页 AI usage 声明将附录 B 的可平行化 sl₂ 三元组分类结果归于 AI 工具，另用工具辅助修补命题5.19、5.25、4.11、4.13的证明缺口、为附录 A 查文献及编辑排版。作者称控制表示的 filled hyperboloids 想法由其本人在与 AI 讨论文献时获得，相关写作及结果验证由作者完成。第43页 minimax 为奇异值刻画。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dc5b4e587415ba1cea3e3cbe57428008ef3b7d71bc09e20d60993e31f48d5b89"
+      },
+      "aiUsage": [
+        "exploration",
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 90,
+      "priorityReason": "将调和映射的几何控制用于高秩曲面群表示的构造。"
+    },
+    "analysisBasis": {
+      "abstract": "For every complex simple Lie group G (not of type $E_8$) we construct the minimal Slodowy slice, which is a half-dimensional slice in the character variety of a closed surface group into G, containing the composition of Fuchsian representations with the minimal representation of $\\mathfrak{sl}_2$ in G and invariant under the mapping class group action. This slice is defined via cyclic Higgs bundles, and we show that when G is not of type $E_8$, the corresponding representations are Anosov, so in particular discrete and faithful, and dominate some Fuchsian representation. For each of these Higgs bundles, we consider the equivariant harmonic map to the symmetric space, and we show it is an embedding and a quasi-isometric embedding with regard to the induced metric. From the cyclicity of these Higgs bundles we are also able to construct an auxiliary harmonic map to a pseudoriemannian symmetric space $G/G^\\sigma$ which is also an embedding. Our techniques also apply to harmonic Higgs bundles over the unit disk satisfying a certain completeness condition. These techniques also apply to two other families of cyclic Higgs bundles.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.14302",
+        "metadata": {
+          "title": "Anosov representations from cyclic Higgs bundles",
+          "authors": [
+            "Samuel Bronstein",
+            "Colin Davalo",
+            "Qiongling Li"
+          ],
+          "abstract": "For every complex simple Lie group G (not of type $E_8$) we construct the minimal Slodowy slice, which is a half-dimensional slice in the character variety of a closed surface group into G, containing the composition of Fuchsian representations with the minimal representation of $\\mathfrak{sl}_2$ in G and invariant under the mapping class group action. This slice is defined via cyclic Higgs bundles, and we show that when G is not of type $E_8$, the corresponding representations are Anosov, so in particular discrete and faithful, and dominate some Fuchsian representation. For each of these Higgs bundles, we consider the equivariant harmonic map to the symmetric space, and we show it is an embedding and a quasi-isometric embedding with regard to the induced metric. From the cyclicity of these Higgs bundles we are also able to construct an auxiliary harmonic map to a pseudoriemannian symmetric space $G/G^\\sigma$ which is also an embedding. Our techniques also apply to harmonic Higgs bundles over the unit disk satisfying a certain completeness condition. These techniques also apply to two other families of cyclic Higgs bundles.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "77 pages, comments welcome",
+          "version": 1,
+          "submittedAt": "2026-11-10T16:35:22Z",
+          "updatedAt": "2026-11-10T16:35:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-11T10:36:19.228820+00:00",
+            "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:53.988825+00:00",
+            "contentHash": "062edf9ac4f1d9eca18c977b203a046da0c69a7c9f78bfa8b376c56ff61fd6c9"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "循环 Higgs 丛的最小 Slodowy 切片与 Anosov 表示",
+          "workSummary": "对中心有限、E₈ 型以外的复单李群 G 和属至少二的闭定向曲面，使用多稳定循环 Higgs 丛构造最小 sl₂ 三元组的受限 Slodowy 切片，随复结构变化所得切片在光滑点半维且在映射类群作用下不变。所得表示对指定抛物子群 Anosov，因而离散忠实，并在指定基本权的 Jordan 长度谱上支配同一复结构的 Fuchsian 表示。",
+          "techniques": [
+            "循环 Higgs 丛",
+            "最小 Slodowy 切片",
+            "非阿贝尔 Hodge 对应",
+            "等变调和映射",
+            "拟黎曼对称空间"
+          ],
+          "breakthrough": "证明相关等变调和映射是嵌入，且相对于诱导度量是拟等距嵌入。循环性还给出到 G/G^σ 的辅助调和嵌入。",
+          "limitations": "主陈述要求受限切片内的多稳定 Higgs 丛，排除 E₈。指定抛物型别随 G 而变。圆盘版本对调和 Higgs 丛另加完备性条件。数学解读以摘要和第3–5页主陈述为依据。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第9页 AI usage 声明将附录 B 的可平行化 sl₂ 三元组分类结果归于 AI 工具，另用工具辅助修补命题5.19、5.25、4.11、4.13的证明缺口、为附录 A 查文献及编辑排版。作者称控制表示的 filled hyperboloids 想法由其本人在与 AI 讨论文献时获得，相关写作及结果验证由作者完成。第43页 minimax 为奇异值刻画。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.14302v1 · PDF 第9页，AI usage，目录见第1页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:41:24.336023+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.14302v1",
+            "contentHash": "596f944f9c9ea964f16fd9b6c7012f64690b64ff048cadc272c2ee36822aa993",
+            "pages": 77,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第9页 AI usage 声明将附录 B 的可平行化 sl₂ 三元组分类结果归于 AI 工具，另用工具辅助修补命题5.19、5.25、4.11、4.13的证明缺口、为附录 A 查文献及编辑排版。作者称控制表示的 filled hyperboloids 想法由其本人在与 AI 讨论文献时获得，相关写作及结果验证由作者完成。第43页 minimax 为奇异值刻画。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dc5b4e587415ba1cea3e3cbe57428008ef3b7d71bc09e20d60993e31f48d5b89"
+          },
+          "aiUsage": [
+            "exploration",
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 90,
+          "priorityReason": "将调和映射的几何控制用于高秩曲面群表示的构造。"
+        },
+        "analysisBasis": {
+          "abstract": "For every complex simple Lie group G (not of type $E_8$) we construct the minimal Slodowy slice, which is a half-dimensional slice in the character variety of a closed surface group into G, containing the composition of Fuchsian representations with the minimal representation of $\\mathfrak{sl}_2$ in G and invariant under the mapping class group action. This slice is defined via cyclic Higgs bundles, and we show that when G is not of type $E_8$, the corresponding representations are Anosov, so in particular discrete and faithful, and dominate some Fuchsian representation. For each of these Higgs bundles, we consider the equivariant harmonic map to the symmetric space, and we show it is an embedding and a quasi-isometric embedding with regard to the induced metric. From the cyclicity of these Higgs bundles we are also able to construct an auxiliary harmonic map to a pseudoriemannian symmetric space $G/G^\\sigma$ which is also an embedding. Our techniques also apply to harmonic Higgs bundles over the unit disk satisfying a certain completeness condition. These techniques also apply to two other families of cyclic Higgs bundles.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

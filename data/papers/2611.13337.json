@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.13337",
+  "slug": "2611.13337",
+  "latest": {
+    "arxivId": "2611.13337",
+    "metadata": {
+      "title": "VC-Dimension and Generalization in Geometric Machine Learning with Applications to Active Learning",
+      "authors": [
+        "Gokul Bhusal",
+        "Delanna Do",
+        "Ekaterina Merkurjev",
+        "Kevin Miller",
+        "Stephan Wojtowytsch"
+      ],
+      "abstract": "We compute the VC-dimension of metric ball classifiers in the model spaces of Riemannian geometry (Euclidean, spherical, hyperbolic) and present upper and lower bounds on the VC-dimension of metric balls in several other situations, including general normed vector spaces (potentially infinite VC-dimension), vector spaces with $\\ell^p$-norms (VC-dimension grows at least linearly in the dimension, faster than Euclidean for $p=1$), flat tori, and general Riemannian manifolds (arbitrarily large VC-dimension after a conformal change). In several situations where the VC-dimension is large or even infinite, we prove generalization bounds under additional assumptions on the data distribution using covering arguments. Both in the VC-dimension and covering setting, we consider data on low-dimensional subsets of high-dimensional Euclidean spaces. As an application, we consider coverage-based algorithms in active learning.",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.DG"
+      ],
+      "primaryCategory": "stat.ML",
+      "comment": "19 pages + appendices",
+      "version": 1,
+      "submittedAt": "2026-11-09T23:03:22Z",
+      "updatedAt": "2026-11-09T23:03:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-11T10:35:56.403928+00:00",
+        "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:41.689634+00:00",
+        "contentHash": "5b88df347df02181d0adb86a26960341d77bcd483415fbe40ac12880ff6cfdf4"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "几何度量球的 VC 维与覆盖泛化界",
+      "workSummary": "计算欧氏、球面和双曲模型空间中度量球分类器的 VC 维，并给一般赋范空间、ℓᵖ 空间、平坦环面和一般黎曼流形的若干界。",
+      "techniques": [
+        "度量球分类器",
+        "VC 维的上下界",
+        "共形变形",
+        "覆盖数与数据分布",
+        "低维数据及主动学习"
+      ],
+      "breakthrough": "一般赋范空间的 VC 维可为无穷，有限维 ℓᵖ 空间至少线性增长，p=1 的增长快于欧氏情形。黎曼度量可经共形改变得到任意高 VC 维。在若干高维或无穷 VC 维的情形，另借分布假设与覆盖论证给泛化界。",
+      "limitations": "覆盖泛化界依赖额外分布条件。模型空间的精确计算与一般空间的上下界适用范围不同，摘要未逐项给常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第19页 Tool Use 明确 Claude Opus 5.5 校读并标出表述及数学不一致。Claude 帮助寻找 T² 中被度量球打散的五点例、R³ 中被 ℓ¹ 球打散的五点例及附录表4固定半径例，作者与 Claude 共同设计两类乘积空间的下界路线及 Sauer–Shelah 上界论证。记具体构造与论证、核查及校读用途。作者声明全文文字由人撰写。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.13337v1 · PDF 第19页 Tool Use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:43:28.123848+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.13337v1",
+        "contentHash": "542f5031f93e3200afafa13370a7cfb9541fdc2784bd4dc0d0fc57a1b1ba4a53",
+        "pages": 61,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页 Tool Use 明确 Claude Opus 5.5 校读并标出表述及数学不一致。Claude 帮助寻找 T² 中被度量球打散的五点例、R³ 中被 ℓ¹ 球打散的五点例及附录表4固定半径例，作者与 Claude 共同设计两类乘积空间的下界路线及 Sauer–Shelah 上界论证。记具体构造与论证、核查及校读用途。作者声明全文文字由人撰写。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "2e29c8f19ae445825e867c8841f2633400fd7a238f861c7c44b64234b1c0b12f"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 83,
+      "priorityReason": "度量几何结构对学习复杂度的影响较直接。"
+    },
+    "analysisBasis": {
+      "abstract": "We compute the VC-dimension of metric ball classifiers in the model spaces of Riemannian geometry (Euclidean, spherical, hyperbolic) and present upper and lower bounds on the VC-dimension of metric balls in several other situations, including general normed vector spaces (potentially infinite VC-dimension), vector spaces with $\\ell^p$-norms (VC-dimension grows at least linearly in the dimension, faster than Euclidean for $p=1$), flat tori, and general Riemannian manifolds (arbitrarily large VC-dimension after a conformal change). In several situations where the VC-dimension is large or even infinite, we prove generalization bounds under additional assumptions on the data distribution using covering arguments. Both in the VC-dimension and covering setting, we consider data on low-dimensional subsets of high-dimensional Euclidean spaces. As an application, we consider coverage-based algorithms in active learning.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.13337",
+        "metadata": {
+          "title": "VC-Dimension and Generalization in Geometric Machine Learning with Applications to Active Learning",
+          "authors": [
+            "Gokul Bhusal",
+            "Delanna Do",
+            "Ekaterina Merkurjev",
+            "Kevin Miller",
+            "Stephan Wojtowytsch"
+          ],
+          "abstract": "We compute the VC-dimension of metric ball classifiers in the model spaces of Riemannian geometry (Euclidean, spherical, hyperbolic) and present upper and lower bounds on the VC-dimension of metric balls in several other situations, including general normed vector spaces (potentially infinite VC-dimension), vector spaces with $\\ell^p$-norms (VC-dimension grows at least linearly in the dimension, faster than Euclidean for $p=1$), flat tori, and general Riemannian manifolds (arbitrarily large VC-dimension after a conformal change). In several situations where the VC-dimension is large or even infinite, we prove generalization bounds under additional assumptions on the data distribution using covering arguments. Both in the VC-dimension and covering setting, we consider data on low-dimensional subsets of high-dimensional Euclidean spaces. As an application, we consider coverage-based algorithms in active learning.",
+          "categories": [
+            "stat.ML",
+            "cs.LG",
+            "math.DG"
+          ],
+          "primaryCategory": "stat.ML",
+          "comment": "19 pages + appendices",
+          "version": 1,
+          "submittedAt": "2026-11-09T23:03:22Z",
+          "updatedAt": "2026-11-09T23:03:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-11T10:35:56.403928+00:00",
+            "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:41.689634+00:00",
+            "contentHash": "5b88df347df02181d0adb86a26960341d77bcd483415fbe40ac12880ff6cfdf4"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "几何度量球的 VC 维与覆盖泛化界",
+          "workSummary": "计算欧氏、球面和双曲模型空间中度量球分类器的 VC 维，并给一般赋范空间、ℓᵖ 空间、平坦环面和一般黎曼流形的若干界。",
+          "techniques": [
+            "度量球分类器",
+            "VC 维的上下界",
+            "共形变形",
+            "覆盖数与数据分布",
+            "低维数据及主动学习"
+          ],
+          "breakthrough": "一般赋范空间的 VC 维可为无穷，有限维 ℓᵖ 空间至少线性增长，p=1 的增长快于欧氏情形。黎曼度量可经共形改变得到任意高 VC 维。在若干高维或无穷 VC 维的情形，另借分布假设与覆盖论证给泛化界。",
+          "limitations": "覆盖泛化界依赖额外分布条件。模型空间的精确计算与一般空间的上下界适用范围不同，摘要未逐项给常数。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第19页 Tool Use 明确 Claude Opus 5.5 校读并标出表述及数学不一致。Claude 帮助寻找 T² 中被度量球打散的五点例、R³ 中被 ℓ¹ 球打散的五点例及附录表4固定半径例，作者与 Claude 共同设计两类乘积空间的下界路线及 Sauer–Shelah 上界论证。记具体构造与论证、核查及校读用途。作者声明全文文字由人撰写。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.13337v1 · PDF 第19页 Tool Use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:43:28.123848+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.13337v1",
+            "contentHash": "542f5031f93e3200afafa13370a7cfb9541fdc2784bd4dc0d0fc57a1b1ba4a53",
+            "pages": 61,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第19页 Tool Use 明确 Claude Opus 5.5 校读并标出表述及数学不一致。Claude 帮助寻找 T² 中被度量球打散的五点例、R³ 中被 ℓ¹ 球打散的五点例及附录表4固定半径例，作者与 Claude 共同设计两类乘积空间的下界路线及 Sauer–Shelah 上界论证。记具体构造与论证、核查及校读用途。作者声明全文文字由人撰写。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "2e29c8f19ae445825e867c8841f2633400fd7a238f861c7c44b64234b1c0b12f"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 83,
+          "priorityReason": "度量几何结构对学习复杂度的影响较直接。"
+        },
+        "analysisBasis": {
+          "abstract": "We compute the VC-dimension of metric ball classifiers in the model spaces of Riemannian geometry (Euclidean, spherical, hyperbolic) and present upper and lower bounds on the VC-dimension of metric balls in several other situations, including general normed vector spaces (potentially infinite VC-dimension), vector spaces with $\\ell^p$-norms (VC-dimension grows at least linearly in the dimension, faster than Euclidean for $p=1$), flat tori, and general Riemannian manifolds (arbitrarily large VC-dimension after a conformal change). In several situations where the VC-dimension is large or even infinite, we prove generalization bounds under additional assumptions on the data distribution using covering arguments. Both in the VC-dimension and covering setting, we consider data on low-dimensional subsets of high-dimensional Euclidean spaces. As an application, we consider coverage-based algorithms in active learning.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

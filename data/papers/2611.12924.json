@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12924",
+  "slug": "2611.12924",
+  "latest": {
+    "arxivId": "2611.12924",
+    "metadata": {
+      "title": "Conformally Sasakian manifolds and the $k$-nullity condition",
+      "authors": [
+        "Fortuné Massamba",
+        "Pontsho Moile"
+      ],
+      "abstract": "We study almost contact metric manifolds that are locally conformal to Sasakian manifolds in the normalization of Olszak. We show that the local conformal factors are uniquely determined by the structure; consequently, every such manifold is globally conformal to a Sasakian manifold and its Lee form is exact. We then investigate the $k$-nullity condition $ R(X,Y)\\xi=k\\{\\eta(Y)X-\\eta(X)Y\\}. $ We prove that a smooth nullity function is necessarily constant, including in dimension three. Moreover, the $k$-nullity condition is equivalent to the assertion that $f=\\exp(\\sigma)$ satisfies $ \\mathrm{Hess}_g f=-(kf+C)g $ for a constant $C$, and hence to the fact that the conformal metrics $g$ and $g_0=\\exp(-2\\sigma)g$ have the same geodesic circles. We derive the range of the conformal factor, a local warped-product description, and a classification in the complete case: when the Lee form is nonzero, the complete metric is a simply connected space form of curvature $k$. Finally, we construct incomplete examples of nonconstant sectional curvature in every dimension $2n+1\\geq 5$.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "26 pages",
+      "version": 1,
+      "submittedAt": "2026-11-01T20:07:38Z",
+      "updatedAt": "2026-11-01T20:07:38Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-11T10:35:56.403928+00:00",
+        "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.12924v1",
+        "observedAt": "2026-11-11T10:38:48.144958+00:00",
+        "contentHash": "a967011ed0f5df3ca5c74cabe80b7a5b59f90785b8701abba531bca141280b32"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:41.685703+00:00",
+        "contentHash": "b93e7731394b3a840ca377be2cb04e4b9a1ab3534e4b4bb8ef9919648bce9210"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "共形 Sasakian 结构的零化曲率条件与完备分类",
+      "workSummary": "在 Olszak 变换 (φ,e^σξ,e^(−σ)η,e^(−2σ)g) 下，由 dη 在 ker η 上的迹逐点决定 e^(−σ)，所以局部因子拼成全局因子且 Lee 形式 ω=dσ。若光滑函数 K 满足 R(X,Y)ξ=K{η(Y)X−η(X)Y}，则 K 在各连通分支为常数，包括三维。",
+      "techniques": [
+        "Olszak 共形归一化及接触恒等式",
+        "Lee 场的曲率计算",
+        "concircular Hessian 方程与第一积分",
+        "Yano 测地圆判据",
+        "Obata 与 Tashiro 完备刚性"
+      ],
+      "breakthrough": "连通且 ω 非恒零时，k-零化等价于 f=e^σ 满足 Hess_g f=−(kf+C)g，也等价于两共形度量的测地圆一致。第一积分为 |df|²+kf²+2Cf+1=0。非临界水平叶全脐，局部扭曲因子由 f′ 给出。完备 g 在 k>0、=0、<0 时分别等距于曲率 k 的圆球面、欧氏空间、双曲空间，三种情况都有例子。",
+      "limitations": "全局共形化使用指定归一化。Hessian 充要关系和完备分类保留连通及 ω 非恒零假设。扭曲积仅在 df≠0 的局部邻域成立，紧致时还得到 k=(min e^(−σ))(max e^(−σ))>0。文中的不完备非恒曲率例覆盖奇数维≥5。补读定理、曲率到 Hessian 的路线与完备刚性论证，未独立验证全部曲率计算和外部分类定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:38:48.144958+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12924v1",
+        "contentHash": "a967011ed0f5df3ca5c74cabe80b7a5b59f90785b8701abba531bca141280b32",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。完整26页原提取、候选及点写AI、拆行模型名、Danus、HyProver/Hunyuan补检未见作者生成式AI使用声明。第25页致谢仅列资助。结论限于该版本未观察到披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "38d9e54780a6c6f26bdd69fe1ad9133d2cb1680d2832ed4433be55b10186d3cd"
+      },
+      "priorityScore": 90,
+      "priorityReason": "曲率零化、Hessian 刚性和完备空间形式分类直接相关。"
+    },
+    "analysisBasis": {
+      "abstract": "We study almost contact metric manifolds that are locally conformal to Sasakian manifolds in the normalization of Olszak. We show that the local conformal factors are uniquely determined by the structure; consequently, every such manifold is globally conformal to a Sasakian manifold and its Lee form is exact. We then investigate the $k$-nullity condition $ R(X,Y)\\xi=k\\{\\eta(Y)X-\\eta(X)Y\\}. $ We prove that a smooth nullity function is necessarily constant, including in dimension three. Moreover, the $k$-nullity condition is equivalent to the assertion that $f=\\exp(\\sigma)$ satisfies $ \\mathrm{Hess}_g f=-(kf+C)g $ for a constant $C$, and hence to the fact that the conformal metrics $g$ and $g_0=\\exp(-2\\sigma)g$ have the same geodesic circles. We derive the range of the conformal factor, a local warped-product description, and a classification in the complete case: when the Lee form is nonzero, the complete metric is a simply connected space form of curvature $k$. Finally, we construct incomplete examples of nonconstant sectional curvature in every dimension $2n+1\\geq 5$.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.12924",
+        "metadata": {
+          "title": "Conformally Sasakian manifolds and the $k$-nullity condition",
+          "authors": [
+            "Fortuné Massamba",
+            "Pontsho Moile"
+          ],
+          "abstract": "We study almost contact metric manifolds that are locally conformal to Sasakian manifolds in the normalization of Olszak. We show that the local conformal factors are uniquely determined by the structure; consequently, every such manifold is globally conformal to a Sasakian manifold and its Lee form is exact. We then investigate the $k$-nullity condition $ R(X,Y)\\xi=k\\{\\eta(Y)X-\\eta(X)Y\\}. $ We prove that a smooth nullity function is necessarily constant, including in dimension three. Moreover, the $k$-nullity condition is equivalent to the assertion that $f=\\exp(\\sigma)$ satisfies $ \\mathrm{Hess}_g f=-(kf+C)g $ for a constant $C$, and hence to the fact that the conformal metrics $g$ and $g_0=\\exp(-2\\sigma)g$ have the same geodesic circles. We derive the range of the conformal factor, a local warped-product description, and a classification in the complete case: when the Lee form is nonzero, the complete metric is a simply connected space form of curvature $k$. Finally, we construct incomplete examples of nonconstant sectional curvature in every dimension $2n+1\\geq 5$.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "26 pages",
+          "version": 1,
+          "submittedAt": "2026-11-01T20:07:38Z",
+          "updatedAt": "2026-11-01T20:07:38Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-11T10:35:56.403928+00:00",
+            "contentHash": "06d19c1c428e3a8d36e48bcb8d821d120357af0531e9bb60489d365dd81be2bf"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.12924v1",
+            "observedAt": "2026-11-11T10:38:48.144958+00:00",
+            "contentHash": "a967011ed0f5df3ca5c74cabe80b7a5b59f90785b8701abba531bca141280b32"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:41.685703+00:00",
+            "contentHash": "b93e7731394b3a840ca377be2cb04e4b9a1ab3534e4b4bb8ef9919648bce9210"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "共形 Sasakian 结构的零化曲率条件与完备分类",
+          "workSummary": "在 Olszak 变换 (φ,e^σξ,e^(−σ)η,e^(−2σ)g) 下，由 dη 在 ker η 上的迹逐点决定 e^(−σ)，所以局部因子拼成全局因子且 Lee 形式 ω=dσ。若光滑函数 K 满足 R(X,Y)ξ=K{η(Y)X−η(X)Y}，则 K 在各连通分支为常数，包括三维。",
+          "techniques": [
+            "Olszak 共形归一化及接触恒等式",
+            "Lee 场的曲率计算",
+            "concircular Hessian 方程与第一积分",
+            "Yano 测地圆判据",
+            "Obata 与 Tashiro 完备刚性"
+          ],
+          "breakthrough": "连通且 ω 非恒零时，k-零化等价于 f=e^σ 满足 Hess_g f=−(kf+C)g，也等价于两共形度量的测地圆一致。第一积分为 |df|²+kf²+2Cf+1=0。非临界水平叶全脐，局部扭曲因子由 f′ 给出。完备 g 在 k>0、=0、<0 时分别等距于曲率 k 的圆球面、欧氏空间、双曲空间，三种情况都有例子。",
+          "limitations": "全局共形化使用指定归一化。Hessian 充要关系和完备分类保留连通及 ω 非恒零假设。扭曲积仅在 df≠0 的局部邻域成立，紧致时还得到 k=(min e^(−σ))(max e^(−σ))>0。文中的不完备非恒曲率例覆盖奇数维≥5。补读定理、曲率到 Hessian 的路线与完备刚性论证，未独立验证全部曲率计算和外部分类定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:38:48.144958+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12924v1",
+            "contentHash": "a967011ed0f5df3ca5c74cabe80b7a5b59f90785b8701abba531bca141280b32",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。完整26页原提取、候选及点写AI、拆行模型名、Danus、HyProver/Hunyuan补检未见作者生成式AI使用声明。第25页致谢仅列资助。结论限于该版本未观察到披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "38d9e54780a6c6f26bdd69fe1ad9133d2cb1680d2832ed4433be55b10186d3cd"
+          },
+          "priorityScore": 90,
+          "priorityReason": "曲率零化、Hessian 刚性和完备空间形式分类直接相关。"
+        },
+        "analysisBasis": {
+          "abstract": "We study almost contact metric manifolds that are locally conformal to Sasakian manifolds in the normalization of Olszak. We show that the local conformal factors are uniquely determined by the structure; consequently, every such manifold is globally conformal to a Sasakian manifold and its Lee form is exact. We then investigate the $k$-nullity condition $ R(X,Y)\\xi=k\\{\\eta(Y)X-\\eta(X)Y\\}. $ We prove that a smooth nullity function is necessarily constant, including in dimension three. Moreover, the $k$-nullity condition is equivalent to the assertion that $f=\\exp(\\sigma)$ satisfies $ \\mathrm{Hess}_g f=-(kf+C)g $ for a constant $C$, and hence to the fact that the conformal metrics $g$ and $g_0=\\exp(-2\\sigma)g$ have the same geodesic circles. We derive the range of the conformal factor, a local warped-product description, and a classification in the complete case: when the Lee form is nonzero, the complete metric is a simply connected space form of curvature $k$. Finally, we construct incomplete examples of nonconstant sectional curvature in every dimension $2n+1\\geq 5$.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

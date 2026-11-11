@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.13208",
+  "slug": "2611.13208",
+  "latest": {
+    "arxivId": "2611.13208",
+    "metadata": {
+      "title": "Thompson indices of knots and the invertibility problem",
+      "authors": [
+        "Valeriano Aiello"
+      ],
+      "abstract": "Jones showed that Thompson's group $F$ produces all unoriented links, and introduced its oriented subgroup $\\vec{F}$, which produces all oriented links; the same holds for the Brown-Thompson group $F_3$ and its oriented subgroup $\\vec{F}_3$. The corresponding Thompson indices measure the complexity of a knot in these groups, much as the braid index does for braid groups. In this article we prove that the span of the Jones polynomial plus $1$ is a lower bound for the $F$- and $\\vec{F}$-index, and we give lower bounds for the $\\vec{F}$- and $\\vec{F}_3$-index in terms of the degrees of the HOMFLY-PT polynomial. We then compute the four indices (the $F$-, $F_3$-, $\\vec{F}$- and $\\vec{F}_3$-index) for the prime knots with at most 13 crossings, by an exhaustive enumeration of tree diagrams (up to 13 leaves for $F$, 17 for $\\vec{F}$, with the HOMFLY-PT polynomials of all the diagrams with 19 leaves, and 9 and 11 for $F_3$ and $\\vec{F}_3$) completed by targeted searches; every value is rigorously certified, by exact computations and by verified computations of hyperbolic structures in interval arithmetic. The $F$-index is determined for all knots with at most 11 crossings, the $\\vec{F}$-index for all knots with at most 8 crossings, and the $F_3$- and $\\vec{F}_3$-index for all knots with at most 12 crossings. The main outcome of these computations is that the oriented indices are sensitive to the orientation: we find hundreds of non-invertible knots $K$ whose reverse $K^r$ has a different $\\vec{F}$- or $\\vec{F}_3$-index, the smallest being $8_{17}$ (with $\\vec{F}_3$-index $7$ and $9$). The $\\vec{F}$-index also distinguishes the Conway knot from its mutant, the Kinoshita-Terasaka knot.",
+      "categories": [
+        "math.GT",
+        "math.GR"
+      ],
+      "primaryCategory": "math.GT",
+      "version": 1,
+      "submittedAt": "2026-11-09T20:30:36Z",
+      "updatedAt": "2026-11-09T20:30:36Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-11T10:36:19.228820+00:00",
+        "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-11T10:45:41.688539+00:00",
+        "contentHash": "f722ad83860b3586fa05e4845c06404adf6ea581b17adbd40c1ca3d3f2e2d612"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "结的 Thompson 指标及其方向敏感性",
+      "workSummary": "用 Jones 多项式的跨度加 1 给 F 和有向 F 指标下界，用 HOMFLY–PT 次数给有向 F 和有向 F₃ 指标下界。通过树图穷举和针对性搜索计算至多 13 交叉素结的多项指标，所得数值由精确计算与区间算术认证。",
+      "techniques": [
+        "Thompson 群树对图",
+        "Jones 和 HOMFLY–PT 多项式界",
+        "树图穷举及针对性搜索",
+        "双曲结构的区间算术认证"
+      ],
+      "breakthrough": "发现数百个结与其反向的有向指标不同。最小例 8₁₇ 的有向 F₃ 指标分别为 7、9。有向 F 指标还区分 Conway 结与其变异结 Kinoshita–Terasaka。",
+      "limitations": "摘要所列完整确定范围分别为 F 指标至 11 交叉、有向 F 至 8 交叉、F₃ 和有向 F₃ 至 12 交叉。至 13 交叉是计算范围，个别已得值的认证须与整体覆盖区分。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第4页致谢和第15页计算方法明确，作者从2022–2023年初版程序出发，用 Claude Code 辅助开发当前代码，扩展到更大树图并提高效率。作者描述了另行认证结果的流程。记计算用途。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.13208v1 · PDF 第4页 Acknowledgments 与第15页计算方法",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-11T10:41:36.222652+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.13208v1",
+        "contentHash": "2871a301e802493310e4900c1f3c136de0f8af7c82e59dfccfeac17ea99e72b7",
+        "pages": 42,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页致谢和第15页计算方法明确，作者从2022–2023年初版程序出发，用 Claude Code 辅助开发当前代码，扩展到更大树图并提高效率。作者描述了另行认证结果的流程。记计算用途。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "da9c3c4a405fc2623ec79ff5e0fed19bbfa6f8a319ed46fc74cce7355ca0678d"
+      },
+      "aiUsage": [
+        "computation"
+      ],
+      "priorityScore": 70,
+      "priorityReason": "方向敏感与变异结区分有明确可核查例子。"
+    },
+    "analysisBasis": {
+      "abstract": "Jones showed that Thompson's group $F$ produces all unoriented links, and introduced its oriented subgroup $\\vec{F}$, which produces all oriented links; the same holds for the Brown-Thompson group $F_3$ and its oriented subgroup $\\vec{F}_3$. The corresponding Thompson indices measure the complexity of a knot in these groups, much as the braid index does for braid groups. In this article we prove that the span of the Jones polynomial plus $1$ is a lower bound for the $F$- and $\\vec{F}$-index, and we give lower bounds for the $\\vec{F}$- and $\\vec{F}_3$-index in terms of the degrees of the HOMFLY-PT polynomial. We then compute the four indices (the $F$-, $F_3$-, $\\vec{F}$- and $\\vec{F}_3$-index) for the prime knots with at most 13 crossings, by an exhaustive enumeration of tree diagrams (up to 13 leaves for $F$, 17 for $\\vec{F}$, with the HOMFLY-PT polynomials of all the diagrams with 19 leaves, and 9 and 11 for $F_3$ and $\\vec{F}_3$) completed by targeted searches; every value is rigorously certified, by exact computations and by verified computations of hyperbolic structures in interval arithmetic. The $F$-index is determined for all knots with at most 11 crossings, the $\\vec{F}$-index for all knots with at most 8 crossings, and the $F_3$- and $\\vec{F}_3$-index for all knots with at most 12 crossings. The main outcome of these computations is that the oriented indices are sensitive to the orientation: we find hundreds of non-invertible knots $K$ whose reverse $K^r$ has a different $\\vec{F}$- or $\\vec{F}_3$-index, the smallest being $8_{17}$ (with $\\vec{F}_3$-index $7$ and $9$). The $\\vec{F}$-index also distinguishes the Conway knot from its mutant, the Kinoshita-Terasaka knot.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-11",
+      "entry": {
+        "arxivId": "2611.13208",
+        "metadata": {
+          "title": "Thompson indices of knots and the invertibility problem",
+          "authors": [
+            "Valeriano Aiello"
+          ],
+          "abstract": "Jones showed that Thompson's group $F$ produces all unoriented links, and introduced its oriented subgroup $\\vec{F}$, which produces all oriented links; the same holds for the Brown-Thompson group $F_3$ and its oriented subgroup $\\vec{F}_3$. The corresponding Thompson indices measure the complexity of a knot in these groups, much as the braid index does for braid groups. In this article we prove that the span of the Jones polynomial plus $1$ is a lower bound for the $F$- and $\\vec{F}$-index, and we give lower bounds for the $\\vec{F}$- and $\\vec{F}_3$-index in terms of the degrees of the HOMFLY-PT polynomial. We then compute the four indices (the $F$-, $F_3$-, $\\vec{F}$- and $\\vec{F}_3$-index) for the prime knots with at most 13 crossings, by an exhaustive enumeration of tree diagrams (up to 13 leaves for $F$, 17 for $\\vec{F}$, with the HOMFLY-PT polynomials of all the diagrams with 19 leaves, and 9 and 11 for $F_3$ and $\\vec{F}_3$) completed by targeted searches; every value is rigorously certified, by exact computations and by verified computations of hyperbolic structures in interval arithmetic. The $F$-index is determined for all knots with at most 11 crossings, the $\\vec{F}$-index for all knots with at most 8 crossings, and the $F_3$- and $\\vec{F}_3$-index for all knots with at most 12 crossings. The main outcome of these computations is that the oriented indices are sensitive to the orientation: we find hundreds of non-invertible knots $K$ whose reverse $K^r$ has a different $\\vec{F}$- or $\\vec{F}_3$-index, the smallest being $8_{17}$ (with $\\vec{F}_3$-index $7$ and $9$). The $\\vec{F}$-index also distinguishes the Conway knot from its mutant, the Kinoshita-Terasaka knot.",
+          "categories": [
+            "math.GT",
+            "math.GR"
+          ],
+          "primaryCategory": "math.GT",
+          "version": 1,
+          "submittedAt": "2026-11-09T20:30:36Z",
+          "updatedAt": "2026-11-09T20:30:36Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-11T10:36:19.228820+00:00",
+            "contentHash": "0e08c5fb21d2a588e35190cecdb822ead5c04108bd8d4c9a0b9b362f008d59b3"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-11T10:45:41.688539+00:00",
+            "contentHash": "f722ad83860b3586fa05e4845c06404adf6ea581b17adbd40c1ca3d3f2e2d612"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "结的 Thompson 指标及其方向敏感性",
+          "workSummary": "用 Jones 多项式的跨度加 1 给 F 和有向 F 指标下界，用 HOMFLY–PT 次数给有向 F 和有向 F₃ 指标下界。通过树图穷举和针对性搜索计算至多 13 交叉素结的多项指标，所得数值由精确计算与区间算术认证。",
+          "techniques": [
+            "Thompson 群树对图",
+            "Jones 和 HOMFLY–PT 多项式界",
+            "树图穷举及针对性搜索",
+            "双曲结构的区间算术认证"
+          ],
+          "breakthrough": "发现数百个结与其反向的有向指标不同。最小例 8₁₇ 的有向 F₃ 指标分别为 7、9。有向 F 指标还区分 Conway 结与其变异结 Kinoshita–Terasaka。",
+          "limitations": "摘要所列完整确定范围分别为 F 指标至 11 交叉、有向 F 至 8 交叉、F₃ 和有向 F₃ 至 12 交叉。至 13 交叉是计算范围，个别已得值的认证须与整体覆盖区分。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第4页致谢和第15页计算方法明确，作者从2022–2023年初版程序出发，用 Claude Code 辅助开发当前代码，扩展到更大树图并提高效率。作者描述了另行认证结果的流程。记计算用途。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.13208v1 · PDF 第4页 Acknowledgments 与第15页计算方法",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-11T10:41:36.222652+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.13208v1",
+            "contentHash": "2871a301e802493310e4900c1f3c136de0f8af7c82e59dfccfeac17ea99e72b7",
+            "pages": 42,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第4页致谢和第15页计算方法明确，作者从2022–2023年初版程序出发，用 Claude Code 辅助开发当前代码，扩展到更大树图并提高效率。作者描述了另行认证结果的流程。记计算用途。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "da9c3c4a405fc2623ec79ff5e0fed19bbfa6f8a319ed46fc74cce7355ca0678d"
+          },
+          "aiUsage": [
+            "computation"
+          ],
+          "priorityScore": 70,
+          "priorityReason": "方向敏感与变异结区分有明确可核查例子。"
+        },
+        "analysisBasis": {
+          "abstract": "Jones showed that Thompson's group $F$ produces all unoriented links, and introduced its oriented subgroup $\\vec{F}$, which produces all oriented links; the same holds for the Brown-Thompson group $F_3$ and its oriented subgroup $\\vec{F}_3$. The corresponding Thompson indices measure the complexity of a knot in these groups, much as the braid index does for braid groups. In this article we prove that the span of the Jones polynomial plus $1$ is a lower bound for the $F$- and $\\vec{F}$-index, and we give lower bounds for the $\\vec{F}$- and $\\vec{F}_3$-index in terms of the degrees of the HOMFLY-PT polynomial. We then compute the four indices (the $F$-, $F_3$-, $\\vec{F}$- and $\\vec{F}_3$-index) for the prime knots with at most 13 crossings, by an exhaustive enumeration of tree diagrams (up to 13 leaves for $F$, 17 for $\\vec{F}$, with the HOMFLY-PT polynomials of all the diagrams with 19 leaves, and 9 and 11 for $F_3$ and $\\vec{F}_3$) completed by targeted searches; every value is rigorously certified, by exact computations and by verified computations of hyperbolic structures in interval arithmetic. The $F$-index is determined for all knots with at most 11 crossings, the $\\vec{F}$-index for all knots with at most 8 crossings, and the $F_3$- and $\\vec{F}_3$-index for all knots with at most 12 crossings. The main outcome of these computations is that the oriented indices are sensitive to the orientation: we find hundreds of non-invertible knots $K$ whose reverse $K^r$ has a different $\\vec{F}$- or $\\vec{F}_3$-index, the smallest being $8_{17}$ (with $\\vec{F}_3$-index $7$ and $9$). The $\\vec{F}$-index also distinguishes the Conway knot from its mutant, the Kinoshita-Terasaka knot.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
