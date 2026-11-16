@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.17375",
+  "slug": "2611.17375",
+  "latest": {
+    "arxivId": "2611.17375",
+    "metadata": {
+      "title": "The four-dimensional Borsuk number is five or six",
+      "authors": [
+        "Logan R. Chalmers"
+      ],
+      "abstract": "Can every set of diameter one in four dimensions be split into at most five parts of smaller diameter? Three parts suffice in the plane and four in three-dimensional space. In four dimensions five parts are sometimes necessary. We prove that six always suffice, improving the previous upper bound of seven. For small circumradius we use six cones. For large circumradius five balls meet every diametral pair of a compact set. At intermediate radii we bound the diameter of each part by the diameter of a rational polytope. The theorem is formalised in Lean.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "The main theorem is formalised in Lean 4 using only the standard axioms of propositional extensionality, classical choice, and quotient soundness. Available at doi: https://doi.org/10.5281/zenodo.23966881",
+      "version": 1,
+      "submittedAt": "2026-11-10T23:34:55Z",
+      "updatedAt": "2026-11-10T23:34:55Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-16T11:49:20.285446+00:00",
+        "contentHash": "6f74209f9b4b56bb94a02920deaf8a54621a08ccb7b830e202b2276aeaaf7ea2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-16T12:31:58.648784+00:00",
+        "contentHash": "085e7060a7b2ceacfb704988128227d0fc685c7bb8188c12fdc53aa1200a17f1"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "重要上界",
+      "workSummary": "任一正直径的四维有界集合均可分成至多六个直径严格更小的子集。先缩放并取闭包归约至紧致情形，再按最小包围球的半径分三段。",
+      "techniques": [
+        "小半径用六个锥",
+        "大半径用五个球击中全部直径对",
+        "中间半径以接触三角形、六个仿射函数和有理多胞体限制各块直径",
+        "Lean 4 形式化"
+      ],
+      "breakthrough": "大半径时作者容许第六块为五球的整个余部：余部不含直径对；结合紧致性及正文的严格间隔控制得到小直径分块。用这一自由度把统一上界从七降为六。",
+      "limitations": "5≤b₄≤6 仍没有给出准确值。分块的结论不要求每一块都可放入一个直径小于原集合的球。作者报告提供 Lean 形式化，此处未自行运行核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 OpenAI 的 Astra 协助探索证明、准备 Lean 形式化和准备论文。未把具体的分割构造或关键思路归给 AI，形式化由 Lean 检查。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.17375v1 · PDF 第 8 页，AI Declaration",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-16T12:25:17.507633+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.17375v1",
+        "contentHash": "703e1cdc532e914199b0cd905e8063bebd6e39f5d2837b00389df4e31cb5e914",
+        "pages": 9,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 OpenAI 的 Astra 协助探索证明、准备 Lean 形式化和准备论文。未把具体的分割构造或关键思路归给 AI，形式化由 Lean 检查。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d4cf67712968fe5d437def0d3b847cf81e0face09b6b3e37d402e46e2718eb6a"
+      },
+      "aiUsage": [
+        "exploration",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 94,
+      "priorityReason": "四维 Borsuk 问题的定量进展，作者提供机器可检验证据。"
+    },
+    "analysisBasis": {
+      "abstract": "Can every set of diameter one in four dimensions be split into at most five parts of smaller diameter? Three parts suffice in the plane and four in three-dimensional space. In four dimensions five parts are sometimes necessary. We prove that six always suffice, improving the previous upper bound of seven. For small circumradius we use six cones. For large circumradius five balls meet every diametral pair of a compact set. At intermediate radii we bound the diameter of each part by the diameter of a rational polytope. The theorem is formalised in Lean.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-16",
+      "entry": {
+        "arxivId": "2611.17375",
+        "metadata": {
+          "title": "The four-dimensional Borsuk number is five or six",
+          "authors": [
+            "Logan R. Chalmers"
+          ],
+          "abstract": "Can every set of diameter one in four dimensions be split into at most five parts of smaller diameter? Three parts suffice in the plane and four in three-dimensional space. In four dimensions five parts are sometimes necessary. We prove that six always suffice, improving the previous upper bound of seven. For small circumradius we use six cones. For large circumradius five balls meet every diametral pair of a compact set. At intermediate radii we bound the diameter of each part by the diameter of a rational polytope. The theorem is formalised in Lean.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "The main theorem is formalised in Lean 4 using only the standard axioms of propositional extensionality, classical choice, and quotient soundness. Available at doi: https://doi.org/10.5281/zenodo.23966881",
+          "version": 1,
+          "submittedAt": "2026-11-10T23:34:55Z",
+          "updatedAt": "2026-11-10T23:34:55Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-16T11:49:20.285446+00:00",
+            "contentHash": "6f74209f9b4b56bb94a02920deaf8a54621a08ccb7b830e202b2276aeaaf7ea2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-16T12:31:58.648784+00:00",
+            "contentHash": "085e7060a7b2ceacfb704988128227d0fc685c7bb8188c12fdc53aa1200a17f1"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "重要上界",
+          "workSummary": "任一正直径的四维有界集合均可分成至多六个直径严格更小的子集。先缩放并取闭包归约至紧致情形，再按最小包围球的半径分三段。",
+          "techniques": [
+            "小半径用六个锥",
+            "大半径用五个球击中全部直径对",
+            "中间半径以接触三角形、六个仿射函数和有理多胞体限制各块直径",
+            "Lean 4 形式化"
+          ],
+          "breakthrough": "大半径时作者容许第六块为五球的整个余部：余部不含直径对；结合紧致性及正文的严格间隔控制得到小直径分块。用这一自由度把统一上界从七降为六。",
+          "limitations": "5≤b₄≤6 仍没有给出准确值。分块的结论不要求每一块都可放入一个直径小于原集合的球。作者报告提供 Lean 形式化，此处未自行运行核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 OpenAI 的 Astra 协助探索证明、准备 Lean 形式化和准备论文。未把具体的分割构造或关键思路归给 AI，形式化由 Lean 检查。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.17375v1 · PDF 第 8 页，AI Declaration",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-16T12:25:17.507633+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.17375v1",
+            "contentHash": "703e1cdc532e914199b0cd905e8063bebd6e39f5d2837b00389df4e31cb5e914",
+            "pages": 9,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 OpenAI 的 Astra 协助探索证明、准备 Lean 形式化和准备论文。未把具体的分割构造或关键思路归给 AI，形式化由 Lean 检查。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d4cf67712968fe5d437def0d3b847cf81e0face09b6b3e37d402e46e2718eb6a"
+          },
+          "aiUsage": [
+            "exploration",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 94,
+          "priorityReason": "四维 Borsuk 问题的定量进展，作者提供机器可检验证据。"
+        },
+        "analysisBasis": {
+          "abstract": "Can every set of diameter one in four dimensions be split into at most five parts of smaller diameter? Three parts suffice in the plane and four in three-dimensional space. In four dimensions five parts are sometimes necessary. We prove that six always suffice, improving the previous upper bound of seven. For small circumradius we use six cones. For large circumradius five balls meet every diametral pair of a compact set. At intermediate radii we bound the diameter of each part by the diameter of a rational polytope. The theorem is formalised in Lean.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

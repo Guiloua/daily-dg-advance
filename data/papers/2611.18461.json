@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.18461",
+  "slug": "2611.18461",
+  "latest": {
+    "arxivId": "2611.18461",
+    "metadata": {
+      "title": "An Obstruction to Realizing Aspherical $3$-Manifold Groups via Torus Surgery",
+      "authors": [
+        "Nicholas Meyer"
+      ],
+      "abstract": "Let $Y$ be a closed, connected, oriented, aspherical $3$-manifold with fundamental group $\\pi = \\pi_1(Y)$ and positive first Betti number $\\beta_1(Y) > 0$, and let $X_0 = Y \\times S^1$. We prove that no torus surgery on $X_0$ along a torus-fibered $T^2$-knot $T \\subseteq X_0$ can yield a $4$-manifold $X = X_{0; T, f}$ with fundamental group $\\pi$. The obstruction combines the vanishing of the Euler characteristic of $X$ with a classifying-map argument showing that the unimodular intersection form on $H^2(X; \\mathbb{Z})$ must admit an isotropic subgroup of rank $\\beta_1(\\pi)$, forcing $\\chi(X) \\geq 2$. Along the way, we also present an independent geometric proof via covering space theory, the Sphere Theorem, and Scott's Core Theorem that the fundamental group of a closed aspherical $3$-manifold is torsion-free.",
+      "categories": [
+        "math.GT"
+      ],
+      "primaryCategory": "math.GT",
+      "comment": "8 pages, 2 figures. Comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-13T17:28:46Z",
+      "updatedAt": "2026-11-13T17:28:46Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-16T11:49:31.757223+00:00",
+        "contentHash": "701f2b9880ac7ca712f0b601da8247e17ce59ab631cbb2b73e824ff0466dace6"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-16T12:32:09.817038+00:00",
+        "contentHash": "fafd04df02c66e9dbb2546c199f5e3e8377020961abaf4047b08d8110df04dae"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "沿纤维化环面手术实现三维流形群的障碍",
+      "workSummary": "设 Y 为闭连通定向且为 K(π,1) 的三维流形且 b₁(Y)>0。在 X₀=Y×S¹ 中，作者排除沿环面纤维化 T² 结的环面手术产生基本群为 π₁(Y) 的闭四维流形。若术后基本群同构于目标群，分类映射将在交叉形式的自由部分中给出秩 b₁(Y) 的全迷向子群，迫使 χ(X)≥2，与手术保持 χ(X)=0 矛盾。",
+      "techniques": [
+        "环面手术",
+        "K(π,1) 分类映射",
+        "四维交叉形式",
+        "覆盖空间、球面定理与 Scott 核定理"
+      ],
+      "breakthrough": "利用第一 Betti 数与交叉形式的秩约束阻止一类基本群实现，同时给出闭 K(π,1) 三维流形群无挠性的几何证明。",
+      "limitations": "原问题要求沿环面纤维化 T² 结手术，并以 b₁(Y)>0 为假设。证明中的交叉形式按整数上同调自由部分理解。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第7页 AI Disclosure 说明作者用 Gemini 4 Argon 初步查找文献及做探索性计算，另用 Grammarly 修订语法与行文。作者称独立复核文献、执行并验证全部数学计算，结果、证明和结论由作者完成。已用首页版本戳将无版本后缀的官方链接绑定到 v1。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.18461 · PDF 第7页，AI Disclosure",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-16T12:30:43.267677+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.18461",
+        "contentHash": "ccb1545d6ef93e2f5028f7af3e57805a65925d7fc6e1d169885f11139a41b37e",
+        "pages": 8,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页 AI Disclosure 说明作者用 Gemini 4 Argon 初步查找文献及做探索性计算，另用 Grammarly 修订语法与行文。作者称独立复核文献、执行并验证全部数学计算，结果、证明和结论由作者完成。已用首页版本戳将无版本后缀的官方链接绑定到 v1。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "08311c0aa08389e4b421d9c6ec0587d30b6610a98d6b71ab19a7d26d0cdbff56"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "writing"
+      ],
+      "priorityScore": 79,
+      "priorityReason": "定量拓扑障碍连接低维群、四维流形与手术。"
+    },
+    "analysisBasis": {
+      "abstract": "Let $Y$ be a closed, connected, oriented, aspherical $3$-manifold with fundamental group $\\pi = \\pi_1(Y)$ and positive first Betti number $\\beta_1(Y) > 0$, and let $X_0 = Y \\times S^1$. We prove that no torus surgery on $X_0$ along a torus-fibered $T^2$-knot $T \\subseteq X_0$ can yield a $4$-manifold $X = X_{0; T, f}$ with fundamental group $\\pi$. The obstruction combines the vanishing of the Euler characteristic of $X$ with a classifying-map argument showing that the unimodular intersection form on $H^2(X; \\mathbb{Z})$ must admit an isotropic subgroup of rank $\\beta_1(\\pi)$, forcing $\\chi(X) \\geq 2$. Along the way, we also present an independent geometric proof via covering space theory, the Sphere Theorem, and Scott's Core Theorem that the fundamental group of a closed aspherical $3$-manifold is torsion-free.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-16",
+      "entry": {
+        "arxivId": "2611.18461",
+        "metadata": {
+          "title": "An Obstruction to Realizing Aspherical $3$-Manifold Groups via Torus Surgery",
+          "authors": [
+            "Nicholas Meyer"
+          ],
+          "abstract": "Let $Y$ be a closed, connected, oriented, aspherical $3$-manifold with fundamental group $\\pi = \\pi_1(Y)$ and positive first Betti number $\\beta_1(Y) > 0$, and let $X_0 = Y \\times S^1$. We prove that no torus surgery on $X_0$ along a torus-fibered $T^2$-knot $T \\subseteq X_0$ can yield a $4$-manifold $X = X_{0; T, f}$ with fundamental group $\\pi$. The obstruction combines the vanishing of the Euler characteristic of $X$ with a classifying-map argument showing that the unimodular intersection form on $H^2(X; \\mathbb{Z})$ must admit an isotropic subgroup of rank $\\beta_1(\\pi)$, forcing $\\chi(X) \\geq 2$. Along the way, we also present an independent geometric proof via covering space theory, the Sphere Theorem, and Scott's Core Theorem that the fundamental group of a closed aspherical $3$-manifold is torsion-free.",
+          "categories": [
+            "math.GT"
+          ],
+          "primaryCategory": "math.GT",
+          "comment": "8 pages, 2 figures. Comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-13T17:28:46Z",
+          "updatedAt": "2026-11-13T17:28:46Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-16T11:49:31.757223+00:00",
+            "contentHash": "701f2b9880ac7ca712f0b601da8247e17ce59ab631cbb2b73e824ff0466dace6"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-16T12:32:09.817038+00:00",
+            "contentHash": "fafd04df02c66e9dbb2546c199f5e3e8377020961abaf4047b08d8110df04dae"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "沿纤维化环面手术实现三维流形群的障碍",
+          "workSummary": "设 Y 为闭连通定向且为 K(π,1) 的三维流形且 b₁(Y)>0。在 X₀=Y×S¹ 中，作者排除沿环面纤维化 T² 结的环面手术产生基本群为 π₁(Y) 的闭四维流形。若术后基本群同构于目标群，分类映射将在交叉形式的自由部分中给出秩 b₁(Y) 的全迷向子群，迫使 χ(X)≥2，与手术保持 χ(X)=0 矛盾。",
+          "techniques": [
+            "环面手术",
+            "K(π,1) 分类映射",
+            "四维交叉形式",
+            "覆盖空间、球面定理与 Scott 核定理"
+          ],
+          "breakthrough": "利用第一 Betti 数与交叉形式的秩约束阻止一类基本群实现，同时给出闭 K(π,1) 三维流形群无挠性的几何证明。",
+          "limitations": "原问题要求沿环面纤维化 T² 结手术，并以 b₁(Y)>0 为假设。证明中的交叉形式按整数上同调自由部分理解。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第7页 AI Disclosure 说明作者用 Gemini 4 Argon 初步查找文献及做探索性计算，另用 Grammarly 修订语法与行文。作者称独立复核文献、执行并验证全部数学计算，结果、证明和结论由作者完成。已用首页版本戳将无版本后缀的官方链接绑定到 v1。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.18461 · PDF 第7页，AI Disclosure",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-16T12:30:43.267677+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.18461",
+            "contentHash": "ccb1545d6ef93e2f5028f7af3e57805a65925d7fc6e1d169885f11139a41b37e",
+            "pages": 8,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页 AI Disclosure 说明作者用 Gemini 4 Argon 初步查找文献及做探索性计算，另用 Grammarly 修订语法与行文。作者称独立复核文献、执行并验证全部数学计算，结果、证明和结论由作者完成。已用首页版本戳将无版本后缀的官方链接绑定到 v1。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "08311c0aa08389e4b421d9c6ec0587d30b6610a98d6b71ab19a7d26d0cdbff56"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "writing"
+          ],
+          "priorityScore": 79,
+          "priorityReason": "定量拓扑障碍连接低维群、四维流形与手术。"
+        },
+        "analysisBasis": {
+          "abstract": "Let $Y$ be a closed, connected, oriented, aspherical $3$-manifold with fundamental group $\\pi = \\pi_1(Y)$ and positive first Betti number $\\beta_1(Y) > 0$, and let $X_0 = Y \\times S^1$. We prove that no torus surgery on $X_0$ along a torus-fibered $T^2$-knot $T \\subseteq X_0$ can yield a $4$-manifold $X = X_{0; T, f}$ with fundamental group $\\pi$. The obstruction combines the vanishing of the Euler characteristic of $X$ with a classifying-map argument showing that the unimodular intersection form on $H^2(X; \\mathbb{Z})$ must admit an isotropic subgroup of rank $\\beta_1(\\pi)$, forcing $\\chi(X) \\geq 2$. Along the way, we also present an independent geometric proof via covering space theory, the Sphere Theorem, and Scott's Core Theorem that the fundamental group of a closed aspherical $3$-manifold is torsion-free.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

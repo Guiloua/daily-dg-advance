@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.17496",
+  "slug": "2611.17496",
+  "latest": {
+    "arxivId": "2611.17496",
+    "metadata": {
+      "title": "Wasserstein geometry of analytic cycle spaces",
+      "authors": [
+        "Fabio Cavalletti",
+        "Lorenzo Cecchi",
+        "Antonio Lerario"
+      ],
+      "abstract": "We use optimal transport to define an intrinsic distance on connected components of the Barlet space of analytic cycles on a compact Kähler manifold, by associating to each cycle its normalized volume measure. We prove that any two cycles in the same connected component can be joined by a deformation of finite Wasserstein length, and that the resulting metric is complete and geodesic. On the locus of smooth reduced cycles at regular parameter points, Wasserstein lengths and energies coincide with those of the normalized Weil--Petersson metric. The construction thus gives a transport interpretation of Weil--Petersson geometry and extends beyond it to components containing no smooth reduced cycles.",
+      "categories": [
+        "math.DG",
+        "math.AG",
+        "math.MG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-12T20:37:22Z",
+      "updatedAt": "2026-11-12T20:37:22Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-16T11:49:20.285446+00:00",
+        "contentHash": "6f74209f9b4b56bb94a02920deaf8a54621a08ccb7b830e202b2276aeaaf7ea2"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-16T12:31:58.650073+00:00",
+        "contentHash": "fea84a9d9a7b3201ca2e7084a60ffbc2cfd5f44bbc01e7dff734710e969a5529"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "Barlet 解析循环空间的 Wasserstein 内在度量",
+      "workSummary": "固定紧连通 Kähler 流形及一个非零有效解析循环的 Barlet 连通分支 B。各循环以同一总质量归一化，此测度映射嵌入概率测度空间。对 B 的任意连通闭解析子集 A，沿留在 A 的循环路径取 W₂ 长度下确界，得到有限、完备且测地的内在距离。",
+      "techniques": [
+        "带重数的循环体积测度与 Barlet 紧性",
+        "实解析弧复化及次解析梯度不等式",
+        "局部积分流的 Stokes 公式与连续性方程",
+        "Wasserstein 最小范数法向速度",
+        "积分坐标及 Kantorovich 对偶"
+      ],
+      "breakthrough": "在通向退化循环的全纯弧上，度量速度受 Ct^(−θ) 控制，其中 0<θ<1，因此有限弧长可连到奇异或非约化纤维。在不可约分支的正则参数且循环支撑光滑约化处，W₂ 速度平方等于法向速度的归一化 L² 范数平方，也等于 Weil–Petersson 速度平方。仅沿此区域取路径就恢复 Weil–Petersson 距离。零维循环另有最优匹配公式。",
+      "limitations": "环境 W₂ 是内在距离的下界。允许路径经过不可约分支的奇异参数或带奇异、非约化循环的参数时，内在距离可能低于 Weil–Petersson 距离，两者在光滑约化区域的对角线邻域相等。Weil–Petersson 完备化到全分支的一般结论为典范 1-Lipschitz 满射。已补读主定理和局部估计路线，未独立验证全部次解析与几何测度论输入。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者将主要思想、定义和构造追溯至早先的研究计划。ChatGPT 5.6 建议以几何测度论的引理2.16完成定理3.5的论证，推导定理3.17的下界，协助简化部分论证及修订语言表述。作者评估和修订这些贡献。用途记为证明与写作。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.17496v1 · PDF 第7–8页 Use of artificial intelligence",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-16T12:28:34.259913+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.17496v1",
+        "contentHash": "a376c4cd64a46e9a3818302e26c9cd9f409581470cf11fcbe09cc093f05b93f3",
+        "pages": 50,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将主要思想、定义和构造追溯至早先的研究计划。ChatGPT 5.6 建议以几何测度论的引理2.16完成定理3.5的论证，推导定理3.17的下界，协助简化部分论证及修订语言表述。作者评估和修订这些贡献。用途记为证明与写作。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "d4eda2f7c657e2919c3f5144cef8026b38e47a6cd76d4f155ed359b44e63dc7d"
+      },
+      "aiUsage": [
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "将最优输运、解析形变与奇异空间的测地结构相连。"
+    },
+    "analysisBasis": {
+      "abstract": "We use optimal transport to define an intrinsic distance on connected components of the Barlet space of analytic cycles on a compact Kähler manifold, by associating to each cycle its normalized volume measure. We prove that any two cycles in the same connected component can be joined by a deformation of finite Wasserstein length, and that the resulting metric is complete and geodesic. On the locus of smooth reduced cycles at regular parameter points, Wasserstein lengths and energies coincide with those of the normalized Weil--Petersson metric. The construction thus gives a transport interpretation of Weil--Petersson geometry and extends beyond it to components containing no smooth reduced cycles.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-16",
+      "entry": {
+        "arxivId": "2611.17496",
+        "metadata": {
+          "title": "Wasserstein geometry of analytic cycle spaces",
+          "authors": [
+            "Fabio Cavalletti",
+            "Lorenzo Cecchi",
+            "Antonio Lerario"
+          ],
+          "abstract": "We use optimal transport to define an intrinsic distance on connected components of the Barlet space of analytic cycles on a compact Kähler manifold, by associating to each cycle its normalized volume measure. We prove that any two cycles in the same connected component can be joined by a deformation of finite Wasserstein length, and that the resulting metric is complete and geodesic. On the locus of smooth reduced cycles at regular parameter points, Wasserstein lengths and energies coincide with those of the normalized Weil--Petersson metric. The construction thus gives a transport interpretation of Weil--Petersson geometry and extends beyond it to components containing no smooth reduced cycles.",
+          "categories": [
+            "math.DG",
+            "math.AG",
+            "math.MG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-12T20:37:22Z",
+          "updatedAt": "2026-11-12T20:37:22Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-16T11:49:20.285446+00:00",
+            "contentHash": "6f74209f9b4b56bb94a02920deaf8a54621a08ccb7b830e202b2276aeaaf7ea2"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-16T12:31:58.650073+00:00",
+            "contentHash": "fea84a9d9a7b3201ca2e7084a60ffbc2cfd5f44bbc01e7dff734710e969a5529"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "Barlet 解析循环空间的 Wasserstein 内在度量",
+          "workSummary": "固定紧连通 Kähler 流形及一个非零有效解析循环的 Barlet 连通分支 B。各循环以同一总质量归一化，此测度映射嵌入概率测度空间。对 B 的任意连通闭解析子集 A，沿留在 A 的循环路径取 W₂ 长度下确界，得到有限、完备且测地的内在距离。",
+          "techniques": [
+            "带重数的循环体积测度与 Barlet 紧性",
+            "实解析弧复化及次解析梯度不等式",
+            "局部积分流的 Stokes 公式与连续性方程",
+            "Wasserstein 最小范数法向速度",
+            "积分坐标及 Kantorovich 对偶"
+          ],
+          "breakthrough": "在通向退化循环的全纯弧上，度量速度受 Ct^(−θ) 控制，其中 0<θ<1，因此有限弧长可连到奇异或非约化纤维。在不可约分支的正则参数且循环支撑光滑约化处，W₂ 速度平方等于法向速度的归一化 L² 范数平方，也等于 Weil–Petersson 速度平方。仅沿此区域取路径就恢复 Weil–Petersson 距离。零维循环另有最优匹配公式。",
+          "limitations": "环境 W₂ 是内在距离的下界。允许路径经过不可约分支的奇异参数或带奇异、非约化循环的参数时，内在距离可能低于 Weil–Petersson 距离，两者在光滑约化区域的对角线邻域相等。Weil–Petersson 完备化到全分支的一般结论为典范 1-Lipschitz 满射。已补读主定理和局部估计路线，未独立验证全部次解析与几何测度论输入。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者将主要思想、定义和构造追溯至早先的研究计划。ChatGPT 5.6 建议以几何测度论的引理2.16完成定理3.5的论证，推导定理3.17的下界，协助简化部分论证及修订语言表述。作者评估和修订这些贡献。用途记为证明与写作。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.17496v1 · PDF 第7–8页 Use of artificial intelligence",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-16T12:28:34.259913+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.17496v1",
+            "contentHash": "a376c4cd64a46e9a3818302e26c9cd9f409581470cf11fcbe09cc093f05b93f3",
+            "pages": 50,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者将主要思想、定义和构造追溯至早先的研究计划。ChatGPT 5.6 建议以几何测度论的引理2.16完成定理3.5的论证，推导定理3.17的下界，协助简化部分论证及修订语言表述。作者评估和修订这些贡献。用途记为证明与写作。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "d4eda2f7c657e2919c3f5144cef8026b38e47a6cd76d4f155ed359b44e63dc7d"
+          },
+          "aiUsage": [
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "将最优输运、解析形变与奇异空间的测地结构相连。"
+        },
+        "analysisBasis": {
+          "abstract": "We use optimal transport to define an intrinsic distance on connected components of the Barlet space of analytic cycles on a compact Kähler manifold, by associating to each cycle its normalized volume measure. We prove that any two cycles in the same connected component can be joined by a deformation of finite Wasserstein length, and that the resulting metric is complete and geodesic. On the locus of smooth reduced cycles at regular parameter points, Wasserstein lengths and energies coincide with those of the normalized Weil--Petersson metric. The construction thus gives a transport interpretation of Weil--Petersson geometry and extends beyond it to components containing no smooth reduced cycles.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

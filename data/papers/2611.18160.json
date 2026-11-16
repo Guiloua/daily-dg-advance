@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.18160",
+  "slug": "2611.18160",
+  "latest": {
+    "arxivId": "2611.18160",
+    "metadata": {
+      "title": "Holonomy groupoids of singular subalgebroids in the non-integrable case",
+      "authors": [
+        "Nicolas Tribouillard",
+        "Marco Zambon"
+      ],
+      "abstract": "The holonomy groupoid of a singular foliation was constructed by Androulidakis and Skandalis around 2006. The construction was later extended to singular subalgebroids of an integrable Lie algebroid, upon a choice of integrating Lie groupoid. In this work, we extend the construction of the holonomy groupoid even further, by allowing for non-integrable Lie algebroids. To do so, we make a choice of integrating local Lie groupoid $G$. When the Mal'cev completion $AC(G)$ is smooth, our construction recovers the holonomy groupoid associated with the Lie groupoid $AC(G)$. Furthermore, our holonomy groupoid has an associated $*$-algebra. We present examples in which the holonomy groupoid is realized as a quotient of the transformation groupoid of a Lie group action.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "37 pages, 2 figures",
+      "version": 1,
+      "submittedAt": "2026-11-13T13:36:18Z",
+      "updatedAt": "2026-11-13T13:36:18Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-16T11:49:08.950996+00:00",
+        "contentHash": "c7326004daa651350338eb8bf905beedaca49a71b4aa79102c9ad86515beb6cd"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-16T12:31:58.655439+00:00",
+        "contentHash": "849070ed00dcf99ab80c671b84716ee0e3b2bb8c3be734fa335ae97ba6431ba5"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "任意 Lie 代数胚奇异子代数胚的拓扑 holonomy 群胚",
+      "workSummary": "给定局部 Lie 群胚 G 和其 Lie 代数胚紧支撑截面的对合、局部有限生成子模 B，定理3.10用路径 holonomy 双下沉图册的商给出拓扑群胚 H(B,G) 及覆盖底空间恒等的典范态射 H(B,G)→AC(G)。推论4.6给图册选择的同构独立性。AC(G) 是 Lie 群胚时，命题3.12以简单双下沉生成的图册恢复既有全局构造。",
+      "techniques": [
+        "局部 Lie 群胚的 Mal’cev 结合完备化",
+        "路径 holonomy 双下沉与局部双截面等价",
+        "图册相适应性与函子性",
+        "双截面核取商",
+        "半密度卷积与对合"
+      ],
+      "breakthrough": "对覆盖底空间恒等的局部群胚态射 φ:G₁→G₂，若 B=φ₍*₎Γ_c(A_G₁)，命题4.10–4.11给 H(B,G₂)≅AC(G₁)/Bker(φ)。双截面核由代表元可沿局部双截面维持在 AC(φ) 核内的条件决定。命题4.7给推前诱导的满态射，AC(φ) 单射时为同构。",
+      "limitations": "H(B,G) 随局部积分 G 选择。第6–7页约定先缩小和限制 G，使源连通、双正则、3 结合且可乘对的定义域与轴相连。第22–23页构造半密度的 * 代数，并指出源纤维可能缺少光滑性，旧的 C* 完备化步骤需另行处理。第32–33页例5.8展示双截面核的局部条件。已核对第2–9、17–18、20–23、26–29、32–33页主要陈述和路线，完整图册相适应性及群胚公理证明待逐步核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者在第5页 AI Disclosure 说明使用 Copilot 寻找例2.13，并自行建立该例与文献的联系。该例给出结合子逐纤维离散而不一致离散的局部 Lie 群胚，后用于例5.8的商计算。披露所列用途为寻找示例。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.18160v1 · PDF 第5页，AI Disclosure，另见例2.13第8–9页与例5.8第32–33页",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-16T12:26:34.380019+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.18160v1",
+        "contentHash": "13ea74cf524a99d3c61b8f790c07364f9696d0073af47620998b07ed14f334a8",
+        "pages": 37,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第5页 AI Disclosure 说明使用 Copilot 寻找例2.13，并自行建立该例与文献的联系。该例给出结合子逐纤维离散而不一致离散的局部 Lie 群胚，后用于例5.8的商计算。披露所列用途为寻找示例。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "383f0205d3f32bc2642a3c6f12bc106a13b3ea01e7189f0a4bc5d2df3b40c6c2"
+      },
+      "aiUsage": [
+        "exploration"
+      ],
+      "priorityScore": 82,
+      "priorityReason": "推广奇异叶状几何的基本构造，兼及其代数结构。"
+    },
+    "analysisBasis": {
+      "abstract": "The holonomy groupoid of a singular foliation was constructed by Androulidakis and Skandalis around 2006. The construction was later extended to singular subalgebroids of an integrable Lie algebroid, upon a choice of integrating Lie groupoid. In this work, we extend the construction of the holonomy groupoid even further, by allowing for non-integrable Lie algebroids. To do so, we make a choice of integrating local Lie groupoid $G$. When the Mal'cev completion $AC(G)$ is smooth, our construction recovers the holonomy groupoid associated with the Lie groupoid $AC(G)$. Furthermore, our holonomy groupoid has an associated $*$-algebra. We present examples in which the holonomy groupoid is realized as a quotient of the transformation groupoid of a Lie group action.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-16",
+      "entry": {
+        "arxivId": "2611.18160",
+        "metadata": {
+          "title": "Holonomy groupoids of singular subalgebroids in the non-integrable case",
+          "authors": [
+            "Nicolas Tribouillard",
+            "Marco Zambon"
+          ],
+          "abstract": "The holonomy groupoid of a singular foliation was constructed by Androulidakis and Skandalis around 2006. The construction was later extended to singular subalgebroids of an integrable Lie algebroid, upon a choice of integrating Lie groupoid. In this work, we extend the construction of the holonomy groupoid even further, by allowing for non-integrable Lie algebroids. To do so, we make a choice of integrating local Lie groupoid $G$. When the Mal'cev completion $AC(G)$ is smooth, our construction recovers the holonomy groupoid associated with the Lie groupoid $AC(G)$. Furthermore, our holonomy groupoid has an associated $*$-algebra. We present examples in which the holonomy groupoid is realized as a quotient of the transformation groupoid of a Lie group action.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "37 pages, 2 figures",
+          "version": 1,
+          "submittedAt": "2026-11-13T13:36:18Z",
+          "updatedAt": "2026-11-13T13:36:18Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-16T11:49:08.950996+00:00",
+            "contentHash": "c7326004daa651350338eb8bf905beedaca49a71b4aa79102c9ad86515beb6cd"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-16T12:31:58.655439+00:00",
+            "contentHash": "849070ed00dcf99ab80c671b84716ee0e3b2bb8c3be734fa335ae97ba6431ba5"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "任意 Lie 代数胚奇异子代数胚的拓扑 holonomy 群胚",
+          "workSummary": "给定局部 Lie 群胚 G 和其 Lie 代数胚紧支撑截面的对合、局部有限生成子模 B，定理3.10用路径 holonomy 双下沉图册的商给出拓扑群胚 H(B,G) 及覆盖底空间恒等的典范态射 H(B,G)→AC(G)。推论4.6给图册选择的同构独立性。AC(G) 是 Lie 群胚时，命题3.12以简单双下沉生成的图册恢复既有全局构造。",
+          "techniques": [
+            "局部 Lie 群胚的 Mal’cev 结合完备化",
+            "路径 holonomy 双下沉与局部双截面等价",
+            "图册相适应性与函子性",
+            "双截面核取商",
+            "半密度卷积与对合"
+          ],
+          "breakthrough": "对覆盖底空间恒等的局部群胚态射 φ:G₁→G₂，若 B=φ₍*₎Γ_c(A_G₁)，命题4.10–4.11给 H(B,G₂)≅AC(G₁)/Bker(φ)。双截面核由代表元可沿局部双截面维持在 AC(φ) 核内的条件决定。命题4.7给推前诱导的满态射，AC(φ) 单射时为同构。",
+          "limitations": "H(B,G) 随局部积分 G 选择。第6–7页约定先缩小和限制 G，使源连通、双正则、3 结合且可乘对的定义域与轴相连。第22–23页构造半密度的 * 代数，并指出源纤维可能缺少光滑性，旧的 C* 完备化步骤需另行处理。第32–33页例5.8展示双截面核的局部条件。已核对第2–9、17–18、20–23、26–29、32–33页主要陈述和路线，完整图册相适应性及群胚公理证明待逐步核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者在第5页 AI Disclosure 说明使用 Copilot 寻找例2.13，并自行建立该例与文献的联系。该例给出结合子逐纤维离散而不一致离散的局部 Lie 群胚，后用于例5.8的商计算。披露所列用途为寻找示例。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.18160v1 · PDF 第5页，AI Disclosure，另见例2.13第8–9页与例5.8第32–33页",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-16T12:26:34.380019+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.18160v1",
+            "contentHash": "13ea74cf524a99d3c61b8f790c07364f9696d0073af47620998b07ed14f334a8",
+            "pages": 37,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在第5页 AI Disclosure 说明使用 Copilot 寻找例2.13，并自行建立该例与文献的联系。该例给出结合子逐纤维离散而不一致离散的局部 Lie 群胚，后用于例5.8的商计算。披露所列用途为寻找示例。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "383f0205d3f32bc2642a3c6f12bc106a13b3ea01e7189f0a4bc5d2df3b40c6c2"
+          },
+          "aiUsage": [
+            "exploration"
+          ],
+          "priorityScore": 82,
+          "priorityReason": "推广奇异叶状几何的基本构造，兼及其代数结构。"
+        },
+        "analysisBasis": {
+          "abstract": "The holonomy groupoid of a singular foliation was constructed by Androulidakis and Skandalis around 2006. The construction was later extended to singular subalgebroids of an integrable Lie algebroid, upon a choice of integrating Lie groupoid. In this work, we extend the construction of the holonomy groupoid even further, by allowing for non-integrable Lie algebroids. To do so, we make a choice of integrating local Lie groupoid $G$. When the Mal'cev completion $AC(G)$ is smooth, our construction recovers the holonomy groupoid associated with the Lie groupoid $AC(G)$. Furthermore, our holonomy groupoid has an associated $*$-algebra. We present examples in which the holonomy groupoid is realized as a quotient of the transformation groupoid of a Lie group action.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

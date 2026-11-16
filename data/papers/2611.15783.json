@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.15783",
+  "slug": "2611.15783",
+  "latest": {
+    "arxivId": "2611.15783",
+    "metadata": {
+      "title": "A Linear-Time Construction on $\\mathbb{S}^2$ Achieving a Sublinear Energy Gap on Smale's Seventh Problem",
+      "authors": [
+        "Rishabh Kabra",
+        "Wim Dehaen",
+        "Andrea Karlova",
+        "Mark Hamilton",
+        "Joao Carreira",
+        "Maks Ovsjanikov",
+        "Jonathan T. Barron"
+      ],
+      "abstract": "Smale's seventh problem asks for a polynomial-time algorithm that places $N$ points on the unit sphere $\\mathbb{S}^2$ with logarithmic energy (the sum of $-\\log$ of all pairwise distances) within $O(\\log N)$ of the minimum. The minimal energy has an asymptotic expansion with explicit terms of order $N^2$ and $N\\log N$ and a linear term whose constant is unknown. Brauchart, Hardin, and Saff conjectured this constant; the resulting expansion, $E_{BHS}(N)$, is known to be an upper bound on the minimum, up to $o(N)$. All previously analyzed constructions on $\\mathbb{S}^2$ have energy exceeding $E_{BHS}(N)$ by an amount that grows at least linearly in $N$, i.e. $\\Omega(N)$, far from the $O(\\log N)$ accuracy sought by Smale. We present TerracedZonal, a deterministic construction that generates $N$ points in $\\Theta(N)$ time and memory. Points are placed on latitude rings whose populations are held constant across bands (\"terraces\") chosen by a one-dimensional dynamic program, so that adjacent rings within each terrace lock into a staggered triangular lattice. Under a locality assumption, we prove that the energy exceeds $E_{BHS}(N)$ by only $\\Theta(N^{2/3})$, with an explicit constant; exact evaluation up to $N = 10^9$ confirms this rate. Under the same assumption, its distance from the true minimum is sublinear if the conjecture holds. To our knowledge, this is the first algorithmic construction with a sublinear excess over $E_{BHS}(N)$ of explicit order (proven under the locality assumption), a necessary step toward Smale's seventh problem. With one parameter changed, the same algorithm also gives an equal-weight integration rule on $\\mathbb{S}^2$ that runs just as fast and whose error decays at an empirical rate of $N^{-4}$ on smooth functions, versus $N^{-3/2}$ for every previous fast construction we tested.",
+      "categories": [
+        "cs.CG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.CG",
+      "version": 1,
+      "submittedAt": "2026-11-11T17:56:44Z",
+      "updatedAt": "2026-11-11T17:56:44Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/catchup/math.MG/2026-11-13?abs=True",
+        "observedAt": "2026-11-16T12:25:44.728125+00:00",
+        "contentHash": "d2bab888f0c645b1206ec1f64d5f424795be64b1cbb55774610efe63561b3260"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-16T12:28:57.108722+00:00",
+        "contentHash": "d4734dc2c0c9272d4118046027a098b83294bc7403919a0332382b034e79e4fc"
+      }
+    ],
+    "analysis": null,
+    "analysisBasis": null
+  },
+  "history": [
+    {
+      "date": "2026-11-13",
+      "entry": {
+        "arxivId": "2611.15783",
+        "metadata": {
+          "title": "A Linear-Time Construction on $\\mathbb{S}^2$ Achieving a Sublinear Energy Gap on Smale's Seventh Problem",
+          "authors": [
+            "Rishabh Kabra",
+            "Wim Dehaen",
+            "Andrea Karlova",
+            "Mark Hamilton",
+            "Joao Carreira",
+            "Maks Ovsjanikov",
+            "Jonathan T. Barron"
+          ],
+          "abstract": "Smale's seventh problem asks for a polynomial-time algorithm that places $N$ points on the unit sphere $\\mathbb{S}^2$ with logarithmic energy (the sum of $-\\log$ of all pairwise distances) within $O(\\log N)$ of the minimum. The minimal energy has an asymptotic expansion with explicit terms of order $N^2$ and $N\\log N$ and a linear term whose constant is unknown. Brauchart, Hardin, and Saff conjectured this constant; the resulting expansion, $E_{BHS}(N)$, is known to be an upper bound on the minimum, up to $o(N)$. All previously analyzed constructions on $\\mathbb{S}^2$ have energy exceeding $E_{BHS}(N)$ by an amount that grows at least linearly in $N$, i.e. $\\Omega(N)$, far from the $O(\\log N)$ accuracy sought by Smale. We present TerracedZonal, a deterministic construction that generates $N$ points in $\\Theta(N)$ time and memory. Points are placed on latitude rings whose populations are held constant across bands (\"terraces\") chosen by a one-dimensional dynamic program, so that adjacent rings within each terrace lock into a staggered triangular lattice. Under a locality assumption, we prove that the energy exceeds $E_{BHS}(N)$ by only $\\Theta(N^{2/3})$, with an explicit constant; exact evaluation up to $N = 10^9$ confirms this rate. Under the same assumption, its distance from the true minimum is sublinear if the conjecture holds. To our knowledge, this is the first algorithmic construction with a sublinear excess over $E_{BHS}(N)$ of explicit order (proven under the locality assumption), a necessary step toward Smale's seventh problem. With one parameter changed, the same algorithm also gives an equal-weight integration rule on $\\mathbb{S}^2$ that runs just as fast and whose error decays at an empirical rate of $N^{-4}$ on smooth functions, versus $N^{-3/2}$ for every previous fast construction we tested.",
+          "categories": [
+            "cs.CG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.CG",
+          "version": 1,
+          "submittedAt": "2026-11-11T17:56:44Z",
+          "updatedAt": "2026-11-11T17:56:44Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/catchup/math.MG/2026-11-13?abs=True",
+            "observedAt": "2026-11-16T12:25:44.728125+00:00",
+            "contentHash": "d2bab888f0c645b1206ec1f64d5f424795be64b1cbb55774610efe63561b3260"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-16T12:28:57.108722+00:00",
+            "contentHash": "d4734dc2c0c9272d4118046027a098b83294bc7403919a0332382b034e79e4fc"
+          }
+        ],
+        "analysis": null,
+        "analysisBasis": null
+      }
+    }
+  ]
+}
