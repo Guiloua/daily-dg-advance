@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22749",
+  "slug": "2611.22749",
+  "latest": {
+    "arxivId": "2611.22749",
+    "metadata": {
+      "title": "Sharp Gaussian Brunn-Minkowski inequalities",
+      "authors": [
+        "Bader Ammari"
+      ],
+      "abstract": "We prove Gaussian Brunn-Minkowski inequalities for multiple sets. These are of the type: $$\\prod_{i=1}^I \\gamma_{\\Sigma_i}(K_i)^{\\tilde \\lambda_i} \\le C_{\\text{sharp}}\\gamma_\\Gamma\\Big(\\sum_{i=1}^I \\lambda_i K_i\\Big),$$ with convex sets $K_i \\subset \\mathbb{R}^n$, whose barycenter $b_{K_i,\\Sigma_i}$ with respect to the Gaussian measure $\\gamma_{\\Sigma_i}$ is zero, where $\\lambda_i, \\tilde \\lambda_i \\in (0;1)$ such that $\\sum_{i=1}^I \\lambda_i=\\sum_{i=1}^I \\tilde \\lambda_i=1.$ In addition, we provide natural conditions on the matrices $\\Gamma, \\Sigma_1,\\cdots,\\Sigma_I \\in \\mathrm{Sym}_{>0}(n)$, which are given through a pointwise inequality involving the Karcher mean. Furthermore, we study equality cases of the corresponding functional forms in such situations. We also investigate the role of centering in the (B)-property by giving a counterexample for convex bodies with zero Lebesgue barycenters in dimensions at least three and thereby answering negatively a question of Faifman-Polterovich in \\cite{Faifman_Polt}. Finally, a new slicing approach is introduced, which allows us to pass from centered convex sets to sets with arbitrary barycenters such that their weighted sum is convex. Based on this idea, we show a new Gaussian Brunn-Minkowski inequality $$e^{|\\sum_{i=1}^I \\lambda_i b_{K_i,I_n}|^2/2n} \\gamma_n \\Big(\\sum_{i=1}^I \\lambda_i K_i \\Big)^{1/n} \\ge \\sum_{i=1}^I \\lambda_i e^{|b_{K_i,I_n}|^2/2n} \\gamma_n(K_i)^{1/n},$$ and consider a further application in the direction of the Gaussian correlation inequality, together with the rigidity for both inequalities.",
+      "categories": [
+        "math.MG",
+        "math.FA",
+        "math.PR"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "40 pages, comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-17T13:20:27Z",
+      "updatedAt": "2026-11-17T13:20:27Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-18T12:16:57.721997+00:00",
+        "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22749v1",
+        "observedAt": "2026-11-18T12:25:57.064637+00:00",
+        "contentHash": "4826783578d333c146a187a6ab3b108852b8d6518f973e0c8edef9d2520ab196"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.739075+00:00",
+        "contentHash": "e10b95055ad8a76d11f2b3f25a99d667a382ab2fbc368390b58c9d00ed003709"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "多集合 Gaussian Brunn–Minkowski 尖锐不等式",
+      "workSummary": "定理1.1对各自 Gaussian 重心为零的凸集、任意正定协方差 Γ 与 Σᵢ、两组正权重 λᵢ 与 λ̃ᵢ，给出多集合 Gaussian Brunn–Minkowski 的最优常数。它是在各线性子空间 E 上取最大值，项为 ∏(λ̃ᵢ/λᵢ)^(dim(E)λ̃ᵢ) 乘以 [det Γ_E / ∏det((Σᵢ)_E)^λ̃ᵢ]^(1/2)，其中下标 E 表示正交压缩，E={0} 项为 1。",
+      "techniques": [
+        "居中的 Gaussian forward-reverse Brascamp–Lieb 化归",
+        "广义 Schur 补与按维数归纳",
+        "协方差的 Karcher 矩阵均值",
+        "等和超平面切片与局部中心极限定理",
+        "Gaussian 重心及平移变分刚性"
+      ],
+      "breakthrough": "定理1.3另用 Karcher 均值条件导出插值型不等式，1.1 的最优性由越来越薄的凸柱逼近。定理3.14在三维构造 Lebesgue 重心为零的凸体，使标量伸缩的 Gaussian 测度失去对数凹性，并以直积推进到更高维。定理1.5用零和超平面切片给任意共同正定协方差下的重心修正界，对正测度可测集合只要求其加权和凸。定理4.5的等号要求各集合与加权和在 Gaussian 几乎处处意义下一致。",
+      "limitations": "任意正定协方差的最优常数公式、Karcher 条件下的等号分析和共同协方差下的重心修正界有不同假设。重心修正中的指数使用各输入重心的加权平均，无需它等于和集重心。反例在维数至少3，正文未解决平面情形。补读主定理、三维反例和切片证明要点，未独立核验整套矩阵优化及函数等号分类。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露定理3.14的证明由未具名商业 AI 工具提出，后由作者核查和重写。第2页与第40页的 OpenAI 命中指向外部对数 Brunn–Minkowski 预印本，和定理3.14的披露分开。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22749v1 · PDF 第38页 Acknowledgements / AI Usage",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:25:57.064637+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22749v1",
+        "contentHash": "4826783578d333c146a187a6ab3b108852b8d6518f973e0c8edef9d2520ab196",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露定理3.14的证明由未具名商业 AI 工具提出，后由作者核查和重写。第2页与第40页的 OpenAI 命中指向外部对数 Brunn–Minkowski 预印本，和定理3.14的披露分开。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "48a639a44e17aef6ee757c0ac2212b9a3e8beecd4fae73427392f99b16202908"
+      },
+      "aiUsage": [
+        "proofs"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "Gaussian 测度几何、尖锐常数与刚性均是本组重点。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove Gaussian Brunn-Minkowski inequalities for multiple sets. These are of the type: $$\\prod_{i=1}^I \\gamma_{\\Sigma_i}(K_i)^{\\tilde \\lambda_i} \\le C_{\\text{sharp}}\\gamma_\\Gamma\\Big(\\sum_{i=1}^I \\lambda_i K_i\\Big),$$ with convex sets $K_i \\subset \\mathbb{R}^n$, whose barycenter $b_{K_i,\\Sigma_i}$ with respect to the Gaussian measure $\\gamma_{\\Sigma_i}$ is zero, where $\\lambda_i, \\tilde \\lambda_i \\in (0;1)$ such that $\\sum_{i=1}^I \\lambda_i=\\sum_{i=1}^I \\tilde \\lambda_i=1.$ In addition, we provide natural conditions on the matrices $\\Gamma, \\Sigma_1,\\cdots,\\Sigma_I \\in \\mathrm{Sym}_{>0}(n)$, which are given through a pointwise inequality involving the Karcher mean. Furthermore, we study equality cases of the corresponding functional forms in such situations. We also investigate the role of centering in the (B)-property by giving a counterexample for convex bodies with zero Lebesgue barycenters in dimensions at least three and thereby answering negatively a question of Faifman-Polterovich in \\cite{Faifman_Polt}. Finally, a new slicing approach is introduced, which allows us to pass from centered convex sets to sets with arbitrary barycenters such that their weighted sum is convex. Based on this idea, we show a new Gaussian Brunn-Minkowski inequality $$e^{|\\sum_{i=1}^I \\lambda_i b_{K_i,I_n}|^2/2n} \\gamma_n \\Big(\\sum_{i=1}^I \\lambda_i K_i \\Big)^{1/n} \\ge \\sum_{i=1}^I \\lambda_i e^{|b_{K_i,I_n}|^2/2n} \\gamma_n(K_i)^{1/n},$$ and consider a further application in the direction of the Gaussian correlation inequality, together with the rigidity for both inequalities.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22749",
+        "metadata": {
+          "title": "Sharp Gaussian Brunn-Minkowski inequalities",
+          "authors": [
+            "Bader Ammari"
+          ],
+          "abstract": "We prove Gaussian Brunn-Minkowski inequalities for multiple sets. These are of the type: $$\\prod_{i=1}^I \\gamma_{\\Sigma_i}(K_i)^{\\tilde \\lambda_i} \\le C_{\\text{sharp}}\\gamma_\\Gamma\\Big(\\sum_{i=1}^I \\lambda_i K_i\\Big),$$ with convex sets $K_i \\subset \\mathbb{R}^n$, whose barycenter $b_{K_i,\\Sigma_i}$ with respect to the Gaussian measure $\\gamma_{\\Sigma_i}$ is zero, where $\\lambda_i, \\tilde \\lambda_i \\in (0;1)$ such that $\\sum_{i=1}^I \\lambda_i=\\sum_{i=1}^I \\tilde \\lambda_i=1.$ In addition, we provide natural conditions on the matrices $\\Gamma, \\Sigma_1,\\cdots,\\Sigma_I \\in \\mathrm{Sym}_{>0}(n)$, which are given through a pointwise inequality involving the Karcher mean. Furthermore, we study equality cases of the corresponding functional forms in such situations. We also investigate the role of centering in the (B)-property by giving a counterexample for convex bodies with zero Lebesgue barycenters in dimensions at least three and thereby answering negatively a question of Faifman-Polterovich in \\cite{Faifman_Polt}. Finally, a new slicing approach is introduced, which allows us to pass from centered convex sets to sets with arbitrary barycenters such that their weighted sum is convex. Based on this idea, we show a new Gaussian Brunn-Minkowski inequality $$e^{|\\sum_{i=1}^I \\lambda_i b_{K_i,I_n}|^2/2n} \\gamma_n \\Big(\\sum_{i=1}^I \\lambda_i K_i \\Big)^{1/n} \\ge \\sum_{i=1}^I \\lambda_i e^{|b_{K_i,I_n}|^2/2n} \\gamma_n(K_i)^{1/n},$$ and consider a further application in the direction of the Gaussian correlation inequality, together with the rigidity for both inequalities.",
+          "categories": [
+            "math.MG",
+            "math.FA",
+            "math.PR"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "40 pages, comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-17T13:20:27Z",
+          "updatedAt": "2026-11-17T13:20:27Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-18T12:16:57.721997+00:00",
+            "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22749v1",
+            "observedAt": "2026-11-18T12:25:57.064637+00:00",
+            "contentHash": "4826783578d333c146a187a6ab3b108852b8d6518f973e0c8edef9d2520ab196"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.739075+00:00",
+            "contentHash": "e10b95055ad8a76d11f2b3f25a99d667a382ab2fbc368390b58c9d00ed003709"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "多集合 Gaussian Brunn–Minkowski 尖锐不等式",
+          "workSummary": "定理1.1对各自 Gaussian 重心为零的凸集、任意正定协方差 Γ 与 Σᵢ、两组正权重 λᵢ 与 λ̃ᵢ，给出多集合 Gaussian Brunn–Minkowski 的最优常数。它是在各线性子空间 E 上取最大值，项为 ∏(λ̃ᵢ/λᵢ)^(dim(E)λ̃ᵢ) 乘以 [det Γ_E / ∏det((Σᵢ)_E)^λ̃ᵢ]^(1/2)，其中下标 E 表示正交压缩，E={0} 项为 1。",
+          "techniques": [
+            "居中的 Gaussian forward-reverse Brascamp–Lieb 化归",
+            "广义 Schur 补与按维数归纳",
+            "协方差的 Karcher 矩阵均值",
+            "等和超平面切片与局部中心极限定理",
+            "Gaussian 重心及平移变分刚性"
+          ],
+          "breakthrough": "定理1.3另用 Karcher 均值条件导出插值型不等式，1.1 的最优性由越来越薄的凸柱逼近。定理3.14在三维构造 Lebesgue 重心为零的凸体，使标量伸缩的 Gaussian 测度失去对数凹性，并以直积推进到更高维。定理1.5用零和超平面切片给任意共同正定协方差下的重心修正界，对正测度可测集合只要求其加权和凸。定理4.5的等号要求各集合与加权和在 Gaussian 几乎处处意义下一致。",
+          "limitations": "任意正定协方差的最优常数公式、Karcher 条件下的等号分析和共同协方差下的重心修正界有不同假设。重心修正中的指数使用各输入重心的加权平均，无需它等于和集重心。反例在维数至少3，正文未解决平面情形。补读主定理、三维反例和切片证明要点，未独立核验整套矩阵优化及函数等号分类。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露定理3.14的证明由未具名商业 AI 工具提出，后由作者核查和重写。第2页与第40页的 OpenAI 命中指向外部对数 Brunn–Minkowski 预印本，和定理3.14的披露分开。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22749v1 · PDF 第38页 Acknowledgements / AI Usage",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:25:57.064637+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22749v1",
+            "contentHash": "4826783578d333c146a187a6ab3b108852b8d6518f973e0c8edef9d2520ab196",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露定理3.14的证明由未具名商业 AI 工具提出，后由作者核查和重写。第2页与第40页的 OpenAI 命中指向外部对数 Brunn–Minkowski 预印本，和定理3.14的披露分开。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "48a639a44e17aef6ee757c0ac2212b9a3e8beecd4fae73427392f99b16202908"
+          },
+          "aiUsage": [
+            "proofs"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "Gaussian 测度几何、尖锐常数与刚性均是本组重点。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove Gaussian Brunn-Minkowski inequalities for multiple sets. These are of the type: $$\\prod_{i=1}^I \\gamma_{\\Sigma_i}(K_i)^{\\tilde \\lambda_i} \\le C_{\\text{sharp}}\\gamma_\\Gamma\\Big(\\sum_{i=1}^I \\lambda_i K_i\\Big),$$ with convex sets $K_i \\subset \\mathbb{R}^n$, whose barycenter $b_{K_i,\\Sigma_i}$ with respect to the Gaussian measure $\\gamma_{\\Sigma_i}$ is zero, where $\\lambda_i, \\tilde \\lambda_i \\in (0;1)$ such that $\\sum_{i=1}^I \\lambda_i=\\sum_{i=1}^I \\tilde \\lambda_i=1.$ In addition, we provide natural conditions on the matrices $\\Gamma, \\Sigma_1,\\cdots,\\Sigma_I \\in \\mathrm{Sym}_{>0}(n)$, which are given through a pointwise inequality involving the Karcher mean. Furthermore, we study equality cases of the corresponding functional forms in such situations. We also investigate the role of centering in the (B)-property by giving a counterexample for convex bodies with zero Lebesgue barycenters in dimensions at least three and thereby answering negatively a question of Faifman-Polterovich in \\cite{Faifman_Polt}. Finally, a new slicing approach is introduced, which allows us to pass from centered convex sets to sets with arbitrary barycenters such that their weighted sum is convex. Based on this idea, we show a new Gaussian Brunn-Minkowski inequality $$e^{|\\sum_{i=1}^I \\lambda_i b_{K_i,I_n}|^2/2n} \\gamma_n \\Big(\\sum_{i=1}^I \\lambda_i K_i \\Big)^{1/n} \\ge \\sum_{i=1}^I \\lambda_i e^{|b_{K_i,I_n}|^2/2n} \\gamma_n(K_i)^{1/n},$$ and consider a further application in the direction of the Gaussian correlation inequality, together with the rigidity for both inequalities.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

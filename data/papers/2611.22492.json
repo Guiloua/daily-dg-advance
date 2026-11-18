@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22492",
+  "slug": "2611.22492",
+  "latest": {
+    "arxivId": "2611.22492",
+    "metadata": {
+      "title": "Equivariant Flow Matching on Homogeneous Spaces",
+      "authors": [
+        "Finn M. Sherry",
+        "Gijs Bellaard"
+      ],
+      "abstract": "Flow matching enables the training of networks that can flow samples from an initial to a target distribution. The network is regressed against simple vector fields that are conditioned on end points in the target distribution. In the Euclidean case, these conditional vector fields induce flows along straight lines. Various generalisations have been proposed to perform flow matching on spaces where straight lines are not well-defined, such as Riemannian manifolds and Lie groups. Riemannian flow matching applies to many domains, but typically requires expensive simulation, while flow matching on Lie groups is simulation-free but only works on Lie groups. In this work, we develop equivariant flow matching on homogeneous spaces, which generalises flow matching on Lie groups, while remaining simulation-free. We also derive all generators connecting pairs of position-orientations, generalising, and perform a similar derivation for event-velocity space, the Lorentzian analogue of position-orientation space, so that we can perform flow matching on these spaces.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-17T09:47:15Z",
+      "updatedAt": "2026-11-17T09:47:15Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22492v1",
+        "observedAt": "2026-11-18T12:25:00.676022+00:00",
+        "contentHash": "a60807223ebc445a6d5e68f9b9d1890007ebc2bade623d40b262248e520a8548"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.736421+00:00",
+        "contentHash": "48fa8d3a9c5dac187511229171359dcc141670e4b820c13ba242d3eb3df774be"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "齐性空间上的等变流匹配",
+      "workSummary": "将 Lie 群上的流匹配推广到齐性空间，从条件向量场构造免模拟的训练目标。作者推导连接两组位置与取向的生成元，并在 Lorentz 几何下对事件与速度空间作同样推导。",
+      "techniques": [
+        "等变流匹配",
+        "齐性空间与 Lie 群作用",
+        "条件向量场回归",
+        "位置与取向空间",
+        "Lorentz 事件与速度空间"
+      ],
+      "breakthrough": "借群作用处理齐性空间上缺少自然直线的问题，为两类位置与状态空间提供显式连接。",
+      "limitations": "免模拟对应论文所述流匹配方法。适用范围是齐性空间，生成元存在性和分支条件需读正文。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:25:00.676022+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22492v1",
+        "contentHash": "a60807223ebc445a6d5e68f9b9d1890007ebc2bade623d40b262248e520a8548",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文相关命中指生成建模研究对象、Eindhoven AI Institute 的财务支持、流方程中群作用 gp_t 的符号和流匹配论文引文。标准、补充及元数据搜索未观察到作者自身使用 AI 作为研究或写作辅助的披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1c1c7ea950854bd5da81729eef9f416b1380e96e72b964fc8e43caebb9cffe61"
+      },
+      "priorityScore": 60,
+      "priorityReason": "用群作用解决几何机器学习中的路径构造。"
+    },
+    "analysisBasis": {
+      "abstract": "Flow matching enables the training of networks that can flow samples from an initial to a target distribution. The network is regressed against simple vector fields that are conditioned on end points in the target distribution. In the Euclidean case, these conditional vector fields induce flows along straight lines. Various generalisations have been proposed to perform flow matching on spaces where straight lines are not well-defined, such as Riemannian manifolds and Lie groups. Riemannian flow matching applies to many domains, but typically requires expensive simulation, while flow matching on Lie groups is simulation-free but only works on Lie groups. In this work, we develop equivariant flow matching on homogeneous spaces, which generalises flow matching on Lie groups, while remaining simulation-free. We also derive all generators connecting pairs of position-orientations, generalising, and perform a similar derivation for event-velocity space, the Lorentzian analogue of position-orientation space, so that we can perform flow matching on these spaces.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22492",
+        "metadata": {
+          "title": "Equivariant Flow Matching on Homogeneous Spaces",
+          "authors": [
+            "Finn M. Sherry",
+            "Gijs Bellaard"
+          ],
+          "abstract": "Flow matching enables the training of networks that can flow samples from an initial to a target distribution. The network is regressed against simple vector fields that are conditioned on end points in the target distribution. In the Euclidean case, these conditional vector fields induce flows along straight lines. Various generalisations have been proposed to perform flow matching on spaces where straight lines are not well-defined, such as Riemannian manifolds and Lie groups. Riemannian flow matching applies to many domains, but typically requires expensive simulation, while flow matching on Lie groups is simulation-free but only works on Lie groups. In this work, we develop equivariant flow matching on homogeneous spaces, which generalises flow matching on Lie groups, while remaining simulation-free. We also derive all generators connecting pairs of position-orientations, generalising, and perform a similar derivation for event-velocity space, the Lorentzian analogue of position-orientation space, so that we can perform flow matching on these spaces.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-17T09:47:15Z",
+          "updatedAt": "2026-11-17T09:47:15Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22492v1",
+            "observedAt": "2026-11-18T12:25:00.676022+00:00",
+            "contentHash": "a60807223ebc445a6d5e68f9b9d1890007ebc2bade623d40b262248e520a8548"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.736421+00:00",
+            "contentHash": "48fa8d3a9c5dac187511229171359dcc141670e4b820c13ba242d3eb3df774be"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "齐性空间上的等变流匹配",
+          "workSummary": "将 Lie 群上的流匹配推广到齐性空间，从条件向量场构造免模拟的训练目标。作者推导连接两组位置与取向的生成元，并在 Lorentz 几何下对事件与速度空间作同样推导。",
+          "techniques": [
+            "等变流匹配",
+            "齐性空间与 Lie 群作用",
+            "条件向量场回归",
+            "位置与取向空间",
+            "Lorentz 事件与速度空间"
+          ],
+          "breakthrough": "借群作用处理齐性空间上缺少自然直线的问题，为两类位置与状态空间提供显式连接。",
+          "limitations": "免模拟对应论文所述流匹配方法。适用范围是齐性空间，生成元存在性和分支条件需读正文。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:25:00.676022+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22492v1",
+            "contentHash": "a60807223ebc445a6d5e68f9b9d1890007ebc2bade623d40b262248e520a8548",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文相关命中指生成建模研究对象、Eindhoven AI Institute 的财务支持、流方程中群作用 gp_t 的符号和流匹配论文引文。标准、补充及元数据搜索未观察到作者自身使用 AI 作为研究或写作辅助的披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1c1c7ea950854bd5da81729eef9f416b1380e96e72b964fc8e43caebb9cffe61"
+          },
+          "priorityScore": 60,
+          "priorityReason": "用群作用解决几何机器学习中的路径构造。"
+        },
+        "analysisBasis": {
+          "abstract": "Flow matching enables the training of networks that can flow samples from an initial to a target distribution. The network is regressed against simple vector fields that are conditioned on end points in the target distribution. In the Euclidean case, these conditional vector fields induce flows along straight lines. Various generalisations have been proposed to perform flow matching on spaces where straight lines are not well-defined, such as Riemannian manifolds and Lie groups. Riemannian flow matching applies to many domains, but typically requires expensive simulation, while flow matching on Lie groups is simulation-free but only works on Lie groups. In this work, we develop equivariant flow matching on homogeneous spaces, which generalises flow matching on Lie groups, while remaining simulation-free. We also derive all generators connecting pairs of position-orientations, generalising, and perform a similar derivation for event-velocity space, the Lorentzian analogue of position-orientation space, so that we can perform flow matching on these spaces.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

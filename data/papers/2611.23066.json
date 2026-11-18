@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.23066",
+  "slug": "2611.23066",
+  "latest": {
+    "arxivId": "2611.23066",
+    "metadata": {
+      "title": "First Order Geometry of Equilateral Small Polygons",
+      "authors": [
+        "José Ayala Hoffmann",
+        "Tomás Ayala Coppola"
+      ],
+      "abstract": "We develop a first order calculus based on the geometry of realised diameter graphs for perimeter maximisation among convex equilateral small polygons. Polygon side equalities and active diameter constraints define a linearised feasible cone and an associated equality space. We prove that an equilateral small polygon is a strict local maximiser of perimeter modulo Euclidean motions if a multiplier balance holds with strictly positive active diameter multipliers and the active equality space consists only of infinitesimal Euclidean motions. The proof uses a local Euclidean slice and a geometric limiting argument and requires neither independence of the active constraint gradients nor second order information. As an application, we combine our criterion with validated interval arithmetic to establish strict local maximality for Bingane and Audet's polygons $A_{16}$, $A_{32}$, $A_{64}$ and for reconstructions of their polygons $Z_{32}$ and $Z_{64}$. For each $n\\in\\{32,64\\}$, the perimeter of $Z_n$ is strictly larger than that of $A_n$. Thus, strict local maximisers with different perimeters coexist in the space of convex equilateral small polygons with the same number of sides.",
+      "categories": [
+        "math.MG",
+        "cs.CG"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-11-17T16:56:16Z",
+      "updatedAt": "2026-11-17T16:56:16Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-18T12:16:57.721997+00:00",
+        "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23066v1",
+        "observedAt": "2026-11-18T12:28:41.190110+00:00",
+        "contentHash": "a89da8697f47fbb634c49998aefc1e841b0c3725e7988942130e2728187e840e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.742349+00:00",
+        "contentHash": "e3ed54b9a05aef978be31f212ec81e255b7688b705a18853298dc57b256f21fd"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "凸等边小多边形周长极值的一阶证书",
+      "workSummary": "等边约束与取到直径的点对给线性化可行锥。若乘子平衡成立且活跃直径乘子严格正，活跃等式空间又只含无穷小欧氏运动，则周长在模欧氏运动后严格局部极大。",
+      "techniques": [
+        "直径图和线性化可行锥",
+        "乘子平衡",
+        "局部欧氏截面",
+        "验证式区间算术"
+      ],
+      "breakthrough": "不用活跃梯度独立性或二阶条件，认证 A₁₆、A₃₂、A₆₄ 及重构的 Z₃₂、Z₆₄。对 n=32,64，Zₙ 周长严格大于 Aₙ，同一边数可有不同周长的严格局部极大者。",
+      "limitations": "证书给局部极大。具体 Zₙ 针对重构版本，未由摘要证明全局最优。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露以自身问题和猜想引导 ChatGPT 与 Claude 探索定理3.5及6.4的论证，协助开发与核查精确代数、区间算术、乘子正性、刚性和 Lean 4 形式化流程，并查找潜在缺口、建议修正、检索文献和协助 LaTeX 与编辑。作者称已核查最终稿采用的论证及计算。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.23066v1 · PDF 第15–16页 Acknowledgements",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:28:41.190110+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.23066v1",
+        "contentHash": "a89da8697f47fbb634c49998aefc1e841b0c3725e7988942130e2728187e840e",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露以自身问题和猜想引导 ChatGPT 与 Claude 探索定理3.5及6.4的论证，协助开发与核查精确代数、区间算术、乘子正性、刚性和 Lean 4 形式化流程，并查找潜在缺口、建议修正、检索文献和协助 LaTeX 与编辑。作者称已核查最终稿采用的论证及计算。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "1e94611e3248c136a01d1fc8fc385a769a1a7877a5a49dfc6e18a7af19c46a30"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 65,
+      "priorityReason": "组合直径图给几何优化的可验证局部判据。"
+    },
+    "analysisBasis": {
+      "abstract": "We develop a first order calculus based on the geometry of realised diameter graphs for perimeter maximisation among convex equilateral small polygons. Polygon side equalities and active diameter constraints define a linearised feasible cone and an associated equality space. We prove that an equilateral small polygon is a strict local maximiser of perimeter modulo Euclidean motions if a multiplier balance holds with strictly positive active diameter multipliers and the active equality space consists only of infinitesimal Euclidean motions. The proof uses a local Euclidean slice and a geometric limiting argument and requires neither independence of the active constraint gradients nor second order information. As an application, we combine our criterion with validated interval arithmetic to establish strict local maximality for Bingane and Audet's polygons $A_{16}$, $A_{32}$, $A_{64}$ and for reconstructions of their polygons $Z_{32}$ and $Z_{64}$. For each $n\\in\\{32,64\\}$, the perimeter of $Z_n$ is strictly larger than that of $A_n$. Thus, strict local maximisers with different perimeters coexist in the space of convex equilateral small polygons with the same number of sides.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.23066",
+        "metadata": {
+          "title": "First Order Geometry of Equilateral Small Polygons",
+          "authors": [
+            "José Ayala Hoffmann",
+            "Tomás Ayala Coppola"
+          ],
+          "abstract": "We develop a first order calculus based on the geometry of realised diameter graphs for perimeter maximisation among convex equilateral small polygons. Polygon side equalities and active diameter constraints define a linearised feasible cone and an associated equality space. We prove that an equilateral small polygon is a strict local maximiser of perimeter modulo Euclidean motions if a multiplier balance holds with strictly positive active diameter multipliers and the active equality space consists only of infinitesimal Euclidean motions. The proof uses a local Euclidean slice and a geometric limiting argument and requires neither independence of the active constraint gradients nor second order information. As an application, we combine our criterion with validated interval arithmetic to establish strict local maximality for Bingane and Audet's polygons $A_{16}$, $A_{32}$, $A_{64}$ and for reconstructions of their polygons $Z_{32}$ and $Z_{64}$. For each $n\\in\\{32,64\\}$, the perimeter of $Z_n$ is strictly larger than that of $A_n$. Thus, strict local maximisers with different perimeters coexist in the space of convex equilateral small polygons with the same number of sides.",
+          "categories": [
+            "math.MG",
+            "cs.CG"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-11-17T16:56:16Z",
+          "updatedAt": "2026-11-17T16:56:16Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-18T12:16:57.721997+00:00",
+            "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.23066v1",
+            "observedAt": "2026-11-18T12:28:41.190110+00:00",
+            "contentHash": "a89da8697f47fbb634c49998aefc1e841b0c3725e7988942130e2728187e840e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.742349+00:00",
+            "contentHash": "e3ed54b9a05aef978be31f212ec81e255b7688b705a18853298dc57b256f21fd"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "凸等边小多边形周长极值的一阶证书",
+          "workSummary": "等边约束与取到直径的点对给线性化可行锥。若乘子平衡成立且活跃直径乘子严格正，活跃等式空间又只含无穷小欧氏运动，则周长在模欧氏运动后严格局部极大。",
+          "techniques": [
+            "直径图和线性化可行锥",
+            "乘子平衡",
+            "局部欧氏截面",
+            "验证式区间算术"
+          ],
+          "breakthrough": "不用活跃梯度独立性或二阶条件，认证 A₁₆、A₃₂、A₆₄ 及重构的 Z₃₂、Z₆₄。对 n=32,64，Zₙ 周长严格大于 Aₙ，同一边数可有不同周长的严格局部极大者。",
+          "limitations": "证书给局部极大。具体 Zₙ 针对重构版本，未由摘要证明全局最优。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露以自身问题和猜想引导 ChatGPT 与 Claude 探索定理3.5及6.4的论证，协助开发与核查精确代数、区间算术、乘子正性、刚性和 Lean 4 形式化流程，并查找潜在缺口、建议修正、检索文献和协助 LaTeX 与编辑。作者称已核查最终稿采用的论证及计算。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.23066v1 · PDF 第15–16页 Acknowledgements",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:28:41.190110+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.23066v1",
+            "contentHash": "a89da8697f47fbb634c49998aefc1e841b0c3725e7988942130e2728187e840e",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露以自身问题和猜想引导 ChatGPT 与 Claude 探索定理3.5及6.4的论证，协助开发与核查精确代数、区间算术、乘子正性、刚性和 Lean 4 形式化流程，并查找潜在缺口、建议修正、检索文献和协助 LaTeX 与编辑。作者称已核查最终稿采用的论证及计算。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "1e94611e3248c136a01d1fc8fc385a769a1a7877a5a49dfc6e18a7af19c46a30"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 65,
+          "priorityReason": "组合直径图给几何优化的可验证局部判据。"
+        },
+        "analysisBasis": {
+          "abstract": "We develop a first order calculus based on the geometry of realised diameter graphs for perimeter maximisation among convex equilateral small polygons. Polygon side equalities and active diameter constraints define a linearised feasible cone and an associated equality space. We prove that an equilateral small polygon is a strict local maximiser of perimeter modulo Euclidean motions if a multiplier balance holds with strictly positive active diameter multipliers and the active equality space consists only of infinitesimal Euclidean motions. The proof uses a local Euclidean slice and a geometric limiting argument and requires neither independence of the active constraint gradients nor second order information. As an application, we combine our criterion with validated interval arithmetic to establish strict local maximality for Bingane and Audet's polygons $A_{16}$, $A_{32}$, $A_{64}$ and for reconstructions of their polygons $Z_{32}$ and $Z_{64}$. For each $n\\in\\{32,64\\}$, the perimeter of $Z_n$ is strictly larger than that of $A_n$. Thus, strict local maximisers with different perimeters coexist in the space of convex equilateral small polygons with the same number of sides.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

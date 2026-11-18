@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22143",
+  "slug": "2611.22143",
+  "latest": {
+    "arxivId": "2611.22143",
+    "metadata": {
+      "title": "Continuous improved Hölder and reverse Hölder inequalities for Gaussian random vectors",
+      "authors": [
+        "Ai-Jun Li",
+        "Qingzhong Huang"
+      ],
+      "abstract": "We establish continuous versions of the improved Hölder and reverse Hölder inequalities for correlated Gaussian random vectors, where a finite covariance matrix is replaced by a covariance operator acting on a Hilbert space of parameter fields. Under operator comparisons between the covariance and the exponent multiplier, we prove both inequalities and characterize equality in terms of a compatible probability density on the underlying Gaussian space. We further describe this density as a product of independent factors on common eigenspaces and a Gaussian factor whose mean and covariance satisfy explicit algebraic conditions. In the reverse setting, positive and negative exponents may coexist. The continuous product is defined by ordered truncation, allowing zeros in the positive-exponent factors. The equality proof combines an exact Ornstein--Uhlenbeck semigroup comparison, a spectral gap away from the kernel of the governing operator difference, and characteristic-function deconvolution. We also treat exponential quadratic functions without requiring a uniform positive-definiteness margin on the precision matrices.",
+      "categories": [
+        "math.MG",
+        "math.FA",
+        "math.PR"
+      ],
+      "primaryCategory": "math.MG",
+      "comment": "28 pages",
+      "version": 1,
+      "submittedAt": "2026-11-17T03:28:28Z",
+      "updatedAt": "2026-11-17T03:28:28Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-18T12:16:57.721997+00:00",
+        "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22143v1",
+        "observedAt": "2026-11-18T12:23:19.403066+00:00",
+        "contentHash": "9b2d974b9b70f8f5c8650b8725577618e5517da1f6f347687063850e40fd7328"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.031516+00:00",
+        "contentHash": "a88a2f421e215ad745d0d6e8e9460cfac1b5dbf1d38fec43977a92e82cb3d4d9"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "连续Gaussian Hölder不等式与等号",
+      "workSummary": "作者把相关Gaussian向量改进Hölder和反向Hölder不等式从有限协方差矩阵推广到参数场Hilbert空间的协方差算子。用协方差与指数乘子间的算子比较给出两类不等式，并将等号刻画为底层Gaussian空间上存在相容概率密度。该密度分解为共同特征空间上的独立因子及均值、协方差满足代数条件的Gaussian因子。",
+      "techniques": [
+        "协方差算子与指数乘子",
+        "Ornstein–Uhlenbeck半群精确比较",
+        "离核谱隙和特征函数反卷积",
+        "有序截断定义连续乘积"
+      ],
+      "breakthrough": "连续乘积允许正指数因子取零，反向型允许正负指数共存。指数二次函数的处理无需精度矩阵有统一正定裕度。",
+      "limitations": "算子次序、连续乘积存在条件、等号中的代数相容性须按正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第27页致谢明确披露ChatGPT 6用于探索部分证明策略、检查计算和改善语言与表述，记录exploration、verification及writing。作者说明主要构思和路线由作者发展。首页Ai-Jun是作者名，其他llm候选来自full-measure、all mixed及all marginals等常规词组。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22143v1 · PDF第27页Acknowledgments，全文28页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:23:19.403066+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22143v1",
+        "contentHash": "9b2d974b9b70f8f5c8650b8725577618e5517da1f6f347687063850e40fd7328",
+        "pages": 28,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第27页致谢明确披露ChatGPT 6用于探索部分证明策略、检查计算和改善语言与表述，记录exploration、verification及writing。作者说明主要构思和路线由作者发展。首页Ai-Jun是作者名，其他llm候选来自full-measure、all mixed及all marginals等常规词组。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0e30a6591b79443a809d05a587ec949a7e764445813ee9513d9f2ef361e71e71"
+      },
+      "aiUsage": [
+        "exploration",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 74,
+      "priorityReason": "半群与等号刚性的技术可供几何泛函不等式借鉴。"
+    },
+    "analysisBasis": {
+      "abstract": "We establish continuous versions of the improved Hölder and reverse Hölder inequalities for correlated Gaussian random vectors, where a finite covariance matrix is replaced by a covariance operator acting on a Hilbert space of parameter fields. Under operator comparisons between the covariance and the exponent multiplier, we prove both inequalities and characterize equality in terms of a compatible probability density on the underlying Gaussian space. We further describe this density as a product of independent factors on common eigenspaces and a Gaussian factor whose mean and covariance satisfy explicit algebraic conditions. In the reverse setting, positive and negative exponents may coexist. The continuous product is defined by ordered truncation, allowing zeros in the positive-exponent factors. The equality proof combines an exact Ornstein--Uhlenbeck semigroup comparison, a spectral gap away from the kernel of the governing operator difference, and characteristic-function deconvolution. We also treat exponential quadratic functions without requiring a uniform positive-definiteness margin on the precision matrices.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22143",
+        "metadata": {
+          "title": "Continuous improved Hölder and reverse Hölder inequalities for Gaussian random vectors",
+          "authors": [
+            "Ai-Jun Li",
+            "Qingzhong Huang"
+          ],
+          "abstract": "We establish continuous versions of the improved Hölder and reverse Hölder inequalities for correlated Gaussian random vectors, where a finite covariance matrix is replaced by a covariance operator acting on a Hilbert space of parameter fields. Under operator comparisons between the covariance and the exponent multiplier, we prove both inequalities and characterize equality in terms of a compatible probability density on the underlying Gaussian space. We further describe this density as a product of independent factors on common eigenspaces and a Gaussian factor whose mean and covariance satisfy explicit algebraic conditions. In the reverse setting, positive and negative exponents may coexist. The continuous product is defined by ordered truncation, allowing zeros in the positive-exponent factors. The equality proof combines an exact Ornstein--Uhlenbeck semigroup comparison, a spectral gap away from the kernel of the governing operator difference, and characteristic-function deconvolution. We also treat exponential quadratic functions without requiring a uniform positive-definiteness margin on the precision matrices.",
+          "categories": [
+            "math.MG",
+            "math.FA",
+            "math.PR"
+          ],
+          "primaryCategory": "math.MG",
+          "comment": "28 pages",
+          "version": 1,
+          "submittedAt": "2026-11-17T03:28:28Z",
+          "updatedAt": "2026-11-17T03:28:28Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-18T12:16:57.721997+00:00",
+            "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22143v1",
+            "observedAt": "2026-11-18T12:23:19.403066+00:00",
+            "contentHash": "9b2d974b9b70f8f5c8650b8725577618e5517da1f6f347687063850e40fd7328"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.031516+00:00",
+            "contentHash": "a88a2f421e215ad745d0d6e8e9460cfac1b5dbf1d38fec43977a92e82cb3d4d9"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "连续Gaussian Hölder不等式与等号",
+          "workSummary": "作者把相关Gaussian向量改进Hölder和反向Hölder不等式从有限协方差矩阵推广到参数场Hilbert空间的协方差算子。用协方差与指数乘子间的算子比较给出两类不等式，并将等号刻画为底层Gaussian空间上存在相容概率密度。该密度分解为共同特征空间上的独立因子及均值、协方差满足代数条件的Gaussian因子。",
+          "techniques": [
+            "协方差算子与指数乘子",
+            "Ornstein–Uhlenbeck半群精确比较",
+            "离核谱隙和特征函数反卷积",
+            "有序截断定义连续乘积"
+          ],
+          "breakthrough": "连续乘积允许正指数因子取零，反向型允许正负指数共存。指数二次函数的处理无需精度矩阵有统一正定裕度。",
+          "limitations": "算子次序、连续乘积存在条件、等号中的代数相容性须按正文核对。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第27页致谢明确披露ChatGPT 6用于探索部分证明策略、检查计算和改善语言与表述，记录exploration、verification及writing。作者说明主要构思和路线由作者发展。首页Ai-Jun是作者名，其他llm候选来自full-measure、all mixed及all marginals等常规词组。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22143v1 · PDF第27页Acknowledgments，全文28页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:23:19.403066+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22143v1",
+            "contentHash": "9b2d974b9b70f8f5c8650b8725577618e5517da1f6f347687063850e40fd7328",
+            "pages": 28,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第27页致谢明确披露ChatGPT 6用于探索部分证明策略、检查计算和改善语言与表述，记录exploration、verification及writing。作者说明主要构思和路线由作者发展。首页Ai-Jun是作者名，其他llm候选来自full-measure、all mixed及all marginals等常规词组。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0e30a6591b79443a809d05a587ec949a7e764445813ee9513d9f2ef361e71e71"
+          },
+          "aiUsage": [
+            "exploration",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 74,
+          "priorityReason": "半群与等号刚性的技术可供几何泛函不等式借鉴。"
+        },
+        "analysisBasis": {
+          "abstract": "We establish continuous versions of the improved Hölder and reverse Hölder inequalities for correlated Gaussian random vectors, where a finite covariance matrix is replaced by a covariance operator acting on a Hilbert space of parameter fields. Under operator comparisons between the covariance and the exponent multiplier, we prove both inequalities and characterize equality in terms of a compatible probability density on the underlying Gaussian space. We further describe this density as a product of independent factors on common eigenspaces and a Gaussian factor whose mean and covariance satisfy explicit algebraic conditions. In the reverse setting, positive and negative exponents may coexist. The continuous product is defined by ordered truncation, allowing zeros in the positive-exponent factors. The equality proof combines an exact Ornstein--Uhlenbeck semigroup comparison, a spectral gap away from the kernel of the governing operator difference, and characteristic-function deconvolution. We also treat exponential quadratic functions without requiring a uniform positive-definiteness margin on the precision matrices.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

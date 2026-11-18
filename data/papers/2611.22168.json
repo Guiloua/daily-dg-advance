@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22168",
+  "slug": "2611.22168",
+  "latest": {
+    "arxivId": "2611.22168",
+    "metadata": {
+      "title": "Extremal metrics for the $G$-invariant Steklov eigenvalues",
+      "authors": [
+        "Eduardo Longa"
+      ],
+      "abstract": "We study the $G$-invariant Steklov spectrum of compact connected Riemannian manifolds with boundary, endowed with an effective isometric action of a compact Lie group $G$. Under a mild nontransitivity assumption on the boundary action, we establish that this spectrum consists of an infinite sequence of eigenvalues diverging to infinity. We then investigate extremal metrics for the normalised $G$-invariant Steklov eigenvalue functionals. Assuming that $\\dim G \\geq 1$, we prove that none of these functionals admits an extremal $G$-invariant metric. Moreover, when $\\dim M \\geq 3$, the normalised first $G$-invariant Steklov eigenvalue is unbounded above even within a fixed $G$-invariant conformal class. The proof relies on a local model near a boundary orbit and spectral convergence under conformal collapse. Finally, in contrast with the upper bounds obtained by Colbois, Dryden and El Soufi for invariant Laplace eigenvalues of embedded spheres of revolution, we construct, for any $n \\geq 3$, a sequence of smooth Euclidean domains of revolution in $\\mathbb R^n$, all diffeomorphic to the ball, along which the normalised first $G$-invariant Steklov eigenvalue blows up.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "40 pages, 3 figures",
+      "version": 1,
+      "submittedAt": "2026-11-17T04:00:52Z",
+      "updatedAt": "2026-11-17T04:00:52Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22168",
+        "observedAt": "2026-11-18T12:20:28.276208+00:00",
+        "contentHash": "a21d9842cafe6270d4bd7659b8cc8191b7a677edb62b30ae3af9b63e986a943f"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.032300+00:00",
+        "contentHash": "a2c3581e96ff0bc7f6dbb759ddb890c618fc6684eea359ef28aa6c9ffc1e1eaa"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "谱变分与无界构造",
+      "workSummary": "在紧致连通有边界流形上，紧 Lie 群正维、有效且边界非传递时，作者排除各归一化不变 Steklov 特征值的极值不变度量，并在固定不变共形类中使首个正不变特征值的归一化量无界。",
+      "techniques": [
+        "不变特征函数的极值判据",
+        "边界轨道的局部模型",
+        "混合 Steklov–Neumann 问题",
+        "共形塌缩和谱收敛"
+      ],
+      "breakthrough": "轨道正维处，不变特征函数微分无法生成正定度量，给出非极值性。对 n≥3 的球型实体旋转域，保持欧氏度量只改变区域也可实现无界。",
+      "limitations": "无界量为 σ₁ᴳ·Vol(M)^((2−n)/n)·Vol(∂M)。边界非传递要求至少一个连通边界分支的保持子群在该分支上不传递。实体旋转域的群为 O(n−1)。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 GPT-5.6 Sol 与 GPT-6 Astra 协助审校、组织和制图，参与命题 5.4 的估计，并提出第 7 节旋转欧氏区域的初始构造。定理 B 主思路在致谢中归于 Bruno Colbois。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22168 · PDF 第 5 页，Statement on the use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:20:28.276208+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22168",
+        "contentHash": "a21d9842cafe6270d4bd7659b8cc8191b7a677edb62b30ae3af9b63e986a943f",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 GPT-6 Astra 协助审校、组织和制图，参与命题 5.4 的估计，并提出第 7 节旋转欧氏区域的初始构造。定理 B 主思路在致谢中归于 Bruno Colbois。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6c962a431da41e2743ec8fe6f964a5eaa3be6d0aca7cf300fed8e086651059df"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "解释对称限制如何改变 Steklov 谱的变分行为。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the $G$-invariant Steklov spectrum of compact connected Riemannian manifolds with boundary, endowed with an effective isometric action of a compact Lie group $G$. Under a mild nontransitivity assumption on the boundary action, we establish that this spectrum consists of an infinite sequence of eigenvalues diverging to infinity. We then investigate extremal metrics for the normalised $G$-invariant Steklov eigenvalue functionals. Assuming that $\\dim G \\geq 1$, we prove that none of these functionals admits an extremal $G$-invariant metric. Moreover, when $\\dim M \\geq 3$, the normalised first $G$-invariant Steklov eigenvalue is unbounded above even within a fixed $G$-invariant conformal class. The proof relies on a local model near a boundary orbit and spectral convergence under conformal collapse. Finally, in contrast with the upper bounds obtained by Colbois, Dryden and El Soufi for invariant Laplace eigenvalues of embedded spheres of revolution, we construct, for any $n \\geq 3$, a sequence of smooth Euclidean domains of revolution in $\\mathbb R^n$, all diffeomorphic to the ball, along which the normalised first $G$-invariant Steklov eigenvalue blows up.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22168",
+        "metadata": {
+          "title": "Extremal metrics for the $G$-invariant Steklov eigenvalues",
+          "authors": [
+            "Eduardo Longa"
+          ],
+          "abstract": "We study the $G$-invariant Steklov spectrum of compact connected Riemannian manifolds with boundary, endowed with an effective isometric action of a compact Lie group $G$. Under a mild nontransitivity assumption on the boundary action, we establish that this spectrum consists of an infinite sequence of eigenvalues diverging to infinity. We then investigate extremal metrics for the normalised $G$-invariant Steklov eigenvalue functionals. Assuming that $\\dim G \\geq 1$, we prove that none of these functionals admits an extremal $G$-invariant metric. Moreover, when $\\dim M \\geq 3$, the normalised first $G$-invariant Steklov eigenvalue is unbounded above even within a fixed $G$-invariant conformal class. The proof relies on a local model near a boundary orbit and spectral convergence under conformal collapse. Finally, in contrast with the upper bounds obtained by Colbois, Dryden and El Soufi for invariant Laplace eigenvalues of embedded spheres of revolution, we construct, for any $n \\geq 3$, a sequence of smooth Euclidean domains of revolution in $\\mathbb R^n$, all diffeomorphic to the ball, along which the normalised first $G$-invariant Steklov eigenvalue blows up.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "40 pages, 3 figures",
+          "version": 1,
+          "submittedAt": "2026-11-17T04:00:52Z",
+          "updatedAt": "2026-11-17T04:00:52Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22168",
+            "observedAt": "2026-11-18T12:20:28.276208+00:00",
+            "contentHash": "a21d9842cafe6270d4bd7659b8cc8191b7a677edb62b30ae3af9b63e986a943f"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.032300+00:00",
+            "contentHash": "a2c3581e96ff0bc7f6dbb759ddb890c618fc6684eea359ef28aa6c9ffc1e1eaa"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "谱变分与无界构造",
+          "workSummary": "在紧致连通有边界流形上，紧 Lie 群正维、有效且边界非传递时，作者排除各归一化不变 Steklov 特征值的极值不变度量，并在固定不变共形类中使首个正不变特征值的归一化量无界。",
+          "techniques": [
+            "不变特征函数的极值判据",
+            "边界轨道的局部模型",
+            "混合 Steklov–Neumann 问题",
+            "共形塌缩和谱收敛"
+          ],
+          "breakthrough": "轨道正维处，不变特征函数微分无法生成正定度量，给出非极值性。对 n≥3 的球型实体旋转域，保持欧氏度量只改变区域也可实现无界。",
+          "limitations": "无界量为 σ₁ᴳ·Vol(M)^((2−n)/n)·Vol(∂M)。边界非传递要求至少一个连通边界分支的保持子群在该分支上不传递。实体旋转域的群为 O(n−1)。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 GPT-5.6 Sol 与 GPT-6 Astra 协助审校、组织和制图，参与命题 5.4 的估计，并提出第 7 节旋转欧氏区域的初始构造。定理 B 主思路在致谢中归于 Bruno Colbois。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22168 · PDF 第 5 页，Statement on the use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:20:28.276208+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22168",
+            "contentHash": "a21d9842cafe6270d4bd7659b8cc8191b7a677edb62b30ae3af9b63e986a943f",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 GPT-5.6 Sol 与 GPT-6 Astra 协助审校、组织和制图，参与命题 5.4 的估计，并提出第 7 节旋转欧氏区域的初始构造。定理 B 主思路在致谢中归于 Bruno Colbois。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6c962a431da41e2743ec8fe6f964a5eaa3be6d0aca7cf300fed8e086651059df"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "解释对称限制如何改变 Steklov 谱的变分行为。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the $G$-invariant Steklov spectrum of compact connected Riemannian manifolds with boundary, endowed with an effective isometric action of a compact Lie group $G$. Under a mild nontransitivity assumption on the boundary action, we establish that this spectrum consists of an infinite sequence of eigenvalues diverging to infinity. We then investigate extremal metrics for the normalised $G$-invariant Steklov eigenvalue functionals. Assuming that $\\dim G \\geq 1$, we prove that none of these functionals admits an extremal $G$-invariant metric. Moreover, when $\\dim M \\geq 3$, the normalised first $G$-invariant Steklov eigenvalue is unbounded above even within a fixed $G$-invariant conformal class. The proof relies on a local model near a boundary orbit and spectral convergence under conformal collapse. Finally, in contrast with the upper bounds obtained by Colbois, Dryden and El Soufi for invariant Laplace eigenvalues of embedded spheres of revolution, we construct, for any $n \\geq 3$, a sequence of smooth Euclidean domains of revolution in $\\mathbb R^n$, all diffeomorphic to the ball, along which the normalised first $G$-invariant Steklov eigenvalue blows up.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

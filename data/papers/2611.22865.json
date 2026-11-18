@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22865",
+  "slug": "2611.22865",
+  "latest": {
+    "arxivId": "2611.22865",
+    "metadata": {
+      "title": "Rank-sensitive Hodge bounds for symphonic energy and minimizers on sheared tori",
+      "authors": [
+        "Xiangzhi Cao"
+      ],
+      "abstract": "We ask how far the minimum of symphonic energy in a homotopy class can exceed the Hodge lower bound from a pulled-back two-form. For projections from a family of sheared four-tori to the flat two-torus, we compute the minimum and the gap for every smooth shear profile. The gap depends on the variance of the profile. Attainment of the projection's pullback area energy by a coclosed test depends on its oscillation. We determine exactly which variances allow two profiles with the same positive gap and different outcomes for this test, and compute the convex relaxation beyond the oscillation threshold. In arbitrary source dimension the optimized test improves the Hodge bound precisely when the harmonic representative exceeds the rank allowed for the pullback on a set of positive measure. We also prove low-degree cohomology estimates, a sharp universal degree exponent for targets detected by low-degree cup products, and an exact defect identity that forces an immersed source to be symplectic at equality.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-17T14:44:24Z",
+      "updatedAt": "2026-11-17T14:44:24Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22865v1",
+        "observedAt": "2026-11-18T12:27:46.940982+00:00",
+        "contentHash": "6f848326c2e188358d9306fb7bd6f6f530835f970dadf8f8367771f2fe1c8c98"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.740750+00:00",
+        "contentHash": "f743ed55c54b9e52f27db79368ad0be96cb007853480777084de83fae0b03a9e"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "秩敏感 Hodge 界、剪切环面精确极小值与测试阈值",
+      "workSummary": "对闭源，记 β=u*ω，η 为其闭二形式上同调类的调和代表，E_sym=∫tr((du·du*)²)/4。若 β 的秩几乎处处至多 2r，定理4.1以余闭 ψ 的最大 r 个斜标准块的平方积分 T_r(ψ) 做分母，给 2F_ω(u)≥|〈η,ψ〉|²/T_r(ψ)，其中 F_ω=‖β‖²/2。命题4.3的优化界严格超过 ‖η‖² 当且仅当 η 在正测度集上超过秩 2r。指定剪切四环面投影在其同伦类的 E_sym 最小值为 1/2，除目标平移外唯一，与 Hodge 下界的差为 b²V/[2(1+b²)(1+V)]。",
+      "techniques": [
+        "斜对称形式块截断与余闭对偶测试",
+        "Hodge 正交分解与极范数凸松弛",
+        "剪切环面平移平均",
+        "四次矩阵能量的定量凸性",
+        "低阶杯积和交换子平方亏量"
+      ],
+      "breakthrough": "剪切参数 b 与剖面 f 满足 |b| osc(f)≤2 恰可用光滑余闭测试证明 2F_ω(p)=1。固定 b≠0 时，恰在 0<V<b⁻² 可找到方差相同但位于测试阈值两侧的光滑剖面。另有低阶杯积检测的映射度下界 E_sym≥c|deg u|^(4/m)，该普适指数在平坦环面上尖锐。几乎 Hermitian 情形的精确亏量恒等式把 Hodge 亏量与交换子亏量分开，达到 Hodge 下界的浸入使源具有辛结构。",
+      "limitations": "优化值是闭二形式的凸松弛值。超出振幅阈值时该值严格低于投影的 2F_ω，映射类中面积能量的实际下确界仍开放。一般秩界用于闭拉回及给定秩上限。亏量定理需拉回基本二形式闭，借目标形式闭可推出同伦极小性。度数界要求闭定向同维与基本类被次数至多四的杯积检测。已补读第1–10页的主要陈述及路线，未独立逐步验证全证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第10页明确把 OpenAI ChatGPT（Codex）用于发展秩估计和剪切环面例，也用于起草及修订证明、检索文献和准备稿件。作者说明数学论证不依赖数值证据。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22865v1 · PDF 第10页，Use of computational assistance",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:27:46.940982+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22865v1",
+        "contentHash": "6f848326c2e188358d9306fb7bd6f6f530835f970dadf8f8367771f2fe1c8c98",
+        "pages": 10,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页明确把 OpenAI ChatGPT（Codex）用于发展秩估计和剪切环面例，也用于起草及修订证明、检索文献和准备稿件。作者说明数学论证不依赖数值证据。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "7a4add7ffdf55b79c6f1d191c996f4876ca882eadb5a7e0b40cc898f079951a2"
+      },
+      "aiUsage": [
+        "ideas",
+        "literature",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 93,
+      "priorityReason": "比较能量下界的可达性，分离 Hodge 信息与点态秩限制。"
+    },
+    "analysisBasis": {
+      "abstract": "We ask how far the minimum of symphonic energy in a homotopy class can exceed the Hodge lower bound from a pulled-back two-form. For projections from a family of sheared four-tori to the flat two-torus, we compute the minimum and the gap for every smooth shear profile. The gap depends on the variance of the profile. Attainment of the projection's pullback area energy by a coclosed test depends on its oscillation. We determine exactly which variances allow two profiles with the same positive gap and different outcomes for this test, and compute the convex relaxation beyond the oscillation threshold. In arbitrary source dimension the optimized test improves the Hodge bound precisely when the harmonic representative exceeds the rank allowed for the pullback on a set of positive measure. We also prove low-degree cohomology estimates, a sharp universal degree exponent for targets detected by low-degree cup products, and an exact defect identity that forces an immersed source to be symplectic at equality.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22865",
+        "metadata": {
+          "title": "Rank-sensitive Hodge bounds for symphonic energy and minimizers on sheared tori",
+          "authors": [
+            "Xiangzhi Cao"
+          ],
+          "abstract": "We ask how far the minimum of symphonic energy in a homotopy class can exceed the Hodge lower bound from a pulled-back two-form. For projections from a family of sheared four-tori to the flat two-torus, we compute the minimum and the gap for every smooth shear profile. The gap depends on the variance of the profile. Attainment of the projection's pullback area energy by a coclosed test depends on its oscillation. We determine exactly which variances allow two profiles with the same positive gap and different outcomes for this test, and compute the convex relaxation beyond the oscillation threshold. In arbitrary source dimension the optimized test improves the Hodge bound precisely when the harmonic representative exceeds the rank allowed for the pullback on a set of positive measure. We also prove low-degree cohomology estimates, a sharp universal degree exponent for targets detected by low-degree cup products, and an exact defect identity that forces an immersed source to be symplectic at equality.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-17T14:44:24Z",
+          "updatedAt": "2026-11-17T14:44:24Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22865v1",
+            "observedAt": "2026-11-18T12:27:46.940982+00:00",
+            "contentHash": "6f848326c2e188358d9306fb7bd6f6f530835f970dadf8f8367771f2fe1c8c98"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.740750+00:00",
+            "contentHash": "f743ed55c54b9e52f27db79368ad0be96cb007853480777084de83fae0b03a9e"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "秩敏感 Hodge 界、剪切环面精确极小值与测试阈值",
+          "workSummary": "对闭源，记 β=u*ω，η 为其闭二形式上同调类的调和代表，E_sym=∫tr((du·du*)²)/4。若 β 的秩几乎处处至多 2r，定理4.1以余闭 ψ 的最大 r 个斜标准块的平方积分 T_r(ψ) 做分母，给 2F_ω(u)≥|〈η,ψ〉|²/T_r(ψ)，其中 F_ω=‖β‖²/2。命题4.3的优化界严格超过 ‖η‖² 当且仅当 η 在正测度集上超过秩 2r。指定剪切四环面投影在其同伦类的 E_sym 最小值为 1/2，除目标平移外唯一，与 Hodge 下界的差为 b²V/[2(1+b²)(1+V)]。",
+          "techniques": [
+            "斜对称形式块截断与余闭对偶测试",
+            "Hodge 正交分解与极范数凸松弛",
+            "剪切环面平移平均",
+            "四次矩阵能量的定量凸性",
+            "低阶杯积和交换子平方亏量"
+          ],
+          "breakthrough": "剪切参数 b 与剖面 f 满足 |b| osc(f)≤2 恰可用光滑余闭测试证明 2F_ω(p)=1。固定 b≠0 时，恰在 0<V<b⁻² 可找到方差相同但位于测试阈值两侧的光滑剖面。另有低阶杯积检测的映射度下界 E_sym≥c|deg u|^(4/m)，该普适指数在平坦环面上尖锐。几乎 Hermitian 情形的精确亏量恒等式把 Hodge 亏量与交换子亏量分开，达到 Hodge 下界的浸入使源具有辛结构。",
+          "limitations": "优化值是闭二形式的凸松弛值。超出振幅阈值时该值严格低于投影的 2F_ω，映射类中面积能量的实际下确界仍开放。一般秩界用于闭拉回及给定秩上限。亏量定理需拉回基本二形式闭，借目标形式闭可推出同伦极小性。度数界要求闭定向同维与基本类被次数至多四的杯积检测。已补读第1–10页的主要陈述及路线，未独立逐步验证全证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第10页明确把 OpenAI ChatGPT（Codex）用于发展秩估计和剪切环面例，也用于起草及修订证明、检索文献和准备稿件。作者说明数学论证不依赖数值证据。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22865v1 · PDF 第10页，Use of computational assistance",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:27:46.940982+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22865v1",
+            "contentHash": "6f848326c2e188358d9306fb7bd6f6f530835f970dadf8f8367771f2fe1c8c98",
+            "pages": 10,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第10页明确把 OpenAI ChatGPT（Codex）用于发展秩估计和剪切环面例，也用于起草及修订证明、检索文献和准备稿件。作者说明数学论证不依赖数值证据。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "7a4add7ffdf55b79c6f1d191c996f4876ca882eadb5a7e0b40cc898f079951a2"
+          },
+          "aiUsage": [
+            "ideas",
+            "literature",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 93,
+          "priorityReason": "比较能量下界的可达性，分离 Hodge 信息与点态秩限制。"
+        },
+        "analysisBasis": {
+          "abstract": "We ask how far the minimum of symphonic energy in a homotopy class can exceed the Hodge lower bound from a pulled-back two-form. For projections from a family of sheared four-tori to the flat two-torus, we compute the minimum and the gap for every smooth shear profile. The gap depends on the variance of the profile. Attainment of the projection's pullback area energy by a coclosed test depends on its oscillation. We determine exactly which variances allow two profiles with the same positive gap and different outcomes for this test, and compute the convex relaxation beyond the oscillation threshold. In arbitrary source dimension the optimized test improves the Hodge bound precisely when the harmonic representative exceeds the rank allowed for the pullback on a set of positive measure. We also prove low-degree cohomology estimates, a sharp universal degree exponent for targets detected by low-degree cup products, and an exact defect identity that forces an immersed source to be symplectic at equality.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

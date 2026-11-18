@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.12107",
+  "slug": "2611.12107",
+  "latest": {
+    "arxivId": "2611.12107",
+    "metadata": {
+      "title": "Geometry and Stochastic Analysis of Flow and Diffusion Models: A Survey",
+      "authors": [
+        "Ehsan Mirafzali",
+        "Razvan Marinescu"
+      ],
+      "abstract": "Flow-based and diffusion-based models have become the principal means of learning and sampling high-dimensional probability distributions, from images and video to proteins, molecules and physical fields, and increasingly language. Each carries a simple law to the law of the data along a curve of probability measures, and behind the variety of their names lie three geometries, those of the state space on which the data live, of the space of probability measures through which the curve passes, and of the space of paths traced by the generating process. A single analytic idea runs through the subject. Every score identity used to train a diffusion model is an integration by parts, on the noise, on the data or on Wiener space, and Malliavin calculus extends this to nonlinear and infinite-dimensional diffusions. We develop these foundations with full definitions and follow them through normalising flows, flow matching and few-step maps, diffusion models and their convergence theory, conditioning, Schrödinger bridges and stochastic control, and their extension to manifolds, Lie groups, discrete and function spaces and jump processes. We close with statistical physics, renormalisation and, more speculatively, holography, in which the radial direction of anti-de Sitter space can play the role of flow time. A table of the main methods and a collection of open problems complete the survey.",
+      "categories": [
+        "math.PR",
+        "math.DG",
+        "stat.ML"
+      ],
+      "primaryCategory": "math.PR",
+      "version": 1,
+      "submittedAt": "2026-11-09T09:22:23Z",
+      "updatedAt": "2026-11-09T09:22:23Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.12107v1",
+        "observedAt": "2026-11-18T12:18:11.605182+00:00",
+        "contentHash": "33fcfefb2282eb4d4ae58b0c523baae9d658dfae8f7021deb7899d1a27ab1715"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.024365+00:00",
+        "contentHash": "51cedd86652c14b793e782f5541df7d5ef73d4b7097ff559c30cc0cb2dc340ed"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "流与扩散模型的几何和随机分析综述",
+      "workSummary": "从状态空间、概率测度空间和生成路径空间三个层次组织流模型与扩散模型。用噪声、数据或 Wiener 空间的积分分部解释 score 恒等式，再用 Malliavin 微积分处理非线性和无穷维扩散。",
+      "techniques": [
+        "概率测度路径与归一化流",
+        "Score 匹配与积分分部",
+        "Malliavin 微积分",
+        "Schrödinger 桥与随机控制"
+      ],
+      "breakthrough": "串联 flow matching、少步映射、扩散模型收敛、条件生成以及流形、Lie 群、离散与函数空间、跳过程上的推广。",
+      "limitations": "本文定位为综述，具体收敛条件依方法而异。末尾关于全息与反 de Sitter 径向流时间的讨论具有推测性。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:18:11.605182+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.12107v1",
+        "contentHash": "33fcfefb2282eb4d4ae58b0c523baae9d658dfae8f7021deb7899d1a27ab1715",
+        "pages": 134,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文命中集中在生成模型主题、外部研究及参考文献，未见本版作者关于写作或研究中使用生成式 AI 的披露。第13页 G pT 是概率密度公式中的符号，第60–62页 GPT-2 与困惑度是综述他人模型和实验，第132页对应模型论文题名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4ae183aed1f9fea0e205e1995d6f2d9033e0c207ff3eded0f763cd875ad715b0"
+      },
+      "priorityScore": 71,
+      "priorityReason": "可作为随机分析和最优输运在生成模型中的综述。"
+    },
+    "analysisBasis": {
+      "abstract": "Flow-based and diffusion-based models have become the principal means of learning and sampling high-dimensional probability distributions, from images and video to proteins, molecules and physical fields, and increasingly language. Each carries a simple law to the law of the data along a curve of probability measures, and behind the variety of their names lie three geometries, those of the state space on which the data live, of the space of probability measures through which the curve passes, and of the space of paths traced by the generating process. A single analytic idea runs through the subject. Every score identity used to train a diffusion model is an integration by parts, on the noise, on the data or on Wiener space, and Malliavin calculus extends this to nonlinear and infinite-dimensional diffusions. We develop these foundations with full definitions and follow them through normalising flows, flow matching and few-step maps, diffusion models and their convergence theory, conditioning, Schrödinger bridges and stochastic control, and their extension to manifolds, Lie groups, discrete and function spaces and jump processes. We close with statistical physics, renormalisation and, more speculatively, holography, in which the radial direction of anti-de Sitter space can play the role of flow time. A table of the main methods and a collection of open problems complete the survey.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.12107",
+        "metadata": {
+          "title": "Geometry and Stochastic Analysis of Flow and Diffusion Models: A Survey",
+          "authors": [
+            "Ehsan Mirafzali",
+            "Razvan Marinescu"
+          ],
+          "abstract": "Flow-based and diffusion-based models have become the principal means of learning and sampling high-dimensional probability distributions, from images and video to proteins, molecules and physical fields, and increasingly language. Each carries a simple law to the law of the data along a curve of probability measures, and behind the variety of their names lie three geometries, those of the state space on which the data live, of the space of probability measures through which the curve passes, and of the space of paths traced by the generating process. A single analytic idea runs through the subject. Every score identity used to train a diffusion model is an integration by parts, on the noise, on the data or on Wiener space, and Malliavin calculus extends this to nonlinear and infinite-dimensional diffusions. We develop these foundations with full definitions and follow them through normalising flows, flow matching and few-step maps, diffusion models and their convergence theory, conditioning, Schrödinger bridges and stochastic control, and their extension to manifolds, Lie groups, discrete and function spaces and jump processes. We close with statistical physics, renormalisation and, more speculatively, holography, in which the radial direction of anti-de Sitter space can play the role of flow time. A table of the main methods and a collection of open problems complete the survey.",
+          "categories": [
+            "math.PR",
+            "math.DG",
+            "stat.ML"
+          ],
+          "primaryCategory": "math.PR",
+          "version": 1,
+          "submittedAt": "2026-11-09T09:22:23Z",
+          "updatedAt": "2026-11-09T09:22:23Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.12107v1",
+            "observedAt": "2026-11-18T12:18:11.605182+00:00",
+            "contentHash": "33fcfefb2282eb4d4ae58b0c523baae9d658dfae8f7021deb7899d1a27ab1715"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.024365+00:00",
+            "contentHash": "51cedd86652c14b793e782f5541df7d5ef73d4b7097ff559c30cc0cb2dc340ed"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "流与扩散模型的几何和随机分析综述",
+          "workSummary": "从状态空间、概率测度空间和生成路径空间三个层次组织流模型与扩散模型。用噪声、数据或 Wiener 空间的积分分部解释 score 恒等式，再用 Malliavin 微积分处理非线性和无穷维扩散。",
+          "techniques": [
+            "概率测度路径与归一化流",
+            "Score 匹配与积分分部",
+            "Malliavin 微积分",
+            "Schrödinger 桥与随机控制"
+          ],
+          "breakthrough": "串联 flow matching、少步映射、扩散模型收敛、条件生成以及流形、Lie 群、离散与函数空间、跳过程上的推广。",
+          "limitations": "本文定位为综述，具体收敛条件依方法而异。末尾关于全息与反 de Sitter 径向流时间的讨论具有推测性。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:18:11.605182+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.12107v1",
+            "contentHash": "33fcfefb2282eb4d4ae58b0c523baae9d658dfae8f7021deb7899d1a27ab1715",
+            "pages": 134,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文命中集中在生成模型主题、外部研究及参考文献，未见本版作者关于写作或研究中使用生成式 AI 的披露。第13页 G pT 是概率密度公式中的符号，第60–62页 GPT-2 与困惑度是综述他人模型和实验，第132页对应模型论文题名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4ae183aed1f9fea0e205e1995d6f2d9033e0c207ff3eded0f763cd875ad715b0"
+          },
+          "priorityScore": 71,
+          "priorityReason": "可作为随机分析和最优输运在生成模型中的综述。"
+        },
+        "analysisBasis": {
+          "abstract": "Flow-based and diffusion-based models have become the principal means of learning and sampling high-dimensional probability distributions, from images and video to proteins, molecules and physical fields, and increasingly language. Each carries a simple law to the law of the data along a curve of probability measures, and behind the variety of their names lie three geometries, those of the state space on which the data live, of the space of probability measures through which the curve passes, and of the space of paths traced by the generating process. A single analytic idea runs through the subject. Every score identity used to train a diffusion model is an integration by parts, on the noise, on the data or on Wiener space, and Malliavin calculus extends this to nonlinear and infinite-dimensional diffusions. We develop these foundations with full definitions and follow them through normalising flows, flow matching and few-step maps, diffusion models and their convergence theory, conditioning, Schrödinger bridges and stochastic control, and their extension to manifolds, Lie groups, discrete and function spaces and jump processes. We close with statistical physics, renormalisation and, more speculatively, holography, in which the radial direction of anti-de Sitter space can play the role of flow time. A table of the main methods and a collection of open problems complete the survey.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

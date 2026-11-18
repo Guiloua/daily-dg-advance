@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22383",
+  "slug": "2611.22383",
+  "latest": {
+    "arxivId": "2611.22383",
+    "metadata": {
+      "title": "On the volume growth assumption in the Eulerian definition of RCD spaces",
+      "authors": [
+        "Marco Picerni"
+      ],
+      "abstract": "We prove that every infinitesimally Hilbertian metric measure space whose reference measure is a Radon measure, and which satisfies the Sobolev-to-Lipschitz property and the weak Bochner inequality with a lower Ricci bound, has Gaussian volume growth; in particular, balls have finite measure. Hence, in the Eulerian definition of $\\mathsf{RCD}(K,\\infty)$ spaces, both the volume growth assumption and the finiteness of the measure of balls are redundant. The proof combines the self-improvement of the Bakry--Émery gradient estimate, obtained without using the conservation of mass of the heat flow, with a dimension-free Harnack inequality derived from the Sobolev-to-Lipschitz property.",
+      "categories": [
+        "math.MG"
+      ],
+      "primaryCategory": "math.MG",
+      "version": 1,
+      "submittedAt": "2026-11-17T08:33:41Z",
+      "updatedAt": "2026-11-17T08:33:41Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-18T12:16:57.721997+00:00",
+        "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22383v1",
+        "observedAt": "2026-11-18T12:24:48.418717+00:00",
+        "contentHash": "5ee8aecd3ac67ddd5079e509d94e2b793160001b8ec37f678dca6a98125cc2e5"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.735830+00:00",
+        "contentHash": "ff14551a39683b1ca9a491ba169ad39ce12eeb09c2172ee6c22f72ef4efdc005"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "RCD Euler定义的增长条件冗余",
+      "workSummary": "令(X,d)完备可分，m为全支撑Radon测度，假设无穷小Hilbert性质、Sobolev到Lipschitz性质及弱Bochner BE(K,∞)。给定任意基点x₀、满足闭球有限测度的局部半径r₀和t>0，取f=(1−d(·,x₀)/r₀)₊/2，则热流连续代表h_t f(x₀)>0，且对所有r>0有m(B_r(x₀))≤‖f‖₁[h_t f(x₀)]^{−2} exp(r²/[2I_K(t)])，其中I_K(t)=∫₀ᵗe^{2Ks}ds。因而有界集测度有限且空间满足RCD(K,∞)。",
+      "techniques": [
+        "无增长先验的L² Bakry–Émery估计",
+        "以测试函数超水平集获得Cheeger能量准正则性",
+        "以局部有限正测度表示迭代carré du champ",
+        "L¹梯度自改进与无量纲幂型Harnack不等式",
+        "半群L¹压缩性"
+      ],
+      "breakthrough": "通过超水平集而非大球建立准正则性，以可容许球上的测度有限性代替Γ₂全局有限性。不假设热流保质量即可得到L¹梯度估计，再对f∈[0,1/2]建立(h_t f(x))²≤h_t f(y)exp(d(x,y)²/[2I_K(t)])，积分得所需全局增长界。",
+      "limitations": "定位并补读PDF第1–4、8、12、14–15、17–18页所列段落，渲染第2页。结论保留完备、可分、全支撑Radon及三项分析条件。仅要求紧集测度有限会允许所有球无限测度的反例。增长常数涉及正时热流值，定量控制可依赖局部球测度比。本次未独立核验准正则与Γ₂表示的全套技术步骤或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第18页明确披露Claude Opus 5.5和Gemini 4 Argon协助发展、检查和排版部分论证，分别记录proofs、verification及writing。声明未指定由模型提出的具体主构思或关键论证路线。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22383v1 · PDF第18页致谢段，全文19页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:24:48.418717+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22383v1",
+        "contentHash": "5ee8aecd3ac67ddd5079e509d94e2b793160001b8ec37f678dca6a98125cc2e5",
+        "pages": 19,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第18页明确披露Claude Opus 5.5和Gemini 4 Argon协助发展、检查和排版部分论证，分别记录proofs、verification及writing。声明未指定由模型提出的具体主构思或关键论证路线。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "a653cdceeb6f3585d095453165dfc9bc3c31d4b2ec78647af9b5420a3c978011"
+      },
+      "aiUsage": [
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 98,
+      "priorityReason": "直接收紧无穷维Ricci下界的Euler分析公理。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that every infinitesimally Hilbertian metric measure space whose reference measure is a Radon measure, and which satisfies the Sobolev-to-Lipschitz property and the weak Bochner inequality with a lower Ricci bound, has Gaussian volume growth; in particular, balls have finite measure. Hence, in the Eulerian definition of $\\mathsf{RCD}(K,\\infty)$ spaces, both the volume growth assumption and the finiteness of the measure of balls are redundant. The proof combines the self-improvement of the Bakry--Émery gradient estimate, obtained without using the conservation of mass of the heat flow, with a dimension-free Harnack inequality derived from the Sobolev-to-Lipschitz property.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22383",
+        "metadata": {
+          "title": "On the volume growth assumption in the Eulerian definition of RCD spaces",
+          "authors": [
+            "Marco Picerni"
+          ],
+          "abstract": "We prove that every infinitesimally Hilbertian metric measure space whose reference measure is a Radon measure, and which satisfies the Sobolev-to-Lipschitz property and the weak Bochner inequality with a lower Ricci bound, has Gaussian volume growth; in particular, balls have finite measure. Hence, in the Eulerian definition of $\\mathsf{RCD}(K,\\infty)$ spaces, both the volume growth assumption and the finiteness of the measure of balls are redundant. The proof combines the self-improvement of the Bakry--Émery gradient estimate, obtained without using the conservation of mass of the heat flow, with a dimension-free Harnack inequality derived from the Sobolev-to-Lipschitz property.",
+          "categories": [
+            "math.MG"
+          ],
+          "primaryCategory": "math.MG",
+          "version": 1,
+          "submittedAt": "2026-11-17T08:33:41Z",
+          "updatedAt": "2026-11-17T08:33:41Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-18T12:16:57.721997+00:00",
+            "contentHash": "234de34136c74f8181f371bd138448e148762c4a37b364e86af1732e4f529a54"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22383v1",
+            "observedAt": "2026-11-18T12:24:48.418717+00:00",
+            "contentHash": "5ee8aecd3ac67ddd5079e509d94e2b793160001b8ec37f678dca6a98125cc2e5"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.735830+00:00",
+            "contentHash": "ff14551a39683b1ca9a491ba169ad39ce12eeb09c2172ee6c22f72ef4efdc005"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "RCD Euler定义的增长条件冗余",
+          "workSummary": "令(X,d)完备可分，m为全支撑Radon测度，假设无穷小Hilbert性质、Sobolev到Lipschitz性质及弱Bochner BE(K,∞)。给定任意基点x₀、满足闭球有限测度的局部半径r₀和t>0，取f=(1−d(·,x₀)/r₀)₊/2，则热流连续代表h_t f(x₀)>0，且对所有r>0有m(B_r(x₀))≤‖f‖₁[h_t f(x₀)]^{−2} exp(r²/[2I_K(t)])，其中I_K(t)=∫₀ᵗe^{2Ks}ds。因而有界集测度有限且空间满足RCD(K,∞)。",
+          "techniques": [
+            "无增长先验的L² Bakry–Émery估计",
+            "以测试函数超水平集获得Cheeger能量准正则性",
+            "以局部有限正测度表示迭代carré du champ",
+            "L¹梯度自改进与无量纲幂型Harnack不等式",
+            "半群L¹压缩性"
+          ],
+          "breakthrough": "通过超水平集而非大球建立准正则性，以可容许球上的测度有限性代替Γ₂全局有限性。不假设热流保质量即可得到L¹梯度估计，再对f∈[0,1/2]建立(h_t f(x))²≤h_t f(y)exp(d(x,y)²/[2I_K(t)])，积分得所需全局增长界。",
+          "limitations": "定位并补读PDF第1–4、8、12、14–15、17–18页所列段落，渲染第2页。结论保留完备、可分、全支撑Radon及三项分析条件。仅要求紧集测度有限会允许所有球无限测度的反例。增长常数涉及正时热流值，定量控制可依赖局部球测度比。本次未独立核验准正则与Γ₂表示的全套技术步骤或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第18页明确披露Claude Opus 5.5和Gemini 4 Argon协助发展、检查和排版部分论证，分别记录proofs、verification及writing。声明未指定由模型提出的具体主构思或关键论证路线。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22383v1 · PDF第18页致谢段，全文19页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:24:48.418717+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22383v1",
+            "contentHash": "5ee8aecd3ac67ddd5079e509d94e2b793160001b8ec37f678dca6a98125cc2e5",
+            "pages": 19,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第18页明确披露Claude Opus 5.5和Gemini 4 Argon协助发展、检查和排版部分论证，分别记录proofs、verification及writing。声明未指定由模型提出的具体主构思或关键论证路线。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "a653cdceeb6f3585d095453165dfc9bc3c31d4b2ec78647af9b5420a3c978011"
+          },
+          "aiUsage": [
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 98,
+          "priorityReason": "直接收紧无穷维Ricci下界的Euler分析公理。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that every infinitesimally Hilbertian metric measure space whose reference measure is a Radon measure, and which satisfies the Sobolev-to-Lipschitz property and the weak Bochner inequality with a lower Ricci bound, has Gaussian volume growth; in particular, balls have finite measure. Hence, in the Eulerian definition of $\\mathsf{RCD}(K,\\infty)$ spaces, both the volume growth assumption and the finiteness of the measure of balls are redundant. The proof combines the self-improvement of the Bakry--Émery gradient estimate, obtained without using the conservation of mass of the heat flow, with a dimension-free Harnack inequality derived from the Sobolev-to-Lipschitz property.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

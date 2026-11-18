@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22071",
+  "slug": "2611.22071",
+  "latest": {
+    "arxivId": "2611.22071",
+    "metadata": {
+      "title": "Gradient estimates and monotonicity formulae for the $p$-filtration equation on Riemannian manifolds",
+      "authors": [
+        "Yu-Zhao Wang",
+        "Jian-Hua Hao"
+      ],
+      "abstract": "We derive Li--Yau type estimates on closed Riemannian manifolds and local Hamilton-type gradient estimates on complete manifolds for the $p$-filtration equation $u_t=\\Delta_pF(u)$. Under nonnegative Ricci curvature and a structural condition on $F$, we establish a $\\mathcal W$-entropy formula, entropy-power concavity and local entropy rigidity. We also prove a parabolic frequency monotonicity formula without curvature assumptions. The results include homogeneous doubly nonlinear diffusion and extend to nonhomogeneous power sums and the arctangent law.",
+      "categories": [
+        "math.DG",
+        "math.AP"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "40pages",
+      "version": 1,
+      "submittedAt": "2026-11-17T01:48:32Z",
+      "updatedAt": "2026-11-17T01:48:32Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22071v1",
+        "observedAt": "2026-11-18T12:21:59.747450+00:00",
+        "contentHash": "c2016f21235bdb51139d077cb9126a83d368bce5ca94a5a387a9090c0164804b"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.029755+00:00",
+        "contentHash": "a5d5b536795d96c9b738e34c43fd4dd6e83ace65c148e2ca83e8ca50bd453345"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "非线性过滤方程的梯度与熵公式",
+      "workSummary": "研究正光滑解u的p过滤方程u_t=Δ_pF(u)，以压力v′(s)=F′(s)s^{-1/(p−1)}改写。对闭且Ric≥0的流形，p≥2和相应结构条件下得到Li–Yau与Aronson–Bénilan估计。局部Hamilton型估计适用于完备流形、p>1和球内截面曲率下界，另需压力间隙和不等式(1.17)。闭流形上Ric≥0、p>1、压力通量空间C¹且D_a≥0时，𝒲严格下降、熵幂增长且凹。另一频率定理在闭流形上无需曲率下界，条件[F(s)−F(ℓ)]²≤κF′(s)Ψ_ℓ(s)下，负耗散D除以I^γ在I>0时单调不减，0<γ≤p/κ。",
+      "techniques": [
+        "压力变量与线性化p-Bochner公式",
+        "最大值原理和截断函数",
+        "熵耗散平方分解",
+        "熵能量与负p-Dirichlet耗散的频率比"
+      ],
+      "breakthrough": "结构量D_a(s)=sP′−(1−1/n)P−(a+1)P²/(paU)统一控制𝒲与熵幂。闭流形的熵幂二阶导在单个时刻为零当且仅当该刻各连通分支上u恒定，之后保持稳态。局部刚性另要求|∇v|>0及定理1.10的四项消失条件，推出达到的密度区间上F为幂函数加常数，局部度量为锥形。",
+      "limitations": "定位并补读PDF第2–9、24–25、29、37–38页所列主结果和相关论证，渲染第6–9页。各估计使用不同p、曲率及扩散律前提。强Li–Yau结论是从满足初始比较的时间τ传播，Aronson–Bénilan另要求压力系数单调且ϱ>0。反正切律的熵结论限密度范围。局部熵刚性与闭流形整体等号的假设不同。未独立核验整篇技术估计与外部文献。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第38页明确披露以ChatGPT-6 Astra为主协助LaTeX编辑、改善证明表述、检查计算和一致性，记录writing及verification。研究构思、数学路线和主要证明论证归作者。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.22071v1 · PDF第38页AI tool disclosure，全文40页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:21:59.747450+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22071v1",
+        "contentHash": "c2016f21235bdb51139d077cb9126a83d368bce5ca94a5a387a9090c0164804b",
+        "pages": 40,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第38页明确披露以ChatGPT-6 Astra为主协助LaTeX编辑、改善证明表述、检查计算和一致性，记录writing及verification。研究构思、数学路线和主要证明论证归作者。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "dd9a13225ee4fab2d39979dde99a5f0afdf5719198d48682ea8a9e4bc188c898"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "直接涉及几何扩散中的梯度估计、熵刚性和频率方法。"
+    },
+    "analysisBasis": {
+      "abstract": "We derive Li--Yau type estimates on closed Riemannian manifolds and local Hamilton-type gradient estimates on complete manifolds for the $p$-filtration equation $u_t=\\Delta_pF(u)$. Under nonnegative Ricci curvature and a structural condition on $F$, we establish a $\\mathcal W$-entropy formula, entropy-power concavity and local entropy rigidity. We also prove a parabolic frequency monotonicity formula without curvature assumptions. The results include homogeneous doubly nonlinear diffusion and extend to nonhomogeneous power sums and the arctangent law.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22071",
+        "metadata": {
+          "title": "Gradient estimates and monotonicity formulae for the $p$-filtration equation on Riemannian manifolds",
+          "authors": [
+            "Yu-Zhao Wang",
+            "Jian-Hua Hao"
+          ],
+          "abstract": "We derive Li--Yau type estimates on closed Riemannian manifolds and local Hamilton-type gradient estimates on complete manifolds for the $p$-filtration equation $u_t=\\Delta_pF(u)$. Under nonnegative Ricci curvature and a structural condition on $F$, we establish a $\\mathcal W$-entropy formula, entropy-power concavity and local entropy rigidity. We also prove a parabolic frequency monotonicity formula without curvature assumptions. The results include homogeneous doubly nonlinear diffusion and extend to nonhomogeneous power sums and the arctangent law.",
+          "categories": [
+            "math.DG",
+            "math.AP"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "40pages",
+          "version": 1,
+          "submittedAt": "2026-11-17T01:48:32Z",
+          "updatedAt": "2026-11-17T01:48:32Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22071v1",
+            "observedAt": "2026-11-18T12:21:59.747450+00:00",
+            "contentHash": "c2016f21235bdb51139d077cb9126a83d368bce5ca94a5a387a9090c0164804b"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.029755+00:00",
+            "contentHash": "a5d5b536795d96c9b738e34c43fd4dd6e83ace65c148e2ca83e8ca50bd453345"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "非线性过滤方程的梯度与熵公式",
+          "workSummary": "研究正光滑解u的p过滤方程u_t=Δ_pF(u)，以压力v′(s)=F′(s)s^{-1/(p−1)}改写。对闭且Ric≥0的流形，p≥2和相应结构条件下得到Li–Yau与Aronson–Bénilan估计。局部Hamilton型估计适用于完备流形、p>1和球内截面曲率下界，另需压力间隙和不等式(1.17)。闭流形上Ric≥0、p>1、压力通量空间C¹且D_a≥0时，𝒲严格下降、熵幂增长且凹。另一频率定理在闭流形上无需曲率下界，条件[F(s)−F(ℓ)]²≤κF′(s)Ψ_ℓ(s)下，负耗散D除以I^γ在I>0时单调不减，0<γ≤p/κ。",
+          "techniques": [
+            "压力变量与线性化p-Bochner公式",
+            "最大值原理和截断函数",
+            "熵耗散平方分解",
+            "熵能量与负p-Dirichlet耗散的频率比"
+          ],
+          "breakthrough": "结构量D_a(s)=sP′−(1−1/n)P−(a+1)P²/(paU)统一控制𝒲与熵幂。闭流形的熵幂二阶导在单个时刻为零当且仅当该刻各连通分支上u恒定，之后保持稳态。局部刚性另要求|∇v|>0及定理1.10的四项消失条件，推出达到的密度区间上F为幂函数加常数，局部度量为锥形。",
+          "limitations": "定位并补读PDF第2–9、24–25、29、37–38页所列主结果和相关论证，渲染第6–9页。各估计使用不同p、曲率及扩散律前提。强Li–Yau结论是从满足初始比较的时间τ传播，Aronson–Bénilan另要求压力系数单调且ϱ>0。反正切律的熵结论限密度范围。局部熵刚性与闭流形整体等号的假设不同。未独立核验整篇技术估计与外部文献。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第38页明确披露以ChatGPT-6 Astra为主协助LaTeX编辑、改善证明表述、检查计算和一致性，记录writing及verification。研究构思、数学路线和主要证明论证归作者。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.22071v1 · PDF第38页AI tool disclosure，全文40页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:21:59.747450+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22071v1",
+            "contentHash": "c2016f21235bdb51139d077cb9126a83d368bce5ca94a5a387a9090c0164804b",
+            "pages": 40,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第38页明确披露以ChatGPT-6 Astra为主协助LaTeX编辑、改善证明表述、检查计算和一致性，记录writing及verification。研究构思、数学路线和主要证明论证归作者。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "dd9a13225ee4fab2d39979dde99a5f0afdf5719198d48682ea8a9e4bc188c898"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "直接涉及几何扩散中的梯度估计、熵刚性和频率方法。"
+        },
+        "analysisBasis": {
+          "abstract": "We derive Li--Yau type estimates on closed Riemannian manifolds and local Hamilton-type gradient estimates on complete manifolds for the $p$-filtration equation $u_t=\\Delta_pF(u)$. Under nonnegative Ricci curvature and a structural condition on $F$, we establish a $\\mathcal W$-entropy formula, entropy-power concavity and local entropy rigidity. We also prove a parabolic frequency monotonicity formula without curvature assumptions. The results include homogeneous doubly nonlinear diffusion and extend to nonhomogeneous power sums and the arctangent law.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

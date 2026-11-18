@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.20396",
+  "slug": "2611.20396",
+  "latest": {
+    "arxivId": "2611.20396",
+    "metadata": {
+      "title": "A singular minimizer of a uniformly convex Hessian-dependent functional",
+      "authors": [
+        "Arunima Bhattacharya",
+        "Anna Skorobogatova"
+      ],
+      "abstract": "We construct a smooth, uniformly convex Hessian-dependent energy functional, which admits a singular $C^{1,1}$ minimizer on $\\mathbb{R}^5$ that is a two-homogeneous normalization of Cartan's five-dimensional cubic. Our construction relies on constructing a quadratic null Lagrangian for the Hessian that is suitably non-degenerate on the image of the Hessian for the candidate minimizer. This complements a partial regularity result previously obtained by the authors in this setting, and demonstrates that one cannot hope for a fourth-order version of classical second-order elliptic regularity theory à la De Giorgi-Nash-Moser.",
+      "categories": [
+        "math.AP",
+        "math.DG"
+      ],
+      "primaryCategory": "math.AP",
+      "comment": "23 pages",
+      "version": 1,
+      "submittedAt": "2026-11-16T01:50:02Z",
+      "updatedAt": "2026-11-16T01:50:02Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.20396v1",
+        "observedAt": "2026-11-18T12:18:23.124586+00:00",
+        "contentHash": "0095427908ddce1ab07f10db6379b4045de5adc6a30d7a7f031948596f8d3b98"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.025331+00:00",
+        "contentHash": "3eb43da38c9e9336ed60675745ba229af86c1d3280ea29a08e2b38fb2176a2f7"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "一致凸四阶变分的奇异反例",
+      "workSummary": "存在F∈C∞(Sym(5))，其二阶导在所有对称矩阵上有统一上下正界。Cartan三次型P的二次齐次归一化u=P/|x|（u(0)=0）在五维单位球内弱解div div DF(D²u)=0，并对每个φ∈W₀^{2,2}满足能量差≥(λ/2)∫|D²φ|²。因此u是在光滑边界数据u=P、∂νu=2P下的唯一极小元，属于W^{2,∞}且仅在原点非C²。加上惰性变量的构造使任意n≥5维都有奇异集恰为余维5平面与单位球交集的例子。",
+      "techniques": [
+        "Cartan等参三次型与SO(3)共轭对称性",
+        "二次Hessian零Lagrangian的退化互补",
+        "Hessian像割线上的二次下界",
+        "C∞一致凸延拓与弱Euler–Lagrange方程"
+      ],
+      "breakthrough": "寻找L=L₀+bL₁，使Hessian像K中任意M、N的差满足L(M−N)≥σ|M−N|²。该下界允许一致凸延拓F在K上保持F=L和DF=DL，零Lagrangian因而给出弱方程，统一凸下界再给出定量唯一极小性。",
+      "limitations": "定位并补读PDF第1–6、19–20页相关段落，渲染第3页。余维5是本文例子的奇异集维数，任意极小元的最优普遍维数界仍开放。Remark 1.3的严格凸一维例子属于另一正则性问题。本次未独立核验零Lagrangian的完整代数推导、外部凸延拓引理或整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第6页明确披露用AI协助识别合适二次零Lagrangian所需的部分代数计算，记录computation。作者说明主证明策略和Cartan型候选均由作者提出，相关计算与论证经作者大幅重做，全文由作者撰写。声明另把第4页Remark 1.3中仅严格凸的辅助例子想法归于AI，归因限于该例子。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.20396v1 · PDF第6页Note on LLM Usage及第4页Remark 1.3，全文23页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:18:23.124586+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.20396v1",
+        "contentHash": "0095427908ddce1ab07f10db6379b4045de5adc6a30d7a7f031948596f8d3b98",
+        "pages": 23,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页明确披露用AI协助识别合适二次零Lagrangian所需的部分代数计算，记录computation。作者说明主证明策略和Cartan型候选均由作者提出，相关计算与论证经作者大幅重做，全文由作者撰写。声明另把第4页Remark 1.3中仅严格凸的辅助例子想法归于AI，归因限于该例子。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "8875212adc24f500110d5d23aae8307da6763f8e13aa352cfab034f99ef3f16a"
+      },
+      "aiUsage": [
+        "computation"
+      ],
+      "priorityScore": 96,
+      "priorityReason": "为几何PDE与高阶变分的正则性边界提供直接例子。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct a smooth, uniformly convex Hessian-dependent energy functional, which admits a singular $C^{1,1}$ minimizer on $\\mathbb{R}^5$ that is a two-homogeneous normalization of Cartan's five-dimensional cubic. Our construction relies on constructing a quadratic null Lagrangian for the Hessian that is suitably non-degenerate on the image of the Hessian for the candidate minimizer. This complements a partial regularity result previously obtained by the authors in this setting, and demonstrates that one cannot hope for a fourth-order version of classical second-order elliptic regularity theory à la De Giorgi-Nash-Moser.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.20396",
+        "metadata": {
+          "title": "A singular minimizer of a uniformly convex Hessian-dependent functional",
+          "authors": [
+            "Arunima Bhattacharya",
+            "Anna Skorobogatova"
+          ],
+          "abstract": "We construct a smooth, uniformly convex Hessian-dependent energy functional, which admits a singular $C^{1,1}$ minimizer on $\\mathbb{R}^5$ that is a two-homogeneous normalization of Cartan's five-dimensional cubic. Our construction relies on constructing a quadratic null Lagrangian for the Hessian that is suitably non-degenerate on the image of the Hessian for the candidate minimizer. This complements a partial regularity result previously obtained by the authors in this setting, and demonstrates that one cannot hope for a fourth-order version of classical second-order elliptic regularity theory à la De Giorgi-Nash-Moser.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "23 pages",
+          "version": 1,
+          "submittedAt": "2026-11-16T01:50:02Z",
+          "updatedAt": "2026-11-16T01:50:02Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.20396v1",
+            "observedAt": "2026-11-18T12:18:23.124586+00:00",
+            "contentHash": "0095427908ddce1ab07f10db6379b4045de5adc6a30d7a7f031948596f8d3b98"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.025331+00:00",
+            "contentHash": "3eb43da38c9e9336ed60675745ba229af86c1d3280ea29a08e2b38fb2176a2f7"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "一致凸四阶变分的奇异反例",
+          "workSummary": "存在F∈C∞(Sym(5))，其二阶导在所有对称矩阵上有统一上下正界。Cartan三次型P的二次齐次归一化u=P/|x|（u(0)=0）在五维单位球内弱解div div DF(D²u)=0，并对每个φ∈W₀^{2,2}满足能量差≥(λ/2)∫|D²φ|²。因此u是在光滑边界数据u=P、∂νu=2P下的唯一极小元，属于W^{2,∞}且仅在原点非C²。加上惰性变量的构造使任意n≥5维都有奇异集恰为余维5平面与单位球交集的例子。",
+          "techniques": [
+            "Cartan等参三次型与SO(3)共轭对称性",
+            "二次Hessian零Lagrangian的退化互补",
+            "Hessian像割线上的二次下界",
+            "C∞一致凸延拓与弱Euler–Lagrange方程"
+          ],
+          "breakthrough": "寻找L=L₀+bL₁，使Hessian像K中任意M、N的差满足L(M−N)≥σ|M−N|²。该下界允许一致凸延拓F在K上保持F=L和DF=DL，零Lagrangian因而给出弱方程，统一凸下界再给出定量唯一极小性。",
+          "limitations": "定位并补读PDF第1–6、19–20页相关段落，渲染第3页。余维5是本文例子的奇异集维数，任意极小元的最优普遍维数界仍开放。Remark 1.3的严格凸一维例子属于另一正则性问题。本次未独立核验零Lagrangian的完整代数推导、外部凸延拓引理或整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第6页明确披露用AI协助识别合适二次零Lagrangian所需的部分代数计算，记录computation。作者说明主证明策略和Cartan型候选均由作者提出，相关计算与论证经作者大幅重做，全文由作者撰写。声明另把第4页Remark 1.3中仅严格凸的辅助例子想法归于AI，归因限于该例子。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.20396v1 · PDF第6页Note on LLM Usage及第4页Remark 1.3，全文23页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:18:23.124586+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.20396v1",
+            "contentHash": "0095427908ddce1ab07f10db6379b4045de5adc6a30d7a7f031948596f8d3b98",
+            "pages": 23,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第6页明确披露用AI协助识别合适二次零Lagrangian所需的部分代数计算，记录computation。作者说明主证明策略和Cartan型候选均由作者提出，相关计算与论证经作者大幅重做，全文由作者撰写。声明另把第4页Remark 1.3中仅严格凸的辅助例子想法归于AI，归因限于该例子。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "8875212adc24f500110d5d23aae8307da6763f8e13aa352cfab034f99ef3f16a"
+          },
+          "aiUsage": [
+            "computation"
+          ],
+          "priorityScore": 96,
+          "priorityReason": "为几何PDE与高阶变分的正则性边界提供直接例子。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct a smooth, uniformly convex Hessian-dependent energy functional, which admits a singular $C^{1,1}$ minimizer on $\\mathbb{R}^5$ that is a two-homogeneous normalization of Cartan's five-dimensional cubic. Our construction relies on constructing a quadratic null Lagrangian for the Hessian that is suitably non-degenerate on the image of the Hessian for the candidate minimizer. This complements a partial regularity result previously obtained by the authors in this setting, and demonstrates that one cannot hope for a fourth-order version of classical second-order elliptic regularity theory à la De Giorgi-Nash-Moser.",
+          "version": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "entry": {
+        "arxivId": "2611.20396",
+        "metadata": {
+          "title": "A singular minimizer of a uniformly convex Hessian-dependent functional",
+          "authors": [
+            "Arunima Bhattacharya",
+            "Anna Skorobogatova"
+          ],
+          "abstract": "We construct a smooth, uniformly convex Hessian-dependent energy functional, which admits a singular $C^{1,1}$ minimizer on $\\mathbb{R}^5$ that is a two-homogeneous normalization of Cartan's five-dimensional cubic. Our construction relies on constructing a quadratic null Lagrangian for the Hessian that is suitably non-degenerate on the image of the Hessian for the candidate minimizer. This complements a partial regularity result previously obtained by the authors in this setting, and demonstrates that one cannot hope for a fourth-order version of classical second-order elliptic regularity theory à la De Giorgi-Nash-Moser.",
+          "categories": [
+            "math.AP",
+            "math.DG"
+          ],
+          "primaryCategory": "math.AP",
+          "comment": "23 pages",
+          "version": 1,
+          "submittedAt": "2026-11-16T01:50:02Z",
+          "updatedAt": "2026-11-16T01:50:02Z"
+        },
+        "sources": [
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.025331+00:00",
+            "contentHash": "3eb43da38c9e9336ed60675745ba229af86c1d3280ea29a08e2b38fb2176a2f7"
+          }
+        ],
+        "analysis": null,
+        "analysisBasis": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.22763",
+  "slug": "2611.22763",
+  "latest": {
+    "arxivId": "2611.22763",
+    "metadata": {
+      "title": "Structured Design of Layered Sparse Unitary Space-Time Modulation for Integrated Noncoherent and Coherent MIMO Communications",
+      "authors": [
+        "Álvaro Pendás-Recondo",
+        "Enrique Pendás-Recondo",
+        "Rafael González Ayestarán",
+        "Jesús Alberto López-Fernández",
+        "Ignacio Santamaria"
+      ],
+      "abstract": "This work presents a novel structured constellation design based on unitary space-time modulation (USTM) for integrated noncoherent and coherent multiple-input multiple-output (MIMO) communications. Information is encoded into the sparse space-time matrices through two layers: a noncoherent layer that distinguishes points on the Grassmann manifold (subspaces) and a coherent layer that distinguishes among the Stiefel representatives associated with each of those points (bases for the subspaces). We consider sequential decoding of the two layers to reduce computational complexity, while explicitly identifying the matrix structures that favor this decoding strategy. The proposed constellation builds on a previous structured Grassmannian signaling design, which has the remarkable property of producing space-time matrices with a single nonzero entry per row, while introducing a novel systematic design for the second layer corresponding to the Stiefel representatives. The design of the second layer preserves the sparsity of the first layer and significantly reduces the decoding computational complexity, while ensuring reliable performance under sequential decoding and enabling a simple yet effective bit labeling, as validated by numerical results in terms of bit error rate (BER) and symbol error rate (SER). Numerical results also show graceful performance degradation under channel correlation and, for limited coherence intervals where channel state information at the receiver (CSIR) can be estimated only imperfectly, improved performance compared with classical space-time block coding (STBC) schemes based on QAM and PSK.",
+      "categories": [
+        "eess.SP",
+        "math.DG"
+      ],
+      "primaryCategory": "eess.SP",
+      "comment": "13 pages, 8 figures",
+      "version": 1,
+      "submittedAt": "2026-11-17T13:28:47Z",
+      "updatedAt": "2026-11-17T13:28:47Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.22763v1",
+        "observedAt": "2026-11-18T12:26:13.658517+00:00",
+        "contentHash": "aa95ef811d07b162b9a901142e8c8f5b64a0be77356a9426c06c76b5740bf64c"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:38.739469+00:00",
+        "contentHash": "80068d838aa7b4980173a516d7a8f1f6729b97321e1a9390a047c3f90ab0c2d1"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "稀疏酉空时星座的分层设计",
+      "workSummary": "作者面向非相干与相干一体化MIMO通信提出稀疏酉空时星座。非相干层编码Grassmann流形上的子空间，相干层区分各子空间的Stiefel基代表，第二层保留原有每行单非零项的稀疏性。采用两层顺序解码以减少计算，并用BER、SER数值结果检验设计。",
+      "techniques": [
+        "Grassmann子空间与Stiefel代表",
+        "稀疏酉空时调制",
+        "分层顺序解码",
+        "误码率与符号误差率数值评估"
+      ],
+      "breakthrough": "系统构造第二层基代表，在保留稀疏性的同时支持简单比特标记与较低复杂度的解码。",
+      "limitations": "信道相关及不完美信道估计下的优势来自所报告的数值测试，适用范围受信道与相干时间设置约束。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:26:13.658517+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.22763v1",
+        "contentHash": "aa95ef811d07b162b9a901142e8c8f5b64a0be77356a9426c06c76b5740bf64c",
+        "pages": 13,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文原检索及扩展补检未见作者AI使用披露。第3、4、6页llm候选来自all matrices或all m等文字与符号拼接，第12页Astra来自A straightforward。复查结论及参考文献。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "3695c5caf37f783aa68fc418eea2b076bf84d6f1958f1501576f5a5c6b3035b7"
+      },
+      "priorityScore": 36,
+      "priorityReason": "主要贡献是通信星座设计，提供矩阵流形几何的应用。",
+      "lowPriorityReason": "主要贡献是通信星座设计，提供矩阵流形几何的应用。"
+    },
+    "analysisBasis": {
+      "abstract": "This work presents a novel structured constellation design based on unitary space-time modulation (USTM) for integrated noncoherent and coherent multiple-input multiple-output (MIMO) communications. Information is encoded into the sparse space-time matrices through two layers: a noncoherent layer that distinguishes points on the Grassmann manifold (subspaces) and a coherent layer that distinguishes among the Stiefel representatives associated with each of those points (bases for the subspaces). We consider sequential decoding of the two layers to reduce computational complexity, while explicitly identifying the matrix structures that favor this decoding strategy. The proposed constellation builds on a previous structured Grassmannian signaling design, which has the remarkable property of producing space-time matrices with a single nonzero entry per row, while introducing a novel systematic design for the second layer corresponding to the Stiefel representatives. The design of the second layer preserves the sparsity of the first layer and significantly reduces the decoding computational complexity, while ensuring reliable performance under sequential decoding and enabling a simple yet effective bit labeling, as validated by numerical results in terms of bit error rate (BER) and symbol error rate (SER). Numerical results also show graceful performance degradation under channel correlation and, for limited coherence intervals where channel state information at the receiver (CSIR) can be estimated only imperfectly, improved performance compared with classical space-time block coding (STBC) schemes based on QAM and PSK.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.22763",
+        "metadata": {
+          "title": "Structured Design of Layered Sparse Unitary Space-Time Modulation for Integrated Noncoherent and Coherent MIMO Communications",
+          "authors": [
+            "Álvaro Pendás-Recondo",
+            "Enrique Pendás-Recondo",
+            "Rafael González Ayestarán",
+            "Jesús Alberto López-Fernández",
+            "Ignacio Santamaria"
+          ],
+          "abstract": "This work presents a novel structured constellation design based on unitary space-time modulation (USTM) for integrated noncoherent and coherent multiple-input multiple-output (MIMO) communications. Information is encoded into the sparse space-time matrices through two layers: a noncoherent layer that distinguishes points on the Grassmann manifold (subspaces) and a coherent layer that distinguishes among the Stiefel representatives associated with each of those points (bases for the subspaces). We consider sequential decoding of the two layers to reduce computational complexity, while explicitly identifying the matrix structures that favor this decoding strategy. The proposed constellation builds on a previous structured Grassmannian signaling design, which has the remarkable property of producing space-time matrices with a single nonzero entry per row, while introducing a novel systematic design for the second layer corresponding to the Stiefel representatives. The design of the second layer preserves the sparsity of the first layer and significantly reduces the decoding computational complexity, while ensuring reliable performance under sequential decoding and enabling a simple yet effective bit labeling, as validated by numerical results in terms of bit error rate (BER) and symbol error rate (SER). Numerical results also show graceful performance degradation under channel correlation and, for limited coherence intervals where channel state information at the receiver (CSIR) can be estimated only imperfectly, improved performance compared with classical space-time block coding (STBC) schemes based on QAM and PSK.",
+          "categories": [
+            "eess.SP",
+            "math.DG"
+          ],
+          "primaryCategory": "eess.SP",
+          "comment": "13 pages, 8 figures",
+          "version": 1,
+          "submittedAt": "2026-11-17T13:28:47Z",
+          "updatedAt": "2026-11-17T13:28:47Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.22763v1",
+            "observedAt": "2026-11-18T12:26:13.658517+00:00",
+            "contentHash": "aa95ef811d07b162b9a901142e8c8f5b64a0be77356a9426c06c76b5740bf64c"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:38.739469+00:00",
+            "contentHash": "80068d838aa7b4980173a516d7a8f1f6729b97321e1a9390a047c3f90ab0c2d1"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "稀疏酉空时星座的分层设计",
+          "workSummary": "作者面向非相干与相干一体化MIMO通信提出稀疏酉空时星座。非相干层编码Grassmann流形上的子空间，相干层区分各子空间的Stiefel基代表，第二层保留原有每行单非零项的稀疏性。采用两层顺序解码以减少计算，并用BER、SER数值结果检验设计。",
+          "techniques": [
+            "Grassmann子空间与Stiefel代表",
+            "稀疏酉空时调制",
+            "分层顺序解码",
+            "误码率与符号误差率数值评估"
+          ],
+          "breakthrough": "系统构造第二层基代表，在保留稀疏性的同时支持简单比特标记与较低复杂度的解码。",
+          "limitations": "信道相关及不完美信道估计下的优势来自所报告的数值测试，适用范围受信道与相干时间设置约束。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:26:13.658517+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.22763v1",
+            "contentHash": "aa95ef811d07b162b9a901142e8c8f5b64a0be77356a9426c06c76b5740bf64c",
+            "pages": 13,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文原检索及扩展补检未见作者AI使用披露。第3、4、6页llm候选来自all matrices或all m等文字与符号拼接，第12页Astra来自A straightforward。复查结论及参考文献。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "3695c5caf37f783aa68fc418eea2b076bf84d6f1958f1501576f5a5c6b3035b7"
+          },
+          "priorityScore": 36,
+          "priorityReason": "主要贡献是通信星座设计，提供矩阵流形几何的应用。",
+          "lowPriorityReason": "主要贡献是通信星座设计，提供矩阵流形几何的应用。"
+        },
+        "analysisBasis": {
+          "abstract": "This work presents a novel structured constellation design based on unitary space-time modulation (USTM) for integrated noncoherent and coherent multiple-input multiple-output (MIMO) communications. Information is encoded into the sparse space-time matrices through two layers: a noncoherent layer that distinguishes points on the Grassmann manifold (subspaces) and a coherent layer that distinguishes among the Stiefel representatives associated with each of those points (bases for the subspaces). We consider sequential decoding of the two layers to reduce computational complexity, while explicitly identifying the matrix structures that favor this decoding strategy. The proposed constellation builds on a previous structured Grassmannian signaling design, which has the remarkable property of producing space-time matrices with a single nonzero entry per row, while introducing a novel systematic design for the second layer corresponding to the Stiefel representatives. The design of the second layer preserves the sparsity of the first layer and significantly reduces the decoding computational complexity, while ensuring reliable performance under sequential decoding and enabling a simple yet effective bit labeling, as validated by numerical results in terms of bit error rate (BER) and symbol error rate (SER). Numerical results also show graceful performance degradation under channel correlation and, for limited coherence intervals where channel state information at the receiver (CSIR) can be estimated only imperfectly, improved performance compared with classical space-time block coding (STBC) schemes based on QAM and PSK.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

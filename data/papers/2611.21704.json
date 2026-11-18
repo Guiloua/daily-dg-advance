@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.21704",
+  "slug": "2611.21704",
+  "latest": {
+    "arxivId": "2611.21704",
+    "metadata": {
+      "title": "Sharp modified logarithmic Sobolev inequality for matrix-valued functions on spheres",
+      "authors": [
+        "Li Gao",
+        "Long Zhao"
+      ],
+      "abstract": "We prove that for every smooth positive definite matrix-valued function $g$ on the unit sphere $S^d$, \\[ \\int_{S^d}\\tr(g(\\log g-\\log\\E g))\\dd \\le\\dfrac1{2d}\\int_{S^d}\\tr((\\Delta g)\\log g)\\dd. \\] Here $\\mu$ is normalized area measure, $\\E g$ is the spherical mean, and $\\Delta$ is the positive spherical Laplacian. This complete modified logarithmic Sobolev inequality extends Beckner's sharp logarithmic Sobolev inequality, in its modified form, to matrix-valued functions independent of the matrix size. We show that both entropy and Fisher information decay exponentially under the heat flow with optimal exponent $2d$, whose proof combines the Bochner identity with a $4$th-tensor estimate in the matrix-valued setting.",
+      "categories": [
+        "math.DG",
+        "math.OA"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "15 pages",
+      "version": 1,
+      "submittedAt": "2026-11-16T15:54:43Z",
+      "updatedAt": "2026-11-16T15:54:43Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-18T12:16:45.877870+00:00",
+        "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21704v1",
+        "observedAt": "2026-11-18T12:18:59.468293+00:00",
+        "contentHash": "681a80c0f3657f205949ba3b11d56575fdc2bbddaabe0815f650e6439f01a694"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-18T12:30:27.026140+00:00",
+        "contentHash": "0eeaf47b01d4dde7ed8df273e50d9e1276b4ae396c368d7e43e8e80a39f9e618"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "球面矩阵值函数的尖锐修正对数 Sobolev 不等式",
+      "workSummary": "设 d≥2，g 为单位球面 Sᵈ 上任意尺寸的光滑正定复矩阵场。对归一化球面测度和正 Laplacian Δ，矩阵相对熵 D(g‖Eg) 满足 D≤I/(2d)，其中 I=∫tr((Δg)log g) dμ。逐分量热半群使 D 和 I 都至多按 e^(−2dt) 衰减。",
+      "techniques": [
+        "BKM 矩阵内积的联合凸性",
+        "四阶熵张量的无迹估计",
+        "加权 Bochner 恒等式与 Hessian 配方",
+        "热半群积分与球面一次谐波",
+        "固定矩阵均值的 Herbst 估计与 Clifford 矩阵"
+      ],
+      "breakthrough": "定理6将 −I′/2−dI 控制为非负配方及四阶余项。相较仅用 Ric=(d−1)g 的耗散基准，保留 Hessian 迹并用张量不等式吸收无迹误差，得到常数 d。一次球谐的小扰动限制最优衰减指数。对逐点满足 Σ(∂ⱼF)²≤V 的 Hermitian 场，另得带任意 Hermitian 平移的迹 Laplace 界。",
+      "limitations": "定理1、6、7的证明范围是 d≥2。第2页将 d=1 的尖锐矩阵结论归于既有工作。浓缩的 Clifford 例证实统一的二次系数尖锐，尾界前因子的最优性未在定理主张内。补核定理与配方路线，未独立证明全部非交换张量恒等式。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者披露 ChatGPT 6.1-Sol 协助探索，以及起草和修订论文论述。声明未指认具体证明或核心策略由模型生成。作者对数学内容和终稿负责。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.21704v1 · PDF 第2页 Acknowledgment",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-18T12:18:59.468293+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.21704v1",
+        "contentHash": "681a80c0f3657f205949ba3b11d56575fdc2bbddaabe0815f650e6439f01a694",
+        "pages": 15,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6.1-Sol 协助探索，以及起草和修订论文论述。声明未指认具体证明或核心策略由模型生成。作者对数学内容和终稿负责。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6d82b07354cb0d4344fc60a9024429a8c59b736233a9704ea0927a21242cb374"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 95,
+      "priorityReason": "球面曲率、热流耗散与矩阵泛函不等式直接相接。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that for every smooth positive definite matrix-valued function $g$ on the unit sphere $S^d$, \\[ \\int_{S^d}\\tr(g(\\log g-\\log\\E g))\\dd \\le\\dfrac1{2d}\\int_{S^d}\\tr((\\Delta g)\\log g)\\dd. \\] Here $\\mu$ is normalized area measure, $\\E g$ is the spherical mean, and $\\Delta$ is the positive spherical Laplacian. This complete modified logarithmic Sobolev inequality extends Beckner's sharp logarithmic Sobolev inequality, in its modified form, to matrix-valued functions independent of the matrix size. We show that both entropy and Fisher information decay exponentially under the heat flow with optimal exponent $2d$, whose proof combines the Bochner identity with a $4$th-tensor estimate in the matrix-valued setting.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-18",
+      "entry": {
+        "arxivId": "2611.21704",
+        "metadata": {
+          "title": "Sharp modified logarithmic Sobolev inequality for matrix-valued functions on spheres",
+          "authors": [
+            "Li Gao",
+            "Long Zhao"
+          ],
+          "abstract": "We prove that for every smooth positive definite matrix-valued function $g$ on the unit sphere $S^d$, \\[ \\int_{S^d}\\tr(g(\\log g-\\log\\E g))\\dd \\le\\dfrac1{2d}\\int_{S^d}\\tr((\\Delta g)\\log g)\\dd. \\] Here $\\mu$ is normalized area measure, $\\E g$ is the spherical mean, and $\\Delta$ is the positive spherical Laplacian. This complete modified logarithmic Sobolev inequality extends Beckner's sharp logarithmic Sobolev inequality, in its modified form, to matrix-valued functions independent of the matrix size. We show that both entropy and Fisher information decay exponentially under the heat flow with optimal exponent $2d$, whose proof combines the Bochner identity with a $4$th-tensor estimate in the matrix-valued setting.",
+          "categories": [
+            "math.DG",
+            "math.OA"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "15 pages",
+          "version": 1,
+          "submittedAt": "2026-11-16T15:54:43Z",
+          "updatedAt": "2026-11-16T15:54:43Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-18T12:16:45.877870+00:00",
+            "contentHash": "72aaca65a8b9634295ede57d76e884a2455e434b57bf1b210838cff4c4ac7378"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.21704v1",
+            "observedAt": "2026-11-18T12:18:59.468293+00:00",
+            "contentHash": "681a80c0f3657f205949ba3b11d56575fdc2bbddaabe0815f650e6439f01a694"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-18T12:30:27.026140+00:00",
+            "contentHash": "0eeaf47b01d4dde7ed8df273e50d9e1276b4ae396c368d7e43e8e80a39f9e618"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "球面矩阵值函数的尖锐修正对数 Sobolev 不等式",
+          "workSummary": "设 d≥2，g 为单位球面 Sᵈ 上任意尺寸的光滑正定复矩阵场。对归一化球面测度和正 Laplacian Δ，矩阵相对熵 D(g‖Eg) 满足 D≤I/(2d)，其中 I=∫tr((Δg)log g) dμ。逐分量热半群使 D 和 I 都至多按 e^(−2dt) 衰减。",
+          "techniques": [
+            "BKM 矩阵内积的联合凸性",
+            "四阶熵张量的无迹估计",
+            "加权 Bochner 恒等式与 Hessian 配方",
+            "热半群积分与球面一次谐波",
+            "固定矩阵均值的 Herbst 估计与 Clifford 矩阵"
+          ],
+          "breakthrough": "定理6将 −I′/2−dI 控制为非负配方及四阶余项。相较仅用 Ric=(d−1)g 的耗散基准，保留 Hessian 迹并用张量不等式吸收无迹误差，得到常数 d。一次球谐的小扰动限制最优衰减指数。对逐点满足 Σ(∂ⱼF)²≤V 的 Hermitian 场，另得带任意 Hermitian 平移的迹 Laplace 界。",
+          "limitations": "定理1、6、7的证明范围是 d≥2。第2页将 d=1 的尖锐矩阵结论归于既有工作。浓缩的 Clifford 例证实统一的二次系数尖锐，尾界前因子的最优性未在定理主张内。补核定理与配方路线，未独立证明全部非交换张量恒等式。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者披露 ChatGPT 6.1-Sol 协助探索，以及起草和修订论文论述。声明未指认具体证明或核心策略由模型生成。作者对数学内容和终稿负责。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.21704v1 · PDF 第2页 Acknowledgment",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-18T12:18:59.468293+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.21704v1",
+            "contentHash": "681a80c0f3657f205949ba3b11d56575fdc2bbddaabe0815f650e6439f01a694",
+            "pages": 15,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者披露 ChatGPT 6.1-Sol 协助探索，以及起草和修订论文论述。声明未指认具体证明或核心策略由模型生成。作者对数学内容和终稿负责。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6d82b07354cb0d4344fc60a9024429a8c59b736233a9704ea0927a21242cb374"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 95,
+          "priorityReason": "球面曲率、热流耗散与矩阵泛函不等式直接相接。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that for every smooth positive definite matrix-valued function $g$ on the unit sphere $S^d$, \\[ \\int_{S^d}\\tr(g(\\log g-\\log\\E g))\\dd \\le\\dfrac1{2d}\\int_{S^d}\\tr((\\Delta g)\\log g)\\dd. \\] Here $\\mu$ is normalized area measure, $\\E g$ is the spherical mean, and $\\Delta$ is the positive spherical Laplacian. This complete modified logarithmic Sobolev inequality extends Beckner's sharp logarithmic Sobolev inequality, in its modified form, to matrix-valued functions independent of the matrix size. We show that both entropy and Fisher information decay exponentially under the heat flow with optimal exponent $2d$, whose proof combines the Bochner identity with a $4$th-tensor estimate in the matrix-valued setting.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
