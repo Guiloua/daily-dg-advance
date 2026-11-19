@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.24177",
+  "slug": "2611.24177",
+  "latest": {
+    "arxivId": "2611.24177",
+    "metadata": {
+      "title": "Rigidity for the quadratic Riemann curvature functional in dimensions greater than four",
+      "authors": [
+        "Yunhee Euh",
+        "JeongHyeong Park"
+      ],
+      "abstract": "We investigate rigidity properties of critical metrics for the quadratic Riemann curvature functional on Riemannian manifolds of dimension greater than four. This functional is the integral of the squared norm of the Riemann curvature tensor. On noncompact manifolds, criticality is understood with respect to compactly supported variations, without assuming finite total curvature energy. We prove that every complete noncompact critical metric with finite curvature energy is either flat or has strictly negative scalar curvature everywhere. We further show that every complete critical metric with concircular scalar curvature is flat. Here concircularity means that the Hessian of the scalar curvature is pointwise proportional to the metric. Consequently, every complete weakly Einstein critical metric with divergence-free Cotton tensor is flat. The latter two flatness results require neither noncompactness nor finite curvature energy. Finally, we construct a complete nonflat critical metric in dimension five with vanishing Cotton tensor, showing that the concircularity and weakly Einstein assumptions are essential in the respective flatness results.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "16 pages",
+      "version": 1,
+      "submittedAt": "2026-11-18T10:20:23Z",
+      "updatedAt": "2026-11-18T10:20:23Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24177v1",
+        "observedAt": "2026-11-19T08:53:22.496076+00:00",
+        "contentHash": "14b31db3c664f1372b94070ca831df5dee1c40610b67c57620d15c22712a1f0e"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:14.556745+00:00",
+        "contentHash": "e0bcf8bbec25d95abda6fa2a401b9e9c6b08b0d00f542a9e7fcdc617b821cf07"
+      }
+    ],
+    "analysis": {
+      "topic": "几何分析、几何 PDE 与几何流",
+      "progressType": "平方曲率能量临界度量的平坦刚性",
+      "workSummary": "在连通无边界n>4维流形上，作者研究𝒜(g)=∫|Rm|²对全部Riemannian度量变分的临界点。非紧时按紧支撑变分定义。若g完备非紧且𝒜有限，则要么平坦，要么标量曲率处处严格负。若g完备且Hess s=(Δs/n)g，则无需能量有限即平坦。弱Einstein临界度量满足Cotton散度与无迹Hess s的恒等式，故Cotton散度为零也给平坦。作者构造ℝ×H⁴上的完整非平坦临界翘曲积，Cotton为零但不弱Einstein、标量曲率不concircular。",
+      "techniques": [
+        "曲率能量的无约束Euler–Lagrange迹方程",
+        "标量曲率正部L²截断与强最大值原理",
+        "完整测地线上u″≥au²的ODE爆破排除",
+        "Cotton散度恒等式",
+        "翘曲积四阶ODE及首次离开估计"
+      ],
+      "breakthrough": "迹方程Δs=(n−4)|Rm|²/4把临界性转为次调和性，有限能量控制s正部从而得负曲率分支。concircular条件强化为Hess s≥c s²g，完整测地线上的ODE排除非零s。五维反例经四阶初值系统和全局延拓构造，说明单独Cotton消失不足以应用该平坦定理。",
+      "limitations": "补读PDF第1–3、8、12–15页的主定理和相关论证，渲染第3页。主结果针对无约束临界性，单位体积临界的结果在另一章节。维数n>4与完整性须保留。一般完整非紧弱Einstein有限能量临界度量是否必平坦仍未完全解决。本文反例的完整ODE代数计算和全篇证明尚未独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:53:22.496076+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24177v1",
+        "contentHash": "14b31db3c664f1372b94070ca831df5dee1c40610b67c57620d15c22712a1f0e",
+        "pages": 16,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文原检索及扩展检索未见作者AI使用披露。第2、3页llm候选来自all metrics及All manifolds的普通文字拼接，已复查文末。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "0b8d13b21195602078e58f179f58fdc9e5517748973095b7dd2b22d5909643d2"
+      },
+      "priorityScore": 97,
+      "priorityReason": "研究高阶变分Euler方程的全局刚性与临界反例。"
+    },
+    "analysisBasis": {
+      "abstract": "We investigate rigidity properties of critical metrics for the quadratic Riemann curvature functional on Riemannian manifolds of dimension greater than four. This functional is the integral of the squared norm of the Riemann curvature tensor. On noncompact manifolds, criticality is understood with respect to compactly supported variations, without assuming finite total curvature energy. We prove that every complete noncompact critical metric with finite curvature energy is either flat or has strictly negative scalar curvature everywhere. We further show that every complete critical metric with concircular scalar curvature is flat. Here concircularity means that the Hessian of the scalar curvature is pointwise proportional to the metric. Consequently, every complete weakly Einstein critical metric with divergence-free Cotton tensor is flat. The latter two flatness results require neither noncompactness nor finite curvature energy. Finally, we construct a complete nonflat critical metric in dimension five with vanishing Cotton tensor, showing that the concircularity and weakly Einstein assumptions are essential in the respective flatness results.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.24177",
+        "metadata": {
+          "title": "Rigidity for the quadratic Riemann curvature functional in dimensions greater than four",
+          "authors": [
+            "Yunhee Euh",
+            "JeongHyeong Park"
+          ],
+          "abstract": "We investigate rigidity properties of critical metrics for the quadratic Riemann curvature functional on Riemannian manifolds of dimension greater than four. This functional is the integral of the squared norm of the Riemann curvature tensor. On noncompact manifolds, criticality is understood with respect to compactly supported variations, without assuming finite total curvature energy. We prove that every complete noncompact critical metric with finite curvature energy is either flat or has strictly negative scalar curvature everywhere. We further show that every complete critical metric with concircular scalar curvature is flat. Here concircularity means that the Hessian of the scalar curvature is pointwise proportional to the metric. Consequently, every complete weakly Einstein critical metric with divergence-free Cotton tensor is flat. The latter two flatness results require neither noncompactness nor finite curvature energy. Finally, we construct a complete nonflat critical metric in dimension five with vanishing Cotton tensor, showing that the concircularity and weakly Einstein assumptions are essential in the respective flatness results.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "16 pages",
+          "version": 1,
+          "submittedAt": "2026-11-18T10:20:23Z",
+          "updatedAt": "2026-11-18T10:20:23Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24177v1",
+            "observedAt": "2026-11-19T08:53:22.496076+00:00",
+            "contentHash": "14b31db3c664f1372b94070ca831df5dee1c40610b67c57620d15c22712a1f0e"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:14.556745+00:00",
+            "contentHash": "e0bcf8bbec25d95abda6fa2a401b9e9c6b08b0d00f542a9e7fcdc617b821cf07"
+          }
+        ],
+        "analysis": {
+          "topic": "几何分析、几何 PDE 与几何流",
+          "progressType": "平方曲率能量临界度量的平坦刚性",
+          "workSummary": "在连通无边界n>4维流形上，作者研究𝒜(g)=∫|Rm|²对全部Riemannian度量变分的临界点。非紧时按紧支撑变分定义。若g完备非紧且𝒜有限，则要么平坦，要么标量曲率处处严格负。若g完备且Hess s=(Δs/n)g，则无需能量有限即平坦。弱Einstein临界度量满足Cotton散度与无迹Hess s的恒等式，故Cotton散度为零也给平坦。作者构造ℝ×H⁴上的完整非平坦临界翘曲积，Cotton为零但不弱Einstein、标量曲率不concircular。",
+          "techniques": [
+            "曲率能量的无约束Euler–Lagrange迹方程",
+            "标量曲率正部L²截断与强最大值原理",
+            "完整测地线上u″≥au²的ODE爆破排除",
+            "Cotton散度恒等式",
+            "翘曲积四阶ODE及首次离开估计"
+          ],
+          "breakthrough": "迹方程Δs=(n−4)|Rm|²/4把临界性转为次调和性，有限能量控制s正部从而得负曲率分支。concircular条件强化为Hess s≥c s²g，完整测地线上的ODE排除非零s。五维反例经四阶初值系统和全局延拓构造，说明单独Cotton消失不足以应用该平坦定理。",
+          "limitations": "补读PDF第1–3、8、12–15页的主定理和相关论证，渲染第3页。主结果针对无约束临界性，单位体积临界的结果在另一章节。维数n>4与完整性须保留。一般完整非紧弱Einstein有限能量临界度量是否必平坦仍未完全解决。本文反例的完整ODE代数计算和全篇证明尚未独立核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:53:22.496076+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24177v1",
+            "contentHash": "14b31db3c664f1372b94070ca831df5dee1c40610b67c57620d15c22712a1f0e",
+            "pages": 16,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。全文原检索及扩展检索未见作者AI使用披露。第2、3页llm候选来自all metrics及All manifolds的普通文字拼接，已复查文末。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "0b8d13b21195602078e58f179f58fdc9e5517748973095b7dd2b22d5909643d2"
+          },
+          "priorityScore": 97,
+          "priorityReason": "研究高阶变分Euler方程的全局刚性与临界反例。"
+        },
+        "analysisBasis": {
+          "abstract": "We investigate rigidity properties of critical metrics for the quadratic Riemann curvature functional on Riemannian manifolds of dimension greater than four. This functional is the integral of the squared norm of the Riemann curvature tensor. On noncompact manifolds, criticality is understood with respect to compactly supported variations, without assuming finite total curvature energy. We prove that every complete noncompact critical metric with finite curvature energy is either flat or has strictly negative scalar curvature everywhere. We further show that every complete critical metric with concircular scalar curvature is flat. Here concircularity means that the Hessian of the scalar curvature is pointwise proportional to the metric. Consequently, every complete weakly Einstein critical metric with divergence-free Cotton tensor is flat. The latter two flatness results require neither noncompactness nor finite curvature energy. Finally, we construct a complete nonflat critical metric in dimension five with vanishing Cotton tensor, showing that the concircularity and weakly Einstein assumptions are essential in the respective flatness results.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

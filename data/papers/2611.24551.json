@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.24551",
+  "slug": "2611.24551",
+  "latest": {
+    "arxivId": "2611.24551",
+    "metadata": {
+      "title": "A Trajectory-Based Mathematical Framework for Wildfire Front Propagation in Heterogeneous Landscapes",
+      "authors": [
+        "Hengameh R. Dehkordi"
+      ],
+      "abstract": "We present a mathematical formulation based on trajectories for modeling the propagation of wildfire fronts in heterogeneous landscapes and apply it to the Brazilian Pantanal. The formulation is made up of a direction-dependent propagation law and Finsler orthogonality along a moving boundary. This results in a nonlinear local system for outward fire front trajectories. We provide a strictly convex translated ellipse representation at each point of the evolving boundary which guaranties uniqueness and existence of the chosen outward velocity. The effective propagation coefficients that are dependent on space and the hourly wind forcing permit the perimeter to evolve irregularly without imposing a fixed global front geometry. Computed trajectories were georeferenced and isotropically spatially registered with VIIRS active-fire observations. ERA5 wind and ERA5-Land vegetation data were used to describe the environmental forcing and landscape heterogeneity. The full-run Dice coefficients for the observation-guided spatial comparisons for the exploratory experiments for September 3-5, 2020 are 0.578, 0.571, and 0.467 respectively. One-at-a-time sensitivity perturbations of the spatial propagation coefficient, wind speed magnitude and rate-law exponents quantify the governing influence of the environmental forcing and parameter variations on the spatial extent of the calculated fire advance. These observed patterns also guided calibration and, in the absence of exact timestamps of satellite acquisition, the results show within-event spatial agreement rather than independent predictive validation. The framework provides a mathematically rigorous basis for subsequent uncertainty quantification, independent validation over multiple events and prospective sector-wise assessments of simulated fire spread.",
+      "categories": [
+        "math.DG",
+        "math-ph"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-18T14:52:59Z",
+      "updatedAt": "2026-11-18T14:52:59Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:15.299446+00:00",
+        "contentHash": "8a7ca0ee6d5814f1ce63814b4df0150e0dbf9a373755aaeb398d04c646d0cec1"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "异质地貌野火前沿轨迹模型",
+      "workSummary": "作者用方向依赖传播律和Finsler正交条件建立移动边界的局部非线性系统，并以严格凸平移椭圆表示保证选定外向速度的存在与唯一性。用巴西Pantanal的2020年9月3–5日事件检验计算轨迹与VIIRS火点的空间吻合，采用ERA5风场及ERA5-Land植被描述环境。",
+      "techniques": [
+        "Finsler正交和方向传播律",
+        "严格凸平移椭圆",
+        "轨迹积分与空间配准",
+        "环境敏感性数值分析"
+      ],
+      "breakthrough": "允许边界在异质参数和逐小时风下不规则演化，报告全程Dice系数0.578、0.571、0.467并作单因素敏感性分析。",
+      "limitations": "观测同时指导标定与比较，且无精确卫星过境时间。作者将结果限定为同事件空间吻合，后续预测验证仍待开展。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第33页说明ChatGPT和Grammarly辅助部分章节的改述、语言及可读性，包括摘要、引言和结论，记录writing。作者审核批准修改。第12、14页llm候选来自full model与all maps的文字拼接。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24551v1 · PDF第33页AI Contribution，全文35页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:57:25.693263+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24551v1",
+        "contentHash": "c2958002d7bfed8b4456200611030df52071506fe943fdb56dd5a80206f77301",
+        "pages": 35,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第33页说明ChatGPT和Grammarly辅助部分章节的改述、语言及可读性，包括摘要、引言和结论，记录writing。作者审核批准修改。第12、14页llm候选来自full model与all maps的文字拼接。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4cbe56bd799bac3846552dec92d8ff077ea4cbccc9fbb8e92cdbc75c80ac577a"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 42,
+      "priorityReason": "主要是Finsler几何用于火灾模型的计算应用。",
+      "lowPriorityReason": "主要是Finsler几何用于火灾模型的计算应用。"
+    },
+    "analysisBasis": {
+      "abstract": "We present a mathematical formulation based on trajectories for modeling the propagation of wildfire fronts in heterogeneous landscapes and apply it to the Brazilian Pantanal. The formulation is made up of a direction-dependent propagation law and Finsler orthogonality along a moving boundary. This results in a nonlinear local system for outward fire front trajectories. We provide a strictly convex translated ellipse representation at each point of the evolving boundary which guaranties uniqueness and existence of the chosen outward velocity. The effective propagation coefficients that are dependent on space and the hourly wind forcing permit the perimeter to evolve irregularly without imposing a fixed global front geometry. Computed trajectories were georeferenced and isotropically spatially registered with VIIRS active-fire observations. ERA5 wind and ERA5-Land vegetation data were used to describe the environmental forcing and landscape heterogeneity. The full-run Dice coefficients for the observation-guided spatial comparisons for the exploratory experiments for September 3-5, 2020 are 0.578, 0.571, and 0.467 respectively. One-at-a-time sensitivity perturbations of the spatial propagation coefficient, wind speed magnitude and rate-law exponents quantify the governing influence of the environmental forcing and parameter variations on the spatial extent of the calculated fire advance. These observed patterns also guided calibration and, in the absence of exact timestamps of satellite acquisition, the results show within-event spatial agreement rather than independent predictive validation. The framework provides a mathematically rigorous basis for subsequent uncertainty quantification, independent validation over multiple events and prospective sector-wise assessments of simulated fire spread.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.24551",
+        "metadata": {
+          "title": "A Trajectory-Based Mathematical Framework for Wildfire Front Propagation in Heterogeneous Landscapes",
+          "authors": [
+            "Hengameh R. Dehkordi"
+          ],
+          "abstract": "We present a mathematical formulation based on trajectories for modeling the propagation of wildfire fronts in heterogeneous landscapes and apply it to the Brazilian Pantanal. The formulation is made up of a direction-dependent propagation law and Finsler orthogonality along a moving boundary. This results in a nonlinear local system for outward fire front trajectories. We provide a strictly convex translated ellipse representation at each point of the evolving boundary which guaranties uniqueness and existence of the chosen outward velocity. The effective propagation coefficients that are dependent on space and the hourly wind forcing permit the perimeter to evolve irregularly without imposing a fixed global front geometry. Computed trajectories were georeferenced and isotropically spatially registered with VIIRS active-fire observations. ERA5 wind and ERA5-Land vegetation data were used to describe the environmental forcing and landscape heterogeneity. The full-run Dice coefficients for the observation-guided spatial comparisons for the exploratory experiments for September 3-5, 2020 are 0.578, 0.571, and 0.467 respectively. One-at-a-time sensitivity perturbations of the spatial propagation coefficient, wind speed magnitude and rate-law exponents quantify the governing influence of the environmental forcing and parameter variations on the spatial extent of the calculated fire advance. These observed patterns also guided calibration and, in the absence of exact timestamps of satellite acquisition, the results show within-event spatial agreement rather than independent predictive validation. The framework provides a mathematically rigorous basis for subsequent uncertainty quantification, independent validation over multiple events and prospective sector-wise assessments of simulated fire spread.",
+          "categories": [
+            "math.DG",
+            "math-ph"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-18T14:52:59Z",
+          "updatedAt": "2026-11-18T14:52:59Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:15.299446+00:00",
+            "contentHash": "8a7ca0ee6d5814f1ce63814b4df0150e0dbf9a373755aaeb398d04c646d0cec1"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "异质地貌野火前沿轨迹模型",
+          "workSummary": "作者用方向依赖传播律和Finsler正交条件建立移动边界的局部非线性系统，并以严格凸平移椭圆表示保证选定外向速度的存在与唯一性。用巴西Pantanal的2020年9月3–5日事件检验计算轨迹与VIIRS火点的空间吻合，采用ERA5风场及ERA5-Land植被描述环境。",
+          "techniques": [
+            "Finsler正交和方向传播律",
+            "严格凸平移椭圆",
+            "轨迹积分与空间配准",
+            "环境敏感性数值分析"
+          ],
+          "breakthrough": "允许边界在异质参数和逐小时风下不规则演化，报告全程Dice系数0.578、0.571、0.467并作单因素敏感性分析。",
+          "limitations": "观测同时指导标定与比较，且无精确卫星过境时间。作者将结果限定为同事件空间吻合，后续预测验证仍待开展。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第33页说明ChatGPT和Grammarly辅助部分章节的改述、语言及可读性，包括摘要、引言和结论，记录writing。作者审核批准修改。第12、14页llm候选来自full model与all maps的文字拼接。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24551v1 · PDF第33页AI Contribution，全文35页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:57:25.693263+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24551v1",
+            "contentHash": "c2958002d7bfed8b4456200611030df52071506fe943fdb56dd5a80206f77301",
+            "pages": 35,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第33页说明ChatGPT和Grammarly辅助部分章节的改述、语言及可读性，包括摘要、引言和结论，记录writing。作者审核批准修改。第12、14页llm候选来自full model与all maps的文字拼接。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4cbe56bd799bac3846552dec92d8ff077ea4cbccc9fbb8e92cdbc75c80ac577a"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 42,
+          "priorityReason": "主要是Finsler几何用于火灾模型的计算应用。",
+          "lowPriorityReason": "主要是Finsler几何用于火灾模型的计算应用。"
+        },
+        "analysisBasis": {
+          "abstract": "We present a mathematical formulation based on trajectories for modeling the propagation of wildfire fronts in heterogeneous landscapes and apply it to the Brazilian Pantanal. The formulation is made up of a direction-dependent propagation law and Finsler orthogonality along a moving boundary. This results in a nonlinear local system for outward fire front trajectories. We provide a strictly convex translated ellipse representation at each point of the evolving boundary which guaranties uniqueness and existence of the chosen outward velocity. The effective propagation coefficients that are dependent on space and the hourly wind forcing permit the perimeter to evolve irregularly without imposing a fixed global front geometry. Computed trajectories were georeferenced and isotropically spatially registered with VIIRS active-fire observations. ERA5 wind and ERA5-Land vegetation data were used to describe the environmental forcing and landscape heterogeneity. The full-run Dice coefficients for the observation-guided spatial comparisons for the exploratory experiments for September 3-5, 2020 are 0.578, 0.571, and 0.467 respectively. One-at-a-time sensitivity perturbations of the spatial propagation coefficient, wind speed magnitude and rate-law exponents quantify the governing influence of the environmental forcing and parameter variations on the spatial extent of the calculated fire advance. These observed patterns also guided calibration and, in the absence of exact timestamps of satellite acquisition, the results show within-event spatial agreement rather than independent predictive validation. The framework provides a mathematically rigorous basis for subsequent uncertainty quantification, independent validation over multiple events and prospective sector-wise assessments of simulated fire spread.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

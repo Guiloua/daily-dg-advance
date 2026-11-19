@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.23543",
+  "slug": "2611.23543",
+  "latest": {
+    "arxivId": "2611.23543",
+    "metadata": {
+      "title": "Stability of Parallel Transport Convolution under Riemannian Metric Perturbations",
+      "authors": [
+        "Hongnian Huang",
+        "Andrew Stump"
+      ],
+      "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "math.DG",
+        "stat.ML"
+      ],
+      "primaryCategory": "cs.LG",
+      "comment": "78 pages. Comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-17T21:50:20Z",
+      "updatedAt": "2026-11-17T21:50:20Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23543v1",
+        "observedAt": "2026-11-19T08:45:08.121528+00:00",
+        "contentHash": "e219889bb281c8ddc48d309e0ff08c57b2dc3c72872f47dedb34ec2eb735373a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:02.441216+00:00",
+        "contentHash": "bf3909116cff9b7743451511d036947af25638f1e545db61a1218556ca58051c"
+      }
+    ],
+    "analysis": {
+      "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+      "progressType": "平行移动卷积对度量扰动的稳定性",
+      "workSummary": "在固定紧流形上，对连续输入和支撑于足够小正规邻域的连续参考核，证明平行移动卷积输出关于度量的 C² 扰动在 L² 中连续。",
+      "techniques": [
+        "测地线与 Jacobi 场的扰动估计",
+        "平行移动及指数映射",
+        "割迹邻域的积分控制",
+        "体积测度的扰动"
+      ],
+      "breakthrough": "在割迹外建立一致比较，用体积任意小的邻域控制剩余积分，并同时处理 Riemannian 体积变化。",
+      "limitations": "定理是定性连续性，依核的局部化及运输路径约定。摘要未给一般全局核的稳定界或统一收敛速率。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者声明主要数学结果独立发展，稿件准备阶段用 AI 改善可读性、清晰度和呈现。模型未具名。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.23543v1 · PDF 第4页 Disclosure of AI use",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:45:08.121528+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.23543v1",
+        "contentHash": "e219889bb281c8ddc48d309e0ff08c57b2dc3c72872f47dedb34ec2eb735373a",
+        "pages": 78,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明主要数学结果独立发展，稿件准备阶段用 AI 改善可读性、清晰度和呈现。模型未具名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "26e6f6c12c52562784d80ea4e0ec7da15ea0020fe9e7d7fc1b1608a9cbd18688"
+      },
+      "aiUsage": [
+        "writing"
+      ],
+      "priorityScore": 82,
+      "priorityReason": "几何构造的连续性与分析算子稳定性联系直接。"
+    },
+    "analysisBasis": {
+      "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.23543",
+        "metadata": {
+          "title": "Stability of Parallel Transport Convolution under Riemannian Metric Perturbations",
+          "authors": [
+            "Hongnian Huang",
+            "Andrew Stump"
+          ],
+          "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+          "categories": [
+            "cs.LG",
+            "cs.CV",
+            "math.DG",
+            "stat.ML"
+          ],
+          "primaryCategory": "cs.LG",
+          "comment": "78 pages. Comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-17T21:50:20Z",
+          "updatedAt": "2026-11-17T21:50:20Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.23543v1",
+            "observedAt": "2026-11-19T08:45:08.121528+00:00",
+            "contentHash": "e219889bb281c8ddc48d309e0ff08c57b2dc3c72872f47dedb34ec2eb735373a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:02.441216+00:00",
+            "contentHash": "bf3909116cff9b7743451511d036947af25638f1e545db61a1218556ca58051c"
+          }
+        ],
+        "analysis": {
+          "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
+          "progressType": "平行移动卷积对度量扰动的稳定性",
+          "workSummary": "在固定紧流形上，对连续输入和支撑于足够小正规邻域的连续参考核，证明平行移动卷积输出关于度量的 C² 扰动在 L² 中连续。",
+          "techniques": [
+            "测地线与 Jacobi 场的扰动估计",
+            "平行移动及指数映射",
+            "割迹邻域的积分控制",
+            "体积测度的扰动"
+          ],
+          "breakthrough": "在割迹外建立一致比较，用体积任意小的邻域控制剩余积分，并同时处理 Riemannian 体积变化。",
+          "limitations": "定理是定性连续性，依核的局部化及运输路径约定。摘要未给一般全局核的稳定界或统一收敛速率。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者声明主要数学结果独立发展，稿件准备阶段用 AI 改善可读性、清晰度和呈现。模型未具名。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.23543v1 · PDF 第4页 Disclosure of AI use",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:45:08.121528+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.23543v1",
+            "contentHash": "e219889bb281c8ddc48d309e0ff08c57b2dc3c72872f47dedb34ec2eb735373a",
+            "pages": 78,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明主要数学结果独立发展，稿件准备阶段用 AI 改善可读性、清晰度和呈现。模型未具名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "26e6f6c12c52562784d80ea4e0ec7da15ea0020fe9e7d7fc1b1608a9cbd18688"
+          },
+          "aiUsage": [
+            "writing"
+          ],
+          "priorityScore": 82,
+          "priorityReason": "几何构造的连续性与分析算子稳定性联系直接。"
+        },
+        "analysisBasis": {
+          "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.24618",
+  "slug": "2611.24618",
+  "latest": {
+    "arxivId": "2611.24618",
+    "metadata": {
+      "title": "Gravitational Illumination Bodies",
+      "authors": [
+        "Victor Glasgo",
+        "Elisabeth M. Werner"
+      ],
+      "abstract": "For a given convex body $K$ in $\\mathbb R ^n$ and $\\delta>0$, we introduce a new class of bodies, the {\\em gravitational illumination bodies} $I^\\delta(K)$. We show some of their properties and explore their relation to floating bodies, illumination bodies and Ulam floating bodies. Unexpected phenomena happen and the gravitational illumination bodies exhibit very different behavior than the floating bodies, illumination bodies and Ulam floating bodies. While the classical bodies are all convex and either contained in $K$ or containing $K$, this is no longer the case for the new bodies. They need not be convex, but they are star shaped and it may happen that $I^\\delta(K)$ has non-empty intersection with both, $K$ and its complement. Moreover, the containment behavior may change with the dimension. Most surprising is the behavior of a volume derivative, $$ \\lim_{\\delta \\to 0} \\frac{ |\\vol_n(K)-\\vol_n(I^\\delta(K)) |}{\\delta^\\frac{2}{n+1}}. $$ In all dimensions the corresponding volume derivative for the classical bodies results in the equi-affine invariant affine surface area of the body $K$. In the case of the gravitational illumination body, this is also the case in all dimensions, except in dimension $3$. In dimension $3$ the limit is equal to $0$ for all convex bodies. A non-zero derivative is obtained in dimension $3$ if one normalizes by $\\delta$ instead of $\\delta^\\frac{1}{2}$. The non-zero limit is a new affine invariant involving the {\\em affine mean curvature } and the {\\em Pick invariant} of the convex body.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-18T15:36:14Z",
+      "updatedAt": "2026-11-18T15:36:14Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:15.300337+00:00",
+        "contentHash": "7a172e4c78f5ebd6fdb0150f229a25bd262aaa5018bad9c809d0159f8969fc6c"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "引力 illumination 体及三维异常体积变分",
+      "workSummary": "对凸体 K 构造 gravitational illumination 体，研究它同 floating、illumination 和 Ulam floating 体的关系。新体为星形但可非凸，也可同时交 K 及其补集，包含关系可能依维数变化。",
+      "techniques": [
+        "凸体的 illumination 构造",
+        "星形体",
+        "仿射表面积的体积渐近",
+        "仿射平均曲率与 Pick 不变量"
+      ],
+      "breakthrough": "按 δ^(2/(n+1)) 归一化的体积差极限，在三维外联系仿射表面积，三维该极限恒零。三维改用 δ 归一化，得到涉及仿射平均曲率和 Pick 不变量的新仿射不变量。",
+      "limitations": "三维非零极限所需边界正则性和曲率条件在摘要未列。新体通常不维持传统 floating 体的凸性和固定包含关系。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者说明数学思想、研究方向和初版早于此次AI使用。近期准备稿件时 ChatGPT 协助核查部分引理论证，另有少量编辑。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24618v1 · PDF 第53页 Statement on the use of AI",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:58:00.771905+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24618v1",
+        "contentHash": "36a3fef95e6a363d619aebcf39976edda67f07ecf37f3ec9cf0337f5ebdc704a",
+        "pages": 57,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明数学思想、研究方向和初版早于此次AI使用。近期准备稿件时 ChatGPT 协助核查部分引理论证，另有少量编辑。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "cb798053f375c99ed9272d8886f919b6ed16096a1dba74b929a5069a1ac37a4e"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 91,
+      "priorityReason": "凸几何体积渐近中有清晰的维数异常。"
+    },
+    "analysisBasis": {
+      "abstract": "For a given convex body $K$ in $\\mathbb R ^n$ and $\\delta>0$, we introduce a new class of bodies, the {\\em gravitational illumination bodies} $I^\\delta(K)$. We show some of their properties and explore their relation to floating bodies, illumination bodies and Ulam floating bodies. Unexpected phenomena happen and the gravitational illumination bodies exhibit very different behavior than the floating bodies, illumination bodies and Ulam floating bodies. While the classical bodies are all convex and either contained in $K$ or containing $K$, this is no longer the case for the new bodies. They need not be convex, but they are star shaped and it may happen that $I^\\delta(K)$ has non-empty intersection with both, $K$ and its complement. Moreover, the containment behavior may change with the dimension. Most surprising is the behavior of a volume derivative, $$ \\lim_{\\delta \\to 0} \\frac{ |\\vol_n(K)-\\vol_n(I^\\delta(K)) |}{\\delta^\\frac{2}{n+1}}. $$ In all dimensions the corresponding volume derivative for the classical bodies results in the equi-affine invariant affine surface area of the body $K$. In the case of the gravitational illumination body, this is also the case in all dimensions, except in dimension $3$. In dimension $3$ the limit is equal to $0$ for all convex bodies. A non-zero derivative is obtained in dimension $3$ if one normalizes by $\\delta$ instead of $\\delta^\\frac{1}{2}$. The non-zero limit is a new affine invariant involving the {\\em affine mean curvature } and the {\\em Pick invariant} of the convex body.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.24618",
+        "metadata": {
+          "title": "Gravitational Illumination Bodies",
+          "authors": [
+            "Victor Glasgo",
+            "Elisabeth M. Werner"
+          ],
+          "abstract": "For a given convex body $K$ in $\\mathbb R ^n$ and $\\delta>0$, we introduce a new class of bodies, the {\\em gravitational illumination bodies} $I^\\delta(K)$. We show some of their properties and explore their relation to floating bodies, illumination bodies and Ulam floating bodies. Unexpected phenomena happen and the gravitational illumination bodies exhibit very different behavior than the floating bodies, illumination bodies and Ulam floating bodies. While the classical bodies are all convex and either contained in $K$ or containing $K$, this is no longer the case for the new bodies. They need not be convex, but they are star shaped and it may happen that $I^\\delta(K)$ has non-empty intersection with both, $K$ and its complement. Moreover, the containment behavior may change with the dimension. Most surprising is the behavior of a volume derivative, $$ \\lim_{\\delta \\to 0} \\frac{ |\\vol_n(K)-\\vol_n(I^\\delta(K)) |}{\\delta^\\frac{2}{n+1}}. $$ In all dimensions the corresponding volume derivative for the classical bodies results in the equi-affine invariant affine surface area of the body $K$. In the case of the gravitational illumination body, this is also the case in all dimensions, except in dimension $3$. In dimension $3$ the limit is equal to $0$ for all convex bodies. A non-zero derivative is obtained in dimension $3$ if one normalizes by $\\delta$ instead of $\\delta^\\frac{1}{2}$. The non-zero limit is a new affine invariant involving the {\\em affine mean curvature } and the {\\em Pick invariant} of the convex body.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-18T15:36:14Z",
+          "updatedAt": "2026-11-18T15:36:14Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:15.300337+00:00",
+            "contentHash": "7a172e4c78f5ebd6fdb0150f229a25bd262aaa5018bad9c809d0159f8969fc6c"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "引力 illumination 体及三维异常体积变分",
+          "workSummary": "对凸体 K 构造 gravitational illumination 体，研究它同 floating、illumination 和 Ulam floating 体的关系。新体为星形但可非凸，也可同时交 K 及其补集，包含关系可能依维数变化。",
+          "techniques": [
+            "凸体的 illumination 构造",
+            "星形体",
+            "仿射表面积的体积渐近",
+            "仿射平均曲率与 Pick 不变量"
+          ],
+          "breakthrough": "按 δ^(2/(n+1)) 归一化的体积差极限，在三维外联系仿射表面积，三维该极限恒零。三维改用 δ 归一化，得到涉及仿射平均曲率和 Pick 不变量的新仿射不变量。",
+          "limitations": "三维非零极限所需边界正则性和曲率条件在摘要未列。新体通常不维持传统 floating 体的凸性和固定包含关系。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者说明数学思想、研究方向和初版早于此次AI使用。近期准备稿件时 ChatGPT 协助核查部分引理论证，另有少量编辑。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24618v1 · PDF 第53页 Statement on the use of AI",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:58:00.771905+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24618v1",
+            "contentHash": "36a3fef95e6a363d619aebcf39976edda67f07ecf37f3ec9cf0337f5ebdc704a",
+            "pages": 57,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者说明数学思想、研究方向和初版早于此次AI使用。近期准备稿件时 ChatGPT 协助核查部分引理论证，另有少量编辑。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "cb798053f375c99ed9272d8886f919b6ed16096a1dba74b929a5069a1ac37a4e"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 91,
+          "priorityReason": "凸几何体积渐近中有清晰的维数异常。"
+        },
+        "analysisBasis": {
+          "abstract": "For a given convex body $K$ in $\\mathbb R ^n$ and $\\delta>0$, we introduce a new class of bodies, the {\\em gravitational illumination bodies} $I^\\delta(K)$. We show some of their properties and explore their relation to floating bodies, illumination bodies and Ulam floating bodies. Unexpected phenomena happen and the gravitational illumination bodies exhibit very different behavior than the floating bodies, illumination bodies and Ulam floating bodies. While the classical bodies are all convex and either contained in $K$ or containing $K$, this is no longer the case for the new bodies. They need not be convex, but they are star shaped and it may happen that $I^\\delta(K)$ has non-empty intersection with both, $K$ and its complement. Moreover, the containment behavior may change with the dimension. Most surprising is the behavior of a volume derivative, $$ \\lim_{\\delta \\to 0} \\frac{ |\\vol_n(K)-\\vol_n(I^\\delta(K)) |}{\\delta^\\frac{2}{n+1}}. $$ In all dimensions the corresponding volume derivative for the classical bodies results in the equi-affine invariant affine surface area of the body $K$. In the case of the gravitational illumination body, this is also the case in all dimensions, except in dimension $3$. In dimension $3$ the limit is equal to $0$ for all convex bodies. A non-zero derivative is obtained in dimension $3$ if one normalizes by $\\delta$ instead of $\\delta^\\frac{1}{2}$. The non-zero limit is a new affine invariant involving the {\\em affine mean curvature } and the {\\em Pick invariant} of the convex body.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

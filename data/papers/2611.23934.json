@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.23934",
+  "slug": "2611.23934",
+  "latest": {
+    "arxivId": "2611.23934",
+    "metadata": {
+      "title": "What Right-Angle Corners Reveal About an Uncalibrated Camera: Convex Cones, Certified Bounds and Identifiability",
+      "authors": [
+        "Michael Werman"
+      ],
+      "abstract": "The corner of a box or a room, where three perpendicular edges meet, appears in an image as three segments meeting at a point. We ask what such junctions reveal about an uncalibrated camera's intrinsic parameters. Each junction is consistent with an explicit convex set of cameras; when only the focal length is unknown, this set is an interval in closed form. These sets are computed from the image alone, so calibrating from many junctions is a convex feasibility problem. Almost every junction bounds the focal length from below; we characterize when one also bounds it from above, and when many junctions determine it exactly. For a known vertex, the bounds can be certified against any bounded error in the measured edge directions.",
+      "categories": [
+        "cs.CV",
+        "math.AG",
+        "math.MG"
+      ],
+      "primaryCategory": "cs.CV",
+      "comment": "26 pages",
+      "version": 1,
+      "submittedAt": "2026-11-18T06:23:40Z",
+      "updatedAt": "2026-11-18T06:23:40Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.MG/new",
+        "observedAt": "2026-11-19T08:40:43.089767+00:00",
+        "contentHash": "35d703348a5b50d83aaf610b67789093aeef2d63a372acc0e67a1973cdb3b0b1"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23934v1",
+        "observedAt": "2026-11-19T08:51:27.589036+00:00",
+        "contentHash": "6a8c7e81c290ee44d1293d37ebd223f330afb53551a6958ca35679e7909e33b5"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:02.445829+00:00",
+        "contentHash": "a1f04dfb22e029104a496540ea599ddef7457400a6fbf8606615e6563950edaf"
+      }
+    ],
+    "analysis": {
+      "topic": "交叉方向与基础工具",
+      "progressType": "直角三面角约束下的凸相机标定",
+      "workSummary": "研究图像中三条两两垂直空间边对应的交汇点对未标定相机内参的限制。单个交汇点确定一个显式凸可行集，仅焦距未知时为闭式区间。多交汇点标定因此化为凸可行性问题。",
+      "techniques": [
+        "直角三面角的投影约束",
+        "相机内参凸可行集",
+        "焦距区间",
+        "方向误差的认证界",
+        "可辨识性"
+      ],
+      "breakthrough": "几乎所有交汇点给焦距下界，并刻画同时给上界或多交汇点唯一确定焦距的情况。固定顶点时可对有界方向误差认证界。",
+      "limitations": "认证以顶点已知和方向测量误差有界为前提。可辨识性需要论文列出的交汇几何条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第23–24页说明作者提出研究问题并决定目标，Claude（包括 Opus 5.5）在作者指导下提出及发展推导和证明，包括主定理，编写符号验证、实验及绘图代码，运行作者取得的数据实验，起草修订文字并查找核对文献。作者亲自检查定理和证明，代码符号核对代数恒等式并重现报告数值。声明明确涵盖主要证明路线的开发。第24页其他 AI 命中为参考文献刊名。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.23934v1 · PDF 第23–24页，Use of AI tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:51:27.589036+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.23934v1",
+        "contentHash": "6a8c7e81c290ee44d1293d37ebd223f330afb53551a6958ca35679e7909e33b5",
+        "pages": 26,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23–24页说明作者提出研究问题并决定目标，Claude（包括 Opus 5.5）在作者指导下提出及发展推导和证明，包括主定理，编写符号验证、实验及绘图代码，运行作者取得的数据实验，起草修订文字并查找核对文献。作者亲自检查定理和证明，代码符号核对代数恒等式并重现报告数值。声明明确涵盖主要证明路线的开发。第24页其他 AI 命中为参考文献刊名。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "e453456ba7e22eddd875c209501ba22d657018fc2a096c26de1f4157fc818046"
+      },
+      "aiUsage": [
+        "computation",
+        "ideas",
+        "literature",
+        "proofs",
+        "verification",
+        "writing"
+      ],
+      "priorityScore": 65,
+      "priorityReason": "凸几何用于相机反问题的可行域和可靠界。"
+    },
+    "analysisBasis": {
+      "abstract": "The corner of a box or a room, where three perpendicular edges meet, appears in an image as three segments meeting at a point. We ask what such junctions reveal about an uncalibrated camera's intrinsic parameters. Each junction is consistent with an explicit convex set of cameras; when only the focal length is unknown, this set is an interval in closed form. These sets are computed from the image alone, so calibrating from many junctions is a convex feasibility problem. Almost every junction bounds the focal length from below; we characterize when one also bounds it from above, and when many junctions determine it exactly. For a known vertex, the bounds can be certified against any bounded error in the measured edge directions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.23934",
+        "metadata": {
+          "title": "What Right-Angle Corners Reveal About an Uncalibrated Camera: Convex Cones, Certified Bounds and Identifiability",
+          "authors": [
+            "Michael Werman"
+          ],
+          "abstract": "The corner of a box or a room, where three perpendicular edges meet, appears in an image as three segments meeting at a point. We ask what such junctions reveal about an uncalibrated camera's intrinsic parameters. Each junction is consistent with an explicit convex set of cameras; when only the focal length is unknown, this set is an interval in closed form. These sets are computed from the image alone, so calibrating from many junctions is a convex feasibility problem. Almost every junction bounds the focal length from below; we characterize when one also bounds it from above, and when many junctions determine it exactly. For a known vertex, the bounds can be certified against any bounded error in the measured edge directions.",
+          "categories": [
+            "cs.CV",
+            "math.AG",
+            "math.MG"
+          ],
+          "primaryCategory": "cs.CV",
+          "comment": "26 pages",
+          "version": 1,
+          "submittedAt": "2026-11-18T06:23:40Z",
+          "updatedAt": "2026-11-18T06:23:40Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.MG/new",
+            "observedAt": "2026-11-19T08:40:43.089767+00:00",
+            "contentHash": "35d703348a5b50d83aaf610b67789093aeef2d63a372acc0e67a1973cdb3b0b1"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.23934v1",
+            "observedAt": "2026-11-19T08:51:27.589036+00:00",
+            "contentHash": "6a8c7e81c290ee44d1293d37ebd223f330afb53551a6958ca35679e7909e33b5"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:02.445829+00:00",
+            "contentHash": "a1f04dfb22e029104a496540ea599ddef7457400a6fbf8606615e6563950edaf"
+          }
+        ],
+        "analysis": {
+          "topic": "交叉方向与基础工具",
+          "progressType": "直角三面角约束下的凸相机标定",
+          "workSummary": "研究图像中三条两两垂直空间边对应的交汇点对未标定相机内参的限制。单个交汇点确定一个显式凸可行集，仅焦距未知时为闭式区间。多交汇点标定因此化为凸可行性问题。",
+          "techniques": [
+            "直角三面角的投影约束",
+            "相机内参凸可行集",
+            "焦距区间",
+            "方向误差的认证界",
+            "可辨识性"
+          ],
+          "breakthrough": "几乎所有交汇点给焦距下界，并刻画同时给上界或多交汇点唯一确定焦距的情况。固定顶点时可对有界方向误差认证界。",
+          "limitations": "认证以顶点已知和方向测量误差有界为前提。可辨识性需要论文列出的交汇几何条件。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第23–24页说明作者提出研究问题并决定目标，Claude（包括 Opus 5.5）在作者指导下提出及发展推导和证明，包括主定理，编写符号验证、实验及绘图代码，运行作者取得的数据实验，起草修订文字并查找核对文献。作者亲自检查定理和证明，代码符号核对代数恒等式并重现报告数值。声明明确涵盖主要证明路线的开发。第24页其他 AI 命中为参考文献刊名。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.23934v1 · PDF 第23–24页，Use of AI tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:51:27.589036+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.23934v1",
+            "contentHash": "6a8c7e81c290ee44d1293d37ebd223f330afb53551a6958ca35679e7909e33b5",
+            "pages": 26,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第23–24页说明作者提出研究问题并决定目标，Claude（包括 Opus 5.5）在作者指导下提出及发展推导和证明，包括主定理，编写符号验证、实验及绘图代码，运行作者取得的数据实验，起草修订文字并查找核对文献。作者亲自检查定理和证明，代码符号核对代数恒等式并重现报告数值。声明明确涵盖主要证明路线的开发。第24页其他 AI 命中为参考文献刊名。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "e453456ba7e22eddd875c209501ba22d657018fc2a096c26de1f4157fc818046"
+          },
+          "aiUsage": [
+            "computation",
+            "ideas",
+            "literature",
+            "proofs",
+            "verification",
+            "writing"
+          ],
+          "priorityScore": 65,
+          "priorityReason": "凸几何用于相机反问题的可行域和可靠界。"
+        },
+        "analysisBasis": {
+          "abstract": "The corner of a box or a room, where three perpendicular edges meet, appears in an image as three segments meeting at a point. We ask what such junctions reveal about an uncalibrated camera's intrinsic parameters. Each junction is consistent with an explicit convex set of cameras; when only the focal length is unknown, this set is an interval in closed form. These sets are computed from the image alone, so calibrating from many junctions is a convex feasibility problem. Almost every junction bounds the focal length from below; we characterize when one also bounds it from above, and when many junctions determine it exactly. For a known vertex, the bounds can be certified against any bounded error in the measured edge directions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

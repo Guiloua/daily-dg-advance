@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.24022",
+  "slug": "2611.24022",
+  "latest": {
+    "arxivId": "2611.24022",
+    "metadata": {
+      "title": "Zeros of Pick and Hopf Differentials and Fences of Convex Domains",
+      "authors": [
+        "Qiongling Li",
+        "Erxiao Wang"
+      ],
+      "abstract": "We prove that the vanishing order of a Pick or Hopf differential controls the corresponding convex domain through sharp disk comparisons. For a complete hyperbolic affine sphere, Pick vanishing order $m\\ge0$ gives normalized projective coordinates in which the domain lies between disks of radii $\\sqrt{\\cos(\\pi/(m+3))}$ and its reciprocal. For a harmonic diffeomorphism to a convex hyperbolic domain with complete $\\partial$-energy metric, Hopf vanishing order $m$ gives a disk in the image of radius $\\log\\cot(\\pi/(2(m+2)))$, centered at the image point. Equality characterizes the corresponding regular polygons. For polygonal targets, these comparisons prove the Fence conjecture of Dumas--Wolf and give explicit Hilbert and hyperbolic distance bounds for higher fences. We also construct simple-zero examples showing that these sufficient multiplicity conditions are not necessary.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "comment": "22 pages, including an AI declaration, some overlap with arXiv: 2610.19664 , comments are welcome",
+      "version": 1,
+      "submittedAt": "2026-11-18T08:12:59Z",
+      "updatedAt": "2026-11-18T08:12:59Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24022v1",
+        "observedAt": "2026-11-19T08:52:09.899516+00:00",
+        "contentHash": "ff5243f4664cedcde0942c2e0409bc7b0109bc142ee733e022b888e5ba905bff"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:14.554146+00:00",
+        "contentHash": "588ec092503319f5df25e60b121a206a0f1e3dee44bfc82a90338daf5580d59d"
+      }
+    ],
+    "analysis": {
+      "topic": "曲率与比较几何",
+      "progressType": "微分零点重数控制凸域的锐比较",
+      "workSummary": "对properly convex射影域及其完整双曲仿射球，Pick微分在p的零点阶m给k=m+3，按U(0)=−1、DU(0)=0、D²U(0)=Id归一化后，以p为中心的内外半径界为√cos(π/k)和其倒数，取等对应正k边形。对到凸双曲域的保向调和微分同胚，若∂能量度量完备，Hopf零点阶m给像点到域边界距离≥log cot(π/[2(m+2)])，等号恰为m≥1时相应中心化正理想多边形。对n边形及2≤s≤n−1，k≥2s保证像点位于第s阶fence且距其边界≥log cot(sπ/[2k])，Pick时用半对数交比规范的Hilbert度量，Hopf时用双曲距离。",
+      "techniques": [
+        "正多边形模型和零点阶对应的高阶接触",
+        "Hartman–Wintner局部节点计数与最大值原理",
+        "仿射球余法对偶与径向圆盘比较",
+        "CMC图的Legendre变换、支撑函数及凸拼接",
+        "圆盘比较到多边形fence的转换"
+      ],
+      "breakthrough": "归一化后局部差函数的消失阶给出足够多的负分支，模型边数提供全局分支上界，二者比较产生锐半径及刚性。高阶fence中，Pick距离等号要求正k边形且k=2s或k、s均偶，Hopf距离等号对应正理想k边形。临界k=2s的正多边形fence缩成单点，其余情形像点位于fence内部。",
+      "limitations": "补读PDF第1–5、16–17页的主定理、路线及高阶等号，渲染第3–4页。单点Pick圆盘比较依赖指定射影归一化，Hopf比较要求保向、微分同胚及完整∂能量度量。m=0的Hopf普适下界为0，取等模型仅在m≥1。重数条件是充分条件。节点理论、支撑函数分析和全篇比较证明尚未独立核验。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第5页披露第一作者有独立AI辅助Fence证明和Hopf零点类比，与第二作者已有预印本合并。反复与ChatGPT 6 Astra讨论帮助发展高阶零点的锐估计与高阶fence界，属具体核心结果贡献，记录ideas、proofs。初稿由ChatGPT产生，作者逐项检查重写并重组，另记writing。作者说明引入高阶fence和对偶性来自比较两种路线。第18页Astra候选来自a straight boundary。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24022v1 · PDF第5页Declaration of AI use，全文22页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:52:09.899516+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24022v1",
+        "contentHash": "ff5243f4664cedcde0942c2e0409bc7b0109bc142ee733e022b888e5ba905bff",
+        "pages": 22,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页披露第一作者有独立AI辅助Fence证明和Hopf零点类比，与第二作者已有预印本合并。反复与ChatGPT 6 Astra讨论帮助发展高阶零点的锐估计与高阶fence界，属具体核心结果贡献，记录ideas、proofs。初稿由ChatGPT产生，作者逐项检查重写并重组，另记writing。作者说明引入高阶fence和对偶性来自比较两种路线。第18页Astra候选来自a straight boundary。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "16a62c1e68415cbbf8ade4a80c2e9153dcba265378b68b99d0b1e90fdc8a200a"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 97,
+      "priorityReason": "把解析微分的局部零点与凸域整体几何以锐常数联系起来。"
+    },
+    "analysisBasis": {
+      "abstract": "We prove that the vanishing order of a Pick or Hopf differential controls the corresponding convex domain through sharp disk comparisons. For a complete hyperbolic affine sphere, Pick vanishing order $m\\ge0$ gives normalized projective coordinates in which the domain lies between disks of radii $\\sqrt{\\cos(\\pi/(m+3))}$ and its reciprocal. For a harmonic diffeomorphism to a convex hyperbolic domain with complete $\\partial$-energy metric, Hopf vanishing order $m$ gives a disk in the image of radius $\\log\\cot(\\pi/(2(m+2)))$, centered at the image point. Equality characterizes the corresponding regular polygons. For polygonal targets, these comparisons prove the Fence conjecture of Dumas--Wolf and give explicit Hilbert and hyperbolic distance bounds for higher fences. We also construct simple-zero examples showing that these sufficient multiplicity conditions are not necessary.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.24022",
+        "metadata": {
+          "title": "Zeros of Pick and Hopf Differentials and Fences of Convex Domains",
+          "authors": [
+            "Qiongling Li",
+            "Erxiao Wang"
+          ],
+          "abstract": "We prove that the vanishing order of a Pick or Hopf differential controls the corresponding convex domain through sharp disk comparisons. For a complete hyperbolic affine sphere, Pick vanishing order $m\\ge0$ gives normalized projective coordinates in which the domain lies between disks of radii $\\sqrt{\\cos(\\pi/(m+3))}$ and its reciprocal. For a harmonic diffeomorphism to a convex hyperbolic domain with complete $\\partial$-energy metric, Hopf vanishing order $m$ gives a disk in the image of radius $\\log\\cot(\\pi/(2(m+2)))$, centered at the image point. Equality characterizes the corresponding regular polygons. For polygonal targets, these comparisons prove the Fence conjecture of Dumas--Wolf and give explicit Hilbert and hyperbolic distance bounds for higher fences. We also construct simple-zero examples showing that these sufficient multiplicity conditions are not necessary.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "comment": "22 pages, including an AI declaration, some overlap with arXiv: 2610.19664 , comments are welcome",
+          "version": 1,
+          "submittedAt": "2026-11-18T08:12:59Z",
+          "updatedAt": "2026-11-18T08:12:59Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24022v1",
+            "observedAt": "2026-11-19T08:52:09.899516+00:00",
+            "contentHash": "ff5243f4664cedcde0942c2e0409bc7b0109bc142ee733e022b888e5ba905bff"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:14.554146+00:00",
+            "contentHash": "588ec092503319f5df25e60b121a206a0f1e3dee44bfc82a90338daf5580d59d"
+          }
+        ],
+        "analysis": {
+          "topic": "曲率与比较几何",
+          "progressType": "微分零点重数控制凸域的锐比较",
+          "workSummary": "对properly convex射影域及其完整双曲仿射球，Pick微分在p的零点阶m给k=m+3，按U(0)=−1、DU(0)=0、D²U(0)=Id归一化后，以p为中心的内外半径界为√cos(π/k)和其倒数，取等对应正k边形。对到凸双曲域的保向调和微分同胚，若∂能量度量完备，Hopf零点阶m给像点到域边界距离≥log cot(π/[2(m+2)])，等号恰为m≥1时相应中心化正理想多边形。对n边形及2≤s≤n−1，k≥2s保证像点位于第s阶fence且距其边界≥log cot(sπ/[2k])，Pick时用半对数交比规范的Hilbert度量，Hopf时用双曲距离。",
+          "techniques": [
+            "正多边形模型和零点阶对应的高阶接触",
+            "Hartman–Wintner局部节点计数与最大值原理",
+            "仿射球余法对偶与径向圆盘比较",
+            "CMC图的Legendre变换、支撑函数及凸拼接",
+            "圆盘比较到多边形fence的转换"
+          ],
+          "breakthrough": "归一化后局部差函数的消失阶给出足够多的负分支，模型边数提供全局分支上界，二者比较产生锐半径及刚性。高阶fence中，Pick距离等号要求正k边形且k=2s或k、s均偶，Hopf距离等号对应正理想k边形。临界k=2s的正多边形fence缩成单点，其余情形像点位于fence内部。",
+          "limitations": "补读PDF第1–5、16–17页的主定理、路线及高阶等号，渲染第3–4页。单点Pick圆盘比较依赖指定射影归一化，Hopf比较要求保向、微分同胚及完整∂能量度量。m=0的Hopf普适下界为0，取等模型仅在m≥1。重数条件是充分条件。节点理论、支撑函数分析和全篇比较证明尚未独立核验。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第5页披露第一作者有独立AI辅助Fence证明和Hopf零点类比，与第二作者已有预印本合并。反复与ChatGPT 6 Astra讨论帮助发展高阶零点的锐估计与高阶fence界，属具体核心结果贡献，记录ideas、proofs。初稿由ChatGPT产生，作者逐项检查重写并重组，另记writing。作者说明引入高阶fence和对偶性来自比较两种路线。第18页Astra候选来自a straight boundary。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24022v1 · PDF第5页Declaration of AI use，全文22页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:52:09.899516+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24022v1",
+            "contentHash": "ff5243f4664cedcde0942c2e0409bc7b0109bc142ee733e022b888e5ba905bff",
+            "pages": 22,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第5页披露第一作者有独立AI辅助Fence证明和Hopf零点类比，与第二作者已有预印本合并。反复与ChatGPT 6 Astra讨论帮助发展高阶零点的锐估计与高阶fence界，属具体核心结果贡献，记录ideas、proofs。初稿由ChatGPT产生，作者逐项检查重写并重组，另记writing。作者说明引入高阶fence和对偶性来自比较两种路线。第18页Astra候选来自a straight boundary。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "16a62c1e68415cbbf8ade4a80c2e9153dcba265378b68b99d0b1e90fdc8a200a"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 97,
+          "priorityReason": "把解析微分的局部零点与凸域整体几何以锐常数联系起来。"
+        },
+        "analysisBasis": {
+          "abstract": "We prove that the vanishing order of a Pick or Hopf differential controls the corresponding convex domain through sharp disk comparisons. For a complete hyperbolic affine sphere, Pick vanishing order $m\\ge0$ gives normalized projective coordinates in which the domain lies between disks of radii $\\sqrt{\\cos(\\pi/(m+3))}$ and its reciprocal. For a harmonic diffeomorphism to a convex hyperbolic domain with complete $\\partial$-energy metric, Hopf vanishing order $m$ gives a disk in the image of radius $\\log\\cot(\\pi/(2(m+2)))$, centered at the image point. Equality characterizes the corresponding regular polygons. For polygonal targets, these comparisons prove the Fence conjecture of Dumas--Wolf and give explicit Hilbert and hyperbolic distance bounds for higher fences. We also construct simple-zero examples showing that these sufficient multiplicity conditions are not necessary.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

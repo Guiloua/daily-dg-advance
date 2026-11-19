@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.23437",
+  "slug": "2611.23437",
+  "latest": {
+    "arxivId": "2611.23437",
+    "metadata": {
+      "title": "Symmetries of symplectic Khovanov-Rozansky homology",
+      "authors": [
+        "Akram Alishahi",
+        "Kristen Hendricks",
+        "Cheuk Yu Mak"
+      ],
+      "abstract": "We study the behavior of Manolescu's construction of symplectic Khovanov-Rozansky homology under symmetries. Specifically, for k<n we construct a localization spectral sequence from the symplectic sl(n) homology of a knot to the direct sum of the symplectic sl(k) and sl(n-k) homologies of the same knot, giving a geometric analog of rank-reducing spectral sequences arising from deformations on the non-symplectic theory. We also prove the existence of a localization spectral sequence relating the symplectic Khovanov--Rozansky homology of a two-periodic link to the symplectic Khovanov-Rozansky homology of the quotient link, in analogy to a theorem of Seidel and Smith for symplectic Khovanov homology. The proofs rely on a generalization of the localization theorem of Seidel-Smith and Large for equivariant Lagrangian Floer cohomology with respect to order two actions; in particular, we extend the theory to the case that the fixed set of the action carries a stable normal real polarization.",
+      "categories": [
+        "math.SG",
+        "math.GT"
+      ],
+      "primaryCategory": "math.SG",
+      "comment": "45 pages, 2 figures. Comments welcome!",
+      "version": 1,
+      "submittedAt": "2026-11-17T19:38:31Z",
+      "updatedAt": "2026-11-17T19:38:31Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.GT/new",
+        "observedAt": "2026-11-19T08:40:55.902587+00:00",
+        "contentHash": "598bbea97a26dffa2c0f8eeadc6a4838d11fd78cfec32657e96e3680984438f3"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23437v1",
+        "observedAt": "2026-11-19T08:42:17.462778+00:00",
+        "contentHash": "b1fdab60a430b03fe58cf8d1c630d597dbbdb4ab6259c1f7d30f4650282a1832"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:02.438703+00:00",
+        "contentHash": "7ed8f1d25c663a7a3c159ef0d84540410c84fe64147df5cce239dc24bf484e1a"
+      }
+    ],
+    "analysis": {
+      "topic": "几何拓扑、低维流形与结",
+      "progressType": "辛结同调的局部化谱序列",
+      "workSummary": "对k<n，作者构造从结的辛sl(n)同调到同一结的辛sl(k)及sl(n−k)同调直和的局部化谱序列。另将二周期链环的辛Khovanov–Rozansky同调与商链环的同调以局部化谱序列联系起来。",
+      "techniques": [
+        "等变Lagrangian Floer同调",
+        "二阶群作用的局部化",
+        "稳定法实极化",
+        "Manolescu的辛Khovanov–Rozansky构造"
+      ],
+      "breakthrough": "扩展Seidel–Smith与Large的局部化工具，允许固定点集带稳定法实极化，从几何侧实现降秩与周期商的同调比较。",
+      "limitations": "k<n及相应对称作用、法极化条件须保留。摘要未列出系数环与分次。 当前数学解读依据摘要，尚未逐步审读证明。",
+      "analysisDepth": "abstract",
+      "aiStatus": "explicit",
+      "aiEvidence": "第7页声明ChatGPT-5.6 Luna建议引理4.24证明后半的无限环空间论证，该引理用于建立主局部化定理所需稳定极化，具体路线贡献记录ideas、proofs。Gemini 3.6 Thinking辅助证明式(4.6)，Claude Opus 5.5最终校对，另记writing。作者说明现有证明由其撰写，其他证明设计没有模型参与。第1页是目录，其他llm/Astra候选为数学文字。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.23437v1 · PDF第7页Declaration of AI use，结合引理4.24及主定理证明所指，全文45页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:42:17.462778+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.23437v1",
+        "contentHash": "b1fdab60a430b03fe58cf8d1c630d597dbbdb4ab6259c1f7d30f4650282a1832",
+        "pages": 45,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页声明ChatGPT-5.6 Luna建议引理4.24证明后半的无限环空间论证，该引理用于建立主局部化定理所需稳定极化，具体路线贡献记录ideas、proofs。Gemini 3.6 Thinking辅助证明式(4.6)，Claude Opus 5.5最终校对，另记writing。作者说明现有证明由其撰写，其他证明设计没有模型参与。第1页是目录，其他llm/Astra候选为数学文字。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "bf99f48732eececf6f13978bfdbc9bb1347fd57d707c1030000a509f38283bc5"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
+      "priorityScore": 78,
+      "priorityReason": "将辛Floer理论中的对称性转化为结同调谱序列。"
+    },
+    "analysisBasis": {
+      "abstract": "We study the behavior of Manolescu's construction of symplectic Khovanov-Rozansky homology under symmetries. Specifically, for k<n we construct a localization spectral sequence from the symplectic sl(n) homology of a knot to the direct sum of the symplectic sl(k) and sl(n-k) homologies of the same knot, giving a geometric analog of rank-reducing spectral sequences arising from deformations on the non-symplectic theory. We also prove the existence of a localization spectral sequence relating the symplectic Khovanov--Rozansky homology of a two-periodic link to the symplectic Khovanov-Rozansky homology of the quotient link, in analogy to a theorem of Seidel and Smith for symplectic Khovanov homology. The proofs rely on a generalization of the localization theorem of Seidel-Smith and Large for equivariant Lagrangian Floer cohomology with respect to order two actions; in particular, we extend the theory to the case that the fixed set of the action carries a stable normal real polarization.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.23437",
+        "metadata": {
+          "title": "Symmetries of symplectic Khovanov-Rozansky homology",
+          "authors": [
+            "Akram Alishahi",
+            "Kristen Hendricks",
+            "Cheuk Yu Mak"
+          ],
+          "abstract": "We study the behavior of Manolescu's construction of symplectic Khovanov-Rozansky homology under symmetries. Specifically, for k<n we construct a localization spectral sequence from the symplectic sl(n) homology of a knot to the direct sum of the symplectic sl(k) and sl(n-k) homologies of the same knot, giving a geometric analog of rank-reducing spectral sequences arising from deformations on the non-symplectic theory. We also prove the existence of a localization spectral sequence relating the symplectic Khovanov--Rozansky homology of a two-periodic link to the symplectic Khovanov-Rozansky homology of the quotient link, in analogy to a theorem of Seidel and Smith for symplectic Khovanov homology. The proofs rely on a generalization of the localization theorem of Seidel-Smith and Large for equivariant Lagrangian Floer cohomology with respect to order two actions; in particular, we extend the theory to the case that the fixed set of the action carries a stable normal real polarization.",
+          "categories": [
+            "math.SG",
+            "math.GT"
+          ],
+          "primaryCategory": "math.SG",
+          "comment": "45 pages, 2 figures. Comments welcome!",
+          "version": 1,
+          "submittedAt": "2026-11-17T19:38:31Z",
+          "updatedAt": "2026-11-17T19:38:31Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.GT/new",
+            "observedAt": "2026-11-19T08:40:55.902587+00:00",
+            "contentHash": "598bbea97a26dffa2c0f8eeadc6a4838d11fd78cfec32657e96e3680984438f3"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.23437v1",
+            "observedAt": "2026-11-19T08:42:17.462778+00:00",
+            "contentHash": "b1fdab60a430b03fe58cf8d1c630d597dbbdb4ab6259c1f7d30f4650282a1832"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:02.438703+00:00",
+            "contentHash": "7ed8f1d25c663a7a3c159ef0d84540410c84fe64147df5cce239dc24bf484e1a"
+          }
+        ],
+        "analysis": {
+          "topic": "几何拓扑、低维流形与结",
+          "progressType": "辛结同调的局部化谱序列",
+          "workSummary": "对k<n，作者构造从结的辛sl(n)同调到同一结的辛sl(k)及sl(n−k)同调直和的局部化谱序列。另将二周期链环的辛Khovanov–Rozansky同调与商链环的同调以局部化谱序列联系起来。",
+          "techniques": [
+            "等变Lagrangian Floer同调",
+            "二阶群作用的局部化",
+            "稳定法实极化",
+            "Manolescu的辛Khovanov–Rozansky构造"
+          ],
+          "breakthrough": "扩展Seidel–Smith与Large的局部化工具，允许固定点集带稳定法实极化，从几何侧实现降秩与周期商的同调比较。",
+          "limitations": "k<n及相应对称作用、法极化条件须保留。摘要未列出系数环与分次。 当前数学解读依据摘要，尚未逐步审读证明。",
+          "analysisDepth": "abstract",
+          "aiStatus": "explicit",
+          "aiEvidence": "第7页声明ChatGPT-5.6 Luna建议引理4.24证明后半的无限环空间论证，该引理用于建立主局部化定理所需稳定极化，具体路线贡献记录ideas、proofs。Gemini 3.6 Thinking辅助证明式(4.6)，Claude Opus 5.5最终校对，另记writing。作者说明现有证明由其撰写，其他证明设计没有模型参与。第1页是目录，其他llm/Astra候选为数学文字。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.23437v1 · PDF第7页Declaration of AI use，结合引理4.24及主定理证明所指，全文45页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:42:17.462778+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.23437v1",
+            "contentHash": "b1fdab60a430b03fe58cf8d1c630d597dbbdb4ab6259c1f7d30f4650282a1832",
+            "pages": 45,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第7页声明ChatGPT-5.6 Luna建议引理4.24证明后半的无限环空间论证，该引理用于建立主局部化定理所需稳定极化，具体路线贡献记录ideas、proofs。Gemini 3.6 Thinking辅助证明式(4.6)，Claude Opus 5.5最终校对，另记writing。作者说明现有证明由其撰写，其他证明设计没有模型参与。第1页是目录，其他llm/Astra候选为数学文字。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "bf99f48732eececf6f13978bfdbc9bb1347fd57d707c1030000a509f38283bc5"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
+          "priorityScore": 78,
+          "priorityReason": "将辛Floer理论中的对称性转化为结同调谱序列。"
+        },
+        "analysisBasis": {
+          "abstract": "We study the behavior of Manolescu's construction of symplectic Khovanov-Rozansky homology under symmetries. Specifically, for k<n we construct a localization spectral sequence from the symplectic sl(n) homology of a knot to the direct sum of the symplectic sl(k) and sl(n-k) homologies of the same knot, giving a geometric analog of rank-reducing spectral sequences arising from deformations on the non-symplectic theory. We also prove the existence of a localization spectral sequence relating the symplectic Khovanov--Rozansky homology of a two-periodic link to the symplectic Khovanov-Rozansky homology of the quotient link, in analogy to a theorem of Seidel and Smith for symplectic Khovanov homology. The proofs rely on a generalization of the localization theorem of Seidel-Smith and Large for equivariant Lagrangian Floer cohomology with respect to order two actions; in particular, we extend the theory to the case that the fixed set of the action carries a stable normal real polarization.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}

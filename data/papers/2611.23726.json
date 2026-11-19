@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "arxivId": "2611.23726",
+  "slug": "2611.23726",
+  "latest": {
+    "arxivId": "2611.23726",
+    "metadata": {
+      "title": "Fibrations and nilpotent collapsing structure",
+      "authors": [
+        "Jikang Wang"
+      ],
+      "abstract": "We construct fiber bundles, singular fibrations, and nilpotent collapsing structures for Riemannian manifolds with lower Ricci curvature bounds under additional geometric assumptions. For every $n$ and $D>0$, there exists $\\epsilon(n,D)>0$ such that a closed Riemannian $n$-manifold $M$ satisfying \\[ \\operatorname{diam}(M)\\le D,\\qquad \\operatorname{sec}_M\\ge-1,\\qquad \\operatorname{Ric}_M\\ge-\\epsilon(n,D) \\] admits a finite cover of degree at most $C(n)$ that is a smooth fiber bundle over a nilmanifold. The fibers have finite fundamental group, and the base dimension equals the Hirsch rank of $\\pi_1(M)$. If $\\pi_1(M)$ is torsion-free, then $M$ itself fibers smoothly over an infranilmanifold with simply connected fibers. We next consider a Gromov--Hausdorff convergent sequence $M_i\\to X$ of closed Riemannian $n$-manifolds with uniformly bounded diameter, $\\operatorname{Ric}_{M_i}\\ge -(n-1)$, and the $(\\rho,\\delta)$ local rewinding Reifenberg condition, where $\\rho>0$ is fixed and $\\delta$ is sufficiently small. For all sufficiently large $i$, we construct singular fibrations $\\bar{F}_i:M_i\\to X$ that are $\\epsilon_i$-Gromov--Hausdorff approximations, with $\\epsilon_i\\to0$, and whose fibers are homeomorphic to infranilmanifolds. Under the same local hypotheses, complete, possibly noncompact manifolds admit nilpotent collapsing structures on their $\\epsilon(n,\\rho)$-collapsed regions.",
+      "categories": [
+        "math.DG"
+      ],
+      "primaryCategory": "math.DG",
+      "version": 1,
+      "submittedAt": "2026-11-18T02:32:31Z",
+      "updatedAt": "2026-11-18T02:32:31Z"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/list/math.DG/new",
+        "observedAt": "2026-11-19T08:40:31.441636+00:00",
+        "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.23726v1",
+        "observedAt": "2026-11-19T08:41:43.602152+00:00",
+        "contentHash": "e2788b7753b269b9f256c608f5b1a160433c9f207437a554dd4f76092c5a108d"
+      },
+      {
+        "url": "https://export.arxiv.org/api/query",
+        "observedAt": "2026-11-19T09:19:02.443659+00:00",
+        "contentHash": "edd0f142df84ed6902903b120f978a3507834fb71222d81cc8a336179aaf7d1c"
+      }
+    ],
+    "analysis": {
+      "topic": "度量测度几何、极限与奇异空间",
+      "progressType": "纤维化与塌缩结构",
+      "workSummary": "定理1.1：给定 n、D，闭 n 维流形若 diam≤D、sec≥−1、Ric≥−ε(n,D)，则有次数≤C(n)的有限覆叠光滑纤维化到幂零流形，纤维基本群有限，底维数为基本群的 Hirsch 秩。若基本群无挠，原流形本身在 infranil 流形上纤维化且纤维单连通。定理B/C另在固定尺度局部回绕 Reifenberg 条件下，为 Ricci 下界的极限及塌缩区域构造 infranil 奇异纤维和幂零结构。",
+      "techniques": [
+        "大尺度近似群与 nilprogression",
+        "Malcev 完备化及幂零模型",
+        "等变 almost-splitting 映射的粘合",
+        "局部回绕 Reifenberg 条件与 RCD 极限"
+      ],
+      "breakthrough": "把截面曲率几乎非负的纤维化条件推广为固定截面曲率下界加几乎非负 Ricci；奇异纤维构造直接在局部覆叠上进行，不依赖标架丛的经典构造。",
+      "limitations": "一致有界次数覆叠的纤维仅保证基本群有限。再取覆叠可使纤维单连通，但该次数无一致界。奇异纤维化及幂零结构需要固定尺度局部回绕 Reifenberg 条件。已补读导言和局部构造路线，未逐步核验68页证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "no_disclosure_observed",
+      "aiEvidence": null,
+      "aiEvidenceSource": null,
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-19T08:41:43.602152+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.23726v1",
+        "contentHash": "e2788b7753b269b9f256c608f5b1a160433c9f207437a554dd4f76092c5a108d",
+        "pages": 68,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。所查完整PDF文本及导言、文末未见生成式AI协作披露；此结论不代表未使用AI。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4e77def6bd104d1d0bc30ad740249c50428451b58ac065744c95b134e0cd5e8c"
+      },
+      "priorityScore": 98,
+      "priorityReason": "塌缩几何与基本群结构的统一进展。"
+    },
+    "analysisBasis": {
+      "abstract": "We construct fiber bundles, singular fibrations, and nilpotent collapsing structures for Riemannian manifolds with lower Ricci curvature bounds under additional geometric assumptions. For every $n$ and $D>0$, there exists $\\epsilon(n,D)>0$ such that a closed Riemannian $n$-manifold $M$ satisfying \\[ \\operatorname{diam}(M)\\le D,\\qquad \\operatorname{sec}_M\\ge-1,\\qquad \\operatorname{Ric}_M\\ge-\\epsilon(n,D) \\] admits a finite cover of degree at most $C(n)$ that is a smooth fiber bundle over a nilmanifold. The fibers have finite fundamental group, and the base dimension equals the Hirsch rank of $\\pi_1(M)$. If $\\pi_1(M)$ is torsion-free, then $M$ itself fibers smoothly over an infranilmanifold with simply connected fibers. We next consider a Gromov--Hausdorff convergent sequence $M_i\\to X$ of closed Riemannian $n$-manifolds with uniformly bounded diameter, $\\operatorname{Ric}_{M_i}\\ge -(n-1)$, and the $(\\rho,\\delta)$ local rewinding Reifenberg condition, where $\\rho>0$ is fixed and $\\delta$ is sufficiently small. For all sufficiently large $i$, we construct singular fibrations $\\bar{F}_i:M_i\\to X$ that are $\\epsilon_i$-Gromov--Hausdorff approximations, with $\\epsilon_i\\to0$, and whose fibers are homeomorphic to infranilmanifolds. Under the same local hypotheses, complete, possibly noncompact manifolds admit nilpotent collapsing structures on their $\\epsilon(n,\\rho)$-collapsed regions.",
+      "version": 1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-11-19",
+      "entry": {
+        "arxivId": "2611.23726",
+        "metadata": {
+          "title": "Fibrations and nilpotent collapsing structure",
+          "authors": [
+            "Jikang Wang"
+          ],
+          "abstract": "We construct fiber bundles, singular fibrations, and nilpotent collapsing structures for Riemannian manifolds with lower Ricci curvature bounds under additional geometric assumptions. For every $n$ and $D>0$, there exists $\\epsilon(n,D)>0$ such that a closed Riemannian $n$-manifold $M$ satisfying \\[ \\operatorname{diam}(M)\\le D,\\qquad \\operatorname{sec}_M\\ge-1,\\qquad \\operatorname{Ric}_M\\ge-\\epsilon(n,D) \\] admits a finite cover of degree at most $C(n)$ that is a smooth fiber bundle over a nilmanifold. The fibers have finite fundamental group, and the base dimension equals the Hirsch rank of $\\pi_1(M)$. If $\\pi_1(M)$ is torsion-free, then $M$ itself fibers smoothly over an infranilmanifold with simply connected fibers. We next consider a Gromov--Hausdorff convergent sequence $M_i\\to X$ of closed Riemannian $n$-manifolds with uniformly bounded diameter, $\\operatorname{Ric}_{M_i}\\ge -(n-1)$, and the $(\\rho,\\delta)$ local rewinding Reifenberg condition, where $\\rho>0$ is fixed and $\\delta$ is sufficiently small. For all sufficiently large $i$, we construct singular fibrations $\\bar{F}_i:M_i\\to X$ that are $\\epsilon_i$-Gromov--Hausdorff approximations, with $\\epsilon_i\\to0$, and whose fibers are homeomorphic to infranilmanifolds. Under the same local hypotheses, complete, possibly noncompact manifolds admit nilpotent collapsing structures on their $\\epsilon(n,\\rho)$-collapsed regions.",
+          "categories": [
+            "math.DG"
+          ],
+          "primaryCategory": "math.DG",
+          "version": 1,
+          "submittedAt": "2026-11-18T02:32:31Z",
+          "updatedAt": "2026-11-18T02:32:31Z"
+        },
+        "sources": [
+          {
+            "url": "https://arxiv.org/list/math.DG/new",
+            "observedAt": "2026-11-19T08:40:31.441636+00:00",
+            "contentHash": "cc3d4d2304a6ad3e5217249c3ef0d5761fccb72c2cdcb86dc0ee067a27c8ec0a"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.23726v1",
+            "observedAt": "2026-11-19T08:41:43.602152+00:00",
+            "contentHash": "e2788b7753b269b9f256c608f5b1a160433c9f207437a554dd4f76092c5a108d"
+          },
+          {
+            "url": "https://export.arxiv.org/api/query",
+            "observedAt": "2026-11-19T09:19:02.443659+00:00",
+            "contentHash": "edd0f142df84ed6902903b120f978a3507834fb71222d81cc8a336179aaf7d1c"
+          }
+        ],
+        "analysis": {
+          "topic": "度量测度几何、极限与奇异空间",
+          "progressType": "纤维化与塌缩结构",
+          "workSummary": "定理1.1：给定 n、D，闭 n 维流形若 diam≤D、sec≥−1、Ric≥−ε(n,D)，则有次数≤C(n)的有限覆叠光滑纤维化到幂零流形，纤维基本群有限，底维数为基本群的 Hirsch 秩。若基本群无挠，原流形本身在 infranil 流形上纤维化且纤维单连通。定理B/C另在固定尺度局部回绕 Reifenberg 条件下，为 Ricci 下界的极限及塌缩区域构造 infranil 奇异纤维和幂零结构。",
+          "techniques": [
+            "大尺度近似群与 nilprogression",
+            "Malcev 完备化及幂零模型",
+            "等变 almost-splitting 映射的粘合",
+            "局部回绕 Reifenberg 条件与 RCD 极限"
+          ],
+          "breakthrough": "把截面曲率几乎非负的纤维化条件推广为固定截面曲率下界加几乎非负 Ricci；奇异纤维构造直接在局部覆叠上进行，不依赖标架丛的经典构造。",
+          "limitations": "一致有界次数覆叠的纤维仅保证基本群有限。再取覆叠可使纤维单连通，但该次数无一致界。奇异纤维化及幂零结构需要固定尺度局部回绕 Reifenberg 条件。已补读导言和局部构造路线，未逐步核验68页证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "no_disclosure_observed",
+          "aiEvidence": null,
+          "aiEvidenceSource": null,
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-19T08:41:43.602152+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.23726v1",
+            "contentHash": "e2788b7753b269b9f256c608f5b1a160433c9f207437a554dd4f76092c5a108d",
+            "pages": 68,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。所查完整PDF文本及导言、文末未见生成式AI协作披露；此结论不代表未使用AI。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4e77def6bd104d1d0bc30ad740249c50428451b58ac065744c95b134e0cd5e8c"
+          },
+          "priorityScore": 98,
+          "priorityReason": "塌缩几何与基本群结构的统一进展。"
+        },
+        "analysisBasis": {
+          "abstract": "We construct fiber bundles, singular fibrations, and nilpotent collapsing structures for Riemannian manifolds with lower Ricci curvature bounds under additional geometric assumptions. For every $n$ and $D>0$, there exists $\\epsilon(n,D)>0$ such that a closed Riemannian $n$-manifold $M$ satisfying \\[ \\operatorname{diam}(M)\\le D,\\qquad \\operatorname{sec}_M\\ge-1,\\qquad \\operatorname{Ric}_M\\ge-\\epsilon(n,D) \\] admits a finite cover of degree at most $C(n)$ that is a smooth fiber bundle over a nilmanifold. The fibers have finite fundamental group, and the base dimension equals the Hirsch rank of $\\pi_1(M)$. If $\\pi_1(M)$ is torsion-free, then $M$ itself fibers smoothly over an infranilmanifold with simply connected fibers. We next consider a Gromov--Hausdorff convergent sequence $M_i\\to X$ of closed Riemannian $n$-manifolds with uniformly bounded diameter, $\\operatorname{Ric}_{M_i}\\ge -(n-1)$, and the $(\\rho,\\delta)$ local rewinding Reifenberg condition, where $\\rho>0$ is fixed and $\\delta$ is sufficiently small. For all sufficiently large $i$, we construct singular fibrations $\\bar{F}_i:M_i\\to X$ that are $\\epsilon_i$-Gromov--Hausdorff approximations, with $\\epsilon_i\\to0$, and whose fibers are homeomorphic to infranilmanifolds. Under the same local hypotheses, complete, possibly noncompact manifolds admit nilpotent collapsing structures on their $\\epsilon(n,\\rho)$-collapsed regions.",
+          "version": 1
+        }
+      }
+    }
+  ]
+}
