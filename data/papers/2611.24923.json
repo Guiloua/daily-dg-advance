@@ -32,23 +32,47 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.682826+00:00",
         "contentHash": "3f3fef342818a7f7ce4d9d93e86a5b77453f8b9c0c1f662df77627a0b3363440"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24923v1",
+        "observedAt": "2026-11-20T04:15:47.153923+00:00",
+        "contentHash": "1547a7a8d2ec7bf72b5c69d4ec91c644d543c990b368621c23f5d6c9b2ed3fbb"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
-      "progressType": "椭球由内蕴体积唯一确定的声称",
-      "workSummary": "作者声称对于每个 n≥2，ℝⁿ 中椭球的全部内蕴体积唯一确定其同余类，从而解决 Gusakova–Zaporozhets 2017 年猜想。",
+      "progressType": "所有维数椭球由全部内蕴体积的唯一确定",
+      "workSummary": "正文定理1.1：任意 n≥2，ℝⁿ 中两个椭球若 V₁,…,Vₙ 全部相同，则同余，作者据此解决 Gusakova–Zaporozhets 猜想。文中先取全维椭球，以半轴平方 λᵢ>0 的多项式 Q(u)=∏(1+λᵢu) 及归一化内蕴体积 vₖ=Vₖ/κₖ 表述。体积确定最高系数 sₙ=vₙ²；比较两个端点多项式间的正系数线段，并积分相应体积函数的雅可比。通过内蕴体积对数凹性、Newton 不等式及严格的连续体积比估计，获得端点归一化积分核的严格离散凸性，推出平均雅可比可逆，从相同数据得到全部系数、因而带重数半轴相同。",
       "techniques": [
-        "椭球的内蕴体积",
-        "凸体同余判定",
-        "半轴参数反演"
+        "半轴平方的初等对称多项式与既有椭球内蕴体积积分公式",
+        "将归一化内蕴体积扩展到正系数多项式空间",
+        "Alexandrov–Fenchel 对数凹性、Newton 不等式与严格 Cauchy–Schwarz 比值界",
+        "极椭球恒等式与端点积分核的离散严格凸性",
+        "沿系数线段的平均雅可比、离散二阶差分与列对角占优可逆性"
       ],
-      "breakthrough": "将全维椭球的同余判定归约到其内蕴体积数据的唯一性。",
-      "limitations": "摘要仅给一句强结论，未列具体证明机制。主定理及关键单调性或参数反演论证须独立补读。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
-      "priorityScore": 90,
-      "priorityReason": "凸几何中明确猜想的全维解答声称，暂保留作者归因。"
+      "breakthrough": "给出一般 n≥2 的完整同余唯一性证明路线；核心是对连接两个相同数据端点的平均雅可比直接建立可逆性，将全局唯一性归结为正系数积分核和端点离散凸性。",
+      "limitations": "第1页主定理使用全部 V₁,…,Vₙ，结论为欧氏同余，不确定绝对位置或坐标轴方向；不能据此推广到任意凸体、较少体积数据或带噪数据。正文假定全维、λᵢ>0，并说明退化椭球降至较低维子空间处理。第8–9页中间多项式 Q_t=(1−t)P+tQ 只保证系数正，不要求它仍对应椭球；第3页先扩展体积积分函数，第9页显式积分后仅使用两个椭球端点的凸性，须保留这一证明范围。未提供数值反演算法的效率或稳定性结论。本轮阅读第1–9页定理及主要引理/证明并渲染关键式，未独立核验全部积分端点估计和外引结果；外部依赖包括既有椭球积分公式、混合体积对数凹性与极椭球体积恒等式。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24923v1 · PDF 第9页主定理证明之后 AI Disclaimer；已复核第1页与第10页参考文献和作者信息、全文候选语境。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:15:47.153923+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24923v1",
+        "contentHash": "1547a7a8d2ec7bf72b5c69d4ec91c644d543c990b368621c23f5d6c9b2ed3fbb",
+        "pages": 10,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "52c79ad1a94e57aee667f5a53c7cc070c2cf0d7bdf5e0234e58bf34402a33383"
+      },
+      "aiUsage": [
+        "exploration",
+        "writing"
+      ],
+      "priorityScore": 92,
+      "priorityReason": "凸几何经典有限维反问题的全维唯一性定理，正文具有明确的全局平均雅可比论证。"
     },
     "analysisBasis": {
       "abstract": "We prove that ellipsoids in $\\mathbb{R}^n$, $n\\ge 2$, are uniquely determined by their intrinsic volumes up to congruence, resolving the conjecture posed by Gusakova and Zaporozhets in 2017.",
@@ -88,23 +112,47 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.682826+00:00",
             "contentHash": "3f3fef342818a7f7ce4d9d93e86a5b77453f8b9c0c1f662df77627a0b3363440"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24923v1",
+            "observedAt": "2026-11-20T04:15:47.153923+00:00",
+            "contentHash": "1547a7a8d2ec7bf72b5c69d4ec91c644d543c990b368621c23f5d6c9b2ed3fbb"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
-          "progressType": "椭球由内蕴体积唯一确定的声称",
-          "workSummary": "作者声称对于每个 n≥2，ℝⁿ 中椭球的全部内蕴体积唯一确定其同余类，从而解决 Gusakova–Zaporozhets 2017 年猜想。",
+          "progressType": "所有维数椭球由全部内蕴体积的唯一确定",
+          "workSummary": "正文定理1.1：任意 n≥2，ℝⁿ 中两个椭球若 V₁,…,Vₙ 全部相同，则同余，作者据此解决 Gusakova–Zaporozhets 猜想。文中先取全维椭球，以半轴平方 λᵢ>0 的多项式 Q(u)=∏(1+λᵢu) 及归一化内蕴体积 vₖ=Vₖ/κₖ 表述。体积确定最高系数 sₙ=vₙ²；比较两个端点多项式间的正系数线段，并积分相应体积函数的雅可比。通过内蕴体积对数凹性、Newton 不等式及严格的连续体积比估计，获得端点归一化积分核的严格离散凸性，推出平均雅可比可逆，从相同数据得到全部系数、因而带重数半轴相同。",
           "techniques": [
-            "椭球的内蕴体积",
-            "凸体同余判定",
-            "半轴参数反演"
+            "半轴平方的初等对称多项式与既有椭球内蕴体积积分公式",
+            "将归一化内蕴体积扩展到正系数多项式空间",
+            "Alexandrov–Fenchel 对数凹性、Newton 不等式与严格 Cauchy–Schwarz 比值界",
+            "极椭球恒等式与端点积分核的离散严格凸性",
+            "沿系数线段的平均雅可比、离散二阶差分与列对角占优可逆性"
           ],
-          "breakthrough": "将全维椭球的同余判定归约到其内蕴体积数据的唯一性。",
-          "limitations": "摘要仅给一句强结论，未列具体证明机制。主定理及关键单调性或参数反演论证须独立补读。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
-          "priorityScore": 90,
-          "priorityReason": "凸几何中明确猜想的全维解答声称，暂保留作者归因。"
+          "breakthrough": "给出一般 n≥2 的完整同余唯一性证明路线；核心是对连接两个相同数据端点的平均雅可比直接建立可逆性，将全局唯一性归结为正系数积分核和端点离散凸性。",
+          "limitations": "第1页主定理使用全部 V₁,…,Vₙ，结论为欧氏同余，不确定绝对位置或坐标轴方向；不能据此推广到任意凸体、较少体积数据或带噪数据。正文假定全维、λᵢ>0，并说明退化椭球降至较低维子空间处理。第8–9页中间多项式 Q_t=(1−t)P+tQ 只保证系数正，不要求它仍对应椭球；第3页先扩展体积积分函数，第9页显式积分后仅使用两个椭球端点的凸性，须保留这一证明范围。未提供数值反演算法的效率或稳定性结论。本轮阅读第1–9页定理及主要引理/证明并渲染关键式，未独立核验全部积分端点估计和外引结果；外部依赖包括既有椭球积分公式、混合体积对数凹性与极椭球体积恒等式。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24923v1 · PDF 第9页主定理证明之后 AI Disclaimer；已复核第1页与第10页参考文献和作者信息、全文候选语境。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:15:47.153923+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24923v1",
+            "contentHash": "1547a7a8d2ec7bf72b5c69d4ec91c644d543c990b368621c23f5d6c9b2ed3fbb",
+            "pages": 10,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "52c79ad1a94e57aee667f5a53c7cc070c2cf0d7bdf5e0234e58bf34402a33383"
+          },
+          "aiUsage": [
+            "exploration",
+            "writing"
+          ],
+          "priorityScore": 92,
+          "priorityReason": "凸几何经典有限维反问题的全维唯一性定理，正文具有明确的全局平均雅可比论证。"
         },
         "analysisBasis": {
           "abstract": "We prove that ellipsoids in $\\mathbb{R}^n$, $n\\ge 2$, are uniquely determined by their intrinsic volumes up to congruence, resolving the conjecture posed by Gusakova and Zaporozhets in 2017.",

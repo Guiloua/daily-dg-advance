@@ -32,22 +32,46 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.681792+00:00",
         "contentHash": "4ec9daf7976dee09a2e24e8bb1a2ebf58d0cb8e97f60138d7615d157407eb268"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24879v1",
+        "observedAt": "2026-11-20T04:15:35.211736+00:00",
+        "contentHash": "4cd086fbbebf7d056812f17783f57449ac3e4df168fa12867b07895d45f47200"
       }
     ],
     "analysis": {
       "topic": "曲率与比较几何",
       "progressType": "有限奇点 o-minimal 曲面的 Gauss–Bonnet 公式",
-      "workSummary": "对闭但可非紧的 o-minimal 可定义曲面及有限奇点，建立 Euler 特征、总 Gaussian 曲率、奇点局部密度和无穷远密度的 Gauss–Bonnet 型关系。",
+      "workSummary": "对任意固定 o-minimal 结构中可定义的闭、纯二维集合 X⊂Rⁿ，假设其 C² 奇点集恰为有限个点 {p₁,…,pₛ}，作者证明同调有限生成、正则部高斯曲率可积，且 χ(X)=s+(1/2π)∫Reg(X)K dA−Σᵢθ(X,pᵢ)+θ(X,∞)。闭指欧氏闭子集，允许非紧且不要求可定向；θ 为欧氏二维面积除以 πr² 的极限。",
       "techniques": [
-        "o-minimal 可定义几何",
-        "孤立奇点与密度",
-        "总 Gaussian 曲率",
-        "无穷远的拓扑项"
+        "可定义族的连通分支数统一有界性",
+        "局部及无穷远球面链接的测地曲率与面积密度",
+        "切去奇点邻域并截断无穷远的带边界 Gauss–Bonnet 公式",
+        "Mayer–Vietoris 与有限拓扑型",
+        "极小曲面的 K=−|II|²/2 及等号刚性"
       ],
-      "breakthrough": "导出可定义极小曲面的不等式，并在复代数曲线中联系 Euler 特征、总曲率、奇点重数和次数。",
-      "limitations": "闭在此为环境中的闭集，非紧时需无穷远项。具体曲面正则性与 Euler 特征规范需正文核对。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "将奇点的 1−θ(X,p) 修正项与无穷远密度项合并为适用于任意 o-minimal 结构的公式。若正则部极小，则 χ(X)≤s−Σθ(X,pᵢ)+θ(X,∞)，在上述共同假设内等号当且仅当 X 为有限个仿射实二维平面的并。对纯复一维仿射代数集，局部密度等于重数、无穷远密度等于次数，进而 χ(X)≤deg(X)−Σ(m(X,pᵢ)−1)，等号当且仅当为 deg(X) 条互异复仿射直线之并。",
+      "limitations": "闭性、纯二维与有限 C² 奇点均为主定理前提，不能推广到任意非闭曲面或具有非孤立奇点的集合；有限平面并的等号分类也继承这些条件。曲率来自环境欧氏度量，并未处理任意环境黎曼度量。已读主定理、定义及第5—6节合成和等号路线，未逐项复核第3—4节总曲率可积性和链接极限技术证明；复曲线应用使用密度与重数/次数相等的外部文献结果，未独立验证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24879v1 · PDF 第22页 Acknowledgments",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:15:35.211736+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24879v1",
+        "contentHash": "4cd086fbbebf7d056812f17783f57449ac3e4df168fa12867b07895d45f47200",
+        "pages": 24,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "4eb76b8b397074c95d295559f08aa1508808d650bb2900a5cf2e36a893d5ca0b"
+      },
+      "aiUsage": [
+        "literature",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 92,
       "priorityReason": "把奇异与非紧曲面的曲率拓扑关系统一起来。"
     },
@@ -89,22 +113,46 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.681792+00:00",
             "contentHash": "4ec9daf7976dee09a2e24e8bb1a2ebf58d0cb8e97f60138d7615d157407eb268"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24879v1",
+            "observedAt": "2026-11-20T04:15:35.211736+00:00",
+            "contentHash": "4cd086fbbebf7d056812f17783f57449ac3e4df168fa12867b07895d45f47200"
           }
         ],
         "analysis": {
           "topic": "曲率与比较几何",
           "progressType": "有限奇点 o-minimal 曲面的 Gauss–Bonnet 公式",
-          "workSummary": "对闭但可非紧的 o-minimal 可定义曲面及有限奇点，建立 Euler 特征、总 Gaussian 曲率、奇点局部密度和无穷远密度的 Gauss–Bonnet 型关系。",
+          "workSummary": "对任意固定 o-minimal 结构中可定义的闭、纯二维集合 X⊂Rⁿ，假设其 C² 奇点集恰为有限个点 {p₁,…,pₛ}，作者证明同调有限生成、正则部高斯曲率可积，且 χ(X)=s+(1/2π)∫Reg(X)K dA−Σᵢθ(X,pᵢ)+θ(X,∞)。闭指欧氏闭子集，允许非紧且不要求可定向；θ 为欧氏二维面积除以 πr² 的极限。",
           "techniques": [
-            "o-minimal 可定义几何",
-            "孤立奇点与密度",
-            "总 Gaussian 曲率",
-            "无穷远的拓扑项"
+            "可定义族的连通分支数统一有界性",
+            "局部及无穷远球面链接的测地曲率与面积密度",
+            "切去奇点邻域并截断无穷远的带边界 Gauss–Bonnet 公式",
+            "Mayer–Vietoris 与有限拓扑型",
+            "极小曲面的 K=−|II|²/2 及等号刚性"
           ],
-          "breakthrough": "导出可定义极小曲面的不等式，并在复代数曲线中联系 Euler 特征、总曲率、奇点重数和次数。",
-          "limitations": "闭在此为环境中的闭集，非紧时需无穷远项。具体曲面正则性与 Euler 特征规范需正文核对。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "将奇点的 1−θ(X,p) 修正项与无穷远密度项合并为适用于任意 o-minimal 结构的公式。若正则部极小，则 χ(X)≤s−Σθ(X,pᵢ)+θ(X,∞)，在上述共同假设内等号当且仅当 X 为有限个仿射实二维平面的并。对纯复一维仿射代数集，局部密度等于重数、无穷远密度等于次数，进而 χ(X)≤deg(X)−Σ(m(X,pᵢ)−1)，等号当且仅当为 deg(X) 条互异复仿射直线之并。",
+          "limitations": "闭性、纯二维与有限 C² 奇点均为主定理前提，不能推广到任意非闭曲面或具有非孤立奇点的集合；有限平面并的等号分类也继承这些条件。曲率来自环境欧氏度量，并未处理任意环境黎曼度量。已读主定理、定义及第5—6节合成和等号路线，未逐项复核第3—4节总曲率可积性和链接极限技术证明；复曲线应用使用密度与重数/次数相等的外部文献结果，未独立验证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24879v1 · PDF 第22页 Acknowledgments",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:15:35.211736+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24879v1",
+            "contentHash": "4cd086fbbebf7d056812f17783f57449ac3e4df168fa12867b07895d45f47200",
+            "pages": 24,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "4eb76b8b397074c95d295559f08aa1508808d650bb2900a5cf2e36a893d5ca0b"
+          },
+          "aiUsage": [
+            "literature",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 92,
           "priorityReason": "把奇异与非紧曲面的曲率拓扑关系统一起来。"
         },

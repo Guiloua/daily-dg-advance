@@ -30,25 +30,48 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.679071+00:00",
         "contentHash": "262171400f36ce11e0414e63ed3e099191807b16bb64b5bb2388a9c65784e1a2"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24815v1",
+        "observedAt": "2026-11-20T04:15:11.342658+00:00",
+        "contentHash": "fe9532a468075ad3c16638840b8aa62bcb83dfd51be2d3a5c9ba7180d255c15d"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
-      "progressType": "弱拟全纯映射的尖锐部分正则性",
-      "workSummary": "实解析殆复 2m 维流形（m≥2）到射影代数簇的弱拟全纯 W¹,²_loc 映射，其奇点集可数 (2m−4) 可求长。m=2 时奇点局部有限。作者先在光滑殆复定义域上额外假设拉回 Fubini–Study 形式分布闭时证明结论，再证明实解析情形中 Cauchy–Riemann 方程蕴含该守恒律。",
+      "progressType": "弱拟全纯映射完整奇异集的尖锐部分正则性",
+      "workSummary": "正文定理1.1：无边界实解析殆复流形 (M^{2m},J)，m≥2，到复射影代数簇 X⊂CPⁿ（n≥1）的弱拟全纯 W¹,²_loc 映射，其完整奇异集为闭集、可数 (2m−4) 可求长，临界 Hausdorff 测度 σ 有限；m=2 时每个紧集内奇点有限。X 可奇异、可约，映射与光滑性均按环境 CPⁿ 解释。定理1.3 在光滑 J 下另加分布守恒律 d(u*ω_FS)=0 得同一结论；定理1.4 对实解析 J、m≥1，证明该守恒律直接来自弱 Cauchy–Riemann 方程。超平面逆像圈流的质量平均恢复能量，利用两两交集可求长性与关联概率控制完整奇异集；[z₁:z₂] 给出实余维4的尖锐例子。",
       "techniques": [
-        "弱 Cauchy–Riemann 方程",
-        "分布闭的 Fubini–Study 拉回",
-        "射影代数簇",
-        "奇点集可求长性",
-        "实解析守恒律"
+        "分布闭的 Fubini–Study 拉回与半校准能量恒等式",
+        "超平面逆像整圈流、质量平均与关联概率平方恒等式",
+        "半校准圈流奇异集可求长性及纯不可求长子集排除",
+        "De Lellis–Fleschler 判据建立临界测度 σ 有限性",
+        "实解析消失向量场、维数归纳及分层上的正流可去性",
+        "任意 W¹,² 映射的奇异射影投影链式法则与拉回平均"
       ],
-      "breakthrough": "把光滑定义域下的条件部分正则性推进到实解析定义域中的方程内蕴结论，并在实四维得到离散程度的尖锐强化。",
-      "limitations": "无额外守恒律的结论要求实解析定义域。m=2 的局部有限强于一般可数零维可求长。目标限定射影代数簇。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "将控制对象推进到完整奇异集，包括切映射为常值的奇点；在实解析且允许不可积的殆复定义域上，从方程本身获得射影目标所需守恒律，得到尖锐实余维4及四维定义域的局部有限结论。",
+      "limitations": "第3–4页定理的无额外守恒律版本要求定义域与 J 实解析、无边界；一般光滑 J 下守恒律是否自动成立仍列为问题（第7页）。目标限复射影代数簇；允许奇异/可约，但结论使用环境 CPⁿ 的弱方程和光滑代表。m>2 一般仅 σ 有限，不是局部有限：第26页命题5.2还需几乎每对超平面逆像圈流在所考察紧集内的交集具有有限 H^{2m−4} 测度，才推出该紧集上的有限性；这些交集测度无需可积统一上界。正文利用现有半校准圈流可求长性、Rivière–Tian 四维圈流结果、De Lellis–Fleschler 测度论判据、Shiffman 全纯链和 Elkhadhra 可去性等外部定理。已补读主定理、完整奇异集证明及守恒律路线/收尾并渲染关键页，未逐行复核第2–4、6节全部引理或独立验证整篇证明。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24815v1 · PDF 第7页 On the use of AI；同页 Acknowledgements；已复核首页、全文匹配上下文及末尾参考文献。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:15:11.342658+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24815v1",
+        "contentHash": "fe9532a468075ad3c16638840b8aa62bcb83dfd51be2d3a5c9ba7180d255c15d",
+        "pages": 50,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b8a658a3ee98487630b810dc7bc4c6f0b45b6bbb3a6b5789a96e9adf367cc80f"
+      },
+      "aiUsage": [
+        "verification",
+        "writing"
+      ],
       "priorityScore": 95,
-      "priorityReason": "弱几何 PDE 的奇点结构与临界能量守恒。"
+      "priorityReason": "几何分析中临界 Sobolev 弱方程的守恒律和完整奇点结构；正文给出尖锐余维及四维局部有限性。"
     },
     "analysisBasis": {
       "abstract": "For every $m\\geq2$, we prove that a weakly pseudoholomorphic $W^{1,2}_{\\mathrm{loc}}$ map from a real-analytic almost complex $2m$-manifold into a projective algebraic variety has a countably $(2m-4)$-rectifiable singular set. When $m=2$, the singular set is shown to be locally finite. We first establish both conclusions on smooth almost complex domains under the additional assumption that the pullback of the Fubini--Study form is distributionally closed. We then show that this conservation law follows from the Cauchy--Riemann equation alone on real-analytic domains.",
@@ -86,25 +109,48 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.679071+00:00",
             "contentHash": "262171400f36ce11e0414e63ed3e099191807b16bb64b5bb2388a9c65784e1a2"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24815v1",
+            "observedAt": "2026-11-20T04:15:11.342658+00:00",
+            "contentHash": "fe9532a468075ad3c16638840b8aa62bcb83dfd51be2d3a5c9ba7180d255c15d"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
-          "progressType": "弱拟全纯映射的尖锐部分正则性",
-          "workSummary": "实解析殆复 2m 维流形（m≥2）到射影代数簇的弱拟全纯 W¹,²_loc 映射，其奇点集可数 (2m−4) 可求长。m=2 时奇点局部有限。作者先在光滑殆复定义域上额外假设拉回 Fubini–Study 形式分布闭时证明结论，再证明实解析情形中 Cauchy–Riemann 方程蕴含该守恒律。",
+          "progressType": "弱拟全纯映射完整奇异集的尖锐部分正则性",
+          "workSummary": "正文定理1.1：无边界实解析殆复流形 (M^{2m},J)，m≥2，到复射影代数簇 X⊂CPⁿ（n≥1）的弱拟全纯 W¹,²_loc 映射，其完整奇异集为闭集、可数 (2m−4) 可求长，临界 Hausdorff 测度 σ 有限；m=2 时每个紧集内奇点有限。X 可奇异、可约，映射与光滑性均按环境 CPⁿ 解释。定理1.3 在光滑 J 下另加分布守恒律 d(u*ω_FS)=0 得同一结论；定理1.4 对实解析 J、m≥1，证明该守恒律直接来自弱 Cauchy–Riemann 方程。超平面逆像圈流的质量平均恢复能量，利用两两交集可求长性与关联概率控制完整奇异集；[z₁:z₂] 给出实余维4的尖锐例子。",
           "techniques": [
-            "弱 Cauchy–Riemann 方程",
-            "分布闭的 Fubini–Study 拉回",
-            "射影代数簇",
-            "奇点集可求长性",
-            "实解析守恒律"
+            "分布闭的 Fubini–Study 拉回与半校准能量恒等式",
+            "超平面逆像整圈流、质量平均与关联概率平方恒等式",
+            "半校准圈流奇异集可求长性及纯不可求长子集排除",
+            "De Lellis–Fleschler 判据建立临界测度 σ 有限性",
+            "实解析消失向量场、维数归纳及分层上的正流可去性",
+            "任意 W¹,² 映射的奇异射影投影链式法则与拉回平均"
           ],
-          "breakthrough": "把光滑定义域下的条件部分正则性推进到实解析定义域中的方程内蕴结论，并在实四维得到离散程度的尖锐强化。",
-          "limitations": "无额外守恒律的结论要求实解析定义域。m=2 的局部有限强于一般可数零维可求长。目标限定射影代数簇。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "将控制对象推进到完整奇异集，包括切映射为常值的奇点；在实解析且允许不可积的殆复定义域上，从方程本身获得射影目标所需守恒律，得到尖锐实余维4及四维定义域的局部有限结论。",
+          "limitations": "第3–4页定理的无额外守恒律版本要求定义域与 J 实解析、无边界；一般光滑 J 下守恒律是否自动成立仍列为问题（第7页）。目标限复射影代数簇；允许奇异/可约，但结论使用环境 CPⁿ 的弱方程和光滑代表。m>2 一般仅 σ 有限，不是局部有限：第26页命题5.2还需几乎每对超平面逆像圈流在所考察紧集内的交集具有有限 H^{2m−4} 测度，才推出该紧集上的有限性；这些交集测度无需可积统一上界。正文利用现有半校准圈流可求长性、Rivière–Tian 四维圈流结果、De Lellis–Fleschler 测度论判据、Shiffman 全纯链和 Elkhadhra 可去性等外部定理。已补读主定理、完整奇异集证明及守恒律路线/收尾并渲染关键页，未逐行复核第2–4、6节全部引理或独立验证整篇证明。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24815v1 · PDF 第7页 On the use of AI；同页 Acknowledgements；已复核首页、全文匹配上下文及末尾参考文献。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:15:11.342658+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24815v1",
+            "contentHash": "fe9532a468075ad3c16638840b8aa62bcb83dfd51be2d3a5c9ba7180d255c15d",
+            "pages": 50,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b8a658a3ee98487630b810dc7bc4c6f0b45b6bbb3a6b5789a96e9adf367cc80f"
+          },
+          "aiUsage": [
+            "verification",
+            "writing"
+          ],
           "priorityScore": 95,
-          "priorityReason": "弱几何 PDE 的奇点结构与临界能量守恒。"
+          "priorityReason": "几何分析中临界 Sobolev 弱方程的守恒律和完整奇点结构；正文给出尖锐余维及四维局部有限性。"
         },
         "analysisBasis": {
           "abstract": "For every $m\\geq2$, we prove that a weakly pseudoholomorphic $W^{1,2}_{\\mathrm{loc}}$ map from a real-analytic almost complex $2m$-manifold into a projective algebraic variety has a countably $(2m-4)$-rectifiable singular set. When $m=2$, the singular set is shown to be locally finite. We first establish both conclusions on smooth almost complex domains under the additional assumption that the pullback of the Fubini--Study form is distributionally closed. We then show that this conservation law follows from the Cauchy--Riemann equation alone on real-analytic domains.",

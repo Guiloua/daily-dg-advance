@@ -31,22 +31,44 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.679807+00:00",
         "contentHash": "06147418880dd2541baeef25e055d99e584010f86a613fbb68f2fe082f0318ec"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24824v1",
+        "observedAt": "2026-11-20T04:14:46.757038+00:00",
+        "contentHash": "3d7176fe3b64a7189226714c181c3c6d04153f4c7f0b7cad198fdbbc68ea2360"
       }
     ],
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "大亏格双曲曲面的 systole 与 kissing 数上界",
-      "workSummary": "作者对亏格充分大的闭双曲曲面证明 sys(S)≤(4/3)log(area(S))，以 Selberg 迹公式导出的闭测地线定量计数处理 Schmutz 猜想。",
+      "workSummary": "作者主张存在统一亏格阈值 g₀，使任意亏格 g≥g₀ 的闭双曲曲面满足 sys(S)≤(4/3)log A，其中 A=area(S)=4π(g−1)。同时主张 Kiss(S)≤C A^(5/3)/log A，常数 C 与曲面无关。结论的维数限定为曲面，前置迹公式工具则讨论更高维。",
       "techniques": [
-        "Selberg 迹公式",
-        "闭测地线定量计数",
-        "systole 上界",
-        "最短闭测地线的 kissing 数"
+        "Selberg 迹公式与紧支撑卷积测试函数",
+        "闭测地线长度窗计数",
+        "谱参数近零区间的定量下界",
+        "大亏格尺度参数与反证",
+        "Parlier 及短 systole 的 kissing 数估计"
       ],
-      "breakthrough": "推出同一大亏格范围内 Kiss(S)≤C·area(S)^(5/3)/log(area(S))。",
-      "limitations": "亏格须充分大，摘要没有给显式阈值。猜想的解决限此范围，计数估计与常数依赖需补读。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "以测试函数的谱侧正性和长度窗计数，将命题3.3写成 sys≥f(g) 时 sys≤2log A−f(g)，再选择对数尺度推进到4/3系数。kissing 数估计分别处理 sys≥2、1/64<sys<2 和更短情形。本文主张解决 Schmutz 的 systole 猜想在大亏格的情形。",
+      "limitations": "阈值存在而未给显式数值，kissing 数的5/3指数结论与文中所列4/3指数猜想仍有差距。第15页取 f(x)=2/3 log x，但命题3.3写 f(g)，直接代入留有 (2/3)log(A/g) 的加常数，文中无加常数的最终推论需要复核。本记录保留作者原结论。前置统一特征值界及全部计数推导未独立验证。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24824v1 · PDF 第16页 Declaration on the Use of AI Tools",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:14:46.757038+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24824v1",
+        "contentHash": "3d7176fe3b64a7189226714c181c3c6d04153f4c7f0b7cad198fdbbc68ea2360",
+        "pages": 17,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b4fa46c85f8e404f02db2fcd26f5a45bb14c5c0dd611c2e79c7ad263509fd771"
+      },
+      "aiUsage": [
+        "writing"
+      ],
       "priorityScore": 98,
       "priorityReason": "双曲曲面的极短测地线与尖锐计数是重点。"
     },
@@ -87,22 +109,44 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.679807+00:00",
             "contentHash": "06147418880dd2541baeef25e055d99e584010f86a613fbb68f2fe082f0318ec"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24824v1",
+            "observedAt": "2026-11-20T04:14:46.757038+00:00",
+            "contentHash": "3d7176fe3b64a7189226714c181c3c6d04153f4c7f0b7cad198fdbbc68ea2360"
           }
         ],
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "大亏格双曲曲面的 systole 与 kissing 数上界",
-          "workSummary": "作者对亏格充分大的闭双曲曲面证明 sys(S)≤(4/3)log(area(S))，以 Selberg 迹公式导出的闭测地线定量计数处理 Schmutz 猜想。",
+          "workSummary": "作者主张存在统一亏格阈值 g₀，使任意亏格 g≥g₀ 的闭双曲曲面满足 sys(S)≤(4/3)log A，其中 A=area(S)=4π(g−1)。同时主张 Kiss(S)≤C A^(5/3)/log A，常数 C 与曲面无关。结论的维数限定为曲面，前置迹公式工具则讨论更高维。",
           "techniques": [
-            "Selberg 迹公式",
-            "闭测地线定量计数",
-            "systole 上界",
-            "最短闭测地线的 kissing 数"
+            "Selberg 迹公式与紧支撑卷积测试函数",
+            "闭测地线长度窗计数",
+            "谱参数近零区间的定量下界",
+            "大亏格尺度参数与反证",
+            "Parlier 及短 systole 的 kissing 数估计"
           ],
-          "breakthrough": "推出同一大亏格范围内 Kiss(S)≤C·area(S)^(5/3)/log(area(S))。",
-          "limitations": "亏格须充分大，摘要没有给显式阈值。猜想的解决限此范围，计数估计与常数依赖需补读。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "以测试函数的谱侧正性和长度窗计数，将命题3.3写成 sys≥f(g) 时 sys≤2log A−f(g)，再选择对数尺度推进到4/3系数。kissing 数估计分别处理 sys≥2、1/64<sys<2 和更短情形。本文主张解决 Schmutz 的 systole 猜想在大亏格的情形。",
+          "limitations": "阈值存在而未给显式数值，kissing 数的5/3指数结论与文中所列4/3指数猜想仍有差距。第15页取 f(x)=2/3 log x，但命题3.3写 f(g)，直接代入留有 (2/3)log(A/g) 的加常数，文中无加常数的最终推论需要复核。本记录保留作者原结论。前置统一特征值界及全部计数推导未独立验证。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24824v1 · PDF 第16页 Declaration on the Use of AI Tools",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:14:46.757038+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24824v1",
+            "contentHash": "3d7176fe3b64a7189226714c181c3c6d04153f4c7f0b7cad198fdbbc68ea2360",
+            "pages": 17,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b4fa46c85f8e404f02db2fcd26f5a45bb14c5c0dd611c2e79c7ad263509fd771"
+          },
+          "aiUsage": [
+            "writing"
+          ],
           "priorityScore": 98,
           "priorityReason": "双曲曲面的极短测地线与尖锐计数是重点。"
         },

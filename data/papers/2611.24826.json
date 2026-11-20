@@ -33,22 +33,48 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.680170+00:00",
         "contentHash": "1e2443c0c81e30bbd80bb358a4881a34627fcc7c8401bed207038c5a4fe8a87b"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24826v1",
+        "observedAt": "2026-11-20T04:16:24.597023+00:00",
+        "contentHash": "4425c8c271ca529b8a713a52072dd64d054df829a239c733403e385dcdc0e70e"
       }
     ],
     "analysis": {
       "topic": "几何拓扑、低维流形与结",
       "progressType": "Whitehead倍结对AJ猜想的反例主张",
-      "workSummary": "作者声称，对互素2≤r<s环面结的带标记Whitehead倍结，两种clasp、伴结两种手性及任意整数扭转均不满足AJ猜想。构造非零有理饱和Jones序列湮灭子，并称其每个非零本原代表在t=−1特化后含一个特定不可约二次因子，该因子与完整经典A多项式互素。",
+      "workSummary": "作者声称给出一整族AJ猜想反例：互素整数2≤r<s、任意整数扭转ℓ、两种Whitehead clasp符号及伴随环面结T(r,±s)两种手性，在文中固定标记与零框架下，有符号未约化彩色Jones序列的有理饱和湮灭理想非零。将本原最小递推α在t=−1处专门化时保留M为独立变量，所得f非零；负clasp的f含不可约因子E=L²−(M⁴−4M²+1)L+M⁴，正clasp含E∨=M⁴E(M⁻¹,L)。在Q(M)[L±1]中，该因子与包含阿贝尔分量L−1的完整经典A多项式互素，因此即使每个不可约因子只计一次，AJ所要求的根理想相等仍失败。无扭转负clasp的右手三叶结特例，正文给出最小递推阶16、f与(L−1)²B₆E相伴、A与(L−1)B₆相伴的更精确结果；此精确公式不能外推为所有参数的统一公式。",
       "techniques": [
-        "彩色Jones序列的有理饱和湮灭子",
-        "卫星传递算子的右因子",
-        "有理因子测试",
-        "Whitehead链环与边界曲线"
+        "固定Whitehead图式、优选子午线/经线及零框架，将Zheng有限彩色公式转化为Ore差分转移算子",
+        "以实际Jones序列及forcing module选择最小递推的右因子，避免把构造算子的多余因子误当最小递推因子",
+        "横截相交点的对数留数、秩一检验及零有效指标的特殊系数估计，证明E在选中右因子中存留",
+        "伴随表示的两种轴填充给出经典边界曲线的包含多项式，并以互素性排除E；整体镜像处理另一clasp",
+        "附录给出有限域及精确代数计算、范围受限的Lean形式化记录，并区分其几何和经典不变量接口"
       ],
-      "breakthrough": "作者将额外因子追溯到轴cusp完备的带标记Whitehead链环外部，并称即使各因子只计一次，差异仍存在。",
-      "limitations": "这是对重要猜想的广泛反例主张。标记、零框架、符号未约化序列、本原及特化约定需逐项核对，当前未验证该反例。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "作者的主张不只是构造一个带额外因子的湮灭算子，而是用真实序列证明该二次因子在实际最小递推中存留，同时排除其作为经典边界曲线分量，从而声称反驳连去重版AJ比较在内的整个四参数族。E的几何来源是Whitehead链环外部空间中轴尖点完备的切片；对文中固定首一整系数代表，πm(E)等于完整两尖点外部空间的无符号双曲体积。",
+      "limitations": "阅读范围为PDF第1–4、34、47–50页，渲染核对第2、48页；未独立验证全篇证明、辅助脚本、Lean工程、外部论文或Comparator记录。四族所有整数扭转属于书面Theorem 1.1的主张；Appendix E明确当前族形式化仅覆盖无扭转、负clasp、右手环面伴随结的指定显式辫子，独立Comparator历史验收仅一条固定七股辫子，不能写成整个四族均获独立形式化验收。形式化不变量与通常结不变量/优选周边标记的对应、图式同痕及部分几何解释仍有单独接口和外部拓扑输入；第49页称族release comparator尚无验收记录，S1公开定位待定。核心AJ比较依赖Zheng通用q有限色公式；另一个根单位渐近分析只针对零扭转负clasp及固定右手T(2,d)、奇d≥3，不是整个族的统一体积猜想结论。比较在水平局部化Q(M)[L±1]内、包含L−1且M独立，不能把专门化理解为先令M=t^(2N)。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24826v1 · PDF第34页 Acknowledgments；第47页 Appendix E 开头关于MerLean的自身使用说明；第47–49页形式化范围说明",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:16:24.597023+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24826v1",
+        "contentHash": "4425c8c271ca529b8a713a52072dd64d054df829a239c733403e385dcdc0e70e",
+        "pages": 50,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "6ae8f33763191cc9cd4f6ebf3a58d25cac6c8c8d419447ad5f25bf86d721f716"
+      },
+      "aiUsage": [
+        "computation",
+        "exploration",
+        "literature",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 82,
       "priorityReason": "结论涉及重要拓扑猜想，需以正文和独立检验谨慎评估。"
     },
@@ -91,22 +117,48 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.680170+00:00",
             "contentHash": "1e2443c0c81e30bbd80bb358a4881a34627fcc7c8401bed207038c5a4fe8a87b"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24826v1",
+            "observedAt": "2026-11-20T04:16:24.597023+00:00",
+            "contentHash": "4425c8c271ca529b8a713a52072dd64d054df829a239c733403e385dcdc0e70e"
           }
         ],
         "analysis": {
           "topic": "几何拓扑、低维流形与结",
           "progressType": "Whitehead倍结对AJ猜想的反例主张",
-          "workSummary": "作者声称，对互素2≤r<s环面结的带标记Whitehead倍结，两种clasp、伴结两种手性及任意整数扭转均不满足AJ猜想。构造非零有理饱和Jones序列湮灭子，并称其每个非零本原代表在t=−1特化后含一个特定不可约二次因子，该因子与完整经典A多项式互素。",
+          "workSummary": "作者声称给出一整族AJ猜想反例：互素整数2≤r<s、任意整数扭转ℓ、两种Whitehead clasp符号及伴随环面结T(r,±s)两种手性，在文中固定标记与零框架下，有符号未约化彩色Jones序列的有理饱和湮灭理想非零。将本原最小递推α在t=−1处专门化时保留M为独立变量，所得f非零；负clasp的f含不可约因子E=L²−(M⁴−4M²+1)L+M⁴，正clasp含E∨=M⁴E(M⁻¹,L)。在Q(M)[L±1]中，该因子与包含阿贝尔分量L−1的完整经典A多项式互素，因此即使每个不可约因子只计一次，AJ所要求的根理想相等仍失败。无扭转负clasp的右手三叶结特例，正文给出最小递推阶16、f与(L−1)²B₆E相伴、A与(L−1)B₆相伴的更精确结果；此精确公式不能外推为所有参数的统一公式。",
           "techniques": [
-            "彩色Jones序列的有理饱和湮灭子",
-            "卫星传递算子的右因子",
-            "有理因子测试",
-            "Whitehead链环与边界曲线"
+            "固定Whitehead图式、优选子午线/经线及零框架，将Zheng有限彩色公式转化为Ore差分转移算子",
+            "以实际Jones序列及forcing module选择最小递推的右因子，避免把构造算子的多余因子误当最小递推因子",
+            "横截相交点的对数留数、秩一检验及零有效指标的特殊系数估计，证明E在选中右因子中存留",
+            "伴随表示的两种轴填充给出经典边界曲线的包含多项式，并以互素性排除E；整体镜像处理另一clasp",
+            "附录给出有限域及精确代数计算、范围受限的Lean形式化记录，并区分其几何和经典不变量接口"
           ],
-          "breakthrough": "作者将额外因子追溯到轴cusp完备的带标记Whitehead链环外部，并称即使各因子只计一次，差异仍存在。",
-          "limitations": "这是对重要猜想的广泛反例主张。标记、零框架、符号未约化序列、本原及特化约定需逐项核对，当前未验证该反例。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "作者的主张不只是构造一个带额外因子的湮灭算子，而是用真实序列证明该二次因子在实际最小递推中存留，同时排除其作为经典边界曲线分量，从而声称反驳连去重版AJ比较在内的整个四参数族。E的几何来源是Whitehead链环外部空间中轴尖点完备的切片；对文中固定首一整系数代表，πm(E)等于完整两尖点外部空间的无符号双曲体积。",
+          "limitations": "阅读范围为PDF第1–4、34、47–50页，渲染核对第2、48页；未独立验证全篇证明、辅助脚本、Lean工程、外部论文或Comparator记录。四族所有整数扭转属于书面Theorem 1.1的主张；Appendix E明确当前族形式化仅覆盖无扭转、负clasp、右手环面伴随结的指定显式辫子，独立Comparator历史验收仅一条固定七股辫子，不能写成整个四族均获独立形式化验收。形式化不变量与通常结不变量/优选周边标记的对应、图式同痕及部分几何解释仍有单独接口和外部拓扑输入；第49页称族release comparator尚无验收记录，S1公开定位待定。核心AJ比较依赖Zheng通用q有限色公式；另一个根单位渐近分析只针对零扭转负clasp及固定右手T(2,d)、奇d≥3，不是整个族的统一体积猜想结论。比较在水平局部化Q(M)[L±1]内、包含L−1且M独立，不能把专门化理解为先令M=t^(2N)。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24826v1 · PDF第34页 Acknowledgments；第47页 Appendix E 开头关于MerLean的自身使用说明；第47–49页形式化范围说明",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:16:24.597023+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24826v1",
+            "contentHash": "4425c8c271ca529b8a713a52072dd64d054df829a239c733403e385dcdc0e70e",
+            "pages": 50,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "6ae8f33763191cc9cd4f6ebf3a58d25cac6c8c8d419447ad5f25bf86d721f716"
+          },
+          "aiUsage": [
+            "computation",
+            "exploration",
+            "literature",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 82,
           "priorityReason": "结论涉及重要拓扑猜想，需以正文和独立检验谨慎评估。"
         },

@@ -30,22 +30,47 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:37.682190+00:00",
         "contentHash": "d1b6ed85ffca370ca4fa22d7e03918624ff957a9309524a9310839e2868abc3d"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24903v1",
+        "observedAt": "2026-11-20T04:14:59.069249+00:00",
+        "contentHash": "44643210fb473129d9cefc2bf053454a9467c67902c42283cd5c222738382a95"
       }
     ],
     "analysis": {
       "topic": "几何分析、几何 PDE 与几何流",
       "progressType": "微分形式几何Calderón问题的部分数据唯一性",
-      "workSummary": "作者研究Karpukhin的微分p形式Dirichlet到Neumann算子，给出全符号递推及边界度量全jet确定。在临界维n=2p+2存在共形规范。对p≥1，内域及测量边界邻域解析的度量由部分数据确定到等距或共形等价。",
+      "workSummary": "对紧定向光滑有边界流形，Karpukhin的p形式DN算子由Δω=0、δω=0、切向迹为给定输入后取n(dω)定义。0≤p≤n−2时，任意非空测量边界域上的算子之差若为光滑核，则确定度量全边界jet，临界n=2p+2只确定到边界因子为1的共形变换。对连通流形及1≤p≤n−2，内域和测量边界附近度量与边界解析、部分算子严格相等时，边界识别延拓为全局等距或临界共形等价。n≥3的光滑调和曲率度量也有相同全局结论，且允许p=0；临界时若某测量边界点ι_νW≠0，则共形等价提升为等距。",
       "techniques": [
-        "微分形式DN算子的全符号",
-        "边界jet与临界共形规范",
-        "投影核嵌入及秩退化",
-        "椭圆—输运唯一延拓"
+        "非椭圆形式DN算子的全符号递推",
+        "首个未匹配边界jet的线性代数识别",
+        "相对恰当形式投影核及Hilbert–Schmidt算子嵌入",
+        "秩损失和小特征值探测未测边界",
+        "曲率椭圆方程—法向输运的Carleman延拓",
+        "共形测地线与联络重构"
       ],
-      "breakthrough": "新投影核嵌入以秩下降及小特征值探测未观测边界，并推广到光滑调和曲率度量。Weyl非退化条件可进一步将共形等价提高到等距。",
-      "limitations": "解析唯一性要求p≥1及指定解析区域，临界维需保留共形规范。光滑调和曲率及Weyl条件的精确定义需查正文。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "利用投影核构造内点单射浸入，其秩在未测边界下降，并用小正特征值构造光滑边界定义函数。调和曲率情况下，命题5.2由边界0–2阶jet匹配得到精确等距领口。临界情形再在Weyl法向分量无限阶消失的分支，以共形测地坐标重建联络，得到精确共形领口供全局延拓。",
+      "limitations": "补读PDF第1–5、29、36、44–45页所列主结果与路线，渲染第3、5页。边界jet结论只需符号相同模光滑，完整全局唯一性需部分DN算子本身相同。解析类须内域及测量边界邻域解析，未测边界只要求光滑。临界共形因子在测量域为零。调和曲率的等距升级使用特定法向Weyl非退化条件。未独立核验全部符号递推、投影核构造、唯一延拓技术及外部定理。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24903v1 · PDF第44页Declaration of AI Use，结合第29、36页关键命题；全文45页。",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:14:59.069249+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24903v1",
+        "contentHash": "44643210fb473129d9cefc2bf053454a9467c67902c42283cd5c222738382a95",
+        "pages": 45,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "167a1b314909a3ec6b4a1a306fee8e19c43827db5be367922c60bf5ed5dd933e"
+      },
+      "aiUsage": [
+        "ideas",
+        "proofs",
+        "writing"
+      ],
       "priorityScore": 96,
       "priorityReason": "将边界逆问题、几何PDE及临界维规范联系起来。"
     },
@@ -85,22 +110,47 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:37.682190+00:00",
             "contentHash": "d1b6ed85ffca370ca4fa22d7e03918624ff957a9309524a9310839e2868abc3d"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24903v1",
+            "observedAt": "2026-11-20T04:14:59.069249+00:00",
+            "contentHash": "44643210fb473129d9cefc2bf053454a9467c67902c42283cd5c222738382a95"
           }
         ],
         "analysis": {
           "topic": "几何分析、几何 PDE 与几何流",
           "progressType": "微分形式几何Calderón问题的部分数据唯一性",
-          "workSummary": "作者研究Karpukhin的微分p形式Dirichlet到Neumann算子，给出全符号递推及边界度量全jet确定。在临界维n=2p+2存在共形规范。对p≥1，内域及测量边界邻域解析的度量由部分数据确定到等距或共形等价。",
+          "workSummary": "对紧定向光滑有边界流形，Karpukhin的p形式DN算子由Δω=0、δω=0、切向迹为给定输入后取n(dω)定义。0≤p≤n−2时，任意非空测量边界域上的算子之差若为光滑核，则确定度量全边界jet，临界n=2p+2只确定到边界因子为1的共形变换。对连通流形及1≤p≤n−2，内域和测量边界附近度量与边界解析、部分算子严格相等时，边界识别延拓为全局等距或临界共形等价。n≥3的光滑调和曲率度量也有相同全局结论，且允许p=0；临界时若某测量边界点ι_νW≠0，则共形等价提升为等距。",
           "techniques": [
-            "微分形式DN算子的全符号",
-            "边界jet与临界共形规范",
-            "投影核嵌入及秩退化",
-            "椭圆—输运唯一延拓"
+            "非椭圆形式DN算子的全符号递推",
+            "首个未匹配边界jet的线性代数识别",
+            "相对恰当形式投影核及Hilbert–Schmidt算子嵌入",
+            "秩损失和小特征值探测未测边界",
+            "曲率椭圆方程—法向输运的Carleman延拓",
+            "共形测地线与联络重构"
           ],
-          "breakthrough": "新投影核嵌入以秩下降及小特征值探测未观测边界，并推广到光滑调和曲率度量。Weyl非退化条件可进一步将共形等价提高到等距。",
-          "limitations": "解析唯一性要求p≥1及指定解析区域，临界维需保留共形规范。光滑调和曲率及Weyl条件的精确定义需查正文。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "利用投影核构造内点单射浸入，其秩在未测边界下降，并用小正特征值构造光滑边界定义函数。调和曲率情况下，命题5.2由边界0–2阶jet匹配得到精确等距领口。临界情形再在Weyl法向分量无限阶消失的分支，以共形测地坐标重建联络，得到精确共形领口供全局延拓。",
+          "limitations": "补读PDF第1–5、29、36、44–45页所列主结果与路线，渲染第3、5页。边界jet结论只需符号相同模光滑，完整全局唯一性需部分DN算子本身相同。解析类须内域及测量边界邻域解析，未测边界只要求光滑。临界共形因子在测量域为零。调和曲率的等距升级使用特定法向Weyl非退化条件。未独立核验全部符号递推、投影核构造、唯一延拓技术及外部定理。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24903v1 · PDF第44页Declaration of AI Use，结合第29、36页关键命题；全文45页。",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:14:59.069249+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24903v1",
+            "contentHash": "44643210fb473129d9cefc2bf053454a9467c67902c42283cd5c222738382a95",
+            "pages": 45,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "167a1b314909a3ec6b4a1a306fee8e19c43827db5be367922c60bf5ed5dd933e"
+          },
+          "aiUsage": [
+            "ideas",
+            "proofs",
+            "writing"
+          ],
           "priorityScore": 96,
           "priorityReason": "将边界逆问题、几何PDE及临界维规范联系起来。"
         },

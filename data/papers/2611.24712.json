@@ -31,22 +31,43 @@
         "url": "https://export.arxiv.org/api/query",
         "observedAt": "2026-11-19T09:19:15.300854+00:00",
         "contentHash": "3832958f276c0a55b2136128c6ccbd4abf9decf23e16685327b850704f62f6e0"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24712v1",
+        "observedAt": "2026-11-20T04:15:23.355240+00:00",
+        "contentHash": "eea2316fac85c75525c6b935d5a7a1db823280697f52792c8b6a3ef2362a24f7"
       }
     ],
     "analysis": {
       "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
       "progressType": "Monge–Ampère 柔性向一般 Riemann 等距浸入的转移",
-      "workSummary": "证明 Monge–Ampère 系统的柔性结果可转移到等距浸入系统，并保持相同 Hölder 正则性。方法允许任意维数、余维，以及一般 Hölder 正则的源和环境度量。与既有 Monge–Ampère 柔性结合后，给出非欧氏环境中的新 C¹,α 等距浸入柔性结果。",
+      "workSummary": "作者把Monge–Ampère/von Kármán系统中满足结构条件的凸积分阶段转移到一般黎曼目标的等距浸入系统，保持缺陷衰减参数S和导数增长参数J。定理7.2：源域为有光滑边界的有界可缩域，源与目标度量正则性分别为r+β、r̄+β̄>0时，每个C¹严格短浸入都可被C^(1,α)等距浸入一致逼近，要求0<α<min{1/(1+2J/S),(r+β)/2,(r̄+β̄)/2}。",
       "techniques": [
-        "Monge–Ampère 系统",
-        "等距浸入柔性",
-        "Hölder 度量",
-        "C¹,α 正则性转移"
+        "结构化STA-VK0与增广STA0阶段",
+        "法向和切向扰动及形算子低阶项",
+        "一般目标度量的正则化误差控制",
+        "预阶段与Nash–Kuiper迭代"
       ],
-      "breakthrough": "把标量或系统的柔性信息用于带非欧氏环境度量的等距浸入。",
-      "limitations": "具体 α 范围、度量正则性阈值及短浸入等输入条件在摘要未列，须据转移定理逐项使用。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-      "analysisDepth": "abstract",
-      "aiStatus": "no_disclosure_observed",
+      "breakthrough": "将两类方程之间的启发性类比做成保持阶段参数的系统转移，并为非欧氏环境度量补齐预阶段和迭代，保留可用的Hölder柔性指数。",
+      "limitations": "并非任意形式的Monge–Ampère柔性结论均可无条件套用，输入阶段需满足STA-VK0/STA0的结构估计。逼近要求严格短性；例7.4给出一般双度量下仅短性不足的反例。源域拓扑、边界与度量正则性限制不可略。已补读主结果、证明路线和反例，未逐项核验46页估计。",
+      "analysisDepth": "full_text_sections",
+      "aiStatus": "explicit",
+      "aiEvidence": "作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。",
+      "aiEvidenceSource": "https://arxiv.org/pdf/2611.24712v1 · PDF第33页Example7.4脚注及第44页AI declaration；全文46页检索",
+      "aiReview": {
+        "status": "full_text_searched",
+        "checkedAt": "2026-11-20T04:15:23.355240+00:00",
+        "version": 1,
+        "sourceUrl": "https://arxiv.org/pdf/2611.24712v1",
+        "contentHash": "eea2316fac85c75525c6b935d5a7a1db823280697f52792c8b6a3ef2362a24f7",
+        "pages": 46,
+        "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。",
+        "ruleVersion": "ai-disclosure-search-v4",
+        "metadataHash": "b5da2e0813a67d8df049f6cf89736c6cea255ccaca795e00f7e3aeb2edbac7f7"
+      },
+      "aiUsage": [
+        "ideas"
+      ],
       "priorityScore": 93,
       "priorityReason": "几何 PDE 与低正则等距浸入的通用转移方法。"
     },
@@ -87,22 +108,43 @@
             "url": "https://export.arxiv.org/api/query",
             "observedAt": "2026-11-19T09:19:15.300854+00:00",
             "contentHash": "3832958f276c0a55b2136128c6ccbd4abf9decf23e16685327b850704f62f6e0"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.24712v1",
+            "observedAt": "2026-11-20T04:15:23.355240+00:00",
+            "contentHash": "eea2316fac85c75525c6b935d5a7a1db823280697f52792c8b6a3ef2362a24f7"
           }
         ],
         "analysis": {
           "topic": "黎曼、亚黎曼、Finsler及特殊几何结构",
           "progressType": "Monge–Ampère 柔性向一般 Riemann 等距浸入的转移",
-          "workSummary": "证明 Monge–Ampère 系统的柔性结果可转移到等距浸入系统，并保持相同 Hölder 正则性。方法允许任意维数、余维，以及一般 Hölder 正则的源和环境度量。与既有 Monge–Ampère 柔性结合后，给出非欧氏环境中的新 C¹,α 等距浸入柔性结果。",
+          "workSummary": "作者把Monge–Ampère/von Kármán系统中满足结构条件的凸积分阶段转移到一般黎曼目标的等距浸入系统，保持缺陷衰减参数S和导数增长参数J。定理7.2：源域为有光滑边界的有界可缩域，源与目标度量正则性分别为r+β、r̄+β̄>0时，每个C¹严格短浸入都可被C^(1,α)等距浸入一致逼近，要求0<α<min{1/(1+2J/S),(r+β)/2,(r̄+β̄)/2}。",
           "techniques": [
-            "Monge–Ampère 系统",
-            "等距浸入柔性",
-            "Hölder 度量",
-            "C¹,α 正则性转移"
+            "结构化STA-VK0与增广STA0阶段",
+            "法向和切向扰动及形算子低阶项",
+            "一般目标度量的正则化误差控制",
+            "预阶段与Nash–Kuiper迭代"
           ],
-          "breakthrough": "把标量或系统的柔性信息用于带非欧氏环境度量的等距浸入。",
-          "limitations": "具体 α 范围、度量正则性阈值及短浸入等输入条件在摘要未列，须据转移定理逐项使用。 当前数学解读依据摘要，尚未逐步审读证明。 本轮未取得PDF全文，AI披露尚待核查。",
-          "analysisDepth": "abstract",
-          "aiStatus": "no_disclosure_observed",
+          "breakthrough": "将两类方程之间的启发性类比做成保持阶段参数的系统转移，并为非欧氏环境度量补齐预阶段和迭代，保留可用的Hölder柔性指数。",
+          "limitations": "并非任意形式的Monge–Ampère柔性结论均可无条件套用，输入阶段需满足STA-VK0/STA0的结构估计。逼近要求严格短性；例7.4给出一般双度量下仅短性不足的反例。源域拓扑、边界与度量正则性限制不可略。已补读主结果、证明路线和反例，未逐项核验46页估计。",
+          "analysisDepth": "full_text_sections",
+          "aiStatus": "explicit",
+          "aiEvidence": "作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。",
+          "aiEvidenceSource": "https://arxiv.org/pdf/2611.24712v1 · PDF第33页Example7.4脚注及第44页AI declaration；全文46页检索",
+          "aiReview": {
+            "status": "full_text_searched",
+            "checkedAt": "2026-11-20T04:15:23.355240+00:00",
+            "version": 1,
+            "sourceUrl": "https://arxiv.org/pdf/2611.24712v1",
+            "contentHash": "eea2316fac85c75525c6b935d5a7a1db823280697f52792c8b6a3ef2362a24f7",
+            "pages": 46,
+            "note": "对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。",
+            "ruleVersion": "ai-disclosure-search-v4",
+            "metadataHash": "b5da2e0813a67d8df049f6cf89736c6cea255ccaca795e00f7e3aeb2edbac7f7"
+          },
+          "aiUsage": [
+            "ideas"
+          ],
           "priorityScore": 93,
           "priorityReason": "几何 PDE 与低正则等距浸入的通用转移方法。"
         },

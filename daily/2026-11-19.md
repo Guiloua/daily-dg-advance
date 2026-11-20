@@ -666,13 +666,17 @@ For a class of almost rational plumbing 4-manifolds equipped with smooth involut
 
 Dominik Inauen、Marta Lewicka
 
-证明 Monge–Ampère 系统的柔性结果可转移到等距浸入系统，并保持相同 Hölder 正则性。方法允许任意维数、余维，以及一般 Hölder 正则的源和环境度量。与既有 Monge–Ampère 柔性结合后，给出非欧氏环境中的新 C¹,α 等距浸入柔性结果。
+作者把Monge–Ampère/von Kármán系统中满足结构条件的凸积分阶段转移到一般黎曼目标的等距浸入系统，保持缺陷衰减参数S和导数增长参数J。定理7.2：源域为有光滑边界的有界可缩域，源与目标度量正则性分别为r+β、r̄+β̄>0时，每个C¹严格短浸入都可被C^(1,α)等距浸入一致逼近，要求0<α<min{1/(1+2J/S),(r+β)/2,(r̄+β̄)/2}。
 
 We prove that any flexibility result for the Monge-Ampère system implies the corresponding flexibility result for the isometric immersion system, with the same Hölder regularity. We treat the general isometric immersion system, in which both the source and the ambient metrics are arbitrary Hölder regular, in arbitrary dimension and codimension. Combining this implication with existing results for the Monge-Ampère system, we obtain new ${C}^{1,\alpha}$ flexibility statement for isometric immersions with arbitrary source and ambient metrics. To our knowledge, these are the first such results for non-Euclidean ambient metrics.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。
 
+来源：https://arxiv.org/pdf/2611.24712v1 · PDF第33页Example7.4脚注及第44页AI declaration；全文46页检索
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者第44页明确披露 ChatGPT 参与通向例7.4的讨论；第33页脚注标注该例由ChatGPT建议。披露范围是该例的数学讨论和构思，未声称全部证明由AI完成。
+
+来源：https://arxiv.org/pdf/2611.24712v1
 
 [arXiv](https://arxiv.org/abs/2611.24712)
 
@@ -684,9 +688,13 @@ Nikita Pshenichnyi
 
 We prove that the commutator subgroup of the Torelli group of a genus-three surface with at most one boundary component has finitely generated abelianization. The proof combines Gaifullin's finite-generation sufficient condition with the explicit generating set for the Torelli commutator subgroup due to Brendle, Margalit, and Putman.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者在 Tool Use 中明确说明使用 AI 改进英文译稿、校对最终稿并生成绘图代码，且所有 AI 辅助材料均由作者审阅。对应写作与绘图代码用途；这里的 proofread 是文稿校对，并未披露数学证明生成或验证，也没有把核心思想归因于 AI。
 
+来源：https://arxiv.org/pdf/2611.24813v1 · PDF 第 7 页 Tool Use 段落
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者在 Tool Use 中明确说明使用 AI 改进英文译稿、校对最终稿并生成绘图代码，且所有 AI 辅助材料均由作者审阅。对应写作与绘图代码用途；这里的 proofread 是文稿校对，并未披露数学证明生成或验证，也没有把核心思想归因于 AI。
+
+来源：https://arxiv.org/pdf/2611.24813v1
 
 [arXiv](https://arxiv.org/abs/2611.24813)
 
@@ -698,9 +706,13 @@ Suyoung Choi、Hyeontae Jang
 
 We prove that every polyhedral product of disks and their boundary spheres that is a topological manifold admits a stably parallelizable smooth structure. We also show that if a moment-angle complex or a real moment-angle complex admits a smooth structure for which the coordinate action is smooth, then the link of every face of the underlying simplicial complex is a simplicial sphere, and every such smooth structure is stably parallelizable.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：PDF第2页末至第3页首的作者自身 Statement on the Use of AI 明确说明：用AI讨论可能的证明路线、检查个别步骤、查找相关参考文献并评估其适用性，以及改进英文；作者复核论证与引用并承担全文责任。讨论可能路线属于探索，检查步骤属于验证，未具体把某一核心构造或关键思想归因于AI，故不标ideas；没有把作者复核误记为AI验证。全文原候选与跨行/连字符模型名、点写A.I.等补检均已核对，未见需要追加的不同用途。
 
+来源：https://arxiv.org/pdf/2611.24814v1 · PDF第2页末至第3页首，Statement on the Use of AI
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第2页末至第3页首的作者自身 Statement on the Use of AI 明确说明：用AI讨论可能的证明路线、检查个别步骤、查找相关参考文献并评估其适用性，以及改进英文；作者复核论证与引用并承担全文责任。讨论可能路线属于探索，检查步骤属于验证，未具体把某一核心构造或关键思想归因于AI，故不标ideas；没有把作者复核误记为AI验证。全文原候选与跨行/连字符模型名、点写A.I.等补检均已核对，未见需要追加的不同用途。
+
+来源：https://arxiv.org/pdf/2611.24814v1
 
 [arXiv](https://arxiv.org/abs/2611.24814)
 
@@ -708,13 +720,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Riccardo Caniato
 
-实解析殆复 2m 维流形（m≥2）到射影代数簇的弱拟全纯 W¹,²_loc 映射，其奇点集可数 (2m−4) 可求长。m=2 时奇点局部有限。作者先在光滑殆复定义域上额外假设拉回 Fubini–Study 形式分布闭时证明结论，再证明实解析情形中 Cauchy–Riemann 方程蕴含该守恒律。
+正文定理1.1：无边界实解析殆复流形 (M^{2m},J)，m≥2，到复射影代数簇 X⊂CPⁿ（n≥1）的弱拟全纯 W¹,²_loc 映射，其完整奇异集为闭集、可数 (2m−4) 可求长，临界 Hausdorff 测度 σ 有限；m=2 时每个紧集内奇点有限。X 可奇异、可约，映射与光滑性均按环境 CPⁿ 解释。定理1.3 在光滑 J 下另加分布守恒律 d(u*ω_FS)=0 得同一结论；定理1.4 对实解析 J、m≥1，证明该守恒律直接来自弱 Cauchy–Riemann 方程。超平面逆像圈流的质量平均恢复能量，利用两两交集可求长性与关联概率控制完整奇异集；[z₁:z₂] 给出实余维4的尖锐例子。
 
 For every $m\geq2$, we prove that a weakly pseudoholomorphic $W^{1,2}_{\mathrm{loc}}$ map from a real-analytic almost complex $2m$-manifold into a projective algebraic variety has a countably $(2m-4)$-rectifiable singular set. When $m=2$, the singular set is shown to be locally finite. We first establish both conclusions on smooth almost complex domains under the additional assumption that the pullback of the Fubini--Study form is distributionally closed. We then show that this conservation law follows from the Cauchy--Riemann equation alone on real-analytic domains.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。
 
+来源：https://arxiv.org/pdf/2611.24815v1 · PDF 第7页 On the use of AI；同页 Acknowledgements；已复核首页、全文匹配上下文及末尾参考文献。
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第7页“On the use of AI”明确披露使用 ChatGPT-6 Astra，仅改善文字清晰度与风格，并辅助识别数学论证中潜在错误或缺口。作者同时明确声明研究想法和全部证明均未借助 AI 开发，所有数学论证由作者独立检查。因此记录写作与核验辅助，不据此归因核心想法、证明生成或计算；全文常规及拆行补检未发现扩大该范围的另一声明。
+
+来源：https://arxiv.org/pdf/2611.24815v1
 
 [arXiv](https://arxiv.org/abs/2611.24815)
 
@@ -738,13 +754,17 @@ In 1997, Catanese and the first author showed that, for every $m\geq 2$, there e
 
 Jeison Benavides、Plinio Murillo
 
-作者对亏格充分大的闭双曲曲面证明 sys(S)≤(4/3)log(area(S))，以 Selberg 迹公式导出的闭测地线定量计数处理 Schmutz 猜想。
+作者主张存在统一亏格阈值 g₀，使任意亏格 g≥g₀ 的闭双曲曲面满足 sys(S)≤(4/3)log A，其中 A=area(S)=4π(g−1)。同时主张 Kiss(S)≤C A^(5/3)/log A，常数 C 与曲面无关。结论的维数限定为曲面，前置迹公式工具则讨论更高维。
 
 In this article, we prove that if the genus of a closed hyperbolic surface $S$ is sufficiently large, then\[ \operatorname{sys}(S)\leq\frac{4}{3}\log(\operatorname{area}(S)). \] This proves a conjecture by Schmutz for large genus. The proof is based on quantitative counting estimates for closed geodesics derived from the Selberg trace formula. As a consequence, we also prove that for such surfaces, the kissing number of $S$ satisfies \[ \operatorname{Kiss}(S) \leq C\frac{\operatorname{area}(S)^{\frac{5}{3}}}{\log(\operatorname{area}(S))}, \] where $C>0$ is a constant.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。
 
+来源：https://arxiv.org/pdf/2611.24824v1 · PDF 第16页 Declaration on the Use of AI Tools
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者声明数学思想、论证和结果由作者发展，ChatGPT 仅辅助语言编辑和 LaTeX 排版。用途记 writing。
+
+来源：https://arxiv.org/pdf/2611.24824v1
 
 [arXiv](https://arxiv.org/abs/2611.24824)
 
@@ -752,13 +772,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Jinzheng Li、Yuqi Li、Hao-Yu Sun
 
-作者声称，对互素2≤r<s环面结的带标记Whitehead倍结，两种clasp、伴结两种手性及任意整数扭转均不满足AJ猜想。构造非零有理饱和Jones序列湮灭子，并称其每个非零本原代表在t=−1特化后含一个特定不可约二次因子，该因子与完整经典A多项式互素。
+作者声称给出一整族AJ猜想反例：互素整数2≤r<s、任意整数扭转ℓ、两种Whitehead clasp符号及伴随环面结T(r,±s)两种手性，在文中固定标记与零框架下，有符号未约化彩色Jones序列的有理饱和湮灭理想非零。将本原最小递推α在t=−1处专门化时保留M为独立变量，所得f非零；负clasp的f含不可约因子E=L²−(M⁴−4M²+1)L+M⁴，正clasp含E∨=M⁴E(M⁻¹,L)。在Q(M)[L±1]中，该因子与包含阿贝尔分量L−1的完整经典A多项式互素，因此即使每个不可约因子只计一次，AJ所要求的根理想相等仍失败。无扭转负clasp的右手三叶结特例，正文给出最小递推阶16、f与(L−1)²B₆E相伴、A与(L−1)B₆相伴的更精确结果；此精确公式不能外推为所有参数的统一公式。
 
 For marked Whitehead doubles of torus knots with coprime parameters $2\le r<s$, the AJ conjecture fails for both clasp signs, both companion chiralities, and every integer twist. The zero-framed signed unreduced colored Jones sequence has a nonzero rationally saturated annihilator. Every nonzero primitive representative specializes nontrivially at $t=-1$ with the meridian variable $M$ independent. With $L$ the longitude variable, the specialization contains the irreducible quadratic $E=L^2-(M^4-4M^2+1)L+M^4$ for the negative clasp and $M^4E(M^{-1},L)$ for the positive clasp. The corresponding quadratic is coprime to the full classical $A$-polynomial, including $L-1$, over $\mathbb{Q}(M)[L^{\pm1}]$, so the discrepancy persists when each irreducible factor is counted once. The curve $E=0$ comes from the marked Whitehead link exterior with its axis cusp complete. For the displayed monic polynomial, $\pi m(E)$ is the unsigned volume of that two-cusped exterior. We use the actual Jones sequence to select a right divisor of the satellite transfer operator. Rational factor tests show that the quadratic survives in this divisor, and the two marked companion fillings exclude it as a component of the satellite boundary curve.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。
 
+来源：https://arxiv.org/pdf/2611.24826v1 · PDF第34页 Acknowledgments；第47页 Appendix E 开头关于MerLean的自身使用说明；第47–49页形式化范围说明
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF第34页致谢明确说明，初始探索、文献综合、证明、计算实验、Lean形式化和稿件撰写均在作者指导下借助Claude Opus 5.5、Gemini 4 Hydrogen、GPT-6 Astra及Grok Bot完成，并明确称GPT-6 Astra贡献主要推导。第47页另明确Jinzheng Li在形式化工作中使用MerLean。这是作者实际使用披露，非仅研究AI或引用工具论文。主要推导支持proofs，但披露未逐项把具体核心构造或新路线归给模型，故不自动标ideas；Comparator/Lean内核及nanoda的验收叙述也不等于模型执行数学验证，故不由此追加verification。全文补检已涵盖第34页被断开的Gemini型号；其余压紧文本的llm命中来自Tillmann姓名、full meridian/full monic/all mathematical等普通文字或参考文献，不是另一使用声明。
+
+来源：https://arxiv.org/pdf/2611.24826v1
 
 [arXiv](https://arxiv.org/abs/2611.24826)
 
@@ -770,9 +794,13 @@ Hiuri Fellipe Santos dos Reis、Levi Rosa Adriano、Miriam Cristina Ferreira Fur
 
 We study hypersurfaces of the sphere $\mathbb{S}^n$ and of hyperbolic space $\mathbb{H}^n$, $n\ge 3$, that move under the inverse mean curvature flow by a one-parameter group of isometries. No closed hypersurface has this property, and a soliton with constant mean curvature is an open subset of a horosphere. For the rotation hypersurfaces of do Carmo and Dajczer, of spherical, hyperbolic and parabolic type, the soliton equation reduces to a single ordinary differential equation, which we analyse in every dimension. In $\mathbb{H}^n$ the horosphere appears at the critical speed $\lambda=1$ and separates entire bowls from solitons that end at a singular $(n-2)$-sphere; each class has exactly one horospherical end, and it is the threshold between ends asymptotic to totally geodesic hypersurfaces and ends at a singular orbit. At an axis of codimension two we obtain a complete trichotomy, which changes at the speed $\lambda=2(n-1)$ from logarithmic spirals to cuspidal edges. In $\mathbb{S}^n$ no rotational soliton through the axis is complete, and the radius of its singular sphere satisfies $\frac{\pi}{2}-r_+=\frac{K_n}{\lambda}\left(1-2(n-1)^2\lambda^{-2}\log\lambda\right)+O(\lambda^{-3})$, with $K_n=\sqrt{\pi}\,\Gamma(\frac{n+1}{2})/\Gamma(\frac{n}{2})$. For $n=3$, the commuting pairs of Killing fields give two further classes, helicoidal and Hopf-invariant surfaces; the latter are the rotators of the inverse curve shortening flow on the round two-sphere.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：PDF 第28页 Declarations / Use of AI tools 明确披露作者使用 Claude（Anthropic）辅助语言编辑、排版、图形生成与数值核验，并称全部 AI 生成内容和结果经作者审查核验、由作者承担责任。对应写作、计算和核验辅助；该声明未将核心数学思想或定理证明归因于 AI，不扩展为 ideas 或 proofs。数值图示脚本按同页说明可向通讯作者索取，本轮未运行这些脚本；补检未发现额外用途声明。
 
+来源：https://arxiv.org/pdf/2611.24851v1 · PDF 第28页 Declarations—Use of AI tools 与 Data availability；已复核第1–2页、全部匹配及致谢/声明上下文、第29页末尾。
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第28页 Declarations / Use of AI tools 明确披露作者使用 Claude（Anthropic）辅助语言编辑、排版、图形生成与数值核验，并称全部 AI 生成内容和结果经作者审查核验、由作者承担责任。对应写作、计算和核验辅助；该声明未将核心数学思想或定理证明归因于 AI，不扩展为 ideas 或 proofs。数值图示脚本按同页说明可向通讯作者索取，本轮未运行这些脚本；补检未发现额外用途声明。
+
+来源：https://arxiv.org/pdf/2611.24851v1
 
 [arXiv](https://arxiv.org/abs/2611.24851)
 
@@ -796,13 +824,17 @@ We show that regular hypercones in $\mathbb{R}^{n+1}$ with small entropy have si
 
 Lucas Holanda Pinheiro、José Edson Sampaio、Euripedes Carvalho da Silva
 
-对闭但可非紧的 o-minimal 可定义曲面及有限奇点，建立 Euler 特征、总 Gaussian 曲率、奇点局部密度和无穷远密度的 Gauss–Bonnet 型关系。
+对任意固定 o-minimal 结构中可定义的闭、纯二维集合 X⊂Rⁿ，假设其 C² 奇点集恰为有限个点 {p₁,…,pₛ}，作者证明同调有限生成、正则部高斯曲率可积，且 χ(X)=s+(1/2π)∫Reg(X)K dA−Σᵢθ(X,pᵢ)+θ(X,∞)。闭指欧氏闭子集，允许非紧且不要求可定向；θ 为欧氏二维面积除以 πr² 的极限。
 
 We study the relationship between topology and curvature of surfaces definable in an o-minimal structure. Our main result is a Gauss--Bonnet-type formula for closed (not necessarily compact) definable surfaces with finitely many singular points, expressing the Euler characteristic in terms of the total Gaussian curvature, the local densities at the singular points, and the density at infinity. As consequences, we obtain an inequality for definable minimal surfaces with isolated singularities and, for complex algebraic curves, a formula and an inequality relating the Euler characteristic, the total curvature, the multiplicities at the singular points and the degree.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。
 
+来源：https://arxiv.org/pdf/2611.24879v1 · PDF 第22页 Acknowledgments
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。作者明确使用 Claude、Gemini 与 ChatGPT 完善论证、定位文献，并起草修订稿件。作者称独立核查所有 AI 建议。按所述用途记 proofs、literature、writing。
+
+来源：https://arxiv.org/pdf/2611.24879v1
 
 [arXiv](https://arxiv.org/abs/2611.24879)
 
@@ -810,13 +842,17 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 Yujun Jin、Zuoqin Wang
 
-作者研究Karpukhin的微分p形式Dirichlet到Neumann算子，给出全符号递推及边界度量全jet确定。在临界维n=2p+2存在共形规范。对p≥1，内域及测量边界邻域解析的度量由部分数据确定到等距或共形等价。
+对紧定向光滑有边界流形，Karpukhin的p形式DN算子由Δω=0、δω=0、切向迹为给定输入后取n(dω)定义。0≤p≤n−2时，任意非空测量边界域上的算子之差若为光滑核，则确定度量全边界jet，临界n=2p+2只确定到边界因子为1的共形变换。对连通流形及1≤p≤n−2，内域和测量边界附近度量与边界解析、部分算子严格相等时，边界识别延拓为全局等距或临界共形等价。n≥3的光滑调和曲率度量也有相同全局结论，且允许p=0；临界时若某测量边界点ι_νW≠0，则共形等价提升为等距。
 
 We establish boundary determination and global partial-data uniqueness for Karpukhin's Dirichlet-to-Neumann operator on differential $p$-forms. We derive an explicit recursion for its full symbol and determine the full boundary jet of the metric, modulo conformal gauge in the critical dimension $n=2p+2$. For $p\geq1$, partial data determine metrics that are analytic in the interior and near the measured boundary subset, up to isometry or conformal equivalence. The global uniqueness relies on a new projection-kernel embedding that detects the unobserved boundary through rank loss and small eigenvalues. We also establish global partial-data uniqueness for smooth metrics with harmonic curvature, using elliptic-transport unique continuation and, in the critical dimension, conformal-geodesic coordinates. A Weyl nondegeneracy condition further upgrades conformal equivalence to isometry.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。
 
+来源：https://arxiv.org/pdf/2611.24903v1 · PDF第44页Declaration of AI Use，结合第29、36页关键命题；全文45页。
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。第44页明确披露ChatGPT用于语言编辑，并帮助发展主定理的部分证明思想及技术细节，特别涉及命题5.2和6.5。第29、36页确认两项命题分别建立调和曲率的边界等距刚性及临界共形情形的联络重构，构成主定理具体关键路线，记录ideas、proofs及writing。作者独立复核全部采纳论证。第2、14页llm候选来自all mixed和all metric等文字拼接。
+
+来源：https://arxiv.org/pdf/2611.24903v1
 
 [arXiv](https://arxiv.org/abs/2611.24903)
 
@@ -824,12 +860,16 @@ AI 披露待完成核查（不能仅凭摘要判断）
 
 S. Myroshnychenko、K. Tatarko、V. Yaskin
 
-作者声称对于每个 n≥2，ℝⁿ 中椭球的全部内蕴体积唯一确定其同余类，从而解决 Gusakova–Zaporozhets 2017 年猜想。
+正文定理1.1：任意 n≥2，ℝⁿ 中两个椭球若 V₁,…,Vₙ 全部相同，则同余，作者据此解决 Gusakova–Zaporozhets 猜想。文中先取全维椭球，以半轴平方 λᵢ>0 的多项式 Q(u)=∏(1+λᵢu) 及归一化内蕴体积 vₖ=Vₖ/κₖ 表述。体积确定最高系数 sₙ=vₙ²；比较两个端点多项式间的正系数线段，并积分相应体积函数的雅可比。通过内蕴体积对数凹性、Newton 不等式及严格的连续体积比估计，获得端点归一化积分核的严格离散凸性，推出平均雅可比可逆，从相同数据得到全部系数、因而带重数半轴相同。
 
 We prove that ellipsoids in $\mathbb{R}^n$, $n\ge 2$, are uniquely determined by their intrinsic volumes up to congruence, resolving the conjecture posed by Gusakova and Zaporozhets in 2017.
 
-AI 披露待完成核查（不能仅凭摘要判断）
+明确披露 AI 协作：PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。
 
+来源：https://arxiv.org/pdf/2611.24923v1 · PDF 第9页主定理证明之后 AI Disclaimer；已复核第1页与第10页参考文献和作者信息、全文候选语境。
 
+核查范围：对该版本全部可提取页面做 AI 披露关键词检索，并核对命中段落；这不是对整篇数学证明的审读。PDF 第9页 AI Disclaimer 明确声明 ChatGPT 用于探索性讨论和稿件准备，因此记录 exploration、writing。声明未说明模型版本，也未将某个核心思想、引理或主定理证明明确归因于 AI，不据此增加 ideas、proofs、verification 或 computation。已核对该声明位于主证明之后，全文及拆行模型名补检未见更具体披露。
+
+来源：https://arxiv.org/pdf/2611.24923v1
 
 [arXiv](https://arxiv.org/abs/2611.24923)
